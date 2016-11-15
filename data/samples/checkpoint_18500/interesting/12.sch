@@ -35,12 +35,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 5
 Title ""
-Date "14 afe3 o Noused * Dhr. $mu Connector
-Text Notes 7550 1350 0    60   ~ 0
-v"
-	1    9800 3700
-	1    0    0    -1  
-$EndComp
+Date "14 afe3 o Noused * Dhr. $mu Connector"
+$EndDescr
 $Comp
 L LI712 U?
 U 1 1 4D382BEF
@@ -48,8 +44,8 @@ P 9550 3500
 F 0 "ARD1" H 5400 3800 50  0000 C CNN
 F 1 "ARTUT2_P" H 1350 2200 60  0000 C CNN
 F 2 "SO_Buttp-7.9x08w" H 9800 3300 60  0000 C CNN
-F 2 "ONINAPAL" H 2400 2000 60  0001 C CNN
-F 3 "" H 2700 3300 60  0000 C CNN
+F 3 "ONINAPAL" H 2400 2000 60  0001 C CNN
+F 4 "" H 2700 3300 60  0000 C CNN
 	1    8200 6250
 	1    0    0    -1  
 $EndComp
@@ -59,9 +55,9 @@ Text Notes 2400 2350 2    60   ~ 0
 D2
 Text Label 6130 2850 0    60   ~ 0
 alergrome vita TI U15_V19
-$Sheet
-S 7000 3000 1700 2000
-U 55FB53BA
+$Comp
+L LI712 U?
+U 1 1 55FB53BA
 P 5800 4200
 F 0 "P3" H 6250 3350 50  0000 C CNN
 F 1 "CONN_2" V 4850 3350 40  0000 C CNN
@@ -105,28 +101,20 @@ F 3 "" H 1500 4310 50  0000 C CNN
 	1    4100 3000
 	-1   0    0    -1  
 $EndComp
-Text Label 3150 4400 0    60  ~ 0
+Text Label 3150 4400 0    60   ~ 0
 D1
 Text Label 3150 3050 0    60   ~ 0
 F113V 
 $Sheet
 S 6850 1150 800  4050
+$EndSheet
 Wire Wire Line
 	14900 8200 1800 7000
-Wire Wire Lin18
-F 10"V" H 668 8035 30  0001 L BNN qPrayin"
-F 7 "CH" A R 5800 1900 60 
-F3 "PIC" I R 5450 3150 60 
-$EndSheet
 $Sheet
 S 800  1050 1100 1100
-NoF25 16443826+un" I L 7200 3050 60 
 $EndSheet
 $Sheet
 S 4900 4200 1250 1200
-U 0 46E5EFBA
-F0 "Serder9" 50
-F1 "igus Diak7.sch" 60
 $EndSheet
 Wire Notes Line
 	5900 3650 5700 3200
@@ -184,12 +172,6 @@ F 3 "~" H 4300 3550 60  0000 C CNN
 	1    3400 6050
 	1    0    0    -1  
 $EndComp
-~ 55CBCCN00 266" H 4650 6450 60 60
-F15 "1.237/4FC76" ReBR 4050 4155 50  0001 C CNN
-F 3 "" H 6300 4600 60  0000 C CNN
-	1    5650 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 3000 6100 3100
 Wire Wire Line
@@ -206,13 +188,10 @@ Text Label 7150 4150 0    60   ~ 0
 PAR
 Text Label 1800 3950 0    60   ~ 0
 MR7_H
-LOGND
-Tex GNNet 1450 1250 2010 2    110  ~ 100
+Text GNNet 1450 1250 2010 2    110  ~ 100
 LED-1
 Text Notes 2950 2550 2    60   ~ 0
 Gv 2506"
-Rev "08001" H 5455 3000 2    00   Input ~ 0
-53
 Text GLabel 4450 3350 2    60   Output ~ 0
 A13
 Text GLabel 4400 3550 0    60   BiDi ~ 0
@@ -238,7 +217,7 @@ F 3 "" H 4500 3550 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L SWR_HOTOOORSEEL-INOS_TH1
+L SWR_HOTOOORSEEL-INOS_TH1 U?
 U 1 464C5FB1
 P 2100 2100
 F 0 "#PWR?" H 6400 4950 50  0001 C CNN

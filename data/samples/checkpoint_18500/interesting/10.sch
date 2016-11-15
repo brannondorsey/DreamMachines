@@ -166,7 +166,7 @@ F 3 "" H 6600 4100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01X1-2_PILO_DCD?
+L CONN_01X1-2 PILO_DCD?
 U 1 1 54C9BB66
 P 5600 3650
 F 0 "BFLG01" H 4100 3000 50  0000 C CNN
@@ -338,14 +338,13 @@ Wire Wire Line
 Wire Wire Line
 	4650 4100 5875 3750
 Connection ~ 4950 3600
+$Comp
 F 0 "LM299" V 4001 4100 50  0000 L CNN
 F 2 "Rector_Sp:Heaoterk_-IMD_Packal" H 1780 2900 50  0001 C CNN
 F 3 "" H 850 3500 60  0000 C CNN
 	1    4900 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L VOUNTAR_FESIC7_Famp F?' Pin 11 Pode. HA$#YLE
 Text HLabel 4250 2600 0    60   Input ~ 0
 5V+
 Text Notes 10650 6250 0    60   ~ 0
@@ -378,59 +377,4 @@ Text GLabel 1400 1100 0    60   Input ~ 0
 PumpTe,
 Text HLabel 2350 4000 2    60   Input ~ 0
 REDIO_SGSF"
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
-$EndDescr
-$Comp
-L DIODE D1
-U 1 1 52F41AEA
-P 4100 3900
-F 0 "#PWR02" H 7250 4350 30  0001 C CNN
-F 1 "GNDP" H 5078 2410 50  0000 L BN
-F 2 "SHa:chile_tmech.9//73D*LE_Kiaf" O RR600233/36FC43F21/EFT26S/564F31FD/5
-LIBS:file93430
-LIBS:Lbuds2Bmac-devirel-cache
-EELAYER 27 0
-EELAYER END
-$Descr A4 11693 8268
-encoding utf-8
-Sheet 6 17
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
-$EndDescr
-$Comp
-L STR735J U?
-U 1 1 5293F623
-P 3900 2150
-F 0 "R2" V 5828 3801 40  0000 C CNN
-F 1 "100K" V 2835 1550 40  0000 R CNN
-F 2 "LEDs:LED-080_Hounder:CPC-06S" H 5350 3450 60  0001 C CNN
-F 3 "" H 5350 4500 60  0000 C CNN
-	1    4700 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L RESISFOICE C?
-U 1 1 55C5C75F
-P 2225 4085
-F 0 "#PWR?" H 6100 4950 30  0001 C CNN
-F 1 "+3.3V" H 4850 3800 20  0000 C CNN
-F 2 "" H 6200 1950 50  0000 C CNN
-F 3 "" H 4400 3500 60  0000 C CNN
-	1    3100 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 2800 3000 3250
-Connection ~ 3950 2700
-Wire Wire Line
-	6400 950  0500 2200
 $EndSCHEMATC
