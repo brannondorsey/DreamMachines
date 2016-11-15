@@ -1,0 +1,289 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:pmod
+LIBS:hdmi
+LIBS:ptn3363
+LIBS:ma78l00
+LIBS:pmod-conn_6x2
+LIBS:xc9140
+LIBS:reg710-dbv
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "3.3V to 5V Booster"
+Date ""
+Rev ""
+Comp "tree/master/hdmi/output/pmod/pwr"
+Comment1 "Using references from Numato Lab and Apertus AXIOM"
+Comment2 "Designed by TimVideos.us"
+Comment3 "License: CC-BY-SA 4.0 International"
+Comment4 "$Id$"
+$EndDescr
+$Comp
+L XC9140 U31
+U 1 1 5803B328
+P 4625 3800
+F 0 "U31" H 5225 4350 60  0000 C CNN
+F 1 "XC9140" H 5175 3750 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 4625 3800 60  0001 C CNN
+F 3 "" H 4625 3800 60  0001 C CNN
+	1    4625 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L31
+U 1 1 5803B5D8
+P 3875 3400
+F 0 "L31" V 3825 3400 50  0000 C CNN
+F 1 "4.7uH" V 3975 3400 50  0000 C CNN
+F 2 "Inductors_NEOSID:Neosid_Inductor_SM0603CG" H 3875 3400 50  0001 C CNN
+F 3 "" H 3875 3400 50  0000 C CNN
+	1    3875 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R31
+U 1 1 5803B7C8
+P 3875 3550
+F 0 "R31" V 3955 3550 50  0000 C CNN
+F 1 "4.7k" V 3875 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3805 3550 50  0001 C CNN
+F 3 "" H 3875 3550 50  0000 C CNN
+	1    3875 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 5803BD68
+P 3325 3600
+F 0 "#PWR04" H 3325 3450 50  0001 C CNN
+F 1 "VCC" H 3325 3750 50  0000 C CNN
+F 2 "" H 3325 3600 50  0000 C CNN
+F 3 "" H 3325 3600 50  0000 C CNN
+	1    3325 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C311
+U 1 1 5803BE39
+P 3475 3950
+F 0 "C311" H 3500 4050 50  0000 L CNN
+F 1 "4.7uF" H 3500 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3513 3800 50  0001 C CNN
+F 3 "" H 3475 3950 50  0000 C CNN
+	1    3475 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CV5
+U 1 1 5803BFAE
+P 6075 3650
+F 0 "CV5" H 6100 3750 50  0000 L CNN
+F 1 "10uF" H 6100 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6113 3500 50  0001 C CNN
+F 3 "" H 6075 3650 50  0000 C CNN
+	1    6075 3650
+	1    0    0    -1  
+$EndComp
+Text Label 6075 2950 3    60   ~ 0
+VCC5V0
+$Comp
+L GND #PWR05
+U 1 1 5803DE38
+P 6075 4275
+F 0 "#PWR05" H 6075 4025 50  0001 C CNN
+F 1 "GND" H 6075 4125 50  0000 C CNN
+F 2 "" H 6075 4275 50  0000 C CNN
+F 3 "" H 6075 4275 50  0000 C CNN
+	1    6075 4275
+	1    0    0    -1  
+$EndComp
+Text Notes 3225 3100 0    60   ~ 0
+Option 1\n
+$Comp
+L REG710-DBV U32
+U 1 1 5803BF4F
+P 8125 3800
+F 0 "U32" H 8175 3750 60  0000 C CNN
+F 1 "REG710-DBV" H 8425 4350 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 8125 3800 60  0001 C CNN
+F 3 "" H 8125 3800 60  0001 C CNN
+	1    8125 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 5803C0E2
+P 8850 3375
+F 0 "#PWR09" H 8850 3225 50  0001 C CNN
+F 1 "VCC" H 8850 3525 50  0000 C CNN
+F 2 "" H 8850 3375 50  0000 C CNN
+F 3 "" H 8850 3375 50  0000 C CNN
+	1    8850 3375
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C322
+U 1 1 5803C17C
+P 8575 3875
+F 0 "C322" H 8600 3975 50  0000 L CNN
+F 1 "2.2uF" H 8600 3775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8613 3725 50  0001 C CNN
+F 3 "" H 8575 3875 50  0000 C CNN
+	1    8575 3875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C321
+U 1 1 5803CD16
+P 7050 3400
+F 0 "C321" V 7175 3175 50  0000 L CNN
+F 1 "220n" V 7100 3175 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7050 3400 50  0001 C CNN
+F 3 "" H 7050 3400 50  0000 C CNN
+	1    7050 3400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4425 3400 4175 3400
+Wire Wire Line
+	4425 3550 4025 3550
+Wire Wire Line
+	3325 3700 4425 3700
+Wire Wire Line
+	3475 3400 3475 3800
+Wire Wire Line
+	3475 3400 3575 3400
+Wire Wire Line
+	3725 3550 3475 3550
+Connection ~ 3475 3550
+Wire Wire Line
+	3325 3700 3325 3600
+Connection ~ 3475 3700
+Wire Wire Line
+	5525 3450 6700 3450
+Connection ~ 6075 3450
+Wire Wire Line
+	5525 3650 5575 3650
+Wire Wire Line
+	5575 3650 5575 4150
+Wire Wire Line
+	6075 3800 6075 4275
+Wire Notes Line
+	3175 3150 5725 3150
+Wire Notes Line
+	5725 3150 5725 4325
+Wire Notes Line
+	5725 4325 3175 4325
+Wire Notes Line
+	3175 4325 3175 3150
+Wire Wire Line
+	3475 4100 3475 4150
+Wire Wire Line
+	3475 4150 8575 4150
+Wire Wire Line
+	8850 3650 8325 3650
+Wire Wire Line
+	8850 3375 8850 3650
+Wire Wire Line
+	7150 3400 7225 3400
+Wire Wire Line
+	7225 3550 6850 3550
+Wire Wire Line
+	6850 3550 6850 3400
+Wire Wire Line
+	6850 3400 6950 3400
+Wire Wire Line
+	8575 4150 8575 4025
+Wire Wire Line
+	8575 3725 8575 3650
+Connection ~ 8575 3650
+Wire Wire Line
+	7775 4000 7775 4150
+Connection ~ 7775 4150
+Connection ~ 5575 4150
+Connection ~ 6075 4150
+Wire Wire Line
+	7225 3700 6700 3700
+Wire Wire Line
+	6700 3700 6700 3450
+Wire Notes Line
+	6475 3150 9025 3150
+Wire Notes Line
+	9025 3150 9025 4325
+Wire Notes Line
+	9025 4325 6475 4325
+Wire Notes Line
+	6475 4325 6475 3150
+Wire Wire Line
+	6075 2750 6075 3500
+Text Notes 6525 3100 0    60   ~ 0
+Option 2
+$Comp
+L R R32
+U 1 1 580409A1
+P 8600 3450
+F 0 "R32" V 8525 3450 39  0000 C CNN
+F 1 "10k" V 8600 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 8530 3450 50  0001 C CNN
+F 3 "" H 8600 3450 50  0000 C CNN
+	1    8600 3450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8750 3450 8850 3450
+Connection ~ 8850 3450
+Wire Wire Line
+	8450 3450 8325 3450
+Text Notes 3175 2725 0    79   ~ 16
+3.3V to 5V Voltage Booster\nLoad only *one* option\n
+Text HLabel 5775 2750 0    60   Input ~ 0
+VCC3V3
+Text HLabel 6175 2750 2    60   Output ~ 0
+VCC5V0
+$Comp
+L VCC #PWR?
+U 1 1 582519D2
+P 5925 2750
+F 0 "#PWR?" H 5925 2600 50  0001 C CNN
+F 1 "VCC" H 5925 2900 50  0000 C CNN
+F 2 "" H 5925 2750 50  0000 C CNN
+F 3 "" H 5925 2750 50  0000 C CNN
+	1    5925 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 2750 5925 2750
+Wire Wire Line
+	6175 2750 6075 2750
+$EndSCHEMATC

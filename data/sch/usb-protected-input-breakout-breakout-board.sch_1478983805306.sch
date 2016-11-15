@@ -1,0 +1,309 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wicker-dds
+LIBS:wicker-crystal
+LIBS:rf24
+LIBS:wicker-vreg
+LIBS:wicker-transistors
+LIBS:wicker-test
+LIBS:wicker-stm32
+LIBS:wicker-opamp
+LIBS:wicker-invensense
+LIBS:wicker-efm8
+LIBS:wicker-lcd
+LIBS:wicker-conn
+LIBS:wicker-sensors
+LIBS:wicker-gain
+LIBS:wicker-capsense
+LIBS:wicker-aesthetic
+LIBS:wicker-linear
+LIBS:wicker-shields
+LIBS:wicker-switch
+LIBS:wicker-protection
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ATTiny85-PU20 Breakout Board (Surface Mount)"
+Date "2016-03-11"
+Rev "v1.0"
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "Company: Wickerbox Electronics"
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 56E364F9
+P 6950 4575
+F 0 "#PWR01" H 6950 4325 50  0001 C CNN
+F 1 "GND" H 6950 4425 50  0000 C CNN
+F 2 "" H 6950 4575 50  0000 C CNN
+F 3 "" H 6950 4575 50  0000 C CNN
+	1    6950 4575
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56E3651D
+P 7375 3700
+F 0 "R1" V 7275 3700 50  0000 C CNN
+F 1 "220" V 7375 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7305 3700 50  0001 C CNN
+F 3 "" H 7375 3700 50  0000 C CNN
+	1    7375 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56E36582
+P 7375 3800
+F 0 "R2" V 7475 3800 50  0000 C CNN
+F 1 "220" V 7375 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7305 3800 50  0001 C CNN
+F 3 "" H 7375 3800 50  0000 C CNN
+	1    7375 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56E37BA3
+P 8250 4150
+F 0 "#PWR02" H 8250 3900 50  0001 C CNN
+F 1 "GND" H 8250 4000 50  0000 C CNN
+F 2 "" H 8250 4150 50  0000 C CNN
+F 3 "" H 8250 4150 50  0000 C CNN
+	1    8250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 56E38473
+P 6950 4175
+F 0 "#PWR03" H 6950 4025 50  0001 C CNN
+F 1 "+5V" H 6950 4315 50  0000 C CNN
+F 2 "" H 6950 4175 50  0000 C CNN
+F 3 "" H 6950 4175 50  0000 C CNN
+	1    6950 4175
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7875 4500
+$Comp
+L C_Small C1
+U 1 1 56E38AEB
+P 6775 4350
+F 0 "C1" H 6785 4420 50  0000 L CNN
+F 1 "100nF" H 6785 4270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6775 4350 50  0001 C CNN
+F 3 "" H 6775 4350 50  0000 C CNN
+	1    6775 4350
+	1    0    0    -1  
+$EndComp
+Text Notes 7275 4800 0    60   ~ 0
+ESD Protection
+$Comp
+L TPD3E001DRLR U1
+U 1 1 56E3826C
+P 7475 4400
+F 0 "U1" H 7330 4655 60  0000 C CNN
+F 1 "TPD3E001DRLR" H 7615 4135 60  0000 C CNN
+F 2 "Wicker_Housings_QFN:SOT5-DRL" H 7475 4300 60  0001 C CNN
+F 3 "" H 7475 4300 60  0000 C CNN
+	1    7475 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4500 6950 4575
+Wire Wire Line
+	7525 3700 8250 3700
+Wire Wire Line
+	7525 3800 8250 3800
+Wire Wire Line
+	6775 4500 7075 4500
+Wire Wire Line
+	6950 4200 6950 4175
+Wire Wire Line
+	8000 4400 7875 4400
+Wire Wire Line
+	8000 3800 8000 4400
+Connection ~ 8000 3800
+Wire Wire Line
+	6775 4200 7075 4200
+Wire Wire Line
+	6775 4200 6775 4250
+Connection ~ 6950 4200
+Wire Wire Line
+	6775 4450 6775 4500
+Connection ~ 6950 4500
+Wire Wire Line
+	7075 4200 7075 4300
+$Comp
+L C_Small C2
+U 1 1 56E3BB9A
+P 7875 3300
+F 0 "C2" H 7885 3370 50  0000 L CNN
+F 1 "1uF" H 7885 3220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7875 3300 50  0001 C CNN
+F 3 "" H 7875 3300 50  0000 C CNN
+	1    7875 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 3050 7875 3200
+Wire Wire Line
+	7875 4300 7925 4300
+Wire Wire Line
+	7925 4300 7925 3700
+Connection ~ 7925 3700
+$Comp
+L GND #PWR04
+U 1 1 56E50F0A
+P 7875 3400
+F 0 "#PWR04" H 7875 3150 50  0001 C CNN
+F 1 "GND" H 7875 3250 50  0000 C CNN
+F 2 "" H 7875 3400 50  0000 C CNN
+F 3 "" H 7875 3400 50  0000 C CNN
+	1    7875 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 56E50F42
+P 7875 3050
+F 0 "#PWR05" H 7875 2900 50  0001 C CNN
+F 1 "+5V" H 7875 3190 50  0000 C CNN
+F 2 "" H 7875 3050 50  0000 C CNN
+F 3 "" H 7875 3050 50  0000 C CNN
+	1    7875 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3600 8175 3600
+Wire Wire Line
+	8175 3600 8175 3100
+Wire Wire Line
+	8175 3100 7875 3100
+Connection ~ 7875 3100
+$Comp
+L USB_OTG P2
+U 1 1 56E5120F
+P 8550 3800
+F 0 "P2" V 8250 3700 50  0000 C CNN
+F 1 "USB_OTG" H 8550 4000 50  0001 C CNN
+F 2 "Wicker_USB:USB_Micro-B_10118193_0001LF" V 8500 3700 50  0001 C CNN
+F 3 "" V 8500 3700 50  0000 C CNN
+	1    8550 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 4000 8250 4150
+NoConn ~ 8250 3900
+$Comp
+L CONN_01X04 P1
+U 1 1 56EF65A0
+P 6150 3750
+F 0 "P1" H 6150 4000 50  0000 C CNN
+F 1 "CONN_01X04" V 6250 3750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 6150 3750 50  0001 C CNN
+F 3 "" H 6150 3750 50  0000 C CNN
+	1    6150 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7225 3700 6350 3700
+Wire Wire Line
+	6350 3800 7225 3800
+$Comp
+L +5V #PWR06
+U 1 1 56EF66AB
+P 6425 3125
+F 0 "#PWR06" H 6425 2975 50  0001 C CNN
+F 1 "+5V" H 6425 3265 50  0000 C CNN
+F 2 "" H 6425 3125 50  0000 C CNN
+F 3 "" H 6425 3125 50  0000 C CNN
+	1    6425 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 56EF66F8
+P 6425 4450
+F 0 "#PWR07" H 6425 4200 50  0001 C CNN
+F 1 "GND" H 6425 4300 50  0000 C CNN
+F 2 "" H 6425 4450 50  0000 C CNN
+F 3 "" H 6425 4450 50  0000 C CNN
+	1    6425 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3900 6425 3900
+Wire Wire Line
+	6425 3900 6425 4450
+Wire Wire Line
+	6425 3600 6350 3600
+Wire Wire Line
+	6425 3125 6425 3600
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 56EF6954
+P 6150 3350
+F 0 "#FLG08" H 6150 3445 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 3530 50  0000 C CNN
+F 2 "" H 6150 3350 50  0000 C CNN
+F 3 "" H 6150 3350 50  0000 C CNN
+	1    6150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 56EF6976
+P 6100 4350
+F 0 "#FLG09" H 6100 4445 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 4530 50  0000 C CNN
+F 2 "" H 6100 4350 50  0000 C CNN
+F 3 "" H 6100 4350 50  0000 C CNN
+	1    6100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4350 6100 4400
+Wire Wire Line
+	6100 4400 6425 4400
+Connection ~ 6425 4400
+Wire Wire Line
+	6150 3350 6150 3400
+Wire Wire Line
+	6150 3400 6425 3400
+Connection ~ 6425 3400
+NoConn ~ 8650 4200
+$EndSCHEMATC

@@ -1,0 +1,171 @@
+EESchema Schematic File Version 2
+LIBS:connectors
+LIBS:ic-cpu
+LIBS:ic-power
+LIBS:ic-misc
+LIBS:passive
+LIBS:power
+LIBS:switches
+LIBS:motherboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HEADER-1x01 J1
+U 1 1 552A9686
+P 2350 1700
+F 0 "J1" H 2300 1800 60  0000 L BNB
+F 1 "Standoff" V 2500 1700 40  0001 C CNN
+F 2 "Conn-Header:HDR-M-1x01" H 2200 1675 60  0001 C CNN
+F 3 "" H 2300 1775 60  0001 C CNN
+F 4 "-" H 2300 1900 40  0001 L BNN "Part"
+F 5 "Connector" H 2300 2000 40  0001 L BNN "Virtual"
+	1    2350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-1x01 J2
+U 1 1 552A9723
+P 2350 2000
+F 0 "J2" H 2300 2100 60  0000 L BNB
+F 1 "Standoff" V 2500 2000 40  0001 C CNN
+F 2 "Conn-Header:HDR-M-1x01" H 2200 1975 60  0001 C CNN
+F 3 "" H 2300 2075 60  0001 C CNN
+F 4 "-" H 2300 2200 40  0001 L BNN "Part"
+F 5 "Connector" H 2300 2300 40  0001 L BNN "Virtual"
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-1x01 J3
+U 1 1 552A974D
+P 2350 2300
+F 0 "J3" H 2300 2400 60  0000 L BNB
+F 1 "HEADER-1x01" V 2500 2300 40  0001 C CNN
+F 2 "Conn-Header:HDR-M-1x01" H 2200 2275 60  0001 C CNN
+F 3 "" H 2300 2375 60  0001 C CNN
+F 4 "-" H 2300 2500 40  0001 L BNN "Part"
+F 5 "Connector" H 2300 2600 40  0001 L BNN "Virtual"
+	1    2350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-2x05 J4
+U 1 1 552A977E
+P 4600 1900
+F 0 "J4" H 4500 2200 60  0000 L BNB
+F 1 "HEADER-2x05" H 4500 1600 40  0001 L TNN
+F 2 "Conn-Header:HDR-M-2x05" H 4600 700 60  0001 C CNN
+F 3 "" H 4600 700 60  0001 C CNN
+F 4 "-" H 4500 2300 40  0001 L BNN "Part"
+F 5 "Virtual" H 4500 2400 40  0001 L BNN "Family"
+	1    4600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR01
+U 1 1 552A9938
+P 4950 1500
+F 0 "#PWR01" H 4950 1725 30  0001 C CNN
+F 1 "+9V" V 4875 1500 30  0001 C CNN
+F 2 "" H 4950 1500 60  0000 C CNN
+F 3 "" H 4950 1500 60  0000 C CNN
+	1    4950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR02
+U 1 1 552A995A
+P 4250 1500
+F 0 "#PWR02" H 4250 1725 30  0001 C CNN
+F 1 "+9V" V 4175 1500 30  0001 C CNN
+F 2 "" H 4250 1500 60  0000 C CNN
+F 3 "" H 4250 1500 60  0000 C CNN
+	1    4250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1500 4250 2100
+Wire Wire Line
+	4250 2100 4400 2100
+Wire Wire Line
+	4950 1450 4950 2100
+Wire Wire Line
+	4950 2100 4800 2100
+$Comp
+L +3V3 #PWR03
+U 1 1 552A9979
+P 4000 1500
+F 0 "#PWR03" H 4000 1725 30  0001 C CNN
+F 1 "+3V3" V 3925 1500 30  0001 C CNN
+F 2 "" H 4000 1500 60  0000 C CNN
+F 3 "" H 4000 1500 60  0000 C CNN
+	1    4000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1500 4000 1800
+Wire Wire Line
+	4000 1800 4400 1800
+$Comp
+L GND #PWR04
+U 1 1 552A999B
+P 4000 2400
+F 0 "#PWR04" H 4000 2450 30  0001 C CNN
+F 1 "GND" H 4000 2275 30  0001 C CNN
+F 2 "" H 4000 2400 60  0000 C CNN
+F 3 "" H 4000 2400 60  0000 C CNN
+	1    4000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 552A99B3
+P 5150 2400
+F 0 "#PWR05" H 5150 2450 30  0001 C CNN
+F 1 "GND" H 5150 2275 30  0001 C CNN
+F 2 "" H 5150 2400 60  0000 C CNN
+F 3 "" H 5150 2400 60  0000 C CNN
+	1    5150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2400 5150 1900
+Wire Wire Line
+	5150 1900 4800 1900
+Wire Wire Line
+	4400 1900 4000 1900
+Wire Wire Line
+	4000 1900 4000 2400
+Wire Wire Line
+	4800 1700 5650 1700
+Wire Wire Line
+	4800 1800 5650 1800
+Wire Wire Line
+	4800 2000 5650 2000
+Wire Wire Line
+	4400 2000 3400 2000
+Wire Wire Line
+	3400 1700 4400 1700
+Text Label 3450 1700 0    60   ~ 0
+V_AUX_ON
+Text Label 3450 2000 0    60   ~ 0
+VIN
+Text Label 5600 2000 2    60   ~ 0
+VIN
+Text Label 5600 1800 2    60   ~ 0
+SDA
+Text Label 5600 1700 2    60   ~ 0
+SCL
+$EndSCHEMATC

@@ -1,0 +1,499 @@
+EESchema Schematic File Version 2
+LIBS:museV2-rescue
+LIBS:IntelEdisonBlockTemplate-cache
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:linear
+LIBS:logo
+LIBS:memory
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip
+LIBS:microcontrollers
+LIBS:motorola
+LIBS:msp430
+LIBS:nxp_armmcu
+LIBS:opto
+LIBS:power
+LIBS:philips
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:sensors
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:xilinx
+LIBS:atx24
+LIBS:muse-cache
+LIBS:museV2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 2950 5350 0    60   ~ 0
+Pulled HIGH for\nI2C mode
+$Comp
+L GND-RESCUE-museV2-RESCUE-museV2 #PWR83
+U 1 1 57F8A4EE
+P 8150 3350
+F 0 "#PWR83" H 8150 3350 30  0001 C CNN
+F 1 "GND" H 8150 3280 30  0001 C CNN
+F 2 "" H 8150 3350 60  0000 C CNN
+F 3 "" H 8150 3350 60  0000 C CNN
+	1    8150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-museV2 C48
+U 1 1 57F8A4F4
+P 8300 2950
+F 0 "C48" H 8300 3050 40  0000 L CNN
+F 1 "0.1uF" H 8306 2865 40  0000 L CNN
+F 2 "" H 8338 2800 30  0000 C CNN
+F 3 "" H 8300 2950 60  0000 C CNN
+	1    8300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-museV2 C47
+U 1 1 57F8A4FB
+P 8000 2950
+F 0 "C47" H 8000 3050 40  0000 L CNN
+F 1 "10uF" H 8006 2865 40  0000 L CNN
+F 2 "" H 8038 2800 30  0000 C CNN
+F 3 "" H 8000 2950 60  0000 C CNN
+	1    8000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-museV2 #PWR82
+U 1 1 57F8A502
+P 8150 2600
+F 0 "#PWR82" H 8150 2560 30  0001 C CNN
+F 1 "+3.3V" H 8150 2710 30  0000 C CNN
+F 2 "" H 8150 2600 60  0000 C CNN
+F 3 "" H 8150 2600 60  0000 C CNN
+	1    8150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR80
+U 1 1 57F8A508
+P 7100 2600
+F 0 "#PWR80" H 7100 2690 20  0001 C CNN
+F 1 "+5V" H 7100 2690 30  0000 C CNN
+F 2 "" H 7100 2600 60  0000 C CNN
+F 3 "" H 7100 2600 60  0000 C CNN
+	1    7100 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 6350 2350 0    60   ~ 0
+Decoupling Capacitors
+$Comp
+L GND-RESCUE-museV2-RESCUE-museV2 #PWR81
+U 1 1 57F8A50F
+P 7100 3350
+F 0 "#PWR81" H 7100 3350 30  0001 C CNN
+F 1 "GND" H 7100 3280 30  0001 C CNN
+F 2 "" H 7100 3350 60  0000 C CNN
+F 3 "" H 7100 3350 60  0000 C CNN
+	1    7100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-museV2 C46
+U 1 1 57F8A515
+P 7700 2950
+F 0 "C46" H 7700 3050 40  0000 L CNN
+F 1 "10uF" H 7706 2865 40  0000 L CNN
+F 2 "" H 7738 2800 30  0000 C CNN
+F 3 "" H 7700 2950 60  0000 C CNN
+	1    7700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-museV2 C45
+U 1 1 57F8A51C
+P 7400 2950
+F 0 "C45" H 7400 3050 40  0000 L CNN
+F 1 "0.1uF" H 7406 2865 40  0000 L CNN
+F 2 "" H 7438 2800 30  0000 C CNN
+F 3 "" H 7400 2950 60  0000 C CNN
+	1    7400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-museV2 C44
+U 1 1 57F8A523
+P 7100 2950
+F 0 "C44" H 7100 3050 40  0000 L CNN
+F 1 "10uF" H 7106 2865 40  0000 L CNN
+F 2 "" H 7138 2800 30  0000 C CNN
+F 3 "" H 7100 2950 60  0000 C CNN
+	1    7100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-museV2 C43
+U 1 1 57F8A52A
+P 6800 2950
+F 0 "C43" H 6800 3050 40  0000 L CNN
+F 1 "0.1uF" H 6806 2865 40  0000 L CNN
+F 2 "" H 6838 2800 30  0000 C CNN
+F 3 "" H 6800 2950 60  0000 C CNN
+	1    6800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-museV2 C42
+U 1 1 57F8A531
+P 6500 2950
+F 0 "C42" H 6500 3050 40  0000 L CNN
+F 1 "10uF" H 6506 2865 40  0000 L CNN
+F 2 "" H 6538 2800 30  0000 C CNN
+F 3 "" H 6500 2950 60  0000 C CNN
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6500 3950 1450 300 
+U 57F8A539
+F0 "sheet57F8A4E6" 60
+F1 "Audio_Filter.sch" 60
+F2 "ANALOG_OUT-" I L 6500 4050 60 
+F3 "ANALOG_OUT+" I L 6500 4150 60 
+F4 "ANALOG_OUT" I R 7950 4100 60 
+$EndSheet
+$Sheet
+S 6500 4550 1450 300 
+U 57F8A547
+F0 "sheet57F8A4E7" 60
+F1 "Audio_Filter.sch" 60
+F2 "ANALOG_OUT-" I L 6500 4650 60 
+F3 "ANALOG_OUT+" I L 6500 4750 60 
+F4 "ANALOG_OUT" I R 7950 4700 60 
+$EndSheet
+$Comp
+L PCM1796 U11
+U 1 1 57F8A55D
+P 4600 3400
+F 0 "U11" H 4700 3450 60  0000 C CNN
+F 1 "PCM1796" H 5300 1500 60  0000 C CNN
+F 2 "" H 4600 3400 60  0000 C CNN
+F 3 "" H 4600 3400 60  0000 C CNN
+	1    4600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-museV2-RESCUE-museV2 #PWR79
+U 1 1 57F8A564
+P 6100 5450
+F 0 "#PWR79" H 6100 5450 30  0001 C CNN
+F 1 "GND" H 6100 5380 30  0001 C CNN
+F 2 "" H 6100 5450 60  0000 C CNN
+F 3 "" H 6100 5450 60  0000 C CNN
+	1    6100 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-museV2 R25
+U 1 1 57F8A56A
+P 6100 5150
+F 0 "R25" V 6180 5150 40  0000 C CNN
+F 1 "10K" V 6107 5151 40  0000 C CNN
+F 2 "" V 6030 5150 30  0000 C CNN
+F 3 "" H 6100 5150 30  0000 C CNN
+	1    6100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-museV2-RESCUE-museV2 #PWR78
+U 1 1 57F8A571
+P 5800 5450
+F 0 "#PWR78" H 5800 5450 30  0001 C CNN
+F 1 "GND" H 5800 5380 30  0001 C CNN
+F 2 "" H 5800 5450 60  0000 C CNN
+F 3 "" H 5800 5450 60  0000 C CNN
+	1    5800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-museV2 C49
+U 1 1 57F8A577
+P 2800 3850
+F 0 "C49" H 2800 3950 40  0000 L CNN
+F 1 "47uF" H 2806 3765 40  0000 L CNN
+F 2 "" H 2838 3700 30  0000 C CNN
+F 3 "" H 2800 3850 60  0000 C CNN
+	1    2800 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 2950 2350 0    60   ~ 12
+PCM1796 DAC
+$Comp
+L +3.3VSB #PWR76
+U 1 1 57F8A57F
+P 4300 3300
+F 0 "#PWR76" H 4300 3260 30  0001 C CNN
+F 1 "+3.3VSB" H 4300 3410 30  0000 C CNN
+F 2 "" H 4300 3300 60  0000 C CNN
+F 3 "" H 4300 3300 60  0000 C CNN
+	1    4300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VSB #PWR74
+U 1 1 57F8A585
+P 2800 3300
+F 0 "#PWR74" H 2800 3390 20  0001 C CNN
+F 1 "+5VSB" H 2800 3390 30  0000 C CNN
+F 2 "" H 2800 3300 60  0000 C CNN
+F 3 "" H 2800 3300 60  0000 C CNN
+	1    2800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VSB #PWR77
+U 1 1 57F8A58B
+P 5800 3300
+F 0 "#PWR77" H 5800 3390 20  0001 C CNN
+F 1 "+5VSB" H 5800 3390 30  0000 C CNN
+F 2 "" H 5800 3300 60  0000 C CNN
+F 3 "" H 5800 3300 60  0000 C CNN
+	1    5800 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 3750
+NoConn ~ 5700 3850
+$Comp
+L +3.3VSB #PWR75
+U 1 1 57F8A593
+P 2800 4500
+F 0 "#PWR75" H 2800 4460 30  0001 C CNN
+F 1 "+3.3VSB" H 2800 4610 30  0000 C CNN
+F 2 "" H 2800 4500 60  0000 C CNN
+F 3 "" H 2800 4500 60  0000 C CNN
+	1    2800 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 3900 0    60   Input ~ 0
+DAC_RST
+Text GLabel 4100 4100 0    60   Input ~ 0
+I2S_DAC_LRCK(3.3)
+Text GLabel 4100 4250 0    60   Input ~ 0
+I2S_DAC_DIN(3.3)
+Text GLabel 4100 4400 0    60   Input ~ 0
+I2S_DAC_BCK(3.3)
+Text GLabel 4100 4550 0    60   Input ~ 0
+I2S_SCK(3.3)
+Text GLabel 4100 4900 0    60   Input ~ 0
+I2C_SCL(3.3)
+Text GLabel 4100 5050 0    60   Input ~ 0
+I2C_SDA(3.3)
+Wire Wire Line
+	4300 3300 4300 3450
+Wire Wire Line
+	4300 3450 4400 3450
+Wire Wire Line
+	2800 3300 2800 3700
+Connection ~ 2800 3550
+Wire Wire Line
+	3000 3650 3000 4100
+Wire Wire Line
+	3000 3650 4400 3650
+Wire Wire Line
+	3000 4100 2800 4100
+Wire Wire Line
+	2800 4100 2800 4000
+Wire Wire Line
+	5700 4050 6500 4050
+Wire Wire Line
+	4100 3900 4400 3900
+Wire Wire Line
+	4400 4200 4300 4200
+Wire Wire Line
+	4200 4300 4400 4300
+Wire Wire Line
+	4400 4400 4100 4400
+Wire Wire Line
+	4400 4550 4100 4550
+Wire Wire Line
+	5800 4750 5800 5450
+Wire Wire Line
+	5800 5150 5700 5150
+Wire Wire Line
+	5800 5050 5700 5050
+Connection ~ 5800 5150
+Wire Wire Line
+	6100 4550 6100 5000
+Wire Wire Line
+	6100 5300 6100 5450
+Wire Wire Line
+	5700 4150 6500 4150
+Wire Wire Line
+	6350 4250 5700 4250
+Wire Wire Line
+	5700 4350 6250 4350
+Wire Wire Line
+	5800 3550 5700 3550
+Wire Wire Line
+	5800 3300 5800 3550
+Wire Wire Line
+	5700 3450 5800 3450
+Connection ~ 5800 3450
+Wire Wire Line
+	5700 4550 6100 4550
+Wire Wire Line
+	5800 4950 5700 4950
+Connection ~ 5800 5050
+Wire Wire Line
+	5700 4850 5800 4850
+Connection ~ 5800 4950
+Wire Wire Line
+	5700 4750 5800 4750
+Connection ~ 5800 4850
+Wire Wire Line
+	2800 3550 4400 3550
+Wire Wire Line
+	6250 4350 6250 4750
+Wire Wire Line
+	6250 4750 6500 4750
+Wire Wire Line
+	6500 4650 6350 4650
+Wire Wire Line
+	6350 4650 6350 4250
+Wire Wire Line
+	7950 4700 8250 4700
+Wire Wire Line
+	7950 4100 8250 4100
+Wire Wire Line
+	7100 2600 7100 2800
+Wire Wire Line
+	6500 2650 7700 2650
+Wire Wire Line
+	6800 2650 6800 2800
+Connection ~ 7100 2650
+Wire Wire Line
+	6500 2650 6500 2800
+Connection ~ 6800 2650
+Wire Wire Line
+	7400 2650 7400 2800
+Connection ~ 7400 2650
+Wire Wire Line
+	6500 3250 7700 3250
+Wire Wire Line
+	7400 3100 7400 3250
+Connection ~ 7400 3250
+Wire Wire Line
+	7100 3100 7100 3350
+Wire Wire Line
+	6800 3100 6800 3250
+Connection ~ 7100 3250
+Wire Wire Line
+	6500 3250 6500 3100
+Connection ~ 6800 3250
+Wire Wire Line
+	7700 3250 7700 3100
+Wire Wire Line
+	7700 2650 7700 2800
+Wire Wire Line
+	8000 2650 8000 2800
+Wire Wire Line
+	8000 2650 8300 2650
+Wire Wire Line
+	8150 2650 8150 2600
+Wire Wire Line
+	8300 2650 8300 2800
+Connection ~ 8150 2650
+Wire Wire Line
+	8000 3100 8000 3250
+Wire Wire Line
+	8000 3250 8300 3250
+Wire Wire Line
+	8150 3250 8150 3350
+Wire Wire Line
+	8300 3250 8300 3100
+Connection ~ 8150 3250
+Wire Wire Line
+	2800 4500 2800 5150
+Connection ~ 2800 4700
+Wire Wire Line
+	4200 4300 4200 4250
+Wire Wire Line
+	4200 4250 4100 4250
+Wire Wire Line
+	4300 4200 4300 4100
+Wire Wire Line
+	4300 4100 4100 4100
+Wire Wire Line
+	4400 3750 4300 3750
+Wire Wire Line
+	4300 3750 4300 3650
+Connection ~ 4300 3650
+Wire Wire Line
+	4100 4900 4400 4900
+Wire Wire Line
+	4100 5050 4200 5050
+Wire Wire Line
+	4200 5050 4200 5000
+Wire Wire Line
+	4200 5000 4400 5000
+Wire Wire Line
+	4400 4800 4300 4800
+Wire Wire Line
+	4300 4800 4300 4700
+Connection ~ 4300 4700
+Wire Wire Line
+	2800 5150 4400 5150
+Wire Wire Line
+	2800 4700 4400 4700
+Text GLabel 8250 4100 2    60   Input ~ 0
+ANALOG_OUT_L
+Text GLabel 8250 4700 2    60   Input ~ 0
+ANALOG_OUT_R
+$EndSCHEMATC

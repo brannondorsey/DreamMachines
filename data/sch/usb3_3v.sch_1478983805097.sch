@@ -1,0 +1,255 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kicadlib
+LIBS:usb3_3v-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "16 sep 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AAT3221 U1
+U 1 1 54182BF8
+P 5650 4050
+F 0 "U1" H 5650 3850 60  0000 C CNN
+F 1 "AAT3221 / MIC5504" H 5650 4450 60  0000 C CNN
+F 2 "~" H 5650 4050 60  0000 C CNN
+F 3 "~" H 5650 4050 60  0000 C CNN
+	1    5650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 54182C9D
+P 6500 4000
+F 0 "C2" H 6500 4100 40  0000 L CNN
+F 1 "1uF" H 6506 3915 40  0000 L CNN
+F 2 "~" H 6538 3850 30  0000 C CNN
+F 3 "~" H 6500 4000 60  0000 C CNN
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 54182CC9
+P 4800 4000
+F 0 "C1" H 4800 4100 40  0000 L CNN
+F 1 "1uF" H 4806 3915 40  0000 L CNN
+F 2 "~" H 4838 3850 30  0000 C CNN
+F 3 "~" H 4800 4000 60  0000 C CNN
+	1    4800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3800 5100 3800
+Wire Wire Line
+	6200 3800 6500 3800
+Wire Wire Line
+	4950 4100 5100 4100
+Connection ~ 4950 3800
+$Comp
+L GND #PWR01
+U 1 1 54182CD8
+P 4950 4300
+F 0 "#PWR01" H 4950 4300 30  0001 C CNN
+F 1 "GND" H 4950 4230 30  0001 C CNN
+F 2 "" H 4950 4300 60  0000 C CNN
+F 3 "" H 4950 4300 60  0000 C CNN
+	1    4950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 54182CFC
+P 6350 4300
+F 0 "#PWR02" H 6350 4300 30  0001 C CNN
+F 1 "GND" H 6350 4230 30  0001 C CNN
+F 2 "" H 6350 4300 60  0000 C CNN
+F 3 "" H 6350 4300 60  0000 C CNN
+	1    6350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4100 6350 4100
+Wire Wire Line
+	6350 4100 6350 4300
+Wire Wire Line
+	6500 4200 6350 4200
+Connection ~ 6350 4200
+Wire Wire Line
+	4800 4200 5000 4200
+Text Label 4950 3550 0    60   ~ 0
++5v
+Wire Wire Line
+	6350 3800 6350 3550
+Connection ~ 6350 3800
+Text Label 6350 3550 0    60   ~ 0
++3.3v
+$Comp
+L USB-MICRO-B J1
+U 1 1 54182DC6
+P 3550 3700
+F 0 "J1" H 3550 3100 60  0000 C CNN
+F 1 "USB-MICRO-B" H 3550 4350 60  0000 C CNN
+F 2 "~" H 3550 3700 60  0000 C CNN
+F 3 "~" H 3550 3700 60  0000 C CNN
+	1    3550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TST P1
+U 1 1 54182DD5
+P 7600 3750
+F 0 "P1" H 7600 4050 40  0000 C CNN
+F 1 "+3.3" H 7600 4000 30  0000 C CNN
+F 2 "~" H 7600 3750 60  0000 C CNN
+F 3 "~" H 7600 3750 60  0000 C CNN
+	1    7600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TST P2
+U 1 1 54182DE2
+P 7800 4000
+F 0 "P2" H 7800 4300 40  0000 C CNN
+F 1 "GND" H 7800 4250 30  0000 C CNN
+F 2 "~" H 7800 4000 60  0000 C CNN
+F 3 "~" H 7800 4000 60  0000 C CNN
+	1    7800 4000
+	1    0    0    -1  
+$EndComp
+Text Label 7500 3850 2    60   ~ 0
++3.3v
+Wire Wire Line
+	7500 3850 7600 3850
+Wire Wire Line
+	7600 3850 7600 3750
+$Comp
+L GND #PWR03
+U 1 1 54182DFA
+P 7800 4100
+F 0 "#PWR03" H 7800 4100 30  0001 C CNN
+F 1 "GND" H 7800 4030 30  0001 C CNN
+F 2 "" H 7800 4100 60  0000 C CNN
+F 3 "" H 7800 4100 60  0000 C CNN
+	1    7800 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4100 7800 4000
+Text Label 3950 3300 0    60   ~ 0
++5v
+Wire Wire Line
+	3950 3300 3850 3300
+NoConn ~ 3850 3750
+NoConn ~ 3850 3600
+NoConn ~ 3850 3450
+Wire Wire Line
+	3850 3900 3950 3900
+Wire Wire Line
+	3950 3900 3950 4150
+Wire Wire Line
+	3950 4050 3850 4050
+$Comp
+L GND #PWR04
+U 1 1 54182E86
+P 3950 4150
+F 0 "#PWR04" H 3950 4150 30  0001 C CNN
+F 1 "GND" H 3950 4080 30  0001 C CNN
+F 2 "" H 3950 4150 60  0000 C CNN
+F 3 "" H 3950 4150 60  0000 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 4050
+Wire Wire Line
+	4950 4300 4950 4200
+Wire Wire Line
+	4950 3550 4950 4100
+Wire Wire Line
+	5100 3950 5000 3950
+Wire Wire Line
+	5000 3950 5000 4200
+Connection ~ 4950 4200
+$Comp
+L LED D1
+U 1 1 541830EB
+P 6250 4800
+F 0 "D1" H 6250 4900 50  0000 C CNN
+F 1 "LED" H 6250 4700 50  0000 C CNN
+F 2 "~" H 6250 4800 60  0000 C CNN
+F 3 "~" H 6250 4800 60  0000 C CNN
+	1    6250 4800
+	1    0    0    -1  
+$EndComp
+Text Label 5950 4800 2    60   ~ 0
++3.3v
+Wire Wire Line
+	5950 4800 6050 4800
+$Comp
+L R R1
+U 1 1 54183114
+P 6800 4800
+F 0 "R1" V 6880 4800 40  0000 C CNN
+F 1 "1K" V 6807 4801 40  0000 C CNN
+F 2 "~" V 6730 4800 30  0000 C CNN
+F 3 "~" H 6800 4800 30  0000 C CNN
+	1    6800 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 4800 6550 4800
+$Comp
+L GND #PWR05
+U 1 1 54183142
+P 7150 4900
+F 0 "#PWR05" H 7150 4900 30  0001 C CNN
+F 1 "GND" H 7150 4830 30  0001 C CNN
+F 2 "" H 7150 4900 60  0000 C CNN
+F 3 "" H 7150 4900 60  0000 C CNN
+	1    7150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4900 7150 4800
+Wire Wire Line
+	7150 4800 7050 4800
+$EndSCHEMATC

@@ -1,0 +1,299 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MCP23017
+LIBS:mcp44x1
+LIBS:drv8825
+LIBS:stepper_wing-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C4
+U 1 1 53ECC24B
+P 4600 2650
+AR Path="/53ECBFB0/53ECC24B" Ref="C4"  Part="1" 
+AR Path="/53ED3880/53ECC24B" Ref="C7"  Part="1" 
+AR Path="/53ED4C50/53ECC24B" Ref="C10"  Part="1" 
+AR Path="/53ED5372/53ECC24B" Ref="C13"  Part="1" 
+F 0 "C10" H 4600 2750 40  0000 L CNN
+F 1 "0.01µF" H 4606 2565 40  0000 L CNN
+F 2 "SMD_Packages:SMD-0603_c" H 4638 2500 30  0001 C CNN
+F 3 "" H 4600 2650 60  0000 C CNN
+	1    4600 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 53ECC252
+P 4050 2750
+AR Path="/53ECBFB0/53ECC252" Ref="C3"  Part="1" 
+AR Path="/53ED3880/53ECC252" Ref="C6"  Part="1" 
+AR Path="/53ED4C50/53ECC252" Ref="C9"  Part="1" 
+AR Path="/53ED5372/53ECC252" Ref="C12"  Part="1" 
+F 0 "C9" H 4050 2850 40  0000 L CNN
+F 1 "0.1µF" H 4056 2665 40  0000 L CNN
+F 2 "SMD_Packages:SMD-0603_c" H 4088 2600 30  0001 C CNN
+F 3 "" H 4050 2750 60  0000 C CNN
+	1    4050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +24V #PWR017
+U 1 1 53ECC259
+P 3800 2200
+AR Path="/53ECBFB0/53ECC259" Ref="#PWR017"  Part="1" 
+AR Path="/53ED3880/53ECC259" Ref="#PWR020"  Part="1" 
+AR Path="/53ED4C50/53ECC259" Ref="#PWR023"  Part="1" 
+AR Path="/53ED5372/53ECC259" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 3800 2150 20  0001 C CNN
+F 1 "+24V" H 3800 2300 30  0000 C CNN
+F 2 "" H 3800 2200 60  0000 C CNN
+F 3 "" H 3800 2200 60  0000 C CNN
+	1    3800 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6550 3400
+NoConn ~ 6550 4150
+NoConn ~ 6550 2800
+$Comp
+L GND #PWR018
+U 1 1 53ECC263
+P 5750 5050
+AR Path="/53ECBFB0/53ECC263" Ref="#PWR018"  Part="1" 
+AR Path="/53ED3880/53ECC263" Ref="#PWR021"  Part="1" 
+AR Path="/53ED4C50/53ECC263" Ref="#PWR024"  Part="1" 
+AR Path="/53ED5372/53ECC263" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 5750 5050 30  0001 C CNN
+F 1 "GND" H 5750 4980 30  0001 C CNN
+F 2 "" H 5750 5050 60  0000 C CNN
+F 3 "" H 5750 5050 60  0000 C CNN
+	1    5750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 53ECC274
+P 6700 4800
+AR Path="/53ECBFB0/53ECC274" Ref="C5"  Part="1" 
+AR Path="/53ED3880/53ECC274" Ref="C8"  Part="1" 
+AR Path="/53ED4C50/53ECC274" Ref="C11"  Part="1" 
+AR Path="/53ED5372/53ECC274" Ref="C14"  Part="1" 
+F 0 "C11" H 6700 4900 40  0000 L CNN
+F 1 "0.47µF" H 6706 4715 40  0000 L CNN
+F 2 "SMD_Packages:SMD-0603_c" H 6738 4650 30  0001 C CNN
+F 3 "" H 6700 4800 60  0000 C CNN
+	1    6700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRV8825 U3
+U 1 1 53ECC27B
+P 5750 3600
+AR Path="/53ECBFB0/53ECC27B" Ref="U3"  Part="1" 
+AR Path="/53ED3880/53ECC27B" Ref="U4"  Part="1" 
+AR Path="/53ED4C50/53ECC27B" Ref="U5"  Part="1" 
+AR Path="/53ED5372/53ECC27B" Ref="U6"  Part="1" 
+F 0 "U5" H 5750 2450 60  0000 C CNN
+F 1 "DRV8825" H 5750 4750 60  0000 C CNN
+F 2 "SMD_Packages:TSSOP-28" H 5750 3400 60  0001 C CNN
+F 3 "" H 5750 3400 60  0000 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 53ECC282
+P 4350 3650
+AR Path="/53ECBFB0/53ECC282" Ref="R4"  Part="1" 
+AR Path="/53ED3880/53ECC282" Ref="R6"  Part="1" 
+AR Path="/53ED4C50/53ECC282" Ref="R8"  Part="1" 
+AR Path="/53ED5372/53ECC282" Ref="R10"  Part="1" 
+F 0 "R8" V 4430 3650 40  0000 C CNN
+F 1 "0.5" V 4357 3651 40  0000 C CNN
+F 2 "SMD_Packages:SMD-0603_r" V 4280 3650 30  0001 C CNN
+F 3 "" H 4350 3650 30  0000 C CNN
+	1    4350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 53ECC289
+P 4050 4100
+AR Path="/53ECBFB0/53ECC289" Ref="R3"  Part="1" 
+AR Path="/53ED3880/53ECC289" Ref="R5"  Part="1" 
+AR Path="/53ED4C50/53ECC289" Ref="R7"  Part="1" 
+AR Path="/53ED5372/53ECC289" Ref="R9"  Part="1" 
+F 0 "R7" V 4130 4100 40  0000 C CNN
+F 1 "0.5" V 4057 4101 40  0000 C CNN
+F 2 "SMD_Packages:SMD-0603_r" V 3980 4100 30  0001 C CNN
+F 3 "" H 4050 4100 30  0000 C CNN
+	1    4050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2650 4800 2650
+Wire Wire Line
+	4400 2650 4400 2800
+Wire Wire Line
+	4400 2800 4900 2800
+Wire Wire Line
+	4900 2950 4050 2950
+Wire Wire Line
+	4050 2250 4050 2550
+Wire Wire Line
+	4050 2250 3800 2250
+Wire Wire Line
+	3800 3100 4900 3100
+Wire Wire Line
+	3800 2200 3800 4150
+Wire Wire Line
+	3800 4150 4900 4150
+Connection ~ 3800 3100
+Connection ~ 3800 2250
+Wire Wire Line
+	4800 4300 4900 4300
+Wire Wire Line
+	4900 4450 4850 4450
+Wire Wire Line
+	4850 4450 4850 4300
+Connection ~ 4850 4300
+Wire Wire Line
+	4900 5000 4900 4600
+Wire Wire Line
+	4050 5000 7100 5000
+Wire Wire Line
+	7000 4450 6550 4450
+Wire Wire Line
+	6550 4300 7000 4300
+Wire Wire Line
+	6550 2650 7100 2650
+Wire Wire Line
+	7100 2650 7100 5000
+Connection ~ 6700 5000
+Wire Wire Line
+	4900 3400 4350 3400
+Wire Wire Line
+	5750 5050 5750 5000
+Connection ~ 5750 5000
+Wire Wire Line
+	4350 3900 4350 5000
+Connection ~ 4900 5000
+Wire Wire Line
+	4050 4350 4050 5000
+Connection ~ 4350 5000
+Wire Wire Line
+	4050 3850 4900 3850
+$Comp
+L CONN_4 STEP1
+U 1 1 53ECC2D8
+P 3050 3600
+AR Path="/53ECBFB0/53ECC2D8" Ref="STEP1"  Part="1" 
+AR Path="/53ED3880/53ECC2D8" Ref="STEP2"  Part="1" 
+AR Path="/53ED4C50/53ECC2D8" Ref="STEP3"  Part="1" 
+AR Path="/53ED5372/53ECC2D8" Ref="STEP4"  Part="1" 
+F 0 "STEP3" V 3000 3600 50  0000 C CNN
+F 1 "STEP" V 3100 3600 50  0000 C CNN
+F 2 "Connect:bornier4" H 3050 3600 60  0001 C CNN
+F 3 "" H 3050 3600 60  0000 C CNN
+	1    3050 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 3250 3500 3250
+Wire Wire Line
+	3500 3250 3500 3550
+Wire Wire Line
+	4900 3700 4050 3700
+Wire Wire Line
+	4050 3700 4050 3650
+Wire Wire Line
+	4050 3650 3400 3650
+Wire Wire Line
+	3500 4000 4900 4000
+Wire Wire Line
+	3500 4000 3500 3750
+Wire Wire Line
+	3500 3750 3400 3750
+Text HLabel 4800 4300 0    60   Input ~ 0
+PW
+Text HLabel 6550 3250 2    60   Input ~ 0
+MODE0
+Text HLabel 6550 3100 2    60   Input ~ 0
+MODE1
+Text HLabel 6550 2950 2    60   Input ~ 0
+MODE2
+Text HLabel 6550 3550 2    60   Input ~ 0
+STEP
+Text HLabel 6550 3700 2    60   Input ~ 0
+EN
+Text HLabel 6550 3850 2    60   Input ~ 0
+DIR
+Text HLabel 6550 4000 2    60   Input ~ 0
+DECAY
+Wire Wire Line
+	6700 4600 6550 4600
+Wire Wire Line
+	7000 4250 7000 4450
+Connection ~ 7000 4300
+$Comp
+L +3.3V #PWR019
+U 1 1 53FD04DC
+P 7000 4250
+AR Path="/53ECBFB0/53FD04DC" Ref="#PWR019"  Part="1" 
+AR Path="/53ED3880/53FD04DC" Ref="#PWR022"  Part="1" 
+AR Path="/53ED4C50/53FD04DC" Ref="#PWR025"  Part="1" 
+AR Path="/53ED5372/53FD04DC" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 7000 4210 30  0001 C CNN
+F 1 "+3.3V" H 7000 4360 30  0000 C CNN
+F 2 "" H 7000 4250 60  0000 C CNN
+F 3 "" H 7000 4250 60  0000 C CNN
+	1    7000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3550 3400 3550
+Wire Wire Line
+	3400 3450 4900 3450
+Wire Wire Line
+	4900 3450 4900 3550
+$EndSCHEMATC

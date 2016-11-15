@@ -1,0 +1,300 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:testlib
+LIBS:Remote-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D2
+U 1 1 55F9F532
+P 6400 2350
+F 0 "D2" H 6400 2450 50  0000 C CNN
+F 1 "IR_LED" H 6400 2250 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6400 2350 60  0001 C CNN
+F 3 "" H 6400 2350 60  0000 C CNN
+	1    6400 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 55F9F5ED
+P 5650 3600
+F 0 "D1" H 5650 3700 50  0000 C CNN
+F 1 "LED" H 5650 3500 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 5650 3600 60  0001 C CNN
+F 3 "" H 5650 3600 60  0000 C CNN
+	1    5650 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 55F9F6F1
+P 5650 3250
+F 0 "R1" V 5730 3250 50  0000 C CNN
+F 1 "1k" V 5650 3250 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5580 3250 30  0001 C CNN
+F 3 "" H 5650 3250 30  0000 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 55F9F764
+P 5800 2850
+F 0 "R2" V 5880 2850 50  0000 C CNN
+F 1 "150" V 5800 2850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5730 2850 30  0001 C CNN
+F 3 "" H 5800 2850 30  0000 C CNN
+	1    5800 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 55F9F7AE
+P 1750 3200
+F 0 "SW1" H 1900 3310 50  0000 C CNN
+F 1 "SW_PUSH" H 1750 3120 50  0000 C CNN
+F 2 "meins:JTP-1130" H 1750 3200 60  0001 C CNN
+F 3 "" H 1750 3200 60  0000 C CNN
+	1    1750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 55F9F847
+P 2700 3200
+F 0 "SW2" H 2850 3310 50  0000 C CNN
+F 1 "SW_PUSH" H 2700 3120 50  0000 C CNN
+F 2 "meins:JTP-1130" H 2700 3200 60  0001 C CNN
+F 3 "" H 2700 3200 60  0000 C CNN
+	1    2700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW3
+U 1 1 55F9F879
+P 3650 3200
+F 0 "SW3" H 3800 3310 50  0000 C CNN
+F 1 "SW_PUSH" H 3650 3120 50  0000 C CNN
+F 2 "meins:JTP-1130" H 3650 3200 60  0001 C CNN
+F 3 "" H 3650 3200 60  0000 C CNN
+	1    3650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L meinTiny85 IC1
+U 1 1 55FA9973
+P 4800 2900
+F 0 "IC1" H 4600 3200 40  0000 C CNN
+F 1 "meinTiny85" H 4950 2600 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-8__300" H 4800 3050 35  0000 C CIN
+F 3 "" H 4800 2800 60  0000 C CNN
+	1    4800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P1
+U 1 1 55FA9E34
+P 850 1350
+F 0 "P1" H 850 1450 50  0000 C CNN
+F 1 "CONN_01X01" V 950 1350 50  0000 C CNN
+F 2 "Connect:1pin" H 850 1350 60  0001 C CNN
+F 3 "" H 850 1350 60  0000 C CNN
+	1    850  1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 55FA9EBB
+P 850 1900
+F 0 "P2" H 850 2000 50  0000 C CNN
+F 1 "CONN_01X01" V 950 1900 50  0000 C CNN
+F 2 "Connect:1pin" H 850 1900 60  0001 C CNN
+F 3 "" H 850 1900 60  0000 C CNN
+	1    850  1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 3050 4350 4250
+Wire Wire Line
+	5250 1650 5250 2750
+Text Notes 1650 3000 0    60   ~ 0
+Reset
+Text Notes 2550 3050 0    60   ~ 0
+Timer
+Text Notes 3550 3000 0    60   ~ 0
+Release
+$Comp
+L +BATT #PWR01
+U 1 1 55FAACCC
+P 1250 1100
+F 0 "#PWR01" H 1250 950 50  0001 C CNN
+F 1 "+BATT" H 1250 1240 50  0000 C CNN
+F 2 "" H 1250 1100 60  0000 C CNN
+F 3 "" H 1250 1100 60  0000 C CNN
+	1    1250 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1350 1650 1350
+Wire Wire Line
+	1250 1350 1250 1100
+Wire Wire Line
+	1050 1900 1650 1900
+Wire Wire Line
+	1200 1900 1200 2100
+$Comp
+L GND #PWR02
+U 1 1 55FAAD18
+P 1200 2100
+F 0 "#PWR02" H 1200 1850 50  0001 C CNN
+F 1 "GND" H 1200 1950 50  0000 C CNN
+F 2 "" H 1200 2100 60  0000 C CNN
+F 3 "" H 1200 2100 60  0000 C CNN
+	1    1200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 55FAAE27
+P 4350 4250
+F 0 "#PWR03" H 4350 4000 50  0001 C CNN
+F 1 "GND" H 4350 4100 50  0000 C CNN
+F 2 "" H 4350 4250 60  0000 C CNN
+F 3 "" H 4350 4250 60  0000 C CNN
+	1    4350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR04
+U 1 1 55FAAE93
+P 5250 1650
+F 0 "#PWR04" H 5250 1500 50  0001 C CNN
+F 1 "+BATT" H 5250 1790 50  0000 C CNN
+F 2 "" H 5250 1650 60  0000 C CNN
+F 3 "" H 5250 1650 60  0000 C CNN
+	1    5250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3200 1450 3800
+Wire Wire Line
+	1450 3800 6400 3800
+Wire Wire Line
+	2400 3200 2400 3800
+Connection ~ 2400 3800
+Wire Wire Line
+	3350 3800 3350 3200
+Connection ~ 3350 3800
+Wire Wire Line
+	3950 3200 3950 2950
+Wire Wire Line
+	3950 2950 4350 2950
+Wire Wire Line
+	3000 3200 3000 2850
+Wire Wire Line
+	3000 2850 4350 2850
+Wire Wire Line
+	2050 3200 2050 2750
+Wire Wire Line
+	2050 2750 4350 2750
+NoConn ~ 5250 2950
+Wire Wire Line
+	5250 3050 5650 3050
+Wire Wire Line
+	5650 3050 5650 3100
+Connection ~ 4350 3800
+Connection ~ 5650 3800
+Wire Wire Line
+	5250 2850 5650 2850
+Wire Wire Line
+	6400 2150 6400 1950
+Wire Wire Line
+	6400 1950 5250 1950
+Connection ~ 5250 1950
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 55FACA3B
+P 1650 1100
+F 0 "#FLG05" H 1650 1195 50  0001 C CNN
+F 1 "PWR_FLAG" H 1650 1280 50  0000 C CNN
+F 2 "" H 1650 1100 60  0000 C CNN
+F 3 "" H 1650 1100 60  0000 C CNN
+	1    1650 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1350 1650 1100
+Connection ~ 1250 1350
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 55FACDB3
+P 1650 2150
+F 0 "#FLG06" H 1650 2245 50  0001 C CNN
+F 1 "PWR_FLAG" H 1650 2330 50  0000 C CNN
+F 2 "" H 1650 2150 60  0000 C CNN
+F 3 "" H 1650 2150 60  0000 C CNN
+	1    1650 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 1900 1650 2150
+Connection ~ 1200 1900
+$Comp
+L Q_NPN_CBE Q1
+U 1 1 55FAD081
+P 6300 2850
+F 0 "Q1" H 6600 2900 50  0000 R CNN
+F 1 "Q_NPN_CBE" H 6900 2800 50  0000 R CNN
+F 2 "Housings_TO-92:TO-92_Inline_Wide" H 6500 2950 29  0001 C CNN
+F 3 "" H 6300 2850 60  0000 C CNN
+	1    6300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2550 6400 2650
+Wire Wire Line
+	6100 2850 5950 2850
+Wire Wire Line
+	6400 3800 6400 3050
+$EndSCHEMATC

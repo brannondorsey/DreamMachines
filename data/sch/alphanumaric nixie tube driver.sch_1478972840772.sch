@@ -1,0 +1,412 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74HC595 U?
+U 1 1 53EE3988
+P 5100 1250
+F 0 "U?" H 5250 1850 70  0000 C CNN
+F 1 "74HC595" H 5100 650 70  0000 C CNN
+F 2 "" H 5100 1250 60  0000 C CNN
+F 3 "" H 5100 1250 60  0000 C CNN
+	1    5100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595 U?
+U 1 1 53EE39F0
+P 5100 3850
+F 0 "U?" H 5250 4450 70  0000 C CNN
+F 1 "74HC595" H 5100 3250 70  0000 C CNN
+F 2 "" H 5100 3850 60  0000 C CNN
+F 3 "" H 5100 3850 60  0000 C CNN
+	1    5100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595 U?
+U 1 1 53EE3B41
+P 5100 2550
+F 0 "U?" H 5250 3150 70  0000 C CNN
+F 1 "74HC595" H 5100 1950 70  0000 C CNN
+F 2 "" H 5100 2550 60  0000 C CNN
+F 3 "" H 5100 2550 60  0000 C CNN
+	1    5100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC595 U?
+U 1 1 53EE3C88
+P 5100 5150
+F 0 "U?" H 5250 5750 70  0000 C CNN
+F 1 "74HC595" H 5100 4550 70  0000 C CNN
+F 2 "" H 5100 5150 60  0000 C CNN
+F 3 "" H 5100 5150 60  0000 C CNN
+	1    5100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ULN2003A U?
+U 1 1 53EE3D47
+P 6950 1200
+F 0 "U?" H 6950 1300 70  0000 C CNN
+F 1 "ULN2003A" H 6950 1100 70  0000 C CNN
+F 2 "" H 6950 1200 60  0000 C CNN
+F 3 "" H 6950 1200 60  0000 C CNN
+	1    6950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L ULN2003A U?
+U 1 1 53EE3DCE
+P 6950 2400
+F 0 "U?" H 6950 2500 70  0000 C CNN
+F 1 "ULN2003A" H 6950 2300 70  0000 C CNN
+F 2 "" H 6950 2400 60  0000 C CNN
+F 3 "" H 6950 2400 60  0000 C CNN
+	1    6950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ULN2003A U?
+U 1 1 53EE3E47
+P 6950 3600
+F 0 "U?" H 6950 3700 70  0000 C CNN
+F 1 "ULN2003A" H 6950 3500 70  0000 C CNN
+F 2 "" H 6950 3600 60  0000 C CNN
+F 3 "" H 6950 3600 60  0000 C CNN
+	1    6950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ULN2003A U?
+U 1 1 53EE3E98
+P 6950 4800
+F 0 "U?" H 6950 4900 70  0000 C CNN
+F 1 "ULN2003A" H 6950 4700 70  0000 C CNN
+F 2 "" H 6950 4800 60  0000 C CNN
+F 3 "" H 6950 4800 60  0000 C CNN
+	1    6950 4800
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7600 800  7700 900 
+Entry Wire Line
+	7600 900  7700 1000
+Entry Wire Line
+	7600 1000 7700 1100
+Entry Wire Line
+	7600 1100 7700 1200
+Entry Wire Line
+	7600 1200 7700 1300
+Entry Wire Line
+	7600 1300 7700 1400
+Entry Wire Line
+	7600 1400 7700 1500
+Entry Wire Line
+	7600 2000 7700 2100
+Entry Wire Line
+	7600 2100 7700 2200
+Entry Wire Line
+	7600 2200 7700 2300
+Entry Wire Line
+	7600 2300 7700 2400
+Entry Wire Line
+	7600 2400 7700 2500
+Entry Wire Line
+	7600 2500 7700 2600
+Entry Wire Line
+	7600 2600 7700 2700
+Text Notes 8150 2650 0    60   ~ 0
+To display #1
+Entry Wire Line
+	7600 3200 7700 3300
+Entry Wire Line
+	7600 3300 7700 3400
+Entry Wire Line
+	7600 3400 7700 3500
+Entry Wire Line
+	7600 3500 7700 3600
+Entry Wire Line
+	7600 3700 7700 3800
+Entry Wire Line
+	7600 3600 7700 3700
+Entry Wire Line
+	7600 3800 7700 3900
+Entry Wire Line
+	7600 4400 7700 4500
+Entry Wire Line
+	7600 4500 7700 4600
+Entry Wire Line
+	7600 4600 7700 4700
+Entry Wire Line
+	7600 4700 7700 4800
+Entry Wire Line
+	7600 4800 7700 4900
+Entry Wire Line
+	7600 4900 7700 5000
+Entry Wire Line
+	7600 5000 7700 5100
+$Comp
+L GND #PWR?
+U 1 1 53EE4D3E
+P 7650 5450
+F 0 "#PWR?" H 7650 5450 30  0001 C CNN
+F 1 "GND" H 7650 5380 30  0001 C CNN
+F 2 "" H 7650 5450 60  0000 C CNN
+F 3 "" H 7650 5450 60  0000 C CNN
+	1    7650 5450
+	1    0    0    -1  
+$EndComp
+Text Notes 8200 5050 0    60   ~ 0
+To display #2
+$Comp
+L GND #PWR?
+U 1 1 53EE5EB0
+P 4350 5500
+F 0 "#PWR?" H 4350 5500 30  0001 C CNN
+F 1 "GND" H 4350 5430 30  0001 C CNN
+F 2 "" H 4350 5500 60  0000 C CNN
+F 3 "" H 4350 5500 60  0000 C CNN
+	1    4350 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 2700
+Wire Wire Line
+	4400 1400 4350 1400
+Connection ~ 4350 4000
+Wire Wire Line
+	4400 2700 4350 2700
+Connection ~ 4350 5300
+Wire Wire Line
+	4350 4000 4400 4000
+Wire Wire Line
+	4350 5300 4400 5300
+Wire Wire Line
+	4400 4500 4400 4700
+Wire Wire Line
+	5800 4500 4400 4500
+Wire Wire Line
+	5800 4300 5800 4500
+Wire Wire Line
+	4400 3250 4400 3400
+Wire Wire Line
+	5800 3250 4400 3250
+Wire Wire Line
+	5800 3000 5800 3250
+Wire Wire Line
+	5800 1700 5800 1900
+Connection ~ 7650 2800
+Connection ~ 7650 4000
+Wire Wire Line
+	7650 2800 7600 2800
+Wire Wire Line
+	7600 1600 7650 1600
+Connection ~ 7650 5200
+Wire Bus Line
+	7700 5100 8900 5100
+Wire Bus Line
+	7700 3300 7700 5100
+Wire Bus Line
+	7700 2700 8800 2700
+Wire Bus Line
+	7700 900  7700 2700
+Wire Wire Line
+	7650 5200 7600 5200
+Wire Wire Line
+	7650 1600 7650 5450
+Wire Wire Line
+	7600 4000 7650 4000
+Wire Wire Line
+	5800 5000 6300 5000
+Wire Wire Line
+	5800 4900 6300 4900
+Wire Wire Line
+	5800 4800 6300 4800
+Wire Wire Line
+	5800 4700 6300 4700
+Wire Wire Line
+	6150 4600 6300 4600
+Wire Wire Line
+	6150 4100 6150 4600
+Wire Wire Line
+	5800 4100 6150 4100
+Wire Wire Line
+	6200 4500 6300 4500
+Wire Wire Line
+	6200 4000 6200 4500
+Wire Wire Line
+	5800 4000 6200 4000
+Wire Wire Line
+	6250 4400 6300 4400
+Wire Wire Line
+	6250 3900 6250 4400
+Wire Wire Line
+	5800 3900 6250 3900
+Wire Wire Line
+	5800 3800 6300 3800
+Wire Wire Line
+	5800 3700 6300 3700
+Wire Wire Line
+	5800 3600 6300 3600
+Wire Wire Line
+	5800 3500 6300 3500
+Wire Wire Line
+	5800 3400 6300 3400
+Wire Wire Line
+	6150 3300 6300 3300
+Wire Wire Line
+	6150 2800 6150 3300
+Wire Wire Line
+	5800 2800 6150 2800
+Wire Wire Line
+	6200 3200 6300 3200
+Wire Wire Line
+	6200 2700 6200 3200
+Wire Wire Line
+	5800 2700 6200 2700
+Wire Wire Line
+	5800 2600 6300 2600
+Wire Wire Line
+	5800 2500 6300 2500
+Wire Wire Line
+	5800 2400 6300 2400
+Wire Wire Line
+	5800 2300 6300 2300
+Wire Wire Line
+	5800 2200 6300 2200
+Wire Wire Line
+	5800 2100 6300 2100
+Wire Wire Line
+	6150 2000 6300 2000
+Wire Wire Line
+	6150 1500 6150 2000
+Wire Wire Line
+	5800 1500 6150 1500
+Wire Wire Line
+	5800 1400 6300 1400
+Wire Wire Line
+	5800 1300 6300 1300
+Wire Wire Line
+	5800 1200 6300 1200
+Wire Wire Line
+	5800 1100 6300 1100
+Wire Wire Line
+	5800 1000 6300 1000
+Wire Wire Line
+	5800 900  6300 900 
+Wire Wire Line
+	5800 800  6300 800 
+Wire Wire Line
+	4350 1400 4350 5500
+Wire Wire Line
+	4400 3900 4200 3900
+Wire Wire Line
+	4200 1300 4200 5200
+Wire Wire Line
+	4200 5200 4400 5200
+Wire Wire Line
+	4200 2600 4400 2600
+Connection ~ 4200 3900
+Wire Wire Line
+	4000 1300 4400 1300
+Connection ~ 4200 2600
+Wire Wire Line
+	4400 1100 4300 1100
+Wire Wire Line
+	4300 650  4300 5000
+Wire Wire Line
+	4300 2400 4400 2400
+Wire Wire Line
+	4300 3700 4400 3700
+Connection ~ 4300 2400
+Wire Wire Line
+	4300 5000 4400 5000
+Connection ~ 4300 3700
+Wire Wire Line
+	4100 4900 4400 4900
+Wire Wire Line
+	4100 900  4100 4900
+Wire Wire Line
+	4100 3600 4400 3600
+Wire Wire Line
+	4100 2300 4400 2300
+Connection ~ 4100 3600
+Wire Wire Line
+	4100 1000 4400 1000
+Connection ~ 4100 2300
+Wire Wire Line
+	5800 1900 4400 1900
+Wire Wire Line
+	4400 1900 4400 2100
+$Comp
+L +5V #PWR?
+U 1 1 53EE6C64
+P 4300 650
+F 0 "#PWR?" H 4300 740 20  0001 C CNN
+F 1 "+5V" H 4300 740 30  0000 C CNN
+F 2 "" H 4300 650 60  0000 C CNN
+F 3 "" H 4300 650 60  0000 C CNN
+	1    4300 650 
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 1100
+Wire Wire Line
+	2700 800  4400 800 
+Wire Wire Line
+	4100 900  2700 900 
+Connection ~ 4100 1000
+Wire Wire Line
+	4000 1300 4000 1000
+Wire Wire Line
+	4000 1000 2700 1000
+Connection ~ 4200 1300
+Text Notes 2750 800  0    59   ~ 0
+data from microcontroller
+Text Notes 2750 900  0    59   ~ 0
+data clock
+Text Notes 2750 1000 0    59   ~ 0
+shift out
+$EndSCHEMATC

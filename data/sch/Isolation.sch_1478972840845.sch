@@ -1,0 +1,337 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BQ76940
+LIBS:BQ-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 36
+Title "BMS (Battery mangment system)"
+Date "2016-05-14"
+Rev "1.0"
+Comp "Mirko Galic aka thegala"
+Comment1 "For i2c and Alert pin"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ISO1540 U2
+U 1 1 5730C5A8
+P 5300 1750
+F 0 "U2" H 5300 1450 60  0000 C CNN
+F 1 "ISO1540" H 5300 2100 60  0000 C CNN
+F 2 "Housings_SOIC:SOIJ-8_5.3x5.3mm_Pitch1.27mm" H 5450 1350 60  0001 C CNN
+F 3 "" H 5300 1450 60  0000 C CNN
+F 4 "296-34871-1-ND" H 5300 1750 60  0001 C CNN "DK"
+	1    5300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5730C5D7
+P 4200 2000
+F 0 "#PWR011" H 4200 1750 50  0001 C CNN
+F 1 "GND" H 4200 1850 50  0000 C CNN
+F 2 "" H 4200 2000 50  0000 C CNN
+F 3 "" H 4200 2000 50  0000 C CNN
+	1    4200 2000
+	1    0    0    -1  
+$EndComp
+Text HLabel 4000 1800 0    60   Input ~ 0
+SCL
+Text HLabel 4000 1650 0    60   Input ~ 0
+SDA
+Text HLabel 4000 1250 0    60   Input ~ 0
+VCC
+$Comp
+L CONN_01X04 P4
+U 1 1 5730C626
+P 7050 1750
+F 0 "P4" H 7050 2000 50  0000 C CNN
+F 1 "CONN_01X04" V 7150 1750 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_PicoBlade_53047-0410" H 7050 1750 50  0001 C CNN
+F 3 "" H 7050 1750 50  0000 C CNN
+F 4 "MX-53047-0410" H 7050 1750 60  0001 C CNN "TME"
+F 5 "MX-51021-0400" H 7050 1750 60  0001 C CNN "TME2"
+	1    7050 1750
+	1    0    0    -1  
+$EndComp
+Text Notes 4900 1150 0    60   ~ 0
+I2C isolation
+$Comp
+L TLP2361 U3
+U 1 1 5730D039
+P 5200 4250
+F 0 "U3" H 5200 4050 60  0000 C CNN
+F 1 "TLP2361" H 5200 4550 60  0000 C CNN
+F 2 "BQ:SO6" H 5100 3950 60  0001 C CNN
+F 3 "" H 5200 4050 60  0000 C CNN
+F 4 "TLP2361(TPLECT-ND" H 5200 4250 60  0001 C CNN "DK"
+	1    5200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5730D10A
+P 4400 4500
+F 0 "#PWR012" H 4400 4250 50  0001 C CNN
+F 1 "GND" H 4400 4350 50  0000 C CNN
+F 2 "" H 4400 4500 50  0000 C CNN
+F 3 "" H 4400 4500 50  0000 C CNN
+	1    4400 4500
+	1    0    0    -1  
+$EndComp
+Text HLabel 4400 4050 0    60   Input ~ 0
+ALERT
+$Comp
+L CONN_01X03 P5
+U 1 1 5730D165
+P 6650 4200
+F 0 "P5" H 6650 4400 50  0000 C CNN
+F 1 "CONN_01X03" V 6750 4200 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_PicoBlade_53047-0310" H 6650 4200 50  0001 C CNN
+F 3 "" H 6650 4200 50  0000 C CNN
+F 4 "MX-53047-0310" H 6650 4200 60  0001 C CNN "TME"
+F 5 "MX-51021-0300" H 6650 4200 60  0001 C CNN "TME2"
+	1    6650 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 4250 3750 0    60   ~ 0
+Alert pin isolation
+$Comp
+L R R13
+U 1 1 572D8B7F
+P 4100 1450
+F 0 "R13" V 4180 1450 50  0000 C CNN
+F 1 "4,7K" V 4100 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4030 1450 50  0001 C CNN
+F 3 "" H 4100 1450 50  0000 C CNN
+F 4 "CRCW08054R70FKEA" V 4100 1450 60  0001 C CNN "TME"
+	1    4100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 572D8C34
+P 4300 1450
+F 0 "R14" V 4380 1450 50  0000 C CNN
+F 1 "4,7K" V 4300 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4230 1450 50  0001 C CNN
+F 3 "" H 4300 1450 50  0000 C CNN
+F 4 "CRCW08054R70FKEA" V 4300 1450 60  0001 C CNN "TME"
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 572CAB5A
+P 4600 1450
+F 0 "C12" H 4625 1550 50  0000 L CNN
+F 1 "10u" H 4625 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4638 1300 50  0001 C CNN
+F 3 "" H 4600 1450 50  0000 C CNN
+F 4 "TAJR106K006R" H 4600 1450 60  0001 C CNN "TME"
+	1    4600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 572CB23C
+P 6500 1450
+F 0 "R16" V 6580 1450 50  0000 C CNN
+F 1 "4,7K" V 6500 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 1450 50  0001 C CNN
+F 3 "" H 6500 1450 50  0000 C CNN
+F 4 "CRCW08054R70FKEA" V 6500 1450 60  0001 C CNN "TME"
+	1    6500 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 572CB242
+P 6300 1450
+F 0 "R15" V 6380 1450 50  0000 C CNN
+F 1 "4,7K" V 6300 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6230 1450 50  0001 C CNN
+F 3 "" H 6300 1450 50  0000 C CNN
+F 4 "CRCW08054R70FKEA" V 6300 1450 60  0001 C CNN "TME"
+	1    6300 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 572CB248
+P 6000 1450
+F 0 "C13" H 6025 1550 50  0000 L CNN
+F 1 "10u" H 6025 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6038 1300 50  0001 C CNN
+F 3 "" H 6000 1450 50  0000 C CNN
+F 4 "TAJR106K006R" H 6000 1450 60  0001 C CNN "TME"
+	1    6000 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 572ED47F
+P 6000 3950
+F 0 "C14" H 6025 4050 50  0000 L CNN
+F 1 "10u" H 6025 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6038 3800 50  0001 C CNN
+F 3 "" H 6000 3950 50  0000 C CNN
+F 4 "TAJR106K006R" H 6000 3950 60  0001 C CNN "TME"
+	1    6000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1950 4850 1950
+Wire Wire Line
+	4200 1950 4200 2000
+Wire Wire Line
+	4000 1650 4850 1650
+Wire Wire Line
+	4000 1800 4850 1800
+Wire Notes Line
+	3600 1000 7300 1000
+Wire Wire Line
+	4650 4350 4400 4350
+Wire Wire Line
+	4400 4350 4400 4500
+Wire Wire Line
+	4650 4050 4400 4050
+Wire Wire Line
+	4000 1250 4850 1250
+Wire Wire Line
+	4100 1300 4100 1250
+Connection ~ 4100 1250
+Wire Wire Line
+	4100 1600 4100 1650
+Connection ~ 4100 1650
+Wire Wire Line
+	4300 1600 4300 1800
+Connection ~ 4300 1800
+Wire Wire Line
+	4300 1250 4300 1300
+Wire Wire Line
+	4850 1250 4850 1500
+Connection ~ 4300 1250
+Wire Wire Line
+	4600 1250 4600 1300
+Connection ~ 4600 1250
+Wire Wire Line
+	4600 1600 4600 1950
+Connection ~ 4600 1950
+Wire Wire Line
+	5750 1950 6650 1950
+Wire Wire Line
+	5750 1650 6600 1650
+Wire Wire Line
+	5750 1800 6850 1800
+Wire Wire Line
+	5750 1250 6650 1250
+Wire Wire Line
+	6500 1300 6500 1250
+Connection ~ 6500 1250
+Wire Wire Line
+	6500 1600 6500 1650
+Connection ~ 6500 1650
+Wire Wire Line
+	6300 1600 6300 1800
+Connection ~ 6300 1800
+Wire Wire Line
+	6300 1250 6300 1300
+Connection ~ 6300 1250
+Wire Wire Line
+	6000 1250 6000 1300
+Connection ~ 6000 1250
+Wire Wire Line
+	6000 1600 6000 1950
+Connection ~ 6000 1950
+Wire Wire Line
+	5750 1250 5750 1500
+Wire Wire Line
+	6650 1950 6650 1900
+Wire Wire Line
+	6650 1900 6850 1900
+Wire Wire Line
+	6600 1650 6600 1700
+Wire Wire Line
+	6600 1700 6850 1700
+Wire Wire Line
+	6650 1600 6850 1600
+Wire Wire Line
+	6650 1250 6650 1600
+Wire Notes Line
+	7300 1000 7300 2250
+Wire Notes Line
+	7300 2250 3600 2250
+Wire Notes Line
+	3600 2250 3600 1000
+Wire Wire Line
+	5750 4200 6450 4200
+Wire Wire Line
+	5750 4050 5750 3700
+Wire Wire Line
+	5750 3700 6300 3700
+Wire Wire Line
+	6000 3800 6000 3700
+Connection ~ 6000 3700
+Wire Wire Line
+	5750 4350 6300 4350
+Wire Wire Line
+	6000 4100 6000 4350
+Connection ~ 6000 4350
+Wire Wire Line
+	6300 4350 6300 4300
+Wire Wire Line
+	6300 4300 6450 4300
+Wire Wire Line
+	6450 4100 6300 4100
+Wire Wire Line
+	6300 4100 6300 3700
+Wire Notes Line
+	4050 3600 4050 4750
+Wire Notes Line
+	4050 4750 6900 4750
+Wire Notes Line
+	6900 4750 6900 3600
+Wire Notes Line
+	6900 3600 4050 3600
+Wire Wire Line
+	6400 1950 6400 4300
+Connection ~ 6400 4300
+Connection ~ 6400 1950
+Wire Wire Line
+	6150 1250 6150 3700
+Connection ~ 6150 3700
+Connection ~ 6150 1250
+$EndSCHEMATC

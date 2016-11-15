@@ -1,0 +1,174 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom
+LIBS:Wireless RGB Pixel-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-P IC?
+U 1 1 577FF051
+P 5600 2900
+F 0 "IC?" H 4450 3300 50  0000 C CNN
+F 1 "ATTINY85-P" H 6600 2500 50  0000 C CNN
+F 2 "DIP8" H 6600 2900 50  0000 C CIN
+F 3 "" H 5600 2900 50  0000 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 577FF0D9
+P 6650 4050
+F 0 "C?" H 6675 4150 50  0000 L CNN
+F 1 "C" H 6675 3950 50  0000 L CNN
+F 2 "" H 6688 3900 50  0000 C CNN
+F 3 "" H 6650 4050 50  0000 C CNN
+	1    6650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 577FF120
+P 6100 2000
+F 0 "C?" H 6125 2100 50  0000 L CNN
+F 1 "CP" H 6125 1900 50  0000 L CNN
+F 2 "" H 6138 1850 50  0000 C CNN
+F 3 "" H 6100 2000 50  0000 C CNN
+	1    6100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 577FF166
+P 6650 3650
+F 0 "R?" V 6730 3650 50  0000 C CNN
+F 1 "R" V 6650 3650 50  0000 C CNN
+F 2 "" V 6580 3650 50  0000 C CNN
+F 3 "" H 6650 3650 50  0000 C CNN
+	1    6650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D?
+U 1 1 577FF1AF
+P 5550 3500
+F 0 "D?" H 5550 3600 50  0000 C CNN
+F 1 "D" H 5550 3400 50  0000 C CNN
+F 2 "" H 5550 3500 50  0000 C CNN
+F 3 "" H 5550 3500 50  0000 C CNN
+	1    5550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812B U?
+U 1 1 577FF435
+P 5550 5000
+F 0 "U?" H 5530 5240 60  0000 C CNN
+F 1 "WS2812B" H 5550 4720 60  0000 C CNN
+F 2 "" H 5430 5040 60  0000 C CNN
+F 3 "" H 5430 5040 60  0000 C CNN
+	1    5550 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4300 6650 4300
+Wire Wire Line
+	5950 4200 6400 4200
+Wire Wire Line
+	6400 4200 6400 3400
+Wire Wire Line
+	6400 3400 6650 3400
+Wire Wire Line
+	6650 4300 6650 4200
+Wire Wire Line
+	6650 3400 6650 3500
+Wire Wire Line
+	6650 3800 6650 3900
+Wire Wire Line
+	5950 4100 6400 4100
+Connection ~ 6400 4100
+Wire Wire Line
+	6200 4000 5950 4000
+Wire Wire Line
+	6200 3500 6200 4000
+Wire Wire Line
+	6200 3850 6650 3850
+Connection ~ 6650 3850
+Wire Wire Line
+	6200 3500 5700 3500
+Connection ~ 6200 3850
+$Comp
+L NRF24L01+ U?
+U 1 1 578038B0
+P 5950 4300
+F 0 "U?" H 6380 4450 60  0000 C CNN
+F 1 "NRF24L01+" H 6390 3850 60  0000 C CNN
+F 2 "" H 5950 4310 60  0000 C CNN
+F 3 "" H 5950 4310 60  0000 C CNN
+	1    5950 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 3500 4800 3500
+Wire Wire Line
+	4800 3500 4800 4300
+Wire Wire Line
+	3950 4300 5050 4300
+Wire Wire Line
+	3950 4300 3950 2850
+Wire Wire Line
+	3950 2850 4250 2850
+Connection ~ 4800 4300
+Wire Wire Line
+	4250 2750 3850 2750
+Wire Wire Line
+	3850 2750 3850 4200
+Wire Wire Line
+	3850 4200 5050 4200
+Wire Wire Line
+	4250 2650 3750 2650
+Wire Wire Line
+	3750 2650 3750 4100
+Wire Wire Line
+	3750 4100 5050 4100
+$EndSCHEMATC

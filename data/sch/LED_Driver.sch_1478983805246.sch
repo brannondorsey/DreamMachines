@@ -1,0 +1,212 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BenchBudEE
+LIBS:arduino_shieldsNCL
+LIBS:BenchBudEE-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 9
+Title ""
+Date "7 feb 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2800 3750 0    60   Input ~ 0
+LED_EN_PWM
+Text HLabel 9600 2150 2    60   Output ~ 0
+LED_STRING+
+Text HLabel 9700 3700 2    60   Output ~ 0
+LED_STRING-
+$Comp
+L AP5726 U?
+U 1 1 52F3B239
+P 4450 3750
+F 0 "U?" H 4600 3150 60  0000 C CNN
+F 1 "AP5726" H 4050 4450 60  0000 C CNN
+F 2 "" H 4800 3550 60  0000 C CNN
+F 3 "" H 4800 3550 60  0000 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3750 3750 3750
+$Comp
+L +5V #PWR?
+U 1 1 52F3B93A
+P 2650 2100
+F 0 "#PWR?" H 2650 2190 20  0001 C CNN
+F 1 "+5V" H 2650 2190 30  0000 C CNN
+F 2 "" H 2650 2100 60  0000 C CNN
+F 3 "" H 2650 2100 60  0000 C CNN
+	1    2650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 52F3B949
+P 2650 2900
+F 0 "#PWR?" H 2650 2900 30  0001 C CNN
+F 1 "GND" H 2650 2830 30  0001 C CNN
+F 2 "" H 2650 2900 60  0000 C CNN
+F 3 "" H 2650 2900 60  0000 C CNN
+	1    2650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 52F3B956
+P 4450 4850
+F 0 "#PWR?" H 4450 4850 30  0001 C CNN
+F 1 "GND" H 4450 4780 30  0001 C CNN
+F 2 "" H 4450 4850 60  0000 C CNN
+F 3 "" H 4450 4850 60  0000 C CNN
+	1    4450 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4500 4450 4850
+$Comp
+L C C?
+U 1 1 52F3B960
+P 2650 2400
+F 0 "C?" H 2650 2500 40  0000 L CNN
+F 1 "C" H 2656 2315 40  0000 L CNN
+F 2 "~" H 2688 2250 30  0000 C CNN
+F 3 "~" H 2650 2400 60  0000 C CNN
+	1    2650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2100 2650 2200
+Wire Wire Line
+	4350 2150 4350 3100
+Wire Wire Line
+	2650 2600 2650 2900
+Wire Wire Line
+	2650 2150 4500 2150
+Connection ~ 2650 2150
+Connection ~ 4350 2150
+$Comp
+L INDUCTOR L?
+U 1 1 52F3B99A
+P 4800 2150
+F 0 "L?" V 4750 2150 40  0000 C CNN
+F 1 "INDUCTOR" V 4900 2150 40  0000 C CNN
+F 2 "~" H 4800 2150 60  0000 C CNN
+F 3 "~" H 4800 2150 60  0000 C CNN
+	1    4800 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 2150 5100 2850
+Wire Wire Line
+	5100 2850 4650 2850
+Wire Wire Line
+	4650 2850 4650 3100
+$Comp
+L DIODESCH D?
+U 1 1 52F3B9D2
+P 5550 2150
+F 0 "D?" H 5550 2250 40  0000 C CNN
+F 1 "DIODESCH" H 5550 2050 40  0000 C CNN
+F 2 "~" H 5550 2150 60  0000 C CNN
+F 3 "~" H 5550 2150 60  0000 C CNN
+	1    5550 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2150 5350 2150
+Wire Wire Line
+	5750 2150 7900 2150
+$Comp
+L C C?
+U 1 1 52F3BA04
+P 7900 2800
+F 0 "C?" H 7900 2900 40  0000 L CNN
+F 1 "C" H 7906 2715 40  0000 L CNN
+F 2 "~" H 7938 2650 30  0000 C CNN
+F 3 "~" H 7900 2800 60  0000 C CNN
+	1    7900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2150 7900 2600
+$Comp
+L GND #PWR?
+U 1 1 52F3BA22
+P 7900 3550
+F 0 "#PWR?" H 7900 3550 30  0001 C CNN
+F 1 "GND" H 7900 3480 30  0001 C CNN
+F 2 "" H 7900 3550 60  0000 C CNN
+F 3 "" H 7900 3550 60  0000 C CNN
+	1    7900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2150 9600 2150
+Wire Wire Line
+	7900 3050 7900 3550
+Wire Wire Line
+	9550 3750 5400 3750
+Wire Wire Line
+	5400 3750 5400 4100
+$Comp
+L R R?
+U 1 1 52F3BA8C
+P 5400 4350
+F 0 "R?" V 5480 4350 40  0000 C CNN
+F 1 "R" V 5407 4351 40  0000 C CNN
+F 2 "~" V 5330 4350 30  0000 C CNN
+F 3 "~" H 5400 4350 30  0000 C CNN
+	1    5400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3950 5400 3950
+Connection ~ 5400 3950
+Wire Wire Line
+	5400 4650 5400 4750
+Wire Wire Line
+	5400 4750 4450 4750
+Connection ~ 4450 4750
+Wire Wire Line
+	5100 3650 5950 3650
+Wire Wire Line
+	5950 3650 5950 2150
+Connection ~ 5950 2150
+$EndSCHEMATC

@@ -1,0 +1,293 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7350 7550 0    118  ~ 0
+Pololu Power v5
+$Comp
+L CONN_02X10 P1
+U 1 1 56443A8C
+P 1650 3750
+F 0 "P1" H 1650 4300 50  0000 C CNN
+F 1 "CONN_02X10" V 1650 3750 50  0000 C CNN
+F 2 "hirose-df40:DF40-1.5mm-20pin-Receptacle" H 1650 2550 60  0001 C CNN
+F 3 "" H 1650 2550 60  0000 C CNN
+	1    1650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR01
+U 1 1 56443ECC
+P 2050 4300
+F 0 "#PWR01" H 2050 4100 50  0001 C CNN
+F 1 "GNDPWR" H 2050 4170 50  0000 C CNN
+F 2 "" H 2050 4250 60  0000 C CNN
+F 3 "" H 2050 4250 60  0000 C CNN
+	1    2050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 56443FAD
+P 1200 3100
+F 0 "#PWR02" H 1200 2950 50  0001 C CNN
+F 1 "+5V" H 1200 3240 50  0000 C CNN
+F 2 "" H 1200 3100 60  0000 C CNN
+F 3 "" H 1200 3100 60  0000 C CNN
+	1    1200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 56443FEA
+P 900 3150
+F 0 "#FLG04" H 900 3245 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 3330 50  0000 C CNN
+F 2 "" H 900 3150 60  0000 C CNN
+F 3 "" H 900 3150 60  0000 C CNN
+	1    900  3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P2
+U 1 1 56443F27
+P 4000 3000
+F 0 "P2" H 4000 3300 50  0000 C CNN
+F 1 "CONN_01X05" V 4100 3000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 4000 3000 60  0001 C CNN
+F 3 "" H 4000 3000 60  0000 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR06
+U 1 1 56444055
+P 2950 3300
+F 0 "#PWR06" H 2950 3100 50  0001 C CNN
+F 1 "GNDPWR" H 2950 3170 50  0000 C CNN
+F 2 "" H 2950 3250 60  0000 C CNN
+F 3 "" H 2950 3250 60  0000 C CNN
+	1    2950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR07
+U 1 1 56444072
+P 3400 3000
+F 0 "#PWR07" H 3400 2850 50  0001 C CNN
+F 1 "+BATT" H 3400 3140 50  0000 C CNN
+F 2 "" H 3400 3000 60  0000 C CNN
+F 3 "" H 3400 3000 60  0000 C CNN
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 5644412C
+P 3500 3300
+F 0 "#PWR09" H 3500 3150 50  0001 C CNN
+F 1 "+5V" H 3500 3440 50  0000 C CNN
+F 2 "" H 3500 3300 60  0000 C CNN
+F 3 "" H 3500 3300 60  0000 C CNN
+	1    3500 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 2800
+NoConn ~ 3800 2900
+Wire Wire Line
+	1900 3100 1900 4200
+Connection ~ 1900 3400
+Connection ~ 1900 3500
+Connection ~ 1900 3600
+Connection ~ 1900 3700
+Connection ~ 1900 3800
+Connection ~ 1900 3900
+Connection ~ 1900 4000
+Connection ~ 1900 4100
+Wire Wire Line
+	1900 4200 2050 4200
+Wire Wire Line
+	2050 4200 2050 4300
+Connection ~ 1400 4000
+Connection ~ 1400 3900
+Connection ~ 1400 3800
+Connection ~ 1400 3700
+Connection ~ 1400 3600
+Connection ~ 1400 3500
+Connection ~ 1400 3400
+Wire Wire Line
+	1200 3100 1200 3400
+Wire Wire Line
+	900  3150 900  3300
+Connection ~ 1200 3300
+Wire Wire Line
+	3500 3300 3800 3300
+Wire Wire Line
+	3800 3300 3800 3200
+Wire Wire Line
+	3800 3000 3400 3000
+Wire Wire Line
+	3800 3100 2950 3100
+Wire Wire Line
+	2950 3100 2950 3300
+$Comp
+L +BATT #PWR010
+U 1 1 56929CC6
+P 1150 3900
+F 0 "#PWR010" H 1150 3750 50  0001 C CNN
+F 1 "+BATT" H 1150 4040 50  0000 C CNN
+F 2 "" H 1150 3900 50  0000 C CNN
+F 3 "" H 1150 3900 50  0000 C CNN
+	1    1150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 56929CE3
+P 1150 4050
+F 0 "R1" H 1180 4070 50  0000 L CNN
+F 1 "100k" H 1180 4010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1150 4050 50  0001 C CNN
+F 3 "" H 1150 4050 50  0000 C CNN
+	1    1150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 56929D04
+P 1150 4350
+F 0 "R2" H 1180 4370 50  0000 L CNN
+F 1 "10k" H 1180 4310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1150 4350 50  0001 C CNN
+F 3 "" H 1150 4350 50  0000 C CNN
+	1    1150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3900 1150 3950
+Wire Wire Line
+	1150 4150 1150 4250
+Wire Wire Line
+	1150 4200 1400 4200
+Connection ~ 1150 4200
+$Comp
+L GNDPWR #PWR011
+U 1 1 56929DA5
+P 1150 4550
+F 0 "#PWR011" H 1150 4350 50  0001 C CNN
+F 1 "GNDPWR" H 1150 4420 50  0000 C CNN
+F 2 "" H 1150 4500 50  0000 C CNN
+F 3 "" H 1150 4500 50  0000 C CNN
+	1    1150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4550 1150 4450
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 56AC6DF9
+P 4650 4050
+F 0 "#FLG012" H 4650 4145 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 4230 50  0000 C CNN
+F 2 "" H 4650 4050 60  0000 C CNN
+F 3 "" H 4650 4050 60  0000 C CNN
+	1    4650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 56AC6DFF
+P 4850 4150
+F 0 "P4" H 4850 4300 50  0000 C CNN
+F 1 "CONN_01X02" V 4950 4150 50  0000 C CNN
+F 2 "pin-headers:16awg_Pin_Header_Straight_1x02" H 4850 4150 60  0001 C CNN
+F 3 "" H 4850 4150 60  0000 C CNN
+	1    4850 4150
+	1    0    0    1   
+$EndComp
+$Comp
+L GNDPWR #PWR013
+U 1 1 56AC6E05
+P 4450 4400
+F 0 "#PWR013" H 4450 4200 50  0001 C CNN
+F 1 "GNDPWR" H 4450 4270 50  0000 C CNN
+F 2 "" H 4450 4350 60  0000 C CNN
+F 3 "" H 4450 4350 60  0000 C CNN
+	1    4450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR014
+U 1 1 56AC6E0B
+P 4450 3900
+F 0 "#PWR014" H 4450 3750 50  0001 C CNN
+F 1 "+BATT" H 4450 4040 50  0000 C CNN
+F 2 "" H 4450 3900 60  0000 C CNN
+F 3 "" H 4450 3900 60  0000 C CNN
+	1    4450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3900 4450 4100
+Wire Wire Line
+	4450 4100 4650 4100
+Wire Wire Line
+	4650 4200 4450 4200
+Wire Wire Line
+	4450 4200 4450 4400
+Wire Wire Line
+	4650 4100 4650 4050
+Wire Wire Line
+	1400 3300 1400 3100
+Wire Wire Line
+	1400 3100 1900 3100
+Connection ~ 1900 3300
+Wire Wire Line
+	900  3300 1200 3300
+Wire Wire Line
+	1200 3400 1400 3400
+Wire Wire Line
+	1400 3400 1400 4100
+Text Notes 7050 7050 0    60   ~ 0
+Copyright 2016 Chickadee Tech LLC\n\nThis work is licensed under the Creative Commons Attribution 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/\nor send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.\n
+$EndSCHEMATC

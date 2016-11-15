@@ -1,0 +1,570 @@
+EESchema Schematic File Version 2  date Mo 14 Jan 2013 14:06:04 CET
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tinkerforge
+LIBS:wifi-extension-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Wifi Extension"
+Date "14 jan 2013"
+Rev "1.0"
+Comp "Tinkerforge GmbH"
+Comment1 "Licensed under CERN OHL v.1.1"
+Comment2 "Copyright (©) 2012, B.Nordmeyer <bastian@tinkerforge.com>"
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 1850 1850
+Wire Wire Line
+	1850 1750 1600 1750
+Wire Wire Line
+	9950 5900 9950 5850
+Wire Wire Line
+	6600 2750 6500 2750
+Wire Wire Line
+	6600 2950 6500 2950
+Wire Wire Line
+	6500 3150 6600 3150
+Wire Wire Line
+	5650 6850 5650 6750
+Connection ~ 5650 6250
+Wire Wire Line
+	5350 6350 5350 6250
+Wire Wire Line
+	5350 6250 6550 6250
+Wire Wire Line
+	4450 2650 3650 2650
+Wire Wire Line
+	3650 2250 4050 2250
+Wire Wire Line
+	1600 2350 1850 2350
+Wire Wire Line
+	1600 2150 1850 2150
+Wire Wire Line
+	1850 1650 1850 1500
+Wire Wire Line
+	1850 1500 1800 1500
+Wire Wire Line
+	1700 1450 1700 2550
+Wire Wire Line
+	1700 2550 1850 2550
+Wire Wire Line
+	3650 1750 3950 1750
+Wire Wire Line
+	3800 1600 3800 1550
+Wire Wire Line
+	3800 1550 3650 1550
+Wire Wire Line
+	3650 1550 3650 1650
+Wire Wire Line
+	3650 3450 3650 3350
+Wire Wire Line
+	6550 6750 6550 6850
+Wire Wire Line
+	5950 6750 5950 6850
+Wire Wire Line
+	6250 6750 6250 6850
+Wire Wire Line
+	6250 6350 6250 6100
+Wire Wire Line
+	10350 5450 10350 5400
+Wire Wire Line
+	10350 6450 10350 6400
+Wire Wire Line
+	3450 6950 3550 6950
+Wire Wire Line
+	3450 6950 3450 6750
+Wire Wire Line
+	3450 6750 3550 6750
+Wire Wire Line
+	3550 6950 3550 7150
+Wire Wire Line
+	4350 6850 4700 6850
+Wire Wire Line
+	4550 6150 4550 6100
+Wire Wire Line
+	4550 6100 4350 6100
+Wire Wire Line
+	4550 6600 4550 6550
+Wire Wire Line
+	4350 6100 4350 6650
+Wire Wire Line
+	4350 6950 4700 6950
+Wire Wire Line
+	3550 6750 3550 6650
+Wire Wire Line
+	3150 6850 3550 6850
+Connection ~ 3550 6950
+Connection ~ 3550 6750
+Wire Wire Line
+	10350 5900 10350 5850
+Connection ~ 6250 6250
+Wire Wire Line
+	5950 6250 5950 6350
+Wire Wire Line
+	6550 6250 6550 6350
+Wire Wire Line
+	3950 1750 3950 3250
+Wire Wire Line
+	3950 3250 3650 3250
+Connection ~ 3950 1750
+Wire Wire Line
+	1800 1500 1800 1550
+Wire Wire Line
+	1850 2050 1600 2050
+Wire Wire Line
+	1850 2250 1600 2250
+Wire Wire Line
+	3650 1950 4050 1950
+Wire Wire Line
+	4050 2350 3650 2350
+Wire Wire Line
+	4350 3200 4350 3150
+Connection ~ 4350 2650
+Wire Wire Line
+	7000 3900 7000 4000
+Wire Wire Line
+	5650 6250 5650 6350
+Connection ~ 5950 6250
+Wire Wire Line
+	5350 6850 5350 6750
+Wire Wire Line
+	6600 3050 6500 3050
+Wire Wire Line
+	6500 2850 6600 2850
+Wire Wire Line
+	9950 5450 9950 5400
+Wire Wire Line
+	9950 6450 9950 6400
+Text GLabel 1600 1750 0    60   Output ~ 0
+GPIO28
+Text GLabel 9950 6450 3    60   Input ~ 0
+LED
+$Comp
+L 3V3 #PWR19
+U 1 1 50228F45
+P 9950 5400
+F 0 "#PWR19" H 9950 5500 40  0001 C CNN
+F 1 "3V3" H 9950 5525 40  0000 C CNN
+	1    9950 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 50228F3A
+P 9950 6150
+F 0 "R2" V 10030 6150 50  0000 C CNN
+F 1 "1k" V 9950 6150 50  0000 C CNN
+F 2 "0603" H 9950 6150 60  0001 C CNN
+	1    9950 6150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 2050
+NoConn ~ 3650 2150
+$Comp
+L CONN_5 P1
+U 1 1 50228ED4
+P 7000 2950
+F 0 "P1" V 6950 2950 50  0000 C CNN
+F 1 "CONN_5" V 7050 2950 50  0000 C CNN
+F 2 "PIN_ARRAY_5X1" H 7000 2950 60  0001 C CNN
+	1    7000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 50177BCF
+P 5350 6850
+F 0 "#PWR10" H 5350 6850 30  0001 C CNN
+F 1 "GND" H 5350 6780 30  0001 C CNN
+	1    5350 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR11
+U 1 1 50177BCD
+P 5650 6850
+F 0 "#PWR11" H 5650 6850 30  0001 C CNN
+F 1 "GND" H 5650 6780 30  0001 C CNN
+	1    5650 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 50177BCB
+P 5350 6550
+F 0 "C2" H 5250 6450 50  0000 L CNN
+F 1 "100nF" V 5300 6600 50  0000 L CNN
+F 2 "0603" H 5350 6550 60  0001 C CNN
+	1    5350 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C3
+U 1 1 50177BC8
+P 5650 6550
+F 0 "C3" H 5550 6450 50  0000 L CNN
+F 1 "100nF" V 5600 6600 50  0000 L CNN
+F 2 "0603" H 5650 6550 60  0001 C CNN
+	1    5650 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR18
+U 1 1 50177989
+P 7000 4000
+F 0 "#PWR18" H 7000 4000 30  0001 C CNN
+F 1 "GND" H 7000 3930 30  0001 C CNN
+	1    7000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P2
+U 1 1 50177977
+P 7000 3750
+F 0 "P2" H 7080 3750 40  0000 L CNN
+F 1 "SMA-pigtail" H 7000 3805 30  0001 C CNN
+F 2 "SMA-pigtail" H 7000 3750 60  0001 C CNN
+	1    7000 3750
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1850 2650
+NoConn ~ 1850 2450
+NoConn ~ 1850 2850
+$Comp
+L 3V3 #PWR15
+U 1 1 50166AD3
+P 6500 2750
+F 0 "#PWR15" H 6500 2850 40  0001 C CNN
+F 1 "3V3" H 6500 2875 40  0000 C CNN
+	1    6500 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 50166ACE
+P 6500 3150
+F 0 "#PWR16" H 6500 3150 30  0001 C CNN
+F 1 "GND" H 6500 3080 30  0001 C CNN
+	1    6500 3150
+	0    1    -1   0   
+$EndComp
+Text GLabel 6500 3050 0    60   Input ~ 0
+PRG/RUN
+$Comp
+L GND #PWR7
+U 1 1 5016699A
+P 4350 3200
+F 0 "#PWR7" H 4350 3200 30  0001 C CNN
+F 1 "GND" H 4350 3130 30  0001 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 50166996
+P 4350 2900
+F 0 "R1" V 4430 2900 50  0000 C CNN
+F 1 "1k" V 4350 2900 50  0000 C CNN
+F 2 "0603" H 4350 2900 60  0001 C CNN
+	1    4350 2900
+	-1   0    0    1   
+$EndComp
+Text GLabel 6500 2950 0    60   Input ~ 0
+RXD
+Text GLabel 6500 2850 0    60   Output ~ 0
+TXD
+NoConn ~ 3650 2750
+NoConn ~ 3650 2450
+NoConn ~ 3650 2550
+NoConn ~ 3650 3050
+NoConn ~ 3650 3150
+NoConn ~ 1850 2750
+NoConn ~ 3650 2950
+NoConn ~ 3650 2850
+NoConn ~ 1850 3350
+NoConn ~ 1850 3250
+NoConn ~ 1850 3150
+NoConn ~ 1850 3050
+NoConn ~ 1850 2950
+NoConn ~ 1850 1950
+$Comp
+L GND #PWR2
+U 1 1 5016665C
+P 1800 1550
+F 0 "#PWR2" H 1800 1550 30  0001 C CNN
+F 1 "GND" H 1800 1480 30  0001 C CNN
+	1    1800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR1
+U 1 1 5016664A
+P 1700 1450
+F 0 "#PWR1" H 1700 1550 40  0001 C CNN
+F 1 "3V3" H 1700 1575 40  0000 C CNN
+	1    1700 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 1850
+$Comp
+L GS1011MXXS U1
+U 1 1 501665EF
+P 2750 2500
+F 0 "U1" H 2050 3550 60  0000 C CNN
+F 1 "GS1011MXXS" H 3200 3550 60  0000 C CNN
+F 2 "GS1011MXXS" H 2750 2500 60  0001 C CNN
+	1    2750 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 2650 2    60   Input ~ 0
+PRG/RUN
+Text GLabel 4050 1950 2    60   Input ~ 0
+nRESET
+$Comp
+L GND #PWR4
+U 1 1 50057D32
+P 3650 3450
+F 0 "#PWR4" H 3650 3450 30  0001 C CNN
+F 1 "GND" H 3650 3380 30  0001 C CNN
+	1    3650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR6
+U 1 1 50057D11
+P 3950 1750
+F 0 "#PWR6" H 3950 1850 40  0001 C CNN
+F 1 "3V3" H 3950 1875 40  0000 C CNN
+	1    3950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 50057CDF
+P 3800 1600
+F 0 "#PWR5" H 3800 1600 30  0001 C CNN
+F 1 "GND" H 3800 1530 30  0001 C CNN
+	1    3800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR17
+U 1 1 4FBB69EB
+P 6550 6850
+F 0 "#PWR17" H 6550 6850 30  0001 C CNN
+F 1 "GND" H 6550 6780 30  0001 C CNN
+	1    6550 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C6
+U 1 1 4FBB69E8
+P 6550 6550
+F 0 "C6" H 6600 6650 50  0000 L CNN
+F 1 "100µF" V 6700 6300 50  0000 L CNN
+F 2 "3528-21" H 6550 6550 60  0001 C CNN
+	1    6550 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR13
+U 1 1 4FBA6340
+P 6250 6100
+F 0 "#PWR13" H 6250 6200 40  0001 C CNN
+F 1 "3V3" H 6250 6225 40  0000 C CNN
+	1    6250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 4FBA6113
+P 9950 5650
+F 0 "D1" H 9950 5750 50  0000 C CNN
+F 1 "green" H 9950 5550 50  0000 C CNN
+F 2 "D0603" H 9950 5650 60  0001 C CNN
+	1    9950 5650
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR12
+U 1 1 4F9D11AC
+P 5950 6850
+F 0 "#PWR12" H 5950 6850 30  0001 C CNN
+F 1 "GND" H 5950 6780 30  0001 C CNN
+	1    5950 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 4F9D119C
+P 5950 6550
+F 0 "C4" H 5850 6450 50  0000 L CNN
+F 1 "100nF" V 5900 6600 50  0000 L CNN
+F 2 "0603" H 5950 6550 60  0001 C CNN
+	1    5950 6550
+	-1   0    0    1   
+$EndComp
+Text GLabel 4050 2350 2    60   Input ~ 0
+TXD
+Text GLabel 4050 2250 2    60   Output ~ 0
+RXD
+Text GLabel 1600 2250 0    60   Input ~ 0
+SCK
+Text GLabel 1600 2050 0    60   Input ~ 0
+MOSI
+Text GLabel 1600 2350 0    60   Output ~ 0
+MISO
+Text GLabel 1600 2150 0    60   Input ~ 0
+SELECT
+$Comp
+L GND #PWR14
+U 1 1 4F9A544B
+P 6250 6850
+F 0 "#PWR14" H 6250 6850 30  0001 C CNN
+F 1 "GND" H 6250 6780 30  0001 C CNN
+	1    6250 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 4F9A5433
+P 6250 6550
+F 0 "C5" H 6150 6450 50  0000 L CNN
+F 1 "10µF" V 6200 6600 50  0000 L CNN
+F 2 "0805" H 6250 6550 60  0001 C CNN
+	1    6250 6550
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 550  6700 950  950 
+U 4CC04398
+F0 "Stack" 60
+F1 "stack.sch" 60
+$EndSheet
+Text Notes 4600 7200 0    40   ~ 0
+Copyright Tinkerforge GmbH 2011.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions\n
+$Comp
+L 3V3 #PWR20
+U 1 1 4E0F3D07
+P 10350 5400
+F 0 "#PWR20" H 10350 5500 40  0001 C CNN
+F 1 "3V3" H 10350 5525 40  0000 C CNN
+	1    10350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 4E0F3CFF
+P 10350 5650
+F 0 "D2" H 10350 5750 50  0000 C CNN
+F 1 "blue" H 10350 5550 50  0000 C CNN
+F 2 "D0603" H 10350 5650 60  0001 C CNN
+	1    10350 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR21
+U 1 1 4E0F3CF5
+P 10350 6450
+F 0 "#PWR21" H 10350 6450 30  0001 C CNN
+F 1 "GND" H 10350 6380 30  0001 C CNN
+	1    10350 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 4E0F3CF0
+P 10350 6150
+F 0 "R3" V 10430 6150 50  0000 C CNN
+F 1 "1k" V 10350 6150 50  0000 C CNN
+F 2 "0603" H 10350 6150 60  0001 C CNN
+	1    10350 6150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4350 6750
+Text GLabel 3150 6850 0    60   Input ~ 0
+SELECT
+$Comp
+L GND #PWR3
+U 1 1 4CC04653
+P 3550 7150
+F 0 "#PWR3" H 3550 7150 30  0001 C CNN
+F 1 "GND" H 3550 7080 30  0001 C CNN
+	1    3550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 4CC0463C
+P 4550 6600
+F 0 "#PWR9" H 4550 6600 30  0001 C CNN
+F 1 "GND" H 4550 6530 30  0001 C CNN
+	1    4550 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 4CC04631
+P 4550 6350
+F 0 "C1" H 4450 6250 50  0000 L CNN
+F 1 "100nF" H 4300 6450 50  0000 L CNN
+F 2 "0603" H 4550 6350 60  0001 C CNN
+	1    4550 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L 3V3 #PWR8
+U 1 1 4CC04628
+P 4350 6100
+F 0 "#PWR8" H 4350 6200 40  0001 C CNN
+F 1 "3V3" H 4350 6225 40  0000 C CNN
+	1    4350 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 6950 2    60   Input ~ 0
+SDA
+Text GLabel 4700 6850 2    60   Input ~ 0
+SCL
+$Comp
+L CAT24C U2
+U 1 1 4CC04613
+P 3950 7050
+F 0 "U2" H 3800 7550 60  0000 C CNN
+F 1 "M24C64" H 3950 7050 60  0000 C CNN
+F 2 "SOIC8" H 3950 7050 60  0001 C CNN
+	1    3950 7050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

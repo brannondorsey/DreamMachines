@@ -1,0 +1,264 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BenchBudEE
+LIBS:arduino_shieldsNCL
+LIBS:BenchBudEE-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 9
+Title ""
+Date "7 feb 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1550 3650 0    60   Input ~ 0
+RELAY+
+Text HLabel 1550 4000 0    60   Output ~ 0
+RELAY-
+Text HLabel 9450 2650 2    60   BiDi ~ 0
+RELAY_NC
+Text HLabel 9450 2850 2    60   BiDi ~ 0
+RELAY_NO
+$Comp
+L PHTRANS U?
+U 1 1 52F203F6
+P 3800 3850
+F 0 "U?" H 3750 4200 70  0000 C CNN
+F 1 "PHTRANS" H 3750 3500 70  0000 C CNN
+F 2 "~" H 3800 3850 60  0000 C CNN
+F 3 "~" H 3800 3850 60  0000 C CNN
+	1    3800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 52F20428
+P 5700 4050
+F 0 "R?" V 5780 4050 40  0000 C CNN
+F 1 "R" V 5707 4051 40  0000 C CNN
+F 2 "~" V 5630 4050 30  0000 C CNN
+F 3 "~" H 5700 4050 30  0000 C CNN
+	1    5700 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NPN Q?
+U 1 1 52F20437
+P 6650 4500
+F 0 "Q?" H 6650 4350 50  0000 R CNN
+F 1 "NPN" H 6650 4650 50  0000 R CNN
+F 2 "~" H 6650 4500 60  0000 C CNN
+F 3 "~" H 6650 4500 60  0000 C CNN
+	1    6650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 52F204B5
+P 5300 4600
+F 0 "D?" H 5300 4700 50  0000 C CNN
+F 1 "LED" H 5300 4500 50  0000 C CNN
+F 2 "~" H 5300 4600 60  0000 C CNN
+F 3 "~" H 5300 4600 60  0000 C CNN
+	1    5300 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L SPDT K?
+U 1 1 52F20B92
+P 8650 2700
+F 0 "K?" H 8650 3050 70  0000 C CNN
+F 1 "SPDT" H 8700 2050 70  0000 C CNN
+F 2 "~" H 8650 2700 60  0000 C CNN
+F 3 "~" H 8650 2700 60  0000 C CNN
+	1    8650 2700
+	1    0    0    -1  
+$EndComp
+Text HLabel 9500 2050 2    60   BiDi ~ 0
+RELAY_COM
+Wire Wire Line
+	9050 2650 9450 2650
+Wire Wire Line
+	9050 2850 9500 2850
+Wire Wire Line
+	4350 4050 5450 4050
+Wire Wire Line
+	6750 4700 6750 4850
+Wire Wire Line
+	5750 2500 5750 3850
+$Comp
+L R R?
+U 1 1 52F20F31
+P 6750 5100
+F 0 "R?" V 6830 5100 40  0000 C CNN
+F 1 "R" V 6757 5101 40  0000 C CNN
+F 2 "~" V 6680 5100 30  0000 C CNN
+F 3 "~" H 6750 5100 30  0000 C CNN
+	1    6750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 52F20F88
+P 6750 6200
+F 0 "#PWR?" H 6750 6200 30  0001 C CNN
+F 1 "GND" H 6750 6130 30  0001 C CNN
+F 2 "" H 6750 6200 60  0000 C CNN
+F 3 "" H 6750 6200 60  0000 C CNN
+	1    6750 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5350 6750 6200
+$Comp
+L R R?
+U 1 1 52F20FE8
+P 5300 5400
+F 0 "R?" V 5380 5400 40  0000 C CNN
+F 1 "R" V 5307 5401 40  0000 C CNN
+F 2 "~" V 5230 5400 30  0000 C CNN
+F 3 "~" H 5300 5400 30  0000 C CNN
+	1    5300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4800 5300 5150
+Wire Wire Line
+	5300 4400 5300 4050
+Connection ~ 5300 4050
+$Comp
+L R R?
+U 1 1 52F21024
+P 5750 2250
+F 0 "R?" V 5830 2250 40  0000 C CNN
+F 1 "R" V 5757 2251 40  0000 C CNN
+F 2 "~" V 5680 2250 30  0000 C CNN
+F 3 "~" H 5750 2250 30  0000 C CNN
+	1    5750 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1700 5750 2000
+$Comp
+L R R?
+U 1 1 52F2107C
+P 4900 3650
+F 0 "R?" V 4980 3650 40  0000 C CNN
+F 1 "R" V 4907 3651 40  0000 C CNN
+F 2 "~" V 4830 3650 30  0000 C CNN
+F 3 "~" H 4900 3650 30  0000 C CNN
+	1    4900 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 3650 4650 3650
+Wire Wire Line
+	5750 3650 5150 3650
+Wire Wire Line
+	5750 3850 4350 3850
+Connection ~ 5750 3650
+$Comp
+L R R?
+U 1 1 52F210E0
+P 2450 4000
+F 0 "R?" V 2530 4000 40  0000 C CNN
+F 1 "R" V 2457 4001 40  0000 C CNN
+F 2 "~" V 2380 4000 30  0000 C CNN
+F 3 "~" H 2450 4000 30  0000 C CNN
+	1    2450 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 4000 3250 4000
+Wire Wire Line
+	1550 4000 2200 4000
+Wire Wire Line
+	3250 3650 1550 3650
+Wire Wire Line
+	9500 2050 7950 2050
+Wire Wire Line
+	7950 2050 7950 2750
+Wire Wire Line
+	7950 2750 8250 2750
+Wire Wire Line
+	8250 2950 5750 2950
+Connection ~ 5750 2950
+Wire Wire Line
+	6750 4300 6750 3050
+Wire Wire Line
+	6750 3050 8250 3050
+Wire Wire Line
+	5300 5650 5300 5900
+Wire Wire Line
+	5300 5900 6750 5900
+Connection ~ 6750 5900
+$Comp
+L DIODE D?
+U 1 1 52F217A6
+P 6200 3600
+F 0 "D?" H 6200 3700 40  0000 C CNN
+F 1 "DIODE" H 6200 3500 40  0000 C CNN
+F 2 "~" H 6200 3600 60  0000 C CNN
+F 3 "~" H 6200 3600 60  0000 C CNN
+	1    6200 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3800 6750 3800
+Connection ~ 6750 3800
+Wire Wire Line
+	6200 3400 6200 2950
+Connection ~ 6200 2950
+Wire Wire Line
+	5950 4050 6100 4050
+Wire Wire Line
+	6100 4050 6100 4500
+Wire Wire Line
+	6100 4500 6450 4500
+$Comp
+L +12P #PWR?
+U 1 1 52F242A6
+P 5750 1700
+F 0 "#PWR?" H 5750 1670 30  0001 C CNN
+F 1 "+12P" H 5750 1800 30  0000 C CNN
+F 2 "" H 5750 1700 60  0000 C CNN
+F 3 "" H 5750 1700 60  0000 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

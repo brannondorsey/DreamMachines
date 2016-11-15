@@ -1,0 +1,105 @@
+EESchema Schematic File Version 2
+LIBS:ej1
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Dia1_ejercisio1"
+Date "2015-11-30"
+Rev "1.0"
+Comp "Prototipado"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_3 K1
+U 1 1 565C5B43
+P 3750 2300
+F 0 "K1" V 3700 2300 50  0000 C CNN
+F 1 "CONN_3" V 3800 2300 40  0000 C CNN
+F 2 "ej1:bornier3" H 3750 2300 60  0001 C CNN
+F 3 "" H 3750 2300 60  0000 C CNN
+	1    3750 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 565C5BB8
+P 4650 1750
+F 0 "C1" H 4675 1850 50  0000 L CNN
+F 1 "C" H 4675 1650 50  0000 L CNN
+F 2 "ej1:C_Rect_L7_W3.5_P5" H 4688 1600 30  0001 C CNN
+F 3 "" H 4650 1750 60  0000 C CNN
+	1    4650 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 565C5C1F
+P 4600 1250
+F 0 "D1" H 4600 1350 50  0000 C CNN
+F 1 "LED" H 4600 1150 50  0000 C CNN
+F 2 "ej1:LED-3MM" H 4600 1250 60  0001 C CNN
+F 3 "" H 4600 1250 60  0000 C CNN
+	1    4600 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 565C5C94
+P 5350 2350
+F 0 "R1" V 5430 2350 50  0000 C CNN
+F 1 "100K" V 5350 2350 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 5280 2350 30  0001 C CNN
+F 3 "" H 5350 2350 30  0000 C CNN
+	1    5350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 565C5CFD
+P 4650 2800
+F 0 "D2" H 4650 2900 50  0000 C CNN
+F 1 "D" H 4650 2700 50  0000 C CNN
+F 2 "ej1:Diode_DO-35_SOD27_Horizontal_RM10" H 4650 2800 60  0001 C CNN
+F 3 "" H 4650 2800 60  0000 C CNN
+	1    4650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1250 4100 1250
+Wire Wire Line
+	4100 1250 4100 2200
+Wire Wire Line
+	4100 2400 4100 2800
+Wire Wire Line
+	4100 2800 4500 2800
+Wire Wire Line
+	4800 2800 5350 2800
+Wire Wire Line
+	5350 2800 5350 2500
+Wire Wire Line
+	4500 1700 4500 1750
+Wire Wire Line
+	4500 1750 4100 1750
+Connection ~ 4100 1750
+Wire Wire Line
+	4800 1750 5350 1750
+Wire Wire Line
+	5350 1250 5350 2200
+Wire Wire Line
+	4800 1250 5350 1250
+Connection ~ 5350 1750
+Text Notes 5750 2050 0    60   ~ 0
+Resistencia de potencia
+NoConn ~ 4100 2300
+Wire Notes Line
+	5400 2250 5750 2050
+Wire Notes Line
+	5750 2050 6850 2050
+Text Notes 2200 1150 0    60   Italic 12
+Circuito Práctica N°1
+$EndSCHEMATC

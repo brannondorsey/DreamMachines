@@ -1,0 +1,400 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kicadlib
+LIBS:33reg-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "7 nov 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3400 3200 0    60   Input ~ 0
++5v
+Text GLabel 3900 4450 0    60   Input ~ 0
++3.3v
+$Comp
+L AAT1110IJS-3.3-T1 U1
+U 1 1 525BE285
+P 4900 3450
+F 0 "U1" H 4900 3100 60  0000 C CNN
+F 1 "AAT1110IJS-3.3-T1" H 4900 3850 60  0000 C CNN
+F 2 "" H 4900 3350 60  0000 C CNN
+F 3 "" H 4900 3350 60  0000 C CNN
+	1    4900 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3200 4300 3200
+Wire Wire Line
+	4300 3500 3900 3500
+Wire Wire Line
+	3900 3500 3900 3200
+Connection ~ 3900 3200
+$Comp
+L C C1
+U 1 1 525BE299
+P 3600 3550
+F 0 "C1" H 3600 3650 40  0000 L CNN
+F 1 "4.7uF" H 3606 3465 40  0000 L CNN
+F 2 "~" H 3638 3400 30  0000 C CNN
+F 3 "~" H 3600 3550 60  0000 C CNN
+	1    3600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3200 3600 3350
+Connection ~ 3600 3200
+$Comp
+L GND #PWR01
+U 1 1 525BE2C6
+P 3600 3900
+F 0 "#PWR01" H 3600 3900 30  0001 C CNN
+F 1 "GND" H 3600 3830 30  0001 C CNN
+F 2 "" H 3600 3900 60  0000 C CNN
+F 3 "" H 3600 3900 60  0000 C CNN
+	1    3600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 525BE2DA
+P 5700 3850
+F 0 "#PWR02" H 5700 3850 30  0001 C CNN
+F 1 "GND" H 5700 3780 30  0001 C CNN
+F 2 "" H 5700 3850 60  0000 C CNN
+F 3 "" H 5700 3850 60  0000 C CNN
+	1    5700 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3650 5500 3650
+Wire Wire Line
+	5700 3200 5700 3850
+Wire Wire Line
+	5500 3350 5700 3350
+Connection ~ 5700 3650
+Wire Wire Line
+	5500 3500 5700 3500
+Connection ~ 5700 3500
+Wire Wire Line
+	5500 3200 5700 3200
+Connection ~ 5700 3350
+$Comp
+L C C2
+U 1 1 525BE30C
+P 4150 4800
+F 0 "C2" H 4150 4900 40  0000 L CNN
+F 1 "22uF" H 4156 4715 40  0000 L CNN
+F 2 "~" H 4188 4650 30  0000 C CNN
+F 3 "~" H 4150 4800 60  0000 C CNN
+	1    4150 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 3350 4050 3350
+Wire Wire Line
+	4050 3350 4050 4450
+Wire Wire Line
+	3600 3750 3600 3900
+$Comp
+L INDUCTOR L1
+U 1 1 525BE371
+P 4300 4150
+F 0 "L1" V 4250 4150 40  0000 C CNN
+F 1 "INDUCTOR" V 4400 4150 40  0000 C CNN
+F 2 "~" H 4300 4150 60  0000 C CNN
+F 3 "~" H 4300 4150 60  0000 C CNN
+	1    4300 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 3650 4300 3850
+Connection ~ 4300 4450
+Connection ~ 4050 4450
+Wire Wire Line
+	3900 4450 4300 4450
+Wire Wire Line
+	4150 4600 4150 4450
+Connection ~ 4150 4450
+$Comp
+L GND #PWR03
+U 1 1 525BE457
+P 4150 5150
+F 0 "#PWR03" H 4150 5150 30  0001 C CNN
+F 1 "GND" H 4150 5080 30  0001 C CNN
+F 2 "" H 4150 5150 60  0000 C CNN
+F 3 "" H 4150 5150 60  0000 C CNN
+	1    4150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5000 4150 5150
+$Comp
+L TST P3
+U 1 1 525BE4FA
+P 5550 4700
+F 0 "P3" H 5550 5000 40  0000 C CNN
+F 1 "TST" H 5550 4950 30  0000 C CNN
+F 2 "~" H 5550 4700 60  0000 C CNN
+F 3 "~" H 5550 4700 60  0000 C CNN
+	1    5550 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TST P2
+U 1 1 525BE511
+P 5300 4700
+F 0 "P2" H 5300 5000 40  0000 C CNN
+F 1 "TST" H 5300 4950 30  0000 C CNN
+F 2 "~" H 5300 4700 60  0000 C CNN
+F 3 "~" H 5300 4700 60  0000 C CNN
+	1    5300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TST P1
+U 1 1 525BE517
+P 5050 4700
+F 0 "P1" H 5050 5000 40  0000 C CNN
+F 1 "TST" H 5050 4950 30  0000 C CNN
+F 2 "~" H 5050 4700 60  0000 C CNN
+F 3 "~" H 5050 4700 60  0000 C CNN
+	1    5050 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 5050 4850 3    60   Input ~ 0
++5v
+Text GLabel 5550 4850 3    60   Input ~ 0
++3.3v
+$Comp
+L GND #PWR04
+U 1 1 525BE51F
+P 5300 4850
+F 0 "#PWR04" H 5300 4850 30  0001 C CNN
+F 1 "GND" H 5300 4780 30  0001 C CNN
+F 2 "" H 5300 4850 60  0000 C CNN
+F 3 "" H 5300 4850 60  0000 C CNN
+	1    5300 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4700 5050 4850
+Wire Wire Line
+	5300 4850 5300 4700
+Wire Wire Line
+	5550 4700 5550 4850
+$Comp
+L TST P4
+U 1 1 525BEDCA
+P 5800 4700
+F 0 "P4" H 5800 5000 40  0000 C CNN
+F 1 "TST" H 5800 4950 30  0000 C CNN
+F 2 "~" H 5800 4700 60  0000 C CNN
+F 3 "~" H 5800 4700 60  0000 C CNN
+	1    5800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 525BEDD0
+P 5800 4850
+F 0 "#PWR05" H 5800 4850 30  0001 C CNN
+F 1 "GND" H 5800 4780 30  0001 C CNN
+F 2 "" H 5800 4850 60  0000 C CNN
+F 3 "" H 5800 4850 60  0000 C CNN
+	1    5800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4850 5800 4700
+$Comp
+L INDUCTOR L?
+U 1 1 527BCEFC
+P 8550 4500
+F 0 "L?" V 8500 4500 40  0000 C CNN
+F 1 "INDUCTOR" V 8650 4500 40  0000 C CNN
+F 2 "~" H 8550 4500 60  0000 C CNN
+F 3 "~" H 8550 4500 60  0000 C CNN
+	1    8550 4500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10050 4500 2    60   Input ~ 0
+vout+
+Text GLabel 7150 4500 0    60   Input ~ 0
+vin+
+$Comp
+L MOSFET_N Q?
+U 1 1 527BCF75
+P 7850 4400
+F 0 "Q?" H 7860 4570 60  0000 R CNN
+F 1 "MOSFET_N" H 7860 4250 60  0000 R CNN
+F 2 "~" H 7850 4400 60  0000 C CNN
+F 3 "~" H 7850 4400 60  0000 C CNN
+	1    7850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 527BCF8C
+P 9050 4950
+F 0 "Q?" H 9060 5120 60  0000 R CNN
+F 1 "MOSFET_N" H 9060 4800 60  0000 R CNN
+F 2 "~" H 9050 4950 60  0000 C CNN
+F 3 "~" H 9050 4950 60  0000 C CNN
+	1    9050 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 4500 7650 4500
+Wire Wire Line
+	8050 4500 8250 4500
+Connection ~ 8150 4500
+Wire Wire Line
+	8850 4500 9050 4500
+Wire Wire Line
+	8950 4500 8950 4750
+Connection ~ 8950 4500
+$Comp
+L GND #PWR?
+U 1 1 527BD033
+P 8600 5350
+F 0 "#PWR?" H 8600 5350 30  0001 C CNN
+F 1 "GND" H 8600 5280 30  0001 C CNN
+F 2 "" H 8600 5350 60  0000 C CNN
+F 3 "" H 8600 5350 60  0000 C CNN
+	1    8600 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 5250 8950 5150
+Wire Wire Line
+	7150 5250 10050 5250
+Connection ~ 8600 5250
+Wire Wire Line
+	8600 5250 8600 5350
+Wire Wire Line
+	9450 4500 10050 4500
+Text GLabel 7950 4100 2    60   Input ~ 0
+sw_a
+Text GLabel 9250 5550 2    60   Input ~ 0
+sw_c
+Wire Wire Line
+	7950 4100 7850 4100
+Wire Wire Line
+	7850 4100 7850 4200
+Wire Wire Line
+	9250 5550 9250 4950
+Text GLabel 7150 5250 0    60   Input ~ 0
+vin-
+Connection ~ 8150 5250
+Text GLabel 10050 5250 2    60   Input ~ 0
+vout-
+Connection ~ 8950 5250
+$Comp
+L C C?
+U 1 1 527BD302
+P 9750 4850
+F 0 "C?" H 9750 4950 40  0000 L CNN
+F 1 "C" H 9756 4765 40  0000 L CNN
+F 2 "~" H 9788 4700 30  0000 C CNN
+F 3 "~" H 9750 4850 60  0000 C CNN
+	1    9750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4650 9750 4500
+Connection ~ 9750 4500
+Wire Wire Line
+	9750 5050 9750 5250
+Connection ~ 9750 5250
+$Comp
+L MOSFET_N Q?
+U 1 1 527BD436
+P 8050 4850
+F 0 "Q?" H 8060 5020 60  0000 R CNN
+F 1 "MOSFET_N" H 8060 4700 60  0000 R CNN
+F 2 "~" H 8050 4850 60  0000 C CNN
+F 3 "~" H 8050 4850 60  0000 C CNN
+	1    8050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4650 8150 4500
+Wire Wire Line
+	8150 5050 8150 5250
+Text GLabel 7750 4850 0    60   Input ~ 0
+sw_b
+Wire Wire Line
+	7750 4850 7850 4850
+$Comp
+L MOSFET_N Q?
+U 1 1 527BD4D8
+P 9250 4400
+F 0 "Q?" H 9260 4570 60  0000 R CNN
+F 1 "MOSFET_N" H 9260 4250 60  0000 R CNN
+F 2 "~" H 9250 4400 60  0000 C CNN
+F 3 "~" H 9250 4400 60  0000 C CNN
+	1    9250 4400
+	0    1    1    0   
+$EndComp
+Text GLabel 9350 4100 2    60   Input ~ 0
+sw_d
+Wire Wire Line
+	9350 4100 9250 4100
+Wire Wire Line
+	9250 4100 9250 4200
+$Comp
+L C C?
+U 1 1 527BD561
+P 7300 4850
+F 0 "C?" H 7300 4950 40  0000 L CNN
+F 1 "C" H 7306 4765 40  0000 L CNN
+F 2 "~" H 7338 4700 30  0000 C CNN
+F 3 "~" H 7300 4850 60  0000 C CNN
+	1    7300 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4650 7300 4500
+Connection ~ 7300 4500
+Wire Wire Line
+	7300 5050 7300 5250
+Connection ~ 7300 5250
+$EndSCHEMATC

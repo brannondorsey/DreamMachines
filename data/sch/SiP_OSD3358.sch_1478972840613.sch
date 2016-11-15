@@ -1,0 +1,137 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OSD335x
+LIBS:kicad-library_2
+LIBS:Beaglebone-Pink-Lib
+LIBS:Beaglebone-Pink-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title "Beagle Systtem In Package OSD3358"
+Date "2016-10-16"
+Rev "0.1a"
+Comp "GhostPCB"
+Comment1 "Engineer Drawn By Adam Vadala-Roth"
+Comment2 "Designed By Adam Vadala-Roth"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OSD3358 U?
+U 2 1 5804618C
+P 8600 4900
+F 0 "U?" H 9400 5190 60  0000 C CNN
+F 1 "OSD3358" H 9400 5084 60  0000 C CNN
+F 2 "" H 8600 4900 60  0001 C CNN
+F 3 "" H 8600 4900 60  0001 C CNN
+	2    8600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSD3358 U?
+U 3 1 580461D2
+P 8600 1200
+F 0 "U?" H 9500 1490 60  0000 C CNN
+F 1 "OSD3358" H 9500 1384 60  0000 C CNN
+F 2 "" H 8600 1200 60  0001 C CNN
+F 3 "" H 8600 1200 60  0001 C CNN
+	3    8600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSD3358 U?
+U 4 1 5804623A
+P 3700 1000
+F 0 "U?" H 4405 1290 60  0000 C CNN
+F 1 "OSD3358" H 4405 1184 60  0000 C CNN
+F 2 "" H 3700 1000 60  0001 C CNN
+F 3 "" H 3700 1000 60  0001 C CNN
+	4    3700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSD3358 U?
+U 5 1 5804627E
+P 3000 3700
+F 0 "U?" H 4050 3990 60  0000 C CNN
+F 1 "OSD3358" H 4050 3884 60  0000 C CNN
+F 2 "" H 3000 3700 60  0001 C CNN
+F 3 "" H 3000 3700 60  0001 C CNN
+	5    3000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSD3358 U?
+U 8 1 5804637A
+P 1500 1000
+F 0 "U?" H 2400 1290 60  0000 C CNN
+F 1 "OSD3358" H 2400 1184 60  0000 C CNN
+F 2 "" H 1500 1000 60  0001 C CNN
+F 3 "" H 1500 1000 60  0001 C CNN
+	8    1500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSD3358 U?
+U 12 1 580464EE
+P 1600 3700
+F 0 "U?" H 2250 3990 60  0000 C CNN
+F 1 "OSD3358" H 2250 3884 60  0000 C CNN
+F 2 "" H 1600 3700 60  0001 C CNN
+F 3 "" H 1600 3700 60  0001 C CNN
+	12   1600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X23 P?
+U 1 1 5804709F
+P 4000 6400
+F 0 "P?" H 4000 7715 50  0000 C CNN
+F 1 "CONN_02X23" H 4000 7624 50  0000 C CNN
+F 2 "" H 4000 5550 50  0000 C CNN
+F 3 "" H 4000 5550 50  0000 C CNN
+	1    4000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X23 P?
+U 1 1 58047117
+P 4800 6300
+F 0 "P?" H 4800 7615 50  0000 C CNN
+F 1 "CONN_02X23" H 4800 7524 50  0000 C CNN
+F 2 "" H 4800 5450 50  0000 C CNN
+F 3 "" H 4800 5450 50  0000 C CNN
+	1    4800 6300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

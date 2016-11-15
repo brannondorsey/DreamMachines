@@ -1,0 +1,1429 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:STX3100
+LIBS:HellScribe-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "HellScribe"
+Date "08/28/2016"
+Rev "v1.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM393 U1
+U 1 1 57BFB444
+P 4300 6250
+F 0 "U1" H 4450 6400 50  0000 C CNN
+F 1 "LM393" H 4500 6100 50  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 4300 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm193.pdf" H 4300 6250 50  0001 C CNN
+F 4 "Texas Instruments" H 4300 6250 60  0001 C CNN "Manufacturer"
+F 5 "LM393DR" H 4300 6250 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 4300 6250 60  0001 C CNN "Vendor"
+F 7 "296-1015-1-ND" H 4300 6250 60  0001 C CNN "Vendor Part #"
+	1    4300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57BFB516
+P 1800 4400
+F 0 "#PWR01" H 1800 4150 50  0001 C CNN
+F 1 "GND" H 1800 4250 50  0000 C CNN
+F 2 "" H 1800 4400 50  0000 C CNN
+F 3 "" H 1800 4400 50  0000 C CNN
+	1    1800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 57BFB52C
+P 4200 5450
+F 0 "R11" V 4280 5450 50  0000 C CNN
+F 1 "100" V 4200 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4130 5450 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 4200 5450 50  0001 C CNN
+F 4 "Yageo" V 4200 5450 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07100RL" V 4200 5450 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digieky" V 4200 5450 60  0001 C CNN "Vendor"
+F 7 "311-100HRCT-ND" V 4200 5450 60  0001 C CNN "Vendor Part #"
+	1    4200 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 57BFB54F
+P 4400 5750
+F 0 "C5" V 4250 5700 50  0000 L CNN
+F 1 "0.1uF" V 4550 5650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4438 5600 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01.pdf" H 4400 5750 50  0001 C CNN
+F 4 "Murata" V 4400 5750 60  0001 C CNN "Manufacturer"
+F 5 "GRM188R72A104KA35D" V 4400 5750 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 4400 5750 60  0001 C CNN "Vendor"
+F 7 "490-3285-1-ND" V 4400 5750 60  0001 C CNN "Vendor Part #"
+	1    4400 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57BFB581
+P 4600 5800
+F 0 "#PWR02" H 4600 5550 50  0001 C CNN
+F 1 "GND" H 4600 5650 50  0000 C CNN
+F 2 "" H 4600 5800 50  0000 C CNN
+F 3 "" H 4600 5800 50  0000 C CNN
+	1    4600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR03
+U 1 1 57BFB5A8
+P 4200 5250
+F 0 "#PWR03" H 4200 5100 50  0001 C CNN
+F 1 "+12V" H 4200 5390 50  0000 C CNN
+F 2 "" H 4200 5250 50  0000 C CNN
+F 3 "" H 4200 5250 50  0000 C CNN
+	1    4200 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 57BFB6CE
+P 2950 5900
+F 0 "R7" V 3030 5900 50  0000 C CNN
+F 1 "10k" V 2950 5900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2880 5900 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 2950 5900 50  0001 C CNN
+F 4 "Yageo" V 2950 5900 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" V 2950 5900 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 2950 5900 60  0001 C CNN "Vendor"
+F 7 "311-10.0KHRCT-ND" V 2950 5900 60  0001 C CNN "Vendor Part #"
+	1    2950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 57BFB81E
+P 2950 6400
+F 0 "R8" V 3030 6400 50  0000 C CNN
+F 1 "10k" V 2950 6400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2880 6400 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 2950 6400 50  0001 C CNN
+F 4 "Yageo" V 2950 6400 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" V 2950 6400 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 2950 6400 60  0001 C CNN "Vendor"
+F 7 "311-10.0KHRCT-ND" V 2950 6400 60  0001 C CNN "Vendor Part #"
+	1    2950 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57BFB865
+P 2950 6600
+F 0 "#PWR04" H 2950 6350 50  0001 C CNN
+F 1 "GND" H 2950 6450 50  0000 C CNN
+F 2 "" H 2950 6600 50  0000 C CNN
+F 3 "" H 2950 6600 50  0000 C CNN
+	1    2950 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR05
+U 1 1 57BFB88F
+P 2950 5700
+F 0 "#PWR05" H 2950 5550 50  0001 C CNN
+F 1 "+12V" H 2950 5840 50  0000 C CNN
+F 2 "" H 2950 5700 50  0000 C CNN
+F 3 "" H 2950 5700 50  0000 C CNN
+	1    2950 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 57BFB90E
+P 3850 7200
+F 0 "R10" V 3930 7200 50  0000 C CNN
+F 1 "11k" V 3850 7200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3780 7200 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 3850 7200 50  0001 C CNN
+F 4 "Yageo" V 3850 7200 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0711KL" V 3850 7200 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 3850 7200 60  0001 C CNN "Vendor"
+F 7 "311-11.0KHRCT-ND" V 3850 7200 60  0001 C CNN "Vendor Part #"
+	1    3850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 57BFB96B
+P 3600 6950
+F 0 "R9" V 3680 6950 50  0000 C CNN
+F 1 "10k" V 3600 6950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3530 6950 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 3600 6950 50  0001 C CNN
+F 4 "Yageo" V 3600 6950 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" V 3600 6950 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 3600 6950 60  0001 C CNN "Vendor"
+F 7 "311-10.0KHRCT-ND" V 3600 6950 60  0001 C CNN "Vendor Part #"
+	1    3600 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L +12V #PWR06
+U 1 1 57BFB9A2
+P 3350 6900
+F 0 "#PWR06" H 3350 6750 50  0001 C CNN
+F 1 "+12V" H 3350 7040 50  0000 C CNN
+F 2 "" H 3350 6900 50  0000 C CNN
+F 3 "" H 3350 6900 50  0000 C CNN
+	1    3350 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 57BFB9C2
+P 3850 7450
+F 0 "#PWR07" H 3850 7200 50  0001 C CNN
+F 1 "GND" H 3850 7300 50  0000 C CNN
+F 2 "" H 3850 7450 50  0000 C CNN
+F 3 "" H 3850 7450 50  0000 C CNN
+	1    3850 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 57BFBB83
+P 4250 7200
+F 0 "C4" H 4300 7100 50  0000 L CNN
+F 1 "0.1uF" H 4000 7300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4288 7050 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01.pdf" H 4250 7200 50  0001 C CNN
+F 4 "Murata" V 4250 7200 60  0001 C CNN "Manufacturer"
+F 5 "GRM188R72A104KA35D" V 4250 7200 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 4250 7200 60  0001 C CNN "Vendor"
+F 7 "490-3285-1-ND" V 4250 7200 60  0001 C CNN "Vendor Part #"
+	1    4250 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 57BFBBDA
+P 4250 7450
+F 0 "#PWR08" H 4250 7200 50  0001 C CNN
+F 1 "GND" H 4250 7300 50  0000 C CNN
+F 2 "" H 4250 7450 50  0000 C CNN
+F 3 "" H 4250 7450 50  0000 C CNN
+	1    4250 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 57BFBD7E
+P 2600 6150
+F 0 "C3" V 2450 6100 50  0000 L CNN
+F 1 "0.1uF" V 2750 6050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2638 6000 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01.pdf" H 2600 6150 50  0001 C CNN
+F 4 "Murata" V 2600 6150 60  0001 C CNN "Manufacturer"
+F 5 "GRM188R72A104KA35D" V 2600 6150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 2600 6150 60  0001 C CNN "Vendor"
+F 7 "490-3285-1-ND" V 2600 6150 60  0001 C CNN "Vendor Part #"
+	1    2600 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 57BFBEAB
+P 2100 6350
+F 0 "#PWR09" H 2100 6100 50  0001 C CNN
+F 1 "GND" H 2100 6200 50  0000 C CNN
+F 2 "" H 2100 6350 50  0000 C CNN
+F 3 "" H 2100 6350 50  0000 C CNN
+	1    2100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 57BFC0E9
+P 5200 5950
+F 0 "R12" V 5280 5950 50  0000 C CNN
+F 1 "2.2k" V 5200 5950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 5950 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 5200 5950 50  0001 C CNN
+F 4 "Yageo" V 5200 5950 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-072K2L" V 5200 5950 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 5200 5950 60  0001 C CNN "Vendor"
+F 7 "311-2.20KHRCT-ND" V 5200 5950 60  0001 C CNN "Vendor Part #"
+	1    5200 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR010
+U 1 1 57BFC2A7
+P 5200 5700
+F 0 "#PWR010" H 5200 5550 50  0001 C CNN
+F 1 "+12V" H 5200 5840 50  0000 C CNN
+F 2 "" H 5200 5700 50  0000 C CNN
+F 3 "" H 5200 5700 50  0000 C CNN
+	1    5200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 57BFC331
+P 5200 6950
+F 0 "#PWR011" H 5200 6700 50  0001 C CNN
+F 1 "GND" H 5200 6800 50  0000 C CNN
+F 2 "" H 5200 6950 50  0000 C CNN
+F 3 "" H 5200 6950 50  0000 C CNN
+	1    5200 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 57BFC486
+P 5700 6950
+F 0 "#PWR012" H 5700 6700 50  0001 C CNN
+F 1 "GND" H 5700 6800 50  0000 C CNN
+F 2 "" H 5700 6950 50  0000 C CNN
+F 3 "" H 5700 6950 50  0000 C CNN
+	1    5700 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 57BFC59F
+P 5700 5700
+F 0 "D2" H 5700 5800 50  0000 C CNN
+F 1 "LED" H 5700 5600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 5700 5700 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 5700 5700 50  0001 C CNN
+F 4 "Optek Technology" H 5700 5700 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 5700 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 5700 5700 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 5700 5700 60  0001 C CNN "Vendor Part #"
+	1    5700 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 57BFCB26
+P 6050 5150
+F 0 "D3" H 6050 5250 50  0000 C CNN
+F 1 "LED" H 6050 5050 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6050 5150 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 6050 5150 50  0001 C CNN
+F 4 "Optek Technology" H 6050 5150 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 6050 5150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 6050 5150 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 6050 5150 60  0001 C CNN "Vendor Part #"
+	1    6050 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 57BFCB8D
+P 5700 5150
+F 0 "D1" H 5700 5250 50  0000 C CNN
+F 1 "LED" H 5700 5050 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 5700 5150 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 5700 5150 50  0001 C CNN
+F 4 "Optek Technology" H 5700 5150 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 5700 5150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 5700 5150 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 5700 5150 60  0001 C CNN "Vendor Part #"
+	1    5700 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 57BFCC34
+P 6400 5150
+F 0 "D5" H 6400 5250 50  0000 C CNN
+F 1 "LED" H 6400 5050 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6400 5150 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 6400 5150 50  0001 C CNN
+F 4 "Optek Technology" H 6400 5150 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 6400 5150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 6400 5150 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 6400 5150 60  0001 C CNN "Vendor Part #"
+	1    6400 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D7
+U 1 1 57BFCD29
+P 6750 5150
+F 0 "D7" H 6750 5250 50  0000 C CNN
+F 1 "LED" H 6750 5050 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6750 5150 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 6750 5150 50  0001 C CNN
+F 4 "Optek Technology" H 6750 5150 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 6750 5150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 6750 5150 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 6750 5150 60  0001 C CNN "Vendor Part #"
+	1    6750 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D9
+U 1 1 57BFCD85
+P 7100 5150
+F 0 "D9" H 7100 5250 50  0000 C CNN
+F 1 "LED" H 7100 5050 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 7100 5150 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 7100 5150 50  0001 C CNN
+F 4 "Optek Technology" H 7100 5150 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 7100 5150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7100 5150 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 7100 5150 60  0001 C CNN "Vendor Part #"
+	1    7100 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D11
+U 1 1 57BFCF58
+P 7450 5150
+F 0 "D11" H 7450 5250 50  0000 C CNN
+F 1 "LED" H 7450 5050 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 7450 5150 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 7450 5150 50  0001 C CNN
+F 4 "Optek Technology" H 7450 5150 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 7450 5150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7450 5150 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 7450 5150 60  0001 C CNN "Vendor Part #"
+	1    7450 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D13
+U 1 1 57BFCFB4
+P 7800 5150
+F 0 "D13" H 7800 5250 50  0000 C CNN
+F 1 "LED" H 7800 5050 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 7800 5150 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 7800 5150 50  0001 C CNN
+F 4 "Optek Technology" H 7800 5150 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 7800 5150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7800 5150 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 7800 5150 60  0001 C CNN "Vendor Part #"
+	1    7800 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D15
+U 1 1 57BFD015
+P 8150 5150
+F 0 "D15" H 8150 5250 50  0000 C CNN
+F 1 "LED" H 8150 5050 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 8150 5150 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 8150 5150 50  0001 C CNN
+F 4 "Optek Technology" H 8150 5150 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 8150 5150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 8150 5150 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 8150 5150 60  0001 C CNN "Vendor Part #"
+	1    8150 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 57BFD0BF
+P 6050 5700
+F 0 "D4" H 6050 5800 50  0000 C CNN
+F 1 "LED" H 6050 5600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6050 5700 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 6050 5700 50  0001 C CNN
+F 4 "Optek Technology" H 6050 5700 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 6050 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 6050 5700 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 6050 5700 60  0001 C CNN "Vendor Part #"
+	1    6050 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 57BFD129
+P 6400 5700
+F 0 "D6" H 6400 5800 50  0000 C CNN
+F 1 "LED" H 6400 5600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6400 5700 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 6400 5700 50  0001 C CNN
+F 4 "Optek Technology" H 6400 5700 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 6400 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 6400 5700 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 6400 5700 60  0001 C CNN "Vendor Part #"
+	1    6400 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D8
+U 1 1 57BFD194
+P 6750 5700
+F 0 "D8" H 6750 5800 50  0000 C CNN
+F 1 "LED" H 6750 5600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6750 5700 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 6750 5700 50  0001 C CNN
+F 4 "Optek Technology" H 6750 5700 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 6750 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 6750 5700 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 6750 5700 60  0001 C CNN "Vendor Part #"
+	1    6750 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D10
+U 1 1 57BFD200
+P 7100 5700
+F 0 "D10" H 7100 5800 50  0000 C CNN
+F 1 "LED" H 7100 5600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 7100 5700 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 7100 5700 50  0001 C CNN
+F 4 "Optek Technology" H 7100 5700 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 7100 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7100 5700 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 7100 5700 60  0001 C CNN "Vendor Part #"
+	1    7100 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D12
+U 1 1 57BFD270
+P 7450 5700
+F 0 "D12" H 7450 5800 50  0000 C CNN
+F 1 "LED" H 7450 5600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 7450 5700 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 7450 5700 50  0001 C CNN
+F 4 "Optek Technology" H 7450 5700 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 7450 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7450 5700 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 7450 5700 60  0001 C CNN "Vendor Part #"
+	1    7450 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D14
+U 1 1 57BFD2E1
+P 7800 5700
+F 0 "D14" H 7800 5800 50  0000 C CNN
+F 1 "LED" H 7800 5600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 7800 5700 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 7800 5700 50  0001 C CNN
+F 4 "Optek Technology" H 7800 5700 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 7800 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7800 5700 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 7800 5700 60  0001 C CNN "Vendor Part #"
+	1    7800 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D16
+U 1 1 57BFD355
+P 8150 5700
+F 0 "D16" H 8150 5800 50  0000 C CNN
+F 1 "LED" H 8150 5600 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 8150 5700 50  0001 C CNN
+F 3 "http://www.optekinc.com/datasheets/OVLEW1CB9.PDF" H 8150 5700 50  0001 C CNN
+F 4 "Optek Technology" H 8150 5700 60  0001 C CNN "Manufacturer"
+F 5 "OVLEW1CB9" H 8150 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 8150 5700 60  0001 C CNN "Vendor"
+F 7 "365-1177-ND" H 8150 5700 60  0001 C CNN "Vendor Part #"
+	1    8150 5700
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2700 2700
+$Comp
+L GND #PWR013
+U 1 1 57BFE39A
+P 1200 2200
+F 0 "#PWR013" H 1200 1950 50  0001 C CNN
+F 1 "GND" H 1200 2050 50  0000 C CNN
+F 2 "" H 1200 2200 50  0000 C CNN
+F 3 "" H 1200 2200 50  0000 C CNN
+	1    1200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM393 U1
+U 2 1 57BFE54F
+P 1700 4100
+F 0 "U1" H 1850 4250 50  0000 C CNN
+F 1 "LM393" H 1900 3950 50  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 1700 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm193.pdf" H 1700 4100 50  0001 C CNN
+F 4 "Texas Instruments" H 1700 4100 60  0001 C CNN "Manufacturer"
+F 5 "LM393DR" H 1700 4100 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 1700 4100 60  0001 C CNN "Vendor"
+F 7 "296-1015-1-ND" H 1700 4100 60  0001 C CNN "Vendor Part #"
+	2    1700 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 57BFE6CC
+P 1900 3400
+F 0 "R3" V 2000 3400 50  0000 C CNN
+F 1 "10k" V 1900 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1830 3400 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 1900 3400 50  0001 C CNN
+F 4 "Yageo" V 1900 3400 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" V 1900 3400 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 1900 3400 60  0001 C CNN "Vendor"
+F 7 "311-10.0KHRCT-ND" V 1900 3400 60  0001 C CNN "Vendor Part #"
+	1    1900 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 57BFE7CA
+P 2550 4250
+F 0 "R5" V 2630 4250 50  0000 C CNN
+F 1 "10k" V 2550 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2480 4250 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 2550 4250 50  0001 C CNN
+F 4 "Yageo" V 2550 4250 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" V 2550 4250 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 2550 4250 60  0001 C CNN "Vendor"
+F 7 "311-10.0KHRCT-ND" V 2550 4250 60  0001 C CNN "Vendor Part #"
+	1    2550 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 57BFE866
+P 2950 4000
+F 0 "R6" V 3030 4000 50  0000 C CNN
+F 1 "10k" V 2950 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2880 4000 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 2950 4000 50  0001 C CNN
+F 4 "Yageo" V 2950 4000 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" V 2950 4000 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 2950 4000 60  0001 C CNN "Vendor"
+F 7 "311-10.0KHRCT-ND" V 2950 4000 60  0001 C CNN "Vendor Part #"
+	1    2950 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 5600 4200 5950
+Wire Wire Line
+	3850 5750 4250 5750
+Connection ~ 4200 5750
+Wire Wire Line
+	4550 5750 4600 5750
+Wire Wire Line
+	4600 5750 4600 5800
+Wire Wire Line
+	4200 5300 4200 5250
+Wire Wire Line
+	2950 6050 2950 6250
+Wire Wire Line
+	2750 6150 4000 6150
+Connection ~ 2950 6150
+Wire Wire Line
+	2950 6600 2950 6550
+Wire Wire Line
+	2950 5750 2950 5700
+Wire Wire Line
+	3850 7450 3850 7350
+Wire Wire Line
+	3750 6950 4250 6950
+Wire Wire Line
+	3850 6350 3850 7050
+Wire Wire Line
+	4000 6350 3850 6350
+Connection ~ 3850 6950
+Wire Wire Line
+	3450 6950 3350 6950
+Wire Wire Line
+	3350 6950 3350 6900
+Wire Wire Line
+	4250 6950 4250 7050
+Wire Wire Line
+	4250 7350 4250 7450
+Wire Wire Line
+	2000 6150 2450 6150
+Wire Wire Line
+	2300 5850 2300 6150
+Connection ~ 2300 6150
+Wire Wire Line
+	5700 5500 5700 5350
+Connection ~ 5700 6000
+$Comp
+L +12V #PWR014
+U 1 1 57BFEBAC
+P 3250 3900
+F 0 "#PWR014" H 3250 3750 50  0001 C CNN
+F 1 "+12V" H 3250 4040 50  0000 C CNN
+F 2 "" H 3250 3900 50  0000 C CNN
+F 3 "" H 3250 3900 50  0000 C CNN
+	1    3250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 57BFED36
+P 1700 4750
+F 0 "R2" V 1800 4750 50  0000 C CNN
+F 1 "2.4M" V 1700 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1630 4750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 1700 4750 50  0001 C CNN
+F 4 "Vishay Dale" V 1700 4750 60  0001 C CNN "Manufacturer"
+F 5 "CRCW06032M40FKEA" V 1700 4750 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 1700 4750 60  0001 C CNN "Vendor"
+F 7 "541-2.40MHCT-ND" V 1700 4750 60  0001 C CNN "Vendor Part #"
+	1    1700 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 57BFEE39
+P 2250 5000
+F 0 "C2" H 2300 4900 50  0000 L CNN
+F 1 "2.2nF" H 2000 5100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2288 4850 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1885C1H222JA01-01.pdf" H 2250 5000 50  0001 C CNN
+F 4 "Murata" V 2250 5000 60  0001 C CNN "Manufacturer"
+F 5 "GRM1885C1H222JA01D" V 2250 5000 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 2250 5000 60  0001 C CNN "Vendor"
+F 7 "490-1459-1-ND" V 2250 5000 60  0001 C CNN "Vendor Part #"
+	1    2250 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 57BFF497
+P 2250 5200
+F 0 "#PWR015" H 2250 4950 50  0001 C CNN
+F 1 "GND" H 2250 5050 50  0000 C CNN
+F 2 "" H 2250 5200 50  0000 C CNN
+F 3 "" H 2250 5200 50  0000 C CNN
+	1    2250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57BFF6F6
+P 800 1100
+F 0 "R1" V 880 1100 50  0000 C CNN
+F 1 "1k" V 800 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 730 1100 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 800 1100 50  0001 C CNN
+F 4 "Yageo" V 800 1100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07100RL" V 800 1100 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 800 1100 60  0001 C CNN "Vendor"
+F 7 "311-100HRCT-ND" V 800 1100 60  0001 C CNN "Vendor Part #"
+	1    800  1100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2000 5950
+NoConn ~ 2000 6050
+$Comp
+L +12V #PWR016
+U 1 1 57C002A3
+P 2050 900
+F 0 "#PWR016" H 2050 750 50  0001 C CNN
+F 1 "+12V" H 2050 1040 50  0000 C CNN
+F 2 "" H 2050 900 50  0000 C CNN
+F 3 "" H 2050 900 50  0000 C CNN
+	1    2050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 57C00324
+P 2050 1100
+F 0 "R4" V 2130 1100 50  0000 C CNN
+F 1 "100" V 2050 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1980 1100 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_04.pdf" H 2050 1100 50  0001 C CNN
+F 4 "Yageo" V 2050 1100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07100RL" V 2050 1100 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digieky" V 2050 1100 60  0001 C CNN "Vendor"
+F 7 "311-100HRCT-ND" V 2050 1100 60  0001 C CNN "Vendor Part #"
+	1    2050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1250 2050 1750
+Wire Wire Line
+	2050 950  2050 900 
+$Comp
+L C C1
+U 1 1 57C00851
+P 1750 1350
+F 0 "C1" V 1600 1300 50  0000 L CNN
+F 1 "0.1uF" V 1900 1250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1788 1200 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01.pdf" H 1750 1350 50  0001 C CNN
+F 4 "Murata" V 1750 1350 60  0001 C CNN "Manufacturer"
+F 5 "GRM188R72A104KA35D" V 1750 1350 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 1750 1350 60  0001 C CNN "Vendor"
+F 7 "490-3285-1-ND" V 1750 1350 60  0001 C CNN "Vendor Part #"
+	1    1750 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 57C008EE
+P 1450 1450
+F 0 "#PWR017" H 1450 1200 50  0001 C CNN
+F 1 "GND" H 1450 1300 50  0000 C CNN
+F 2 "" H 1450 1450 50  0000 C CNN
+F 3 "" H 1450 1450 50  0000 C CNN
+	1    1450 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1350 2450 1350
+Connection ~ 2050 1350
+Wire Wire Line
+	1600 1350 1450 1350
+Wire Wire Line
+	1450 1350 1450 1450
+$Comp
+L GND #PWR018
+U 1 1 57C00DFD
+P 2050 2900
+F 0 "#PWR018" H 2050 2650 50  0001 C CNN
+F 1 "GND" H 2050 2750 50  0000 C CNN
+F 2 "" H 2050 2900 50  0000 C CNN
+F 3 "" H 2050 2900 50  0000 C CNN
+	1    2050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2900 2050 2750
+$Comp
+L Q_PMOS_GSD Q9
+U 1 1 57C0473B
+P 8050 4600
+F 0 "Q9" H 8350 4650 50  0000 R CNN
+F 1 "FDV304P" H 8700 4550 50  0001 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 8250 4700 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV304P.pdf" H 8050 4600 50  0001 C CNN
+F 4 "Fairchild" H 8050 4600 60  0001 C CNN "Manufacturer"
+F 5 "FDV304P" H 8050 4600 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 8050 4600 60  0001 C CNN "Vendor"
+F 7 "FDV304PCT-ND" H 8050 4600 60  0001 C CNN "Vendor Part #"
+	1    8050 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q8
+U 1 1 57C04CE5
+P 7700 4200
+F 0 "Q8" H 8000 4250 50  0000 R CNN
+F 1 "FDV304P" H 8350 4150 50  0001 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7900 4300 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV304P.pdf" H 7700 4200 50  0001 C CNN
+F 4 "Fairchild" H 7700 4200 60  0001 C CNN "Manufacturer"
+F 5 "FDV304P" H 7700 4200 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7700 4200 60  0001 C CNN "Vendor"
+F 7 "FDV304PCT-ND" H 7700 4200 60  0001 C CNN "Vendor Part #"
+	1    7700 4200
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q7
+U 1 1 57C04D81
+P 7350 3800
+F 0 "Q7" H 7650 3850 50  0000 R CNN
+F 1 "FDV304P" H 8000 3750 50  0001 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7550 3900 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV304P.pdf" H 7350 3800 50  0001 C CNN
+F 4 "Fairchild" H 7350 3800 60  0001 C CNN "Manufacturer"
+F 5 "FDV304P" H 7350 3800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7350 3800 60  0001 C CNN "Vendor"
+F 7 "FDV304PCT-ND" H 7350 3800 60  0001 C CNN "Vendor Part #"
+	1    7350 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q6
+U 1 1 57C04ED0
+P 7000 3400
+F 0 "Q6" H 7300 3450 50  0000 R CNN
+F 1 "FDV304P" H 7650 3350 50  0001 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7200 3500 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV304P.pdf" H 7000 3400 50  0001 C CNN
+F 4 "Fairchild" H 7000 3400 60  0001 C CNN "Manufacturer"
+F 5 "FDV304P" H 7000 3400 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 7000 3400 60  0001 C CNN "Vendor"
+F 7 "FDV304PCT-ND" H 7000 3400 60  0001 C CNN "Vendor Part #"
+	1    7000 3400
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q5
+U 1 1 57C04F7B
+P 6650 3000
+F 0 "Q5" H 6950 3050 50  0000 R CNN
+F 1 "FDV304P" H 7300 2950 50  0001 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6850 3100 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV304P.pdf" H 6650 3000 50  0001 C CNN
+F 4 "Fairchild" H 6650 3000 60  0001 C CNN "Manufacturer"
+F 5 "FDV304P" H 6650 3000 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 6650 3000 60  0001 C CNN "Vendor"
+F 7 "FDV304PCT-ND" H 6650 3000 60  0001 C CNN "Vendor Part #"
+	1    6650 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q4
+U 1 1 57C05023
+P 6300 2600
+F 0 "Q4" H 6600 2650 50  0000 R CNN
+F 1 "FDV304P" H 6950 2550 50  0001 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6500 2700 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV304P.pdf" H 6300 2600 50  0001 C CNN
+F 4 "Fairchild" H 6300 2600 60  0001 C CNN "Manufacturer"
+F 5 "FDV304P" H 6300 2600 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 6300 2600 60  0001 C CNN "Vendor"
+F 7 "FDV304PCT-ND" H 6300 2600 60  0001 C CNN "Vendor Part #"
+	1    6300 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q3
+U 1 1 57C050D0
+P 5950 2200
+F 0 "Q3" H 6250 2250 50  0000 R CNN
+F 1 "FDV304P" H 6600 2150 50  0001 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6150 2300 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV304P.pdf" H 5950 2200 50  0001 C CNN
+F 4 "Fairchild" H 5950 2200 60  0001 C CNN "Manufacturer"
+F 5 "FDV304P" H 5950 2200 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 5950 2200 60  0001 C CNN "Vendor"
+F 7 "FDV304PCT-ND" H 5950 2200 60  0001 C CNN "Vendor Part #"
+	1    5950 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L Q_PMOS_GSD Q2
+U 1 1 57C05358
+P 5600 1800
+F 0 "Q2" H 5900 1850 50  0000 R CNN
+F 1 "FDV304P" H 6250 1750 50  0001 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5800 1900 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV304P.pdf" H 5600 1800 50  0001 C CNN
+F 4 "Fairchild" H 5600 1800 60  0001 C CNN "Manufacturer"
+F 5 "FDV304P" H 5600 1800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 5600 1800 60  0001 C CNN "Vendor"
+F 7 "FDV304PCT-ND" H 5600 1800 60  0001 C CNN "Vendor Part #"
+	1    5600 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L +12V #PWR019
+U 1 1 57C064AE
+P 5700 1300
+F 0 "#PWR019" H 5700 1150 50  0001 C CNN
+F 1 "+12V" H 5700 1440 50  0000 C CNN
+F 2 "" H 5700 1300 50  0000 C CNN
+F 3 "" H 5700 1300 50  0000 C CNN
+	1    5700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4022 U2
+U 1 1 57BFC727
+P 2050 2250
+F 0 "U2" H 2050 2250 50  0000 C CNN
+F 1 "CD4022" H 2050 2150 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 2050 2250 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4017b.pdf" H 2050 2250 60  0001 C CNN
+F 4 "Texas Instruments" H 2050 2250 60  0001 C CNN "Manufacturer"
+F 5 "CD4022BNSR" H 2050 2250 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 2050 2250 60  0001 C CNN "Vendor"
+F 7 "296-14098-1-ND" H 2050 2250 60  0001 C CNN "Vendor Part #"
+	1    2050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 6000 8150 5900
+Wire Wire Line
+	5700 6000 8150 6000
+Wire Wire Line
+	8150 5500 8150 5350
+Wire Wire Line
+	7800 5900 7800 6000
+Connection ~ 7800 6000
+Wire Wire Line
+	7450 5900 7450 6000
+Connection ~ 7450 6000
+Wire Wire Line
+	7100 5900 7100 6000
+Connection ~ 7100 6000
+Wire Wire Line
+	6750 5900 6750 6000
+Connection ~ 6750 6000
+Wire Wire Line
+	6400 5900 6400 6000
+Connection ~ 6400 6000
+Wire Wire Line
+	6050 5900 6050 6000
+Connection ~ 6050 6000
+Wire Wire Line
+	6050 5500 6050 5350
+Wire Wire Line
+	6400 5350 6400 5500
+Wire Wire Line
+	6750 5500 6750 5350
+Wire Wire Line
+	7100 5350 7100 5500
+Wire Wire Line
+	7450 5500 7450 5350
+Wire Wire Line
+	7800 5350 7800 5500
+Wire Wire Line
+	8150 4950 8150 4800
+Wire Wire Line
+	7800 4950 7800 4400
+Wire Wire Line
+	7450 4000 7450 4950
+Wire Wire Line
+	7100 3600 7100 4950
+Wire Wire Line
+	6750 3200 6750 4950
+Wire Wire Line
+	6400 2800 6400 4950
+Wire Wire Line
+	2700 1800 5400 1800
+Wire Wire Line
+	6050 2400 6050 4950
+Wire Wire Line
+	5700 2000 5700 4950
+Wire Wire Line
+	2700 1900 4600 1900
+Wire Wire Line
+	4600 1900 4600 2200
+Wire Wire Line
+	4600 2200 5750 2200
+Wire Wire Line
+	2700 2000 4500 2000
+Wire Wire Line
+	4500 2000 4500 2600
+Wire Wire Line
+	4500 2600 6100 2600
+Wire Wire Line
+	2700 2100 4400 2100
+Wire Wire Line
+	4400 2100 4400 3000
+Wire Wire Line
+	4400 3000 6450 3000
+Wire Wire Line
+	2700 2200 4300 2200
+Wire Wire Line
+	4300 2200 4300 3400
+Wire Wire Line
+	4300 3400 6800 3400
+Wire Wire Line
+	2700 2300 4200 2300
+Wire Wire Line
+	4200 2300 4200 3800
+Wire Wire Line
+	4200 3800 7150 3800
+Wire Wire Line
+	2700 2400 4100 2400
+Wire Wire Line
+	4100 2400 4100 4200
+Wire Wire Line
+	4100 4200 7500 4200
+Wire Wire Line
+	2700 2500 4000 2500
+Wire Wire Line
+	4000 2500 4000 4600
+Wire Wire Line
+	4000 4600 7850 4600
+Wire Wire Line
+	5700 1300 5700 1600
+Wire Wire Line
+	6050 2000 6050 1400
+Wire Wire Line
+	5700 1400 8150 1400
+Connection ~ 5700 1400
+Wire Wire Line
+	6400 1400 6400 2400
+Connection ~ 6050 1400
+Wire Wire Line
+	6750 1400 6750 2800
+Connection ~ 6400 1400
+Wire Wire Line
+	7100 1400 7100 3200
+Connection ~ 6750 1400
+Wire Wire Line
+	7450 1400 7450 3600
+Connection ~ 7100 1400
+Wire Wire Line
+	7800 1400 7800 4000
+Connection ~ 7450 1400
+Wire Wire Line
+	8150 1400 8150 4400
+Connection ~ 7800 1400
+Wire Wire Line
+	1400 1900 1200 1900
+Wire Wire Line
+	1200 1900 1200 2200
+Wire Wire Line
+	1400 2100 1200 2100
+Connection ~ 1200 2100
+$Comp
+L +12V #PWR020
+U 1 1 57C06AD4
+P 800 900
+F 0 "#PWR020" H 800 750 50  0001 C CNN
+F 1 "+12V" H 800 1040 50  0000 C CNN
+F 2 "" H 800 900 50  0000 C CNN
+F 3 "" H 800 900 50  0000 C CNN
+	1    800  900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  950  800  900 
+Wire Wire Line
+	1150 4750 1550 4750
+Wire Wire Line
+	1150 3400 1150 4750
+Wire Wire Line
+	800  4100 1400 4100
+Wire Wire Line
+	1850 4750 2250 4750
+Wire Wire Line
+	2250 4200 2250 4850
+Wire Wire Line
+	2250 4200 2000 4200
+Connection ~ 2250 4750
+Wire Wire Line
+	2250 5200 2250 5150
+Wire Wire Line
+	1750 3400 1150 3400
+Connection ~ 1150 4100
+Wire Wire Line
+	2050 3400 2550 3400
+Wire Wire Line
+	2000 4000 2800 4000
+Wire Wire Line
+	2550 3400 2550 4100
+Connection ~ 2550 4000
+Wire Wire Line
+	3100 4000 3250 4000
+Wire Wire Line
+	3250 4000 3250 3900
+$Comp
+L GND #PWR021
+U 1 1 57C0847F
+P 2550 4500
+F 0 "#PWR021" H 2550 4250 50  0001 C CNN
+F 1 "GND" H 2550 4350 50  0000 C CNN
+F 2 "" H 2550 4500 50  0000 C CNN
+F 3 "" H 2550 4500 50  0000 C CNN
+	1    2550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4400 2550 4500
+Wire Wire Line
+	800  1250 800  4100
+Wire Wire Line
+	1400 1800 800  1800
+Connection ~ 800  1800
+NoConn ~ 1800 3800
+NoConn ~ 4200 6550
+$Comp
+L PWR_FLAG #FLG022
+U 1 1 57C0846E
+P 3850 5700
+F 0 "#FLG022" H 3850 5795 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 5880 50  0000 C CNN
+F 2 "" H 3850 5700 50  0000 C CNN
+F 3 "" H 3850 5700 50  0000 C CNN
+	1    3850 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5700 3850 5750
+$Comp
+L PWR_FLAG #FLG023
+U 1 1 57C0867F
+P 2450 1300
+F 0 "#FLG023" H 2450 1395 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 1480 50  0000 C CNN
+F 2 "" H 2450 1300 50  0000 C CNN
+F 3 "" H 2450 1300 50  0000 C CNN
+	1    2450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1350 2450 1300
+$Comp
+L BARREL_JACK CON1
+U 1 1 57C08677
+P 10500 1700
+F 0 "CON1" H 10500 1950 50  0000 C CNN
+F 1 "+12v" H 10500 1500 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 10500 1700 50  0001 C CNN
+F 3 "http://www.cui.com/product/resource/digikeypdf/pj-002a.pdf" H 10500 1700 50  0001 C CNN
+F 4 "CUI Inc." H 10500 1700 60  0001 C CNN "Manufacturer"
+F 5 "PJ-002A" H 10500 1700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 10500 1700 60  0001 C CNN "Vendor"
+F 7 "CP-002A-ND" H 10500 1700 60  0001 C CNN "Vendor Part #"
+	1    10500 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 57C087CD
+P 9800 1800
+F 0 "C6" H 9850 1700 50  0000 L CNN
+F 1 "0.1uF" H 9550 1900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9838 1650 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01.pdf" H 9800 1800 50  0001 C CNN
+F 4 "Murata" V 9800 1800 60  0001 C CNN "Manufacturer"
+F 5 "GRM188R72A104KA35D" V 9800 1800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 9800 1800 60  0001 C CNN "Vendor"
+F 7 "490-3285-1-ND" V 9800 1800 60  0001 C CNN "Vendor Part #"
+	1    9800 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR024
+U 1 1 57C08BEE
+P 9000 1400
+F 0 "#PWR024" H 9000 1250 50  0001 C CNN
+F 1 "+12V" H 9000 1540 50  0000 C CNN
+F 2 "" H 9000 1400 50  0000 C CNN
+F 3 "" H 9000 1400 50  0000 C CNN
+	1    9000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 57C09244
+P 9800 2150
+F 0 "#PWR025" H 9800 1900 50  0001 C CNN
+F 1 "GND" H 9800 2000 50  0000 C CNN
+F 2 "" H 9800 2150 50  0000 C CNN
+F 3 "" H 9800 2150 50  0000 C CNN
+	1    9800 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1700 10100 1700
+Wire Wire Line
+	10100 1700 10100 2150
+Wire Wire Line
+	10100 1800 10200 1800
+$Comp
+L GND #PWR026
+U 1 1 57C097DD
+P 10100 2150
+F 0 "#PWR026" H 10100 1900 50  0001 C CNN
+F 1 "GND" H 10100 2000 50  0000 C CNN
+F 2 "" H 10100 2150 50  0000 C CNN
+F 3 "" H 10100 2150 50  0000 C CNN
+	1    10100 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 10100 1800
+$Comp
+L PWR_FLAG #FLG027
+U 1 1 57C09943
+P 8600 1450
+F 0 "#FLG027" H 8600 1545 50  0001 C CNN
+F 1 "PWR_FLAG" H 8600 1630 50  0000 C CNN
+F 2 "" H 8600 1450 50  0000 C CNN
+F 3 "" H 8600 1450 50  0000 C CNN
+	1    8600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG028
+U 1 1 57C09AA9
+P 8600 2150
+F 0 "#FLG028" H 8600 2245 50  0001 C CNN
+F 1 "PWR_FLAG" H 8600 2330 50  0000 C CNN
+F 2 "" H 8600 2150 50  0000 C CNN
+F 3 "" H 8600 2150 50  0000 C CNN
+	1    8600 2150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2000 5850 2300 5850
+Wire Wire Line
+	2000 6250 2100 6250
+Wire Wire Line
+	2100 6250 2100 6350
+$Comp
+L STX-3100-5N J1
+U 1 1 57C0A233
+P 1700 6150
+F 0 "J1" H 1600 6300 50  0000 L BNN
+F 1 "STX-3100-5N" H 1650 5700 50  0000 L BNN
+F 2 "STX3100-5N:STX3100" H 1700 6300 50  0001 C CNN
+F 3 "http://www.cui.com/product/resource/sj1-355xng-series.pdf" H 1700 5950 60  0001 C CNN
+F 4 "CUI Inc." H 1700 6150 60  0001 C CNN "Manufacturer"
+F 5 "SJ1-3555NG" H 1700 6150 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 1700 6150 60  0001 C CNN "Vendor"
+F 7 "CP1-3555NG-ND" H 1700 6150 60  0001 C CNN "Vendor Part #"
+	1    1700 6150
+	1    0    0    1   
+$EndComp
+$Comp
+L MMBT3904 Q1
+U 1 1 57C1B3EA
+P 5300 6550
+F 0 "Q1" H 5500 6625 50  0000 L CNN
+F 1 "2N3904" H 5500 6550 50  0000 L CNN
+F 2 "SOT-23" H 5500 6475 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/datasheets/MM/MMBT3904.pdf" H 5300 6550 50  0001 L CNN
+F 4 "Fairchild Semiconductor" H 5300 6550 60  0001 C CNN "Manufacturer"
+F 5 "MMBT3904" H 5300 6550 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 5300 6550 60  0001 C CNN "Vendor"
+F 7 "MMBT3904FSCT-ND" H 5300 6550 60  0001 C CNN "Vendor Part #"
+	1    5300 6550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 57C1B5E0
+P 5700 6800
+F 0 "R13" V 5780 6800 50  0000 C CNN
+F 1 "10" V 5700 6800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5630 6800 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C243.pdf" H 5700 6800 50  0001 C CNN
+F 4 "Panasonic" V 5700 6800 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-PA3F1000V" V 5700 6800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digieky" V 5700 6800 60  0001 C CNN "Vendor"
+F 7 "P100BYCT-ND" V 5700 6800 60  0001 C CNN "Vendor Part #"
+	1    5700 6800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 6250
+Wire Wire Line
+	5200 5700 5200 5800
+Wire Wire Line
+	4600 6250 5400 6250
+$Comp
+L MMBT3904 Q10
+U 1 1 57C1C336
+P 5600 6250
+F 0 "Q10" H 5800 6325 50  0000 L CNN
+F 1 "2N3904" H 5800 6250 50  0000 L CNN
+F 2 "SOT-23" H 5800 6175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/datasheets/MM/MMBT3904.pdf" H 5600 6250 50  0001 L CNN
+F 4 "Fairchild Semiconductor" H 5600 6250 60  0001 C CNN "Manufacturer"
+F 5 "MMBT3904" H 5600 6250 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 5600 6250 60  0001 C CNN "Vendor"
+F 7 "MMBT3904FSCT-ND" H 5600 6250 60  0001 C CNN "Vendor Part #"
+	1    5600 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5900 5700 6050
+Wire Wire Line
+	5700 6650 5700 6450
+Wire Wire Line
+	5500 6550 5700 6550
+Connection ~ 5700 6550
+Wire Wire Line
+	5200 6100 5200 6350
+Wire Wire Line
+	5200 6950 5200 6750
+Wire Wire Line
+	9800 1650 9800 1600
+Connection ~ 9800 1600
+Wire Wire Line
+	9800 2150 9800 1950
+Wire Wire Line
+	9700 1600 10200 1600
+$Comp
+L INDUCTOR L1
+U 1 1 57C317C9
+P 9400 1600
+F 0 "L1" V 9350 1600 50  0000 C CNN
+F 1 "10uH" V 9500 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9400 1600 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_commercial_decoupling_mlz2012_en.pdf" H 9400 1600 50  0001 C CNN
+F 4 "TDK Corporation" V 9400 1600 60  0001 C CNN "Manufacturer"
+F 5 "MLZ2012N100LT000" V 9400 1600 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 9400 1600 60  0001 C CNN "Vendor"
+F 7 "445-6762-1-ND" V 9400 1600 60  0001 C CNN "Vendor Part #"
+	1    9400 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C7
+U 1 1 57C31892
+P 9000 1800
+F 0 "C7" H 9050 1700 50  0000 L CNN
+F 1 "10uF" H 8750 1900 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9038 1650 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2016/08/18/S_CL31B106KLHNNNE.pdf" H 9000 1800 50  0001 C CNN
+F 4 "Samsung" V 9000 1800 60  0001 C CNN "Manufacturer"
+F 5 "CL31B106KLHNNNE" V 9000 1800 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" V 9000 1800 60  0001 C CNN "Vendor"
+F 7 "1276-3103-1-ND" V 9000 1800 60  0001 C CNN "Vendor Part #"
+	1    9000 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 1600 9100 1600
+Wire Wire Line
+	9000 1400 9000 1650
+$Comp
+L GND #PWR029
+U 1 1 57C31C65
+P 9000 2150
+F 0 "#PWR029" H 9000 1900 50  0001 C CNN
+F 1 "GND" H 9000 2000 50  0000 C CNN
+F 2 "" H 9000 2150 50  0000 C CNN
+F 3 "" H 9000 2150 50  0000 C CNN
+	1    9000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2150 9000 1950
+Connection ~ 9000 1600
+Wire Wire Line
+	8600 1600 8600 1450
+Wire Wire Line
+	8600 2150 8600 2000
+Wire Wire Line
+	8600 2000 9000 2000
+Connection ~ 9000 2000
+$EndSCHEMATC

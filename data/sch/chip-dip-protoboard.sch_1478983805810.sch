@@ -1,0 +1,572 @@
+EESchema Schematic File Version 2
+LIBS:chip-dips
+LIBS:wickerlib
+LIBS:chip-dip-protoboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Protobard DIP for C.H.I.P. Computer"
+Date "2016-05-07"
+Rev "v1.0"
+Comp "This design uses a KiCad DIP template created by Jenner for Wickerlib"
+Comment1 "Released under the CERN Open Hardware License v1.2"
+Comment2 "wickerboxen@gmail.com - http://wickerbox.net"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DIP-HEADER-2x20 J13
+U 1 1 572EA21C
+P 4075 3850
+F 0 "J13" H 3950 5025 100 0000 L CNN
+F 1 "DIP-HEADER-2x20" H 3725 2800 50  0001 L CNN
+F 2 "CHIP-DIPs:DIP_Header_2x20" H 4375 5400 50  0001 C CIN
+F 3 "http://sullinscorp.com/catalogs/146_PAGE119_.100_SFH11_SERIES_FEMALE_HDR_ST_RA.pdf" H 4125 4150 5   0001 C CNN
+F 4 "HEADER-FEMALE-2x20" H 4375 5400 50  0001 C CIN "Package"
+F 5 "Sullins" H 4375 5400 50  0001 C CIN "MF_Name"
+F 6 "SFH11-PBPC-D20-ST-BK" H 4375 5400 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 4375 5400 50  0001 C CIN "S1_Name"
+F 8 "S9200-ND" H 4375 5400 50  0001 C CIN "S1_PN"
+F 9 "DIP HEADER 2x20 P0.1IN TH" H 4375 5400 50  0001 C CIN "Description"
+	1    4075 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIP-HEADER-2x20 J14
+U 1 1 572EA292
+P 7650 3850
+F 0 "J14" H 7500 5025 100 0000 L CNN
+F 1 "DIP-HEADER-2x20" H 7300 2800 50  0001 L CNN
+F 2 "CHIP-DIPs:DIP_Header_2x20" H 7950 5400 50  0001 C CIN
+F 3 "http://sullinscorp.com/catalogs/146_PAGE119_.100_SFH11_SERIES_FEMALE_HDR_ST_RA.pdf" H 7700 4150 5   0001 C CNN
+F 4 "HEADER-FEMALE-2x20" H 7950 5400 50  0001 C CIN "Package"
+F 5 "Sullins" H 7950 5400 50  0001 C CIN "MF_Name"
+F 6 "SFH11-PBPC-D20-ST-BK" H 7950 5400 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 7950 5400 50  0001 C CIN "S1_Name"
+F 8 "S9200-ND" H 7950 5400 50  0001 C CIN "S1_PN"
+F 9 "DIP HEADER 2x20 P0.1IN TH" H 7950 5400 50  0001 C CIN "Description"
+	1    7650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 572E9C4A
+P 4500 4900
+F 0 "#PWR01" H 4500 4650 50  0001 C CNN
+F 1 "GND" H 4500 4750 50  0000 C CNN
+F 2 "" H 4500 4900 50  0000 C CNN
+F 3 "" H 4500 4900 50  0000 C CNN
+	1    4500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 572E9C62
+P 3375 2800
+F 0 "#PWR02" H 3375 2650 50  0001 C CNN
+F 1 "+5V" H 3375 2940 50  0000 C CNN
+F 2 "" H 3375 2800 50  0000 C CNN
+F 3 "" H 3375 2800 50  0000 C CNN
+	1    3375 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VBAT #PWR03
+U 1 1 572E9DF7
+P 4700 2625
+F 0 "#PWR03" H 4700 2475 50  0001 C CNN
+F 1 "VBAT" H 4700 2765 50  0000 C CNN
+F 2 "" H 4700 2625 50  0000 C CNN
+F 3 "" H 4700 2625 50  0000 C CNN
+	1    4700 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1.8V #PWR04
+U 1 1 572E9E0F
+P 3025 2800
+F 0 "#PWR04" H 3025 2650 50  0001 C CNN
+F 1 "+1.8V" H 3025 2940 50  0000 C CNN
+F 2 "" H 3025 2800 50  0000 C CNN
+F 3 "" H 3025 2800 50  0000 C CNN
+	1    3025 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR05
+U 1 1 572E9E27
+P 3200 2625
+F 0 "#PWR05" H 3200 2475 50  0001 C CNN
+F 1 "+3.3V" H 3200 2765 50  0000 C CNN
+F 2 "" H 3200 2625 50  0000 C CNN
+F 3 "" H 3200 2625 50  0000 C CNN
+	1    3200 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 572E9FD5
+P 3650 4900
+F 0 "#PWR06" H 3650 4650 50  0001 C CNN
+F 1 "GND" H 3650 4750 50  0000 C CNN
+F 2 "" H 3650 4900 50  0000 C CNN
+F 3 "" H 3650 4900 50  0000 C CNN
+	1    3650 4900
+	1    0    0    -1  
+$EndComp
+Text Label 2525 3250 0    60   ~ 0
+TWI1-SDA
+Text Label 2525 3350 0    60   ~ 0
+TWI1-SCK
+Text Label 2525 3450 0    60   ~ 0
+X1
+Text Label 2525 3550 0    60   ~ 0
+Y1
+Text Label 2525 3650 0    60   ~ 0
+LCD-D2
+Text Label 2525 3750 0    60   ~ 0
+LCD-D4
+Text Label 2525 3850 0    60   ~ 0
+LCD-D6
+Text Label 2525 3950 0    60   ~ 0
+LCD-D10
+Text Label 2525 4050 0    60   ~ 0
+LCD-D12
+Text Label 2525 4150 0    60   ~ 0
+LCD-D14
+Text Label 2525 4250 0    60   ~ 0
+LCD-D18
+Text Label 2525 4350 0    60   ~ 0
+LCD-D20
+Text Label 2525 4450 0    60   ~ 0
+LCD-D22
+Text Label 2525 4550 0    60   ~ 0
+LCD-CLK
+Text Label 2525 4650 0    60   ~ 0
+LCD-VSYNC
+Text Label 5075 3050 2    60   ~ 0
+TS
+$Comp
+L VCHG #PWR07
+U 1 1 572EA95A
+P 4500 2775
+F 0 "#PWR07" H 4500 2625 50  0001 C CNN
+F 1 "VCHG" H 4500 2915 50  0000 C CNN
+F 2 "" H 4500 2775 50  0000 C CNN
+F 3 "" H 4500 2775 50  0000 C CNN
+	1    4500 2775
+	1    0    0    -1  
+$EndComp
+Text Label 5075 3250 2    60   ~ 0
+PWRON
+Text Label 5075 3450 2    60   ~ 0
+X2
+Text Label 5075 3550 2    60   ~ 0
+Y2
+Text Label 5075 3650 2    60   ~ 0
+PWM0
+Text Label 5075 3750 2    60   ~ 0
+LCD-D3
+Text Label 5075 3850 2    60   ~ 0
+LCD-D5
+Text Label 5075 3950 2    60   ~ 0
+LCD-D7
+Text Label 5075 4050 2    60   ~ 0
+LCD-D11
+Text Label 5075 4150 2    60   ~ 0
+LCD-D13
+Text Label 5075 4250 2    60   ~ 0
+LCD-D15
+Text Label 5075 4350 2    60   ~ 0
+LCD-D19
+Text Label 5075 4450 2    60   ~ 0
+LCD-D21
+Text Label 5075 4550 2    60   ~ 0
+LCD-D23
+Text Label 5075 4650 2    60   ~ 0
+LCD-HSYNC
+Text Label 5075 4750 2    60   ~ 0
+LCD-DE
+$Comp
+L GND #PWR08
+U 1 1 572EB207
+P 7200 4950
+F 0 "#PWR08" H 7200 4700 50  0001 C CNN
+F 1 "GND" H 7200 4800 50  0000 C CNN
+F 2 "" H 7200 4950 50  0000 C CNN
+F 3 "" H 7200 4950 50  0000 C CNN
+	1    7200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 572EB39C
+P 8075 4950
+F 0 "#PWR09" H 8075 4700 50  0001 C CNN
+F 1 "GND" H 8075 4800 50  0000 C CNN
+F 2 "" H 8075 4950 50  0000 C CNN
+F 3 "" H 8075 4950 50  0000 C CNN
+	1    8075 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 572EB565
+P 8100 2775
+F 0 "#PWR010" H 8100 2625 50  0001 C CNN
+F 1 "+5V" H 8100 2915 50  0000 C CNN
+F 2 "" H 8100 2775 50  0000 C CNN
+F 3 "" H 8100 2775 50  0000 C CNN
+	1    8100 2775
+	1    0    0    -1  
+$EndComp
+Text Label 8625 2950 2    60   ~ 0
+HPL
+Text Label 8625 3050 2    60   ~ 0
+HPCOM
+Text Label 8625 3150 2    60   ~ 0
+HPR
+Text Label 8625 3250 2    60   ~ 0
+MICM
+Text Label 8625 3350 2    60   ~ 0
+MICIN1
+Text Label 8625 3450 2    60   ~ 0
+XIO-P1
+Text Label 8625 3550 2    60   ~ 0
+XIO-P3
+Text Label 8625 3650 2    60   ~ 0
+XIO-P5
+Text Label 8625 3750 2    60   ~ 0
+XIO-P7
+Wire Wire Line
+	2525 2850 3725 2850
+Wire Wire Line
+	2525 2950 3725 2950
+Wire Wire Line
+	2525 3050 3725 3050
+Wire Wire Line
+	2525 3150 3725 3150
+Wire Wire Line
+	3725 3250 2525 3250
+Wire Wire Line
+	3725 3350 2525 3350
+Wire Wire Line
+	3725 3450 2525 3450
+Wire Wire Line
+	3725 3550 2525 3550
+Wire Wire Line
+	3725 3650 2525 3650
+Wire Wire Line
+	3725 3750 2525 3750
+Wire Wire Line
+	3725 3850 2525 3850
+Wire Wire Line
+	3725 3950 2525 3950
+Wire Wire Line
+	3725 4050 2525 4050
+Wire Wire Line
+	3725 4150 2525 4150
+Wire Wire Line
+	3725 4250 2525 4250
+Wire Wire Line
+	3725 4350 2525 4350
+Wire Wire Line
+	7300 2950 6450 2950
+Wire Wire Line
+	7300 3050 6450 3050
+Wire Wire Line
+	7300 3150 6450 3150
+Wire Wire Line
+	6450 3250 7300 3250
+Wire Wire Line
+	7300 3350 6450 3350
+Wire Wire Line
+	7300 3450 6450 3450
+Wire Wire Line
+	7300 3550 6450 3550
+Wire Wire Line
+	7300 3650 6450 3650
+Wire Wire Line
+	7300 3750 6450 3750
+Wire Wire Line
+	7300 3950 6450 3950
+Wire Wire Line
+	7300 4050 6450 4050
+Wire Wire Line
+	7300 4150 6450 4150
+Wire Wire Line
+	7300 4250 6450 4250
+Wire Wire Line
+	7300 4350 6450 4350
+Wire Wire Line
+	3725 4450 2525 4450
+Wire Wire Line
+	3725 4550 2525 4550
+Wire Wire Line
+	3725 4650 2525 4650
+Wire Wire Line
+	2525 4750 3725 4750
+Wire Wire Line
+	8000 2950 8625 2950
+Wire Wire Line
+	8000 3050 8625 3050
+Wire Wire Line
+	8000 3150 8625 3150
+Wire Wire Line
+	8000 3250 8625 3250
+Wire Wire Line
+	8000 3350 8625 3350
+Wire Wire Line
+	8000 3450 8625 3450
+Wire Wire Line
+	8000 3550 8625 3550
+Wire Wire Line
+	8000 3650 8625 3650
+Wire Wire Line
+	8000 3750 8625 3750
+Wire Wire Line
+	8000 3950 8625 3950
+Wire Wire Line
+	8000 4050 8625 4050
+Wire Wire Line
+	8000 4150 8625 4150
+Wire Wire Line
+	8000 4250 8625 4250
+Wire Wire Line
+	8000 4350 8625 4350
+Wire Wire Line
+	8000 4450 8625 4450
+Wire Wire Line
+	8000 4550 8625 4550
+Wire Wire Line
+	8000 4650 8625 4650
+Wire Wire Line
+	7300 4450 6450 4450
+Wire Wire Line
+	7300 4550 6450 4550
+Wire Wire Line
+	7300 4650 6450 4650
+Wire Wire Line
+	4425 2850 5075 2850
+Wire Wire Line
+	4425 3050 5075 3050
+Wire Wire Line
+	4425 3150 5075 3150
+Wire Wire Line
+	4425 3250 5075 3250
+Wire Wire Line
+	4425 3450 5075 3450
+Wire Wire Line
+	4425 3550 5075 3550
+Wire Wire Line
+	4425 3650 5075 3650
+Wire Wire Line
+	4425 3750 5075 3750
+Wire Wire Line
+	4425 3850 5075 3850
+Wire Wire Line
+	4425 3950 5075 3950
+Wire Wire Line
+	4425 4050 5075 4050
+Wire Wire Line
+	4425 4150 5075 4150
+Wire Wire Line
+	4425 4250 5075 4250
+Wire Wire Line
+	4425 4350 5075 4350
+Wire Wire Line
+	4425 4450 5075 4450
+Wire Wire Line
+	4425 4550 5075 4550
+Wire Wire Line
+	4425 4650 5075 4650
+Wire Wire Line
+	4425 4750 5075 4750
+Wire Wire Line
+	3650 2850 3650 4900
+Wire Wire Line
+	3375 2950 3375 2800
+Wire Wire Line
+	3200 3050 3200 2625
+Wire Wire Line
+	3025 2800 3025 3150
+Connection ~ 3650 4750
+Wire Wire Line
+	4500 2850 4500 2775
+Wire Wire Line
+	4425 2950 5075 2950
+Wire Wire Line
+	4500 2950 4500 4900
+Wire Wire Line
+	4700 2625 4700 3150
+Wire Wire Line
+	4425 3350 5075 3350
+Connection ~ 4500 3350
+Wire Wire Line
+	6450 2850 7300 2850
+Wire Wire Line
+	7200 2850 7200 4950
+Wire Wire Line
+	6450 4750 7300 4750
+Connection ~ 7200 4750
+Wire Wire Line
+	8075 3850 8075 4950
+Wire Wire Line
+	8000 4750 8625 4750
+Wire Wire Line
+	8000 2850 8625 2850
+Wire Wire Line
+	8100 2850 8100 2775
+Wire Wire Line
+	8000 3850 8625 3850
+Connection ~ 8075 4750
+Text Label 8625 3950 2    60   ~ 0
+AP-EINT3
+Text Label 8625 4050 2    60   ~ 0
+TWI2-SCK
+Text Label 8625 4150 2    60   ~ 0
+CSICK
+Text Label 8625 4250 2    60   ~ 0
+CSIVSYNC
+Text Label 8625 4350 2    60   ~ 0
+CSID1
+Text Label 8625 4450 2    60   ~ 0
+CSID3
+Text Label 8625 4550 2    60   ~ 0
+CSID5
+Text Label 8625 4650 2    60   ~ 0
+CSID7
+Text Label 6450 2950 0    60   ~ 0
+UART1-TX
+Text Label 6450 3050 0    60   ~ 0
+UART1-RX
+Text Label 6450 3150 0    60   ~ 0
+FEL
+Wire Wire Line
+	7100 3250 7100 2775
+$Comp
+L +3.3V #PWR011
+U 1 1 572EB998
+P 7100 2775
+F 0 "#PWR011" H 7100 2625 50  0001 C CNN
+F 1 "+3.3V" H 7100 2915 50  0000 C CNN
+F 2 "" H 7100 2775 50  0000 C CNN
+F 3 "" H 7100 2775 50  0000 C CNN
+	1    7100 2775
+	1    0    0    -1  
+$EndComp
+Text Label 6450 3350 0    60   ~ 0
+LRADC
+Text Label 6450 3450 0    60   ~ 0
+XIO-P0
+Text Label 6450 3550 0    60   ~ 0
+XIO-P2
+Text Label 6450 3650 0    60   ~ 0
+XIO-P4
+Text Label 6450 3750 0    60   ~ 0
+XIO-P6
+Wire Wire Line
+	6450 3850 7300 3850
+Connection ~ 7200 3850
+Text Label 6450 3950 0    60   ~ 0
+AP-EINT1
+Text Label 6450 4050 0    60   ~ 0
+TWI2-SDA
+Text Label 6450 4150 0    60   ~ 0
+CSIPCK
+Text Label 6450 4250 0    60   ~ 0
+CSIHSYNC
+Text Label 6450 4350 0    60   ~ 0
+CSID0
+Text Label 6450 4450 0    60   ~ 0
+CSID2
+Text Label 6450 4550 0    60   ~ 0
+CSID4
+Text Label 6450 4650 0    60   ~ 0
+CSID6
+$Comp
+L HEADER-MALE-20POS-TH-1x20-P0.1IN DNP1
+U 1 1 5736B01B
+P 2325 3800
+F 0 "DNP1" H 2175 4850 50  0000 L CNN
+F 1 "HOLES" H 2150 2725 50  0000 L CNN
+F 2 "CHIP-DIPs:Protoboard_Holes_1x20" H 2325 3450 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2325 3800 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x20" H 2325 3450 50  0001 C CIN "Package"
+F 5 "Harwin" H 2325 3450 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2325 3450 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2325 3450 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2325 3450 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 20POS TH 1x20 0.1”" H 2325 3450 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2325 3450 50  0001 C CIN "Verified"
+	1    2325 3800
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3025 3150
+Connection ~ 3200 3050
+Connection ~ 3375 2950
+Connection ~ 3650 2850
+$Comp
+L HEADER-MALE-20POS-TH-1x20-P0.1IN DNP2
+U 1 1 5736D7D1
+P 5275 3800
+F 0 "DNP2" H 5125 4850 50  0000 L CNN
+F 1 "HOLES" H 5100 2725 50  0000 L CNN
+F 2 "CHIP-DIPs:Protoboard_Holes_1x20" H 5275 3450 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 5275 3800 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x20" H 5275 3450 50  0001 C CIN "Package"
+F 5 "Harwin" H 5275 3450 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 5275 3450 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 5275 3450 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 5275 3450 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 20POS TH 1x20 0.1”" H 5275 3450 50  0001 C CIN "Description"
+F 10 "Not Verified" H 5275 3450 50  0001 C CIN "Verified"
+	1    5275 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 2950
+Connection ~ 4500 2850
+Connection ~ 4700 3150
+$Comp
+L HEADER-MALE-20POS-TH-1x20-P0.1IN DNP3
+U 1 1 5736DABE
+P 6250 3800
+F 0 "DNP3" H 6100 4850 50  0000 L CNN
+F 1 "HOLES" H 6075 2725 50  0000 L CNN
+F 2 "CHIP-DIPs:Protoboard_Holes_1x20" H 6250 3450 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 6250 3800 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x20" H 6250 3450 50  0001 C CIN "Package"
+F 5 "Harwin" H 6250 3450 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 6250 3450 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 6250 3450 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 6250 3450 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 20POS TH 1x20 0.1”" H 6250 3450 50  0001 C CIN "Description"
+F 10 "Not Verified" H 6250 3450 50  0001 C CIN "Verified"
+	1    6250 3800
+	-1   0    0    -1  
+$EndComp
+Connection ~ 7200 2850
+Connection ~ 7100 3250
+$Comp
+L HEADER-MALE-20POS-TH-1x20-P0.1IN DNP4
+U 1 1 5736DC79
+P 8825 3800
+F 0 "DNP4" H 8675 4850 50  0000 L CNN
+F 1 "HOLES" H 8650 2725 50  0000 L CNN
+F 2 "CHIP-DIPs:Protoboard_Holes_1x20" H 8825 3450 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 8825 3800 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x20" H 8825 3450 50  0001 C CIN "Package"
+F 5 "Harwin" H 8825 3450 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 8825 3450 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 8825 3450 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 8825 3450 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 20POS TH 1x20 0.1”" H 8825 3450 50  0001 C CIN "Description"
+F 10 "Not Verified" H 8825 3450 50  0001 C CIN "Verified"
+	1    8825 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 2850
+Connection ~ 8075 3850
+$EndSCHEMATC

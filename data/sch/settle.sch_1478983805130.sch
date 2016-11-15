@@ -1,0 +1,250 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:settle-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X06 P1
+U 1 1 57AD01F4
+P 1000 1000
+F 0 "P1" H 1000 1350 50  0000 C CNN
+F 1 "CONN_01X06" V 1100 1000 50  0000 C CNN
+F 2 "Libraries:JST-6" H 1000 1000 50  0001 C CNN
+F 3 "" H 1000 1000 50  0000 C CNN
+	1    1000 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 57AD02D0
+P 1350 700
+F 0 "#PWR01" H 1350 450 50  0001 C CNN
+F 1 "Earth" H 1350 550 50  0001 C CNN
+F 2 "" H 1350 700 50  0000 C CNN
+F 3 "" H 1350 700 50  0000 C CNN
+	1    1350 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 57AD02E6
+P 1350 1150
+F 0 "#PWR02" H 1350 900 50  0001 C CNN
+F 1 "Earth" H 1350 1000 50  0001 C CNN
+F 2 "" H 1350 1150 50  0000 C CNN
+F 3 "" H 1350 1150 50  0000 C CNN
+	1    1350 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1200 1250
+Wire Wire Line
+	1200 1150 1350 1150
+Wire Wire Line
+	1200 750  1250 750 
+Wire Wire Line
+	1250 750  1250 700 
+Wire Wire Line
+	1250 700  1350 700 
+Wire Wire Line
+	1200 850  1850 850 
+Text Label 1200 950  0    60   ~ 0
+Rx
+Text Label 1200 1050 0    60   ~ 0
+Tx
+$Comp
+L RJ45 J1
+U 1 1 57AD03A7
+P 2750 1150
+F 0 "J1" H 2950 1650 50  0000 C CNN
+F 1 "RJ45" H 2600 1650 50  0000 C CNN
+F 2 "Libraries:RJ45_Header" H 2750 1150 50  0001 C CNN
+F 3 "" H 2750 1150 50  0000 C CNN
+	1    2750 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2400 1600
+NoConn ~ 2600 1600
+$Comp
+L Earth #PWR03
+U 1 1 57AD0438
+P 2700 1600
+F 0 "#PWR03" H 2700 1350 50  0001 C CNN
+F 1 "Earth" H 2700 1450 50  0001 C CNN
+F 2 "" H 2700 1600 50  0000 C CNN
+F 3 "" H 2700 1600 50  0000 C CNN
+	1    2700 1600
+	1    0    0    -1  
+$EndComp
+Text Label 2800 1600 3    60   ~ 0
+Tx
+Text Label 2900 1600 3    60   ~ 0
+Rx
+NoConn ~ 3000 1600
+NoConn ~ 3100 1600
+Wire Wire Line
+	2500 1600 2500 1950
+Wire Wire Line
+	2500 1950 2400 1950
+$Comp
+L +5V #PWR04
+U 1 1 57AD0474
+P 2400 1950
+F 0 "#PWR04" H 2400 1800 50  0001 C CNN
+F 1 "+5V" H 2400 2090 50  0000 C CNN
+F 2 "" H 2400 1950 50  0000 C CNN
+F 3 "" H 2400 1950 50  0000 C CNN
+	1    2400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 57AD048F
+P 1500 950
+F 0 "C1" H 1600 950 50  0000 L CNN
+F 1 "0.1u" H 1510 870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1500 950 50  0001 C CNN
+F 3 "" H 1500 950 50  0000 C CNN
+	1    1500 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 57AD04B6
+P 1850 950
+F 0 "C2" H 1860 1020 50  0000 L CNN
+F 1 "10u" H 1860 870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 1850 950 50  0001 C CNN
+F 3 "" H 1850 950 50  0000 C CNN
+	1    1850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR05
+U 1 1 57AD04DB
+P 1500 1050
+F 0 "#PWR05" H 1500 800 50  0001 C CNN
+F 1 "Earth" H 1500 900 50  0001 C CNN
+F 2 "" H 1500 1050 50  0000 C CNN
+F 3 "" H 1500 1050 50  0000 C CNN
+	1    1500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 57AD04F7
+P 1850 1050
+F 0 "#PWR06" H 1850 800 50  0001 C CNN
+F 1 "Earth" H 1850 900 50  0001 C CNN
+F 2 "" H 1850 1050 50  0000 C CNN
+F 3 "" H 1850 1050 50  0000 C CNN
+	1    1850 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 850 
+$Comp
+L LED D1
+U 1 1 57AD06F7
+P 1600 1850
+F 0 "D1" H 1600 1950 50  0000 C CNN
+F 1 "LED" H 1600 1750 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 1600 1850 50  0001 C CNN
+F 3 "" H 1600 1850 50  0000 C CNN
+	1    1600 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 57AD0800
+P 1600 2200
+F 0 "R1" V 1680 2200 50  0000 C CNN
+F 1 "150" V 1600 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1530 2200 50  0001 C CNN
+F 3 "" H 1600 2200 50  0000 C CNN
+	1    1600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR07
+U 1 1 57AD0827
+P 1600 2350
+F 0 "#PWR07" H 1600 2100 50  0001 C CNN
+F 1 "Earth" H 1600 2200 50  0001 C CNN
+F 2 "" H 1600 2350 50  0000 C CNN
+F 3 "" H 1600 2350 50  0000 C CNN
+	1    1600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 57AD0847
+P 1600 1650
+F 0 "#PWR08" H 1600 1500 50  0001 C CNN
+F 1 "+5V" H 1600 1790 50  0000 C CNN
+F 2 "" H 1600 1650 50  0000 C CNN
+F 3 "" H 1600 1650 50  0000 C CNN
+	1    1600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 57AD09BD
+P 1850 850
+F 0 "#PWR09" H 1850 700 50  0001 C CNN
+F 1 "+5V" H 1850 990 50  0000 C CNN
+F 2 "" H 1850 850 50  0000 C CNN
+F 3 "" H 1850 850 50  0000 C CNN
+	1    1850 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR010
+U 1 1 57AD0BDB
+P 3300 800
+F 0 "#PWR010" H 3300 550 50  0001 C CNN
+F 1 "Earth" H 3300 650 50  0001 C CNN
+F 2 "" H 3300 800 50  0000 C CNN
+F 3 "" H 3300 800 50  0000 C CNN
+	1    3300 800 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

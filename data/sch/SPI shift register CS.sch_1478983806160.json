@@ -1,0 +1,1 @@
+{"name":"SPI shift register CS.sch","url":"https://api.github.com/repositories/31505411/contents/BoardRev/SPI%20shift%20register%20CS.sch?ref=82f4425739acf44f7e2fe5b438a3f1321a822a97","repo":"Sembazuru/SPI-shift-register-CS","repoDescription":"Circuit to use up to 8 or more devices on a SPI bus with only 2 chip select lines. Save I/O pins for other things!","score":1.4352683}

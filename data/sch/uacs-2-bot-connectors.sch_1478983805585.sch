@@ -1,0 +1,552 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:_stm32
+LIBS:_display
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:logo
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:7499210124
+LIBS:_power
+LIBS:_sd
+LIBS:_filter
+LIBS:_ic
+LIBS:_sound
+LIBS:_diode
+LIBS:_transistor
+LIBS:uacs-2-bot-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 12
+Title "UACS"
+Date "Sa 28 Mär 2015"
+Rev "2.0"
+Comp "FAU FabLab"
+Comment1 "Connectors"
+Comment2 "bottom PCB"
+Comment3 "Universal Access Control System"
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X10 P?
+U 1 1 5559FBD5
+P 1550 1650
+F 0 "P?" H 1550 2200 50  0000 C CNN
+F 1 "JTAG" V 1550 1650 50  0000 C CNN
+F 2 "" H 1550 450 60  0000 C CNN
+F 3 "" H 1550 450 60  0000 C CNN
+	1    1550 1650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 1200
+NoConn ~ 1300 2000
+NoConn ~ 1300 2100
+$Comp
+L GND #PWR?
+U 1 1 5559FBEB
+P 1850 2150
+F 0 "#PWR?" H 1850 1900 60  0001 C CNN
+F 1 "GND" H 1850 2000 60  0000 C CNN
+F 2 "" H 1850 2150 60  0000 C CNN
+F 3 "" H 1850 2150 60  0000 C CNN
+	1    1850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5559FBF1
+P 2100 1650
+F 0 "R?" V 2180 1650 50  0000 C CNN
+F 1 "10k" V 2107 1651 50  0000 C CNN
+F 2 "" V 2030 1650 30  0000 C CNN
+F 3 "" H 2100 1650 30  0000 C CNN
+	1    2100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5559FBF9
+P 2100 1850
+F 0 "#PWR?" H 2100 1600 60  0001 C CNN
+F 1 "GND" H 2100 1700 60  0000 C CNN
+F 2 "" H 2100 1850 60  0000 C CNN
+F 3 "" H 2100 1850 60  0000 C CNN
+	1    2100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5559FC00
+P 2300 1650
+F 0 "R?" V 2380 1650 50  0000 C CNN
+F 1 "N/A" V 2307 1651 50  0000 C CNN
+F 2 "" V 2230 1650 30  0000 C CNN
+F 3 "" H 2300 1650 30  0000 C CNN
+	1    2300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5559FC07
+P 2475 1650
+F 0 "R?" V 2555 1650 50  0000 C CNN
+F 1 "N/A" V 2482 1651 50  0000 C CNN
+F 2 "" V 2405 1650 30  0000 C CNN
+F 3 "" H 2475 1650 30  0000 C CNN
+	1    2475 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5559FC0E
+P 2650 1650
+F 0 "R?" V 2730 1650 50  0000 C CNN
+F 1 "N/A" V 2657 1651 50  0000 C CNN
+F 2 "" V 2580 1650 30  0000 C CNN
+F 3 "" H 2650 1650 30  0000 C CNN
+	1    2650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5559FC15
+P 2825 1650
+F 0 "R?" V 2905 1650 50  0000 C CNN
+F 1 "N/A" V 2832 1651 50  0000 C CNN
+F 2 "" V 2755 1650 30  0000 C CNN
+F 3 "" H 2825 1650 30  0000 C CNN
+	1    2825 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5559FC22
+P 3000 1650
+F 0 "R?" V 3080 1650 50  0000 C CNN
+F 1 "N/A" V 3007 1651 50  0000 C CNN
+F 2 "" V 2930 1650 30  0000 C CNN
+F 3 "" H 3000 1650 30  0000 C CNN
+	1    3000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5559FC29
+P 3000 1850
+F 0 "#PWR?" H 3000 1600 60  0001 C CNN
+F 1 "GND" H 3000 1700 60  0000 C CNN
+F 2 "" H 3000 1850 60  0000 C CNN
+F 3 "" H 3000 1850 60  0000 C CNN
+	1    3000 1850
+	1    0    0    -1  
+$EndComp
+Text Notes 575  675  0    39   ~ 0
+JTAG\nDesigned to match with SEGGER J-Link
+$Comp
+L CONN_01X06 P?
+U 1 1 5559FC36
+P 4000 1375
+F 0 "P?" H 4000 1725 50  0000 C CNN
+F 1 "CONN_01X06" V 4100 1375 50  0000 C CNN
+F 2 "" H 4000 1375 60  0000 C CNN
+F 3 "" H 4000 1375 60  0000 C CNN
+	1    4000 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1850 3000 1800
+Wire Wire Line
+	3000 1500 3000 1450
+Wire Wire Line
+	2825 1850 2825 1800
+Wire Wire Line
+	2650 1850 2650 1800
+Wire Wire Line
+	2475 1850 2475 1800
+Wire Wire Line
+	2300 1850 2300 1800
+Connection ~ 2650 1450
+Wire Wire Line
+	2825 1450 2825 1500
+Connection ~ 2475 1450
+Wire Wire Line
+	2650 1450 2650 1500
+Connection ~ 2300 1450
+Wire Wire Line
+	2300 1450 2825 1450
+Wire Wire Line
+	2475 1500 2475 1450
+Wire Wire Line
+	2300 1400 2300 1500
+Wire Wire Line
+	1250 1150 1250 1200
+Wire Wire Line
+	1250 1200 1300 1200
+Wire Wire Line
+	1200 1300 1300 1300
+Wire Wire Line
+	1850 1300 1850 2150
+Wire Wire Line
+	1850 1300 1800 1300
+Wire Wire Line
+	1800 2100 1850 2100
+Connection ~ 1850 2100
+Wire Wire Line
+	1800 2000 1850 2000
+Connection ~ 1850 2000
+Wire Wire Line
+	1800 1900 1850 1900
+Connection ~ 1850 1900
+Wire Wire Line
+	1800 1800 1850 1800
+Connection ~ 1850 1800
+Wire Wire Line
+	1800 1700 1850 1700
+Connection ~ 1850 1700
+Wire Wire Line
+	1800 1600 1850 1600
+Connection ~ 1850 1600
+Wire Wire Line
+	1800 1500 1850 1500
+Connection ~ 1850 1500
+Wire Wire Line
+	1800 1400 1850 1400
+Connection ~ 1850 1400
+Wire Wire Line
+	1200 1400 1300 1400
+Wire Wire Line
+	1200 1500 1300 1500
+Wire Wire Line
+	1200 1600 1300 1600
+Wire Wire Line
+	1200 1700 1300 1700
+Wire Wire Line
+	1200 1800 1300 1800
+Wire Wire Line
+	1200 1900 1300 1900
+Wire Wire Line
+	2100 1500 2100 1450
+Wire Wire Line
+	2100 1800 2100 1850
+Wire Notes Line
+	575  700  3150 700 
+Wire Notes Line
+	3150 700  3150 2575
+Wire Notes Line
+	3150 2575 575  2575
+Wire Notes Line
+	575  2575 575  700 
+Text HLabel 1200 1300 0    39   Output ~ 0
+SYS_JTRST
+Text HLabel 1200 1400 0    39   Output ~ 0
+SYS_JTDI
+Text HLabel 1200 1500 0    39   Output ~ 0
+SYS_JTMS-SWDIO
+Text HLabel 1200 1600 0    39   Output ~ 0
+SYS_JTCK-SWCLK
+Text HLabel 1200 1800 0    39   Input ~ 0
+SYS_JTDO-SWO
+Text HLabel 1200 1900 0    39   BiDi ~ 0
+~RESET
+Text Label 2100 1450 1    39   ~ 0
+RTCK
+Text Label 2300 1850 3    39   ~ 0
+SYS_JTMS-SWDIO
+Text Label 2475 1850 3    39   ~ 0
+SYS_JTDO-SWO
+Text Label 2650 1850 3    39   ~ 0
+SYS_JTDI
+Text Label 2825 1850 3    39   ~ 0
+SYS_JTRST
+Text Label 3000 1450 1    39   ~ 0
+SYS_JTCK-SWCLK
+Text HLabel 3700 1325 0    39   Input ~ 0
+rfid_rxd
+Text HLabel 3700 1425 0    39   Output ~ 0
+rfid_txd
+$Comp
+L GND #PWR?
+U 1 1 555C5B15
+P 3750 1675
+F 0 "#PWR?" H 3750 1425 50  0001 C CNN
+F 1 "GND" H 3750 1525 50  0000 C CNN
+F 2 "" H 3750 1675 60  0000 C CNN
+F 3 "" H 3750 1675 60  0000 C CNN
+	1    3750 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1425 3700 1425
+Wire Wire Line
+	3800 1325 3700 1325
+Wire Notes Line
+	3275 700  4350 700 
+Wire Notes Line
+	4350 700  4350 2025
+Wire Notes Line
+	4350 2025 3275 2025
+Wire Notes Line
+	3275 2025 3275 700 
+Text Notes 3275 675  0    39   ~ 0
+ffc to rfid board
+Text Label 1200 1700 2    39   ~ 0
+RTCK
+$Comp
+L +3V3 #PWR?
+U 1 1 551810FA
+P 1250 1150
+F 0 "#PWR?" H 1250 1000 50  0001 C CNN
+F 1 "+3V3" H 1250 1290 50  0000 C CNN
+F 2 "" H 1250 1150 60  0000 C CNN
+F 3 "" H 1250 1150 60  0000 C CNN
+	1    1250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5518111A
+P 2300 1400
+F 0 "#PWR?" H 2300 1250 50  0001 C CNN
+F 1 "+3V3" H 2300 1540 50  0000 C CNN
+F 2 "" H 2300 1400 60  0000 C CNN
+F 3 "" H 2300 1400 60  0000 C CNN
+	1    2300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 551811CB
+P 3750 1075
+F 0 "#PWR?" H 3750 925 50  0001 C CNN
+F 1 "+3V3" H 3750 1215 50  0000 C CNN
+F 2 "" H 3750 1075 60  0000 C CNN
+F 3 "" H 3750 1075 60  0000 C CNN
+	1    3750 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 551DEB80
+P 3700 1625
+F 0 "#PWR?" H 3700 1475 50  0001 C CNN
+F 1 "+3V3" H 3700 1765 50  0000 C CNN
+F 2 "" H 3700 1625 60  0000 C CNN
+F 3 "" H 3700 1625 60  0000 C CNN
+	1    3700 1625
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 1125 3750 1125
+Wire Wire Line
+	3750 1125 3750 1075
+Wire Wire Line
+	3800 1225 3750 1225
+Wire Wire Line
+	3750 1225 3750 1675
+Wire Wire Line
+	3800 1625 3700 1625
+Wire Wire Line
+	3800 1525 3750 1525
+Connection ~ 3750 1525
+$Comp
+L CONN_01X09 P?
+U 1 1 55210D14
+P 6625 1250
+F 0 "P?" H 6625 1750 50  0000 C CNN
+F 1 "DSUB9" V 6725 1250 50  0000 C CNN
+F 2 "" H 6625 1250 60  0000 C CNN
+F 3 "" H 6625 1250 60  0000 C CNN
+	1    6625 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN65HVD379 IC?
+U 1 1 5521C98B
+P 5300 1200
+F 0 "IC?" H 5150 1450 39  0000 L CNN
+F 1 "SN65HVD379" H 5300 950 39  0000 C CNN
+F 2 "" H 5300 1200 60  0000 C CNN
+F 3 "" H 5300 1200 60  0000 C CNN
+	1    5300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 55268413
+P 5000 1000
+F 0 "#PWR?" H 5000 850 50  0001 C CNN
+F 1 "+3V3" H 5000 1140 50  0000 C CNN
+F 2 "" H 5000 1000 60  0000 C CNN
+F 3 "" H 5000 1000 60  0000 C CNN
+	1    5000 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1000 5000 1050
+Wire Wire Line
+	5000 1050 5050 1050
+$Comp
+L GND #PWR?
+U 1 1 55268479
+P 5000 1400
+F 0 "#PWR?" H 5000 1150 50  0001 C CNN
+F 1 "GND" H 5000 1250 50  0000 C CNN
+F 2 "" H 5000 1400 60  0000 C CNN
+F 3 "" H 5000 1400 60  0000 C CNN
+	1    5000 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1400 5000 1350
+Wire Wire Line
+	5000 1350 5050 1350
+Text HLabel 4950 1150 0    39   Output ~ 0
+USART7_RX
+Text HLabel 4950 1250 0    39   Input ~ 0
+USART7_TX
+Wire Wire Line
+	4950 1250 5050 1250
+Wire Wire Line
+	5050 1150 4950 1150
+Text Label 5650 1050 0    39   ~ 0
+A
+Text Label 5650 1150 0    39   ~ 0
+B
+Text Label 5650 1250 0    39   ~ 0
+Z
+Text Label 5650 1350 0    39   ~ 0
+Y
+Wire Wire Line
+	5550 1050 5650 1050
+Wire Wire Line
+	5550 1150 5650 1150
+Wire Wire Line
+	5550 1250 5650 1250
+Wire Wire Line
+	5550 1350 5650 1350
+Wire Notes Line
+	4500 750  5775 750 
+Wire Notes Line
+	5775 750  5775 1650
+Wire Notes Line
+	5775 1650 4500 1650
+Wire Notes Line
+	4500 1650 4500 750 
+Text Label 6325 850  2    39   ~ 0
+A
+Text Label 6325 950  2    39   ~ 0
+B
+Text Label 6325 1050 2    39   ~ 0
+Z
+Text Label 6325 1150 2    39   ~ 0
+Y
+$Comp
+L GND #PWR?
+U 1 1 5528EFF6
+P 6325 1250
+F 0 "#PWR?" H 6325 1000 50  0001 C CNN
+F 1 "GND" H 6325 1100 50  0000 C CNN
+F 2 "" H 6325 1250 60  0000 C CNN
+F 3 "" H 6325 1250 60  0000 C CNN
+	1    6325 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6325 850  6425 850 
+Wire Wire Line
+	6325 950  6425 950 
+Wire Wire Line
+	6325 1050 6425 1050
+Wire Wire Line
+	6325 1150 6425 1150
+Wire Wire Line
+	6325 1250 6425 1250
+Text Notes 4500 725  0    39   ~ 0
+RS422 Transceiver\n
+$Comp
+L TLP627 U?
+U 1 1 5528F4E0
+P 5550 2425
+F 0 "U?" H 5250 2625 50  0000 L CNN
+F 1 "TLP627" H 5550 2625 50  0000 L CNN
+F 2 "DIP-4" H 5550 2225 50  0000 C CIN
+F 3 "" H 5550 2425 50  0000 L CNN
+	1    5550 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP291 U?
+U 1 1 5528FA7F
+P 5550 2925
+F 0 "U?" H 5350 3125 50  0000 L CNN
+F 1 "TLP291" H 4925 3125 50  0000 L CNN
+F 2 "SOP-4" H 5350 2725 50  0000 L CIN
+F 3 "" H 5550 2925 50  0000 L CNN
+	1    5550 2925
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

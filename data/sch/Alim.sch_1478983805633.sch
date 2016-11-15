@@ -1,0 +1,454 @@
+EESchema Schematic File Version 2  date mar. 06 janv. 2015 19:47:28 CET
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:POSL
+LIBS:Alim-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "6 jan 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5750 3700 6000 3700
+Connection ~ 4050 4250
+Wire Wire Line
+	8700 4100 7500 4100
+Wire Wire Line
+	7500 4100 7500 4900
+Wire Wire Line
+	7500 4900 4050 4900
+Wire Wire Line
+	4050 4900 4050 4050
+Connection ~ 7900 1700
+Wire Wire Line
+	6500 1700 8750 1700
+Wire Wire Line
+	7900 2650 7600 2650
+Wire Wire Line
+	7600 2650 7600 2550
+Connection ~ 6000 2650
+Wire Wire Line
+	6800 2650 6800 2700
+Wire Wire Line
+	4450 2850 4450 2800
+Wire Wire Line
+	4200 2550 4200 2850
+Wire Wire Line
+	5200 1700 5500 1700
+Wire Wire Line
+	8700 5100 8550 5100
+Wire Wire Line
+	5750 4050 6000 4050
+Connection ~ 4050 1700
+Wire Wire Line
+	4050 3500 4200 3500
+Wire Wire Line
+	3500 2300 3500 2450
+Connection ~ 3500 1700
+Wire Wire Line
+	3500 1700 3500 1900
+Wire Wire Line
+	2550 2000 2550 1900
+Wire Wire Line
+	2550 1900 2450 1900
+Wire Wire Line
+	6800 3200 6800 3100
+Connection ~ 4200 1700
+Wire Wire Line
+	4200 1700 4200 2050
+Connection ~ 4450 1700
+Wire Wire Line
+	4450 1800 4450 1700
+Wire Wire Line
+	7400 2650 7400 2550
+Wire Wire Line
+	7900 3200 7900 3100
+Wire Wire Line
+	8750 1500 8600 1500
+Wire Wire Line
+	8700 3900 8550 3900
+Wire Wire Line
+	4700 1700 2450 1700
+Wire Wire Line
+	2950 1900 2950 1700
+Connection ~ 2950 1700
+Wire Wire Line
+	2950 2300 2950 2450
+Wire Notes Line
+	5850 3300 4100 3300
+Wire Notes Line
+	5850 3300 5850 4500
+Wire Notes Line
+	5850 4500 4100 4500
+Wire Notes Line
+	4100 4500 4100 3300
+Wire Wire Line
+	4050 3700 4050 1700
+Connection ~ 4050 3500
+Wire Wire Line
+	5750 4250 6000 4250
+Wire Wire Line
+	4200 3700 3700 3700
+Wire Wire Line
+	3700 3700 3700 5300
+Wire Wire Line
+	3700 5300 8700 5300
+Connection ~ 4050 3700
+Wire Wire Line
+	5100 2300 5350 2300
+Wire Wire Line
+	5350 2300 5350 1700
+Connection ~ 5350 1700
+Wire Wire Line
+	4200 2850 6000 2850
+Wire Wire Line
+	6000 2850 6000 2350
+Connection ~ 4450 2850
+Wire Wire Line
+	6000 2650 7200 2650
+Wire Wire Line
+	7200 2650 7200 2550
+Connection ~ 6800 2650
+Wire Wire Line
+	7900 1700 7900 2700
+Connection ~ 7900 2650
+Wire Wire Line
+	4050 4050 4200 4050
+Wire Wire Line
+	4050 4250 4200 4250
+Wire Wire Line
+	5750 3500 6000 3500
+$Comp
+L MJD45H11G T2
+U 1 1 54AC2BB2
+P 6000 1850
+F 0 "T2" H 6050 1500 60  0000 C CNN
+F 1 "MJD45H11G" H 6150 2150 60  0000 C CNN
+	1    6000 1850
+	0    1    1    0   
+$EndComp
+Text Notes 9700 1600 0    60   ~ 0
+Driver moteur
+Text Notes 9550 4000 0    60   ~ 0
+Servomoteurs
+Text Notes 9650 5200 0    60   ~ 0
+Arduino
+Text Notes 9200 5150 0    60   ~ 0
+0V
+Text Notes 9200 5300 0    60   ~ 0
++11.1V
+$Comp
+L GND #PWR01
+U 1 1 548DFEE8
+P 8550 5100
+F 0 "#PWR01" H 8550 5100 30  0001 C CNN
+F 1 "GND" H 8550 5030 30  0001 C CNN
+	1    8550 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_2 P8
+U 1 1 548DFEDA
+P 9050 5200
+F 0 "P8" V 9000 5200 40  0000 C CNN
+F 1 "CONN_2" V 9100 5200 40  0000 C CNN
+	1    9050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 548DFE9E
+P 6000 4250
+F 0 "#PWR02" H 6000 4250 30  0001 C CNN
+F 1 "GND" H 6000 4180 30  0001 C CNN
+	1    6000 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 548DFE98
+P 6000 4050
+F 0 "#PWR03" H 6000 4050 30  0001 C CNN
+F 1 "GND" H 6000 3980 30  0001 C CNN
+	1    6000 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 548DFE92
+P 6000 3700
+F 0 "#PWR04" H 6000 3700 30  0001 C CNN
+F 1 "GND" H 6000 3630 30  0001 C CNN
+	1    6000 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 548DFE8A
+P 6000 3500
+F 0 "#PWR05" H 6000 3500 30  0001 C CNN
+F 1 "GND" H 6000 3430 30  0001 C CNN
+	1    6000 3500
+	0    -1   -1   0   
+$EndComp
+Text Notes 4600 3900 0    60   ~ 0
+Module mini alim
+$Comp
+L CONN_2 P7
+U 1 1 548DFE26
+P 5400 4150
+F 0 "P7" V 5350 4150 40  0000 C CNN
+F 1 "CONN_2" V 5450 4150 40  0000 C CNN
+	1    5400 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P6
+U 1 1 548DFE22
+P 5400 3600
+F 0 "P6" V 5350 3600 40  0000 C CNN
+F 1 "CONN_2" V 5450 3600 40  0000 C CNN
+	1    5400 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P5
+U 1 1 548DFE1E
+P 4550 4150
+F 0 "P5" V 4500 4150 40  0000 C CNN
+F 1 "CONN_2" V 4600 4150 40  0000 C CNN
+	1    4550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P4
+U 1 1 548DFE1A
+P 4550 3600
+F 0 "P4" V 4500 3600 40  0000 C CNN
+F 1 "CONN_2" V 4600 3600 40  0000 C CNN
+	1    4550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5426672A
+P 2950 2450
+F 0 "#PWR06" H 2950 2450 30  0001 C CNN
+F 1 "GND" H 2950 2380 30  0001 C CNN
+	1    2950 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C1
+U 1 1 54266710
+P 2950 2100
+F 0 "C1" H 3000 2200 50  0000 L CNN
+F 1 "2200µF/63V" H 3000 2000 50  0000 L CNN
+	1    2950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C2
+U 1 1 542148DF
+P 3500 2100
+F 0 "C2" H 3550 2200 50  0000 L CNN
+F 1 "2200µF/63V" H 3550 2000 50  0000 L CNN
+	1    3500 2100
+	1    0    0    -1  
+$EndComp
+Text Notes 950  2450 0    60   ~ 0
+0.2 = R200\n1.2 = 1R2
+Text Notes 9200 4150 0    60   ~ 0
++5V
+Text Notes 9250 3950 0    60   ~ 0
+0V
+Text Notes 9300 1550 0    60   ~ 0
+0V
+Text Notes 9300 1700 0    60   ~ 0
++8.5V
+Text Notes 1600 1950 0    60   ~ 0
+0V
+Text Notes 1550 1750 0    60   ~ 0
++11.1V
+$Comp
+L GND #PWR07
+U 1 1 542149DE
+P 8550 3900
+F 0 "#PWR07" H 8550 3900 30  0001 C CNN
+F 1 "GND" H 8550 3830 30  0001 C CNN
+	1    8550 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 542149DA
+P 8600 1500
+F 0 "#PWR08" H 8600 1500 30  0001 C CNN
+F 1 "GND" H 8600 1430 30  0001 C CNN
+	1    8600 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 542149D6
+P 7900 3200
+F 0 "#PWR09" H 7900 3200 30  0001 C CNN
+F 1 "GND" H 7900 3130 30  0001 C CNN
+	1    7900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 542149D3
+P 6800 3200
+F 0 "#PWR010" H 6800 3200 30  0001 C CNN
+F 1 "GND" H 6800 3130 30  0001 C CNN
+	1    6800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 542149CF
+P 7400 2650
+F 0 "#PWR011" H 7400 2650 30  0001 C CNN
+F 1 "GND" H 7400 2580 30  0001 C CNN
+	1    7400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 542149CA
+P 3500 2450
+F 0 "#PWR012" H 3500 2450 30  0001 C CNN
+F 1 "GND" H 3500 2380 30  0001 C CNN
+	1    3500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 542149C5
+P 2550 2000
+F 0 "#PWR013" H 2550 2000 30  0001 C CNN
+F 1 "GND" H 2550 1930 30  0001 C CNN
+	1    2550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P2
+U 1 1 542149BC
+P 9050 4000
+F 0 "P2" V 9000 4000 40  0000 C CNN
+F 1 "CONN_2" V 9100 4000 40  0000 C CNN
+	1    9050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P3
+U 1 1 542149B3
+P 9100 1600
+F 0 "P3" V 9050 1600 40  0000 C CNN
+F 1 "CONN_2" V 9150 1600 40  0000 C CNN
+	1    9100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L L4940V85 REG1
+U 1 1 54214989
+P 7400 2250
+F 0 "REG1" V 7800 2400 60  0000 C CNN
+F 1 "L4940V85" V 7050 2450 60  0000 C CNN
+	1    7400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C5
+U 1 1 5421497B
+P 7900 2900
+F 0 "C5" H 7950 3000 50  0000 L CNN
+F 1 "1µF" H 7950 2800 50  0000 L CNN
+	1    7900 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C3
+U 1 1 54214975
+P 6800 2900
+F 0 "C3" H 6850 3000 50  0000 L CNN
+F 1 "1µF" H 6850 2800 50  0000 L CNN
+	1    6800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5421490C
+P 4950 1700
+F 0 "R3" V 5030 1700 50  0000 C CNN
+F 1 "0,2" V 4950 1700 50  0000 C CNN
+	1    4950 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 54214900
+P 4200 2300
+F 0 "R1" V 4280 2300 50  0000 C CNN
+F 1 "1.2" V 4200 2300 50  0000 C CNN
+	1    4200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBT2907A T1
+U 1 1 542148EE
+P 4600 2300
+F 0 "T1" H 4650 1950 60  0000 C CNN
+F 1 "MMBT2907A" H 4750 2600 60  0000 C CNN
+	1    4600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 542148C0
+P 2100 1800
+F 0 "P1" V 2050 1800 40  0000 C CNN
+F 1 "CONN_2" V 2150 1800 40  0000 C CNN
+	1    2100 1800
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

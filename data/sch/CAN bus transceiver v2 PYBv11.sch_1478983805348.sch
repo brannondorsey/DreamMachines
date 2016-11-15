@@ -1,0 +1,371 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:can
+LIBS:CAN bus transceiver v2 PYBv11-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TCAN337GDR U1
+U 1 1 581297E0
+P 2600 1500
+F 0 "U1" H 2600 1225 60  0000 C CNN
+F 1 "TCAN337GDR" H 2600 1750 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2525 1325 60  0001 C CNN
+F 3 "" H 2525 1325 60  0000 C CNN
+	1    2600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TCAN337GDR U2
+U 1 1 58129949
+P 2600 2375
+F 0 "U2" H 2600 2100 60  0000 C CNN
+F 1 "TCAN337GDR" H 2600 2625 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2525 2200 60  0001 C CNN
+F 3 "" H 2525 2200 60  0000 C CNN
+	1    2600 2375
+	1    0    0    -1  
+$EndComp
+Text Notes 525  1500 0    60   ~ 0
+CAN1 RX
+Text Notes 525  1600 0    60   ~ 0
+CAN1 TX
+Text Notes 525  1700 0    60   ~ 0
+CAN2 RX
+Text Notes 525  1800 0    60   ~ 0
+CAN2 TX
+$Comp
+L GND #PWR2
+U 1 1 58129EE2
+P 1775 3125
+F 0 "#PWR2" H 1775 2875 50  0001 C CNN
+F 1 "GND" H 1775 2975 50  0000 C CNN
+F 2 "" H 1775 3125 50  0000 C CNN
+F 3 "" H 1775 3125 50  0000 C CNN
+	1    1775 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR1
+U 1 1 58129EFE
+P 1675 800
+F 0 "#PWR1" H 1675 650 50  0001 C CNN
+F 1 "+3.3V" H 1675 940 50  0000 C CNN
+F 2 "" H 1675 800 50  0000 C CNN
+F 3 "" H 1675 800 50  0000 C CNN
+	1    1675 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 1550 1675 1550
+Connection ~ 1675 1550
+Wire Wire Line
+	2175 1475 1775 1475
+Wire Wire Line
+	2175 2350 1775 2350
+Connection ~ 1775 2350
+Wire Wire Line
+	2175 1400 1575 1400
+Wire Wire Line
+	1575 1400 1575 1575
+Wire Wire Line
+	1575 1575 1225 1575
+Wire Wire Line
+	2175 1625 1525 1625
+Wire Wire Line
+	1525 1625 1525 1475
+Wire Wire Line
+	1525 1475 1225 1475
+Wire Wire Line
+	2175 2500 1425 2500
+Wire Wire Line
+	1425 2500 1425 1675
+Wire Wire Line
+	1425 1675 1225 1675
+Wire Wire Line
+	2175 2275 1325 2275
+Wire Wire Line
+	1325 2275 1325 1775
+Wire Wire Line
+	1325 1775 1225 1775
+Text Notes 4150 1375 0    60   ~ 0
+3V3
+Text Notes 4150 1475 0    60   ~ 0
+GND
+Wire Wire Line
+	3850 1475 3700 1475
+Wire Wire Line
+	3700 1475 3700 2875
+Wire Wire Line
+	3700 2875 1775 2875
+Connection ~ 1775 2875
+Wire Wire Line
+	3850 1375 3700 1375
+Wire Wire Line
+	3700 1375 3700 1025
+Wire Wire Line
+	3700 1025 1675 1025
+Connection ~ 1675 1025
+$Comp
+L CONN_01X02 P3
+U 1 1 5812A45B
+P 4050 750
+F 0 "P3" H 4050 900 50  0000 C CNN
+F 1 "CONN_01X02" V 4150 750 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_S02B-XH-A_02x2.50mm_Angled" H 4050 750 50  0001 C CNN
+F 3 "" H 4050 750 50  0000 C CNN
+	1    4050 750 
+	1    0    0    -1  
+$EndComp
+Text Notes 4225 700  0    60   ~ 0
+CANH
+Text Notes 4225 825  0    60   ~ 0
+CANL
+Wire Wire Line
+	3000 2350 3525 2350
+Wire Wire Line
+	3525 2350 3525 700 
+Wire Wire Line
+	3525 700  3850 700 
+Wire Wire Line
+	3000 1475 3525 1475
+Connection ~ 3525 1475
+Wire Wire Line
+	3000 2425 3625 2425
+Wire Wire Line
+	3625 2425 3625 800 
+Wire Wire Line
+	3625 800  3850 800 
+Wire Wire Line
+	3000 1550 3625 1550
+Connection ~ 3625 1550
+Wire Wire Line
+	3000 1625 3000 1675
+Wire Wire Line
+	3000 1675 3850 1675
+Wire Wire Line
+	3000 2500 3475 2500
+Wire Wire Line
+	3475 2500 3475 1775
+Wire Wire Line
+	3475 1775 3850 1775
+Wire Wire Line
+	3000 1400 3075 1400
+Wire Wire Line
+	3075 1400 3075 1075
+Wire Wire Line
+	3075 1075 1350 1075
+Wire Wire Line
+	1350 1075 1350 1275
+Wire Wire Line
+	1350 1275 1225 1275
+Wire Wire Line
+	3000 2275 3175 2275
+Wire Wire Line
+	3175 2275 3175 1175
+Wire Wire Line
+	3175 1175 1450 1175
+Wire Wire Line
+	1450 1175 1450 1375
+Wire Wire Line
+	1450 1375 1225 1375
+Wire Wire Line
+	1675 2425 2175 2425
+$Comp
+L CONN_01X06 P1
+U 1 1 58144AB1
+P 1025 1525
+F 0 "P1" H 1025 1875 50  0000 C CNN
+F 1 "CONN_01X06" V 1125 1525 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 1025 1525 50  0001 C CNN
+F 3 "" H 1025 1525 50  0000 C CNN
+	1    1025 1525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P4
+U 1 1 58144C08
+P 4050 1525
+F 0 "P4" H 4050 1875 50  0000 C CNN
+F 1 "CONN_01X06" V 4150 1525 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 4050 1525 50  0001 C CNN
+F 3 "" H 4050 1525 50  0000 C CNN
+	1    4050 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 5816EBA7
+P 5150 1150
+F 0 "P2" H 5150 1300 50  0000 C CNN
+F 1 "CONN_01X02" V 5250 1150 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_S02B-XH-A_02x2.50mm_Angled" H 5150 1150 50  0001 C CNN
+F 3 "" H 5150 1150 50  0000 C CNN
+	1    5150 1150
+	-1   0    0    -1  
+$EndComp
+Text Notes 4150 1675 0    60   ~ 0
+CAN1 FAULT
+Text Notes 4150 1775 0    60   ~ 0
+CAN2 FAULT
+Text Notes 525  1400 0    60   ~ 0
+CAN2 S
+Text Notes 525  1300 0    60   ~ 0
+CAN1 S
+Wire Wire Line
+	1775 1475 1775 3125
+$Comp
+L LM3489 U3
+U 1 1 5817B9F1
+P 8350 5775
+F 0 "U3" H 8375 6125 60  0000 C CNN
+F 1 "LM3489" H 8350 5525 60  0000 C CNN
+F 2 "" H 8350 5800 60  0001 C CNN
+F 3 "" H 8350 5800 60  0001 C CNN
+	1    8350 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 58192BFE
+P 8300 1100
+F 0 "C2" H 8325 1200 50  0000 L CNN
+F 1 "CP1" H 8325 1000 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 8300 1100 50  0001 C CNN
+F 3 "" H 8300 1100 50  0000 C CNN
+	1    8300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 58192D2B
+P 7050 1100
+F 0 "C1" H 7075 1200 50  0000 L CNN
+F 1 "CP1" H 7075 1000 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 7050 1100 50  0001 C CNN
+F 3 "" H 7050 1100 50  0000 C CNN
+	1    7050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 5819300E
+P 7675 950
+F 0 "L1" V 7625 950 50  0000 C CNN
+F 1 "INDUCTOR" V 7775 950 50  0000 C CNN
+F 2 "Inductors:Inductor_Taiyo-Yuden_NR-80xx_HandSoldering" H 7675 950 50  0001 C CNN
+F 3 "" H 7675 950 50  0000 C CNN
+	1    7675 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7975 950  8775 950 
+Wire Wire Line
+	6225 950  7375 950 
+$Comp
+L FUSE F1
+U 1 1 58193A50
+P 5975 950
+F 0 "F1" H 6075 1000 50  0000 C CNN
+F 1 "FUSE" H 5875 900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5975 950 50  0001 C CNN
+F 3 "" H 5975 950 50  0000 C CNN
+	1    5975 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D1
+U 1 1 58193B9D
+P 6600 1150
+F 0 "D1" H 6600 1250 50  0000 C CNN
+F 1 "ZENER" H 6600 1050 50  0000 C CNN
+F 2 "Diodes_SMD:SMB_Handsoldering" H 6600 1150 50  0001 C CNN
+F 3 "" H 6600 1150 50  0000 C CNN
+	1    6600 1150
+	0    1    1    0   
+$EndComp
+Connection ~ 7050 950 
+Connection ~ 6600 950 
+Wire Wire Line
+	5350 1350 8775 1350
+Wire Wire Line
+	8300 1350 8300 1250
+Connection ~ 6600 1350
+Wire Wire Line
+	7050 1250 7050 1350
+Connection ~ 7050 1350
+Connection ~ 8300 950 
+Wire Wire Line
+	5350 775  5350 1100
+Wire Wire Line
+	5350 950  5725 950 
+Wire Wire Line
+	5350 1200 5350 1575
+$Comp
+L GND #PWR?
+U 1 1 58214052
+P 5350 1575
+F 0 "#PWR?" H 5350 1325 50  0001 C CNN
+F 1 "GND" H 5350 1425 50  0000 C CNN
+F 2 "" H 5350 1575 50  0000 C CNN
+F 3 "" H 5350 1575 50  0000 C CNN
+	1    5350 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5821407E
+P 5350 775
+F 0 "#PWR?" H 5350 625 50  0001 C CNN
+F 1 "+12V" H 5350 915 50  0000 C CNN
+F 2 "" H 5350 775 50  0000 C CNN
+F 3 "" H 5350 775 50  0000 C CNN
+	1    5350 775 
+	1    0    0    -1  
+$EndComp
+Connection ~ 5350 950 
+Connection ~ 5350 1350
+Connection ~ 8300 1350
+Wire Wire Line
+	1675 2425 1675 800 
+$EndSCHEMATC

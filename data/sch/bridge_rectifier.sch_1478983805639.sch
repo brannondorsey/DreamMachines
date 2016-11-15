@@ -1,0 +1,432 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bridge_rectifier-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L D D4
+U 1 1 56912C7E
+P 7430 2425
+F 0 "D4" H 7430 2525 50  0000 C CNN
+F 1 "MUR860G" H 7430 2325 50  0000 C CNN
+F 2 "jjrh_custom:MUR860" H 7430 2425 60  0001 C CNN
+F 3 "" H 7430 2425 60  0000 C CNN
+F 4 "~" H 7430 2425 60  0000 C CNN "MANUFACTURER_PART"
+	1    7430 2425
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D3
+U 1 1 56912C7F
+P 7155 2775
+F 0 "D3" H 7155 2875 50  0000 C CNN
+F 1 "MUR860G" H 7155 2675 50  0000 C CNN
+F 2 "jjrh_custom:MUR860" H 7155 2775 60  0001 C CNN
+F 3 "" H 7155 2775 60  0000 C CNN
+F 4 "~" H 7155 2775 60  0000 C CNN "MANUFACTURER_PART"
+	1    7155 2775
+	0    1    1    0   
+$EndComp
+$Comp
+L D D6
+U 1 1 56912C80
+P 7705 2775
+F 0 "D6" H 7705 2875 50  0000 C CNN
+F 1 "MUR860G" H 7705 2675 50  0000 C CNN
+F 2 "jjrh_custom:MUR860" H 7705 2775 60  0001 C CNN
+F 3 "" H 7705 2775 60  0000 C CNN
+F 4 "~" H 7705 2775 60  0000 C CNN "MANUFACTURER_PART"
+	1    7705 2775
+	0    1    1    0   
+$EndComp
+$Comp
+L D D5
+U 1 1 56912C81
+P 7430 3075
+F 0 "D5" H 7430 3175 50  0000 C CNN
+F 1 "MUR860G" H 7430 2975 50  0000 C CNN
+F 2 "jjrh_custom:MUR860" H 7430 3075 60  0001 C CNN
+F 3 "" H 7430 3075 60  0000 C CNN
+F 4 "~" H 7430 3075 60  0000 C CNN "MANUFACTURER_PART"
+	1    7430 3075
+	-1   0    0    1   
+$EndComp
+Text Label 6530 3075 0    60   ~ 0
+V-
+Text Label 8455 2425 0    60   ~ 0
+V+
+$Comp
+L C_Small C3
+U 1 1 56912C89
+P 7405 2150
+F 0 "C3" H 7415 2220 50  0000 L CNN
+F 1 "C_Small" H 7415 2070 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D7.5_P5" H 7405 2150 60  0001 C CNN
+F 3 "" H 7405 2150 60  0000 C CNN
+F 4 "~" H 7405 2150 60  0000 C CNN "MANUFACTURER_PART"
+	1    7405 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 56912C8A
+P 7980 2750
+F 0 "C5" H 7990 2820 50  0000 L CNN
+F 1 "C_Small" H 7990 2670 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D7.5_P5" H 7980 2750 60  0001 C CNN
+F 3 "" H 7980 2750 60  0000 C CNN
+F 4 "~" H 7980 2750 60  0000 C CNN "MANUFACTURER_PART"
+	1    7980 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 56912C8B
+P 7430 3375
+F 0 "C4" H 7440 3445 50  0000 L CNN
+F 1 "C_Small" H 7440 3295 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D7.5_P5" H 7430 3375 60  0001 C CNN
+F 3 "" H 7430 3375 60  0000 C CNN
+F 4 "~" H 7430 3375 60  0000 C CNN "MANUFACTURER_PART"
+	1    7430 3375
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 56912C8C
+P 6855 2800
+F 0 "C2" H 6865 2870 50  0000 L CNN
+F 1 "C_Small" H 6865 2720 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D7.5_P5" H 6855 2800 60  0001 C CNN
+F 3 "" H 6855 2800 60  0000 C CNN
+F 4 "~" H 6855 2800 60  0000 C CNN "MANUFACTURER_PART"
+	1    6855 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 3640 615  0    60   ~ 0
+LIVE POWER INDICATION
+Text Label 5925 2425 0    60   ~ 0
+HOT
+Text Label 5905 3225 0    60   ~ 0
+Netural
+Text Label 6505 980  0    60   ~ 0
+HOT
+Text Label 6500 1085 0    60   ~ 0
+Netural
+$Comp
+L LED D2
+U 1 1 569177D6
+P 5045 1130
+F 0 "D2" H 5045 1230 50  0000 C CNN
+F 1 "LED" H 5045 1030 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 5045 1130 60  0001 C CNN
+F 3 "" H 5045 1130 60  0000 C CNN
+	1    5045 1130
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D1
+U 1 1 56917920
+P 4515 1165
+F 0 "D1" H 4515 1265 50  0000 C CNN
+F 1 "D" H 4515 1065 50  0000 C CNN
+F 2 "w_pth_diodes:diode_do35" H 4515 1165 60  0001 C CNN
+F 3 "" H 4515 1165 60  0000 C CNN
+	1    4515 1165
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 56917AEF
+P 4015 835
+F 0 "C1" H 4040 935 50  0000 L CNN
+F 1 "C" H 4040 735 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D7.5_P5" H 4053 685 30  0001 C CNN
+F 3 "" H 4015 835 60  0000 C CNN
+	1    4015 835 
+	0    1    1    0   
+$EndComp
+Text Label 3300 835  0    60   ~ 0
+HOT
+Text Label 3295 1450 0    60   ~ 0
+Netural
+$Comp
+L R R1
+U 1 1 56917FA6
+P 4040 1450
+F 0 "R1" V 4120 1450 50  0000 C CNN
+F 1 "R" V 4040 1450 50  0000 C CNN
+F 2 "w_pth_resistors:R12x5.2_vert" V 3970 1450 30  0001 C CNN
+F 3 "" H 4040 1450 30  0000 C CNN
+	1    4040 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 56919752
+P 10630 935
+F 0 "P5" H 10630 1035 50  0000 C CNN
+F 1 "MOUNTING_HOLES" V 10730 935 50  0000 C CNN
+F 2 "mechanical:3.5mm_m3" H 10630 935 60  0001 C CNN
+F 3 "" H 10630 935 60  0000 C CNN
+	1    10630 935 
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 56919883
+P 10645 1530
+F 0 "P6" H 10645 1630 50  0000 C CNN
+F 1 "MOUNTING_HOLES" V 10745 1530 50  0000 C CNN
+F 2 "mechanical:3.5mm_m3" H 10645 1530 60  0001 C CNN
+F 3 "" H 10645 1530 60  0000 C CNN
+	1    10645 1530
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 5691999F
+P 9930 950
+F 0 "P4" H 9930 1050 50  0000 C CNN
+F 1 "MOUNTING_HOLES" V 10030 950 50  0000 C CNN
+F 2 "mechanical:3.5mm_m3" H 9930 950 60  0001 C CNN
+F 3 "" H 9930 950 60  0000 C CNN
+	1    9930 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 56919AC4
+P 9885 1520
+F 0 "P3" H 9885 1620 50  0000 C CNN
+F 1 "MOUNTING_HOLES" V 9985 1520 50  0000 C CNN
+F 2 "mechanical:3.5mm_m3" H 9885 1520 60  0001 C CNN
+F 3 "" H 9885 1520 60  0000 C CNN
+	1    9885 1520
+	0    1    1    0   
+$EndComp
+NoConn ~ 10645 1330
+NoConn ~ 9885 1320
+NoConn ~ 9930 750 
+NoConn ~ 10630 735 
+Text Notes 6580 695  0    60   ~ 12
+120V INPUT
+Text Notes 8155 725  0    60   ~ 12
+RECTIFED OUTPUT
+$Comp
+L CONN_01X02 P1
+U 1 1 5691C944
+P 6995 1055
+F 0 "P1" H 6995 1205 50  0000 C CNN
+F 1 "AC_INPUT" V 7095 1055 50  0000 C CNN
+F 2 "w_conn_screw:mstbva_2,5%2f2-g-5,08" H 6995 1055 60  0001 C CNN
+F 3 "" H 6995 1055 60  0000 C CNN
+	1    6995 1055
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5925 2425 7280 2425
+Wire Wire Line
+	7155 2925 7155 3075
+Wire Wire Line
+	6530 3075 7280 3075
+Wire Wire Line
+	7705 3075 7580 3075
+Wire Wire Line
+	7705 2925 7705 3625
+Wire Wire Line
+	7705 2425 7705 2625
+Wire Wire Line
+	7580 2425 8455 2425
+Wire Wire Line
+	7705 3625 6630 3625
+Connection ~ 7705 3075
+Connection ~ 7155 2425
+Connection ~ 7155 3075
+Connection ~ 7705 2425
+Wire Wire Line
+	5905 3225 6630 3225
+Wire Wire Line
+	6630 3225 6630 3625
+Wire Wire Line
+	7155 2425 7155 2625
+Wire Wire Line
+	7305 2150 7230 2150
+Wire Wire Line
+	7505 2150 7605 2150
+Wire Wire Line
+	7980 2650 7980 2525
+Wire Wire Line
+	7980 2525 7705 2525
+Connection ~ 7705 2525
+Wire Wire Line
+	7980 2850 7980 2975
+Wire Wire Line
+	7980 2975 7705 2975
+Connection ~ 7705 2975
+Wire Wire Line
+	7605 2150 7605 2425
+Connection ~ 7605 2425
+Wire Wire Line
+	7230 2150 7230 2425
+Connection ~ 7230 2425
+Wire Wire Line
+	7605 3075 7605 3375
+Wire Wire Line
+	7605 3375 7530 3375
+Connection ~ 7605 3075
+Wire Wire Line
+	7330 3375 7230 3375
+Wire Wire Line
+	7230 3375 7230 3075
+Connection ~ 7230 3075
+Wire Wire Line
+	6855 2900 6855 2975
+Wire Wire Line
+	6855 2975 7155 2975
+Connection ~ 7155 2975
+Wire Wire Line
+	6855 2700 6855 2550
+Wire Wire Line
+	6855 2550 7155 2550
+Connection ~ 7155 2550
+Wire Notes Line
+	6380 2925 6780 2925
+Wire Notes Line
+	6380 2925 6380 3200
+Wire Notes Line
+	6380 3200 6780 3200
+Wire Notes Line
+	6780 3200 6780 3150
+Wire Notes Line
+	6780 2925 6780 3025
+Wire Notes Line
+	8280 2400 8280 2300
+Wire Notes Line
+	8280 2300 8680 2300
+Wire Notes Line
+	8680 2300 8680 2550
+Wire Notes Line
+	8680 2550 8280 2550
+Wire Notes Line
+	8280 2550 8280 2475
+Wire Wire Line
+	3865 835  3300 835 
+Wire Wire Line
+	4165 835  5045 835 
+Wire Wire Line
+	5045 835  5045 930 
+Wire Wire Line
+	4190 1450 5045 1450
+Wire Wire Line
+	4515 1450 4515 1315
+Wire Wire Line
+	4515 1015 4515 835 
+Connection ~ 4515 835 
+Wire Wire Line
+	5045 1450 5045 1330
+Connection ~ 4515 1450
+Wire Wire Line
+	3295 1450 3890 1450
+Wire Notes Line
+	4730 575  5340 575 
+Wire Notes Line
+	5340 575  5340 1730
+Wire Notes Line
+	5340 1730 3045 1730
+Wire Notes Line
+	3045 1730 3045 575 
+Wire Notes Line
+	3045 575  3605 575 
+Wire Notes Line
+	9285 525  9285 1875
+Wire Notes Line
+	9285 1875 11155 1875
+Wire Notes Line
+	7275 700  7275 1450
+Wire Notes Line
+	7275 1450 6345 1450
+Wire Notes Line
+	6345 1450 6345 695 
+Wire Notes Line
+	6345 695  6475 695 
+Wire Notes Line
+	8990 675  8990 1320
+Wire Notes Line
+	8990 1320 8040 1320
+Wire Notes Line
+	8040 1320 8040 680 
+Wire Notes Line
+	8040 680  8135 680 
+Wire Notes Line
+	8990 675  8960 675 
+Wire Wire Line
+	6795 1005 6505 1005
+Wire Wire Line
+	6505 1005 6505 980 
+Wire Wire Line
+	6795 1105 6500 1105
+Wire Wire Line
+	6500 1105 6500 1085
+$Comp
+L CONN_01X02 P2
+U 1 1 5691D34D
+P 8640 1030
+F 0 "P2" H 8640 1180 50  0000 C CNN
+F 1 "OUTPUT" V 8740 1030 50  0000 C CNN
+F 2 "w_conn_screw:mstbva_2,5%2f2-g-5,08" H 8640 1030 60  0001 C CNN
+F 3 "" H 8640 1030 60  0000 C CNN
+	1    8640 1030
+	1    0    0    -1  
+$EndComp
+Text Label 8275 980  0    60   ~ 0
+V+
+Wire Wire Line
+	8440 980  8275 980 
+Text Label 8290 1075 0    60   ~ 0
+V-
+Wire Wire Line
+	8440 1080 8290 1080
+Wire Wire Line
+	8290 1080 8290 1075
+$EndSCHEMATC

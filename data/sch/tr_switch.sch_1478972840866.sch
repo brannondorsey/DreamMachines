@@ -1,0 +1,334 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:maxim
+LIBS:rp_adapter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1350 1600 0    60   ~ 0
+ANT\n
+Text Notes 1300 2550 0    60   ~ 0
+TX\n
+Text Notes 1350 3200 0    60   ~ 0
+RX\n
+$Comp
+L BNC P9
+U 1 1 57791138
+P 1850 2500
+F 0 "P9" H 1860 2620 50  0000 C CNN
+F 1 "BNC" V 1960 2440 50  0000 C CNN
+F 2 "my_lib:BNC_VERTICAL" H 1850 2500 50  0001 C CNN
+F 3 "" H 1850 2500 50  0000 C CNN
+	1    1850 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR09
+U 1 1 5779117C
+P 1850 2800
+F 0 "#PWR09" H 1850 2550 50  0001 C CNN
+F 1 "GNDA" H 1850 2650 50  0000 C CNN
+F 2 "" H 1850 2800 50  0000 C CNN
+F 3 "" H 1850 2800 50  0000 C CNN
+	1    1850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L BNC P8
+U 1 1 57791224
+P 1850 1500
+F 0 "P8" H 1860 1620 50  0000 C CNN
+F 1 "BNC" V 1960 1440 50  0000 C CNN
+F 2 "my_lib:BNC_VERTICAL" H 1850 1500 50  0001 C CNN
+F 3 "" H 1850 1500 50  0000 C CNN
+	1    1850 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR010
+U 1 1 5779122A
+P 1850 1850
+F 0 "#PWR010" H 1850 1600 50  0001 C CNN
+F 1 "GNDA" H 1850 1700 50  0000 C CNN
+F 2 "" H 1850 1850 50  0000 C CNN
+F 3 "" H 1850 1850 50  0000 C CNN
+	1    1850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L BNC P10
+U 1 1 5779127A
+P 1850 3200
+F 0 "P10" H 1860 3320 50  0000 C CNN
+F 1 "BNC" V 1960 3140 50  0000 C CNN
+F 2 "my_lib:BNC_VERTICAL" H 1850 3200 50  0001 C CNN
+F 3 "" H 1850 3200 50  0000 C CNN
+	1    1850 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR011
+U 1 1 57791280
+P 1850 3500
+F 0 "#PWR011" H 1850 3250 50  0001 C CNN
+F 1 "GNDA" H 1850 3350 50  0000 C CNN
+F 2 "" H 1850 3500 50  0000 C CNN
+F 3 "" H 1850 3500 50  0000 C CNN
+	1    1850 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 900  3350 0    60   ~ 0
+To the RX Filters
+Text Notes 750  2700 0    60   ~ 0
+From the TX Filters
+$Comp
+L SMA J3
+U 1 1 57791387
+P 1900 4650
+F 0 "J3" H 2025 4965 60  0000 C CNN
+F 1 "SMA" H 2090 4890 60  0000 C CNN
+F 2 "minicircuits:SMA_F_RA" H 2075 4820 50  0001 C CNN
+F 3 "" H 1900 4650 60  0000 C CNN
+	1    1900 4650
+	-1   0    0    -1  
+$EndComp
+Text Notes 700  4400 0    60   ~ 0
+TX Sampling output
+$Comp
+L RELAY_RF K1
+U 1 1 57793069
+P 3500 1750
+F 0 "K1" H 3450 2150 50  0000 C CNN
+F 1 "RELAY_RF" H 3650 1250 50  0000 C CNN
+F 2 "my_lib:RF_RELAY" H 3500 1750 50  0001 C CNN
+F 3 "" H 3500 1750 50  0000 C CNN
+	1    3500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L RELAY_RF K2
+U 1 1 5779309C
+P 3500 3450
+F 0 "K2" H 3450 3850 50  0000 C CNN
+F 1 "RELAY_RF" H 3650 2950 50  0000 C CNN
+F 2 "my_lib:RF_RELAY" H 3500 3450 50  0001 C CNN
+F 3 "" H 3500 3450 50  0000 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 1800 900  0    60   Input ~ 0
+PTT_OUT_TX
+Wire Wire Line
+	1850 2800 1850 2700
+Wire Wire Line
+	1850 1700 1850 1850
+Wire Wire Line
+	1850 3500 1850 3400
+Wire Wire Line
+	2000 1500 3100 1500
+Wire Wire Line
+	4350 2500 2000 2500
+Wire Wire Line
+	4350 1600 4350 2500
+Wire Wire Line
+	4350 1600 3900 1600
+Wire Wire Line
+	3900 1900 4350 1900
+Connection ~ 4350 1900
+Wire Wire Line
+	2000 3200 3100 3200
+Wire Wire Line
+	3900 1400 4500 1400
+Wire Wire Line
+	4500 1400 4500 3400
+Wire Wire Line
+	4500 3400 3900 3400
+Wire Wire Line
+	3900 3100 4500 3100
+Connection ~ 4500 3100
+Wire Wire Line
+	3900 1700 4500 1700
+Connection ~ 4500 1700
+Wire Wire Line
+	4250 3300 3900 3300
+Wire Wire Line
+	3900 3600 4250 3600
+Connection ~ 4250 3600
+Wire Wire Line
+	3100 1500 3100 1800
+Wire Wire Line
+	3100 3200 3100 3500
+Wire Wire Line
+	1800 900  2750 900 
+Wire Wire Line
+	2750 900  2750 2100
+Text HLabel 1900 4050 0    60   Input ~ 0
+PTT_OUT_RX
+Wire Wire Line
+	2750 2100 3100 2100
+Wire Wire Line
+	1900 4050 2650 4050
+Wire Wire Line
+	2650 4050 2650 3800
+Wire Wire Line
+	2650 3800 3100 3800
+$Comp
+L INDUCTOR_SMALL L3
+U 1 1 57793696
+P 5950 1300
+F 0 "L3" H 5950 1400 50  0000 C CNN
+F 1 "FB" H 5950 1250 50  0000 C CNN
+F 2 "my_lib:FB" H 5950 1300 50  0001 C CNN
+F 3 "" H 5950 1300 50  0000 C CNN
+	1    5950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C33
+U 1 1 577936E1
+P 5350 1500
+F 0 "C33" H 5375 1600 50  0000 L CNN
+F 1 "0.1uF" H 5375 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5388 1350 50  0001 C CNN
+F 3 "" H 5350 1500 50  0000 C CNN
+	1    5350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C32
+U 1 1 57793728
+P 5050 1500
+F 0 "C32" H 5075 1600 50  0000 L CNN
+F 1 "1uF" H 5075 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 5088 1350 50  0001 C CNN
+F 3 "" H 5050 1500 50  0000 C CNN
+	1    5050 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1300 6200 1300
+Wire Wire Line
+	2900 1300 5700 1300
+Wire Wire Line
+	2900 1300 2900 3700
+Wire Wire Line
+	2900 2000 3100 2000
+Wire Wire Line
+	2900 3700 3100 3700
+Connection ~ 2900 2000
+Wire Wire Line
+	5050 1350 5050 1300
+Connection ~ 5050 1300
+Wire Wire Line
+	5350 1350 5350 1300
+Connection ~ 5350 1300
+Wire Wire Line
+	5050 1800 5050 1650
+Wire Wire Line
+	5350 1800 5350 1650
+Text Label 4400 1300 0    60   ~ 0
+12V_Relay
+$Comp
+L GNDA #PWR012
+U 1 1 57793A51
+P 2000 4700
+F 0 "#PWR012" H 2000 4450 50  0001 C CNN
+F 1 "GNDA" H 2000 4550 50  0000 C CNN
+F 2 "" H 2000 4700 50  0000 C CNN
+F 3 "" H 2000 4700 50  0000 C CNN
+	1    2000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4550 2000 4700
+Wire Wire Line
+	1850 4550 2000 4550
+Connection ~ 1950 4550
+Connection ~ 1900 4550
+$Comp
+L CONN_01X02 P13
+U 1 1 57793BD3
+P 3700 4550
+F 0 "P13" H 3700 4700 50  0000 C CNN
+F 1 "CONN_01X02" V 3800 4550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3700 4550 50  0001 C CNN
+F 3 "" H 3700 4550 50  0000 C CNN
+	1    3700 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 4350 3750 4350
+Text HLabel 5800 850  0    60   UnSpc ~ 0
+12V_RLY_IN
+Wire Wire Line
+	6400 850  5800 850 
+Wire Wire Line
+	6400 850  6400 1300
+Wire Wire Line
+	3650 4350 2050 4350
+Text Label 5200 1300 0    60   ~ 0
+12V_TR
+Wire Wire Line
+	4250 3300 4250 4350
+$Comp
+L GND #PWR013
+U 1 1 57DEABEB
+P 5050 1800
+F 0 "#PWR013" H 5050 1550 50  0001 C CNN
+F 1 "GND" H 5050 1650 50  0000 C CNN
+F 2 "" H 5050 1800 50  0000 C CNN
+F 3 "" H 5050 1800 50  0000 C CNN
+	1    5050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 57DEAC1B
+P 5350 1800
+F 0 "#PWR014" H 5350 1550 50  0001 C CNN
+F 1 "GND" H 5350 1650 50  0000 C CNN
+F 2 "" H 5350 1800 50  0000 C CNN
+F 3 "" H 5350 1800 50  0000 C CNN
+	1    5350 1800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

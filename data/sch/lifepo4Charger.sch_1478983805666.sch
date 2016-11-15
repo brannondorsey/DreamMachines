@@ -1,0 +1,437 @@
+EESchema Schematic File Version 2
+LIBS:Power-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sma
+LIBS:si3407dv
+LIBS:mmqa
+LIBS:18650outline
+LIBS:Power-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LT3652 U103
+U 1 1 56114C94
+P 5850 3100
+F 0 "U103" H 5850 3400 60  0000 C CNN
+F 1 "LT3652" H 5900 2850 60  0000 C CNN
+F 2 "Housings_DFN_QFN:DFN-12-1EP_3x3mm_Pitch0.45mm" H 5850 2400 60  0001 C CNN
+F 3 "" H 5850 2400 60  0000 C CNN
+	1    5850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C115
+U 1 1 56114CEB
+P 3450 3150
+F 0 "C115" H 3450 3250 40  0000 L CNN
+F 1 "10uf" H 3456 3065 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3488 3000 30  0001 C CNN
+F 3 "" H 3450 3150 60  0000 C CNN
+	1    3450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R128
+U 1 1 56114D05
+P 3850 2900
+F 0 "R128" V 3930 2900 40  0000 C CNN
+F 1 "13.7k" V 3857 2901 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3780 2900 30  0001 C CNN
+F 3 "" H 3850 2900 30  0000 C CNN
+	1    3850 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R123
+U 1 1 56114DC8
+P 4150 3200
+F 0 "R123" V 4230 3200 40  0000 C CNN
+F 1 "10k" V 4157 3201 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4080 3200 30  0001 C CNN
+F 3 "" H 4150 3200 30  0000 C CNN
+	1    4150 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 3200 2800 0    60   Input ~ 0
+Vin
+$Comp
+L C C104
+U 1 1 56114F88
+P 6700 2650
+F 0 "C104" H 6700 2750 40  0000 L CNN
+F 1 "1uf" H 6706 2565 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6738 2500 30  0001 C CNN
+F 3 "" H 6700 2650 60  0000 C CNN
+	1    6700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L101
+U 1 1 56114FE2
+P 8300 2900
+F 0 "L101" V 8250 2900 40  0000 C CNN
+F 1 "5.6uh" V 8400 2900 40  0000 C CNN
+F 2 "ASPI-6045S-5R6M-T:ASPI-6045S-5R6M-T" H 8300 2900 60  0001 C CNN
+F 3 "" H 8300 2900 60  0000 C CNN
+F 4 "ASPI-6045S-5R6M-T" H 8300 2900 60  0001 C CNN "Manufacturer PN"
+	1    8300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODESCH D103
+U 1 1 56115039
+P 8850 2550
+F 0 "D103" H 8850 2650 40  0000 C CNN
+F 1 "CMSH3-40MA" H 8850 2450 40  0000 C CNN
+F 2 "Diodes_SMD:Diode-SMA_Standard" H 8850 2550 60  0001 C CNN
+F 3 "" H 8850 2550 60  0000 C CNN
+	1    8850 2550
+	-1   0    0    1   
+$EndComp
+Text HLabel 9050 2550 2    60   Input ~ 0
+GND
+$Comp
+L C C107
+U 1 1 561153DF
+P 7900 4150
+F 0 "C107" H 7900 4250 40  0000 L CNN
+F 1 "10uf" H 7906 4065 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7938 4000 30  0001 C CNN
+F 3 "" H 7900 4150 60  0000 C CNN
+	1    7900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R110
+U 1 1 56115725
+P 8300 3450
+F 0 "R110" V 8380 3450 40  0000 C CNN
+F 1 ".1" V 8307 3451 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8230 3450 30  0001 C CNN
+F 3 "" H 8300 3450 30  0000 C CNN
+	1    8300 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L THERMISTOR TH102
+U 1 1 56115896
+P 6500 3800
+F 0 "TH102" V 6600 3850 50  0000 C CNN
+F 1 "THERMISTOR" V 6400 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6500 3800 60  0001 C CNN
+F 3 "" H 6500 3800 60  0000 C CNN
+F 4 "NTCLE100E3103JB0" H 6500 3800 60  0001 C CNN "Manufacturer PN"
+	1    6500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R113
+U 1 1 561158DE
+P 7150 4350
+F 0 "R113" V 7230 4350 40  0000 C CNN
+F 1 "237k" V 7157 4351 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7080 4350 30  0001 C CNN
+F 3 "" H 7150 4350 30  0000 C CNN
+	1    7150 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R112
+U 1 1 56115929
+P 7450 4050
+F 0 "R112" V 7530 4050 40  0000 C CNN
+F 1 "14.3k" V 7457 4051 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7380 4050 30  0001 C CNN
+F 3 "" H 7450 4050 30  0000 C CNN
+	1    7450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R119
+U 1 1 561159A8
+P 7450 4650
+F 0 "R119" V 7530 4650 40  0000 C CNN
+F 1 "330k" V 7457 4651 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7380 4650 30  0001 C CNN
+F 3 "" H 7450 4650 30  0000 C CNN
+	1    7450 4650
+	1    0    0    -1  
+$EndComp
+Text HLabel 6200 4850 0    60   Input ~ 0
+GND
+Text HLabel 8800 3750 2    60   Input ~ 0
+Vout
+$Comp
+L R R131
+U 1 1 561165A5
+P 4550 3000
+F 0 "R131" V 4630 3000 40  0000 C CNN
+F 1 "49.9K" V 4557 3001 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4480 3000 30  0001 C CNN
+F 3 "" H 4550 3000 30  0000 C CNN
+	1    4550 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R127
+U 1 1 561165FC
+P 4850 3300
+F 0 "R127" V 4930 3300 40  0000 C CNN
+F 1 "10k" V 4857 3301 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4780 3300 30  0001 C CNN
+F 3 "" H 4850 3300 30  0000 C CNN
+	1    4850 3300
+	1    0    0    -1  
+$EndComp
+Text HLabel 5000 2400 2    60   Input ~ 0
+SHDN
+Text HLabel 5100 2500 2    60   Input ~ 0
+CHRG
+Text HLabel 5100 2600 2    60   Input ~ 0
+FAULT
+$Comp
+L C C110
+U 1 1 56116AAD
+P 5200 3550
+F 0 "C110" H 5200 3650 40  0000 L CNN
+F 1 ".68uf" H 5206 3465 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5238 3400 30  0001 C CNN
+F 3 "" H 5200 3550 60  0000 C CNN
+F 4 "CL21F684ZAFNNNE" H 5200 3550 60  0001 C CNN "Manufacturer PN"
+	1    5200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODESCH D104
+U 1 1 56116E89
+P 7200 2900
+F 0 "D104" H 7200 3000 40  0000 C CNN
+F 1 "CMDSH2-4L" H 7200 2800 40  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H 7200 2900 60  0001 C CNN
+F 3 "" H 7200 2900 60  0000 C CNN
+	1    7200 2900
+	-1   0    0    1   
+$EndComp
+Text HLabel 3300 4100 0    60   Input ~ 0
+GND
+$Comp
+L BATTERY BT101
+U 1 1 5632D9D1
+P 8800 4150
+F 0 "BT101" H 8800 4350 50  0000 C CNN
+F 1 "BATTERY" H 8800 3960 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8800 4150 60  0001 C CNN
+F 3 "" H 8800 4150 60  0000 C CNN
+	1    8800 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 4800 7450 4850
+Wire Wire Line
+	7450 3900 7450 3750
+Wire Wire Line
+	6800 4350 6800 3300
+Wire Wire Line
+	7000 4350 6800 4350
+Wire Wire Line
+	8800 4850 6200 4850
+Connection ~ 8800 4850
+Wire Wire Line
+	8800 4450 8800 4850
+Connection ~ 7900 3750
+Wire Wire Line
+	8800 3750 8800 3850
+Wire Wire Line
+	7450 3750 8800 3750
+Connection ~ 8300 3250
+Wire Wire Line
+	7000 3250 8300 3250
+Wire Wire Line
+	6900 3350 7900 3350
+Connection ~ 7900 4850
+Wire Wire Line
+	7900 4300 7900 4850
+Connection ~ 5200 4100
+Wire Wire Line
+	5850 4100 5850 3650
+Connection ~ 3450 4100
+Wire Wire Line
+	3450 3300 3450 4100
+Connection ~ 4150 4100
+Wire Wire Line
+	4150 3350 4150 4100
+Connection ~ 4850 4100
+Wire Wire Line
+	4850 3450 4850 4100
+Wire Wire Line
+	5200 3700 5200 4100
+Wire Wire Line
+	3300 4100 5850 4100
+Wire Wire Line
+	7400 2900 7900 2900
+Wire Wire Line
+	5200 3300 5250 3300
+Wire Wire Line
+	5200 3300 5200 3400
+Wire Wire Line
+	5050 2600 5100 2600
+Wire Wire Line
+	5050 3200 5050 2600
+Wire Wire Line
+	5250 3200 5050 3200
+Wire Wire Line
+	4950 2500 5100 2500
+Wire Wire Line
+	4950 3100 4950 2500
+Wire Wire Line
+	5250 3100 4950 3100
+Wire Wire Line
+	4850 2400 5000 2400
+Connection ~ 4850 3000
+Wire Wire Line
+	4850 2400 4850 3150
+Wire Wire Line
+	4700 3000 5250 3000
+Connection ~ 4250 2800
+Wire Wire Line
+	4250 3000 4250 2800
+Wire Wire Line
+	4250 3000 4400 3000
+Connection ~ 4150 2900
+Wire Wire Line
+	4150 2900 4150 3050
+Wire Wire Line
+	4000 2900 5250 2900
+Connection ~ 3550 2800
+Wire Wire Line
+	3550 2900 3550 2800
+Wire Wire Line
+	3550 2900 3700 2900
+Connection ~ 3450 2800
+Wire Wire Line
+	3450 2800 3450 3000
+Wire Wire Line
+	3200 2800 5250 2800
+Connection ~ 6500 4850
+Wire Wire Line
+	6500 4050 6500 4850
+Connection ~ 7450 4850
+Wire Wire Line
+	6500 3200 6500 3550
+Wire Wire Line
+	6450 3200 6500 3200
+Connection ~ 7450 4350
+Wire Wire Line
+	7450 4200 7450 4500
+Wire Wire Line
+	7300 4350 7450 4350
+Wire Wire Line
+	6800 3300 6450 3300
+Connection ~ 7900 3350
+Wire Wire Line
+	6900 3100 6900 3350
+Wire Wire Line
+	6450 3100 6900 3100
+Wire Wire Line
+	8300 3200 8300 3300
+Wire Wire Line
+	7000 3000 7000 3250
+Wire Wire Line
+	6450 3000 7000 3000
+Wire Wire Line
+	7900 2900 7900 4000
+Connection ~ 6700 2900
+Wire Wire Line
+	6700 2800 6700 2900
+Wire Wire Line
+	6450 2900 7000 2900
+Connection ~ 8300 2550
+Wire Wire Line
+	8300 2550 8650 2550
+Wire Wire Line
+	8300 2400 8300 2600
+Connection ~ 6700 2400
+Wire Wire Line
+	6700 2400 6700 2500
+Wire Wire Line
+	6450 2400 8300 2400
+Wire Wire Line
+	6450 2800 6450 2400
+Wire Wire Line
+	8300 3600 8300 3750
+Connection ~ 8300 3750
+$Comp
+L 18650Outline BT102
+U 1 1 56C12EB5
+P 9600 4050
+F 0 "BT102" H 9600 4050 60  0000 C CNN
+F 1 "18650Outline" H 9600 4150 60  0000 C CNN
+F 2 "18650:18650" H 9600 4050 60  0001 C CNN
+F 3 "" H 9600 4050 60  0000 C CNN
+	1    9600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P102
+U 1 1 56C15450
+P 8300 3950
+F 0 "P102" H 8300 4050 50  0000 C CNN
+F 1 "BAT_POS" V 8400 3950 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 8300 3950 50  0000 C CNN
+F 3 "" H 8300 3950 50  0000 C CNN
+	1    8300 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P104
+U 1 1 56C154C1
+P 8350 4650
+F 0 "P104" H 8350 4750 50  0000 C CNN
+F 1 "BAT_NEG" V 8450 4650 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 8350 4650 50  0000 C CNN
+F 3 "" H 8350 4650 50  0000 C CNN
+	1    8350 4650
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

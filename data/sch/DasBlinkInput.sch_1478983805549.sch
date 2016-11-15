@@ -1,0 +1,364 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DasBlinkInput
+LIBS:DasBlinkInput-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4550 850  1450 1200
+U 5557A253
+F0 "Channel1Photodetect" 60
+F1 "Channel1Photodetect.sch" 60
+F2 "CHAN1_OUT" I R 6000 1450 60 
+F3 "REF_OUT" I L 4550 1450 60 
+$EndSheet
+$Sheet
+S 4550 2400 1450 1300
+U 5557AE04
+F0 "Channel2Photodetect" 60
+F1 "Channel2Photodetect.sch" 60
+F2 "CHAN2_OUT" I R 6000 3000 60 
+F3 "REF_IN" I L 4550 3000 60 
+$EndSheet
+Wire Wire Line
+	4550 1450 4350 1450
+Wire Wire Line
+	4350 3000 4550 3000
+$Sheet
+S 4550 4050 1450 1250
+U 5557C835
+F0 "Channel3Photodetect" 60
+F1 "Channel3Photodetect.sch" 60
+F2 "CHAN3_OUT" I R 6000 4650 60 
+F3 "REF_IN" I L 4550 4650 60 
+$EndSheet
+Wire Wire Line
+	4350 4650 4550 4650
+Connection ~ 4350 3000
+$Sheet
+S 4550 5700 1450 1300
+U 5557CF0D
+F0 "Channel4Photodetect" 60
+F1 "Channel4Photodetect.sch" 60
+F2 "CHAN4_OUT" I R 6000 6350 60 
+F3 "REF_IN" I L 4550 6350 60 
+$EndSheet
+Connection ~ 4350 4650
+Wire Wire Line
+	4350 1450 4350 6350
+Wire Wire Line
+	4350 6350 4550 6350
+$Comp
+L CONN_01X05 P105
+U 1 1 555AA94B
+P 7850 1650
+F 0 "P105" H 7850 1950 50  0000 C CNN
+F 1 "CONN_01X05" V 7950 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 7850 1650 60  0001 C CNN
+F 3 "" H 7850 1650 60  0000 C CNN
+	1    7850 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1450 7650 1450
+Wire Wire Line
+	6000 3000 6150 3000
+Wire Wire Line
+	6150 3000 6150 1550
+Wire Wire Line
+	6150 1550 7650 1550
+Wire Wire Line
+	6000 4650 6250 4650
+Wire Wire Line
+	6250 4650 6250 1650
+Wire Wire Line
+	6250 1650 7650 1650
+Wire Wire Line
+	6000 6350 6350 6350
+Wire Wire Line
+	6350 6350 6350 1750
+Wire Wire Line
+	6350 1750 7650 1750
+Wire Wire Line
+	7650 1850 7400 1850
+Wire Wire Line
+	7400 1850 7400 2200
+$Comp
+L GND #PWR01
+U 1 1 555ABC4A
+P 7400 2200
+F 0 "#PWR01" H 7400 1950 60  0001 C CNN
+F 1 "GND" H 7400 2050 60  0000 C CNN
+F 2 "" H 7400 2200 60  0000 C CNN
+F 3 "" H 7400 2200 60  0000 C CNN
+	1    7400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P101
+U 1 1 555ABEBF
+P 650 1200
+F 0 "P101" H 550 1350 50  0000 C CNN
+F 1 "CONN_01X02" V 750 1200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 650 1200 60  0001 C CNN
+F 3 "" H 650 1200 60  0000 C CNN
+	1    650  1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	850  1250 1000 1250
+Wire Wire Line
+	1000 1250 1000 1700
+$Comp
+L GND #PWR02
+U 1 1 555ABF20
+P 1000 1700
+F 0 "#PWR02" H 1000 1450 60  0001 C CNN
+F 1 "GND" H 1000 1550 60  0000 C CNN
+F 2 "" H 1000 1700 60  0000 C CNN
+F 3 "" H 1000 1700 60  0000 C CNN
+	1    1000 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1150 1900 1150
+$Comp
+L LP2980-N U101
+U 1 1 555AC7D2
+P 2600 1350
+F 0 "U101" H 2835 990 60  0000 C CNN
+F 1 "LP2980-N" H 2650 1700 60  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5" H 2630 1335 60  0001 C CNN
+F 3 "" H 2630 1335 60  0000 C CNN
+	1    2600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C101
+U 1 1 555AC341
+P 1300 1500
+F 0 "C101" H 1350 1600 50  0000 L CNN
+F 1 "1uf" H 1350 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1338 1350 30  0001 C CNN
+F 3 "" H 1300 1500 60  0000 C CNN
+F 4 "Value" H 1300 1500 60  0001 C CNN "MPN"
+	1    1300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2100 3450 2100
+Wire Wire Line
+	2600 2100 2600 1950
+Connection ~ 2600 2100
+$Comp
+L C C102
+U 1 1 555AC4FE
+P 3450 1500
+F 0 "C102" H 3500 1600 50  0000 L CNN
+F 1 "1uf" H 3500 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3488 1350 30  0001 C CNN
+F 3 "" H 3450 1500 60  0000 C CNN
+F 4 "Value" H 3450 1500 60  0001 C CNN "MPN"
+	1    3450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R103
+U 1 1 555AC8F0
+P 1650 1500
+F 0 "R103" V 1730 1500 50  0000 C CNN
+F 1 "0" V 1657 1501 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 1500 30  0001 C CNN
+F 3 "" H 1650 1500 30  0000 C CNN
+F 4 "Value" H 1650 1500 60  0001 C CNN "MPN"
+	1    1650 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1900 1550
+Wire Wire Line
+	3300 1150 3750 1150
+Wire Wire Line
+	3450 1300 3450 1150
+Connection ~ 3450 1150
+Wire Wire Line
+	3450 2100 3450 1700
+Text GLabel 3750 1150 2    60   Input ~ 0
+3V
+$Comp
+L R R101
+U 1 1 555AD007
+P 1450 3100
+F 0 "R101" V 1530 3100 50  0000 C CNN
+F 1 "10K" V 1457 3101 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1380 3100 30  0001 C CNN
+F 3 "" H 1450 3100 30  0000 C CNN
+	1    1450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R102
+U 1 1 555AD03E
+P 1450 3850
+F 0 "R102" V 1530 3850 50  0000 C CNN
+F 1 "10K" V 1457 3851 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1380 3850 30  0001 C CNN
+F 3 "" H 1450 3850 30  0000 C CNN
+	1    1450 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 2750 0    60   Input ~ 0
+3V
+Wire Wire Line
+	1450 2850 1450 2750
+Wire Wire Line
+	1450 2750 1050 2750
+Wire Wire Line
+	1450 3350 1450 3600
+Wire Wire Line
+	1450 4100 1450 4450
+Wire Wire Line
+	2850 2100 2850 2400
+Connection ~ 2850 2100
+$Comp
+L GND #PWR03
+U 1 1 555AD295
+P 2850 2400
+F 0 "#PWR03" H 2850 2150 60  0001 C CNN
+F 1 "GND" H 2850 2250 60  0000 C CNN
+F 2 "" H 2850 2400 60  0000 C CNN
+F 3 "" H 2850 2400 60  0000 C CNN
+	1    2850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 555AD36F
+P 1450 4450
+F 0 "#PWR04" H 1450 4200 60  0001 C CNN
+F 1 "GND" H 1450 4300 60  0000 C CNN
+F 2 "" H 1450 4450 60  0000 C CNN
+F 3 "" H 1450 4450 60  0000 C CNN
+	1    1450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3500 1900 3500
+Connection ~ 1450 3500
+Text GLabel 1900 3500 2    60   Input ~ 0
+VGND
+$Comp
+L CONN_01X01 P104
+U 1 1 555AECB0
+P 3350 650
+F 0 "P104" H 3350 750 50  0000 C CNN
+F 1 "TP_3V" V 3450 650 50  0000 C CNN
+F 2 "pcb:TESTPOINT_1" H 3350 650 60  0001 C CNN
+F 3 "" H 3350 650 60  0000 C CNN
+	1    3350 650 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 850  3350 1150
+Connection ~ 3350 1150
+$Comp
+L CONN_01X01 P102
+U 1 1 555AEE2A
+P 1800 3100
+F 0 "P102" H 1800 3200 50  0000 C CNN
+F 1 "TP_VGND" V 1900 3100 50  0000 C CNN
+F 2 "pcb:TESTPOINT_1" H 1800 3100 60  0001 C CNN
+F 3 "" H 1800 3100 60  0000 C CNN
+	1    1800 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 3300 1800 3500
+Connection ~ 1800 3500
+$Comp
+L CONN_01X01 P103
+U 1 1 555AF016
+P 3300 2600
+F 0 "P103" H 3300 2700 50  0000 C CNN
+F 1 "TP_GND" V 3400 2600 50  0000 C CNN
+F 2 "pcb:TESTPOINT_1" H 3300 2600 60  0001 C CNN
+F 3 "" H 3300 2600 60  0000 C CNN
+	1    3300 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2400 3300 2100
+Connection ~ 3300 2100
+$Comp
+L CONN_01X01 P106
+U 1 1 556346E5
+P 3950 3650
+F 0 "P106" H 3950 3750 50  0000 C CNN
+F 1 "VREF" V 4050 3650 50  0000 C CNN
+F 2 "pcb:TESTPOINT_1" H 3950 3650 60  0001 C CNN
+F 3 "" H 3950 3650 60  0000 C CNN
+	1    3950 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 3850 4350 3850
+Connection ~ 4350 3850
+Wire Wire Line
+	1300 1300 1300 1150
+Connection ~ 1300 1150
+Wire Wire Line
+	1300 1700 1300 2100
+Wire Wire Line
+	1650 1750 1650 1800
+Wire Wire Line
+	1650 1800 1800 1800
+Wire Wire Line
+	1800 1800 1800 1350
+Wire Wire Line
+	1800 1350 1900 1350
+Wire Wire Line
+	1650 1250 1650 1150
+Connection ~ 1650 1150
+Text Notes 10600 7650 0    60   ~ 0
+v2
+$EndSCHEMATC

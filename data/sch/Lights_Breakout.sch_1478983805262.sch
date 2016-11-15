@@ -1,0 +1,161 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Lights_Breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Lights Breakout"
+Date "2016-07-09"
+Rev "1.0"
+Comp "Noctivore"
+Comment1 "Designed by Ops"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_NMOS_GDS Q1
+U 1 1 575C92F6
+P 6300 4050
+F 0 "Q1" V 6200 4200 50  0000 R CNN
+F 1 "IPD30N06S2L-23" V 6500 4375 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2Lead" H 6500 4150 50  0001 C CNN
+F 3 "" H 6300 4050 50  0000 C CNN
+	1    6300 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 575C9359
+P 6550 4350
+F 0 "R1" V 6475 4300 50  0000 L CNN
+F 1 "10K" V 6625 4275 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 6550 4350 50  0001 C CNN
+F 3 "" H 6550 4350 50  0000 C CNN
+	1    6550 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 575C9390
+P 6800 4450
+F 0 "#PWR01" H 6800 4200 50  0001 C CNN
+F 1 "GND" H 6800 4300 50  0000 C CNN
+F 2 "" H 6800 4450 50  0000 C CNN
+F 3 "" H 6800 4450 50  0000 C CNN
+	1    6800 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4250 6300 4350
+Wire Wire Line
+	6050 4350 6450 4350
+Wire Wire Line
+	6500 3950 6800 3950
+Wire Wire Line
+	6800 3950 6800 4450
+Wire Wire Line
+	6650 4350 6800 4350
+Connection ~ 6800 4350
+$Comp
+L CONN_01X02 P2
+U 1 1 575C98C8
+P 4950 3650
+F 0 "P2" H 4950 3800 50  0000 C CNN
+F 1 "SIGNAL_HEADER" V 5050 3650 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 4950 3650 50  0001 C CNN
+F 3 "" H 4950 3650 50  0000 C CNN
+	1    4950 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 575C994C
+P 4900 3950
+F 0 "#PWR03" H 4900 3700 50  0001 C CNN
+F 1 "GND" H 4900 3800 50  0000 C CNN
+F 2 "" H 4900 3950 50  0000 C CNN
+F 3 "" H 4900 3950 50  0000 C CNN
+	1    4900 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 4350
+$Comp
+L R_Small R2
+U 1 1 575C9DCE
+P 5950 4350
+F 0 "R2" V 5875 4300 50  0000 L CNN
+F 1 "100" V 6025 4275 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5950 4350 50  0001 C CNN
+F 3 "" H 5950 4350 50  0000 C CNN
+	1    5950 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 575CA28A
+P 5600 3650
+F 0 "P1" H 5600 3850 50  0000 C CNN
+F 1 "LIGHTS_HEADER" V 5700 3650 50  0000 C CNN
+F 2 "lights_breakout:1935174_Phoenix_Contact_01X03" H 5600 3650 50  0001 C CNN
+F 3 "" H 5600 3650 50  0000 C CNN
+	1    5600 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 3850 5600 3950
+Wire Wire Line
+	5600 3950 6100 3950
+Wire Wire Line
+	5700 3850 5700 3950
+Connection ~ 5700 3950
+$Comp
+L GND #PWR?
+U 1 1 5781DA35
+P 5500 3950
+F 0 "#PWR?" H 5500 3700 50  0001 C CNN
+F 1 "GND" H 5500 3800 50  0000 C CNN
+F 2 "" H 5500 3950 50  0000 C CNN
+F 3 "" H 5500 3950 50  0000 C CNN
+	1    5500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3850 5500 3950
+Wire Wire Line
+	5000 3850 5000 4350
+Wire Wire Line
+	5000 4350 5850 4350
+Wire Wire Line
+	4900 3850 4900 3950
+$EndSCHEMATC

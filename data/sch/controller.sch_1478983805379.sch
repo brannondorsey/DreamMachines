@@ -1,0 +1,353 @@
+EESchema Schematic File Version 2  date Mon 29 Apr 2013 10:24:02 PM CEST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:reversed-engineered-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 4 6
+Title ""
+Date "29 apr 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 2600 7500 0    60   ~ 0
+PIN#8 (SHCP) 180kHz (pulses)
+Text Notes 2600 7350 0    60   ~ 0
+PIN#4  0-0.5v?
+Text Notes 2600 7200 0    60   ~ 0
+PIN#7 = 0v??? Connection problem?
+Text Notes 2600 7050 0    60   ~ 0
+PIN#5 (STCP) = 190Hz (low pulse)
+Text Notes 6050 5650 0    60   ~ 0
+4
+Wire Wire Line
+	6050 5650 6050 6000
+Wire Wire Line
+	6050 6000 5550 6000
+Connection ~ 5650 5800
+Wire Wire Line
+	5650 5800 5900 5800
+Wire Wire Line
+	5900 5800 5900 5650
+Wire Wire Line
+	4950 2350 4800 2350
+Wire Wire Line
+	4800 2350 4800 3300
+Wire Wire Line
+	4800 3300 8200 3300
+Wire Wire Line
+	8200 3300 8200 4350
+Wire Wire Line
+	8200 4350 7650 4350
+Wire Wire Line
+	7150 4350 5650 4350
+Wire Wire Line
+	5650 4350 5650 6600
+Wire Wire Line
+	5500 2300 5500 2100
+Wire Wire Line
+	5500 2100 6700 2100
+Wire Wire Line
+	2250 2500 2250 1600
+Wire Wire Line
+	5250 1600 5250 1000
+Wire Wire Line
+	4700 1000 4700 1150
+Wire Wire Line
+	4700 1150 5150 1150
+Wire Wire Line
+	5150 1150 5150 1000
+Wire Notes Line
+	5800 2300 4950 2300
+Wire Notes Line
+	5800 2300 5800 3100
+Wire Notes Line
+	5800 3100 4950 3100
+Wire Notes Line
+	4950 3100 4950 2300
+Wire Notes Line
+	4650 6800 4050 6800
+Wire Notes Line
+	4050 6800 4050 800 
+Wire Notes Line
+	4050 800  4800 800 
+Wire Notes Line
+	6200 6800 6500 6800
+Wire Notes Line
+	6500 6800 6500 800 
+Wire Notes Line
+	6500 800  5700 800 
+Wire Wire Line
+	3050 2700 3050 2750
+Wire Wire Line
+	5400 1000 5400 1150
+Wire Wire Line
+	3050 2300 3500 2300
+Wire Wire Line
+	3500 2300 3500 2100
+Wire Wire Line
+	3500 2100 5400 2100
+Wire Wire Line
+	5400 2100 5400 2300
+Wire Wire Line
+	7500 2300 7850 2300
+Wire Wire Line
+	7850 2300 7850 1600
+Wire Wire Line
+	7850 1600 2250 1600
+Connection ~ 5250 1600
+Wire Wire Line
+	6850 3850 6850 3950
+Wire Notes Line
+	6400 5650 6400 5350
+Wire Notes Line
+	6400 5650 5750 5650
+Wire Notes Line
+	5750 5650 5750 5350
+Wire Notes Line
+	5750 5350 6400 5350
+Wire Wire Line
+	5550 6500 5550 6600
+$Comp
+L R R?
+U 1 1 517EC305
+P 5550 6250
+F 0 "R?" V 5450 6250 50  0000 C CNN
+F 1 "2k2" V 5550 6250 50  0000 C CNN
+	1    5550 6250
+	1    0    0    -1  
+$EndComp
+Text Notes 5900 5650 0    60   ~ 0
+3
+Text Label 4900 3300 0    60   ~ 0
+AION0
+$Comp
+L R R?
+U 1 1 50C9C1BB
+P 7400 4350
+F 0 "R?" V 7480 4350 50  0001 C CNN
+F 1 "2k2" V 7400 4350 50  0000 C CNN
+	1    7400 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 50C9C1AE
+P 6850 4750
+F 0 "#PWR?" H 6850 4750 30  0001 C CNN
+F 1 "GND" H 6850 4680 30  0001 C CNN
+	1    6850 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 50C9C1A5
+P 6850 4550
+F 0 "D?" H 6850 4650 40  0001 C CNN
+F 1 "DIODE" H 6850 4450 40  0001 C CNN
+	1    6850 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 50C9C1A0
+P 6850 3850
+F 0 "#PWR?" H 6850 3940 20  0001 C CNN
+F 1 "+5V" H 6850 3940 30  0000 C CNN
+	1    6850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 50C9C184
+P 7150 3850
+F 0 "#PWR?" H 7150 3940 20  0001 C CNN
+F 1 "+5V" H 7150 3940 30  0000 C CNN
+	1    7150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 50C9C17D
+P 7150 4100
+F 0 "R?" V 7230 4100 50  0001 C CNN
+F 1 "8k8" V 7150 4100 50  0000 C CNN
+	1    7150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 50C9C137
+P 6850 4150
+F 0 "D?" H 6850 4250 40  0001 C CNN
+F 1 "DIODE" H 6850 4050 40  0001 C CNN
+	1    6850 4150
+	0    -1   -1   0   
+$EndComp
+Text Notes 5050 2550 0    60   ~ 0
+ATMEGA32L8AU
+Text Label 5950 2100 0    60   ~ 0
+ATMEL_TX
+$Comp
+L +5V #PWR?
+U 1 1 50C9C095
+P 7500 1900
+F 0 "#PWR?" H 7500 1990 20  0001 C CNN
+F 1 "+5V" H 7500 1990 30  0000 C CNN
+	1    7500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 50C9C08D
+P 7500 2800
+F 0 "#PWR?" H 7500 2800 30  0001 C CNN
+F 1 "GND" H 7500 2730 30  0001 C CNN
+	1    7500 2800
+	1    0    0    -1  
+$EndComp
+Text Label 3500 2100 0    60   ~ 0
+ATMEL_RX
+$Comp
+L GND #PWR?
+U 1 1 50C9C05F
+P 5400 1150
+F 0 "#PWR?" H 5400 1150 30  0001 C CNN
+F 1 "GND" H 5400 1080 30  0001 C CNN
+	1    5400 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 50C9C056
+P 4700 1000
+F 0 "#PWR?" H 4700 1090 20  0001 C CNN
+F 1 "+5V" H 4700 1090 30  0000 C CNN
+	1    4700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 50C9C046
+P 3050 1800
+F 0 "#PWR?" H 3050 1890 20  0001 C CNN
+F 1 "+5V" H 3050 1890 30  0000 C CNN
+	1    3050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 50C9C039
+P 3050 2750
+F 0 "#PWR?" H 3050 2750 30  0001 C CNN
+F 1 "GND" H 3050 2680 30  0001 C CNN
+	1    3050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 50C9C033
+P 2500 2500
+F 0 "R?" V 2580 2500 50  0001 C CNN
+F 1 "R" V 2500 2500 50  0001 C CNN
+	1    2500 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 50C9C027
+P 6950 2100
+F 0 "R?" V 7030 2100 50  0001 C CNN
+F 1 "R" V 6950 2100 50  0001 C CNN
+	1    6950 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 50C9C024
+P 7500 2550
+F 0 "R?" V 7580 2550 50  0001 C CNN
+F 1 "R" V 7500 2550 50  0001 C CNN
+	1    7500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 50C9C01A
+P 3050 2050
+F 0 "R?" V 3130 2050 50  0001 C CNN
+F 1 "R" V 3050 2050 50  0001 C CNN
+	1    3050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PNP Q?
+U 1 1 50C9C00F
+P 7400 2100
+F 0 "Q?" H 7400 1950 60  0000 R CNN
+F 1 "PNP" H 7400 2250 60  0000 R CNN
+	1    7400 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L NPN Q?
+U 1 1 50C9C00B
+P 2950 2500
+F 0 "Q?" H 2950 2350 50  0000 R CNN
+F 1 "NPN" H 2950 2650 50  0000 R CNN
+	1    2950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10PINEGDE-2 CONN?
+U 1 1 50C9BFD7
+P 5350 6750
+F 0 "CONN?" H 5950 7000 60  0000 C CNN
+F 1 "10PINEGDE-2" H 4950 7000 60  0000 C CNN
+	1    5350 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3PIN-EDGE CONN?
+U 1 1 50C9BFC3
+P 5250 950
+F 0 "CONN?" H 5850 1200 60  0001 C CNN
+F 1 "3PIN-EDGE" H 4850 1200 60  0001 C CNN
+	1    5250 950 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

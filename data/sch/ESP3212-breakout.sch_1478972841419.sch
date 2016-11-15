@@ -1,0 +1,226 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:ESP3212
+LIBS:ESP3212-breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP3212 U1
+U 1 1 57D3F6D8
+P 5850 3000
+F 0 "U1" H 5850 4100 60  0000 C CNN
+F 1 "ESP3212" H 5850 3950 60  0000 C CNN
+F 2 "ESP3212:ESP3212" H 5500 2200 60  0001 C CNN
+F 3 "" H 5500 2200 60  0001 C CNN
+	1    5850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X15 P1
+U 1 1 57D3F943
+P 4450 3350
+F 0 "P1" H 4450 4150 50  0000 C CNN
+F 1 "CONN_01X15" V 4550 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 4450 3350 50  0001 C CNN
+F 3 "" H 4450 3350 50  0000 C CNN
+	1    4450 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X15 P2
+U 1 1 57D3F998
+P 7150 3350
+F 0 "P2" H 7150 4150 50  0000 C CNN
+F 1 "CONN_01X15" V 7250 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x15" H 7150 3350 50  0001 C CNN
+F 3 "" H 7150 3350 50  0000 C CNN
+	1    7150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2650 4900 2650
+Wire Wire Line
+	4900 2750 4650 2750
+Wire Wire Line
+	4650 2850 4900 2850
+Wire Wire Line
+	4900 2950 4650 2950
+Wire Wire Line
+	4650 3050 4900 3050
+Wire Wire Line
+	4900 3150 4650 3150
+Wire Wire Line
+	4650 3250 4900 3250
+Wire Wire Line
+	4900 3350 4650 3350
+Wire Wire Line
+	4650 3450 4900 3450
+Wire Wire Line
+	4900 3550 4650 3550
+Wire Wire Line
+	4900 3650 4650 3650
+Wire Wire Line
+	4650 3750 5050 3750
+Wire Wire Line
+	5050 3750 5050 3950
+Wire Wire Line
+	5050 3950 5400 3950
+Wire Wire Line
+	4650 3850 5000 3850
+Wire Wire Line
+	5000 3850 5000 4000
+Wire Wire Line
+	5000 4000 5500 4000
+Wire Wire Line
+	5500 4000 5500 3950
+Wire Wire Line
+	4650 3950 4950 3950
+Wire Wire Line
+	4950 3950 4950 4050
+Wire Wire Line
+	4950 4050 5600 4050
+Wire Wire Line
+	5600 4050 5600 3950
+Wire Wire Line
+	5700 3950 5700 4100
+Wire Wire Line
+	5700 4100 4900 4100
+Wire Wire Line
+	4900 4100 4900 4050
+Wire Wire Line
+	4900 4050 4650 4050
+Wire Wire Line
+	6700 2750 6950 2750
+Wire Wire Line
+	6700 2850 6950 2850
+Wire Wire Line
+	6700 2950 6950 2950
+Wire Wire Line
+	6950 3050 6700 3050
+Wire Wire Line
+	6700 3150 6950 3150
+Wire Wire Line
+	6950 3250 6700 3250
+Wire Wire Line
+	6700 3350 6950 3350
+Wire Wire Line
+	6950 3450 6700 3450
+Wire Wire Line
+	6700 3550 6950 3550
+Wire Wire Line
+	6950 3650 6700 3650
+Wire Wire Line
+	6950 3750 6550 3750
+Wire Wire Line
+	6550 3750 6550 3950
+Wire Wire Line
+	6550 3950 6200 3950
+Wire Wire Line
+	6100 3950 6100 4000
+Wire Wire Line
+	6100 4000 6600 4000
+Wire Wire Line
+	6600 4000 6600 3850
+Wire Wire Line
+	6600 3850 6950 3850
+Wire Wire Line
+	6000 3950 6000 4050
+Wire Wire Line
+	6000 4050 6650 4050
+Wire Wire Line
+	6650 4050 6650 3950
+Wire Wire Line
+	6650 3950 6950 3950
+Wire Wire Line
+	5900 3950 5900 4100
+Wire Wire Line
+	5900 4100 6700 4100
+Wire Wire Line
+	6700 4100 6700 4050
+Wire Wire Line
+	6700 4050 6950 4050
+Wire Wire Line
+	6700 2650 6950 2650
+Wire Wire Line
+	4800 2650 4800 1850
+Wire Wire Line
+	4800 1850 6850 1850
+Wire Wire Line
+	6850 1850 6850 2650
+Connection ~ 6850 2650
+Connection ~ 4800 2650
+Wire Wire Line
+	5800 3950 5800 4250
+Wire Wire Line
+	5800 4250 7500 4250
+Wire Wire Line
+	7500 4250 7500 2200
+Wire Wire Line
+	7500 2200 6850 2200
+Connection ~ 6850 2200
+$Comp
+L CONN_01X01 P3
+U 1 1 57D92CCE
+P 5850 4550
+F 0 "P3" H 5850 4650 50  0000 C CNN
+F 1 "BE logo" V 5950 4550 50  0000 C CNN
+F 2 "logo:3k5" H 5850 4550 50  0001 C CNN
+F 3 "" H 5850 4550 50  0000 C CNN
+	1    5850 4550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5650 4550
+$Comp
+L CONN_01X01 P4
+U 1 1 57D93521
+P 5900 5050
+F 0 "P4" H 5900 5150 50  0000 C CNN
+F 1 "OSHW logo" V 6000 5050 50  0000 C CNN
+F 2 "logo:oshw-logo-kicad-copper-10mm" H 5900 5050 50  0001 C CNN
+F 3 "" H 5900 5050 50  0000 C CNN
+	1    5900 5050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 5050
+$EndSCHEMATC

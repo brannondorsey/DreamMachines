@@ -1,0 +1,265 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OSD335x
+LIBS:GrayCatLabs
+LIBS:uBeagle-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp "Gray Cat Labs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6600 3950 1550 900 
+U 5744BD7C
+F0 "Power Management" 60
+F1 "PowerManagement.sch" 60
+F2 "USB_VBUS" I L 6600 4700 60 
+F3 "BAT_VIN" I L 6600 4100 60 
+F4 "BAT_TEMP" I L 6600 4300 60 
+F5 "BAT_VSENSE" I L 6600 4200 60 
+F6 "I2C0_SCL" I R 8150 4600 60 
+F7 "I2C0_SDA" B R 8150 4700 60 
+F8 "PWR_BUTTON" I R 8150 4100 60 
+F9 "RESET" I R 8150 4200 60 
+F10 "VIN_EXT" I L 6600 4500 60 
+$EndSheet
+$Comp
+L USB_OTG P1
+U 1 1 57461995
+P 3950 5700
+F 0 "P1" V 3525 5624 50  0000 C CNN
+F 1 "USB_OTG" V 3616 5624 50  0000 C CNN
+F 2 "" V 3900 5600 50  0000 C CNN
+F 3 "" V 3900 5600 50  0000 C CNN
+	1    3950 5700
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 57462A14
+P 4000 3450
+F 0 "P2" H 4078 3491 50  0000 L CNN
+F 1 "CONN_01X02" H 4078 3400 50  0000 L CNN
+F 2 "" H 4000 3450 50  0000 C CNN
+F 3 "" H 4000 3450 50  0000 C CNN
+	1    4000 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 57462B03
+P 4350 3600
+F 0 "#PWR1" H 4350 3350 50  0001 C CNN
+F 1 "GND" H 4355 3427 50  0000 C CNN
+F 2 "" H 4350 3600 50  0000 C CNN
+F 3 "" H 4350 3600 50  0000 C CNN
+	1    4350 3600
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6600 5700 1550 600 
+U 574636C8
+F0 "Interface" 60
+F1 "Interface.sch" 60
+F2 "I2C0_SCL" B R 8150 5950 60 
+F3 "I2C0_SDA" B R 8150 6050 60 
+F4 "U2B0_D-" B L 6600 5950 60 
+F5 "U2B0_D+" B L 6600 6050 60 
+F6 "U2B0_VBUS" I L 6600 5850 60 
+F7 "U2B0_ID" I L 6600 6150 60 
+$EndSheet
+$Comp
+L FERRITE FB1
+U 1 1 57464BC4
+P 4850 5500
+F 0 "FB1" H 4850 5737 60  0000 C CNN
+F 1 "FERRITE" H 4850 5631 60  0000 C CNN
+F 2 "" H 4850 5500 60  0000 C CNN
+F 3 "" H 4850 5500 60  0000 C CNN
+	1    4850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 57464CA1
+P 4400 6350
+F 0 "#PWR2" H 4400 6100 50  0001 C CNN
+F 1 "GND" H 4405 6177 50  0000 C CNN
+F 2 "" H 4400 6350 50  0000 C CNN
+F 3 "" H 4400 6350 50  0000 C CNN
+	1    4400 6350
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 11550 3950 1200 2050
+U 5746911B
+F0 "I/O" 60
+F1 "IO.sch" 60
+F2 "PWR_BUTTON" O L 11550 4100 60 
+F3 "RESET" O L 11550 4200 60 
+$EndSheet
+Wire Wire Line
+	5700 4700 5700 5500
+Wire Wire Line
+	5700 5500 5700 5850
+Wire Wire Line
+	5700 4700 6600 4700
+Wire Wire Line
+	4350 3600 4350 3500
+Wire Wire Line
+	4350 3500 4200 3500
+Wire Wire Line
+	4200 3400 4550 3400
+Wire Wire Line
+	4550 3400 5700 3400
+Wire Wire Line
+	5700 3400 5700 4100
+Wire Wire Line
+	5700 4100 6600 4100
+Wire Wire Line
+	6600 4200 4550 4200
+Wire Wire Line
+	4550 4200 4550 3400
+Connection ~ 4550 3400
+Wire Wire Line
+	5700 5850 6600 5850
+Connection ~ 5700 5500
+Wire Wire Line
+	4250 5500 4600 5500
+Wire Wire Line
+	5100 5500 5700 5500
+Wire Wire Line
+	4250 5900 4400 5900
+Wire Wire Line
+	4400 5900 4400 6200
+Wire Wire Line
+	4400 6200 4400 6350
+Wire Wire Line
+	3850 6100 3850 6200
+Wire Wire Line
+	3850 6200 4400 6200
+Connection ~ 4400 6200
+Wire Wire Line
+	4250 5600 5500 5600
+Wire Wire Line
+	5500 5600 5500 5950
+Wire Wire Line
+	5500 5950 6600 5950
+Wire Wire Line
+	6600 6050 5400 6050
+Wire Wire Line
+	5400 6050 5400 5700
+Wire Wire Line
+	5400 5700 4250 5700
+Wire Wire Line
+	4250 5800 5300 5800
+Wire Wire Line
+	5300 5800 5300 6150
+Wire Wire Line
+	5300 6150 6600 6150
+Wire Wire Line
+	8150 4600 8600 4600
+Wire Wire Line
+	8600 4600 8600 5950
+Wire Wire Line
+	8150 5950 8600 5950
+Wire Wire Line
+	8600 5950 9250 5950
+Wire Wire Line
+	8150 6050 8700 6050
+Wire Wire Line
+	8700 6050 9250 6050
+Wire Wire Line
+	8700 6050 8700 4700
+Wire Wire Line
+	8700 4700 8150 4700
+Wire Wire Line
+	8150 4100 11550 4100
+Wire Wire Line
+	8150 4200 11550 4200
+$Sheet
+S 9250 5800 1100 400 
+U 57469E5B
+F0 "Memory" 60
+F1 "Memory.sch" 60
+F2 "I2C0_SCL" I L 9250 5950 60 
+F3 "I2C0_SDA" B L 9250 6050 60 
+$EndSheet
+$Sheet
+S 9250 6700 1100 400 
+U 5746A4B0
+F0 "BootConfig" 60
+F1 "BootConfig.sch" 60
+$EndSheet
+Connection ~ 8600 5950
+Connection ~ 8700 6050
+Wire Wire Line
+	6600 4500 4200 4500
+$Comp
+L CONN_01X02 P?
+U 1 1 57569DA2
+P 4000 4550
+F 0 "P?" H 4078 4591 50  0000 L CNN
+F 1 "CONN_01X02" H 4078 4500 50  0000 L CNN
+F 2 "" H 4000 4550 50  0000 C CNN
+F 3 "" H 4000 4550 50  0000 C CNN
+	1    4000 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57569E60
+P 4400 4700
+F 0 "#PWR?" H 4400 4450 50  0001 C CNN
+F 1 "GND" H 4405 4527 50  0000 C CNN
+F 2 "" H 4400 4700 50  0000 C CNN
+F 3 "" H 4400 4700 50  0000 C CNN
+	1    4400 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4600 4400 4600
+Wire Wire Line
+	4400 4600 4400 4700
+Text Notes 3100 4800 0    60   ~ 0
+DC in for charge/power
+Text Notes 3150 3700 0    60   ~ 0
+Single-cell LiPoly batt
+$EndSCHEMATC

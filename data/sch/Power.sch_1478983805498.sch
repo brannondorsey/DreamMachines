@@ -1,0 +1,362 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:4-Bit Computer-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title "Power"
+Date "2015-08-25"
+Rev "1"
+Comp "XS-Labs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP C4
+U 1 1 56183B22
+P 7700 3250
+F 0 "C4" H 7725 3350 50  0000 L CNN
+F 1 "10uf" H 7725 3150 50  0000 L CNN
+F 2 "XS:Capacitor-Vishay-515D-5mm" H 7738 3100 30  0001 C CNN
+F 3 "" H 7700 3250 60  0000 C CNN
+	1    7700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 56183B43
+P 6000 3250
+F 0 "C1" H 6025 3350 50  0000 L CNN
+F 1 "100uf" H 6025 3150 50  0000 L CNN
+F 2 "XS:Capacitor-Vishay-515D-8mm" H 6038 3100 30  0001 C CNN
+F 3 "" H 6000 3250 60  0000 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L BARREL_JACK J1
+U 1 1 56183B64
+P 3350 4400
+F 0 "J1" H 3350 4650 60  0000 C CNN
+F 1 "+12v" H 3350 4200 60  0000 C CNN
+F 2 "XS:Power-Adafruit-DC-Barrel-Jack" H 3350 4400 60  0001 C CNN
+F 3 "" H 3350 4400 60  0000 C CNN
+	1    3350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 56183B90
+P 4750 4150
+F 0 "BT1" H 4850 4200 50  0000 L CNN
+F 1 "+9v" H 4850 4100 50  0000 L CNN
+F 2 "XS:Power-Keystone-9v-Battery-Holder" V 4750 4190 60  0001 C CNN
+F 3 "" V 4750 4190 60  0000 C CNN
+	1    4750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 56183BB8
+P 4350 3250
+F 0 "D1" H 4350 3350 50  0000 C CNN
+F 1 "1N4001" H 4350 3150 50  0000 C CNN
+F 2 "XS:Diode-DO-41" H 4350 3250 60  0001 C CNN
+F 3 "" H 4350 3250 60  0000 C CNN
+	1    4350 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L D D2
+U 1 1 56183BE7
+P 4750 3250
+F 0 "D2" H 4750 3350 50  0000 C CNN
+F 1 "1N4001" H 4750 3150 50  0000 C CNN
+F 2 "XS:Diode-DO-41" H 4750 3250 60  0001 C CNN
+F 3 "" H 4750 3250 60  0000 C CNN
+	1    4750 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED DS2
+U 1 1 56183C0B
+P 5200 3900
+F 0 "DS2" H 5200 4000 50  0000 C CNN
+F 1 "Battery" H 5200 3800 50  0000 C CNN
+F 2 "XS:LED-T1-3-4-5mm" H 5200 3900 60  0001 C CNN
+F 3 "" H 5200 3900 60  0000 C CNN
+	1    5200 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED DS1
+U 1 1 56183C3A
+P 5200 3500
+F 0 "DS1" H 5200 3600 50  0000 C CNN
+F 1 "Adapter" H 5200 3400 50  0000 C CNN
+F 2 "XS:LED-T1-3-4-5mm" H 5200 3500 60  0001 C CNN
+F 3 "" H 5200 3500 60  0000 C CNN
+	1    5200 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED DS3
+U 1 1 56183C68
+P 5200 4950
+F 0 "DS3" H 5200 5050 50  0000 C CNN
+F 1 "Standby" H 5200 4850 50  0000 C CNN
+F 2 "XS:LED-T1-3-4-5mm" H 5200 4950 60  0001 C CNN
+F 3 "" H 5200 4950 60  0000 C CNN
+	1    5200 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 56183C91
+P 5650 3500
+F 0 "R1" V 5730 3500 50  0000 C CNN
+F 1 "390" V 5650 3500 50  0000 C CNN
+F 2 "XS:Resistor-Ohmite-OD-Series" V 5580 3500 30  0001 C CNN
+F 3 "" H 5650 3500 30  0000 C CNN
+	1    5650 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56183CEB
+P 5650 3900
+F 0 "R2" V 5730 3900 50  0000 C CNN
+F 1 "390" V 5650 3900 50  0000 C CNN
+F 2 "XS:Resistor-Ohmite-OD-Series" V 5580 3900 30  0001 C CNN
+F 3 "" H 5650 3900 30  0000 C CNN
+	1    5650 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56183D44
+P 5650 4950
+F 0 "R3" V 5730 4950 50  0000 C CNN
+F 1 "100k" V 5650 4950 50  0000 C CNN
+F 2 "XS:Resistor-Ohmite-OD-Series" V 5580 4950 30  0001 C CNN
+F 3 "" H 5650 4950 30  0000 C CNN
+	1    5650 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch_SPDT_x2 SW1
+U 1 1 56183DF3
+P 5500 4500
+F 0 "SW1" H 5300 4650 50  0000 C CNN
+F 1 "SPDT" H 5250 4350 50  0000 C CNN
+F 2 "XS:Switch-NKK-Series-M-SPDT" H 5500 4500 60  0001 C CNN
+F 3 "" H 5500 4500 60  0000 C CNN
+	1    5500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3000 6450 3000
+Wire Wire Line
+	7250 3000 7900 3000
+Wire Wire Line
+	7350 3000 7350 3100
+Wire Wire Line
+	6350 3000 6350 3100
+Connection ~ 6350 3000
+Connection ~ 7350 3000
+Wire Wire Line
+	6350 3400 6350 3500
+Wire Wire Line
+	7350 3500 7350 3400
+Wire Wire Line
+	6000 3500 7700 3500
+Wire Wire Line
+	6850 4400 6850 3300
+Connection ~ 6850 3500
+Wire Wire Line
+	4350 3400 4350 4950
+Wire Wire Line
+	4750 3400 4750 4000
+Wire Wire Line
+	4750 3900 5000 3900
+Connection ~ 4750 3900
+Wire Wire Line
+	5000 3500 4350 3500
+Connection ~ 4350 3500
+Wire Wire Line
+	4350 3100 4350 3000
+Wire Wire Line
+	5400 3500 5500 3500
+Wire Wire Line
+	5400 3900 5500 3900
+Wire Wire Line
+	5800 3900 5900 3900
+Wire Wire Line
+	5900 3500 5900 4400
+Wire Wire Line
+	5800 3500 5900 3500
+Connection ~ 5900 3900
+Wire Wire Line
+	5800 4400 7900 4400
+Wire Wire Line
+	5400 4950 5500 4950
+Wire Wire Line
+	5800 4600 5900 4600
+Wire Wire Line
+	5900 4600 5900 4950
+Wire Wire Line
+	5900 4950 5800 4950
+Wire Wire Line
+	4350 4950 5000 4950
+Connection ~ 6850 4400
+$Comp
+L C C2
+U 1 1 5619B6CB
+P 6350 3250
+F 0 "C2" H 6375 3350 50  0000 L CNN
+F 1 "0.33uf" H 6375 3150 50  0000 L CNN
+F 2 "XS:Capacitor-Murata-RCE-Series-5mm" H 6388 3100 30  0001 C CNN
+F 3 "" H 6350 3250 60  0000 C CNN
+	1    6350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5619B722
+P 7350 3250
+F 0 "C3" H 7375 3350 50  0000 L CNN
+F 1 "0.1uf" H 7375 3150 50  0000 L CNN
+F 2 "XS:Capacitor-Murata-RCE-Series-5mm" H 7388 3100 30  0001 C CNN
+F 3 "" H 7350 3250 60  0000 C CNN
+	1    7350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3100 6000 3000
+Connection ~ 6000 3000
+Wire Wire Line
+	6000 3400 6000 3500
+Connection ~ 6350 3500
+Wire Wire Line
+	7700 3500 7700 3400
+Connection ~ 7350 3500
+Wire Wire Line
+	7700 3000 7700 3100
+Wire Wire Line
+	4750 3100 4750 3000
+Connection ~ 4750 3000
+Connection ~ 5900 4400
+Connection ~ 7700 3000
+$Comp
+L LM7805 VR1
+U 1 1 5619C421
+P 6850 3050
+F 0 "VR1" H 7000 2854 60  0000 C CNN
+F 1 "LM7805" H 6850 3250 60  0000 C CNN
+F 2 "XS:Power-Failrchild-LM78XX-TO-220" H 6850 3050 60  0001 C CNN
+F 3 "" H 6850 3050 60  0000 C CNN
+	1    6850 3050
+	1    0    0    -1  
+$EndComp
+Text HLabel 7900 3000 2    60   Output ~ 0
+Vin
+Text HLabel 7900 4400 2    60   Input ~ 0
+Vout
+$Comp
+L +5V #PWR090
+U 1 1 562EA9C2
+P 7800 2900
+F 0 "#PWR090" H 7800 2750 50  0001 C CNN
+F 1 "+5V" H 7800 3040 50  0000 C CNN
+F 2 "" H 7800 2900 60  0000 C CNN
+F 3 "" H 7800 2900 60  0000 C CNN
+	1    7800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2900 7800 3000
+Connection ~ 7800 3000
+$Comp
+L PWR_FLAG #FLG091
+U 1 1 562EAD28
+P 4100 4600
+F 0 "#FLG091" H 4100 4695 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 4780 50  0000 C CNN
+F 2 "" H 4100 4600 60  0000 C CNN
+F 3 "" H 4100 4600 60  0000 C CNN
+	1    4100 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG092
+U 1 1 562EAD6C
+P 4100 4200
+F 0 "#FLG092" H 4100 4295 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 4380 50  0000 C CNN
+F 2 "" H 4100 4200 60  0000 C CNN
+F 3 "" H 4100 4200 60  0000 C CNN
+	1    4100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR093
+U 1 1 562EADB0
+P 3750 4600
+F 0 "#PWR093" H 3750 4350 50  0001 C CNN
+F 1 "GND" H 3750 4450 50  0000 C CNN
+F 2 "" H 3750 4600 60  0000 C CNN
+F 3 "" H 3750 4600 60  0000 C CNN
+	1    3750 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4500 5200 4500
+Wire Wire Line
+	4100 4600 4100 4500
+Connection ~ 4100 4500
+Wire Wire Line
+	3750 4600 3750 4500
+Connection ~ 3750 4500
+Wire Wire Line
+	3650 4300 4350 4300
+Connection ~ 4350 4300
+Wire Wire Line
+	4100 4200 4100 4300
+Connection ~ 4100 4300
+Wire Wire Line
+	3650 4400 4750 4400
+Wire Wire Line
+	4750 4400 4750 4300
+$EndSCHEMATC

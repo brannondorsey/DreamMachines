@@ -1,0 +1,352 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:usb_mini_b
+LIBS:bb-ch340t-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CH340H/T U1
+U 1 1 55069B04
+P 5750 4300
+F 0 "U1" H 5450 5000 60  0000 C CNN
+F 1 "CH340H/T" H 5700 3550 60  0000 C CNN
+F 2 "kicad_wrk:SSOP-20W" H 5750 4300 60  0001 C CNN
+F 3 "" H 5750 4300 60  0000 C CNN
+	1    5750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4350 5100 4350
+Wire Wire Line
+	3350 4450 5100 4450
+$Comp
+L GND #PWR2
+U 1 1 55069BDF
+P 3450 4700
+F 0 "#PWR2" H 3450 4450 60  0001 C CNN
+F 1 "GND" H 3450 4550 60  0000 C CNN
+F 2 "" H 3450 4700 60  0000 C CNN
+F 3 "" H 3450 4700 60  0000 C CNN
+	1    3450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3750 3550 3750
+Wire Wire Line
+	3350 4250 3550 4250
+Connection ~ 3550 3750
+$Comp
+L C C3
+U 1 1 55069C71
+P 4900 4000
+F 0 "C3" H 4925 4100 50  0000 L CNN
+F 1 "10nF" H 4925 3900 50  0000 L CNN
+F 2 "kicad_wrk:C_0603" H 4938 3850 30  0001 C CNN
+F 3 "" H 4900 4000 60  0000 C CNN
+	1    4900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 55069CF9
+P 3800 4000
+F 0 "C1" H 3825 4100 50  0000 L CNN
+F 1 "2.2uF" H 3825 3900 50  0000 L CNN
+F 2 "kicad_wrk:C_0603" H 3838 3850 30  0001 C CNN
+F 3 "" H 3800 4000 60  0000 C CNN
+	1    3800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 55069D14
+P 4100 4000
+F 0 "C2" H 4125 4100 50  0000 L CNN
+F 1 "100nF" H 4125 3900 50  0000 L CNN
+F 2 "kicad_wrk:C_0603" H 4138 3850 30  0001 C CNN
+F 3 "" H 4100 4000 60  0000 C CNN
+	1    4100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4150 5100 4150
+Wire Wire Line
+	4900 3850 5100 3850
+Wire Wire Line
+	3800 3850 3800 3750
+Connection ~ 3800 3750
+Wire Wire Line
+	4100 3850 4100 3750
+Connection ~ 4100 3750
+Connection ~ 4100 4150
+Connection ~ 4900 4150
+$Comp
+L C C4
+U 1 1 55069DA1
+P 4150 5100
+F 0 "C4" H 4175 5200 50  0000 L CNN
+F 1 "22p" H 4175 5000 50  0000 L CNN
+F 2 "kicad_wrk:C_0603" H 4188 4950 30  0001 C CNN
+F 3 "" H 4150 5100 60  0000 C CNN
+	1    4150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 55069DD0
+P 4900 5100
+F 0 "C5" H 4925 5200 50  0000 L CNN
+F 1 "22p" H 4925 5000 50  0000 L CNN
+F 2 "kicad_wrk:C_0603" H 4938 4950 30  0001 C CNN
+F 3 "" H 4900 5100 60  0000 C CNN
+	1    4900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 55069DFA
+P 4550 4850
+F 0 "Y1" H 4550 5000 50  0000 C CNN
+F 1 "12.0MHz" H 4550 4700 50  0000 C CNN
+F 2 "Crystals_Oscillators_SMD:Q_49U3HMS" H 4550 4850 60  0001 C CNN
+F 3 "" H 4550 4850 60  0000 C CNN
+	1    4550 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4650 4150 4650
+Wire Wire Line
+	4150 4650 4150 4950
+Wire Wire Line
+	4400 4850 4150 4850
+Connection ~ 4150 4850
+Wire Wire Line
+	4700 4850 5100 4850
+Wire Wire Line
+	4900 4950 4900 4850
+Connection ~ 4900 4850
+Wire Wire Line
+	4150 5250 4150 5300
+Wire Wire Line
+	4150 5300 4900 5300
+Wire Wire Line
+	4900 5300 4900 5250
+Wire Wire Line
+	4550 5300 4550 5350
+Connection ~ 4550 5300
+$Comp
+L GND #PWR4
+U 1 1 55069F3B
+P 4550 5350
+F 0 "#PWR4" H 4550 5100 60  0001 C CNN
+F 1 "GND" H 4550 5200 60  0000 C CNN
+F 2 "" H 4550 5350 60  0000 C CNN
+F 3 "" H 4550 5350 60  0000 C CNN
+	1    4550 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 POUT1
+U 1 1 55069FB8
+P 7450 3800
+F 0 "POUT1" H 7450 4050 50  0000 C CNN
+F 1 "CONN_01X04" V 7550 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04" H 7450 3800 60  0001 C CNN
+F 3 "" H 7450 3800 60  0000 C CNN
+	1    7450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3850 7250 3850
+Wire Wire Line
+	7100 4050 7100 3950
+Wire Wire Line
+	7100 3950 7250 3950
+$Comp
+L GND #PWR5
+U 1 1 5506A094
+P 7100 4050
+F 0 "#PWR5" H 7100 3800 60  0001 C CNN
+F 1 "GND" H 7100 3900 60  0000 C CNN
+F 2 "" H 7100 4050 60  0000 C CNN
+F 3 "" H 7100 4050 60  0000 C CNN
+	1    7100 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3650 7250 3650
+Wire Wire Line
+	4900 3350 6700 3350
+Connection ~ 4900 3850
+Wire Wire Line
+	3550 3150 7400 3150
+Wire Wire Line
+	3550 4250 3550 3150
+$Comp
+L USB-MINI-B USB1
+U 1 1 5506AA9A
+P 2850 4450
+F 0 "USB1" H 2550 4800 50  0000 C CNN
+F 1 "USB-MINI-B" H 2700 4100 50  0000 C CNN
+F 2 "kicad_wrk:USB_Mini-B" H 2850 4350 50  0001 C CNN
+F 3 "" H 2850 4350 50  0000 C CNN
+	1    2850 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4650 3450 4650
+Wire Wire Line
+	3450 4650 3450 4700
+Wire Wire Line
+	2350 4250 2200 4250
+$Comp
+L GND #PWR1
+U 1 1 5506ADD0
+P 2200 4700
+F 0 "#PWR1" H 2200 4450 60  0001 C CNN
+F 1 "GND" H 2200 4550 60  0000 C CNN
+F 2 "" H 2200 4700 60  0000 C CNN
+F 3 "" H 2200 4700 60  0000 C CNN
+	1    2200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4250 2200 4700
+Wire Wire Line
+	2350 4650 2200 4650
+Connection ~ 2200 4650
+Wire Wire Line
+	2350 4550 2200 4550
+Connection ~ 2200 4550
+Wire Wire Line
+	2350 4350 2200 4350
+Connection ~ 2200 4350
+$Comp
+L GND #PWR3
+U 1 1 5506B73B
+P 4100 4150
+F 0 "#PWR3" H 4100 3900 60  0001 C CNN
+F 1 "GND" H 4100 4000 60  0000 C CNN
+F 2 "" H 4100 4150 60  0000 C CNN
+F 3 "" H 4100 4150 60  0000 C CNN
+	1    4100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3350 4900 3850
+$Comp
+L JUMPER3 3.3/5V1
+U 1 1 5507CA9B
+P 6950 3350
+F 0 "3.3/5V1" H 6800 3500 50  0000 L CNN
+F 1 "closed / opened" H 6950 3200 50  0000 C BNN
+F 2 "kicad_wrk:JUMP3" H 6950 3350 60  0001 C CNN
+F 3 "" H 6950 3350 60  0000 C CNN
+	1    6950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3450 6950 3650
+Wire Wire Line
+	7400 3150 7400 3350
+Wire Wire Line
+	7400 3350 7200 3350
+$Comp
+L R_Small R1
+U 1 1 55937607
+P 6800 3650
+F 0 "R1" V 6700 3550 50  0000 L CNN
+F 1 "1K" V 6950 3650 50  0000 L CNN
+F 2 "" H 6800 3650 60  0000 C CNN
+F 3 "" H 6800 3650 60  0000 C CNN
+	1    6800 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky_Small D1
+U 1 1 55937694
+P 6500 3750
+F 0 "D1" H 6450 3830 50  0000 L CNN
+F 1 "1N5819/S4" H 6450 3450 50  0000 L CNN
+F 2 "" V 6500 3750 60  0000 C CNN
+F 3 "" V 6500 3750 60  0000 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3750 6400 3750
+Wire Wire Line
+	6600 3750 7250 3750
+Connection ~ 6950 3650
+Wire Wire Line
+	6700 3650 6650 3650
+Wire Wire Line
+	6650 3650 6650 3750
+Connection ~ 6650 3750
+Text Label 7050 3650 0    60   ~ 0
+VDD
+Text Label 7050 3750 0    60   ~ 0
+TXD
+Text Label 7050 3850 0    60   ~ 0
+RXD
+Text Label 7050 3950 0    60   ~ 0
+GND
+Wire Wire Line
+	7800 3750 8750 3750
+Wire Wire Line
+	7800 3850 8750 3850
+Text Notes 8450 3750 0    60   ~ 0
+RXD
+Text Notes 8450 3850 0    60   ~ 0
+TXD
+Text Notes 8900 3500 0    60   ~ 0
+on host uPC
+Wire Notes Line
+	8750 3350 9750 3350
+Wire Notes Line
+	9750 3350 9750 3400
+Wire Notes Line
+	8750 3350 8750 4300
+Text Notes 6450 4600 0    60   ~ 0
+Important NOTE: Some older versions of KiCAD\nuse even older libraries of diodes with reversed pins assigment!\nD1 is connected K to U1.p3, A to R1
+$EndSCHEMATC

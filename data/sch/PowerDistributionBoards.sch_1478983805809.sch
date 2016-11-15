@@ -1,0 +1,638 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:FabLibrary
+LIBS:PowerDistributionBoards-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L WS2812b_Strip_In U1
+U 1 1 55783984
+P 3050 1125
+F 0 "U1" H 3400 1175 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 3300 1600 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3050 1125 60  0001 C CNN
+F 3 "" H 3050 1125 60  0000 C CNN
+	1    3050 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_Out U2
+U 1 1 557865BD
+P 4400 1125
+F 0 "U2" H 3900 1175 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 4175 1600 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3750 1125 60  0001 C CNN
+F 3 "" H 3750 1125 60  0000 C CNN
+	1    4400 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_In U4
+U 1 1 55787FB2
+P 4400 1375
+F 0 "U4" H 4850 1725 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 4675 1300 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 4400 1375 60  0001 C CNN
+F 3 "" H 4400 1375 60  0000 C CNN
+	1    4400 1375
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_Out U3
+U 1 1 55787FB8
+P 3050 1375
+F 0 "U3" H 2650 1725 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 2825 1300 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 2400 1375 60  0001 C CNN
+F 3 "" H 2400 1375 60  0000 C CNN
+	1    3050 1375
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_In U5
+U 1 1 55788F79
+P 3050 2425
+F 0 "U5" H 3400 2475 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 3300 2900 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3050 2425 60  0001 C CNN
+F 3 "" H 3050 2425 60  0000 C CNN
+	1    3050 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_Out U6
+U 1 1 55788F7F
+P 4400 2425
+F 0 "U6" H 3900 2475 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 4175 2900 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3750 2425 60  0001 C CNN
+F 3 "" H 3750 2425 60  0000 C CNN
+	1    4400 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_In U8
+U 1 1 55788F85
+P 4400 2675
+F 0 "U8" H 4850 3025 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 4675 2600 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 4400 2675 60  0001 C CNN
+F 3 "" H 4400 2675 60  0000 C CNN
+	1    4400 2675
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_Out U7
+U 1 1 55788F8B
+P 3050 2675
+F 0 "U7" H 2650 3025 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 2825 2600 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 2400 2675 60  0001 C CNN
+F 3 "" H 2400 2675 60  0000 C CNN
+	1    3050 2675
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_In U9
+U 1 1 55789741
+P 3050 3725
+F 0 "U9" H 3400 3775 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 3300 4200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3050 3725 60  0001 C CNN
+F 3 "" H 3050 3725 60  0000 C CNN
+	1    3050 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_Out U10
+U 1 1 55789747
+P 4400 3725
+F 0 "U10" H 3900 3775 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 4175 4200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3750 3725 60  0001 C CNN
+F 3 "" H 3750 3725 60  0000 C CNN
+	1    4400 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_In U12
+U 1 1 5578974D
+P 4400 3975
+F 0 "U12" H 4850 4325 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 4675 3900 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 4400 3975 60  0001 C CNN
+F 3 "" H 4400 3975 60  0000 C CNN
+	1    4400 3975
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_Out U11
+U 1 1 55789753
+P 3050 3975
+F 0 "U11" H 2650 4325 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 2825 3900 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 2400 3975 60  0001 C CNN
+F 3 "" H 2400 3975 60  0000 C CNN
+	1    3050 3975
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_In U13
+U 1 1 55789759
+P 3050 5025
+F 0 "U13" H 3400 5075 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 3300 5500 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3050 5025 60  0001 C CNN
+F 3 "" H 3050 5025 60  0000 C CNN
+	1    3050 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_Out U14
+U 1 1 5578975F
+P 4400 5025
+F 0 "U14" H 3900 5075 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 4175 5500 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3750 5025 60  0001 C CNN
+F 3 "" H 3750 5025 60  0000 C CNN
+	1    4400 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_In U16
+U 1 1 55789765
+P 4400 5275
+F 0 "U16" H 4850 5625 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 4675 5200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 4400 5275 60  0001 C CNN
+F 3 "" H 4400 5275 60  0000 C CNN
+	1    4400 5275
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_Out U15
+U 1 1 5578976B
+P 3050 5275
+F 0 "U15" H 2650 5625 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 2825 5200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 2400 5275 60  0001 C CNN
+F 3 "" H 2400 5275 60  0000 C CNN
+	1    3050 5275
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_In U17
+U 1 1 5578A075
+P 3050 6325
+F 0 "U17" H 3400 6375 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 3300 6800 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3050 6325 60  0001 C CNN
+F 3 "" H 3050 6325 60  0000 C CNN
+	1    3050 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_Out U18
+U 1 1 5578A07B
+P 4400 6325
+F 0 "U18" H 3900 6375 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 4175 6800 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3750 6325 60  0001 C CNN
+F 3 "" H 3750 6325 60  0000 C CNN
+	1    4400 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_In U20
+U 1 1 5578A081
+P 4400 6575
+F 0 "U20" H 4850 6925 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 4675 6500 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 4400 6575 60  0001 C CNN
+F 3 "" H 4400 6575 60  0000 C CNN
+	1    4400 6575
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_Out U19
+U 1 1 5578A087
+P 3050 6575
+F 0 "U19" H 2650 6925 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 2825 6500 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 2400 6575 60  0001 C CNN
+F 3 "" H 2400 6575 60  0000 C CNN
+	1    3050 6575
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b_Strip_In U21
+U 1 1 5578A08D
+P 3050 7625
+F 0 "U21" H 3400 7675 60  0000 C CNN
+F 1 "WS2812b_Strip_In" H 3300 8100 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3050 7625 60  0001 C CNN
+F 3 "" H 3050 7625 60  0000 C CNN
+	1    3050 7625
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b_Strip_Out U22
+U 1 1 5578A093
+P 4400 7625
+F 0 "U22" H 3900 7675 60  0000 C CNN
+F 1 "WS2812b_Strip_Out" H 4175 8100 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_strip_conn" H 3750 7625 60  0001 C CNN
+F 3 "" H 3750 7625 60  0000 C CNN
+	1    4400 7625
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 5578EA8E
+P 1225 4175
+F 0 "P2" H 1225 4275 50  0000 C CNN
+F 1 "5V+_In" V 1325 4175 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 1225 4175 60  0001 C CNN
+F 3 "" H 1225 4175 60  0000 C CNN
+	1    1225 4175
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 5578F0B1
+P 6225 4175
+F 0 "P3" H 6225 4275 50  0000 C CNN
+F 1 "GND_In" V 6325 4175 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 6225 4175 60  0001 C CNN
+F 3 "" H 6225 4175 60  0000 C CNN
+	1    6225 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 55796E71
+P 1525 3750
+F 0 "#FLG01" H 1525 3845 50  0001 C CNN
+F 1 "PWR_FLAG" H 1525 3930 50  0000 C CNN
+F 2 "" H 1525 3750 60  0000 C CNN
+F 3 "" H 1525 3750 60  0000 C CNN
+	1    1525 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 55796E9D
+P 1650 3850
+F 0 "#PWR02" H 1650 3700 50  0001 C CNN
+F 1 "+5V" H 1650 3990 50  0000 C CNN
+F 2 "" H 1650 3850 60  0000 C CNN
+F 3 "" H 1650 3850 60  0000 C CNN
+	1    1650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 55797798
+P 5925 4025
+F 0 "#FLG03" H 5925 4120 50  0001 C CNN
+F 1 "PWR_FLAG" H 5925 4205 50  0000 C CNN
+F 2 "" H 5925 4025 60  0000 C CNN
+F 3 "" H 5925 4025 60  0000 C CNN
+	1    5925 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 557977C4
+P 5925 5000
+F 0 "#PWR04" H 5925 4750 50  0001 C CNN
+F 1 "GND" H 5925 4850 50  0000 C CNN
+F 2 "" H 5925 5000 60  0000 C CNN
+F 3 "" H 5925 5000 60  0000 C CNN
+	1    5925 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P1
+U 1 1 557982B6
+P 2525 650
+F 0 "P1" H 2525 750 50  0000 C CNN
+F 1 "WS2812b_in" V 2625 650 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 2525 650 60  0001 C CNN
+F 3 "" H 2525 650 60  0000 C CNN
+	1    2525 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 55799423
+P 5875 7425
+F 0 "P4" H 5875 7525 50  0000 C CNN
+F 1 "WS2812b_out" V 5975 7425 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 5875 7425 60  0001 C CNN
+F 3 "" H 5875 7425 60  0000 C CNN
+	1    5875 7425
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2850 7325
+NoConn ~ 2850 6875
+NoConn ~ 4600 7525
+NoConn ~ 4600 6225
+NoConn ~ 2850 6025
+NoConn ~ 2850 5575
+NoConn ~ 4600 5375
+NoConn ~ 4600 4925
+NoConn ~ 4600 4075
+NoConn ~ 4600 3625
+NoConn ~ 2850 3425
+NoConn ~ 2850 2975
+NoConn ~ 4600 2775
+NoConn ~ 4600 2325
+NoConn ~ 2850 2125
+NoConn ~ 4600 1475
+NoConn ~ 2850 1675
+NoConn ~ 2850 825 
+NoConn ~ 4600 1025
+NoConn ~ 4600 6675
+$Comp
+L CONN_01X01 P6
+U 1 1 5579CEA0
+P 1225 4550
+F 0 "P6" H 1225 4650 50  0000 C CNN
+F 1 "5V+_Out" V 1325 4550 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 1225 4550 60  0001 C CNN
+F 3 "" H 1225 4550 60  0000 C CNN
+	1    1225 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P8
+U 1 1 5579CF38
+P 1225 4975
+F 0 "P8" H 1225 5075 50  0000 C CNN
+F 1 "5V+_Out" V 1325 4975 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 1225 4975 60  0001 C CNN
+F 3 "" H 1225 4975 60  0000 C CNN
+	1    1225 4975
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 5579D510
+P 6225 4500
+F 0 "P5" H 6225 4600 50  0000 C CNN
+F 1 "GND_Out" V 6325 4500 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 6225 4500 60  0001 C CNN
+F 3 "" H 6225 4500 60  0000 C CNN
+	1    6225 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P7
+U 1 1 5579D656
+P 6225 4875
+F 0 "P7" H 6225 4975 50  0000 C CNN
+F 1 "GND_Out" V 6325 4875 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 6225 4875 60  0001 C CNN
+F 3 "" H 6225 4875 60  0000 C CNN
+	1    6225 4875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 925  4850 925 
+Wire Wire Line
+	4850 925  4850 1575
+Wire Wire Line
+	4850 1575 4600 1575
+Wire Wire Line
+	4600 2225 4850 2225
+Wire Wire Line
+	4850 2225 4850 2875
+Wire Wire Line
+	4850 2875 4600 2875
+Wire Wire Line
+	4600 3525 4850 3525
+Wire Wire Line
+	4850 3525 4850 4175
+Wire Wire Line
+	4850 4175 4600 4175
+Wire Wire Line
+	4600 4825 4850 4825
+Wire Wire Line
+	4850 4825 4850 5475
+Wire Wire Line
+	4850 5475 4600 5475
+Wire Wire Line
+	4600 6125 4850 6125
+Wire Wire Line
+	4850 6125 4850 6775
+Wire Wire Line
+	4850 6775 4600 6775
+Wire Wire Line
+	2850 1575 2600 1575
+Wire Wire Line
+	2600 1575 2600 2225
+Wire Wire Line
+	2600 2225 2850 2225
+Wire Wire Line
+	2850 2875 2600 2875
+Wire Wire Line
+	2600 2875 2600 3525
+Wire Wire Line
+	2600 3525 2850 3525
+Wire Wire Line
+	2850 4175 2600 4175
+Wire Wire Line
+	2600 4175 2600 4825
+Wire Wire Line
+	2600 4825 2850 4825
+Wire Wire Line
+	2850 5475 2600 5475
+Wire Wire Line
+	2600 5475 2600 6125
+Wire Wire Line
+	2600 6125 2850 6125
+Wire Wire Line
+	2850 6775 2600 6775
+Wire Wire Line
+	2600 6775 2600 7425
+Wire Wire Line
+	2600 7425 2850 7425
+Wire Wire Line
+	1425 4175 2275 4175
+Wire Wire Line
+	2275 4175 2275 4075
+Wire Wire Line
+	2275 4075 2850 4075
+Wire Wire Line
+	2850 3625 2175 3625
+Wire Wire Line
+	2175 3625 2175 4925
+Connection ~ 2175 4175
+Wire Wire Line
+	2850 2775 2075 2775
+Wire Wire Line
+	2075 2775 2075 5375
+Connection ~ 2075 4175
+Wire Wire Line
+	1975 2325 2850 2325
+Wire Wire Line
+	1975 2325 1975 6225
+Connection ~ 1975 4175
+Wire Wire Line
+	1875 1475 1875 6675
+Wire Wire Line
+	1875 1475 2850 1475
+Connection ~ 1875 4175
+Wire Wire Line
+	1775 1025 2850 1025
+Wire Wire Line
+	1775 1025 1775 7525
+Connection ~ 1775 4175
+Wire Wire Line
+	2175 4925 2850 4925
+Wire Wire Line
+	2075 5375 2850 5375
+Wire Wire Line
+	1975 6225 2850 6225
+Wire Wire Line
+	1875 6675 2850 6675
+Wire Wire Line
+	1775 7525 2850 7525
+Wire Wire Line
+	5175 4175 6025 4175
+Wire Wire Line
+	5175 3425 5175 4275
+Wire Wire Line
+	5175 4275 4600 4275
+Wire Wire Line
+	5175 3425 4600 3425
+Connection ~ 5175 4175
+Wire Wire Line
+	4600 2975 5275 2975
+Wire Wire Line
+	5275 2975 5275 4725
+Connection ~ 5275 4175
+Wire Wire Line
+	4600 2125 5375 2125
+Wire Wire Line
+	5375 2125 5375 5575
+Connection ~ 5375 4175
+Wire Wire Line
+	4600 1675 5475 1675
+Wire Wire Line
+	5475 1675 5475 6025
+Connection ~ 5475 4175
+Wire Wire Line
+	4600 825  5575 825 
+Wire Wire Line
+	5275 4725 4600 4725
+Wire Wire Line
+	5375 5575 4600 5575
+Wire Wire Line
+	5475 6025 4600 6025
+Wire Wire Line
+	4600 7325 5675 7325
+Wire Wire Line
+	1525 3750 1525 4175
+Connection ~ 1525 4175
+Wire Wire Line
+	1650 3850 1650 4175
+Connection ~ 1650 4175
+Wire Wire Line
+	5925 4025 5925 5000
+Connection ~ 5925 4175
+Wire Wire Line
+	2525 850  2525 925 
+Wire Wire Line
+	2525 925  2850 925 
+Wire Wire Line
+	5675 7425 4600 7425
+Wire Wire Line
+	5575 6875 4600 6875
+Wire Wire Line
+	5575 825  5575 6875
+Connection ~ 5575 4175
+Wire Wire Line
+	5675 7325 5675 4175
+Connection ~ 5675 4175
+Wire Wire Line
+	1475 4175 1475 4975
+Wire Wire Line
+	1475 4550 1425 4550
+Connection ~ 1475 4175
+Wire Wire Line
+	1475 4975 1425 4975
+Connection ~ 1475 4550
+Wire Wire Line
+	5925 4875 6025 4875
+Connection ~ 5925 4875
+Wire Wire Line
+	6025 4500 5925 4500
+Connection ~ 5925 4500
+$Comp
+L CP C1
+U 1 1 558D1661
+P 2725 4500
+F 0 "C1" H 2750 4600 50  0000 L CNN
+F 1 "CP" H 2750 4400 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.5x8mm_RM3.5" H 2763 4350 30  0001 C CNN
+F 3 "" H 2725 4500 60  0000 C CNN
+	1    2725 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2725 4350 2725 4075
+Connection ~ 2725 4075
+Wire Wire Line
+	2725 4725 2725 4650
+Wire Wire Line
+	2725 4725 2800 4725
+Wire Wire Line
+	2800 4725 2800 4675
+Wire Wire Line
+	2800 4675 2850 4675
+Wire Wire Line
+	2850 4675 2850 4275
+$EndSCHEMATC

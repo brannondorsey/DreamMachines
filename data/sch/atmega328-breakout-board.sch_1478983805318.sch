@@ -1,0 +1,368 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wicker-dds
+LIBS:wicker-crystal
+LIBS:rf24
+LIBS:wicker-transistors
+LIBS:wicker-test
+LIBS:wicker-stm32
+LIBS:wicker-opamp
+LIBS:wicker-invensense
+LIBS:wicker-lcd
+LIBS:wicker-conn
+LIBS:wicker-sensors
+LIBS:wicker-gain
+LIBS:wicker-capsense
+LIBS:wicker-aesthetic
+LIBS:wicker-linear
+LIBS:wicker-shields
+LIBS:wicker-protection
+LIBS:wicker-efm8
+LIBS:wicker-switch
+LIBS:wicker-vreg
+LIBS:atmega328-breakout-board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "Company: Wickerbox Electronics"
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328-A IC?
+U 1 1 56E5FFEA
+P 5275 3675
+F 0 "IC?" H 4525 4925 50  0000 L BNN
+F 1 "ATMEGA328-A" H 5675 2275 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 5275 3675 50  0001 C CIN
+F 3 "" H 5275 3675 50  0000 C CNN
+	1    5275 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L B3F-1XXX SW?
+U 1 1 56E600F9
+P 6925 4350
+F 0 "SW?" H 6921 4484 50  0000 C CNN
+F 1 "B3F-1XXX" H 6885 4280 50  0000 C CNN
+F 2 "" H 6925 4350 50  0000 C CNN
+F 3 "" H 6925 4350 50  0000 C CNN
+	1    6925 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E6025B
+P 6925 4600
+F 0 "#PWR?" H 6925 4350 50  0001 C CNN
+F 1 "GND" H 6925 4450 50  0000 C CNN
+F 2 "" H 6925 4600 50  0000 C CNN
+F 3 "" H 6925 4600 50  0000 C CNN
+	1    6925 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 56E60273
+P 4300 2425
+F 0 "#PWR?" H 4300 2275 50  0001 C CNN
+F 1 "+3.3V" H 4300 2565 50  0000 C CNN
+F 2 "" H 4300 2425 50  0000 C CNN
+F 3 "" H 4300 2425 50  0000 C CNN
+	1    4300 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVR-ISP-6 CON?
+U 1 1 56E6035C
+P 3325 3425
+F 0 "CON?" H 3220 3665 50  0000 C CNN
+F 1 "AVR-ISP-6" H 3060 3195 50  0000 L BNN
+F 2 "AVR-ISP-6" V 2805 3465 50  0001 C CNN
+F 3 "" H 3300 3425 50  0000 C CNN
+	1    3325 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 56E603A3
+P 7100 3850
+F 0 "R?" H 7130 3870 50  0000 L CNN
+F 1 "R_Small" H 7130 3810 50  0000 L CNN
+F 2 "" H 7100 3850 50  0000 C CNN
+F 3 "" H 7100 3850 50  0000 C CNN
+	1    7100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 56E60470
+P 7100 3750
+F 0 "#PWR?" H 7100 3600 50  0001 C CNN
+F 1 "+3.3V" H 7100 3890 50  0000 C CNN
+F 2 "" H 7100 3750 50  0000 C CNN
+F 3 "" H 7100 3750 50  0000 C CNN
+	1    7100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 56E604FE
+P 4050 2675
+F 0 "C?" H 4060 2745 50  0000 L CNN
+F 1 "100n" H 4060 2595 50  0000 L CNN
+F 2 "" H 4050 2675 50  0000 C CNN
+F 3 "" H 4050 2675 50  0000 C CNN
+	1    4050 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B P?
+U 1 1 56E60589
+P 1900 1825
+F 0 "P?" H 2100 1625 50  0000 C CNN
+F 1 "USB_B" H 1850 2025 50  0000 C CNN
+F 2 "" V 1850 1725 50  0000 C CNN
+F 3 "" V 1850 1725 50  0000 C CNN
+	1    1900 1825
+	0    -1   1    0   
+$EndComp
+$Comp
+L BU33SD5WG U?
+U 1 1 56E606F0
+P 3525 1675
+F 0 "U?" H 3265 1945 50  0000 C CNN
+F 1 "BU33SD5WG" H 3220 1870 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3510 2010 50  0001 C CIN
+F 3 "" H 3525 1675 50  0000 C CNN
+	1    3525 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56E60833
+P 2875 1475
+F 0 "#PWR?" H 2875 1325 50  0001 C CNN
+F 1 "+5V" H 2875 1615 50  0000 C CNN
+F 2 "" H 2875 1475 50  0000 C CNN
+F 3 "" H 2875 1475 50  0000 C CNN
+	1    2875 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6275 4025 6925 4025
+Wire Wire Line
+	6925 4025 7100 4025
+Wire Wire Line
+	6925 4025 6925 4200
+Connection ~ 6925 4025
+Wire Wire Line
+	4300 2425 4300 2500
+Wire Wire Line
+	4300 2500 4300 2575
+Wire Wire Line
+	4300 2575 4300 2675
+Wire Wire Line
+	4300 2575 4375 2575
+Wire Wire Line
+	4300 2675 4375 2675
+Connection ~ 4300 2575
+Wire Wire Line
+	7100 4025 7100 3950
+Wire Wire Line
+	2200 1625 2300 1625
+Wire Wire Line
+	2300 1625 2700 1625
+Wire Wire Line
+	2700 1625 2875 1625
+Wire Wire Line
+	2875 1625 3025 1625
+Wire Wire Line
+	3025 1625 3125 1625
+Wire Wire Line
+	3125 1725 3025 1725
+Wire Wire Line
+	3025 1725 3025 1625
+Connection ~ 3025 1625
+Wire Wire Line
+	2200 1925 2300 1925
+Wire Wire Line
+	2300 1925 2700 1925
+Wire Wire Line
+	2300 1925 2300 2325
+Wire Wire Line
+	2300 2325 2300 2450
+Wire Wire Line
+	2875 1625 2875 1475
+Connection ~ 2875 1625
+$Comp
+L +3.3V #PWR?
+U 1 1 56E60890
+P 4050 1475
+F 0 "#PWR?" H 4050 1325 50  0001 C CNN
+F 1 "+3.3V" H 4050 1615 50  0000 C CNN
+F 2 "" H 4050 1475 50  0000 C CNN
+F 3 "" H 4050 1475 50  0000 C CNN
+	1    4050 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3925 1625 4050 1625
+Wire Wire Line
+	4050 1625 4400 1625
+Wire Wire Line
+	4050 1625 4050 1475
+$Comp
+L GND #PWR?
+U 1 1 56E608C4
+P 3525 1875
+F 0 "#PWR?" H 3525 1625 50  0001 C CNN
+F 1 "GND" H 3525 1725 50  0000 C CNN
+F 2 "" H 3525 1875 50  0000 C CNN
+F 3 "" H 3525 1875 50  0000 C CNN
+	1    3525 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E608E6
+P 2300 2450
+F 0 "#PWR?" H 2300 2200 50  0001 C CNN
+F 1 "GND" H 2300 2300 50  0000 C CNN
+F 2 "" H 2300 2450 50  0000 C CNN
+F 3 "" H 2300 2450 50  0000 C CNN
+	1    2300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E6090D
+P 4050 2775
+F 0 "#PWR?" H 4050 2525 50  0001 C CNN
+F 1 "GND" H 4050 2625 50  0000 C CNN
+F 2 "" H 4050 2775 50  0000 C CNN
+F 3 "" H 4050 2775 50  0000 C CNN
+	1    4050 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 56E60934
+P 2700 1775
+F 0 "C?" H 2710 1845 50  0000 L CNN
+F 1 "1uF" H 2710 1695 50  0000 L CNN
+F 2 "" H 2700 1775 50  0000 C CNN
+F 3 "" H 2700 1775 50  0000 C CNN
+	1    2700 1775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1725 2300 1725
+Wire Wire Line
+	2200 1825 2300 1825
+Wire Wire Line
+	2700 1925 2700 1875
+Connection ~ 2300 1925
+Wire Wire Line
+	2700 1675 2700 1625
+Connection ~ 2700 1625
+Text GLabel 2300 1725 2    40   Input ~ 0
+D-
+Text GLabel 2300 1825 2    40   Input ~ 0
+D+
+$Comp
+L GNDPWR #PWR?
+U 1 1 56E60DFE
+P 1800 2125
+F 0 "#PWR?" H 1800 1925 50  0001 C CNN
+F 1 "GNDPWR" H 1800 1995 50  0000 C CNN
+F 2 "" H 1800 2075 50  0000 C CNN
+F 3 "" H 1800 2075 50  0000 C CNN
+	1    1800 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E60EF1
+P 2300 1425
+F 0 "#FLG?" H 2300 1520 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 1605 50  0000 C CNN
+F 2 "" H 2300 1425 50  0000 C CNN
+F 3 "" H 2300 1425 50  0000 C CNN
+	1    2300 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E60F1B
+P 4400 1500
+F 0 "#FLG?" H 4400 1595 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 1680 50  0000 C CNN
+F 2 "" H 4400 1500 50  0000 C CNN
+F 3 "" H 4400 1500 50  0000 C CNN
+	1    4400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 56E60F74
+P 2700 2225
+F 0 "#FLG?" H 2700 2320 50  0001 C CNN
+F 1 "PWR_FLAG" H 2700 2405 50  0000 C CNN
+F 2 "" H 2700 2225 50  0000 C CNN
+F 3 "" H 2700 2225 50  0000 C CNN
+	1    2700 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2325 2700 2325
+Wire Wire Line
+	2700 2325 2700 2225
+Connection ~ 2300 2325
+Wire Wire Line
+	2300 1425 2300 1625
+Connection ~ 2300 1625
+Wire Wire Line
+	4400 1625 4400 1500
+Connection ~ 4050 1625
+Wire Wire Line
+	4300 2500 4050 2500
+Wire Wire Line
+	4050 2500 4050 2575
+Connection ~ 4300 2500
+$EndSCHEMATC

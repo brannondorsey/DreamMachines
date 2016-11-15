@@ -1,0 +1,2553 @@
+EESchema Schematic File Version 2
+LIBS:power_switch_controller_mega-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:power_switch_controller_mega
+LIBS:components
+LIBS:power_switch_controller_mega-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "power_switch_controller_mega"
+Date ""
+Rev "1.7"
+Comp "Janelia"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 1350 1300
+NoConn ~ 1350 1500
+$Comp
+L +5V #PWR5
+U 1 1 5474AD6E
+P 850 1250
+F 0 "#PWR5" H 850 1340 20  0001 C CNN
+F 1 "+5V" H 850 1340 30  0000 C CNN
+F 2 "" H 850 1250 60  0000 C CNN
+F 3 "" H 850 1250 60  0000 C CNN
+	1    850  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 5474AD82
+P 700 1250
+F 0 "#FLG1" H 700 1345 30  0001 C CNN
+F 1 "PWR_FLAG" H 700 1430 30  0000 C CNN
+F 2 "" H 700 1250 60  0000 C CNN
+F 3 "" H 700 1250 60  0000 C CNN
+	1    700  1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  1250 700  1600
+Wire Wire Line
+	700  1600 1350 1600
+Wire Wire Line
+	850  1250 850  1600
+Connection ~ 850  1600
+$Comp
+L GND #PWR6
+U 1 1 5474ADAC
+P 850 1850
+F 0 "#PWR6" H 850 1850 30  0001 C CNN
+F 1 "GND" H 850 1780 30  0001 C CNN
+F 2 "" H 850 1850 60  0000 C CNN
+F 3 "" H 850 1850 60  0000 C CNN
+	1    850  1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1700 850  1700
+Wire Wire Line
+	850  1700 850  1850
+Wire Wire Line
+	1350 1800 850  1800
+Connection ~ 850  1800
+NoConn ~ 1350 2300
+NoConn ~ 1350 2400
+NoConn ~ 1350 2500
+NoConn ~ 1350 2600
+NoConn ~ 1350 2700
+NoConn ~ 1350 2800
+NoConn ~ 1350 3000
+NoConn ~ 1350 3100
+NoConn ~ 1350 3200
+NoConn ~ 1350 3300
+NoConn ~ 1350 3400
+NoConn ~ 1350 3500
+NoConn ~ 1350 3600
+NoConn ~ 1350 3700
+NoConn ~ 1350 3950
+NoConn ~ 1350 4050
+NoConn ~ 1350 4850
+NoConn ~ 1350 5500
+NoConn ~ 3550 1000
+NoConn ~ 3550 1100
+NoConn ~ 3550 1300
+NoConn ~ 3550 1400
+NoConn ~ 3550 1600
+NoConn ~ 3550 2000
+NoConn ~ 3550 2100
+NoConn ~ 3550 2200
+NoConn ~ 3550 3850
+NoConn ~ 3550 4400
+NoConn ~ 3550 4500
+NoConn ~ 3550 4600
+NoConn ~ 3550 4700
+NoConn ~ 3550 4850
+NoConn ~ 3550 4950
+NoConn ~ 3550 5150
+NoConn ~ 3550 5250
+NoConn ~ 3550 5350
+NoConn ~ 3550 5450
+NoConn ~ 3550 5550
+$Comp
+L GND #PWR27
+U 1 1 5474C6BF
+P 975 7725
+F 0 "#PWR27" H 975 7725 30  0001 C CNN
+F 1 "GND" H 975 7655 30  0001 C CNN
+F 2 "" H 975 7725 60  0000 C CNN
+F 3 "" H 975 7725 60  0000 C CNN
+	1    975  7725
+	1    0    0    -1  
+$EndComp
+$Comp
+L VAA #PWR26
+U 1 1 5474C6E7
+P 975 7425
+F 0 "#PWR26" H 975 7485 30  0001 C CNN
+F 1 "VAA" H 975 7535 30  0000 C CNN
+F 2 "" H 975 7425 60  0000 C CNN
+F 3 "" H 975 7425 60  0000 C CNN
+	1    975  7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG4
+U 1 1 5474C703
+P 825 7425
+F 0 "#FLG4" H 825 7520 30  0001 C CNN
+F 1 "PWR_FLAG" H 825 7605 30  0000 C CNN
+F 2 "" H 825 7425 60  0000 C CNN
+F 3 "" H 825 7425 60  0000 C CNN
+	1    825  7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG5
+U 1 1 5474C71B
+P 625 7525
+F 0 "#FLG5" H 625 7620 30  0001 C CNN
+F 1 "PWR_FLAG" H 625 7705 30  0000 C CNN
+F 2 "" H 625 7525 60  0000 C CNN
+F 3 "" H 625 7525 60  0000 C CNN
+	1    625  7525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	825  7525 1075 7525
+Wire Wire Line
+	825  7525 825  7425
+Wire Wire Line
+	975  7425 975  7525
+Connection ~ 975  7525
+Wire Wire Line
+	625  7625 1075 7625
+Wire Wire Line
+	625  7625 625  7525
+Wire Wire Line
+	975  7625 975  7725
+Connection ~ 975  7625
+Wire Wire Line
+	1350 1900 1000 1900
+Text Label 1000 1900 0    60   ~ 0
+V_IN
+$Comp
+L GND #PWR30
+U 1 1 547CC155
+P 2200 7875
+F 0 "#PWR30" H 2200 7875 30  0001 C CNN
+F 1 "GND" H 2200 7805 30  0001 C CNN
+F 2 "" H 2200 7875 60  0000 C CNN
+F 3 "" H 2200 7875 60  0000 C CNN
+	1    2200 7875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 7775 2200 7875
+$Comp
+L VAA #PWR24
+U 1 1 547CC477
+P 3150 7100
+F 0 "#PWR24" H 3150 7160 30  0001 C CNN
+F 1 "VAA" H 3150 7210 30  0000 C CNN
+F 2 "" H 3150 7100 60  0000 C CNN
+F 3 "" H 3150 7100 60  0000 C CNN
+	1    3150 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR29
+U 1 1 547CC4E0
+P 3750 7850
+F 0 "#PWR29" H 3750 7850 30  0001 C CNN
+F 1 "GND" H 3750 7780 30  0001 C CNN
+F 2 "" H 3750 7850 60  0000 C CNN
+F 3 "" H 3750 7850 60  0000 C CNN
+	1    3750 7850
+	1    0    0    -1  
+$EndComp
+Text Label 1000 1700 0    60   ~ 0
+GND
+$Comp
+L PWR_JACK_2.5x5.5 P1
+U 1 1 5488FCDE
+P 1275 7575
+F 0 "P1" H 1275 7725 50  0000 C CNN
+F 1 "PWR_JACK_2.5x5.5" V 1375 7575 50  0000 C CNN
+F 2 "power_switch_controller_mega:DCJACK_2PIN_HIGHCURRENT" H 1175 7625 60  0001 C CNN
+F 3 "" H 1275 7575 60  0000 C CNN
+F 4 "digikey" H 1375 7825 60  0001 C CNN "Vendor"
+F 5 "CP-063BH-ND" H 1475 7925 60  0001 C CNN "PartNumber"
+F 6 "CONN PWR JACK DC 2.5X5.5 8A T/H" H 1575 8025 60  0001 C CNN "Description"
+	1    1275 7575
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_24V L1
+U 1 1 54891A64
+P 2200 7575
+F 0 "L1" H 2200 7675 50  0000 C CNN
+F 1 "LED_24V" H 2200 7475 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 2100 7575 60  0001 C CNN
+F 3 "" H 2200 7575 60  0000 C CNN
+F 4 "digikey" H 2300 7775 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 2400 7875 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 2500 7975 60  0001 C CNN "Description"
+	1    2200 7575
+	0    1    1    0   
+$EndComp
+$Comp
+L 10uF C2
+U 1 1 548925C4
+P 3150 7500
+F 0 "C2" H 3150 7600 40  0000 L CNN
+F 1 "10uF" H 3156 7415 40  0000 L CNN
+F 2 "power_switch_controller_mega:SM1210" H 3188 7350 30  0001 C CNN
+F 3 "" H 3150 7500 60  0000 C CNN
+F 4 "digikey" H 3250 7700 60  0001 C CNN "Vendor"
+F 5 "445-4536-1-ND" H 3350 7800 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 10UF 50V 10% X7S 1210" H 3450 7900 60  0001 C CNN "Description"
+	1    3150 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10uF C3
+U 1 1 54892682
+P 4350 7500
+F 0 "C3" H 4350 7600 40  0000 L CNN
+F 1 "10uF" H 4356 7415 40  0000 L CNN
+F 2 "power_switch_controller_mega:SM1210" H 4388 7350 30  0001 C CNN
+F 3 "" H 4350 7500 60  0000 C CNN
+F 4 "digikey" H 4450 7700 60  0001 C CNN "Vendor"
+F 5 "445-4536-1-ND" H 4550 7800 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 10UF 50V 10% X7S 1210" H 4650 7900 60  0001 C CNN "Description"
+	1    4350 7500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 2200
+NoConn ~ 3550 1700
+NoConn ~ 3550 1900
+NoConn ~ 3550 4000
+NoConn ~ 3550 4100
+NoConn ~ 3550 4200
+NoConn ~ 3550 4300
+Wire Wire Line
+	1000 4300 1350 4300
+Wire Wire Line
+	1350 4400 1000 4400
+Wire Wire Line
+	1350 4500 1000 4500
+Text Label 1000 4300 0    60   ~ 0
+SCK
+Text Label 1000 4400 0    60   ~ 0
+MOSI
+Text Label 1000 4500 0    60   ~ 0
+MISO
+Text Label 1000 4950 0    60   ~ 0
+CS
+Wire Wire Line
+	9050 1200 8800 1200
+Wire Wire Line
+	9050 1300 8800 1300
+Wire Wire Line
+	9050 1400 8800 1400
+Wire Wire Line
+	9050 1500 8800 1500
+Text Label 8800 1400 0    60   ~ 0
+SO2
+Text Label 8800 1200 0    60   ~ 0
+CS
+Text Label 8800 1300 0    60   ~ 0
+SCK
+Text Label 8800 1500 0    60   ~ 0
+SO3
+$Comp
+L 0.1uF C6
+U 1 1 548B293B
+P 8600 1900
+F 0 "C6" H 8600 2000 40  0000 L CNN
+F 1 "0.1uF" H 8606 1815 40  0000 L CNN
+F 2 "power_switch_controller_mega:SM1210" H 8638 1750 30  0001 C CNN
+F 3 "" H 8600 1900 60  0000 C CNN
+F 4 "digikey" H 8700 2100 60  0001 C CNN "Vendor"
+F 5 "478-3586-1-ND" H 8800 2200 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 8900 2300 60  0001 C CNN "Description"
+	1    8600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR2
+U 1 1 548B2978
+P 8600 750
+F 0 "#PWR2" H 8600 600 60  0001 C CNN
+F 1 "+5V" H 8600 890 60  0000 C CNN
+F 2 "" H 8600 750 60  0000 C CNN
+F 3 "" H 8600 750 60  0000 C CNN
+	1    8600 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 548B2B28
+P 8600 2200
+F 0 "#PWR10" H 8600 1950 60  0001 C CNN
+F 1 "GND" H 8600 2050 60  0000 C CNN
+F 2 "" H 8600 2200 60  0000 C CNN
+F 3 "" H 8600 2200 60  0000 C CNN
+	1    8600 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 800  10150 800 
+Wire Wire Line
+	10050 900  10150 900 
+Wire Wire Line
+	10050 1000 10150 1000
+Wire Wire Line
+	10050 1100 10150 1100
+Wire Wire Line
+	10050 1200 10150 1200
+Wire Wire Line
+	10050 1300 10150 1300
+Wire Wire Line
+	10050 1400 10150 1400
+Wire Wire Line
+	10050 1500 10150 1500
+Text Label 10150 800  0    60   ~ 0
+OUT16
+Text Label 10150 900  0    60   ~ 0
+OUT17
+Text Label 10150 1000 0    60   ~ 0
+OUT18
+Text Label 10150 1100 0    60   ~ 0
+OUT19
+Text Label 10150 1200 0    60   ~ 0
+OUT20
+Text Label 10150 1300 0    60   ~ 0
+OUT21
+Text Label 10150 1400 0    60   ~ 0
+OUT22
+Text Label 10150 1500 0    60   ~ 0
+OUT23
+Wire Wire Line
+	9050 3300 8800 3300
+Wire Wire Line
+	9050 3400 8800 3400
+Wire Wire Line
+	9050 3500 8800 3500
+Wire Wire Line
+	9050 3600 8800 3600
+Text Label 8800 3500 0    60   ~ 0
+SO3
+Text Label 8800 3300 0    60   ~ 0
+CS
+Text Label 8800 3400 0    60   ~ 0
+SCK
+Text Label 8800 3600 0    60   ~ 0
+MISO
+$Comp
+L 0.1uF C7
+U 1 1 54AADA2E
+P 8600 4000
+F 0 "C7" H 8600 4100 40  0000 L CNN
+F 1 "0.1uF" H 8606 3915 40  0000 L CNN
+F 2 "power_switch_controller_mega:SM1210" H 8638 3850 30  0001 C CNN
+F 3 "" H 8600 4000 60  0000 C CNN
+F 4 "digikey" H 8700 4200 60  0001 C CNN "Vendor"
+F 5 "478-3586-1-ND" H 8800 4300 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 8900 4400 60  0001 C CNN "Description"
+	1    8600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR12
+U 1 1 54AADA34
+P 8600 2850
+F 0 "#PWR12" H 8600 2700 60  0001 C CNN
+F 1 "+5V" H 8600 2990 60  0000 C CNN
+F 2 "" H 8600 2850 60  0000 C CNN
+F 3 "" H 8600 2850 60  0000 C CNN
+	1    8600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR18
+U 1 1 54AADA3F
+P 8600 4300
+F 0 "#PWR18" H 8600 4050 60  0001 C CNN
+F 1 "GND" H 8600 4150 60  0000 C CNN
+F 2 "" H 8600 4300 60  0000 C CNN
+F 3 "" H 8600 4300 60  0000 C CNN
+	1    8600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2900 10150 2900
+Wire Wire Line
+	10050 3000 10150 3000
+Wire Wire Line
+	10050 3100 10150 3100
+Wire Wire Line
+	10050 3200 10150 3200
+Wire Wire Line
+	10050 3300 10150 3300
+Wire Wire Line
+	10050 3400 10150 3400
+Wire Wire Line
+	10050 3500 10150 3500
+Wire Wire Line
+	10050 3600 10150 3600
+Text Label 10150 2900 0    60   ~ 0
+OUT24
+Text Label 10150 3000 0    60   ~ 0
+OUT25
+Text Label 10150 3100 0    60   ~ 0
+OUT26
+Text Label 10150 3200 0    60   ~ 0
+OUT27
+Text Label 10150 3300 0    60   ~ 0
+OUT28
+Text Label 10150 3400 0    60   ~ 0
+OUT29
+Text Label 10150 3500 0    60   ~ 0
+OUT30
+Text Label 10150 3600 0    60   ~ 0
+OUT31
+Wire Wire Line
+	2200 7375 2200 7275
+Text Label 2200 7275 0    60   ~ 0
+LED_PWR
+$Comp
+L LED_24V L33
+U 1 1 54AAFFE6
+P 4950 6000
+F 0 "L33" H 4950 6100 50  0000 C CNN
+F 1 "LED_24V" H 4950 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 4850 6000 60  0001 C CNN
+F 3 "" H 4950 6000 60  0000 C CNN
+F 4 "digikey" H 5050 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 5150 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 5250 6400 60  0001 C CNN "Description"
+	1    4950 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 6200 4950 6300
+Wire Wire Line
+	4950 5800 4950 5700
+Text Label 4950 6300 0    60   ~ 0
+OUT31
+$Comp
+L LED_24V L32
+U 1 1 54AB05E3
+P 5300 6000
+F 0 "L32" H 5300 6100 50  0000 C CNN
+F 1 "LED_24V" H 5300 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 5200 6000 60  0001 C CNN
+F 3 "" H 5300 6000 60  0000 C CNN
+F 4 "digikey" H 5400 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 5500 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 5600 6400 60  0001 C CNN "Description"
+	1    5300 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 6200 5300 6300
+Wire Wire Line
+	5300 5800 5300 5700
+Text Label 5300 6300 0    60   ~ 0
+OUT30
+$Comp
+L LED_24V L31
+U 1 1 54AB0663
+P 5650 6000
+F 0 "L31" H 5650 6100 50  0000 C CNN
+F 1 "LED_24V" H 5650 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 5550 6000 60  0001 C CNN
+F 3 "" H 5650 6000 60  0000 C CNN
+F 4 "digikey" H 5750 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 5850 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 5950 6400 60  0001 C CNN "Description"
+	1    5650 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 6200 5650 6300
+Wire Wire Line
+	5650 5700 5650 5800
+Text Label 5650 6300 0    60   ~ 0
+OUT29
+$Comp
+L LED_24V L30
+U 1 1 54AB066F
+P 6000 6000
+F 0 "L30" H 6000 6100 50  0000 C CNN
+F 1 "LED_24V" H 6000 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 5900 6000 60  0001 C CNN
+F 3 "" H 6000 6000 60  0000 C CNN
+F 4 "digikey" H 6100 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6200 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 6300 6400 60  0001 C CNN "Description"
+	1    6000 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 6200 6000 6300
+Wire Wire Line
+	6000 5700 6000 5800
+Text Label 6000 6300 0    60   ~ 0
+OUT28
+$Comp
+L LED_24V L29
+U 1 1 54AB0797
+P 6350 6000
+F 0 "L29" H 6350 6100 50  0000 C CNN
+F 1 "LED_24V" H 6350 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 6250 6000 60  0001 C CNN
+F 3 "" H 6350 6000 60  0000 C CNN
+F 4 "digikey" H 6450 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6550 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 6650 6400 60  0001 C CNN "Description"
+	1    6350 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 6200 6350 6300
+Wire Wire Line
+	6350 5700 6350 5800
+Text Label 6350 6300 0    60   ~ 0
+OUT27
+$Comp
+L LED_24V L28
+U 1 1 54AB07A3
+P 6700 6000
+F 0 "L28" H 6700 6100 50  0000 C CNN
+F 1 "LED_24V" H 6700 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 6600 6000 60  0001 C CNN
+F 3 "" H 6700 6000 60  0000 C CNN
+F 4 "digikey" H 6800 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6900 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7000 6400 60  0001 C CNN "Description"
+	1    6700 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 6200 6700 6300
+Wire Wire Line
+	6700 5700 6700 5800
+Text Label 6700 6300 0    60   ~ 0
+OUT26
+$Comp
+L LED_24V L27
+U 1 1 54AB07AF
+P 7050 6000
+F 0 "L27" H 7050 6100 50  0000 C CNN
+F 1 "LED_24V" H 7050 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 6950 6000 60  0001 C CNN
+F 3 "" H 7050 6000 60  0000 C CNN
+F 4 "digikey" H 7150 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7250 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7350 6400 60  0001 C CNN "Description"
+	1    7050 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 6200 7050 6300
+Wire Wire Line
+	7050 5700 7050 5800
+Text Label 7050 6300 0    60   ~ 0
+OUT25
+$Comp
+L LED_24V L26
+U 1 1 54AB07BB
+P 7400 6000
+F 0 "L26" H 7400 6100 50  0000 C CNN
+F 1 "LED_24V" H 7400 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 7300 6000 60  0001 C CNN
+F 3 "" H 7400 6000 60  0000 C CNN
+F 4 "digikey" H 7500 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7600 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7700 6400 60  0001 C CNN "Description"
+	1    7400 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 6200 7400 6300
+Wire Wire Line
+	7400 5700 7400 5800
+Text Label 7400 6300 0    60   ~ 0
+OUT24
+$Comp
+L LED_24V L25
+U 1 1 54AB0B65
+P 7750 6000
+F 0 "L25" H 7750 6100 50  0000 C CNN
+F 1 "LED_24V" H 7750 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 7650 6000 60  0001 C CNN
+F 3 "" H 7750 6000 60  0000 C CNN
+F 4 "digikey" H 7850 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7950 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8050 6400 60  0001 C CNN "Description"
+	1    7750 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 6200 7750 6300
+Wire Wire Line
+	7750 5700 7750 5800
+Text Label 7750 6300 0    60   ~ 0
+OUT23
+$Comp
+L LED_24V L24
+U 1 1 54AB0B71
+P 8100 6000
+F 0 "L24" H 8100 6100 50  0000 C CNN
+F 1 "LED_24V" H 8100 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 8000 6000 60  0001 C CNN
+F 3 "" H 8100 6000 60  0000 C CNN
+F 4 "digikey" H 8200 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 8300 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8400 6400 60  0001 C CNN "Description"
+	1    8100 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 6200 8100 6300
+Wire Wire Line
+	8100 5700 8100 5800
+Text Label 8100 6300 0    60   ~ 0
+OUT22
+$Comp
+L LED_24V L23
+U 1 1 54AB0B7D
+P 8450 6000
+F 0 "L23" H 8450 6100 50  0000 C CNN
+F 1 "LED_24V" H 8450 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 8350 6000 60  0001 C CNN
+F 3 "" H 8450 6000 60  0000 C CNN
+F 4 "digikey" H 8550 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 8650 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8750 6400 60  0001 C CNN "Description"
+	1    8450 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 6200 8450 6300
+Wire Wire Line
+	8450 5700 8450 5800
+Text Label 8450 6300 0    60   ~ 0
+OUT21
+$Comp
+L LED_24V L22
+U 1 1 54AB0B89
+P 8800 6000
+F 0 "L22" H 8800 6100 50  0000 C CNN
+F 1 "LED_24V" H 8800 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 8700 6000 60  0001 C CNN
+F 3 "" H 8800 6000 60  0000 C CNN
+F 4 "digikey" H 8900 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 9000 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9100 6400 60  0001 C CNN "Description"
+	1    8800 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 6200 8800 6300
+Wire Wire Line
+	8800 5700 8800 5800
+Text Label 8800 6300 0    60   ~ 0
+OUT20
+$Comp
+L LED_24V L21
+U 1 1 54AB0B95
+P 9150 6000
+F 0 "L21" H 9150 6100 50  0000 C CNN
+F 1 "LED_24V" H 9150 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 9050 6000 60  0001 C CNN
+F 3 "" H 9150 6000 60  0000 C CNN
+F 4 "digikey" H 9250 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 9350 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9450 6400 60  0001 C CNN "Description"
+	1    9150 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 6200 9150 6300
+Wire Wire Line
+	9150 5700 9150 5800
+Text Label 9150 6300 0    60   ~ 0
+OUT19
+$Comp
+L LED_24V L20
+U 1 1 54AB0BA1
+P 9500 6000
+F 0 "L20" H 9500 6100 50  0000 C CNN
+F 1 "LED_24V" H 9500 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 9400 6000 60  0001 C CNN
+F 3 "" H 9500 6000 60  0000 C CNN
+F 4 "digikey" H 9600 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 9700 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9800 6400 60  0001 C CNN "Description"
+	1    9500 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9500 6200 9500 6300
+Wire Wire Line
+	9500 5700 9500 5800
+Text Label 9500 6300 0    60   ~ 0
+OUT18
+$Comp
+L LED_24V L19
+U 1 1 54AB0BAD
+P 9850 6000
+F 0 "L19" H 9850 6100 50  0000 C CNN
+F 1 "LED_24V" H 9850 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 9750 6000 60  0001 C CNN
+F 3 "" H 9850 6000 60  0000 C CNN
+F 4 "digikey" H 9950 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 10050 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 10150 6400 60  0001 C CNN "Description"
+	1    9850 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 6200 9850 6300
+Wire Wire Line
+	9850 5700 9850 5800
+Text Label 9850 6300 0    60   ~ 0
+OUT17
+$Comp
+L LED_24V L18
+U 1 1 54AB0BB9
+P 10200 6000
+F 0 "L18" H 10200 6100 50  0000 C CNN
+F 1 "LED_24V" H 10200 5900 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 10100 6000 60  0001 C CNN
+F 3 "" H 10200 6000 60  0000 C CNN
+F 4 "digikey" H 10300 6200 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 10400 6300 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 10500 6400 60  0001 C CNN "Description"
+	1    10200 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 6200 10200 6300
+Wire Wire Line
+	10200 5700 10200 5800
+Text Label 10200 6300 0    60   ~ 0
+OUT16
+Wire Wire Line
+	3550 2800 3750 2800
+Text Label 3750 2800 0    60   ~ 0
+TX3
+Wire Wire Line
+	4950 5700 10200 5700
+Connection ~ 5300 5700
+Connection ~ 5650 5700
+Connection ~ 6000 5700
+Connection ~ 6350 5700
+Connection ~ 6700 5700
+Connection ~ 7050 5700
+Connection ~ 7400 5700
+Connection ~ 7750 5700
+Connection ~ 8100 5700
+Connection ~ 8450 5700
+Connection ~ 8800 5700
+Connection ~ 9150 5700
+Connection ~ 9500 5700
+Connection ~ 9850 5700
+Wire Wire Line
+	7550 5700 7550 5600
+Wire Wire Line
+	7550 5600 7650 5600
+Connection ~ 7550 5700
+Text Label 7650 5600 0    60   ~ 0
+LED_PWR
+NoConn ~ 1350 5700
+NoConn ~ 1350 5800
+$Comp
+L VAA #PWR3
+U 1 1 54ACE02B
+P 4250 950
+F 0 "#PWR3" H 4250 800 60  0001 C CNN
+F 1 "VAA" H 4250 1100 60  0000 C CNN
+F 2 "" H 4250 950 60  0000 C CNN
+F 3 "" H 4250 950 60  0000 C CNN
+	1    4250 950 
+	1    0    0    -1  
+$EndComp
+Text Label 4850 1000 0    60   ~ 0
+OUT0
+Text Label 4850 1100 0    60   ~ 0
+OUT1
+Text Label 4850 1200 0    60   ~ 0
+OUT2
+Text Label 4850 1300 0    60   ~ 0
+OUT3
+Text Label 4850 1400 0    60   ~ 0
+OUT4
+Text Label 4850 1500 0    60   ~ 0
+OUT5
+Text Label 4850 1600 0    60   ~ 0
+OUT6
+Text Label 4850 1700 0    60   ~ 0
+OUT7
+Text Label 4850 2000 0    60   ~ 0
+OUT8
+Text Label 4850 2100 0    60   ~ 0
+OUT9
+Text Label 4850 2200 0    60   ~ 0
+OUT10
+Text Label 4850 2300 0    60   ~ 0
+OUT11
+Text Label 4850 2400 0    60   ~ 0
+OUT12
+Text Label 4850 2500 0    60   ~ 0
+OUT13
+Text Label 4850 2600 0    60   ~ 0
+OUT14
+Text Label 4850 2700 0    60   ~ 0
+OUT15
+$Comp
+L GND #PWR28
+U 1 1 54AD9AEC
+P 6100 7725
+F 0 "#PWR28" H 6100 7475 60  0001 C CNN
+F 1 "GND" H 6100 7575 60  0000 C CNN
+F 2 "" H 6100 7725 60  0000 C CNN
+F 3 "" H 6100 7725 60  0000 C CNN
+	1    6100 7725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7475 6100 7475
+Wire Wire Line
+	6100 7475 6100 7725
+Wire Wire Line
+	6000 7575 6100 7575
+Connection ~ 6100 7575
+Wire Wire Line
+	5500 7475 5150 7475
+Wire Wire Line
+	5500 7575 5150 7575
+Text Label 5150 7475 0    60   ~ 0
+BNC_A
+Text Label 5150 7575 0    60   ~ 0
+BNC_B
+Text Label 3750 2300 0    60   ~ 0
+BNC_B
+NoConn ~ 3550 1200
+$Comp
+L BNC_DOUBLE_RA P7
+U 1 1 54ADBC63
+P 5750 7525
+F 0 "P7" H 5750 7675 50  0000 C CNN
+F 1 "BNC_DOUBLE_RA" H 5750 7375 50  0000 C CNN
+F 2 "power_switch_controller_mega:BNC_DOUBLE" H 5750 6325 60  0001 C CNN
+F 3 "" H 5750 6325 60  0000 C CNN
+F 4 "digikey" H 5850 7775 60  0001 C CNN "Vendor"
+F 5 "ACX1655-ND" H 5950 7875 60  0001 C CNN "PartNumber"
+F 6 "CONN BNC JACK R/A 75 OHM PCB" H 6050 7975 60  0001 C CNN "Description"
+	1    5750 7525
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 4200
+Text Label 1000 4750 0    60   ~ 0
+BNC_A
+Wire Wire Line
+	4850 1000 4800 1000
+Wire Wire Line
+	4850 1100 4800 1100
+Wire Wire Line
+	4850 1200 4800 1200
+Wire Wire Line
+	4850 1300 4800 1300
+Wire Wire Line
+	4850 1400 4800 1400
+Wire Wire Line
+	4850 1500 4800 1500
+Wire Wire Line
+	4850 1600 4800 1600
+Wire Wire Line
+	4850 1700 4800 1700
+$Comp
+L VAA #PWR7
+U 1 1 54AEFA4B
+P 4250 1950
+F 0 "#PWR7" H 4250 1800 60  0001 C CNN
+F 1 "VAA" H 4250 2100 60  0000 C CNN
+F 2 "" H 4250 1950 60  0000 C CNN
+F 3 "" H 4250 1950 60  0000 C CNN
+	1    4250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2000 4800 2000
+Wire Wire Line
+	4850 2100 4800 2100
+Wire Wire Line
+	4850 2200 4800 2200
+Wire Wire Line
+	4850 2300 4800 2300
+Wire Wire Line
+	4850 2400 4800 2400
+Wire Wire Line
+	4850 2500 4800 2500
+Wire Wire Line
+	4850 2600 4800 2600
+Wire Wire Line
+	4850 2700 4800 2700
+$Comp
+L +5VD #PWR14
+U 1 1 54BEF7A6
+P 3800 3700
+F 0 "#PWR14" H 3800 3550 60  0001 C CNN
+F 1 "+5VD" H 3800 3840 60  0000 C CNN
+F 2 "" H 3800 3700 60  0000 C CNN
+F 3 "" H 3800 3700 60  0000 C CNN
+	1    3800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG2
+U 1 1 54BEF7BA
+P 4150 3700
+F 0 "#FLG2" H 4150 3795 30  0001 C CNN
+F 1 "PWR_FLAG" H 4150 3880 30  0000 C CNN
+F 2 "" H 4150 3700 60  0000 C CNN
+F 3 "" H 4150 3700 60  0000 C CNN
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3750 4150 3700
+Wire Wire Line
+	3550 3750 4150 3750
+Wire Wire Line
+	3800 3700 3800 3750
+Connection ~ 3800 3750
+$Comp
+L LED_24V L17
+U 1 1 54BF4B37
+P 4950 5150
+F 0 "L17" H 4950 5250 50  0000 C CNN
+F 1 "LED_24V" H 4950 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 4850 5150 60  0001 C CNN
+F 3 "" H 4950 5150 60  0000 C CNN
+F 4 "digikey" H 5050 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 5150 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 5250 5550 60  0001 C CNN "Description"
+	1    4950 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 5350 4950 5450
+Wire Wire Line
+	4950 4950 4950 4850
+Text Label 4950 5450 0    60   ~ 0
+OUT15
+$Comp
+L LED_24V L16
+U 1 1 54BF4B43
+P 5300 5150
+F 0 "L16" H 5300 5250 50  0000 C CNN
+F 1 "LED_24V" H 5300 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 5200 5150 60  0001 C CNN
+F 3 "" H 5300 5150 60  0000 C CNN
+F 4 "digikey" H 5400 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 5500 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 5600 5550 60  0001 C CNN "Description"
+	1    5300 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 5350 5300 5450
+Wire Wire Line
+	5300 4950 5300 4850
+Text Label 5300 5450 0    60   ~ 0
+OUT14
+$Comp
+L LED_24V L15
+U 1 1 54BF4B4F
+P 5650 5150
+F 0 "L15" H 5650 5250 50  0000 C CNN
+F 1 "LED_24V" H 5650 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 5550 5150 60  0001 C CNN
+F 3 "" H 5650 5150 60  0000 C CNN
+F 4 "digikey" H 5750 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 5850 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 5950 5550 60  0001 C CNN "Description"
+	1    5650 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 5350 5650 5450
+Wire Wire Line
+	5650 4850 5650 4950
+Text Label 5650 5450 0    60   ~ 0
+OUT13
+$Comp
+L LED_24V L14
+U 1 1 54BF4B5B
+P 6000 5150
+F 0 "L14" H 6000 5250 50  0000 C CNN
+F 1 "LED_24V" H 6000 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 5900 5150 60  0001 C CNN
+F 3 "" H 6000 5150 60  0000 C CNN
+F 4 "digikey" H 6100 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6200 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 6300 5550 60  0001 C CNN "Description"
+	1    6000 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 5350 6000 5450
+Wire Wire Line
+	6000 4850 6000 4950
+Text Label 6000 5450 0    60   ~ 0
+OUT12
+$Comp
+L LED_24V L13
+U 1 1 54BF4B67
+P 6350 5150
+F 0 "L13" H 6350 5250 50  0000 C CNN
+F 1 "LED_24V" H 6350 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 6250 5150 60  0001 C CNN
+F 3 "" H 6350 5150 60  0000 C CNN
+F 4 "digikey" H 6450 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6550 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 6650 5550 60  0001 C CNN "Description"
+	1    6350 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 5350 6350 5450
+Wire Wire Line
+	6350 4850 6350 4950
+Text Label 6350 5450 0    60   ~ 0
+OUT11
+$Comp
+L LED_24V L12
+U 1 1 54BF4B73
+P 6700 5150
+F 0 "L12" H 6700 5250 50  0000 C CNN
+F 1 "LED_24V" H 6700 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 6600 5150 60  0001 C CNN
+F 3 "" H 6700 5150 60  0000 C CNN
+F 4 "digikey" H 6800 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6900 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7000 5550 60  0001 C CNN "Description"
+	1    6700 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 5350 6700 5450
+Wire Wire Line
+	6700 4850 6700 4950
+Text Label 6700 5450 0    60   ~ 0
+OUT10
+$Comp
+L LED_24V L11
+U 1 1 54BF4B7F
+P 7050 5150
+F 0 "L11" H 7050 5250 50  0000 C CNN
+F 1 "LED_24V" H 7050 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 6950 5150 60  0001 C CNN
+F 3 "" H 7050 5150 60  0000 C CNN
+F 4 "digikey" H 7150 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7250 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7350 5550 60  0001 C CNN "Description"
+	1    7050 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 5350 7050 5450
+Wire Wire Line
+	7050 4850 7050 4950
+Text Label 7050 5450 0    60   ~ 0
+OUT9
+$Comp
+L LED_24V L10
+U 1 1 54BF4B8B
+P 7400 5150
+F 0 "L10" H 7400 5250 50  0000 C CNN
+F 1 "LED_24V" H 7400 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 7300 5150 60  0001 C CNN
+F 3 "" H 7400 5150 60  0000 C CNN
+F 4 "digikey" H 7500 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7600 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7700 5550 60  0001 C CNN "Description"
+	1    7400 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 5350 7400 5450
+Wire Wire Line
+	7400 4850 7400 4950
+Text Label 7400 5450 0    60   ~ 0
+OUT8
+$Comp
+L LED_24V L9
+U 1 1 54BF4B97
+P 7750 5150
+F 0 "L9" H 7750 5250 50  0000 C CNN
+F 1 "LED_24V" H 7750 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 7650 5150 60  0001 C CNN
+F 3 "" H 7750 5150 60  0000 C CNN
+F 4 "digikey" H 7850 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7950 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8050 5550 60  0001 C CNN "Description"
+	1    7750 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 5350 7750 5450
+Wire Wire Line
+	7750 4850 7750 4950
+Text Label 7750 5450 0    60   ~ 0
+OUT7
+$Comp
+L LED_24V L8
+U 1 1 54BF4BA3
+P 8100 5150
+F 0 "L8" H 8100 5250 50  0000 C CNN
+F 1 "LED_24V" H 8100 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 8000 5150 60  0001 C CNN
+F 3 "" H 8100 5150 60  0000 C CNN
+F 4 "digikey" H 8200 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 8300 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8400 5550 60  0001 C CNN "Description"
+	1    8100 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 5350 8100 5450
+Wire Wire Line
+	8100 4850 8100 4950
+Text Label 8100 5450 0    60   ~ 0
+OUT6
+$Comp
+L LED_24V L7
+U 1 1 54BF4BAF
+P 8450 5150
+F 0 "L7" H 8450 5250 50  0000 C CNN
+F 1 "LED_24V" H 8450 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 8350 5150 60  0001 C CNN
+F 3 "" H 8450 5150 60  0000 C CNN
+F 4 "digikey" H 8550 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 8650 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8750 5550 60  0001 C CNN "Description"
+	1    8450 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 5350 8450 5450
+Wire Wire Line
+	8450 4850 8450 4950
+Text Label 8450 5450 0    60   ~ 0
+OUT5
+$Comp
+L LED_24V L6
+U 1 1 54BF4BBB
+P 8800 5150
+F 0 "L6" H 8800 5250 50  0000 C CNN
+F 1 "LED_24V" H 8800 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 8700 5150 60  0001 C CNN
+F 3 "" H 8800 5150 60  0000 C CNN
+F 4 "digikey" H 8900 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 9000 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9100 5550 60  0001 C CNN "Description"
+	1    8800 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 5350 8800 5450
+Wire Wire Line
+	8800 4850 8800 4950
+Text Label 8800 5450 0    60   ~ 0
+OUT4
+$Comp
+L LED_24V L5
+U 1 1 54BF4BC7
+P 9150 5150
+F 0 "L5" H 9150 5250 50  0000 C CNN
+F 1 "LED_24V" H 9150 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 9050 5150 60  0001 C CNN
+F 3 "" H 9150 5150 60  0000 C CNN
+F 4 "digikey" H 9250 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 9350 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9450 5550 60  0001 C CNN "Description"
+	1    9150 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 5350 9150 5450
+Wire Wire Line
+	9150 4850 9150 4950
+Text Label 9150 5450 0    60   ~ 0
+OUT3
+$Comp
+L LED_24V L4
+U 1 1 54BF4BD3
+P 9500 5150
+F 0 "L4" H 9500 5250 50  0000 C CNN
+F 1 "LED_24V" H 9500 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 9400 5150 60  0001 C CNN
+F 3 "" H 9500 5150 60  0000 C CNN
+F 4 "digikey" H 9600 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 9700 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9800 5550 60  0001 C CNN "Description"
+	1    9500 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9500 5350 9500 5450
+Wire Wire Line
+	9500 4850 9500 4950
+Text Label 9500 5450 0    60   ~ 0
+OUT2
+$Comp
+L LED_24V L3
+U 1 1 54BF4BDF
+P 9850 5150
+F 0 "L3" H 9850 5250 50  0000 C CNN
+F 1 "LED_24V" H 9850 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 9750 5150 60  0001 C CNN
+F 3 "" H 9850 5150 60  0000 C CNN
+F 4 "digikey" H 9950 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 10050 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 10150 5550 60  0001 C CNN "Description"
+	1    9850 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 5350 9850 5450
+Wire Wire Line
+	9850 4850 9850 4950
+Text Label 9850 5450 0    60   ~ 0
+OUT1
+$Comp
+L LED_24V L2
+U 1 1 54BF4BEB
+P 10200 5150
+F 0 "L2" H 10200 5250 50  0000 C CNN
+F 1 "LED_24V" H 10200 5050 50  0000 C CNN
+F 2 "power_switch_controller_mega:LED_555-3XXX" H 10100 5150 60  0001 C CNN
+F 3 "" H 10200 5150 60  0000 C CNN
+F 4 "digikey" H 10300 5350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 10400 5450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 10500 5550 60  0001 C CNN "Description"
+	1    10200 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 5350 10200 5450
+Wire Wire Line
+	10200 4850 10200 4950
+Text Label 10200 5450 0    60   ~ 0
+OUT0
+Wire Wire Line
+	4950 4850 10200 4850
+Connection ~ 5300 4850
+Connection ~ 5650 4850
+Connection ~ 6000 4850
+Connection ~ 6350 4850
+Connection ~ 6700 4850
+Connection ~ 7050 4850
+Connection ~ 7400 4850
+Connection ~ 7750 4850
+Connection ~ 8100 4850
+Connection ~ 8450 4850
+Connection ~ 8800 4850
+Connection ~ 9150 4850
+Connection ~ 9500 4850
+Connection ~ 9850 4850
+Wire Wire Line
+	7550 4850 7550 4750
+Wire Wire Line
+	7550 4750 7650 4750
+Connection ~ 7550 4850
+Text Label 7650 4750 0    60   ~ 0
+LED_PWR
+Wire Wire Line
+	7050 1200 6800 1200
+Wire Wire Line
+	7050 1300 6800 1300
+Wire Wire Line
+	7050 1400 6800 1400
+Wire Wire Line
+	7050 1500 6800 1500
+Text Label 6800 1400 0    60   ~ 0
+MOSI
+Text Label 6800 1200 0    60   ~ 0
+CS
+Text Label 6800 1300 0    60   ~ 0
+SCK
+Text Label 6800 1500 0    60   ~ 0
+SO1
+$Comp
+L 0.1uF C4
+U 1 1 54BF6DED
+P 6600 1900
+F 0 "C4" H 6600 2000 40  0000 L CNN
+F 1 "0.1uF" H 6606 1815 40  0000 L CNN
+F 2 "power_switch_controller_mega:SM1210" H 6638 1750 30  0001 C CNN
+F 3 "" H 6600 1900 60  0000 C CNN
+F 4 "digikey" H 6700 2100 60  0001 C CNN "Vendor"
+F 5 "478-3586-1-ND" H 6800 2200 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 6900 2300 60  0001 C CNN "Description"
+	1    6600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 54BF6DF3
+P 6600 750
+F 0 "#PWR1" H 6600 600 60  0001 C CNN
+F 1 "+5V" H 6600 890 60  0000 C CNN
+F 2 "" H 6600 750 60  0000 C CNN
+F 3 "" H 6600 750 60  0000 C CNN
+	1    6600 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 54BF6DFE
+P 6600 2200
+F 0 "#PWR9" H 6600 1950 60  0001 C CNN
+F 1 "GND" H 6600 2050 60  0000 C CNN
+F 2 "" H 6600 2200 60  0000 C CNN
+F 3 "" H 6600 2200 60  0000 C CNN
+	1    6600 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 800  8150 800 
+Wire Wire Line
+	8050 900  8150 900 
+Wire Wire Line
+	8050 1000 8150 1000
+Wire Wire Line
+	8050 1100 8150 1100
+Wire Wire Line
+	8050 1200 8150 1200
+Wire Wire Line
+	8050 1300 8150 1300
+Wire Wire Line
+	8050 1400 8150 1400
+Wire Wire Line
+	8050 1500 8150 1500
+Text Label 8150 800  0    60   ~ 0
+OUT0
+Text Label 8150 900  0    60   ~ 0
+OUT1
+Text Label 8150 1000 0    60   ~ 0
+OUT2
+Text Label 8150 1100 0    60   ~ 0
+OUT3
+Text Label 8150 1200 0    60   ~ 0
+OUT4
+Text Label 8150 1300 0    60   ~ 0
+OUT5
+Text Label 8150 1400 0    60   ~ 0
+OUT6
+Text Label 8150 1500 0    60   ~ 0
+OUT7
+Wire Wire Line
+	7050 3300 6800 3300
+Wire Wire Line
+	7050 3400 6800 3400
+Wire Wire Line
+	7050 3500 6800 3500
+Wire Wire Line
+	7050 3600 6800 3600
+Text Label 6800 3500 0    60   ~ 0
+SO1
+Text Label 6800 3300 0    60   ~ 0
+CS
+Text Label 6800 3400 0    60   ~ 0
+SCK
+Text Label 6800 3600 0    60   ~ 0
+SO2
+$Comp
+L 0.1uF C5
+U 1 1 54BF6E3E
+P 6600 4000
+F 0 "C5" H 6600 4100 40  0000 L CNN
+F 1 "0.1uF" H 6606 3915 40  0000 L CNN
+F 2 "power_switch_controller_mega:SM1210" H 6638 3850 30  0001 C CNN
+F 3 "" H 6600 4000 60  0000 C CNN
+F 4 "digikey" H 6700 4200 60  0001 C CNN "Vendor"
+F 5 "478-3586-1-ND" H 6800 4300 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 6900 4400 60  0001 C CNN "Description"
+	1    6600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR11
+U 1 1 54BF6E44
+P 6600 2850
+F 0 "#PWR11" H 6600 2700 60  0001 C CNN
+F 1 "+5V" H 6600 2990 60  0000 C CNN
+F 2 "" H 6600 2850 60  0000 C CNN
+F 3 "" H 6600 2850 60  0000 C CNN
+	1    6600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR17
+U 1 1 54BF6E4F
+P 6600 4300
+F 0 "#PWR17" H 6600 4050 60  0001 C CNN
+F 1 "GND" H 6600 4150 60  0000 C CNN
+F 2 "" H 6600 4300 60  0000 C CNN
+F 3 "" H 6600 4300 60  0000 C CNN
+	1    6600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2900 8150 2900
+Wire Wire Line
+	8050 3000 8150 3000
+Wire Wire Line
+	8050 3100 8150 3100
+Wire Wire Line
+	8050 3200 8150 3200
+Wire Wire Line
+	8050 3300 8150 3300
+Wire Wire Line
+	8050 3400 8150 3400
+Wire Wire Line
+	8050 3500 8150 3500
+Wire Wire Line
+	8050 3600 8150 3600
+Text Label 8150 2900 0    60   ~ 0
+OUT8
+Text Label 8150 3000 0    60   ~ 0
+OUT9
+Text Label 8150 3100 0    60   ~ 0
+OUT10
+Text Label 8150 3200 0    60   ~ 0
+OUT11
+Text Label 8150 3300 0    60   ~ 0
+OUT12
+Text Label 8150 3400 0    60   ~ 0
+OUT13
+Text Label 8150 3500 0    60   ~ 0
+OUT14
+Text Label 8150 3600 0    60   ~ 0
+OUT15
+Wire Wire Line
+	4250 2700 4300 2700
+Wire Wire Line
+	4250 1950 4250 2700
+Wire Wire Line
+	4300 2000 4250 2000
+Connection ~ 4250 2000
+Wire Wire Line
+	4300 2100 4250 2100
+Connection ~ 4250 2100
+Wire Wire Line
+	4300 2200 4250 2200
+Connection ~ 4250 2200
+Wire Wire Line
+	4300 2300 4250 2300
+Connection ~ 4250 2300
+Wire Wire Line
+	4300 2400 4250 2400
+Connection ~ 4250 2400
+Wire Wire Line
+	4300 2500 4250 2500
+Connection ~ 4250 2500
+Wire Wire Line
+	4300 2600 4250 2600
+Connection ~ 4250 2600
+Wire Wire Line
+	4250 1700 4300 1700
+Wire Wire Line
+	4250 950  4250 1700
+Wire Wire Line
+	4300 1000 4250 1000
+Connection ~ 4250 1000
+Wire Wire Line
+	4300 1600 4250 1600
+Connection ~ 4250 1600
+Wire Wire Line
+	4300 1500 4250 1500
+Connection ~ 4250 1500
+Wire Wire Line
+	4300 1400 4250 1400
+Connection ~ 4250 1400
+Wire Wire Line
+	4300 1300 4250 1300
+Connection ~ 4250 1300
+Wire Wire Line
+	4300 1200 4250 1200
+Connection ~ 4250 1200
+Wire Wire Line
+	4300 1100 4250 1100
+Connection ~ 4250 1100
+$Comp
+L VAA #PWR4
+U 1 1 54BFF1C6
+P 5200 950
+F 0 "#PWR4" H 5200 800 60  0001 C CNN
+F 1 "VAA" H 5200 1100 60  0000 C CNN
+F 2 "" H 5200 950 60  0000 C CNN
+F 3 "" H 5200 950 60  0000 C CNN
+	1    5200 950 
+	1    0    0    -1  
+$EndComp
+Text Label 5800 1000 0    60   ~ 0
+OUT16
+Text Label 5800 1100 0    60   ~ 0
+OUT17
+Text Label 5800 1200 0    60   ~ 0
+OUT18
+Text Label 5800 1300 0    60   ~ 0
+OUT19
+Text Label 5800 1400 0    60   ~ 0
+OUT20
+Text Label 5800 1500 0    60   ~ 0
+OUT21
+Text Label 5800 1600 0    60   ~ 0
+OUT22
+Text Label 5800 1700 0    60   ~ 0
+OUT23
+Text Label 5800 2000 0    60   ~ 0
+OUT24
+Text Label 5800 2100 0    60   ~ 0
+OUT25
+Text Label 5800 2200 0    60   ~ 0
+OUT26
+Text Label 5800 2300 0    60   ~ 0
+OUT27
+Text Label 5800 2400 0    60   ~ 0
+OUT28
+Text Label 5800 2500 0    60   ~ 0
+OUT29
+Text Label 5800 2600 0    60   ~ 0
+OUT30
+Text Label 5800 2700 0    60   ~ 0
+OUT31
+Wire Wire Line
+	5800 1000 5750 1000
+Wire Wire Line
+	5800 1100 5750 1100
+Wire Wire Line
+	5800 1200 5750 1200
+Wire Wire Line
+	5800 1300 5750 1300
+Wire Wire Line
+	5800 1400 5750 1400
+Wire Wire Line
+	5800 1500 5750 1500
+Wire Wire Line
+	5800 1600 5750 1600
+Wire Wire Line
+	5800 1700 5750 1700
+$Comp
+L VAA #PWR8
+U 1 1 54BFF1E4
+P 5200 1950
+F 0 "#PWR8" H 5200 1800 60  0001 C CNN
+F 1 "VAA" H 5200 2100 60  0000 C CNN
+F 2 "" H 5200 1950 60  0000 C CNN
+F 3 "" H 5200 1950 60  0000 C CNN
+	1    5200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2000 5750 2000
+Wire Wire Line
+	5800 2100 5750 2100
+Wire Wire Line
+	5800 2200 5750 2200
+Wire Wire Line
+	5800 2300 5750 2300
+Wire Wire Line
+	5800 2400 5750 2400
+Wire Wire Line
+	5800 2500 5750 2500
+Wire Wire Line
+	5800 2600 5750 2600
+Wire Wire Line
+	5800 2700 5750 2700
+Wire Wire Line
+	5200 2700 5250 2700
+Wire Wire Line
+	5200 1950 5200 2700
+Wire Wire Line
+	5250 2000 5200 2000
+Connection ~ 5200 2000
+Wire Wire Line
+	5250 2100 5200 2100
+Connection ~ 5200 2100
+Wire Wire Line
+	5250 2200 5200 2200
+Connection ~ 5200 2200
+Wire Wire Line
+	5250 2300 5200 2300
+Connection ~ 5200 2300
+Wire Wire Line
+	5250 2400 5200 2400
+Connection ~ 5200 2400
+Wire Wire Line
+	5250 2500 5200 2500
+Connection ~ 5200 2500
+Wire Wire Line
+	5250 2600 5200 2600
+Connection ~ 5200 2600
+Wire Wire Line
+	5200 1700 5250 1700
+Wire Wire Line
+	5200 950  5200 1700
+Wire Wire Line
+	5250 1000 5200 1000
+Connection ~ 5200 1000
+Wire Wire Line
+	5250 1600 5200 1600
+Connection ~ 5200 1600
+Wire Wire Line
+	5250 1500 5200 1500
+Connection ~ 5200 1500
+Wire Wire Line
+	5250 1400 5200 1400
+Connection ~ 5200 1400
+Wire Wire Line
+	5250 1300 5200 1300
+Connection ~ 5200 1300
+Wire Wire Line
+	5250 1200 5200 1200
+Connection ~ 5200 1200
+Wire Wire Line
+	5250 1100 5200 1100
+Connection ~ 5200 1100
+Wire Wire Line
+	3550 2300 3750 2300
+NoConn ~ 3550 1500
+NoConn ~ 3550 5050
+Wire Wire Line
+	3550 2600 3750 2600
+Wire Wire Line
+	3550 2500 3750 2500
+Text Label 3750 2600 0    60   ~ 0
+RX0
+Text Label 3750 2500 0    60   ~ 0
+TX0
+Wire Wire Line
+	3550 2900 3750 2900
+Text Label 3750 2900 0    60   ~ 0
+RX3
+Wire Wire Line
+	3550 3000 3750 3000
+Wire Wire Line
+	3550 3100 3750 3100
+Wire Wire Line
+	3550 3200 3750 3200
+Wire Wire Line
+	3550 3300 3750 3300
+Text Label 3750 3000 0    60   ~ 0
+TX2
+Text Label 3750 3100 0    60   ~ 0
+RX2
+Text Label 3750 3200 0    60   ~ 0
+TX1
+Text Label 3750 3300 0    60   ~ 0
+RX1
+Wire Wire Line
+	1350 4950 1000 4950
+NoConn ~ 1350 4650
+Wire Wire Line
+	1350 4750 1000 4750
+NoConn ~ 1350 2100
+NoConn ~ 3550 2400
+$Comp
+L HEADER_01X03_SMD_RA P2
+U 1 1 56CE8FE8
+P 650 6600
+F 0 "P2" H 650 6400 50  0000 C CNN
+F 1 "HEADER_01X03_SMD_RA" V 750 6600 50  0000 C CNN
+F 2 "power_switch_controller_mega:Header_3_Pin_SMD_RA" H 550 6700 60  0001 C CNN
+F 3 "" H 650 6800 60  0000 C CNN
+F 4 "digikey" H 750 6900 60  0001 C CNN "Vendor"
+F 5 "A100890CT-ND" H 850 7000 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 3POS R/A SMD GOLD" H 950 7100 60  0001 C CNN "Description"
+	1    650  6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	850  6500 900  6500
+Wire Wire Line
+	850  6600 900  6600
+Wire Wire Line
+	850  6700 900  6700
+Text Label 900  6500 0    60   ~ 0
+TX0
+Text Label 900  6600 0    60   ~ 0
+GND
+Text Label 900  6700 0    60   ~ 0
+RX0
+$Comp
+L HEADER_01X03_SMD_RA P3
+U 1 1 56CEA77A
+P 1225 6575
+F 0 "P3" H 1225 6375 50  0000 C CNN
+F 1 "HEADER_01X03_SMD_RA" V 1325 6575 50  0000 C CNN
+F 2 "power_switch_controller_mega:Header_3_Pin_SMD_RA" H 1125 6675 60  0001 C CNN
+F 3 "" H 1225 6775 60  0000 C CNN
+F 4 "digikey" H 1325 6875 60  0001 C CNN "Vendor"
+F 5 "A100890CT-ND" H 1425 6975 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 3POS R/A SMD GOLD" H 1525 7075 60  0001 C CNN "Description"
+	1    1225 6575
+	-1   0    0    1   
+$EndComp
+$Comp
+L HEADER_01X03_SMD_RA P4
+U 1 1 56CEA9F2
+P 1800 6575
+F 0 "P4" H 1800 6375 50  0000 C CNN
+F 1 "HEADER_01X03_SMD_RA" V 1900 6575 50  0000 C CNN
+F 2 "power_switch_controller_mega:Header_3_Pin_SMD_RA" H 1700 6675 60  0001 C CNN
+F 3 "" H 1800 6775 60  0000 C CNN
+F 4 "digikey" H 1900 6875 60  0001 C CNN "Vendor"
+F 5 "A100890CT-ND" H 2000 6975 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 3POS R/A SMD GOLD" H 2100 7075 60  0001 C CNN "Description"
+	1    1800 6575
+	-1   0    0    1   
+$EndComp
+$Comp
+L HEADER_01X03_SMD_RA P5
+U 1 1 56CEAAE8
+P 2375 6550
+F 0 "P5" H 2375 6350 50  0000 C CNN
+F 1 "HEADER_01X03_SMD_RA" V 2475 6550 50  0000 C CNN
+F 2 "power_switch_controller_mega:Header_3_Pin_SMD_RA" H 2275 6650 60  0001 C CNN
+F 3 "" H 2375 6750 60  0000 C CNN
+F 4 "digikey" H 2475 6850 60  0001 C CNN "Vendor"
+F 5 "A100890CT-ND" H 2575 6950 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 3POS R/A SMD GOLD" H 2675 7050 60  0001 C CNN "Description"
+	1    2375 6550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1425 6475 1475 6475
+Wire Wire Line
+	1425 6575 1475 6575
+Wire Wire Line
+	1425 6675 1475 6675
+Wire Wire Line
+	2000 6675 2050 6675
+Wire Wire Line
+	2000 6575 2050 6575
+Wire Wire Line
+	2000 6475 2050 6475
+Wire Wire Line
+	2575 6450 2625 6450
+Wire Wire Line
+	2575 6550 2625 6550
+Wire Wire Line
+	2575 6650 2625 6650
+Text Label 1475 6475 0    60   ~ 0
+TX1
+Text Label 1475 6575 0    60   ~ 0
+GND
+Text Label 1475 6675 0    60   ~ 0
+RX1
+Text Label 2050 6475 0    60   ~ 0
+TX2
+Text Label 2050 6575 0    60   ~ 0
+GND
+Text Label 2050 6675 0    60   ~ 0
+RX2
+Text Label 2625 6450 0    60   ~ 0
+TX3
+Text Label 2625 6550 0    60   ~ 0
+GND
+Text Label 2625 6650 0    60   ~ 0
+RX3
+$Comp
+L HEADER_01X02_SMD_RA P6
+U 1 1 56CF00ED
+P 2950 6550
+F 0 "P6" H 2950 6400 50  0000 C CNN
+F 1 "HEADER_01X02_SMD_RA" V 3050 6550 50  0000 C CNN
+F 2 "power_switch_controller_mega:Header_2_Pin_SMD_RA" H 2850 6600 50  0001 C CNN
+F 3 "" H 2950 6700 50  0000 C CNN
+F 4 "digikey" H 3050 6800 60  0001 C CNN "Vendor"
+F 5 "A100903CT-ND" H 3150 6900 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADER 2POS R/A SMD GOLD" H 3250 7000 60  0001 C CNN "Description"
+	1    2950 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR23
+U 1 1 56CF0FA4
+P 3200 6650
+F 0 "#PWR23" H 3200 6650 30  0001 C CNN
+F 1 "GND" H 3200 6580 30  0001 C CNN
+F 2 "" H 3200 6650 60  0000 C CNN
+F 3 "" H 3200 6650 60  0000 C CNN
+	1    3200 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6600 3200 6600
+Wire Wire Line
+	3200 6600 3200 6650
+$Comp
+L VAA #PWR25
+U 1 1 56CF9310
+P 1575 7225
+F 0 "#PWR25" H 1575 7285 30  0001 C CNN
+F 1 "VAA" H 1575 7335 30  0000 C CNN
+F 2 "" H 1575 7225 60  0000 C CNN
+F 3 "" H 1575 7225 60  0000 C CNN
+	1    1575 7225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 7775 1575 7875
+Text Label 1575 7875 0    60   ~ 0
+LED_PWR
+NoConn ~ 3550 3400
+NoConn ~ 3550 3500
+Wire Wire Line
+	1575 7225 1575 7275
+$Comp
+L SPST_SLIDE_AS SW1
+U 1 1 56CFEB9B
+P 1575 7525
+F 0 "SW1" H 1500 7450 40  0000 L CNN
+F 1 "SPST_SLIDE_AS" H 1350 7625 40  0000 L CNN
+F 2 "power_switch_controller_mega:SPST_SLIDE_AS" H 1475 7325 60  0001 C CNN
+F 3 "" H 1575 7475 60  0000 C CNN
+F 4 "digikey" H 1675 7725 60  0001 C CNN "Vendor"
+F 5 "360-2610-ND" H 1775 7825 60  0001 C CNN "PartNumber"
+F 6 "SWITCH SLIDE SPST 0.4VA 28V" H 1875 7925 60  0001 C CNN "Description"
+	1    1575 7525
+	0    1    1    0   
+$EndComp
+$Comp
+L 10uF C1
+U 1 1 56D083E8
+P 2850 7500
+F 0 "C1" H 2850 7600 40  0000 L CNN
+F 1 "10uF" H 2856 7415 40  0000 L CNN
+F 2 "power_switch_controller_mega:SM1210" H 2888 7350 30  0001 C CNN
+F 3 "" H 2850 7500 60  0000 C CNN
+F 4 "digikey" H 2950 7700 60  0001 C CNN "Vendor"
+F 5 "445-4536-1-ND" H 3050 7800 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 10UF 50V 10% X7S 1210" H 3150 7900 60  0001 C CNN "Description"
+	1    2850 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VAA #PWR21
+U 1 1 56D7916A
+P 3400 6550
+F 0 "#PWR21" H 3400 6400 60  0001 C CNN
+F 1 "VAA" H 3400 6700 60  0000 C CNN
+F 2 "" H 3400 6550 60  0000 C CNN
+F 3 "" H 3400 6550 60  0000 C CNN
+	1    3400 6550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 5350
+NoConn ~ 1350 5600
+$Comp
+L TLE7230R U1
+U 1 1 56D86640
+P 7550 1150
+F 0 "U1" H 7900 1650 60  0000 C CNN
+F 1 "TLE7230R" H 7550 1650 60  0000 C CNN
+F 2 "power_switch_controller_mega:PG-DSO-36" H 7850 1550 60  0001 C CNN
+F 3 "" H 7950 1650 60  0000 C CNN
+F 4 "digikey" H 8050 1750 60  0001 C CNN "Vendor"
+F 5 "TLE7230RCT-ND" H 8150 1850 60  0001 C CNN "PartNumber"
+F 6 "IC SW SMART OCTAL LOWSIDE PDSO36" H 8250 1950 60  0001 C CNN "Description"
+	1    7550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLE7230R U2
+U 1 1 56D86715
+P 7550 3250
+F 0 "U2" H 7900 3750 60  0000 C CNN
+F 1 "TLE7230R" H 7550 3750 60  0000 C CNN
+F 2 "power_switch_controller_mega:PG-DSO-36" H 7850 3650 60  0001 C CNN
+F 3 "" H 7950 3750 60  0000 C CNN
+F 4 "digikey" H 8050 3850 60  0001 C CNN "Vendor"
+F 5 "TLE7230RCT-ND" H 8150 3950 60  0001 C CNN "PartNumber"
+F 6 "IC SW SMART OCTAL LOWSIDE PDSO36" H 8250 4050 60  0001 C CNN "Description"
+	1    7550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLE7230R U3
+U 1 1 56D867C2
+P 9550 1150
+F 0 "U3" H 9900 1650 60  0000 C CNN
+F 1 "TLE7230R" H 9550 1650 60  0000 C CNN
+F 2 "power_switch_controller_mega:PG-DSO-36" H 9850 1550 60  0001 C CNN
+F 3 "" H 9950 1650 60  0000 C CNN
+F 4 "digikey" H 10050 1750 60  0001 C CNN "Vendor"
+F 5 "TLE7230RCT-ND" H 10150 1850 60  0001 C CNN "PartNumber"
+F 6 "IC SW SMART OCTAL LOWSIDE PDSO36" H 10250 1950 60  0001 C CNN "Description"
+	1    9550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLE7230R U4
+U 1 1 56D86879
+P 9550 3250
+F 0 "U4" H 9900 3750 60  0000 C CNN
+F 1 "TLE7230R" H 9550 3750 60  0000 C CNN
+F 2 "power_switch_controller_mega:PG-DSO-36" H 9850 3650 60  0001 C CNN
+F 3 "" H 9950 3750 60  0000 C CNN
+F 4 "digikey" H 10050 3850 60  0001 C CNN "Vendor"
+F 5 "TLE7230RCT-ND" H 10150 3950 60  0001 C CNN "PartNumber"
+F 6 "IC SW SMART OCTAL LOWSIDE PDSO36" H 10250 4050 60  0001 C CNN "Description"
+	1    9550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2150 7700 2100
+Wire Wire Line
+	6600 2150 7700 2150
+Wire Wire Line
+	7400 2100 7400 2150
+Wire Wire Line
+	7500 2100 7500 2150
+Connection ~ 7500 2150
+Wire Wire Line
+	7600 2100 7600 2150
+Connection ~ 7600 2150
+Wire Wire Line
+	9700 2150 9700 2100
+Wire Wire Line
+	8600 2150 9700 2150
+Wire Wire Line
+	9600 2100 9600 2150
+Connection ~ 9600 2150
+Wire Wire Line
+	9500 2100 9500 2150
+Connection ~ 9500 2150
+Wire Wire Line
+	9400 2100 9400 2150
+Wire Wire Line
+	7700 4250 7700 4200
+Wire Wire Line
+	6600 4250 7700 4250
+Wire Wire Line
+	7600 4200 7600 4250
+Connection ~ 7600 4250
+Wire Wire Line
+	7500 4200 7500 4250
+Connection ~ 7500 4250
+Wire Wire Line
+	7400 4200 7400 4250
+Wire Wire Line
+	9700 4250 9700 4200
+Wire Wire Line
+	8600 4250 9700 4250
+Wire Wire Line
+	9600 4200 9600 4250
+Connection ~ 9600 4250
+Wire Wire Line
+	9500 4200 9500 4250
+Connection ~ 9500 4250
+Wire Wire Line
+	9400 4200 9400 4250
+Wire Wire Line
+	7050 1000 6800 1000
+Wire Wire Line
+	9050 1000 8800 1000
+Wire Wire Line
+	9050 3100 8800 3100
+Wire Wire Line
+	7050 3100 6800 3100
+NoConn ~ 7050 1100
+NoConn ~ 9050 1100
+NoConn ~ 9050 3200
+NoConn ~ 7050 3200
+NoConn ~ 1350 5250
+Wire Wire Line
+	6600 1600 7050 1600
+Wire Wire Line
+	7000 1600 7000 1800
+Wire Wire Line
+	7050 1700 7000 1700
+Connection ~ 7000 1700
+Wire Wire Line
+	7000 1800 7050 1800
+Wire Wire Line
+	8600 1600 9050 1600
+Wire Wire Line
+	9000 1600 9000 1800
+Wire Wire Line
+	9050 1700 9000 1700
+Connection ~ 9000 1700
+Wire Wire Line
+	9000 1800 9050 1800
+Wire Wire Line
+	8600 3700 9050 3700
+Wire Wire Line
+	9000 3700 9000 3900
+Wire Wire Line
+	9050 3800 9000 3800
+Connection ~ 9000 3800
+Wire Wire Line
+	9000 3900 9050 3900
+NoConn ~ 8050 1700
+NoConn ~ 10050 1700
+NoConn ~ 10050 3800
+NoConn ~ 8050 3800
+NoConn ~ 1350 1400
+Wire Wire Line
+	1350 5150 1000 5150
+Text Label 1000 5150 0    60   ~ 0
+RESET
+Text Label 6800 1000 0    60   ~ 0
+RESET
+Text Label 8800 1000 0    60   ~ 0
+RESET
+Text Label 6800 3100 0    60   ~ 0
+RESET
+Text Label 8800 3100 0    60   ~ 0
+RESET
+$Comp
+L HEADER_02X08_SMD P8
+U 1 1 56D96A90
+P 4550 1350
+F 0 "P8" H 4550 1800 50  0000 C CNN
+F 1 "HEADER_02X08_SMD" V 4550 1350 50  0000 C CNN
+F 2 "power_switch_controller_mega:HEADER_02x08_SMD" H 4550 150 60  0001 C CNN
+F 3 "" H 4550 150 60  0000 C CNN
+F 4 "digikey" H 4650 1900 60  0001 C CNN "Vendor"
+F 5 "S9187-ND" H 4750 2000 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADR 2.54MM 16POS GOLD SMD" H 4850 2100 60  0001 C CNN "Description"
+	1    4550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_02X08_SMD P9
+U 1 1 56D96E95
+P 4550 2350
+F 0 "P9" H 4550 2800 50  0000 C CNN
+F 1 "HEADER_02X08_SMD" V 4550 2350 50  0000 C CNN
+F 2 "power_switch_controller_mega:HEADER_02x08_SMD" H 4550 1150 60  0001 C CNN
+F 3 "" H 4550 1150 60  0000 C CNN
+F 4 "digikey" H 4650 2900 60  0001 C CNN "Vendor"
+F 5 "S9187-ND" H 4750 3000 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADR 2.54MM 16POS GOLD SMD" H 4850 3100 60  0001 C CNN "Description"
+	1    4550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_02X08_SMD P10
+U 1 1 56D970C5
+P 5500 1350
+F 0 "P10" H 5500 1800 50  0000 C CNN
+F 1 "HEADER_02X08_SMD" V 5500 1350 50  0000 C CNN
+F 2 "power_switch_controller_mega:HEADER_02x08_SMD" H 5500 150 60  0001 C CNN
+F 3 "" H 5500 150 60  0000 C CNN
+F 4 "digikey" H 5600 1900 60  0001 C CNN "Vendor"
+F 5 "S9187-ND" H 5700 2000 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADR 2.54MM 16POS GOLD SMD" H 5800 2100 60  0001 C CNN "Description"
+	1    5500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_02X08_SMD P11
+U 1 1 56D971A8
+P 5500 2350
+F 0 "P11" H 5500 2800 50  0000 C CNN
+F 1 "HEADER_02X08_SMD" V 5500 2350 50  0000 C CNN
+F 2 "power_switch_controller_mega:HEADER_02x08_SMD" H 5500 1150 60  0001 C CNN
+F 3 "" H 5500 1150 60  0000 C CNN
+F 4 "digikey" H 5600 2900 60  0001 C CNN "Vendor"
+F 5 "S9187-ND" H 5700 3000 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADR 2.54MM 16POS GOLD SMD" H 5800 3100 60  0001 C CNN "Description"
+	1    5500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONV_DC_DC_9V_1A REG1
+U 1 1 5769749F
+P 3750 7250
+F 0 "REG1" H 3750 7497 60  0000 C CNN
+F 1 "CONV_DC_DC_9V_1A" H 3750 7391 60  0000 C CNN
+F 2 "power_switch_controller_mega:DC_DC_CONV_R78C" H 3850 6850 60  0001 C CNN
+F 3 "" H 3750 7250 60  0000 C CNN
+F 4 "digikey" H 3750 7050 60  0001 C CNN "Vendor"
+F 5 "945-1396-5-ND" H 3750 7150 60  0001 C CNN "PartNumber"
+F 6 "CONV DC/DC 1A 9V OUT SIP VERT" H 4250 7250 60  0001 C CNN "Description"
+	1    3750 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 7250 4350 7250
+Wire Wire Line
+	4350 7250 4350 7300
+Wire Wire Line
+	2850 7300 2850 7250
+Wire Wire Line
+	2850 7250 3350 7250
+Wire Wire Line
+	3150 7100 3150 7300
+Connection ~ 3150 7250
+Wire Wire Line
+	2850 7700 2850 7750
+Wire Wire Line
+	2850 7750 4350 7750
+Wire Wire Line
+	4350 7750 4350 7700
+Wire Wire Line
+	3750 7600 3750 7850
+Connection ~ 3750 7750
+Wire Wire Line
+	3150 7700 3150 7750
+Connection ~ 3150 7750
+$Comp
+L diode_schottky_45V_10A D1
+U 1 1 5769A69B
+P 3550 6600
+F 0 "D1" H 3550 6487 50  0000 C CNN
+F 1 "diode_schottky_45V_10A" H 3270 6520 50  0001 L CNN
+F 2 "power_switch_controller_mega:CFP15" H 3400 6580 60  0001 C CNN
+F 3 "" H 3500 6680 60  0001 C CNN
+F 4 "digikey" H 3600 6780 60  0001 C CNN "Vendor"
+F 5 "568-11697-1-ND" H 3700 6880 60  0001 C CNN "PartNumber"
+F 6 "DIODE SCHOTTKY 45V 10A CFP15" H 3800 6980 60  0001 C CNN "Description"
+	1    3550 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR22
+U 1 1 5769D77D
+P 3700 6550
+F 0 "#PWR22" H 3700 6400 50  0001 C CNN
+F 1 "VCC" H 3700 6700 50  0000 C CNN
+F 2 "" H 3700 6550 50  0000 C CNN
+F 3 "" H 3700 6550 50  0000 C CNN
+	1    3700 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6550 3400 6600
+Wire Wire Line
+	3400 6600 3450 6600
+Wire Wire Line
+	3700 6550 3700 6600
+Wire Wire Line
+	3650 6600 3850 6600
+$Comp
+L VCC #PWR20
+U 1 1 5769DD26
+P 3200 6450
+F 0 "#PWR20" H 3200 6300 50  0001 C CNN
+F 1 "VCC" H 3200 6600 50  0000 C CNN
+F 2 "" H 3200 6450 50  0000 C CNN
+F 3 "" H 3200 6450 50  0000 C CNN
+	1    3200 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6500 3200 6500
+Wire Wire Line
+	3200 6500 3200 6450
+Wire Wire Line
+	6600 4200 6600 4300
+Connection ~ 7400 4250
+Wire Wire Line
+	6600 2850 6600 3800
+Wire Wire Line
+	6600 2900 7050 2900
+Connection ~ 6600 2900
+Wire Wire Line
+	6600 3700 7050 3700
+Connection ~ 6600 3700
+Wire Wire Line
+	7000 3900 7050 3900
+Wire Wire Line
+	7000 3700 7000 3900
+Connection ~ 7000 3700
+Wire Wire Line
+	7050 3800 7000 3800
+Connection ~ 7000 3800
+Wire Wire Line
+	7050 4000 6800 4000
+Text Label 6800 4000 0    60   ~ 0
+PWM1
+Connection ~ 6600 4250
+Wire Wire Line
+	1350 5050 1000 5050
+Text Label 1000 5050 0    60   ~ 0
+ENABLE
+Wire Wire Line
+	9050 4000 8800 4000
+Text Label 8800 4000 0    60   ~ 0
+PWM3
+Wire Wire Line
+	7050 3000 7000 3000
+Wire Wire Line
+	7000 3000 7000 2900
+Connection ~ 7000 2900
+Wire Wire Line
+	8600 4200 8600 4300
+Connection ~ 8600 4250
+Connection ~ 9400 4250
+Wire Wire Line
+	8600 2850 8600 3800
+Wire Wire Line
+	8600 2900 9050 2900
+Connection ~ 8600 2900
+Wire Wire Line
+	9050 3000 9000 3000
+Wire Wire Line
+	9000 3000 9000 2900
+Connection ~ 9000 2900
+Connection ~ 8600 3700
+Connection ~ 9000 3700
+Wire Wire Line
+	6600 750  6600 1700
+Wire Wire Line
+	8600 750  8600 1700
+Wire Wire Line
+	6600 2100 6600 2200
+Wire Wire Line
+	8600 2100 8600 2200
+Connection ~ 6600 2150
+Connection ~ 7400 2150
+Connection ~ 6600 1600
+Connection ~ 7000 1600
+Connection ~ 8600 1600
+Connection ~ 9000 1600
+Connection ~ 8600 2150
+Connection ~ 9400 2150
+Wire Wire Line
+	7050 1900 6800 1900
+Wire Wire Line
+	9050 1900 8800 1900
+Text Label 6800 1900 0    60   ~ 0
+PWM0
+Text Label 8800 1900 0    60   ~ 0
+PWM2
+Wire Wire Line
+	6600 800  7050 800 
+Connection ~ 6600 800 
+Wire Wire Line
+	8600 800  9050 800 
+Connection ~ 8600 800 
+Wire Wire Line
+	7050 900  7000 900 
+Wire Wire Line
+	7000 900  7000 800 
+Connection ~ 7000 800 
+Wire Wire Line
+	9050 900  9000 900 
+Wire Wire Line
+	9000 900  9000 800 
+Connection ~ 9000 800 
+$Comp
+L PWR_FLAG #FLG3
+U 1 1 576A6886
+P 3850 6500
+F 0 "#FLG3" H 3850 6595 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 6724 50  0000 C CNN
+F 2 "" H 3850 6500 50  0000 C CNN
+F 3 "" H 3850 6500 50  0000 C CNN
+	1    3850 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 6600 3850 6500
+Connection ~ 3700 6600
+Text Label 4350 7250 0    60   ~ 0
+V_IN
+$Comp
+L ARDUINO_MEGA ARDUINO1
+U 1 1 576C0AF4
+P 2500 3350
+F 0 "ARDUINO1" H 2450 6187 60  0000 C CNN
+F 1 "ARDUINO_MEGA" H 2450 6081 60  0000 C CNN
+F 2 "power_switch_controller_mega:ARDUINO_MEGA_SHIELD" H 2450 6000 60  0001 C CNN
+F 3 "" H 2550 6100 60  0000 C CNN
+F 4 "digikey" H 2650 6200 60  0001 C CNN "Vendor"
+F 5 "1659-1001-ND" H 2750 6300 60  0001 C CNN "PartNumber"
+F 6 "ARDUINO MEGA 2560" H 2850 6400 60  0001 C CNN "Description"
+	1    2500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCA9685 U5
+U 1 1 57867E88
+P 5400 3800
+F 0 "U5" H 5750 4650 60  0000 C CNN
+F 1 "PCA9685" H 5400 4650 60  0000 C CNN
+F 2 "power_switch_controller_mega:TSSOP28" H 5300 4650 60  0001 C CNN
+F 3 "" H 5400 3800 60  0001 C CNN
+F 4 "digikey" H 5500 4850 60  0001 C CNN "Vendor"
+F 5 "568-5931-1-ND" H 5600 4950 60  0001 C CNN "PartNumber"
+F 6 "LED Driver IC 16 Output Linear PWM Dimming 25mA 28-TSSOP" H 5700 5050 60  0001 C CNN "Description"
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6000 3450
+NoConn ~ 6000 3550
+NoConn ~ 6000 3650
+NoConn ~ 6000 3750
+NoConn ~ 6000 3850
+NoConn ~ 6000 3950
+NoConn ~ 6000 4050
+NoConn ~ 6000 4150
+NoConn ~ 6000 4250
+NoConn ~ 6000 4350
+NoConn ~ 6000 4450
+NoConn ~ 6000 4550
+Wire Wire Line
+	6000 3050 6100 3050
+Wire Wire Line
+	6000 3150 6100 3150
+Wire Wire Line
+	6000 3250 6100 3250
+Wire Wire Line
+	6000 3350 6100 3350
+Text Label 6100 3050 0    60   ~ 0
+PWM0
+Text Label 6100 3150 0    60   ~ 0
+PWM1
+Text Label 6100 3250 0    60   ~ 0
+PWM2
+Text Label 6100 3350 0    60   ~ 0
+PWM3
+Wire Wire Line
+	4800 3250 4450 3250
+Wire Wire Line
+	4800 3350 4450 3350
+Wire Wire Line
+	4800 3550 4450 3550
+Text Label 4450 3550 0    60   ~ 0
+ENABLE
+Wire Wire Line
+	3550 800  3750 800 
+Wire Wire Line
+	3550 900  3750 900 
+Text Label 3750 800  0    60   ~ 0
+SCL
+Text Label 3750 900  0    60   ~ 0
+SDA
+Text Label 4450 3250 0    60   ~ 0
+SDA
+Text Label 4450 3350 0    60   ~ 0
+SCL
+$Comp
+L GND #PWR19
+U 1 1 5786AE7F
+P 4700 4650
+F 0 "#PWR19" H 4700 4400 60  0001 C CNN
+F 1 "GND" H 4700 4500 60  0000 C CNN
+F 2 "" H 4700 4650 60  0000 C CNN
+F 3 "" H 4700 4650 60  0000 C CNN
+	1    4700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3650 4700 3650
+Wire Wire Line
+	4700 3650 4700 4650
+Wire Wire Line
+	4800 4550 4700 4550
+Connection ~ 4700 4550
+Wire Wire Line
+	4800 4350 4700 4350
+Connection ~ 4700 4350
+Wire Wire Line
+	4800 4250 4700 4250
+Connection ~ 4700 4250
+Wire Wire Line
+	4800 4150 4700 4150
+Connection ~ 4700 4150
+Wire Wire Line
+	4800 4050 4700 4050
+Connection ~ 4700 4050
+Wire Wire Line
+	4800 3950 4700 3950
+Connection ~ 4700 3950
+Wire Wire Line
+	4800 3850 4700 3850
+Connection ~ 4700 3850
+$Comp
+L +5V #PWR13
+U 1 1 5786C552
+P 4700 3000
+F 0 "#PWR13" H 4700 2850 60  0001 C CNN
+F 1 "+5V" H 4700 3140 60  0000 C CNN
+F 2 "" H 4700 3000 60  0000 C CNN
+F 3 "" H 4700 3000 60  0000 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3000 4700 3050
+Wire Wire Line
+	4700 3050 4800 3050
+$Comp
+L 10.0k R1
+U 1 1 5786CF1A
+P 3900 4400
+F 0 "R1" V 3800 4400 40  0000 C CNN
+F 1 "10.0k" V 3900 4400 40  0000 C CNN
+F 2 "power_switch_controller_mega:SM1210" V 3830 4400 30  0001 C CNN
+F 3 "" H 3900 4400 30  0000 C CNN
+F 4 "digikey" V 4080 4500 60  0001 C CNN "Vendor"
+F 5 "P10.0KAACT-ND" V 4180 4600 60  0001 C CNN "PartNumber"
+F 6 "RES SMD 10.0K OHM 1% 1/2W 1210" V 4280 4700 60  0001 C CNN "Description"
+	1    3900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10.0k R2
+U 1 1 5786DA4F
+P 4100 4400
+F 0 "R2" V 4000 4400 40  0000 C CNN
+F 1 "10.0k" V 4100 4400 40  0000 C CNN
+F 2 "power_switch_controller_mega:SM1210" V 4030 4400 30  0001 C CNN
+F 3 "" H 4100 4400 30  0000 C CNN
+F 4 "digikey" V 4280 4500 60  0001 C CNN "Vendor"
+F 5 "P10.0KAACT-ND" V 4380 4600 60  0001 C CNN "PartNumber"
+F 6 "RES SMD 10.0K OHM 1% 1/2W 1210" V 4480 4700 60  0001 C CNN "Description"
+	1    4100 4400
+	1    0    0    -1  
+$EndComp
+Text Label 4200 4850 0    60   ~ 0
+SDA
+Text Label 4200 4750 0    60   ~ 0
+SCL
+Wire Wire Line
+	4100 4650 4100 4750
+Wire Wire Line
+	4100 4750 4200 4750
+Wire Wire Line
+	3900 4650 3900 4850
+Wire Wire Line
+	3900 4850 4200 4850
+$Comp
+L +5V #PWR16
+U 1 1 5786F909
+P 4000 4050
+F 0 "#PWR16" H 4000 3900 60  0001 C CNN
+F 1 "+5V" H 4000 4190 60  0000 C CNN
+F 2 "" H 4000 4050 60  0000 C CNN
+F 3 "" H 4000 4050 60  0000 C CNN
+	1    4000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4150 3900 4100
+Wire Wire Line
+	3900 4100 4100 4100
+Wire Wire Line
+	4100 4100 4100 4150
+Wire Wire Line
+	4000 4050 4000 4100
+Connection ~ 4000 4100
+$Comp
+L 0.1uF C8
+U 1 1 57870808
+P 4450 4200
+F 0 "C8" H 4450 4300 40  0000 L CNN
+F 1 "0.1uF" H 4456 4115 40  0000 L CNN
+F 2 "power_switch_controller_mega:SM1210" H 4488 4050 30  0001 C CNN
+F 3 "" H 4450 4200 60  0000 C CNN
+F 4 "digikey" H 4550 4400 60  0001 C CNN "Vendor"
+F 5 "478-3586-1-ND" H 4650 4500 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 4750 4600 60  0001 C CNN "Description"
+	1    4450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR15
+U 1 1 57870DD5
+P 4450 3950
+F 0 "#PWR15" H 4450 3800 60  0001 C CNN
+F 1 "+5V" H 4450 4090 60  0000 C CNN
+F 2 "" H 4450 3950 60  0000 C CNN
+F 3 "" H 4450 3950 60  0000 C CNN
+	1    4450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3950 4450 4000
+Wire Wire Line
+	4450 4400 4450 4450
+Wire Wire Line
+	4450 4450 4700 4450
+Connection ~ 4700 4450
+$EndSCHEMATC

@@ -1,0 +1,297 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BenchBudEE
+LIBS:arduino_shieldsNCL
+LIBS:BenchBudEE-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date "7 feb 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 8350 2000 2    60   Output ~ 0
+FAN_OUT+
+Text HLabel 8350 2250 2    60   Output ~ 0
+FAN_OUT-
+Text HLabel 8450 5200 2    60   Input ~ 0
+TACH_IN
+Text HLabel 1250 4650 0    60   Output ~ 0
+TACH_MEAS
+Text HLabel 1300 3700 0    60   Input ~ 0
+FAN_PWM
+$Comp
+L LM193 U?
+U 1 1 52F14C74
+P 4700 2700
+F 0 "U?" H 4850 2850 60  0000 C CNN
+F 1 "LM193" H 4900 2500 60  0000 C CNN
+F 2 "" H 4700 2700 60  0000 C CNN
+F 3 "" H 4700 2700 60  0000 C CNN
+	1    4700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 52F14CD9
+P 5950 2700
+F 0 "Q?" H 5960 2870 60  0000 R CNN
+F 1 "MOSFET_N" H 5960 2550 60  0000 R CNN
+F 2 "~" H 5950 2700 60  0000 C CNN
+F 3 "~" H 5950 2700 60  0000 C CNN
+	1    5950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2700 5750 2700
+$Comp
+L R R?
+U 1 1 52F14DA9
+P 6050 4250
+F 0 "R?" V 6130 4250 40  0000 C CNN
+F 1 "R" V 6057 4251 40  0000 C CNN
+F 2 "~" V 5980 4250 30  0000 C CNN
+F 3 "~" H 6050 4250 30  0000 C CNN
+	1    6050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 52F14DE1
+P 6050 4800
+F 0 "#PWR?" H 6050 4800 40  0001 C CNN
+F 1 "GNDA" H 6050 4730 40  0000 C CNN
+F 2 "" H 6050 4800 60  0000 C CNN
+F 3 "" H 6050 4800 60  0000 C CNN
+	1    6050 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4800 6050 4500
+Wire Wire Line
+	4200 3800 4200 2800
+$Comp
+L +12V #PWR?
+U 1 1 52F14E59
+P 4600 2150
+F 0 "#PWR?" H 4600 2100 20  0001 C CNN
+F 1 "+12V" H 4600 2250 30  0000 C CNN
+F 2 "" H 4600 2150 60  0000 C CNN
+F 3 "" H 4600 2150 60  0000 C CNN
+	1    4600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2150 4600 2300
+$Comp
+L -12V #PWR?
+U 1 1 52F14EBF
+P 4600 3350
+F 0 "#PWR?" H 4600 3480 20  0001 C CNN
+F 1 "-12V" H 4600 3450 30  0000 C CNN
+F 2 "" H 4600 3350 60  0000 C CNN
+F 3 "" H 4600 3350 60  0000 C CNN
+	1    4600 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3100 4600 3350
+Wire Wire Line
+	3400 2600 4200 2600
+Wire Wire Line
+	2100 5200 2100 4650
+Wire Wire Line
+	2100 4650 1250 4650
+Text HLabel 1300 3900 0    60   Output ~ 0
+CURR_MEAS
+Wire Wire Line
+	6050 3900 1300 3900
+Connection ~ 6050 3900
+$Comp
+L R R?
+U 1 1 52F15F30
+P 3150 2600
+F 0 "R?" V 3230 2600 40  0000 C CNN
+F 1 "R" V 3157 2601 40  0000 C CNN
+F 2 "~" V 3080 2600 30  0000 C CNN
+F 3 "~" H 3150 2600 30  0000 C CNN
+	1    3150 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 2600 2900 2600
+Text HLabel 1100 2550 0    60   Input ~ 0
+MOSI
+Text HLabel 1100 2900 0    60   Output ~ 0
+MISO
+Text HLabel 1100 2650 0    60   Input ~ 0
+CLK
+Text HLabel 1100 2750 0    60   Input ~ 0
+CS_N
+Wire Wire Line
+	1600 2550 1100 2550
+Wire Wire Line
+	1100 2650 1600 2650
+Wire Wire Line
+	1100 2750 1600 2750
+$Comp
+L MCP4922-E/P U?
+U 1 1 52F3C79E
+P 2150 2750
+F 0 "U?" H 2300 3150 40  0000 L BNN
+F 1 "MCP4922-E/P" H 2300 3100 40  0000 L BNN
+F 2 "DIP14" H 2150 2750 30  0000 C CIN
+F 3 "" H 2150 2750 60  0000 C CNN
+	1    2150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 52F50423
+P 5250 4400
+F 0 "Q?" H 5260 4570 60  0000 R CNN
+F 1 "MOSFET_N" H 5260 4250 60  0000 R CNN
+F 2 "~" H 5250 4400 60  0000 C CNN
+F 3 "~" H 5250 4400 60  0000 C CNN
+	1    5250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52F50D65
+P 6050 1350
+F 0 "TH?" V 6150 1400 50  0000 C CNN
+F 1 "THERMISTOR" V 5950 1350 50  0000 C CNN
+F 2 "~" H 6050 1350 60  0000 C CNN
+F 3 "~" H 6050 1350 60  0000 C CNN
+	1    6050 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 800  6050 1100
+Wire Wire Line
+	6050 1600 6050 2000
+Wire Wire Line
+	6050 2000 8350 2000
+Wire Wire Line
+	6050 2500 6050 2250
+Wire Wire Line
+	6050 2250 8350 2250
+$Comp
+L DIODE D?
+U 1 1 52F50E20
+P 5500 2150
+F 0 "D?" H 5500 2250 40  0000 C CNN
+F 1 "DIODE" H 5500 2050 40  0000 C CNN
+F 2 "~" H 5500 2150 60  0000 C CNN
+F 3 "~" H 5500 2150 60  0000 C CNN
+	1    5500 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 2350 6050 2350
+Connection ~ 6050 2350
+Wire Wire Line
+	5500 1800 5500 1950
+Wire Wire Line
+	5500 1800 6050 1800
+Connection ~ 6050 1800
+Wire Wire Line
+	6050 2900 6050 4000
+Wire Wire Line
+	5350 4200 5350 3950
+Wire Wire Line
+	5350 3950 6050 3950
+Connection ~ 6050 3950
+Wire Wire Line
+	5350 4600 5350 4700
+Wire Wire Line
+	5350 4700 6050 4700
+Connection ~ 6050 4700
+Wire Wire Line
+	2100 5200 8450 5200
+$Comp
+L AGND #PWR?
+U 1 1 52F51232
+P 3600 3500
+F 0 "#PWR?" H 3600 3500 40  0001 C CNN
+F 1 "AGND" H 3600 3430 50  0000 C CNN
+F 2 "" H 3600 3500 60  0000 C CNN
+F 3 "" H 3600 3500 60  0000 C CNN
+	1    3600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3700 2850 3700
+$Comp
+L MOSFET_N Q?
+U 1 1 52F51293
+P 3500 3100
+F 0 "Q?" H 3510 3270 60  0000 R CNN
+F 1 "MOSFET_N" H 3510 2950 60  0000 R CNN
+F 2 "~" H 3500 3100 60  0000 C CNN
+F 3 "~" H 3500 3100 60  0000 C CNN
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3300 3600 3500
+Wire Wire Line
+	3300 3100 2850 3100
+Wire Wire Line
+	2850 3100 2850 3700
+Wire Wire Line
+	3600 2900 3600 2600
+Connection ~ 3600 2600
+Wire Wire Line
+	1250 4400 5050 4400
+Text HLabel 1250 4400 0    60   Output ~ 0
+FAN_MODE
+$Comp
+L +12C #PWR?
+U 1 1 52F51A44
+P 6050 800
+F 0 "#PWR?" H 6050 770 30  0001 C CNN
+F 1 "+12C" H 6050 910 40  0000 C CNN
+F 2 "" H 6050 800 60  0000 C CNN
+F 3 "" H 6050 800 60  0000 C CNN
+	1    6050 800 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

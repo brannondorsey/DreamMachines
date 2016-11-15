@@ -1,0 +1,566 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:frep
+LIBS:labPsu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "Lab Psu (0-20V 0-2A)"
+Date "2016-11-06"
+Rev "B"
+Comp ""
+Comment1 "- based on David Jones' uSupply project"
+Comment2 "- Preregulation with SEPIC converter "
+Comment3 "- Powered from standard pc psu (12V)"
+Comment4 "- 2 pcb concept. To be used together with frontpanel pcb"
+$EndDescr
+$Comp
+L CP1 C7
+U 1 1 57DE3B6C
+P 2925 3900
+F 0 "C7" H 2975 4000 50  0000 L CNN
+F 1 "220uF" H 2975 3800 50  0000 L CNN
+F 2 "" H 2925 3900 60  0001 C CNN
+F 3 "" H 2925 3900 60  0000 C CNN
+	1    2925 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 57DE3B73
+P 2925 4100
+F 0 "#PWR025" H 2925 4100 30  0001 C CNN
+F 1 "GND" H 2925 4030 30  0001 C CNN
+F 2 "" H 2925 4100 60  0000 C CNN
+F 3 "" H 2925 4100 60  0000 C CNN
+	1    2925 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R18
+U 1 1 57DE3B79
+P 3775 3550
+F 0 "R18" V 3855 3550 40  0000 C CNN
+F 1 "10R 1%" V 3782 3551 40  0000 C CNN
+F 2 "" V 3705 3550 30  0001 C CNN
+F 3 "" H 3775 3550 30  0000 C CNN
+	1    3775 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 57DE3B80
+P 3775 3400
+F 0 "R17" V 3855 3400 40  0000 C CNN
+F 1 "10R 1%" V 3782 3401 40  0000 C CNN
+F 2 "" V 3705 3400 30  0001 C CNN
+F 3 "" H 3775 3400 30  0000 C CNN
+	1    3775 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R16
+U 1 1 57DE3B87
+P 3775 3250
+F 0 "R16" V 3855 3250 40  0000 C CNN
+F 1 "10R 1%" V 3782 3251 40  0000 C CNN
+F 2 "" V 3705 3250 30  0001 C CNN
+F 3 "" H 3775 3250 30  0000 C CNN
+	1    3775 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 57DE3B8E
+P 3775 3100
+F 0 "R15" V 3855 3100 40  0000 C CNN
+F 1 "10R 1%" V 3782 3101 40  0000 C CNN
+F 2 "" V 3705 3100 30  0001 C CNN
+F 3 "" H 3775 3100 30  0000 C CNN
+	1    3775 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R19
+U 1 1 57DE3B95
+P 3775 3700
+F 0 "R19" V 3855 3700 40  0000 C CNN
+F 1 "10R 1%" V 3782 3701 40  0000 C CNN
+F 2 "" V 3705 3700 30  0001 C CNN
+F 3 "" H 3775 3700 30  0000 C CNN
+	1    3775 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 57DE3B9C
+P 3775 2800
+F 0 "R13" V 3855 2800 40  0000 C CNN
+F 1 "10R 1%" V 3782 2801 40  0000 C CNN
+F 2 "" V 3705 2800 30  0001 C CNN
+F 3 "" H 3775 2800 30  0000 C CNN
+	1    3775 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 57DE3BA3
+P 3775 2650
+F 0 "R12" V 3855 2650 40  0000 C CNN
+F 1 "10R 1%" V 3782 2651 40  0000 C CNN
+F 2 "" V 3705 2650 30  0001 C CNN
+F 3 "" H 3775 2650 30  0000 C CNN
+	1    3775 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R11
+U 1 1 57DE3BAA
+P 3775 2500
+F 0 "R11" V 3855 2500 40  0000 C CNN
+F 1 "10R 1%" V 3782 2501 40  0000 C CNN
+F 2 "" V 3705 2500 30  0001 C CNN
+F 3 "" H 3775 2500 30  0000 C CNN
+	1    3775 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 57DE3BB1
+P 3775 2350
+F 0 "R10" V 3855 2350 40  0000 C CNN
+F 1 "10R 1%" V 3782 2351 40  0000 C CNN
+F 2 "" V 3705 2350 30  0001 C CNN
+F 3 "" H 3775 2350 30  0000 C CNN
+	1    3775 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R14
+U 1 1 57DE3BB8
+P 3775 2950
+F 0 "R14" V 3855 2950 40  0000 C CNN
+F 1 "10R 1%" V 3782 2951 40  0000 C CNN
+F 2 "" V 3705 2950 30  0001 C CNN
+F 3 "" H 3775 2950 30  0000 C CNN
+	1    3775 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 57DE3BBF
+P 3525 1950
+F 0 "R9" V 3605 1950 40  0000 C CNN
+F 1 "10R" V 3532 1951 40  0000 C CNN
+F 2 "" V 3455 1950 30  0001 C CNN
+F 3 "" H 3525 1950 30  0000 C CNN
+	1    3525 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R20
+U 1 1 57DE3BC6
+P 4025 1950
+F 0 "R20" V 4105 1950 40  0000 C CNN
+F 1 "10R" V 4032 1951 40  0000 C CNN
+F 2 "" V 3955 1950 30  0001 C CNN
+F 3 "" H 4025 1950 30  0000 C CNN
+	1    4025 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C8
+U 1 1 57DE3BCD
+P 3775 1700
+F 0 "C8" H 3775 1800 40  0000 L CNN
+F 1 "100nF" H 3781 1615 40  0000 L CNN
+F 2 "" H 3813 1550 30  0001 C CNN
+F 3 "" H 3775 1700 60  0000 C CNN
+	1    3775 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 57DE3BDC
+P 4375 1275
+F 0 "#PWR026" H 4375 1275 30  0001 C CNN
+F 1 "GND" H 4375 1205 30  0001 C CNN
+F 2 "" H 4375 1275 60  0000 C CNN
+F 3 "" H 4375 1275 60  0000 C CNN
+	1    4375 1275
+	0    1    1    0   
+$EndComp
+$Comp
+L C C9
+U 1 1 57DE3C01
+P 4375 1950
+F 0 "C9" H 4375 2050 40  0000 L CNN
+F 1 "100nF" H 4381 1865 40  0000 L CNN
+F 2 "" H 4413 1800 30  0001 C CNN
+F 3 "" H 4375 1950 60  0000 C CNN
+	1    4375 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 57DE3C08
+P 4375 2150
+F 0 "#PWR027" H 4375 2150 30  0001 C CNN
+F 1 "GND" H 4375 2080 30  0001 C CNN
+F 2 "" H 4375 2150 60  0000 C CNN
+F 3 "" H 4375 2150 60  0000 C CNN
+	1    4375 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 4700 825  0    60   ~ 0
+measure V+ \nand current
+$Comp
+L OPAMP-DUALU IC?
+U 1 1 57DE3C13
+P 4800 4300
+AR Path="/57DE3C13" Ref="IC?"  Part="1" 
+AR Path="/57DE3071/57DE3C13" Ref="IC1"  Part="1" 
+F 0 "IC1" H 5100 4200 50  0000 R TNN
+F 1 "LM358" H 5175 4450 50  0000 R TNN
+F 2 "" H 4800 4450 50  0001 C CNN
+F 3 "" H 4800 4300 60  0000 C CNN
+	1    4800 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L OPAMP-DUALU IC?
+U 2 1 57DE3C1A
+P 6250 4800
+AR Path="/57DE3C1A" Ref="IC?"  Part="2" 
+AR Path="/57DE3071/57DE3C1A" Ref="IC1"  Part="2" 
+F 0 "IC1" H 6400 4675 50  0000 R TNN
+F 1 "LM358" H 6450 5000 50  0000 R TNN
+F 2 "" H 6250 4950 50  0001 C CNN
+F 3 "" H 6250 4800 60  0000 C CNN
+	2    6250 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 57DE3C22
+P 4800 4000
+F 0 "#PWR028" H 4800 4000 30  0001 C CNN
+F 1 "GND" H 4800 3930 30  0001 C CNN
+F 2 "" H 4800 4000 60  0000 C CNN
+F 3 "" H 4800 4000 60  0000 C CNN
+	1    4800 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R22
+U 1 1 57DE3C2E
+P 5700 5250
+F 0 "R22" V 5780 5250 40  0000 C CNN
+F 1 "18K 0.1%" V 5707 5251 40  0000 C CNN
+F 2 "" V 5630 5250 30  0001 C CNN
+F 3 "" H 5700 5250 30  0000 C CNN
+	1    5700 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R23
+U 1 1 57DE3C35
+P 5950 5500
+F 0 "R23" V 6030 5500 40  0000 C CNN
+F 1 "18K 0.1%" V 5957 5501 40  0000 C CNN
+F 2 "" V 5880 5500 30  0001 C CNN
+F 3 "" H 5950 5500 30  0000 C CNN
+	1    5950 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R24
+U 1 1 57DE3C3C
+P 6300 4300
+F 0 "R24" V 6380 4300 40  0000 C CNN
+F 1 "18K 0.1%" V 6307 4301 40  0000 C CNN
+F 2 "" V 6230 4300 30  0001 C CNN
+F 3 "" H 6300 4300 30  0000 C CNN
+	1    6300 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R21
+U 1 1 57DE3C43
+P 5700 4300
+F 0 "R21" V 5780 4300 40  0000 C CNN
+F 1 "18K 0.1%" V 5707 4301 40  0000 C CNN
+F 2 "" V 5630 4300 30  0001 C CNN
+F 3 "" H 5700 4300 30  0000 C CNN
+	1    5700 4300
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 57DE3C4A
+P 5950 5750
+F 0 "#PWR029" H 5950 5750 30  0001 C CNN
+F 1 "GND" H 5950 5680 30  0001 C CNN
+F 2 "" H 5950 5750 60  0000 C CNN
+F 3 "" H 5950 5750 60  0000 C CNN
+	1    5950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 57DE3C56
+P 5000 4700
+F 0 "C10" H 5000 4800 40  0000 L CNN
+F 1 "100nF" H 4800 4625 40  0000 L CNN
+F 2 "" H 5038 4550 30  0001 C CNN
+F 3 "" H 5000 4700 60  0000 C CNN
+	1    5000 4700
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 57DE3C5D
+P 5200 4600
+F 0 "#PWR030" H 5200 4600 30  0001 C CNN
+F 1 "GND" H 5200 4530 30  0001 C CNN
+F 2 "" H 5200 4600 60  0000 C CNN
+F 3 "" H 5200 4600 60  0000 C CNN
+	1    5200 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C11
+U 1 1 57DE3C6C
+P 7300 3900
+F 0 "C11" H 7300 4000 40  0000 L CNN
+F 1 "2u2F" H 7306 3815 40  0000 L CNN
+F 2 "" H 7338 3750 30  0001 C CNN
+F 3 "" H 7300 3900 60  0000 C CNN
+	1    7300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 57DE3C73
+P 7300 4100
+F 0 "#PWR031" H 7300 4100 30  0001 C CNN
+F 1 "GND" H 7300 4030 30  0001 C CNN
+F 2 "" H 7300 4100 60  0000 C CNN
+F 3 "" H 7300 4100 60  0000 C CNN
+	1    7300 4100
+	-1   0    0    -1  
+$EndComp
+Text HLabel 2775 3700 0    60   Input ~ 0
+V_in
+Text HLabel 7925 3700 2    60   Output ~ 0
+V_out
+Text HLabel 7550 4800 2    60   Output ~ 0
+CurrentSense
+Text HLabel 4800 4750 3    60   Input ~ 0
+V_in
+Text HLabel 4675 1700 2    60   Input ~ 0
+3V3_Reg
+Text HLabel 5575 1075 2    60   Input ~ 0
+3V3_Reg
+Text HLabel 5575 1175 2    60   Input ~ 0
+3V3_Reg
+Text HLabel 5575 1275 2    60   Input ~ 0
+SDA
+Text HLabel 5575 1375 2    60   Input ~ 0
+SCL
+Text Notes 4625 3900 0    60   ~ 0
+voltage follower
+Text Notes 8375 5000 0    100  ~ 0
+V_OUT:\n1mV / 1mA
+$Comp
+L C C12
+U 1 1 57E047DB
+P 7325 5000
+F 0 "C12" H 7325 5100 40  0000 L CNN
+F 1 "100nF" H 7331 4915 40  0000 L CNN
+F 2 "" H 7363 4850 30  0001 C CNN
+F 3 "" H 7325 5000 60  0000 C CNN
+	1    7325 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R25
+U 1 1 57E047E2
+P 7075 4800
+F 0 "R25" V 7155 4800 40  0000 C CNN
+F 1 "1K" V 7082 4801 40  0000 C CNN
+F 2 "" V 7005 4800 30  0001 C CNN
+F 3 "" H 7075 4800 30  0000 C CNN
+	1    7075 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 57E047E9
+P 7325 5200
+F 0 "#PWR032" H 7325 5200 30  0001 C CNN
+F 1 "GND" H 7325 5130 30  0001 C CNN
+F 2 "" H 7325 5200 60  0000 C CNN
+F 3 "" H 7325 5200 60  0000 C CNN
+	1    7325 5200
+	1    0    0    -1  
+$EndComp
+Text Notes 6200 1350 0    60   ~ 0
+Currents up to 320mA can be measured with high\nprecision through the INA219. For higher currents\nthe semi-precisese differential amplifier can be used.
+Text Notes 6900 5450 0    60   ~ 0
+low pass filter
+$Comp
+L PWR_FLAG #FLG033
+U 1 1 57E1B1A8
+P 7300 3700
+F 0 "#FLG033" H 7300 3795 30  0001 C CNN
+F 1 "PWR_FLAG" H 7300 3880 30  0000 C CNN
+F 2 "" H 7300 3700 60  0000 C CNN
+F 3 "" H 7300 3700 60  0000 C CNN
+	1    7300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L INA219 U5
+U 1 1 581847C5
+P 4975 1225
+F 0 "U5" H 4975 1525 60  0000 C CNN
+F 1 "INA219" H 4975 925 60  0000 C CNN
+F 2 "" H 4975 1025 60  0001 C CNN
+F 3 "" H 4975 1025 60  0000 C CNN
+	1    4975 1225
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 1375 4375 1750
+Wire Wire Line
+	4025 1175 4025 1700
+Wire Wire Line
+	4025 1700 3975 1700
+Wire Wire Line
+	3525 1700 3575 1700
+Wire Wire Line
+	3525 1075 3525 1700
+Connection ~ 3525 1700
+Connection ~ 4025 1700
+Wire Wire Line
+	3525 2200 3525 5250
+Connection ~ 3525 2350
+Connection ~ 3525 2500
+Connection ~ 3525 2650
+Connection ~ 3525 2800
+Connection ~ 3525 2950
+Connection ~ 3525 3100
+Connection ~ 3525 3250
+Connection ~ 3525 3400
+Connection ~ 3525 3550
+Wire Wire Line
+	4025 2200 4025 4200
+Connection ~ 4025 2350
+Connection ~ 4025 2500
+Connection ~ 4025 2650
+Connection ~ 4025 2800
+Connection ~ 4025 2950
+Connection ~ 4025 3100
+Connection ~ 4025 3250
+Connection ~ 4025 3400
+Connection ~ 4025 3550
+Wire Wire Line
+	4375 1700 4675 1700
+Connection ~ 4375 1700
+Wire Wire Line
+	4600 5075 4600 4400
+Wire Wire Line
+	2775 3700 3525 3700
+Connection ~ 2925 3700
+Wire Wire Line
+	4025 4200 4600 4200
+Connection ~ 4025 3700
+Connection ~ 3525 3700
+Wire Wire Line
+	5950 4300 6050 4300
+Wire Wire Line
+	5200 4300 5450 4300
+Wire Wire Line
+	4800 4750 4800 4600
+Connection ~ 4800 4700
+Wire Wire Line
+	5200 4700 5200 4600
+Wire Wire Line
+	5350 5075 5350 4300
+Connection ~ 5350 4300
+Connection ~ 7300 3700
+Wire Wire Line
+	6550 4800 6825 4800
+Connection ~ 6550 4800
+Wire Wire Line
+	7550 4800 7325 4800
+Connection ~ 7325 4800
+Wire Wire Line
+	3525 5250 5450 5250
+Connection ~ 5950 5250
+Connection ~ 5950 4300
+Wire Wire Line
+	4025 1175 4375 1175
+Wire Wire Line
+	3525 1075 4375 1075
+Wire Wire Line
+	4600 5075 5350 5075
+Wire Wire Line
+	5950 4900 5950 5250
+Wire Wire Line
+	5950 4700 5950 4300
+Wire Wire Line
+	6550 4300 6550 4800
+Text Notes 8350 3750 0    100  ~ 0
+LOAD
+Text Notes 4175 3125 0    100  ~ 0
+R_SENSE\n(1R)
+Text Notes 5650 4150 0    60   ~ 0
+R1
+Text Notes 6250 4150 0    60   ~ 0
+R2
+Text Notes 5650 5100 0    60   ~ 0
+R3
+Text Notes 6050 5525 0    60   ~ 0
+R4
+Text Notes 5400 6250 0    60   ~ 0
+Differential amplifier \nhigh-side current sensor:\nR2/R1 = R4/R3\nV_OUT = (R2/R1)*(I_LOAD*R_SENSE)
+Text Notes 5425 3650 0    100  ~ 0
+I_LOAD
+Wire Wire Line
+	4025 3700 7925 3700
+Text Notes 5575 825  0    60   ~ 0
+i2c addr: 1000101 = 0x45
+$EndSCHEMATC

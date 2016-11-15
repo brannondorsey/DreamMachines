@@ -1,0 +1,307 @@
+EESchema Schematic File Version 2
+LIBS:suf
+LIBS:conn
+LIBS:device
+LIBS:power
+LIBS:transistors
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PSU-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "30 jan 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 54950B38
+P 1450 3000
+F 0 "#PWR01" H 1450 2750 50  0001 C CNN
+F 1 "GND" H 1450 2850 40  0000 C CNN
+F 2 "" H 1450 3000 60  0000 C CNN
+F 3 "" H 1450 3000 60  0000 C CNN
+	1    1450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2900 1450 3000
+$Comp
+L VDD #PWR02
+U 1 1 54950B39
+P 1450 2400
+F 0 "#PWR02" H 1450 2500 30  0001 C CNN
+F 1 "VDD" H 1450 2525 40  0000 C CNN
+F 2 "" H 1450 2400 60  0000 C CNN
+F 3 "" H 1450 2400 60  0000 C CNN
+	1    1450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2400 1450 2500
+Wire Wire Line
+	1500 1925 3675 1925
+$Comp
+L INDUCTOR L1
+U 1 1 54950B40
+P 1825 925
+F 0 "L1" H 1825 875 40  0000 C CNN
+F 1 "4,7uH" H 1825 1000 40  0000 C CNN
+F 2 "Choke_SMD:Choke_SMD_Wuerth-WE-PD-Typ-M-Typ-S_Handsoldering" H 1825 925 60  0001 C CNN
+F 3 "~" H 1825 925 60  0000 C CNN
+	1    1825 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1925 3150 1650
+Wire Wire Line
+	2625 1225 3225 1225
+Connection ~ 3150 1225
+$Comp
+L GND #PWR03
+U 1 1 54950C85
+P 2175 2025
+F 0 "#PWR03" H 2175 1775 50  0001 C CNN
+F 1 "GND" H 2175 1875 40  0000 C CNN
+F 2 "" H 2175 2025 60  0000 C CNN
+F 3 "" H 2175 2025 60  0000 C CNN
+	1    2175 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR04
+U 1 1 54950D58
+P 1500 775
+F 0 "#PWR04" H 1500 875 30  0001 C CNN
+F 1 "VDD" H 1500 900 40  0000 C CNN
+F 2 "" H 1500 775 60  0000 C CNN
+F 3 "" H 1500 775 60  0000 C CNN
+	1    1500 775 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 775  1500 1625
+$Comp
+L VCC #PWR05
+U 1 1 54950E07
+P 3675 1075
+F 0 "#PWR05" H 3675 1175 30  0001 C CNN
+F 1 "VCC" H 3675 1200 40  0000 C CNN
+F 2 "" H 3675 1075 60  0000 C CNN
+F 3 "" H 3675 1075 60  0000 C CNN
+	1    3675 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 55493044
+P 3425 1225
+F 0 "L2" H 3425 1175 40  0000 C CNN
+F 1 "1uH" H 3425 1300 40  0000 C CNN
+F 2 "suf_choke_smd:PCD0504_Handsoldering" H 3425 1225 60  0001 C CNN
+F 3 "~" H 3425 1225 60  0000 C CNN
+	1    3425 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 1225 3675 1225
+Wire Wire Line
+	3675 1075 3675 1450
+Connection ~ 3675 1225
+Wire Wire Line
+	3675 1925 3675 1650
+Connection ~ 3150 1925
+Wire Wire Line
+	3150 1225 3150 1450
+$Comp
+L C C1
+U 1 1 55493188
+P 1500 1725
+F 0 "C1" H 1500 1575 40  0000 C CNN
+F 1 "22uF/10V" H 1500 1875 40  0000 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 1500 1725 60  0001 C CNN
+F 3 "~" H 1500 1725 60  0000 C CNN
+	1    1500 1725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 1825 1500 1925
+$Comp
+L GND #PWR06
+U 1 1 5549958A
+P 1675 2875
+F 0 "#PWR06" H 1675 2625 50  0001 C CNN
+F 1 "GND" H 1675 2725 40  0000 C CNN
+F 2 "" H 1675 2875 60  0000 C CNN
+F 3 "" H 1675 2875 60  0000 C CNN
+	1    1675 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 554995A7
+P 1675 2400
+F 0 "#PWR07" H 1675 2250 50  0001 C CNN
+F 1 "VCC" H 1675 2525 40  0000 C CNN
+F 2 "" H 1675 2400 60  0000 C CNN
+F 3 "" H 1675 2400 60  0000 C CNN
+	1    1675 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 2400 1675 2500
+Wire Wire Line
+	1675 2800 1675 2875
+$Comp
+L MCP1642D-ADJ U1
+U 1 1 554EE37C
+P 2125 1425
+F 0 "U1" H 1875 1175 40  0000 C CNN
+F 1 "MCP1642D-ADJ" H 2400 1775 40  0000 C CNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 2125 1425 60  0001 C CNN
+F 3 "" H 2125 1425 60  0000 C CNN
+	1    2125 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 1825 2175 2025
+Connection ~ 2175 1925
+Wire Wire Line
+	2075 1825 2075 1925
+Connection ~ 2075 1925
+Wire Wire Line
+	1625 1425 1500 1425
+Connection ~ 1500 1425
+Wire Wire Line
+	1625 1225 1500 1225
+Connection ~ 1500 1225
+Wire Wire Line
+	1625 925  1500 925 
+Connection ~ 1500 925 
+Wire Wire Line
+	2125 925  2025 925 
+$Comp
+L C C2
+U 1 1 554EEADB
+P 3150 1550
+F 0 "C2" H 3150 1400 40  0000 C CNN
+F 1 "22uF/10V" H 3150 1700 40  0000 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3150 1550 60  0001 C CNN
+F 3 "~" H 3150 1550 60  0000 C CNN
+	1    3150 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 554EEB15
+P 3675 1550
+F 0 "C3" H 3675 1400 40  0000 C CNN
+F 1 "22uF/10V" H 3675 1700 40  0000 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3675 1550 60  0001 C CNN
+F 3 "~" H 3675 1550 60  0000 C CNN
+	1    3675 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 554EECE7
+P 2675 1675
+F 0 "R1" H 2675 1600 40  0000 C CNN
+F 1 "470K" H 2675 1750 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2675 1675 60  0001 C CNN
+F 3 "" H 2675 1675 60  0000 C CNN
+	1    2675 1675
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 554EEDB1
+P 2875 1425
+F 0 "R2" H 2875 1350 40  0000 C CNN
+F 1 "1,5M" H 2875 1500 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2875 1425 60  0001 C CNN
+F 3 "" H 2875 1425 60  0000 C CNN
+	1    2875 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 1425 3150 1425
+Connection ~ 3150 1425
+Wire Wire Line
+	2625 1425 2675 1425
+Wire Wire Line
+	2675 1425 2675 1475
+Wire Wire Line
+	2675 1875 2675 1925
+Connection ~ 2675 1925
+Connection ~ 2675 1425
+$Comp
+L USB-MINI J1
+U 1 1 554F17C3
+P 1100 2700
+F 0 "J1" H 1225 2375 40  0000 C CNN
+F 1 "USB-MINI" V 900 2700 40  0000 C CNN
+F 2 "suf_connector_usb:A-USBB-M5-SMD" H 1100 2700 60  0001 C CNN
+F 3 "" H 1100 2700 60  0000 C CNN
+	1    1100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_2 J2
+U 1 1 554F4230
+P 1950 2650
+F 0 "J2" H 1900 2900 40  0000 C CNN
+F 1 "USB_2" H 2000 2350 60  0001 C CNN
+F 2 "suf_connector_usb:USB-A_SMD" H 1950 2650 60  0001 C CNN
+F 3 "" H 1950 2650 60  0000 C CNN
+F 4 "VCC" H 2275 2800 50  0001 C CNN "VCC"
+F 5 "D+" H 2250 2700 50  0001 C CNN "Data+"
+F 6 "D-" H 2250 2600 50  0001 C CNN "Data-"
+F 7 "GND" H 2275 2500 50  0001 C CNN "Ground"
+	1    1950 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2500 1375 2500
+Wire Wire Line
+	1375 2900 1450 2900
+Wire Wire Line
+	1675 2500 1750 2500
+Wire Wire Line
+	1750 2800 1675 2800
+Wire Wire Line
+	1375 2600 1750 2600
+Wire Wire Line
+	1375 2700 1750 2700
+$EndSCHEMATC

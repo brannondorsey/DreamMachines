@@ -1,0 +1,410 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:oscillator
+LIBS:CameraAdaptor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X12 P1
+U 1 1 5583E006
+P 3350 3250
+F 0 "P1" H 3350 3900 50  0000 C CNN
+F 1 "CONN_02X12" V 3350 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x12" H 3350 2050 60  0001 C CNN
+F 3 "" H 3350 2050 60  0000 C CNN
+	1    3350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X09 P2
+U 1 1 5583E070
+P 5850 3200
+F 0 "P2" H 5850 3700 50  0000 C CNN
+F 1 "CONN_02X09" V 5850 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x09" H 5850 2000 60  0001 C CNN
+F 3 "" H 5850 2000 60  0000 C CNN
+	1    5850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2800 5100 2800
+Wire Wire Line
+	5100 2900 5600 2900
+Wire Wire Line
+	5100 3000 5600 3000
+Wire Wire Line
+	5600 3100 5100 3100
+Wire Wire Line
+	5100 3200 5600 3200
+Wire Wire Line
+	5100 3300 5600 3300
+Wire Wire Line
+	5100 3400 5600 3400
+Wire Wire Line
+	5100 3500 5600 3500
+Wire Wire Line
+	5100 3600 5600 3600
+Wire Wire Line
+	6100 3600 6550 3600
+Wire Wire Line
+	6550 3500 6100 3500
+Wire Wire Line
+	6100 3400 6550 3400
+Wire Wire Line
+	6550 3300 6100 3300
+Wire Wire Line
+	6100 3200 6550 3200
+Wire Wire Line
+	6550 3100 6100 3100
+Wire Wire Line
+	6100 3000 6550 3000
+Wire Wire Line
+	6550 2900 6100 2900
+Wire Wire Line
+	6100 2800 6550 2800
+Text Label 5200 2800 0    60   ~ 0
+3.3v
+Text Label 6200 2800 0    60   ~ 0
+GND
+Text Label 5200 2900 0    60   ~ 0
+SIOC
+Text Label 6200 2900 0    60   ~ 0
+SIOD
+Text Label 5200 3000 0    60   ~ 0
+VSync
+Text Label 6200 3000 0    60   ~ 0
+Href
+Text Label 5200 3100 0    60   ~ 0
+PCLK
+Text Label 6200 3100 0    60   ~ 0
+XCLK
+Text Label 5200 3200 0    60   ~ 0
+D7
+Text Label 6200 3200 0    60   ~ 0
+D6
+Text Label 5200 3300 0    60   ~ 0
+D5
+Text Label 6200 3300 0    60   ~ 0
+D4
+Text Label 5200 3400 0    60   ~ 0
+D3
+Text Label 6200 3400 0    60   ~ 0
+D2
+Text Label 5200 3500 0    60   ~ 0
+D1
+Text Label 6200 3500 0    60   ~ 0
+D0
+Text Label 5200 3600 0    60   ~ 0
+RESET
+Text Label 6200 3600 0    60   ~ 0
+PWDN
+Wire Wire Line
+	2500 2700 3100 2700
+Text Label 2700 2700 0    60   ~ 0
+3.3v
+Wire Wire Line
+	3600 2700 4200 2700
+Text Label 3700 2700 0    60   ~ 0
+GND
+Wire Wire Line
+	2600 2800 3100 2800
+Wire Wire Line
+	2600 3000 3100 3000
+Wire Wire Line
+	2600 3100 3100 3100
+Wire Wire Line
+	2600 3200 3100 3200
+Wire Wire Line
+	2600 3300 3100 3300
+Text Label 2700 2800 0    60   ~ 0
+SIOC
+Text Label 2700 3000 0    60   ~ 0
+D7
+Text Label 2700 3100 0    60   ~ 0
+D5
+Text Label 2700 3200 0    60   ~ 0
+D3
+Text Label 2700 3300 0    60   ~ 0
+D1
+Wire Wire Line
+	4050 3300 3600 3300
+Wire Wire Line
+	3600 3200 4050 3200
+Wire Wire Line
+	4050 3100 3600 3100
+Wire Wire Line
+	3600 3000 4050 3000
+Wire Wire Line
+	4050 2800 3600 2800
+Text Label 3700 2800 0    60   ~ 0
+SIOD
+Text Label 3700 3000 0    60   ~ 0
+D6
+Text Label 3700 3100 0    60   ~ 0
+D4
+Text Label 3700 3200 0    60   ~ 0
+D2
+Text Label 3700 3300 0    60   ~ 0
+D0
+$Comp
+L R R1
+U 1 1 55C45043
+P 4550 1850
+F 0 "R1" V 4630 1850 50  0000 C CNN
+F 1 "4.7k" V 4550 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4480 1850 30  0001 C CNN
+F 3 "" H 4550 1850 30  0000 C CNN
+	1    4550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 55C450E0
+P 4800 1850
+F 0 "R2" V 4880 1850 50  0000 C CNN
+F 1 "4.7k" V 4800 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4730 1850 30  0001 C CNN
+F 3 "" H 4800 1850 30  0000 C CNN
+	1    4800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 55C45174
+P 4200 2700
+F 0 "#PWR01" H 4200 2450 50  0001 C CNN
+F 1 "GND" H 4200 2550 50  0000 C CNN
+F 2 "" H 4200 2700 60  0000 C CNN
+F 3 "" H 4200 2700 60  0000 C CNN
+	1    4200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 55C451A0
+P 2500 2700
+F 0 "#PWR02" H 2500 2550 50  0001 C CNN
+F 1 "+3.3V" H 2500 2840 50  0000 C CNN
+F 2 "" H 2500 2700 60  0000 C CNN
+F 3 "" H 2500 2700 60  0000 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 55C45250
+P 4700 1600
+F 0 "#PWR03" H 4700 1450 50  0001 C CNN
+F 1 "+3.3V" H 4700 1740 50  0000 C CNN
+F 2 "" H 4700 1600 60  0000 C CNN
+F 3 "" H 4700 1600 60  0000 C CNN
+	1    4700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1700 4550 1650
+Wire Wire Line
+	4550 1650 4800 1650
+Wire Wire Line
+	4700 1650 4700 1600
+Wire Wire Line
+	4800 1650 4800 1700
+Connection ~ 4700 1650
+Wire Wire Line
+	3950 2100 4550 2100
+Text Label 4050 2100 0    60   ~ 0
+SIOC
+Wire Wire Line
+	3950 2200 4800 2200
+Text Label 4050 2200 0    60   ~ 0
+SIOD
+Wire Wire Line
+	4550 2100 4550 2000
+Wire Wire Line
+	4800 2200 4800 2000
+Wire Wire Line
+	3600 3700 4050 3700
+Text Label 3700 3700 0    60   ~ 0
+PWDN
+Wire Wire Line
+	2600 3700 3100 3700
+Text Label 2700 3700 0    60   ~ 0
+RESET
+Wire Wire Line
+	3600 3600 4050 3600
+Text Label 3700 3600 0    60   ~ 0
+Href
+Wire Wire Line
+	2600 2900 3100 2900
+Text Label 2700 2900 0    60   ~ 0
+VSync
+Wire Wire Line
+	4100 2900 3600 2900
+Text Label 3700 2900 0    60   ~ 0
+PCLK
+Wire Wire Line
+	4050 3500 3600 3500
+Text Label 3700 3500 0    60   ~ 0
+XCLK
+NoConn ~ 3100 3500
+NoConn ~ 3100 3800
+NoConn ~ 3600 3800
+$Comp
+L GND #PWR04
+U 1 1 55C45C7F
+P 4200 3450
+F 0 "#PWR04" H 4200 3200 50  0001 C CNN
+F 1 "GND" H 4200 3300 50  0000 C CNN
+F 2 "" H 4200 3450 60  0000 C CNN
+F 3 "" H 4200 3450 60  0000 C CNN
+	1    4200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3400 4200 3400
+Wire Wire Line
+	4200 3400 4200 3450
+Wire Wire Line
+	2500 2700 2500 3400
+Wire Wire Line
+	2500 3400 3100 3400
+$Comp
+L C C1
+U 1 1 55C45D20
+P 3100 1850
+F 0 "C1" H 3125 1950 50  0000 L CNN
+F 1 "1uF" H 3125 1750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3138 1700 30  0001 C CNN
+F 3 "" H 3100 1850 60  0000 C CNN
+	1    3100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR05
+U 1 1 55C45D93
+P 3100 1650
+F 0 "#PWR05" H 3100 1500 50  0001 C CNN
+F 1 "+3.3V" H 3100 1790 50  0000 C CNN
+F 2 "" H 3100 1650 60  0000 C CNN
+F 3 "" H 3100 1650 60  0000 C CNN
+	1    3100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 55C45DA8
+P 3100 2050
+F 0 "#PWR06" H 3100 1800 50  0001 C CNN
+F 1 "GND" H 3100 1900 50  0000 C CNN
+F 2 "" H 3100 2050 60  0000 C CNN
+F 3 "" H 3100 2050 60  0000 C CNN
+	1    3100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2050 3100 2000
+Wire Wire Line
+	3100 1700 3100 1650
+$Comp
+L Oscillator U1
+U 1 1 55C47029
+P 4500 4650
+F 0 "U1" H 4500 4400 60  0000 C CNN
+F 1 "Oscillator" H 4500 4900 60  0000 C CNN
+F 2 "oscillator:oscillator" H 4500 4650 60  0001 C CNN
+F 3 "" H 4500 4650 60  0000 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 55C47102
+P 5100 4450
+F 0 "#PWR07" H 5100 4300 50  0001 C CNN
+F 1 "+3.3V" H 5100 4590 50  0000 C CNN
+F 2 "" H 5100 4450 60  0000 C CNN
+F 3 "" H 5100 4450 60  0000 C CNN
+	1    5100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4550 5100 4550
+Wire Wire Line
+	5100 4550 5100 4450
+$Comp
+L GND #PWR08
+U 1 1 55C471E4
+P 3900 4850
+F 0 "#PWR08" H 3900 4600 50  0001 C CNN
+F 1 "GND" H 3900 4700 50  0000 C CNN
+F 2 "" H 3900 4850 60  0000 C CNN
+F 3 "" H 3900 4850 60  0000 C CNN
+	1    3900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4850 3900 4750
+Wire Wire Line
+	3900 4750 4000 4750
+Wire Wire Line
+	5500 4750 5000 4750
+$Comp
+L +3.3V #PWR09
+U 1 1 55C476CA
+P 3900 4450
+F 0 "#PWR09" H 3900 4300 50  0001 C CNN
+F 1 "+3.3V" H 3900 4590 50  0000 C CNN
+F 2 "" H 3900 4450 60  0000 C CNN
+F 3 "" H 3900 4450 60  0000 C CNN
+	1    3900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4450 3900 4550
+Wire Wire Line
+	3900 4550 4000 4550
+NoConn ~ 3100 3600
+Text Label 5050 4750 0    60   ~ 0
+XCLK
+$EndSCHEMATC

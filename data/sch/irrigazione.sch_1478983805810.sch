@@ -1,0 +1,543 @@
+EESchema Schematic File Version 2
+LIBS:usb_plug
+LIBS:uart_pp
+LIBS:pp_ws2812b
+LIBS:nRF24L01+
+LIBS:mke04z8vtg4
+LIBS:mke02z64vld2
+LIBS:micro_usb_socket
+LIBS:mcp73831t-2aci-ot
+LIBS:mcp1700t-3302e-tt
+LIBS:lpc11u14fbd48
+LIBS:hm-11
+LIBS:esp8266-esp-03
+LIBS:esp8266-esp-01
+LIBS:arm-swd-header
+LIBS:pg-relay
+LIBS:switches
+LIBS:silabs
+LIBS:onsemi
+LIBS:nordicsemi
+LIBS:motor_drivers
+LIBS:microchip_dspic33dsc
+LIBS:xilinx
+LIBS:valves
+LIBS:microchip_pic10mcu
+LIBS:powerint
+LIBS:atmel
+LIBS:microcontrollers
+LIBS:hc11
+LIBS:regul
+LIBS:video
+LIBS:transistors
+LIBS:stm8
+LIBS:dsp
+LIBS:msp430
+LIBS:cmos_ieee
+LIBS:analog_switches
+LIBS:linear
+LIBS:adc-dac
+LIBS:memory
+LIBS:microchip_pic16mcu
+LIBS:74xgxx
+LIBS:sensors
+LIBS:display
+LIBS:logo
+LIBS:texas
+LIBS:intel
+LIBS:motorola
+LIBS:transf
+LIBS:elec-unifil
+LIBS:contrib
+LIBS:special
+LIBS:ttl_ieee
+LIBS:opto
+LIBS:microchip_pic12mcu
+LIBS:ac-dc
+LIBS:interface
+LIBS:stm32
+LIBS:actel
+LIBS:ir
+LIBS:graphic
+LIBS:ftdi
+LIBS:rfcom
+LIBS:pspice
+LIBS:microchip_pic18mcu
+LIBS:relays
+LIBS:brooktre
+LIBS:supertex
+LIBS:microchip
+LIBS:dc-dc
+LIBS:gennum
+LIBS:power
+LIBS:device
+LIBS:references
+LIBS:nxp_armmcu
+LIBS:74xx
+LIBS:cypress
+LIBS:cmos4000
+LIBS:philips
+LIBS:siliconi
+LIBS:conn
+LIBS:digital-audio
+LIBS:microchip_pic32mcu
+LIBS:audio
+LIBS:irrigazione-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Irrigazione"
+Date "Mon 06 Apr 2015"
+Rev "2"
+Comp "Raspibo - www.raspibo.org"
+Comment1 "Impianto di irrigazione pilotato da ESP8266 via WiFi"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TRANSFO T1
+U 1 1 55144E98
+P 6520 3510
+F 0 "T1" H 6570 3560 60  0001 C CNN
+F 1 "TRANSFO" H 6520 3510 60  0001 C CNN
+F 2 "" H 6520 3510 60  0001 C CNN
+F 3 "" H 6520 3510 60  0001 C CNN
+F 4 "T" H 6520 3760 50  0000 C CNN "Riferimento"
+F 5 "TRANSFO" H 6520 3210 50  0000 C CNN "Valore "
+F 6 "" H 6520 3510 60  0000 C CNN "Impronta"
+F 7 "" H 6520 3510 60  0000 C CNN "Specifiche"
+	1    6520 3510
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP185 U3
+U 1 1 55145077
+P 4470 4210
+F 0 "U3" H 4520 4260 60  0001 C CNN
+F 1 "TLP185" H 4470 4210 60  0001 C CNN
+F 2 "" H 4470 4210 60  0001 C CNN
+F 3 "" H 4470 4210 60  0001 C CNN
+F 4 "U" H 4270 4410 50  0000 L CNN "Riferimento"
+F 5 "TLP185" H 4470 4410 50  0000 L CNN "Valore "
+F 6 "MFSOP-6" H 4270 4010 50  0000 L CIN "Impronta"
+F 7 "" H 4470 4210 50  0000 L CNN "Specifiche"
+	1    4470 4210
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP185 U4
+U 1 1 55145097
+P 7670 4210
+F 0 "U4" H 7720 4260 60  0001 C CNN
+F 1 "TLP185" H 7670 4210 60  0001 C CNN
+F 2 "" H 7670 4210 60  0001 C CNN
+F 3 "" H 7670 4210 60  0001 C CNN
+F 4 "U" H 7470 4410 50  0000 L CNN "Riferimento"
+F 5 "TLP185" H 7670 4410 50  0000 L CNN "Valore "
+F 6 "MFSOP-6" H 7470 4010 50  0000 L CIN "Impronta"
+F 7 "" H 7670 4210 50  0000 L CNN "Specifiche"
+	1    7670 4210
+	1    0    0    -1  
+$EndComp
+$Comp
+L RM50-xx11 RL1
+U 1 1 55145121
+P 5270 3410
+F 0 "RL1" H 5320 3460 60  0001 C CNN
+F 1 "RM50-xx11" H 5270 3410 60  0001 C CNN
+F 2 "" H 5270 3410 60  0001 C CNN
+F 3 "" H 5270 3410 60  0001 C CNN
+F 4 "RL" H 5720 3560 50  0000 L CNN "Riferimento"
+	1    5270 3410
+	0    1    1    0   
+$EndComp
+$Comp
+L RM50-xx11 RL2
+U 1 1 55145141
+P 8470 3110
+F 0 "RL2" H 8520 3160 60  0001 C CNN
+F 1 "RM50-xx11" H 8470 3110 60  0001 C CNN
+F 2 "" H 8470 3110 60  0001 C CNN
+F 3 "" H 8470 3110 60  0001 C CNN
+F 4 "RL" H 8920 3260 50  0000 L CNN "Riferimento"
+	1    8470 3110
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4970 3210 4770 3210
+Wire Wire Line
+	4770 2760 4770 3210
+Wire Wire Line
+	4770 3210 4770 4110
+Wire Wire Line
+	8170 2910 7970 2910
+Wire Wire Line
+	7970 2460 7970 2910
+Wire Wire Line
+	7970 2910 7970 4110
+$Comp
+L GND #PWR4
+U 1 1 55145278
+P 4770 4610
+F 0 "#PWR4" H 4820 4660 60  0001 C CNN
+F 1 "GND" H 4770 4610 60  0001 C CNN
+F 2 "" H 4770 4610 60  0001 C CNN
+F 3 "" H 4770 4610 60  0001 C CNN
+F 4 "#PWR" H 4770 4360 50  0001 C CNN "Riferimento"
+F 5 "GND" H 4770 4460 50  0000 C CNN "Valore "
+F 6 "" H 4770 4610 60  0000 C CNN "Impronta"
+F 7 "" H 4770 4610 60  0000 C CNN "Specifiche"
+	1    4770 4610
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 55145298
+P 7970 4610
+F 0 "#PWR9" H 8020 4660 60  0001 C CNN
+F 1 "GND" H 7970 4610 60  0001 C CNN
+F 2 "" H 7970 4610 60  0001 C CNN
+F 3 "" H 7970 4610 60  0001 C CNN
+F 4 "#PWR" H 7970 4360 50  0001 C CNN "Riferimento"
+F 5 "GND" H 7970 4460 50  0000 C CNN "Valore "
+F 6 "" H 7970 4610 60  0000 C CNN "Impronta"
+F 7 "" H 7970 4610 60  0000 C CNN "Specifiche"
+	1    7970 4610
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7970 4610 7970 4310
+Wire Wire Line
+	4770 4310 4770 4610
+$Comp
+L VCC #PWR5
+U 1 1 551452C5
+P 5570 2710
+F 0 "#PWR5" H 5620 2760 60  0001 C CNN
+F 1 "VCC" H 5570 2710 60  0001 C CNN
+F 2 "" H 5570 2710 60  0001 C CNN
+F 3 "" H 5570 2710 60  0001 C CNN
+F 4 "#PWR" H 5570 2560 50  0001 C CNN "Riferimento"
+F 5 "VCC" H 5570 2860 50  0000 C CNN "Valore "
+F 6 "" H 5570 2710 60  0000 C CNN "Impronta"
+F 7 "" H 5570 2710 60  0000 C CNN "Specifiche"
+	1    5570 2710
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5570 2710 5570 2760
+Wire Wire Line
+	5570 2760 5570 3210
+$Comp
+L VCC #PWR10
+U 1 1 551452ED
+P 8770 2410
+F 0 "#PWR10" H 8820 2460 60  0001 C CNN
+F 1 "VCC" H 8770 2410 60  0001 C CNN
+F 2 "" H 8770 2410 60  0001 C CNN
+F 3 "" H 8770 2410 60  0001 C CNN
+F 4 "#PWR" H 8770 2260 50  0001 C CNN "Riferimento"
+F 5 "VCC" H 8770 2560 50  0000 C CNN "Valore "
+F 6 "" H 8770 2410 60  0000 C CNN "Impronta"
+F 7 "" H 8770 2410 60  0000 C CNN "Specifiche"
+	1    8770 2410
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8770 2410 8770 2460
+Wire Wire Line
+	8770 2460 8770 2910
+$Comp
+L D D2
+U 1 1 55145316
+P 8470 2460
+F 0 "D2" H 8520 2510 60  0001 C CNN
+F 1 "D" H 8470 2460 60  0001 C CNN
+F 2 "" H 8470 2460 60  0001 C CNN
+F 3 "" H 8470 2460 60  0001 C CNN
+F 4 "D" H 8470 2560 50  0000 C CNN "Riferimento"
+F 5 "D" H 8470 2360 50  0000 C CNN "Valore "
+F 6 "" H 8470 2460 60  0000 C CNN "Impronta"
+F 7 "" H 8470 2460 60  0000 C CNN "Specifiche"
+	1    8470 2460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8620 2460 8770 2460
+Connection ~ 8770 2460
+Wire Wire Line
+	8320 2460 7970 2460
+Connection ~ 7970 2910
+$Comp
+L D D1
+U 1 1 55145350
+P 5270 2760
+F 0 "D1" H 5320 2810 60  0001 C CNN
+F 1 "D" H 5270 2760 60  0001 C CNN
+F 2 "" H 5270 2760 60  0001 C CNN
+F 3 "" H 5270 2760 60  0001 C CNN
+F 4 "D" H 5270 2860 50  0000 C CNN "Riferimento"
+F 5 "D" H 5270 2660 50  0000 C CNN "Valore "
+F 6 "" H 5270 2760 60  0000 C CNN "Impronta"
+F 7 "" H 5270 2760 60  0000 C CNN "Specifiche"
+	1    5270 2760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5420 2760 5570 2760
+Connection ~ 5570 2760
+Wire Wire Line
+	5120 2760 4770 2760
+Connection ~ 4770 3210
+Wire Wire Line
+	5570 3710 6120 3710
+$Comp
+L VSS #PWR6
+U 1 1 551453A6
+P 5720 2160
+F 0 "#PWR6" H 5770 2210 60  0001 C CNN
+F 1 "VSS" H 5720 2160 60  0001 C CNN
+F 2 "" H 5720 2160 60  0001 C CNN
+F 3 "" H 5720 2160 60  0001 C CNN
+F 4 "#PWR" H 5720 2010 50  0001 C CNN "Riferimento"
+F 5 "VSS" H 5720 2310 50  0000 C CNN "Valore "
+F 6 "" H 5720 2160 60  0000 C CNN "Impronta"
+F 7 "" H 5720 2160 60  0000 C CNN "Specifiche"
+	1    5720 2160
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR7
+U 1 1 551453C6
+P 6020 2160
+F 0 "#PWR7" H 6070 2210 60  0001 C CNN
+F 1 "VSS" H 6020 2160 60  0001 C CNN
+F 2 "" H 6020 2160 60  0001 C CNN
+F 3 "" H 6020 2160 60  0001 C CNN
+F 4 "#PWR" H 6020 2010 50  0001 C CNN "Riferimento"
+F 5 "VSS" H 6020 2310 50  0000 C CNN "Valore "
+F 6 "" H 6020 2160 60  0000 C CNN "Impronta"
+F 7 "" H 6020 2160 60  0000 C CNN "Specifiche"
+	1    6020 2160
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6020 2160 6020 3310
+Wire Wire Line
+	6020 3310 6120 3310
+Wire Wire Line
+	5720 2160 5720 2210
+Wire Wire Line
+	5720 2210 4920 2210
+Wire Wire Line
+	4920 2210 4920 3610
+Wire Wire Line
+	4920 3610 4970 3610
+Wire Wire Line
+	6920 3310 8170 3310
+$Comp
+L INDUCTOR L1
+U 1 1 5514542A
+P 9820 3210
+F 0 "L1" H 9870 3260 60  0001 C CNN
+F 1 "INDUCTOR" H 9820 3210 60  0001 C CNN
+F 2 "" H 9820 3210 60  0001 C CNN
+F 3 "" H 9820 3210 60  0001 C CNN
+F 4 "L" H 9820 3310 50  0000 C CNN "Riferimento"
+F 5 "VALVOLA" H 9820 3160 50  0000 C CNN "Valore "
+	1    9820 3210
+	-1   0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 5514544A
+P 9820 3410
+F 0 "L2" H 9870 3460 60  0001 C CNN
+F 1 "INDUCTOR" H 9820 3410 60  0001 C CNN
+F 2 "" H 9820 3410 60  0001 C CNN
+F 3 "" H 9820 3410 60  0001 C CNN
+F 4 "L" H 9820 3510 50  0000 C CNN "Riferimento"
+F 5 "VALVOLA" H 9820 3360 50  0000 C CNN "Valore "
+	1    9820 3410
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9570 3210 8770 3210
+Wire Wire Line
+	8770 3410 9570 3410
+Wire Wire Line
+	10070 3210 10170 3210
+Wire Wire Line
+	10170 3210 10170 3410
+Wire Wire Line
+	10170 3410 10170 3710
+Wire Wire Line
+	10170 3710 6920 3710
+Wire Wire Line
+	10070 3410 10170 3410
+Connection ~ 10170 3410
+$Comp
+L ESP8266-ESP-01 U2
+U 1 1 551455B6
+P 3420 3160
+F 0 "U2" H 3470 3210 60  0001 C CNN
+F 1 "ESP8266-ESP-01" H 3420 3160 60  0001 C CNN
+F 2 "" H 3420 3160 60  0001 C CNN
+F 3 "" H 3420 3160 60  0001 C CNN
+F 4 "U" H 3420 3410 60  0000 C CNN "Riferimento"
+F 5 "ESP8266-ESP-01" H 3420 2835 60  0000 C CNN "Valore "
+F 6 "" H 3345 2685 60  0000 C CNN "Impronta"
+F 7 "" H 3345 2685 60  0000 C CNN "Specifiche"
+	1    3420 3160
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3920 3260 4420 3260
+Wire Wire Line
+	4420 3260 4420 3960
+Wire Wire Line
+	4420 3960 7370 3960
+Wire Wire Line
+	7370 3960 7370 4110
+Wire Wire Line
+	3920 3360 4070 3360
+Wire Wire Line
+	4070 3360 4070 4110
+Wire Wire Line
+	4070 4110 4170 4110
+$Comp
+L GND #PWR3
+U 1 1 5514565E
+P 4170 4610
+F 0 "#PWR3" H 4220 4660 60  0001 C CNN
+F 1 "GND" H 4170 4610 60  0001 C CNN
+F 2 "" H 4170 4610 60  0001 C CNN
+F 3 "" H 4170 4610 60  0001 C CNN
+F 4 "#PWR" H 4170 4360 50  0001 C CNN "Riferimento"
+F 5 "GND" H 4170 4460 50  0000 C CNN "Valore "
+F 6 "" H 4170 4610 60  0000 C CNN "Impronta"
+F 7 "" H 4170 4610 60  0000 C CNN "Specifiche"
+	1    4170 4610
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 5514567E
+P 7370 4610
+F 0 "#PWR8" H 7420 4660 60  0001 C CNN
+F 1 "GND" H 7370 4610 60  0001 C CNN
+F 2 "" H 7370 4610 60  0001 C CNN
+F 3 "" H 7370 4610 60  0001 C CNN
+F 4 "#PWR" H 7370 4360 50  0001 C CNN "Riferimento"
+F 5 "GND" H 7370 4460 50  0000 C CNN "Valore "
+F 6 "" H 7370 4610 60  0000 C CNN "Impronta"
+F 7 "" H 7370 4610 60  0000 C CNN "Specifiche"
+	1    7370 4610
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7370 4610 7370 4310
+Wire Wire Line
+	4170 4310 4170 4610
+Wire Wire Line
+	2770 2860 2770 3010
+Wire Wire Line
+	2770 3010 2770 3260
+Wire Wire Line
+	2770 3260 2770 3360
+Wire Wire Line
+	2770 3010 2920 3010
+Wire Wire Line
+	2770 3260 2920 3260
+Connection ~ 2770 3010
+Wire Wire Line
+	2920 3110 2620 3110
+Wire Wire Line
+	2770 3360 2920 3360
+Connection ~ 2770 3260
+$Comp
+L LD1117S33TR U1
+U 1 1 55225E70
+P 1690 2910
+F 0 "U1" H 1690 3160 40  0000 C CNN
+F 1 "LD1117S33TR" H 1690 3110 40  0000 C CNN
+F 2 "SOT-223" H 1690 3010 40  0000 C CNN
+F 3 "" H 1690 2910 60  0000 C CNN
+	1    1690 2910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2090 2860 2320 2860
+Wire Wire Line
+	2320 2860 2770 2860
+$Comp
+L GND #PWR2
+U 1 1 552260D6
+P 1690 3350
+F 0 "#PWR2" H 1690 3100 50  0001 C CNN
+F 1 "GND" H 1690 3200 50  0000 C CNN
+F 2 "" H 1690 3350 60  0000 C CNN
+F 3 "" H 1690 3350 60  0000 C CNN
+	1    1690 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1690 3350 1690 3160
+$Comp
+L VCC #PWR1
+U 1 1 55226122
+P 1200 2720
+F 0 "#PWR1" H 1200 2570 50  0001 C CNN
+F 1 "VCC" H 1200 2870 50  0000 C CNN
+F 2 "" H 1200 2720 60  0000 C CNN
+F 3 "" H 1200 2720 60  0000 C CNN
+	1    1200 2720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2860 1290 2860
+Wire Wire Line
+	1200 3170 1200 3310
+Wire Wire Line
+	1200 3310 2320 3310
+Wire Wire Line
+	2320 3310 2620 3310
+Wire Wire Line
+	2320 3310 2320 3170
+Wire Wire Line
+	1200 2720 1200 2860
+Wire Wire Line
+	1200 2860 1200 2970
+Connection ~ 1200 2860
+Wire Wire Line
+	2320 2970 2320 2860
+Connection ~ 2320 2860
+Wire Wire Line
+	2620 3310 2620 3110
+Connection ~ 2320 3310
+$Comp
+L CP_Small C1
+U 1 1 5522631D
+P 1200 3070
+F 0 "C1" H 1210 3140 50  0000 L CNN
+F 1 "10nF" H 1210 2990 50  0000 L CNN
+F 2 "" H 1200 3070 60  0000 C CNN
+F 3 "" H 1200 3070 60  0000 C CNN
+	1    1200 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C2
+U 1 1 5522642C
+P 2320 3070
+F 0 "C2" H 2330 3140 50  0000 L CNN
+F 1 "10uF" H 2330 2990 50  0000 L CNN
+F 2 "" H 2320 3070 60  0000 C CNN
+F 3 "" H 2320 3070 60  0000 C CNN
+	1    2320 3070
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

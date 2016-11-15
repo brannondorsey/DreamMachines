@@ -1,0 +1,334 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X15 P1
+U 1 1 5824D592
+P 4500 3100
+F 0 "P1" H 4500 3900 50  0000 C CNN
+F 1 "CONN_02X15" V 4500 3100 50  0000 C CNN
+F 2 "Connect:IDC_Header_Straight_30pins" H 4500 1950 50  0000 C CNN
+F 3 "" H 4500 1950 50  0000 C CNN
+	1    4500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X20 P2
+U 1 1 5824D62A
+P 5850 3100
+F 0 "P2" H 5850 4150 50  0000 C CNN
+F 1 "CONN_02X20" V 5850 3100 50  0000 C CNN
+F 2 "Connect:IDC_Header_Straight_40pins" H 5850 2150 50  0000 C CNN
+F 3 "" H 5850 2150 50  0000 C CNN
+	1    5850 3100
+	-1   0    0    1   
+$EndComp
+Text GLabel 6200 2650 2    60   Input ~ 0
+Vcc3p3
+Wire Wire Line
+	6200 2650 6100 2650
+$Comp
+L Earth #PWR01
+U 1 1 5824D7D2
+P 5600 2650
+F 0 "#PWR01" H 5600 2400 50  0001 C CNN
+F 1 "Earth" H 5600 2500 50  0001 C CNN
+F 2 "" H 5600 2650 50  0000 C CNN
+F 3 "" H 5600 2650 50  0000 C CNN
+	1    5600 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 5824D7F0
+P 5600 3550
+F 0 "#PWR02" H 5600 3300 50  0001 C CNN
+F 1 "Earth" H 5600 3400 50  0001 C CNN
+F 2 "" H 5600 3550 50  0000 C CNN
+F 3 "" H 5600 3550 50  0000 C CNN
+	1    5600 3550
+	0    1    1    0   
+$EndComp
+Text GLabel 4250 4100 0    60   Input ~ 0
+Vcc3p3
+Wire Wire Line
+	4250 4100 4250 3800
+Wire Wire Line
+	4250 4100 4750 4100
+Wire Wire Line
+	4750 4100 4750 3800
+Text GLabel 4250 2900 0    60   Input ~ 0
+Vcc3p3
+Text GLabel 4750 2900 2    60   Input ~ 0
+Vcc3p3
+$Comp
+L Earth #PWR03
+U 1 1 5824D842
+P 4250 3700
+F 0 "#PWR03" H 4250 3450 50  0001 C CNN
+F 1 "Earth" H 4250 3550 50  0001 C CNN
+F 2 "" H 4250 3700 50  0000 C CNN
+F 3 "" H 4250 3700 50  0000 C CNN
+	1    4250 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR04
+U 1 1 5824D853
+P 4750 3700
+F 0 "#PWR04" H 4750 3450 50  0001 C CNN
+F 1 "Earth" H 4750 3550 50  0001 C CNN
+F 2 "" H 4750 3700 50  0000 C CNN
+F 3 "" H 4750 3700 50  0000 C CNN
+	1    4750 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Earth #PWR05
+U 1 1 5824D864
+P 4250 2800
+F 0 "#PWR05" H 4250 2550 50  0001 C CNN
+F 1 "Earth" H 4250 2650 50  0001 C CNN
+F 2 "" H 4250 2800 50  0000 C CNN
+F 3 "" H 4250 2800 50  0000 C CNN
+	1    4250 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 5824D875
+P 4750 2800
+F 0 "#PWR06" H 4750 2550 50  0001 C CNN
+F 1 "Earth" H 4750 2650 50  0001 C CNN
+F 2 "" H 4750 2800 50  0000 C CNN
+F 3 "" H 4750 2800 50  0000 C CNN
+	1    4750 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 3550 6100 3550
+NoConn ~ 6250 3550
+Wire Wire Line
+	6100 4050 6300 4050
+NoConn ~ 6300 4050
+Wire Wire Line
+	4250 2400 4250 2200
+Wire Wire Line
+	4250 2500 4200 2500
+Wire Wire Line
+	4250 2600 4150 2600
+Wire Wire Line
+	4250 2700 4100 2700
+Wire Wire Line
+	4750 3600 5000 3600
+Wire Wire Line
+	5000 3600 5000 3450
+Wire Wire Line
+	5000 3450 5600 3450
+Wire Wire Line
+	4750 3500 4950 3500
+Wire Wire Line
+	4950 3500 4950 3350
+Wire Wire Line
+	4950 3350 5600 3350
+Wire Wire Line
+	4750 3400 4900 3400
+Wire Wire Line
+	4900 3400 4900 3250
+Wire Wire Line
+	4900 3250 5600 3250
+Wire Wire Line
+	4750 3300 5500 3300
+Wire Wire Line
+	5500 3300 5500 3150
+Wire Wire Line
+	5500 3150 5600 3150
+Wire Wire Line
+	4750 3200 5550 3200
+Wire Wire Line
+	5550 3200 5550 3050
+Wire Wire Line
+	5550 3050 5600 3050
+Wire Wire Line
+	4750 3100 5500 3100
+Wire Wire Line
+	5500 3100 5500 2950
+Wire Wire Line
+	5500 2950 5600 2950
+Wire Wire Line
+	4750 3000 5400 3000
+Wire Wire Line
+	5400 3000 5400 2850
+Wire Wire Line
+	5400 2850 5600 2850
+Wire Wire Line
+	4750 2700 5400 2700
+Wire Wire Line
+	5400 2700 5400 2750
+Wire Wire Line
+	5400 2750 5600 2750
+Wire Wire Line
+	4750 2600 5300 2600
+Wire Wire Line
+	5300 2600 5300 2550
+Wire Wire Line
+	5300 2550 5600 2550
+Wire Wire Line
+	4750 2500 5600 2500
+Wire Wire Line
+	5600 2500 5600 2450
+Wire Wire Line
+	4750 2400 5600 2400
+Wire Wire Line
+	5600 2400 5600 2350
+Wire Wire Line
+	4250 2200 5250 2200
+Wire Wire Line
+	5250 2200 5250 2250
+Wire Wire Line
+	5250 2250 5600 2250
+Wire Wire Line
+	4200 2500 4200 2150
+Wire Wire Line
+	4200 2150 5600 2150
+Wire Wire Line
+	4150 2600 4150 2050
+Wire Wire Line
+	4150 2050 6700 2050
+Wire Wire Line
+	6700 2050 6700 2350
+Wire Wire Line
+	6700 2350 6100 2350
+Wire Wire Line
+	4100 2700 4100 1950
+Wire Wire Line
+	4100 1950 6750 1950
+Wire Wire Line
+	6750 1950 6750 2450
+Wire Wire Line
+	6750 2450 6100 2450
+Wire Wire Line
+	4250 3000 3600 3000
+Wire Wire Line
+	3600 3000 3600 1900
+Wire Wire Line
+	3600 1900 6850 1900
+Wire Wire Line
+	6850 1900 6850 2550
+Wire Wire Line
+	6850 2550 6100 2550
+Wire Wire Line
+	4250 3600 3650 3600
+Wire Wire Line
+	3650 3600 3650 4400
+Wire Wire Line
+	3650 4400 5450 4400
+Wire Wire Line
+	5450 4400 5450 3850
+Wire Wire Line
+	5450 3850 5600 3850
+Wire Wire Line
+	4250 3500 3600 3500
+Wire Wire Line
+	3600 3500 3600 4450
+Wire Wire Line
+	3600 4450 5500 4450
+Wire Wire Line
+	5500 4450 5500 3950
+Wire Wire Line
+	5500 3950 5600 3950
+Wire Wire Line
+	4250 3400 3500 3400
+Wire Wire Line
+	3500 3400 3500 4550
+Wire Wire Line
+	3500 4550 5600 4550
+Wire Wire Line
+	5600 4550 5600 4050
+Wire Wire Line
+	4250 3300 3450 3300
+Wire Wire Line
+	3450 3300 3450 4600
+Wire Wire Line
+	3450 4600 6500 4600
+Wire Wire Line
+	6500 4600 6500 3950
+Wire Wire Line
+	6500 3950 6100 3950
+Wire Wire Line
+	4250 3200 3400 3200
+Wire Wire Line
+	3400 3200 3400 4650
+Wire Wire Line
+	3400 4650 6600 4650
+Wire Wire Line
+	6600 4650 6600 3850
+Wire Wire Line
+	6600 3850 6100 3850
+Wire Wire Line
+	4250 3100 3350 3100
+Wire Wire Line
+	3350 3100 3350 4700
+Wire Wire Line
+	3350 4700 6700 4700
+Wire Wire Line
+	6700 4700 6700 3800
+Wire Wire Line
+	6700 3800 6100 3800
+Wire Wire Line
+	6100 3800 6100 3750
+NoConn ~ 6100 3450
+NoConn ~ 6100 3350
+NoConn ~ 6100 3250
+NoConn ~ 6100 3150
+NoConn ~ 6100 3050
+NoConn ~ 6100 2950
+NoConn ~ 6100 2850
+NoConn ~ 6100 2750
+NoConn ~ 6100 3650
+NoConn ~ 5600 3650
+NoConn ~ 5600 3750
+NoConn ~ 6100 2250
+NoConn ~ 6100 2150
+$EndSCHEMATC

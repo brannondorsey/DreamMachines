@@ -1,0 +1,268 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:user
+LIBS:BON-PCB-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "7 jul 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TP TP1
+U 1 1 577EAD17
+P 3650 2850
+F 0 "TP1" H 3650 2950 60  0000 C CNN
+F 1 "3.3VDC" H 3750 2850 60  0001 C CNN
+F 2 "~" H 3650 2850 60  0000 C CNN
+F 3 "~" H 3650 2850 60  0000 C CNN
+	1    3650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP2
+U 1 1 577EAD24
+P 3850 2850
+F 0 "TP2" H 3850 2950 60  0000 C CNN
+F 1 "GND" H 3950 2850 60  0001 C CNN
+F 2 "~" H 3850 2850 60  0000 C CNN
+F 3 "~" H 3850 2850 60  0000 C CNN
+	1    3850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP3
+U 1 1 577EAD2A
+P 4050 2850
+F 0 "TP3" H 4050 2950 60  0000 C CNN
+F 1 "PGD" H 4150 2850 60  0001 C CNN
+F 2 "~" H 4050 2850 60  0000 C CNN
+F 3 "~" H 4050 2850 60  0000 C CNN
+	1    4050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP4
+U 1 1 577EAD30
+P 4250 2850
+F 0 "TP4" H 4250 2950 60  0000 C CNN
+F 1 "PGC" H 4350 2850 60  0001 C CNN
+F 2 "~" H 4250 2850 60  0000 C CNN
+F 3 "~" H 4250 2850 60  0000 C CNN
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP5
+U 1 1 577EAD4A
+P 4450 2850
+F 0 "TP5" H 4450 2950 60  0000 C CNN
+F 1 "MCLR" H 4550 2850 60  0001 C CNN
+F 2 "~" H 4450 2850 60  0000 C CNN
+F 3 "~" H 4450 2850 60  0000 C CNN
+	1    4450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP6
+U 1 1 577EAD50
+P 4650 2850
+F 0 "TP6" H 4650 2950 60  0000 C CNN
+F 1 "RTCC" H 4750 2850 60  0001 C CNN
+F 2 "~" H 4650 2850 60  0000 C CNN
+F 3 "~" H 4650 2850 60  0000 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP7
+U 1 1 577EAD56
+P 4850 2850
+F 0 "TP7" H 4850 2950 60  0000 C CNN
+F 1 "SCL" H 4950 2850 60  0001 C CNN
+F 2 "~" H 4850 2850 60  0000 C CNN
+F 3 "~" H 4850 2850 60  0000 C CNN
+	1    4850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP8
+U 1 1 577EAD5C
+P 5050 2850
+F 0 "TP8" H 5050 2950 60  0000 C CNN
+F 1 "SDA" H 5150 2850 60  0001 C CNN
+F 2 "~" H 5050 2850 60  0000 C CNN
+F 3 "~" H 5050 2850 60  0000 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP9
+U 1 1 577EAD62
+P 5250 2850
+F 0 "TP9" H 5250 2950 60  0000 C CNN
+F 1 "+13VDC" H 5350 2850 60  0001 C CNN
+F 2 "~" H 5250 2850 60  0000 C CNN
+F 3 "~" H 5250 2850 60  0000 C CNN
+	1    5250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP10
+U 1 1 577EAD68
+P 5450 2850
+F 0 "TP10" H 5450 2950 60  0000 C CNN
+F 1 "USB +5VDC" H 5550 2850 60  0001 C CNN
+F 2 "~" H 5450 2850 60  0000 C CNN
+F 3 "~" H 5450 2850 60  0000 C CNN
+	1    5450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP TP11
+U 1 1 577EAD6E
+P 5650 2850
+F 0 "TP11" H 5650 2950 60  0000 C CNN
+F 1 "VBAT" H 5750 2850 60  0001 C CNN
+F 2 "~" H 5650 2850 60  0000 C CNN
+F 3 "~" H 5650 2850 60  0000 C CNN
+	1    5650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_11 P1
+U 1 1 577EAE6B
+P 4650 4400
+F 0 "P1" V 4600 4400 60  0000 C CNN
+F 1 "CONN_11" V 4700 4400 60  0000 C CNN
+F 2 "" H 4650 4400 60  0000 C CNN
+F 3 "" H 4650 4400 60  0000 C CNN
+	1    4650 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3350 3650 2900
+Wire Wire Line
+	3850 2900 3850 3300
+Wire Wire Line
+	4050 3250 4050 2900
+Wire Wire Line
+	4250 3200 4250 2900
+Wire Wire Line
+	4450 3150 4450 2900
+Wire Wire Line
+	4650 3100 4650 2900
+Wire Wire Line
+	5050 3100 5050 2900
+Wire Wire Line
+	5250 3150 5250 2900
+Wire Wire Line
+	5450 2900 5450 3200
+Wire Wire Line
+	5650 3250 5650 2900
+Text Label 3650 3350 1    60   ~ 0
++3.3VDC
+Text Label 3850 3300 1    60   ~ 0
+GND
+Text Label 4050 3250 1    60   ~ 0
+PGD
+Text Label 4250 3200 1    60   ~ 0
+PGC
+Text Label 4450 3150 1    60   ~ 0
+MCLR
+Text Label 4650 3100 1    60   ~ 0
+RTCC
+Text Label 4850 3100 1    60   ~ 0
+SCL
+Text Label 5050 3100 1    60   ~ 0
+SDA
+Text Label 5250 3150 1    60   ~ 0
++13VDC
+Text Label 5450 3200 1    60   ~ 0
+USB +5VDC
+Text Label 5650 3250 1    60   ~ 0
+VBAT
+Wire Wire Line
+	4850 2900 4850 3100
+Wire Wire Line
+	5150 4000 5150 4050
+Wire Wire Line
+	5050 4000 5050 4050
+Wire Wire Line
+	4950 4000 4950 4050
+Wire Wire Line
+	4850 4000 4850 4050
+Wire Wire Line
+	4750 4000 4750 4050
+Wire Wire Line
+	4650 4000 4650 4050
+Wire Wire Line
+	4550 4000 4550 4050
+Wire Wire Line
+	4450 4000 4450 4050
+Wire Wire Line
+	4350 4000 4350 4050
+Wire Wire Line
+	4250 4000 4250 4050
+Wire Wire Line
+	4150 4000 4150 4050
+Text Label 4350 4000 1    60   ~ 0
++3.3VDC
+Text Label 4450 4000 1    60   ~ 0
+GND
+Text Label 4150 4000 1    60   ~ 0
+USB +5VDC
+Text Label 4250 4000 1    60   ~ 0
+VBAT
+Text Label 4550 4000 1    60   ~ 0
+SDA
+Text Label 4650 4000 1    60   ~ 0
+SCL
+Text Label 4850 4000 1    60   ~ 0
+RTCC
+Text Label 4750 4000 1    60   ~ 0
++13VDC
+Text Label 5050 4000 1    60   ~ 0
+PGC
+Text Label 4950 4000 1    60   ~ 0
+PGD
+Text Label 5150 4000 1    60   ~ 0
+MCLR
+$EndSCHEMATC

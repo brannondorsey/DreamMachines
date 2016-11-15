@@ -1,0 +1,213 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bth-switch
+LIBS:bth-ic
+LIBS:bth-power
+LIBS:MyBenchBuddy-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1900 2600 0    60   Input ~ 0
+LED_EN_PWM
+Text HLabel 10650 1450 2    60   Output ~ 0
+String+
+Text HLabel 10550 2650 2    60   Input ~ 0
+String-
+$Comp
+L AP5726 U?
+U 1 1 524CE701
+P 2950 2450
+F 0 "U?" H 3300 2000 60  0000 C CNN
+F 1 "AP5726" H 3000 2450 60  0000 C CNN
+F 2 "" H 2950 2400 60  0000 C CNN
+F 3 "" H 2950 2400 60  0000 C CNN
+	1    2950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2600 2300 2600
+$Comp
+L +5V #PWR?
+U 1 1 524CEF73
+P 2200 1350
+F 0 "#PWR?" H 2200 1440 20  0001 C CNN
+F 1 "+5V" H 2200 1440 30  0000 C CNN
+F 2 "" H 2200 1350 60  0000 C CNN
+F 3 "" H 2200 1350 60  0000 C CNN
+	1    2200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 524CEF87
+P 2200 2250
+F 0 "#PWR?" H 2200 2250 30  0001 C CNN
+F 1 "GND" H 2200 2180 30  0001 C CNN
+F 2 "" H 2200 2250 60  0000 C CNN
+F 3 "" H 2200 2250 60  0000 C CNN
+	1    2200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 524CEF99
+P 2950 3400
+F 0 "#PWR?" H 2950 3400 30  0001 C CNN
+F 1 "GND" H 2950 3330 30  0001 C CNN
+F 2 "" H 2950 3400 60  0000 C CNN
+F 3 "" H 2950 3400 60  0000 C CNN
+	1    2950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3150 2950 3400
+$Comp
+L C C?
+U 1 1 524CF110
+P 2200 1800
+F 0 "C?" H 2200 1900 40  0000 L CNN
+F 1 "C" H 2206 1715 40  0000 L CNN
+F 2 "" H 2238 1650 30  0000 C CNN
+F 3 "" H 2200 1800 60  0000 C CNN
+	1    2200 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1350 2200 1600
+Wire Wire Line
+	2200 2000 2200 2250
+Wire Wire Line
+	2200 1450 3000 1450
+Wire Wire Line
+	2800 1450 2800 1850
+Connection ~ 2200 1450
+$Comp
+L C C?
+U 1 1 524CF298
+P 9700 1900
+F 0 "C?" H 9700 2000 40  0000 L CNN
+F 1 "C" H 9706 1815 40  0000 L CNN
+F 2 "" H 9738 1750 30  0000 C CNN
+F 3 "" H 9700 1900 60  0000 C CNN
+	1    9700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 524CF2AC
+P 3300 1450
+F 0 "L?" V 3250 1450 40  0000 C CNN
+F 1 "INDUCTOR" V 3400 1450 40  0000 C CNN
+F 2 "" H 3300 1450 60  0000 C CNN
+F 3 "" H 3300 1450 60  0000 C CNN
+	1    3300 1450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2800 1450
+Wire Wire Line
+	3150 1850 3150 1700
+Wire Wire Line
+	3150 1700 3750 1700
+Wire Wire Line
+	3750 1700 3750 1450
+Wire Wire Line
+	3600 1450 3950 1450
+$Comp
+L DIODESCH D?
+U 1 1 524CF479
+P 4150 1450
+F 0 "D?" H 4150 1550 40  0000 C CNN
+F 1 "DIODESCH" H 4150 1350 40  0000 C CNN
+F 2 "" H 4150 1450 60  0000 C CNN
+F 3 "" H 4150 1450 60  0000 C CNN
+	1    4150 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 1450
+Wire Wire Line
+	4350 1450 10650 1450
+Wire Wire Line
+	9700 1450 9700 1700
+$Comp
+L GND #PWR?
+U 1 1 524CF638
+P 9700 2300
+F 0 "#PWR?" H 9700 2300 30  0001 C CNN
+F 1 "GND" H 9700 2230 30  0001 C CNN
+F 2 "" H 9700 2300 60  0000 C CNN
+F 3 "" H 9700 2300 60  0000 C CNN
+	1    9700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2100 9700 2300
+Connection ~ 9700 1450
+Wire Wire Line
+	10550 2650 3850 2650
+Wire Wire Line
+	3850 2650 3850 2850
+Wire Wire Line
+	3850 2750 3650 2750
+$Comp
+L R R?
+U 1 1 524CF832
+P 3850 3100
+F 0 "R?" V 3930 3100 40  0000 C CNN
+F 1 "R" V 3857 3101 40  0000 C CNN
+F 2 "" V 3780 3100 30  0000 C CNN
+F 3 "" H 3850 3100 30  0000 C CNN
+	1    3850 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 2750
+Wire Wire Line
+	3850 3350 2950 3350
+Connection ~ 2950 3350
+Wire Wire Line
+	3650 2600 3650 1950
+Wire Wire Line
+	3650 1950 4500 1950
+Wire Wire Line
+	4500 1950 4500 1450
+Connection ~ 4500 1450
+$EndSCHEMATC

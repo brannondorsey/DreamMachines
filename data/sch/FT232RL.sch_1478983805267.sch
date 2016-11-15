@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2  date Sun 24 Oct 2010 04:07:42 PM ART
+LIBS:power,ft232rl,device,transistors,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,opto,atmel,contrib,valves,./FT232RL.cache
+EELAYER 24  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title ""
+Date "24 oct 2010"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7400 3150 7300 3150
+Wire Wire Line
+	7300 3150 7300 2700
+Wire Wire Line
+	7300 2700 6500 2700
+Wire Wire Line
+	7400 2850 7250 2850
+Wire Wire Line
+	7250 2850 7250 3150
+Wire Wire Line
+	7250 3150 6500 3150
+Wire Wire Line
+	3800 4050 4250 4050
+Wire Wire Line
+	4250 4050 4250 3650
+Wire Wire Line
+	4250 3650 4800 3650
+Wire Wire Line
+	3800 3850 4150 3850
+Wire Wire Line
+	4150 3850 4150 4750
+Wire Wire Line
+	4150 4750 5800 4750
+Wire Wire Line
+	5800 4750 5800 4700
+Wire Wire Line
+	3800 3650 4100 3650
+Wire Wire Line
+	4100 3650 4100 3450
+Wire Wire Line
+	4100 3450 4800 3450
+Wire Wire Line
+	3800 3450 4000 3450
+Wire Wire Line
+	4000 3450 4000 4950
+Wire Wire Line
+	4000 4950 6600 4950
+Wire Wire Line
+	6600 4950 6600 3900
+Wire Wire Line
+	6600 3900 6500 3900
+Wire Wire Line
+	5650 4700 5650 4900
+Wire Wire Line
+	3850 4850 3850 3050
+Wire Wire Line
+	3850 4850 5500 4850
+Wire Wire Line
+	4600 3250 4600 2200
+Wire Wire Line
+	3800 3350 3950 3350
+Wire Wire Line
+	3800 3150 4550 3150
+Wire Wire Line
+	4550 3150 4550 3350
+Wire Wire Line
+	4550 3350 4800 3350
+Wire Wire Line
+	3800 2950 3900 2950
+Wire Wire Line
+	3900 2950 3900 4000
+Wire Wire Line
+	3900 4000 4800 4000
+Wire Wire Line
+	3800 2850 3900 2850
+Wire Wire Line
+	3900 2850 3900 2800
+Wire Wire Line
+	3900 2800 4800 2800
+Wire Wire Line
+	7400 4050 6900 4050
+Wire Wire Line
+	6900 4050 6900 4200
+Wire Wire Line
+	6900 4200 6500 4200
+Wire Wire Line
+	7400 3850 6850 3850
+Wire Wire Line
+	6850 3850 6850 4300
+Wire Wire Line
+	6850 4300 6500 4300
+Wire Wire Line
+	7400 3350 7100 3350
+Wire Wire Line
+	7100 3350 7100 4800
+Wire Wire Line
+	7100 4800 5350 4800
+Wire Wire Line
+	5350 4800 5350 4700
+Wire Wire Line
+	7400 3650 6950 3650
+Wire Wire Line
+	6950 3650 6950 3450
+Wire Wire Line
+	6950 3450 6500 3450
+Wire Wire Line
+	7400 3250 7150 3250
+Wire Wire Line
+	7150 3250 7150 3600
+Wire Wire Line
+	7150 3600 6500 3600
+Wire Wire Line
+	6500 2550 7350 2550
+Wire Wire Line
+	7350 2550 7350 2750
+Wire Wire Line
+	7350 2750 7400 2750
+Wire Wire Line
+	4800 2550 4700 2550
+Wire Wire Line
+	4700 2550 4700 2250
+Wire Wire Line
+	4700 2250 7200 2250
+Wire Wire Line
+	7200 2250 7200 3050
+Wire Wire Line
+	7200 3050 7400 3050
+Wire Wire Line
+	4600 3250 4800 3250
+Wire Wire Line
+	7400 3450 7050 3450
+Wire Wire Line
+	6500 3300 7000 3300
+Wire Wire Line
+	7000 3300 7000 3550
+Wire Wire Line
+	7000 3550 7400 3550
+Wire Wire Line
+	6500 3000 6900 3000
+Wire Wire Line
+	6900 3000 6900 3750
+Wire Wire Line
+	6900 3750 7400 3750
+Wire Wire Line
+	6500 4050 6800 4050
+Wire Wire Line
+	6800 4050 6800 3950
+Wire Wire Line
+	6800 3950 7400 3950
+Wire Wire Line
+	3800 2750 3950 2750
+Wire Wire Line
+	3950 2750 3950 2950
+Wire Wire Line
+	3950 2950 4800 2950
+Wire Wire Line
+	3850 3050 3800 3050
+Wire Wire Line
+	4800 2650 4500 2650
+Wire Wire Line
+	4500 2650 4500 3250
+Wire Wire Line
+	4500 3250 3800 3250
+Wire Wire Line
+	4600 2200 7050 2200
+Wire Wire Line
+	7050 2200 7050 3450
+Wire Wire Line
+	5500 4850 5500 4700
+Wire Wire Line
+	5650 4900 3950 4900
+Wire Wire Line
+	3950 4900 3950 3350
+Wire Wire Line
+	6500 3750 6650 3750
+Wire Wire Line
+	6650 3750 6650 5000
+Wire Wire Line
+	6650 5000 4050 5000
+Wire Wire Line
+	4050 5000 4050 3550
+Wire Wire Line
+	4050 3550 3800 3550
+Wire Wire Line
+	5200 4700 5200 4800
+Wire Wire Line
+	5200 4800 4100 4800
+Wire Wire Line
+	4100 4800 4100 3750
+Wire Wire Line
+	4100 3750 3800 3750
+Wire Wire Line
+	3800 3950 4200 3950
+Wire Wire Line
+	4200 3950 4200 3550
+Wire Wire Line
+	4200 3550 4800 3550
+Wire Wire Line
+	6500 2850 7150 2850
+Wire Wire Line
+	7150 2850 7150 2950
+Wire Wire Line
+	7150 2950 7400 2950
+$Comp
+L CONN_14 P1
+U 1 1 4CC47075
+P 7750 3400
+F 0 "P1" V 7720 3400 60  0000 C CNN
+F 1 "CONN_14" V 7830 3400 60  0000 C CNN
+F 2 "SIL-14" V 7660 3340 60  0001 C CNN
+	1    7750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_14 P2
+U 1 1 4CC4707D
+P 3450 3400
+F 0 "P2" V 3420 3400 60  0000 C CNN
+F 1 "CONN_14" V 3530 3400 60  0000 C CNN
+F 2 "SIL-14" V 3360 3340 60  0001 C CNN
+	1    3450 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L FT232RL FT2321
+U 1 1 4CC47058
+P 6250 2900
+F 0 "FT2321" H 5350 3450 60  0000 C CNN
+F 1 "FT232RL" H 6100 1300 60  0000 C CNN
+F 2 "SSOP28" H 5290 3510 60  0001 C CNN
+	1    6250 2900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

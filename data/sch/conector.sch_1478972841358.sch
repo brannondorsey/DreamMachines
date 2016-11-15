@@ -1,0 +1,341 @@
+EESchema Schematic File Version 2
+LIBS:ej2
+LIBS:Ejercicio2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2450 3500 0    60   Input ~ 0
+TXD
+Text HLabel 2450 3600 0    60   Output ~ 0
+RXD
+Text HLabel 2600 4200 0    60   Output ~ 0
+CST
+Text HLabel 2600 4100 0    60   Input ~ 0
+RTS
+$Comp
+L Conn_Poncho2P_2x_20x2 XA1
+U 1 1 565DFDB8
+P 3200 2700
+F 0 "XA1" H 3500 3100 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 3550 1000 60  0000 C CNN
+F 2 "ej2:Conn_Poncho_Derecha" H 3200 2700 60  0001 C CNN
+F 3 "" H 3200 2700 60  0000 C CNN
+F 4 "Val952-1387-ND" H 3200 2700 60  0001 C CNN "Digikey/Mouser"
+	1    3200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3,3V #PWR01
+U 1 1 565DFEC5
+P 2650 2200
+F 0 "#PWR01" H 2650 2160 30  0001 C CNN
+F 1 "+3,3V" H 2650 2310 30  0000 C CNN
+F 2 "" H 2650 2200 60  0000 C CNN
+F 3 "" H 2650 2200 60  0000 C CNN
+	1    2650 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2950 2500
+NoConn ~ 2950 2600
+NoConn ~ 2950 2700
+NoConn ~ 2950 2800
+NoConn ~ 2950 2900
+NoConn ~ 2950 3000
+NoConn ~ 2950 3100
+NoConn ~ 2950 3200
+NoConn ~ 2950 3300
+NoConn ~ 2950 3400
+Wire Wire Line
+	2650 2200 2650 2400
+Wire Wire Line
+	2650 2400 2950 2400
+NoConn ~ 2950 3900
+NoConn ~ 2950 4000
+NoConn ~ 2950 4300
+Wire Wire Line
+	2600 4100 2950 4100
+Wire Wire Line
+	2600 4200 2950 4200
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 565DFF67
+P 4700 2250
+F 0 "#FLG02" H 4700 2345 30  0001 C CNN
+F 1 "PWR_FLAG" H 4700 2430 30  0000 C CNN
+F 2 "" H 4700 2250 60  0000 C CNN
+F 3 "" H 4700 2250 60  0000 C CNN
+	1    4700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2250 4700 4500
+Wire Wire Line
+	4700 4300 4150 4300
+Wire Wire Line
+	4150 4200 4700 4200
+Connection ~ 4700 4200
+Wire Wire Line
+	4150 3900 4700 3900
+Connection ~ 4700 3900
+Wire Wire Line
+	4150 3800 4700 3800
+Connection ~ 4700 3800
+Wire Wire Line
+	4150 3700 4700 3700
+Connection ~ 4700 3700
+Wire Wire Line
+	4150 3600 4700 3600
+Connection ~ 4700 3600
+Wire Wire Line
+	4150 3500 4700 3500
+Connection ~ 4700 3500
+Wire Wire Line
+	4150 3400 4700 3400
+Connection ~ 4700 3400
+Wire Wire Line
+	4150 3300 4700 3300
+Connection ~ 4700 3300
+NoConn ~ 4150 4000
+NoConn ~ 4150 4100
+NoConn ~ 4150 2600
+NoConn ~ 4150 2700
+NoConn ~ 4150 2800
+NoConn ~ 4150 2900
+NoConn ~ 4150 3000
+NoConn ~ 4150 3100
+NoConn ~ 4150 3200
+Wire Wire Line
+	4150 2500 4700 2500
+Connection ~ 4700 2500
+$Comp
+L +5V #PWR03
+U 1 1 565E0053
+P 4350 2150
+F 0 "#PWR03" H 4350 2240 20  0001 C CNN
+F 1 "+5V" H 4350 2240 30  0000 C CNN
+F 2 "" H 4350 2150 60  0000 C CNN
+F 3 "" H 4350 2150 60  0000 C CNN
+	1    4350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2400 4350 2400
+Wire Wire Line
+	4350 2400 4350 2150
+Wire Wire Line
+	2450 3500 2950 3500
+Wire Wire Line
+	2450 3600 2950 3600
+$Comp
+L CONN_3 JP1
+U 1 1 565E00FC
+P 5300 3650
+F 0 "JP1" H 5350 3150 60  0000 C CNN
+F 1 "CAN" H 5350 3650 60  0000 C CNN
+F 2 "ej2:CON_PALETA_3" H 5300 3650 60  0001 C CNN
+F 3 "" H 5300 3650 60  0000 C CNN
+	1    5300 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 565E0285
+P 6300 3050
+F 0 "R1" V 6380 3050 50  0000 C CNN
+F 1 "60" V 6300 3050 50  0000 C CNN
+F 2 "ej2:R_1206_HandSoldering" H 6300 3050 60  0001 C CNN
+F 3 "" H 6300 3050 60  0000 C CNN
+	1    6300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 565E02D5
+P 6300 3750
+F 0 "R2" V 6380 3750 50  0000 C CNN
+F 1 "60" V 6300 3750 50  0000 C CNN
+F 2 "ej2:R_1206_HandSoldering" H 6300 3750 60  0001 C CNN
+F 3 "" H 6300 3750 60  0000 C CNN
+	1    6300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L AMIS42665TJAA1RG U1
+U 1 1 565E035F
+P 7400 3450
+F 0 "U1" H 7150 3950 60  0000 C CNN
+F 1 "AMIS42665TJAA1RG" H 7400 3050 60  0000 C CNN
+F 2 "ej2:SOIC-8" H 7400 3500 60  0001 C CNN
+F 3 "" H 7400 3500 60  0000 C CNN
+F 4 "76-10006.1-ND" H 7400 3450 60  0001 C CNN "Digikey/Mouser"
+	1    7400 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 565E0431
+P 8500 3100
+F 0 "C1" H 8500 3200 40  0000 L CNN
+F 1 "100nF" H 8506 3015 40  0000 L CNN
+F 2 "ej2:C_1206_HamdSoldering" H 8538 2950 30  0001 C CNN
+F 3 "" H 8500 3100 60  0000 C CNN
+	1    8500 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 3300 6300 3500
+Wire Wire Line
+	6750 3400 6300 3400
+Connection ~ 6300 3400
+Wire Wire Line
+	5900 3300 5900 2800
+Wire Wire Line
+	5900 2800 6750 2800
+Wire Wire Line
+	6750 2800 6750 3100
+Connection ~ 6300 2800
+Wire Wire Line
+	6750 4000 6750 3700
+Connection ~ 6300 4000
+$Comp
+L GND #PWR04
+U 1 1 565E0842
+P 8450 4000
+F 0 "#PWR04" H 8450 4000 30  0001 C CNN
+F 1 "GND" H 8450 3930 30  0001 C CNN
+F 2 "" H 8450 4000 60  0000 C CNN
+F 3 "" H 8450 4000 60  0000 C CNN
+	1    8450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3100 8300 3100
+Wire Wire Line
+	8000 3250 8450 3250
+Wire Wire Line
+	8450 3250 8450 4000
+Wire Wire Line
+	8000 3700 8450 3700
+Connection ~ 8450 3700
+$Comp
+L +5V #PWR05
+U 1 1 565E09B8
+P 8150 2950
+F 0 "#PWR05" H 8150 3040 20  0001 C CNN
+F 1 "+5V" H 8150 3040 30  0000 C CNN
+F 2 "" H 8150 2950 60  0000 C CNN
+F 3 "" H 8150 2950 60  0000 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2950 8150 3100
+Connection ~ 8150 3100
+Wire Wire Line
+	5500 3400 6000 3400
+Wire Wire Line
+	6000 3400 6000 4000
+Wire Wire Line
+	6000 4000 6750 4000
+$Comp
+L GND #PWR06
+U 1 1 565E0B3D
+P 5550 3700
+F 0 "#PWR06" H 5550 3700 30  0001 C CNN
+F 1 "GND" H 5550 3630 30  0001 C CNN
+F 2 "" H 5550 3700 60  0000 C CNN
+F 3 "" H 5550 3700 60  0000 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3300 5500 3300
+Wire Wire Line
+	5500 3500 5550 3500
+Wire Wire Line
+	5550 3500 5550 3700
+Wire Bus Line
+	5750 3500 5750 4150
+Wire Bus Line
+	5750 4150 5950 4150
+Text Notes 6000 4250 0    60   ~ 0
+Par diferencial\n120 Ohms
+Wire Bus Line
+	4900 2250 5250 2000
+Wire Bus Line
+	5250 2000 5550 2000
+Wire Bus Line
+	2050 1750 2400 1750
+Wire Bus Line
+	2400 1750 2550 2000
+Text Notes 1700 1800 0    60   ~ 0
+Etiqueta\nglobal
+Wire Bus Line
+	2700 3850 2700 4650
+Wire Bus Line
+	2700 4650 3250 4650
+Text Notes 3300 4750 0    60   ~ 0
+Etiquetas\nlocales
+Text Notes 5650 2050 0    60   ~ 0
+Power\nFlag
+$Comp
+L GND #PWR07
+U 1 1 565E139C
+P 4700 4500
+F 0 "#PWR07" H 4700 4500 30  0001 C CNN
+F 1 "GND" H 4700 4430 30  0001 C CNN
+F 2 "" H 4700 4500 60  0000 C CNN
+F 3 "" H 4700 4500 60  0000 C CNN
+	1    4700 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 4300
+Wire Bus Line
+	2250 3350 2100 3350
+Wire Bus Line
+	2100 3350 2100 4250
+Wire Bus Line
+	2100 4250 2250 4250
+Text Notes 1450 3800 0    60   ~ 0
+Etiquetas\nde jerarquia
+$Comp
+L GND #PWR08
+U 1 1 565E0862
+P 8700 3250
+F 0 "#PWR08" H 8700 3250 30  0001 C CNN
+F 1 "GND" H 8700 3180 30  0001 C CNN
+F 2 "" H 8700 3250 60  0000 C CNN
+F 3 "" H 8700 3250 60  0000 C CNN
+	1    8700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3100 8700 3250
+Text Label 2700 3700 2    60   ~ 0
+CAN_RX
+Wire Wire Line
+	2700 3700 2950 3700
+Text Label 2700 3800 2    60   ~ 0
+CAN_TX
+Wire Wire Line
+	2700 3800 2950 3800
+Text Label 8600 3550 0    60   ~ 0
+CAN_RX
+Text Label 8600 3400 0    60   ~ 0
+CAN_TX
+Wire Wire Line
+	8000 3400 8600 3400
+Wire Wire Line
+	8000 3550 8600 3550
+$EndSCHEMATC

@@ -1,0 +1,289 @@
+EESchema Schematic File Version 2
+LIBS:LM317_HS
+LIBS:74hct04
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ad5689raruz
+LIBS:Symbols_DCDC-ACDC-Converter_RevC_20Jul2012
+LIBS:op470
+LIBS:laser-dac-diff-driver-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date "5 mar 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OP470 U201
+U 4 1 52F54A51
+P 5300 2850
+AR Path="/52F54BF7/52F54A51" Ref="U201"  Part="4" 
+AR Path="/52F5483C/52F54A51" Ref="U201"  Part="2" 
+F 0 "U201" H 5350 3050 60  0000 C CNN
+F 1 "OP470" H 5450 2650 50  0000 C CNN
+F 2 "" H 5300 2850 60  0000 C CNN
+F 3 "" H 5300 2850 60  0000 C CNN
+	4    5300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358 U202
+U 2 1 52F54A65
+P 3200 3550
+AR Path="/52F54BF7/52F54A65" Ref="U202"  Part="2" 
+AR Path="/52F5483C/52F54A65" Ref="U202"  Part="1" 
+F 0 "U202" H 3150 3750 60  0000 L CNN
+F 1 "LM358" H 3150 3300 60  0000 L CNN
+F 2 "" H 3200 3550 60  0000 C CNN
+F 3 "" H 3200 3550 60  0000 C CNN
+	2    3200 3550
+	1    0    0    -1  
+$EndComp
+Text HLabel 1600 1700 0    60   Input ~ 0
++Van
+Text HLabel 1600 4150 0    60   Input ~ 0
+AGND
+Text HLabel 1600 4450 0    60   Input ~ 0
+-Van
+Text HLabel 4000 2200 0    60   Input ~ 0
+In1
+$Comp
+L POT RV302
+U 1 1 52F556FB
+P 1900 3450
+AR Path="/52F54BF7/52F556FB" Ref="RV302"  Part="1" 
+AR Path="/52F5483C/52F556FB" Ref="RV202"  Part="1" 
+F 0 "RV302" H 1900 3350 50  0000 C CNN
+F 1 "10kPOT" H 1900 3450 50  0000 C CNN
+F 2 "" H 1900 3450 60  0000 C CNN
+F 3 "" H 1900 3450 60  0000 C CNN
+	1    1900 3450
+	0    1    1    0   
+$EndComp
+Text HLabel 1600 3000 0    60   Input ~ 0
++Vref
+Wire Wire Line
+	1600 3000 1900 3000
+Wire Wire Line
+	1900 3000 1900 3200
+Wire Wire Line
+	1900 3700 1900 4150
+Wire Wire Line
+	1600 4150 6650 4150
+Wire Wire Line
+	2050 3450 2700 3450
+Wire Wire Line
+	4600 3550 3700 3550
+Wire Wire Line
+	3900 3550 3900 4000
+Wire Wire Line
+	3900 4000 2500 4000
+Wire Wire Line
+	2500 4000 2500 3650
+Wire Wire Line
+	2500 3650 2700 3650
+Wire Wire Line
+	3100 3150 3100 1700
+Wire Wire Line
+	1600 1700 7100 1700
+Wire Wire Line
+	3100 3950 3100 4450
+Wire Wire Line
+	1600 4450 7100 4450
+$Comp
+L OP470 U201
+U 3 1 52F562B3
+P 7200 2750
+AR Path="/52F54BF7/52F562B3" Ref="U201"  Part="3" 
+AR Path="/52F5483C/52F562B3" Ref="U201"  Part="1" 
+F 0 "U201" H 7250 2950 60  0000 C CNN
+F 1 "OP470" H 7350 2550 50  0000 C CNN
+F 2 "" H 7200 2750 60  0000 C CNN
+F 3 "" H 7200 2750 60  0000 C CNN
+	3    7200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R302
+U 1 1 52F562BE
+P 4900 2150
+AR Path="/52F54BF7/52F562BE" Ref="R302"  Part="1" 
+AR Path="/52F5483C/52F562BE" Ref="R202"  Part="1" 
+F 0 "R302" V 4980 2150 40  0000 C CNN
+F 1 "47k" V 4907 2151 40  0000 C CNN
+F 2 "" V 4830 2150 30  0000 C CNN
+F 3 "" H 4900 2150 30  0000 C CNN
+	1    4900 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R303
+U 1 1 52F562D3
+P 6250 2850
+AR Path="/52F54BF7/52F562D3" Ref="R303"  Part="1" 
+AR Path="/52F5483C/52F562D3" Ref="R203"  Part="1" 
+F 0 "R303" V 6330 2850 40  0000 C CNN
+F 1 "10k" V 6257 2851 40  0000 C CNN
+F 2 "" V 6180 2850 30  0000 C CNN
+F 3 "" H 6250 2850 30  0000 C CNN
+	1    6250 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R301
+U 1 1 52F562DE
+P 7400 2100
+AR Path="/52F54BF7/52F562DE" Ref="R301"  Part="1" 
+AR Path="/52F5483C/52F562DE" Ref="R201"  Part="1" 
+F 0 "R301" V 7480 2100 40  0000 C CNN
+F 1 "10k" V 7407 2101 40  0000 C CNN
+F 2 "" V 7330 2100 30  0000 C CNN
+F 3 "" H 7400 2100 30  0000 C CNN
+	1    7400 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 2150 5900 2150
+Wire Wire Line
+	4650 2150 4600 2150
+Wire Wire Line
+	4600 2950 4800 2950
+Connection ~ 3900 3550
+Connection ~ 4600 2950
+Wire Wire Line
+	5800 2850 6000 2850
+Wire Wire Line
+	5900 2150 5900 3650
+Connection ~ 5900 2850
+Wire Wire Line
+	6500 2850 6700 2850
+Wire Wire Line
+	6600 2850 6600 2100
+Wire Wire Line
+	6600 2100 7150 2100
+Connection ~ 6600 2850
+Wire Wire Line
+	7650 2100 7750 2100
+Wire Wire Line
+	7750 2100 7750 2750
+Wire Wire Line
+	7700 2750 8300 2750
+Wire Wire Line
+	6700 2650 6650 2650
+Wire Wire Line
+	6650 2650 6650 4150
+Connection ~ 1900 4150
+Wire Wire Line
+	5200 4450 5200 3250
+Connection ~ 3100 4450
+Wire Wire Line
+	7100 4450 7100 3150
+Connection ~ 5200 4450
+Wire Wire Line
+	5200 1700 5200 2450
+Connection ~ 3100 1700
+Wire Wire Line
+	7100 1700 7100 2350
+Connection ~ 5200 1700
+$Comp
+L POT RV301
+U 1 1 52F56482
+P 4200 2550
+AR Path="/52F54BF7/52F56482" Ref="RV301"  Part="1" 
+AR Path="/52F5483C/52F56482" Ref="RV201"  Part="1" 
+F 0 "RV301" H 4200 2450 50  0000 C CNN
+F 1 "1kPOT" H 4200 2550 50  0000 C CNN
+F 2 "" H 4200 2550 60  0000 C CNN
+F 3 "" H 4200 2550 60  0000 C CNN
+	1    4200 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R304
+U 1 1 52F5648F
+P 4200 3200
+AR Path="/52F54BF7/52F5648F" Ref="R304"  Part="1" 
+AR Path="/52F5483C/52F5648F" Ref="R204"  Part="1" 
+F 0 "R304" V 4280 3200 40  0000 C CNN
+F 1 "8k2" V 4207 3201 40  0000 C CNN
+F 2 "" V 4130 3200 30  0000 C CNN
+F 3 "" H 4200 3200 30  0000 C CNN
+	1    4200 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 2200 4200 2200
+Wire Wire Line
+	4200 2200 4200 2300
+Wire Wire Line
+	4200 2800 4200 2950
+Wire Wire Line
+	4200 3450 4200 4150
+Connection ~ 4200 4150
+Wire Wire Line
+	4800 2750 4450 2750
+Wire Wire Line
+	4450 2750 4450 2550
+Wire Wire Line
+	4450 2550 4350 2550
+Text HLabel 8300 2750 2    60   Output ~ 0
+Out1-
+Text HLabel 8300 3650 2    60   Output ~ 0
+Out1+
+Connection ~ 7750 2750
+Wire Wire Line
+	5900 3650 8300 3650
+$Comp
+L R R205
+U 1 1 53170122
+P 4600 3250
+AR Path="/52F5483C/53170122" Ref="R205"  Part="1" 
+AR Path="/52F54BF7/53170122" Ref="R305"  Part="1" 
+F 0 "R305" V 4680 3250 40  0000 C CNN
+F 1 "10k" V 4607 3251 40  0000 C CNN
+F 2 "~" V 4530 3250 30  0000 C CNN
+F 3 "~" H 4600 3250 30  0000 C CNN
+	1    4600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3550 4600 3500
+Wire Wire Line
+	4600 2150 4600 3000
+$EndSCHEMATC

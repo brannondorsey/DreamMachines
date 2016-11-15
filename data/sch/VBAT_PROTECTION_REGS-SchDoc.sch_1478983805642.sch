@@ -1,0 +1,461 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "VBAT_PROTECTION_REGS-SchDoc"
+Date "18 10 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR?580695BB
+U 1 1 580695BB
+P 1100 1130
+F 0 "VBAT_IN_2" H 1100 1270 20  0000 C CNN
+F 1 "+VBAT_IN" H 1100 1240 30  0000 C CNN
+F 2 "" H 1100 1130 70  0000 C CNN
+F 3 "" H 1100 1130 70  0000 C CNN
+	1    1100 1130
+	1    0    0    -1  
+$EndComp
+Text Label 880 1020 0 70 ~
+1206SFS800F/24TR-ND
+$Comp
+L GND #PWR?580695BA
+U 1 1 580695BA
+P 2860 1130
+F 0 "VBAT_5" H 2860 1270 20  0000 C CNN
+F 1 "+VBAT" H 2860 1240 30  0000 C CNN
+F 2 "" H 2860 1130 70  0000 C CNN
+F 3 "" H 2860 1130 70  0000 C CNN
+	1    2860 1130
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695B9
+U 1 1 580695B9
+P 1540 2670
+F 0 "GNDPWR_30" H 1540 2810 20  0000 C CNN
+F 1 "+GND" H 1540 2780 30  0000 C CNN
+F 2 "" H 1540 2670 70  0000 C CNN
+F 3 "" H 1540 2670 70  0000 C CNN
+	1    1540 2670
+	1    0    0    -1  
+$EndComp
+Text Label 2343 2153 0 70 ~
+2k
+Text Label 2343 1603 0 70 ~
+16k
+Text Notes 6270 800 0    96   ~ 0
+Buck
+$Comp
+L GND #PWR?580695B8
+U 1 1 580695B8
+P 9130 1680
+F 0 "5V" H 9130 1820 20  0000 C CNN
+F 1 "+5V" H 9130 1790 30  0000 C CNN
+F 2 "" H 9130 1680 70  0000 C CNN
+F 3 "" H 9130 1680 70  0000 C CNN
+	1    9130 1680
+	1    0    0    -1  
+$EndComp
+Text Label 5280 1405 0 70 ~
+35.0
+Text Label 5280 1515 0 70 ~
+2u2
+$Comp
+L GND #PWR?580695B7
+U 1 1 580695B7
+P 5170 1130
+F 0 "GND_2" H 5170 1130 20  0000 C CNN
+F 1 "+GND" H 5170 1060 30  0000 C CNN
+F 2 "" H 5170 1130 70  0000 C CNN
+F 3 "" H 5170 1130 70  0000 C CNN
+	1    5170 1130
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695B6
+U 1 1 580695B6
+P 7260 1130
+F 0 "GND_3" H 7260 1130 20  0000 C CNN
+F 1 "+GND" H 7260 1060 30  0000 C CNN
+F 2 "" H 7260 1130 70  0000 C CNN
+F 3 "" H 7260 1130 70  0000 C CNN
+	1    7260 1130
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695B5
+U 1 1 580695B5
+P 7150 2230
+F 0 "GND_4" H 7150 2230 20  0000 C CNN
+F 1 "+GND" H 7150 2160 30  0000 C CNN
+F 2 "" H 7150 2230 70  0000 C CNN
+F 3 "" H 7150 2230 70  0000 C CNN
+	1    7150 2230
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5390 1900
+$Comp
+L GND #PWR?580695B4
+U 1 1 580695B4
+P 4950 1680
+F 0 "VBAT_6" H 4950 1820 20  0000 C CNN
+F 1 "+VBAT" H 4950 1790 30  0000 C CNN
+F 2 "" H 4950 1680 70  0000 C CNN
+F 3 "" H 4950 1680 70  0000 C CNN
+	1    4950 1680
+	1    0    0    -1  
+$EndComp
+Text Label 4983 2373 0 70 ~
+21k
+$Comp
+L GND #PWR?580695B3
+U 1 1 580695B3
+P 4620 2340
+F 0 "GNDPWR_31" H 4620 2480 20  0000 C CNN
+F 1 "+GND" H 4620 2450 30  0000 C CNN
+F 2 "" H 4620 2340 70  0000 C CNN
+F 3 "" H 4620 2340 70  0000 C CNN
+	1    4620 2340
+	1    0    0    -1  
+$EndComp
+Text Label 8503 1933 0 70 ~
+0.02
+Text Label 8503 2043 0 70 ~
+±1%
+$Comp
+L GND #PWR?580695B2
+U 1 1 580695B2
+P 8140 1460
+F 0 "5V_OUT" H 8140 1600 20  0000 C CNN
+F 1 "+5V_OUT" H 8140 1570 30  0000 C CNN
+F 2 "" H 8140 1460 70  0000 C CNN
+F 3 "" H 8140 1460 70  0000 C CNN
+	1    8140 1460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1210 1130 1100 1130
+Wire Wire Line
+	1540 1460 1540 1130
+Wire Wire Line
+	2310 1130 2310 1350
+Wire Wire Line
+	2970 1790 2310 1790
+Wire Wire Line
+	2310 2340 2310 2120
+Wire Wire Line
+	1540 2340 2310 2340
+Wire Wire Line
+	5170 2230 5390 2230
+Wire Wire Line
+	5170 1680 5170 1460
+Wire Wire Line
+	5170 1130 5170 1240
+Wire Wire Line
+	7260 1680 7260 1460
+Wire Wire Line
+	6930 2230 6930 2120
+Wire Wire Line
+	7150 2230 6930 2230
+Wire Wire Line
+	7370 1900 6930 1900
+Wire Wire Line
+	7370 1680 7370 1900
+Wire Wire Line
+	4620 2230 4620 2340
+Wire Wire Line
+	4950 2230 4620 2230
+Wire Wire Line
+	1540 1130 1430 1130
+Wire Wire Line
+	2310 1130 1540 1130
+Wire Wire Line
+	2860 1130 2310 1130
+Wire Wire Line
+	5170 1680 4950 1680
+Wire Wire Line
+	5390 1680 5170 1680
+Wire Wire Line
+	1540 2340 1540 2670
+Wire Wire Line
+	1540 1680 1540 2340
+Wire Wire Line
+	2310 1790 2310 1570
+Wire Wire Line
+	2310 1900 2310 1790
+Wire Wire Line
+	8140 1680 8140 1460
+Wire Wire Line
+	8470 1680 8470 1790
+Wire Wire Line
+	8140 1680 8470 1680
+Wire Wire Line
+	7370 1680 8140 1680
+Wire Wire Line
+	7260 1680 7370 1680
+Wire Wire Line
+	6930 1680 7260 1680
+Wire Wire Line
+	8690 1680 8690 1790
+Wire Wire Line
+	9130 1680 8690 1680
+$Comp
+L GND #PWR?580695B1
+U 1 1 580695B1
+P 1870 4760
+F 0 "5V5_7" H 1870 4900 20  0000 C CNN
+F 1 "+5V5" H 1870 4870 30  0000 C CNN
+F 2 "" H 1870 4760 70  0000 C CNN
+F 3 "" H 1870 4760 70  0000 C CNN
+	1    1870 4760
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695B0
+U 1 1 580695B0
+P 3630 6080
+F 0 "GNDPWR_32" H 3630 6220 20  0000 C CNN
+F 1 "+GND" H 3630 6190 30  0000 C CNN
+F 2 "" H 3630 6080 70  0000 C CNN
+F 3 "" H 3630 6080 70  0000 C CNN
+	1    3630 6080
+	1    0    0    -1  
+$EndComp
+Text Label 1870 4980 0 70 ~
+10.0
+Text Label 1870 5090 0 70 ~
+1u
+$Comp
+L GND #PWR?580695AF
+U 1 1 580695AF
+P 2090 4980
+F 0 "GNDPWR_33" H 2090 5120 20  0000 C CNN
+F 1 "+GND" H 2090 5090 30  0000 C CNN
+F 2 "" H 2090 4980 70  0000 C CNN
+F 3 "" H 2090 4980 70  0000 C CNN
+	1    2090 4980
+	1    0    0    -1  
+$EndComp
+Text Label 3806 5167 0 70 ~
+6.3
+Text Label 3806 5277 0 70 ~
+4u7
+$Comp
+L GND #PWR?580695AE
+U 1 1 580695AE
+P 3740 5310
+F 0 "GDNSIG_40" H 3740 5450 20  0000 C CNN
+F 1 "+GDNSIG" H 3740 5420 30  0000 C CNN
+F 2 "" H 3740 5310 70  0000 C CNN
+F 3 "" H 3740 5310 70  0000 C CNN
+	1    3740 5310
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695AD
+U 1 1 580695AD
+P 2530 6080
+F 0 "GDNSIG_41" H 2530 6220 20  0000 C CNN
+F 1 "+GDNSIG" H 2530 6190 30  0000 C CNN
+F 2 "" H 2530 6080 70  0000 C CNN
+F 3 "" H 2530 6080 70  0000 C CNN
+	1    2530 6080
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695AC
+U 1 1 580695AC
+P 3850 4760
+F 0 "3V3_26" H 3850 4900 20  0000 C CNN
+F 1 "+3V3" H 3850 4870 30  0000 C CNN
+F 2 "" H 3850 4760 70  0000 C CNN
+F 3 "" H 3850 4760 70  0000 C CNN
+	1    3850 4760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2090 4760 2310 4760
+Wire Wire Line
+	1870 4760 2090 4760
+Wire Wire Line
+	2860 6080 3080 6080
+Wire Wire Line
+	2860 5420 2860 6080
+Wire Wire Line
+	3630 6080 3300 6080
+Wire Wire Line
+	2530 6080 2860 6080
+Wire Wire Line
+	3740 4980 3740 4760
+Wire Wire Line
+	3740 5310 3740 5200
+Wire Wire Line
+	2860 5420 2750 5420
+Wire Wire Line
+	2970 5420 2860 5420
+Wire Wire Line
+	3080 5420 2970 5420
+Wire Wire Line
+	3520 4760 3520 4980
+Wire Wire Line
+	3740 4760 3520 4760
+Wire Wire Line
+	3850 4760 3740 4760
+Text Notes 2530 6740 0    60   ~ 0
+TODO: Change LDO
+Connection ~ 1540 2340
+Connection ~ 1540 1130
+Connection ~ 2090 4760
+Connection ~ 2310 1790
+Connection ~ 2310 1130
+Connection ~ 2860 6080
+Connection ~ 2860 5420
+Connection ~ 2970 5420
+Connection ~ 3520 4760
+Connection ~ 3740 4760
+Connection ~ 5170 1680
+Connection ~ 6930 2230
+Connection ~ 7260 1680
+Connection ~ 7370 1680
+Connection ~ 8140 1680
+Connection ~ 8470 1680
+Connection ~ 8690 1680
+$Comp
+L __template_fuse F?_3
+U 1 1 580695AB
+F 0 "F?_3" V 1067 1080.94 60  0000 R TNN
+	1    1210 1130
+	0    -1   -1   0
+$EndComp
+$Comp
+L UCC381DP-3 U?_13
+U 1 1 580695AA
+F 0 "U?_13" H 2530 4650 60  0000 L BNN
+F 1 "UCC381DP-3" H 2530 3748 60  0000 L BNN
+F 2 "" H 2530 3748 60  0000 C CNN
+F 3 "" H 2530 3748 60  0000 C CNN
+	1    2530 4650
+	1    0    0    -1
+$EndComp
+$Comp
+L FB_782853112 B?_2
+U 1 1 580695A9
+F 0 "B?_2" H 3107.06 6113 60  0000 L BNN
+	1    3080 6080
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_55
+U 1 1 580695A8
+F 0 "C?_55" H 1870 4650 60  0000 L BNN
+	1    2090 4760
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_56
+U 1 1 580695A7
+F 0 "C?_56" H 3806 4903 60  0000 L BNN
+	1    3740 4980
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_diode_zener Z?_2
+U 1 1 580695A6
+F 0 "Z?_2" H 1584 1174 60  0000 L BNN
+	1    1540 1460
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_41
+U 1 1 580695A5
+F 0 "R?_41" V 2387 2087 60  0000 R TNN
+	1    2310 2120
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_42
+U 1 1 580695A4
+F 0 "R?_42" V 2387 1537 60  0000 R TNN
+	1    2310 1570
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_cap C12
+U 1 1 580695A3
+F 0 "C12" H 5280 1185 60  0000 L BNN
+	1    5170 1240
+	1    0    0    -1
+$EndComp
+$Comp
+L WCAP-ASLI_8x10.5x3.1_865080253011 C14
+U 1 1 580695A2
+F 0 "C14" V 7161 1141 60  0000 R TNN
+F 1 "= Capacitance" V 7051 1141 60  0000 R TNN
+F 2 "" H 7051 1141 60  0000 C CNN
+F 3 "" H 7051 1141 60  0000 C CNN
+	1    7150 1350
+	0    -1   -1   0
+$EndComp
+$Comp
+L PTN78060WAD U4
+U 1 1 580695A1
+F 0 "U4" H 5610 1570 60  0000 L BNN
+F 1 "PTN78060WAD" H 5610 690 60  0000 L BNN
+F 2 "" H 5610 690 60  0000 C CNN
+F 3 "" H 5610 690 60  0000 C CNN
+	1    5610 1570
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_43
+U 1 1 580695A0
+F 0 "R?_43" H 4983 2263 60  0000 L BNN
+	1    4950 2230
+	1    0    0    -1
+$EndComp
+$Comp
+L RES_CURRENT_SENSE_0.020_OHM_0.25W_1% R?_44
+U 1 1 5806959F
+F 0 "R?_44" H 8503 1713 60  0000 L BNN
+	1    8470 1680
+	1    0    0    -1
+$EndComp
+$EndSCHEMATC

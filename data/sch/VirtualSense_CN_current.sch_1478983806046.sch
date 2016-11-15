@@ -1,0 +1,874 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:VirtualSense
+LIBS:VirtualSenseB
+LIBS:VirtualSenseCoffeeNugget
+LIBS:VirtualSense_CN_evm-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "VirtualSense32Evm"
+Date "gio 26 feb 2015"
+Rev ""
+Comp "University of Urbino & NeuNet"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VS32Core U1
+U 1 1 551B6743
+P 2650 2550
+F 0 "U1" H 2650 2800 60  0000 C CNN
+F 1 "VS32Core" H 2650 3550 60  0000 C CNN
+F 2 "" H 2650 2550 60  0000 C CNN
+F 3 "" H 2650 2550 60  0000 C CNN
+	1    2650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L FXOS8700CQ U2
+U 1 1 551B6D34
+P 6350 4450
+F 0 "U2" H 6350 4300 60  0000 C CNN
+F 1 "FXOS8700CQ" H 6350 4600 60  0000 C CNN
+F 2 "" H 6350 4450 60  0000 C CNN
+F 3 "http://it.farnell.com/freescale-semiconductor/fxos8700cqr1/accelerometers-magnetometer-qfn/dp/2377757?ost=FXOS8700CQ&categoryId=700000004375" H 6350 4450 60  0001 C CNN
+	1    6350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MICRO_SD SD1
+U 1 1 551B6D8D
+P 10150 1900
+F 0 "SD1" H 10100 2800 60  0000 C CNN
+F 1 "MICRO_SD" H 9900 1900 157 0000 C CNN
+F 2 "" H 10350 2050 60  0000 C CNN
+F 3 "http://it.farnell.com/global-connector-technology/mem2051-00-195-00-a/connett-scheda-memoria-micro-sd/dp/2443093" H 10350 2050 60  0001 C CNN
+	1    10150 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L SST25PF080B U3
+U 1 1 551BA265
+P 3450 6850
+F 0 "U3" H 3450 7000 60  0000 C CNN
+F 1 "SST25PF080B" H 3450 7350 60  0000 C CNN
+F 2 "" H 1750 6900 60  0000 C CNN
+F 3 "http://it.mouser.com/ProductDetail/Microchip-Technology/SST25PF080B-80-4C-S2AE/?qs=sGAEpiMZZMtI%252bQ06EiAoG%2ferjrYRWQlHiaA3W5WDm3k%3d" H 1750 6900 60  0001 C CNN
+	1    3450 6850
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 0    8900 11700 7550
+U 551AB22A
+F0 "VirtualSense_CN_evm2" 60
+F1 "VirtualSense_CN_evm2.sch" 60
+$EndSheet
+Text GLabel 1150 2750 0    60   Input ~ 0
+USB_P
+Text GLabel 1150 2850 0    60   Input ~ 0
+USB_N
+Text GLabel 1150 3050 0    60   Input ~ 0
+GND
+Text GLabel 1150 1750 0    60   Input ~ 0
+RTC_VDD
+Text GLabel 1150 1850 0    60   Input ~ 0
+CLKOUT
+Text GLabel 7650 1850 0    60   Input ~ 0
+SCK/PB3
+Text GLabel 1150 2550 0    60   Input ~ 0
+CE1/PB1
+Text GLabel 1150 2450 0    60   Input ~ 0
+CE2/PB2
+Text GLabel 1150 2650 0    60   Input ~ 0
+CE0/PB0
+Text GLabel 7650 2150 0    60   Input ~ 0
+MOSI/PB4
+Text GLabel 7650 1550 0    60   Input ~ 0
+MISO/PB5
+Text GLabel 2650 4550 3    60   Input ~ 0
+RESET_N
+Text GLabel 1150 3150 0    60   Input ~ 0
+VDD
+Text GLabel 2350 4550 3    60   Input ~ 0
+LED2/PC7
+Text GLabel 2450 4550 3    60   Input ~ 0
+LED1/PC6
+Text GLabel 2550 4550 3    60   Input ~ 0
+LED0/PC5
+Text GLabel 2950 4550 3    60   Input ~ 0
+BL_SEL/PA2
+Text GLabel 2750 4550 3    60   Input ~ 0
+UART_TXD/BL_TXD/PA1
+Text GLabel 2850 4550 3    60   Input ~ 0
+UART_RXD/BL_RXD/PA0
+Text GLabel 4150 2550 2    60   Input ~ 0
+CMPP/PA5
+Text GLabel 4150 2650 2    60   Input ~ 0
+CMPN/PA4
+Text GLabel 4150 2450 2    60   Input ~ 0
+ADC1/PA6
+Text GLabel 4150 3050 2    60   Input ~ 0
+DIO2/PC2
+Text GLabel 4150 2950 2    60   Input ~ 0
+DIO1/PC1
+Text GLabel 4150 2850 2    60   Input ~ 0
+DIO0/PC0
+Text GLabel 4150 2750 2    60   Input ~ 0
+ADC0/PA3
+Text GLabel 4150 2350 2    60   Input ~ 0
+ADC2/PA7
+Text GLabel 4150 3150 2    60   Input ~ 0
+DIO3/PC3
+Text GLabel 4150 1950 2    60   Input ~ 0
+RTC_INT/PD3
+Text GLabel 4150 2150 2    60   Input ~ 0
+INT1/PD1
+Text GLabel 4150 2050 2    60   Input ~ 0
+INT2/PD2
+Text GLabel 4150 2250 2    60   Input ~ 0
+INT0/PD0
+Text GLabel 4150 1850 2    60   Input ~ 0
+SCL/PD4
+Text GLabel 4150 1750 2    60   Input ~ 0
+SDA/PD5
+Text GLabel 2150 4550 3    60   Input ~ 0
+VDD
+$Comp
+L RSML R26
+U 1 1 551D1CF3
+P 8550 1000
+F 0 "R26" V 8630 1000 40  0000 C CNN
+F 1 "10K" V 8552 1000 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 8480 1000 30  0001 C CNN
+F 3 "" H 8550 1000 30  0000 C CNN
+	1    8550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R25
+U 1 1 551D3118
+P 8350 1000
+F 0 "R25" V 8430 1000 40  0000 C CNN
+F 1 "10K" V 8352 1000 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 8280 1000 30  0001 C CNN
+F 3 "" H 8350 1000 30  0000 C CNN
+	1    8350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R24
+U 1 1 551D31EA
+P 8150 1000
+F 0 "R24" V 8230 1000 40  0000 C CNN
+F 1 "10K" V 8152 1000 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 8080 1000 30  0001 C CNN
+F 3 "" H 8150 1000 30  0000 C CNN
+	1    8150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R23
+U 1 1 551D3267
+P 7950 1000
+F 0 "R23" V 8030 1000 40  0000 C CNN
+F 1 "10K" V 7952 1000 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 7880 1000 30  0001 C CNN
+F 3 "" H 7950 1000 30  0000 C CNN
+	1    7950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R22
+U 1 1 551D412B
+P 7750 1000
+F 0 "R22" V 7830 1000 40  0000 C CNN
+F 1 "10K" V 7752 1000 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 7680 1000 30  0001 C CNN
+F 3 "" H 7750 1000 30  0000 C CNN
+	1    7750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Csmall C11
+U 1 1 551D51C0
+P 8950 900
+F 0 "C11" H 8975 950 30  0000 L CNN
+F 1 "10uF" H 8975 850 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 8950 900 60  0001 C CNN
+F 3 "" H 8950 900 60  0001 C CNN
+	1    8950 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Csmall C12
+U 1 1 551D532E
+P 9150 900
+F 0 "C12" H 9175 950 30  0000 L CNN
+F 1 "100nF" H 9175 850 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 9150 900 60  0001 C CNN
+F 3 "" H 9150 900 60  0001 C CNN
+	1    9150 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR01
+U 1 1 551D733D
+P 7200 900
+F 0 "#PWR01" H 7200 1000 40  0001 C CNN
+F 1 "3V3" H 7200 1025 40  0000 C CNN
+F 2 "" H 7200 900 60  0001 C CNN
+F 3 "" H 7200 900 60  0001 C CNN
+	1    7200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR02
+U 1 1 551DD588
+P 9150 1100
+F 0 "#PWR02" H 9150 1150 40  0001 C CNN
+F 1 "GNDPWR" H 9150 1020 40  0000 C CNN
+F 2 "" H 9150 1100 60  0001 C CNN
+F 3 "" H 9150 1100 60  0001 C CNN
+	1    9150 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 2300 0    60   Input ~ 0
+CE0/PB0
+$Comp
+L GNDPWR #PWR03
+U 1 1 551E9CD4
+P 8900 2550
+F 0 "#PWR03" H 8900 2600 40  0001 C CNN
+F 1 "GNDPWR" H 8900 2470 40  0000 C CNN
+F 2 "" H 8900 2550 60  0001 C CNN
+F 3 "" H 8900 2550 60  0001 C CNN
+	1    8900 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 1650 0    60   Input ~ 0
+GND
+Text GLabel 1150 2150 0    60   Input ~ 0
+SCK/PB3
+Text GLabel 1150 2050 0    60   Input ~ 0
+MOSI/PB4
+Text GLabel 1150 1950 0    60   Input ~ 0
+MISO/PB5
+Text GLabel 4150 1650 2    60   Input ~ 0
+GND
+Text GLabel 1150 2950 0    60   Input ~ 0
+3V3_USB
+NoConn ~ 1300 2250
+NoConn ~ 1300 2350
+Text GLabel 2250 4550 3    60   Input ~ 0
+VDD
+Text GLabel 3050 4550 3    60   Input ~ 0
+GND
+Text GLabel 3150 4550 3    60   Input ~ 0
+GND
+Text GLabel 2650 6550 0    60   Input ~ 0
+CE1/PB1
+Text GLabel 4250 6950 2    60   Input ~ 0
+SCK/PB3
+Text GLabel 4250 7150 2    60   Input ~ 0
+MOSI/PB4
+Text GLabel 2650 6750 0    60   Input ~ 0
+MISO/PB5
+$Comp
+L GNDPWR #PWR04
+U 1 1 55219957
+P 2650 7250
+F 0 "#PWR04" H 2650 7300 40  0001 C CNN
+F 1 "GNDPWR" H 2650 7170 40  0000 C CNN
+F 2 "" H 2650 7250 60  0001 C CNN
+F 3 "" H 2650 7250 60  0001 C CNN
+	1    2650 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR05
+U 1 1 5521B23F
+P 5150 6400
+F 0 "#PWR05" H 5150 6500 40  0001 C CNN
+F 1 "3V3" H 5150 6525 40  0000 C CNN
+F 2 "" H 5150 6400 60  0001 C CNN
+F 3 "" H 5150 6400 60  0001 C CNN
+	1    5150 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R19
+U 1 1 5521C5F5
+P 7400 1000
+F 0 "R19" V 7480 1000 40  0000 C CNN
+F 1 "0" V 7402 1000 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 7330 1000 30  0001 C CNN
+F 3 "" H 7400 1000 30  0000 C CNN
+	1    7400 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Csmall C3
+U 1 1 5522040A
+P 4500 6400
+F 0 "C3" H 4525 6450 30  0000 L CNN
+F 1 "10uF" H 4525 6350 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 4500 6400 60  0001 C CNN
+F 3 "" H 4500 6400 60  0001 C CNN
+	1    4500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Csmall C5
+U 1 1 55220410
+P 4700 6400
+F 0 "C5" H 4725 6450 30  0000 L CNN
+F 1 "100nF" H 4725 6350 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 4700 6400 60  0001 C CNN
+F 3 "" H 4700 6400 60  0001 C CNN
+	1    4700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR06
+U 1 1 55220416
+P 4700 6600
+F 0 "#PWR06" H 4700 6650 40  0001 C CNN
+F 1 "GNDPWR" H 4700 6520 40  0000 C CNN
+F 2 "" H 4700 6600 60  0001 C CNN
+F 3 "" H 4700 6600 60  0001 C CNN
+	1    4700 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R18
+U 1 1 55220F3E
+P 4950 6450
+F 0 "R18" V 5030 6450 40  0000 C CNN
+F 1 "0" V 4952 6450 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 4880 6450 30  0001 C CNN
+F 3 "" H 4950 6450 30  0000 C CNN
+	1    4950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R17
+U 1 1 55228687
+P 4300 6550
+F 0 "R17" V 4380 6550 40  0000 C CNN
+F 1 "10K" V 4302 6550 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 4230 6550 30  0001 C CNN
+F 3 "" H 4300 6550 30  0000 C CNN
+	1    4300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R16
+U 1 1 5522C0C7
+P 1950 6500
+F 0 "R16" V 2030 6500 40  0000 C CNN
+F 1 "10K" V 1952 6500 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 1880 6500 30  0001 C CNN
+F 3 "" H 1950 6500 30  0000 C CNN
+	1    1950 6500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 1300 0    60   Input ~ 0
+DIO0/PC0
+$Comp
+L RSML R20
+U 1 1 5522F700
+P 7550 1000
+F 0 "R20" V 7630 1000 40  0000 C CNN
+F 1 "0" V 7552 1000 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 7480 1000 30  0001 C CNN
+F 3 "" H 7550 1000 30  0000 C CNN
+	1    7550 1000
+	-1   0    0    1   
+$EndComp
+NoConn ~ 6350 3550
+$Comp
+L 3V3 #PWR07
+U 1 1 55233E26
+P 7900 3450
+F 0 "#PWR07" H 7900 3550 40  0001 C CNN
+F 1 "3V3" H 7900 3575 40  0000 C CNN
+F 2 "" H 7900 3450 60  0001 C CNN
+F 3 "" H 7900 3450 60  0001 C CNN
+	1    7900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Csmall C9
+U 1 1 55233E2C
+P 7250 3450
+F 0 "C9" H 7275 3500 30  0000 L CNN
+F 1 "4,7uF" H 7275 3400 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 7250 3450 60  0001 C CNN
+F 3 "" H 7250 3450 60  0001 C CNN
+	1    7250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Csmall C10
+U 1 1 55233E32
+P 7450 3450
+F 0 "C10" H 7475 3500 30  0000 L CNN
+F 1 "100nF" H 7475 3400 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 7450 3450 60  0001 C CNN
+F 3 "" H 7450 3450 60  0001 C CNN
+	1    7450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR08
+U 1 1 55233E38
+P 7450 3650
+F 0 "#PWR08" H 7450 3700 40  0001 C CNN
+F 1 "GNDPWR" H 7450 3570 40  0000 C CNN
+F 2 "" H 7450 3650 60  0001 C CNN
+F 3 "" H 7450 3650 60  0001 C CNN
+	1    7450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R21
+U 1 1 55233E3E
+P 7700 3500
+F 0 "R21" V 7780 3500 40  0000 C CNN
+F 1 "0" V 7702 3500 40  0000 C CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" V 7630 3500 30  0001 C CNN
+F 3 "" H 7700 3500 30  0000 C CNN
+	1    7700 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 4450 2    60   Input ~ 0
+INT0/PD0
+Text GLabel 7500 4750 2    60   Input ~ 0
+INT1/PD1
+$Comp
+L GNDPWR #PWR09
+U 1 1 55238565
+P 7500 4200
+F 0 "#PWR09" H 7500 4250 40  0001 C CNN
+F 1 "GNDPWR" H 7500 4120 40  0000 C CNN
+F 2 "" H 7500 4200 60  0001 C CNN
+F 3 "" H 7500 4200 60  0001 C CNN
+	1    7500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Csmall C8
+U 1 1 55239534
+P 6500 5650
+F 0 "C8" H 6525 5700 30  0000 L CNN
+F 1 "100nF" H 6525 5600 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 6500 5650 60  0001 C CNN
+F 3 "" H 6500 5650 60  0001 C CNN
+	1    6500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR010
+U 1 1 5523A563
+P 6500 5850
+F 0 "#PWR010" H 6500 5900 40  0001 C CNN
+F 1 "GNDPWR" H 6500 5770 40  0000 C CNN
+F 2 "" H 6500 5850 60  0001 C CNN
+F 3 "" H 6500 5850 60  0001 C CNN
+	1    6500 5850
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 4600 0    60   Input ~ 0
+SCL/PD4
+Text GLabel 6200 5450 3    60   Input ~ 0
+SDA/PD5
+$Comp
+L GNDPWR #PWR011
+U 1 1 5523D9B3
+P 5200 4900
+F 0 "#PWR011" H 5200 4950 40  0001 C CNN
+F 1 "GNDPWR" H 5200 4820 40  0000 C CNN
+F 2 "" H 5200 4900 60  0001 C CNN
+F 3 "" H 5200 4900 60  0001 C CNN
+	1    5200 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Csmall C6
+U 1 1 5523E5F3
+P 5000 4150
+F 0 "C6" H 5025 4200 30  0000 L CNN
+F 1 "100nF" H 5025 4100 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 5000 4150 60  0001 C CNN
+F 3 "" H 5000 4150 60  0001 C CNN
+	1    5000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 850  7750 750 
+Wire Wire Line
+	7400 750  9150 750 
+Wire Wire Line
+	7950 850  7950 750 
+Connection ~ 7950 750 
+Wire Wire Line
+	8150 850  8150 750 
+Connection ~ 8150 750 
+Wire Wire Line
+	8350 850  8350 750 
+Connection ~ 8350 750 
+Wire Wire Line
+	8550 850  8550 750 
+Connection ~ 8550 750 
+Wire Wire Line
+	8950 750  8950 800 
+Connection ~ 8750 750 
+Wire Wire Line
+	9150 750  9150 800 
+Connection ~ 8950 750 
+Wire Wire Line
+	8950 1000 8950 1050
+Wire Wire Line
+	8950 1050 9150 1050
+Wire Wire Line
+	9150 1000 9150 1100
+Connection ~ 9150 1050
+Wire Wire Line
+	9050 2450 7750 2450
+Wire Wire Line
+	7750 2450 7750 1150
+Wire Wire Line
+	9050 1350 8550 1350
+Wire Wire Line
+	8550 1350 8550 1150
+Wire Wire Line
+	9050 1850 7650 1850
+Wire Wire Line
+	7650 1550 9050 1550
+Wire Wire Line
+	9050 2150 7650 2150
+Wire Wire Line
+	9050 2300 7650 2300
+Wire Wire Line
+	7950 1150 7950 2300
+Connection ~ 7950 2300
+Wire Wire Line
+	8150 1150 8150 2150
+Connection ~ 8150 2150
+Wire Wire Line
+	8350 1150 8350 1550
+Connection ~ 8350 1550
+Wire Wire Line
+	8750 2000 9050 2000
+Wire Wire Line
+	9050 1700 8900 1700
+Wire Wire Line
+	8900 1700 8900 2550
+Wire Wire Line
+	1300 1650 1150 1650
+Wire Wire Line
+	1150 1750 1300 1750
+Wire Wire Line
+	1300 1850 1150 1850
+Wire Wire Line
+	1150 1950 1300 1950
+Wire Wire Line
+	1300 2050 1150 2050
+Wire Wire Line
+	1150 2150 1300 2150
+Wire Wire Line
+	1300 2450 1150 2450
+Wire Wire Line
+	1150 2550 1300 2550
+Wire Wire Line
+	1300 2650 1150 2650
+Wire Wire Line
+	1150 2750 1300 2750
+Wire Wire Line
+	1300 2850 1150 2850
+Wire Wire Line
+	1150 2950 1300 2950
+Wire Wire Line
+	1300 3050 1150 3050
+Wire Wire Line
+	1150 3150 1300 3150
+Wire Wire Line
+	4150 1650 4000 1650
+Wire Wire Line
+	4000 1750 4150 1750
+Wire Wire Line
+	4150 1850 4000 1850
+Wire Wire Line
+	4000 1950 4150 1950
+Wire Wire Line
+	4150 2050 4000 2050
+Wire Wire Line
+	4000 2150 4150 2150
+Wire Wire Line
+	4000 2250 4150 2250
+Wire Wire Line
+	4000 2450 4150 2450
+Wire Wire Line
+	4150 2350 4000 2350
+Wire Wire Line
+	4000 2550 4150 2550
+Wire Wire Line
+	4150 2650 4000 2650
+Wire Wire Line
+	4000 2750 4150 2750
+Wire Wire Line
+	4150 2850 4000 2850
+Wire Wire Line
+	4000 2950 4150 2950
+Wire Wire Line
+	4150 3050 4000 3050
+Wire Wire Line
+	4000 3150 4150 3150
+Wire Wire Line
+	2150 4550 2150 4400
+Wire Wire Line
+	2250 4400 2250 4550
+Wire Wire Line
+	2350 4550 2350 4400
+Wire Wire Line
+	2450 4400 2450 4550
+Wire Wire Line
+	2550 4400 2550 4550
+Wire Wire Line
+	2650 4400 2650 4550
+Wire Wire Line
+	2750 4400 2750 4550
+Wire Wire Line
+	2850 4400 2850 4550
+Wire Wire Line
+	2950 4400 2950 4550
+Wire Wire Line
+	3050 4400 3050 4550
+Wire Wire Line
+	3150 4400 3150 4550
+Connection ~ 7750 750 
+Wire Wire Line
+	8750 2000 8750 750 
+Wire Wire Line
+	7200 900  7200 1200
+Wire Wire Line
+	7200 1200 7400 1200
+Wire Wire Line
+	7400 1200 7400 1150
+Wire Wire Line
+	4500 6250 4500 6300
+Wire Wire Line
+	4700 6250 4700 6300
+Connection ~ 4500 6250
+Wire Wire Line
+	4500 6500 4500 6550
+Wire Wire Line
+	4500 6550 4700 6550
+Wire Wire Line
+	4700 6500 4700 6600
+Connection ~ 4700 6550
+Wire Wire Line
+	2650 6550 2850 6550
+Wire Wire Line
+	2650 6750 2850 6750
+Wire Wire Line
+	4050 7150 4250 7150
+Wire Wire Line
+	4050 6950 4250 6950
+Wire Wire Line
+	4050 6550 4100 6550
+Wire Wire Line
+	4100 6550 4100 6250
+Wire Wire Line
+	1950 6250 4950 6250
+Wire Wire Line
+	4300 6400 4300 6250
+Connection ~ 4300 6250
+Wire Wire Line
+	4300 6700 4300 6750
+Wire Wire Line
+	4300 6750 4050 6750
+Wire Wire Line
+	4950 6250 4950 6300
+Connection ~ 4700 6250
+Wire Wire Line
+	4950 6600 4950 6650
+Wire Wire Line
+	4950 6650 5150 6650
+Wire Wire Line
+	5150 6650 5150 6400
+Wire Wire Line
+	1950 6250 1950 6350
+Wire Wire Line
+	1950 6650 1950 6950
+Wire Wire Line
+	1950 6950 2850 6950
+Wire Wire Line
+	2850 7150 2650 7150
+Wire Wire Line
+	2650 7150 2650 7250
+Connection ~ 4100 6250
+Wire Wire Line
+	7100 1300 7550 1300
+Wire Wire Line
+	7550 1300 7550 1150
+Wire Wire Line
+	7550 850  7550 750 
+Wire Wire Line
+	7400 750  7400 850 
+Connection ~ 7550 750 
+Wire Wire Line
+	7250 3300 7250 3350
+Wire Wire Line
+	7450 3300 7450 3350
+Connection ~ 7250 3300
+Wire Wire Line
+	7250 3550 7250 3600
+Wire Wire Line
+	7250 3600 7450 3600
+Wire Wire Line
+	7450 3550 7450 3650
+Connection ~ 7450 3600
+Wire Wire Line
+	7700 3300 7700 3350
+Connection ~ 7450 3300
+Wire Wire Line
+	7700 3650 7700 3700
+Wire Wire Line
+	7700 3700 7900 3700
+Wire Wire Line
+	7900 3700 7900 3450
+Wire Wire Line
+	5450 3300 7700 3300
+Wire Wire Line
+	6500 3300 6500 3550
+Wire Wire Line
+	7250 4450 7500 4450
+Wire Wire Line
+	7250 4750 7500 4750
+Wire Wire Line
+	7500 4200 7500 4150
+Wire Wire Line
+	7500 4150 7250 4150
+Wire Wire Line
+	7250 4300 7350 4300
+Wire Wire Line
+	7350 4300 7350 4150
+Connection ~ 7350 4150
+Wire Wire Line
+	6500 5350 6500 5550
+Wire Wire Line
+	6500 5750 6500 5850
+Wire Wire Line
+	6200 5350 6200 5450
+Wire Wire Line
+	5150 4600 5450 4600
+Wire Wire Line
+	5200 4400 5200 4900
+Wire Wire Line
+	5450 4750 5200 4750
+Connection ~ 5200 4750
+Wire Wire Line
+	5000 4450 5450 4450
+Connection ~ 5200 4450
+Wire Wire Line
+	5200 4200 5200 4150
+Wire Wire Line
+	5200 4150 5350 4150
+Wire Wire Line
+	5350 4150 5350 4300
+Wire Wire Line
+	5350 4300 5450 4300
+$Comp
+L Csmall C7
+U 1 1 552413B1
+P 5200 4300
+F 0 "C7" H 5225 4350 30  0000 L CNN
+F 1 "100nF" H 5225 4250 30  0000 L CNN
+F 2 "VirtualSenseCoffeeNugget:VSCN_SM0402" H 5200 4300 60  0001 C CNN
+F 3 "" H 5200 4300 60  0001 C CNN
+	1    5200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4250 5000 4450
+Wire Wire Line
+	5450 4150 5450 3300
+Connection ~ 6500 3300
+Wire Wire Line
+	5000 4050 5000 3950
+Wire Wire Line
+	5000 3950 5450 3950
+Connection ~ 5450 3950
+$Comp
+L GNDPWR #PWR012
+U 1 1 5524266D
+P 5950 3550
+F 0 "#PWR012" H 5950 3600 40  0001 C CNN
+F 1 "GNDPWR" H 5950 3470 40  0000 C CNN
+F 2 "" H 5950 3550 60  0001 C CNN
+F 3 "" H 5950 3550 60  0001 C CNN
+	1    5950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3550 5950 3450
+Wire Wire Line
+	5950 3450 6200 3450
+Wire Wire Line
+	6200 3450 6200 3550
+Wire Wire Line
+	6350 5350 6350 5450
+Wire Wire Line
+	6350 5450 7350 5450
+Wire Wire Line
+	7350 4600 7350 5550
+Wire Wire Line
+	7350 4600 7250 4600
+$Comp
+L GNDPWR #PWR013
+U 1 1 55244FD8
+P 7350 5550
+F 0 "#PWR013" H 7350 5600 40  0001 C CNN
+F 1 "GNDPWR" H 7350 5470 40  0000 C CNN
+F 2 "" H 7350 5550 60  0001 C CNN
+F 3 "" H 7350 5550 60  0001 C CNN
+	1    7350 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 5450
+$EndSCHEMATC

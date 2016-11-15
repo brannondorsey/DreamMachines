@@ -1,0 +1,214 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "1 jan 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_17 P1
+U 1 1 5686A417
+P 6300 3500
+F 0 "P1" V 6260 3500 60  0000 C CNN
+F 1 "CONN_17" V 6380 3500 60  0000 C CNN
+F 2 "~" H 6300 3500 60  0000 C CNN
+F 3 "~" H 6300 3500 60  0000 C CNN
+	1    6300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_17 P2
+U 1 1 5686A426
+P 7000 3500
+F 0 "P2" V 6960 3500 60  0000 C CNN
+F 1 "CONN_17" V 7080 3500 60  0000 C CNN
+F 2 "~" H 7000 3500 60  0000 C CNN
+F 3 "~" H 7000 3500 60  0000 C CNN
+	1    7000 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5686A435
+P 5100 3650
+F 0 "R2" V 5180 3650 40  0000 C CNN
+F 1 "20k" V 5107 3651 40  0000 C CNN
+F 2 "~" V 5030 3650 30  0000 C CNN
+F 3 "~" H 5100 3650 30  0000 C CNN
+	1    5100 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5686A444
+P 5100 3000
+F 0 "R1" V 5180 3000 40  0000 C CNN
+F 1 "20k" V 5107 3001 40  0000 C CNN
+F 2 "~" V 5030 3000 30  0000 C CNN
+F 3 "~" H 5100 3000 30  0000 C CNN
+	1    5100 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L JACK_2P J1
+U 1 1 5686A47C
+P 4300 3000
+F 0 "J1" H 3950 2800 60  0000 C CNN
+F 1 "JACK_2P" H 4150 3250 60  0000 C CNN
+F 2 "~" H 4300 3000 60  0000 C CNN
+F 3 "~" H 4300 3000 60  0000 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L JACK_2P J2
+U 1 1 5686A48B
+P 4300 3650
+F 0 "J2" H 3950 3450 60  0000 C CNN
+F 1 "JACK_2P" H 4150 3900 60  0000 C CNN
+F 2 "~" H 4300 3650 60  0000 C CNN
+F 3 "~" H 4300 3650 60  0000 C CNN
+	1    4300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR2
+U 1 1 5686A49A
+P 5400 2650
+F 0 "#PWR2" H 5400 2740 20  0001 C CNN
+F 1 "+5V" H 5400 2740 30  0000 C CNN
+F 2 "" H 5400 2650 60  0000 C CNN
+F 3 "" H 5400 2650 60  0000 C CNN
+	1    5400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5686A4A9
+P 5700 4050
+F 0 "#PWR3" H 5700 4050 30  0001 C CNN
+F 1 "GND" H 5700 3980 30  0001 C CNN
+F 2 "" H 5700 4050 60  0000 C CNN
+F 3 "" H 5700 4050 60  0000 C CNN
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 5686A4B8
+P 4800 4050
+F 0 "#PWR1" H 4800 4050 30  0001 C CNN
+F 1 "GND" H 4800 3980 30  0001 C CNN
+F 2 "" H 4800 4050 60  0000 C CNN
+F 3 "" H 4800 4050 60  0000 C CNN
+	1    4800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2850 4800 2850
+Wire Wire Line
+	4800 2850 4800 3500
+Wire Wire Line
+	4800 3500 4800 4050
+Wire Wire Line
+	4750 3500 4800 3500
+Connection ~ 4800 3500
+Wire Wire Line
+	4750 3100 4850 3100
+Wire Wire Line
+	4850 3100 5500 3100
+Wire Wire Line
+	5500 3100 5500 3300
+Wire Wire Line
+	5500 3300 5950 3300
+Wire Wire Line
+	4750 3750 4850 3750
+Wire Wire Line
+	4850 3750 5500 3750
+Wire Wire Line
+	5500 3750 5500 3400
+Wire Wire Line
+	5500 3400 5950 3400
+Wire Wire Line
+	5400 2650 5400 3000
+Wire Wire Line
+	5400 3000 5400 3650
+Wire Wire Line
+	5400 3650 5350 3650
+Wire Wire Line
+	4850 3000 4850 3100
+Connection ~ 4850 3100
+Wire Wire Line
+	5950 3200 5700 3200
+Wire Wire Line
+	5700 3200 5700 4050
+Wire Wire Line
+	4850 3650 4850 3750
+Connection ~ 4850 3750
+Text Label 5750 3200 0    60   ~ 0
+GND
+Text Label 5750 3300 0    60   ~ 0
+D2
+Text Label 5750 3400 0    60   ~ 0
+D3
+Wire Wire Line
+	7350 3200 7600 3200
+Text Label 7400 3200 0    60   ~ 0
++5V
+$Comp
+L +5V #PWR4
+U 1 1 5686A7C3
+P 7600 2650
+F 0 "#PWR4" H 7600 2740 20  0001 C CNN
+F 1 "+5V" H 7600 2740 30  0000 C CNN
+F 2 "" H 7600 2650 60  0000 C CNN
+F 3 "" H 7600 2650 60  0000 C CNN
+	1    7600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3000 5400 3000
+Connection ~ 5400 3000
+Wire Wire Line
+	7600 3200 7600 2650
+Text Notes 6500 3450 0    60   ~ 0
+Arduino\n Micro
+$EndSCHEMATC

@@ -1,0 +1,201 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MITEVT_relay
+LIBS:MITEVT_power
+LIBS:MITEVT_mcontrollers
+LIBS:MITEVT_interface
+LIBS:MITEVT_REG
+LIBS:MITEVT_OPTO
+LIBS:MITEVT_CONTACTORS
+LIBS:MITEVT_ANALOG
+LIBS:battery_science-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 7200 2550 1850 1200
+U 57AA0F4F
+F0 "microcontroller" 60
+F1 "microcontroller.sch" 60
+F2 "SCL" B L 7200 2700 60 
+F3 "SDA" B L 7200 2800 60 
+F4 "ALERT" I L 7200 2900 60 
+F5 "MISO" I L 7200 3100 60 
+F6 "MOSI" O L 7200 3200 60 
+F7 "SCK" O L 7200 3300 60 
+F8 "SSEL" O L 7200 3500 60 
+F9 "DRDY" I L 7200 3400 60 
+F10 "START" O L 7200 3600 60 
+F11 "RESET" O L 7200 3700 60 
+F12 "5V" O L 7200 2600 60 
+$EndSheet
+$Sheet
+S 2300 2550 1900 1400
+U 57AA3B42
+F0 "BatteryMonitoring" 60
+F1 "BatteryMonitoring.sch" 60
+F2 "SCL" B R 4200 2700 60 
+F3 "SDA" B R 4200 2800 60 
+F4 "ALERT" O R 4200 2900 60 
+F5 "TH1" O R 4200 3500 60 
+F6 "TH2" O R 4200 3600 60 
+F7 "TH3" O R 4200 3700 60 
+F8 "TH4" O R 4200 3800 60 
+F9 "TH5" O R 4200 3900 60 
+F10 "VCOUT" O R 4200 3200 60 
+F11 "VIOUT" O R 4200 3300 60 
+F12 "VREF" O R 4200 3100 60 
+$EndSheet
+$Sheet
+S 5250 3050 750  900 
+U 57AA9BB7
+F0 "ADC/Thermistors" 60
+F1 "Thermistors.sch" 60
+F2 "SCLK" I R 6000 3300 60 
+F3 "DIN" I R 6000 3200 60 
+F4 "DOUT" I R 6000 3100 60 
+F5 "DRDY" I R 6000 3400 60 
+F6 "CS" I R 6000 3500 60 
+F7 "VREF" I L 5250 3100 60 
+F8 "VCOUT" I L 5250 3200 60 
+F9 "VIOUT" I L 5250 3300 60 
+F10 "START" I R 6000 3600 60 
+F11 "TH1" I L 5250 3500 60 
+F12 "TH2" I L 5250 3600 60 
+F13 "TH3" I L 5250 3700 60 
+F14 "TH4" I L 5250 3800 60 
+F15 "TH5" I L 5250 3900 60 
+F16 "RESET" I R 6000 3700 60 
+$EndSheet
+Wire Wire Line
+	4200 2700 7200 2700
+Wire Wire Line
+	4200 2800 7200 2800
+Wire Wire Line
+	4200 2900 7200 2900
+Wire Wire Line
+	4200 3100 5250 3100
+Wire Wire Line
+	4200 3200 5250 3200
+Wire Wire Line
+	4200 3300 5250 3300
+Wire Wire Line
+	4200 3500 5250 3500
+Wire Wire Line
+	4200 3600 5250 3600
+Wire Wire Line
+	4200 3700 5250 3700
+Wire Wire Line
+	4200 3800 5250 3800
+Wire Wire Line
+	4200 3900 5250 3900
+$Comp
+L R_PACK8 RP101
+U 1 1 57B222F9
+P 6600 3450
+F 0 "RP101" H 6600 3900 50  0000 C CNN
+F 1 "47Ω" H 6600 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_8x0602" H 6600 3450 50  0001 C CNN
+F 3 "" H 6600 3450 50  0000 C CNN
+	1    6600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3100 6400 3100
+Wire Wire Line
+	6800 3100 7200 3100
+Wire Wire Line
+	6000 3200 6400 3200
+Wire Wire Line
+	6800 3200 7200 3200
+Wire Wire Line
+	6000 3300 6400 3300
+Wire Wire Line
+	6800 3300 7200 3300
+Wire Wire Line
+	6000 3400 6400 3400
+Wire Wire Line
+	6800 3400 7200 3400
+Wire Wire Line
+	6000 3500 6400 3500
+Wire Wire Line
+	6800 3500 7200 3500
+Wire Wire Line
+	6000 3600 6400 3600
+Wire Wire Line
+	6800 3600 7200 3600
+NoConn ~ 6800 3800
+NoConn ~ 6400 3800
+$Sheet
+S 3600 1250 1400 750 
+U 57E6A8DD
+F0 "Power Supplies" 60
+F1 "powerSupplies.sch" 60
+F2 "3.3V" O L 3600 1600 60 
+F3 "5V" I R 5000 1600 60 
+$EndSheet
+Wire Wire Line
+	6000 3700 6400 3700
+Wire Wire Line
+	6800 3700 7200 3700
+Wire Wire Line
+	7200 2600 6000 2600
+Wire Wire Line
+	6000 2600 6000 1600
+Wire Wire Line
+	6000 1600 5000 1600
+$Comp
+L +3.3V #PWR01
+U 1 1 57F01614
+P 3200 1450
+F 0 "#PWR01" H 3200 1300 50  0001 C CNN
+F 1 "+3.3V" H 3200 1590 50  0000 C CNN
+F 2 "" H 3200 1450 60  0000 C CNN
+F 3 "" H 3200 1450 60  0000 C CNN
+	1    3200 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1600 3200 1600
+Wire Wire Line
+	3200 1600 3200 1450
+$EndSCHEMATC

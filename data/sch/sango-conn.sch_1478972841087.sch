@@ -1,0 +1,681 @@
+EESchema Schematic File Version 2  date 22/01/2013 21:21:55
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RMC
+LIBS:opendous
+LIBS:sango-bob-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 4 9
+Title "Sango-bc"
+Date "22 jan 2013"
+Rev "0.2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 10350 5700
+Wire Wire Line
+	9900 6050 9950 6050
+Wire Wire Line
+	2450 1100 1300 1100
+Connection ~ 5250 3100
+Wire Wire Line
+	5750 3100 5150 3100
+Wire Wire Line
+	1400 3550 2050 3550
+Wire Wire Line
+	1400 3750 1500 3750
+Wire Wire Line
+	4350 1550 4350 2000
+Connection ~ 4500 6200
+Wire Wire Line
+	4500 6050 4500 6350
+Wire Wire Line
+	5450 5500 5450 5300
+Connection ~ 3700 6650
+Wire Wire Line
+	4200 6650 3400 6650
+Wire Wire Line
+	4500 6800 4500 7450
+Wire Wire Line
+	5450 5700 5450 5900
+Connection ~ 8650 6500
+Wire Wire Line
+	8150 6400 8150 6500
+Wire Wire Line
+	8150 6500 9950 6500
+Wire Wire Line
+	9250 5850 8150 5850
+Wire Wire Line
+	9500 6550 9500 6500
+Wire Wire Line
+	9950 6500 9950 6050
+Wire Wire Line
+	9700 1050 8550 1050
+Wire Wire Line
+	8550 1050 8550 1650
+Wire Wire Line
+	9700 1450 9500 1450
+Wire Wire Line
+	9700 1350 9500 1350
+Wire Wire Line
+	1400 5600 1500 5600
+Wire Wire Line
+	1500 5600 1500 5800
+Wire Wire Line
+	1800 5850 1800 5800
+Wire Wire Line
+	1800 5350 1800 5400
+Wire Wire Line
+	1800 4800 1800 4850
+Wire Wire Line
+	1800 5800 1500 5800
+Wire Wire Line
+	1400 5400 2050 5400
+Connection ~ 1800 5400
+Connection ~ 1800 3550
+Wire Wire Line
+	1800 3950 1500 3950
+Wire Wire Line
+	1800 2950 1800 3000
+Connection ~ 1950 1100
+Wire Wire Line
+	1300 1600 1950 1600
+Wire Wire Line
+	1350 1000 1300 1000
+Wire Wire Line
+	1350 2000 1300 2000
+Wire Wire Line
+	2150 800  2150 1000
+Wire Wire Line
+	2150 1000 2300 1000
+Connection ~ 1800 1700
+Wire Wire Line
+	1800 1700 1300 1700
+Wire Wire Line
+	1800 2500 1800 1200
+Wire Wire Line
+	1800 1200 1300 1200
+Wire Wire Line
+	1800 2200 1300 2200
+Connection ~ 1800 2200
+Wire Wire Line
+	1300 1500 1350 1500
+Wire Wire Line
+	1950 1100 1950 2100
+Wire Wire Line
+	1950 2100 1300 2100
+Connection ~ 1950 1600
+Wire Wire Line
+	1800 3500 1800 3550
+Wire Wire Line
+	1800 3950 1800 4000
+Wire Wire Line
+	1500 3950 1500 3750
+Wire Wire Line
+	4450 900  3950 900 
+Wire Wire Line
+	9250 5950 8650 5950
+Wire Wire Line
+	8650 5950 8650 6500
+Connection ~ 9500 6500
+Wire Wire Line
+	5450 7450 5450 6350
+Wire Wire Line
+	8150 5700 8150 6000
+Connection ~ 8150 5850
+Wire Wire Line
+	5150 6200 4500 6200
+Wire Wire Line
+	3700 6750 3700 6650
+Wire Wire Line
+	3700 7250 3700 7350
+Wire Wire Line
+	3700 7350 4500 7350
+Connection ~ 4500 7350
+Wire Wire Line
+	4500 5300 4500 5550
+Wire Wire Line
+	3550 1400 4050 1400
+Wire Wire Line
+	4450 1100 4350 1100
+Wire Wire Line
+	6500 1100 6400 1100
+Wire Wire Line
+	5600 1400 6100 1400
+Wire Wire Line
+	6500 900  6000 900 
+Wire Wire Line
+	6400 1550 6400 2000
+Wire Wire Line
+	4350 4300 4350 4200
+Wire Wire Line
+	4050 3500 4850 3500
+Wire Wire Line
+	5150 4300 5150 3650
+Wire Wire Line
+	5150 3100 5150 3200
+Connection ~ 4350 3500
+Wire Wire Line
+	4350 3700 4350 3500
+Wire Wire Line
+	5150 2850 5150 2900
+Wire Wire Line
+	5150 2900 5750 2900
+Connection ~ 5250 2900
+Wire Wire Line
+	10350 5700 9900 5700
+Wire Wire Line
+	2750 800  2750 1000
+Wire Wire Line
+	2750 1000 2600 1000
+$Comp
+L JUMP_MINI_3 JP401
+U 1 1 50E04C56
+P 2450 1000
+F 0 "JP401" H 2450 1175 60  0000 C CNN
+F 1 "V_SEL" H 2475 825 60  0000 C CNN
+	1    2450 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 10350 5700 2    60   Output ~ 0
+SD_DETECT
+Text Notes 8550 6850 0    60   ~ 0
+Micro SD card (option)
+Text Notes 1200 4300 0    60   ~ 0
+Extruder - thermistor input
+Text Notes 1200 6200 0    60   ~ 0
+Heated bed - thermistor input
+Text Notes 4650 7650 0    60   ~ 0
+Heated bed 
+Text Notes 4800 4700 0    60   ~ 0
+Extruder heater
+Text Notes 2150 2350 0    60   ~ 0
+Endstops\nselectable voltage
+Text Notes 8950 2100 0    60   ~ 0
+3.3V TTL-serial connector\n(FTDI compatible)
+$Comp
+L CONN_2 P408
+U 1 1 50D8731C
+P 6100 3000
+F 0 "P408" V 6050 3000 40  0000 C CNN
+F 1 "HEATER_1" V 6150 3000 40  0000 C CNN
+	1    6100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR045
+U 1 1 50D4BBEA
+P 1800 4800
+F 0 "#PWR045" H 1800 4900 30  0001 C CNN
+F 1 "VDD" H 1800 4910 30  0000 C CNN
+	1    1800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR046
+U 1 1 50D4BBD9
+P 1800 2950
+F 0 "#PWR046" H 1800 3050 30  0001 C CNN
+F 1 "VDD" H 1800 3060 30  0000 C CNN
+	1    1800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR047
+U 1 1 5065B39D
+P 4350 4300
+F 0 "#PWR047" H 4350 4300 30  0001 C CNN
+F 1 "GND" H 4350 4230 30  0001 C CNN
+	1    4350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R402
+U 1 1 5047D5AD
+P 4350 3950
+F 0 "R402" V 4430 3950 50  0000 C CNN
+F 1 "10k" V 4350 3950 50  0000 C CNN
+	1    4350 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDPWR #PWR048
+U 1 1 5065AB17
+P 5150 4300
+F 0 "#PWR048" H 5150 4350 40  0001 C CNN
+F 1 "GNDPWR" H 5150 4220 40  0000 C CNN
+	1    5150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N_RMC Q403
+U 1 1 5047D5B0
+P 5100 3450
+F 0 "Q403" H 4975 3700 60  0000 C CNN
+F 1 "IRLB8743" H 4725 3275 60  0000 C CNN
+	1    5100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12P #PWR049
+U 1 1 5047D5AE
+P 5150 2850
+F 0 "#PWR049" H 5150 2820 30  0001 C CNN
+F 1 "+12P" H 5150 2950 30  0000 C CNN
+	1    5150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12P #PWR050
+U 1 1 50D4B472
+P 6000 900
+F 0 "#PWR050" H 6000 870 30  0001 C CNN
+F 1 "+12P" H 6000 1000 30  0000 C CNN
+	1    6000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR051
+U 1 1 50D4B471
+P 6400 2000
+F 0 "#PWR051" H 6400 2050 40  0001 C CNN
+F 1 "GNDPWR" H 6400 1920 40  0000 C CNN
+	1    6400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N_RMC Q402
+U 1 1 50D4B470
+P 6350 1350
+F 0 "Q402" H 6225 1600 60  0000 C CNN
+F 1 "2N7002" H 5975 1175 60  0000 C CNN
+	1    6350 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 1400 0    60   Input ~ 0
+AUX_2
+Text GLabel 3550 1400 0    60   Input ~ 0
+AUX_1
+$Comp
+L MOSFET_N_RMC Q401
+U 1 1 50D2576D
+P 4300 1350
+F 0 "Q401" H 4175 1600 60  0000 C CNN
+F 1 "2N7002" H 3925 1175 60  0000 C CNN
+	1    4300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R404
+U 1 1 50D2569E
+P 4500 5800
+F 0 "R404" V 4580 5800 50  0000 C CNN
+F 1 "10k" V 4500 5800 50  0000 C CNN
+	1    4500 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR052
+U 1 1 50D25658
+P 4500 5300
+F 0 "#PWR052" H 4500 5250 20  0001 C CNN
+F 1 "+12V" H 4500 5400 30  0000 C CNN
+	1    4500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N_RMC Q405
+U 1 1 50D255DB
+P 4450 6600
+F 0 "Q405" H 4325 6850 60  0000 C CNN
+F 1 "2N7002" H 4075 6425 60  0000 C CNN
+	1    4450 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P407
+U 1 1 50D25571
+P 5800 5600
+F 0 "P407" V 5750 5600 40  0000 C CNN
+F 1 "HEATER_2" V 5850 5600 40  0000 C CNN
+	1    5800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P404
+U 1 1 50D2556B
+P 5600 3000
+F 0 "P404" V 5550 3000 40  0000 C CNN
+F 1 "HEATER_1" V 5650 3000 40  0000 C CNN
+	1    5600 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L C C403
+U 1 1 5065B3D0
+P 8150 6200
+F 0 "C403" H 8200 6300 50  0000 L CNN
+F 1 "100nF" H 8200 6100 50  0000 L CNN
+	1    8150 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR053
+U 1 1 5065B33A
+P 4500 7450
+F 0 "#PWR053" H 4500 7450 30  0001 C CNN
+F 1 "GND" H 4500 7380 30  0001 C CNN
+	1    4500 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR054
+U 1 1 5065AB54
+P 2150 800
+F 0 "#PWR054" H 2150 750 20  0001 C CNN
+F 1 "+12V" H 2150 900 30  0000 C CNN
+	1    2150 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR055
+U 1 1 5065AB25
+P 4350 2000
+F 0 "#PWR055" H 4350 2050 40  0001 C CNN
+F 1 "GNDPWR" H 4350 1920 40  0000 C CNN
+	1    4350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR056
+U 1 1 5065AB04
+P 5450 7450
+F 0 "#PWR056" H 5450 7500 40  0001 C CNN
+F 1 "GNDPWR" H 5450 7370 40  0000 C CNN
+	1    5450 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR057
+U 1 1 504D2217
+P 8150 5700
+F 0 "#PWR057" H 8150 5800 30  0001 C CNN
+F 1 "VDD" H 8150 5810 30  0000 C CNN
+	1    8150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR058
+U 1 1 504D21FB
+P 9500 6550
+F 0 "#PWR058" H 9500 6550 30  0001 C CNN
+F 1 "GND" H 9500 6480 30  0001 C CNN
+	1    9500 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 5600 0    60   Output ~ 0
+SPI_MISO
+Text GLabel 9250 6050 0    60   Input ~ 0
+SPI_MOSI
+Text GLabel 9250 5750 0    60   Input ~ 0
+SPI_SCK
+NoConn ~ 9250 5500
+NoConn ~ 9250 5400
+Text GLabel 9250 5300 0    60   Input ~ 0
+SD_SEL
+$Comp
+L CONN_MICROSD U401
+U 1 1 504D1ECE
+P 9550 5750
+F 0 "U401" H 9550 5250 40  0000 C CNN
+F 1 "CONN_MICROSD" H 9600 6300 30  0000 C CNN
+	1    9550 5750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9700 1550
+NoConn ~ 9700 1250
+NoConn ~ 9700 1150
+$Comp
+L GND #PWR059
+U 1 1 504A27AE
+P 8550 1650
+F 0 "#PWR059" H 8550 1650 30  0001 C CNN
+F 1 "GND" H 8550 1580 30  0001 C CNN
+	1    8550 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 9500 1450 0    60   Input ~ 0
+SERIAL_TX
+Text GLabel 9500 1350 0    60   Output ~ 0
+SERIAL_RX
+$Comp
+L CONN_6 P403
+U 1 1 504A2769
+P 10050 1300
+F 0 "P403" V 10000 1300 60  0000 C CNN
+F 1 "SERIAL" V 10100 1300 60  0000 C CNN
+	1    10050 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 4750 2300 0    60   ~ 0
+Aux power connectors
+$Comp
+L +12P #PWR060
+U 1 1 5047D63A
+P 3950 900
+F 0 "#PWR060" H 3950 870 30  0001 C CNN
+F 1 "+12P" H 3950 1000 30  0000 C CNN
+	1    3950 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P402
+U 1 1 5047D629
+P 6850 1000
+F 0 "P402" V 6800 1000 40  0000 C CNN
+F 1 "AUXPWR2" V 6900 1000 40  0000 C CNN
+	1    6850 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P401
+U 1 1 5047D620
+P 4800 1000
+F 0 "P401" V 4750 1000 40  0000 C CNN
+F 1 "AUXPWR1" V 4850 1000 40  0000 C CNN
+	1    4800 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 6650 0    60   Input ~ 0
+HEATER_2
+Text GLabel 4050 3500 0    60   Input ~ 0
+HEATER_1
+$Comp
+L R R405
+U 1 1 5047D53B
+P 3700 7000
+F 0 "R405" V 3780 7000 50  0000 C CNN
+F 1 "10k" V 3700 7000 50  0000 C CNN
+	1    3700 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12P #PWR061
+U 1 1 5047D503
+P 5450 5300
+F 0 "#PWR061" H 5450 5270 30  0001 C CNN
+F 1 "+12P" H 5450 5400 30  0000 C CNN
+	1    5450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N_RMC Q404
+U 1 1 5047D4CE
+P 5400 6150
+F 0 "Q404" H 5275 6400 60  0000 C CNN
+F 1 "IRLB8743" H 5025 5975 60  0000 C CNN
+	1    5400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P406
+U 1 1 5047D49B
+P 1050 5500
+F 0 "P406" V 1000 5500 40  0000 C CNN
+F 1 "THERM_2" V 1100 5500 40  0000 C CNN
+	1    1050 5500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR062
+U 1 1 5047D49A
+P 1800 5850
+F 0 "#PWR062" H 1800 5850 30  0001 C CNN
+F 1 "GND" H 1800 5780 30  0001 C CNN
+	1    1800 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C402
+U 1 1 5047D499
+P 1800 5600
+F 0 "C402" H 1850 5700 50  0000 L CNN
+F 1 "10uF" H 1850 5500 50  0000 L CNN
+	1    1800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R403
+U 1 1 5047D498
+P 1800 5100
+F 0 "R403" V 1880 5100 50  0000 C CNN
+F 1 "10k" V 1800 5100 50  0000 C CNN
+	1    1800 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2050 5400 2    60   Output ~ 0
+THERM_2
+Text GLabel 2050 3550 2    60   Output ~ 0
+THERM_1
+$Comp
+L R R401
+U 1 1 5047D403
+P 1800 3250
+F 0 "R401" V 1880 3250 50  0000 C CNN
+F 1 "330R" V 1800 3250 50  0000 C CNN
+	1    1800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C401
+U 1 1 5047D3ED
+P 1800 3750
+F 0 "C401" H 1850 3850 50  0000 L CNN
+F 1 "10uF" H 1850 3650 50  0000 L CNN
+	1    1800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR063
+U 1 1 5047D3E5
+P 1800 4000
+F 0 "#PWR063" H 1800 4000 30  0001 C CNN
+F 1 "GND" H 1800 3930 30  0001 C CNN
+	1    1800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P405
+U 1 1 5047D3B9
+P 1050 3650
+F 0 "P405" V 1000 3650 40  0000 C CNN
+F 1 "THERM_1" V 1100 3650 40  0000 C CNN
+	1    1050 3650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1350 2000 2    60   Output ~ 0
+Z_STOP
+Text GLabel 1350 1500 2    60   Output ~ 0
+Y_STOP
+Text GLabel 1350 1000 2    60   Output ~ 0
+X_STOP
+$Comp
+L +5V #PWR064
+U 1 1 5047D2B6
+P 2750 800
+F 0 "#PWR064" H 2750 890 20  0001 C CNN
+F 1 "+5V" H 2750 890 30  0000 C CNN
+	1    2750 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR065
+U 1 1 5047D25A
+P 1800 2500
+F 0 "#PWR065" H 1800 2500 30  0001 C CNN
+F 1 "GND" H 1800 2430 30  0001 C CNN
+	1    1800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K401
+U 1 1 5047D24E
+P 950 1100
+F 0 "K401" V 900 1100 50  0000 C CNN
+F 1 "X_STOP" V 1000 1100 40  0000 C CNN
+	1    950  1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K403
+U 1 1 5047D246
+P 950 1600
+F 0 "K403" V 900 1600 50  0000 C CNN
+F 1 "Y_STOP" V 1000 1600 40  0000 C CNN
+	1    950  1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K404
+U 1 1 5047D23B
+P 950 2100
+F 0 "K404" V 900 2100 50  0000 C CNN
+F 1 "Z_STOP" V 1000 2100 40  0000 C CNN
+	1    950  2100
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

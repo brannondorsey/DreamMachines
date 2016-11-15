@@ -1,0 +1,366 @@
+EESchema Schematic File Version 2
+LIBS:card-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:card
+LIBS:card-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2 sep 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ZENERARRAY D1
+U 1 1 53FFC6FB
+P 4450 4500
+F 0 "D1" H 4100 4350 60  0000 C CNN
+F 1 "ZENERARRAY" H 4300 4650 60  0000 C CNN
+F 2 "card:SMini4-F3-B" H 4000 4650 60  0000 C CNN
+F 3 "~" H 4000 4650 60  0000 C CNN
+	1    4450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB-MINI-B CON1
+U 1 1 53FFC71C
+P 6250 4050
+F 0 "CON1" H 6000 4500 60  0000 C CNN
+F 1 "USB-MINI-B" H 6200 3550 60  0000 C CNN
+F 2 "card:15542661MicroUSBB" H 6250 4050 60  0001 C CNN
+F 3 "" H 6250 4050 60  0000 C CNN
+	1    6250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_PACK2 RP1
+U 1 1 53FFC96B
+P 4550 4000
+F 0 "RP1" H 4550 4150 40  0000 C CNN
+F 1 "68R" H 4550 3850 40  0000 C CNN
+F 2 "card:MNR12" H 4550 3700 60  0000 C CNN
+F 3 "~" H 4550 3700 60  0000 C CNN
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-card #PWR5
+U 1 1 5400B3C5
+P 5500 4450
+F 0 "#PWR5" H 5500 4450 30  0001 C CNN
+F 1 "GND" H 5500 4380 30  0001 C CNN
+F 2 "" H 5500 4450 60  0000 C CNN
+F 3 "" H 5500 4450 60  0000 C CNN
+	1    5500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR4
+U 1 1 5400B3D6
+P 5500 3350
+F 0 "#PWR4" H 5500 3440 20  0001 C CNN
+F 1 "+5V" H 5500 3440 30  0000 C CNN
+F 2 "" H 5500 3350 60  0000 C CNN
+F 3 "" H 5500 3350 60  0000 C CNN
+	1    5500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-card R1
+U 1 1 5400B479
+P 5350 3700
+F 0 "R1" V 5430 3700 40  0000 C CNN
+F 1 "1.5k" V 5357 3701 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5280 3700 30  0000 C CNN
+F 3 "~" H 5350 3700 30  0000 C CNN
+	1    5350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-card #PWR3
+U 1 1 5400B509
+P 3600 4650
+F 0 "#PWR3" H 3600 4650 30  0001 C CNN
+F 1 "GND" H 3600 4580 30  0001 C CNN
+F 2 "" H 3600 4650 60  0000 C CNN
+F 3 "" H 3600 4650 60  0000 C CNN
+	1    3600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-card #PWR6
+U 1 1 5400BB74
+P 6950 4450
+F 0 "#PWR6" H 6950 4450 30  0001 C CNN
+F 1 "GND" H 6950 4380 30  0001 C CNN
+F 2 "" H 6950 4450 60  0000 C CNN
+F 3 "" H 6950 4450 60  0000 C CNN
+	1    6950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4350 5500 4350
+Wire Wire Line
+	5500 4350 5500 4450
+Wire Wire Line
+	5500 3750 5700 3750
+Wire Wire Line
+	5500 3350 5500 3750
+Wire Wire Line
+	4750 3950 5600 3950
+Wire Wire Line
+	5600 3950 5600 3900
+Wire Wire Line
+	5600 3900 5700 3900
+Wire Wire Line
+	4750 4050 5700 4050
+Wire Wire Line
+	5350 3450 5350 3400
+Wire Wire Line
+	5100 3400 5500 3400
+Connection ~ 5500 3400
+Wire Wire Line
+	5350 3950 5350 4450
+Wire Wire Line
+	5350 4450 5200 4450
+Connection ~ 5350 3950
+Wire Wire Line
+	5400 4050 5400 4550
+Wire Wire Line
+	5400 4550 5200 4550
+Connection ~ 5400 4050
+Wire Wire Line
+	3750 4550 3600 4550
+Wire Wire Line
+	3600 4450 3600 4650
+Wire Wire Line
+	3750 4450 3600 4450
+Connection ~ 3600 4550
+Wire Wire Line
+	6950 3750 6950 4450
+Wire Wire Line
+	6950 3750 6800 3750
+Wire Wire Line
+	6800 3900 6950 3900
+Connection ~ 6950 3900
+Wire Wire Line
+	6800 4200 6950 4200
+Connection ~ 6950 4200
+Wire Wire Line
+	6800 4350 6950 4350
+Connection ~ 6950 4350
+$Comp
+L C-RESCUE-card C1
+U 1 1 5400BD19
+P 1900 3300
+F 0 "C1" H 1900 3400 40  0000 L CNN
+F 1 "0.1uF" H 1906 3215 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1938 3150 30  0000 C CNN
+F 3 "~" H 1900 3300 60  0000 C CNN
+	1    1900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3X2 P1
+U 1 1 54012FCB
+P 8900 2350
+F 0 "P1" H 8900 2600 50  0000 C CNN
+F 1 "CONN_3X2" V 8900 2400 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 8900 2350 60  0001 C CNN
+F 3 "" H 8900 2350 60  0000 C CNN
+	1    8900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2200 8300 2200
+Wire Wire Line
+	8500 2300 8300 2300
+Wire Wire Line
+	8500 2400 8300 2400
+Wire Wire Line
+	9300 2200 9500 2200
+Wire Wire Line
+	9300 2300 9500 2300
+Wire Wire Line
+	9300 2400 9500 2400
+Text Label 9500 2300 0    60   ~ 0
+MOSI
+Text Label 8300 2200 2    60   ~ 0
+MISO
+Text Label 8300 2300 2    60   ~ 0
+SCK
+Text Label 8300 2400 2    60   ~ 0
+RST
+$Comp
+L +5V #PWR7
+U 1 1 540136C6
+P 9500 2200
+F 0 "#PWR7" H 9500 2290 20  0001 C CNN
+F 1 "+5V" H 9500 2290 30  0000 C CNN
+F 2 "" H 9500 2200 60  0000 C CNN
+F 3 "" H 9500 2200 60  0000 C CNN
+	1    9500 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-card #PWR8
+U 1 1 540136CC
+P 9500 2400
+F 0 "#PWR8" H 9500 2400 30  0001 C CNN
+F 1 "GND" H 9500 2330 30  0001 C CNN
+F 2 "" H 9500 2400 60  0000 C CNN
+F 3 "" H 9500 2400 60  0000 C CNN
+	1    9500 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ATTINY26-S IC1
+U 1 1 57400EA1
+P 2850 3350
+F 0 "IC1" H 2250 4300 50  0000 C CNN
+F 1 "ATTINY26-S" H 3300 2400 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-20_7.5x12.8mm_Pitch1.27mm" H 2850 3350 50  0000 C CIN
+F 3 "" H 2850 3350 50  0000 C CNN
+	1    2850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3450 3900 3450
+Wire Wire Line
+	3650 3550 3900 3550
+Wire Wire Line
+	3650 3650 3900 3650
+Text Label 3900 3450 0    60   ~ 0
+MOSI
+Text Label 3900 3550 0    60   ~ 0
+MISO
+Text Label 3900 3650 0    60   ~ 0
+SCK
+Wire Wire Line
+	3650 4150 5100 4150
+Text Label 3900 4150 0    60   ~ 0
+RST
+Wire Wire Line
+	3650 3850 3900 3850
+Wire Wire Line
+	3650 4050 4350 4050
+Wire Wire Line
+	3650 3250 3900 3250
+Wire Wire Line
+	3650 3150 3900 3150
+Wire Wire Line
+	3650 3050 3900 3050
+Wire Wire Line
+	3650 2950 3900 2950
+Wire Wire Line
+	3650 2750 3900 2750
+$Comp
+L +5V #PWR1
+U 1 1 57401CD3
+P 1900 2500
+F 0 "#PWR1" H 1900 2590 20  0001 C CNN
+F 1 "+5V" H 1900 2590 30  0000 C CNN
+F 2 "" H 1900 2500 60  0000 C CNN
+F 3 "" H 1900 2500 60  0000 C CNN
+	1    1900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2500 1900 3100
+Wire Wire Line
+	1900 2550 2050 2550
+$Comp
+L GND-RESCUE-card #PWR2
+U 1 1 57401D4D
+P 1900 4250
+F 0 "#PWR2" H 1900 4250 30  0001 C CNN
+F 1 "GND" H 1900 4180 30  0001 C CNN
+F 2 "" H 1900 4250 60  0000 C CNN
+F 3 "" H 1900 4250 60  0000 C CNN
+	1    1900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3500 1900 4250
+Wire Wire Line
+	1900 4050 2050 4050
+Wire Wire Line
+	2050 4150 1900 4150
+Connection ~ 1900 4150
+Wire Wire Line
+	1900 2850 2050 2850
+Connection ~ 1900 2550
+Connection ~ 1900 2850
+Connection ~ 1900 4050
+Wire Wire Line
+	3650 3950 4350 3950
+Wire Wire Line
+	3650 2650 3900 2650
+Wire Wire Line
+	3650 2550 3900 2550
+Text Label 3900 2950 0    60   ~ 0
+Left
+Text Label 3900 3250 0    60   ~ 0
+Up
+Text Label 3900 3150 0    60   ~ 0
+Right
+Text Label 3900 3050 0    60   ~ 0
+Down
+Text Label 3900 2750 0    60   ~ 0
+Select
+Text Label 3900 3850 0    60   ~ 0
+Start
+Text Label 3900 2550 0    60   ~ 0
+B
+Text Label 3900 2650 0    60   ~ 0
+A
+$Comp
+L R-RESCUE-card R2
+U 1 1 574290F4
+P 5100 3900
+F 0 "R2" V 5180 3900 40  0000 C CNN
+F 1 "4.7k" V 5107 3901 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5030 3900 30  0000 C CNN
+F 3 "~" H 5100 3900 30  0000 C CNN
+	1    5100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3650 5100 3400
+Connection ~ 5350 3400
+$EndSCHEMATC

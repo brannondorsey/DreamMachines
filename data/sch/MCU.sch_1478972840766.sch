@@ -1,0 +1,308 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:irsensor-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA8-P IC?
+U 1 1 52ADE14C
+P 2700 3650
+F 0 "IC?" H 1950 4950 40  0000 L BNN
+F 1 "ATMEGA8-P" H 3200 2200 40  0000 L BNN
+F 2 "DIL28" H 2700 3650 30  0000 C CIN
+F 3 "" H 2700 3650 60  0000 C CNN
+	1    2700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 52ADE15B
+P 2700 1850
+F 0 "#PWR?" H 2700 1950 30  0001 C CNN
+F 1 "VCC" H 2700 1950 30  0000 C CNN
+F 2 "" H 2700 1850 60  0000 C CNN
+F 3 "" H 2700 1850 60  0000 C CNN
+	1    2700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 52ADE16A
+P 1800 2750
+F 0 "#PWR?" H 1800 2850 30  0001 C CNN
+F 1 "VCC" H 1800 2850 30  0000 C CNN
+F 2 "" H 1800 2750 60  0000 C CNN
+F 3 "" H 1800 2750 60  0000 C CNN
+	1    1800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 52ADE179
+P 1800 3000
+F 0 "#PWR?" H 1800 3000 30  0001 C CNN
+F 1 "GND" H 1800 2930 30  0001 C CNN
+F 2 "" H 1800 3000 60  0000 C CNN
+F 3 "" H 1800 3000 60  0000 C CNN
+	1    1800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3000 1800 2950
+$Comp
+L GND #PWR?
+U 1 1 52ADE18B
+P 2700 5150
+F 0 "#PWR?" H 2700 5150 30  0001 C CNN
+F 1 "GND" H 2700 5080 30  0001 C CNN
+F 2 "" H 2700 5150 60  0000 C CNN
+F 3 "" H 2700 5150 60  0000 C CNN
+	1    2700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL X?
+U 1 1 52ADE1A4
+P 1300 3450
+F 0 "X?" H 1300 3600 60  0000 C CNN
+F 1 "CRYSTAL" H 1300 3300 60  0000 C CNN
+F 2 "" H 1300 3450 60  0000 C CNN
+F 3 "" H 1300 3450 60  0000 C CNN
+	1    1300 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 3250 1600 3250
+Wire Wire Line
+	1600 3250 1600 3150
+Wire Wire Line
+	1600 3150 1300 3150
+Wire Wire Line
+	1800 3450 1600 3450
+Wire Wire Line
+	1600 3450 1600 3750
+Wire Wire Line
+	1600 3750 1300 3750
+$Comp
+L C C?
+U 1 1 52ADE1BC
+P 1100 3150
+F 0 "C?" H 1100 3250 40  0000 L CNN
+F 1 "C" H 1106 3065 40  0000 L CNN
+F 2 "" H 1138 3000 30  0000 C CNN
+F 3 "" H 1100 3150 60  0000 C CNN
+	1    1100 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 52ADE1CB
+P 1100 3750
+F 0 "C?" H 1100 3850 40  0000 L CNN
+F 1 "C" H 1106 3665 40  0000 L CNN
+F 2 "" H 1138 3600 30  0000 C CNN
+F 3 "" H 1100 3750 60  0000 C CNN
+	1    1100 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 52ADE1D8
+P 750 3450
+F 0 "#PWR?" H 750 3450 30  0001 C CNN
+F 1 "GND" H 750 3380 30  0001 C CNN
+F 2 "" H 750 3450 60  0000 C CNN
+F 3 "" H 750 3450 60  0000 C CNN
+	1    750  3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  3150 900  3750
+Wire Wire Line
+	750  3450 750  3350
+Wire Wire Line
+	750  3350 900  3350
+Connection ~ 900  3350
+$Comp
+L R R?
+U 1 1 52ADE1FE
+P 1800 2300
+F 0 "R?" V 1880 2300 40  0000 C CNN
+F 1 "R" V 1807 2301 40  0000 C CNN
+F 2 "" V 1730 2300 30  0000 C CNN
+F 3 "" H 1800 2300 30  0000 C CNN
+	1    1800 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1850 2700 2250
+Wire Wire Line
+	1800 2050 2700 2050
+Connection ~ 2700 2050
+$Comp
+L C C?
+U 1 1 52ADE230
+P 1600 2750
+F 0 "C?" H 1600 2850 40  0000 L CNN
+F 1 "C" H 1606 2665 40  0000 L CNN
+F 2 "" H 1638 2600 30  0000 C CNN
+F 3 "" H 1600 2750 60  0000 C CNN
+	1    1600 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 52ADE236
+P 1400 2850
+F 0 "#PWR?" H 1400 2850 30  0001 C CNN
+F 1 "GND" H 1400 2780 30  0001 C CNN
+F 2 "" H 1400 2850 60  0000 C CNN
+F 3 "" H 1400 2850 60  0000 C CNN
+	1    1400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2550 1400 2850
+$Comp
+L C C?
+U 1 1 52ADE24B
+P 1600 2550
+F 0 "C?" H 1600 2650 40  0000 L CNN
+F 1 "C" H 1606 2465 40  0000 L CNN
+F 2 "" H 1638 2400 30  0000 C CNN
+F 3 "" H 1600 2550 60  0000 C CNN
+	1    1600 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1400 2750
+$Comp
+L C C?
+U 1 1 52ADE267
+P 2900 2250
+F 0 "C?" H 2900 2350 40  0000 L CNN
+F 1 "C" H 2906 2165 40  0000 L CNN
+F 2 "" H 2938 2100 30  0000 C CNN
+F 3 "" H 2900 2250 60  0000 C CNN
+	1    2900 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 52ADE26D
+P 3100 2300
+F 0 "#PWR?" H 3100 2300 30  0001 C CNN
+F 1 "GND" H 3100 2230 30  0001 C CNN
+F 2 "" H 3100 2300 60  0000 C CNN
+F 3 "" H 3100 2300 60  0000 C CNN
+	1    3100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2300 3100 2250
+$Comp
+L AVR-ISP-6 CON?
+U 1 1 52ADE29A
+P 2750 5800
+F 0 "CON?" H 2670 6040 50  0000 C CNN
+F 1 "AVR-ISP-6" H 2510 5570 50  0000 L BNN
+F 2 "AVR-ISP-6" V 2230 5840 50  0001 C CNN
+F 3 "" H 2750 5800 60  0000 C CNN
+	1    2750 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2950 4050 2950
+Wire Wire Line
+	3700 3050 4400 3050
+Text Label 4050 2950 0    60   ~ 0
+MISO
+Text Label 4050 3050 0    60   ~ 0
+SCK
+Wire Wire Line
+	3700 2850 4400 2850
+Text Label 1800 2550 0    60   ~ 0
+RESET
+Text Label 4050 2850 0    60   ~ 0
+MOSI
+$Comp
+L CONN_5X2 P?
+U 1 1 52ADE2F0
+P 6850 1800
+F 0 "P?" H 6850 2100 60  0000 C CNN
+F 1 "CONN_5X2" V 6850 1800 50  0000 C CNN
+F 2 "" H 6850 1800 60  0000 C CNN
+F 3 "" H 6850 1800 60  0000 C CNN
+	1    6850 1800
+	1    0    0    -1  
+$EndComp
+Text HLabel 4400 3050 2    60   Input ~ 0
+CLK
+Text HLabel 4400 2850 2    60   Input ~ 0
+DATA
+$Comp
+L CONN_7X2 P?
+U 1 1 52ADE47D
+P 7000 3200
+F 0 "P?" H 7000 3600 60  0000 C CNN
+F 1 "CONN_7X2" V 7000 3200 60  0000 C CNN
+F 2 "" H 7000 3200 60  0000 C CNN
+F 3 "" H 7000 3200 60  0000 C CNN
+	1    7000 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 4400 2750 2    60   Input ~ 0
+LATCH
+Wire Wire Line
+	4400 2750 3700 2750
+Text HLabel 4450 3250 2    60   Input ~ 0
+A
+Text HLabel 4450 3350 2    60   Input ~ 0
+B
+Text HLabel 4450 3450 2    60   Input ~ 0
+C
+Text HLabel 4450 3550 2    60   Input ~ 0
+~MUX_ENABLE
+Text HLabel 4450 3650 2    60   Input ~ 0
+MUX_OUT
+$EndSCHEMATC

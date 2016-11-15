@@ -1,0 +1,197 @@
+EESchema Schematic File Version 2
+LIBS:suf
+LIBS:conn
+LIBS:device
+LIBS:power
+LIBS:transistors
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:es-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "9 feb 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L INDUCTOR L1
+U 1 1 54967ABF
+P 4400 2950
+F 0 "L1" H 4400 2900 60  0000 C CNN
+F 1 "470uH/10A" H 4400 3050 60  0000 C CNN
+F 2 "L-TOROID-D35X5" H 4400 2950 60  0001 C CNN
+F 3 "~" H 4400 2950 60  0000 C CNN
+	1    4400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 54967B94
+P 5150 3350
+F 0 "#PWR3" H 5150 3350 30  0001 C CNN
+F 1 "GND" H 5150 3280 30  0001 C CNN
+F 2 "" H 5150 3350 60  0000 C CNN
+F 3 "" H 5150 3350 60  0000 C CNN
+	1    5150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 54C3562D
+P 4750 3150
+F 0 "C1" H 4750 3000 40  0000 C CNN
+F 1 "1000uF/63V" H 4750 3300 40  0000 C CNN
+F 2 "C3P_D7" H 4750 3150 60  0001 C CNN
+F 3 "~" H 4750 3150 60  0000 C CNN
+	1    4750 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 54CB0314
+P 5150 3150
+F 0 "C2" H 5150 3000 40  0000 C CNN
+F 1 "10nF/100V" H 5150 3300 40  0000 C CNN
+F 2 "C2" H 5150 3150 60  0001 C CNN
+F 3 "~" H 5150 3150 60  0000 C CNN
+	1    5150 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 54CB03DE
+P 4750 3350
+F 0 "#PWR2" H 4750 3350 30  0001 C CNN
+F 1 "GND" H 4750 3280 30  0001 C CNN
+F 2 "" H 4750 3350 60  0000 C CNN
+F 3 "" H 4750 3350 60  0000 C CNN
+	1    4750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2950 6200 2950
+Wire Wire Line
+	5150 2950 5150 3050
+Wire Wire Line
+	4750 2950 4750 3050
+Connection ~ 4750 2950
+Wire Wire Line
+	4750 3250 4750 3350
+Wire Wire Line
+	5150 3250 5150 3350
+$Comp
+L MD-TEST-HDR J1
+U 1 1 54D8E91A
+P 3700 3300
+F 0 "J1" H 3700 3000 60  0000 C CNN
+F 1 "IN" V 3700 3300 60  0000 C CNN
+F 2 "MD-TEST-HDR-F" H 3700 3300 60  0001 C CNN
+F 3 "" H 3700 3300 60  0000 C CNN
+	1    3700 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L MD-TEST-HDR J2
+U 1 1 54D8E929
+P 5900 3300
+F 0 "J2" H 5900 3000 60  0000 C CNN
+F 1 "OUT" V 5900 3300 60  0000 C CNN
+F 2 "MD-TEST-HDR-M" H 5900 3300 60  0001 C CNN
+F 3 "" H 5900 3300 60  0000 C CNN
+	1    5900 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 2950 4000 3200
+Wire Wire Line
+	3400 2950 4200 2950
+Connection ~ 4000 3100
+Wire Wire Line
+	3400 2950 3400 3200
+Connection ~ 4000 2950
+Connection ~ 3400 3100
+Wire Wire Line
+	6200 2950 6200 3200
+Connection ~ 5150 2950
+Connection ~ 6200 3100
+Wire Wire Line
+	5600 2950 5600 3200
+Connection ~ 5600 2950
+Connection ~ 5600 3100
+$Comp
+L GND #PWR1
+U 1 1 54D8E9B8
+P 3700 3750
+F 0 "#PWR1" H 3700 3750 30  0001 C CNN
+F 1 "GND" H 3700 3680 30  0001 C CNN
+F 2 "" H 3700 3750 60  0000 C CNN
+F 3 "" H 3700 3750 60  0000 C CNN
+	1    3700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3400 3400 3650
+Wire Wire Line
+	3400 3650 4000 3650
+Wire Wire Line
+	4000 3650 4000 3400
+Connection ~ 3400 3500
+Connection ~ 4000 3500
+Wire Wire Line
+	3700 3650 3700 3750
+Connection ~ 3700 3650
+Wire Wire Line
+	5600 3400 5600 3650
+Wire Wire Line
+	5600 3650 6200 3650
+Wire Wire Line
+	6200 3650 6200 3400
+Connection ~ 5600 3500
+Connection ~ 6200 3500
+$Comp
+L GND #PWR4
+U 1 1 54D8EA72
+P 5900 3750
+F 0 "#PWR4" H 5900 3750 30  0001 C CNN
+F 1 "GND" H 5900 3680 30  0001 C CNN
+F 2 "" H 5900 3750 60  0000 C CNN
+F 3 "" H 5900 3750 60  0000 C CNN
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3650 5900 3750
+Connection ~ 5900 3650
+$EndSCHEMATC

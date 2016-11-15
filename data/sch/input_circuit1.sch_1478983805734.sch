@@ -1,0 +1,398 @@
+EESchema Schematic File Version 2  date wto, 3 sty 2012, 19:38:52
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:drum_midi-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 4 14
+Title ""
+Date "3 jan 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7300 6800 0    60   ~ 0
+This is a public domain schematic diagram\nprepared by Wojciech M. Zabołotny\nwzab@ise.pw.ed.pl\n13.06.2010\n
+Wire Wire Line
+	5600 4050 5600 4000
+Wire Wire Line
+	7650 3800 6950 3800
+Wire Wire Line
+	6450 3800 6400 3800
+Connection ~ 7350 3800
+Wire Wire Line
+	7350 4350 7350 4300
+Wire Wire Line
+	5300 3450 5900 3450
+Wire Wire Line
+	5900 3450 5900 3600
+Connection ~ 4950 3600
+Wire Wire Line
+	5600 4450 5600 4500
+Wire Wire Line
+	4950 4050 4950 4000
+Connection ~ 7000 3800
+Wire Wire Line
+	5900 3600 6100 3600
+Connection ~ 5900 3600
+Wire Wire Line
+	7000 4350 7000 4200
+Wire Wire Line
+	5900 4000 5900 4050
+Wire Wire Line
+	5550 3600 5600 3600
+Wire Wire Line
+	4800 3600 5050 3600
+Wire Wire Line
+	6500 3250 6400 3250
+Wire Wire Line
+	6400 3250 6400 3400
+$Comp
+L DIODE D20
+U 1 1 4C09627E
+P 5600 3800
+AR Path="/4C083FB3/4C09627E" Ref="D20"  Part="1" 
+AR Path="/4C083FB0/4C09627E" Ref="D16"  Part="1" 
+AR Path="/4C0840D8/4C09627E" Ref="D36"  Part="1" 
+AR Path="/4C0840E4/4C09627E" Ref="D52"  Part="1" 
+AR Path="/4C0840E1/4C09627E" Ref="D48"  Part="1" 
+AR Path="/4C0840DE/4C09627E" Ref="D44"  Part="1" 
+AR Path="/4C0840DB/4C09627E" Ref="D40"  Part="1" 
+AR Path="/4C0840D5/4C09627E" Ref="D32"  Part="1" 
+AR Path="/4C0840D2/4C09627E" Ref="D28"  Part="1" 
+AR Path="/4C0840CF/4C09627E" Ref="D24"  Part="1" 
+AR Path="/4C083F6D/4C09627E" Ref="D12"  Part="1" 
+AR Path="/4C083F6A/4C09627E" Ref="D8"  Part="1" 
+AR Path="/4C083F4D/4C09627E" Ref="D4"  Part="1" 
+F 0 "D16" H 5600 3900 40  0000 C CNN
+F 1 "1N4148" H 5600 3700 40  0000 C CNN
+	1    5600 3800
+	0    1    1    0   
+$EndComp
+Text GLabel 6500 3250 2    60   Input ~ 0
+VCC
+Text HLabel 7650 3800 2    60   Input ~ 0
+Out
+Text HLabel 4800 3600 0    60   Input ~ 0
+In
+$Comp
+L R R12
+U 1 1 4C083A8D
+P 6700 3800
+AR Path="/4C083FB3/4C083A8D" Ref="R12"  Part="1" 
+AR Path="/4C083FB0/4C083A8D" Ref="R10"  Part="1" 
+AR Path="/4C0840D8/4C083A8D" Ref="R20"  Part="1" 
+AR Path="/4C0840E4/4C083A8D" Ref="R28"  Part="1" 
+AR Path="/4C0840E1/4C083A8D" Ref="R26"  Part="1" 
+AR Path="/4C0840DE/4C083A8D" Ref="R24"  Part="1" 
+AR Path="/4C0840DB/4C083A8D" Ref="R22"  Part="1" 
+AR Path="/4C0840D5/4C083A8D" Ref="R18"  Part="1" 
+AR Path="/4C0840D2/4C083A8D" Ref="R16"  Part="1" 
+AR Path="/4C0840CF/4C083A8D" Ref="R14"  Part="1" 
+AR Path="/4C083F6D/4C083A8D" Ref="R8"  Part="1" 
+AR Path="/4C083F6A/4C083A8D" Ref="R6"  Part="1" 
+AR Path="/4C083F4D/4C083A8D" Ref="R4"  Part="1" 
+F 0 "R10" V 6780 3800 50  0000 C CNN
+F 1 "47" V 6700 3800 50  0000 C CNN
+	1    6700 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 4C07F70A
+P 7350 4350
+AR Path="/4C083FB3/4C07F70A" Ref="#PWR028"  Part="1" 
+AR Path="/4C083FB0/4C07F70A" Ref="#PWR033"  Part="1" 
+AR Path="/4C0840D8/4C07F70A" Ref="#PWR023"  Part="1" 
+AR Path="/4C0840E4/4C07F70A" Ref="#PWR038"  Part="1" 
+AR Path="/4C0840E1/4C07F70A" Ref="#PWR043"  Part="1" 
+AR Path="/4C0840DE/4C07F70A" Ref="#PWR048"  Part="1" 
+AR Path="/4C0840DB/4C07F70A" Ref="#PWR053"  Part="1" 
+AR Path="/4C0840D5/4C07F70A" Ref="#PWR058"  Part="1" 
+AR Path="/4C0840D2/4C07F70A" Ref="#PWR063"  Part="1" 
+AR Path="/4C0840CF/4C07F70A" Ref="#PWR068"  Part="1" 
+AR Path="/4C083F6D/4C07F70A" Ref="#PWR073"  Part="1" 
+AR Path="/4C083F6A/4C07F70A" Ref="#PWR078"  Part="1" 
+AR Path="/4C083F4D/4C07F70A" Ref="#PWR083"  Part="1" 
+F 0 "#PWR033" H 7350 4350 30  0001 C CNN
+F 1 "GND" H 7350 4280 30  0001 C CNN
+	1    7350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 4C07F6FC
+P 7350 4050
+AR Path="/4C083FB3/4C07F6FC" Ref="R13"  Part="1" 
+AR Path="/4C083FB0/4C07F6FC" Ref="R11"  Part="1" 
+AR Path="/4C0840D8/4C07F6FC" Ref="R21"  Part="1" 
+AR Path="/4C0840E4/4C07F6FC" Ref="R29"  Part="1" 
+AR Path="/4C0840E1/4C07F6FC" Ref="R27"  Part="1" 
+AR Path="/4C0840DE/4C07F6FC" Ref="R25"  Part="1" 
+AR Path="/4C0840DB/4C07F6FC" Ref="R23"  Part="1" 
+AR Path="/4C0840D5/4C07F6FC" Ref="R19"  Part="1" 
+AR Path="/4C0840D2/4C07F6FC" Ref="R17"  Part="1" 
+AR Path="/4C0840CF/4C07F6FC" Ref="R15"  Part="1" 
+AR Path="/4C083F6D/4C07F6FC" Ref="R9"  Part="1" 
+AR Path="/4C083F6A/4C07F6FC" Ref="R7"  Part="1" 
+AR Path="/4C083F4D/4C07F6FC" Ref="R5"  Part="1" 
+F 0 "R11" V 7430 4050 50  0000 C CNN
+F 1 "27k" V 7350 4050 50  0000 C CNN
+	1    7350 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L NPN Q5
+U 1 1 4C07F334
+P 6300 3600
+AR Path="/4C083FB3/4C07F334" Ref="Q5"  Part="1" 
+AR Path="/4C083FB0/4C07F334" Ref="Q4"  Part="1" 
+AR Path="/4C0840D8/4C07F334" Ref="Q9"  Part="1" 
+AR Path="/4C0840E4/4C07F334" Ref="Q13"  Part="1" 
+AR Path="/4C0840E1/4C07F334" Ref="Q12"  Part="1" 
+AR Path="/4C0840DE/4C07F334" Ref="Q11"  Part="1" 
+AR Path="/4C0840DB/4C07F334" Ref="Q10"  Part="1" 
+AR Path="/4C0840D5/4C07F334" Ref="Q8"  Part="1" 
+AR Path="/4C0840D2/4C07F334" Ref="Q7"  Part="1" 
+AR Path="/4C0840CF/4C07F334" Ref="Q6"  Part="1" 
+AR Path="/4C083F6D/4C07F334" Ref="Q3"  Part="1" 
+AR Path="/4C083F6A/4C07F334" Ref="Q2"  Part="1" 
+AR Path="/4C083F4D/4C07F334" Ref="Q1"  Part="1" 
+F 0 "Q4" H 6300 3450 50  0000 R CNN
+F 1 "BC547C" H 6300 3750 50  0000 R CNN
+	1    6300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 4C0609BD
+P 5900 4050
+AR Path="/4C083FB3/4C0609BD" Ref="#PWR029"  Part="1" 
+AR Path="/4C083FB0/4C0609BD" Ref="#PWR034"  Part="1" 
+AR Path="/4C0840D8/4C0609BD" Ref="#PWR024"  Part="1" 
+AR Path="/4C0840E4/4C0609BD" Ref="#PWR039"  Part="1" 
+AR Path="/4C0840E1/4C0609BD" Ref="#PWR044"  Part="1" 
+AR Path="/4C0840DE/4C0609BD" Ref="#PWR049"  Part="1" 
+AR Path="/4C0840DB/4C0609BD" Ref="#PWR054"  Part="1" 
+AR Path="/4C0840D5/4C0609BD" Ref="#PWR059"  Part="1" 
+AR Path="/4C0840D2/4C0609BD" Ref="#PWR064"  Part="1" 
+AR Path="/4C0840CF/4C0609BD" Ref="#PWR069"  Part="1" 
+AR Path="/4C083F6D/4C0609BD" Ref="#PWR074"  Part="1" 
+AR Path="/4C083F6A/4C0609BD" Ref="#PWR079"  Part="1" 
+AR Path="/4C083F4D/4C0609BD" Ref="#PWR084"  Part="1" 
+F 0 "#PWR034" H 5900 4050 30  0001 C CNN
+F 1 "GND" H 5900 3980 30  0001 C CNN
+	1    5900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 4C0609A1
+P 5600 4500
+AR Path="/4C083FB3/4C0609A1" Ref="#PWR030"  Part="1" 
+AR Path="/4C083FB0/4C0609A1" Ref="#PWR035"  Part="1" 
+AR Path="/4C0840D8/4C0609A1" Ref="#PWR025"  Part="1" 
+AR Path="/4C0840E4/4C0609A1" Ref="#PWR040"  Part="1" 
+AR Path="/4C0840E1/4C0609A1" Ref="#PWR045"  Part="1" 
+AR Path="/4C0840DE/4C0609A1" Ref="#PWR050"  Part="1" 
+AR Path="/4C0840DB/4C0609A1" Ref="#PWR055"  Part="1" 
+AR Path="/4C0840D5/4C0609A1" Ref="#PWR060"  Part="1" 
+AR Path="/4C0840D2/4C0609A1" Ref="#PWR065"  Part="1" 
+AR Path="/4C0840CF/4C0609A1" Ref="#PWR070"  Part="1" 
+AR Path="/4C083F6D/4C0609A1" Ref="#PWR075"  Part="1" 
+AR Path="/4C083F6A/4C0609A1" Ref="#PWR080"  Part="1" 
+AR Path="/4C083F4D/4C0609A1" Ref="#PWR085"  Part="1" 
+F 0 "#PWR035" H 5600 4500 30  0001 C CNN
+F 1 "GND" H 5600 4430 30  0001 C CNN
+	1    5600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 4C06099C
+P 7000 4350
+AR Path="/4C083FB3/4C06099C" Ref="#PWR031"  Part="1" 
+AR Path="/4C083FB0/4C06099C" Ref="#PWR036"  Part="1" 
+AR Path="/4C0840D8/4C06099C" Ref="#PWR026"  Part="1" 
+AR Path="/4C0840E4/4C06099C" Ref="#PWR041"  Part="1" 
+AR Path="/4C0840E1/4C06099C" Ref="#PWR046"  Part="1" 
+AR Path="/4C0840DE/4C06099C" Ref="#PWR051"  Part="1" 
+AR Path="/4C0840DB/4C06099C" Ref="#PWR056"  Part="1" 
+AR Path="/4C0840D5/4C06099C" Ref="#PWR061"  Part="1" 
+AR Path="/4C0840D2/4C06099C" Ref="#PWR066"  Part="1" 
+AR Path="/4C0840CF/4C06099C" Ref="#PWR071"  Part="1" 
+AR Path="/4C083F6D/4C06099C" Ref="#PWR076"  Part="1" 
+AR Path="/4C083F6A/4C06099C" Ref="#PWR081"  Part="1" 
+AR Path="/4C083F4D/4C06099C" Ref="#PWR086"  Part="1" 
+F 0 "#PWR036" H 7000 4350 30  0001 C CNN
+F 1 "GND" H 7000 4280 30  0001 C CNN
+	1    7000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 4C06098C
+P 4950 4050
+AR Path="/4C083FB3/4C06098C" Ref="#PWR032"  Part="1" 
+AR Path="/4C083FB0/4C06098C" Ref="#PWR037"  Part="1" 
+AR Path="/4C0840D8/4C06098C" Ref="#PWR027"  Part="1" 
+AR Path="/4C0840E4/4C06098C" Ref="#PWR042"  Part="1" 
+AR Path="/4C0840E1/4C06098C" Ref="#PWR047"  Part="1" 
+AR Path="/4C0840DE/4C06098C" Ref="#PWR052"  Part="1" 
+AR Path="/4C0840DB/4C06098C" Ref="#PWR057"  Part="1" 
+AR Path="/4C0840D5/4C06098C" Ref="#PWR062"  Part="1" 
+AR Path="/4C0840D2/4C06098C" Ref="#PWR067"  Part="1" 
+AR Path="/4C0840CF/4C06098C" Ref="#PWR072"  Part="1" 
+AR Path="/4C083F6D/4C06098C" Ref="#PWR077"  Part="1" 
+AR Path="/4C083F6A/4C06098C" Ref="#PWR082"  Part="1" 
+AR Path="/4C083F4D/4C06098C" Ref="#PWR087"  Part="1" 
+F 0 "#PWR037" H 4950 4050 30  0001 C CNN
+F 1 "GND" H 4950 3980 30  0001 C CNN
+	1    4950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV6
+U 1 1 4C06092A
+P 5300 3600
+AR Path="/4C083FB3/4C06092A" Ref="RV6"  Part="1" 
+AR Path="/4C083FB0/4C06092A" Ref="RV5"  Part="1" 
+AR Path="/4C0840D8/4C06092A" Ref="RV10"  Part="1" 
+AR Path="/4C0840E4/4C06092A" Ref="RV14"  Part="1" 
+AR Path="/4C0840E1/4C06092A" Ref="RV13"  Part="1" 
+AR Path="/4C0840DE/4C06092A" Ref="RV12"  Part="1" 
+AR Path="/4C0840DB/4C06092A" Ref="RV11"  Part="1" 
+AR Path="/4C0840D5/4C06092A" Ref="RV9"  Part="1" 
+AR Path="/4C0840D2/4C06092A" Ref="RV8"  Part="1" 
+AR Path="/4C0840CF/4C06092A" Ref="RV7"  Part="1" 
+AR Path="/4C083F6D/4C06092A" Ref="RV4"  Part="1" 
+AR Path="/4C083F6A/4C06092A" Ref="RV3"  Part="1" 
+AR Path="/4C083F4D/4C06092A" Ref="RV2"  Part="1" 
+F 0 "RV5" H 5300 3500 50  0000 C CNN
+F 1 "50k" H 5300 3600 50  0000 C CNN
+	1    5300 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ZENER D22
+U 1 1 4C0608F6
+P 5900 3800
+AR Path="/4C083FB3/4C0608F6" Ref="D22"  Part="1" 
+AR Path="/4C083FB0/4C0608F6" Ref="D18"  Part="1" 
+AR Path="/4C0840D8/4C0608F6" Ref="D38"  Part="1" 
+AR Path="/4C0840E4/4C0608F6" Ref="D54"  Part="1" 
+AR Path="/4C0840E1/4C0608F6" Ref="D50"  Part="1" 
+AR Path="/4C0840DE/4C0608F6" Ref="D46"  Part="1" 
+AR Path="/4C0840DB/4C0608F6" Ref="D42"  Part="1" 
+AR Path="/4C0840D5/4C0608F6" Ref="D34"  Part="1" 
+AR Path="/4C0840D2/4C0608F6" Ref="D30"  Part="1" 
+AR Path="/4C0840CF/4C0608F6" Ref="D26"  Part="1" 
+AR Path="/4C083F6D/4C0608F6" Ref="D14"  Part="1" 
+AR Path="/4C083F6A/4C0608F6" Ref="D10"  Part="1" 
+AR Path="/4C083F4D/4C0608F6" Ref="D6"  Part="1" 
+F 0 "D18" H 5900 3900 50  0000 C CNN
+F 1 "4V7" H 5900 3700 40  0000 C CNN
+	1    5900 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C11
+U 1 1 4C0608D9
+P 7000 4000
+AR Path="/4C083FB3/4C0608D9" Ref="C11"  Part="1" 
+AR Path="/4C083FB0/4C0608D9" Ref="C10"  Part="1" 
+AR Path="/4C0840D8/4C0608D9" Ref="C15"  Part="1" 
+AR Path="/4C0840E4/4C0608D9" Ref="C19"  Part="1" 
+AR Path="/4C0840E1/4C0608D9" Ref="C18"  Part="1" 
+AR Path="/4C0840DE/4C0608D9" Ref="C17"  Part="1" 
+AR Path="/4C0840DB/4C0608D9" Ref="C16"  Part="1" 
+AR Path="/4C0840D5/4C0608D9" Ref="C14"  Part="1" 
+AR Path="/4C0840D2/4C0608D9" Ref="C13"  Part="1" 
+AR Path="/4C0840CF/4C0608D9" Ref="C12"  Part="1" 
+AR Path="/4C083F6D/4C0608D9" Ref="C9"  Part="1" 
+AR Path="/4C083F6A/4C0608D9" Ref="C8"  Part="1" 
+AR Path="/4C083F4D/4C0608D9" Ref="C7"  Part="1" 
+F 0 "C10" H 7050 4100 50  0000 L CNN
+F 1 "100nF" H 6750 3900 50  0000 L CNN
+F 2 "C2" H 7100 4150 60  0001 C CNN
+	1    7000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D19
+U 1 1 4C060863
+P 4950 3800
+AR Path="/4C083FB3/4C060863" Ref="D19"  Part="1" 
+AR Path="/4C083FB0/4C060863" Ref="D15"  Part="1" 
+AR Path="/4C0840D8/4C060863" Ref="D35"  Part="1" 
+AR Path="/4C0840E4/4C060863" Ref="D51"  Part="1" 
+AR Path="/4C0840E1/4C060863" Ref="D47"  Part="1" 
+AR Path="/4C0840DE/4C060863" Ref="D43"  Part="1" 
+AR Path="/4C0840DB/4C060863" Ref="D39"  Part="1" 
+AR Path="/4C0840D5/4C060863" Ref="D31"  Part="1" 
+AR Path="/4C0840D2/4C060863" Ref="D27"  Part="1" 
+AR Path="/4C0840CF/4C060863" Ref="D23"  Part="1" 
+AR Path="/4C083F6D/4C060863" Ref="D11"  Part="1" 
+AR Path="/4C083F6A/4C060863" Ref="D7"  Part="1" 
+AR Path="/4C083F4D/4C060863" Ref="D3"  Part="1" 
+F 0 "D15" H 4950 3900 40  0000 C CNN
+F 1 "1N4148" H 4950 3700 40  0000 C CNN
+	1    4950 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODE D21
+U 1 1 4C060847
+P 5600 4250
+AR Path="/4C083FB3/4C060847" Ref="D21"  Part="1" 
+AR Path="/4C083FB0/4C060847" Ref="D17"  Part="1" 
+AR Path="/4C0840D8/4C060847" Ref="D37"  Part="1" 
+AR Path="/4C0840E4/4C060847" Ref="D53"  Part="1" 
+AR Path="/4C0840E1/4C060847" Ref="D49"  Part="1" 
+AR Path="/4C0840DE/4C060847" Ref="D45"  Part="1" 
+AR Path="/4C0840DB/4C060847" Ref="D41"  Part="1" 
+AR Path="/4C0840D5/4C060847" Ref="D33"  Part="1" 
+AR Path="/4C0840D2/4C060847" Ref="D29"  Part="1" 
+AR Path="/4C0840CF/4C060847" Ref="D25"  Part="1" 
+AR Path="/4C083F6D/4C060847" Ref="D13"  Part="1" 
+AR Path="/4C083F6A/4C060847" Ref="D9"  Part="1" 
+AR Path="/4C083F4D/4C060847" Ref="D5"  Part="1" 
+F 0 "D17" H 5600 4350 40  0000 C CNN
+F 1 "1N4148" H 5600 4150 40  0000 C CNN
+	1    5600 4250
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

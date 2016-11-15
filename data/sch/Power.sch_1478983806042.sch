@@ -1,0 +1,752 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32f030c8
+LIBS:CentralCommand-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP1700T-3302E/TT U202
+U 1 1 56C4554C
+P 4600 1750
+F 0 "U202" H 4600 1950 60  0000 C CNN
+F 1 "MCP1700T-3302E/TT" H 4600 1800 60  0000 C CNN
+F 2 "pcb:SOT-23" H 4600 1750 60  0001 C CNN
+F 3 "" H 4600 1750 60  0000 C CNN
+F 4 "MCP1700T-3302E/TT" H 4600 1750 60  0001 C CNN "MPN"
+F 5 "http://www.digikey.com/product-search/en?keywords=MCP1700T3302ETTCT-ND" H 4600 1750 60  0001 C CNN "SupplierLink"
+F 6 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" H 4600 1750 60  0001 C CNN "DatasheetLink"
+	1    4600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C205
+U 1 1 56C45553
+P 3750 1800
+F 0 "C205" H 3775 1900 50  0000 L CNN
+F 1 "10uf" H 3775 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 3788 1650 50  0001 C CNN
+F 3 "" H 3750 1800 50  0000 C CNN
+	1    3750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C206
+U 1 1 56C4555A
+P 5400 1800
+F 0 "C206" H 5425 1900 50  0000 L CNN
+F 1 "10uf" H 5425 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 5438 1650 50  0001 C CNN
+F 3 "" H 5400 1800 50  0000 C CNN
+	1    5400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 56C45561
+P 4600 2400
+F 0 "#PWR09" H 4600 2150 50  0001 C CNN
+F 1 "GND" H 4600 2250 50  0000 C CNN
+F 2 "" H 4600 2400 50  0000 C CNN
+F 3 "" H 4600 2400 50  0000 C CNN
+	1    4600 2400
+	1    0    0    -1  
+$EndComp
+Text Notes 4350 1450 0    60   ~ 0
+200mah MAX
+$Comp
+L FT232RQ U201
+U 1 1 56C4D11D
+P 3700 4600
+F 0 "U201" H 3700 4150 60  0000 C CNN
+F 1 "FT232RQ" H 3700 4650 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 3800 4200 60  0001 C CNN
+F 3 "" H 3800 4200 60  0000 C CNN
+F 4 "FT232RQ-REEL" H 3700 4600 60  0001 C CNN "MPN"
+F 5 "http://www.digikey.com/product-search/en?keywords=768-1008-1-ND" H 3700 4600 60  0001 C CNN "SupplierLink"
+F 6 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 3700 4600 60  0001 C CNN "DatasheetLink"
+	1    3700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L FILTER FB201
+U 1 1 56C4D3A4
+P 2100 3800
+F 0 "FB201" H 2000 3950 50  0000 C CNN
+F 1 "FILTER" H 2100 3700 50  0000 C CNN
+F 2 "Inductors_NEOSID:Neosid_Inductor_SM1206" H 2100 3800 50  0001 C CNN
+F 3 "" H 2100 3800 50  0000 C CNN
+	1    2100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C201
+U 1 1 56C4D8AA
+P 1650 3500
+F 0 "C201" H 1675 3600 50  0000 L CNN
+F 1 "10nf" H 1675 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1688 3350 50  0001 C CNN
+F 3 "" H 1650 3500 50  0000 C CNN
+	1    1650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 56C4D8F1
+P 1900 3350
+F 0 "#PWR010" H 1900 3100 50  0001 C CNN
+F 1 "GND" H 1900 3200 50  0000 C CNN
+F 2 "" H 1900 3350 50  0000 C CNN
+F 3 "" H 1900 3350 50  0000 C CNN
+	1    1900 3350
+	1    0    0    -1  
+$EndComp
+Text HLabel 5450 3700 2    60   Input ~ 0
+TXD
+Text HLabel 5450 3850 2    60   Input ~ 0
+RXD
+$Comp
+L CONN_01X02 P202
+U 1 1 56C4E374
+P 900 1600
+F 0 "P202" H 900 1750 50  0000 C CNN
+F 1 "CONN_01X02" V 1000 1600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 900 1600 50  0001 C CNN
+F 3 "" H 900 1600 50  0000 C CNN
+	1    900  1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 56C4E467
+P 1200 1850
+F 0 "#PWR011" H 1200 1600 50  0001 C CNN
+F 1 "GND" H 1200 1700 50  0000 C CNN
+F 2 "" H 1200 1850 50  0000 C CNN
+F 3 "" H 1200 1850 50  0000 C CNN
+	1    1200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D201
+U 1 1 56C4E74C
+P 1550 1550
+F 0 "D201" H 1550 1650 50  0000 C CNN
+F 1 "D_Schottky" H 1550 1450 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 1550 1550 50  0001 C CNN
+F 3 "" H 1550 1550 50  0000 C CNN
+F 4 "MBR0520LT1G" H 1550 1550 60  0001 C CNN "MPN"
+F 5 "http://www.digikey.com/product-search/en?keywords=MBR0520LT1GOSCT-ND" H 1550 1550 60  0001 C CNN "SupplierLink"
+F 6 "http://www.onsemi.com/pub_link/Collateral/MBR0520LT1-D.PDF" H 1550 1550 60  0001 C CNN "DatasheetLink"
+	1    1550 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky D202
+U 1 1 56C4EA09
+P 2700 3400
+F 0 "D202" H 2700 3500 50  0000 C CNN
+F 1 "D_Schottky" H 2700 3300 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 2700 3400 50  0001 C CNN
+F 3 "" H 2700 3400 50  0000 C CNN
+F 4 "MBR0520LT1G" H 2700 3400 60  0001 C CNN "MPN"
+F 5 "http://www.digikey.com/product-search/en?keywords=MBR0520LT1GOSCT-ND" H 2700 3400 60  0001 C CNN "SupplierLink"
+F 6 "http://www.onsemi.com/pub_link/Collateral/MBR0520LT1-D.PDF" H 2700 3400 60  0001 C CNN "DatasheetLink"
+	1    2700 3400
+	0    -1   1    0   
+$EndComp
+Text HLabel 6000 1550 2    60   Input ~ 0
+PWR
+$Comp
+L C C204
+U 1 1 56C61787
+P 2600 5500
+F 0 "C204" H 2625 5600 50  0000 L CNN
+F 1 "100nf" H 2625 5400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2638 5350 50  0001 C CNN
+F 3 "" H 2600 5500 50  0000 C CNN
+	1    2600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 56C617F2
+P 2600 5700
+F 0 "#PWR012" H 2600 5450 50  0001 C CNN
+F 1 "GND" H 2600 5550 50  0000 C CNN
+F 2 "" H 2600 5700 50  0000 C CNN
+F 3 "" H 2600 5700 50  0000 C CNN
+	1    2600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 56C6235B
+P 3700 6200
+F 0 "#PWR013" H 3700 5950 50  0001 C CNN
+F 1 "GND" H 3700 6050 50  0000 C CNN
+F 2 "" H 3700 6200 50  0000 C CNN
+F 3 "" H 3700 6200 50  0000 C CNN
+	1    3700 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 56C62CAC
+P 1900 2750
+F 0 "#PWR014" H 1900 2500 50  0001 C CNN
+F 1 "GND" H 1900 2600 50  0000 C CNN
+F 2 "" H 1900 2750 50  0000 C CNN
+F 3 "" H 1900 2750 50  0000 C CNN
+	1    1900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C202
+U 1 1 56C62CD8
+P 2100 3000
+F 0 "C202" H 2125 3100 50  0000 L CNN
+F 1 "100nf" H 2125 2900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2138 2850 50  0001 C CNN
+F 3 "" H 2100 3000 50  0000 C CNN
+	1    2100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C203
+U 1 1 56C62D18
+P 2400 3000
+F 0 "C203" H 2425 3100 50  0000 L CNN
+F 1 "4.7uf" H 2425 2900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 2438 2850 50  0001 C CNN
+F 3 "" H 2400 3000 50  0000 C CNN
+	1    2400 3000
+	1    0    0    -1  
+$EndComp
+Text HLabel 2550 4900 0    60   Input ~ 0
+RESET#
+$Comp
+L R R201
+U 1 1 56C6378C
+P 2800 4900
+F 0 "R201" V 2880 4900 50  0000 C CNN
+F 1 "0" V 2800 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2730 4900 50  0001 C CNN
+F 3 "" H 2800 4900 50  0000 C CNN
+	1    2800 4900
+	0    -1   -1   0   
+$EndComp
+Text Label 2850 3700 0    60   ~ 0
+VCC
+$Comp
+L LED D203
+U 1 1 56C6507B
+P 5100 4900
+F 0 "D203" H 5100 5000 50  0000 C CNN
+F 1 "LED_GREEN" H 5100 4800 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5100 4900 50  0001 C CNN
+F 3 "" H 5100 4900 50  0000 C CNN
+F 4 "150080GS75000" H 5100 4900 60  0001 C CNN "MPN"
+F 5 "https://www.digikey.com/product-search/en?keywords=732-4983-1-ND" H 5100 4900 60  0001 C CNN "SupplierLink"
+F 6 "http://katalog.we-online.de/led/datasheet/150080GS75000.pdf" H 5100 4900 60  0001 C CNN "DatasheetLink"
+F 7 "Green" H 5100 4900 60  0001 C CNN "Description"
+	1    5100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D204
+U 1 1 56C650D3
+P 5350 5050
+F 0 "D204" H 5350 5150 50  0000 C CNN
+F 1 "LED_YELLOW" H 5350 4950 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5350 5050 50  0001 C CNN
+F 3 "" H 5350 5050 50  0000 C CNN
+F 4 "150080YS75000" H 5350 5050 60  0001 C CNN "MPN"
+F 5 "http://www.digikey.com/product-search/en?keywords=732-4987-1-ND" H 5350 5050 60  0001 C CNN "SupplierLink"
+F 6 "http://katalog.we-online.de/led/datasheet/150080YS75000.pdf" H 5350 5050 60  0001 C CNN "DatasheetLink"
+F 7 "Yellow" H 5350 5050 60  0001 C CNN "Description"
+	1    5350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R208
+U 1 1 56C6523A
+P 5600 4900
+F 0 "R208" V 5680 4900 50  0000 C CNN
+F 1 "270" V 5600 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5530 4900 50  0001 C CNN
+F 3 "" H 5600 4900 50  0000 C CNN
+	1    5600 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R209
+U 1 1 56C65553
+P 5950 5050
+F 0 "R209" V 6030 5050 50  0000 C CNN
+F 1 "270" V 5950 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5880 5050 50  0001 C CNN
+F 3 "" H 5950 5050 50  0000 C CNN
+	1    5950 5050
+	0    1    1    0   
+$EndComp
+Text Label 6450 5000 2    60   ~ 0
+VCC
+$Comp
+L R R204
+U 1 1 56C6680D
+P 4800 4000
+F 0 "R204" V 4880 4000 50  0000 C CNN
+F 1 "NOP" V 4800 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4730 4000 50  0001 C CNN
+F 3 "" H 4800 4000 50  0000 C CNN
+	1    4800 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R206
+U 1 1 56C6687D
+P 5050 4150
+F 0 "R206" V 5130 4150 50  0000 C CNN
+F 1 "NOP" V 5050 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4980 4150 50  0001 C CNN
+F 3 "" H 5050 4150 50  0000 C CNN
+	1    5050 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 56C66A0E
+P 5400 4050
+F 0 "#PWR015" H 5400 3800 50  0001 C CNN
+F 1 "GND" H 5400 3900 50  0000 C CNN
+F 2 "" H 5400 4050 50  0000 C CNN
+F 3 "" H 5400 4050 50  0000 C CNN
+	1    5400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R203
+U 1 1 56C66D62
+P 4100 5950
+F 0 "R203" V 4180 5950 50  0000 C CNN
+F 1 "0" V 4100 5950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4030 5950 50  0001 C CNN
+F 3 "" H 4100 5950 50  0000 C CNN
+	1    4100 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 56C66EDC
+P 3950 6050
+F 0 "#PWR016" H 3950 5800 50  0001 C CNN
+F 1 "GND" H 3950 5900 50  0000 C CNN
+F 2 "" H 3950 6050 50  0000 C CNN
+F 3 "" H 3950 6050 50  0000 C CNN
+	1    3950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R205
+U 1 1 56C6720C
+P 4850 3700
+F 0 "R205" V 4930 3700 50  0000 C CNN
+F 1 "0" V 4850 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4780 3700 50  0001 C CNN
+F 3 "" H 4850 3700 50  0000 C CNN
+	1    4850 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R207
+U 1 1 56C672A0
+P 5100 3850
+F 0 "R207" V 5180 3850 50  0000 C CNN
+F 1 "0" V 5100 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5030 3850 50  0001 C CNN
+F 3 "" H 5100 3850 50  0000 C CNN
+	1    5100 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R202
+U 1 1 56C67D42
+P 2850 5300
+F 0 "R202" V 2930 5300 50  0000 C CNN
+F 1 "0" V 2850 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2780 5300 50  0001 C CNN
+F 3 "" H 2850 5300 50  0000 C CNN
+	1    2850 5300
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3050 4300
+NoConn ~ 3050 4400
+NoConn ~ 3050 4500
+NoConn ~ 3050 4600
+NoConn ~ 3050 4700
+NoConn ~ 3050 5000
+NoConn ~ 3050 5100
+NoConn ~ 3050 5200
+NoConn ~ 4550 4300
+NoConn ~ 4550 4450
+NoConn ~ 4550 4600
+NoConn ~ 4550 4750
+NoConn ~ 4550 5200
+NoConn ~ 4550 5350
+NoConn ~ 4550 5500
+Text HLabel 6350 2350 2    60   Input ~ 0
+GND
+$Comp
+L USB-MICRO-B CON201
+U 1 1 56CA2F99
+P 1050 4000
+F 0 "CON201" H 750 4350 50  0000 C CNN
+F 1 "USB-MICRO-B" H 900 3650 50  0000 C CNN
+F 2 "pcb:MICRO_B_CONN_10118193-0001LF" H 1050 3900 50  0001 C CNN
+F 3 "" H 1050 3900 50  0000 C CNN
+F 4 "10118193-0001LF" H 1050 4000 60  0001 C CNN "MPN"
+F 5 "https://www.digikey.com/product-search/en?keywords=609-4616-1-ND" H 1050 4000 60  0001 C CNN "SupplierLink"
+F 6 "http://portal.fciconnect.com/Comergent//fci/drawing/10118193.pdf" H 1050 4000 60  0001 C CNN "DatasheetLink"
+	1    1050 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R210
+U 1 1 56CA36DA
+P 2100 4200
+F 0 "R210" V 2180 4200 50  0000 C CNN
+F 1 "NOP" V 2100 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2030 4200 50  0001 C CNN
+F 3 "" H 2100 4200 50  0000 C CNN
+	1    2100 4200
+	0    1    1    0   
+$EndComp
+NoConn ~ 2250 4200
+$Comp
+L GND #PWR017
+U 1 1 56CA383D
+P 1650 4350
+F 0 "#PWR017" H 1650 4100 50  0001 C CNN
+F 1 "GND" H 1650 4200 50  0000 C CNN
+F 2 "" H 1650 4350 50  0000 C CNN
+F 3 "" H 1650 4350 50  0000 C CNN
+	1    1650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 56CA3AAB
+P 650 4500
+F 0 "#PWR018" H 650 4250 50  0001 C CNN
+F 1 "GND" H 650 4350 50  0000 C CNN
+F 2 "" H 650 4500 50  0000 C CNN
+F 3 "" H 650 4500 50  0000 C CNN
+	1    650  4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D205
+U 1 1 56CC1A90
+P 5950 2100
+F 0 "D205" H 5950 2200 50  0000 C CNN
+F 1 "LED_BLUE" H 5950 2000 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5950 2100 50  0001 C CNN
+F 3 "" H 5950 2100 50  0000 C CNN
+F 4 "150080BS75000" H 5950 2100 60  0001 C CNN "MPN"
+F 5 "http://www.digikey.com/product-search/en?keywords=732-4982-1-ND" H 5950 2100 60  0001 C CNN "SupplierLink"
+F 6 "http://katalog.we-online.de/led/datasheet/150080BS75000.pdf" H 5950 2100 60  0001 C CNN "DatasheetLink"
+F 7 "Blue" H 5950 2100 60  0001 C CNN "Description"
+	1    5950 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 2200 4600 2400
+Wire Wire Line
+	3750 1950 3750 2250
+Wire Wire Line
+	3750 2250 4600 2250
+Connection ~ 4600 2250
+Wire Wire Line
+	4600 2350 6350 2350
+Wire Wire Line
+	5400 2350 5400 1950
+Connection ~ 4600 2350
+Wire Wire Line
+	5300 1550 6000 1550
+Wire Wire Line
+	5400 1550 5400 1650
+Wire Wire Line
+	2800 1550 3900 1550
+Wire Wire Line
+	3750 1650 3750 1550
+Connection ~ 3750 1550
+Connection ~ 5400 1550
+Wire Wire Line
+	2450 3800 3050 3800
+Wire Wire Line
+	3050 3700 2850 3700
+Wire Wire Line
+	2850 3700 2850 3800
+Connection ~ 2850 3800
+Wire Wire Line
+	1650 3350 1650 3250
+Wire Wire Line
+	1650 3250 1900 3250
+Wire Wire Line
+	1900 3250 1900 3350
+Wire Wire Line
+	2700 3800 2700 3550
+Connection ~ 2700 3800
+Wire Wire Line
+	1100 1650 1200 1650
+Wire Wire Line
+	1200 1650 1200 1850
+Wire Wire Line
+	1400 1550 1100 1550
+Wire Wire Line
+	2600 5700 2600 5650
+Wire Wire Line
+	3400 5850 3400 6050
+Wire Wire Line
+	3700 5850 3700 6200
+Wire Wire Line
+	3550 5850 3550 5950
+Wire Wire Line
+	3850 5850 3850 6000
+Wire Wire Line
+	2600 3800 2600 3600
+Wire Wire Line
+	2600 3600 2400 3600
+Wire Wire Line
+	2400 3600 2400 3150
+Connection ~ 2600 3800
+Wire Wire Line
+	2500 3800 2500 3650
+Wire Wire Line
+	2500 3650 2100 3650
+Wire Wire Line
+	2100 3650 2100 3150
+Connection ~ 2500 3800
+Wire Wire Line
+	2100 2850 2100 2700
+Wire Wire Line
+	2100 2700 2400 2700
+Wire Wire Line
+	2400 2700 2400 2850
+Wire Wire Line
+	1900 2750 1900 2600
+Wire Wire Line
+	1900 2600 2250 2600
+Wire Wire Line
+	2250 2600 2250 2700
+Connection ~ 2250 2700
+Wire Wire Line
+	3050 4900 2950 4900
+Wire Wire Line
+	2550 4900 2650 4900
+Wire Wire Line
+	4550 4900 4900 4900
+Wire Wire Line
+	4550 5050 5150 5050
+Wire Wire Line
+	5300 4900 5450 4900
+Wire Wire Line
+	5550 5050 5800 5050
+Wire Wire Line
+	5750 4900 6250 4900
+Wire Wire Line
+	6250 4900 6250 5050
+Wire Wire Line
+	6250 5050 6100 5050
+Wire Wire Line
+	6250 5000 6450 5000
+Connection ~ 6250 5000
+Wire Wire Line
+	4550 4000 4650 4000
+Wire Wire Line
+	4550 4150 4900 4150
+Wire Wire Line
+	4950 4000 5400 4000
+Wire Wire Line
+	5300 4000 5300 4150
+Wire Wire Line
+	5300 4150 5200 4150
+Wire Wire Line
+	5400 4000 5400 4050
+Connection ~ 5300 4000
+Wire Wire Line
+	4000 5850 4300 5850
+Wire Wire Line
+	4300 5850 4300 5950
+Wire Wire Line
+	4300 5950 4250 5950
+Wire Wire Line
+	3950 6050 3950 5950
+Wire Wire Line
+	4550 3700 4700 3700
+Wire Wire Line
+	4550 3850 4950 3850
+Wire Wire Line
+	5000 3700 5450 3700
+Wire Wire Line
+	5250 3850 5450 3850
+Wire Wire Line
+	2600 5350 2600 5300
+Wire Wire Line
+	2600 5300 2700 5300
+Wire Wire Line
+	3000 5300 3050 5300
+Wire Wire Line
+	3550 5950 3700 5950
+Connection ~ 3700 5950
+Wire Wire Line
+	3850 6000 3700 6000
+Connection ~ 3700 6000
+Wire Wire Line
+	3400 6050 3700 6050
+Connection ~ 3700 6050
+Connection ~ 5400 2350
+Wire Wire Line
+	3050 4000 1850 4000
+Wire Wire Line
+	1850 4000 1850 3900
+Wire Wire Line
+	1850 3900 1550 3900
+Wire Wire Line
+	1550 4000 1800 4000
+Wire Wire Line
+	1800 4000 1800 4100
+Wire Wire Line
+	1800 4100 2900 4100
+Wire Wire Line
+	2900 4100 2900 4200
+Wire Wire Line
+	2900 4200 3050 4200
+Wire Wire Line
+	1550 4100 1750 4100
+Wire Wire Line
+	1750 4100 1750 4200
+Wire Wire Line
+	1750 4200 1950 4200
+Wire Wire Line
+	1550 4200 1650 4200
+Wire Wire Line
+	1650 4200 1650 4350
+Wire Wire Line
+	550  3800 500  3800
+Wire Wire Line
+	500  3800 500  4400
+Wire Wire Line
+	500  4400 650  4400
+Wire Wire Line
+	650  4400 650  4500
+Wire Wire Line
+	550  3900 500  3900
+Connection ~ 500  3900
+Wire Wire Line
+	550  4100 500  4100
+Connection ~ 500  4100
+Wire Wire Line
+	550  4200 500  4200
+Connection ~ 500  4200
+Wire Wire Line
+	1550 3800 1750 3800
+Wire Wire Line
+	1650 3650 1650 3800
+Connection ~ 1650 3800
+$Comp
+L R R211
+U 1 1 56CC1DBF
+P 5800 1750
+F 0 "R211" V 5880 1750 50  0000 C CNN
+F 1 "270" V 5800 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5730 1750 50  0001 C CNN
+F 3 "" H 5800 1750 50  0000 C CNN
+	1    5800 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 1600 5800 1550
+Connection ~ 5800 1550
+Wire Wire Line
+	5800 1900 5950 1900
+Wire Wire Line
+	5950 2300 5950 2350
+Connection ~ 5950 2350
+$Comp
+L JUMPER3 JP201
+U 1 1 56CC5572
+P 2700 1550
+F 0 "JP201" H 2750 1450 50  0000 L CNN
+F 1 "JUMPER3" H 2700 1650 50  0000 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2700 1550 50  0001 C CNN
+F 3 "" H 2700 1550 50  0000 C CNN
+	1    2700 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 1800 2700 3250
+Wire Wire Line
+	1700 1550 2300 1550
+Wire Wire Line
+	2300 1550 2300 1100
+Wire Wire Line
+	2300 1100 2700 1100
+Wire Wire Line
+	2700 1100 2700 1300
+Text Label 2700 2350 1    60   ~ 0
+USB_PWR
+Text Label 1850 1550 0    60   ~ 0
+EXT_PWR
+Text Notes 5900 4850 0    60   ~ 0
+TXLED
+Text Notes 4750 5150 0    60   ~ 0
+RXLED
+Wire Wire Line
+	3050 5400 2950 5400
+Wire Wire Line
+	2950 5400 2950 6100
+Wire Wire Line
+	2950 6100 3700 6100
+Connection ~ 3700 6100
+$EndSCHEMATC

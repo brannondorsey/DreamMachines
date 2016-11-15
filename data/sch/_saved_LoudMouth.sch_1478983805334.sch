@@ -1,0 +1,389 @@
+EESchema Schematic File Version 2
+LIBS:LoudMouth-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LoudMouth-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R101
+U 1 1 55F1235D
+P 4000 2650
+F 0 "R101" V 4080 2650 50  0000 C CNN
+F 1 "R" V 4000 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 2650 30  0001 C CNN
+F 3 "" H 4000 2650 30  0000 C CNN
+	1    4000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R102
+U 1 1 55F12398
+P 4000 3700
+F 0 "R102" V 4080 3700 50  0000 C CNN
+F 1 "R" V 4000 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 3700 30  0001 C CNN
+F 3 "" H 4000 3700 30  0000 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R104
+U 1 1 55F123E2
+P 5500 1500
+F 0 "R104" V 5580 1500 50  0000 C CNN
+F 1 "R" V 5500 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 1500 30  0001 C CNN
+F 3 "" H 5500 1500 30  0000 C CNN
+	1    5500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R107
+U 1 1 55F12434
+P 5500 4800
+F 0 "R107" V 5580 4800 50  0000 C CNN
+F 1 "R" V 5500 4800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 4800 30  0001 C CNN
+F 3 "" H 5500 4800 30  0000 C CNN
+	1    5500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C101
+U 1 1 55F1249C
+P 3300 3200
+F 0 "C101" H 3325 3300 50  0000 L CNN
+F 1 "C" H 3325 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 3338 3050 30  0001 C CNN
+F 3 "" H 3300 3200 60  0000 C CNN
+	1    3300 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L C C104
+U 1 1 55F124D3
+P 6150 2300
+F 0 "C104" H 6175 2400 50  0000 L CNN
+F 1 "C" H 6175 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 6188 2150 30  0001 C CNN
+F 3 "" H 6150 2300 60  0000 C CNN
+	1    6150 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L C C103
+U 1 1 55F12557
+P 6050 1500
+F 0 "C103" H 6075 1600 50  0000 L CNN
+F 1 "C" H 6075 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 6088 1350 30  0001 C CNN
+F 3 "" H 6050 1500 60  0000 C CNN
+	1    6050 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C102
+U 1 1 55F125A3
+P 5850 4800
+F 0 "C102" H 5875 4900 50  0000 L CNN
+F 1 "C" H 5875 4700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 5888 4650 30  0001 C CNN
+F 3 "" H 5850 4800 60  0000 C CNN
+	1    5850 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R103
+U 1 1 55F1265C
+P 4650 3150
+F 0 "R103" V 4730 3150 50  0000 C CNN
+F 1 "0" V 4650 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4580 3150 30  0001 C CNN
+F 3 "" H 4650 3150 30  0000 C CNN
+	1    4650 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R106
+U 1 1 55F128C7
+P 5500 3750
+F 0 "R106" V 5580 3750 50  0000 C CNN
+F 1 "0" V 5500 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 3750 30  0001 C CNN
+F 3 "" H 5500 3750 30  0000 C CNN
+	1    5500 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R105
+U 1 1 55F12920
+P 5500 2550
+F 0 "R105" V 5580 2550 50  0000 C CNN
+F 1 "0" V 5500 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 2550 30  0001 C CNN
+F 3 "" H 5500 2550 30  0000 C CNN
+	1    5500 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P101
+U 1 1 55F12A2C
+P 2400 3250
+F 0 "P101" H 2400 3400 50  0000 C CNN
+F 1 "CONN_01X02" V 2500 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2400 3250 60  0001 C CNN
+F 3 "" H 2400 3250 60  0000 C CNN
+	1    2400 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR101
+U 1 1 55F12AAF
+P 2650 3600
+F 0 "#PWR101" H 2650 3350 50  0001 C CNN
+F 1 "GND" H 2650 3450 50  0000 C CNN
+F 2 "" H 2650 3600 60  0000 C CNN
+F 3 "" H 2650 3600 60  0000 C CNN
+	1    2650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3600 2650 3350
+Wire Wire Line
+	2650 3350 2600 3350
+Wire Wire Line
+	2600 3350 2600 3300
+Wire Wire Line
+	2600 3200 3150 3200
+Wire Wire Line
+	4000 3200 3450 3200
+Wire Wire Line
+	4000 2800 4000 3550
+Connection ~ 4000 3200
+Wire Wire Line
+	4000 1200 6900 1200
+$Comp
+L CONN_01X02 P102
+U 1 1 55F12BCF
+P 7100 1250
+F 0 "P102" H 7100 1400 50  0000 C CNN
+F 1 "CONN_01X02" V 7200 1250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7100 1250 60  0001 C CNN
+F 3 "" H 7100 1250 60  0000 C CNN
+	1    7100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P103
+U 1 1 55F12C94
+P 7100 2350
+F 0 "P103" H 7100 2500 50  0000 C CNN
+F 1 "CONN_01X02" V 7200 2350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7100 2350 60  0001 C CNN
+F 3 "" H 7100 2350 60  0000 C CNN
+	1    7100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR102
+U 1 1 55F12D58
+P 5500 5200
+F 0 "#PWR102" H 5500 4950 50  0001 C CNN
+F 1 "GND" H 5500 5050 50  0000 C CNN
+F 2 "" H 5500 5200 60  0000 C CNN
+F 3 "" H 5500 5200 60  0000 C CNN
+	1    5500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR105
+U 1 1 55F12DBD
+P 6850 2600
+F 0 "#PWR105" H 6850 2350 50  0001 C CNN
+F 1 "GND" H 6850 2450 50  0000 C CNN
+F 2 "" H 6850 2600 60  0000 C CNN
+F 3 "" H 6850 2600 60  0000 C CNN
+	1    6850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR104
+U 1 1 55F12E4F
+P 6850 1450
+F 0 "#PWR104" H 6850 1200 50  0001 C CNN
+F 1 "GND" H 6850 1300 50  0000 C CNN
+F 2 "" H 6850 1450 60  0000 C CNN
+F 3 "" H 6850 1450 60  0000 C CNN
+	1    6850 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1300 6850 1300
+Wire Wire Line
+	6850 1300 6850 1450
+Wire Wire Line
+	6300 2300 6900 2300
+Wire Wire Line
+	6900 2400 6850 2400
+Wire Wire Line
+	6850 2400 6850 2600
+Wire Wire Line
+	6050 1350 6050 1200
+Connection ~ 6050 1200
+$Comp
+L GND #PWR103
+U 1 1 55F12F56
+P 6050 1750
+F 0 "#PWR103" H 6050 1500 50  0001 C CNN
+F 1 "GND" H 6050 1600 50  0000 C CNN
+F 2 "" H 6050 1750 60  0000 C CNN
+F 3 "" H 6050 1750 60  0000 C CNN
+	1    6050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1650 6050 1750
+Wire Wire Line
+	5500 1200 5500 1350
+Connection ~ 5500 1200
+Wire Wire Line
+	5500 1650 5500 2400
+Wire Wire Line
+	5500 2700 5500 2950
+Wire Wire Line
+	5200 3150 4800 3150
+Wire Wire Line
+	5500 3350 5500 3600
+Wire Wire Line
+	5500 3900 5500 4650
+Wire Wire Line
+	5850 4650 5850 4450
+Wire Wire Line
+	5850 4450 5500 4450
+Connection ~ 5500 4450
+Wire Wire Line
+	5850 4950 5850 5050
+Wire Wire Line
+	5850 5050 5500 5050
+Wire Wire Line
+	5500 4950 5500 5200
+Connection ~ 5500 5050
+Wire Wire Line
+	4000 3850 4000 5100
+Wire Wire Line
+	4000 5100 5500 5100
+Connection ~ 5500 5100
+Wire Wire Line
+	4500 3150 4000 3150
+Connection ~ 4000 3150
+Wire Wire Line
+	6000 2300 5500 2300
+Connection ~ 5500 2300
+Text Label 6500 2300 0    60   ~ 0
+OUT
+Text Label 2700 3200 0    60   ~ 0
+IN
+Text Label 6550 1200 0    60   ~ 0
+VCC
+Wire Wire Line
+	4000 1200 4000 2500
+$Comp
+L CONN_01X01 TP101
+U 1 1 55F1613F
+P 2950 2800
+F 0 "TP101" H 2950 2900 50  0000 C CNN
+F 1 "CONN_01X01" V 3050 2800 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 2950 2800 60  0001 C CNN
+F 3 "" H 2950 2800 60  0000 C CNN
+	1    2950 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 3000 2950 3200
+Connection ~ 2950 3200
+$Comp
+L CONN_01X01 TP102
+U 1 1 55F162D1
+P 6300 800
+F 0 "TP102" H 6300 900 50  0000 C CNN
+F 1 "CONN_01X01" V 6400 800 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6300 800 60  0001 C CNN
+F 3 "" H 6300 800 60  0000 C CNN
+	1    6300 800 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 1000 6300 1200
+Connection ~ 6300 1200
+$Comp
+L CONN_01X01 TP103
+U 1 1 55F1666E
+P 6400 1900
+F 0 "TP103" H 6400 2000 50  0000 C CNN
+F 1 "CONN_01X01" V 6500 1900 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6400 1900 60  0001 C CNN
+F 3 "" H 6400 1900 60  0000 C CNN
+	1    6400 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 2100 6400 2300
+Connection ~ 6400 2300
+Text Label 4900 3150 0    60   ~ 0
+BASE
+Text Label 5500 3500 0    60   ~ 0
+EMITTER
+Text Label 5500 2800 0    60   ~ 0
+COLLECTOR
+$Comp
+L Q_NPN_EBC-RESCUE-LoudMouth Q101
+U 1 1 55F17610
+P 5400 3150
+F 0 "Q101" H 5700 3200 50  0000 R CNN
+F 1 "Q_NPN_EBC" H 6000 3100 50  0000 R CNN
+F 2 "Housings_TO-92:TO-92_Molded_Narrow" H 5600 3250 29  0001 C CNN
+F 3 "" H 5400 3150 60  0000 C CNN
+	1    5400 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

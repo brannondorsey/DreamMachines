@@ -1,0 +1,363 @@
+EESchema Schematic File Version 2  date 14/02/2013 14:24:54
+LIBS:aart_connectors
+LIBS:aart_micros
+LIBS:aart_passives
+LIBS:aart_power_ports
+LIBS:aart_power_supplies
+LIBS:aart_transistors
+LIBS:bd_usb_otg-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "14 feb 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6650 2400 6250 2400
+Wire Wire Line
+	6250 2400 6250 1100
+Wire Wire Line
+	8650 3650 5900 3650
+Wire Wire Line
+	5750 2050 5750 2600
+Wire Wire Line
+	6450 3000 6450 2800
+Connection ~ 5700 4150
+Wire Wire Line
+	5200 4150 6200 4150
+Wire Wire Line
+	6250 5550 6650 5550
+Wire Wire Line
+	7850 5850 8250 5850
+Wire Wire Line
+	4550 5350 4550 5800
+Wire Wire Line
+	4400 5900 4400 5350
+Connection ~ 4400 6550
+Wire Wire Line
+	4400 6550 4400 6400
+Wire Wire Line
+	6500 4700 5200 4700
+Wire Wire Line
+	8150 5400 8150 5350
+Wire Wire Line
+	7850 4950 7850 5450
+Wire Wire Line
+	2250 4650 3600 4650
+Connection ~ 3300 4250
+Wire Wire Line
+	3600 4250 3300 4250
+Connection ~ 3300 6550
+Wire Wire Line
+	3300 6650 3300 4850
+Wire Wire Line
+	6500 4350 5200 4350
+Wire Wire Line
+	6500 4550 5200 4550
+Connection ~ 5450 3750
+Wire Wire Line
+	5450 3750 5450 3950
+Wire Wire Line
+	5450 3950 5200 3950
+Wire Wire Line
+	3400 2500 6650 2500
+Connection ~ 4400 5800
+Wire Wire Line
+	3900 5950 3900 5800
+Wire Wire Line
+	3300 4850 3600 4850
+Wire Wire Line
+	5200 3750 6000 3750
+Wire Wire Line
+	3600 3650 3300 3650
+Wire Wire Line
+	5450 2150 5450 2050
+Connection ~ 5900 2700
+Connection ~ 5600 2500
+Wire Wire Line
+	6450 2800 6650 2800
+Wire Wire Line
+	6650 2950 6450 2950
+Connection ~ 6450 2950
+Connection ~ 5750 2600
+Wire Wire Line
+	6250 1150 5600 1150
+Wire Wire Line
+	5600 1150 5600 1300
+Connection ~ 6250 1150
+Wire Wire Line
+	3300 3750 3300 3550
+Connection ~ 3300 3650
+Wire Wire Line
+	5200 3650 5300 3650
+Wire Wire Line
+	6200 3650 6200 3700
+Connection ~ 6000 3650
+Wire Wire Line
+	4550 5800 4800 5800
+Wire Wire Line
+	4800 5800 4800 5900
+Wire Wire Line
+	3400 2600 6650 2600
+Wire Wire Line
+	6000 3750 6000 3650
+Wire Wire Line
+	3900 6550 3900 6350
+Connection ~ 3900 6550
+Wire Wire Line
+	6200 4150 6200 4100
+Wire Wire Line
+	5200 4450 6500 4450
+Wire Wire Line
+	3300 4350 3300 4150
+Wire Wire Line
+	3400 2700 6650 2700
+Wire Wire Line
+	5200 4950 8150 4950
+Connection ~ 7850 4950
+Wire Wire Line
+	5450 4800 5200 4800
+Wire Wire Line
+	5950 4800 6050 4800
+Wire Wire Line
+	6050 4800 6050 4700
+Connection ~ 6050 4700
+Wire Wire Line
+	3900 5800 4400 5800
+Wire Wire Line
+	4800 6550 4800 6400
+Connection ~ 4800 6550
+Wire Wire Line
+	8650 5650 7850 5650
+Wire Wire Line
+	7250 6150 7250 6550
+Wire Wire Line
+	6250 5450 6650 5450
+Wire Wire Line
+	6250 5650 6650 5650
+Connection ~ 6200 3650
+Wire Wire Line
+	5600 2050 5600 2500
+Wire Wire Line
+	5900 2050 5900 2700
+Wire Wire Line
+	7250 6550 3300 6550
+Text HLabel 8650 3650 2    60   Output ~ 0
++V_BAT_OR_USB
+Text HLabel 6250 5650 0    60   Input ~ 0
+BAT_GG_SCL
+Text HLabel 6250 5550 0    60   BiDi ~ 0
+BAT_GG_SDA
+Text HLabel 6250 5450 0    60   Input ~ 0
+BAT_GG_~AL~/CC
+Text Notes 7850 6000 0    60   ~ 0
+Connect PAD to isolated thermal relief plane
+$Comp
+L 0VD #PWR?
+U 1 1 511A13A4
+P 8150 5500
+F 0 "#PWR?" H 8210 5615 50  0001 L CNN
+F 1 "0VD" H 8080 5440 50  0000 L CNN
+	1    8150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 511A130F
+P 8150 5150
+F 0 "C?" H 8200 5250 50  0000 L CNN
+F 1 "100n" H 8150 5050 50  0000 L CNN
+	1    8150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC2942-1 U?
+U 1 1 511A0901
+P 6550 5450
+F 0 "U?" H 6850 5750 60  0000 L CNN
+F 1 "LTC2942-1" H 6850 5650 60  0000 L CNN
+F 3 "http://www.linear.com/product/LTC2942" H 7750 5900 60  0001 C CNN
+	1    6550 5450
+	1    0    0    -1  
+$EndComp
+Text HLabel 3400 2700 0    60   Output ~ 0
+USB_ID
+Text HLabel 2250 4650 0    60   Output ~ 0
+ENABLE_USB_OTH
+$Comp
+L 0VD #PWR?
+U 1 1 5118C7E6
+P 3300 4450
+F 0 "#PWR?" H 3360 4565 50  0001 L CNN
+F 1 "0VD" H 3230 4390 50  0000 L CNN
+	1    3300 4450
+	1    0    0    -1  
+$EndComp
+Text HLabel 6500 4550 2    60   Output ~ 0
+BAT_PWR_FAULT
+Text HLabel 6500 4450 2    60   Output ~ 0
+BAT_CHARGE
+Text HLabel 6500 4350 2    60   Output ~ 0
+USB_VBUS_GOOD
+Text HLabel 3400 2600 0    60   BiDi ~ 0
+USB_D+
+Text HLabel 3400 2500 0    60   BiDi ~ 0
+USB_D-
+$Comp
+L R R?
+U 1 1 51125812
+P 5700 4800
+F 0 "R?" V 5800 4650 50  0000 C CNN
+F 1 "100k" V 5800 5050 50  0000 C CNN
+	1    5700 4800
+	0    1    1    0   
+$EndComp
+Text HLabel 6500 4700 2    60   Input ~ 0
+BAT_THERM
+Text HLabel 8650 5650 2    60   Input ~ 0
++VBAT
+$Comp
+L 0VD #PWR?
+U 1 1 51125703
+P 3300 6750
+F 0 "#PWR?" H 3360 6865 50  0001 L CNN
+F 1 "0VD" H 3230 6690 50  0000 L CNN
+	1    3300 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 511256F7
+P 4800 6150
+F 0 "R?" H 4950 6200 50  0000 C CNN
+F 1 "1k" H 4950 6100 50  0000 C CNN
+	1    4800 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 511256F0
+P 4400 6150
+F 0 "R?" H 4550 6200 50  0000 C CNN
+F 1 "3k01" H 4600 6100 50  0000 C CNN
+	1    4400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 511256E0
+P 3900 6150
+F 0 "C?" H 3950 6250 50  0000 L CNN
+F 1 "100n" H 3900 6050 50  0000 L CNN
+	1    3900 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0VD #PWR?
+U 1 1 511256BE
+P 5700 4250
+F 0 "#PWR?" H 5760 4365 50  0001 L CNN
+F 1 "0VD" H 5630 4190 50  0000 L CNN
+	1    5700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5112569C
+P 6200 3900
+F 0 "C?" H 6250 4000 50  0000 L CNN
+F 1 "22u" H 6250 3800 50  0000 L CNN
+	1    6200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 51125668
+P 5600 3650
+F 0 "L?" V 5800 3800 40  0000 C CNN
+F 1 "3u3H" V 5700 3750 40  0000 C CNN
+	1    5600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 51125621
+P 3300 3950
+F 0 "C?" H 3350 4050 50  0000 L CNN
+F 1 "10u" H 3350 3850 50  0000 L CNN
+	1    3300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V_USB #PWR?
+U 1 1 5112560B
+P 3300 3450
+F 0 "#PWR?" H 3325 3380 50  0001 L CNN
+F 1 "+5V_USB" H 3165 3515 50  0000 L CNN
+	1    3300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V_USB #PWR?
+U 1 1 511255D3
+P 6250 1000
+F 0 "#PWR?" H 6275 930 50  0001 L CNN
+F 1 "+5V_USB" H 6115 1065 50  0000 L CNN
+	1    6250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC4160 U?
+U 1 1 511253E4
+P 3500 3650
+F 0 "U?" H 3800 3950 60  0000 L CNN
+F 1 "LTC4160" H 3800 3850 60  0000 L CNN
+F 3 "http://www.linear.com/product/LTC4160" H 4700 4100 60  0001 C CNN
+	1    3500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0VD #PWR?
+U 1 1 510FD489
+P 5450 2250
+F 0 "#PWR?" H 5510 2365 50  0001 L CNN
+F 1 "0VD" H 5380 2190 50  0000 L CNN
+	1    5450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0VD #PWR?
+U 1 1 510FD248
+P 6450 3100
+F 0 "#PWR?" H 6510 3215 50  0001 L CNN
+F 1 "0VD" H 6380 3040 50  0000 L CNN
+	1    6450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_MICRO_AB PL?
+U 1 1 510830E0
+P 6650 2400
+F 0 "PL?" H 6830 2670 50  0000 L BNN
+F 1 "USB_MICRO_AB" H 7160 2590 60  0000 C CNN
+	1    6650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VBUS053AZ-HAF IC?
+U 1 1 5108343E
+P 5600 2050
+F 0 "IC?" V 6450 2850 60  0000 C CNN
+F 1 "VBUS053AZ-HAF" V 6350 2550 60  0000 C CNN
+	1    5600 2050
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

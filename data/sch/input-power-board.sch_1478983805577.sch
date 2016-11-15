@@ -1,0 +1,437 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wickerlib
+LIBS:wicker-dds
+LIBS:wicker-crystal
+LIBS:rf24
+LIBS:wicker-transistors
+LIBS:wicker-test
+LIBS:wicker-stm32
+LIBS:wicker-opamp
+LIBS:wicker-invensense
+LIBS:wicker-lcd
+LIBS:wicker-conn
+LIBS:wicker-sensors
+LIBS:wicker-gain
+LIBS:wicker-capsense
+LIBS:wicker-linear
+LIBS:wicker-shields
+LIBS:wicker-protection
+LIBS:wicker-efm8
+LIBS:wicker-switch
+LIBS:wicker-vreg
+LIBS:libtest
+LIBS:wicker-aesthetic
+LIBS:input-power-board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "Company: Wickerbox Electronics"
+Comment4 ""
+$EndDescr
+$Comp
+L LD1117S33TR U1
+U 1 1 56EFAE7C
+P 7075 3600
+F 0 "U1" H 6875 3875 50  0000 C CNN
+F 1 "LD1117S33TR" H 7075 3800 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 7075 3700 50  0001 C CNN
+F 3 "" H 7075 3600 50  0000 C CNN
+	1    7075 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR01
+U 1 1 56EFB12C
+P 7700 3200
+F 0 "#PWR01" H 7700 3050 50  0001 C CNN
+F 1 "+3.3V" H 7700 3340 50  0000 C CNN
+F 2 "" H 7700 3200 50  0000 C CNN
+F 3 "" H 7700 3200 50  0000 C CNN
+	1    7700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 56EFBB77
+P 6525 3200
+F 0 "#PWR02" H 6525 3050 50  0001 C CNN
+F 1 "+5V" H 6525 3340 50  0000 C CNN
+F 2 "" H 6525 3200 50  0000 C CNN
+F 3 "" H 6525 3200 50  0000 C CNN
+	1    6525 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 56EFC7BA
+P 6100 3850
+F 0 "C1" H 6110 3920 50  0000 L CNN
+F 1 "100nF" H 6110 3770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6100 3850 50  0001 C CNN
+F 3 "" H 6100 3850 50  0000 C CNN
+	1    6100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 56EFC865
+P 7575 3850
+F 0 "C2" H 7585 3920 50  0000 L CNN
+F 1 "10uF" H 7585 3770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7575 3850 50  0001 C CNN
+F 3 "" H 7575 3850 50  0000 C CNN
+	1    7575 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 56F00F10
+P 6100 4200
+F 0 "#PWR03" H 6100 3950 50  0001 C CNN
+F 1 "GND" H 6100 4050 50  0000 C CNN
+F 2 "" H 6100 4200 50  0000 C CNN
+F 3 "" H 6100 4200 50  0000 C CNN
+	1    6100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 56F00FED
+P 7075 3850
+F 0 "#PWR04" H 7075 3600 50  0001 C CNN
+F 1 "GND" H 7075 3700 50  0000 C CNN
+F 2 "" H 7075 3850 50  0000 C CNN
+F 3 "" H 7075 3850 50  0000 C CNN
+	1    7075 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 56F0102C
+P 7575 3950
+F 0 "#PWR05" H 7575 3700 50  0001 C CNN
+F 1 "GND" H 7575 3800 50  0000 C CNN
+F 2 "" H 7575 3950 50  0000 C CNN
+F 3 "" H 7575 3950 50  0000 C CNN
+	1    7575 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR06
+U 1 1 56EFAF17
+P 4050 3125
+F 0 "#PWR06" H 4050 2975 50  0001 C CNN
+F 1 "+9V" H 4050 3265 50  0000 C CNN
+F 2 "" H 4050 3125 50  0000 C CNN
+F 3 "" H 4050 3125 50  0000 C CNN
+	1    4050 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L BARREL_JACK CON1
+U 1 1 56EFAF31
+P 3675 3650
+F 0 "CON1" H 3675 3900 50  0000 C CNN
+F 1 "BARREL_JACK" H 3675 3450 50  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 3675 3650 50  0001 C CNN
+F 3 "" H 3675 3650 50  0000 C CNN
+	1    3675 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 56EFB063
+P 4050 4375
+F 0 "#PWR07" H 4050 4125 50  0001 C CNN
+F 1 "GND" H 4050 4225 50  0000 C CNN
+F 2 "" H 4050 4375 50  0000 C CNN
+F 3 "" H 4050 4375 50  0000 C CNN
+	1    4050 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U2
+U 1 1 56EFB078
+P 5225 3600
+F 0 "U2" H 5375 3404 50  0000 C CNN
+F 1 "7805" H 5225 3800 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 5225 3600 50  0001 C CNN
+F 3 "" H 5225 3600 50  0000 C CNN
+	1    5225 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 56EFB120
+P 5225 3850
+F 0 "#PWR08" H 5225 3600 50  0001 C CNN
+F 1 "GND" H 5225 3700 50  0000 C CNN
+F 2 "" H 5225 3850 50  0000 C CNN
+F 3 "" H 5225 3850 50  0000 C CNN
+	1    5225 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 56EFB255
+P 4300 3300
+F 0 "#FLG09" H 4300 3395 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 3480 50  0000 C CNN
+F 2 "" H 4300 3300 50  0000 C CNN
+F 3 "" H 4300 3300 50  0000 C CNN
+	1    4300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 56EFBABC
+P 4525 4975
+F 0 "P1" H 4525 5125 50  0000 C CNN
+F 1 "CONN_01X02" V 4625 4975 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4525 4975 50  0001 C CNN
+F 3 "" H 4525 4975 50  0000 C CNN
+	1    4525 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 56EFBB55
+P 6025 4950
+F 0 "P3" H 6025 5100 50  0000 C CNN
+F 1 "CONN_01X02" V 6125 4950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6025 4950 50  0001 C CNN
+F 3 "" H 6025 4950 50  0000 C CNN
+	1    6025 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 56EFBBD2
+P 6725 4950
+F 0 "P4" H 6725 5100 50  0000 C CNN
+F 1 "CONN_01X02" V 6825 4950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6725 4950 50  0001 C CNN
+F 3 "" H 6725 4950 50  0000 C CNN
+	1    6725 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 56EFC04D
+P 4225 5100
+F 0 "#PWR010" H 4225 4850 50  0001 C CNN
+F 1 "GND" H 4225 4950 50  0000 C CNN
+F 2 "" H 4225 5100 50  0000 C CNN
+F 3 "" H 4225 5100 50  0000 C CNN
+	1    4225 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 56EFC070
+P 5700 5100
+F 0 "#PWR011" H 5700 4850 50  0001 C CNN
+F 1 "GND" H 5700 4950 50  0000 C CNN
+F 2 "" H 5700 5100 50  0000 C CNN
+F 3 "" H 5700 5100 50  0000 C CNN
+	1    5700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 56EFC093
+P 6400 5100
+F 0 "#PWR012" H 6400 4850 50  0001 C CNN
+F 1 "GND" H 6400 4950 50  0000 C CNN
+F 2 "" H 6400 5100 50  0000 C CNN
+F 3 "" H 6400 5100 50  0000 C CNN
+	1    6400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR013
+U 1 1 56EFC0CE
+P 4225 4825
+F 0 "#PWR013" H 4225 4675 50  0001 C CNN
+F 1 "+9V" H 4225 4965 50  0000 C CNN
+F 2 "" H 4225 4825 50  0000 C CNN
+F 3 "" H 4225 4825 50  0000 C CNN
+	1    4225 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR014
+U 1 1 56EFC0F1
+P 5700 4800
+F 0 "#PWR014" H 5700 4650 50  0001 C CNN
+F 1 "+5V" H 5700 4940 50  0000 C CNN
+F 2 "" H 5700 4800 50  0000 C CNN
+F 3 "" H 5700 4800 50  0000 C CNN
+	1    5700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR015
+U 1 1 56EFC114
+P 6400 4800
+F 0 "#PWR015" H 6400 4650 50  0001 C CNN
+F 1 "+3.3V" H 6400 4940 50  0000 C CNN
+F 2 "" H 6400 4800 50  0000 C CNN
+F 3 "" H 6400 4800 50  0000 C CNN
+	1    6400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3550 7700 3200
+Wire Wire Line
+	6525 3550 6525 3200
+Wire Wire Line
+	7575 3750 7575 3550
+Connection ~ 7575 3550
+Wire Wire Line
+	6100 3750 6100 3550
+Connection ~ 6450 3550
+Connection ~ 6525 3550
+Wire Wire Line
+	6100 3950 6100 4200
+Wire Wire Line
+	3975 3650 4050 3650
+Wire Wire Line
+	4050 3650 4050 4375
+Wire Wire Line
+	3975 3750 4050 3750
+Connection ~ 4050 3750
+Wire Wire Line
+	3975 3550 4825 3550
+Wire Wire Line
+	4050 3125 4050 3550
+Connection ~ 4050 3550
+Wire Wire Line
+	4300 3300 4300 3325
+Wire Wire Line
+	4300 3325 4050 3325
+Connection ~ 4050 3325
+Wire Wire Line
+	4325 4925 4225 4925
+Wire Wire Line
+	4225 4925 4225 4825
+Wire Wire Line
+	4325 5025 4225 5025
+Wire Wire Line
+	4225 5025 4225 5100
+Wire Wire Line
+	5825 4900 5700 4900
+Wire Wire Line
+	5700 4900 5700 4800
+Wire Wire Line
+	5825 5000 5700 5000
+Wire Wire Line
+	5700 5000 5700 5100
+Wire Wire Line
+	6525 4900 6400 4900
+Wire Wire Line
+	6400 4900 6400 4800
+Wire Wire Line
+	6525 5000 6400 5000
+Wire Wire Line
+	6400 5000 6400 5100
+Wire Wire Line
+	5625 3550 6675 3550
+Connection ~ 6100 3550
+Wire Wire Line
+	7475 3550 7700 3550
+Wire Wire Line
+	4050 4225 4300 4225
+Wire Wire Line
+	4300 4225 4300 4125
+Connection ~ 4050 4225
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 56EFCD5F
+P 4300 4125
+F 0 "#FLG016" H 4300 4220 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 4305 50  0000 C CNN
+F 2 "" H 4300 4125 50  0000 C CNN
+F 3 "" H 4300 4125 50  0000 C CNN
+	1    4300 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 56EFCFE4
+P 5325 4975
+F 0 "P2" H 5325 5125 50  0000 C CNN
+F 1 "CONN_01X02" V 5425 4975 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5325 4975 50  0001 C CNN
+F 3 "" H 5325 4975 50  0000 C CNN
+	1    5325 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 56EFCFEA
+P 5025 5100
+F 0 "#PWR017" H 5025 4850 50  0001 C CNN
+F 1 "GND" H 5025 4950 50  0000 C CNN
+F 2 "" H 5025 5100 50  0000 C CNN
+F 3 "" H 5025 5100 50  0000 C CNN
+	1    5025 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR018
+U 1 1 56EFCFF0
+P 5025 4825
+F 0 "#PWR018" H 5025 4675 50  0001 C CNN
+F 1 "+9V" H 5025 4965 50  0000 C CNN
+F 2 "" H 5025 4825 50  0000 C CNN
+F 3 "" H 5025 4825 50  0000 C CNN
+	1    5025 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 4925 5025 4925
+Wire Wire Line
+	5025 4925 5025 4825
+Wire Wire Line
+	5125 5025 5025 5025
+Wire Wire Line
+	5025 5025 5025 5100
+$EndSCHEMATC

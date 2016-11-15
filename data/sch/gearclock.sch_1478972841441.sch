@@ -1,0 +1,1300 @@
+EESchema Schematic File Version 2
+LIBS:gearclock
+LIBS:power
+LIBS:gearclock-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Gear Clock"
+Date "Sunday 08 February 2015"
+Rev "1"
+Comp "WyoLum"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 9400 1750 0    50   ~ 0
+MCP1700T-3302E/TT
+Wire Wire Line
+	3400 2750 4550 2750
+Connection ~ 10600 1850
+Wire Wire Line
+	10775 6050 10875 6050
+Wire Wire Line
+	10775 5950 10875 5950
+Wire Wire Line
+	10775 5750 10875 5750
+Wire Wire Line
+	550  3050 750  3050
+Connection ~ 900  3275
+Wire Wire Line
+	900  3250 900  3550
+Wire Wire Line
+	900  3550 700  3550
+Wire Wire Line
+	700  3550 700  3525
+Connection ~ 700  3050
+Connection ~ 5900 4900
+Wire Wire Line
+	5900 4750 5900 4900
+Wire Wire Line
+	6000 4900 6000 4750
+Wire Wire Line
+	5150 4075 5150 4350
+Wire Wire Line
+	5150 4350 5300 4350
+Wire Wire Line
+	3400 4250 5300 4250
+Wire Wire Line
+	1500 2950 1400 2950
+Wire Wire Line
+	1400 2950 1400 2800
+Wire Wire Line
+	1400 2800 900  2800
+Wire Wire Line
+	1500 2250 1075 2250
+Wire Wire Line
+	10775 5550 10875 5550
+Wire Wire Line
+	10775 5350 10875 5350
+Wire Notes Line
+	3200 7750 4075 7750
+Wire Notes Line
+	4075 5925 3200 5925
+Wire Wire Line
+	1650 6800 2000 6800
+Wire Wire Line
+	2000 6800 2000 6750
+Wire Wire Line
+	2000 6750 2050 6750
+Wire Wire Line
+	2550 7000 1650 7000
+Wire Wire Line
+	2350 7300 2350 7200
+Wire Wire Line
+	10600 1850 10600 1900
+Wire Wire Line
+	9000 1050 9000 1900
+Wire Wire Line
+	3725 6325 3725 6200
+Wire Wire Line
+	3525 6325 3525 6200
+Wire Wire Line
+	3625 6325 3625 6200
+Wire Wire Line
+	3825 6325 3825 6200
+Wire Wire Line
+	3825 7450 3825 7575
+Wire Wire Line
+	3625 7450 3625 7575
+Wire Wire Line
+	900  6900 625  6900
+Wire Wire Line
+	900  7100 625  7100
+Wire Wire Line
+	625  7300 900  7300
+Connection ~ 2350 7300
+Connection ~ 9000 1850
+Wire Wire Line
+	3400 3350 3625 3350
+Wire Wire Line
+	3400 3550 3625 3550
+Wire Wire Line
+	975  1100 9000 1100
+Wire Wire Line
+	5300 4400 4750 4400
+Wire Wire Line
+	4650 4300 5300 4300
+Connection ~ 1075 1100
+Wire Wire Line
+	1075 975  1075 1350
+Wire Wire Line
+	10600 2400 10600 2300
+Connection ~ 4550 1100
+Wire Wire Line
+	4550 1100 4550 1725
+Wire Wire Line
+	3400 2650 4350 2650
+Wire Wire Line
+	4650 4450 4650 4500
+Wire Wire Line
+	4750 4400 4750 4550
+Connection ~ 1075 4975
+Connection ~ 1250 2450
+Wire Wire Line
+	1250 4975 1250 2075
+Connection ~ 2350 1100
+Wire Wire Line
+	975  2650 1500 2650
+Wire Wire Line
+	975  2650 975  1100
+Wire Wire Line
+	4650 4350 3400 4350
+Connection ~ 5950 4900
+Wire Wire Line
+	2350 4850 2350 5100
+Wire Wire Line
+	2350 1100 2350 1950
+Wire Wire Line
+	2450 1100 2450 1950
+Connection ~ 2450 1100
+Connection ~ 2450 4975
+Wire Wire Line
+	4650 4450 3400 4450
+Wire Wire Line
+	4750 4550 3400 4550
+Wire Wire Line
+	1500 2450 1250 2450
+Connection ~ 2350 4975
+Wire Wire Line
+	1250 1100 1250 1675
+Connection ~ 1250 1100
+Wire Wire Line
+	1075 4650 1075 4975
+Connection ~ 1250 4975
+Wire Wire Line
+	9950 2350 9950 2475
+Wire Wire Line
+	4650 4300 4650 4350
+Wire Wire Line
+	4550 2750 4550 2225
+Wire Wire Line
+	3400 3450 3625 3450
+Wire Wire Line
+	3400 3250 3625 3250
+Wire Wire Line
+	3400 3150 3625 3150
+Wire Wire Line
+	3400 2450 3625 2450
+Wire Wire Line
+	3400 2350 3625 2350
+Wire Wire Line
+	3400 2250 3625 2250
+Wire Wire Line
+	3400 2950 4750 2950
+Wire Wire Line
+	3400 4150 3625 4150
+Wire Wire Line
+	3400 4050 3625 4050
+Wire Wire Line
+	3400 3850 5975 3850
+Wire Wire Line
+	3400 3750 3625 3750
+Wire Wire Line
+	3400 3650 3625 3650
+Wire Wire Line
+	3400 2850 3625 2850
+Wire Wire Line
+	9000 2400 9000 2300
+Connection ~ 9950 2400
+Wire Wire Line
+	2350 7200 2550 7200
+Connection ~ 6000 4900
+Wire Wire Line
+	900  7200 625  7200
+Wire Wire Line
+	900  7000 625  7000
+Wire Wire Line
+	900  6800 625  6800
+Wire Wire Line
+	3525 7450 3525 7575
+Wire Wire Line
+	3725 7450 3725 7575
+Wire Wire Line
+	2550 7100 1650 7100
+Wire Wire Line
+	9000 1850 9400 1850
+Wire Wire Line
+	10500 1850 10925 1850
+Wire Wire Line
+	1650 7300 2550 7300
+Wire Wire Line
+	2550 6900 1650 6900
+Wire Wire Line
+	2450 6750 2500 6750
+Wire Wire Line
+	2500 6750 2500 6800
+Wire Wire Line
+	2500 6800 2550 6800
+Wire Notes Line
+	3100 5925 1500 5925
+Wire Notes Line
+	3100 7750 1500 7750
+Wire Notes Line
+	4175 5925 4175 7750
+Wire Wire Line
+	10775 5450 10875 5450
+Wire Wire Line
+	10775 5650 10875 5650
+Wire Wire Line
+	1075 1850 1075 4050
+Connection ~ 1075 2250
+Wire Wire Line
+	900  3275 1400 3275
+Wire Wire Line
+	1400 3275 1400 3150
+Wire Wire Line
+	1400 3150 1500 3150
+Wire Wire Line
+	4650 4500 5300 4500
+Wire Wire Line
+	5300 4450 5150 4450
+Wire Wire Line
+	5150 4450 5150 4900
+Wire Wire Line
+	5150 4900 6050 4900
+Wire Wire Line
+	9000 2400 10925 2400
+Wire Wire Line
+	6050 4900 6050 4750
+Wire Wire Line
+	5950 4900 5950 4750
+Wire Wire Line
+	700  2975 700  3125
+Wire Wire Line
+	700  2575 700  2550
+Wire Wire Line
+	700  2550 900  2550
+Wire Wire Line
+	900  2550 900  2850
+Connection ~ 900  2800
+Wire Wire Line
+	550  3050 550  4975
+Wire Wire Line
+	550  4975 2450 4975
+Wire Wire Line
+	10775 5850 10875 5850
+Wire Wire Line
+	2450 4850 2450 5100
+Text Label 1400 3275 0    50   ~ 0
+PB7
+Text Label 1400 2800 0    50   ~ 0
+PB6
+$Comp
+L GND #PWR01
+U 1 1 4F5AFC62
+P 2450 5100
+F 0 "#PWR01" H 2450 5100 30  0001 C CNN
+F 1 "GND" H 2450 5030 30  0001 C CNN
+F 2 "" H 2450 5100 60  0001 C CNN
+F 3 "" H 2450 5100 60  0001 C CNN
+	1    2450 5100
+	1    0    0    -1  
+$EndComp
+Text Notes 5650 5900 0    60   Italic 12
+GPS Header
+Text Label 10925 1150 0    50   ~ 0
+BAT
+$Sheet
+S 9775 5150 1000 1275
+U 4E1FEA4E
+F0 "gearclock_rtc" 60
+F1 "gearclock_rtc.sch" 60
+F2 "GND" I R 10775 5650 60 
+F3 "SDA" I R 10775 5550 60 
+F4 "SCL" I R 10775 5450 60 
+F5 "RST" I R 10775 5750 60 
+F6 "SQW" I R 10775 5850 60 
+F7 "32k" I R 10775 5950 60 
+F8 "BAT" I R 10775 6050 60 
+F9 "3V3" I R 10775 5350 60 
+$EndSheet
+Text Label 10875 6050 0    40   ~ 0
+BAT
+Text Label 10875 5950 0    40   ~ 0
+32k
+Text Label 10875 5850 0    40   ~ 0
+SQW
+Text Label 10875 5750 0    40   ~ 0
+RST
+Text Label 3825 6200 3    40   ~ 0
+BAT
+Text Label 3725 6200 3    40   ~ 0
+32k
+Text Label 3625 6200 3    40   ~ 0
+SQW
+Text Label 3525 6200 3    40   ~ 0
+RST
+$Comp
+L GND #PWR02
+U 1 1 4EC6563E
+P 5100 2425
+F 0 "#PWR02" H 5100 2425 30  0001 C CNN
+F 1 "GND" H 5100 2355 30  0001 C CNN
+F 2 "" H 5100 2425 60  0001 C CNN
+F 3 "" H 5100 2425 60  0001 C CNN
+	1    5100 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 4EC1290E
+P 700 3325
+F 0 "C2" H 725 3225 50  0000 L CNN
+F 1 "22p" H 725 3425 50  0000 L CNN
+F 2 "ArthurC Lib:c_0805" H 700 3325 60  0001 C CNN
+F 3 "" H 700 3325 60  0001 C CNN
+F 4 "490-1734-1-ND" H 700 3525 60  0001 C CNN "Digikey"
+	1    700  3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 4EC128EB
+P 700 2775
+F 0 "C1" H 725 2875 50  0000 L CNN
+F 1 "22p" H 725 2675 50  0000 L CNN
+F 2 "ArthurC Lib:c_0805" H 700 2775 60  0001 C CNN
+F 3 "" H 700 2775 60  0001 C CNN
+F 4 "490-1734-1-ND" H 700 2975 60  0001 C CNN "Digikey"
+	1    700  2775
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5750 4750
+NoConn ~ 5350 4600
+NoConn ~ 5300 4200
+NoConn ~ 5300 4550
+NoConn ~ 5800 4750
+NoConn ~ 5800 4750
+$Comp
+L CONN_8 P6
+U 1 1 4E241CCB
+P 5325 6400
+F 0 "P6" V 5275 6400 60  0000 C CNN
+F 1 "MOTOR_R" V 5375 6400 60  0000 C CNN
+F 2 "ArthurC Lib:PIN_ARRAY-6X1" H 5325 6400 60  0001 C CNN
+F 3 "" H 5325 6400 60  0001 C CNN
+	1    5325 6400
+	1    0    0    1   
+$EndComp
+Text Label 10875 5650 0    40   ~ 0
+GND
+Text Label 10875 5550 0    40   ~ 0
+SDA
+Text Label 10875 5450 0    40   ~ 0
+SCL
+Text Label 10875 5350 0    40   ~ 0
+3V3
+Text Notes 9975 750  0    50   ~ 0
+External Battery\n3V5 min, 9V max
+Text Notes 1500 5900 0    60   Italic 12
+FTDI Header
+Text Notes 550  5900 0    60   Italic 12
+ISP/PROG Header
+Text Label 625  7300 0    40   ~ 0
+GND
+$Comp
+L +3.3V #PWR03
+U 1 1 4E1EF3E1
+P 1075 975
+F 0 "#PWR03" H 1075 935 30  0001 C CNN
+F 1 "+3.3V" H 1075 1085 30  0000 C CNN
+F 2 "" H 1075 975 60  0001 C CNN
+F 3 "" H 1075 975 60  0001 C CNN
+	1    1075 975 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P13
+U 1 1 4E1ED2A7
+P 10825 700
+F 0 "P13" V 10775 700 40  0000 C CNN
+F 1 "LiPo" V 10875 700 40  0000 C CNN
+F 2 "ArthurC Lib:pin_strip_2" H 10825 700 60  0001 C CNN
+F 3 "" H 10825 700 60  0001 C CNN
+	1    10825 700 
+	0    1    -1   0   
+$EndComp
+$Comp
+L C C6
+U 1 1 4E1ECFB8
+P 9000 2100
+F 0 "C6" H 9050 2200 50  0000 L CNN
+F 1 "1u" H 9050 2000 50  0000 L CNN
+F 2 "ArthurC Lib:c_0805" H 9000 2100 60  0001 C CNN
+F 3 "" H 9000 2100 60  0001 C CNN
+	1    9000 2100
+	1    0    0    -1  
+$EndComp
+Text Label 1650 7100 0    40   ~ 0
+3V3
+Text Notes 3200 5900 0    60   Italic 12
+ChronoDot
+Text Label 3525 7575 1    40   ~ 0
+GND
+Text Label 3625 7575 1    40   ~ 0
+3V3
+Text Label 3825 7575 1    40   ~ 0
+SDA
+Text Label 3725 7575 1    40   ~ 0
+SCL
+$Comp
+L CONN_4 P3
+U 1 1 4DD75875
+P 3675 6675
+F 0 "P3" V 3625 6675 50  0000 C CNN
+F 1 "CD1" V 3725 6675 50  0000 C CNN
+F 2 "ArthurC Lib:Sck-04-F-SMT" H 3675 6675 60  0001 C CNN
+F 3 "" H 3675 6675 60  0001 C CNN
+	1    3675 6675
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_4 P4
+U 1 1 4DD7586B
+P 3675 7100
+F 0 "P4" V 3625 7100 50  0000 C CNN
+F 1 "CD2" V 3725 7100 50  0000 C CNN
+F 2 "ArthurC Lib:Sck-04-F-SMT" H 3675 7100 60  0001 C CNN
+F 3 "" H 3675 7100 60  0001 C CNN
+	1    3675 7100
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 4DCFFAF9
+P 5975 2975
+F 0 "R4" H 5875 3100 50  0000 C CNN
+F 1 "750E" V 5975 2975 40  0000 C CNN
+F 2 "ArthurC Lib:r_0805" H 5975 2975 60  0001 C CNN
+F 3 "" H 5975 2975 60  0001 C CNN
+	1    5975 2975
+	1    0    0    -1  
+$EndComp
+Text Label 625  6800 0    40   ~ 0
+MISO
+Text Label 625  6900 0    40   ~ 0
+3V3
+Text Label 625  7000 0    40   ~ 0
+SCK
+Text Label 625  7100 0    40   ~ 0
+MOSI
+Text Label 625  7200 0    40   ~ 0
+RESET
+$Comp
+L ISP P1
+U 1 1 4DCD1997
+P 1250 7050
+F 0 "P1" V 1200 7050 60  0000 C CNN
+F 1 "ISP" V 1300 7050 60  0000 C CNN
+F 2 "ArthurC Lib:ISP" H 1250 7050 60  0001 C CNN
+F 3 "" H 1250 7050 60  0001 C CNN
+	1    1250 7050
+	1    0    0    -1  
+$EndComp
+Text Label 1650 7300 0    40   ~ 0
+GND
+Text Label 1650 6900 0    40   ~ 0
+TXD
+Text Label 1650 7000 0    40   ~ 0
+RXD
+Text Label 1650 6800 0    40   ~ 0
+RESET
+$Comp
+L C C4
+U 1 1 4DCB9774
+P 2250 6750
+F 0 "C4" V 2200 6825 50  0000 L CNN
+F 1 "100n" V 2125 6825 50  0000 L CNN
+F 2 "ArthurC Lib:c_0805" H 2250 6750 60  0001 C CNN
+F 3 "" H 2250 6750 60  0001 C CNN
+	1    2250 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_6 P2
+U 1 1 4DCB971F
+P 2900 7050
+F 0 "P2" V 2850 7050 60  0000 C CNN
+F 1 "FTDI" V 2950 7050 60  0000 C CNN
+F 2 "ArthurC Lib:PIN_ARRAY-6X1" H 2900 7050 60  0001 C CNN
+F 3 "" H 2900 7050 60  0001 C CNN
+	1    2900 7050
+	1    0    0    1   
+$EndComp
+Text Label 1075 2250 1    60   ~ 0
+RESET
+Text Label 3625 2850 0    40   ~ 0
+FIX
+Text Label 3625 3750 0    40   ~ 0
+GPS_Tx
+Text Label 3625 3450 0    40   ~ 0
+SQW
+Text Label 3625 4050 0    40   ~ 0
+EN
+Text Label 3625 4150 0    40   ~ 0
+DIR
+Text Label 3625 2350 0    40   ~ 0
+M0
+Text Label 3625 2450 0    40   ~ 0
+M1
+Text Label 3450 2950 0    40   ~ 0
+Hall
+Text Label 3625 3150 0    40   ~ 0
+RXD
+Text Label 3625 3250 0    40   ~ 0
+TXD
+Text Label 3625 3350 0    40   ~ 0
+1pps
+Text Label 3450 3850 0    40   ~ 0
+LED2
+Text Label 3625 3550 0    40   ~ 0
+STP
+Text Label 10025 2400 0    60   ~ 0
+GND
+$Comp
+L GND #PWR04
+U 1 1 4DCAC327
+P 9950 2475
+F 0 "#PWR04" H 9950 2475 30  0001 C CNN
+F 1 "GND" H 9950 2405 30  0001 C CNN
+F 2 "" H 9950 2475 60  0001 C CNN
+F 3 "" H 9950 2475 60  0001 C CNN
+	1    9950 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP_1700 U3
+U 1 1 4DCAC2D1
+P 9950 1950
+F 0 "U3" H 9800 1800 60  0000 C CNN
+F 1 "3V3" H 10100 1800 60  0000 C CNN
+F 2 "ArthurC Lib:SOT23-3" H 9950 1950 60  0001 C CNN
+F 3 "" H 9950 1950 60  0001 C CNN
+F 4 "MCP1700T-3302E/TT" H 9950 1950 60  0001 C CNN "Part No"
+	1    9950 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 4DCAC172
+P 4350 1975
+F 0 "R2" H 4250 2100 50  0000 C CNN
+F 1 "10k" V 4350 1975 40  0000 C CNN
+F 2 "ArthurC Lib:r_0805" H 4350 1975 60  0001 C CNN
+F 3 "" H 4350 1975 60  0001 C CNN
+	1    4350 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 4DCAC161
+P 4550 1975
+F 0 "R3" H 4450 2100 50  0000 C CNN
+F 1 "10k" V 4550 1975 40  0000 C CNN
+F 2 "ArthurC Lib:r_0805" H 4550 1975 60  0001 C CNN
+F 3 "" H 4550 1975 60  0001 C CNN
+	1    4550 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 4DCA7D67
+P 1075 4350
+F 0 "SW1" H 1225 4460 50  0000 C CNN
+F 1 "RST" H 1075 4270 50  0000 C CNN
+F 2 "ArthurC Lib:SW_SMD" H 1075 4350 60  0001 C CNN
+F 3 "" H 1075 4350 60  0001 C CNN
+F 4 "" H 1325 4560 60  0001 C CNN "DigiKey"
+	1    1075 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 4DCA7BFC
+P 1075 1600
+F 0 "R1" H 1125 1800 50  0000 C CNN
+F 1 "10k" V 1075 1600 40  0000 C CNN
+F 2 "ArthurC Lib:r_0805" H 1075 1600 60  0001 C CNN
+F 3 "" H 1075 1600 60  0001 C CNN
+	1    1075 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 4DCA7BAC
+P 1250 1875
+F 0 "C3" H 1300 1975 50  0000 L CNN
+F 1 "100n" H 1300 1775 50  0000 L CNN
+F 2 "ArthurC Lib:c_0805" H 1250 1875 60  0001 C CNN
+F 3 "" H 1250 1875 60  0001 C CNN
+	1    1250 1875
+	1    0    0    -1  
+$EndComp
+Text Label 3450 2650 0    40   ~ 0
+SDA
+Text Label 3450 2750 0    40   ~ 0
+SCL
+Text Label 2575 1100 0    60   ~ 0
+3V3
+Text Label 5350 4900 0    40   ~ 0
+GND
+Text Label 3450 4250 0    40   ~ 0
+SS
+Text Label 3450 4350 0    40   ~ 0
+MOSI
+Text Label 3450 4550 0    40   ~ 0
+SCK
+Text Label 3450 4450 0    40   ~ 0
+MISO
+$Comp
+L C C7
+U 1 1 4DCA5F1E
+P 10600 2100
+F 0 "C7" H 10650 2200 50  0000 L CNN
+F 1 "1u" H 10650 2000 50  0000 L CNN
+F 2 "ArthurC Lib:c_0805" H 10600 2100 60  0001 C CNN
+F 3 "" H 10600 2100 60  0001 C CNN
+	1    10600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_9 P11
+U 1 1 5311E38A
+P 6700 7225
+F 0 "P11" V 6650 7225 60  0000 C CNN
+F 1 "GPS" V 6750 7225 60  0000 C CNN
+F 2 "ArthurC Lib:PIN_ARRAY-9X1" H 6700 7375 60  0001 C CNN
+F 3 "" H 6700 7375 60  0000 C CNN
+	1    6700 7225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 7625 6350 7625
+Wire Wire Line
+	6050 7525 6350 7525
+Wire Wire Line
+	6050 7425 6350 7425
+Wire Wire Line
+	6050 7325 6350 7325
+Wire Wire Line
+	6050 7225 6350 7225
+Wire Wire Line
+	6050 7125 6350 7125
+Wire Wire Line
+	6050 7025 6350 7025
+Text Label 6050 7025 0    40   ~ 0
+GPS_BAT
+Text Label 6050 6925 0    40   ~ 0
+GPS_EN
+Text Label 6050 7125 0    40   ~ 0
+FIX
+Text Label 6050 7225 0    40   ~ 0
+GPS_Tx
+Text Label 6050 7325 0    40   ~ 0
+GPS_Rx
+Text Label 6050 7425 0    40   ~ 0
+GND
+Text Label 6050 7525 0    40   ~ 0
+3V3
+Text Label 6050 7625 0    40   ~ 0
+1pps
+Text Label 3625 3650 0    40   ~ 0
+GPS_Rx
+Text Notes 6625 7550 0    50   ~ 0
+VIN
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 53135E05
+P 2350 5100
+F 0 "#FLG05" H 2350 5370 30  0001 C CNN
+F 1 "PWR_FLAG" H 2350 5330 30  0000 C CNN
+F 2 "" H 2350 5100 60  0000 C CNN
+F 3 "" H 2350 5100 60  0000 C CNN
+	1    2350 5100
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	1400 5925 550  5925
+Wire Notes Line
+	1400 7750 550  7750
+$Comp
+L CRYSTAL X1
+U 1 1 5313C3B2
+P 900 3050
+F 0 "X1" V 975 3300 60  0000 C CNN
+F 1 "8MHz" V 875 3375 60  0000 C CNN
+F 2 "ArthurC Lib:Xtal_SMD4" H 900 3050 60  0001 C CNN
+F 3 "" H 900 3050 60  0000 C CNN
+	1    900  3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 6825 6050 6825
+$Comp
+L I/O P8
+U 1 1 5339A614
+P 5900 6825
+F 0 "P8" H 5980 6825 40  0000 L CNN
+F 1 "I/O" H 5900 6880 30  0001 C CNN
+F 2 "ArthurC Lib:I%2fO" H 5900 6825 60  0001 C CNN
+F 3 "" H 5900 6825 60  0001 C CNN
+	1    5900 6825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 6925 6050 6925
+$Comp
+L I/O P9
+U 1 1 5339B720
+P 5900 6925
+F 0 "P9" H 5980 6925 40  0000 L CNN
+F 1 "I/O" H 5900 6980 30  0001 C CNN
+F 2 "ArthurC Lib:I%2fO" H 5900 6925 60  0001 C CNN
+F 3 "" H 5900 6925 60  0001 C CNN
+	1    5900 6925
+	-1   0    0    1   
+$EndComp
+$Comp
+L I/O P10
+U 1 1 5339B72B
+P 5900 7025
+F 0 "P10" H 5980 7025 40  0000 L CNN
+F 1 "I/O" H 5900 7080 30  0001 C CNN
+F 2 "ArthurC Lib:I%2fO" H 5900 7025 60  0001 C CNN
+F 3 "" H 5900 7025 60  0001 C CNN
+	1    5900 7025
+	-1   0    0    1   
+$EndComp
+$Comp
+L SD_CARD_Micro SD1
+U 1 1 535D43B5
+P 5300 4550
+F 0 "SD1" H 5475 5000 50  0000 C CNN
+F 1 "SD_CARD_Micro" H 5675 5075 50  0000 C CNN
+F 2 "ArthurC Lib:SD_Micro" H 5300 4550 60  0001 C CNN
+F 3 "" H 5300 4550 60  0000 C CNN
+	1    5300 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2550 1400 2550
+Wire Wire Line
+	1400 2550 1400 2650
+Text Label 6075 6825 0    40   ~ 0
+3Vgps
+$Comp
+L CONN_2 P12
+U 1 1 535FEBF6
+P 9100 700
+F 0 "P12" V 9050 700 40  0000 C CNN
+F 1 "BAT" V 9150 700 40  0000 C CNN
+F 2 "ArthurC Lib:pin_strip_2" H 9100 700 60  0001 C CNN
+F 3 "" H 9100 700 60  0000 C CNN
+	1    9100 700 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9000 1100
+Wire Wire Line
+	9200 1050 9200 1100
+$Comp
+L GND #PWR06
+U 1 1 535FEEBB
+P 9900 1150
+F 0 "#PWR06" H 9900 1150 30  0001 C CNN
+F 1 "GND" H 9900 1080 30  0001 C CNN
+F 2 "" H 9900 1150 60  0001 C CNN
+F 3 "" H 9900 1150 60  0001 C CNN
+	1    9900 1150
+	1    0    0    -1  
+$EndComp
+Text Label 9925 1100 0    60   ~ 0
+GND
+Text Notes 9275 750  0    50   ~ 0
+External Battery\n3V3 max
+Text Label 5150 4075 0    40   ~ 0
+3V3
+Wire Wire Line
+	9200 1100 10725 1100
+Wire Wire Line
+	10725 1100 10725 1050
+Wire Wire Line
+	9900 1150 9900 1100
+Connection ~ 9900 1100
+Wire Wire Line
+	10925 1050 10925 1900
+$Comp
+L C_POL C8
+U 1 1 536B66B9
+P 10925 2100
+F 0 "C8" H 10825 2200 50  0000 L CNN
+F 1 "47uF_25V" H 10925 1950 50  0000 L CNN
+F 2 "ArthurC Lib:C_ELCO_SMD" H 10925 2100 60  0001 C CNN
+F 3 "" H 10925 2100 60  0000 C CNN
+	1    10925 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 10925 1850
+Wire Wire Line
+	10925 2400 10925 2350
+Connection ~ 10600 2400
+$Comp
+L CONN_8 P7
+U 1 1 4E241CD6
+P 5325 7275
+F 0 "P7" V 5275 7275 60  0000 C CNN
+F 1 "MOTOR_L" V 5375 7275 60  0000 C CNN
+F 2 "ArthurC Lib:PIN_ARRAY-6X1" H 5325 7275 60  0001 C CNN
+F 3 "" H 5325 7275 60  0001 C CNN
+	1    5325 7275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 6350 4975 6350
+Wire Wire Line
+	4525 6250 4975 6250
+Wire Wire Line
+	4525 6150 4975 6150
+Wire Wire Line
+	4975 6050 4525 6050
+Wire Wire Line
+	4525 6750 4975 6750
+Wire Wire Line
+	4525 6650 4975 6650
+Wire Wire Line
+	4525 6550 4975 6550
+Wire Wire Line
+	4975 6450 4525 6450
+Wire Wire Line
+	4650 7225 4975 7225
+Wire Wire Line
+	4650 7125 4975 7125
+Wire Wire Line
+	4525 7025 4975 7025
+Wire Wire Line
+	4975 6925 4525 6925
+Wire Wire Line
+	4525 7625 4975 7625
+Wire Wire Line
+	4525 7525 4975 7525
+Wire Wire Line
+	4650 7425 4975 7425
+Wire Wire Line
+	4975 7325 4650 7325
+Text Label 4525 6050 0    40   ~ 0
+DIR
+Text Label 4525 6150 0    40   ~ 0
+STP
+Text Label 4525 6350 0    40   ~ 0
+VREF
+Text Label 4525 6450 0    40   ~ 0
+CFG
+Text Label 4525 6550 0    40   ~ 0
+M1
+Text Label 4525 6650 0    40   ~ 0
+M0
+Text Label 4525 6750 0    40   ~ 0
+EN
+Text Label 4525 6925 0    40   ~ 0
+BAT
+Text Label 4525 7025 0    40   ~ 0
+GND
+Text Label 4650 7125 0    40   ~ 0
+B2
+Text Label 4650 7225 0    40   ~ 0
+B1
+Text Label 4650 7325 0    40   ~ 0
+A1
+Text Label 4650 7425 0    40   ~ 0
+A2
+Text Label 4525 7525 0    40   ~ 0
+FLT
+Text Label 4525 7625 0    40   ~ 0
+GND
+$Comp
+L Hall_Sensor U2
+U 1 1 54D79F22
+P 5100 1950
+F 0 "U2" H 5225 1875 40  0000 L CNN
+F 1 "Hall_Sensor" H 5225 1800 40  0000 L CNN
+F 2 "" H 5100 2100 60  0000 C CNN
+F 3 "" H 5100 2100 60  0000 C CNN
+	1    5100 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 2650
+Text Notes 4175 5900 0    60   Italic 12
+Motor Driver
+Wire Notes Line
+	5650 5925 6850 5925
+Wire Notes Line
+	4175 7750 5550 7750
+Wire Notes Line
+	5550 7750 5550 5925
+Wire Notes Line
+	5550 5925 4175 5925
+$Comp
+L ATMEGA8-AI U1
+U 1 1 4DCA5EC5
+P 2400 3250
+F 0 "U1" H 1700 4400 50  0000 L BNN
+F 1 "ATMEGA328P" H 1750 2500 50  0000 L BNN
+F 2 "ArthurC Lib:TQFP32" H 2925 1675 50  0001 C CNN
+F 3 "" H 2400 3250 60  0001 C CNN
+	1    2400 3250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4525 6450
+NoConn ~ 4525 6350
+Text Label 4525 6250 0    40   ~ 0
+3V3
+NoConn ~ 4525 7525
+$Comp
+L CONN_4 P5
+U 1 1 54EA6844
+P 4300 7275
+F 0 "P5" V 4250 7275 50  0000 C CNN
+F 1 "MOTOR" V 4350 7275 50  0000 C CNN
+F 2 "" H 4300 7275 60  0000 C CNN
+F 3 "" H 4300 7275 60  0000 C CNN
+	1    4300 7275
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	550  7750 550  5925
+Wire Notes Line
+	1400 5925 1400 7750
+Wire Notes Line
+	1500 7750 1500 5925
+Wire Notes Line
+	3100 5925 3100 7750
+Wire Notes Line
+	3200 5925 3200 7750
+Wire Notes Line
+	4075 7750 4075 5925
+Wire Notes Line
+	5650 7750 5650 5925
+Wire Notes Line
+	6850 5925 6850 7750
+Wire Notes Line
+	6850 7750 5650 7750
+Text Label 3625 2250 0    40   ~ 0
+GPS_EN
+$Comp
+L C C5
+U 1 1 54ECC15D
+P 6450 1600
+F 0 "C5" H 6475 1700 50  0000 L CNN
+F 1 "100n" H 6475 1500 50  0000 L CNN
+F 2 "C4_Pretty:c_0805_led" H 6450 1600 50  0001 C CNN
+F 3 "" H 6450 1600 60  0001 C CNN
+F 4 "CAP CER 0.1UF 25V 10% X7R 0805" H 6450 1800 60  0001 L CNN "Field4"
+F 5 "100nF, 25V" H 6450 1900 60  0001 L CNN "Field5"
+F 6 "Surface Mount, MLCC" H 6450 2000 60  0001 L CNN "Field6"
+F 7 "Kemet" H 6450 2100 60  0001 L CNN "Field7"
+F 8 "C0805C104K3RACTU" H 6450 2200 60  0001 L CNN "Field8"
+F 9 "Digikey" H 6450 2300 60  0001 L CNN "Field9"
+F 10 "399-1168-1-ND" H 6450 2400 60  0001 L CNN "Field10"
+F 11 "http://www.digikey.com/product-detail/en/C0805C104K3RACTU/399-1168-1-ND/411443" H 6450 2500 60  0001 L CNN "Field11"
+	1    6450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812B LED1
+U 1 1 54ECC16E
+P 5900 1975
+F 0 "LED1" H 5800 1500 40  0000 C CNN
+F 1 "WS2812B" V 5775 1950 40  0000 C CNN
+F 2 "C4_Pretty:RGB_WS2811B" H 5900 1975 60  0001 C CNN
+F 3 "~" H 5900 1975 60  0000 C CNN
+	1    5900 1975
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5100 1700 5100 1100
+Connection ~ 5100 1100
+Wire Wire Line
+	5100 2200 5100 2425
+Wire Wire Line
+	4850 1950 4750 1950
+Wire Wire Line
+	4750 1950 4750 2950
+Wire Wire Line
+	4350 1725 4350 1100
+Connection ~ 4350 1100
+Wire Wire Line
+	4350 2650 4350 2225
+$Comp
+L R R5
+U 1 1 54ED1522
+P 7250 2800
+F 0 "R5" V 7300 3000 40  0000 C CNN
+F 1 "10k" V 7250 2800 40  0000 C CNN
+F 2 "r_0805" H 7250 2800 60  0001 C CNN
+F 3 "" H 7250 2800 60  0000 C CNN
+	1    7250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 54ED1529
+P 7250 3400
+F 0 "R6" V 7300 3600 40  0000 C CNN
+F 1 "10k" V 7250 3400 40  0000 C CNN
+F 2 "r_0805" H 7250 3400 60  0001 C CNN
+F 3 "" H 7250 3400 60  0000 C CNN
+	1    7250 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 54ED1530
+P 7250 4000
+F 0 "R7" V 7300 4200 40  0000 C CNN
+F 1 "10k" V 7250 4000 40  0000 C CNN
+F 2 "r_0805" H 7250 4000 60  0001 C CNN
+F 3 "" H 7250 4000 60  0000 C CNN
+	1    7250 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R8
+U 1 1 54ED1537
+P 7250 4600
+F 0 "R8" V 7300 4800 40  0000 C CNN
+F 1 "10k" V 7250 4600 40  0000 C CNN
+F 2 "r_0805" H 7250 4600 60  0001 C CNN
+F 3 "" H 7250 4600 60  0000 C CNN
+	1    7250 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R9
+U 1 1 54ED153E
+P 7250 5200
+F 0 "R9" V 7300 5400 40  0000 C CNN
+F 1 "10k" V 7250 5200 40  0000 C CNN
+F 2 "r_0805" H 7250 5200 60  0001 C CNN
+F 3 "" H 7250 5200 60  0000 C CNN
+	1    7250 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_PUSH SW3
+U 1 1 54ED1545
+P 7600 3100
+F 0 "SW3" H 7750 3210 50  0000 C CNN
+F 1 "SW_DN" H 7600 3020 50  0000 C CNN
+F 2 "SW-PB" H 7600 3100 60  0001 C CNN
+F 3 "" H 7600 3100 60  0000 C CNN
+	1    7600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW4
+U 1 1 54ED154C
+P 7600 3700
+F 0 "SW4" H 7750 3810 50  0000 C CNN
+F 1 "SW_OK" H 7600 3620 50  0000 C CNN
+F 2 "SW-PB" H 7600 3700 60  0001 C CNN
+F 3 "" H 7600 3700 60  0000 C CNN
+	1    7600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 54ED1553
+P 7600 2500
+F 0 "SW2" H 7750 2610 50  0000 C CNN
+F 1 "SW_UP" H 7600 2420 50  0000 C CNN
+F 2 "SW-PB" H 7600 2500 60  0001 C CNN
+F 3 "" H 7600 2500 60  0000 C CNN
+	1    7600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW5
+U 1 1 54ED155A
+P 7600 4300
+F 0 "SW5" H 7750 4410 50  0000 C CNN
+F 1 "SW_LT" H 7600 4220 50  0000 C CNN
+F 2 "SW-PB" H 7600 4300 60  0001 C CNN
+F 3 "" H 7600 4300 60  0000 C CNN
+	1    7600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW6
+U 1 1 54ED1561
+P 7600 4900
+F 0 "SW6" H 7750 5010 50  0000 C CNN
+F 1 "SW_RT" H 7600 4820 50  0000 C CNN
+F 2 "SW-PB" H 7600 4900 60  0001 C CNN
+F 3 "" H 7600 4900 60  0000 C CNN
+	1    7600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 54ED1568
+P 7950 5550
+F 0 "#PWR07" H 7950 5550 30  0001 C CNN
+F 1 "GND" H 7950 5480 30  0001 C CNN
+F 2 "" H 7950 5550 60  0001 C CNN
+F 3 "" H 7950 5550 60  0001 C CNN
+	1    7950 5550
+	1    0    0    -1  
+$EndComp
+Text Label 8000 2275 2    50   ~ 0
+3V3
+Text Label 8150 3700 2    50   ~ 0
+SW
+Text Label 7950 5500 2    50   ~ 0
+GND
+Wire Wire Line
+	7250 5450 7250 5500
+Wire Wire Line
+	7250 5500 7950 5500
+Wire Wire Line
+	7950 5500 7950 5550
+Wire Wire Line
+	7250 2275 7250 2550
+Wire Wire Line
+	7300 2500 7250 2500
+Connection ~ 7250 2500
+Wire Wire Line
+	7250 3050 7250 3150
+Wire Wire Line
+	7300 3100 7250 3100
+Connection ~ 7250 3100
+Wire Wire Line
+	7250 3650 7250 3750
+Wire Wire Line
+	7300 3700 7250 3700
+Connection ~ 7250 3700
+Wire Wire Line
+	7250 4250 7250 4350
+Wire Wire Line
+	7300 4300 7250 4300
+Connection ~ 7250 4300
+Wire Wire Line
+	7250 4850 7250 4950
+Wire Wire Line
+	7300 4900 7250 4900
+Connection ~ 7250 4900
+Wire Wire Line
+	7900 2500 8000 2500
+Wire Wire Line
+	8000 2500 8000 4900
+Wire Wire Line
+	8000 4900 7900 4900
+Wire Wire Line
+	7900 4300 8000 4300
+Connection ~ 8000 4300
+Wire Wire Line
+	7900 3700 8150 3700
+Connection ~ 8000 3700
+Wire Wire Line
+	7900 3100 8000 3100
+Connection ~ 8000 3100
+Wire Wire Line
+	8000 2275 7250 2275
+Wire Notes Line
+	7000 2075 8225 2075
+Wire Notes Line
+	8225 2075 8225 6375
+Wire Notes Line
+	8225 6375 7000 6375
+Wire Notes Line
+	7000 6375 7000 2075
+Text Notes 7025 2175 0    60   Italic 12
+Switches
+$Comp
+L CONN_3 J1
+U 1 1 54ED1592
+P 7350 5950
+F 0 "J1" V 7400 5950 40  0000 C CNN
+F 1 "SW_EXT" V 7500 5950 40  0000 C CNN
+F 2 "PIN_ARRAY_3x1" H 7350 5900 60  0001 C CNN
+F 3 "~" H 7350 5900 60  0000 C CNN
+	1    7350 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 54ED1599
+P 7950 6150
+F 0 "#PWR08" H 7950 6150 30  0001 C CNN
+F 1 "GND" H 7950 6080 30  0001 C CNN
+F 2 "" H 7950 6150 60  0001 C CNN
+F 3 "" H 7950 6150 60  0001 C CNN
+	1    7950 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 6050 7950 6050
+Wire Wire Line
+	7950 6050 7950 6150
+Text Label 7950 6050 2    50   ~ 0
+GND
+Wire Wire Line
+	7550 5850 7950 5850
+Wire Wire Line
+	7550 5950 7950 5950
+Text Label 7950 5950 2    50   ~ 0
+SW
+Text Label 7950 5850 2    50   ~ 0
+3V3
+Wire Wire Line
+	6175 1350 6175 1100
+Connection ~ 6175 1100
+Wire Wire Line
+	5975 2550 5975 2725
+Wire Wire Line
+	5975 3850 5975 3225
+Wire Wire Line
+	6450 1400 6450 1250
+Wire Wire Line
+	6450 1250 6175 1250
+Connection ~ 6175 1250
+Wire Wire Line
+	6450 1800 6450 1950
+Wire Wire Line
+	5975 1350 5975 1250
+Wire Wire Line
+	5975 1250 5475 1250
+Wire Wire Line
+	5475 1250 5475 1550
+$Comp
+L GND #PWR09
+U 1 1 54ED6040
+P 5475 1550
+F 0 "#PWR09" H 5475 1550 30  0001 C CNN
+F 1 "GND" H 5475 1480 30  0001 C CNN
+F 2 "" H 5475 1550 60  0001 C CNN
+F 3 "" H 5475 1550 60  0001 C CNN
+	1    5475 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 54ED6076
+P 6450 1950
+F 0 "#PWR010" H 6450 1950 30  0001 C CNN
+F 1 "GND" H 6450 1880 30  0001 C CNN
+F 2 "" H 6450 1950 60  0001 C CNN
+F 3 "" H 6450 1950 60  0001 C CNN
+	1    6450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L I/O B1
+U 1 1 54ED61D2
+P 6175 2875
+F 0 "B1" H 6255 2875 40  0000 L CNN
+F 1 "I/O" H 6175 2930 30  0001 C CNN
+F 2 "" H 6175 2875 60  0000 C CNN
+F 3 "" H 6175 2875 60  0000 C CNN
+	1    6175 2875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6175 2550 6175 2725
+Text Label 3625 2550 0    40   ~ 0
+SW
+Wire Wire Line
+	3625 2550 3400 2550
+$EndSCHEMATC

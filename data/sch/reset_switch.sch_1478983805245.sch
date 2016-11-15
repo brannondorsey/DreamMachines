@@ -1,0 +1,207 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SparkFun
+LIBS:reset_switch-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 568B193C
+P 3800 3450
+F 0 "R1" V 3880 3450 50  0000 C CNN
+F 1 "10k" V 3800 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3730 3450 50  0001 C CNN
+F 3 "" H 3800 3450 50  0000 C CNN
+	1    3800 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 568B1AAF
+P 5250 2550
+F 0 "R2" V 5330 2550 50  0000 C CNN
+F 1 "10k" V 5250 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5180 2550 50  0001 C CNN
+F 3 "" H 5250 2550 50  0000 C CNN
+	1    5250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 568B1B04
+P 5550 2750
+F 0 "R3" V 5630 2750 50  0000 C CNN
+F 1 "100" V 5550 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5480 2750 50  0001 C CNN
+F 3 "" H 5550 2750 50  0000 C CNN
+	1    5550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L QRE1113 Q2
+U 1 1 568B1DC5
+P 5350 3300
+F 0 "Q2" H 5400 3450 50  0000 C CNN
+F 1 "QRE1113" H 5750 3050 50  0000 C CNN
+F 2 "custom_footprints:SparkFun-QRE1113" H 5350 3300 60  0001 C CNN
+F 3 "" H 5350 3300 60  0000 C CNN
+	1    5350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P1
+U 1 1 56904E99
+P 3150 3450
+F 0 "P1" H 3150 3700 50  0000 C CNN
+F 1 "CONN_01X04" V 3250 3450 50  0000 C CNN
+F 2 "custom_footprints:SMD_4PAD" H 3150 3450 50  0001 C CNN
+F 3 "" H 3150 3450 50  0000 C CNN
+	1    3150 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3450 4250 3450
+Wire Wire Line
+	5250 2700 5250 3100
+Wire Wire Line
+	5550 2900 5550 3100
+Wire Wire Line
+	5550 2300 5550 2600
+Wire Wire Line
+	3400 2300 5550 2300
+Wire Wire Line
+	5250 2300 5250 2400
+Wire Wire Line
+	3400 3300 3400 2300
+Connection ~ 5250 2300
+Wire Wire Line
+	3500 2950 5250 2950
+Connection ~ 5250 2950
+Wire Wire Line
+	5550 3800 5550 3600
+Wire Wire Line
+	4950 3800 5550 3800
+Wire Wire Line
+	5250 3800 5250 3600
+Wire Wire Line
+	4650 3250 4950 3250
+Wire Wire Line
+	4950 3250 4950 3800
+Connection ~ 5250 3800
+Wire Wire Line
+	3500 3900 4650 3900
+Wire Wire Line
+	3400 3300 3350 3300
+Wire Wire Line
+	3350 3600 3500 3600
+Wire Wire Line
+	3500 3600 3500 3900
+$Comp
+L +5V #PWR01
+U 1 1 569053CB
+P 3750 2200
+F 0 "#PWR01" H 3750 2050 50  0001 C CNN
+F 1 "+5V" H 3750 2340 50  0000 C CNN
+F 2 "" H 3750 2200 50  0000 C CNN
+F 3 "" H 3750 2200 50  0000 C CNN
+	1    3750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2200 3750 2300
+Connection ~ 3750 2300
+$Comp
+L GND #PWR02
+U 1 1 5690540D
+P 3600 4000
+F 0 "#PWR02" H 3600 3750 50  0001 C CNN
+F 1 "GND" H 3600 3850 50  0000 C CNN
+F 2 "" H 3600 4000 50  0000 C CNN
+F 3 "" H 3600 4000 50  0000 C CNN
+	1    3600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4000 3600 3900
+Connection ~ 3600 3900
+$Comp
+L Fairchild_BCV27 Q1
+U 1 1 5690602D
+P 4500 3450
+F 0 "Q1" H 4500 3650 50  0000 C CNN
+F 1 "Fairchild_BCV27" H 4650 3750 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4500 3400 50  0001 C CNN
+F 3 "" H 4500 3400 50  0000 C CNN
+	1    4500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2950 3500 3400
+Wire Wire Line
+	3500 3400 3350 3400
+Wire Wire Line
+	3650 3450 3600 3450
+Wire Wire Line
+	3600 3450 3600 3500
+Wire Wire Line
+	3600 3500 3350 3500
+$Comp
+L R R4
+U 1 1 569823B3
+P 4000 3700
+F 0 "R4" V 4080 3700 50  0000 C CNN
+F 1 "100k" V 4000 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3930 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0000 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3450 4000 3550
+Wire Wire Line
+	4000 3850 4000 3900
+Connection ~ 4000 3900
+Connection ~ 4000 3450
+Wire Wire Line
+	4650 3900 4650 3750
+$EndSCHEMATC

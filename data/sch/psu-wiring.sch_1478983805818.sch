@@ -1,0 +1,674 @@
+EESchema Schematic File Version 2
+LIBS:1N
+LIBS:1N-SMD
+LIBS:2N
+LIBS:2N-SMD
+LIBS:4000
+LIBS:7400
+LIBS:ad
+LIBS:altera
+LIBS:atmel
+LIBS:capacitors
+LIBS:conn
+LIBS:diodesinc
+LIBS:display
+LIBS:electromech
+LIBS:fairchild_ic
+LIBS:fairchild_semi
+LIBS:ftdi
+LIBS:ic_template
+LIBS:inductors
+LIBS:infineon
+LIBS:intersil
+LIBS:irf
+LIBS:lattice
+LIBS:ltc
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip
+LIBS:nxp_ic
+LIBS:nxp_semi
+LIBS:onsemi
+LIBS:passive
+LIBS:power
+LIBS:resistors
+LIBS:semi
+LIBS:silabs
+LIBS:st_ic
+LIBS:st_semi
+LIBS:supertex
+LIBS:symbol
+LIBS:texas
+LIBS:vishay_semi
+LIBS:psu-wiring-cache
+EELAYER 24 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "PS-1: Wiring Diagram"
+Date "22 Mar 2014"
+Rev "C"
+Comp "Chris Pavlina"
+Comment1 "c4757p.com/projects/ps1"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN-IEC-C14 J1
+U 1 1 532E4E80
+P 1200 2500
+F 0 "J1" H 1200 2750 50  0000 C CNN
+F 1 "IEC 320-C14" H 1200 2650 50  0000 C CNN
+F 2 "" H 1200 2500 60  0000 C CNN
+F 3 "" H 1200 2500 60  0000 C CNN
+	1    1200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 532E4E9E
+P 900 1700
+F 0 "F1" H 600 1650 50  0000 C CNN
+F 1 "SEE TABLE" H 600 1750 50  0000 C CNN
+F 2 "" H 900 1750 60  0000 C CNN
+F 3 "" H 900 1750 60  0000 C CNN
+	1    900  1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L SPST SW1
+U 1 1 532E4ED2
+P 9600 1000
+F 0 "SW1" V 9650 700 50  0000 C CNN
+F 1 "POWER" V 9550 700 50  0000 C CNN
+F 2 "" H 9600 1000 60  0000 C CNN
+F 3 "" H 9600 1000 60  0000 C CNN
+	1    9600 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TRANS-2 T1
+U 1 1 532E4F1E
+P 3200 2700
+F 0 "T1" H 3300 2700 50  0000 C CNN
+F 1 "SEE TABLE" H 3050 2950 50  0000 C CNN
+F 2 "" H 3200 2750 60  0000 C CNN
+F 3 "" H 3200 2750 60  0000 C CNN
+	1    3200 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CGND #PWR1
+U 1 1 532E4F53
+P 1200 2750
+F 0 "#PWR1" H 1200 2750 30  0001 C CNN
+F 1 "CGND" H 1200 2680 30  0001 C CNN
+F 2 "" H 1200 2750 60  0000 C CNN
+F 3 "" H 1200 2750 60  0000 C CNN
+	1    1200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRANS-2 T1
+U 2 1 532E4F79
+P 3500 2700
+F 0 "T1" H 3600 2700 50  0000 C CNN
+F 1 "SEE TABLE" H 3700 2650 50  0001 C CNN
+F 2 "" H 3500 2750 60  0000 C CNN
+F 3 "" H 3500 2750 60  0000 C CNN
+	2    3500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRANS-3 T2
+U 1 1 532E4FE2
+P 3200 4000
+F 0 "T2" H 3300 4000 50  0000 C CNN
+F 1 "SEE TABLE" H 3050 4350 50  0000 C CNN
+F 2 "" H 3200 4050 60  0000 C CNN
+F 3 "" H 3200 4050 60  0000 C CNN
+	1    3200 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TRANS-3 T2
+U 2 1 532E4FF4
+P 3500 3900
+F 0 "T2" H 3600 3900 50  0000 C CNN
+F 1 "SEE TABLE" H 3700 3850 50  0001 C CNN
+F 2 "" H 3500 3950 60  0000 C CNN
+F 3 "" H 3500 3950 60  0000 C CNN
+	2    3500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRANS-3 T2
+U 3 1 532E4FFF
+P 3500 4100
+F 0 "T2" H 3600 4100 50  0000 C CNN
+F 1 "SEE TABLE" H 3700 4050 50  0001 C CNN
+F 2 "" H 3500 4150 60  0000 C CNN
+F 3 "" H 3500 4150 60  0000 C CNN
+	3    3500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEAD-F1 J2
+U 1 1 532E518B
+P 9650 2000
+F 0 "J2" H 9900 2050 50  0000 C CNN
+F 1 "+" H 9900 1950 50  0000 C CNN
+F 2 "" H 9650 2000 50  0000 C CNN
+F 3 "" H 9650 2000 50  0000 C CNN
+	1    9650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEAD-F1 J3
+U 1 1 532E51A8
+P 9650 2600
+F 0 "J3" H 9900 2650 50  0000 C CNN
+F 1 "-" H 9900 2550 50  0000 C CNN
+F 2 "" H 9650 2600 50  0000 C CNN
+F 3 "" H 9650 2600 50  0000 C CNN
+	1    9650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F2
+U 1 1 532E5469
+P 9600 3100
+F 0 "F2" H 9900 3150 50  0000 C CNN
+F 1 "1A 125V FB" H 9900 3050 50  0000 C CNN
+F 2 "" H 9600 3150 60  0000 C CNN
+F 3 "" H 9600 3150 60  0000 C CNN
+	1    9600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PUSH SW2
+U 1 1 532E56AA
+P 9600 1600
+F 0 "SW2" V 9550 1300 50  0000 C CNN
+F 1 "SHORT" V 9650 1300 50  0000 C CNN
+F 2 "" H 9600 1600 60  0000 C CNN
+F 3 "" H 9600 1600 60  0000 C CNN
+	1    9600 1600
+	0    -1   1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 532E57B6
+P 9550 2300
+F 0 "C1" H 9900 2350 50  0000 C CNN
+F 1 "100n 200V" H 9900 2250 50  0000 C CNN
+F 2 "" H 9540 2275 60  0000 C CNN
+F 3 "" H 9540 2275 60  0000 C CNN
+	1    9550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 1900 6400 1900
+Wire Wire Line
+	9450 2700 9550 2600
+Wire Wire Line
+	9550 2600 9450 2500
+Wire Wire Line
+	9550 2600 9600 2600
+Wire Wire Line
+	9450 2100 9550 2000
+Wire Wire Line
+	9550 2000 9450 1900
+Wire Wire Line
+	9550 2000 9600 2000
+Connection ~ 2600 2900
+Wire Wire Line
+	2600 4200 2600 2900
+Wire Wire Line
+	3200 4200 2600 4200
+Wire Wire Line
+	3200 4100 3200 4200
+Connection ~ 2700 2500
+Wire Wire Line
+	2700 3700 2700 2500
+Wire Wire Line
+	3200 3700 2700 3700
+Wire Wire Line
+	3200 3900 3200 3700
+Connection ~ 4500 2900
+Wire Wire Line
+	4500 4200 4500 2900
+Wire Wire Line
+	3500 4200 4500 4200
+Connection ~ 4300 2500
+Wire Wire Line
+	4300 3700 4300 2500
+Wire Wire Line
+	3500 3700 4300 3700
+Wire Wire Line
+	3500 3800 3500 3700
+Wire Wire Line
+	4400 2700 5000 2700
+Wire Wire Line
+	4400 4000 4400 2700
+Wire Wire Line
+	3500 4000 4400 4000
+Wire Wire Line
+	3500 2900 3500 2800
+Wire Wire Line
+	3500 2900 4500 2900
+Wire Wire Line
+	4500 2900 5000 2900
+Wire Wire Line
+	3500 2500 4300 2500
+Wire Wire Line
+	4300 2500 5000 2500
+Wire Wire Line
+	3500 2600 3500 2500
+Wire Wire Line
+	1200 2750 1200 2700
+Wire Wire Line
+	900  2500 1000 2500
+Wire Wire Line
+	900  2900 900  2500
+Wire Wire Line
+	900  2900 2600 2900
+Wire Wire Line
+	2600 2900 3200 2900
+Wire Wire Line
+	3200 2900 3200 2800
+Wire Wire Line
+	3200 2500 3200 2600
+Wire Wire Line
+	2400 2500 2700 2500
+Wire Wire Line
+	2700 2500 3200 2500
+Wire Wire Line
+	2400 1050 2400 2500
+Wire Wire Line
+	9300 1050 2400 1050
+Wire Wire Line
+	9300 1300 9300 1050
+Wire Wire Line
+	9600 1300 9300 1300
+Wire Wire Line
+	9600 1150 9600 1300
+Wire Wire Line
+	1800 2500 2300 2500
+Wire Wire Line
+	2300 2500 2300 950 
+Wire Wire Line
+	2300 950  9300 950 
+Wire Wire Line
+	9300 950  9300 700 
+Wire Wire Line
+	9300 700  9600 700 
+Wire Wire Line
+	9600 700  9600 850 
+Wire Wire Line
+	1700 2500 1400 2500
+Wire Wire Line
+	8200 2400 8500 2100
+Wire Wire Line
+	8500 2100 8700 2100
+Wire Wire Line
+	8700 2100 9450 2100
+Wire Wire Line
+	6400 2200 8200 2200
+Wire Wire Line
+	8200 2200 8500 2500
+Wire Wire Line
+	8500 2500 9450 2500
+Wire Wire Line
+	7200 2400 8200 2400
+Wire Wire Line
+	9600 1450 9600 1400
+Wire Wire Line
+	9600 1400 8700 1400
+Wire Wire Line
+	8700 1400 8700 2100
+Connection ~ 8700 2100
+Wire Wire Line
+	9600 1750 9600 1800
+Wire Wire Line
+	9600 1800 8800 1800
+Wire Wire Line
+	8800 1800 8800 2700
+Wire Wire Line
+	8800 2700 8800 2900
+Connection ~ 8800 2700
+Wire Wire Line
+	9550 2000 9550 2200
+Wire Wire Line
+	9550 2600 9550 2400
+Connection ~ 9550 2600
+Connection ~ 9550 2000
+Wire Wire Line
+	8800 2700 9450 2700
+Wire Wire Line
+	8800 2900 9600 2900
+Wire Wire Line
+	9600 2900 9600 3000
+Wire Wire Line
+	9600 3200 9600 3300
+Wire Wire Line
+	9600 3300 8700 3300
+Wire Wire Line
+	8700 3300 8700 2700
+Wire Wire Line
+	8700 2700 7200 2700
+Wire Wire Line
+	1700 2500 1700 1900
+Wire Wire Line
+	1700 1900 900  1900
+Wire Wire Line
+	900  1900 900  1800
+Wire Wire Line
+	900  1600 900  1500
+Wire Wire Line
+	900  1500 1800 1500
+Wire Wire Line
+	1800 1500 1800 2500
+$Comp
+L CMCHOKE L1
+U 1 1 532E5B34
+P 7000 2550
+F 0 "L1" H 7000 2300 50  0000 C CNN
+F 1 "Wurth 74270117" H 7000 2200 50  0000 C CNN
+F 2 "" V 6950 2650 60  0000 C CNN
+F 3 "" V 6950 2650 60  0000 C CNN
+	1    7000 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2450 6800 2450
+Wire Wire Line
+	6800 2450 6800 2400
+Wire Wire Line
+	7100 2450 7200 2450
+Wire Wire Line
+	7200 2450 7200 2400
+Wire Wire Line
+	6800 2700 6800 2650
+Wire Wire Line
+	6800 2650 6900 2650
+Wire Wire Line
+	7200 2700 7200 2650
+Wire Wire Line
+	7200 2650 7100 2650
+Wire Notes Line
+	2400 3500 4700 3500
+Wire Notes Line
+	4700 3500 4700 4500
+Wire Notes Line
+	4700 4500 2400 4500
+Wire Notes Line
+	2400 4500 2400 3500
+Text Notes 2450 4450 0    60   ~ 0
+ALTERNATE CONNECTION\nCenter-tapped transformer
+$Comp
+L VA_METER M1
+U 1 1 532E6FBE
+P 9600 3850
+F 0 "M1" H 9900 3800 50  0000 C CNN
+F 1 "METER" H 9900 3900 50  0000 C CNN
+F 2 "" H 9600 4000 60  0000 C CNN
+F 3 "" H 9600 4000 60  0000 C CNN
+	1    9600 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L DPDT SW3
+U 1 1 532E6FD2
+P 9150 3650
+F 0 "SW3" H 9000 3700 50  0000 C CNN
+F 1 "DPDT" H 9150 3800 50  0001 C CNN
+F 2 "" H 9150 3650 60  0000 C CNN
+F 3 "" H 9150 3650 60  0000 C CNN
+	1    9150 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L DPDT SW3
+U 2 1 532E6FEE
+P 9150 4050
+F 0 "SW3" H 9000 4100 50  0000 C CNN
+F 1 "DPDT" H 9150 4200 50  0001 C CNN
+F 2 "" H 9150 4050 60  0000 C CNN
+F 3 "" H 9150 4050 60  0000 C CNN
+	2    9150 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3650 9600 3650
+Wire Wire Line
+	9600 3650 9600 3700
+Wire Wire Line
+	9600 4000 9600 4050
+Wire Wire Line
+	9600 4050 9300 4050
+Wire Wire Line
+	6425 3600 9000 3600
+Wire Wire Line
+	9000 4100 6425 4100
+Wire Wire Line
+	6425 3700 8200 3700
+Wire Wire Line
+	8200 3700 8500 4000
+Wire Wire Line
+	8500 4000 9000 4000
+Wire Wire Line
+	6425 4000 8200 4000
+Wire Wire Line
+	8200 4000 8500 3700
+Wire Wire Line
+	8500 3700 9000 3700
+$Comp
+L POT RV1
+U 1 1 532E545F
+P 9600 4600
+F 0 "RV1" H 9900 4650 50  0000 C CNN
+F 1 "V" H 9900 4550 50  0000 C CNN
+F 2 "" H 9600 4650 60  0000 C CNN
+F 3 "" H 9600 4650 60  0000 C CNN
+	1    9600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4500 6400 4500
+Wire Wire Line
+	6400 4600 9400 4600
+Wire Wire Line
+	9400 4600 9400 4550
+Wire Wire Line
+	9400 4550 9500 4550
+Wire Wire Line
+	9600 4700 6400 4700
+$Comp
+L POT RV2
+U 1 1 532E55BE
+P 9600 4950
+F 0 "RV2" H 9900 5000 50  0000 C CNN
+F 1 "MA" H 9900 4900 50  0000 C CNN
+F 2 "" H 9600 5000 60  0000 C CNN
+F 3 "" H 9600 5000 60  0000 C CNN
+	1    9600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4850 6400 4850
+Wire Wire Line
+	6400 4950 9400 4950
+Wire Wire Line
+	9400 4950 9400 4900
+Wire Wire Line
+	9400 4900 9500 4900
+Wire Wire Line
+	9600 5050 6400 5050
+$Comp
+L LED DS1
+U 1 1 532E5721
+P 9600 5300
+F 0 "DS1" H 9900 5350 50  0000 C CNN
+F 1 "LIMIT" H 9900 5250 50  0000 C CNN
+F 2 "" H 9600 5300 60  0000 C CNN
+F 3 "" H 9600 5300 60  0000 C CNN
+	1    9600 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5200 6425 5200
+Wire Wire Line
+	6425 5400 9600 5400
+Wire Wire Line
+	9600 5550 6425 5550
+Wire Wire Line
+	9600 5750 6425 5750
+Wire Wire Line
+	9600 5900 6425 5900
+Wire Wire Line
+	9600 6100 6425 6100
+Text Notes 900  4950 0    60   ~ 12
+MAINS FUSE (F1)
+Text Notes 1900 4950 0    60   ~ 12
+120 VAC
+Text Notes 2500 4950 0    60   ~ 12
+240 VAC
+Text Notes 900  5050 0    60   ~ 0
+PS-1H
+Text Notes 900  5150 0    60   ~ 0
+PS-1L
+Text Notes 900  5250 0    60   ~ 0
+PS-1LL
+Text Notes 1900 5050 0    60   ~ 0
+500mA
+Text Notes 1900 5150 0    60   ~ 0
+500mA
+Text Notes 1900 5250 0    60   ~ 0
+250mA
+Text Notes 2500 5050 0    60   ~ 0
+250mA
+Text Notes 2500 5150 0    60   ~ 0
+250mA
+Text Notes 2500 5250 0    60   ~ 0
+125mA
+Wire Notes Line
+	850  4800 2950 4800
+Wire Notes Line
+	2950 4800 2950 5500
+Wire Notes Line
+	2950 5500 850  5500
+Wire Notes Line
+	850  5500 850  4800
+Text Notes 900  5450 0    50   ~ 0
+Use slow-blow fuse rated for full mains voltage.
+Text Notes 900  5750 0    60   ~ 12
+TRANSFORMER
+Text Notes 1600 5750 0    60   ~ 12
+SINGLE PRIM
+Text Notes 2500 5750 0    60   ~ 12
+CENTER-TAPPED
+Text Notes 900  5850 0    60   ~ 0
+PS-1H
+Text Notes 900  5950 0    60   ~ 0
+PS-1L
+Text Notes 900  6050 0    60   ~ 0
+PS-1LL
+Text Notes 1600 5850 0    60   ~ 0
+25 to 30V, 20VA
+Text Notes 2500 5850 0    60   ~ 0
+50 to 55V, 20VA
+Text Notes 1600 5950 0    60   ~ 0
+16 to 20V, 20VA
+Text Notes 2500 5950 0    60   ~ 0
+36 to 40V, 20VA
+Text Notes 1600 6050 0    60   ~ 0
+16 to 20V, 12VA
+Text Notes 2500 6050 0    60   ~ 0
+36 to 40V, 12VA
+Wire Notes Line
+	850  5600 3350 5600
+Wire Notes Line
+	3350 5600 3350 6250
+Wire Notes Line
+	3350 6250 850  6250
+Wire Notes Line
+	850  6250 850  5600
+Text Notes 900  6200 0    50   ~ 0
+Other transformers may be adapted; see text.
+Wire Notes Line
+	9150 4000 9150 3700
+$Comp
+L LED DS2
+U 1 1 532E76B2
+P 9600 5650
+F 0 "DS2" H 9900 5700 50  0000 C CNN
+F 1 "OVHT" H 9900 5600 50  0000 C CNN
+F 2 "" H 9600 5650 60  0000 C CNN
+F 3 "" H 9600 5650 60  0000 C CNN
+	1    9600 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED DS3
+U 1 1 532E76BD
+P 9600 6000
+F 0 "DS3" H 9900 6050 50  0000 C CNN
+F 1 "POWER" H 9900 5950 50  0000 C CNN
+F 2 "" H 9600 6000 60  0000 C CNN
+F 3 "" H 9600 6000 60  0000 C CNN
+	1    9600 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PS-1-PCB A1
+U 1 1 532E4CDF
+P 5700 2700
+F 0 "A1" H 5700 3900 60  0000 C CNN
+F 1 "PCB" H 5700 3800 60  0000 C CNN
+F 2 "" H 5150 2900 60  0000 C CNN
+F 3 "" H 5150 2900 60  0000 C CNN
+	1    5700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2400 6425 2400
+Wire Wire Line
+	6425 2700 6800 2700
+$Comp
+L TIP105 A1Q17
+U 1 1 532E69BB
+P 4000 5750
+F 0 "A1Q17" H 4400 5800 50  0000 C CNN
+F 1 "TIP105" H 4400 5700 50  0000 C CNN
+F 2 "" H 4000 5750 60  0000 C CNN
+F 3 "" H 4000 5750 60  0000 C CNN
+	1    4000 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R A1R(Q17B)
+U 1 1 532E69CF
+P 4450 5800
+F 0 "A1R(Q17B)" V 4250 5800 50  0000 C CNN
+F 1 "100" V 4350 5800 50  0000 C CNN
+F 2 "" H 4450 5850 60  0000 C CNN
+F 3 "" H 4450 5850 60  0000 C CNN
+	1    4450 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 5800 4200 5800
+Wire Wire Line
+	4550 5800 4975 5800
+Wire Wire Line
+	4975 6100 3850 6100
+Wire Wire Line
+	3850 6100 3850 5950
+Wire Wire Line
+	5000 5400 3850 5400
+Wire Wire Line
+	3850 5400 3850 5550
+$EndSCHEMATC

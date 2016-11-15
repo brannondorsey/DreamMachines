@@ -1,0 +1,225 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "24 oct 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NCP1117ST33T3G U1
+U 1 1 544A3754
+P 3450 2150
+F 0 "U1" H 3450 2400 40  0000 C CNN
+F 1 "NCP1117ST33T3G" H 3450 2350 40  0000 C CNN
+F 2 "~" H 3450 2150 60  0000 C CNN
+F 3 "~" H 3450 2150 60  0000 C CNN
+	1    3450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 544A3763
+P 3450 2750
+F 0 "#PWR01" H 3450 2750 30  0001 C CNN
+F 1 "GND" H 3450 2680 30  0001 C CNN
+F 2 "" H 3450 2750 60  0000 C CNN
+F 3 "" H 3450 2750 60  0000 C CNN
+	1    3450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2400 3450 2750
+Wire Wire Line
+	4200 2300 4200 2100
+Wire Wire Line
+	3850 2100 5350 2100
+$Comp
+L GND #PWR02
+U 1 1 544A3784
+P 4200 2750
+F 0 "#PWR02" H 4200 2750 30  0001 C CNN
+F 1 "GND" H 4200 2680 30  0001 C CNN
+F 2 "" H 4200 2750 60  0000 C CNN
+F 3 "" H 4200 2750 60  0000 C CNN
+	1    4200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2750 4200 2700
+$Comp
+L CAPAPOL C1
+U 1 1 544A37A3
+P 4200 2500
+F 0 "C1" H 4250 2600 40  0000 L CNN
+F 1 "10u" H 4250 2400 40  0000 L CNN
+F 2 "~" H 4300 2350 30  0000 C CNN
+F 3 "~" H 4200 2500 300 0000 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K2
+U 1 1 544A37F2
+P 1500 2350
+F 0 "K2" V 1450 2350 50  0000 C CNN
+F 1 "INPUT" V 1550 2350 40  0000 C CNN
+F 2 "~" H 1500 2350 60  0000 C CNN
+F 3 "~" H 1500 2350 60  0000 C CNN
+	1    1500 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 544A380B
+P 2050 2850
+F 0 "#PWR03" H 2050 2850 30  0001 C CNN
+F 1 "GND" H 2050 2780 30  0001 C CNN
+F 2 "" H 2050 2850 60  0000 C CNN
+F 3 "" H 2050 2850 60  0000 C CNN
+	1    2050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2850 2050 2450
+Wire Wire Line
+	2050 2450 1850 2450
+Wire Wire Line
+	1850 2250 2100 2250
+Wire Wire Line
+	2100 2250 2100 2100
+Wire Wire Line
+	2100 2100 3050 2100
+Wire Wire Line
+	1850 2350 2350 2350
+Text GLabel 2350 2350 2    39   Input ~ 8
+TX_uC
+$Comp
+L CONN_3 K1
+U 1 1 544A383B
+P 5700 2200
+F 0 "K1" V 5650 2200 50  0000 C CNN
+F 1 "OUTPUT" V 5750 2200 40  0000 C CNN
+F 2 "~" H 5700 2200 60  0000 C CNN
+F 3 "~" H 5700 2200 60  0000 C CNN
+	1    5700 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 2100
+$Comp
+L GND #PWR04
+U 1 1 544A384E
+P 5100 2600
+F 0 "#PWR04" H 5100 2600 30  0001 C CNN
+F 1 "GND" H 5100 2530 30  0001 C CNN
+F 2 "" H 5100 2600 60  0000 C CNN
+F 3 "" H 5100 2600 60  0000 C CNN
+	1    5100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2600 5100 2300
+Wire Wire Line
+	5100 2300 5350 2300
+Text GLabel 3800 3500 2    39   Input ~ 8
+RX_wifi
+Wire Wire Line
+	5000 2200 5350 2200
+$Comp
+L R R1
+U 1 1 544A3890
+P 3150 3500
+F 0 "R1" V 3230 3500 40  0000 C CNN
+F 1 "R" V 3157 3501 40  0000 C CNN
+F 2 "~" V 3080 3500 30  0000 C CNN
+F 3 "~" H 3150 3500 30  0000 C CNN
+	1    3150 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 544A389F
+P 3500 3900
+F 0 "R2" V 3580 3900 40  0000 C CNN
+F 1 "1k" V 3507 3901 40  0000 C CNN
+F 2 "~" V 3430 3900 30  0000 C CNN
+F 3 "~" H 3500 3900 30  0000 C CNN
+	1    3500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 544A38AE
+P 3500 4350
+F 0 "#PWR05" H 3500 4350 30  0001 C CNN
+F 1 "GND" H 3500 4280 30  0001 C CNN
+F 2 "" H 3500 4350 60  0000 C CNN
+F 3 "" H 3500 4350 60  0000 C CNN
+	1    3500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4350 3500 4150
+Wire Wire Line
+	3500 3650 3500 3500
+Wire Wire Line
+	3400 3500 3800 3500
+Connection ~ 3500 3500
+Text GLabel 5000 2200 0    39   Input ~ 8
+RX_wifi
+Wire Wire Line
+	2900 3500 2700 3500
+Text GLabel 2700 3500 0    39   Input ~ 8
+TX_uC
+Wire Wire Line
+	2350 2100 2350 1650
+Wire Wire Line
+	2350 1650 2500 1650
+Connection ~ 2350 2100
+Wire Wire Line
+	4400 2100 4400 1650
+Wire Wire Line
+	4400 1650 4550 1650
+Connection ~ 4400 2100
+Text GLabel 2500 1650 2    39   Input ~ 8
+5V
+Text GLabel 4550 1650 2    39   Input ~ 8
+3V3
+$EndSCHEMATC

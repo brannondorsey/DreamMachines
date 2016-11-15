@@ -1,0 +1,187 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MITEVT_ANALOG
+LIBS:MITEVT_CONTACTORS
+LIBS:MITEVT_interface
+LIBS:MITEVT_mcontrollers
+LIBS:MITEVT_OPTO
+LIBS:MITEVT_power
+LIBS:MITEVT_REG
+LIBS:opel_velocity_interface-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4850 2550 1300 1000
+U 55FD8AB1
+F0 "Micro Controller" 60
+F1 "mcu.sch" 60
+F2 "CAN1L" B R 6150 2700 60 
+F3 "CAN1H" B R 6150 2800 60 
+F4 "RXD" I L 4850 2700 60 
+F5 "TXD" O L 4850 2800 60 
+F6 "MCU_RESET_N" I L 4850 2900 60 
+F7 "MCU_PROG_N" I L 4850 3000 60 
+F8 "CAN1P" I R 6150 3350 60 
+F9 "WVS_PULSE" I L 4850 3400 60 
+$EndSheet
+$Sheet
+S 4450 1150 1100 1000
+U 55FDA43C
+F0 "Power Supplies" 60
+F1 "power.sch" 60
+F2 "+12V" I L 4450 1550 60 
+F3 "+3V3" O R 5550 1550 60 
+F4 "+5V" O R 5550 1850 60 
+$EndSheet
+$Sheet
+S 2150 2500 750  950 
+U 55FDAA39
+F0 "Input Connectors" 60
+F1 "inputConnectors.sch" 60
+F2 "+12V" O R 2900 2600 60 
+F3 "RXD" O R 2900 2700 60 
+F4 "TXD" I R 2900 2800 60 
+F5 "MCU_RESET_N" O R 2900 2900 60 
+F6 "MCU_PROG_N" O R 2900 3000 60 
+F7 "WVS-" O R 2900 3300 60 
+F8 "WVS+" O R 2900 3200 60 
+$EndSheet
+$Comp
+L +3.3V #PWR01
+U 1 1 55FDBCE4
+P 5850 1350
+F 0 "#PWR01" H 5850 1200 50  0001 C CNN
+F 1 "+3.3V" H 5850 1490 50  0000 C CNN
+F 2 "" H 5850 1350 60  0000 C CNN
+F 3 "" H 5850 1350 60  0000 C CNN
+	1    5850 1350
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6750 2550 850  1000
+U 55FDCA7F
+F0 "Output Connectors" 60
+F1 "outConnectors.sch" 60
+F2 "CAN1H" B L 6750 2800 60 
+F3 "CAN1L" B L 6750 2700 60 
+F4 "CAN1P" O L 6750 3350 60 
+$EndSheet
+Wire Wire Line
+	4450 1550 4100 1550
+Wire Wire Line
+	4100 2600 2900 2600
+Wire Wire Line
+	5550 1550 5850 1550
+Wire Wire Line
+	5850 1550 5850 1350
+Wire Wire Line
+	2900 2700 4850 2700
+Wire Wire Line
+	2900 2800 4850 2800
+Wire Wire Line
+	2900 2900 4850 2900
+Wire Wire Line
+	2900 3000 4850 3000
+Wire Wire Line
+	6750 2800 6150 2800
+Wire Wire Line
+	6150 2700 6750 2700
+Wire Wire Line
+	6150 3350 6750 3350
+Wire Wire Line
+	4100 1400 4100 2600
+$Sheet
+S 3150 3800 1300 700 
+U 562C193D
+F0 "WVS_Conditioner" 60
+F1 "wvsConditioner.sch" 60
+F2 "WVS-" I L 3150 4300 60 
+F3 "WVS+" I L 3150 4050 60 
+F4 "WVS_PULSE" O R 4450 4150 60 
+$EndSheet
+$Comp
+L +12V #PWR02
+U 1 1 562C1A54
+P 4100 1400
+F 0 "#PWR02" H 4100 1250 50  0001 C CNN
+F 1 "+12V" H 4100 1540 50  0000 C CNN
+F 2 "" H 4100 1400 60  0000 C CNN
+F 3 "" H 4100 1400 60  0000 C CNN
+	1    4100 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 1550
+Wire Wire Line
+	2900 3300 3000 3300
+Wire Wire Line
+	3000 3300 3000 4300
+Wire Wire Line
+	3000 4300 3150 4300
+Wire Wire Line
+	2900 3200 3100 3200
+Wire Wire Line
+	3100 3200 3100 4050
+Wire Wire Line
+	3100 4050 3150 4050
+Wire Wire Line
+	4450 4150 4700 4150
+Wire Wire Line
+	4700 4150 4700 3400
+Wire Wire Line
+	4700 3400 4850 3400
+$Comp
+L +5V #PWR03
+U 1 1 562C508C
+P 6150 1350
+F 0 "#PWR03" H 6150 1200 50  0001 C CNN
+F 1 "+5V" H 6150 1490 50  0000 C CNN
+F 2 "" H 6150 1350 60  0000 C CNN
+F 3 "" H 6150 1350 60  0000 C CNN
+	1    6150 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1850 6150 1850
+Wire Wire Line
+	6150 1850 6150 1350
+$EndSCHEMATC

@@ -1,0 +1,177 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sma
+LIBS:couplermod-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SMA J1
+U 1 1 540619BC
+P 6600 3300
+F 0 "J1" H 6600 3550 60  0000 C CNN
+F 1 "SMA" H 6600 3650 60  0000 C CNN
+F 2 "sma:sma" H 6600 3550 60  0001 C CNN
+F 3 "" H 6600 3550 60  0000 C CNN
+	1    6600 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 540619DA
+P 7350 3550
+F 0 "#PWR3" H 7350 3550 30  0001 C CNN
+F 1 "GND" H 7350 3480 30  0001 C CNN
+F 2 "" H 7350 3550 60  0000 C CNN
+F 3 "" H 7350 3550 60  0000 C CNN
+	1    7350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3050 7350 3050
+Wire Wire Line
+	7350 3050 7350 3550
+Wire Wire Line
+	7150 3150 7350 3150
+Connection ~ 7350 3150
+Wire Wire Line
+	7150 3250 7350 3250
+Connection ~ 7350 3250
+Wire Wire Line
+	7150 3350 7350 3350
+Connection ~ 7350 3350
+$Comp
+L C C2
+U 1 1 54061A05
+P 5900 3200
+F 0 "C2" H 5900 3300 40  0000 L CNN
+F 1 ".022 uF" H 5906 3115 40  0000 L CNN
+F 2 "SMD_Packages:SMD-1210" H 5938 3050 30  0001 C CNN
+F 3 "" H 5900 3200 60  0000 C CNN
+	1    5900 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 54061A17
+P 4700 3200
+F 0 "C1" H 4700 3300 40  0000 L CNN
+F 1 ".022 uF 630V" H 4706 3115 40  0000 L CNN
+F 2 "SMD_Packages:SMD-1210" H 4738 3050 30  0001 C CNN
+F 3 "" H 4700 3200 60  0000 C CNN
+	1    4700 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3200 6200 3200
+$Comp
+L R R1
+U 1 1 54061A2E
+P 5250 3200
+F 0 "R1" V 5330 3200 40  0000 C CNN
+F 1 "2.5M HVC1206 600V" V 5150 3200 40  0000 C CNN
+F 2 "SMD_Packages:SMD-1210" V 5180 3200 30  0001 C CNN
+F 3 "" H 5250 3200 30  0000 C CNN
+	1    5250 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 54061A40
+P 5600 3550
+F 0 "R2" V 5680 3550 40  0000 C CNN
+F 1 "51" V 5607 3551 40  0000 C CNN
+F 2 "SMD_Packages:SMD-0805" V 5530 3550 30  0001 C CNN
+F 3 "" H 5600 3550 30  0000 C CNN
+	1    5600 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 3200 5700 3200
+Wire Wire Line
+	5600 3300 5600 3200
+Connection ~ 5600 3200
+$Comp
+L GND #PWR2
+U 1 1 54061A63
+P 5600 3900
+F 0 "#PWR2" H 5600 3900 30  0001 C CNN
+F 1 "GND" H 5600 3830 30  0001 C CNN
+F 2 "" H 5600 3900 60  0000 C CNN
+F 3 "" H 5600 3900 60  0000 C CNN
+	1    5600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3900 5600 3800
+Wire Wire Line
+	4900 3200 5000 3200
+$Comp
+L CONN_2 P1
+U 1 1 54061A8D
+P 3850 3300
+F 0 "P1" V 3800 3300 40  0000 C CNN
+F 1 "CONN_2" V 3900 3300 40  0000 C CNN
+F 2 "Connect:SIL-2" H 3850 3300 60  0001 C CNN
+F 3 "" H 3850 3300 60  0000 C CNN
+	1    3850 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 3200 4500 3200
+$Comp
+L GND #PWR1
+U 1 1 54061AB9
+P 4300 3900
+F 0 "#PWR1" H 4300 3900 30  0001 C CNN
+F 1 "GND" H 4300 3830 30  0001 C CNN
+F 2 "" H 4300 3900 60  0000 C CNN
+F 3 "" H 4300 3900 60  0000 C CNN
+	1    4300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3900 4300 3400
+Wire Wire Line
+	4300 3400 4200 3400
+$EndSCHEMATC

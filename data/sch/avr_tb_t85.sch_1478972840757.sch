@@ -1,0 +1,341 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:zener-sot23-3
+LIBS:ws2812b
+LIBS:um5k1ntr
+LIBS:rn-cay16-f4
+LIBS:opto2-ltv-826s
+LIBS:opa832
+LIBS:neon14
+LIBS:mosfet-lfpak56
+LIBS:mmpq2907a
+LIBS:microsd_1050270001
+LIBS:mcp1824_ct
+LIBS:max31855
+LIBS:ltv-846s
+LIBS:ltc2471cms
+LIBS:lsm303dlhc
+LIBS:lsm303d
+LIBS:lsm303c
+LIBS:exb-a
+LIBS:enc424j600
+LIBS:ds2438z
+LIBS:dmp2240udm
+LIBS:crystal-4p
+LIBS:bridge-MB2S-TP
+LIBS:BELFuse_Ethernet
+LIBS:avr_usb_3v3-cache
+LIBS:avr6pin
+LIBS:attinyx5
+LIBS:attinyx4
+LIBS:atmel_kk
+LIBS:atmegaxu2
+LIBS:atmega48_88_168_328_tqfp32
+LIBS:ap1117
+LIBS:a4447sljtr
+LIBS:5050RGB
+LIBS:4427
+LIBS:1206network
+LIBS:6multi
+LIBS:pcbbom
+LIBS:avr_tb_t85-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "AVR T85 Test Bench"
+Date "5 mar 2015"
+Rev "-"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINYX5 U1
+U 1 1 53BD7889
+P 3700 1550
+F 0 "U1" H 2150 1800 60  0000 C CNN
+F 1 "ATTINYX5" H 5150 1800 60  0000 C CNN
+F 2 "SO8WIDE" H 3700 1550 60  0000 C CNN
+F 3 "" H 3700 1550 60  0000 C CNN
+F 4 "ATTINY85-20SU-ND" H 3650 1850 60  0000 C CNN "Digikey"
+F 5 "1.40" H 3700 1550 60  0001 C CNN "Cost"
+	1    3700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVRISP6 J1
+U 1 1 53BD7898
+P 3500 2900
+F 0 "J1" H 3300 3150 60  0000 C CNN
+F 1 "AVRISP6" H 3650 2600 60  0000 C CNN
+F 2 "RIBBON6SMT" H 3500 2900 60  0000 C CNN
+F 3 "" H 3500 2900 60  0000 C CNN
+F 4 "952-1922-ND" H 3500 2500 60  0000 C CNN "Digikey"
+F 5 ".41" H 3500 2900 60  0001 C CNN "Cost"
+	1    3500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P1
+U 1 1 53BD78A7
+P 1150 1550
+F 0 "P1" V 1100 1550 50  0000 C CNN
+F 1 "PINS1" V 1200 1550 50  0000 C CNN
+F 2 "PHOENIX1935187" H 1150 1550 60  0000 C CNN
+F 3 "" H 1150 1550 60  0000 C CNN
+F 4 "277-1647-ND" H 1150 1250 60  0000 C CNN "Digikey"
+F 5 ".278" V 1150 1550 60  0001 C CNN "Cost"
+	1    1150 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P2
+U 1 1 53BD78B4
+P 6300 1550
+F 0 "P2" V 6250 1550 50  0000 C CNN
+F 1 "PINS2" V 6350 1550 50  0000 C CNN
+F 2 "PHOENIX1935187" H 6300 1550 60  0000 C CNN
+F 3 "" H 6300 1550 60  0000 C CNN
+F 4 "277-1647-ND" H 6800 1400 60  0000 C CNN "Digikey"
+F 5 ".278" V 6300 1550 60  0001 C CNN "Cost"
+	1    6300 1550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5650 1400 5950 1400
+Wire Wire Line
+	5950 1500 5650 1500
+Wire Wire Line
+	5650 1600 5950 1600
+Wire Wire Line
+	5950 1700 5650 1700
+Wire Wire Line
+	5700 1400 5700 2800
+Wire Wire Line
+	5700 2800 4050 2800
+Connection ~ 5700 1400
+Wire Wire Line
+	4050 2900 5750 2900
+Wire Wire Line
+	5750 2900 5750 1700
+Connection ~ 5750 1700
+Wire Wire Line
+	5800 1600 5800 2600
+Wire Wire Line
+	5800 2600 2850 2600
+Wire Wire Line
+	2850 2600 2850 2800
+Wire Wire Line
+	2850 2800 2950 2800
+Connection ~ 5800 1600
+Wire Wire Line
+	2950 2900 2800 2900
+Wire Wire Line
+	2800 2900 2800 2550
+Wire Wire Line
+	2800 2550 5850 2550
+Wire Wire Line
+	5850 2550 5850 1500
+Connection ~ 5850 1500
+Wire Wire Line
+	2950 3000 1650 3000
+Wire Wire Line
+	1650 3000 1650 1400
+Wire Wire Line
+	1500 1400 1800 1400
+Connection ~ 1650 1400
+Wire Wire Line
+	1800 1500 1500 1500
+Wire Wire Line
+	1500 1600 1800 1600
+Wire Wire Line
+	1800 1700 1500 1700
+Wire Wire Line
+	1600 1700 1600 3350
+Wire Wire Line
+	1600 3350 4050 3350
+Wire Wire Line
+	4050 3000 4050 3550
+Connection ~ 1600 1700
+$Comp
+L +5V #PWR01
+U 1 1 53BD79DF
+P 5800 1300
+F 0 "#PWR01" H 5800 1390 20  0001 C CNN
+F 1 "+5V" H 5800 1390 30  0000 C CNN
+F 2 "" H 5800 1300 60  0000 C CNN
+F 3 "" H 5800 1300 60  0000 C CNN
+	1    5800 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1300 5800 1400
+Connection ~ 5800 1400
+$Comp
+L GND #PWR02
+U 1 1 53BD7A0E
+P 4200 3600
+F 0 "#PWR02" H 4200 3600 30  0001 C CNN
+F 1 "GND" H 4200 3530 30  0001 C CNN
+F 2 "" H 4200 3600 60  0000 C CNN
+F 3 "" H 4200 3600 60  0000 C CNN
+	1    4200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1850 5900 1850
+Wire Wire Line
+	5900 1850 5900 1700
+Connection ~ 5900 1700
+$Comp
+L C C1
+U 1 1 53BD7A57
+P 4600 3300
+F 0 "C1" H 4600 3400 40  0000 L CNN
+F 1 ".1u" H 4606 3215 40  0000 L CNN
+F 2 "SM0805" H 4638 3150 30  0000 C CNN
+F 3 "" H 4600 3300 60  0000 C CNN
+F 4 "1276-1007-1-ND" H 4600 3500 60  0000 C CNN "Digikey"
+F 5 ".031" H 4600 3300 60  0001 C CNN "Cost"
+	1    4600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 53BD7A70
+P 4850 3300
+F 0 "C2" H 4850 3400 40  0000 L CNN
+F 1 "10u" H 4856 3215 40  0000 L CNN
+F 2 "SM0805" H 4888 3150 30  0000 C CNN
+F 3 "" H 4850 3300 60  0000 C CNN
+F 4 "490-3886-1-ND" H 5400 3250 60  0000 C CNN "Digikey"
+F 5 ".171" H 4850 3300 60  0001 C CNN "Cost"
+	1    4850 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3550 4850 3550
+Wire Wire Line
+	4600 3550 4600 3500
+Connection ~ 4050 3350
+Wire Wire Line
+	4850 3550 4850 3500
+Connection ~ 4600 3550
+Wire Wire Line
+	4850 3100 4850 3000
+Wire Wire Line
+	4850 3000 4500 3000
+Wire Wire Line
+	4500 3000 4500 2800
+Connection ~ 4500 2800
+Wire Wire Line
+	4600 3100 4600 3000
+Connection ~ 4600 3000
+Wire Wire Line
+	4200 3600 4200 3550
+Connection ~ 4200 3550
+$Comp
+L CONN_1 P3
+U 1 1 540562C6
+P 4700 3700
+F 0 "P3" H 4780 3700 40  0001 L CNN
+F 1 "CONN_1" H 4700 3755 30  0001 C CNN
+F 2 ".2SMTPIN" H 4700 3700 60  0001 C CNN
+F 3 "" H 4700 3700 60  0000 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P4
+U 1 1 540562D5
+P 4700 3800
+F 0 "P4" H 4780 3800 40  0001 L CNN
+F 1 "CONN_1" H 4700 3855 30  0001 C CNN
+F 2 ".2SMTPIN" H 4700 3800 60  0001 C CNN
+F 3 "" H 4700 3800 60  0000 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3800 4350 3800
+Wire Wire Line
+	4350 3800 4350 3550
+Connection ~ 4350 3550
+Wire Wire Line
+	4350 3700 4550 3700
+Connection ~ 4350 3700
+$Comp
+L CONN_4 P5
+U 1 1 54DB6288
+P 1150 1050
+F 0 "P5" V 1100 1050 50  0000 C CNN
+F 1 "PINS1-MATE" V 1200 1050 50  0000 C CNN
+F 2 "" H 1150 1050 60  0000 C CNN
+F 3 "" H 1150 1050 60  0000 C CNN
+F 4 "277-1609-ND" H 1150 1350 60  0000 C CNN "Digikey"
+F 5 ".69" V 1150 1050 60  0001 C CNN "Cost"
+	1    1150 1050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P6
+U 1 1 54DB62CF
+P 6300 1050
+F 0 "P6" V 6250 1050 50  0000 C CNN
+F 1 "PINS2-MATE" V 6350 1050 50  0000 C CNN
+F 2 "" H 6300 1050 60  0000 C CNN
+F 3 "" H 6300 1050 60  0000 C CNN
+F 4 "277-1609-ND" H 6800 1000 60  0000 C CNN "Digikey"
+F 5 ".69" V 6300 1050 60  0001 C CNN "Cost"
+	1    6300 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L PCBBOM PCB1
+U 1 1 54DB6539
+P 7100 2700
+F 0 "PCB1" H 6950 2900 60  0000 C CNN
+F 1 "https://oshpark.com/shared_projects/ZDUBhs9S" H 7000 2250 60  0000 C CNN
+F 2 "~" H 7100 2700 60  0000 C CNN
+F 3 "~" H 7100 2700 60  0000 C CNN
+F 4 "N/A" H 7100 2700 60  0001 C CNN "Digikey"
+F 5 "2.15" H 7100 2700 60  0001 C CNN "Cost"
+	1    7100 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 5350 3650 0    60   ~ 0
+NOTE: All costs are for 10 quantity as of Feb 11, 2015
+$EndSCHEMATC

@@ -1,0 +1,437 @@
+EESchema Schematic File Version 2  date 22/01/2013 21:21:55
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RMC
+LIBS:opendous
+LIBS:sango-bob-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 5 9
+Title "Sango-bc"
+Date "22 jan 2013"
+Rev "0.2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	3450 1050 3450 2700
+Wire Wire Line
+	8350 2100 8350 2050
+Wire Wire Line
+	6350 1600 6350 1650
+Wire Wire Line
+	5800 1900 5800 2300
+Connection ~ 5200 2100
+Wire Wire Line
+	5200 2100 5200 2050
+Connection ~ 4100 1600
+Wire Wire Line
+	5400 1600 3700 1600
+Connection ~ 1550 2300
+Wire Wire Line
+	1550 2400 1300 2400
+Wire Wire Line
+	1550 2400 1550 1800
+Connection ~ 1450 2100
+Wire Wire Line
+	1450 1600 1450 2200
+Wire Wire Line
+	1450 2200 1300 2200
+Connection ~ 3800 2100
+Wire Wire Line
+	1300 1800 2150 1800
+Connection ~ 2400 2100
+Wire Wire Line
+	2400 2100 2400 2050
+Connection ~ 2900 1600
+Connection ~ 3800 1600
+Wire Wire Line
+	4100 1600 4100 1350
+Connection ~ 2600 1600
+Wire Wire Line
+	2900 1350 2900 1600
+Connection ~ 8100 1600
+Wire Wire Line
+	8100 1700 8100 1600
+Wire Wire Line
+	8100 1700 8050 1700
+Connection ~ 6600 1600
+Wire Wire Line
+	1200 4350 1200 4250
+Wire Wire Line
+	2600 2100 2600 2300
+Wire Wire Line
+	2600 1600 2600 1300
+Wire Wire Line
+	6600 1300 6600 1600
+Connection ~ 5800 2100
+Connection ~ 6350 2100
+Wire Wire Line
+	1200 4850 1200 4750
+Wire Wire Line
+	1200 3750 1200 3650
+Wire Wire Line
+	7250 1600 6200 1600
+Connection ~ 6350 1600
+Connection ~ 5200 1600
+Wire Wire Line
+	8050 1600 8350 1600
+Connection ~ 7650 2100
+Wire Wire Line
+	3800 2100 3800 2300
+Wire Wire Line
+	3800 1300 3800 1600
+Wire Wire Line
+	8350 1450 8600 1450
+Wire Wire Line
+	8600 1450 8600 1300
+Connection ~ 8350 1450
+Wire Wire Line
+	2900 2000 2900 2100
+Connection ~ 2600 2100
+Connection ~ 2900 2100
+Wire Wire Line
+	3200 2100 2150 2100
+Wire Wire Line
+	2150 2100 2150 1800
+Wire Wire Line
+	2400 1600 2400 1650
+Connection ~ 2400 1600
+Wire Wire Line
+	3200 1600 1300 1600
+Wire Wire Line
+	1300 2100 1450 2100
+Connection ~ 1450 1600
+Wire Wire Line
+	1300 2300 1550 2300
+Connection ~ 1550 1800
+Wire Wire Line
+	4100 2100 4100 2000
+Wire Wire Line
+	3700 2100 8350 2100
+Connection ~ 4100 2100
+Wire Wire Line
+	5200 1650 5200 1600
+Wire Wire Line
+	6350 2100 6350 2050
+Wire Wire Line
+	7650 1900 7650 2100
+Wire Wire Line
+	8350 1650 8350 1300
+Connection ~ 8350 1600
+$Comp
+L HOLE_RMC H504
+U 1 1 50E38389
+P 10050 4600
+F 0 "H504" H 10250 4600 60  0000 C CNN
+F 1 "HOLE_RMC" H 10050 4750 60  0001 C CNN
+	1    10050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L HOLE_RMC H503
+U 1 1 50E38388
+P 10050 4350
+F 0 "H503" H 10250 4350 60  0000 C CNN
+F 1 "HOLE_RMC" H 10050 4500 60  0001 C CNN
+	1    10050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HOLE_RMC H502
+U 1 1 50E38387
+P 10050 4100
+F 0 "H502" H 10250 4100 60  0000 C CNN
+F 1 "HOLE_RMC" H 10050 4250 60  0001 C CNN
+	1    10050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HOLE_RMC H501
+U 1 1 50E38384
+P 10050 3850
+F 0 "H501" H 10250 3850 60  0000 C CNN
+F 1 "HOLE_RMC" H 10050 4000 60  0001 C CNN
+	1    10050 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 6300 2800 0    60   Italic 0
+Could power 5V from USB?
+$Comp
+L CONN_4 P506
+U 1 1 50E1D128
+P 950 2250
+F 0 "P506" V 900 2250 50  0000 C CNN
+F 1 "PWR_12V" V 1000 2250 50  0000 C CNN
+	1    950  2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG066
+U 1 1 50E0735A
+P 4100 2000
+F 0 "#FLG066" H 4100 2095 30  0001 C CNN
+F 1 "PWR_FLAG" H 4100 2180 30  0000 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+Text Notes 1050 5200 0    60   ~ 0
+Power LED
+Text Notes 9700 4950 0    60   ~ 0
+Mounting holes
+Text Notes 8100 1100 0    60   ~ 0
+3.3V 0.8A max
+Text Notes 6400 1100 0    60   ~ 0
+5V 1A max
+Text Notes 1850 2950 0    60   ~ 0
+Use thick trace for +12P, GNDPWR\nConnect nets with PCB trace
+$Comp
+L PWR_FLAG #FLG067
+U 1 1 50D59DDD
+P 4100 1350
+F 0 "#FLG067" H 4100 1445 30  0001 C CNN
+F 1 "PWR_FLAG" H 4100 1530 30  0000 C CNN
+	1    4100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG068
+U 1 1 50D59DDB
+P 2900 2000
+F 0 "#FLG068" H 2900 2095 30  0001 C CNN
+F 1 "PWR_FLAG" H 2900 2180 30  0000 C CNN
+	1    2900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR069
+U 1 1 50D58C15
+P 8600 1300
+F 0 "#PWR069" H 8600 1400 30  0001 C CNN
+F 1 "VCC" H 8600 1400 30  0000 C CNN
+	1    8600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R501
+U 1 1 5065ABDD
+P 3450 1600
+F 0 "R501" V 3530 1600 50  0000 C CNN
+F 1 "0R" V 3450 1600 50  0000 C CNN
+	1    3450 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R502
+U 1 1 5065ABD7
+P 3450 2100
+F 0 "R502" V 3530 2100 50  0000 C CNN
+F 1 "0R" V 3450 2100 50  0000 C CNN
+	1    3450 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR070
+U 1 1 5065ABCB
+P 3800 2300
+F 0 "#PWR070" H 3800 2300 30  0001 C CNN
+F 1 "GND" H 3800 2230 30  0001 C CNN
+	1    3800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR071
+U 1 1 5065ABBE
+P 3800 1300
+F 0 "#PWR071" H 3800 1250 20  0001 C CNN
+F 1 "+12V" H 3800 1400 30  0000 C CNN
+	1    3800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR072
+U 1 1 5065ABB1
+P 2600 2300
+F 0 "#PWR072" H 2600 2350 40  0001 C CNN
+F 1 "GNDPWR" H 2600 2220 40  0000 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C503
+U 1 1 504D1B3E
+P 8350 1850
+F 0 "C503" H 8400 1950 50  0000 L CNN
+F 1 "10uF" H 8400 1750 50  0000 L CNN
+	1    8350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR073
+U 1 1 504A2506
+P 8350 1300
+F 0 "#PWR073" H 8350 1400 30  0001 C CNN
+F 1 "VDD" H 8350 1410 30  0000 C CNN
+	1    8350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR074
+U 1 1 5047D143
+P 1200 4850
+F 0 "#PWR074" H 1200 4850 30  0001 C CNN
+F 1 "GND" H 1200 4780 30  0001 C CNN
+	1    1200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D501
+U 1 1 5047D121
+P 1200 4550
+F 0 "D501" H 1200 4650 50  0000 C CNN
+F 1 "LED" H 1200 4450 50  0000 C CNN
+	1    1200 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R503
+U 1 1 5047D118
+P 1200 4000
+F 0 "R503" V 1280 4000 50  0000 C CNN
+F 1 "1k" V 1200 4000 50  0000 C CNN
+	1    1200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR075
+U 1 1 5047D113
+P 1200 3650
+F 0 "#PWR075" H 1200 3740 20  0001 C CNN
+F 1 "+5V" H 1200 3740 30  0000 C CNN
+	1    1200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C504
+U 1 1 5047D0FA
+P 2400 1850
+F 0 "C504" H 2450 1950 50  0000 L CNN
+F 1 "1000uF" H 2450 1750 50  0000 L CNN
+	1    2400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG076
+U 1 1 5047CFEE
+P 2900 1350
+F 0 "#FLG076" H 2900 1445 30  0001 C CNN
+F 1 "PWR_FLAG" H 2900 1530 30  0000 C CNN
+	1    2900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1117 U502
+U 1 1 5047CFB9
+P 7650 1650
+F 0 "U502" H 7800 1454 50  0000 C CNN
+F 1 "1117" H 7650 1800 40  0000 C CNN
+	1    7650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR077
+U 1 1 5047CCAB
+P 6600 1300
+F 0 "#PWR077" H 6600 1390 20  0001 C CNN
+F 1 "+5V" H 6600 1390 30  0000 C CNN
+	1    6600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR078
+U 1 1 5047CCA3
+P 5800 2300
+F 0 "#PWR078" H 5800 2300 30  0001 C CNN
+F 1 "GND" H 5800 2230 30  0001 C CNN
+	1    5800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C502
+U 1 1 5047CC9A
+P 6350 1850
+F 0 "C502" H 6400 1950 50  0000 L CNN
+F 1 "100nF" H 6400 1750 50  0000 L CNN
+	1    6350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C501
+U 1 1 5047CC95
+P 5200 1850
+F 0 "C501" H 5250 1950 50  0000 L CNN
+F 1 "330nF" H 5250 1750 50  0000 L CNN
+	1    5200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U501
+U 1 1 5047CC85
+P 5800 1650
+F 0 "U501" H 5950 1454 60  0000 C CNN
+F 1 "7805" H 5800 1850 60  0000 C CNN
+	1    5800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12P #PWR079
+U 1 1 5047CC3C
+P 2600 1300
+F 0 "#PWR079" H 2600 1270 30  0001 C CNN
+F 1 "+12P" H 2600 1400 30  0000 C CNN
+	1    2600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P501
+U 1 1 5047CC1B
+P 950 1700
+F 0 "P501" V 900 1700 40  0000 C CNN
+F 1 "PWR_12V" V 1000 1700 40  0000 C CNN
+	1    950  1700
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,218 @@
+EESchema Schematic File Version 2
+LIBS:ej2
+LIBS:ej2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SP3232V2 U2
+U 1 1 565DECAD
+P 5600 4400
+F 0 "U2" H 4850 5950 60  0000 C CNN
+F 1 "SP3232V2" H 5150 4550 60  0000 C CNN
+F 2 "ej2:SP3232ECN-SOIC16N" H 4850 5950 60  0001 C CNN
+F 3 "" H 4850 5950 60  0000 C CNN
+F 4 "Value" H 5600 4400 60  0001 C CNN "Digikey/Mouser"
+	1    5600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4050 3900 4050
+Wire Wire Line
+	4550 3950 3900 3950
+Wire Wire Line
+	4550 3850 3900 3850
+Wire Wire Line
+	4550 3750 3900 3750
+Entry Wire Line
+	3800 3650 3900 3750
+Entry Wire Line
+	3800 3750 3900 3850
+Entry Wire Line
+	3800 3850 3900 3950
+Entry Wire Line
+	3800 3950 3900 4050
+Wire Bus Line
+	3800 3950 3800 3600
+Wire Bus Line
+	3800 3600 3600 3600
+Text HLabel 3600 3600 0    60   BiDi ~ 0
+RS[1..4]
+$Comp
+L C C1
+U 1 1 565E181B
+P 4150 3100
+F 0 "C1" H 4150 3200 40  0000 L CNN
+F 1 "C" H 4156 3015 40  0000 L CNN
+F 2 "ej2:C_1206_HandSoldering" H 4188 2950 30  0001 C CNN
+F 3 "" H 4150 3100 60  0000 C CNN
+	1    4150 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR09
+U 1 1 565E1956
+P 6000 2500
+F 0 "#PWR09" H 6000 2460 30  0001 C CNN
+F 1 "+3.3V" H 6000 2610 30  0000 C CNN
+F 2 "" H 6000 2500 60  0000 C CNN
+F 3 "" H 6000 2500 60  0000 C CNN
+	1    6000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 565E1970
+P 4150 3500
+F 0 "C2" H 4150 3600 40  0000 L CNN
+F 1 "C" H 4156 3415 40  0000 L CNN
+F 2 "ej2:C_1206_HandSoldering" H 4188 3350 30  0001 C CNN
+F 3 "" H 4150 3500 60  0000 C CNN
+	1    4150 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 565E1A37
+P 6200 3400
+F 0 "C3" H 6200 3500 40  0000 L CNN
+F 1 "C" H 6206 3315 40  0000 L CNN
+F 2 "ej2:C_1206_HandSoldering" H 6238 3250 30  0001 C CNN
+F 3 "" H 6200 3400 60  0000 C CNN
+	1    6200 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3100 4350 3100
+Wire Wire Line
+	3950 3100 3900 3100
+Wire Wire Line
+	3900 3100 3900 3250
+Wire Wire Line
+	3900 3250 4550 3250
+Wire Wire Line
+	4350 3500 4550 3500
+Wire Wire Line
+	4550 3350 3900 3350
+Wire Wire Line
+	3900 3350 3900 3500
+Wire Wire Line
+	3900 3500 3950 3500
+Wire Wire Line
+	5800 3400 6000 3400
+$Comp
+L C C4
+U 1 1 565E1BFF
+P 6450 3550
+F 0 "C4" H 6450 3650 40  0000 L CNN
+F 1 "C" H 6456 3465 40  0000 L CNN
+F 2 "ej2:C_1206_HandSoldering" H 6488 3400 30  0001 C CNN
+F 3 "" H 6450 3550 60  0000 C CNN
+	1    6450 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 3550 5800 3550
+Wire Wire Line
+	5800 3200 6800 3200
+Wire Wire Line
+	6800 3050 6800 3550
+Wire Wire Line
+	6800 3550 6650 3550
+Wire Wire Line
+	6400 3400 7250 3400
+Connection ~ 6800 3400
+$Comp
+L GND #PWR010
+U 1 1 565E1E18
+P 6950 3500
+F 0 "#PWR010" H 6950 3500 30  0001 C CNN
+F 1 "GND" H 6950 3430 30  0001 C CNN
+F 2 "" H 6950 3500 60  0000 C CNN
+F 3 "" H 6950 3500 60  0000 C CNN
+	1    6950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3400 6950 3500
+Wire Wire Line
+	6000 3100 5800 3100
+Wire Wire Line
+	6000 2500 6000 3100
+$Comp
+L DB9 J1
+U 1 1 565E1EEC
+P 7700 4050
+F 0 "J1" H 7700 4600 70  0000 C CNN
+F 1 "DB9" H 7700 3500 70  0000 C CNN
+F 2 "ej2:DB9_F_TH" H 7700 4050 60  0001 C CNN
+F 3 "" H 7700 4050 60  0000 C CNN
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3750 6750 3750
+Wire Wire Line
+	6750 3750 6750 4250
+Wire Wire Line
+	6750 4250 7250 4250
+Wire Wire Line
+	5800 3850 6950 3850
+Wire Wire Line
+	6950 3850 6950 3950
+Wire Wire Line
+	6950 3950 7250 3950
+Wire Wire Line
+	5800 3950 6850 3950
+Wire Wire Line
+	6850 3950 6850 4050
+Wire Wire Line
+	6850 4050 7250 4050
+Wire Wire Line
+	5800 4050 6600 4050
+Wire Wire Line
+	6600 4050 6600 4150
+Wire Wire Line
+	6600 4150 7250 4150
+NoConn ~ 7250 3750
+NoConn ~ 7250 3850
+NoConn ~ 7250 4350
+NoConn ~ 7250 4450
+Wire Wire Line
+	7250 3400 7250 3650
+Connection ~ 6950 3400
+$Comp
+L C C5
+U 1 1 565E243B
+P 6800 2850
+F 0 "C5" H 6800 2950 40  0000 L CNN
+F 1 "C" H 6806 2765 40  0000 L CNN
+F 2 "ej2:C_1206_HandSoldering" H 6838 2700 30  0001 C CNN
+F 3 "" H 6800 2850 60  0000 C CNN
+	1    6800 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 3200
+Wire Wire Line
+	6800 2650 6000 2650
+Connection ~ 6000 2650
+Text Label 4050 3750 0    60   ~ 0
+RS2
+Text Label 4050 3850 0    60   ~ 0
+RS3
+Text Label 4050 3950 0    60   ~ 0
+RS1
+Text Label 4050 4050 0    60   ~ 0
+RS4
+$EndSCHEMATC

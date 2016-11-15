@@ -1,0 +1,380 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:borniers
+LIBS:drv8303
+LIBS:dual-pmos
+LIBS:net-tie
+LIBS:ad8691
+LIBS:drv8301
+LIBS:tlv62566
+LIBS:mcp9700
+LIBS:fet_parts
+LIBS:st-shield-rev1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C41
+U 1 1 561CAEFA
+P 7175 3425
+F 0 "C41" H 7200 3525 50  0000 L CNN
+F 1 ".1u" H 7200 3325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7213 3275 30  0001 C CNN
+F 3 "" H 7175 3425 60  0000 C CNN
+	1    7175 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C43
+U 1 1 561CAF3B
+P 7550 3225
+F 0 "C43" H 7575 3325 50  0000 L CNN
+F 1 ".01u" H 7575 3125 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7588 3075 30  0001 C CNN
+F 3 "" H 7550 3225 60  0000 C CNN
+	1    7550 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R70
+U 1 1 561CB05B
+P 7550 3625
+F 0 "R70" H 7650 3625 50  0000 C CNN
+F 1 "3.3" V 7550 3625 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7480 3625 30  0001 C CNN
+F 3 "" H 7550 3625 30  0000 C CNN
+	1    7550 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C40
+U 1 1 561CB28C
+P 6925 3425
+F 0 "C40" H 6950 3525 50  0000 L CNN
+F 1 "1u" H 6950 3325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6963 3275 30  0001 C CNN
+F 3 "" H 6925 3425 60  0000 C CNN
+	1    6925 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C39
+U 1 1 561CB2BE
+P 6675 3425
+F 0 "C39" H 6700 3525 50  0000 L CNN
+F 1 "2.2u" H 6700 3325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6713 3275 30  0001 C CNN
+F 3 "" H 6675 3425 60  0000 C CNN
+F 4 "63V" H 6675 3425 60  0001 C CNN "Rating"
+	1    6675 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L TVS D8
+U 1 1 561CB2D2
+P 7950 3425
+F 0 "D8" V 7950 3575 50  0000 C CNN
+F 1 "TVS" V 8050 3575 50  0000 C CNN
+F 2 "Diodes_SMD:Diode-DO-214AB" H 7950 3425 60  0001 C CNN
+F 3 "" H 7950 3425 60  0000 C CNN
+	1    7950 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR041
+U 1 1 561CB468
+P 7950 3850
+F 0 "#PWR041" H 7950 3600 50  0001 C CNN
+F 1 "GND" H 7950 3700 50  0000 C CNN
+F 2 "" H 7950 3850 60  0000 C CNN
+F 3 "" H 7950 3850 60  0000 C CNN
+	1    7950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR042
+U 1 1 561CB49B
+P 7550 3850
+F 0 "#PWR042" H 7550 3600 50  0001 C CNN
+F 1 "GND" H 7550 3700 50  0000 C CNN
+F 2 "" H 7550 3850 60  0000 C CNN
+F 3 "" H 7550 3850 60  0000 C CNN
+	1    7550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR043
+U 1 1 561CB4C7
+P 7175 3850
+F 0 "#PWR043" H 7175 3600 50  0001 C CNN
+F 1 "GND" H 7175 3700 50  0000 C CNN
+F 2 "" H 7175 3850 60  0000 C CNN
+F 3 "" H 7175 3850 60  0000 C CNN
+	1    7175 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR044
+U 1 1 561CB4F3
+P 6925 3850
+F 0 "#PWR044" H 6925 3600 50  0001 C CNN
+F 1 "GND" H 6925 3700 50  0000 C CNN
+F 2 "" H 6925 3850 60  0000 C CNN
+F 3 "" H 6925 3850 60  0000 C CNN
+	1    6925 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR045
+U 1 1 561CB51F
+P 6675 3850
+F 0 "#PWR045" H 6675 3600 50  0001 C CNN
+F 1 "GND" H 6675 3700 50  0000 C CNN
+F 2 "" H 6675 3850 60  0000 C CNN
+F 3 "" H 6675 3850 60  0000 C CNN
+	1    6675 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 6675 2850 1    60   Input ~ 0
+PVDD
+$Comp
+L PWR_FLAG #FLG046
+U 1 1 561CC325
+P 7950 3025
+F 0 "#FLG046" H 7950 3120 50  0001 C CNN
+F 1 "PWR_FLAG" H 7950 3205 50  0000 C CNN
+F 2 "" H 7950 3025 60  0000 C CNN
+F 3 "" H 7950 3025 60  0000 C CNN
+	1    7950 3025
+	1    0    0    -1  
+$EndComp
+Text Notes 6950 2600 0    60   ~ 0
+Supply decoupling and\ntransient protection
+Text Notes 8775 2175 0    60   ~ 0
+Bulk capacitance off board\nto save room
+Text GLabel 5800 2775 1    60   Input ~ 0
+3V3
+$Comp
+L LED D6
+U 1 1 561CD10C
+P 5800 3050
+F 0 "D6" V 5800 3175 50  0000 C CNN
+F 1 "GREEN" V 5800 2825 50  0000 C CNN
+F 2 "SMD_Packages:SMD-1206_Pol" H 5800 3050 60  0001 C CNN
+F 3 "" H 5800 3050 60  0000 C CNN
+	1    5800 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R67
+U 1 1 561CD18D
+P 5800 3525
+F 0 "R67" H 5925 3525 50  0000 C CNN
+F 1 "100" V 5800 3525 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5730 3525 30  0001 C CNN
+F 3 "" H 5800 3525 30  0000 C CNN
+	1    5800 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR047
+U 1 1 561CD1E4
+P 5800 3750
+F 0 "#PWR047" H 5800 3500 50  0001 C CNN
+F 1 "GND" H 5800 3600 50  0000 C CNN
+F 2 "" H 5800 3750 60  0000 C CNN
+F 3 "" H 5800 3750 60  0000 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 5400 2500 0    60   ~ 0
+Power Indicator
+$Comp
+L R R64
+U 1 1 561F8C5D
+P 4050 3225
+F 0 "R64" V 4175 3175 50  0000 C CNN
+F 1 "82.5k" V 4050 3225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3980 3225 30  0001 C CNN
+F 3 "" H 4050 3225 30  0000 C CNN
+F 4 "1%" V 4175 3300 60  0000 C CNN "Tolerance"
+	1    4050 3225
+	0    1    1    0   
+$EndComp
+$Comp
+L R R66
+U 1 1 561F9CE4
+P 4300 3500
+F 0 "R66" H 4425 3525 50  0000 C CNN
+F 1 "4.75k" V 4300 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4230 3500 30  0001 C CNN
+F 3 "" H 4300 3500 30  0000 C CNN
+F 4 "1%" H 4425 3425 60  0000 C CNN "Tolerance"
+	1    4300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C38
+U 1 1 561F9EE0
+P 4625 3500
+F 0 "C38" H 4650 3600 50  0000 L CNN
+F 1 ".1u" H 4650 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4663 3350 30  0001 C CNN
+F 3 "" H 4625 3500 60  0000 C CNN
+	1    4625 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R65
+U 1 1 561F9F4C
+P 4300 2950
+F 0 "R65" H 4425 2975 50  0000 C CNN
+F 1 "30.1k" V 4300 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4230 2950 30  0001 C CNN
+F 3 "" H 4300 2950 30  0000 C CNN
+F 4 "1%" H 4425 2875 60  0000 C CNN "Tolerance"
+	1    4300 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3725 3225 0    60   Input ~ 0
+PVDD
+Text HLabel 4850 3225 2    60   Output ~ 0
+DC_IN
+$Comp
+L GND #PWR048
+U 1 1 561FA08B
+P 4625 3775
+F 0 "#PWR048" H 4625 3525 50  0001 C CNN
+F 1 "GND" H 4625 3625 50  0000 C CNN
+F 2 "" H 4625 3775 60  0000 C CNN
+F 3 "" H 4625 3775 60  0000 C CNN
+	1    4625 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR049
+U 1 1 561FA0C3
+P 4300 3775
+F 0 "#PWR049" H 4300 3525 50  0001 C CNN
+F 1 "GND" H 4300 3625 50  0000 C CNN
+F 2 "" H 4300 3775 60  0000 C CNN
+F 3 "" H 4300 3775 60  0000 C CNN
+	1    4300 3775
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 2700 1    60   Input ~ 0
+3V3
+Wire Wire Line
+	7550 3375 7550 3475
+Wire Wire Line
+	7175 3575 7175 3850
+Wire Wire Line
+	7175 3025 7175 3275
+Wire Wire Line
+	7550 3025 7550 3075
+Wire Wire Line
+	7550 3775 7550 3850
+Wire Wire Line
+	6925 3575 6925 3850
+Wire Wire Line
+	6925 3275 6925 3025
+Wire Wire Line
+	6675 3575 6675 3850
+Wire Wire Line
+	6675 2850 6675 3275
+Wire Wire Line
+	6675 3025 7950 3025
+Connection ~ 6925 3025
+Connection ~ 7175 3025
+Wire Wire Line
+	7950 3025 7950 3125
+Connection ~ 7550 3025
+Wire Wire Line
+	7950 3725 7950 3850
+Connection ~ 6675 3025
+Wire Notes Line
+	6425 2400 8300 2400
+Wire Wire Line
+	5800 2775 5800 2850
+Wire Wire Line
+	5800 3250 5800 3375
+Wire Wire Line
+	5800 3675 5800 3750
+Wire Notes Line
+	5325 2400 5325 4075
+Wire Notes Line
+	8300 4075 6425 4075
+Wire Notes Line
+	8300 2400 8300 4075
+Wire Notes Line
+	6425 4075 6425 2400
+Wire Notes Line
+	6300 2400 6300 4075
+Wire Notes Line
+	5325 2400 6300 2400
+Wire Notes Line
+	6300 4075 5325 4075
+Wire Wire Line
+	3725 3225 3900 3225
+Wire Wire Line
+	4200 3225 4850 3225
+Wire Wire Line
+	4300 3100 4300 3350
+Connection ~ 4300 3225
+Wire Wire Line
+	4300 3650 4300 3775
+Wire Wire Line
+	4625 3775 4625 3650
+Wire Wire Line
+	4625 3225 4625 3350
+Wire Wire Line
+	4300 2800 4300 2700
+Wire Notes Line
+	3375 2400 5200 2400
+Wire Notes Line
+	3375 2400 3375 4075
+Wire Notes Line
+	3375 4075 5200 4075
+Wire Notes Line
+	5200 4075 5200 2400
+Connection ~ 4625 3225
+$EndSCHEMATC

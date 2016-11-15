@@ -1,0 +1,183 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sensor-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2 feb 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ZENER D3
+U 1 1 54CFDFC5
+P 4450 3550
+F 0 "D3" H 4450 3650 50  0000 C CNN
+F 1 "ZENER DIODE 1N751A" H 4450 3450 40  0000 C CNN
+F 2 "~" H 4450 3550 60  0000 C CNN
+F 3 "~" H 4450 3550 60  0000 C CNN
+	1    4450 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L DIODE D2
+U 1 1 54CFDFE1
+P 4100 3550
+F 0 "D2" H 4100 3650 40  0000 C CNN
+F 1 "SHOTTKY DIODE SR1100" H 4150 3450 40  0000 C CNN
+F 2 "~" H 4100 3550 60  0000 C CNN
+F 3 "~" H 4100 3550 60  0000 C CNN
+	1    4100 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 54CFE004
+P 3600 3100
+F 0 "D1" H 3600 3000 40  0000 C CNN
+F 1 "SHOTTKY DIODE SR1100" H 3600 3200 40  0000 C CNN
+F 2 "~" H 3600 3100 60  0000 C CNN
+F 3 "~" H 3600 3100 60  0000 C CNN
+	1    3600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 54CFE013
+P 4800 3550
+F 0 "R1" V 4880 3550 40  0000 C CNN
+F 1 "1M" V 4807 3551 40  0000 C CNN
+F 2 "~" V 4730 3550 30  0000 C CNN
+F 3 "~" H 4800 3550 30  0000 C CNN
+	1    4800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 54CFE022
+P 5150 3550
+F 0 "C1" H 5150 3650 40  0000 L CNN
+F 1 "4.7nF" H 5156 3465 40  0000 L CNN
+F 2 "~" H 5188 3400 30  0000 C CNN
+F 3 "~" H 5150 3550 60  0000 C CNN
+	1    5150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 54CFE05E
+P 5500 4000
+F 0 "#PWR01" H 5500 4000 30  0001 C CNN
+F 1 "GND" H 5500 3930 30  0001 C CNN
+F 2 "" H 5500 4000 60  0000 C CNN
+F 3 "" H 5500 4000 60  0000 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3100 5800 3100
+Wire Wire Line
+	5500 3600 5500 4000
+Wire Wire Line
+	3100 3900 5800 3900
+Wire Wire Line
+	4100 3350 4100 3100
+Connection ~ 4100 3100
+Wire Wire Line
+	4450 3350 4450 3100
+Connection ~ 4450 3100
+Wire Wire Line
+	4800 3300 4800 3100
+Connection ~ 4800 3100
+Wire Wire Line
+	5150 3350 5150 3100
+Connection ~ 5150 3100
+Wire Wire Line
+	4100 3750 4100 3900
+Connection ~ 4100 3900
+Wire Wire Line
+	4450 3750 4450 3900
+Connection ~ 4450 3900
+Wire Wire Line
+	4800 3800 4800 3900
+Connection ~ 4800 3900
+Wire Wire Line
+	5150 3750 5150 3900
+Connection ~ 5150 3900
+$Comp
+L PIEZO PZ1
+U 1 1 54D000ED
+P 3100 3500
+F 0 "PZ1" H 2950 3250 60  0000 C CNN
+F 1 "PIEZO" H 2900 3750 60  0000 C CNN
+F 2 "" H 3100 3500 60  0000 C CNN
+F 3 "" H 3100 3500 60  0000 C CNN
+	1    3100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3150 3100 3100
+Wire Wire Line
+	3100 3100 3400 3100
+Wire Wire Line
+	3100 3850 3100 3900
+$Comp
+L CONN_2 P1
+U 1 1 54D00142
+P 6150 3500
+F 0 "P1" V 6100 3500 40  0000 C CNN
+F 1 "CONN_2" V 6200 3500 40  0000 C CNN
+F 2 "" H 6150 3500 60  0000 C CNN
+F 3 "" H 6150 3500 60  0000 C CNN
+	1    6150 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 3100 2    60   Input ~ 0
+SIGNAL
+Text GLabel 5800 3900 2    60   Input ~ 0
+GND
+Wire Wire Line
+	5500 3100 5500 3400
+Wire Wire Line
+	5500 3400 5800 3400
+Wire Wire Line
+	5500 3600 5800 3600
+Connection ~ 5500 3900
+Connection ~ 5500 3100
+$EndSCHEMATC

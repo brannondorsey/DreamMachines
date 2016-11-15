@@ -1,0 +1,384 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wicker-dds
+LIBS:wicker-crystal
+LIBS:rf24
+LIBS:wicker-vreg
+LIBS:wicker-transistors
+LIBS:wicker-test
+LIBS:wicker-stm32
+LIBS:wicker-opamp
+LIBS:wicker-invensense
+LIBS:wicker-efm8
+LIBS:wicker-lcd
+LIBS:wicker-conn
+LIBS:wicker-sensors
+LIBS:wicker-gain
+LIBS:wicker-capsense
+LIBS:wicker-aesthetic
+LIBS:wicker-linear
+LIBS:wicker-shields
+LIBS:wicker-switch
+LIBS:wicker-protection
+LIBS:efm8bb1-16soic-breakout-board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "EFM8BB1 SOIC16 Breakout Board"
+Date "2016-03-12"
+Rev "v1.0"
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "Company: Wickerbox Electronics"
+Comment4 ""
+$EndDescr
+$Comp
+L EFM8BB1x-16SOIC U2
+U 1 1 56E4BA27
+P 5700 3600
+F 0 "U2" H 5300 4150 60  0000 L CNN
+F 1 "EFM8BB1x-16SOIC" H 5300 2700 60  0000 L CNN
+F 2 "Housings_SOIC:SOIC-16_7.5x10.3mm_Pitch1.27mm" H 5700 3700 60  0001 C CNN
+F 3 "" H 5700 3700 60  0000 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 56E4BA82
+P 4775 2875
+F 0 "C2" H 4785 2945 50  0000 L CNN
+F 1 "100nF" H 4785 2795 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4775 2875 50  0001 C CNN
+F 3 "" H 4775 2875 50  0000 C CNN
+	1    4775 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 56E4BC63
+P 4500 2875
+F 0 "C1" H 4510 2945 50  0000 L CNN
+F 1 "1uF" H 4510 2795 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4500 2875 50  0001 C CNN
+F 3 "" H 4500 2875 50  0000 C CNN
+	1    4500 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56E4BCC8
+P 4950 4375
+F 0 "#PWR01" H 4950 4125 50  0001 C CNN
+F 1 "GND" H 4950 4225 50  0000 C CNN
+F 2 "" H 4950 4375 50  0000 C CNN
+F 3 "" H 4950 4375 50  0000 C CNN
+	1    4950 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 56E4BCE2
+P 5050 2600
+F 0 "#PWR02" H 5050 2450 50  0001 C CNN
+F 1 "+3.3V" H 5050 2740 50  0000 C CNN
+F 2 "" H 5050 2600 50  0000 C CNN
+F 3 "" H 5050 2600 50  0000 C CNN
+	1    5050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3200 5100 3200
+Wire Wire Line
+	5050 2600 5050 3200
+Wire Wire Line
+	4350 2700 5050 2700
+Wire Wire Line
+	4500 2700 4500 2775
+Connection ~ 5050 2700
+Wire Wire Line
+	4775 2775 4775 2700
+Connection ~ 4775 2700
+Wire Wire Line
+	5100 4300 4950 4300
+Wire Wire Line
+	4950 4200 4950 4375
+$Comp
+L GND #PWR03
+U 1 1 56E4BD21
+P 4500 2975
+F 0 "#PWR03" H 4500 2725 50  0001 C CNN
+F 1 "GND" H 4500 2825 50  0000 C CNN
+F 2 "" H 4500 2975 50  0000 C CNN
+F 3 "" H 4500 2975 50  0000 C CNN
+	1    4500 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 56E4BD35
+P 4775 2975
+F 0 "#PWR04" H 4775 2725 50  0001 C CNN
+F 1 "GND" H 4775 2825 50  0000 C CNN
+F 2 "" H 4775 2975 50  0000 C CNN
+F 3 "" H 4775 2975 50  0000 C CNN
+	1    4775 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3425 3400 3650 3400
+Wire Wire Line
+	4050 3400 5100 3400
+$Comp
+L CONN_01X08 P2
+U 1 1 56E4C0FE
+P 4325 3850
+F 0 "P2" H 4325 3375 50  0000 C CNN
+F 1 "CONN_01X08" V 4425 3850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 4325 3850 50  0001 C CNN
+F 3 "" H 4325 3850 50  0000 C CNN
+	1    4325 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 3500 4725 3500
+Wire Wire Line
+	4725 3500 4725 3400
+Connection ~ 4725 3400
+Wire Wire Line
+	4525 3600 4800 3600
+Wire Wire Line
+	4800 3600 4800 3500
+Wire Wire Line
+	4800 3500 5100 3500
+Wire Wire Line
+	4525 3700 5100 3700
+Wire Wire Line
+	4525 3800 5100 3800
+Wire Wire Line
+	4525 3900 5100 3900
+Wire Wire Line
+	5100 4000 4525 4000
+Wire Wire Line
+	4525 4100 5100 4100
+Wire Wire Line
+	4525 4200 4950 4200
+Connection ~ 4950 4300
+$Comp
+L CONN_01X08 P3
+U 1 1 56E4C40B
+P 7200 3950
+F 0 "P3" H 7200 4400 50  0000 C CNN
+F 1 "CONN_01X08" V 7300 3950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 7200 3950 50  0001 C CNN
+F 3 "" H 7200 3950 50  0000 C CNN
+	1    7200 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3700 7000 3700
+Wire Wire Line
+	7000 3800 6350 3800
+Wire Wire Line
+	6350 3900 7000 3900
+Wire Wire Line
+	7000 4000 6350 4000
+Wire Wire Line
+	6350 4100 7000 4100
+Wire Wire Line
+	6350 4200 7000 4200
+$Comp
+L GND #PWR05
+U 1 1 56E4C5A8
+P 6900 4350
+F 0 "#PWR05" H 6900 4100 50  0001 C CNN
+F 1 "GND" H 6900 4200 50  0000 C CNN
+F 2 "" H 6900 4350 50  0000 C CNN
+F 3 "" H 6900 4350 50  0000 C CNN
+	1    6900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR06
+U 1 1 56E4C5CB
+P 6900 3550
+F 0 "#PWR06" H 6900 3400 50  0001 C CNN
+F 1 "+3.3V" H 6900 3690 50  0000 C CNN
+F 2 "" H 6900 3550 50  0000 C CNN
+F 3 "" H 6900 3550 50  0000 C CNN
+	1    6900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3600 6900 3600
+Wire Wire Line
+	6900 3600 6900 3550
+Wire Wire Line
+	7000 4300 6900 4300
+Wire Wire Line
+	6900 4300 6900 4350
+$Comp
+L USB_OTG P1
+U 1 1 56E4C6D6
+P 2700 2900
+F 0 "P1" V 2400 2975 50  0000 C CNN
+F 1 "USB_MICRO_B" H 2700 3100 50  0001 C CNN
+F 2 "Wicker_USB:USB_Micro-B_10118193_0001LF" V 2650 2800 50  0001 C CNN
+F 3 "" V 2650 2800 50  0000 C CNN
+	1    2700 2900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3000 3100 3950 3100
+Wire Wire Line
+	3000 2700 3550 2700
+Connection ~ 4500 2700
+NoConn ~ 3000 2800
+NoConn ~ 3000 2900
+NoConn ~ 3000 3000
+NoConn ~ 2600 3300
+$Comp
+L GND #PWR07
+U 1 1 56E4CB47
+P 3425 3800
+F 0 "#PWR07" H 3425 3550 50  0001 C CNN
+F 1 "GND" H 3425 3650 50  0000 C CNN
+F 2 "" H 3425 3800 50  0000 C CNN
+F 3 "" H 3425 3800 50  0000 C CNN
+	1    3425 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3425 3400
+$Comp
+L B3F-1XXX SW1
+U 1 1 56E4CFFB
+P 3900 3400
+F 0 "SW1" H 3896 3534 50  0000 C CNN
+F 1 "B3F-1XXX" H 3860 3330 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_TH_Tactile_Omron_B3F-10xx" H 3900 3400 50  0001 C CNN
+F 3 "" H 3900 3400 50  0000 C CNN
+	1    3900 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6475 4200
+$Comp
+L LED D1
+U 1 1 56E4D15C
+P 4650 4525
+F 0 "D1" H 4650 4625 50  0000 C CNN
+F 1 "LED" H 4650 4425 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 4650 4525 50  0001 C CNN
+F 3 "" H 4650 4525 50  0000 C CNN
+	1    4650 4525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 56E4D1C3
+P 4650 4875
+F 0 "R1" V 4730 4875 50  0000 C CNN
+F 1 "220" V 4650 4875 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4580 4875 50  0001 C CNN
+F 3 "" H 4650 4875 50  0000 C CNN
+	1    4650 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 56E4D22D
+P 4650 5025
+F 0 "#PWR08" H 4650 4775 50  0001 C CNN
+F 1 "GND" H 4650 4875 50  0000 C CNN
+F 2 "" H 4650 5025 50  0000 C CNN
+F 3 "" H 4650 5025 50  0000 C CNN
+	1    4650 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L BU33SD5WG U1
+U 1 1 56E4D941
+P 3950 2750
+F 0 "U1" H 3700 2975 50  0000 C CNN
+F 1 "BU33SD5WG" H 3650 2900 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3935 3085 50  0001 C CIN
+F 3 "" H 3950 2750 50  0000 C CNN
+	1    3950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3100 3950 2950
+Connection ~ 3425 3100
+Wire Wire Line
+	3550 2800 3500 2800
+Wire Wire Line
+	3500 2800 3500 2700
+Connection ~ 3500 2700
+Wire Wire Line
+	3425 3100 3425 3800
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 56E4E23A
+P 3075 2450
+F 0 "#FLG09" H 3075 2545 50  0001 C CNN
+F 1 "PWR_FLAG" H 3075 2630 50  0000 C CNN
+F 2 "" H 3075 2450 50  0000 C CNN
+F 3 "" H 3075 2450 50  0000 C CNN
+	1    3075 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 56E4E262
+P 3125 3700
+F 0 "#FLG010" H 3125 3795 50  0001 C CNN
+F 1 "PWR_FLAG" H 3125 3880 50  0000 C CNN
+F 2 "" H 3125 3700 50  0000 C CNN
+F 3 "" H 3125 3700 50  0000 C CNN
+	1    3125 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 3700 3125 3750
+Wire Wire Line
+	3125 3750 3425 3750
+Connection ~ 3425 3750
+Wire Wire Line
+	3075 2450 3075 2700
+Connection ~ 3075 2700
+Text Label 3200 2700 0    60   ~ 0
+VUSB
+Wire Wire Line
+	4650 4325 4650 3800
+Connection ~ 4650 3800
+$EndSCHEMATC

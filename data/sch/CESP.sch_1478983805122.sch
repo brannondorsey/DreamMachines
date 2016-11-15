@@ -1,0 +1,104 @@
+EESchema Schematic File Version 2  date 1/24/2014 12:04:40 AM
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CESP-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "24 jan 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LTC1594CS U?
+U 1 1 52E1F38F
+P 3750 3300
+F 0 "U?" H 3750 3950 60  0000 C CNN
+F 1 "LTC1594CS" H 3750 2650 60  0000 C CNN
+F 2 "TSSOP14" H 3750 3300 60  0000 C CNN
+F 3 "" H 3750 3300 60  0000 C CNN
+	1    3750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 1 1 52E1F3CD
+P 7150 2150
+F 0 "U?" H 7200 2350 60  0000 C CNN
+F 1 "TL074" H 7300 1950 50  0000 C CNN
+F 2 "TSSOP14" H 7150 2150 60  0000 C CNN
+F 3 "" H 7150 2150 60  0000 C CNN
+	1    7150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 2 1 52E1F3DA
+P 7200 3500
+F 0 "U?" H 7250 3700 60  0000 C CNN
+F 1 "TL074" H 7350 3300 50  0000 C CNN
+F 2 "" H 7200 3500 60  0000 C CNN
+F 3 "" H 7200 3500 60  0000 C CNN
+	2    7200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 1 1 52E1F3E5
+P 8600 3500
+F 0 "U?" H 8650 3700 60  0000 C CNN
+F 1 "TL074" H 8750 3300 50  0000 C CNN
+F 2 "" H 8600 3500 60  0000 C CNN
+F 3 "" H 8600 3500 60  0000 C CNN
+	1    8600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 1 1 52E1F3EB
+P 8550 2100
+F 0 "U?" H 8600 2300 60  0000 C CNN
+F 1 "TL074" H 8700 1900 50  0000 C CNN
+F 2 "" H 8550 2100 60  0000 C CNN
+F 3 "" H 8550 2100 60  0000 C CNN
+	1    8550 2100
+	1    0    0    -1  
+$EndComp
+Text Notes 4450 4650 0    80   ~ 0
+NOTE: THIS IS JUST A TEST BOARD\nREMOVE ALL COMPONENTS AND CREATE YOUR OWN\nINCLUDE SCHEMATIC HOOKUPS/NETLIST
+$EndSCHEMATC

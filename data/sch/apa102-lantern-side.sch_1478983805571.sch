@@ -1,0 +1,325 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:apa102
+LIBS:esp8266-esp-03
+LIBS:apa102-lantern-side-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "26 sep 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L APA102 U1
+U 1 1 56067C85
+P 2500 2150
+F 0 "U1" H 2300 2450 60  0000 C CNN
+F 1 "APA102" H 2400 1850 60  0000 C CNN
+F 2 "CrumpPrints:APA102" H 2500 1700 60  0001 C CNN
+F 3 "" H 2500 1700 60  0000 C CNN
+	1    2500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L APA102 U2
+U 1 1 56067CEB
+P 3500 2150
+F 0 "U2" H 3300 2450 60  0000 C CNN
+F 1 "APA102" H 3400 1850 60  0000 C CNN
+F 2 "CrumpPrints:APA102" H 3500 1700 60  0001 C CNN
+F 3 "" H 3500 1700 60  0000 C CNN
+	1    3500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L APA102 U3
+U 1 1 56067CF1
+P 4500 2150
+F 0 "U3" H 4300 2450 60  0000 C CNN
+F 1 "APA102" H 4400 1850 60  0000 C CNN
+F 2 "CrumpPrints:APA102" H 4500 1700 60  0001 C CNN
+F 3 "" H 4500 1700 60  0000 C CNN
+	1    4500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L APA102 U4
+U 1 1 56067CF7
+P 5500 2150
+F 0 "U4" H 5300 2450 60  0000 C CNN
+F 1 "APA102" H 5400 1850 60  0000 C CNN
+F 2 "CrumpPrints:APA102" H 5500 1700 60  0001 C CNN
+F 3 "" H 5500 1700 60  0000 C CNN
+	1    5500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L APA102 U5
+U 1 1 56067CFD
+P 6500 2150
+F 0 "U5" H 6300 2450 60  0000 C CNN
+F 1 "APA102" H 6400 1850 60  0000 C CNN
+F 2 "CrumpPrints:APA102" H 6500 1700 60  0001 C CNN
+F 3 "" H 6500 1700 60  0000 C CNN
+	1    6500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L APA102 U6
+U 1 1 56067D03
+P 7500 2150
+F 0 "U6" H 7300 2450 60  0000 C CNN
+F 1 "APA102" H 7400 1850 60  0000 C CNN
+F 2 "CrumpPrints:APA102" H 7500 1700 60  0001 C CNN
+F 3 "" H 7500 1700 60  0000 C CNN
+	1    7500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L APA102 U7
+U 1 1 56067D09
+P 8500 2150
+F 0 "U7" H 8300 2450 60  0000 C CNN
+F 1 "APA102" H 8400 1850 60  0000 C CNN
+F 2 "CrumpPrints:APA102" H 8500 1700 60  0001 C CNN
+F 3 "" H 8500 1700 60  0000 C CNN
+	1    8500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L APA102 U8
+U 1 1 56067D0F
+P 9500 2150
+F 0 "U8" H 9300 2450 60  0000 C CNN
+F 1 "APA102" H 9400 1850 60  0000 C CNN
+F 2 "CrumpPrints:APA102" H 9500 1700 60  0001 C CNN
+F 3 "" H 9500 1700 60  0000 C CNN
+	1    9500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P1
+U 1 1 561401C0
+P 1100 2150
+F 0 "P1" H 1100 2500 50  0000 C CNN
+F 1 "CONN_01X06" V 1200 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 1100 2150 60  0000 C CNN
+F 3 "" H 1100 2150 60  0000 C CNN
+	1    1100 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X06 P2
+U 1 1 5614030F
+P 10400 2150
+F 0 "P2" H 10400 2500 50  0000 C CNN
+F 1 "CONN_01X06" V 10500 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 10400 2150 60  0000 C CNN
+F 3 "" H 10400 2150 60  0000 C CNN
+	1    10400 2150
+	1    0    0    -1  
+$EndComp
+Text Label 1300 2000 0    60   ~ 0
+D>
+Text Label 1300 1900 0    60   ~ 0
+clk>
+Text Label 1300 2100 0    60   ~ 0
+GND
+Text Label 1300 2200 0    60   ~ 0
+5V
+Text Label 1300 2300 0    60   ~ 0
+>D
+Text Label 1300 2400 0    60   ~ 0
+>clk
+$Comp
+L C C1
+U 1 1 56140CD2
+P 1950 3250
+F 0 "C1" H 1975 3350 50  0000 L CNN
+F 1 "0.1u" H 1975 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1988 3100 30  0000 C CNN
+F 3 "" H 1950 3250 60  0000 C CNN
+	1    1950 3250
+	1    0    0    -1  
+$EndComp
+Text Label 1950 3000 0    60   ~ 0
+5V
+Text Label 1950 3500 0    60   ~ 0
+GND
+Wire Wire Line
+	1950 3400 1950 3500
+Wire Wire Line
+	1950 3000 1950 3100
+Wire Wire Line
+	1600 1900 1300 1900
+Wire Wire Line
+	1600 1650 1600 1900
+Connection ~ 9950 2400
+Wire Wire Line
+	10150 2100 10200 2100
+Wire Wire Line
+	10150 2400 10150 2100
+Wire Wire Line
+	9950 2400 10150 2400
+Wire Wire Line
+	10100 2200 10200 2200
+Wire Wire Line
+	10100 2000 10100 2200
+Wire Wire Line
+	10200 2000 10100 2000
+Wire Wire Line
+	10200 1900 10200 2000
+Connection ~ 10200 2300
+Connection ~ 10200 2400
+Wire Wire Line
+	10200 2650 10200 2200
+Connection ~ 9050 2650
+Connection ~ 2050 2650
+Wire Wire Line
+	2050 2300 2050 2650
+Connection ~ 3050 2650
+Wire Wire Line
+	3050 2300 3050 2650
+Connection ~ 4050 2650
+Wire Wire Line
+	4050 2300 4050 2650
+Connection ~ 5050 2650
+Wire Wire Line
+	5050 2300 5050 2650
+Connection ~ 6050 2650
+Wire Wire Line
+	6050 2300 6050 2650
+Connection ~ 7050 2650
+Wire Wire Line
+	7050 2300 7050 2650
+Connection ~ 8050 2650
+Wire Wire Line
+	8050 2300 8050 2650
+Wire Wire Line
+	9050 2650 9050 2300
+Wire Wire Line
+	1650 2650 10200 2650
+Wire Wire Line
+	1650 2100 1650 2650
+Wire Wire Line
+	1300 2100 1650 2100
+Connection ~ 2950 2700
+Wire Wire Line
+	2950 2300 2950 2700
+Connection ~ 3950 2700
+Wire Wire Line
+	3950 2300 3950 2700
+Connection ~ 4950 2700
+Wire Wire Line
+	4950 2300 4950 2700
+Connection ~ 5950 2700
+Wire Wire Line
+	5950 2300 5950 2700
+Connection ~ 6950 2700
+Wire Wire Line
+	6950 2300 6950 2700
+Connection ~ 7950 2700
+Wire Wire Line
+	7950 2300 7950 2700
+Connection ~ 8950 2700
+Wire Wire Line
+	8950 2300 8950 2700
+Wire Wire Line
+	9950 2700 9950 2300
+Wire Wire Line
+	1600 2700 9950 2700
+Wire Wire Line
+	1600 2200 1600 2700
+Wire Wire Line
+	1300 2200 1600 2200
+Wire Wire Line
+	1650 2000 1300 2000
+Wire Wire Line
+	1650 1700 1650 2000
+Wire Wire Line
+	10000 2150 9950 2150
+Wire Wire Line
+	10000 1650 10000 2150
+Wire Wire Line
+	1600 1650 10000 1650
+Wire Wire Line
+	1650 1700 9950 1700
+Wire Wire Line
+	9950 1700 9950 2000
+Wire Wire Line
+	1850 2000 2050 2000
+Wire Wire Line
+	1850 2300 1850 2000
+Wire Wire Line
+	1300 2300 1850 2300
+Wire Wire Line
+	1900 2150 2050 2150
+Wire Wire Line
+	1900 2400 1900 2150
+Wire Wire Line
+	1300 2400 1900 2400
+Wire Wire Line
+	8950 2150 9050 2150
+Wire Wire Line
+	8950 2000 9050 2000
+Wire Wire Line
+	7950 2150 8050 2150
+Wire Wire Line
+	7950 2000 8050 2000
+Wire Wire Line
+	6950 2150 7050 2150
+Wire Wire Line
+	6950 2000 7050 2000
+Wire Wire Line
+	5950 2150 6050 2150
+Wire Wire Line
+	5950 2000 6050 2000
+Wire Wire Line
+	4950 2150 5050 2150
+Wire Wire Line
+	4950 2000 5050 2000
+Wire Wire Line
+	3950 2150 4050 2150
+Wire Wire Line
+	3950 2000 4050 2000
+Wire Wire Line
+	2950 2150 3050 2150
+Wire Wire Line
+	2950 2000 3050 2000
+$EndSCHEMATC

@@ -1,0 +1,263 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:moteino
+LIBS:button-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L moteino U1
+U 1 1 57DADA9A
+P 4100 2650
+F 0 "U1" H 4250 2900 60  0000 R CNN
+F 1 "moteino" H 4250 2800 60  0000 R CNN
+F 2 "" H 4100 2650 60  0001 C CNN
+F 3 "" H 4100 2650 60  0001 C CNN
+	1    4100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 57DADAD1
+P 2500 3300
+F 0 "SW1" H 2650 3410 50  0000 C CNN
+F 1 "SW_PUSH" H 2500 3220 50  0000 C CNN
+F 2 "" H 2500 3300 50  0000 C CNN
+F 3 "" H 2500 3300 50  0000 C CNN
+	1    2500 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SPEAKER SP1
+U 1 1 57DADB38
+P 3450 3850
+F 0 "SP1" H 3350 4100 50  0000 C CNN
+F 1 "PIEZO ELEMENT" H 3350 3600 50  0000 C CNN
+F 2 "" H 3450 3850 50  0000 C CNN
+F 3 "" H 3450 3850 50  0000 C CNN
+	1    3450 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 2750 2500 2750
+Wire Wire Line
+	2500 2500 2500 3000
+Wire Wire Line
+	2500 3600 2500 5050
+Wire Wire Line
+	4100 3150 3750 3150
+Wire Wire Line
+	3750 3150 3750 3750
+Wire Wire Line
+	3750 3950 3750 4400
+Wire Wire Line
+	3750 4400 2500 4400
+Connection ~ 2500 4400
+$Comp
+L LED D1
+U 1 1 57DADC0A
+P 4600 4350
+F 0 "D1" H 4600 4450 50  0000 C CNN
+F 1 "LED" H 4600 4250 50  0000 C CNN
+F 2 "" H 4600 4350 50  0000 C CNN
+F 3 "" H 4600 4350 50  0000 C CNN
+	1    4600 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 3450 3950 3450
+Wire Wire Line
+	3950 3450 3950 4350
+Wire Wire Line
+	3950 4350 4400 4350
+Wire Wire Line
+	4800 4350 5000 4350
+Wire Wire Line
+	6450 2950 6100 2950
+Wire Wire Line
+	6450 1700 6450 2950
+Wire Wire Line
+	6100 2850 7400 2850
+Wire Wire Line
+	6750 3050 6100 3050
+Wire Wire Line
+	6750 1500 6750 3050
+NoConn ~ 6100 3150
+NoConn ~ 6100 3250
+NoConn ~ 6100 3350
+NoConn ~ 6100 3450
+NoConn ~ 6100 3550
+NoConn ~ 6100 3650
+NoConn ~ 6100 3750
+NoConn ~ 6100 3850
+NoConn ~ 5400 1850
+NoConn ~ 5300 1850
+NoConn ~ 5200 1850
+NoConn ~ 5100 1850
+NoConn ~ 5000 1850
+NoConn ~ 4900 1850
+NoConn ~ 4100 2650
+NoConn ~ 4100 2850
+NoConn ~ 4100 2950
+NoConn ~ 4100 3050
+NoConn ~ 4100 3250
+NoConn ~ 4100 3350
+NoConn ~ 4100 3550
+NoConn ~ 4100 3650
+NoConn ~ 4100 3750
+NoConn ~ 4100 3850
+$Comp
+L R R1
+U 1 1 57DADE37
+P 2500 2350
+F 0 "R1" V 2580 2350 50  0000 C CNN
+F 1 "10K" V 2500 2350 50  0000 C CNN
+F 2 "" V 2430 2350 50  0000 C CNN
+F 3 "" H 2500 2350 50  0000 C CNN
+F 4 "~" H 2500 2350 60  0001 C CNN "Characteristics"
+F 5 "~" H 2500 2350 60  0001 C CNN "Description"
+F 6 "~" H 2500 2350 60  0001 C CNN "Package ID"
+F 7 "~" H 2500 2350 60  0001 C CNN "Source"
+F 8 "~" H 2500 2350 60  0001 C CNN "Critical"
+F 9 "~" H 2500 2350 60  0001 C CNN "Notes"
+F 10 "~" H 2500 2350 60  0001 C CNN "MFP"
+F 11 "~" H 2500 2350 60  0001 C CNN "supplier1_name"
+F 12 "~" H 2500 2350 60  0001 C CNN "supplier2_name"
+F 13 "~" H 2500 2350 60  0001 C CNN "supplier1_link"
+F 14 "~" H 2500 2350 60  0001 C CNN "supplier2_link"
+F 15 "~" H 2500 2350 60  0001 C CNN "MFN"
+	1    2500 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1500 2500 2200
+Connection ~ 2500 2750
+$Comp
+L R R2
+U 1 1 57DADEFB
+P 5150 4350
+F 0 "R2" V 5230 4350 50  0000 C CNN
+F 1 "560R" V 5150 4350 50  0000 C CNN
+F 2 "" V 5080 4350 50  0000 C CNN
+F 3 "" H 5150 4350 50  0000 C CNN
+	1    5150 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 4350 5500 4350
+Wire Wire Line
+	5500 4350 5500 5050
+$Comp
+L Battery BT1
+U 1 1 57E2A99B
+P 7400 2000
+F 0 "BT1" H 7500 2050 50  0000 L CNN
+F 1 "Battery" H 7500 1950 50  0000 L CNN
+F 2 "" V 7400 2040 50  0000 C CNN
+F 3 "" V 7400 2040 50  0000 C CNN
+	1    7400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1700 7400 1700
+Wire Wire Line
+	7400 1700 7400 1850
+Wire Wire Line
+	7400 2150 7400 5050
+Wire Wire Line
+	6750 1500 2500 1500
+Text Notes 4500 4650 0    60   ~ 0
+Is on the moteino
+Wire Wire Line
+	7400 5050 2500 5050
+Connection ~ 7400 2850
+Connection ~ 5500 5050
+$Comp
+L C C1
+U 1 1 57E2AB61
+P 2900 3300
+F 0 "C1" H 2925 3400 50  0000 L CNN
+F 1 "104" H 2925 3200 50  0000 L CNN
+F 2 "" H 2938 3150 50  0000 C CNN
+F 3 "" H 2900 3300 50  0000 C CNN
+F 4 "~" H 2900 3300 60  0001 C CNN "Characteristics"
+F 5 "~" H 2900 3300 60  0001 C CNN "Description"
+F 6 "~" H 2900 3300 60  0001 C CNN "Package ID"
+F 7 "~" H 2900 3300 60  0001 C CNN "Source"
+F 8 "~" H 2900 3300 60  0001 C CNN "Critical"
+F 9 "~" H 2900 3300 60  0001 C CNN "Notes"
+F 10 "~" H 2900 3300 60  0001 C CNN "MFP"
+F 11 "~" H 2900 3300 60  0001 C CNN "supplier1_name"
+F 12 "~" H 2900 3300 60  0001 C CNN "supplier2_name"
+F 13 "~" H 2900 3300 60  0001 C CNN "supplier1_link"
+F 14 "~" H 2900 3300 60  0001 C CNN "supplier2_link"
+F 15 "~" H 2900 3300 60  0001 C CNN "MFN"
+	1    2900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3150 2900 2900
+Wire Wire Line
+	2900 2900 2500 2900
+Connection ~ 2500 2900
+Wire Wire Line
+	2900 3450 2900 3650
+Wire Wire Line
+	2900 3650 2500 3650
+Wire Wire Line
+	2500 3650 2500 3700
+Connection ~ 2500 3700
+$Comp
+L GND #PWR?
+U 1 1 57E2AC3A
+P 4550 5500
+F 0 "#PWR?" H 4550 5250 50  0001 C CNN
+F 1 "GND" H 4550 5350 50  0000 C CNN
+F 2 "" H 4550 5500 50  0000 C CNN
+F 3 "" H 4550 5500 50  0000 C CNN
+	1    4550 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5500 4550 5050
+Connection ~ 4550 5050
+$EndSCHEMATC

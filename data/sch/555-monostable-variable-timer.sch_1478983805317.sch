@@ -1,0 +1,308 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wicker-linear
+LIBS:555-monostable-variable-timer-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Monostable 555 Timer Circuit"
+Date "2015-12-26"
+Rev "v1.0"
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "The Weekly Circuit"
+Comment4 ""
+$EndDescr
+$Comp
+L C C2
+U 1 1 567F767E
+P 4950 5350
+F 0 "C2" H 4975 5450 50  0000 L CNN
+F 1 "10nF" H 4975 5250 50  0000 L CNN
+F 2 "" H 4988 5200 30  0000 C CNN
+F 3 "" H 4950 5350 60  0000 C CNN
+	1    4950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 567F76BE
+P 5200 5700
+F 0 "#PWR4" H 5200 5450 50  0001 C CNN
+F 1 "GND" H 5200 5550 50  0000 C CNN
+F 2 "" H 5200 5700 60  0000 C CNN
+F 3 "" H 5200 5700 60  0000 C CNN
+	1    5200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P1
+U 1 1 567F76E3
+P 5800 3550
+F 0 "P1" H 5800 3650 50  0000 C CNN
+F 1 "OUT" H 5800 3450 50  0000 C CNN
+F 2 "" H 5800 3550 60  0000 C CNN
+F 3 "" H 5800 3550 60  0000 C CNN
+	1    5800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR3
+U 1 1 567F7754
+P 4100 2000
+F 0 "#PWR3" H 4100 1850 50  0001 C CNN
+F 1 "VCC" H 4100 2150 50  0000 C CNN
+F 2 "" H 4100 2000 60  0000 C CNN
+F 3 "" H 4100 2000 60  0000 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 567F78EA
+P 3200 2500
+F 0 "SW1" H 3350 2610 50  0000 C CNN
+F 1 "MOMENTARY" H 3200 2420 50  0000 C CNN
+F 2 "" H 3200 2500 60  0000 C CNN
+F 3 "" H 3200 2500 60  0000 C CNN
+	1    3200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CTRIM C1
+U 1 1 567F7F30
+P 3500 4150
+F 0 "C1" H 3650 4200 50  0000 C CNN
+F 1 "CTRIM" H 3700 4100 50  0000 C CNN
+F 2 "" H 3500 4150 60  0000 C CNN
+F 3 "" H 3500 4150 60  0000 C CNN
+	1    3500 4150
+	1    0    0    -1  
+$EndComp
+Text Notes 4450 5450 0    60   ~ 0
+BYPASS\nCAP\n
+Text Notes 5650 4900 0    60   ~ 0
+555 Circuit Demonstration\n\nOUT is ON when TRIG is LESS THAN CTRL\nOUT is OFF when THRESH is GREATER THAN CTRL\n\nTIME OFF  = 1.1 * R1 * C1\n\nFor Monostable Operation, close JUMPER1 and apply TRIGGER input pulse to P2.\n\nFor Astable Operation, place JUMPER2 for Astable Operation.
+$Comp
+L JUMPER JUMPER1
+U 1 1 567F86AB
+P 4100 3550
+F 0 "JUMPER1" H 4100 3700 50  0000 C CNN
+F 1 "JUMPER" H 4100 3470 50  0001 C CNN
+F 2 "" H 4100 3550 60  0000 C CNN
+F 3 "" H 4100 3550 60  0000 C CNN
+	1    4100 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L JUMPER JUMPER2
+U 1 1 567F8706
+P 4100 4300
+F 0 "JUMPER2" H 4100 4450 50  0000 C CNN
+F 1 "JUMPER" H 4100 4220 50  0001 C CNN
+F 2 "" H 4100 4300 60  0000 C CNN
+F 3 "" H 4100 4300 60  0000 C CNN
+	1    4100 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 4950 4950 5200
+Wire Wire Line
+	5200 4950 5200 5700
+Wire Wire Line
+	4950 5500 4950 5550
+Wire Wire Line
+	4950 5550 5550 5550
+Connection ~ 5200 5550
+Wire Wire Line
+	4100 2350 4400 2350
+Wire Wire Line
+	4100 2000 4100 2600
+Wire Wire Line
+	3500 2500 4200 2500
+Connection ~ 4100 2350
+Connection ~ 4100 2500
+Wire Wire Line
+	2900 2500 2750 2500
+Wire Wire Line
+	2750 2500 2750 2550
+$Comp
+L GND #PWR1
+U 1 1 567F93F2
+P 2750 2550
+F 0 "#PWR1" H 2750 2300 50  0001 C CNN
+F 1 "GND" H 2750 2400 50  0000 C CNN
+F 2 "" H 2750 2550 60  0000 C CNN
+F 3 "" H 2750 2550 60  0000 C CNN
+	1    2750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM555 U1
+U 1 1 567F9775
+P 4900 3550
+F 0 "U1" H 5250 5000 70  0000 R CNN
+F 1 "LM555" H 5250 4900 70  0000 R CNN
+F 2 "" H 4900 3550 60  0000 C CNN
+F 3 "" H 4900 3550 60  0000 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT R2
+U 1 1 567F9B9C
+P 3500 3500
+F 0 "R2" H 3500 3400 50  0000 C CNN
+F 1 "POT" H 3500 3500 50  0000 C CNN
+F 2 "" H 3500 3500 60  0000 C CNN
+F 3 "" H 3500 3500 60  0000 C CNN
+	1    3500 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 3100 4100 3250
+Connection ~ 4100 3150
+Wire Wire Line
+	4100 3850 4100 4000
+Connection ~ 4100 3900
+Wire Wire Line
+	3500 3750 3500 4000
+Wire Wire Line
+	3850 4750 4200 4750
+Wire Wire Line
+	4100 4750 4100 4600
+Connection ~ 3500 3900
+Wire Wire Line
+	3500 3150 3500 3250
+$Comp
+L GND #PWR2
+U 1 1 567FA795
+P 3500 4300
+F 0 "#PWR2" H 3500 4050 50  0001 C CNN
+F 1 "GND" H 3500 4150 50  0000 C CNN
+F 2 "" H 3500 4300 60  0000 C CNN
+F 3 "" H 3500 4300 60  0000 C CNN
+	1    3500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT R1
+U 1 1 567F8592
+P 4100 2850
+F 0 "R1" H 4100 2750 50  0000 C CNN
+F 1 "POT" H 4100 2850 50  0000 C CNN
+F 2 "" H 4100 2850 60  0000 C CNN
+F 3 "" H 4100 2850 60  0000 C CNN
+	1    4100 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 3150 4200 3150
+Wire Wire Line
+	3250 3900 4200 3900
+Connection ~ 4100 4750
+$Comp
+L CONN_01X01 P2
+U 1 1 567FBBB1
+P 3650 4750
+F 0 "P2" H 3650 4650 50  0000 C CNN
+F 1 "TRIGGER" H 3650 4850 50  0000 C CNN
+F 2 "" H 3650 4750 60  0000 C CNN
+F 3 "" H 3650 4750 60  0000 C CNN
+	1    3650 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 567FCD00
+P 3750 2050
+F 0 "P5" H 3750 1950 50  0000 C CNN
+F 1 "VCC" H 3750 2150 50  0000 C CNN
+F 2 "" H 3750 2050 60  0000 C CNN
+F 3 "" H 3750 2050 60  0000 C CNN
+	1    3750 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 2050 4100 2050
+Connection ~ 4100 2050
+$Comp
+L CONN_01X01 P6
+U 1 1 567FCF58
+P 5750 5550
+F 0 "P6" H 5750 5650 50  0000 C CNN
+F 1 "GND" H 5750 5450 50  0000 C CNN
+F 2 "" H 5750 5550 60  0000 C CNN
+F 3 "" H 5750 5550 60  0000 C CNN
+	1    5750 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 567FD1F0
+P 3050 3150
+F 0 "P3" H 3050 3050 50  0000 C CNN
+F 1 "DISCHARGE" H 3050 3250 50  0000 C CNN
+F 2 "" H 3050 3150 60  0000 C CNN
+F 3 "" H 3050 3150 60  0000 C CNN
+	1    3050 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 567FD255
+P 3050 3900
+F 0 "P4" H 3050 3800 50  0000 C CNN
+F 1 "THRESHOLD" H 3050 4000 50  0000 C CNN
+F 2 "" H 3050 3900 60  0000 C CNN
+F 3 "" H 3050 3900 60  0000 C CNN
+	1    3050 3900
+	-1   0    0    1   
+$EndComp
+Connection ~ 3500 3150
+$Comp
+L CONN_01X01 P7
+U 1 1 567FD659
+P 4550 5050
+F 0 "P7" H 4550 4950 50  0000 C CNN
+F 1 "CONTROL" H 4550 5150 50  0000 C CNN
+F 2 "" H 4550 5050 60  0000 C CNN
+F 3 "" H 4550 5050 60  0000 C CNN
+	1    4550 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 5050 4950 5050
+Connection ~ 4950 5050
+$EndSCHEMATC

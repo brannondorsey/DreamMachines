@@ -1,0 +1,245 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom
+LIBS:Wireless RGB Pixel-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Wireless RGB Pixel"
+Date "2016-07-09"
+Rev "1"
+Comp ""
+Comment1 "Copyright Mark Benson 2016"
+Comment2 "License Creative Commons Atribution 4.0 (CC-BY 4.0)"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-P U1
+U 1 1 577FF051
+P 5600 2900
+F 0 "U1" H 4450 3300 50  0000 C CNN
+F 1 "ATTINY85-P" H 6600 2500 50  0000 C CNN
+F 2 "DIP8" H 6600 2900 50  0000 C CIN
+F 3 "" H 5600 2900 50  0000 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 577FF0D9
+P 6650 4050
+F 0 "C2" H 6675 4150 50  0000 L CNN
+F 1 "10n" H 6675 3950 50  0000 L CNN
+F 2 "" H 6688 3900 50  0000 C CNN
+F 3 "" H 6650 4050 50  0000 C CNN
+	1    6650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 577FF120
+P 7400 2900
+F 0 "C1" H 7425 3000 50  0000 L CNN
+F 1 "100u" H 7425 2800 50  0000 L CNN
+F 2 "" H 7438 2750 50  0000 C CNN
+F 3 "" H 7400 2900 50  0000 C CNN
+	1    7400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 577FF166
+P 6650 3650
+F 0 "R1" V 6730 3650 50  0000 C CNN
+F 1 "10k" V 6650 3650 50  0000 C CNN
+F 2 "" V 6580 3650 50  0000 C CNN
+F 3 "" H 6650 3650 50  0000 C CNN
+	1    6650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 577FF1AF
+P 5550 3500
+F 0 "D1" H 5550 3600 50  0000 C CNN
+F 1 "1N4148" H 5550 3400 50  0000 C CNN
+F 2 "" H 5550 3500 50  0000 C CNN
+F 3 "" H 5550 3500 50  0000 C CNN
+	1    5550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4300 7200 4300
+Wire Wire Line
+	5950 4200 7100 4200
+Wire Wire Line
+	6400 3400 6400 5050
+Wire Wire Line
+	6400 3400 6650 3400
+Wire Wire Line
+	6650 4600 6650 4200
+Wire Wire Line
+	6650 3400 6650 3500
+Wire Wire Line
+	6650 3800 6650 3900
+Wire Wire Line
+	5950 4100 6400 4100
+Connection ~ 6400 4100
+Wire Wire Line
+	6200 4000 5950 4000
+Wire Wire Line
+	6200 3500 6200 4000
+Wire Wire Line
+	6200 3850 6650 3850
+Connection ~ 6650 3850
+Wire Wire Line
+	6200 3500 5700 3500
+Connection ~ 6200 3850
+$Comp
+L NRF24L01+ U2
+U 1 1 578038B0
+P 5950 4300
+F 0 "U2" H 6380 4450 60  0000 C CNN
+F 1 "NRF24L01+" H 6390 3850 60  0000 C CNN
+F 2 "" H 5950 4310 60  0000 C CNN
+F 3 "" H 5950 4310 60  0000 C CNN
+	1    5950 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 3500 4800 3500
+Wire Wire Line
+	4800 3500 4800 4300
+Wire Wire Line
+	3950 4300 5050 4300
+Wire Wire Line
+	3950 4300 3950 2850
+Wire Wire Line
+	3950 2850 4250 2850
+Connection ~ 4800 4300
+Wire Wire Line
+	4250 2750 3850 2750
+Wire Wire Line
+	3850 2750 3850 4200
+Wire Wire Line
+	3850 4200 5050 4200
+Wire Wire Line
+	4250 2650 3750 2650
+Wire Wire Line
+	3750 2650 3750 4100
+Wire Wire Line
+	3750 4100 5050 4100
+$Comp
+L WS2812B U3
+U 1 1 57803B0F
+P 5050 4850
+F 0 "U3" H 5490 4970 60  0000 C CNN
+F 1 "WS2812B" H 5490 4520 60  0000 C CNN
+F 2 "" H 5370 4780 60  0000 C CNN
+F 3 "" H 5370 4780 60  0000 C CNN
+	1    5050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5050 5950 5050
+Connection ~ 6400 4200
+Wire Wire Line
+	5050 4850 5000 4850
+Wire Wire Line
+	5000 4850 5000 4600
+Wire Wire Line
+	4550 4600 6650 4600
+Connection ~ 6650 4300
+Wire Wire Line
+	4250 3050 4150 3050
+Wire Wire Line
+	4150 3050 4150 5350
+Wire Wire Line
+	4150 5350 6150 5350
+Wire Wire Line
+	6150 5350 6150 4850
+Wire Wire Line
+	6150 4850 5950 4850
+Wire Wire Line
+	7200 4300 7200 3150
+Wire Wire Line
+	6950 3150 7800 3150
+Wire Wire Line
+	7100 4200 7100 2650
+Wire Wire Line
+	6950 2650 7800 2650
+Wire Wire Line
+	7400 2650 7400 2750
+Connection ~ 7100 2650
+Wire Wire Line
+	7400 3150 7400 3050
+Connection ~ 7200 3150
+$Comp
+L CONN_01X02 P1
+U 1 1 57803DD6
+P 4500 4850
+F 0 "P1" H 4500 5000 50  0000 C CNN
+F 1 "Debug Output" V 4600 4850 50  0000 C CNN
+F 2 "" H 4500 4850 50  0000 C CNN
+F 3 "" H 4500 4850 50  0000 C CNN
+	1    4500 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 4650 4550 4600
+Connection ~ 5000 4600
+Wire Wire Line
+	4450 4650 4050 4650
+Wire Wire Line
+	4050 4650 4050 2950
+Wire Wire Line
+	4050 2950 4250 2950
+$Comp
+L Battery BT1
+U 1 1 578269B4
+P 7800 2900
+F 0 "BT1" H 7900 2950 50  0000 L CNN
+F 1 "3v" H 7900 2850 50  0000 L CNN
+F 2 "" V 7800 2940 50  0000 C CNN
+F 3 "" V 7800 2940 50  0000 C CNN
+	1    7800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2650 7800 2750
+Connection ~ 7400 2650
+Wire Wire Line
+	7800 3150 7800 3050
+Connection ~ 7400 3150
+$EndSCHEMATC

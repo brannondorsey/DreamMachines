@@ -1,0 +1,211 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-S IC1
+U 1 1 55D89E12
+P 4025 2750
+F 0 "IC1" H 2875 3150 40  0000 C CNN
+F 1 "ATTINY85-S" H 5025 2350 40  0000 C CNN
+F 2 "FabLibrary:avr-SOIC8" H 4975 2750 35  0000 C CIN
+F 3 "" H 4025 2750 60  0000 C CNN
+	1    4025 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P1
+U 1 1 55D89EB4
+P 1825 2375
+F 0 "P1" H 1825 2625 50  0000 C CNN
+F 1 "CONN_01X04" V 1925 2375 50  0000 C CNN
+F 2 "FabLibrary:Socket_Strip_Straight_1x04" H 1825 2375 60  0001 C CNN
+F 3 "" H 1825 2375 60  0000 C CNN
+	1    1825 2375
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 P2
+U 1 1 55D89F09
+P 1800 3025
+F 0 "P2" H 1800 3275 50  0000 C CNN
+F 1 "CONN_01X04" V 1900 3025 50  0000 C CNN
+F 2 "FabLibrary:Socket_Strip_Straight_1x04" H 1800 3025 60  0001 C CNN
+F 3 "" H 1800 3025 60  0000 C CNN
+	1    1800 3025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 3175 2675 3175
+Wire Wire Line
+	2675 3175 2675 3000
+Wire Wire Line
+	2000 3075 2600 3075
+Wire Wire Line
+	2600 3075 2600 2800
+Wire Wire Line
+	2600 2800 2675 2800
+Wire Wire Line
+	2675 2900 2375 2900
+Wire Wire Line
+	2375 2900 2375 2975
+Wire Wire Line
+	2375 2975 2000 2975
+Wire Wire Line
+	2025 2525 2675 2525
+Wire Wire Line
+	2675 2525 2675 2500
+Wire Wire Line
+	2025 2425 2375 2425
+Wire Wire Line
+	2375 2425 2375 2600
+Wire Wire Line
+	2375 2600 2675 2600
+Wire Wire Line
+	2025 2325 2475 2325
+Wire Wire Line
+	2475 2325 2475 2700
+Wire Wire Line
+	2475 2700 2675 2700
+$Comp
+L +5V #PWR01
+U 1 1 55D8A1EA
+P 2225 2000
+F 0 "#PWR01" H 2225 1850 50  0001 C CNN
+F 1 "+5V" H 2225 2140 50  0000 C CNN
+F 2 "" H 2225 2000 60  0000 C CNN
+F 3 "" H 2225 2000 60  0000 C CNN
+	1    2225 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 55D8A201
+P 2425 2025
+F 0 "#FLG02" H 2425 2120 50  0001 C CNN
+F 1 "PWR_FLAG" H 2425 2205 50  0000 C CNN
+F 2 "" H 2425 2025 60  0000 C CNN
+F 3 "" H 2425 2025 60  0000 C CNN
+	1    2425 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 2225 2425 2225
+Wire Wire Line
+	2225 2225 2225 2000
+Wire Wire Line
+	2425 2225 2425 2025
+Connection ~ 2225 2225
+$Comp
+L GND #PWR03
+U 1 1 55D8A245
+P 2175 3400
+F 0 "#PWR03" H 2175 3150 50  0001 C CNN
+F 1 "GND" H 2175 3250 50  0000 C CNN
+F 2 "" H 2175 3400 60  0000 C CNN
+F 3 "" H 2175 3400 60  0000 C CNN
+	1    2175 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2875 2175 2875
+Wire Wire Line
+	2175 2875 2175 3400
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 55D8A277
+P 2500 3400
+F 0 "#FLG04" H 2500 3495 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 3580 50  0000 C CNN
+F 2 "" H 2500 3400 60  0000 C CNN
+F 3 "" H 2500 3400 60  0000 C CNN
+	1    2500 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2175 3400 2500 3400
+$Comp
+L +5V #PWR05
+U 1 1 55D8A2ED
+P 5500 2325
+F 0 "#PWR05" H 5500 2175 50  0001 C CNN
+F 1 "+5V" H 5500 2465 50  0000 C CNN
+F 2 "" H 5500 2325 60  0000 C CNN
+F 3 "" H 5500 2325 60  0000 C CNN
+	1    5500 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2500 5375 2500
+$Comp
+L GND #PWR06
+U 1 1 55D8A325
+P 5500 3200
+F 0 "#PWR06" H 5500 2950 50  0001 C CNN
+F 1 "GND" H 5500 3050 50  0000 C CNN
+F 2 "" H 5500 3200 60  0000 C CNN
+F 3 "" H 5500 3200 60  0000 C CNN
+	1    5500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5375 3000 5500 3000
+Wire Wire Line
+	5500 2325 5500 2575
+Wire Wire Line
+	5500 2875 5500 3200
+$Comp
+L C C1
+U 1 1 55D8A776
+P 5500 2725
+F 0 "C1" H 5525 2825 50  0000 L CNN
+F 1 "0.1u" H 5525 2625 50  0000 L CNN
+F 2 "" H 5538 2575 30  0000 C CNN
+F 3 "" H 5500 2725 60  0000 C CNN
+	1    5500 2725
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 2500
+Connection ~ 5500 3000
+$EndSCHEMATC

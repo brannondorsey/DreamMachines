@@ -1,0 +1,438 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:maxim
+LIBS:rp_adapter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R15
+U 1 1 569BFC06
+P 3250 1400
+F 0 "R15" V 3330 1400 50  0000 C CNN
+F 1 "100" V 3250 1400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 3180 1400 50  0001 C CNN
+F 3 "" H 3250 1400 50  0000 C CNN
+	1    3250 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R16
+U 1 1 569BFCE6
+P 3250 3200
+F 0 "R16" V 3330 3200 50  0000 C CNN
+F 1 "100" V 3250 3200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 3180 3200 50  0001 C CNN
+F 3 "" H 3250 3200 50  0000 C CNN
+	1    3250 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L OPA26741C U7
+U 1 1 569C088B
+P 4500 1500
+F 0 "U7" H 4700 1600 50  0000 L CNN
+F 1 "OPA26741C" H 4700 1400 50  0000 L CNN
+F 2 "SMD_Packages:SOIC-8-N" H 4500 1500 50  0001 C CNN
+F 3 "" H 4500 1500 50  0000 C CNN
+F 4 "" H 4500 1500 50  0000 C CNN "Field4"
+	1    4500 1500
+	1    0    0    1   
+$EndComp
+$Comp
+L OPA26741C U7
+U 2 1 569C08D2
+P 4500 3100
+F 0 "U7" H 4700 3200 50  0000 L CNN
+F 1 "OPA26741C" H 4700 3000 50  0000 L CNN
+F 2 "SMD_Packages:SOIC-8-N" H 4500 3100 50  0001 C CNN
+F 3 "" H 4500 3100 50  0000 C CNN
+F 4 "" H 4500 3100 50  0000 C CNN "Field4"
+	2    4500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 569C0A5D
+P 3700 2500
+F 0 "R17" V 3780 2500 50  0000 C CNN
+F 1 "1K" V 3700 2500 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 3630 2500 50  0001 C CNN
+F 3 "" H 3700 2500 50  0000 C CNN
+	1    3700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 569C1D63
+P 4400 3750
+F 0 "R20" V 4480 3750 50  0000 C CNN
+F 1 "1K" V 4400 3750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 4330 3750 50  0001 C CNN
+F 3 "" H 4400 3750 50  0000 C CNN
+	1    4400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R19
+U 1 1 569C1EA7
+P 4400 800
+F 0 "R19" V 4480 800 50  0000 C CNN
+F 1 "1K" V 4400 800 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 4330 800 50  0001 C CNN
+F 3 "" H 4400 800 50  0000 C CNN
+	1    4400 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R18
+U 1 1 569C2114
+P 4150 2200
+F 0 "R18" V 4230 2200 50  0000 C CNN
+F 1 "1K" V 4150 2200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 4080 2200 50  0001 C CNN
+F 3 "" H 4150 2200 50  0000 C CNN
+	1    4150 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 1600 4200 1600
+Wire Wire Line
+	3900 3000 4200 3000
+Wire Wire Line
+	3700 2650 3700 2850
+Wire Wire Line
+	4400 1800 4400 2800
+Wire Wire Line
+	2800 2150 2950 2150
+Wire Wire Line
+	2950 2150 2950 1400
+Wire Wire Line
+	2950 1400 3100 1400
+Wire Wire Line
+	3400 1400 4200 1400
+Wire Wire Line
+	2800 2550 2950 2550
+Wire Wire Line
+	2950 2550 2950 3200
+Wire Wire Line
+	2950 3200 3100 3200
+Wire Wire Line
+	3400 3200 4200 3200
+Wire Wire Line
+	4400 1000 4400 1200
+Wire Wire Line
+	4400 3500 4400 3400
+Wire Wire Line
+	3700 2350 3700 2200
+Wire Wire Line
+	3700 2200 4000 2200
+Wire Wire Line
+	3900 1600 3900 3000
+Connection ~ 3900 2200
+Wire Wire Line
+	4300 2200 5300 2200
+Connection ~ 4400 2200
+Wire Wire Line
+	4800 2600 4800 2550
+Wire Wire Line
+	5300 2600 5300 2550
+$Comp
+L INDUCTOR L5
+U 1 1 569C28E4
+P 5100 2000
+F 0 "L5" V 5050 2000 50  0000 C CNN
+F 1 "FB" V 5200 2000 50  0000 C CNN
+F 2 "my_lib:FB" H 5100 2000 50  0001 C CNN
+F 3 "" H 5100 2000 50  0000 C CNN
+	1    5100 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 1700 5700 2000
+Wire Wire Line
+	5700 2000 5400 2000
+Wire Wire Line
+	5300 2200 5300 2250
+Wire Wire Line
+	4800 2000 4800 2250
+Connection ~ 4800 2200
+$Comp
+L R R21
+U 1 1 569C2EB2
+P 6400 1450
+F 0 "R21" V 6480 1450 50  0000 C CNN
+F 1 "4R99" V 6400 1450 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 6330 1450 50  0001 C CNN
+F 3 "" H 6400 1450 50  0000 C CNN
+	1    6400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 569C2F0F
+P 6400 2800
+F 0 "R22" V 6480 2800 50  0000 C CNN
+F 1 "4R99" V 6400 2800 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 6330 2800 50  0001 C CNN
+F 3 "" H 6400 2800 50  0000 C CNN
+	1    6400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1500 4800 1500
+Wire Wire Line
+	5250 800  5250 1500
+Wire Wire Line
+	5250 800  4550 800 
+Wire Wire Line
+	6400 1300 6400 1150
+Wire Wire Line
+	6400 1150 5250 1150
+Connection ~ 5250 1150
+Wire Wire Line
+	6400 1600 6400 1900
+Wire Wire Line
+	6400 1900 6750 1900
+Wire Wire Line
+	4250 800  3900 800 
+Wire Wire Line
+	3900 800  3900 1400
+Connection ~ 3900 1400
+Wire Wire Line
+	6750 2300 6400 2300
+Wire Wire Line
+	6400 2300 6400 2650
+Wire Wire Line
+	6400 3100 6400 2950
+Wire Wire Line
+	5300 3100 5300 3750
+Wire Wire Line
+	5300 3750 4550 3750
+Wire Wire Line
+	4800 3100 6400 3100
+Connection ~ 5300 3100
+Wire Wire Line
+	4250 3750 3900 3750
+Wire Wire Line
+	3900 3750 3900 3200
+Connection ~ 3900 3200
+Wire Wire Line
+	7800 1900 7550 1900
+Text Notes 7900 6850 0    60   ~ 0
+0.5W RF Amplifier - From HPSDR Pennylane\n
+$Comp
+L ADT1.5-1 T2
+U 1 1 569E4E79
+P 7150 2100
+F 0 "T2" H 7150 2350 50  0000 C CNN
+F 1 "ADT1.5-1" H 7150 1800 50  0000 C CNN
+F 2 "minicircuits:ADT1.5-1" H 7150 2100 50  0001 C CNN
+F 3 "" H 7150 2100 50  0000 C CNN
+	1    7150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SMA J5
+U 1 1 5779701B
+P 1200 2450
+F 0 "J5" H 1325 2765 60  0000 C CNN
+F 1 "SMA" H 1390 2690 60  0000 C CNN
+F 2 "minicircuits:SMA_F_RA" H 1375 2620 50  0001 C CNN
+F 3 "" H 1200 2450 60  0000 C CNN
+	1    1200 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BNC P15
+U 1 1 577970E4
+P 8700 1900
+F 0 "P15" H 8710 2020 50  0000 C CNN
+F 1 "BNC" V 8810 1840 50  0000 C CNN
+F 2 "my_lib:BNC_VERTICAL" H 8700 1900 50  0001 C CNN
+F 3 "" H 8700 1900 50  0000 C CNN
+	1    8700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1900 8100 1900
+Wire Wire Line
+	1150 2350 1300 2350
+Connection ~ 1250 2350
+Connection ~ 1200 2350
+Text Label 5000 2200 0    60   ~ 0
+AMP12V
+NoConn ~ 6750 2100
+NoConn ~ 2750 2350
+Wire Wire Line
+	1250 2350 1250 2800
+Wire Wire Line
+	4800 2600 5500 2600
+Wire Wire Line
+	5500 2600 5500 4050
+Connection ~ 5300 2600
+Wire Wire Line
+	4400 1000 1950 1000
+Text HLabel 5450 1700 0    60   UnSpc ~ 0
+12V_MINIAMP
+Wire Wire Line
+	5450 1700 5700 1700
+$Comp
+L C C39
+U 1 1 57827BFB
+P 7950 1900
+F 0 "C39" H 7975 2000 50  0000 L CNN
+F 1 "0.1uF" H 7975 1800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7988 1750 50  0001 C CNN
+F 3 "" H 7950 1900 50  0000 C CNN
+	1    7950 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C38
+U 1 1 5782832F
+P 5300 2400
+F 0 "C38" H 5325 2500 50  0000 L CNN
+F 1 "0.1uF" H 5325 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5338 2250 50  0001 C CNN
+F 3 "" H 5300 2400 50  0000 C CNN
+	1    5300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C37
+U 1 1 578283F8
+P 4800 2400
+F 0 "C37" H 4825 2500 50  0000 L CNN
+F 1 "10uF" H 4825 2300 50  0000 L CNN
+F 2 "SMD_Packages:SMD-1210_Pol" H 4838 2250 50  0001 C CNN
+F 3 "" H 4800 2400 50  0000 C CNN
+	1    4800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5785887B
+P 5500 4050
+F 0 "#PWR016" H 5500 3800 50  0001 C CNN
+F 1 "GND" H 5500 3900 50  0000 C CNN
+F 2 "" H 5500 4050 50  0000 C CNN
+F 3 "" H 5500 4050 50  0000 C CNN
+	1    5500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L TC4-LT T1
+U 1 1 5785BD00
+P 2400 2350
+F 0 "T1" H 2400 2600 50  0000 C CNN
+F 1 "TC4-LT" H 2400 2050 50  0000 C CNN
+F 2 "minicircuits:TC4-1T" H 2400 2350 50  0001 C CNN
+F 3 "" H 2400 2350 50  0000 C CNN
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2550 2000 2550
+NoConn ~ 2000 2350
+Wire Wire Line
+	2000 2150 1350 2150
+Connection ~ 1250 2550
+$Comp
+L GND #PWR017
+U 1 1 57DEC1ED
+P 3700 2850
+F 0 "#PWR017" H 3700 2600 50  0001 C CNN
+F 1 "GND" H 3700 2700 50  0000 C CNN
+F 2 "" H 3700 2850 50  0000 C CNN
+F 3 "" H 3700 2850 50  0000 C CNN
+	1    3700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 57DEC225
+P 1950 1150
+F 0 "#PWR018" H 1950 900 50  0001 C CNN
+F 1 "GND" H 1950 1000 50  0000 C CNN
+F 2 "" H 1950 1150 50  0000 C CNN
+F 3 "" H 1950 1150 50  0000 C CNN
+	1    1950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1000 1950 1150
+Wire Wire Line
+	4400 3500 5500 3500
+Connection ~ 5500 3500
+$Comp
+L Earth #PWR019
+U 1 1 57DED35E
+P 1250 2800
+F 0 "#PWR019" H 1250 2550 50  0001 C CNN
+F 1 "Earth" H 1250 2650 50  0001 C CNN
+F 2 "" H 1250 2800 50  0000 C CNN
+F 3 "" H 1250 2800 50  0000 C CNN
+	1    1250 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 900  3000 0    60   ~ 0
+Signal name: EARTH\n
+$Comp
+L GNDPWR #PWR020
+U 1 1 57DEDED3
+P 8650 2550
+F 0 "#PWR020" H 8650 2350 50  0001 C CNN
+F 1 "GNDPWR" H 8650 2420 50  0000 C CNN
+F 2 "" H 8650 2500 50  0000 C CNN
+F 3 "" H 8650 2500 50  0000 C CNN
+	1    8650 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2550 8650 2100
+Wire Wire Line
+	8650 2100 8700 2100
+Wire Wire Line
+	7550 2300 8650 2300
+Connection ~ 8650 2300
+$EndSCHEMATC

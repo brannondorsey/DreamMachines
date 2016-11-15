@@ -1,0 +1,364 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OSD335x
+LIBS:GrayCatLabs
+LIBS:uBeagle-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp "Gray Cat Labs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OSD3358 U1
+U 1 1 5744BD85
+P 4050 2450
+F 0 "U1" H 5250 2740 60  0000 C CNN
+F 1 "OSD3358" H 5250 2634 60  0000 C CNN
+F 2 "" H 4050 2450 60  0000 C CNN
+F 3 "" H 4050 2450 60  0000 C CNN
+	1    4050 2450
+	1    0    0    -1  
+$EndComp
+Text HLabel 2250 2650 0    60   Input ~ 0
+USB_VBUS
+Text HLabel 3100 2850 0    60   Input ~ 0
+BAT_VIN
+Text HLabel 3100 3150 0    60   Input ~ 0
+BAT_TEMP
+Text HLabel 3100 3050 0    60   Input ~ 0
+BAT_VSENSE
+Text HLabel 3100 4550 0    60   Input ~ 0
+I2C0_SCL
+Text HLabel 3100 4650 0    60   BiDi ~ 0
+I2C0_SDA
+$Comp
+L 5V_USB #PWR5
+U 1 1 5746668A
+P 2450 2400
+F 0 "#PWR5" H 2450 2250 50  0001 C CNN
+F 1 "5V_USB" H 2455 2573 50  0000 C CNN
+F 2 "" H 2450 2400 60  0000 C CNN
+F 3 "" H 2450 2400 60  0000 C CNN
+	1    2450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR6
+U 1 1 57466E01
+P 7350 4250
+F 0 "#PWR6" H 7350 4100 50  0001 C CNN
+F 1 "VCC" H 7367 4423 50  0000 C CNN
+F 2 "" H 7350 4250 50  0000 C CNN
+F 3 "" H 7350 4250 50  0000 C CNN
+	1    7350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2850 4050 2850
+Wire Wire Line
+	4050 2950 3750 2950
+Wire Wire Line
+	3750 2950 3750 2850
+Connection ~ 3750 2850
+Wire Wire Line
+	4050 3050 3100 3050
+Wire Wire Line
+	4050 3150 3100 3150
+Wire Wire Line
+	1750 3350 4050 3350
+Wire Wire Line
+	3750 3250 4050 3250
+Wire Wire Line
+	3750 3250 3750 3450
+Wire Wire Line
+	3750 3450 4050 3450
+Wire Wire Line
+	2250 2650 4050 2650
+Wire Wire Line
+	4050 2750 3750 2750
+Wire Wire Line
+	3750 2750 3750 2650
+Connection ~ 3750 2650
+Wire Wire Line
+	4050 4550 3100 4550
+Wire Wire Line
+	4050 4650 3100 4650
+Wire Wire Line
+	2450 2400 2450 2650
+Connection ~ 2450 2650
+Wire Wire Line
+	6450 4350 7350 4350
+Wire Wire Line
+	7350 4250 7350 4450
+Wire Wire Line
+	6450 4450 6750 4450
+Wire Wire Line
+	6750 4450 6750 4350
+Connection ~ 6750 4350
+Wire Wire Line
+	4050 3750 3300 3750
+Wire Wire Line
+	4050 3950 3300 3950
+Wire Wire Line
+	4050 3850 3300 3850
+Wire Wire Line
+	4050 4050 3300 4050
+Text Label 3300 3750 0    60   ~ 0
+PMIC_PGOOD
+Text Label 3300 3950 0    60   ~ 0
+PMC_NWAKEUP
+Text Label 3300 3850 0    60   ~ 0
+LDO_PGOOD
+Text Label 3300 4050 0    60   ~ 0
+PMIC_INT
+Wire Wire Line
+	4050 4150 3300 4150
+Text Label 3300 4150 0    60   ~ 0
+PMIC_PGOOD
+Wire Wire Line
+	4050 4350 3300 4350
+Text Label 3300 4350 0    60   ~ 0
+LDO_PGOOD
+Wire Wire Line
+	4050 3550 3300 3550
+Text Label 3300 3550 0    60   ~ 0
+PMC_NWAKEUP
+Wire Wire Line
+	4050 3650 3300 3650
+Text Label 3300 3650 0    60   ~ 0
+PMIC_INT
+Wire Wire Line
+	1750 4250 4050 4250
+Text Label 3300 4250 0    60   ~ 0
+RESET
+$Comp
+L C C1
+U 1 1 5746823F
+P 1950 4550
+F 0 "C1" H 2065 4596 50  0000 L CNN
+F 1 "1uF" H 2065 4505 50  0000 L CNN
+F 2 "" H 1988 4400 50  0000 C CNN
+F 3 "" H 1950 4550 50  0000 C CNN
+	1    1950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 574682B4
+P 1950 3950
+F 0 "R1" H 2020 3996 50  0000 L CNN
+F 1 "10k" H 2020 3905 50  0000 L CNN
+F 2 "" V 1880 3950 50  0000 C CNN
+F 3 "" H 1950 3950 50  0000 C CNN
+	1    1950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR3
+U 1 1 574682E8
+P 1950 3700
+F 0 "#PWR3" H 1950 3550 50  0001 C CNN
+F 1 "VCC" H 1967 3873 50  0000 C CNN
+F 2 "" H 1950 3700 50  0000 C CNN
+F 3 "" H 1950 3700 50  0000 C CNN
+	1    1950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 57468304
+P 1950 4800
+F 0 "#PWR4" H 1950 4550 50  0001 C CNN
+F 1 "GND" H 1955 4627 50  0000 C CNN
+F 2 "" H 1950 4800 50  0000 C CNN
+F 3 "" H 1950 4800 50  0000 C CNN
+	1    1950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4700 1950 4800
+Wire Wire Line
+	1950 4100 1950 4400
+Wire Wire Line
+	1950 3700 1950 3800
+Connection ~ 1950 4250
+Text HLabel 1750 3350 0    60   Input ~ 0
+PWR_BUTTON
+Text HLabel 1750 4250 0    60   Input ~ 0
+RESET
+$Comp
+L C C?
+U 1 1 57558EE5
+P 7350 4600
+F 0 "C?" H 7375 4700 50  0000 L CNN
+F 1 "C" H 7375 4500 50  0000 L CNN
+F 2 "" H 7388 4450 50  0000 C CNN
+F 3 "" H 7350 4600 50  0000 C CNN
+	1    7350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57558F46
+P 7350 4850
+F 0 "#PWR?" H 7350 4600 50  0001 C CNN
+F 1 "GND" H 7350 4700 50  0000 C CNN
+F 2 "" H 7350 4850 50  0000 C CNN
+F 3 "" H 7350 4850 50  0000 C CNN
+	1    7350 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 4350
+Wire Wire Line
+	7350 4750 7350 4850
+Wire Wire Line
+	3100 2450 4050 2450
+Wire Wire Line
+	4050 2550 3750 2550
+Wire Wire Line
+	3750 2550 3750 2450
+Connection ~ 3750 2450
+Text HLabel 3100 2450 0    60   Input ~ 0
+VIN_EXT
+Wire Wire Line
+	4050 4450 2400 4450
+Wire Wire Line
+	2400 4450 2400 4700
+$Comp
+L R R?
+U 1 1 5755C043
+P 2400 4850
+F 0 "R?" V 2480 4850 50  0000 C CNN
+F 1 "10k" V 2400 4850 50  0000 C CNN
+F 2 "" V 2330 4850 50  0000 C CNN
+F 3 "" H 2400 4850 50  0000 C CNN
+	1    2400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5755C06C
+P 2400 5100
+F 0 "#PWR?" H 2400 4850 50  0001 C CNN
+F 1 "GND" H 2400 4950 50  0000 C CNN
+F 2 "" H 2400 5100 50  0000 C CNN
+F 3 "" H 2400 5100 50  0000 C CNN
+	1    2400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5000 2400 5100
+$Comp
+L OSD3358 U?
+U 9 1 5755C483
+P 3000 5900
+F 0 "U?" H 3200 6150 60  0000 L CNN
+F 1 "OSD3358" H 3200 6050 60  0000 L CNN
+F 2 "" H 3000 5900 60  0000 C CNN
+F 3 "" H 3000 5900 60  0000 C CNN
+	9    3000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSD3358 U?
+U 10 1 5755C4B6
+P 8700 1350
+F 0 "U?" H 8900 1600 60  0000 L CNN
+F 1 "OSD3358" H 8900 1500 60  0000 L CNN
+F 2 "" H 8700 1350 60  0000 C CNN
+F 3 "" H 8700 1350 60  0000 C CNN
+	10   8700 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 5450 10100 5450
+Wire Wire Line
+	10100 3650 10350 3650
+Wire Wire Line
+	10350 1450 10350 5800
+Wire Wire Line
+	10100 1950 10350 1950
+Connection ~ 10350 3650
+Wire Wire Line
+	10100 1450 10350 1450
+Connection ~ 10350 1950
+Wire Wire Line
+	8700 1550 8450 1550
+Wire Wire Line
+	8450 1550 8450 6000
+Wire Wire Line
+	8450 1650 8700 1650
+Wire Wire Line
+	8450 2950 8700 2950
+Connection ~ 8450 1650
+Wire Wire Line
+	8450 3150 8700 3150
+Connection ~ 8450 2950
+Wire Wire Line
+	8450 3250 8700 3250
+Connection ~ 8450 3150
+Wire Wire Line
+	8450 4050 8700 4050
+Connection ~ 8450 3250
+Wire Wire Line
+	8450 4950 8700 4950
+Connection ~ 8450 4050
+Wire Wire Line
+	8450 5450 8700 5450
+Connection ~ 8450 4950
+$Comp
+L GND #PWR?
+U 1 1 5755C9A0
+P 8450 6000
+F 0 "#PWR?" H 8450 5750 50  0001 C CNN
+F 1 "GND" H 8450 5850 50  0000 C CNN
+F 2 "" H 8450 6000 50  0000 C CNN
+F 3 "" H 8450 6000 50  0000 C CNN
+	1    8450 6000
+	1    0    0    -1  
+$EndComp
+Connection ~ 8450 5450
+Wire Wire Line
+	10350 5800 8450 5800
+Connection ~ 10350 5450
+Connection ~ 8450 5800
+Text Notes 3200 2350 0    60   ~ 0
+Add 5V regulator
+$EndSCHEMATC

@@ -1,0 +1,664 @@
+EESchema Schematic File Version 2
+LIBS:arduino
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kicad-uno-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "KiCADuino (based on UNO Rev3)"
+Date "27 jul 2013"
+Rev "v1.0"
+Comp "Gruvin & Co"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 51EF9E32
+P 4100 4100
+F 0 "R2" V 4180 4100 40  0000 C CNN
+F 1 "1M" V 4107 4101 40  0000 C CNN
+F 2 "" V 4030 4100 30  0001 C CNN
+F 3 "~" H 4100 4100 30  0000 C CNN
+	1    4100 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RESONATOR X1
+U 1 1 51EFA161
+P 4100 4400
+F 0 "X1" H 4450 4250 39  0000 C CNN
+F 1 "CSTCE16M0V53 16MHz" H 4150 4550 39  0000 C CNN
+F 2 "" H 4100 4400 60  0001 C CNN
+F 3 "~" H 4100 4400 60  0000 C CNN
+	1    4100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA328P-PU ZU1
+U 1 1 51EF9E19
+P 5650 4800
+F 0 "ZU1" H 4950 6300 47  0000 L BNN
+F 1 "ATMEGA328P-PU" H 5850 3200 47  0000 L BNN
+F 2 "DIP28" H 5650 4850 59  0001 C CNB
+F 3 "~" H 5650 4800 60  0000 C CNN
+	1    5650 4800
+	1    0    0    -1  
+$EndComp
+Text Label 4500 5550 0    39   ~ 0
+AREF
+$Comp
+L +5V #PWR01
+U 1 1 51EFB351
+P 4050 5350
+F 0 "#PWR01" H 4050 5440 20  0001 C CNN
+F 1 "+5V" H 4050 5440 30  0000 C CNN
+F 2 "" H 4050 5350 60  0000 C CNN
+F 3 "" H 4050 5350 60  0000 C CNN
+	1    4050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 51EFB3A6
+P 4050 6050
+F 0 "C6" H 4050 6150 40  0000 L CNN
+F 1 "100n" H 4056 5965 40  0000 L CNN
+F 2 "SM0603_Capa" H 4088 5900 30  0001 C CNN
+F 3 "~" H 4050 6050 60  0000 C CNN
+	1    4050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 51EFB465
+P 4100 5000
+F 0 "#PWR02" H 4100 5000 30  0001 C CNN
+F 1 "GND" H 4100 4930 30  0001 C CNN
+F 2 "" H 4100 5000 60  0000 C CNN
+F 3 "" H 4100 5000 60  0000 C CNN
+	1    4100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 51EFB47C
+P 4550 6400
+F 0 "#PWR03" H 4550 6400 30  0001 C CNN
+F 1 "GND" H 4550 6330 30  0001 C CNN
+F 2 "" H 4550 6400 60  0000 C CNN
+F 3 "" H 4550 6400 60  0000 C CNN
+	1    4550 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D2
+U 1 1 51EFB484
+P 4300 3200
+F 0 "D2" H 4300 3300 40  0000 C CNN
+F 1 "CD1206-S01575" H 4300 3100 40  0000 C CNN
+F 2 "SM1206D" H 4300 3200 60  0001 C CNN
+F 3 "~" H 4300 3200 60  0000 C CNN
+	1    4300 3200
+	0    -1   -1   0   
+$EndComp
+Text Label 4450 3500 0    39   ~ 0
+RESET
+$Comp
+L +5V #PWR04
+U 1 1 51EFB4F2
+P 3950 2750
+F 0 "#PWR04" H 3950 2840 20  0001 C CNN
+F 1 "+5V" H 3950 2840 30  0000 C CNN
+F 2 "" H 3950 2750 60  0000 C CNN
+F 3 "" H 3950 2750 60  0000 C CNN
+	1    3950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3X2 ICSP1
+U 1 1 51EFB5B1
+P 5750 2350
+F 0 "ICSP1" H 5750 2600 50  0000 C CNN
+F 1 "3X2 M" H 5750 2200 40  0000 C CNN
+F 2 "pin_array_3x2" H 5750 2350 60  0001 C CNN
+F 3 "" H 5750 2350 60  0000 C CNN
+	1    5750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 51EFB6EE
+P 6200 2000
+F 0 "#PWR05" H 6200 2090 20  0001 C CNN
+F 1 "+5V" H 6200 2090 30  0000 C CNN
+F 2 "" H 6200 2000 60  0000 C CNN
+F 3 "" H 6200 2000 60  0000 C CNN
+	1    6200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 51EFB6F4
+P 6200 2600
+F 0 "#PWR06" H 6200 2600 30  0001 C CNN
+F 1 "GND" H 6200 2530 30  0001 C CNN
+F 2 "" H 6200 2600 60  0000 C CNN
+F 3 "" H 6200 2600 60  0000 C CNN
+	1    6200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PBS_SMD SW1
+U 1 1 51EFB800
+P 4300 1950
+F 0 "SW1" V 4200 2300 60  0000 L CNN
+F 1 "RESET" V 4350 2300 60  0000 L CNN
+F 2 "" H 4300 1950 60  0001 C CNN
+F 3 "~" H 4300 1950 60  0000 C CNN
+	1    4300 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 51EFB933
+P 4800 1650
+F 0 "#PWR07" H 4800 1650 30  0001 C CNN
+F 1 "GND" H 4800 1580 30  0001 C CNN
+F 2 "" H 4800 1650 60  0000 C CNN
+F 3 "" H 4800 1650 60  0000 C CNN
+	1    4800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER J1
+U 1 1 51EFBB1E
+P 3350 2150
+F 0 "J1" H 3350 2300 60  0000 C CNN
+F 1 "RESET_EN" H 3350 2070 40  0000 C CNN
+F 2 "JSOLD" H 3350 2150 60  0001 C CNN
+F 3 "~" H 3350 2150 60  0000 C CNN
+	1    3350 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 2400 0    59   Input ~ 0
+DTR
+Text GLabel 3250 5550 0    59   Input ~ 0
+AREF
+$Comp
+L C C5
+U 1 1 51EFBD11
+P 2700 2400
+F 0 "C5" V 2750 2250 40  0000 L CNN
+F 1 "100n" V 2650 2200 40  0000 L CNN
+F 2 "SM0603_Capa" H 2738 2250 30  0001 C CNN
+F 3 "~" H 2700 2400 60  0000 C CNN
+	1    2700 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_10 S4
+U 1 1 51EFBE6B
+P 8700 3750
+F 0 "S4" H 8900 4150 60  0000 C CNN
+F 1 "IOH" H 8700 4300 60  0000 C CNN
+F 2 "" H 8700 3750 60  0001 C CNN
+F 3 "" H 8700 3750 60  0000 C CNN
+	1    8700 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_6 S2
+U 1 1 51EFBE7A
+P 8700 4800
+F 0 "S2" H 8900 5000 60  0000 C CNN
+F 1 "AD" H 8700 5150 60  0000 C CNN
+F 2 "" H 8700 4800 60  0001 C CNN
+F 3 "" H 8700 4800 60  0000 C CNN
+	1    8700 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_8 S3
+U 1 1 51EFBE89
+P 8700 5650
+F 0 "S3" H 8900 5950 60  0000 C CNN
+F 1 "IOL" H 8700 6150 60  0000 C CNN
+F 2 "" H 8700 5650 60  0001 C CNN
+F 3 "" H 8700 5650 60  0000 C CNN
+	1    8700 5650
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_6 S1
+U 1 1 51EFBF13
+P 8700 1600
+F 0 "S1" H 8900 1350 60  0000 C CNN
+F 1 "PWR" H 8700 1200 60  0000 C CNN
+F 2 "" H 8700 1600 60  0001 C CNN
+F 3 "" H 8700 1600 60  0000 C CNN
+	1    8700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 51EFBFBA
+P 7750 1000
+F 0 "#PWR08" H 7750 1090 20  0001 C CNN
+F 1 "+5V" H 7750 1090 30  0000 C CNN
+F 2 "" H 7750 1000 60  0000 C CNN
+F 3 "" H 7750 1000 60  0000 C CNN
+	1    7750 1000
+	1    0    0    -1  
+$EndComp
+Text Label 7850 1350 0    39   ~ 0
+RESET
+Text Label 7950 1450 0    39   ~ 0
++3V3
+$Comp
+L GND #PWR09
+U 1 1 51EFC18B
+P 7750 2050
+F 0 "#PWR09" H 7750 2050 30  0001 C CNN
+F 1 "GND" H 7750 1980 30  0001 C CNN
+F 2 "" H 7750 2050 60  0000 C CNN
+F 3 "" H 7750 2050 60  0000 C CNN
+	1    7750 2050
+	1    0    0    -1  
+$EndComp
+Text Label 7950 1850 0    39   ~ 0
+VIN
+$Comp
+L GND #PWR010
+U 1 1 51EFC5DA
+P 7950 4350
+F 0 "#PWR010" H 7950 4350 30  0001 C CNN
+F 1 "GND" H 7950 4280 30  0001 C CNN
+F 2 "" H 7950 4350 60  0000 C CNN
+F 3 "" H 7950 4350 60  0000 C CNN
+	1    7950 4350
+	1    0    0    -1  
+$EndComp
+Text Label 7750 3500 0    39   ~ 0
+AREF
+Text Label 6800 4550 0    39   ~ 0
+AD5/SCL
+Text Label 6800 4650 0    39   ~ 0
+AD4/SDA
+Text Label 6800 4750 0    39   ~ 0
+AD3
+Text Label 6800 4850 0    39   ~ 0
+AD2
+Text Label 6800 4950 0    39   ~ 0
+AD1
+Text Label 6800 5050 0    39   ~ 0
+AD0
+Text Label 6800 4000 0    39   ~ 0
+SS
+Text Label 6800 4100 0    39   ~ 0
+IO9
+Text Label 6800 4200 0    39   ~ 0
+IO8
+Text Label 6800 5300 0    39   ~ 0
+IO7
+Text Label 6800 5400 0    39   ~ 0
+IO6
+Text Label 6800 5500 0    39   ~ 0
+IO5
+Text Label 6800 5600 0    39   ~ 0
+IO4
+Text Label 6800 5700 0    39   ~ 0
+IO3
+Text Label 6800 5800 0    39   ~ 0
+IO2
+Text Label 6800 5900 0    39   ~ 0
+IO1
+Text Label 6800 6000 0    39   ~ 0
+IO0
+Text GLabel 8000 6400 2    59   Input ~ 0
+RXD
+Text GLabel 8000 6200 2    59   Input ~ 0
+TXD
+$Sheet
+S 750  7100 800  550 
+U 51EFD9F1
+F0 "USB" 50
+F1 "usb.sch" 50
+$EndSheet
+$Comp
+L GND #PWR011
+U 1 1 51EFF973
+P 2300 3200
+F 0 "#PWR011" H 2300 3200 30  0001 C CNN
+F 1 "GND" H 2300 3130 30  0001 C CNN
+F 2 "" H 2300 3200 60  0000 C CNN
+F 3 "" H 2300 3200 60  0000 C CNN
+	1    2300 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 4700 4700 2    39   ~ 0
+RESONATOR
+Text Notes 2700 700  0    60   ~ 0
+This is NOT an offical or recognised Arduino(TM) UNO Schematic.\nPlease see www.arduino.cc for all official Arduino(TM) information.
+Text Notes 750  850  0    197  ~ 0
+KiCAD-UNO\nBased on  Arduino(TM) UNO Rev3
+$Sheet
+S 1700 7100 800  550 
+U 51EFC99F
+F0 "POWER" 50
+F1 "power.sch" 50
+$EndSheet
+Text GLabel 7150 2900 2    60   Input ~ 0
+SCK
+Wire Wire Line
+	4400 4400 4750 4400
+Wire Wire Line
+	4350 4100 4550 4100
+Wire Wire Line
+	4550 4100 4550 4400
+Connection ~ 4550 4400
+Wire Wire Line
+	4100 5000 4100 4900
+Wire Wire Line
+	3750 4400 3800 4400
+Wire Wire Line
+	4750 4200 4750 3900
+Wire Wire Line
+	4750 3900 3750 3900
+Wire Wire Line
+	3750 3900 3750 4400
+Wire Wire Line
+	3850 4100 3750 4100
+Connection ~ 3750 4100
+Wire Wire Line
+	4750 5550 3250 5550
+Wire Wire Line
+	4750 5700 4050 5700
+Wire Wire Line
+	4050 5350 4050 5850
+Wire Wire Line
+	4050 5800 4750 5800
+Connection ~ 4050 5700
+Wire Wire Line
+	4750 6150 4550 6150
+Wire Wire Line
+	4550 6000 4550 6400
+Wire Wire Line
+	4750 6000 4550 6000
+Connection ~ 4550 6150
+Connection ~ 4050 5800
+Wire Wire Line
+	4050 6250 4050 6300
+Wire Wire Line
+	3600 6300 4550 6300
+Connection ~ 4550 6300
+Wire Wire Line
+	3750 3500 4750 3500
+Wire Wire Line
+	3950 3500 3950 3450
+Wire Wire Line
+	4300 3400 4300 3500
+Connection ~ 4300 3500
+Wire Wire Line
+	3950 2750 3950 2950
+Wire Wire Line
+	4300 3000 4300 2850
+Wire Wire Line
+	4300 2850 3950 2850
+Connection ~ 3950 2850
+Wire Wire Line
+	3750 1350 3750 3500
+Wire Wire Line
+	2900 2400 5350 2400
+Connection ~ 3950 3500
+Wire Wire Line
+	6750 3700 6750 2900
+Wire Wire Line
+	5200 2900 7150 2900
+Wire Wire Line
+	5200 2900 5200 2300
+Wire Wire Line
+	5200 2300 5350 2300
+Wire Wire Line
+	5350 2200 5100 2200
+Wire Wire Line
+	5100 2200 5100 3000
+Wire Wire Line
+	5100 3000 6850 3000
+Wire Wire Line
+	6850 3000 6850 3800
+Wire Wire Line
+	6150 2300 6950 2300
+Wire Wire Line
+	6950 2300 6950 3900
+Wire Wire Line
+	6150 2400 6200 2400
+Wire Wire Line
+	6200 2400 6200 2600
+Wire Wire Line
+	6150 2200 6200 2200
+Wire Wire Line
+	6200 2200 6200 2000
+Wire Wire Line
+	4200 2350 4200 2400
+Connection ~ 4200 2400
+Wire Wire Line
+	4400 2350 4400 2400
+Connection ~ 4400 2400
+Wire Wire Line
+	4200 1550 4200 1500
+Wire Wire Line
+	4200 1500 4800 1500
+Wire Wire Line
+	4400 1500 4400 1550
+Wire Wire Line
+	4800 1500 4800 1650
+Connection ~ 4400 1500
+Wire Wire Line
+	3750 2150 3650 2150
+Connection ~ 3750 2400
+Wire Wire Line
+	3000 2400 3000 2150
+Wire Wire Line
+	3000 2150 3050 2150
+Connection ~ 3000 2400
+Wire Wire Line
+	2100 2400 2500 2400
+Wire Wire Line
+	7750 1550 8350 1550
+Wire Wire Line
+	7750 1550 7750 1000
+Wire Wire Line
+	8350 1350 3750 1350
+Connection ~ 3750 2150
+Wire Wire Line
+	8350 1650 7750 1650
+Wire Wire Line
+	7750 1650 7750 2050
+Wire Wire Line
+	8350 1750 7750 1750
+Connection ~ 7750 1750
+Connection ~ 6950 3900
+Connection ~ 6850 3800
+Connection ~ 6750 3700
+Wire Wire Line
+	8350 3500 7750 3500
+Wire Wire Line
+	6650 4550 8350 4550
+Wire Wire Line
+	6650 4650 8350 4650
+Wire Wire Line
+	6650 4750 8350 4750
+Wire Wire Line
+	8350 4850 6650 4850
+Wire Wire Line
+	6650 4950 8350 4950
+Wire Wire Line
+	8350 5050 6650 5050
+Wire Wire Line
+	8350 3400 8250 3400
+Wire Wire Line
+	8250 3400 8250 4650
+Connection ~ 8250 4650
+Wire Wire Line
+	8350 3300 8150 3300
+Wire Wire Line
+	8150 3300 8150 4550
+Connection ~ 8150 4550
+Wire Wire Line
+	8350 4200 6650 4200
+Wire Wire Line
+	6650 4100 8350 4100
+Wire Wire Line
+	8350 4000 6650 4000
+Wire Wire Line
+	6650 3900 8350 3900
+Wire Wire Line
+	6650 3800 8350 3800
+Wire Wire Line
+	6650 3700 8350 3700
+Wire Wire Line
+	6650 6000 8350 6000
+Wire Wire Line
+	6650 5900 8350 5900
+Wire Wire Line
+	6650 5800 8350 5800
+Wire Wire Line
+	8350 5700 6650 5700
+Wire Wire Line
+	6650 5600 8350 5600
+Wire Wire Line
+	8350 5500 6650 5500
+Wire Wire Line
+	6650 5400 8350 5400
+Wire Wire Line
+	8350 5300 6650 5300
+Wire Wire Line
+	7100 5900 7100 6200
+Wire Wire Line
+	7100 6200 7350 6200
+Connection ~ 7100 5900
+Wire Wire Line
+	7350 6400 7000 6400
+Wire Wire Line
+	7000 6400 7000 6000
+Connection ~ 7000 6000
+Wire Wire Line
+	7850 6400 8000 6400
+Wire Wire Line
+	8000 6200 7850 6200
+Wire Wire Line
+	2300 3200 2300 3100
+Wire Wire Line
+	2300 2600 2300 2400
+Connection ~ 2300 2400
+Wire Wire Line
+	8350 3600 7950 3600
+Wire Wire Line
+	7950 3600 7950 4350
+Connection ~ 6750 2900
+Text GLabel 7650 1450 0    39   Input ~ 0
++3V3
+Wire Wire Line
+	8350 1450 7650 1450
+Text GLabel 7650 1850 0    39   Input ~ 0
+VIN
+Wire Wire Line
+	8350 1850 7650 1850
+$Comp
+L R_NET4 RN1
+U 4 1 51F10FC8
+P 3950 3200
+F 0 "RN1" V 4050 3200 39  0000 C CNN
+F 1 "10K" V 3950 3200 39  0000 C CNN
+F 2 "" H 3950 3200 60  0000 C CNN
+F 3 "" H 3950 3200 60  0000 C CNN
+	4    3950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_NET4 RN2
+U 4 1 51F11ACB
+P 2300 2850
+F 0 "RN2" V 2400 2850 39  0000 C CNN
+F 1 "1K" V 2300 2850 39  0000 C CNN
+F 2 "" H 2300 2850 60  0000 C CNN
+F 3 "" H 2300 2850 60  0000 C CNN
+	4    2300 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_NET4 RN4
+U 1 1 51F121CA
+P 7600 6200
+F 0 "RN4" V 7700 6200 39  0000 C CNN
+F 1 "1K" V 7600 6200 39  0000 C CNN
+F 2 "" H 7600 6200 60  0000 C CNN
+F 3 "" H 7600 6200 60  0000 C CNN
+	1    7600 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L R_NET4 RN4
+U 2 1 51F121D7
+P 7600 6400
+F 0 "RN4" V 7700 6400 39  0000 C CNN
+F 1 "1K" V 7600 6400 39  0000 C CNN
+F 2 "" H 7600 6400 60  0000 C CNN
+F 3 "" H 7600 6400 60  0000 C CNN
+	2    7600 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L C C12
+U 1 1 51F20CB4
+P 3600 6050
+F 0 "C12" H 3600 6150 40  0000 L CNN
+F 1 "100n" H 3606 5965 40  0000 L CNN
+F 2 "SM0603_Capa" H 3638 5900 30  0001 C CNN
+F 3 "~" H 3600 6050 60  0000 C CNN
+	1    3600 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6250 3600 6300
+Connection ~ 4050 6300
+Wire Wire Line
+	3600 5850 3600 5550
+Connection ~ 3600 5550
+Text Notes 8900 1500 0    43   ~ 0
+This socket was an 8-way on the \noriginal Rev3 schematic. But it\nBecame 6-way on all future versions.
+$EndSCHEMATC

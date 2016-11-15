@@ -1,0 +1,737 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OnHand-Components-Sym
+LIBS:HydroPWNics_Lib
+LIBS:Muscolo-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VNH5019 U?
+U 1 1 57F42C3E
+P 4275 3475
+F 0 "U?" H 3750 4200 60  0000 C CNN
+F 1 "VNH5019" H 4650 2500 60  0000 C CNN
+F 2 "OnHand-Components:VNH5019ATR-E" H 5450 6025 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1c/26/60/a8/3e/70/4c/e1/CD00234623.pdf/files/CD00234623.pdf/jcr:content/translations/en.CD00234623.pdf" H 4675 4475 60  0001 C CNN
+F 4 "4.48875 @ 1000" H 3975 4375 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 5275 5575 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 5225 5675 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 4175 4575 60  0001 C CNN "Designer"
+F 8 "1.85mm" H 4275 4675 60  0001 C CNN "Height"
+F 9 "STMicroelectronics" H 4375 4775 60  0001 C CNN "MFR"
+F 10 "VNH5019ATR-E" H 4475 4875 60  0001 C CNN "MFR#"
+F 11 "SMT/SMD" H 4575 4975 60  0001 C CNN "Mounting"
+F 12 "30" H 4675 5075 60  0001 C CNN "Pin Count#"
+F 13 "Active" H 4775 5175 60  0001 C CNN "Status"
+F 14 "N/A" H 4875 5275 60  0001 C CNN "Tolerance"
+F 15 "High current H-bridge" H 4975 5375 60  0001 C CNN "Type"
+F 16 "12-30VDC" H 5075 5475 60  0001 C CNN "Voltage"
+F 17 "N/A" H 5275 5675 60  0001 C CNN "Wattage"
+F 18 "N/A" H 5375 5775 60  0001 C CNN "Component-Value"
+F 19 "Motor Driver Power MOSFET Parallel, PWM MultiPowerSO-30" H 5475 5875 60  0001 C CNN "Description"
+	1    4275 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L ERJ-3EKF1001V R?
+U 1 1 57F42E8A
+P 2475 2775
+F 0 "R?" H 2250 2725 60  0000 C CNN
+F 1 "ERJ-3EKF1001V" H 2525 2900 60  0001 C CNN
+F 2 "OnHand-Components:R0603" H 2075 3025 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF1001V+7+WW" H 2175 3225 60  0001 C CNN
+F 4 "0.00247 @ 5000" H 4025 4725 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 2375 3325 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 2475 3425 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 2575 3525 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 2675 3625 60  0001 C CNN "Height"
+F 9 "Yes" H 2775 3725 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 2875 3825 60  0001 C CNN "MFR"
+F 11 "ERJ-3EKF1001V" H 2975 3925 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3075 4025 60  0001 C CNN "Mounting"
+F 13 "2" H 3175 4125 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3275 4225 60  0001 C CNN "Status"
+F 15 "1%" H 3375 4325 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 3475 4425 60  0001 C CNN "Type"
+F 17 "N/A" H 3575 4525 60  0001 C CNN "Voltage"
+F 18 "1/10" H 3675 4625 60  0001 C CNN "Wattage"
+F 19 "1K" H 2625 2725 60  0000 C CNN "Component-Value"
+F 20 "RES SMD 1K OHM 1% 1/10W 0603" H 3875 4825 60  0001 C CNN "Description"
+	1    2475 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L ERJ-3EKF1001V R?
+U 1 1 57F43190
+P 2475 2925
+F 0 "R?" H 2250 2875 60  0000 C CNN
+F 1 "ERJ-3EKF1001V" H 2525 3050 60  0001 C CNN
+F 2 "OnHand-Components:R0603" H 2075 3175 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF1001V+7+WW" H 2175 3375 60  0001 C CNN
+F 4 "0.00247 @ 5000" H 4025 4875 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 2375 3475 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 2475 3575 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 2575 3675 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 2675 3775 60  0001 C CNN "Height"
+F 9 "Yes" H 2775 3875 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 2875 3975 60  0001 C CNN "MFR"
+F 11 "ERJ-3EKF1001V" H 2975 4075 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3075 4175 60  0001 C CNN "Mounting"
+F 13 "2" H 3175 4275 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3275 4375 60  0001 C CNN "Status"
+F 15 "1%" H 3375 4475 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 3475 4575 60  0001 C CNN "Type"
+F 17 "N/A" H 3575 4675 60  0001 C CNN "Voltage"
+F 18 "1/10" H 3675 4775 60  0001 C CNN "Wattage"
+F 19 "1K" H 2700 2875 60  0000 C CNN "Component-Value"
+F 20 "RES SMD 1K OHM 1% 1/10W 0603" H 3875 4975 60  0001 C CNN "Description"
+	1    2475 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L ERJ-3EKF1001V R?
+U 1 1 57F43542
+P 2475 3100
+F 0 "R?" H 2250 3050 60  0000 C CNN
+F 1 "ERJ-3EKF1001V" H 2525 3225 60  0001 C CNN
+F 2 "OnHand-Components:R0603" H 2075 3350 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF1001V+7+WW" H 2175 3550 60  0001 C CNN
+F 4 "0.00247 @ 5000" H 4025 5050 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 2375 3650 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 2475 3750 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 2575 3850 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 2675 3950 60  0001 C CNN "Height"
+F 9 "Yes" H 2775 4050 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 2875 4150 60  0001 C CNN "MFR"
+F 11 "ERJ-3EKF1001V" H 2975 4250 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3075 4350 60  0001 C CNN "Mounting"
+F 13 "2" H 3175 4450 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3275 4550 60  0001 C CNN "Status"
+F 15 "1%" H 3375 4650 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 3475 4750 60  0001 C CNN "Type"
+F 17 "N/A" H 3575 4850 60  0001 C CNN "Voltage"
+F 18 "1/10" H 3675 4950 60  0001 C CNN "Wattage"
+F 19 "1K" H 2625 3050 60  0000 C CNN "Component-Value"
+F 20 "RES SMD 1K OHM 1% 1/10W 0603" H 3875 5150 60  0001 C CNN "Description"
+	1    2475 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L ERJ-3EKF1001V R?
+U 1 1 57F43559
+P 2475 3250
+F 0 "R?" H 2250 3200 60  0000 C CNN
+F 1 "ERJ-3EKF1001V" H 2525 3375 60  0001 C CNN
+F 2 "OnHand-Components:R0603" H 2075 3500 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF1001V+7+WW" H 2175 3700 60  0001 C CNN
+F 4 "0.00247 @ 5000" H 4025 5200 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 2375 3800 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 2475 3900 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 2575 4000 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 2675 4100 60  0001 C CNN "Height"
+F 9 "Yes" H 2775 4200 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 2875 4300 60  0001 C CNN "MFR"
+F 11 "ERJ-3EKF1001V" H 2975 4400 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3075 4500 60  0001 C CNN "Mounting"
+F 13 "2" H 3175 4600 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3275 4700 60  0001 C CNN "Status"
+F 15 "1%" H 3375 4800 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 3475 4900 60  0001 C CNN "Type"
+F 17 "N/A" H 3575 5000 60  0001 C CNN "Voltage"
+F 18 "1/10" H 3675 5100 60  0001 C CNN "Wattage"
+F 19 "1K" H 2700 3200 60  0000 C CNN "Component-Value"
+F 20 "RES SMD 1K OHM 1% 1/10W 0603" H 3875 5300 60  0001 C CNN "Description"
+	1    2475 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ERJ-3EKF1001V R?
+U 1 1 57F435BC
+P 2475 3400
+F 0 "R?" H 2250 3350 60  0000 C CNN
+F 1 "ERJ-3EKF1001V" H 2525 3525 60  0001 C CNN
+F 2 "OnHand-Components:R0603" H 2075 3650 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF1001V+7+WW" H 2175 3850 60  0001 C CNN
+F 4 "0.00247 @ 5000" H 4025 5350 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 2375 3950 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 2475 4050 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 2575 4150 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 2675 4250 60  0001 C CNN "Height"
+F 9 "Yes" H 2775 4350 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 2875 4450 60  0001 C CNN "MFR"
+F 11 "ERJ-3EKF1001V" H 2975 4550 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3075 4650 60  0001 C CNN "Mounting"
+F 13 "2" H 3175 4750 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3275 4850 60  0001 C CNN "Status"
+F 15 "1%" H 3375 4950 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 3475 5050 60  0001 C CNN "Type"
+F 17 "N/A" H 3575 5150 60  0001 C CNN "Voltage"
+F 18 "1/10" H 3675 5250 60  0001 C CNN "Wattage"
+F 19 "1K" H 2700 3350 60  0000 C CNN "Component-Value"
+F 20 "RES SMD 1K OHM 1% 1/10W 0603" H 3875 5450 60  0001 C CNN "Description"
+	1    2475 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ERJ-3GEYJ472V R?
+U 1 1 57F43678
+P 3075 2325
+F 0 "R?" V 3022 2413 60  0000 L CNN
+F 1 "ERJ-3GEYJ472V" V 3075 2413 60  0001 L CNN
+F 2 "OnHand-Components:R0603" H 2675 2575 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ3GEYJ472V+7+WW" H 2775 2775 60  0001 C CNN
+F 4 "0.00209 @ 5000" H 4625 4275 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 2975 2875 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 3075 2975 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 3175 3075 60  0001 C CNN "Designer"
+F 8 "0.55mm" H 3275 3175 60  0001 C CNN "Height"
+F 9 "Yes" H 3375 3275 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 3475 3375 60  0001 C CNN "MFR"
+F 11 "ERJ-3GEYJ472V" H 3575 3475 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3675 3575 60  0001 C CNN "Mounting"
+F 13 "2" H 3775 3675 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3875 3775 60  0001 C CNN "Status"
+F 15 "1%" H 3975 3875 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 4075 3975 60  0001 C CNN "Type"
+F 17 "N/A" H 4175 4075 60  0001 C CNN "Voltage"
+F 18 "1/10" H 4275 4175 60  0001 C CNN "Wattage"
+F 19 "4.7k" V 3128 2413 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 4.7K OHM 5% 1/10W 0603" H 4475 4375 60  0001 C CNN "Description"
+	1    3075 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L ERJ-3GEYJ472V R?
+U 1 1 57F4382C
+P 3425 2325
+F 0 "R?" V 3372 2413 60  0000 L CNN
+F 1 "ERJ-3GEYJ472V" V 3425 2413 60  0001 L CNN
+F 2 "OnHand-Components:R0603" H 3025 2575 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ3GEYJ472V+7+WW" H 3125 2775 60  0001 C CNN
+F 4 "0.00209 @ 5000" H 4975 4275 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 3325 2875 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 3425 2975 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 3525 3075 60  0001 C CNN "Designer"
+F 8 "0.55mm" H 3625 3175 60  0001 C CNN "Height"
+F 9 "Yes" H 3725 3275 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 3825 3375 60  0001 C CNN "MFR"
+F 11 "ERJ-3GEYJ472V" H 3925 3475 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 4025 3575 60  0001 C CNN "Mounting"
+F 13 "2" H 4125 3675 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 4225 3775 60  0001 C CNN "Status"
+F 15 "1%" H 4325 3875 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 4425 3975 60  0001 C CNN "Type"
+F 17 "N/A" H 4525 4075 60  0001 C CNN "Voltage"
+F 18 "1/10" H 4625 4175 60  0001 C CNN "Wattage"
+F 19 "4.7k" V 3478 2413 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 4.7K OHM 5% 1/10W 0603" H 4825 4375 60  0001 C CNN "Description"
+	1    3425 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 57F43AF8
+P 3250 2025
+F 0 "#PWR?" H 3250 1875 50  0001 C CNN
+F 1 "+3.3V" H 3265 2198 50  0000 C CNN
+F 2 "" H 3250 2025 50  0000 C CNN
+F 3 "" H 3250 2025 50  0000 C CNN
+	1    3250 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57F43CC6
+P 3500 4350
+F 0 "#PWR?" H 3500 4100 50  0001 C CNN
+F 1 "GND" H 3505 4177 50  0000 C CNN
+F 2 "" H 3500 4350 50  0000 C CNN
+F 3 "" H 3500 4350 50  0000 C CNN
+	1    3500 4350
+	1    0    0    -1  
+$EndComp
+Text Label 1575 2775 0    60   ~ 0
+ENA
+Text Label 1575 2925 0    60   ~ 0
+ENB
+Text Label 1575 3100 0    60   ~ 0
+INA
+Text Label 1575 3250 0    60   ~ 0
+INB
+Text Label 1575 3400 0    60   ~ 0
+PWM
+$Comp
+L RC2012F305CS R?
+U 1 1 57F53BF1
+P 2175 4050
+F 0 "R?" V 2122 4138 60  0000 L CNN
+F 1 "RC2012F305CS" V 2175 4138 60  0001 L CNN
+F 2 "OnHand-Components:R0603" H 1775 4300 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_DS_1773272_J-724538.pdf" H 1875 4500 60  0001 C CNN
+F 4 "0.64" H 3725 6000 60  0001 C CNN "Cost"
+F 5 "5 Oct 2016" H 2075 4600 60  0001 C CNN "Date Created"
+F 6 "5 Oct 2016" H 2175 4700 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 2275 4800 60  0001 C CNN "Designer"
+F 8 "0.45mm" H 2375 4900 60  0001 C CNN "Height"
+F 9 "Yes" H 2475 5000 60  0001 C CNN "RHoS?"
+F 10 "TE Connectivity / Holsworthy" H 2575 5100 60  0001 C CNN "MFR"
+F 11 "RP73D1J10KBTDG" H 2675 5200 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 2775 5300 60  0001 C CNN "Mounting"
+F 13 "2" H 2875 5400 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 2975 5500 60  0001 C CNN "Status"
+F 15 "1%" H 3075 5600 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 3175 5700 60  0001 C CNN "Type"
+F 17 "N/A" H 3275 5800 60  0001 C CNN "Voltage"
+F 18 "1/8" H 3375 5900 60  0001 C CNN "Wattage"
+F 19 "10k" V 2228 4138 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 10k OHM 1% 0603" H 3575 6100 60  0001 C CNN "Description"
+	1    2175 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57F53E35
+P 2700 4350
+F 0 "#PWR?" H 2700 4100 50  0001 C CNN
+F 1 "GND" H 2705 4177 50  0000 C CNN
+F 2 "" H 2700 4350 50  0000 C CNN
+F 3 "" H 2700 4350 50  0000 C CNN
+	1    2700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ERJ-3EKF1001V R?
+U 1 1 57F53F36
+P 3300 4050
+F 0 "R?" V 3050 4100 60  0000 C CNN
+F 1 "ERJ-3EKF1001V" H 3350 4175 60  0001 C CNN
+F 2 "OnHand-Components:R0603" H 2900 4300 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF1001V+7+WW" H 3000 4500 60  0001 C CNN
+F 4 "0.00247 @ 5000" H 4850 6000 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 3200 4600 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 3300 4700 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 3400 4800 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 3500 4900 60  0001 C CNN "Height"
+F 9 "Yes" H 3600 5000 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 3700 5100 60  0001 C CNN "MFR"
+F 11 "ERJ-3EKF1001V" H 3800 5200 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3900 5300 60  0001 C CNN "Mounting"
+F 13 "2" H 4000 5400 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 4100 5500 60  0001 C CNN "Status"
+F 15 "1%" H 4200 5600 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 4300 5700 60  0001 C CNN "Type"
+F 17 "N/A" H 4400 5800 60  0001 C CNN "Voltage"
+F 18 "1/10" H 4500 5900 60  0001 C CNN "Wattage"
+F 19 "1K" V 3050 3975 60  0000 C CNN "Component-Value"
+F 20 "RES SMD 1K OHM 1% 1/10W 0603" H 4700 6100 60  0001 C CNN "Description"
+	1    3300 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L RC2012F305CS R?
+U 1 1 57F54495
+P 3000 3650
+F 0 "R?" H 3000 3413 60  0000 C CNN
+F 1 "RC2012F305CS" V 3000 3738 60  0001 L CNN
+F 2 "OnHand-Components:R0603" H 2600 3900 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_DS_1773272_J-724538.pdf" H 2700 4100 60  0001 C CNN
+F 4 "0.64" H 4550 5600 60  0001 C CNN "Cost"
+F 5 "5 Oct 2016" H 2900 4200 60  0001 C CNN "Date Created"
+F 6 "5 Oct 2016" H 3000 4300 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 3100 4400 60  0001 C CNN "Designer"
+F 8 "0.45mm" H 3200 4500 60  0001 C CNN "Height"
+F 9 "Yes" H 3300 4600 60  0001 C CNN "RHoS?"
+F 10 "TE Connectivity / Holsworthy" H 3400 4700 60  0001 C CNN "MFR"
+F 11 "RP73D1J10KBTDG" H 3500 4800 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3600 4900 60  0001 C CNN "Mounting"
+F 13 "2" H 3700 5000 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3800 5100 60  0001 C CNN "Status"
+F 15 "1%" H 3900 5200 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 4000 5300 60  0001 C CNN "Type"
+F 17 "N/A" H 4100 5400 60  0001 C CNN "Voltage"
+F 18 "1/8" H 4200 5500 60  0001 C CNN "Wattage"
+F 19 "10k" H 3000 3519 60  0000 C CNN "Component-Value"
+F 20 "RES SMD 10k OHM 1% 0603" H 4400 5700 60  0001 C CNN "Description"
+	1    3000 3650
+	-1   0    0    1   
+$EndComp
+Text Label 1550 3650 0    60   ~ 0
+CS
+$Comp
+L VJ0603Y333KXQCW1BC C?
+U 1 1 57F5518F
+P 2700 3875
+F 0 "C?" V 2625 3900 60  0000 L CNN
+F 1 "VJ0603Y333KXQCW1BC" H 2700 4162 60  0001 C CNN
+F 2 "OnHand-Components:C0603" H 1950 3925 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/vjw1bcbascomseries-223529.pdf" H 2050 4025 60  0001 C CNN
+F 4 "0.018 @ 1000" H 2150 4125 60  0001 C CNN "Cost"
+F 5 "5 Oct 2016" H 2250 4225 60  0001 C CNN "Date Created"
+F 6 "5 Oct 2016" H 2350 4325 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 2450 4425 60  0001 C CNN "Designer"
+F 8 "0.95mm" H 2550 4525 60  0001 C CNN "Height"
+F 9 "Yes" H 2650 4625 60  0001 C CNN "RHoS?"
+F 10 "Vishay / Vitramon" H 2750 4725 60  0001 C CNN "MFR"
+F 11 "VJ0603Y333KXQCW1BC" H 2850 4825 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 2950 4925 60  0001 C CNN "Mounting"
+F 13 "2" H 3050 5025 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3150 5125 60  0001 C CNN "Status"
+F 15 "10%" H 3250 5225 60  0001 C CNN "Tolerance"
+F 16 "Ceramic Capacitor 0603" H 3350 5325 60  0001 C CNN "Type"
+F 17 "10V" H 3450 5425 60  0001 C CNN "Voltage"
+F 18 "N/A" H 4000 5425 60  0001 C CNN "Wattage"
+F 19 "0.033uF" V 2775 3875 60  0000 L CNN "Componen-Value"
+F 20 "0.033uF 10V Multilayer Ceramic Capacitors MLCC - SMD/SMT" H 4200 5625 60  0001 C CNN "Description"
+	1    2700 3875
+	0    1    1    0   
+$EndComp
+$Comp
+L IRFR3707ZPBF Q?
+U 1 1 57F578AE
+P 4525 2300
+F 0 "Q?" V 4775 2250 60  0000 C CNN
+F 1 "IRFR3707ZPBF" V 4700 2525 60  0000 C CNN
+F 2 "OnHand-Components:IRFR3707ZPBF" H 5825 3950 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/196/Infineon-IRFR3707Z-DS-v01_02-EN-936378.pdf" H 6125 4150 60  0001 C CNN
+F 4 "0.379 @ 1000" H 5625 4450 60  0001 C CNN "Cost"
+F 5 "5 Oct 2016" H 5675 4350 60  0001 C CNN "Date Created "
+F 6 "5 Oct 2016" H 5725 3800 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 5625 4250 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 5675 4050 60  0001 C CNN "Height"
+F 9 "Yes" H 5675 4550 60  0001 C CNN "RHoS?"
+F 10 "Infineon Technologies" H 5725 3700 60  0001 C CNN "MFR"
+F 11 "IRFR3707ZPBF" H 4775 2700 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 4875 2800 60  0001 C CNN "Mounting"
+F 13 "2" H 4975 2900 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 5075 3000 60  0001 C CNN "Status"
+F 15 "N/A" H 5175 3100 60  0001 C CNN "Tolerance"
+F 16 "MOSFET" H 5275 3200 60  0001 C CNN "Type"
+F 17 "30V" H 5375 3300 60  0001 C CNN "Voltage"
+F 18 "N/A" H 5475 3400 60  0001 C CNN "Wattage"
+F 19 "N/A" H 5575 3500 60  0001 C CNN "Component-Value"
+F 20 "MOSFET N-CH 30V 56A TO-252-3" H 5675 3600 60  0001 C CNN "Description"
+	1    4525 2300
+	0    1    -1   0   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 57F58993
+P 4075 2025
+F 0 "#PWR?" H 4075 1875 50  0001 C CNN
+F 1 "+12V" H 4090 2198 50  0000 C CNN
+F 2 "" H 4075 2025 50  0000 C CNN
+F 3 "" H 4075 2025 50  0000 C CNN
+	1    4075 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2775 2925 3500 2925
+Wire Wire Line
+	2775 2775 2925 2775
+Wire Wire Line
+	2925 2775 2925 2850
+Wire Wire Line
+	2925 2850 3500 2850
+Wire Wire Line
+	3500 3100 2775 3100
+Wire Wire Line
+	2775 3250 2925 3250
+Wire Wire Line
+	2925 3250 2925 3175
+Wire Wire Line
+	2925 3175 3500 3175
+Wire Wire Line
+	2775 3400 2925 3400
+Wire Wire Line
+	2925 3400 2925 3350
+Wire Wire Line
+	2925 3350 3500 3350
+Wire Wire Line
+	3075 2625 3075 2925
+Connection ~ 3075 2925
+Wire Wire Line
+	3425 2625 3425 2850
+Connection ~ 3425 2850
+Wire Wire Line
+	3075 2025 3425 2025
+Connection ~ 3250 2025
+Wire Wire Line
+	3500 3825 3500 4350
+Connection ~ 3500 4275
+Connection ~ 3500 4200
+Connection ~ 3500 4125
+Connection ~ 3500 4050
+Connection ~ 3500 3975
+Connection ~ 3500 3900
+Wire Wire Line
+	5050 2300 5050 3225
+Connection ~ 5050 3150
+Connection ~ 5050 3075
+Connection ~ 5050 3000
+Connection ~ 5050 2925
+Wire Wire Line
+	5050 3425 5050 3725
+Connection ~ 5050 3500
+Connection ~ 5050 3575
+Connection ~ 5050 3650
+Wire Wire Line
+	5050 4050 5050 4350
+Connection ~ 5050 4125
+Connection ~ 5050 4200
+Connection ~ 5050 4275
+Wire Wire Line
+	5050 4050 6400 4050
+Wire Wire Line
+	5050 3425 6400 3425
+Wire Wire Line
+	2175 2775 1300 2775
+Wire Wire Line
+	2175 2925 1300 2925
+Wire Wire Line
+	2175 3100 1300 3100
+Wire Wire Line
+	2175 3250 1300 3250
+Wire Wire Line
+	2175 3400 1300 3400
+Wire Wire Line
+	2175 3400 2175 3750
+Wire Wire Line
+	3500 3650 3300 3650
+Wire Wire Line
+	3300 3650 3300 3750
+Wire Wire Line
+	3300 4350 2175 4350
+Wire Wire Line
+	2700 3650 1300 3650
+Wire Wire Line
+	2700 4100 2700 4350
+Connection ~ 2700 4350
+Wire Wire Line
+	4075 2300 4075 2025
+Wire Wire Line
+	4825 2300 8025 2300
+Connection ~ 5050 2850
+Wire Wire Line
+	4075 2300 4250 2300
+Wire Wire Line
+	4350 2600 4350 2350
+Wire Wire Line
+	4350 2350 4250 2350
+Wire Wire Line
+	4250 2350 4250 2300
+Connection ~ 5050 2300
+Text Label 5525 3425 0    60   ~ 0
+OUTA
+Text Label 5525 4050 0    60   ~ 0
+OUTB
+$Comp
+L C0603C104K5RACTU C?
+U 1 1 57F59AC9
+P 3850 2025
+F 0 "C?" H 3850 1632 60  0000 C CNN
+F 1 "C0603C104K5RACTU" H 3850 1738 60  0000 C CNN
+F 2 "OnHand-Components:C0805" H 3100 2075 60  0001 C CNN
+F 3 "http://www.kemet.com/docfinder?Partnumber=C0603C104K5RACTU" H 3200 2175 60  0001 C CNN
+F 4 "0.09981 @ 4000" H 3300 2275 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 3400 2375 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 3500 2475 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 3600 2575 60  0001 C CNN "Designer"
+F 8 "1.4mm" H 3700 2675 60  0001 C CNN "Height"
+F 9 "Yes" H 3800 2775 60  0001 C CNN "RHoS?"
+F 10 "Kemet" H 3900 2875 60  0001 C CNN "MFR"
+F 11 "C0603C104K5RACTU" H 4000 2975 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 4100 3075 60  0001 C CNN "Mounting"
+F 13 "2" H 4200 3175 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 4300 3275 60  0001 C CNN "Status"
+F 15 "10%" H 4400 3375 60  0001 C CNN "Tolerance"
+F 16 "Ceramic Capacitor 0603" H 4500 3475 60  0001 C CNN "Type"
+F 17 "6.3V" H 4600 3575 60  0001 C CNN "Voltage"
+F 18 "N/A" H 5150 3575 60  0001 C CNN "Wattage"
+F 19 "0.1uF" H 3850 1844 60  0000 C CNN "Componen-Value"
+F 20 "0.10µF 50V Ceramic Capacitor X7R 0603 (1608 Metric) 0.063\" L x 0.031\" W (1.60mm x 0.80mm)" H 5350 3775 60  0001 C CNN "Description"
+	1    3850 2025
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57F59DAE
+P 3625 2025
+F 0 "#PWR?" H 3625 1775 50  0001 C CNN
+F 1 "GND" H 3630 1852 50  0000 C CNN
+F 2 "" H 3625 2025 50  0000 C CNN
+F 3 "" H 3625 2025 50  0000 C CNN
+	1    3625 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L EEE-1VA101XP C?
+U 1 1 57F5AC19
+P 5250 2525
+F 0 "C?" V 5356 2397 60  0000 R CNN
+F 1 "EEE-1VA101XP" V 5250 2397 60  0000 R CNN
+F 2 "OnHand-Components:EEE-1VA101XP" H 4500 2575 60  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C726.pdf" H 4600 2675 60  0001 C CNN
+F 4 "0.10217 @ 4500" H 4700 2775 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 4800 2875 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 4900 2975 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 5000 3075 60  0001 C CNN "Designer"
+F 8 "7.7mm" H 5100 3175 60  0001 C CNN "Height"
+F 9 "Yes" H 5200 3275 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 5300 3375 60  0001 C CNN "MFR"
+F 11 "EEE-1VA101XP" H 5400 3475 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 5500 3575 60  0001 C CNN "Mounting"
+F 13 "2" H 5600 3675 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 5700 3775 60  0001 C CNN "Status"
+F 15 "20%" H 5800 3875 60  0001 C CNN "Tolerance"
+F 16 "Aluminum Capacitor Panasonic VS C Seies" H 5900 3975 60  0001 C CNN "Type"
+F 17 "35V" H 6000 4075 60  0001 C CNN "Voltage"
+F 18 "N/A" H 6550 4075 60  0001 C CNN "Wattage"
+F 19 "100uF" V 5144 2397 60  0000 R CNN "Componen-Value"
+F 20 "100µF 35V Aluminum Capacitors Radial, Can - SMD 2000 Hrs @ 85°C" H 6750 4275 60  0001 C CNN "Description"
+	1    5250 2525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEE-1VA101XP C?
+U 1 1 57F5AE44
+P 6175 2525
+F 0 "C?" V 6281 2397 60  0000 R CNN
+F 1 "EEE-1VA101XP" V 6175 2397 60  0000 R CNN
+F 2 "OnHand-Components:EEE-1VA101XP" H 5425 2575 60  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C726.pdf" H 5525 2675 60  0001 C CNN
+F 4 "0.10217 @ 4500" H 5625 2775 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 5725 2875 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 5825 2975 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 5925 3075 60  0001 C CNN "Designer"
+F 8 "7.7mm" H 6025 3175 60  0001 C CNN "Height"
+F 9 "Yes" H 6125 3275 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 6225 3375 60  0001 C CNN "MFR"
+F 11 "EEE-1VA101XP" H 6325 3475 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 6425 3575 60  0001 C CNN "Mounting"
+F 13 "2" H 6525 3675 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 6625 3775 60  0001 C CNN "Status"
+F 15 "20%" H 6725 3875 60  0001 C CNN "Tolerance"
+F 16 "Aluminum Capacitor Panasonic VS C Seies" H 6825 3975 60  0001 C CNN "Type"
+F 17 "35V" H 6925 4075 60  0001 C CNN "Voltage"
+F 18 "N/A" H 7475 4075 60  0001 C CNN "Wattage"
+F 19 "100uF" V 6069 2397 60  0000 R CNN "Componen-Value"
+F 20 "100µF 35V Aluminum Capacitors Radial, Can - SMD 2000 Hrs @ 85°C" H 7675 4275 60  0001 C CNN "Description"
+	1    6175 2525
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5250 2300
+Wire Wire Line
+	5250 2750 8025 2750
+$Comp
+L GND #PWR?
+U 1 1 57F5B1CB
+P 5675 2750
+F 0 "#PWR?" H 5675 2500 50  0001 C CNN
+F 1 "GND" H 5680 2577 50  0000 C CNN
+F 2 "" H 5675 2750 50  0000 C CNN
+F 3 "" H 5675 2750 50  0000 C CNN
+	1    5675 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5675 2750
+$Comp
+L EEE-1VA101XP C?
+U 1 1 57F9E4B4
+P 7100 2525
+F 0 "C?" V 7206 2397 60  0000 R CNN
+F 1 "EEE-1VA101XP" V 7100 2397 60  0000 R CNN
+F 2 "OnHand-Components:EEE-1VA101XP" H 6350 2575 60  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C726.pdf" H 6450 2675 60  0001 C CNN
+F 4 "0.10217 @ 4500" H 6550 2775 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 6650 2875 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 6750 2975 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 6850 3075 60  0001 C CNN "Designer"
+F 8 "7.7mm" H 6950 3175 60  0001 C CNN "Height"
+F 9 "Yes" H 7050 3275 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 7150 3375 60  0001 C CNN "MFR"
+F 11 "EEE-1VA101XP" H 7250 3475 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 7350 3575 60  0001 C CNN "Mounting"
+F 13 "2" H 7450 3675 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 7550 3775 60  0001 C CNN "Status"
+F 15 "20%" H 7650 3875 60  0001 C CNN "Tolerance"
+F 16 "Aluminum Capacitor Panasonic VS C Seies" H 7750 3975 60  0001 C CNN "Type"
+F 17 "35V" H 7850 4075 60  0001 C CNN "Voltage"
+F 18 "N/A" H 8400 4075 60  0001 C CNN "Wattage"
+F 19 "100uF" V 6994 2397 60  0000 R CNN "Componen-Value"
+F 20 "100µF 35V Aluminum Capacitors Radial, Can - SMD 2000 Hrs @ 85°C" H 8600 4275 60  0001 C CNN "Description"
+	1    7100 2525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L EEE-1VA101XP C?
+U 1 1 57F9E563
+P 8025 2525
+F 0 "C?" V 8131 2397 60  0000 R CNN
+F 1 "EEE-1VA101XP" V 8025 2397 60  0000 R CNN
+F 2 "OnHand-Components:EEE-1VA101XP" H 7275 2575 60  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C726.pdf" H 7375 2675 60  0001 C CNN
+F 4 "0.10217 @ 4500" H 7475 2775 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 7575 2875 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 7675 2975 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 7775 3075 60  0001 C CNN "Designer"
+F 8 "7.7mm" H 7875 3175 60  0001 C CNN "Height"
+F 9 "Yes" H 7975 3275 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 8075 3375 60  0001 C CNN "MFR"
+F 11 "EEE-1VA101XP" H 8175 3475 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 8275 3575 60  0001 C CNN "Mounting"
+F 13 "2" H 8375 3675 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 8475 3775 60  0001 C CNN "Status"
+F 15 "20%" H 8575 3875 60  0001 C CNN "Tolerance"
+F 16 "Aluminum Capacitor Panasonic VS C Seies" H 8675 3975 60  0001 C CNN "Type"
+F 17 "35V" H 8775 4075 60  0001 C CNN "Voltage"
+F 18 "N/A" H 9325 4075 60  0001 C CNN "Wattage"
+F 19 "100uF" V 7919 2397 60  0000 R CNN "Componen-Value"
+F 20 "100µF 35V Aluminum Capacitors Radial, Can - SMD 2000 Hrs @ 85°C" H 9525 4275 60  0001 C CNN "Description"
+	1    8025 2525
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6175 2300
+Connection ~ 7100 2300
+Connection ~ 6175 2750
+Connection ~ 7100 2750
+$EndSCHEMATC

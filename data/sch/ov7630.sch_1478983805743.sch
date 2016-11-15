@@ -1,0 +1,598 @@
+EESchema Schematic File Version 1
+LIBS:power,./ov7630,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./ov7630.cache
+EELAYER 23  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title ""
+Date "21 jun 2010"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5980 2880 5700 2880
+Wire Wire Line
+	5480 2430 5480 2380
+Wire Wire Line
+	5480 2380 5980 2380
+Wire Wire Line
+	2000 3250 1720 3250
+Wire Wire Line
+	2000 2950 1720 2950
+Wire Wire Line
+	5980 2980 5700 2980
+Wire Wire Line
+	5980 2680 5700 2680
+Wire Wire Line
+	5980 2480 5700 2480
+Wire Wire Line
+	5700 2280 5980 2280
+Wire Wire Line
+	6630 5780 6630 5700
+Connection ~ 2540 4670
+Wire Wire Line
+	2540 5120 2540 4390
+Wire Wire Line
+	2540 4390 2740 4390
+Wire Wire Line
+	2740 4390 2740 3820
+Wire Wire Line
+	2890 4390 3140 4390
+Wire Wire Line
+	2890 4390 2890 3820
+Connection ~ 2140 3970
+Wire Wire Line
+	1740 3970 2590 3970
+Wire Wire Line
+	2140 4470 2140 4370
+Connection ~ 2540 5020
+Wire Wire Line
+	2540 5020 2590 5020
+Connection ~ 2540 4770
+Connection ~ 2590 3970
+Wire Wire Line
+	2590 3820 2590 4070
+Wire Wire Line
+	5180 4250 5180 5300
+Connection ~ 7730 5300
+Wire Wire Line
+	6230 5300 8030 5300
+Connection ~ 5680 5300
+Wire Wire Line
+	5180 5300 5730 5300
+Wire Wire Line
+	5730 4500 5180 4500
+Wire Wire Line
+	6780 4900 6280 4900
+Connection ~ 6780 5300
+Connection ~ 6780 5700
+Wire Wire Line
+	1550 2950 1600 2950
+Wire Wire Line
+	1600 2950 1600 2800
+Wire Wire Line
+	900  3050 900  2950
+Wire Wire Line
+	900  2950 1150 2950
+Wire Wire Line
+	900  2350 900  2250
+Wire Wire Line
+	900  2250 1150 2250
+Wire Wire Line
+	2000 2650 1750 2650
+Wire Wire Line
+	1750 2650 1750 2600
+Wire Wire Line
+	1750 2600 1550 2600
+Wire Wire Line
+	3040 1530 3040 1780
+Wire Wire Line
+	2540 5520 2540 5620
+Connection ~ 3140 5020
+Wire Wire Line
+	3140 5020 3090 5020
+Wire Wire Line
+	3190 4120 3190 3820
+Wire Wire Line
+	3340 3820 3340 3970
+Wire Wire Line
+	3140 5520 3140 5620
+Wire Wire Line
+	1740 4370 1740 4470
+Wire Wire Line
+	3190 1780 3190 1380
+Wire Wire Line
+	2740 880  2740 1030
+Wire Wire Line
+	1600 2800 2000 2800
+Wire Wire Line
+	2000 2500 1800 2500
+Wire Wire Line
+	1800 2500 1800 2450
+Wire Wire Line
+	1800 2450 1650 2450
+Wire Wire Line
+	900  2700 900  2600
+Wire Wire Line
+	900  2600 1150 2600
+Wire Wire Line
+	1650 2450 1650 2250
+Wire Wire Line
+	1650 2250 1550 2250
+Wire Wire Line
+	2740 1430 2740 1780
+Connection ~ 6280 5700
+Wire Wire Line
+	5680 5700 7730 5700
+Connection ~ 7280 5700
+Connection ~ 7280 5300
+Connection ~ 6280 5300
+Connection ~ 6630 5700
+Connection ~ 6530 4900
+Connection ~ 6280 4500
+Wire Wire Line
+	6230 4500 7230 4500
+Connection ~ 6780 4500
+Connection ~ 5180 4500
+Connection ~ 3140 4770
+Wire Wire Line
+	1900 4970 2260 4970
+Wire Wire Line
+	2260 4970 2260 4670
+Wire Wire Line
+	2260 4670 2540 4670
+Wire Wire Line
+	3140 4390 3140 5120
+Wire Wire Line
+	6530 4970 6530 4900
+Connection ~ 6530 4970
+Connection ~ 6630 5780
+Connection ~ 2140 4470
+Wire Wire Line
+	5980 2580 5700 2580
+Wire Wire Line
+	5980 2780 5700 2780
+Wire Wire Line
+	5980 3080 5700 3080
+Wire Wire Line
+	2000 2350 1720 2350
+Wire Wire Line
+	2000 3100 1720 3100
+Wire Wire Line
+	1300 4970 970  4970
+Wire Wire Line
+	5980 3180 5500 3180
+Wire Wire Line
+	5500 3180 5500 3250
+Kmarq B 5500 3250 "Warning Pin power_in not driven (Net 24)" F=1
+$Comp
+L DGND #PWR14
+U 1 1 4C1C092C
+P 5500 3250
+F 0 "#PWR14" H 5500 3250 40  0001 C C
+F 1 "DGND" H 5500 3180 40  0000 C C
+	1    5500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR01
+U 1 1 4C1C08E4
+P 5480 2430
+F 0 "#PWR01" H 5480 2430 40  0001 C C
+F 1 "AGND" H 5480 2360 50  0000 C C
+	1    5480 2430
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR02
+U 1 1 4C1C0502
+P 6530 4970
+F 0 "#PWR02" H 6530 4970 40  0001 C C
+F 1 "AGND" H 6530 4900 50  0000 C C
+	1    6530 4970
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR03
+U 1 1 4C1C04D2
+P 6630 5780
+F 0 "#PWR03" H 6630 5780 40  0001 C C
+F 1 "AGND" H 6630 5710 50  0000 C C
+	1    6630 5780
+	1    0    0    -1  
+$EndComp
+$Comp
+L OV7630 U1
+U 1 1 4C1C0032
+P 3040 2800
+F 0 "U1" H 3040 2800 60  0000 C C
+F 1 "OV7630" H 3040 2687 60  0000 C C
+	1    3040 2800
+	1    0    0    -1  
+$EndComp
+Text Label 5700 2580 0    60   ~
+PWDN
+Text Label 5700 3180 0    60   ~
+DGND
+Text Label 5700 3080 0    60   ~
+RST
+$Comp
+L CONN_10X2 P1
+U 1 1 4BEDDB56
+P 6380 2730
+F 0 "P1" H 6380 3280 60  0000 C C
+F 1 "CONN_10X2" V 6380 2630 50  0000 C C
+	1    6380 2730
+	1    0    0    -1  
+$EndComp
+Text Label 5700 2980 0    60   ~
+EXCLK
+Text Label 6780 2380 0    60   ~
+SCL
+Text Label 6780 2280 0    60   ~
+SDA
+Text Label 5700 2480 0    60   ~
+VTO
+Text Label 970  4970 0    60   ~
+EXCLK
+$Comp
+L JUMPER JP1
+U 1 1 4BEDE30F
+P 1600 4970
+F 0 "JP1" H 1600 5120 60  0000 C C
+F 1 "JUMPER" H 1600 4890 40  0000 C C
+	1    1600 4970
+	-1   0    0    -1  
+$EndComp
+Text Label 3040 3820 3    60   ~
+RST
+Text Label 2590 4070 3    60   ~
+DVDD
+Text Label 6780 2480 0    60   ~
+Y0
+Text Label 6780 2580 0    60   ~
+Y1
+Text Label 6780 2680 0    60   ~
+Y2
+Text Label 6780 2780 0    60   ~
+Y3
+Text Label 6780 2880 0    60   ~
+Y4
+Text Label 6780 2980 0    60   ~
+Y5
+Text Label 6780 3080 0    60   ~
+Y6
+Text Label 6780 3180 0    60   ~
+Y7
+Text Label 5700 2880 0    60   ~
+PCLK
+Text Label 5700 2780 0    60   ~
+HREF
+Text Label 5700 2680 0    60   ~
+VSYNC
+Text Label 5700 2380 0    60   ~
+AGND
+Text Label 5700 2280 0    60   ~
+VCC
+Text Label 5180 4250 0    60   ~
+VCC
+Text Label 2890 1780 1    60   ~
+AVDD
+Text Label 8030 5300 0    60   ~
+AVDD
+Text Label 7230 4500 0    60   ~
+DVDD
+$Comp
+L R R1
+U 1 1 4BEDD7F3
+P 5980 4500
+F 0 "R1" V 6060 4500 50  0000 C C
+F 1 "10" V 5980 4500 50  0000 C C
+	1    5980 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 4BEDD75F
+P 5980 5300
+F 0 "R2" V 6060 5300 50  0000 C C
+F 1 "10" V 5980 5300 50  0000 C C
+	1    5980 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L C C15
+U 1 1 4BEDD72B
+P 7730 5500
+F 0 "C15" H 7780 5600 50  0000 L C
+F 1 "0.01uF" H 7780 5400 50  0000 L C
+	1    7730 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 4BEDD71F
+P 7280 5500
+F 0 "C14" H 7330 5600 50  0000 L C
+F 1 "0.1uF" H 7330 5400 50  0000 L C
+	1    7280 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 4BEDD70F
+P 5680 5500
+F 0 "C4" H 5730 5600 50  0000 L C
+F 1 "0.1uF" H 5730 5400 50  0000 L C
+	1    5680 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 4BEDD6FF
+P 6280 5500
+F 0 "C8" H 6330 5600 50  0000 L C
+F 1 "100uF" H 6330 5400 50  0000 L C
+	1    6280 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 4BEDD6F3
+P 6780 5500
+F 0 "C12" H 6830 5600 50  0000 L C
+F 1 "0.1uF" H 6830 5400 50  0000 L C
+	1    6780 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 4BEDD6E3
+P 6780 4700
+F 0 "C11" H 6830 4800 50  0000 L C
+F 1 "0.01uF" H 6830 4600 50  0000 L C
+	1    6780 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 4BEDD6DC
+P 6280 4700
+F 0 "C7" H 6330 4800 50  0000 L C
+F 1 "100uF" H 6330 4600 50  0000 L C
+	1    6280 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L AGND #PWR04
+U 1 1 4BEDD5BB
+P 900 3050
+F 0 "#PWR04" H 900 3050 40  0001 C C
+F 1 "AGND" H 900 2980 50  0000 C C
+	1    900  3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR05
+U 1 1 4BEDD5B6
+P 900 2700
+F 0 "#PWR05" H 900 2700 40  0001 C C
+F 1 "AGND" H 900 2630 50  0000 C C
+	1    900  2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR06
+U 1 1 4BEDD5AD
+P 900 2350
+F 0 "#PWR06" H 900 2350 40  0001 C C
+F 1 "AGND" H 900 2280 50  0000 C C
+	1    900  2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 4BEDD595
+P 1350 2950
+F 0 "C3" H 1400 3050 50  0000 L C
+F 1 "1uF" H 1400 2850 50  0000 L C
+	1    1350 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 4BEDD58E
+P 1350 2600
+F 0 "C2" H 1400 2700 50  0000 L C
+F 1 "0.1uF" H 1400 2500 50  0000 L C
+	1    1350 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 4BEDD576
+P 1350 2250
+F 0 "C1" H 1400 2350 50  0000 L C
+F 1 "0.1uF" H 1400 2150 50  0000 L C
+	1    1350 2250
+	0    1    1    0   
+$EndComp
+Text Label 1720 2350 0    60   ~
+PWDN
+Text Label 1720 2950 0    60   ~
+VSYNC
+Text Label 1720 3100 0    60   ~
+HREF
+Text Label 1720 3250 0    60   ~
+PCLK
+Text Label 2590 1780 1    60   ~
+VTO
+$Comp
+L AGND #PWR07
+U 1 1 4BEDD4CF
+P 2740 880
+F 0 "#PWR07" H 2740 880 40  0001 C C
+F 1 "AGND" H 2740 810 50  0000 C C
+	1    2740 880 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C10
+U 1 1 4BEDD4C1
+P 2740 1230
+F 0 "C10" H 2790 1330 50  0000 L C
+F 1 "10uF" H 2790 1130 50  0000 L C
+	1    2740 1230
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR08
+U 1 1 4BEDD470
+P 3040 1530
+F 0 "#PWR08" H 3040 1530 40  0001 C C
+F 1 "AGND" H 3040 1460 50  0000 C C
+	1    3040 1530
+	-1   0    0    1   
+$EndComp
+$Comp
+L AGND #PWR09
+U 1 1 4BEDD457
+P 3190 1380
+F 0 "#PWR09" H 3190 1380 40  0001 C C
+F 1 "AGND" H 3190 1310 50  0000 C C
+	1    3190 1380
+	-1   0    0    1   
+$EndComp
+Text Label 3340 1780 1    60   ~
+SDA
+Text Label 3490 1780 1    60   ~
+SCL
+$Comp
+L DGND #PWR5
+U 1 1 4BEDD3BD
+P 2140 4470
+F 0 "#PWR5" H 2140 4470 40  0001 C C
+F 1 "DGND" H 2140 4400 40  0000 C C
+	1    2140 4470
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR4
+U 1 1 4BEDD3B8
+P 1740 4470
+F 0 "#PWR4" H 1740 4470 40  0001 C C
+F 1 "DGND" H 1740 4400 40  0000 C C
+	1    1740 4470
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 4BEDD394
+P 1740 4170
+F 0 "C5" H 1790 4270 50  0000 L C
+F 1 "0.1uF" H 1790 4070 50  0000 L C
+	1    1740 4170
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 4BEDD38F
+P 2140 4170
+F 0 "C6" H 2190 4270 50  0000 L C
+F 1 "0.01uF" H 2190 4070 50  0000 L C
+	1    2140 4170
+	1    0    0    -1  
+$EndComp
+Text Label 4060 2350 0    60   ~
+Y0
+Text Label 4060 2500 0    60   ~
+Y1
+Text Label 4060 2650 0    60   ~
+Y2
+Text Label 4060 2800 0    60   ~
+Y3
+Text Label 4060 2950 0    60   ~
+Y4
+Text Label 4060 3100 0    60   ~
+Y5
+Text Label 4060 3250 0    60   ~
+Y6
+Text Label 3490 3820 3    60   ~
+Y7
+$Comp
+L C C9
+U 1 1 4BEDD10E
+P 2540 5320
+F 0 "C9" H 2590 5420 50  0000 L C
+F 1 "12p" H 2590 5220 50  0000 L C
+	1    2540 5320
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR6
+U 1 1 4BEDD167
+P 2540 5620
+F 0 "#PWR6" H 2540 5620 40  0001 C C
+F 1 "DGND" H 2540 5550 40  0000 C C
+	1    2540 5620
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR9
+U 1 1 4BEDD160
+P 3140 5620
+F 0 "#PWR9" H 3140 5620 40  0001 C C
+F 1 "DGND" H 3140 5550 40  0000 C C
+	1    3140 5620
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 4BEDD101
+P 3140 5320
+F 0 "C13" H 3190 5420 50  0000 L C
+F 1 "12p" H 3190 5220 50  0000 L C
+	1    3140 5320
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 4BEDD0F3
+P 2840 5020
+F 0 "R3" V 2920 5020 50  0000 C C
+F 1 "1M" V 2840 5020 50  0000 C C
+	1    2840 5020
+	0    1    1    0   
+$EndComp
+$Comp
+L CRYSTAL X1
+U 1 1 4BEDD0DC
+P 2840 4770
+F 0 "X1" H 2840 4920 60  0000 C C
+F 1 "27MHz" H 2840 4620 60  0000 C C
+	1    2840 4770
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR11
+U 1 1 4BEDD0A0
+P 3190 4120
+F 0 "#PWR11" H 3190 4120 40  0001 C C
+F 1 "DGND" H 3190 4050 40  0000 C C
+	1    3190 4120
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR12
+U 1 1 4BEDD064
+P 3340 3970
+F 0 "#PWR12" H 3340 3970 40  0001 C C
+F 1 "DGND" H 3340 3900 40  0000 C C
+	1    3340 3970
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,137 @@
+EESchema Schematic File Version 2
+LIBS:map3
+LIBS:MAP3-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 570F5ABC
+P 6300 2625
+F 0 "D1" H 6300 2725 50  0000 C CNN
+F 1 "LED" H 6300 2525 50  0000 C CNN
+F 2 "map3_fp:LED-5MM" H 6300 2625 50  0001 C CNN
+F 3 "" H 6300 2625 50  0000 C CNN
+	1    6300 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 570F5B5A
+P 6300 3275
+F 0 "D2" H 6300 3375 50  0000 C CNN
+F 1 "LED" H 6300 3175 50  0000 C CNN
+F 2 "map3_fp:LED-5MM" H 6300 3275 50  0001 C CNN
+F 3 "" H 6300 3275 50  0000 C CNN
+	1    6300 3275
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 570F5B9E
+P 6300 3925
+F 0 "D3" H 6300 4025 50  0000 C CNN
+F 1 "LED" H 6300 3825 50  0000 C CNN
+F 2 "map3_fp:LED-5MM" H 6300 3925 50  0001 C CNN
+F 3 "" H 6300 3925 50  0000 C CNN
+	1    6300 3925
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 570F5C5D
+P 6300 4575
+F 0 "D4" H 6300 4675 50  0000 C CNN
+F 1 "LED" H 6300 4475 50  0000 C CNN
+F 2 "map3_fp:LED-5MM" H 6300 4575 50  0001 C CNN
+F 3 "" H 6300 4575 50  0000 C CNN
+	1    6300 4575
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 570F5CCF
+P 5150 5025
+F 0 "R2" V 5050 5025 40  0000 C CNN
+F 1 "100E" V 5150 5025 40  0000 C CNN
+F 2 "map3_fp:Resistor_Horizontal_RM10mm" V 5080 5025 50  0001 C CNN
+F 3 "" H 5150 5025 50  0000 C CNN
+F 4 "Value" H 5150 5025 60  0001 C CNN "manf#"
+	1    5150 5025
+	0    1    1    0   
+$EndComp
+$Comp
+L BATT_HOLDER BT1
+U 1 1 570F5FD9
+P 4650 3625
+F 0 "BT1" H 4650 3825 40  0000 L CNN
+F 1 "BATT_HOLDER" H 4650 3435 40  0000 L CNN
+F 2 "map3_fp:9V_clip_968" H 4650 3625 60  0001 C CNN
+F 3 "" H 4650 3625 60  0000 C CNN
+F 4 "HOLDER BATTERY COIN 20MM DIA THM" H 4650 3925 60  0001 L CNN "Field4"
+F 5 "Coin Cell, Retainer" H 4650 4025 60  0001 L CNN "Field5"
+F 6 "Coin, 20.0mm" H 4650 4125 60  0001 L CNN "Field6"
+F 7 "Keystone Electronics" H 4650 4225 60  0001 L CNN "Field7"
+F 8 "3003" H 4650 4325 60  0001 L CNN "Field8"
+F 9 "Digikey" H 4650 4425 60  0001 L CNN "Field9"
+F 10 "3003K-ND" H 4650 4525 60  0001 L CNN "Field10"
+F 11 "http://www.digikey.com/scripts/DkSearch/dksus.dll?x=0&y=0&lang=en&KeyWords=3003K-ND&cur=USD" H 4650 4625 60  0001 L CNN "Field11"
+	1    4650 3625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3375 4650 2175
+Wire Wire Line
+	4650 2175 4900 2175
+Wire Wire Line
+	5400 2175 6300 2175
+Wire Wire Line
+	6300 2175 6300 2425
+Wire Wire Line
+	6300 2825 6300 3075
+Wire Wire Line
+	6300 3475 6300 3725
+Wire Wire Line
+	6300 4125 6300 4375
+Wire Wire Line
+	6300 4775 6300 5025
+Wire Wire Line
+	4650 5025 4650 3825
+$Comp
+L RVAR R1
+U 1 1 570F68DD
+P 5150 2175
+F 0 "R1" V 5245 2175 40  0000 C CNN
+F 1 "100E" V 5155 2175 40  0000 C CNN
+F 2 "map3_fp:Potentiometer_Bourns_3296Y_3-8Zoll_Angular_ScrewUp" H 5150 2175 60  0001 C CNN
+F 3 "" H 5150 2175 60  0000 C CNN
+	1    5150 2175
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6300 5025 5400 5025
+Wire Wire Line
+	4900 5025 4650 5025
+Wire Wire Line
+	5150 2350 5150 2425
+Wire Wire Line
+	5150 2425 4800 2425
+Wire Wire Line
+	4800 2425 4800 2175
+Connection ~ 4800 2175
+Text Label 4650 3075 0    60   ~ 0
+[+]
+Text Label 4650 4200 0    60   ~ 0
+[-]
+$EndSCHEMATC

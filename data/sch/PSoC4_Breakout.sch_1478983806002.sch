@@ -1,0 +1,987 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:FabLibrary
+LIBS:PSoC4_Breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "PSoC4 Breakout Board"
+Date "Tue 17 Mar 2015"
+Rev ""
+Comp "Iain Chalmers"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CY8CKIT-049-42xx U2
+U 1 1 55049F73
+P 3050 3950
+F 0 "U2" H 3050 2650 60  0000 C CNN
+F 1 "CY8CKIT-049-42xx" H 3050 5100 60  0000 C CNN
+F 2 "FabLibrary:CYKIT-49-42xx" H 3250 4000 60  0001 C CNN
+F 3 "" H 3250 4000 60  0000 C CNN
+	1    3050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LP38691 U1
+U 1 1 5504B0B5
+P 2750 1050
+F 0 "U1" H 2900 700 60  0000 C CNN
+F 1 "LP38691" H 2750 1250 60  0000 C CNN
+F 2 "FabLibrary:LP38691_TO252" H 2750 1050 60  0001 C CNN
+F 3 "" H 2750 1050 60  0000 C CNN
+	1    2750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB-MINI-B CON1
+U 1 1 5504B154
+P 1400 1250
+F 0 "CON1" H 1100 1600 50  0000 C CNN
+F 1 "USB-MINI-B" H 1250 900 50  0000 C CNN
+F 2 "FabLibrary:conn_usb_B_mini_smd" H 1400 1150 50  0001 C CNN
+F 3 "" H 1400 1150 50  0000 C CNN
+	1    1400 1250
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 900  1050
+NoConn ~ 900  1150
+NoConn ~ 900  1350
+NoConn ~ 900  1450
+NoConn ~ 1900 1350
+NoConn ~ 1900 1250
+NoConn ~ 1900 1150
+$Comp
+L C C2
+U 1 1 5504B323
+P 3350 1300
+F 0 "C2" H 3400 1400 50  0000 L CNN
+F 1 "10u" H 3400 1200 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 3388 1150 30  0001 C CNN
+F 3 "" H 3350 1300 60  0000 C CNN
+	1    3350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5504B360
+P 2200 1250
+F 0 "C1" H 2250 1350 50  0000 L CNN
+F 1 "10u" H 2250 1150 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 2238 1100 30  0001 C CNN
+F 3 "" H 2200 1250 60  0000 C CNN
+	1    2200 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR01
+U 1 1 5504B40D
+P 3350 850
+F 0 "#PWR01" H 3350 700 60  0001 C CNN
+F 1 "VDD" H 3350 1000 60  0000 C CNN
+F 2 "" H 3350 850 60  0000 C CNN
+F 3 "" H 3350 850 60  0000 C CNN
+	1    3350 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 5504B437
+P 2250 900
+F 0 "#PWR02" H 2250 750 60  0001 C CNN
+F 1 "+5V" H 2250 1040 60  0000 C CNN
+F 2 "" H 2250 900 60  0000 C CNN
+F 3 "" H 2250 900 60  0000 C CNN
+	1    2250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5504B462
+P 2000 900
+F 0 "#FLG03" H 2000 995 30  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1080 30  0000 C CNN
+F 2 "" H 2000 900 60  0000 C CNN
+F 3 "" H 2000 900 60  0000 C CNN
+	1    2000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5504B48F
+P 2650 1650
+F 0 "#FLG04" H 2650 1745 30  0001 C CNN
+F 1 "PWR_FLAG" H 2650 1830 30  0000 C CNN
+F 2 "" H 2650 1650 60  0000 C CNN
+F 3 "" H 2650 1650 60  0000 C CNN
+	1    2650 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5504B4A8
+P 2900 1650
+F 0 "#PWR05" H 2900 1400 60  0001 C CNN
+F 1 "GND" H 2900 1500 60  0000 C CNN
+F 2 "" H 2900 1650 60  0000 C CNN
+F 3 "" H 2900 1650 60  0000 C CNN
+	1    2900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b U3
+U 1 1 5504B6A2
+P 6600 1800
+F 0 "U3" H 6600 1500 60  0000 C CNN
+F 1 "WS2812b" H 6600 2050 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 6400 1800 60  0001 C CNN
+F 3 "" H 6400 1800 60  0000 C CNN
+	1    6600 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b U4
+U 1 1 5504B819
+P 6650 2950
+F 0 "U4" H 6650 2650 60  0000 C CNN
+F 1 "WS2812b" H 6650 3200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 6450 2950 60  0001 C CNN
+F 3 "" H 6450 2950 60  0000 C CNN
+	1    6650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b U5
+U 1 1 5504B867
+P 6650 3950
+F 0 "U5" H 6650 3650 60  0000 C CNN
+F 1 "WS2812b" H 6650 4200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 6450 3950 60  0001 C CNN
+F 3 "" H 6450 3950 60  0000 C CNN
+	1    6650 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b U6
+U 1 1 5504B978
+P 7900 1800
+F 0 "U6" H 7900 1500 60  0000 C CNN
+F 1 "WS2812b" H 7900 2050 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 7700 1800 60  0001 C CNN
+F 3 "" H 7700 1800 60  0000 C CNN
+	1    7900 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b U7
+U 1 1 5504BA1D
+P 8000 2950
+F 0 "U7" H 8000 2650 60  0000 C CNN
+F 1 "WS2812b" H 8000 3200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 7800 2950 60  0001 C CNN
+F 3 "" H 7800 2950 60  0000 C CNN
+	1    8000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b U8
+U 1 1 5504BA4B
+P 8000 3950
+F 0 "U8" H 8000 3650 60  0000 C CNN
+F 1 "WS2812b" H 8000 4200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 7800 3950 60  0001 C CNN
+F 3 "" H 7800 3950 60  0000 C CNN
+	1    8000 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b U9
+U 1 1 5504BA90
+P 9200 1800
+F 0 "U9" H 9200 1500 60  0000 C CNN
+F 1 "WS2812b" H 9200 2050 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 9000 1800 60  0001 C CNN
+F 3 "" H 9000 1800 60  0000 C CNN
+	1    9200 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L WS2812b U10
+U 1 1 5504BB22
+P 9250 2950
+F 0 "U10" H 9250 2650 60  0000 C CNN
+F 1 "WS2812b" H 9250 3200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 9050 2950 60  0001 C CNN
+F 3 "" H 9050 2950 60  0000 C CNN
+	1    9250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L WS2812b U11
+U 1 1 5504B8C6
+P 9250 3950
+F 0 "U11" H 9250 3650 60  0000 C CNN
+F 1 "WS2812b" H 9250 4200 60  0000 C CNN
+F 2 "FabLibrary:WS2812b_handsolder" H 9050 3950 60  0001 C CNN
+F 3 "" H 9050 3950 60  0000 C CNN
+	1    9250 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5504BF03
+P 5750 1900
+F 0 "R1" V 5830 1900 50  0000 C CNN
+F 1 "100" V 5757 1901 50  0000 C CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" V 5680 1900 30  0001 C CNN
+F 3 "" H 5750 1900 30  0000 C CNN
+	1    5750 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 1500 3350 1500
+Wire Wire Line
+	1900 1500 1900 1450
+Wire Wire Line
+	1900 1050 2300 1050
+Connection ~ 2200 1050
+Wire Wire Line
+	2200 1450 2200 1500
+Connection ~ 2200 1500
+Connection ~ 2750 1500
+Wire Wire Line
+	3200 1050 3350 1050
+Wire Wire Line
+	3350 850  3350 1100
+Connection ~ 3350 1050
+Wire Wire Line
+	2250 900  2250 1050
+Connection ~ 2250 1050
+Wire Wire Line
+	2000 900  2000 1050
+Connection ~ 2000 1050
+Wire Wire Line
+	2900 1650 2900 1500
+Connection ~ 2900 1500
+Wire Wire Line
+	2650 1650 2650 1500
+Connection ~ 2650 1500
+Wire Wire Line
+	6150 1900 6000 1900
+Wire Wire Line
+	6150 1700 6150 1150
+Wire Wire Line
+	6200 3400 6200 3850
+Wire Wire Line
+	6200 3050 6050 3050
+Wire Wire Line
+	6050 3050 6050 4050
+Wire Wire Line
+	6050 4050 6200 4050
+Wire Wire Line
+	7100 3850 7350 3850
+Wire Wire Line
+	7350 3850 7350 4050
+Wire Wire Line
+	7350 4050 7550 4050
+Wire Wire Line
+	8450 3850 8650 3850
+Wire Wire Line
+	8650 3850 8650 4050
+Wire Wire Line
+	8650 4050 8800 4050
+Wire Wire Line
+	9650 1700 9850 1700
+Wire Wire Line
+	9850 1700 9850 2850
+Wire Wire Line
+	9850 2850 9700 2850
+Wire Wire Line
+	8800 3050 8650 3050
+Wire Wire Line
+	8650 3050 8650 2850
+Wire Wire Line
+	8650 2850 8450 2850
+Wire Wire Line
+	7550 3050 7350 3050
+Wire Wire Line
+	7350 3050 7350 2850
+Wire Wire Line
+	7350 2850 7100 2850
+Wire Wire Line
+	6050 2850 6200 2850
+Wire Wire Line
+	6050 2250 6050 2850
+Wire Wire Line
+	8800 2250 8800 2850
+Wire Wire Line
+	7550 2250 7550 2850
+Wire Wire Line
+	8750 1150 8750 1700
+Wire Wire Line
+	7450 1150 7450 1700
+Connection ~ 7450 1150
+Wire Wire Line
+	9650 2250 9650 1900
+Wire Wire Line
+	6050 2250 9650 2250
+Wire Wire Line
+	7050 2250 7050 1900
+Wire Wire Line
+	7050 1700 7250 1700
+Wire Wire Line
+	7250 1700 7250 1900
+Wire Wire Line
+	7250 1900 7450 1900
+Wire Wire Line
+	8350 1700 8550 1700
+Wire Wire Line
+	8550 1700 8550 1900
+Wire Wire Line
+	8550 1900 8750 1900
+Wire Wire Line
+	8350 1900 8350 2250
+Connection ~ 8350 2250
+Wire Wire Line
+	7100 3050 7100 3400
+Wire Wire Line
+	6200 3400 10000 3400
+Wire Wire Line
+	9700 3400 9700 3050
+Wire Wire Line
+	8450 3050 8450 3400
+Connection ~ 8450 3400
+$Comp
+L GND #PWR06
+U 1 1 5504F991
+P 5950 1300
+F 0 "#PWR06" H 5950 1050 60  0001 C CNN
+F 1 "GND" H 5950 1150 60  0000 C CNN
+F 2 "" H 5950 1300 60  0000 C CNN
+F 3 "" H 5950 1300 60  0000 C CNN
+	1    5950 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1150 5950 1300
+Connection ~ 6150 1150
+$Comp
+L GND #PWR07
+U 1 1 55050535
+P 10000 3500
+F 0 "#PWR07" H 10000 3250 60  0001 C CNN
+F 1 "GND" H 10000 3350 60  0000 C CNN
+F 2 "" H 10000 3500 60  0000 C CNN
+F 3 "" H 10000 3500 60  0000 C CNN
+	1    10000 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 3400
+Wire Wire Line
+	10000 3400 10000 3500
+Connection ~ 9700 3400
+Connection ~ 7550 2250
+Connection ~ 8800 2250
+Connection ~ 7050 2250
+Wire Wire Line
+	7100 4050 7100 4400
+Wire Wire Line
+	7100 4400 10000 4400
+Wire Wire Line
+	9700 4400 9700 4050
+Wire Wire Line
+	8450 4050 8450 4400
+Connection ~ 8450 4400
+Wire Wire Line
+	7550 3850 7550 3400
+Connection ~ 7550 3400
+Wire Wire Line
+	8800 3850 8800 3400
+Connection ~ 8800 3400
+$Comp
+L +5V #PWR08
+U 1 1 55053EF0
+P 10000 3950
+F 0 "#PWR08" H 10000 3800 60  0001 C CNN
+F 1 "+5V" H 10000 4090 60  0000 C CNN
+F 2 "" H 10000 3950 60  0000 C CNN
+F 3 "" H 10000 3950 60  0000 C CNN
+	1    10000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4400 10000 3950
+Connection ~ 9700 4400
+$Comp
+L +5V #PWR09
+U 1 1 550545F6
+P 5800 2350
+F 0 "#PWR09" H 5800 2200 60  0001 C CNN
+F 1 "+5V" H 5800 2490 60  0000 C CNN
+F 2 "" H 5800 2350 60  0000 C CNN
+F 3 "" H 5800 2350 60  0000 C CNN
+	1    5800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2350 5800 2550
+Wire Wire Line
+	5800 2550 6050 2550
+Connection ~ 6050 2550
+$Comp
+L C C5
+U 1 1 55054D42
+P 9450 950
+F 0 "C5" H 9500 1050 50  0000 L CNN
+F 1 "0.1u" H 9500 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 9488 800 30  0001 C CNN
+F 3 "" H 9450 950 60  0000 C CNN
+	1    9450 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C6
+U 1 1 55054FE1
+P 9700 950
+F 0 "C6" H 9750 1050 50  0000 L CNN
+F 1 "0.1u" H 9750 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 9738 800 30  0001 C CNN
+F 3 "" H 9700 950 60  0000 C CNN
+	1    9700 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C7
+U 1 1 55055009
+P 9950 950
+F 0 "C7" H 10000 1050 50  0000 L CNN
+F 1 "0.1u" H 10000 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 9988 800 30  0001 C CNN
+F 3 "" H 9950 950 60  0000 C CNN
+	1    9950 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C8
+U 1 1 5505503A
+P 10200 950
+F 0 "C8" H 10250 1050 50  0000 L CNN
+F 1 "0.1u" H 10250 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 10238 800 30  0001 C CNN
+F 3 "" H 10200 950 60  0000 C CNN
+	1    10200 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C9
+U 1 1 55055076
+P 10450 950
+F 0 "C9" H 10500 1050 50  0000 L CNN
+F 1 "0.1u" H 10500 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 10488 800 30  0001 C CNN
+F 3 "" H 10450 950 60  0000 C CNN
+	1    10450 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C10
+U 1 1 550550A3
+P 10700 950
+F 0 "C10" H 10750 1050 50  0000 L CNN
+F 1 "0.1u" H 10750 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 10738 800 30  0001 C CNN
+F 3 "" H 10700 950 60  0000 C CNN
+	1    10700 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C11
+U 1 1 55055197
+P 10950 950
+F 0 "C11" H 11000 1050 50  0000 L CNN
+F 1 "0.1u" H 11000 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 10988 800 30  0001 C CNN
+F 3 "" H 10950 950 60  0000 C CNN
+	1    10950 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C4
+U 1 1 55055470
+P 9200 950
+F 0 "C4" H 9250 1050 50  0000 L CNN
+F 1 "0.1u" H 9250 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 9238 800 30  0001 C CNN
+F 3 "" H 9200 950 60  0000 C CNN
+	1    9200 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C3
+U 1 1 55055864
+P 8950 950
+F 0 "C3" H 9000 1050 50  0000 L CNN
+F 1 "0.1u" H 9000 850 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 8988 800 30  0001 C CNN
+F 3 "" H 8950 950 60  0000 C CNN
+	1    8950 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 750  10950 750 
+Connection ~ 10700 750 
+Connection ~ 10450 750 
+Connection ~ 10200 750 
+Connection ~ 9950 750 
+Connection ~ 9700 750 
+Connection ~ 9450 750 
+Connection ~ 9200 750 
+Connection ~ 9200 1150
+Connection ~ 9450 1150
+Connection ~ 9700 1150
+Connection ~ 9950 1150
+Connection ~ 10200 1150
+Connection ~ 10450 1150
+Connection ~ 10700 1150
+Connection ~ 8750 1150
+Connection ~ 8950 1150
+$Comp
+L +5V #PWR010
+U 1 1 55056941
+P 8750 700
+F 0 "#PWR010" H 8750 550 60  0001 C CNN
+F 1 "+5V" H 8750 840 60  0000 C CNN
+F 2 "" H 8750 700 60  0000 C CNN
+F 3 "" H 8750 700 60  0000 C CNN
+	1    8750 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 750  8750 700 
+Connection ~ 8950 750 
+Wire Wire Line
+	5950 1150 10950 1150
+$Comp
+L SN74LVC1T45 U13
+U 1 1 5506F6BD
+P 4750 3450
+F 0 "U13" H 4900 3300 60  0000 C CNN
+F 1 "SN74LVC1T45" H 4750 3950 60  0000 C CNN
+F 2 "FabLibrary:TI-DBV-SOT23_handsolder" H 4750 3450 60  0001 C CNN
+F 3 "" H 4750 3450 60  0000 C CNN
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3100 4200 3100
+Wire Wire Line
+	4300 3300 4200 3300
+Wire Wire Line
+	4200 3300 4200 3100
+$Comp
+L +5V #PWR011
+U 1 1 55073E5C
+P 5200 2900
+F 0 "#PWR011" H 5200 2750 60  0001 C CNN
+F 1 "+5V" H 5200 3040 60  0000 C CNN
+F 2 "" H 5200 2900 60  0000 C CNN
+F 3 "" H 5200 2900 60  0000 C CNN
+	1    5200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3200 5200 2900
+Wire Wire Line
+	5500 1900 5500 3400
+Wire Wire Line
+	5500 3400 5200 3400
+$Comp
+L ESP8266-ESP-01 U12
+U 1 1 550728EF
+P 5350 5450
+F 0 "U12" H 5350 5700 60  0000 C CNN
+F 1 "ESP8266-ESP-01" H 5350 5125 60  0000 C CNN
+F 2 "FabLibrary:ESP8266-ESP-01" H 5275 4975 60  0001 C CNN
+F 3 "" H 5275 4975 60  0000 C CNN
+	1    5350 5450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR012
+U 1 1 55073503
+P 6325 5125
+F 0 "#PWR012" H 6325 4975 60  0001 C CNN
+F 1 "VDD" H 6325 5275 60  0000 C CNN
+F 2 "" H 6325 5125 60  0000 C CNN
+F 3 "" H 6325 5125 60  0000 C CNN
+	1    6325 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 5125 6325 5300
+Wire Wire Line
+	5875 5300 7050 5300
+Wire Wire Line
+	5875 5550 6550 5550
+$Comp
+L R R2
+U 1 1 55073D9E
+P 6800 5550
+F 0 "R2" V 6880 5550 50  0000 C CNN
+F 1 "10k" V 6807 5551 50  0000 C CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" V 6730 5550 30  0001 C CNN
+F 3 "" H 6800 5550 30  0000 C CNN
+	1    6800 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 5300 7050 5550
+Connection ~ 6325 5300
+NoConn ~ 5875 5650
+NoConn ~ 4825 5550
+NoConn ~ 4825 5650
+$Comp
+L GND #PWR013
+U 1 1 55075B26
+P 2200 5425
+F 0 "#PWR013" H 2200 5175 60  0001 C CNN
+F 1 "GND" H 2200 5275 60  0000 C CNN
+F 2 "" H 2200 5425 60  0000 C CNN
+F 3 "" H 2200 5425 60  0000 C CNN
+	1    2200 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5000 2200 5000
+Wire Wire Line
+	2200 5000 2200 5425
+$Comp
+L CapSenseButton U14
+U 1 1 5507836B
+P 900 3325
+F 0 "U14" H 900 3125 60  0000 C CNN
+F 1 "CapSenseButton" H 900 3575 60  0001 C CNN
+F 2 "FabLibrary:CapSenseButton" H 900 3325 60  0001 C CNN
+F 3 "" H 900 3325 60  0000 C CNN
+	1    900  3325
+	-1   0    0    1   
+$EndComp
+$Comp
+L CapSenseButton U15
+U 1 1 5507842C
+P 900 3725
+F 0 "U15" H 900 3525 60  0000 C CNN
+F 1 "CapSenseButton" H 900 3975 60  0001 C CNN
+F 2 "FabLibrary:CapSenseButton" H 900 3725 60  0001 C CNN
+F 3 "" H 900 3725 60  0000 C CNN
+	1    900  3725
+	-1   0    0    1   
+$EndComp
+$Comp
+L CapSenseButton U16
+U 1 1 550784A0
+P 900 4175
+F 0 "U16" H 900 3975 60  0000 C CNN
+F 1 "CapSenseButton" H 900 4425 60  0001 C CNN
+F 2 "FabLibrary:CapSenseButton" H 900 4175 60  0001 C CNN
+F 3 "" H 900 4175 60  0000 C CNN
+	1    900  4175
+	-1   0    0    1   
+$EndComp
+$Comp
+L CapSenseButton U17
+U 1 1 5507850E
+P 900 4625
+F 0 "U17" H 900 4425 60  0000 C CNN
+F 1 "CapSenseButton" H 900 4875 60  0001 C CNN
+F 2 "FabLibrary:CapSenseButton" H 900 4625 60  0001 C CNN
+F 3 "" H 900 4625 60  0000 C CNN
+	1    900  4625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 4625 2300 4625
+Wire Wire Line
+	1250 4175 1450 4175
+NoConn ~ 2300 3400
+NoConn ~ 2300 3600
+NoConn ~ 2300 3800
+NoConn ~ 2300 4100
+NoConn ~ 2300 4200
+NoConn ~ 2300 4700
+NoConn ~ 2300 4800
+NoConn ~ 3800 5100
+NoConn ~ 3800 5000
+NoConn ~ 3800 4900
+NoConn ~ 3800 4800
+NoConn ~ 3800 4600
+NoConn ~ 3800 4500
+NoConn ~ 3800 4100
+NoConn ~ 3800 4000
+NoConn ~ 3800 3900
+NoConn ~ 3800 3800
+NoConn ~ 3800 3700
+NoConn ~ 3800 3600
+NoConn ~ 3800 3300
+NoConn ~ 3800 3200
+NoConn ~ 9700 3850
+NoConn ~ 2300 4900
+Wire Wire Line
+	2300 4625 2300 4600
+Wire Wire Line
+	2300 4500 1450 4500
+Wire Wire Line
+	1450 4500 1450 4175
+NoConn ~ 2300 3500
+NoConn ~ 2300 3700
+NoConn ~ 2300 3300
+NoConn ~ 2300 3100
+Wire Wire Line
+	1250 3325 1650 3325
+Wire Wire Line
+	1650 3325 1650 4300
+Wire Wire Line
+	1650 4300 2300 4300
+Wire Wire Line
+	2300 4400 1575 4400
+Wire Wire Line
+	1575 4400 1575 3725
+Wire Wire Line
+	1575 3725 1250 3725
+NoConn ~ 3800 4700
+Wire Wire Line
+	5350 3300 5200 3300
+Wire Wire Line
+	5350 2525 5350 3300
+$Comp
+L VDD #PWR014
+U 1 1 55079EE3
+P 1925 4975
+F 0 "#PWR014" H 1925 4825 60  0001 C CNN
+F 1 "VDD" H 1925 5125 60  0000 C CNN
+F 2 "" H 1925 4975 60  0000 C CNN
+F 3 "" H 1925 4975 60  0000 C CNN
+	1    1925 4975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5100 1925 5100
+Wire Wire Line
+	1925 5100 1925 4975
+NoConn ~ 2300 3000
+Wire Wire Line
+	4300 2450 4300 3200
+Wire Wire Line
+	1775 3200 1775 5675
+Wire Wire Line
+	4575 5675 4575 5300
+Wire Wire Line
+	1775 5675 4575 5675
+Wire Wire Line
+	4000 5400 4000 3400
+Wire Wire Line
+	4000 3400 3800 3400
+Wire Wire Line
+	1775 3200 2300 3200
+Wire Wire Line
+	4575 5300 4825 5300
+Wire Wire Line
+	4825 5400 4000 5400
+$Comp
+L PWR_FLAG #FLG015
+U 1 1 55086C97
+P 4300 2450
+F 0 "#FLG015" H 4300 2545 30  0001 C CNN
+F 1 "PWR_FLAG" H 4300 2630 30  0000 C CNN
+F 2 "" H 4300 2450 60  0000 C CNN
+F 3 "" H 4300 2450 60  0000 C CNN
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3000 3800 2525
+Wire Wire Line
+	3800 2525 5350 2525
+Connection ~ 4300 2525
+Wire Wire Line
+	3800 3500 4300 3500
+Wire Wire Line
+	4300 3500 4300 3400
+NoConn ~ 3800 4400
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 5508B4DC
+P 4075 3050
+F 0 "#FLG016" H 4075 3145 30  0001 C CNN
+F 1 "PWR_FLAG" H 4075 3230 30  0000 C CNN
+F 2 "" H 4075 3050 60  0000 C CNN
+F 3 "" H 4075 3050 60  0000 C CNN
+	1    4075 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 3050 4075 4775
+Connection ~ 4075 3100
+Wire Wire Line
+	6025 5400 5875 5400
+Wire Wire Line
+	6025 4775 6025 5400
+Wire Wire Line
+	4075 4775 6625 4775
+$Comp
+L C C12
+U 1 1 5508CCEF
+P 6625 4975
+F 0 "C12" H 6675 5075 50  0000 L CNN
+F 1 "10u" H 6675 4875 50  0000 L CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" H 6663 4825 30  0001 C CNN
+F 3 "" H 6625 4975 60  0000 C CNN
+	1    6625 4975
+	1    0    0    -1  
+$EndComp
+Connection ~ 6025 4775
+Wire Wire Line
+	6625 5175 6625 5300
+Connection ~ 6625 5300
+$Comp
+L TMP275 U18
+U 1 1 55074A7B
+P 3050 6900
+F 0 "U18" H 3050 6600 60  0000 C CNN
+F 1 "TMP275" H 3050 7200 60  0000 C CNN
+F 2 "FabLibrary:TI-D-SO-8_handsolder" H 3050 6850 60  0001 C CNN
+F 3 "" H 3050 6850 60  0000 C CNN
+	1    3050 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 55075876
+P 2150 6450
+F 0 "R4" V 2230 6450 50  0000 C CNN
+F 1 "10k" V 2157 6451 50  0000 C CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" V 2080 6450 30  0001 C CNN
+F 3 "" H 2150 6450 30  0000 C CNN
+	1    2150 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5507593C
+P 1950 6450
+F 0 "R3" V 2030 6450 50  0000 C CNN
+F 1 "10k" V 1957 6451 50  0000 C CNN
+F 2 "FabLibrary:C_1206_HandSoldering_IainEdit" V 1880 6450 30  0001 C CNN
+F 3 "" H 1950 6450 30  0000 C CNN
+	1    1950 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6700 2150 6750
+Wire Wire Line
+	1525 6750 2600 6750
+Wire Wire Line
+	1525 6850 2600 6850
+Wire Wire Line
+	1950 6850 1950 6700
+$Comp
+L GND #PWR017
+U 1 1 55075C17
+P 2475 7225
+F 0 "#PWR017" H 2475 6975 60  0001 C CNN
+F 1 "GND" H 2475 7075 60  0000 C CNN
+F 2 "" H 2475 7225 60  0000 C CNN
+F 3 "" H 2475 7225 60  0000 C CNN
+	1    2475 7225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7050 2475 7050
+Wire Wire Line
+	2475 7050 2475 7225
+$Comp
+L VDD #PWR018
+U 1 1 550764DA
+P 2950 6100
+F 0 "#PWR018" H 2950 5950 60  0001 C CNN
+F 1 "VDD" H 2950 6250 60  0000 C CNN
+F 2 "" H 2950 6100 60  0000 C CNN
+F 3 "" H 2950 6100 60  0000 C CNN
+	1    2950 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6125 3700 7050
+Wire Wire Line
+	3700 7050 3500 7050
+Wire Wire Line
+	3500 6950 3700 6950
+Connection ~ 3700 6950
+Wire Wire Line
+	3500 6850 3700 6850
+Connection ~ 3700 6850
+Wire Wire Line
+	3500 6750 3700 6750
+Connection ~ 3700 6750
+Wire Wire Line
+	1950 6200 1950 6125
+Wire Wire Line
+	1950 6125 3700 6125
+Wire Wire Line
+	2950 6125 2950 6100
+Wire Wire Line
+	2150 6200 2150 6125
+Connection ~ 2150 6125
+Connection ~ 2950 6125
+Connection ~ 1950 6850
+Connection ~ 2150 6750
+Text GLabel 4200 4300 2    60   Input ~ 0
+SCL
+Text GLabel 4200 4200 2    60   Input ~ 0
+SDA
+Text GLabel 1525 6850 0    60   Input ~ 0
+SCL
+Text GLabel 1525 6750 0    60   Input ~ 0
+SDA
+NoConn ~ 2600 6950
+NoConn ~ 2300 3900
+NoConn ~ 2300 4000
+Wire Wire Line
+	4200 4300 3800 4300
+Wire Wire Line
+	3800 4200 4200 4200
+$EndSCHEMATC

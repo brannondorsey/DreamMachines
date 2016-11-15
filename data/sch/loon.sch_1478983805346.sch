@@ -1,0 +1,285 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:loon-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X07 P1
+U 1 1 57AD0C73
+P 1300 1250
+F 0 "P1" H 1300 1650 50  0000 C CNN
+F 1 "CONN_01X07" V 1400 1250 50  0000 C CNN
+F 2 "Libraries:8_Pin_Minifit" H 1300 1250 50  0000 C CNN
+F 3 "" H 1300 1250 50  0000 C CNN
+	1    1300 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 950  2050 950 
+$Comp
+L C_Small C2
+U 1 1 57AD0D10
+P 2050 1050
+F 0 "C2" H 2150 1050 50  0000 L CNN
+F 1 "10u" H 2060 970 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2050 1050 50  0001 C CNN
+F 3 "" H 2050 1050 50  0000 C CNN
+	1    2050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 57AD0D37
+P 1800 1050
+F 0 "C1" H 1900 1050 50  0000 L CNN
+F 1 "0.1u" H 1810 970 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1800 1050 50  0001 C CNN
+F 3 "" H 1800 1050 50  0000 C CNN
+	1    1800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 57AD0D60
+P 1800 1150
+F 0 "#PWR01" H 1800 900 50  0001 C CNN
+F 1 "Earth" H 1800 1000 50  0001 C CNN
+F 2 "" H 1800 1150 50  0000 C CNN
+F 3 "" H 1800 1150 50  0000 C CNN
+	1    1800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 57AD0D7A
+P 2050 1150
+F 0 "#PWR02" H 2050 900 50  0001 C CNN
+F 1 "Earth" H 2050 1000 50  0001 C CNN
+F 2 "" H 2050 1150 50  0000 C CNN
+F 3 "" H 2050 1150 50  0000 C CNN
+	1    2050 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1050 1650 1050
+$Comp
+L Earth #PWR03
+U 1 1 57AD0DDB
+P 1650 1050
+F 0 "#PWR03" H 1650 800 50  0001 C CNN
+F 1 "Earth" H 1650 900 50  0001 C CNN
+F 2 "" H 1650 1050 50  0000 C CNN
+F 3 "" H 1650 1050 50  0000 C CNN
+	1    1650 1050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 1150
+NoConn ~ 1500 1450
+NoConn ~ 1500 1550
+Wire Wire Line
+	1500 1250 1950 1250
+$Comp
+L R R2
+U 1 1 57AD0E40
+P 1950 1400
+F 0 "R2" V 2030 1400 50  0000 C CNN
+F 1 "R" V 1950 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1880 1400 50  0001 C CNN
+F 3 "" H 1950 1400 50  0000 C CNN
+	1    1950 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 57AD0E63
+P 1950 1700
+F 0 "R3" V 2030 1700 50  0000 C CNN
+F 1 "R" V 1950 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1880 1700 50  0001 C CNN
+F 3 "" H 1950 1700 50  0000 C CNN
+	1    1950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR04
+U 1 1 57AD0E94
+P 1950 1850
+F 0 "#PWR04" H 1950 1600 50  0001 C CNN
+F 1 "Earth" H 1950 1700 50  0001 C CNN
+F 2 "" H 1950 1850 50  0000 C CNN
+F 3 "" H 1950 1850 50  0000 C CNN
+	1    1950 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1550 2200 1550
+Text Label 2200 1550 0    60   ~ 0
+Tx
+$Comp
+L RJ45 J1
+U 1 1 57AD0F81
+P 3050 1400
+F 0 "J1" H 3250 1900 50  0000 C CNN
+F 1 "RJ45" H 2900 1900 50  0000 C CNN
+F 2 "Libraries:RJ45_Header" H 3050 1400 50  0000 C CNN
+F 3 "" H 3050 1400 50  0000 C CNN
+	1    3050 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1850 2550 1850
+NoConn ~ 2800 1850
+NoConn ~ 2900 1850
+Text Label 3100 1850 3    60   ~ 0
+Tx
+NoConn ~ 3200 1850
+NoConn ~ 3300 1850
+NoConn ~ 3400 1850
+$Comp
+L Earth #PWR05
+U 1 1 57AD1160
+P 3000 1850
+F 0 "#PWR05" H 3000 1600 50  0001 C CNN
+F 1 "Earth" H 3000 1700 50  0001 C CNN
+F 2 "" H 3000 1850 50  0000 C CNN
+F 3 "" H 3000 1850 50  0000 C CNN
+	1    3000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR06
+U 1 1 57AD141A
+P 3600 1050
+F 0 "#PWR06" H 3600 800 50  0001 C CNN
+F 1 "Earth" H 3600 900 50  0001 C CNN
+F 2 "" H 3600 1050 50  0000 C CNN
+F 3 "" H 3600 1050 50  0000 C CNN
+	1    3600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR07
+U 1 1 57AD4A7A
+P 2550 1850
+F 0 "#PWR07" H 2550 1700 50  0001 C CNN
+F 1 "+12V" H 2550 1990 50  0000 C CNN
+F 2 "" H 2550 1850 50  0000 C CNN
+F 3 "" H 2550 1850 50  0000 C CNN
+	1    2550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 57AD4AA6
+P 2300 950
+F 0 "F1" H 2400 1000 50  0000 C CNN
+F 1 "FUSE" H 2400 800 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_universal_Type-III" H 2300 950 50  0001 C CNN
+F 3 "" H 2300 950 50  0000 C CNN
+	1    2300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR08
+U 1 1 57AD4AD3
+P 2550 950
+F 0 "#PWR08" H 2550 800 50  0001 C CNN
+F 1 "+12V" H 2550 1090 50  0000 C CNN
+F 2 "" H 2550 950 50  0000 C CNN
+F 3 "" H 2550 950 50  0000 C CNN
+	1    2550 950 
+	1    0    0    -1  
+$EndComp
+Text Label 1700 950  1    60   ~ 0
+12_fuse
+Text Label 4400 900  0    60   ~ 0
+12_fuse
+$Comp
+L R R4
+U 1 1 57AD4B6D
+P 4400 1450
+F 0 "R4" V 4480 1450 50  0000 C CNN
+F 1 "1k" V 4400 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4330 1450 50  0001 C CNN
+F 3 "" H 4400 1450 50  0000 C CNN
+	1    4400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 57AD4BAA
+P 4400 1100
+F 0 "D1" H 4400 1200 50  0000 C CNN
+F 1 "LED" H 4400 1000 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 4400 1100 50  0001 C CNN
+F 3 "" H 4400 1100 50  0000 C CNN
+	1    4400 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Earth #PWR09
+U 1 1 57AD4BF3
+P 4400 1600
+F 0 "#PWR09" H 4400 1350 50  0001 C CNN
+F 1 "Earth" H 4400 1450 50  0001 C CNN
+F 2 "" H 4400 1600 50  0000 C CNN
+F 3 "" H 4400 1600 50  0000 C CNN
+	1    4400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57AD4CCF
+P 1800 1550
+F 0 "R1" V 1880 1550 50  0000 C CNN
+F 1 "R" V 1800 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1730 1550 50  0001 C CNN
+F 3 "" H 1800 1550 50  0000 C CNN
+	1    1800 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1550 1650 1350
+Wire Wire Line
+	1650 1350 1500 1350
+$EndSCHEMATC

@@ -1,0 +1,501 @@
+EESchema Schematic File Version 2
+LIBS:LadybugBlueLite-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LettuceBuddy
+LIBS:LadybugBlueLite-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 10
+Title ""
+Date "20 oct 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R-RESCUE-LadybugBlueLite R1001
+U 1 1 55BE2DDB
+P 8250 3050
+F 0 "R1001" V 8330 3050 40  0000 C CNN
+F 1 "10M" V 8257 3051 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8180 3050 30  0001 C CNN
+F 3 "~" H 8250 3050 30  0000 C CNN
+	1    8250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LadybugBlueLite R1002
+U 1 1 55BE2DE1
+P 8250 3800
+F 0 "R1002" V 8330 3800 40  0000 C CNN
+F 1 "2.2M" V 8257 3801 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8180 3800 30  0001 C CNN
+F 3 "~" H 8250 3800 30  0000 C CNN
+	1    8250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-LadybugBlueLite C8
+U 1 1 55BE2DE7
+P 9000 3800
+AR Path="/55BE2DE7" Ref="C8"  Part="1" 
+AR Path="/55BE2CDA/55BE2DE7" Ref="C1006"  Part="1" 
+F 0 "C1006" H 9000 3900 40  0000 L CNN
+F 1 "47n" H 9006 3715 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9038 3650 30  0000 C CNN
+F 3 "~" H 9000 3800 60  0000 C CNN
+	1    9000 3800
+	1    0    0    -1  
+$EndComp
+Text HLabel 10000 3400 2    60   Output ~ 0
+BAT_AIN
+Text Notes 8850 3100 0    79   ~ 0
+Test Voltage Level
+$Comp
+L C-RESCUE-LadybugBlueLite C1004
+U 1 1 5691343F
+P 5250 2700
+F 0 "C1004" H 5250 2800 40  0000 L CNN
+F 1 "10u" H 5256 2615 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5288 2550 30  0001 C CNN
+F 3 "~" H 5250 2700 60  0000 C CNN
+	1    5250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-LadybugBlueLite C1001
+U 1 1 5691347F
+P 2900 2750
+F 0 "C1001" H 2900 2850 40  0000 L CNN
+F 1 ".1u" H 2906 2665 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2938 2600 30  0001 C CNN
+F 3 "~" H 2900 2750 60  0000 C CNN
+	1    2900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 569134B9
+P 4450 3100
+F 0 "#PWR01" H 4450 2850 50  0001 C CNN
+F 1 "GND" H 4450 2950 50  0000 C CNN
+F 2 "" H 4450 3100 50  0000 C CNN
+F 3 "" H 4450 3100 50  0000 C CNN
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4150 9000 4150
+Wire Wire Line
+	8250 2700 8250 2800
+Wire Wire Line
+	8250 3300 8250 3550
+Wire Wire Line
+	9000 3400 9000 3600
+Wire Wire Line
+	8250 4050 8250 4150
+Wire Wire Line
+	9000 4150 9000 4000
+Connection ~ 9000 3400
+Wire Wire Line
+	8250 3400 10000 3400
+Wire Wire Line
+	5100 2400 5650 2400
+Wire Wire Line
+	5250 2400 5250 2500
+Wire Wire Line
+	5250 3000 5250 2900
+Wire Wire Line
+	2900 2200 2900 2550
+Text Label 5150 2400 0    60   ~ 0
+3V3
+Text Label 3750 2400 0    60   ~ 0
+5V
+Connection ~ 5250 2400
+$Comp
+L INDUCTOR L1001
+U 1 1 56913C64
+P 3350 2400
+F 0 "L1001" V 3300 2400 50  0000 C CNN
+F 1 "INDUCTOR" V 3450 2400 50  0000 C CNN
+F 2 "Capacitors_SMD:C_1210" H 3350 2400 50  0001 C CNN
+F 3 "" H 3350 2400 50  0000 C CNN
+	1    3350 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 3050 4450 3050
+Wire Wire Line
+	4450 2850 4450 3100
+Connection ~ 4450 3050
+Wire Wire Line
+	3650 2400 3850 2400
+Text Notes 3100 1650 0    79   ~ 0
+DC Power
+Wire Wire Line
+	5250 3000 4450 3000
+Connection ~ 4450 3000
+$Comp
+L C-RESCUE-LadybugBlueLite C1002
+U 1 1 569177D4
+P 3800 2750
+F 0 "C1002" H 3800 2850 40  0000 L CNN
+F 1 "10u" H 3806 2665 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3838 2600 30  0001 C CNN
+F 3 "~" H 3800 2750 60  0000 C CNN
+	1    3800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2950 3800 3050
+Connection ~ 3800 3050
+Wire Wire Line
+	3800 2550 3800 2400
+Connection ~ 3800 2400
+$Comp
+L C-RESCUE-LadybugBlueLite C1003
+U 1 1 56917D5D
+P 4300 4250
+F 0 "C1003" H 4300 4350 40  0000 L CNN
+F 1 "10u" H 4306 4165 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4338 4100 30  0000 C CNN
+F 3 "~" H 4300 4250 60  0000 C CNN
+	1    4300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-LadybugBlueLite C1005
+U 1 1 56917DAA
+P 5400 4250
+F 0 "C1005" H 5400 4350 40  0000 L CNN
+F 1 "10u" H 5406 4165 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5438 4100 30  0001 C CNN
+F 3 "~" H 5400 4250 60  0000 C CNN
+	1    5400 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4050 4300 3800
+Wire Wire Line
+	4300 3800 5650 3800
+Wire Wire Line
+	4900 3800 4900 3950
+Connection ~ 4900 3800
+Wire Wire Line
+	4300 4450 4300 4650
+Wire Wire Line
+	4300 4650 5400 4650
+Wire Wire Line
+	5400 4650 5400 4450
+Wire Wire Line
+	4900 4550 4900 4650
+Connection ~ 4900 4650
+Wire Wire Line
+	5400 3800 5400 4050
+Connection ~ 5400 3800
+Wire Notes Line
+	5550 3350 5550 1450
+Wire Notes Line
+	5550 1450 1650 1450
+Wire Notes Line
+	1650 1450 1650 3350
+Wire Notes Line
+	1650 3350 5550 3350
+Wire Notes Line
+	5550 3550 5550 5000
+Wire Notes Line
+	5550 5000 3500 5000
+Wire Notes Line
+	3500 5000 3500 3550
+Wire Notes Line
+	3500 3550 5550 3550
+Text Notes 4100 3700 0    79   ~ 0
+Battery Power
+Wire Wire Line
+	5950 2400 6250 2400
+Wire Wire Line
+	6250 2400 6250 3800
+Wire Wire Line
+	6250 3800 5950 3800
+Text Notes 1850 4550 0    79   ~ 0
+Energy stored in caps might be needed \nduring peak current consumption.
+$Comp
+L R-RESCUE-LadybugBlueLite R1003
+U 1 1 569193B3
+P 8800 5850
+F 0 "R1003" V 8880 5850 40  0000 C CNN
+F 1 "1K" V 8807 5851 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8730 5850 30  0001 C CNN
+F 3 "~" H 8800 5850 30  0000 C CNN
+	1    8800 5850
+	1    0    0    1   
+$EndComp
+Text GLabel 5100 6250 3    60   Output ~ 0
+GND
+$Comp
+L LB_HEADER_2 P1002
+U 1 1 569193D1
+P 4500 5700
+F 0 "P1002" V 4450 5800 50  0000 C CNN
+F 1 "LB_HEADER_2" V 4650 5750 50  0000 C CNN
+F 2 "LettuceBuddy:LB_CONN_2" H 4500 5700 60  0001 C CNN
+F 3 "~" H 4500 5700 60  0000 C CNN
+	1    4500 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 5850 5100 6250
+Wire Wire Line
+	5100 5850 4850 5850
+Text GLabel 4750 4750 3    60   Output ~ 0
+GND
+Wire Wire Line
+	4750 4750 4750 4650
+Connection ~ 4750 4650
+Text Notes 4150 5400 0    79   ~ 0
+Test Power
+Text Label 5050 3800 0    79   ~ 0
+3V
+Wire Wire Line
+	6250 3050 6750 3050
+Connection ~ 6250 3050
+Text GLabel 6750 3050 2    79   Output ~ 0
+PWR
+Wire Notes Line
+	3950 5200 5550 5200
+Wire Notes Line
+	5550 5200 5550 6600
+Wire Notes Line
+	5550 6600 3950 6600
+Wire Notes Line
+	3950 6600 3950 5200
+Text GLabel 6200 5750 2    79   Output ~ 0
+PWR
+Text GLabel 8250 2700 1    79   Input ~ 0
+PWR
+$Comp
+L LED-RESCUE-LadybugBlueLite D1004
+U 1 1 5691AC77
+P 8800 5350
+F 0 "D1004" H 8800 5450 50  0000 C CNN
+F 1 "LED" H 8800 5250 50  0000 C CNN
+F 2 "LettuceBuddy:LB_LED-1206" H 8800 5350 50  0001 C CNN
+F 3 "" H 8800 5350 50  0000 C CNN
+	1    8800 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 5600 8800 5550
+Text GLabel 8800 6100 3    60   Output ~ 0
+GND
+Wire Wire Line
+	8800 6100 8800 6100
+$Comp
+L LB_HEADER_2 P1003
+U 1 1 5691B1F2
+P 8250 4850
+F 0 "P1003" V 8200 4950 50  0000 C CNN
+F 1 "LB_HEADER_2" V 8400 4900 50  0000 C CNN
+F 2 "LettuceBuddy:LB_CONN_2" H 8250 4850 60  0001 C CNN
+F 3 "~" H 8250 4850 60  0000 C CNN
+	1    8250 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 4900 9000 4900
+Wire Wire Line
+	8600 5000 8800 5000
+Wire Wire Line
+	8800 5000 8800 5150
+Connection ~ 8250 3400
+Wire Notes Line
+	7900 2300 10500 2300
+Wire Notes Line
+	10500 2300 10500 4450
+Wire Notes Line
+	10500 4450 7900 4450
+Wire Notes Line
+	7900 4450 7900 2300
+Text GLabel 9000 4900 2    79   Input ~ 0
+PWR
+Text Notes 9200 5200 0    79   ~ 0
+Verify Power
+Wire Notes Line
+	7900 4650 10500 4650
+Wire Notes Line
+	10500 4650 10500 6450
+Wire Notes Line
+	10500 6450 7900 6450
+Wire Notes Line
+	7900 6450 7900 4650
+$Comp
+L TEST_1P USB1001
+U 1 1 56924ABB
+P 5350 2200
+F 0 "USB1001" H 5350 2470 50  0000 C CNN
+F 1 "TESTPOINT" H 5350 2400 50  0000 C CNN
+F 2 "LettuceBuddy:LB_TestPoint" H 5550 2200 50  0001 C CNN
+F 3 "" H 5550 2200 50  0000 C CNN
+	1    5350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2200 5350 2400
+Connection ~ 5350 2400
+$Comp
+L TEST_1P BAT1001
+U 1 1 56924C43
+P 5300 3700
+F 0 "BAT1001" H 5300 3970 50  0000 C CNN
+F 1 "TESTPOINT" H 5300 3900 50  0000 C CNN
+F 2 "LettuceBuddy:LB_TestPoint" H 5500 3700 50  0001 C CNN
+F 3 "" H 5500 3700 50  0000 C CNN
+	1    5300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3800 5300 3700
+Connection ~ 5300 3800
+$Comp
+L MCP1700 U1001
+U 1 1 569272D3
+P 4450 2600
+F 0 "U1001" H 4600 2600 60  0000 C CNN
+F 1 "MCP1700" H 4450 3050 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4450 2600 60  0001 C CNN
+F 3 "" H 4450 2600 60  0000 C CNN
+	1    4450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LB_COIN_CELL BT1001
+U 1 1 5692EA3B
+P 4900 4250
+F 0 "BT1001" H 4900 4450 50  0000 C CNN
+F 1 "COIN_CELL" H 4900 4060 50  0000 C CNN
+F 2 "LadybugHydro:CR2032" H 4900 4250 60  0001 C CNN
+F 3 "" H 4900 4250 60  0000 C CNN
+	1    4900 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 5750 6200 5750
+Wire Wire Line
+	5650 5750 4850 5750
+$Comp
+L LB_Schottky D1001
+U 1 1 569435EC
+P 5800 2400
+F 0 "D1001" H 5800 2500 50  0000 C CNN
+F 1 "LB_Schottky" H 5800 2300 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5800 2400 50  0001 C CNN
+F 3 "" H 5800 2400 50  0000 C CNN
+	1    5800 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L LB_Schottky D1002
+U 1 1 569436B3
+P 5800 3800
+F 0 "D1002" H 5800 3900 50  0000 C CNN
+F 1 "LB_Schottky" H 5800 3700 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5800 3800 50  0001 C CNN
+F 3 "" H 5800 3800 50  0000 C CNN
+	1    5800 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L LB_Schottky D1003
+U 1 1 56943998
+P 5800 5750
+F 0 "D1003" H 5800 5850 50  0000 C CNN
+F 1 "LB_Schottky" H 5800 5650 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5800 5750 50  0001 C CNN
+F 3 "" H 5800 5750 50  0000 C CNN
+	1    5800 5750
+	-1   0    0    1   
+$EndComp
+Text Label 8650 5000 0    60   ~ 0
+to_LED
+Text Label 8800 5600 0    60   ~ 0
+from_LED
+Text Label 2900 2400 0    60   ~ 0
+VCC
+Text GLabel 8550 4200 3    60   Output ~ 0
+GND
+Wire Wire Line
+	8550 4200 8550 4150
+Connection ~ 8550 4150
+$Comp
+L USB_MICRO_B P1001
+U 1 1 5695633C
+P 2400 1900
+F 0 "P1001" H 2200 1450 50  0000 C CNN
+F 1 "USB_MICRO_B" H 2350 2100 50  0000 C CNN
+F 2 "LadybugHydro:USB-Micro-B" V 2350 1800 50  0001 C CNN
+F 3 "" V 2350 1800 50  0000 C CNN
+	1    2400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1600 1850 3050
+Wire Wire Line
+	1850 2200 1900 2200
+Wire Wire Line
+	1900 2100 1850 2100
+Connection ~ 1850 2200
+Wire Wire Line
+	1850 1900 1900 1900
+Connection ~ 1850 2100
+Wire Wire Line
+	1850 1800 1900 1800
+Connection ~ 1850 1900
+Wire Wire Line
+	2700 1800 2800 1800
+Wire Wire Line
+	2800 1800 2800 1600
+Wire Wire Line
+	2800 1600 1850 1600
+Connection ~ 1850 1800
+Wire Wire Line
+	2900 2950 2900 3050
+Connection ~ 2900 3050
+Wire Wire Line
+	2700 2200 2900 2200
+Wire Wire Line
+	3050 2400 2900 2400
+Connection ~ 2900 2400
+$EndSCHEMATC

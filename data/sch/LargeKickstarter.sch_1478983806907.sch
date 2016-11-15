@@ -1,0 +1,11469 @@
+EESchema Schematic File Version 2
+LIBS:LargeKickstarter-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LED_BackPack
+LIBS:ChronoDot
+LIBS:Arduino_Nano
+LIBS:LargeKickstarter
+LIBS:LargeKickstarter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED-RESCUE-LargeKickstarter 0-0
+U 1 1 557560EC
+P -8200 -7200
+F 0 "0-0" H -8200 -7100 50  0000 C CNN
+F 1 "LED" H -8200 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -8200 -7200 60  0001 C CNN
+F 3 "" H -8200 -7200 60  0000 C CNN
+	1    -8200 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-0
+U 1 1 557560ED
+P -7850 -7200
+F 0 "1-0" H -7850 -7100 50  0000 C CNN
+F 1 "LED" H -7850 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7850 -7200 60  0001 C CNN
+F 3 "" H -7850 -7200 60  0000 C CNN
+	1    -7850 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-0
+U 1 1 557560EE
+P -7500 -7200
+F 0 "2-0" H -7500 -7100 50  0000 C CNN
+F 1 "LED" H -7500 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7500 -7200 60  0001 C CNN
+F 3 "" H -7500 -7200 60  0000 C CNN
+	1    -7500 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-0
+U 1 1 557560EF
+P -7200 -7200
+F 0 "3-0" H -7200 -7100 50  0000 C CNN
+F 1 "LED" H -7200 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7200 -7200 60  0001 C CNN
+F 3 "" H -7200 -7200 60  0000 C CNN
+	1    -7200 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-0
+U 1 1 557560F0
+P -6850 -7200
+F 0 "4-0" H -6850 -7100 50  0000 C CNN
+F 1 "LED" H -6850 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 -7200 60  0001 C CNN
+F 3 "" H -6850 -7200 60  0000 C CNN
+	1    -6850 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-0
+U 1 1 557560F1
+P -6500 -7200
+F 0 "5-0" H -6500 -7100 50  0000 C CNN
+F 1 "LED" H -6500 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 -7200 60  0001 C CNN
+F 3 "" H -6500 -7200 60  0000 C CNN
+	1    -6500 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-0
+U 1 1 557560F2
+P -6150 -7200
+F 0 "6-0" H -6150 -7100 50  0000 C CNN
+F 1 "LED" H -6150 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 -7200 60  0001 C CNN
+F 3 "" H -6150 -7200 60  0000 C CNN
+	1    -6150 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-0
+U 1 1 557560F3
+P -5800 -7200
+F 0 "7-0" H -5800 -7100 50  0000 C CNN
+F 1 "LED" H -5800 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5800 -7200 60  0001 C CNN
+F 3 "" H -5800 -7200 60  0000 C CNN
+	1    -5800 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-1
+U 1 1 557560F4
+P -8200 -6550
+F 0 "0-1" H -8200 -6450 50  0000 C CNN
+F 1 "LED" H -8200 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -8200 -6550 60  0001 C CNN
+F 3 "" H -8200 -6550 60  0000 C CNN
+	1    -8200 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-1
+U 1 1 557560F5
+P -7850 -6550
+F 0 "1-1" H -7850 -6450 50  0000 C CNN
+F 1 "LED" H -7850 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7850 -6550 60  0001 C CNN
+F 3 "" H -7850 -6550 60  0000 C CNN
+	1    -7850 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-1
+U 1 1 557560F6
+P -7500 -6550
+F 0 "2-1" H -7500 -6450 50  0000 C CNN
+F 1 "LED" H -7500 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7500 -6550 60  0001 C CNN
+F 3 "" H -7500 -6550 60  0000 C CNN
+	1    -7500 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-1
+U 1 1 557560F7
+P -7200 -6550
+F 0 "3-1" H -7200 -6450 50  0000 C CNN
+F 1 "LED" H -7200 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7200 -6550 60  0001 C CNN
+F 3 "" H -7200 -6550 60  0000 C CNN
+	1    -7200 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-1
+U 1 1 557560F8
+P -6850 -6550
+F 0 "4-1" H -6850 -6450 50  0000 C CNN
+F 1 "LED" H -6850 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 -6550 60  0001 C CNN
+F 3 "" H -6850 -6550 60  0000 C CNN
+	1    -6850 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-1
+U 1 1 557560F9
+P -6500 -6550
+F 0 "5-1" H -6500 -6450 50  0000 C CNN
+F 1 "LED" H -6500 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 -6550 60  0001 C CNN
+F 3 "" H -6500 -6550 60  0000 C CNN
+	1    -6500 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-1
+U 1 1 557560FA
+P -6150 -6550
+F 0 "6-1" H -6150 -6450 50  0000 C CNN
+F 1 "LED" H -6150 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 -6550 60  0001 C CNN
+F 3 "" H -6150 -6550 60  0000 C CNN
+	1    -6150 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-1
+U 1 1 557560FB
+P -5800 -6550
+F 0 "7-1" H -5800 -6450 50  0000 C CNN
+F 1 "LED" H -5800 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5800 -6550 60  0001 C CNN
+F 3 "" H -5800 -6550 60  0000 C CNN
+	1    -5800 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-2
+U 1 1 557560FC
+P -8200 -5800
+F 0 "0-2" H -8200 -5700 50  0000 C CNN
+F 1 "LED" H -8200 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -8200 -5800 60  0001 C CNN
+F 3 "" H -8200 -5800 60  0000 C CNN
+	1    -8200 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-2
+U 1 1 557560FD
+P -7850 -5800
+F 0 "1-2" H -7850 -5700 50  0000 C CNN
+F 1 "LED" H -7850 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7850 -5800 60  0001 C CNN
+F 3 "" H -7850 -5800 60  0000 C CNN
+	1    -7850 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-2
+U 1 1 557560FE
+P -7500 -5800
+F 0 "2-2" H -7500 -5700 50  0000 C CNN
+F 1 "LED" H -7500 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7500 -5800 60  0001 C CNN
+F 3 "" H -7500 -5800 60  0000 C CNN
+	1    -7500 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-2
+U 1 1 557560FF
+P -7200 -5800
+F 0 "3-2" H -7200 -5700 50  0000 C CNN
+F 1 "LED" H -7200 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7200 -5800 60  0001 C CNN
+F 3 "" H -7200 -5800 60  0000 C CNN
+	1    -7200 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-2
+U 1 1 55756100
+P -6850 -5800
+F 0 "4-2" H -6850 -5700 50  0000 C CNN
+F 1 "LED" H -6850 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 -5800 60  0001 C CNN
+F 3 "" H -6850 -5800 60  0000 C CNN
+	1    -6850 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-2
+U 1 1 55756101
+P -6500 -5800
+F 0 "5-2" H -6500 -5700 50  0000 C CNN
+F 1 "LED" H -6500 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 -5800 60  0001 C CNN
+F 3 "" H -6500 -5800 60  0000 C CNN
+	1    -6500 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-2
+U 1 1 55756102
+P -6150 -5800
+F 0 "6-2" H -6150 -5700 50  0000 C CNN
+F 1 "LED" H -6150 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 -5800 60  0001 C CNN
+F 3 "" H -6150 -5800 60  0000 C CNN
+	1    -6150 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-2
+U 1 1 55756103
+P -5800 -5800
+F 0 "7-2" H -5800 -5700 50  0000 C CNN
+F 1 "LED" H -5800 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5800 -5800 60  0001 C CNN
+F 3 "" H -5800 -5800 60  0000 C CNN
+	1    -5800 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-3
+U 1 1 55756104
+P -8200 -5100
+F 0 "0-3" H -8200 -5000 50  0000 C CNN
+F 1 "LED" H -8200 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -8200 -5100 60  0001 C CNN
+F 3 "" H -8200 -5100 60  0000 C CNN
+	1    -8200 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-3
+U 1 1 55756105
+P -7850 -5100
+F 0 "1-3" H -7850 -5000 50  0000 C CNN
+F 1 "LED" H -7850 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7850 -5100 60  0001 C CNN
+F 3 "" H -7850 -5100 60  0000 C CNN
+	1    -7850 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-3
+U 1 1 55756106
+P -7500 -5100
+F 0 "2-3" H -7500 -5000 50  0000 C CNN
+F 1 "LED" H -7500 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7500 -5100 60  0001 C CNN
+F 3 "" H -7500 -5100 60  0000 C CNN
+	1    -7500 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-3
+U 1 1 55756107
+P -7200 -5100
+F 0 "3-3" H -7200 -5000 50  0000 C CNN
+F 1 "LED" H -7200 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7200 -5100 60  0001 C CNN
+F 3 "" H -7200 -5100 60  0000 C CNN
+	1    -7200 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-3
+U 1 1 55756108
+P -6850 -5100
+F 0 "4-3" H -6850 -5000 50  0000 C CNN
+F 1 "LED" H -6850 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 -5100 60  0001 C CNN
+F 3 "" H -6850 -5100 60  0000 C CNN
+	1    -6850 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-3
+U 1 1 55756109
+P -6500 -5100
+F 0 "5-3" H -6500 -5000 50  0000 C CNN
+F 1 "LED" H -6500 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 -5100 60  0001 C CNN
+F 3 "" H -6500 -5100 60  0000 C CNN
+	1    -6500 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-3
+U 1 1 5575610A
+P -6150 -5100
+F 0 "6-3" H -6150 -5000 50  0000 C CNN
+F 1 "LED" H -6150 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 -5100 60  0001 C CNN
+F 3 "" H -6150 -5100 60  0000 C CNN
+	1    -6150 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-3
+U 1 1 5575610B
+P -5800 -5100
+F 0 "7-3" H -5800 -5000 50  0000 C CNN
+F 1 "LED" H -5800 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5800 -5100 60  0001 C CNN
+F 3 "" H -5800 -5100 60  0000 C CNN
+	1    -5800 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-4
+U 1 1 5575610C
+P -8200 -4450
+F 0 "0-4" H -8200 -4350 50  0000 C CNN
+F 1 "LED" H -8200 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -8200 -4450 60  0001 C CNN
+F 3 "" H -8200 -4450 60  0000 C CNN
+	1    -8200 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-4
+U 1 1 5575610D
+P -7850 -4450
+F 0 "1-4" H -7850 -4350 50  0000 C CNN
+F 1 "LED" H -7850 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7850 -4450 60  0001 C CNN
+F 3 "" H -7850 -4450 60  0000 C CNN
+	1    -7850 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-4
+U 1 1 5575610E
+P -7500 -4450
+F 0 "2-4" H -7500 -4350 50  0000 C CNN
+F 1 "LED" H -7500 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7500 -4450 60  0001 C CNN
+F 3 "" H -7500 -4450 60  0000 C CNN
+	1    -7500 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-4
+U 1 1 5575610F
+P -7200 -4450
+F 0 "3-4" H -7200 -4350 50  0000 C CNN
+F 1 "LED" H -7200 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7200 -4450 60  0001 C CNN
+F 3 "" H -7200 -4450 60  0000 C CNN
+	1    -7200 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-4
+U 1 1 55756110
+P -6850 -4450
+F 0 "4-4" H -6850 -4350 50  0000 C CNN
+F 1 "LED" H -6850 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 -4450 60  0001 C CNN
+F 3 "" H -6850 -4450 60  0000 C CNN
+	1    -6850 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-4
+U 1 1 55756111
+P -6500 -4450
+F 0 "5-4" H -6500 -4350 50  0000 C CNN
+F 1 "LED" H -6500 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 -4450 60  0001 C CNN
+F 3 "" H -6500 -4450 60  0000 C CNN
+	1    -6500 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-4
+U 1 1 55756112
+P -6150 -4450
+F 0 "6-4" H -6150 -4350 50  0000 C CNN
+F 1 "LED" H -6150 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 -4450 60  0001 C CNN
+F 3 "" H -6150 -4450 60  0000 C CNN
+	1    -6150 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-4
+U 1 1 55756113
+P -5800 -4450
+F 0 "7-4" H -5800 -4350 50  0000 C CNN
+F 1 "LED" H -5800 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5800 -4450 60  0001 C CNN
+F 3 "" H -5800 -4450 60  0000 C CNN
+	1    -5800 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-5
+U 1 1 55756114
+P -8200 -3800
+F 0 "0-5" H -8200 -3700 50  0000 C CNN
+F 1 "LED" H -8200 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -8200 -3800 60  0001 C CNN
+F 3 "" H -8200 -3800 60  0000 C CNN
+	1    -8200 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-5
+U 1 1 55756115
+P -7850 -3800
+F 0 "1-5" H -7850 -3700 50  0000 C CNN
+F 1 "LED" H -7850 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7850 -3800 60  0001 C CNN
+F 3 "" H -7850 -3800 60  0000 C CNN
+	1    -7850 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-5
+U 1 1 55756116
+P -7500 -3800
+F 0 "2-5" H -7500 -3700 50  0000 C CNN
+F 1 "LED" H -7500 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7500 -3800 60  0001 C CNN
+F 3 "" H -7500 -3800 60  0000 C CNN
+	1    -7500 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-5
+U 1 1 55756117
+P -7200 -3800
+F 0 "3-5" H -7200 -3700 50  0000 C CNN
+F 1 "LED" H -7200 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7200 -3800 60  0001 C CNN
+F 3 "" H -7200 -3800 60  0000 C CNN
+	1    -7200 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-5
+U 1 1 55756118
+P -6850 -3800
+F 0 "4-5" H -6850 -3700 50  0000 C CNN
+F 1 "LED" H -6850 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 -3800 60  0001 C CNN
+F 3 "" H -6850 -3800 60  0000 C CNN
+	1    -6850 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-5
+U 1 1 55756119
+P -6500 -3800
+F 0 "5-5" H -6500 -3700 50  0000 C CNN
+F 1 "LED" H -6500 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 -3800 60  0001 C CNN
+F 3 "" H -6500 -3800 60  0000 C CNN
+	1    -6500 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-5
+U 1 1 5575611A
+P -6150 -3800
+F 0 "6-5" H -6150 -3700 50  0000 C CNN
+F 1 "LED" H -6150 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 -3800 60  0001 C CNN
+F 3 "" H -6150 -3800 60  0000 C CNN
+	1    -6150 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-5
+U 1 1 5575611B
+P -5800 -3800
+F 0 "7-5" H -5800 -3700 50  0000 C CNN
+F 1 "LED" H -5800 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5800 -3800 60  0001 C CNN
+F 3 "" H -5800 -3800 60  0000 C CNN
+	1    -5800 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-6
+U 1 1 5575611C
+P -8200 -3050
+F 0 "0-6" H -8200 -2950 50  0000 C CNN
+F 1 "LED" H -8200 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -8200 -3050 60  0001 C CNN
+F 3 "" H -8200 -3050 60  0000 C CNN
+	1    -8200 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-6
+U 1 1 5575611D
+P -7850 -3050
+F 0 "1-6" H -7850 -2950 50  0000 C CNN
+F 1 "LED" H -7850 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7850 -3050 60  0001 C CNN
+F 3 "" H -7850 -3050 60  0000 C CNN
+	1    -7850 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-6
+U 1 1 5575611E
+P -7500 -3050
+F 0 "2-6" H -7500 -2950 50  0000 C CNN
+F 1 "LED" H -7500 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7500 -3050 60  0001 C CNN
+F 3 "" H -7500 -3050 60  0000 C CNN
+	1    -7500 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-6
+U 1 1 5575611F
+P -7200 -3050
+F 0 "3-6" H -7200 -2950 50  0000 C CNN
+F 1 "LED" H -7200 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7200 -3050 60  0001 C CNN
+F 3 "" H -7200 -3050 60  0000 C CNN
+	1    -7200 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-6
+U 1 1 55756120
+P -6850 -3050
+F 0 "4-6" H -6850 -2950 50  0000 C CNN
+F 1 "LED" H -6850 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 -3050 60  0001 C CNN
+F 3 "" H -6850 -3050 60  0000 C CNN
+	1    -6850 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-6
+U 1 1 55756121
+P -6500 -3050
+F 0 "5-6" H -6500 -2950 50  0000 C CNN
+F 1 "LED" H -6500 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 -3050 60  0001 C CNN
+F 3 "" H -6500 -3050 60  0000 C CNN
+	1    -6500 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-6
+U 1 1 55756122
+P -6150 -3050
+F 0 "6-6" H -6150 -2950 50  0000 C CNN
+F 1 "LED" H -6150 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 -3050 60  0001 C CNN
+F 3 "" H -6150 -3050 60  0000 C CNN
+	1    -6150 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-6
+U 1 1 55756123
+P -5800 -3050
+F 0 "7-6" H -5800 -2950 50  0000 C CNN
+F 1 "LED" H -5800 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5800 -3050 60  0001 C CNN
+F 3 "" H -5800 -3050 60  0000 C CNN
+	1    -5800 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-7
+U 1 1 55756124
+P -8200 -2300
+F 0 "0-7" H -8200 -2200 50  0000 C CNN
+F 1 "LED" H -8200 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -8200 -2300 60  0001 C CNN
+F 3 "" H -8200 -2300 60  0000 C CNN
+	1    -8200 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-7
+U 1 1 55756125
+P -7850 -2300
+F 0 "1-7" H -7850 -2200 50  0000 C CNN
+F 1 "LED" H -7850 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7850 -2300 60  0001 C CNN
+F 3 "" H -7850 -2300 60  0000 C CNN
+	1    -7850 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-7
+U 1 1 55756126
+P -7500 -2300
+F 0 "2-7" H -7500 -2200 50  0000 C CNN
+F 1 "LED" H -7500 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7500 -2300 60  0001 C CNN
+F 3 "" H -7500 -2300 60  0000 C CNN
+	1    -7500 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-7
+U 1 1 55756127
+P -7200 -2300
+F 0 "3-7" H -7200 -2200 50  0000 C CNN
+F 1 "LED" H -7200 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -7200 -2300 60  0001 C CNN
+F 3 "" H -7200 -2300 60  0000 C CNN
+	1    -7200 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-7
+U 1 1 55756128
+P -6850 -2300
+F 0 "4-7" H -6850 -2200 50  0000 C CNN
+F 1 "LED" H -6850 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 -2300 60  0001 C CNN
+F 3 "" H -6850 -2300 60  0000 C CNN
+	1    -6850 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-7
+U 1 1 55756129
+P -6500 -2300
+F 0 "5-7" H -6500 -2200 50  0000 C CNN
+F 1 "LED" H -6500 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 -2300 60  0001 C CNN
+F 3 "" H -6500 -2300 60  0000 C CNN
+	1    -6500 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-7
+U 1 1 5575612A
+P -6150 -2300
+F 0 "6-7" H -6150 -2200 50  0000 C CNN
+F 1 "LED" H -6150 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 -2300 60  0001 C CNN
+F 3 "" H -6150 -2300 60  0000 C CNN
+	1    -6150 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-7
+U 1 1 5575612B
+P -5800 -2300
+F 0 "7-7" H -5800 -2200 50  0000 C CNN
+F 1 "LED" H -5800 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5800 -2300 60  0001 C CNN
+F 3 "" H -5800 -2300 60  0000 C CNN
+	1    -5800 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-0
+U 1 1 55756130
+P -11700 -7200
+F 0 "8-0" H -11700 -7100 50  0000 C CNN
+F 1 "LED" H -11700 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11700 -7200 60  0001 C CNN
+F 3 "" H -11700 -7200 60  0000 C CNN
+	1    -11700 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-0
+U 1 1 55756131
+P -11350 -7200
+F 0 "9-0" H -11350 -7100 50  0000 C CNN
+F 1 "LED" H -11350 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11350 -7200 60  0001 C CNN
+F 3 "" H -11350 -7200 60  0000 C CNN
+	1    -11350 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-0
+U 1 1 55756132
+P -11000 -7200
+F 0 "10-0" H -11000 -7100 50  0000 C CNN
+F 1 "LED" H -11000 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11000 -7200 60  0001 C CNN
+F 3 "" H -11000 -7200 60  0000 C CNN
+	1    -11000 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-0
+U 1 1 55756133
+P -10700 -7200
+F 0 "11-0" H -10700 -7100 50  0000 C CNN
+F 1 "LED" H -10700 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10700 -7200 60  0001 C CNN
+F 3 "" H -10700 -7200 60  0000 C CNN
+	1    -10700 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-0
+U 1 1 55756134
+P -10350 -7200
+F 0 "12-0" H -10350 -7100 50  0000 C CNN
+F 1 "LED" H -10350 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10350 -7200 60  0001 C CNN
+F 3 "" H -10350 -7200 60  0000 C CNN
+	1    -10350 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-0
+U 1 1 55756135
+P -10000 -7200
+F 0 "13-0" H -10000 -7100 50  0000 C CNN
+F 1 "LED" H -10000 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10000 -7200 60  0001 C CNN
+F 3 "" H -10000 -7200 60  0000 C CNN
+	1    -10000 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-0
+U 1 1 55756136
+P -9650 -7200
+F 0 "14-0" H -9650 -7100 50  0000 C CNN
+F 1 "LED" H -9650 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9650 -7200 60  0001 C CNN
+F 3 "" H -9650 -7200 60  0000 C CNN
+	1    -9650 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-0
+U 1 1 55756137
+P -9300 -7200
+F 0 "15-0" H -9300 -7100 50  0000 C CNN
+F 1 "LED" H -9300 -7300 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9300 -7200 60  0001 C CNN
+F 3 "" H -9300 -7200 60  0000 C CNN
+	1    -9300 -7200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-1
+U 1 1 55756138
+P -11700 -6550
+F 0 "8-1" H -11700 -6450 50  0000 C CNN
+F 1 "LED" H -11700 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11700 -6550 60  0001 C CNN
+F 3 "" H -11700 -6550 60  0000 C CNN
+	1    -11700 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-1
+U 1 1 55756139
+P -11350 -6550
+F 0 "9-1" H -11350 -6450 50  0000 C CNN
+F 1 "LED" H -11350 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11350 -6550 60  0001 C CNN
+F 3 "" H -11350 -6550 60  0000 C CNN
+	1    -11350 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-1
+U 1 1 5575613A
+P -11000 -6550
+F 0 "10-1" H -11000 -6450 50  0000 C CNN
+F 1 "LED" H -11000 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11000 -6550 60  0001 C CNN
+F 3 "" H -11000 -6550 60  0000 C CNN
+	1    -11000 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-1
+U 1 1 5575613B
+P -10700 -6550
+F 0 "11-1" H -10700 -6450 50  0000 C CNN
+F 1 "LED" H -10700 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10700 -6550 60  0001 C CNN
+F 3 "" H -10700 -6550 60  0000 C CNN
+	1    -10700 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-1
+U 1 1 5575613C
+P -10350 -6550
+F 0 "12-1" H -10350 -6450 50  0000 C CNN
+F 1 "LED" H -10350 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10350 -6550 60  0001 C CNN
+F 3 "" H -10350 -6550 60  0000 C CNN
+	1    -10350 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-1
+U 1 1 5575613D
+P -10000 -6550
+F 0 "13-1" H -10000 -6450 50  0000 C CNN
+F 1 "LED" H -10000 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10000 -6550 60  0001 C CNN
+F 3 "" H -10000 -6550 60  0000 C CNN
+	1    -10000 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-1
+U 1 1 5575613E
+P -9650 -6550
+F 0 "14-1" H -9650 -6450 50  0000 C CNN
+F 1 "LED" H -9650 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9650 -6550 60  0001 C CNN
+F 3 "" H -9650 -6550 60  0000 C CNN
+	1    -9650 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-1
+U 1 1 5575613F
+P -9300 -6550
+F 0 "15-1" H -9300 -6450 50  0000 C CNN
+F 1 "LED" H -9300 -6650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9300 -6550 60  0001 C CNN
+F 3 "" H -9300 -6550 60  0000 C CNN
+	1    -9300 -6550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-2
+U 1 1 55756140
+P -11700 -5800
+F 0 "8-2" H -11700 -5700 50  0000 C CNN
+F 1 "LED" H -11700 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11700 -5800 60  0001 C CNN
+F 3 "" H -11700 -5800 60  0000 C CNN
+	1    -11700 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-2
+U 1 1 55756141
+P -11350 -5800
+F 0 "9-2" H -11350 -5700 50  0000 C CNN
+F 1 "LED" H -11350 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11350 -5800 60  0001 C CNN
+F 3 "" H -11350 -5800 60  0000 C CNN
+	1    -11350 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-2
+U 1 1 55756142
+P -11000 -5800
+F 0 "10-2" H -11000 -5700 50  0000 C CNN
+F 1 "LED" H -11000 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11000 -5800 60  0001 C CNN
+F 3 "" H -11000 -5800 60  0000 C CNN
+	1    -11000 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-2
+U 1 1 55756143
+P -10700 -5800
+F 0 "11-2" H -10700 -5700 50  0000 C CNN
+F 1 "LED" H -10700 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10700 -5800 60  0001 C CNN
+F 3 "" H -10700 -5800 60  0000 C CNN
+	1    -10700 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-2
+U 1 1 55756144
+P -10350 -5800
+F 0 "12-2" H -10350 -5700 50  0000 C CNN
+F 1 "LED" H -10350 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10350 -5800 60  0001 C CNN
+F 3 "" H -10350 -5800 60  0000 C CNN
+	1    -10350 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-2
+U 1 1 55756145
+P -10000 -5800
+F 0 "13-2" H -10000 -5700 50  0000 C CNN
+F 1 "LED" H -10000 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10000 -5800 60  0001 C CNN
+F 3 "" H -10000 -5800 60  0000 C CNN
+	1    -10000 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-2
+U 1 1 55756146
+P -9650 -5800
+F 0 "14-2" H -9650 -5700 50  0000 C CNN
+F 1 "LED" H -9650 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9650 -5800 60  0001 C CNN
+F 3 "" H -9650 -5800 60  0000 C CNN
+	1    -9650 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-2
+U 1 1 55756147
+P -9300 -5800
+F 0 "15-2" H -9300 -5700 50  0000 C CNN
+F 1 "LED" H -9300 -5900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9300 -5800 60  0001 C CNN
+F 3 "" H -9300 -5800 60  0000 C CNN
+	1    -9300 -5800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-3
+U 1 1 55756148
+P -11700 -5100
+F 0 "8-3" H -11700 -5000 50  0000 C CNN
+F 1 "LED" H -11700 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11700 -5100 60  0001 C CNN
+F 3 "" H -11700 -5100 60  0000 C CNN
+	1    -11700 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-3
+U 1 1 55756149
+P -11350 -5100
+F 0 "9-3" H -11350 -5000 50  0000 C CNN
+F 1 "LED" H -11350 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11350 -5100 60  0001 C CNN
+F 3 "" H -11350 -5100 60  0000 C CNN
+	1    -11350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-3
+U 1 1 5575614A
+P -11000 -5100
+F 0 "10-3" H -11000 -5000 50  0000 C CNN
+F 1 "LED" H -11000 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11000 -5100 60  0001 C CNN
+F 3 "" H -11000 -5100 60  0000 C CNN
+	1    -11000 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-3
+U 1 1 5575614B
+P -10700 -5100
+F 0 "11-3" H -10700 -5000 50  0000 C CNN
+F 1 "LED" H -10700 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10700 -5100 60  0001 C CNN
+F 3 "" H -10700 -5100 60  0000 C CNN
+	1    -10700 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-3
+U 1 1 5575614C
+P -10350 -5100
+F 0 "12-3" H -10350 -5000 50  0000 C CNN
+F 1 "LED" H -10350 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10350 -5100 60  0001 C CNN
+F 3 "" H -10350 -5100 60  0000 C CNN
+	1    -10350 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-3
+U 1 1 5575614D
+P -10000 -5100
+F 0 "13-3" H -10000 -5000 50  0000 C CNN
+F 1 "LED" H -10000 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10000 -5100 60  0001 C CNN
+F 3 "" H -10000 -5100 60  0000 C CNN
+	1    -10000 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-3
+U 1 1 5575614E
+P -9650 -5100
+F 0 "14-3" H -9650 -5000 50  0000 C CNN
+F 1 "LED" H -9650 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9650 -5100 60  0001 C CNN
+F 3 "" H -9650 -5100 60  0000 C CNN
+	1    -9650 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-3
+U 1 1 5575614F
+P -9300 -5100
+F 0 "15-3" H -9300 -5000 50  0000 C CNN
+F 1 "LED" H -9300 -5200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9300 -5100 60  0001 C CNN
+F 3 "" H -9300 -5100 60  0000 C CNN
+	1    -9300 -5100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-4
+U 1 1 55756150
+P -11700 -4450
+F 0 "8-4" H -11700 -4350 50  0000 C CNN
+F 1 "LED" H -11700 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11700 -4450 60  0001 C CNN
+F 3 "" H -11700 -4450 60  0000 C CNN
+	1    -11700 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-4
+U 1 1 55756151
+P -11350 -4450
+F 0 "9-4" H -11350 -4350 50  0000 C CNN
+F 1 "LED" H -11350 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11350 -4450 60  0001 C CNN
+F 3 "" H -11350 -4450 60  0000 C CNN
+	1    -11350 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-4
+U 1 1 55756152
+P -11000 -4450
+F 0 "10-4" H -11000 -4350 50  0000 C CNN
+F 1 "LED" H -11000 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11000 -4450 60  0001 C CNN
+F 3 "" H -11000 -4450 60  0000 C CNN
+	1    -11000 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-4
+U 1 1 55756153
+P -10700 -4450
+F 0 "11-4" H -10700 -4350 50  0000 C CNN
+F 1 "LED" H -10700 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10700 -4450 60  0001 C CNN
+F 3 "" H -10700 -4450 60  0000 C CNN
+	1    -10700 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-4
+U 1 1 55756154
+P -10350 -4450
+F 0 "12-4" H -10350 -4350 50  0000 C CNN
+F 1 "LED" H -10350 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10350 -4450 60  0001 C CNN
+F 3 "" H -10350 -4450 60  0000 C CNN
+	1    -10350 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-4
+U 1 1 55756155
+P -10000 -4450
+F 0 "13-4" H -10000 -4350 50  0000 C CNN
+F 1 "LED" H -10000 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10000 -4450 60  0001 C CNN
+F 3 "" H -10000 -4450 60  0000 C CNN
+	1    -10000 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-4
+U 1 1 55756156
+P -9650 -4450
+F 0 "14-4" H -9650 -4350 50  0000 C CNN
+F 1 "LED" H -9650 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9650 -4450 60  0001 C CNN
+F 3 "" H -9650 -4450 60  0000 C CNN
+	1    -9650 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-4
+U 1 1 55756157
+P -9300 -4450
+F 0 "15-4" H -9300 -4350 50  0000 C CNN
+F 1 "LED" H -9300 -4550 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9300 -4450 60  0001 C CNN
+F 3 "" H -9300 -4450 60  0000 C CNN
+	1    -9300 -4450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-5
+U 1 1 55756158
+P -11700 -3800
+F 0 "8-5" H -11700 -3700 50  0000 C CNN
+F 1 "LED" H -11700 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11700 -3800 60  0001 C CNN
+F 3 "" H -11700 -3800 60  0000 C CNN
+	1    -11700 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-5
+U 1 1 55756159
+P -11350 -3800
+F 0 "9-5" H -11350 -3700 50  0000 C CNN
+F 1 "LED" H -11350 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11350 -3800 60  0001 C CNN
+F 3 "" H -11350 -3800 60  0000 C CNN
+	1    -11350 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-5
+U 1 1 5575615A
+P -11000 -3800
+F 0 "10-5" H -11000 -3700 50  0000 C CNN
+F 1 "LED" H -11000 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11000 -3800 60  0001 C CNN
+F 3 "" H -11000 -3800 60  0000 C CNN
+	1    -11000 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-5
+U 1 1 5575615B
+P -10700 -3800
+F 0 "11-5" H -10700 -3700 50  0000 C CNN
+F 1 "LED" H -10700 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10700 -3800 60  0001 C CNN
+F 3 "" H -10700 -3800 60  0000 C CNN
+	1    -10700 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-5
+U 1 1 5575615C
+P -10350 -3800
+F 0 "12-5" H -10350 -3700 50  0000 C CNN
+F 1 "LED" H -10350 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10350 -3800 60  0001 C CNN
+F 3 "" H -10350 -3800 60  0000 C CNN
+	1    -10350 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-5
+U 1 1 5575615D
+P -10000 -3800
+F 0 "13-5" H -10000 -3700 50  0000 C CNN
+F 1 "LED" H -10000 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10000 -3800 60  0001 C CNN
+F 3 "" H -10000 -3800 60  0000 C CNN
+	1    -10000 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-5
+U 1 1 5575615E
+P -9650 -3800
+F 0 "14-5" H -9650 -3700 50  0000 C CNN
+F 1 "LED" H -9650 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9650 -3800 60  0001 C CNN
+F 3 "" H -9650 -3800 60  0000 C CNN
+	1    -9650 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-5
+U 1 1 5575615F
+P -9300 -3800
+F 0 "15-5" H -9300 -3700 50  0000 C CNN
+F 1 "LED" H -9300 -3900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9300 -3800 60  0001 C CNN
+F 3 "" H -9300 -3800 60  0000 C CNN
+	1    -9300 -3800
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-6
+U 1 1 55756160
+P -11700 -3050
+F 0 "8-6" H -11700 -2950 50  0000 C CNN
+F 1 "LED" H -11700 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11700 -3050 60  0001 C CNN
+F 3 "" H -11700 -3050 60  0000 C CNN
+	1    -11700 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-6
+U 1 1 55756161
+P -11350 -3050
+F 0 "9-6" H -11350 -2950 50  0000 C CNN
+F 1 "LED" H -11350 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11350 -3050 60  0001 C CNN
+F 3 "" H -11350 -3050 60  0000 C CNN
+	1    -11350 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-6
+U 1 1 55756162
+P -11000 -3050
+F 0 "10-6" H -11000 -2950 50  0000 C CNN
+F 1 "LED" H -11000 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11000 -3050 60  0001 C CNN
+F 3 "" H -11000 -3050 60  0000 C CNN
+	1    -11000 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-6
+U 1 1 55756163
+P -10700 -3050
+F 0 "11-6" H -10700 -2950 50  0000 C CNN
+F 1 "LED" H -10700 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10700 -3050 60  0001 C CNN
+F 3 "" H -10700 -3050 60  0000 C CNN
+	1    -10700 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-6
+U 1 1 55756164
+P -10350 -3050
+F 0 "12-6" H -10350 -2950 50  0000 C CNN
+F 1 "LED" H -10350 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10350 -3050 60  0001 C CNN
+F 3 "" H -10350 -3050 60  0000 C CNN
+	1    -10350 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-6
+U 1 1 55756165
+P -10000 -3050
+F 0 "13-6" H -10000 -2950 50  0000 C CNN
+F 1 "LED" H -10000 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10000 -3050 60  0001 C CNN
+F 3 "" H -10000 -3050 60  0000 C CNN
+	1    -10000 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-6
+U 1 1 55756166
+P -9650 -3050
+F 0 "14-6" H -9650 -2950 50  0000 C CNN
+F 1 "LED" H -9650 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9650 -3050 60  0001 C CNN
+F 3 "" H -9650 -3050 60  0000 C CNN
+	1    -9650 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-6
+U 1 1 55756167
+P -9300 -3050
+F 0 "15-6" H -9300 -2950 50  0000 C CNN
+F 1 "LED" H -9300 -3150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9300 -3050 60  0001 C CNN
+F 3 "" H -9300 -3050 60  0000 C CNN
+	1    -9300 -3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-7
+U 1 1 55756168
+P -11700 -2300
+F 0 "8-7" H -11700 -2200 50  0000 C CNN
+F 1 "LED" H -11700 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11700 -2300 60  0001 C CNN
+F 3 "" H -11700 -2300 60  0000 C CNN
+	1    -11700 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-7
+U 1 1 55756169
+P -11350 -2300
+F 0 "9-7" H -11350 -2200 50  0000 C CNN
+F 1 "LED" H -11350 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11350 -2300 60  0001 C CNN
+F 3 "" H -11350 -2300 60  0000 C CNN
+	1    -11350 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-7
+U 1 1 5575616A
+P -11000 -2300
+F 0 "10-7" H -11000 -2200 50  0000 C CNN
+F 1 "LED" H -11000 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -11000 -2300 60  0001 C CNN
+F 3 "" H -11000 -2300 60  0000 C CNN
+	1    -11000 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-7
+U 1 1 5575616B
+P -10700 -2300
+F 0 "11-7" H -10700 -2200 50  0000 C CNN
+F 1 "LED" H -10700 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10700 -2300 60  0001 C CNN
+F 3 "" H -10700 -2300 60  0000 C CNN
+	1    -10700 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-7
+U 1 1 5575616C
+P -10350 -2300
+F 0 "12-7" H -10350 -2200 50  0000 C CNN
+F 1 "LED" H -10350 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10350 -2300 60  0001 C CNN
+F 3 "" H -10350 -2300 60  0000 C CNN
+	1    -10350 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-7
+U 1 1 5575616D
+P -10000 -2300
+F 0 "13-7" H -10000 -2200 50  0000 C CNN
+F 1 "LED" H -10000 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -10000 -2300 60  0001 C CNN
+F 3 "" H -10000 -2300 60  0000 C CNN
+	1    -10000 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-7
+U 1 1 5575616E
+P -9650 -2300
+F 0 "14-7" H -9650 -2200 50  0000 C CNN
+F 1 "LED" H -9650 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9650 -2300 60  0001 C CNN
+F 3 "" H -9650 -2300 60  0000 C CNN
+	1    -9650 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-7
+U 1 1 5575616F
+P -9300 -2300
+F 0 "15-7" H -9300 -2200 50  0000 C CNN
+F 1 "LED" H -9300 -2400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -9300 -2300 60  0001 C CNN
+F 3 "" H -9300 -2300 60  0000 C CNN
+	1    -9300 -2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-8
+U 1 1 55756172
+P -3350 3600
+F 0 "0-8" H -3350 3700 50  0000 C CNN
+F 1 "LED" H -3350 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3350 3600 60  0001 C CNN
+F 3 "" H -3350 3600 60  0000 C CNN
+	1    -3350 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-8
+U 1 1 55756173
+P -3000 3600
+F 0 "1-8" H -3000 3700 50  0000 C CNN
+F 1 "LED" H -3000 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3000 3600 60  0001 C CNN
+F 3 "" H -3000 3600 60  0000 C CNN
+	1    -3000 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-8
+U 1 1 55756174
+P -2650 3600
+F 0 "2-8" H -2650 3700 50  0000 C CNN
+F 1 "LED" H -2650 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2650 3600 60  0001 C CNN
+F 3 "" H -2650 3600 60  0000 C CNN
+	1    -2650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-8
+U 1 1 55756175
+P -2350 3600
+F 0 "3-8" H -2350 3700 50  0000 C CNN
+F 1 "LED" H -2350 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 3600 60  0001 C CNN
+F 3 "" H -2350 3600 60  0000 C CNN
+	1    -2350 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-8
+U 1 1 55756176
+P -2000 3600
+F 0 "4-8" H -2000 3700 50  0000 C CNN
+F 1 "LED" H -2000 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 3600 60  0001 C CNN
+F 3 "" H -2000 3600 60  0000 C CNN
+	1    -2000 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-8
+U 1 1 55756177
+P -1650 3600
+F 0 "5-8" H -1650 3700 50  0000 C CNN
+F 1 "LED" H -1650 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 3600 60  0001 C CNN
+F 3 "" H -1650 3600 60  0000 C CNN
+	1    -1650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-8
+U 1 1 55756178
+P -1300 3600
+F 0 "6-8" H -1300 3700 50  0000 C CNN
+F 1 "LED" H -1300 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1300 3600 60  0001 C CNN
+F 3 "" H -1300 3600 60  0000 C CNN
+	1    -1300 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-8
+U 1 1 55756179
+P -950 3600
+F 0 "7-8" H -950 3700 50  0000 C CNN
+F 1 "LED" H -950 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -950 3600 60  0001 C CNN
+F 3 "" H -950 3600 60  0000 C CNN
+	1    -950 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-9
+U 1 1 5575617A
+P -3350 4250
+F 0 "0-9" H -3350 4350 50  0000 C CNN
+F 1 "LED" H -3350 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3350 4250 60  0001 C CNN
+F 3 "" H -3350 4250 60  0000 C CNN
+	1    -3350 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-9
+U 1 1 5575617B
+P -3000 4250
+F 0 "1-9" H -3000 4350 50  0000 C CNN
+F 1 "LED" H -3000 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3000 4250 60  0001 C CNN
+F 3 "" H -3000 4250 60  0000 C CNN
+	1    -3000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-9
+U 1 1 5575617C
+P -2650 4250
+F 0 "2-9" H -2650 4350 50  0000 C CNN
+F 1 "LED" H -2650 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2650 4250 60  0001 C CNN
+F 3 "" H -2650 4250 60  0000 C CNN
+	1    -2650 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-9
+U 1 1 5575617D
+P -2350 4250
+F 0 "3-9" H -2350 4350 50  0000 C CNN
+F 1 "LED" H -2350 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 4250 60  0001 C CNN
+F 3 "" H -2350 4250 60  0000 C CNN
+	1    -2350 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-9
+U 1 1 5575617E
+P -2000 4250
+F 0 "4-9" H -2000 4350 50  0000 C CNN
+F 1 "LED" H -2000 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 4250 60  0001 C CNN
+F 3 "" H -2000 4250 60  0000 C CNN
+	1    -2000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-9
+U 1 1 5575617F
+P -1650 4250
+F 0 "5-9" H -1650 4350 50  0000 C CNN
+F 1 "LED" H -1650 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 4250 60  0001 C CNN
+F 3 "" H -1650 4250 60  0000 C CNN
+	1    -1650 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-9
+U 1 1 55756180
+P -1300 4250
+F 0 "6-9" H -1300 4350 50  0000 C CNN
+F 1 "LED" H -1300 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1300 4250 60  0001 C CNN
+F 3 "" H -1300 4250 60  0000 C CNN
+	1    -1300 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-9
+U 1 1 55756181
+P -950 4250
+F 0 "7-9" H -950 4350 50  0000 C CNN
+F 1 "LED" H -950 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -950 4250 60  0001 C CNN
+F 3 "" H -950 4250 60  0000 C CNN
+	1    -950 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-10
+U 1 1 55756182
+P -3350 5000
+F 0 "0-10" H -3350 5100 50  0000 C CNN
+F 1 "LED" H -3350 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3350 5000 60  0001 C CNN
+F 3 "" H -3350 5000 60  0000 C CNN
+	1    -3350 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-10
+U 1 1 55756183
+P -3000 5000
+F 0 "1-10" H -3000 5100 50  0000 C CNN
+F 1 "LED" H -3000 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3000 5000 60  0001 C CNN
+F 3 "" H -3000 5000 60  0000 C CNN
+	1    -3000 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-10
+U 1 1 55756184
+P -2650 5000
+F 0 "2-10" H -2650 5100 50  0000 C CNN
+F 1 "LED" H -2650 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2650 5000 60  0001 C CNN
+F 3 "" H -2650 5000 60  0000 C CNN
+	1    -2650 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-10
+U 1 1 55756185
+P -2350 5000
+F 0 "3-10" H -2350 5100 50  0000 C CNN
+F 1 "LED" H -2350 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 5000 60  0001 C CNN
+F 3 "" H -2350 5000 60  0000 C CNN
+	1    -2350 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-10
+U 1 1 55756186
+P -2000 5000
+F 0 "4-10" H -2000 5100 50  0000 C CNN
+F 1 "LED" H -2000 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 5000 60  0001 C CNN
+F 3 "" H -2000 5000 60  0000 C CNN
+	1    -2000 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-10
+U 1 1 55756187
+P -1650 5000
+F 0 "5-10" H -1650 5100 50  0000 C CNN
+F 1 "LED" H -1650 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 5000 60  0001 C CNN
+F 3 "" H -1650 5000 60  0000 C CNN
+	1    -1650 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-10
+U 1 1 55756188
+P -1300 5000
+F 0 "6-10" H -1300 5100 50  0000 C CNN
+F 1 "LED" H -1300 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1300 5000 60  0001 C CNN
+F 3 "" H -1300 5000 60  0000 C CNN
+	1    -1300 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-10
+U 1 1 55756189
+P -950 5000
+F 0 "7-10" H -950 5100 50  0000 C CNN
+F 1 "LED" H -950 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -950 5000 60  0001 C CNN
+F 3 "" H -950 5000 60  0000 C CNN
+	1    -950 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-11
+U 1 1 5575618A
+P -3350 5700
+F 0 "0-11" H -3350 5800 50  0000 C CNN
+F 1 "LED" H -3350 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3350 5700 60  0001 C CNN
+F 3 "" H -3350 5700 60  0000 C CNN
+	1    -3350 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-11
+U 1 1 5575618B
+P -3000 5700
+F 0 "1-11" H -3000 5800 50  0000 C CNN
+F 1 "LED" H -3000 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3000 5700 60  0001 C CNN
+F 3 "" H -3000 5700 60  0000 C CNN
+	1    -3000 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-11
+U 1 1 5575618C
+P -2650 5700
+F 0 "2-11" H -2650 5800 50  0000 C CNN
+F 1 "LED" H -2650 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2650 5700 60  0001 C CNN
+F 3 "" H -2650 5700 60  0000 C CNN
+	1    -2650 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-11
+U 1 1 5575618D
+P -2350 5700
+F 0 "3-11" H -2350 5800 50  0000 C CNN
+F 1 "LED" H -2350 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 5700 60  0001 C CNN
+F 3 "" H -2350 5700 60  0000 C CNN
+	1    -2350 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-11
+U 1 1 5575618E
+P -2000 5700
+F 0 "4-11" H -2000 5800 50  0000 C CNN
+F 1 "LED" H -2000 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 5700 60  0001 C CNN
+F 3 "" H -2000 5700 60  0000 C CNN
+	1    -2000 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-11
+U 1 1 5575618F
+P -1650 5700
+F 0 "5-11" H -1650 5800 50  0000 C CNN
+F 1 "LED" H -1650 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 5700 60  0001 C CNN
+F 3 "" H -1650 5700 60  0000 C CNN
+	1    -1650 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-11
+U 1 1 55756190
+P -1300 5700
+F 0 "6-11" H -1300 5800 50  0000 C CNN
+F 1 "LED" H -1300 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1300 5700 60  0001 C CNN
+F 3 "" H -1300 5700 60  0000 C CNN
+	1    -1300 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-11
+U 1 1 55756191
+P -950 5700
+F 0 "7-11" H -950 5800 50  0000 C CNN
+F 1 "LED" H -950 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -950 5700 60  0001 C CNN
+F 3 "" H -950 5700 60  0000 C CNN
+	1    -950 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-12
+U 1 1 55756192
+P -3350 6350
+F 0 "0-12" H -3350 6450 50  0000 C CNN
+F 1 "LED" H -3350 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3350 6350 60  0001 C CNN
+F 3 "" H -3350 6350 60  0000 C CNN
+	1    -3350 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-12
+U 1 1 55756193
+P -3000 6350
+F 0 "1-12" H -3000 6450 50  0000 C CNN
+F 1 "LED" H -3000 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3000 6350 60  0001 C CNN
+F 3 "" H -3000 6350 60  0000 C CNN
+	1    -3000 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-12
+U 1 1 55756194
+P -2650 6350
+F 0 "2-12" H -2650 6450 50  0000 C CNN
+F 1 "LED" H -2650 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2650 6350 60  0001 C CNN
+F 3 "" H -2650 6350 60  0000 C CNN
+	1    -2650 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-12
+U 1 1 55756195
+P -2350 6350
+F 0 "3-12" H -2350 6450 50  0000 C CNN
+F 1 "LED" H -2350 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 6350 60  0001 C CNN
+F 3 "" H -2350 6350 60  0000 C CNN
+	1    -2350 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-12
+U 1 1 55756196
+P -2000 6350
+F 0 "4-12" H -2000 6450 50  0000 C CNN
+F 1 "LED" H -2000 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 6350 60  0001 C CNN
+F 3 "" H -2000 6350 60  0000 C CNN
+	1    -2000 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-12
+U 1 1 55756197
+P -1650 6350
+F 0 "5-12" H -1650 6450 50  0000 C CNN
+F 1 "LED" H -1650 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 6350 60  0001 C CNN
+F 3 "" H -1650 6350 60  0000 C CNN
+	1    -1650 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-12
+U 1 1 55756198
+P -1300 6350
+F 0 "6-12" H -1300 6450 50  0000 C CNN
+F 1 "LED" H -1300 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1300 6350 60  0001 C CNN
+F 3 "" H -1300 6350 60  0000 C CNN
+	1    -1300 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-12
+U 1 1 55756199
+P -950 6350
+F 0 "7-12" H -950 6450 50  0000 C CNN
+F 1 "LED" H -950 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -950 6350 60  0001 C CNN
+F 3 "" H -950 6350 60  0000 C CNN
+	1    -950 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-13
+U 1 1 5575619A
+P -3350 7000
+F 0 "0-13" H -3350 7100 50  0000 C CNN
+F 1 "LED" H -3350 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3350 7000 60  0001 C CNN
+F 3 "" H -3350 7000 60  0000 C CNN
+	1    -3350 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-13
+U 1 1 5575619B
+P -3000 7000
+F 0 "1-13" H -3000 7100 50  0000 C CNN
+F 1 "LED" H -3000 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3000 7000 60  0001 C CNN
+F 3 "" H -3000 7000 60  0000 C CNN
+	1    -3000 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-13
+U 1 1 5575619C
+P -2650 7000
+F 0 "2-13" H -2650 7100 50  0000 C CNN
+F 1 "LED" H -2650 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2650 7000 60  0001 C CNN
+F 3 "" H -2650 7000 60  0000 C CNN
+	1    -2650 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-13
+U 1 1 5575619D
+P -2350 7000
+F 0 "3-13" H -2350 7100 50  0000 C CNN
+F 1 "LED" H -2350 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 7000 60  0001 C CNN
+F 3 "" H -2350 7000 60  0000 C CNN
+	1    -2350 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-13
+U 1 1 5575619E
+P -2000 7000
+F 0 "4-13" H -2000 7100 50  0000 C CNN
+F 1 "LED" H -2000 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 7000 60  0001 C CNN
+F 3 "" H -2000 7000 60  0000 C CNN
+	1    -2000 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-13
+U 1 1 5575619F
+P -1650 7000
+F 0 "5-13" H -1650 7100 50  0000 C CNN
+F 1 "LED" H -1650 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 7000 60  0001 C CNN
+F 3 "" H -1650 7000 60  0000 C CNN
+	1    -1650 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-13
+U 1 1 557561A0
+P -1300 7000
+F 0 "6-13" H -1300 7100 50  0000 C CNN
+F 1 "LED" H -1300 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1300 7000 60  0001 C CNN
+F 3 "" H -1300 7000 60  0000 C CNN
+	1    -1300 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-13
+U 1 1 557561A1
+P -950 7000
+F 0 "7-13" H -950 7100 50  0000 C CNN
+F 1 "LED" H -950 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -950 7000 60  0001 C CNN
+F 3 "" H -950 7000 60  0000 C CNN
+	1    -950 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-14
+U 1 1 557561A2
+P -3350 7750
+F 0 "0-14" H -3350 7850 50  0000 C CNN
+F 1 "LED" H -3350 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3350 7750 60  0001 C CNN
+F 3 "" H -3350 7750 60  0000 C CNN
+	1    -3350 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-14
+U 1 1 557561A3
+P -3000 7750
+F 0 "1-14" H -3000 7850 50  0000 C CNN
+F 1 "LED" H -3000 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3000 7750 60  0001 C CNN
+F 3 "" H -3000 7750 60  0000 C CNN
+	1    -3000 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-14
+U 1 1 557561A4
+P -2650 7750
+F 0 "2-14" H -2650 7850 50  0000 C CNN
+F 1 "LED" H -2650 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2650 7750 60  0001 C CNN
+F 3 "" H -2650 7750 60  0000 C CNN
+	1    -2650 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-14
+U 1 1 557561A5
+P -2350 7750
+F 0 "3-14" H -2350 7850 50  0000 C CNN
+F 1 "LED" H -2350 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 7750 60  0001 C CNN
+F 3 "" H -2350 7750 60  0000 C CNN
+	1    -2350 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-14
+U 1 1 557561A6
+P -2000 7750
+F 0 "4-14" H -2000 7850 50  0000 C CNN
+F 1 "LED" H -2000 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 7750 60  0001 C CNN
+F 3 "" H -2000 7750 60  0000 C CNN
+	1    -2000 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-14
+U 1 1 557561A7
+P -1650 7750
+F 0 "5-14" H -1650 7850 50  0000 C CNN
+F 1 "LED" H -1650 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 7750 60  0001 C CNN
+F 3 "" H -1650 7750 60  0000 C CNN
+	1    -1650 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-14
+U 1 1 557561A8
+P -1300 7750
+F 0 "6-14" H -1300 7850 50  0000 C CNN
+F 1 "LED" H -1300 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1300 7750 60  0001 C CNN
+F 3 "" H -1300 7750 60  0000 C CNN
+	1    -1300 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-14
+U 1 1 557561A9
+P -950 7750
+F 0 "7-14" H -950 7850 50  0000 C CNN
+F 1 "LED" H -950 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -950 7750 60  0001 C CNN
+F 3 "" H -950 7750 60  0000 C CNN
+	1    -950 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-15
+U 1 1 557561AA
+P -3350 8500
+F 0 "0-15" H -3350 8600 50  0000 C CNN
+F 1 "LED" H -3350 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3350 8500 60  0001 C CNN
+F 3 "" H -3350 8500 60  0000 C CNN
+	1    -3350 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-15
+U 1 1 557561AB
+P -3000 8500
+F 0 "1-15" H -3000 8600 50  0000 C CNN
+F 1 "LED" H -3000 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3000 8500 60  0001 C CNN
+F 3 "" H -3000 8500 60  0000 C CNN
+	1    -3000 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-15
+U 1 1 557561AC
+P -2650 8500
+F 0 "2-15" H -2650 8600 50  0000 C CNN
+F 1 "LED" H -2650 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2650 8500 60  0001 C CNN
+F 3 "" H -2650 8500 60  0000 C CNN
+	1    -2650 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-15
+U 1 1 557561AD
+P -2350 8500
+F 0 "3-15" H -2350 8600 50  0000 C CNN
+F 1 "LED" H -2350 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 8500 60  0001 C CNN
+F 3 "" H -2350 8500 60  0000 C CNN
+	1    -2350 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-15
+U 1 1 557561AE
+P -2000 8500
+F 0 "4-15" H -2000 8600 50  0000 C CNN
+F 1 "LED" H -2000 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 8500 60  0001 C CNN
+F 3 "" H -2000 8500 60  0000 C CNN
+	1    -2000 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-15
+U 1 1 557561AF
+P -1650 8500
+F 0 "5-15" H -1650 8600 50  0000 C CNN
+F 1 "LED" H -1650 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 8500 60  0001 C CNN
+F 3 "" H -1650 8500 60  0000 C CNN
+	1    -1650 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-15
+U 1 1 557561B0
+P -1300 8500
+F 0 "6-15" H -1300 8600 50  0000 C CNN
+F 1 "LED" H -1300 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1300 8500 60  0001 C CNN
+F 3 "" H -1300 8500 60  0000 C CNN
+	1    -1300 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-15
+U 1 1 557561B1
+P -950 8500
+F 0 "7-15" H -950 8600 50  0000 C CNN
+F 1 "LED" H -950 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -950 8500 60  0001 C CNN
+F 3 "" H -950 8500 60  0000 C CNN
+	1    -950 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-8
+U 1 1 557561B6
+P -6850 3600
+F 0 "8-8" H -6850 3700 50  0000 C CNN
+F 1 "LED" H -6850 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 3600 60  0001 C CNN
+F 3 "" H -6850 3600 60  0000 C CNN
+	1    -6850 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-8
+U 1 1 557561B7
+P -6500 3600
+F 0 "9-8" H -6500 3700 50  0000 C CNN
+F 1 "LED" H -6500 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 3600 60  0001 C CNN
+F 3 "" H -6500 3600 60  0000 C CNN
+	1    -6500 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-8
+U 1 1 557561B8
+P -6150 3600
+F 0 "10-8" H -6150 3700 50  0000 C CNN
+F 1 "LED" H -6150 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 3600 60  0001 C CNN
+F 3 "" H -6150 3600 60  0000 C CNN
+	1    -6150 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-8
+U 1 1 557561B9
+P -5850 3600
+F 0 "11-8" H -5850 3700 50  0000 C CNN
+F 1 "LED" H -5850 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 3600 60  0001 C CNN
+F 3 "" H -5850 3600 60  0000 C CNN
+	1    -5850 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-8
+U 1 1 557561BA
+P -5500 3600
+F 0 "12-8" H -5500 3700 50  0000 C CNN
+F 1 "LED" H -5500 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 3600 60  0001 C CNN
+F 3 "" H -5500 3600 60  0000 C CNN
+	1    -5500 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-8
+U 1 1 557561BB
+P -5150 3600
+F 0 "13-8" H -5150 3700 50  0000 C CNN
+F 1 "LED" H -5150 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 3600 60  0001 C CNN
+F 3 "" H -5150 3600 60  0000 C CNN
+	1    -5150 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-8
+U 1 1 557561BC
+P -4800 3600
+F 0 "14-8" H -4800 3700 50  0000 C CNN
+F 1 "LED" H -4800 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4800 3600 60  0001 C CNN
+F 3 "" H -4800 3600 60  0000 C CNN
+	1    -4800 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-8
+U 1 1 557561BD
+P -4450 3600
+F 0 "15-8" H -4450 3700 50  0000 C CNN
+F 1 "LED" H -4450 3500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4450 3600 60  0001 C CNN
+F 3 "" H -4450 3600 60  0000 C CNN
+	1    -4450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-9
+U 1 1 557561BE
+P -6850 4250
+F 0 "8-9" H -6850 4350 50  0000 C CNN
+F 1 "LED" H -6850 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 4250 60  0001 C CNN
+F 3 "" H -6850 4250 60  0000 C CNN
+	1    -6850 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-9
+U 1 1 557561BF
+P -6500 4250
+F 0 "9-9" H -6500 4350 50  0000 C CNN
+F 1 "LED" H -6500 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 4250 60  0001 C CNN
+F 3 "" H -6500 4250 60  0000 C CNN
+	1    -6500 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-9
+U 1 1 557561C0
+P -6150 4250
+F 0 "10-9" H -6150 4350 50  0000 C CNN
+F 1 "LED" H -6150 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 4250 60  0001 C CNN
+F 3 "" H -6150 4250 60  0000 C CNN
+	1    -6150 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-9
+U 1 1 557561C1
+P -5850 4250
+F 0 "11-9" H -5850 4350 50  0000 C CNN
+F 1 "LED" H -5850 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 4250 60  0001 C CNN
+F 3 "" H -5850 4250 60  0000 C CNN
+	1    -5850 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-9
+U 1 1 557561C2
+P -5500 4250
+F 0 "12-9" H -5500 4350 50  0000 C CNN
+F 1 "LED" H -5500 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 4250 60  0001 C CNN
+F 3 "" H -5500 4250 60  0000 C CNN
+	1    -5500 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-9
+U 1 1 557561C3
+P -5150 4250
+F 0 "13-9" H -5150 4350 50  0000 C CNN
+F 1 "LED" H -5150 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 4250 60  0001 C CNN
+F 3 "" H -5150 4250 60  0000 C CNN
+	1    -5150 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-9
+U 1 1 557561C4
+P -4800 4250
+F 0 "14-9" H -4800 4350 50  0000 C CNN
+F 1 "LED" H -4800 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4800 4250 60  0001 C CNN
+F 3 "" H -4800 4250 60  0000 C CNN
+	1    -4800 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-9
+U 1 1 557561C5
+P -4450 4250
+F 0 "15-9" H -4450 4350 50  0000 C CNN
+F 1 "LED" H -4450 4150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4450 4250 60  0001 C CNN
+F 3 "" H -4450 4250 60  0000 C CNN
+	1    -4450 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-10
+U 1 1 557561C6
+P -6850 5000
+F 0 "8-10" H -6850 5100 50  0000 C CNN
+F 1 "LED" H -6850 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 5000 60  0001 C CNN
+F 3 "" H -6850 5000 60  0000 C CNN
+	1    -6850 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-10
+U 1 1 557561C7
+P -6500 5000
+F 0 "9-10" H -6500 5100 50  0000 C CNN
+F 1 "LED" H -6500 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 5000 60  0001 C CNN
+F 3 "" H -6500 5000 60  0000 C CNN
+	1    -6500 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-10
+U 1 1 557561C8
+P -6150 5000
+F 0 "10-10" H -6150 5100 50  0000 C CNN
+F 1 "LED" H -6150 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 5000 60  0001 C CNN
+F 3 "" H -6150 5000 60  0000 C CNN
+	1    -6150 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-10
+U 1 1 557561C9
+P -5850 5000
+F 0 "11-10" H -5850 5100 50  0000 C CNN
+F 1 "LED" H -5850 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 5000 60  0001 C CNN
+F 3 "" H -5850 5000 60  0000 C CNN
+	1    -5850 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-10
+U 1 1 557561CA
+P -5500 5000
+F 0 "12-10" H -5500 5100 50  0000 C CNN
+F 1 "LED" H -5500 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 5000 60  0001 C CNN
+F 3 "" H -5500 5000 60  0000 C CNN
+	1    -5500 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-10
+U 1 1 557561CB
+P -5150 5000
+F 0 "13-10" H -5150 5100 50  0000 C CNN
+F 1 "LED" H -5150 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 5000 60  0001 C CNN
+F 3 "" H -5150 5000 60  0000 C CNN
+	1    -5150 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-10
+U 1 1 557561CC
+P -4800 5000
+F 0 "14-10" H -4800 5100 50  0000 C CNN
+F 1 "LED" H -4800 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4800 5000 60  0001 C CNN
+F 3 "" H -4800 5000 60  0000 C CNN
+	1    -4800 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-10
+U 1 1 557561CD
+P -4450 5000
+F 0 "15-10" H -4450 5100 50  0000 C CNN
+F 1 "LED" H -4450 4900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4450 5000 60  0001 C CNN
+F 3 "" H -4450 5000 60  0000 C CNN
+	1    -4450 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-11
+U 1 1 557561CE
+P -6850 5700
+F 0 "8-11" H -6850 5800 50  0000 C CNN
+F 1 "LED" H -6850 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 5700 60  0001 C CNN
+F 3 "" H -6850 5700 60  0000 C CNN
+	1    -6850 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-11
+U 1 1 557561CF
+P -6500 5700
+F 0 "9-11" H -6500 5800 50  0000 C CNN
+F 1 "LED" H -6500 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 5700 60  0001 C CNN
+F 3 "" H -6500 5700 60  0000 C CNN
+	1    -6500 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-11
+U 1 1 557561D0
+P -6150 5700
+F 0 "10-11" H -6150 5800 50  0000 C CNN
+F 1 "LED" H -6150 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 5700 60  0001 C CNN
+F 3 "" H -6150 5700 60  0000 C CNN
+	1    -6150 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-11
+U 1 1 557561D1
+P -5850 5700
+F 0 "11-11" H -5850 5800 50  0000 C CNN
+F 1 "LED" H -5850 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 5700 60  0001 C CNN
+F 3 "" H -5850 5700 60  0000 C CNN
+	1    -5850 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-11
+U 1 1 557561D2
+P -5500 5700
+F 0 "12-11" H -5500 5800 50  0000 C CNN
+F 1 "LED" H -5500 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 5700 60  0001 C CNN
+F 3 "" H -5500 5700 60  0000 C CNN
+	1    -5500 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-11
+U 1 1 557561D3
+P -5150 5700
+F 0 "13-11" H -5150 5800 50  0000 C CNN
+F 1 "LED" H -5150 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 5700 60  0001 C CNN
+F 3 "" H -5150 5700 60  0000 C CNN
+	1    -5150 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-11
+U 1 1 557561D4
+P -4800 5700
+F 0 "14-11" H -4800 5800 50  0000 C CNN
+F 1 "LED" H -4800 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4800 5700 60  0001 C CNN
+F 3 "" H -4800 5700 60  0000 C CNN
+	1    -4800 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-11
+U 1 1 557561D5
+P -4450 5700
+F 0 "15-11" H -4450 5800 50  0000 C CNN
+F 1 "LED" H -4450 5600 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4450 5700 60  0001 C CNN
+F 3 "" H -4450 5700 60  0000 C CNN
+	1    -4450 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-12
+U 1 1 557561D6
+P -6850 6350
+F 0 "8-12" H -6850 6450 50  0000 C CNN
+F 1 "LED" H -6850 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 6350 60  0001 C CNN
+F 3 "" H -6850 6350 60  0000 C CNN
+	1    -6850 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-12
+U 1 1 557561D7
+P -6500 6350
+F 0 "9-12" H -6500 6450 50  0000 C CNN
+F 1 "LED" H -6500 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 6350 60  0001 C CNN
+F 3 "" H -6500 6350 60  0000 C CNN
+	1    -6500 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-12
+U 1 1 557561D8
+P -6150 6350
+F 0 "10-12" H -6150 6450 50  0000 C CNN
+F 1 "LED" H -6150 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 6350 60  0001 C CNN
+F 3 "" H -6150 6350 60  0000 C CNN
+	1    -6150 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-12
+U 1 1 557561D9
+P -5850 6350
+F 0 "11-12" H -5850 6450 50  0000 C CNN
+F 1 "LED" H -5850 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 6350 60  0001 C CNN
+F 3 "" H -5850 6350 60  0000 C CNN
+	1    -5850 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-12
+U 1 1 557561DA
+P -5500 6350
+F 0 "12-12" H -5500 6450 50  0000 C CNN
+F 1 "LED" H -5500 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 6350 60  0001 C CNN
+F 3 "" H -5500 6350 60  0000 C CNN
+	1    -5500 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-12
+U 1 1 557561DB
+P -5150 6350
+F 0 "13-12" H -5150 6450 50  0000 C CNN
+F 1 "LED" H -5150 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 6350 60  0001 C CNN
+F 3 "" H -5150 6350 60  0000 C CNN
+	1    -5150 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-12
+U 1 1 557561DC
+P -4800 6350
+F 0 "14-12" H -4800 6450 50  0000 C CNN
+F 1 "LED" H -4800 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4800 6350 60  0001 C CNN
+F 3 "" H -4800 6350 60  0000 C CNN
+	1    -4800 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-12
+U 1 1 557561DD
+P -4450 6350
+F 0 "15-12" H -4450 6450 50  0000 C CNN
+F 1 "LED" H -4450 6250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4450 6350 60  0001 C CNN
+F 3 "" H -4450 6350 60  0000 C CNN
+	1    -4450 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-13
+U 1 1 557561DE
+P -6850 7000
+F 0 "8-13" H -6850 7100 50  0000 C CNN
+F 1 "LED" H -6850 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 7000 60  0001 C CNN
+F 3 "" H -6850 7000 60  0000 C CNN
+	1    -6850 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-13
+U 1 1 557561DF
+P -6500 7000
+F 0 "9-13" H -6500 7100 50  0000 C CNN
+F 1 "LED" H -6500 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 7000 60  0001 C CNN
+F 3 "" H -6500 7000 60  0000 C CNN
+	1    -6500 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-13
+U 1 1 557561E0
+P -6150 7000
+F 0 "10-13" H -6150 7100 50  0000 C CNN
+F 1 "LED" H -6150 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 7000 60  0001 C CNN
+F 3 "" H -6150 7000 60  0000 C CNN
+	1    -6150 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-13
+U 1 1 557561E1
+P -5850 7000
+F 0 "11-13" H -5850 7100 50  0000 C CNN
+F 1 "LED" H -5850 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 7000 60  0001 C CNN
+F 3 "" H -5850 7000 60  0000 C CNN
+	1    -5850 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-13
+U 1 1 557561E2
+P -5500 7000
+F 0 "12-13" H -5500 7100 50  0000 C CNN
+F 1 "LED" H -5500 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 7000 60  0001 C CNN
+F 3 "" H -5500 7000 60  0000 C CNN
+	1    -5500 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-13
+U 1 1 557561E3
+P -5150 7000
+F 0 "13-13" H -5150 7100 50  0000 C CNN
+F 1 "LED" H -5150 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 7000 60  0001 C CNN
+F 3 "" H -5150 7000 60  0000 C CNN
+	1    -5150 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-13
+U 1 1 557561E4
+P -4800 7000
+F 0 "14-13" H -4800 7100 50  0000 C CNN
+F 1 "LED" H -4800 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4800 7000 60  0001 C CNN
+F 3 "" H -4800 7000 60  0000 C CNN
+	1    -4800 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-13
+U 1 1 557561E5
+P -4450 7000
+F 0 "15-13" H -4450 7100 50  0000 C CNN
+F 1 "LED" H -4450 6900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4450 7000 60  0001 C CNN
+F 3 "" H -4450 7000 60  0000 C CNN
+	1    -4450 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-14
+U 1 1 557561E6
+P -6850 7750
+F 0 "8-14" H -6850 7850 50  0000 C CNN
+F 1 "LED" H -6850 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 7750 60  0001 C CNN
+F 3 "" H -6850 7750 60  0000 C CNN
+	1    -6850 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-14
+U 1 1 557561E7
+P -6500 7750
+F 0 "9-14" H -6500 7850 50  0000 C CNN
+F 1 "LED" H -6500 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 7750 60  0001 C CNN
+F 3 "" H -6500 7750 60  0000 C CNN
+	1    -6500 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-14
+U 1 1 557561E8
+P -6150 7750
+F 0 "10-14" H -6150 7850 50  0000 C CNN
+F 1 "LED" H -6150 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 7750 60  0001 C CNN
+F 3 "" H -6150 7750 60  0000 C CNN
+	1    -6150 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-14
+U 1 1 557561E9
+P -5850 7750
+F 0 "11-14" H -5850 7850 50  0000 C CNN
+F 1 "LED" H -5850 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 7750 60  0001 C CNN
+F 3 "" H -5850 7750 60  0000 C CNN
+	1    -5850 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-14
+U 1 1 557561EA
+P -5500 7750
+F 0 "12-14" H -5500 7850 50  0000 C CNN
+F 1 "LED" H -5500 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 7750 60  0001 C CNN
+F 3 "" H -5500 7750 60  0000 C CNN
+	1    -5500 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-14
+U 1 1 557561EB
+P -5150 7750
+F 0 "13-14" H -5150 7850 50  0000 C CNN
+F 1 "LED" H -5150 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 7750 60  0001 C CNN
+F 3 "" H -5150 7750 60  0000 C CNN
+	1    -5150 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-14
+U 1 1 557561EC
+P -4800 7750
+F 0 "14-14" H -4800 7850 50  0000 C CNN
+F 1 "LED" H -4800 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4800 7750 60  0001 C CNN
+F 3 "" H -4800 7750 60  0000 C CNN
+	1    -4800 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-14
+U 1 1 557561ED
+P -4450 7750
+F 0 "15-14" H -4450 7850 50  0000 C CNN
+F 1 "LED" H -4450 7650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4450 7750 60  0001 C CNN
+F 3 "" H -4450 7750 60  0000 C CNN
+	1    -4450 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-15
+U 1 1 557561EE
+P -6850 8500
+F 0 "8-15" H -6850 8600 50  0000 C CNN
+F 1 "LED" H -6850 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6850 8500 60  0001 C CNN
+F 3 "" H -6850 8500 60  0000 C CNN
+	1    -6850 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-15
+U 1 1 557561EF
+P -6500 8500
+F 0 "9-15" H -6500 8600 50  0000 C CNN
+F 1 "LED" H -6500 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6500 8500 60  0001 C CNN
+F 3 "" H -6500 8500 60  0000 C CNN
+	1    -6500 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-15
+U 1 1 557561F0
+P -6150 8500
+F 0 "10-15" H -6150 8600 50  0000 C CNN
+F 1 "LED" H -6150 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -6150 8500 60  0001 C CNN
+F 3 "" H -6150 8500 60  0000 C CNN
+	1    -6150 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-15
+U 1 1 557561F1
+P -5850 8500
+F 0 "11-15" H -5850 8600 50  0000 C CNN
+F 1 "LED" H -5850 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 8500 60  0001 C CNN
+F 3 "" H -5850 8500 60  0000 C CNN
+	1    -5850 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-15
+U 1 1 557561F2
+P -5500 8500
+F 0 "12-15" H -5500 8600 50  0000 C CNN
+F 1 "LED" H -5500 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 8500 60  0001 C CNN
+F 3 "" H -5500 8500 60  0000 C CNN
+	1    -5500 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-15
+U 1 1 557561F3
+P -5150 8500
+F 0 "13-15" H -5150 8600 50  0000 C CNN
+F 1 "LED" H -5150 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 8500 60  0001 C CNN
+F 3 "" H -5150 8500 60  0000 C CNN
+	1    -5150 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-15
+U 1 1 557561F4
+P -4800 8500
+F 0 "14-15" H -4800 8600 50  0000 C CNN
+F 1 "LED" H -4800 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4800 8500 60  0001 C CNN
+F 3 "" H -4800 8500 60  0000 C CNN
+	1    -4800 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-15
+U 1 1 557561F5
+P -4450 8500
+F 0 "15-15" H -4450 8600 50  0000 C CNN
+F 1 "LED" H -4450 8400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4450 8500 60  0001 C CNN
+F 3 "" H -4450 8500 60  0000 C CNN
+	1    -4450 8500
+	0    1    1    0   
+$EndComp
+Text GLabel 1500 1750 0    60   Input ~ 0
+Vcc
+$Comp
+L SW_PUSH SW1
+U 1 1 557561F8
+P 2000 1750
+F 0 "SW1" H 2150 1860 50  0000 C CNN
+F 1 "HOUR" H 2000 1670 50  0000 C CNN
+F 2 "SparkFun-Electromechanical:TACTILE-PTH-SIDEEZ" H 2000 1750 60  0001 C CNN
+F 3 "" H 2000 1750 60  0000 C CNN
+	1    2000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 557561F9
+P 1500 2100
+F 0 "#PWR01" H 1500 1850 60  0001 C CNN
+F 1 "GND" H 1500 1950 60  0000 C CNN
+F 2 "" H 1500 2100 60  0000 C CNN
+F 3 "" H 1500 2100 60  0000 C CNN
+	1    1500 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R1
+U 1 1 557561FA
+P 1850 2100
+F 0 "R1" V 1930 2100 50  0000 C CNN
+F 1 "10K" V 1857 2101 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1780 2100 30  0001 C CNN
+F 3 "" H 1850 2100 30  0000 C CNN
+	1    1850 2100
+	0    1    1    0   
+$EndComp
+Text GLabel 1500 2400 0    60   Input ~ 0
+Vcc
+$Comp
+L SW_PUSH SW2
+U 1 1 557561FB
+P 2000 2400
+F 0 "SW2" H 2150 2510 50  0000 C CNN
+F 1 "MIN" H 2000 2320 50  0000 C CNN
+F 2 "SparkFun-Electromechanical:TACTILE-PTH-SIDEEZ" H 2000 2400 60  0001 C CNN
+F 3 "" H 2000 2400 60  0000 C CNN
+	1    2000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 557561FC
+P 1500 2750
+F 0 "#PWR02" H 1500 2500 60  0001 C CNN
+F 1 "GND" H 1500 2600 60  0000 C CNN
+F 2 "" H 1500 2750 60  0000 C CNN
+F 3 "" H 1500 2750 60  0000 C CNN
+	1    1500 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R2
+U 1 1 557561FD
+P 1850 2750
+F 0 "R2" V 1930 2750 50  0000 C CNN
+F 1 "10K" V 1857 2751 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1780 2750 30  0001 C CNN
+F 3 "" H 1850 2750 30  0000 C CNN
+	1    1850 2750
+	0    1    1    0   
+$EndComp
+Text GLabel 1500 3050 0    60   Input ~ 0
+Vcc
+$Comp
+L SW_PUSH SW4
+U 1 1 557561FE
+P 2000 3050
+F 0 "SW4" H 2150 3160 50  0000 C CNN
+F 1 "SOFT" H 2000 2970 50  0000 C CNN
+F 2 "SparkFun-Electromechanical:TACTILE-PTH-SIDEEZ" H 2000 3050 60  0001 C CNN
+F 3 "" H 2000 3050 60  0000 C CNN
+	1    2000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 557561FF
+P 1500 3400
+F 0 "#PWR03" H 1500 3150 60  0001 C CNN
+F 1 "GND" H 1500 3250 60  0000 C CNN
+F 2 "" H 1500 3400 60  0000 C CNN
+F 3 "" H 1500 3400 60  0000 C CNN
+	1    1500 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R5
+U 1 1 55756200
+P 1850 3400
+F 0 "R5" V 1930 3400 50  0000 C CNN
+F 1 "10K" V 1857 3401 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1780 3400 30  0001 C CNN
+F 3 "" H 1850 3400 30  0000 C CNN
+	1    1850 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L HT16K33 U1
+U 1 1 55756206
+P -13450 -11050
+F 0 "U1" H -13450 -11150 50  0000 C CNN
+F 1 "HT16K33" H -13450 -10950 50  0000 C CNN
+F 2 "adafruit:SO28W" H -13450 -11050 50  0001 C CNN
+F 3 "DOCUMENTATION" H -13450 -11050 50  0001 C CNN
+	1    -13450 -11050
+	1    0    0    -1  
+$EndComp
+Text GLabel 6450 3450 2    60   Input ~ 0
+SCL
+Text GLabel 6400 4600 2    60   Input ~ 0
+SDA
+Text GLabel 6450 4050 2    60   Input ~ 0
+Vcc
+$Comp
+L R-RESCUE-LargeKickstarter R7
+U 1 1 55756210
+P 6300 4350
+F 0 "R7" V 6380 4350 50  0000 C CNN
+F 1 "10K" V 6307 4351 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6230 4350 30  0001 C CNN
+F 3 "" H 6300 4350 30  0000 C CNN
+	1    6300 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R4
+U 1 1 55756211
+P 6300 3750
+F 0 "R4" V 6380 3750 50  0000 C CNN
+F 1 "10K" V 6307 3751 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6230 3750 30  0001 C CNN
+F 3 "" H 6300 3750 30  0000 C CNN
+	1    6300 3750
+	-1   0    0    1   
+$EndComp
+Text GLabel -11750 -11650 2    60   Input ~ 0
+SDA
+Text GLabel -11750 -11500 2    60   Input ~ 0
+SCL
+Text GLabel -11750 -11800 2    60   Input ~ 0
+Vcc
+$Comp
+L GND #PWR04
+U 1 1 55756212
+P -14600 -11700
+F 0 "#PWR04" H -14600 -11950 60  0001 C CNN
+F 1 "GND" H -14600 -11850 60  0000 C CNN
+F 2 "" H -14600 -11700 60  0000 C CNN
+F 3 "" H -14600 -11700 60  0000 C CNN
+	1    -14600 -11700
+	0    1    1    0   
+$EndComp
+Text GLabel -7900 1050 2    60   Input ~ 0
+SDA
+Text GLabel -7900 1200 2    60   Input ~ 0
+SCL
+Text GLabel -7900 900  2    60   Input ~ 0
+Vcc
+$Comp
+L DIODE D2
+U 1 1 55756215
+P -10250 -300
+F 0 "D2" H -10250 -200 50  0000 C CNN
+F 1 "DIODE" H -10250 -400 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H -10250 -300 60  0001 C CNN
+F 3 "" H -10250 -300 60  0000 C CNN
+	1    -10250 -300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R11
+U 1 1 55756216
+P -9750 -300
+F 0 "R11" V -9670 -300 50  0000 C CNN
+F 1 "47K" V -9743 -299 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -9820 -300 30  0001 C CNN
+F 3 "" H -9750 -300 30  0000 C CNN
+	1    -9750 -300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 55756218
+P 9900 -1750
+F 0 "#PWR05" H 9900 -2000 60  0001 C CNN
+F 1 "GND" H 9900 -1900 60  0000 C CNN
+F 2 "" H 9900 -1750 60  0000 C CNN
+F 3 "" H 9900 -1750 60  0000 C CNN
+	1    9900 -1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 55756219
+P 10050 -2400
+F 0 "D1" H 10050 -2300 50  0000 C CNN
+F 1 "DIODE" H 10050 -2500 50  0000 C CNN
+F 2 "Diodes_SMD:Diode-SMA_Handsoldering" H 10050 -2400 60  0001 C CNN
+F 3 "" H 10050 -2400 60  0000 C CNN
+	1    10050 -2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP2 C2
+U 1 1 5575621A
+P 10450 -1950
+F 0 "C2" H 10500 -1850 50  0000 L CNN
+F 1 "10uF" H 10500 -2050 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x7.5mm_RM2.5_CopperClear" H 10488 -2100 30  0001 C CNN
+F 3 "" H 10450 -1950 60  0000 C CNN
+	1    10450 -1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP2 C3
+U 1 1 5575621B
+P 11350 -1950
+F 0 "C3" H 11400 -1850 50  0000 L CNN
+F 1 "1uF" H 11400 -2050 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x7.5mm_RM2.5_CopperClear" H 11388 -2100 30  0001 C CNN
+F 3 "" H 11350 -1950 60  0000 C CNN
+	1    11350 -1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 11800 -2200 2    60   Input ~ 0
+Vcc
+$Comp
+L CONN_01X03 P1
+U 1 1 5575621C
+P 10850 -2650
+F 0 "P1" H 10850 -2450 50  0000 C CNN
+F 1 "CONN_01X03" V 10950 -2650 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_TO-220_Dual_CommonCathode_Horizontal_LargePads" H 10850 -2650 60  0001 C CNN
+F 3 "" H 10850 -2650 60  0000 C CNN
+	1    10850 -2650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6100 5300 2    60   Input ~ 0
+SCK
+Text GLabel 3800 5350 0    60   Input ~ 0
+MISO
+Text GLabel 3800 5200 0    60   Input ~ 0
+MOSI
+Text GLabel 5950 4000 2    60   Input ~ 0
+RX
+Text GLabel 5800 3900 2    60   Input ~ 0
+TX
+Text GLabel 6100 5150 2    60   Input ~ 0
+Vcc
+$Comp
+L CONN_02X03 P4
+U 1 1 55756222
+P 17600 2000
+F 0 "P4" H 17600 2200 50  0000 C CNN
+F 1 "CONN_02X03" H 17600 1800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 17600 800 60  0001 C CNN
+F 3 "" H 17600 800 60  0000 C CNN
+	1    17600 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 16950 1850 0    60   Input ~ 0
+MISO
+Text GLabel 16950 2000 0    60   Input ~ 0
+SCK
+Text GLabel 16950 2150 0    60   Input ~ 0
+RST
+Text GLabel 18150 2000 2    60   Input ~ 0
+MOSI
+Text GLabel 18150 1850 2    60   Input ~ 0
+Vcc
+$Comp
+L GND #PWR06
+U 1 1 55756223
+P 18150 2200
+F 0 "#PWR06" H 18150 1950 60  0001 C CNN
+F 1 "GND" H 18150 2050 60  0000 C CNN
+F 2 "" H 18150 2200 60  0000 C CNN
+F 3 "" H 18150 2200 60  0000 C CNN
+	1    18150 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DS3231 U2
+U 1 1 55756224
+P 13750 -350
+F 0 "U2" H 13750 -450 50  0000 C CNN
+F 1 "DS3231" H 13750 -250 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_7.5x10.3mm_Pitch1.27mm" H 13750 -350 50  0001 C CNN
+F 3 "DOCUMENTATION" H 13750 -350 50  0001 C CNN
+	1    13750 -350
+	1    0    0    -1  
+$EndComp
+Text GLabel 14900 -700 2    60   Input ~ 0
+SCL
+Text GLabel 14900 -550 2    60   Input ~ 0
+SDA
+$Comp
+L BATTERY BT1
+U 1 1 55756225
+P 14950 50
+F 0 "BT1" H 14950 250 50  0000 C CNN
+F 1 "BATTERY" H 14950 -140 50  0000 C CNN
+F 2 "SparkFun-Electromechanical:BATTCOM_20MM_PTH" H 14950 50  60  0001 C CNN
+F 3 "" H 14950 50  60  0000 C CNN
+	1    14950 50  
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 55756226
+P 15300 350
+F 0 "#PWR07" H 15300 100 60  0001 C CNN
+F 1 "GND" H 15300 200 60  0000 C CNN
+F 2 "" H 15300 350 60  0000 C CNN
+F 3 "" H 15300 350 60  0000 C CNN
+	1    15300 350 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 12700 -600 0    60   Input ~ 0
+Vcc
+NoConn ~ 13000 -700
+NoConn ~ 13000 -400
+NoConn ~ 13000 -500
+$Comp
+L CP2 C6
+U 1 1 55756228
+P -9700 -700
+F 0 "C6" H -9650 -600 50  0000 L CNN
+F 1 "0.1uF" H -9650 -800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H -9662 -850 30  0001 C CNN
+F 3 "" H -9700 -700 60  0000 C CNN
+	1    -9700 -700
+	0    1    1    0   
+$EndComp
+$Comp
+L CP2 C4
+U 1 1 55756229
+P 13700 -1200
+F 0 "C4" H 13750 -1100 50  0000 L CNN
+F 1 "0.1uF" H 13750 -1300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 13738 -1350 30  0001 C CNN
+F 3 "" H 13700 -1200 60  0000 C CNN
+	1    13700 -1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP2 C5
+U 1 1 5575622A
+P 3950 3750
+F 0 "C5" H 4000 3850 50  0000 L CNN
+F 1 "0.1uF" H 4000 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3988 3600 30  0001 C CNN
+F 3 "" H 3950 3750 60  0000 C CNN
+	1    3950 3750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9800 4100 2    60   Input ~ 0
+RX
+Text GLabel 8300 4500 0    60   Input ~ 0
+TX
+$Comp
+L HT16K33 U4
+U 1 1 55756213
+P -9600 1650
+F 0 "U4" H -9600 1550 50  0000 C CNN
+F 1 "HT16K33" H -9600 1750 50  0000 C CNN
+F 2 "adafruit:SO28W" H -9600 1650 50  0001 C CNN
+F 3 "DOCUMENTATION" H -9600 1650 50  0001 C CNN
+	1    -9600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5582577B
+P -15350 550
+F 0 "#PWR08" H -15350 300 60  0001 C CNN
+F 1 "GND" H -15350 400 60  0000 C CNN
+F 2 "" H -15350 550 60  0000 C CNN
+F 3 "" H -15350 550 60  0000 C CNN
+	1    -15350 550 
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 5584DE37
+P 8800 -2100
+F 0 "P2" H 8800 -1950 50  0000 C CNN
+F 1 "CONN_01X02" V 8900 -2100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8800 -2100 60  0001 C CNN
+F 3 "" H 8800 -2100 60  0000 C CNN
+	1    8800 -2100
+	-1   0    0    1   
+$EndComp
+Text GLabel 8300 3100 0    60   Input ~ 0
+Vcc
+Text GLabel 5800 4100 2    60   Input ~ 0
+RST
+$Comp
+L ATMEGA328-TQFP U3
+U 1 1 55822144
+P 5000 4550
+F 0 "U3" H 5000 4450 50  0000 C CNN
+F 1 "ATMEGA328-TQFP" H 5000 4650 50  0000 C CNN
+F 2 "adafruit:TQFP32-08" H 5000 4550 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5000 4550 50  0001 C CNN
+	1    5000 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 4300 0    60   Input ~ 0
+Vcc
+Text GLabel 3500 4100 0    60   Input ~ 0
+Vcc
+$Comp
+L GND #PWR09
+U 1 1 5582AA1F
+P 3700 4200
+F 0 "#PWR09" H 3700 3950 60  0001 C CNN
+F 1 "GND" H 3700 4050 60  0000 C CNN
+F 2 "" H 3700 4200 60  0000 C CNN
+F 3 "" H 3700 4200 60  0000 C CNN
+	1    3700 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5582AB48
+P 3700 4000
+F 0 "#PWR010" H 3700 3750 60  0001 C CNN
+F 1 "GND" H 3700 3850 60  0000 C CNN
+F 2 "" H 3700 4000 60  0000 C CNN
+F 3 "" H 3700 4000 60  0000 C CNN
+	1    3700 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 55830F19
+P 6100 4900
+F 0 "#PWR011" H 6100 4650 60  0001 C CNN
+F 1 "GND" H 6100 4750 60  0000 C CNN
+F 2 "" H 6100 4900 60  0000 C CNN
+F 3 "" H 6100 4900 60  0000 C CNN
+	1    6100 4900
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4250 4400
+NoConn ~ 4250 4500
+Text GLabel 2750 5150 0    60   Input ~ 0
+8
+Text GLabel 2800 5350 0    60   Input ~ 0
+9
+Text GLabel 5600 3350 0    60   Input ~ 0
+2
+Text GLabel 5900 4800 2    60   Input ~ 0
+A7
+Text GLabel 5900 4700 2    60   Input ~ 0
+A0
+Text GLabel 5900 4600 2    60   Input ~ 0
+A1
+Text GLabel 5900 4500 2    60   Input ~ 0
+A2
+Text GLabel 5900 4400 2    60   Input ~ 0
+A3
+Text GLabel 5900 5100 2    60   Input ~ 0
+A6
+Text GLabel 2900 5500 0    60   Input ~ 0
+10
+Text GLabel 9800 4000 2    60   Input ~ 0
+2
+Text GLabel 9800 3700 2    60   Input ~ 0
+8
+Text GLabel 8300 4100 0    60   Input ~ 0
+9
+Text GLabel 9800 3600 2    60   Input ~ 0
+10
+Text GLabel 8300 3400 0    60   Input ~ 0
+A0
+Text GLabel 9800 3000 2    60   Input ~ 0
+A1
+Text GLabel 8300 3500 0    60   Input ~ 0
+A2
+Text GLabel 9800 3100 2    60   Input ~ 0
+A3
+Text GLabel 9800 3300 2    60   Input ~ 0
+SDA
+Text GLabel 8300 3700 0    60   Input ~ 0
+SCL
+$Comp
+L Arduino_Nano U7
+U 1 1 5612D1F3
+P 9050 1600
+F 0 "U7" H 9050 1500 50  0000 C CNN
+F 1 "Arduino_Nano" H 9050 1700 50  0000 C CNN
+F 2 "LikeClockwork:Arduino_Nano" H 9050 1600 50  0001 C CNN
+F 3 "DOCUMENTATION" H 9050 1600 50  0001 C CNN
+	1    9050 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 8300 4400 0    60   Input ~ 0
+3
+Text GLabel 9800 3900 2    60   Input ~ 0
+4
+Text GLabel 3100 2700 2    60   Input ~ 0
+5
+Text GLabel 8300 4300 0    60   Input ~ 0
+5
+Text GLabel 2400 2250 2    60   Input ~ 0
+6
+Text GLabel 9800 3800 2    60   Input ~ 0
+6
+Text GLabel 2400 2900 2    60   Input ~ 0
+7
+Text GLabel 8300 4200 0    60   Input ~ 0
+7
+$Comp
+L UNO_FOOTPRINT U8
+U 1 1 5615C779
+P 9050 3800
+F 0 "U8" H 9050 3700 50  0000 C CNN
+F 1 "UNO_FOOTPRINT" H 9050 3900 50  0000 C CNN
+F 2 "LikeClockwork:shield_footprint" H 9050 3800 50  0001 C CNN
+F 3 "DOCUMENTATION" H 9050 3800 50  0001 C CNN
+	1    9050 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 2900 2    60   Input ~ 0
+Vin
+$Comp
+L GND #PWR012
+U 1 1 56173B99
+P 9800 3400
+F 0 "#PWR012" H 9800 3150 60  0001 C CNN
+F 1 "GND" H 9800 3250 60  0000 C CNN
+F 2 "" H 9800 3400 60  0000 C CNN
+F 3 "" H 9800 3400 60  0000 C CNN
+	1    9800 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 56174FAE
+P 8300 3200
+F 0 "#PWR013" H 8300 2950 60  0001 C CNN
+F 1 "GND" H 8300 3050 60  0000 C CNN
+F 2 "" H 8300 3200 60  0000 C CNN
+F 3 "" H 8300 3200 60  0000 C CNN
+	1    8300 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 561751F3
+P 8300 3300
+F 0 "#PWR014" H 8300 3050 60  0001 C CNN
+F 1 "GND" H 8300 3150 60  0000 C CNN
+F 2 "" H 8300 3300 60  0000 C CNN
+F 3 "" H 8300 3300 60  0000 C CNN
+	1    8300 3300
+	0    1    1    0   
+$EndComp
+Text GLabel 8300 3600 0    60   Input ~ 0
+SDA
+Text GLabel 9800 3200 2    60   Input ~ 0
+SCL
+Text GLabel 8300 2900 0    60   Input ~ 0
+RST
+NoConn ~ 8300 2800
+Text GLabel 8300 3000 0    60   Input ~ 0
+3.3V
+Text GLabel 8300 3800 0    60   Input ~ 0
+AREF
+Text GLabel 5750 5000 2    60   Input ~ 0
+AREF
+Text GLabel 8300 3900 0    60   Input ~ 0
+SCK
+Text GLabel 8300 4000 0    60   Input ~ 0
+MOSI
+Text GLabel 8300 4600 0    60   Input ~ 0
+RST
+Text GLabel 8300 4800 0    60   Input ~ 0
+MOSI
+Text GLabel 8300 4700 0    60   Input ~ 0
+MISO
+Text GLabel 9800 4200 2    60   Input ~ 0
+SCK
+Text GLabel 9800 4300 2    60   Input ~ 0
+Vcc
+$Comp
+L GND #PWR015
+U 1 1 561874AC
+P 9800 4400
+F 0 "#PWR015" H 9800 4150 60  0001 C CNN
+F 1 "GND" H 9800 4250 60  0000 C CNN
+F 2 "" H 9800 4400 60  0000 C CNN
+F 3 "" H 9800 4400 60  0000 C CNN
+	1    9800 4400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9800 3500 2    60   Input ~ 0
+MISO
+Text GLabel 9800 900  2    60   Input ~ 0
+RX
+Text GLabel 8300 900  0    60   Input ~ 0
+TX
+Text GLabel 8300 1000 0    60   Input ~ 0
+RST
+$Comp
+L GND #PWR016
+U 1 1 5619218E
+P 9800 1000
+F 0 "#PWR016" H 9800 750 60  0001 C CNN
+F 1 "GND" H 9800 850 60  0000 C CNN
+F 2 "" H 9800 1000 60  0000 C CNN
+F 3 "" H 9800 1000 60  0000 C CNN
+	1    9800 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 561922B6
+P 8300 1700
+F 0 "#PWR017" H 8300 1450 60  0001 C CNN
+F 1 "GND" H 8300 1550 60  0000 C CNN
+F 2 "" H 8300 1700 60  0000 C CNN
+F 3 "" H 8300 1700 60  0000 C CNN
+	1    8300 1700
+	0    1    1    0   
+$EndComp
+NoConn ~ 9800 2800
+Text GLabel 8300 1100 0    60   Input ~ 0
+2
+Text GLabel 8300 1200 0    60   Input ~ 0
+4
+Text GLabel 8300 1300 0    60   Input ~ 0
+6
+Text GLabel 8300 1500 0    60   Input ~ 0
+10
+Text GLabel 8300 1600 0    60   Input ~ 0
+MISO
+Text GLabel 8300 1800 0    60   Input ~ 0
+Vcc
+Text GLabel 8300 1900 0    60   Input ~ 0
+A6
+Text GLabel 8300 2000 0    60   Input ~ 0
+SDA
+Text GLabel 8300 2100 0    60   Input ~ 0
+A2
+Text GLabel 8300 2200 0    60   Input ~ 0
+A0
+Text GLabel 8300 2300 0    60   Input ~ 0
+3.3V
+Text GLabel 9800 1100 2    60   Input ~ 0
+3
+Text GLabel 9800 1300 2    60   Input ~ 0
+7
+Text GLabel 9800 1400 2    60   Input ~ 0
+9
+Text GLabel 9800 1500 2    60   Input ~ 0
+MOSI
+Text GLabel 9800 1600 2    60   Input ~ 0
+Vin
+Text GLabel 9800 1700 2    60   Input ~ 0
+RST
+Text GLabel 9800 1800 2    60   Input ~ 0
+A7
+Text GLabel 9800 1900 2    60   Input ~ 0
+SCL
+Text GLabel 9800 2000 2    60   Input ~ 0
+A3
+Text GLabel 9800 2100 2    60   Input ~ 0
+A1
+Text GLabel 9800 2200 2    60   Input ~ 0
+AREF
+Text GLabel 9800 2300 2    60   Input ~ 0
+SCK
+$Comp
+L JUMPER JP4
+U 1 1 561AC1CC
+P -9150 -300
+F 0 "JP4" H -9150 -150 50  0000 C CNN
+F 1 "JUMPER" H -9150 -380 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -9150 -300 60  0001 C CNN
+F 3 "" H -9150 -300 60  0000 C CNN
+	1    -9150 -300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R9
+U 1 1 561AE6DC
+P -9750 0
+F 0 "R9" V -9670 0   50  0000 C CNN
+F 1 "47K" V -9743 1   50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -9820 0   30  0001 C CNN
+F 3 "" H -9750 0   30  0000 C CNN
+	1    -9750 0   
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP5
+U 1 1 561AE6E2
+P -9150 0
+F 0 "JP5" H -9150 150 50  0000 C CNN
+F 1 "JUMPER" H -9150 -80 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -9150 0   60  0001 C CNN
+F 3 "" H -9150 0   60  0000 C CNN
+	1    -9150 0   
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R10
+U 1 1 561AF137
+P -9750 250
+F 0 "R10" V -9670 250 50  0000 C CNN
+F 1 "47K" V -9743 251 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -9820 250 30  0001 C CNN
+F 3 "" H -9750 250 30  0000 C CNN
+	1    -9750 250 
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP6
+U 1 1 561AF13D
+P -9150 250
+F 0 "JP6" H -9150 400 50  0000 C CNN
+F 1 "JUMPER" H -9150 170 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -9150 250 60  0001 C CNN
+F 3 "" H -9150 250 60  0000 C CNN
+	1    -9150 250 
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D3
+U 1 1 561BCCEC
+P -14200 -13000
+F 0 "D3" H -14200 -12900 50  0000 C CNN
+F 1 "DIODE" H -14200 -13100 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H -14200 -13000 60  0001 C CNN
+F 3 "" H -14200 -13000 60  0000 C CNN
+	1    -14200 -13000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R3
+U 1 1 561BCCF2
+P -13700 -13000
+F 0 "R3" V -13620 -13000 50  0000 C CNN
+F 1 "47K" V -13693 -12999 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -13770 -13000 30  0001 C CNN
+F 3 "" H -13700 -13000 30  0000 C CNN
+	1    -13700 -13000
+	0    1    1    0   
+$EndComp
+$Comp
+L CP2 C1
+U 1 1 561BCCF8
+P -13650 -13400
+F 0 "C1" H -13600 -13300 50  0000 L CNN
+F 1 "0.1uF" H -13600 -13500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H -13612 -13550 30  0001 C CNN
+F 3 "" H -13650 -13400 60  0000 C CNN
+	1    -13650 -13400
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP1
+U 1 1 561BCD04
+P -13100 -13000
+F 0 "JP1" H -13100 -12850 50  0000 C CNN
+F 1 "JUMPER" H -13100 -13080 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -13100 -13000 60  0001 C CNN
+F 3 "" H -13100 -13000 60  0000 C CNN
+	1    -13100 -13000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R6
+U 1 1 561BCD0C
+P -13700 -12700
+F 0 "R6" V -13620 -12700 50  0000 C CNN
+F 1 "47K" V -13693 -12699 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -13770 -12700 30  0001 C CNN
+F 3 "" H -13700 -12700 30  0000 C CNN
+	1    -13700 -12700
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP2
+U 1 1 561BCD12
+P -13100 -12700
+F 0 "JP2" H -13100 -12550 50  0000 C CNN
+F 1 "JUMPER" H -13100 -12780 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -13100 -12700 60  0001 C CNN
+F 3 "" H -13100 -12700 60  0000 C CNN
+	1    -13100 -12700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R8
+U 1 1 561BCD19
+P -13700 -12450
+F 0 "R8" V -13620 -12450 50  0000 C CNN
+F 1 "47K" V -13693 -12449 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -13770 -12450 30  0001 C CNN
+F 3 "" H -13700 -12450 30  0000 C CNN
+	1    -13700 -12450
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP3
+U 1 1 561BCD1F
+P -13100 -12450
+F 0 "JP3" H -13100 -12300 50  0000 C CNN
+F 1 "JUMPER" H -13100 -12530 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -13100 -12450 60  0001 C CNN
+F 3 "" H -13100 -12450 60  0000 C CNN
+	1    -13100 -12450
+	1    0    0    -1  
+$EndComp
+$Comp
+L HT16K33_BOUT U6
+U 1 1 561E2543
+P -14600 1250
+F 0 "U6" H -14600 1150 50  0000 C CNN
+F 1 "HT16K33_BOUT" H -14600 1350 50  0000 C CNN
+F 2 "LikeClockwork:HT16K33_Breakout" H -14600 1250 50  0001 C CNN
+F 3 "DOCUMENTATION" H -14600 1250 50  0001 C CNN
+	1    -14600 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel -12050 3750 0    60   Input ~ 0
+COM-1-0
+Text GLabel -12050 3850 0    60   Input ~ 0
+COM-1-1
+Text GLabel -12050 3950 0    60   Input ~ 0
+COM-1-2
+Text GLabel -12050 4050 0    60   Input ~ 0
+COM-1-3
+Text GLabel -12050 4150 0    60   Input ~ 0
+COM-1-4
+Text GLabel -12050 4250 0    60   Input ~ 0
+COM-1-5
+Text GLabel -12050 4350 0    60   Input ~ 0
+COM-1-6
+Text GLabel -12050 4450 0    60   Input ~ 0
+COM-1-7
+Text GLabel -12050 1900 0    60   Input ~ 0
+ROW-1-15
+Text GLabel -12050 2000 0    60   Input ~ 0
+ROW-1-14
+Text GLabel -12050 2100 0    60   Input ~ 0
+ROW-1-13
+Text GLabel -12050 2200 0    60   Input ~ 0
+ROW-1-12
+Text GLabel -12050 2300 0    60   Input ~ 0
+ROW-1-11
+Text GLabel -6650 1250 1    60   Input ~ 0
+ROW-1-9
+Text GLabel -6950 1250 1    60   Input ~ 0
+ROW-1-8
+Text GLabel -1400 1200 1    60   Input ~ 0
+ROW-1-6
+Text GLabel -1100 1200 1    60   Input ~ 0
+ROW-1-7
+Text GLabel -1750 1200 1    60   Input ~ 0
+ROW-1-5
+Text GLabel -2100 1200 1    60   Input ~ 0
+ROW-1-4
+Text GLabel -2450 1200 1    60   Input ~ 0
+ROW-1-3
+Text GLabel -6350 1250 1    60   Input ~ 0
+ROW-1-10
+Text GLabel -3450 1200 1    60   Input ~ 0
+ROW-1-0
+Text GLabel -3100 1200 1    60   Input ~ 0
+ROW-1-1
+Text GLabel -2800 1200 1    60   Input ~ 0
+ROW-1-2
+Text GLabel -15600 650  0    60   Input ~ 0
+COM-1-0
+Text GLabel -15600 750  0    60   Input ~ 0
+COM-1-1
+Text GLabel -15600 850  0    60   Input ~ 0
+COM-1-2
+Text GLabel -15600 950  0    60   Input ~ 0
+COM-1-3
+Text GLabel -15600 1050 0    60   Input ~ 0
+COM-1-4
+Text GLabel -15600 1150 0    60   Input ~ 0
+COM-1-5
+Text GLabel -15600 1250 0    60   Input ~ 0
+COM-1-6
+Text GLabel -15600 1350 0    60   Input ~ 0
+COM-1-7
+Text GLabel -15600 1450 0    60   Input ~ 0
+ROW-1-15
+Text GLabel -15600 1550 0    60   Input ~ 0
+ROW-1-14
+Text GLabel -15600 1650 0    60   Input ~ 0
+ROW-1-13
+Text GLabel -15600 1750 0    60   Input ~ 0
+ROW-1-12
+Text GLabel -15600 1850 0    60   Input ~ 0
+ROW-1-11
+Text GLabel -15600 1950 0    60   Input ~ 0
+ROW-1-10
+Text GLabel -13700 1950 2    60   Input ~ 0
+ROW-1-9
+Text GLabel -13700 1850 2    60   Input ~ 0
+ROW-1-8
+Text GLabel -13700 1650 2    60   Input ~ 0
+ROW-1-6
+Text GLabel -13700 1750 2    60   Input ~ 0
+ROW-1-7
+Text GLabel -13700 1550 2    60   Input ~ 0
+ROW-1-5
+Text GLabel -13700 1450 2    60   Input ~ 0
+ROW-1-4
+Text GLabel -13700 1350 2    60   Input ~ 0
+ROW-1-3
+Text GLabel -13700 1050 2    60   Input ~ 0
+ROW-1-0
+Text GLabel -13700 1150 2    60   Input ~ 0
+ROW-1-1
+Text GLabel -13700 1250 2    60   Input ~ 0
+ROW-1-2
+Text GLabel -13700 950  2    60   Input ~ 0
+SCL
+Text GLabel -13700 850  2    60   Input ~ 0
+SDA
+Text GLabel -13700 750  2    60   Input ~ 0
+Vcc
+$Comp
+L GND #PWR018
+U 1 1 5624E45B
+P -17300 -13700
+F 0 "#PWR018" H -17300 -13950 60  0001 C CNN
+F 1 "GND" H -17300 -13850 60  0000 C CNN
+F 2 "" H -17300 -13700 60  0000 C CNN
+F 3 "" H -17300 -13700 60  0000 C CNN
+	1    -17300 -13700
+	0    1    1    0   
+$EndComp
+$Comp
+L HT16K33_BOUT U5
+U 1 1 5624E461
+P -16550 -13000
+F 0 "U5" H -16550 -13100 50  0000 C CNN
+F 1 "HT16K33_BOUT" H -16550 -12900 50  0000 C CNN
+F 2 "LikeClockwork:HT16K33_Breakout" H -16550 -13000 50  0001 C CNN
+F 3 "DOCUMENTATION" H -16550 -13000 50  0001 C CNN
+	1    -16550 -13000
+	1    0    0    -1  
+$EndComp
+Text GLabel -17550 -13600 0    60   Input ~ 0
+COM-0-0
+Text GLabel -17550 -13500 0    60   Input ~ 0
+COM-0-1
+Text GLabel -17550 -13400 0    60   Input ~ 0
+COM-0-2
+Text GLabel -17550 -13300 0    60   Input ~ 0
+COM-0-3
+Text GLabel -17550 -13200 0    60   Input ~ 0
+COM-0-4
+Text GLabel -17550 -13100 0    60   Input ~ 0
+COM-0-5
+Text GLabel -17550 -13000 0    60   Input ~ 0
+COM-0-6
+Text GLabel -17550 -12900 0    60   Input ~ 0
+COM-0-7
+Text GLabel -17550 -12800 0    60   Input ~ 0
+ROW-0-15
+Text GLabel -17550 -12700 0    60   Input ~ 0
+ROW-0-14
+Text GLabel -17550 -12600 0    60   Input ~ 0
+ROW-0-13
+Text GLabel -17550 -12500 0    60   Input ~ 0
+ROW-0-12
+Text GLabel -17550 -12400 0    60   Input ~ 0
+ROW-0-11
+Text GLabel -17550 -12300 0    60   Input ~ 0
+ROW-0-10
+Text GLabel -15650 -12300 2    60   Input ~ 0
+ROW-0-9
+Text GLabel -15650 -12400 2    60   Input ~ 0
+ROW-0-8
+Text GLabel -15650 -12600 2    60   Input ~ 0
+ROW-0-6
+Text GLabel -15650 -12500 2    60   Input ~ 0
+ROW-0-7
+Text GLabel -15650 -12700 2    60   Input ~ 0
+ROW-0-5
+Text GLabel -15650 -12800 2    60   Input ~ 0
+ROW-0-4
+Text GLabel -15650 -12900 2    60   Input ~ 0
+ROW-0-3
+Text GLabel -15650 -13200 2    60   Input ~ 0
+ROW-0-0
+Text GLabel -15650 -13100 2    60   Input ~ 0
+ROW-0-1
+Text GLabel -15650 -13000 2    60   Input ~ 0
+ROW-0-2
+Text GLabel -15650 -13300 2    60   Input ~ 0
+SCL
+Text GLabel -15650 -13400 2    60   Input ~ 0
+SDA
+Text GLabel -15650 -13500 2    60   Input ~ 0
+Vcc
+Text GLabel -18050 -10800 0    60   Input ~ 0
+ROW-0-15
+Text GLabel -18050 -10700 0    60   Input ~ 0
+ROW-0-14
+Text GLabel -18050 -10600 0    60   Input ~ 0
+ROW-0-13
+Text GLabel -18050 -10500 0    60   Input ~ 0
+ROW-0-12
+Text GLabel -18050 -10400 0    60   Input ~ 0
+ROW-0-11
+Text GLabel -17400 -7050 0    60   Input ~ 0
+COM-0-0
+Text GLabel -17400 -6950 0    60   Input ~ 0
+COM-0-1
+Text GLabel -17400 -6850 0    60   Input ~ 0
+COM-0-2
+Text GLabel -17400 -6750 0    60   Input ~ 0
+COM-0-3
+Text GLabel -17400 -6650 0    60   Input ~ 0
+COM-0-4
+Text GLabel -17400 -6550 0    60   Input ~ 0
+COM-0-5
+Text GLabel -17400 -6450 0    60   Input ~ 0
+COM-0-6
+Text GLabel -17400 -6300 0    60   Input ~ 0
+COM-0-7
+Text GLabel -10900 -10500 2    60   Input ~ 0
+ROW-0-9
+Text GLabel -11350 -10600 2    60   Input ~ 0
+ROW-0-8
+Text GLabel -5700 -10800 2    60   Input ~ 0
+ROW-0-6
+Text GLabel -5700 -10700 2    60   Input ~ 0
+ROW-0-7
+Text GLabel -5700 -10900 2    60   Input ~ 0
+ROW-0-5
+Text GLabel -5700 -11000 2    60   Input ~ 0
+ROW-0-4
+Text GLabel -5700 -11100 2    60   Input ~ 0
+ROW-0-3
+Text GLabel -5700 -11400 2    60   Input ~ 0
+ROW-0-0
+Text GLabel -5700 -11300 2    60   Input ~ 0
+ROW-0-1
+Text GLabel -5700 -11200 2    60   Input ~ 0
+ROW-0-2
+Text GLabel -10850 -10400 2    60   Input ~ 0
+ROW-0-10
+$Comp
+L GND #PWR019
+U 1 1 562A50F6
+P -10750 1000
+F 0 "#PWR019" H -10750 750 60  0001 C CNN
+F 1 "GND" H -10750 850 60  0000 C CNN
+F 2 "" H -10750 1000 60  0000 C CNN
+F 3 "" H -10750 1000 60  0000 C CNN
+	1    -10750 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-16
+U 1 1 562BC8DA
+P -2350 19350
+F 0 "0-16" H -2350 19450 50  0000 C CNN
+F 1 "LED" H -2350 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 19350 60  0001 C CNN
+F 3 "" H -2350 19350 60  0000 C CNN
+	1    -2350 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-16
+U 1 1 562BC8E0
+P -2000 19350
+F 0 "1-16" H -2000 19450 50  0000 C CNN
+F 1 "LED" H -2000 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 19350 60  0001 C CNN
+F 3 "" H -2000 19350 60  0000 C CNN
+	1    -2000 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-16
+U 1 1 562BC8E6
+P -1650 19350
+F 0 "2-16" H -1650 19450 50  0000 C CNN
+F 1 "LED" H -1650 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 19350 60  0001 C CNN
+F 3 "" H -1650 19350 60  0000 C CNN
+	1    -1650 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-16
+U 1 1 562BC8EC
+P -1350 19350
+F 0 "3-16" H -1350 19450 50  0000 C CNN
+F 1 "LED" H -1350 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1350 19350 60  0001 C CNN
+F 3 "" H -1350 19350 60  0000 C CNN
+	1    -1350 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-16
+U 1 1 562BC8F2
+P -1000 19350
+F 0 "4-16" H -1000 19450 50  0000 C CNN
+F 1 "LED" H -1000 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1000 19350 60  0001 C CNN
+F 3 "" H -1000 19350 60  0000 C CNN
+	1    -1000 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-16
+U 1 1 562BC8F8
+P -650 19350
+F 0 "5-16" H -650 19450 50  0000 C CNN
+F 1 "LED" H -650 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -650 19350 60  0001 C CNN
+F 3 "" H -650 19350 60  0000 C CNN
+	1    -650 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-16
+U 1 1 562BC8FE
+P -300 19350
+F 0 "6-16" H -300 19450 50  0000 C CNN
+F 1 "LED" H -300 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -300 19350 60  0001 C CNN
+F 3 "" H -300 19350 60  0000 C CNN
+	1    -300 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-16
+U 1 1 562BC904
+P 50 19350
+F 0 "7-16" H 50  19450 50  0000 C CNN
+F 1 "LED" H 50  19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 50  19350 60  0001 C CNN
+F 3 "" H 50  19350 60  0000 C CNN
+	1    50   19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-17
+U 1 1 562BC90A
+P -2350 20000
+F 0 "0-17" H -2350 20100 50  0000 C CNN
+F 1 "LED" H -2350 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 20000 60  0001 C CNN
+F 3 "" H -2350 20000 60  0000 C CNN
+	1    -2350 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-17
+U 1 1 562BC910
+P -2000 20000
+F 0 "1-17" H -2000 20100 50  0000 C CNN
+F 1 "LED" H -2000 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 20000 60  0001 C CNN
+F 3 "" H -2000 20000 60  0000 C CNN
+	1    -2000 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-17
+U 1 1 562BC916
+P -1650 20000
+F 0 "2-17" H -1650 20100 50  0000 C CNN
+F 1 "LED" H -1650 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 20000 60  0001 C CNN
+F 3 "" H -1650 20000 60  0000 C CNN
+	1    -1650 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-17
+U 1 1 562BC91C
+P -1350 20000
+F 0 "3-17" H -1350 20100 50  0000 C CNN
+F 1 "LED" H -1350 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1350 20000 60  0001 C CNN
+F 3 "" H -1350 20000 60  0000 C CNN
+	1    -1350 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-17
+U 1 1 562BC922
+P -1000 20000
+F 0 "4-17" H -1000 20100 50  0000 C CNN
+F 1 "LED" H -1000 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1000 20000 60  0001 C CNN
+F 3 "" H -1000 20000 60  0000 C CNN
+	1    -1000 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-17
+U 1 1 562BC928
+P -650 20000
+F 0 "5-17" H -650 20100 50  0000 C CNN
+F 1 "LED" H -650 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -650 20000 60  0001 C CNN
+F 3 "" H -650 20000 60  0000 C CNN
+	1    -650 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-17
+U 1 1 562BC92E
+P -300 20000
+F 0 "6-17" H -300 20100 50  0000 C CNN
+F 1 "LED" H -300 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -300 20000 60  0001 C CNN
+F 3 "" H -300 20000 60  0000 C CNN
+	1    -300 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-17
+U 1 1 562BC934
+P 50 20000
+F 0 "7-17" H 50  20100 50  0000 C CNN
+F 1 "LED" H 50  19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 50  20000 60  0001 C CNN
+F 3 "" H 50  20000 60  0000 C CNN
+	1    50   20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-18
+U 1 1 562BC93A
+P -2350 20750
+F 0 "0-18" H -2350 20850 50  0000 C CNN
+F 1 "LED" H -2350 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 20750 60  0001 C CNN
+F 3 "" H -2350 20750 60  0000 C CNN
+	1    -2350 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-18
+U 1 1 562BC940
+P -2000 20750
+F 0 "1-18" H -2000 20850 50  0000 C CNN
+F 1 "LED" H -2000 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 20750 60  0001 C CNN
+F 3 "" H -2000 20750 60  0000 C CNN
+	1    -2000 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-18
+U 1 1 562BC946
+P -1650 20750
+F 0 "2-18" H -1650 20850 50  0000 C CNN
+F 1 "LED" H -1650 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 20750 60  0001 C CNN
+F 3 "" H -1650 20750 60  0000 C CNN
+	1    -1650 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-18
+U 1 1 562BC94C
+P -1350 20750
+F 0 "3-18" H -1350 20850 50  0000 C CNN
+F 1 "LED" H -1350 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1350 20750 60  0001 C CNN
+F 3 "" H -1350 20750 60  0000 C CNN
+	1    -1350 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-18
+U 1 1 562BC952
+P -1000 20750
+F 0 "4-18" H -1000 20850 50  0000 C CNN
+F 1 "LED" H -1000 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1000 20750 60  0001 C CNN
+F 3 "" H -1000 20750 60  0000 C CNN
+	1    -1000 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-18
+U 1 1 562BC958
+P -650 20750
+F 0 "5-18" H -650 20850 50  0000 C CNN
+F 1 "LED" H -650 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -650 20750 60  0001 C CNN
+F 3 "" H -650 20750 60  0000 C CNN
+	1    -650 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-18
+U 1 1 562BC95E
+P -300 20750
+F 0 "6-18" H -300 20850 50  0000 C CNN
+F 1 "LED" H -300 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -300 20750 60  0001 C CNN
+F 3 "" H -300 20750 60  0000 C CNN
+	1    -300 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-18
+U 1 1 562BC964
+P 50 20750
+F 0 "7-18" H 50  20850 50  0000 C CNN
+F 1 "LED" H 50  20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 50  20750 60  0001 C CNN
+F 3 "" H 50  20750 60  0000 C CNN
+	1    50   20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-19
+U 1 1 562BC96A
+P -2350 21450
+F 0 "0-19" H -2350 21550 50  0000 C CNN
+F 1 "LED" H -2350 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 21450 60  0001 C CNN
+F 3 "" H -2350 21450 60  0000 C CNN
+	1    -2350 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-19
+U 1 1 562BC970
+P -2000 21450
+F 0 "1-19" H -2000 21550 50  0000 C CNN
+F 1 "LED" H -2000 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 21450 60  0001 C CNN
+F 3 "" H -2000 21450 60  0000 C CNN
+	1    -2000 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-19
+U 1 1 562BC976
+P -1650 21450
+F 0 "2-19" H -1650 21550 50  0000 C CNN
+F 1 "LED" H -1650 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 21450 60  0001 C CNN
+F 3 "" H -1650 21450 60  0000 C CNN
+	1    -1650 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-19
+U 1 1 562BC97C
+P -1350 21450
+F 0 "3-19" H -1350 21550 50  0000 C CNN
+F 1 "LED" H -1350 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1350 21450 60  0001 C CNN
+F 3 "" H -1350 21450 60  0000 C CNN
+	1    -1350 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-19
+U 1 1 562BC982
+P -1000 21450
+F 0 "4-19" H -1000 21550 50  0000 C CNN
+F 1 "LED" H -1000 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1000 21450 60  0001 C CNN
+F 3 "" H -1000 21450 60  0000 C CNN
+	1    -1000 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-19
+U 1 1 562BC988
+P -650 21450
+F 0 "5-19" H -650 21550 50  0000 C CNN
+F 1 "LED" H -650 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -650 21450 60  0001 C CNN
+F 3 "" H -650 21450 60  0000 C CNN
+	1    -650 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-19
+U 1 1 562BC98E
+P -300 21450
+F 0 "6-19" H -300 21550 50  0000 C CNN
+F 1 "LED" H -300 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -300 21450 60  0001 C CNN
+F 3 "" H -300 21450 60  0000 C CNN
+	1    -300 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-19
+U 1 1 562BC994
+P 50 21450
+F 0 "7-19" H 50  21550 50  0000 C CNN
+F 1 "LED" H 50  21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 50  21450 60  0001 C CNN
+F 3 "" H 50  21450 60  0000 C CNN
+	1    50   21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-20
+U 1 1 562BC99A
+P -2350 22100
+F 0 "0-20" H -2350 22200 50  0000 C CNN
+F 1 "LED" H -2350 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 22100 60  0001 C CNN
+F 3 "" H -2350 22100 60  0000 C CNN
+	1    -2350 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-20
+U 1 1 562BC9A0
+P -2000 22100
+F 0 "1-20" H -2000 22200 50  0000 C CNN
+F 1 "LED" H -2000 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 22100 60  0001 C CNN
+F 3 "" H -2000 22100 60  0000 C CNN
+	1    -2000 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-20
+U 1 1 562BC9A6
+P -1650 22100
+F 0 "2-20" H -1650 22200 50  0000 C CNN
+F 1 "LED" H -1650 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 22100 60  0001 C CNN
+F 3 "" H -1650 22100 60  0000 C CNN
+	1    -1650 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-20
+U 1 1 562BC9AC
+P -1350 22100
+F 0 "3-20" H -1350 22200 50  0000 C CNN
+F 1 "LED" H -1350 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1350 22100 60  0001 C CNN
+F 3 "" H -1350 22100 60  0000 C CNN
+	1    -1350 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-20
+U 1 1 562BC9B2
+P -1000 22100
+F 0 "4-20" H -1000 22200 50  0000 C CNN
+F 1 "LED" H -1000 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1000 22100 60  0001 C CNN
+F 3 "" H -1000 22100 60  0000 C CNN
+	1    -1000 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-20
+U 1 1 562BC9B8
+P -650 22100
+F 0 "5-20" H -650 22200 50  0000 C CNN
+F 1 "LED" H -650 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -650 22100 60  0001 C CNN
+F 3 "" H -650 22100 60  0000 C CNN
+	1    -650 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-20
+U 1 1 562BC9BE
+P -300 22100
+F 0 "6-20" H -300 22200 50  0000 C CNN
+F 1 "LED" H -300 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -300 22100 60  0001 C CNN
+F 3 "" H -300 22100 60  0000 C CNN
+	1    -300 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-20
+U 1 1 562BC9C4
+P 50 22100
+F 0 "7-20" H 50  22200 50  0000 C CNN
+F 1 "LED" H 50  22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 50  22100 60  0001 C CNN
+F 3 "" H 50  22100 60  0000 C CNN
+	1    50   22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-21
+U 1 1 562BC9CA
+P -2350 22750
+F 0 "0-21" H -2350 22850 50  0000 C CNN
+F 1 "LED" H -2350 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 22750 60  0001 C CNN
+F 3 "" H -2350 22750 60  0000 C CNN
+	1    -2350 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-21
+U 1 1 562BC9D0
+P -2000 22750
+F 0 "1-21" H -2000 22850 50  0000 C CNN
+F 1 "LED" H -2000 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 22750 60  0001 C CNN
+F 3 "" H -2000 22750 60  0000 C CNN
+	1    -2000 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-21
+U 1 1 562BC9D6
+P -1650 22750
+F 0 "2-21" H -1650 22850 50  0000 C CNN
+F 1 "LED" H -1650 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 22750 60  0001 C CNN
+F 3 "" H -1650 22750 60  0000 C CNN
+	1    -1650 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-21
+U 1 1 562BC9DC
+P -1350 22750
+F 0 "3-21" H -1350 22850 50  0000 C CNN
+F 1 "LED" H -1350 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1350 22750 60  0001 C CNN
+F 3 "" H -1350 22750 60  0000 C CNN
+	1    -1350 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-21
+U 1 1 562BC9E2
+P -1000 22750
+F 0 "4-21" H -1000 22850 50  0000 C CNN
+F 1 "LED" H -1000 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1000 22750 60  0001 C CNN
+F 3 "" H -1000 22750 60  0000 C CNN
+	1    -1000 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-21
+U 1 1 562BC9E8
+P -650 22750
+F 0 "5-21" H -650 22850 50  0000 C CNN
+F 1 "LED" H -650 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -650 22750 60  0001 C CNN
+F 3 "" H -650 22750 60  0000 C CNN
+	1    -650 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-21
+U 1 1 562BC9EE
+P -300 22750
+F 0 "6-21" H -300 22850 50  0000 C CNN
+F 1 "LED" H -300 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -300 22750 60  0001 C CNN
+F 3 "" H -300 22750 60  0000 C CNN
+	1    -300 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-21
+U 1 1 562BC9F4
+P 50 22750
+F 0 "7-21" H 50  22850 50  0000 C CNN
+F 1 "LED" H 50  22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 50  22750 60  0001 C CNN
+F 3 "" H 50  22750 60  0000 C CNN
+	1    50   22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-22
+U 1 1 562BC9FA
+P -2350 23500
+F 0 "0-22" H -2350 23600 50  0000 C CNN
+F 1 "LED" H -2350 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 23500 60  0001 C CNN
+F 3 "" H -2350 23500 60  0000 C CNN
+	1    -2350 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-22
+U 1 1 562BCA00
+P -2000 23500
+F 0 "1-22" H -2000 23600 50  0000 C CNN
+F 1 "LED" H -2000 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 23500 60  0001 C CNN
+F 3 "" H -2000 23500 60  0000 C CNN
+	1    -2000 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-22
+U 1 1 562BCA06
+P -1650 23500
+F 0 "2-22" H -1650 23600 50  0000 C CNN
+F 1 "LED" H -1650 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 23500 60  0001 C CNN
+F 3 "" H -1650 23500 60  0000 C CNN
+	1    -1650 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-22
+U 1 1 562BCA0C
+P -1350 23500
+F 0 "3-22" H -1350 23600 50  0000 C CNN
+F 1 "LED" H -1350 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1350 23500 60  0001 C CNN
+F 3 "" H -1350 23500 60  0000 C CNN
+	1    -1350 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-22
+U 1 1 562BCA12
+P -1000 23500
+F 0 "4-22" H -1000 23600 50  0000 C CNN
+F 1 "LED" H -1000 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1000 23500 60  0001 C CNN
+F 3 "" H -1000 23500 60  0000 C CNN
+	1    -1000 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-22
+U 1 1 562BCA18
+P -650 23500
+F 0 "5-22" H -650 23600 50  0000 C CNN
+F 1 "LED" H -650 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -650 23500 60  0001 C CNN
+F 3 "" H -650 23500 60  0000 C CNN
+	1    -650 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-22
+U 1 1 562BCA1E
+P -300 23500
+F 0 "6-22" H -300 23600 50  0000 C CNN
+F 1 "LED" H -300 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -300 23500 60  0001 C CNN
+F 3 "" H -300 23500 60  0000 C CNN
+	1    -300 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-22
+U 1 1 562BCA24
+P 50 23500
+F 0 "7-22" H 50  23600 50  0000 C CNN
+F 1 "LED" H 50  23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 50  23500 60  0001 C CNN
+F 3 "" H 50  23500 60  0000 C CNN
+	1    50   23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-23
+U 1 1 562BCA2A
+P -2350 24250
+F 0 "0-23" H -2350 24350 50  0000 C CNN
+F 1 "LED" H -2350 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2350 24250 60  0001 C CNN
+F 3 "" H -2350 24250 60  0000 C CNN
+	1    -2350 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-23
+U 1 1 562BCA30
+P -2000 24250
+F 0 "1-23" H -2000 24350 50  0000 C CNN
+F 1 "LED" H -2000 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -2000 24250 60  0001 C CNN
+F 3 "" H -2000 24250 60  0000 C CNN
+	1    -2000 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-23
+U 1 1 562BCA36
+P -1650 24250
+F 0 "2-23" H -1650 24350 50  0000 C CNN
+F 1 "LED" H -1650 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1650 24250 60  0001 C CNN
+F 3 "" H -1650 24250 60  0000 C CNN
+	1    -1650 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-23
+U 1 1 562BCA3C
+P -1350 24250
+F 0 "3-23" H -1350 24350 50  0000 C CNN
+F 1 "LED" H -1350 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1350 24250 60  0001 C CNN
+F 3 "" H -1350 24250 60  0000 C CNN
+	1    -1350 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-23
+U 1 1 562BCA42
+P -1000 24250
+F 0 "4-23" H -1000 24350 50  0000 C CNN
+F 1 "LED" H -1000 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -1000 24250 60  0001 C CNN
+F 3 "" H -1000 24250 60  0000 C CNN
+	1    -1000 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-23
+U 1 1 562BCA48
+P -650 24250
+F 0 "5-23" H -650 24350 50  0000 C CNN
+F 1 "LED" H -650 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -650 24250 60  0001 C CNN
+F 3 "" H -650 24250 60  0000 C CNN
+	1    -650 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-23
+U 1 1 562BCA4E
+P -300 24250
+F 0 "6-23" H -300 24350 50  0000 C CNN
+F 1 "LED" H -300 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -300 24250 60  0001 C CNN
+F 3 "" H -300 24250 60  0000 C CNN
+	1    -300 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-23
+U 1 1 562BCA54
+P 50 24250
+F 0 "7-23" H 50  24350 50  0000 C CNN
+F 1 "LED" H 50  24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 50  24250 60  0001 C CNN
+F 3 "" H 50  24250 60  0000 C CNN
+	1    50   24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-16
+U 1 1 562BCA5A
+P -5850 19350
+F 0 "8-16" H -5850 19450 50  0000 C CNN
+F 1 "LED" H -5850 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 19350 60  0001 C CNN
+F 3 "" H -5850 19350 60  0000 C CNN
+	1    -5850 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-16
+U 1 1 562BCA60
+P -5500 19350
+F 0 "9-16" H -5500 19450 50  0000 C CNN
+F 1 "LED" H -5500 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 19350 60  0001 C CNN
+F 3 "" H -5500 19350 60  0000 C CNN
+	1    -5500 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-16
+U 1 1 562BCA66
+P -5150 19350
+F 0 "10-16" H -5150 19450 50  0000 C CNN
+F 1 "LED" H -5150 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 19350 60  0001 C CNN
+F 3 "" H -5150 19350 60  0000 C CNN
+	1    -5150 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-16
+U 1 1 562BCA6C
+P -4850 19350
+F 0 "11-16" H -4850 19450 50  0000 C CNN
+F 1 "LED" H -4850 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4850 19350 60  0001 C CNN
+F 3 "" H -4850 19350 60  0000 C CNN
+	1    -4850 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-16
+U 1 1 562BCA72
+P -4500 19350
+F 0 "12-16" H -4500 19450 50  0000 C CNN
+F 1 "LED" H -4500 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4500 19350 60  0001 C CNN
+F 3 "" H -4500 19350 60  0000 C CNN
+	1    -4500 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-16
+U 1 1 562BCA78
+P -4150 19350
+F 0 "13-16" H -4150 19450 50  0000 C CNN
+F 1 "LED" H -4150 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4150 19350 60  0001 C CNN
+F 3 "" H -4150 19350 60  0000 C CNN
+	1    -4150 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-16
+U 1 1 562BCA7E
+P -3800 19350
+F 0 "14-16" H -3800 19450 50  0000 C CNN
+F 1 "LED" H -3800 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3800 19350 60  0001 C CNN
+F 3 "" H -3800 19350 60  0000 C CNN
+	1    -3800 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-16
+U 1 1 562BCA84
+P -3450 19350
+F 0 "15-16" H -3450 19450 50  0000 C CNN
+F 1 "LED" H -3450 19250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3450 19350 60  0001 C CNN
+F 3 "" H -3450 19350 60  0000 C CNN
+	1    -3450 19350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-17
+U 1 1 562BCA8A
+P -5850 20000
+F 0 "8-17" H -5850 20100 50  0000 C CNN
+F 1 "LED" H -5850 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 20000 60  0001 C CNN
+F 3 "" H -5850 20000 60  0000 C CNN
+	1    -5850 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-17
+U 1 1 562BCA90
+P -5500 20000
+F 0 "9-17" H -5500 20100 50  0000 C CNN
+F 1 "LED" H -5500 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 20000 60  0001 C CNN
+F 3 "" H -5500 20000 60  0000 C CNN
+	1    -5500 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-17
+U 1 1 562BCA96
+P -5150 20000
+F 0 "10-17" H -5150 20100 50  0000 C CNN
+F 1 "LED" H -5150 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 20000 60  0001 C CNN
+F 3 "" H -5150 20000 60  0000 C CNN
+	1    -5150 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-17
+U 1 1 562BCA9C
+P -4850 20000
+F 0 "11-17" H -4850 20100 50  0000 C CNN
+F 1 "LED" H -4850 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4850 20000 60  0001 C CNN
+F 3 "" H -4850 20000 60  0000 C CNN
+	1    -4850 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-17
+U 1 1 562BCAA2
+P -4500 20000
+F 0 "12-17" H -4500 20100 50  0000 C CNN
+F 1 "LED" H -4500 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4500 20000 60  0001 C CNN
+F 3 "" H -4500 20000 60  0000 C CNN
+	1    -4500 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-17
+U 1 1 562BCAA8
+P -4150 20000
+F 0 "13-17" H -4150 20100 50  0000 C CNN
+F 1 "LED" H -4150 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4150 20000 60  0001 C CNN
+F 3 "" H -4150 20000 60  0000 C CNN
+	1    -4150 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-17
+U 1 1 562BCAAE
+P -3800 20000
+F 0 "14-17" H -3800 20100 50  0000 C CNN
+F 1 "LED" H -3800 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3800 20000 60  0001 C CNN
+F 3 "" H -3800 20000 60  0000 C CNN
+	1    -3800 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-17
+U 1 1 562BCAB4
+P -3450 20000
+F 0 "15-17" H -3450 20100 50  0000 C CNN
+F 1 "LED" H -3450 19900 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3450 20000 60  0001 C CNN
+F 3 "" H -3450 20000 60  0000 C CNN
+	1    -3450 20000
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-18
+U 1 1 562BCABA
+P -5850 20750
+F 0 "8-18" H -5850 20850 50  0000 C CNN
+F 1 "LED" H -5850 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 20750 60  0001 C CNN
+F 3 "" H -5850 20750 60  0000 C CNN
+	1    -5850 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-18
+U 1 1 562BCAC0
+P -5500 20750
+F 0 "9-18" H -5500 20850 50  0000 C CNN
+F 1 "LED" H -5500 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 20750 60  0001 C CNN
+F 3 "" H -5500 20750 60  0000 C CNN
+	1    -5500 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-18
+U 1 1 562BCAC6
+P -5150 20750
+F 0 "10-18" H -5150 20850 50  0000 C CNN
+F 1 "LED" H -5150 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 20750 60  0001 C CNN
+F 3 "" H -5150 20750 60  0000 C CNN
+	1    -5150 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-18
+U 1 1 562BCACC
+P -4850 20750
+F 0 "11-18" H -4850 20850 50  0000 C CNN
+F 1 "LED" H -4850 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4850 20750 60  0001 C CNN
+F 3 "" H -4850 20750 60  0000 C CNN
+	1    -4850 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-18
+U 1 1 562BCAD2
+P -4500 20750
+F 0 "12-18" H -4500 20850 50  0000 C CNN
+F 1 "LED" H -4500 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4500 20750 60  0001 C CNN
+F 3 "" H -4500 20750 60  0000 C CNN
+	1    -4500 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-18
+U 1 1 562BCAD8
+P -4150 20750
+F 0 "13-18" H -4150 20850 50  0000 C CNN
+F 1 "LED" H -4150 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4150 20750 60  0001 C CNN
+F 3 "" H -4150 20750 60  0000 C CNN
+	1    -4150 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-18
+U 1 1 562BCADE
+P -3800 20750
+F 0 "14-18" H -3800 20850 50  0000 C CNN
+F 1 "LED" H -3800 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3800 20750 60  0001 C CNN
+F 3 "" H -3800 20750 60  0000 C CNN
+	1    -3800 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-18
+U 1 1 562BCAE4
+P -3450 20750
+F 0 "15-18" H -3450 20850 50  0000 C CNN
+F 1 "LED" H -3450 20650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3450 20750 60  0001 C CNN
+F 3 "" H -3450 20750 60  0000 C CNN
+	1    -3450 20750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-19
+U 1 1 562BCAEA
+P -5850 21450
+F 0 "8-19" H -5850 21550 50  0000 C CNN
+F 1 "LED" H -5850 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 21450 60  0001 C CNN
+F 3 "" H -5850 21450 60  0000 C CNN
+	1    -5850 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-19
+U 1 1 562BCAF0
+P -5500 21450
+F 0 "9-19" H -5500 21550 50  0000 C CNN
+F 1 "LED" H -5500 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 21450 60  0001 C CNN
+F 3 "" H -5500 21450 60  0000 C CNN
+	1    -5500 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-19
+U 1 1 562BCAF6
+P -5150 21450
+F 0 "10-19" H -5150 21550 50  0000 C CNN
+F 1 "LED" H -5150 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 21450 60  0001 C CNN
+F 3 "" H -5150 21450 60  0000 C CNN
+	1    -5150 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-19
+U 1 1 562BCAFC
+P -4850 21450
+F 0 "11-19" H -4850 21550 50  0000 C CNN
+F 1 "LED" H -4850 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4850 21450 60  0001 C CNN
+F 3 "" H -4850 21450 60  0000 C CNN
+	1    -4850 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-19
+U 1 1 562BCB02
+P -4500 21450
+F 0 "12-19" H -4500 21550 50  0000 C CNN
+F 1 "LED" H -4500 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4500 21450 60  0001 C CNN
+F 3 "" H -4500 21450 60  0000 C CNN
+	1    -4500 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-19
+U 1 1 562BCB08
+P -4150 21450
+F 0 "13-19" H -4150 21550 50  0000 C CNN
+F 1 "LED" H -4150 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4150 21450 60  0001 C CNN
+F 3 "" H -4150 21450 60  0000 C CNN
+	1    -4150 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-19
+U 1 1 562BCB0E
+P -3800 21450
+F 0 "14-19" H -3800 21550 50  0000 C CNN
+F 1 "LED" H -3800 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3800 21450 60  0001 C CNN
+F 3 "" H -3800 21450 60  0000 C CNN
+	1    -3800 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-19
+U 1 1 562BCB14
+P -3450 21450
+F 0 "15-19" H -3450 21550 50  0000 C CNN
+F 1 "LED" H -3450 21350 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3450 21450 60  0001 C CNN
+F 3 "" H -3450 21450 60  0000 C CNN
+	1    -3450 21450
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-20
+U 1 1 562BCB1A
+P -5850 22100
+F 0 "8-20" H -5850 22200 50  0000 C CNN
+F 1 "LED" H -5850 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 22100 60  0001 C CNN
+F 3 "" H -5850 22100 60  0000 C CNN
+	1    -5850 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-20
+U 1 1 562BCB20
+P -5500 22100
+F 0 "9-20" H -5500 22200 50  0000 C CNN
+F 1 "LED" H -5500 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 22100 60  0001 C CNN
+F 3 "" H -5500 22100 60  0000 C CNN
+	1    -5500 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-20
+U 1 1 562BCB26
+P -5150 22100
+F 0 "10-20" H -5150 22200 50  0000 C CNN
+F 1 "LED" H -5150 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 22100 60  0001 C CNN
+F 3 "" H -5150 22100 60  0000 C CNN
+	1    -5150 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-20
+U 1 1 562BCB2C
+P -4850 22100
+F 0 "11-20" H -4850 22200 50  0000 C CNN
+F 1 "LED" H -4850 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4850 22100 60  0001 C CNN
+F 3 "" H -4850 22100 60  0000 C CNN
+	1    -4850 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-20
+U 1 1 562BCB32
+P -4500 22100
+F 0 "12-20" H -4500 22200 50  0000 C CNN
+F 1 "LED" H -4500 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4500 22100 60  0001 C CNN
+F 3 "" H -4500 22100 60  0000 C CNN
+	1    -4500 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-20
+U 1 1 562BCB38
+P -4150 22100
+F 0 "13-20" H -4150 22200 50  0000 C CNN
+F 1 "LED" H -4150 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4150 22100 60  0001 C CNN
+F 3 "" H -4150 22100 60  0000 C CNN
+	1    -4150 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-20
+U 1 1 562BCB3E
+P -3800 22100
+F 0 "14-20" H -3800 22200 50  0000 C CNN
+F 1 "LED" H -3800 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3800 22100 60  0001 C CNN
+F 3 "" H -3800 22100 60  0000 C CNN
+	1    -3800 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-20
+U 1 1 562BCB44
+P -3450 22100
+F 0 "15-20" H -3450 22200 50  0000 C CNN
+F 1 "LED" H -3450 22000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3450 22100 60  0001 C CNN
+F 3 "" H -3450 22100 60  0000 C CNN
+	1    -3450 22100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-21
+U 1 1 562BCB4A
+P -5850 22750
+F 0 "8-21" H -5850 22850 50  0000 C CNN
+F 1 "LED" H -5850 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 22750 60  0001 C CNN
+F 3 "" H -5850 22750 60  0000 C CNN
+	1    -5850 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-21
+U 1 1 562BCB50
+P -5500 22750
+F 0 "9-21" H -5500 22850 50  0000 C CNN
+F 1 "LED" H -5500 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 22750 60  0001 C CNN
+F 3 "" H -5500 22750 60  0000 C CNN
+	1    -5500 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-21
+U 1 1 562BCB56
+P -5150 22750
+F 0 "10-21" H -5150 22850 50  0000 C CNN
+F 1 "LED" H -5150 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 22750 60  0001 C CNN
+F 3 "" H -5150 22750 60  0000 C CNN
+	1    -5150 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-21
+U 1 1 562BCB5C
+P -4850 22750
+F 0 "11-21" H -4850 22850 50  0000 C CNN
+F 1 "LED" H -4850 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4850 22750 60  0001 C CNN
+F 3 "" H -4850 22750 60  0000 C CNN
+	1    -4850 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-21
+U 1 1 562BCB62
+P -4500 22750
+F 0 "12-21" H -4500 22850 50  0000 C CNN
+F 1 "LED" H -4500 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4500 22750 60  0001 C CNN
+F 3 "" H -4500 22750 60  0000 C CNN
+	1    -4500 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-21
+U 1 1 562BCB68
+P -4150 22750
+F 0 "13-21" H -4150 22850 50  0000 C CNN
+F 1 "LED" H -4150 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4150 22750 60  0001 C CNN
+F 3 "" H -4150 22750 60  0000 C CNN
+	1    -4150 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-21
+U 1 1 562BCB6E
+P -3800 22750
+F 0 "14-21" H -3800 22850 50  0000 C CNN
+F 1 "LED" H -3800 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3800 22750 60  0001 C CNN
+F 3 "" H -3800 22750 60  0000 C CNN
+	1    -3800 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-21
+U 1 1 562BCB74
+P -3450 22750
+F 0 "15-21" H -3450 22850 50  0000 C CNN
+F 1 "LED" H -3450 22650 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3450 22750 60  0001 C CNN
+F 3 "" H -3450 22750 60  0000 C CNN
+	1    -3450 22750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-22
+U 1 1 562BCB7A
+P -5850 23500
+F 0 "8-22" H -5850 23600 50  0000 C CNN
+F 1 "LED" H -5850 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 23500 60  0001 C CNN
+F 3 "" H -5850 23500 60  0000 C CNN
+	1    -5850 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-22
+U 1 1 562BCB80
+P -5500 23500
+F 0 "9-22" H -5500 23600 50  0000 C CNN
+F 1 "LED" H -5500 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 23500 60  0001 C CNN
+F 3 "" H -5500 23500 60  0000 C CNN
+	1    -5500 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-22
+U 1 1 562BCB86
+P -5150 23500
+F 0 "10-22" H -5150 23600 50  0000 C CNN
+F 1 "LED" H -5150 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 23500 60  0001 C CNN
+F 3 "" H -5150 23500 60  0000 C CNN
+	1    -5150 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-22
+U 1 1 562BCB8C
+P -4850 23500
+F 0 "11-22" H -4850 23600 50  0000 C CNN
+F 1 "LED" H -4850 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4850 23500 60  0001 C CNN
+F 3 "" H -4850 23500 60  0000 C CNN
+	1    -4850 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-22
+U 1 1 562BCB92
+P -4500 23500
+F 0 "12-22" H -4500 23600 50  0000 C CNN
+F 1 "LED" H -4500 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4500 23500 60  0001 C CNN
+F 3 "" H -4500 23500 60  0000 C CNN
+	1    -4500 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-22
+U 1 1 562BCB98
+P -4150 23500
+F 0 "13-22" H -4150 23600 50  0000 C CNN
+F 1 "LED" H -4150 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4150 23500 60  0001 C CNN
+F 3 "" H -4150 23500 60  0000 C CNN
+	1    -4150 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-22
+U 1 1 562BCB9E
+P -3800 23500
+F 0 "14-22" H -3800 23600 50  0000 C CNN
+F 1 "LED" H -3800 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3800 23500 60  0001 C CNN
+F 3 "" H -3800 23500 60  0000 C CNN
+	1    -3800 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-22
+U 1 1 562BCBA4
+P -3450 23500
+F 0 "15-22" H -3450 23600 50  0000 C CNN
+F 1 "LED" H -3450 23400 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3450 23500 60  0001 C CNN
+F 3 "" H -3450 23500 60  0000 C CNN
+	1    -3450 23500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-23
+U 1 1 562BCBAA
+P -5850 24250
+F 0 "8-23" H -5850 24350 50  0000 C CNN
+F 1 "LED" H -5850 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5850 24250 60  0001 C CNN
+F 3 "" H -5850 24250 60  0000 C CNN
+	1    -5850 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-23
+U 1 1 562BCBB0
+P -5500 24250
+F 0 "9-23" H -5500 24350 50  0000 C CNN
+F 1 "LED" H -5500 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5500 24250 60  0001 C CNN
+F 3 "" H -5500 24250 60  0000 C CNN
+	1    -5500 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-23
+U 1 1 562BCBB6
+P -5150 24250
+F 0 "10-23" H -5150 24350 50  0000 C CNN
+F 1 "LED" H -5150 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -5150 24250 60  0001 C CNN
+F 3 "" H -5150 24250 60  0000 C CNN
+	1    -5150 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-23
+U 1 1 562BCBBC
+P -4850 24250
+F 0 "11-23" H -4850 24350 50  0000 C CNN
+F 1 "LED" H -4850 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4850 24250 60  0001 C CNN
+F 3 "" H -4850 24250 60  0000 C CNN
+	1    -4850 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-23
+U 1 1 562BCBC2
+P -4500 24250
+F 0 "12-23" H -4500 24350 50  0000 C CNN
+F 1 "LED" H -4500 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4500 24250 60  0001 C CNN
+F 3 "" H -4500 24250 60  0000 C CNN
+	1    -4500 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-23
+U 1 1 562BCBC8
+P -4150 24250
+F 0 "13-23" H -4150 24350 50  0000 C CNN
+F 1 "LED" H -4150 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -4150 24250 60  0001 C CNN
+F 3 "" H -4150 24250 60  0000 C CNN
+	1    -4150 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-23
+U 1 1 562BCBCE
+P -3800 24250
+F 0 "14-23" H -3800 24350 50  0000 C CNN
+F 1 "LED" H -3800 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3800 24250 60  0001 C CNN
+F 3 "" H -3800 24250 60  0000 C CNN
+	1    -3800 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-23
+U 1 1 562BCBD4
+P -3450 24250
+F 0 "15-23" H -3450 24350 50  0000 C CNN
+F 1 "LED" H -3450 24150 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H -3450 24250 60  0001 C CNN
+F 3 "" H -3450 24250 60  0000 C CNN
+	1    -3450 24250
+	0    1    1    0   
+$EndComp
+$Comp
+L HT16K33 U10
+U 1 1 562BCBDA
+P -7600 15500
+F 0 "U10" H -7600 15400 50  0000 C CNN
+F 1 "HT16K33" H -7600 15600 50  0000 C CNN
+F 2 "adafruit:SO28W" H -7600 15500 50  0001 C CNN
+F 3 "DOCUMENTATION" H -7600 15500 50  0001 C CNN
+	1    -7600 15500
+	1    0    0    -1  
+$EndComp
+Text GLabel -5900 14900 2    60   Input ~ 0
+SDA
+Text GLabel -5900 15050 2    60   Input ~ 0
+SCL
+Text GLabel -5900 14750 2    60   Input ~ 0
+Vcc
+$Comp
+L GND #PWR020
+U 1 1 562BCBE3
+P -8750 14850
+F 0 "#PWR020" H -8750 14600 60  0001 C CNN
+F 1 "GND" H -8750 14700 60  0000 C CNN
+F 2 "" H -8750 14850 60  0000 C CNN
+F 3 "" H -8750 14850 60  0000 C CNN
+	1    -8750 14850
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODE D4
+U 1 1 562BCBE9
+P -8350 13550
+F 0 "D4" H -8350 13650 50  0000 C CNN
+F 1 "DIODE" H -8350 13450 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H -8350 13550 60  0001 C CNN
+F 3 "" H -8350 13550 60  0000 C CNN
+	1    -8350 13550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R12
+U 1 1 562BCBEF
+P -7850 13550
+F 0 "R12" V -7770 13550 50  0000 C CNN
+F 1 "47K" V -7843 13551 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -7920 13550 30  0001 C CNN
+F 3 "" H -7850 13550 30  0000 C CNN
+	1    -7850 13550
+	0    1    1    0   
+$EndComp
+$Comp
+L CP2 C7
+U 1 1 562BCBF5
+P -7800 13150
+F 0 "C7" H -7750 13250 50  0000 L CNN
+F 1 "0.1uF" H -7750 13050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H -7762 13000 30  0001 C CNN
+F 3 "" H -7800 13150 60  0000 C CNN
+	1    -7800 13150
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP7
+U 1 1 562BCBFB
+P -7250 13550
+F 0 "JP7" H -7250 13700 50  0000 C CNN
+F 1 "JUMPER" H -7250 13470 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -7250 13550 60  0001 C CNN
+F 3 "" H -7250 13550 60  0000 C CNN
+	1    -7250 13550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R13
+U 1 1 562BCC01
+P -7850 13850
+F 0 "R13" V -7770 13850 50  0000 C CNN
+F 1 "47K" V -7843 13851 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -7920 13850 30  0001 C CNN
+F 3 "" H -7850 13850 30  0000 C CNN
+	1    -7850 13850
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP8
+U 1 1 562BCC07
+P -7250 13850
+F 0 "JP8" H -7250 14000 50  0000 C CNN
+F 1 "JUMPER" H -7250 13770 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -7250 13850 60  0001 C CNN
+F 3 "" H -7250 13850 60  0000 C CNN
+	1    -7250 13850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R14
+U 1 1 562BCC0D
+P -7850 14100
+F 0 "R14" V -7770 14100 50  0000 C CNN
+F 1 "47K" V -7843 14101 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V -7920 14100 30  0001 C CNN
+F 3 "" H -7850 14100 30  0000 C CNN
+	1    -7850 14100
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP9
+U 1 1 562BCC13
+P -7250 14100
+F 0 "JP9" H -7250 14250 50  0000 C CNN
+F 1 "JUMPER" H -7250 14020 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H -7250 14100 60  0001 C CNN
+F 3 "" H -7250 14100 60  0000 C CNN
+	1    -7250 14100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 562BCC19
+P -11450 12850
+F 0 "#PWR021" H -11450 12600 60  0001 C CNN
+F 1 "GND" H -11450 12700 60  0000 C CNN
+F 2 "" H -11450 12850 60  0000 C CNN
+F 3 "" H -11450 12850 60  0000 C CNN
+	1    -11450 12850
+	0    1    1    0   
+$EndComp
+$Comp
+L HT16K33_BOUT U9
+U 1 1 562BCC1F
+P -10700 13550
+F 0 "U9" H -10700 13450 50  0000 C CNN
+F 1 "HT16K33_BOUT" H -10700 13650 50  0000 C CNN
+F 2 "LikeClockwork:HT16K33_Breakout" H -10700 13550 50  0001 C CNN
+F 3 "DOCUMENTATION" H -10700 13550 50  0001 C CNN
+	1    -10700 13550
+	1    0    0    -1  
+$EndComp
+Text GLabel -11700 12950 0    60   Input ~ 0
+COM-2-0
+Text GLabel -11700 13050 0    60   Input ~ 0
+COM-2-1
+Text GLabel -11700 13150 0    60   Input ~ 0
+COM-2-2
+Text GLabel -11700 13250 0    60   Input ~ 0
+COM-2-3
+Text GLabel -11700 13350 0    60   Input ~ 0
+COM-2-4
+Text GLabel -11700 13450 0    60   Input ~ 0
+COM-2-5
+Text GLabel -11700 13550 0    60   Input ~ 0
+COM-2-6
+Text GLabel -11700 13650 0    60   Input ~ 0
+COM-2-7
+Text GLabel -11700 13750 0    60   Input ~ 0
+ROW-2-15
+Text GLabel -11700 13850 0    60   Input ~ 0
+ROW-2-14
+Text GLabel -11700 13950 0    60   Input ~ 0
+ROW-2-13
+Text GLabel -11700 14050 0    60   Input ~ 0
+ROW-2-12
+Text GLabel -11700 14150 0    60   Input ~ 0
+ROW-2-11
+Text GLabel -11700 14250 0    60   Input ~ 0
+ROW-2-10
+Text GLabel -9800 14250 2    60   Input ~ 0
+ROW-2-9
+Text GLabel -9800 14150 2    60   Input ~ 0
+ROW-2-8
+Text GLabel -9800 13950 2    60   Input ~ 0
+ROW-2-6
+Text GLabel -9800 14050 2    60   Input ~ 0
+ROW-2-7
+Text GLabel -9800 13850 2    60   Input ~ 0
+ROW-2-5
+Text GLabel -9800 13750 2    60   Input ~ 0
+ROW-2-4
+Text GLabel -9800 13650 2    60   Input ~ 0
+ROW-2-3
+Text GLabel -9800 13350 2    60   Input ~ 0
+ROW-2-0
+Text GLabel -9800 13450 2    60   Input ~ 0
+ROW-2-1
+Text GLabel -9800 13550 2    60   Input ~ 0
+ROW-2-2
+Text GLabel -9800 13250 2    60   Input ~ 0
+SCL
+Text GLabel -9800 13150 2    60   Input ~ 0
+SDA
+Text GLabel -9800 13050 2    60   Input ~ 0
+Vcc
+Text GLabel -12200 15750 0    60   Input ~ 0
+ROW-2-15
+Text GLabel -12200 15850 0    60   Input ~ 0
+ROW-2-14
+Text GLabel -12200 15950 0    60   Input ~ 0
+ROW-2-13
+Text GLabel -12200 16050 0    60   Input ~ 0
+ROW-2-12
+Text GLabel -12200 16150 0    60   Input ~ 0
+ROW-2-11
+Text GLabel -11550 19500 0    60   Input ~ 0
+COM-2-0
+Text GLabel -11550 19600 0    60   Input ~ 0
+COM-2-1
+Text GLabel -11550 19700 0    60   Input ~ 0
+COM-2-2
+Text GLabel -11550 19800 0    60   Input ~ 0
+COM-2-3
+Text GLabel -11550 19900 0    60   Input ~ 0
+COM-2-4
+Text GLabel -11550 20000 0    60   Input ~ 0
+COM-2-5
+Text GLabel -11550 20100 0    60   Input ~ 0
+COM-2-6
+Text GLabel -11550 20250 0    60   Input ~ 0
+COM-2-7
+Text GLabel -5050 16050 2    60   Input ~ 0
+ROW-2-9
+Text GLabel -5500 15950 2    60   Input ~ 0
+ROW-2-8
+Text GLabel 150  15750 2    60   Input ~ 0
+ROW-2-6
+Text GLabel 150  15850 2    60   Input ~ 0
+ROW-2-7
+Text GLabel 150  15650 2    60   Input ~ 0
+ROW-2-5
+Text GLabel 150  15550 2    60   Input ~ 0
+ROW-2-4
+Text GLabel 150  15450 2    60   Input ~ 0
+ROW-2-3
+Text GLabel 150  15150 2    60   Input ~ 0
+ROW-2-0
+Text GLabel 150  15250 2    60   Input ~ 0
+ROW-2-1
+Text GLabel 150  15350 2    60   Input ~ 0
+ROW-2-2
+Text GLabel -5000 16150 2    60   Input ~ 0
+ROW-2-10
+$Comp
+L LED-RESCUE-LargeKickstarter 0-24
+U 1 1 562E7A22
+P 15300 16200
+F 0 "0-24" H 15300 16300 50  0000 C CNN
+F 1 "LED" H 15300 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15300 16200 60  0001 C CNN
+F 3 "" H 15300 16200 60  0000 C CNN
+	1    15300 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-24
+U 1 1 562E7A28
+P 15650 16200
+F 0 "1-24" H 15650 16300 50  0000 C CNN
+F 1 "LED" H 15650 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15650 16200 60  0001 C CNN
+F 3 "" H 15650 16200 60  0000 C CNN
+	1    15650 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-24
+U 1 1 562E7A2E
+P 16000 16200
+F 0 "2-24" H 16000 16300 50  0000 C CNN
+F 1 "LED" H 16000 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16000 16200 60  0001 C CNN
+F 3 "" H 16000 16200 60  0000 C CNN
+	1    16000 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-24
+U 1 1 562E7A34
+P 16300 16200
+F 0 "3-24" H 16300 16300 50  0000 C CNN
+F 1 "LED" H 16300 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16300 16200 60  0001 C CNN
+F 3 "" H 16300 16200 60  0000 C CNN
+	1    16300 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-24
+U 1 1 562E7A3A
+P 16650 16200
+F 0 "4-24" H 16650 16300 50  0000 C CNN
+F 1 "LED" H 16650 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16650 16200 60  0001 C CNN
+F 3 "" H 16650 16200 60  0000 C CNN
+	1    16650 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-24
+U 1 1 562E7A40
+P 17000 16200
+F 0 "5-24" H 17000 16300 50  0000 C CNN
+F 1 "LED" H 17000 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17000 16200 60  0001 C CNN
+F 3 "" H 17000 16200 60  0000 C CNN
+	1    17000 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-24
+U 1 1 562E7A46
+P 17350 16200
+F 0 "6-24" H 17350 16300 50  0000 C CNN
+F 1 "LED" H 17350 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17350 16200 60  0001 C CNN
+F 3 "" H 17350 16200 60  0000 C CNN
+	1    17350 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-24
+U 1 1 562E7A4C
+P 17700 16200
+F 0 "7-24" H 17700 16300 50  0000 C CNN
+F 1 "LED" H 17700 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17700 16200 60  0001 C CNN
+F 3 "" H 17700 16200 60  0000 C CNN
+	1    17700 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-25
+U 1 1 562E7A52
+P 15300 16850
+F 0 "0-25" H 15300 16950 50  0000 C CNN
+F 1 "LED" H 15300 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15300 16850 60  0001 C CNN
+F 3 "" H 15300 16850 60  0000 C CNN
+	1    15300 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-25
+U 1 1 562E7A58
+P 15650 16850
+F 0 "1-25" H 15650 16950 50  0000 C CNN
+F 1 "LED" H 15650 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15650 16850 60  0001 C CNN
+F 3 "" H 15650 16850 60  0000 C CNN
+	1    15650 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-25
+U 1 1 562E7A5E
+P 16000 16850
+F 0 "2-25" H 16000 16950 50  0000 C CNN
+F 1 "LED" H 16000 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16000 16850 60  0001 C CNN
+F 3 "" H 16000 16850 60  0000 C CNN
+	1    16000 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-25
+U 1 1 562E7A64
+P 16300 16850
+F 0 "3-25" H 16300 16950 50  0000 C CNN
+F 1 "LED" H 16300 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16300 16850 60  0001 C CNN
+F 3 "" H 16300 16850 60  0000 C CNN
+	1    16300 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-25
+U 1 1 562E7A6A
+P 16650 16850
+F 0 "4-25" H 16650 16950 50  0000 C CNN
+F 1 "LED" H 16650 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16650 16850 60  0001 C CNN
+F 3 "" H 16650 16850 60  0000 C CNN
+	1    16650 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-25
+U 1 1 562E7A70
+P 17000 16850
+F 0 "5-25" H 17000 16950 50  0000 C CNN
+F 1 "LED" H 17000 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17000 16850 60  0001 C CNN
+F 3 "" H 17000 16850 60  0000 C CNN
+	1    17000 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-25
+U 1 1 562E7A76
+P 17350 16850
+F 0 "6-25" H 17350 16950 50  0000 C CNN
+F 1 "LED" H 17350 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17350 16850 60  0001 C CNN
+F 3 "" H 17350 16850 60  0000 C CNN
+	1    17350 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-25
+U 1 1 562E7A7C
+P 17700 16850
+F 0 "7-25" H 17700 16950 50  0000 C CNN
+F 1 "LED" H 17700 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17700 16850 60  0001 C CNN
+F 3 "" H 17700 16850 60  0000 C CNN
+	1    17700 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-26
+U 1 1 562E7A82
+P 15300 17600
+F 0 "0-26" H 15300 17700 50  0000 C CNN
+F 1 "LED" H 15300 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15300 17600 60  0001 C CNN
+F 3 "" H 15300 17600 60  0000 C CNN
+	1    15300 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-26
+U 1 1 562E7A88
+P 15650 17600
+F 0 "1-26" H 15650 17700 50  0000 C CNN
+F 1 "LED" H 15650 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15650 17600 60  0001 C CNN
+F 3 "" H 15650 17600 60  0000 C CNN
+	1    15650 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-26
+U 1 1 562E7A8E
+P 16000 17600
+F 0 "2-26" H 16000 17700 50  0000 C CNN
+F 1 "LED" H 16000 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16000 17600 60  0001 C CNN
+F 3 "" H 16000 17600 60  0000 C CNN
+	1    16000 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-26
+U 1 1 562E7A94
+P 16300 17600
+F 0 "3-26" H 16300 17700 50  0000 C CNN
+F 1 "LED" H 16300 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16300 17600 60  0001 C CNN
+F 3 "" H 16300 17600 60  0000 C CNN
+	1    16300 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-26
+U 1 1 562E7A9A
+P 16650 17600
+F 0 "4-26" H 16650 17700 50  0000 C CNN
+F 1 "LED" H 16650 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16650 17600 60  0001 C CNN
+F 3 "" H 16650 17600 60  0000 C CNN
+	1    16650 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-26
+U 1 1 562E7AA0
+P 17000 17600
+F 0 "5-26" H 17000 17700 50  0000 C CNN
+F 1 "LED" H 17000 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17000 17600 60  0001 C CNN
+F 3 "" H 17000 17600 60  0000 C CNN
+	1    17000 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-26
+U 1 1 562E7AA6
+P 17350 17600
+F 0 "6-26" H 17350 17700 50  0000 C CNN
+F 1 "LED" H 17350 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17350 17600 60  0001 C CNN
+F 3 "" H 17350 17600 60  0000 C CNN
+	1    17350 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-26
+U 1 1 562E7AAC
+P 17700 17600
+F 0 "7-26" H 17700 17700 50  0000 C CNN
+F 1 "LED" H 17700 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17700 17600 60  0001 C CNN
+F 3 "" H 17700 17600 60  0000 C CNN
+	1    17700 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-27
+U 1 1 562E7AB2
+P 15300 18300
+F 0 "0-27" H 15300 18400 50  0000 C CNN
+F 1 "LED" H 15300 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15300 18300 60  0001 C CNN
+F 3 "" H 15300 18300 60  0000 C CNN
+	1    15300 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-27
+U 1 1 562E7AB8
+P 15650 18300
+F 0 "1-27" H 15650 18400 50  0000 C CNN
+F 1 "LED" H 15650 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15650 18300 60  0001 C CNN
+F 3 "" H 15650 18300 60  0000 C CNN
+	1    15650 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-27
+U 1 1 562E7ABE
+P 16000 18300
+F 0 "2-27" H 16000 18400 50  0000 C CNN
+F 1 "LED" H 16000 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16000 18300 60  0001 C CNN
+F 3 "" H 16000 18300 60  0000 C CNN
+	1    16000 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-27
+U 1 1 562E7AC4
+P 16300 18300
+F 0 "3-27" H 16300 18400 50  0000 C CNN
+F 1 "LED" H 16300 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16300 18300 60  0001 C CNN
+F 3 "" H 16300 18300 60  0000 C CNN
+	1    16300 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-27
+U 1 1 562E7ACA
+P 16650 18300
+F 0 "4-27" H 16650 18400 50  0000 C CNN
+F 1 "LED" H 16650 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16650 18300 60  0001 C CNN
+F 3 "" H 16650 18300 60  0000 C CNN
+	1    16650 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-27
+U 1 1 562E7AD0
+P 17000 18300
+F 0 "5-27" H 17000 18400 50  0000 C CNN
+F 1 "LED" H 17000 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17000 18300 60  0001 C CNN
+F 3 "" H 17000 18300 60  0000 C CNN
+	1    17000 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-27
+U 1 1 562E7AD6
+P 17350 18300
+F 0 "6-27" H 17350 18400 50  0000 C CNN
+F 1 "LED" H 17350 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17350 18300 60  0001 C CNN
+F 3 "" H 17350 18300 60  0000 C CNN
+	1    17350 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-27
+U 1 1 562E7ADC
+P 17700 18300
+F 0 "7-27" H 17700 18400 50  0000 C CNN
+F 1 "LED" H 17700 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17700 18300 60  0001 C CNN
+F 3 "" H 17700 18300 60  0000 C CNN
+	1    17700 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-28
+U 1 1 562E7AE2
+P 15300 18950
+F 0 "0-28" H 15300 19050 50  0000 C CNN
+F 1 "LED" H 15300 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15300 18950 60  0001 C CNN
+F 3 "" H 15300 18950 60  0000 C CNN
+	1    15300 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-28
+U 1 1 562E7AE8
+P 15650 18950
+F 0 "1-28" H 15650 19050 50  0000 C CNN
+F 1 "LED" H 15650 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15650 18950 60  0001 C CNN
+F 3 "" H 15650 18950 60  0000 C CNN
+	1    15650 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-28
+U 1 1 562E7AEE
+P 16000 18950
+F 0 "2-28" H 16000 19050 50  0000 C CNN
+F 1 "LED" H 16000 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16000 18950 60  0001 C CNN
+F 3 "" H 16000 18950 60  0000 C CNN
+	1    16000 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-28
+U 1 1 562E7AF4
+P 16300 18950
+F 0 "3-28" H 16300 19050 50  0000 C CNN
+F 1 "LED" H 16300 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16300 18950 60  0001 C CNN
+F 3 "" H 16300 18950 60  0000 C CNN
+	1    16300 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-28
+U 1 1 562E7AFA
+P 16650 18950
+F 0 "4-28" H 16650 19050 50  0000 C CNN
+F 1 "LED" H 16650 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16650 18950 60  0001 C CNN
+F 3 "" H 16650 18950 60  0000 C CNN
+	1    16650 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-28
+U 1 1 562E7B00
+P 17000 18950
+F 0 "5-28" H 17000 19050 50  0000 C CNN
+F 1 "LED" H 17000 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17000 18950 60  0001 C CNN
+F 3 "" H 17000 18950 60  0000 C CNN
+	1    17000 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-28
+U 1 1 562E7B06
+P 17350 18950
+F 0 "6-28" H 17350 19050 50  0000 C CNN
+F 1 "LED" H 17350 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17350 18950 60  0001 C CNN
+F 3 "" H 17350 18950 60  0000 C CNN
+	1    17350 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-28
+U 1 1 562E7B0C
+P 17700 18950
+F 0 "7-28" H 17700 19050 50  0000 C CNN
+F 1 "LED" H 17700 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17700 18950 60  0001 C CNN
+F 3 "" H 17700 18950 60  0000 C CNN
+	1    17700 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-29
+U 1 1 562E7B12
+P 15300 19600
+F 0 "0-29" H 15300 19700 50  0000 C CNN
+F 1 "LED" H 15300 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15300 19600 60  0001 C CNN
+F 3 "" H 15300 19600 60  0000 C CNN
+	1    15300 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-29
+U 1 1 562E7B18
+P 15650 19600
+F 0 "1-29" H 15650 19700 50  0000 C CNN
+F 1 "LED" H 15650 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15650 19600 60  0001 C CNN
+F 3 "" H 15650 19600 60  0000 C CNN
+	1    15650 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-29
+U 1 1 562E7B1E
+P 16000 19600
+F 0 "2-29" H 16000 19700 50  0000 C CNN
+F 1 "LED" H 16000 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16000 19600 60  0001 C CNN
+F 3 "" H 16000 19600 60  0000 C CNN
+	1    16000 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-29
+U 1 1 562E7B24
+P 16300 19600
+F 0 "3-29" H 16300 19700 50  0000 C CNN
+F 1 "LED" H 16300 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16300 19600 60  0001 C CNN
+F 3 "" H 16300 19600 60  0000 C CNN
+	1    16300 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-29
+U 1 1 562E7B2A
+P 16650 19600
+F 0 "4-29" H 16650 19700 50  0000 C CNN
+F 1 "LED" H 16650 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16650 19600 60  0001 C CNN
+F 3 "" H 16650 19600 60  0000 C CNN
+	1    16650 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-29
+U 1 1 562E7B30
+P 17000 19600
+F 0 "5-29" H 17000 19700 50  0000 C CNN
+F 1 "LED" H 17000 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17000 19600 60  0001 C CNN
+F 3 "" H 17000 19600 60  0000 C CNN
+	1    17000 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-29
+U 1 1 562E7B36
+P 17350 19600
+F 0 "6-29" H 17350 19700 50  0000 C CNN
+F 1 "LED" H 17350 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17350 19600 60  0001 C CNN
+F 3 "" H 17350 19600 60  0000 C CNN
+	1    17350 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-29
+U 1 1 562E7B3C
+P 17700 19600
+F 0 "7-29" H 17700 19700 50  0000 C CNN
+F 1 "LED" H 17700 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17700 19600 60  0001 C CNN
+F 3 "" H 17700 19600 60  0000 C CNN
+	1    17700 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-30
+U 1 1 562E7B42
+P 15300 20350
+F 0 "0-30" H 15300 20450 50  0000 C CNN
+F 1 "LED" H 15300 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15300 20350 60  0001 C CNN
+F 3 "" H 15300 20350 60  0000 C CNN
+	1    15300 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-30
+U 1 1 562E7B48
+P 15650 20350
+F 0 "1-30" H 15650 20450 50  0000 C CNN
+F 1 "LED" H 15650 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15650 20350 60  0001 C CNN
+F 3 "" H 15650 20350 60  0000 C CNN
+	1    15650 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-30
+U 1 1 562E7B4E
+P 16000 20350
+F 0 "2-30" H 16000 20450 50  0000 C CNN
+F 1 "LED" H 16000 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16000 20350 60  0001 C CNN
+F 3 "" H 16000 20350 60  0000 C CNN
+	1    16000 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-30
+U 1 1 562E7B54
+P 16300 20350
+F 0 "3-30" H 16300 20450 50  0000 C CNN
+F 1 "LED" H 16300 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16300 20350 60  0001 C CNN
+F 3 "" H 16300 20350 60  0000 C CNN
+	1    16300 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-30
+U 1 1 562E7B5A
+P 16650 20350
+F 0 "4-30" H 16650 20450 50  0000 C CNN
+F 1 "LED" H 16650 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16650 20350 60  0001 C CNN
+F 3 "" H 16650 20350 60  0000 C CNN
+	1    16650 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-30
+U 1 1 562E7B60
+P 17000 20350
+F 0 "5-30" H 17000 20450 50  0000 C CNN
+F 1 "LED" H 17000 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17000 20350 60  0001 C CNN
+F 3 "" H 17000 20350 60  0000 C CNN
+	1    17000 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-30
+U 1 1 562E7B66
+P 17350 20350
+F 0 "6-30" H 17350 20450 50  0000 C CNN
+F 1 "LED" H 17350 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17350 20350 60  0001 C CNN
+F 3 "" H 17350 20350 60  0000 C CNN
+	1    17350 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-30
+U 1 1 562E7B6C
+P 17700 20350
+F 0 "7-30" H 17700 20450 50  0000 C CNN
+F 1 "LED" H 17700 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17700 20350 60  0001 C CNN
+F 3 "" H 17700 20350 60  0000 C CNN
+	1    17700 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 0-31
+U 1 1 562E7B72
+P 15300 21100
+F 0 "0-31" H 15300 21200 50  0000 C CNN
+F 1 "LED" H 15300 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15300 21100 60  0001 C CNN
+F 3 "" H 15300 21100 60  0000 C CNN
+	1    15300 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 1-31
+U 1 1 562E7B78
+P 15650 21100
+F 0 "1-31" H 15650 21200 50  0000 C CNN
+F 1 "LED" H 15650 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 15650 21100 60  0001 C CNN
+F 3 "" H 15650 21100 60  0000 C CNN
+	1    15650 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 2-31
+U 1 1 562E7B7E
+P 16000 21100
+F 0 "2-31" H 16000 21200 50  0000 C CNN
+F 1 "LED" H 16000 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16000 21100 60  0001 C CNN
+F 3 "" H 16000 21100 60  0000 C CNN
+	1    16000 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 3-31
+U 1 1 562E7B84
+P 16300 21100
+F 0 "3-31" H 16300 21200 50  0000 C CNN
+F 1 "LED" H 16300 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16300 21100 60  0001 C CNN
+F 3 "" H 16300 21100 60  0000 C CNN
+	1    16300 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 4-31
+U 1 1 562E7B8A
+P 16650 21100
+F 0 "4-31" H 16650 21200 50  0000 C CNN
+F 1 "LED" H 16650 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 16650 21100 60  0001 C CNN
+F 3 "" H 16650 21100 60  0000 C CNN
+	1    16650 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 5-31
+U 1 1 562E7B90
+P 17000 21100
+F 0 "5-31" H 17000 21200 50  0000 C CNN
+F 1 "LED" H 17000 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17000 21100 60  0001 C CNN
+F 3 "" H 17000 21100 60  0000 C CNN
+	1    17000 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 6-31
+U 1 1 562E7B96
+P 17350 21100
+F 0 "6-31" H 17350 21200 50  0000 C CNN
+F 1 "LED" H 17350 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17350 21100 60  0001 C CNN
+F 3 "" H 17350 21100 60  0000 C CNN
+	1    17350 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 7-31
+U 1 1 562E7B9C
+P 17700 21100
+F 0 "7-31" H 17700 21200 50  0000 C CNN
+F 1 "LED" H 17700 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 17700 21100 60  0001 C CNN
+F 3 "" H 17700 21100 60  0000 C CNN
+	1    17700 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-24
+U 1 1 562E7BA2
+P 11800 16200
+F 0 "8-24" H 11800 16300 50  0000 C CNN
+F 1 "LED" H 11800 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 11800 16200 60  0001 C CNN
+F 3 "" H 11800 16200 60  0000 C CNN
+	1    11800 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-24
+U 1 1 562E7BA8
+P 12150 16200
+F 0 "9-24" H 12150 16300 50  0000 C CNN
+F 1 "LED" H 12150 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12150 16200 60  0001 C CNN
+F 3 "" H 12150 16200 60  0000 C CNN
+	1    12150 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-24
+U 1 1 562E7BAE
+P 12500 16200
+F 0 "10-24" H 12500 16300 50  0000 C CNN
+F 1 "LED" H 12500 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12500 16200 60  0001 C CNN
+F 3 "" H 12500 16200 60  0000 C CNN
+	1    12500 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-24
+U 1 1 562E7BB4
+P 12800 16200
+F 0 "11-24" H 12800 16300 50  0000 C CNN
+F 1 "LED" H 12800 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12800 16200 60  0001 C CNN
+F 3 "" H 12800 16200 60  0000 C CNN
+	1    12800 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-24
+U 1 1 562E7BBA
+P 13150 16200
+F 0 "12-24" H 13150 16300 50  0000 C CNN
+F 1 "LED" H 13150 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13150 16200 60  0001 C CNN
+F 3 "" H 13150 16200 60  0000 C CNN
+	1    13150 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-24
+U 1 1 562E7BC0
+P 13500 16200
+F 0 "13-24" H 13500 16300 50  0000 C CNN
+F 1 "LED" H 13500 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13500 16200 60  0001 C CNN
+F 3 "" H 13500 16200 60  0000 C CNN
+	1    13500 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-24
+U 1 1 562E7BC6
+P 13850 16200
+F 0 "14-24" H 13850 16300 50  0000 C CNN
+F 1 "LED" H 13850 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13850 16200 60  0001 C CNN
+F 3 "" H 13850 16200 60  0000 C CNN
+	1    13850 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-24
+U 1 1 562E7BCC
+P 14200 16200
+F 0 "15-24" H 14200 16300 50  0000 C CNN
+F 1 "LED" H 14200 16100 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 14200 16200 60  0001 C CNN
+F 3 "" H 14200 16200 60  0000 C CNN
+	1    14200 16200
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-25
+U 1 1 562E7BD2
+P 11800 16850
+F 0 "8-25" H 11800 16950 50  0000 C CNN
+F 1 "LED" H 11800 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 11800 16850 60  0001 C CNN
+F 3 "" H 11800 16850 60  0000 C CNN
+	1    11800 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-25
+U 1 1 562E7BD8
+P 12150 16850
+F 0 "9-25" H 12150 16950 50  0000 C CNN
+F 1 "LED" H 12150 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12150 16850 60  0001 C CNN
+F 3 "" H 12150 16850 60  0000 C CNN
+	1    12150 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-25
+U 1 1 562E7BDE
+P 12500 16850
+F 0 "10-25" H 12500 16950 50  0000 C CNN
+F 1 "LED" H 12500 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12500 16850 60  0001 C CNN
+F 3 "" H 12500 16850 60  0000 C CNN
+	1    12500 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-25
+U 1 1 562E7BE4
+P 12800 16850
+F 0 "11-25" H 12800 16950 50  0000 C CNN
+F 1 "LED" H 12800 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12800 16850 60  0001 C CNN
+F 3 "" H 12800 16850 60  0000 C CNN
+	1    12800 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-25
+U 1 1 562E7BEA
+P 13150 16850
+F 0 "12-25" H 13150 16950 50  0000 C CNN
+F 1 "LED" H 13150 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13150 16850 60  0001 C CNN
+F 3 "" H 13150 16850 60  0000 C CNN
+	1    13150 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-25
+U 1 1 562E7BF0
+P 13500 16850
+F 0 "13-25" H 13500 16950 50  0000 C CNN
+F 1 "LED" H 13500 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13500 16850 60  0001 C CNN
+F 3 "" H 13500 16850 60  0000 C CNN
+	1    13500 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-25
+U 1 1 562E7BF6
+P 13850 16850
+F 0 "14-25" H 13850 16950 50  0000 C CNN
+F 1 "LED" H 13850 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13850 16850 60  0001 C CNN
+F 3 "" H 13850 16850 60  0000 C CNN
+	1    13850 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-25
+U 1 1 562E7BFC
+P 14200 16850
+F 0 "15-25" H 14200 16950 50  0000 C CNN
+F 1 "LED" H 14200 16750 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 14200 16850 60  0001 C CNN
+F 3 "" H 14200 16850 60  0000 C CNN
+	1    14200 16850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-26
+U 1 1 562E7C02
+P 11800 17600
+F 0 "8-26" H 11800 17700 50  0000 C CNN
+F 1 "LED" H 11800 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 11800 17600 60  0001 C CNN
+F 3 "" H 11800 17600 60  0000 C CNN
+	1    11800 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-26
+U 1 1 562E7C08
+P 12150 17600
+F 0 "9-26" H 12150 17700 50  0000 C CNN
+F 1 "LED" H 12150 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12150 17600 60  0001 C CNN
+F 3 "" H 12150 17600 60  0000 C CNN
+	1    12150 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-26
+U 1 1 562E7C0E
+P 12500 17600
+F 0 "10-26" H 12500 17700 50  0000 C CNN
+F 1 "LED" H 12500 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12500 17600 60  0001 C CNN
+F 3 "" H 12500 17600 60  0000 C CNN
+	1    12500 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-26
+U 1 1 562E7C14
+P 12800 17600
+F 0 "11-26" H 12800 17700 50  0000 C CNN
+F 1 "LED" H 12800 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12800 17600 60  0001 C CNN
+F 3 "" H 12800 17600 60  0000 C CNN
+	1    12800 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-26
+U 1 1 562E7C1A
+P 13150 17600
+F 0 "12-26" H 13150 17700 50  0000 C CNN
+F 1 "LED" H 13150 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13150 17600 60  0001 C CNN
+F 3 "" H 13150 17600 60  0000 C CNN
+	1    13150 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-26
+U 1 1 562E7C20
+P 13500 17600
+F 0 "13-26" H 13500 17700 50  0000 C CNN
+F 1 "LED" H 13500 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13500 17600 60  0001 C CNN
+F 3 "" H 13500 17600 60  0000 C CNN
+	1    13500 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-26
+U 1 1 562E7C26
+P 13850 17600
+F 0 "14-26" H 13850 17700 50  0000 C CNN
+F 1 "LED" H 13850 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13850 17600 60  0001 C CNN
+F 3 "" H 13850 17600 60  0000 C CNN
+	1    13850 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-26
+U 1 1 562E7C2C
+P 14200 17600
+F 0 "15-26" H 14200 17700 50  0000 C CNN
+F 1 "LED" H 14200 17500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 14200 17600 60  0001 C CNN
+F 3 "" H 14200 17600 60  0000 C CNN
+	1    14200 17600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-27
+U 1 1 562E7C32
+P 11800 18300
+F 0 "8-27" H 11800 18400 50  0000 C CNN
+F 1 "LED" H 11800 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 11800 18300 60  0001 C CNN
+F 3 "" H 11800 18300 60  0000 C CNN
+	1    11800 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-27
+U 1 1 562E7C38
+P 12150 18300
+F 0 "9-27" H 12150 18400 50  0000 C CNN
+F 1 "LED" H 12150 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12150 18300 60  0001 C CNN
+F 3 "" H 12150 18300 60  0000 C CNN
+	1    12150 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-27
+U 1 1 562E7C3E
+P 12500 18300
+F 0 "10-27" H 12500 18400 50  0000 C CNN
+F 1 "LED" H 12500 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12500 18300 60  0001 C CNN
+F 3 "" H 12500 18300 60  0000 C CNN
+	1    12500 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-27
+U 1 1 562E7C44
+P 12800 18300
+F 0 "11-27" H 12800 18400 50  0000 C CNN
+F 1 "LED" H 12800 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12800 18300 60  0001 C CNN
+F 3 "" H 12800 18300 60  0000 C CNN
+	1    12800 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-27
+U 1 1 562E7C4A
+P 13150 18300
+F 0 "12-27" H 13150 18400 50  0000 C CNN
+F 1 "LED" H 13150 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13150 18300 60  0001 C CNN
+F 3 "" H 13150 18300 60  0000 C CNN
+	1    13150 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-27
+U 1 1 562E7C50
+P 13500 18300
+F 0 "13-27" H 13500 18400 50  0000 C CNN
+F 1 "LED" H 13500 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13500 18300 60  0001 C CNN
+F 3 "" H 13500 18300 60  0000 C CNN
+	1    13500 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-27
+U 1 1 562E7C56
+P 13850 18300
+F 0 "14-27" H 13850 18400 50  0000 C CNN
+F 1 "LED" H 13850 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13850 18300 60  0001 C CNN
+F 3 "" H 13850 18300 60  0000 C CNN
+	1    13850 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-27
+U 1 1 562E7C5C
+P 14200 18300
+F 0 "15-27" H 14200 18400 50  0000 C CNN
+F 1 "LED" H 14200 18200 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 14200 18300 60  0001 C CNN
+F 3 "" H 14200 18300 60  0000 C CNN
+	1    14200 18300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-28
+U 1 1 562E7C62
+P 11800 18950
+F 0 "8-28" H 11800 19050 50  0000 C CNN
+F 1 "LED" H 11800 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 11800 18950 60  0001 C CNN
+F 3 "" H 11800 18950 60  0000 C CNN
+	1    11800 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-28
+U 1 1 562E7C68
+P 12150 18950
+F 0 "9-28" H 12150 19050 50  0000 C CNN
+F 1 "LED" H 12150 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12150 18950 60  0001 C CNN
+F 3 "" H 12150 18950 60  0000 C CNN
+	1    12150 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-28
+U 1 1 562E7C6E
+P 12500 18950
+F 0 "10-28" H 12500 19050 50  0000 C CNN
+F 1 "LED" H 12500 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12500 18950 60  0001 C CNN
+F 3 "" H 12500 18950 60  0000 C CNN
+	1    12500 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-28
+U 1 1 562E7C74
+P 12800 18950
+F 0 "11-28" H 12800 19050 50  0000 C CNN
+F 1 "LED" H 12800 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12800 18950 60  0001 C CNN
+F 3 "" H 12800 18950 60  0000 C CNN
+	1    12800 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-28
+U 1 1 562E7C7A
+P 13150 18950
+F 0 "12-28" H 13150 19050 50  0000 C CNN
+F 1 "LED" H 13150 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13150 18950 60  0001 C CNN
+F 3 "" H 13150 18950 60  0000 C CNN
+	1    13150 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-28
+U 1 1 562E7C80
+P 13500 18950
+F 0 "13-28" H 13500 19050 50  0000 C CNN
+F 1 "LED" H 13500 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13500 18950 60  0001 C CNN
+F 3 "" H 13500 18950 60  0000 C CNN
+	1    13500 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-28
+U 1 1 562E7C86
+P 13850 18950
+F 0 "14-28" H 13850 19050 50  0000 C CNN
+F 1 "LED" H 13850 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13850 18950 60  0001 C CNN
+F 3 "" H 13850 18950 60  0000 C CNN
+	1    13850 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-28
+U 1 1 562E7C8C
+P 14200 18950
+F 0 "15-28" H 14200 19050 50  0000 C CNN
+F 1 "LED" H 14200 18850 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 14200 18950 60  0001 C CNN
+F 3 "" H 14200 18950 60  0000 C CNN
+	1    14200 18950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-29
+U 1 1 562E7C92
+P 11800 19600
+F 0 "8-29" H 11800 19700 50  0000 C CNN
+F 1 "LED" H 11800 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 11800 19600 60  0001 C CNN
+F 3 "" H 11800 19600 60  0000 C CNN
+	1    11800 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-29
+U 1 1 562E7C98
+P 12150 19600
+F 0 "9-29" H 12150 19700 50  0000 C CNN
+F 1 "LED" H 12150 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12150 19600 60  0001 C CNN
+F 3 "" H 12150 19600 60  0000 C CNN
+	1    12150 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-29
+U 1 1 562E7C9E
+P 12500 19600
+F 0 "10-29" H 12500 19700 50  0000 C CNN
+F 1 "LED" H 12500 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12500 19600 60  0001 C CNN
+F 3 "" H 12500 19600 60  0000 C CNN
+	1    12500 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-29
+U 1 1 562E7CA4
+P 12800 19600
+F 0 "11-29" H 12800 19700 50  0000 C CNN
+F 1 "LED" H 12800 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12800 19600 60  0001 C CNN
+F 3 "" H 12800 19600 60  0000 C CNN
+	1    12800 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-29
+U 1 1 562E7CAA
+P 13150 19600
+F 0 "12-29" H 13150 19700 50  0000 C CNN
+F 1 "LED" H 13150 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13150 19600 60  0001 C CNN
+F 3 "" H 13150 19600 60  0000 C CNN
+	1    13150 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-29
+U 1 1 562E7CB0
+P 13500 19600
+F 0 "13-29" H 13500 19700 50  0000 C CNN
+F 1 "LED" H 13500 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13500 19600 60  0001 C CNN
+F 3 "" H 13500 19600 60  0000 C CNN
+	1    13500 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-29
+U 1 1 562E7CB6
+P 13850 19600
+F 0 "14-29" H 13850 19700 50  0000 C CNN
+F 1 "LED" H 13850 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13850 19600 60  0001 C CNN
+F 3 "" H 13850 19600 60  0000 C CNN
+	1    13850 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-29
+U 1 1 562E7CBC
+P 14200 19600
+F 0 "15-29" H 14200 19700 50  0000 C CNN
+F 1 "LED" H 14200 19500 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 14200 19600 60  0001 C CNN
+F 3 "" H 14200 19600 60  0000 C CNN
+	1    14200 19600
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-30
+U 1 1 562E7CC2
+P 11800 20350
+F 0 "8-30" H 11800 20450 50  0000 C CNN
+F 1 "LED" H 11800 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 11800 20350 60  0001 C CNN
+F 3 "" H 11800 20350 60  0000 C CNN
+	1    11800 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-30
+U 1 1 562E7CC8
+P 12150 20350
+F 0 "9-30" H 12150 20450 50  0000 C CNN
+F 1 "LED" H 12150 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12150 20350 60  0001 C CNN
+F 3 "" H 12150 20350 60  0000 C CNN
+	1    12150 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-30
+U 1 1 562E7CCE
+P 12500 20350
+F 0 "10-30" H 12500 20450 50  0000 C CNN
+F 1 "LED" H 12500 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12500 20350 60  0001 C CNN
+F 3 "" H 12500 20350 60  0000 C CNN
+	1    12500 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-30
+U 1 1 562E7CD4
+P 12800 20350
+F 0 "11-30" H 12800 20450 50  0000 C CNN
+F 1 "LED" H 12800 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12800 20350 60  0001 C CNN
+F 3 "" H 12800 20350 60  0000 C CNN
+	1    12800 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-30
+U 1 1 562E7CDA
+P 13150 20350
+F 0 "12-30" H 13150 20450 50  0000 C CNN
+F 1 "LED" H 13150 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13150 20350 60  0001 C CNN
+F 3 "" H 13150 20350 60  0000 C CNN
+	1    13150 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-30
+U 1 1 562E7CE0
+P 13500 20350
+F 0 "13-30" H 13500 20450 50  0000 C CNN
+F 1 "LED" H 13500 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13500 20350 60  0001 C CNN
+F 3 "" H 13500 20350 60  0000 C CNN
+	1    13500 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-30
+U 1 1 562E7CE6
+P 13850 20350
+F 0 "14-30" H 13850 20450 50  0000 C CNN
+F 1 "LED" H 13850 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13850 20350 60  0001 C CNN
+F 3 "" H 13850 20350 60  0000 C CNN
+	1    13850 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-30
+U 1 1 562E7CEC
+P 14200 20350
+F 0 "15-30" H 14200 20450 50  0000 C CNN
+F 1 "LED" H 14200 20250 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 14200 20350 60  0001 C CNN
+F 3 "" H 14200 20350 60  0000 C CNN
+	1    14200 20350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 8-31
+U 1 1 562E7CF2
+P 11800 21100
+F 0 "8-31" H 11800 21200 50  0000 C CNN
+F 1 "LED" H 11800 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 11800 21100 60  0001 C CNN
+F 3 "" H 11800 21100 60  0000 C CNN
+	1    11800 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 9-31
+U 1 1 562E7CF8
+P 12150 21100
+F 0 "9-31" H 12150 21200 50  0000 C CNN
+F 1 "LED" H 12150 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12150 21100 60  0001 C CNN
+F 3 "" H 12150 21100 60  0000 C CNN
+	1    12150 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 10-31
+U 1 1 562E7CFE
+P 12500 21100
+F 0 "10-31" H 12500 21200 50  0000 C CNN
+F 1 "LED" H 12500 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12500 21100 60  0001 C CNN
+F 3 "" H 12500 21100 60  0000 C CNN
+	1    12500 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 11-31
+U 1 1 562E7D04
+P 12800 21100
+F 0 "11-31" H 12800 21200 50  0000 C CNN
+F 1 "LED" H 12800 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 12800 21100 60  0001 C CNN
+F 3 "" H 12800 21100 60  0000 C CNN
+	1    12800 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 12-31
+U 1 1 562E7D0A
+P 13150 21100
+F 0 "12-31" H 13150 21200 50  0000 C CNN
+F 1 "LED" H 13150 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13150 21100 60  0001 C CNN
+F 3 "" H 13150 21100 60  0000 C CNN
+	1    13150 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 13-31
+U 1 1 562E7D10
+P 13500 21100
+F 0 "13-31" H 13500 21200 50  0000 C CNN
+F 1 "LED" H 13500 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13500 21100 60  0001 C CNN
+F 3 "" H 13500 21100 60  0000 C CNN
+	1    13500 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 14-31
+U 1 1 562E7D16
+P 13850 21100
+F 0 "14-31" H 13850 21200 50  0000 C CNN
+F 1 "LED" H 13850 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 13850 21100 60  0001 C CNN
+F 3 "" H 13850 21100 60  0000 C CNN
+	1    13850 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED-RESCUE-LargeKickstarter 15-31
+U 1 1 562E7D1C
+P 14200 21100
+F 0 "15-31" H 14200 21200 50  0000 C CNN
+F 1 "LED" H 14200 21000 50  0000 C CNN
+F 2 "LikeClockwork:SMD_LED_PLCC_2" H 14200 21100 60  0001 C CNN
+F 3 "" H 14200 21100 60  0000 C CNN
+	1    14200 21100
+	0    1    1    0   
+$EndComp
+$Comp
+L HT16K33 U12
+U 1 1 562E7D22
+P 10050 12350
+F 0 "U12" H 10050 12250 50  0000 C CNN
+F 1 "HT16K33" H 10050 12450 50  0000 C CNN
+F 2 "adafruit:SO28W" H 10050 12350 50  0001 C CNN
+F 3 "DOCUMENTATION" H 10050 12350 50  0001 C CNN
+	1    10050 12350
+	1    0    0    -1  
+$EndComp
+Text GLabel 11750 11750 2    60   Input ~ 0
+SDA
+Text GLabel 11750 11900 2    60   Input ~ 0
+SCL
+Text GLabel 11750 11600 2    60   Input ~ 0
+Vcc
+$Comp
+L GND #PWR022
+U 1 1 562E7D2B
+P 8900 11700
+F 0 "#PWR022" H 8900 11450 60  0001 C CNN
+F 1 "GND" H 8900 11550 60  0000 C CNN
+F 2 "" H 8900 11700 60  0000 C CNN
+F 3 "" H 8900 11700 60  0000 C CNN
+	1    8900 11700
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODE D5
+U 1 1 562E7D31
+P 9300 10400
+F 0 "D5" H 9300 10500 50  0000 C CNN
+F 1 "DIODE" H 9300 10300 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H 9300 10400 60  0001 C CNN
+F 3 "" H 9300 10400 60  0000 C CNN
+	1    9300 10400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R15
+U 1 1 562E7D37
+P 9800 10400
+F 0 "R15" V 9880 10400 50  0000 C CNN
+F 1 "47K" V 9807 10401 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9730 10400 30  0001 C CNN
+F 3 "" H 9800 10400 30  0000 C CNN
+	1    9800 10400
+	0    1    1    0   
+$EndComp
+$Comp
+L CP2 C8
+U 1 1 562E7D3D
+P 9850 10000
+F 0 "C8" H 9900 10100 50  0000 L CNN
+F 1 "0.1uF" H 9900 9900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9888 9850 30  0001 C CNN
+F 3 "" H 9850 10000 60  0000 C CNN
+	1    9850 10000
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP10
+U 1 1 562E7D43
+P 10400 10400
+F 0 "JP10" H 10400 10550 50  0000 C CNN
+F 1 "JUMPER" H 10400 10320 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H 10400 10400 60  0001 C CNN
+F 3 "" H 10400 10400 60  0000 C CNN
+	1    10400 10400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R16
+U 1 1 562E7D49
+P 9800 10700
+F 0 "R16" V 9880 10700 50  0000 C CNN
+F 1 "47K" V 9807 10701 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9730 10700 30  0001 C CNN
+F 3 "" H 9800 10700 30  0000 C CNN
+	1    9800 10700
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP11
+U 1 1 562E7D4F
+P 10400 10700
+F 0 "JP11" H 10400 10850 50  0000 C CNN
+F 1 "JUMPER" H 10400 10620 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H 10400 10700 60  0001 C CNN
+F 3 "" H 10400 10700 60  0000 C CNN
+	1    10400 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R17
+U 1 1 562E7D55
+P 9800 10950
+F 0 "R17" V 9880 10950 50  0000 C CNN
+F 1 "47K" V 9807 10951 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9730 10950 30  0001 C CNN
+F 3 "" H 9800 10950 30  0000 C CNN
+	1    9800 10950
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP12
+U 1 1 562E7D5B
+P 10400 10950
+F 0 "JP12" H 10400 11100 50  0000 C CNN
+F 1 "JUMPER" H 10400 10870 50  0000 C CNN
+F 2 "LikeClockwork:solder_jumper" H 10400 10950 60  0001 C CNN
+F 3 "" H 10400 10950 60  0000 C CNN
+	1    10400 10950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 562E7D61
+P 6200 9700
+F 0 "#PWR023" H 6200 9450 60  0001 C CNN
+F 1 "GND" H 6200 9550 60  0000 C CNN
+F 2 "" H 6200 9700 60  0000 C CNN
+F 3 "" H 6200 9700 60  0000 C CNN
+	1    6200 9700
+	0    1    1    0   
+$EndComp
+$Comp
+L HT16K33_BOUT U11
+U 1 1 562E7D67
+P 6950 10400
+F 0 "U11" H 6950 10300 50  0000 C CNN
+F 1 "HT16K33_BOUT" H 6950 10500 50  0000 C CNN
+F 2 "LikeClockwork:HT16K33_Breakout" H 6950 10400 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6950 10400 50  0001 C CNN
+	1    6950 10400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 9800 0    60   Input ~ 0
+COM-3-0
+Text GLabel 5950 9900 0    60   Input ~ 0
+COM-3-1
+Text GLabel 5950 10000 0    60   Input ~ 0
+COM-3-2
+Text GLabel 5950 10100 0    60   Input ~ 0
+COM-3-3
+Text GLabel 5950 10200 0    60   Input ~ 0
+COM-3-4
+Text GLabel 5950 10300 0    60   Input ~ 0
+COM-3-5
+Text GLabel 5950 10400 0    60   Input ~ 0
+COM-3-6
+Text GLabel 5950 10500 0    60   Input ~ 0
+COM-3-7
+Text GLabel 5950 10600 0    60   Input ~ 0
+ROW-3-15
+Text GLabel 5950 10700 0    60   Input ~ 0
+ROW-3-14
+Text GLabel 5950 10800 0    60   Input ~ 0
+ROW-3-13
+Text GLabel 5950 10900 0    60   Input ~ 0
+ROW-3-12
+Text GLabel 5950 11000 0    60   Input ~ 0
+ROW-3-11
+Text GLabel 5950 11100 0    60   Input ~ 0
+ROW-3-10
+Text GLabel 7850 11100 2    60   Input ~ 0
+ROW-3-9
+Text GLabel 7850 11000 2    60   Input ~ 0
+ROW-3-8
+Text GLabel 7850 10800 2    60   Input ~ 0
+ROW-3-6
+Text GLabel 7850 10900 2    60   Input ~ 0
+ROW-3-7
+Text GLabel 7850 10700 2    60   Input ~ 0
+ROW-3-5
+Text GLabel 7850 10600 2    60   Input ~ 0
+ROW-3-4
+Text GLabel 7850 10500 2    60   Input ~ 0
+ROW-3-3
+Text GLabel 7850 10200 2    60   Input ~ 0
+ROW-3-0
+Text GLabel 7850 10300 2    60   Input ~ 0
+ROW-3-1
+Text GLabel 7850 10400 2    60   Input ~ 0
+ROW-3-2
+Text GLabel 7850 10100 2    60   Input ~ 0
+SCL
+Text GLabel 7850 10000 2    60   Input ~ 0
+SDA
+Text GLabel 7850 9900 2    60   Input ~ 0
+Vcc
+Text GLabel 5450 12600 0    60   Input ~ 0
+ROW-3-15
+Text GLabel 5450 12700 0    60   Input ~ 0
+ROW-3-14
+Text GLabel 5450 12800 0    60   Input ~ 0
+ROW-3-13
+Text GLabel 5450 12900 0    60   Input ~ 0
+ROW-3-12
+Text GLabel 5450 13000 0    60   Input ~ 0
+ROW-3-11
+Text GLabel 6100 16350 0    60   Input ~ 0
+COM-3-0
+Text GLabel 6100 16450 0    60   Input ~ 0
+COM-3-1
+Text GLabel 6100 16550 0    60   Input ~ 0
+COM-3-2
+Text GLabel 6100 16650 0    60   Input ~ 0
+COM-3-3
+Text GLabel 6100 16750 0    60   Input ~ 0
+COM-3-4
+Text GLabel 6100 16850 0    60   Input ~ 0
+COM-3-5
+Text GLabel 6100 16950 0    60   Input ~ 0
+COM-3-6
+Text GLabel 6100 17100 0    60   Input ~ 0
+COM-3-7
+Text GLabel 12600 12900 2    60   Input ~ 0
+ROW-3-9
+Text GLabel 12150 12800 2    60   Input ~ 0
+ROW-3-8
+Text GLabel 17800 12600 2    60   Input ~ 0
+ROW-3-6
+Text GLabel 17800 12700 2    60   Input ~ 0
+ROW-3-7
+Text GLabel 17800 12500 2    60   Input ~ 0
+ROW-3-5
+Text GLabel 17800 12400 2    60   Input ~ 0
+ROW-3-4
+Text GLabel 17800 12300 2    60   Input ~ 0
+ROW-3-3
+Text GLabel 17800 12000 2    60   Input ~ 0
+ROW-3-0
+Text GLabel 17800 12100 2    60   Input ~ 0
+ROW-3-1
+Text GLabel 17800 12200 2    60   Input ~ 0
+ROW-3-2
+Text GLabel 12650 13000 2    60   Input ~ 0
+ROW-3-10
+Text GLabel 9800 1200 2    60   Input ~ 0
+5
+Text GLabel 8300 1400 0    60   Input ~ 0
+8
+Text GLabel 4250 3800 0    60   Input ~ 0
+3
+Text GLabel 4250 3900 0    60   Input ~ 0
+4
+Text GLabel 9400 -2800 2    60   Input ~ 0
+Vraw
+Text GLabel 10400 -2550 0    60   Input ~ 0
+Vin
+$Comp
+L CONN_01X05-RESCUE-LargeKickstarter P3
+U 1 1 56205F53
+P 12650 800
+F 0 "P3" H 12650 1100 50  0000 C CNN
+F 1 "CONN_01X05" V 12750 800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 12650 800 60  0001 C CNN
+F 3 "" H 12650 800 60  0000 C CNN
+	1    12650 800 
+	1    0    0    -1  
+$EndComp
+Text GLabel 12350 600  0    60   Input ~ 0
+Vcc
+Text GLabel 12300 800  0    60   Input ~ 0
+SCL
+Text GLabel 12100 700  0    60   Input ~ 0
+SDA
+$Comp
+L GND #PWR024
+U 1 1 56206AC8
+P 12200 1200
+F 0 "#PWR024" H 12200 950 60  0001 C CNN
+F 1 "GND" H 12200 1050 60  0000 C CNN
+F 2 "" H 12200 1200 60  0000 C CNN
+F 3 "" H 12200 1200 60  0000 C CNN
+	1    12200 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5100 4250 5100
+Wire Wire Line
+	3150 5500 3150 5100
+Wire Wire Line
+	2900 5500 3150 5500
+Wire Wire Line
+	3000 5350 2800 5350
+Wire Wire Line
+	3000 5000 3000 5350
+Wire Wire Line
+	3000 5000 4250 5000
+Wire Wire Line
+	2900 4900 4250 4900
+Wire Wire Line
+	2900 5150 2900 4900
+Wire Wire Line
+	2750 5150 2900 5150
+Wire Wire Line
+	5750 5100 5900 5100
+Wire Wire Line
+	5750 4800 5900 4800
+Wire Wire Line
+	5750 4700 5900 4700
+Wire Wire Line
+	5750 4600 5900 4600
+Wire Wire Line
+	5900 4500 5750 4500
+Wire Wire Line
+	5750 4400 5900 4400
+Wire Wire Line
+	5750 3350 5600 3350
+Wire Wire Line
+	5750 3800 5750 3350
+Wire Wire Line
+	2800 4800 4250 4800
+Wire Wire Line
+	2800 3050 2800 4800
+Wire Wire Line
+	2300 3050 2800 3050
+Wire Wire Line
+	2900 4700 4250 4700
+Wire Wire Line
+	2900 2850 2900 4700
+Wire Wire Line
+	2500 2850 2900 2850
+Wire Wire Line
+	2600 2700 3100 2700
+Connection ~ 3000 2700
+Wire Wire Line
+	3000 4600 3000 2700
+Wire Wire Line
+	4250 4600 3000 4600
+Connection ~ 4150 4200
+Wire Wire Line
+	4150 3750 4150 4200
+Connection ~ 3700 4300
+Wire Wire Line
+	3500 4300 4250 4300
+Wire Wire Line
+	3750 3750 3750 4300
+Wire Wire Line
+	5750 4100 5800 4100
+Wire Wire Line
+	5750 3900 5800 3900
+Wire Wire Line
+	5750 4000 5950 4000
+Wire Wire Line
+	5750 4900 6100 4900
+Wire Wire Line
+	3700 4000 4250 4000
+Wire Wire Line
+	3700 4200 4250 4200
+Wire Wire Line
+	3500 4100 4250 4100
+Wire Wire Line
+	5900 5200 5750 5200
+Wire Wire Line
+	5900 5150 5900 5200
+Wire Wire Line
+	6100 5150 5900 5150
+Wire Wire Line
+	5750 5300 6100 5300
+Wire Wire Line
+	3800 5200 4250 5200
+Wire Wire Line
+	3950 5300 4250 5300
+Wire Wire Line
+	3950 5350 3950 5300
+Wire Wire Line
+	3800 5350 3950 5350
+Wire Wire Line
+	10250 -2700 10250 -2200
+Wire Wire Line
+	9850 -2700 9850 -2200
+Wire Wire Line
+	9250 -2500 9000 -2500
+Wire Wire Line
+	9250 -2800 9250 -2150
+Wire Wire Line
+	9250 -2150 9350 -2150
+Wire Wire Line
+	9000 -2050 9350 -2050
+Wire Wire Line
+	9000 -2500 9000 -2150
+Connection ~ 17850 2100
+Connection ~ 17850 2000
+Connection ~ 17850 1900
+Connection ~ 17350 1900
+Connection ~ 17350 2000
+Connection ~ 17350 2100
+Connection ~ 14950 -250
+Connection ~ 14500 -400
+Wire Wire Line
+	2300 1750 2600 1750
+Wire Wire Line
+	2600 1750 2600 2700
+Wire Wire Line
+	2500 2400 2500 2850
+Wire Wire Line
+	9350 -2050 9350 -2000
+Wire Wire Line
+	9350 -2150 9350 -2200
+Wire Wire Line
+	-8850 1300 -3450 1300
+Wire Wire Line
+	-16500 -2100 -5500 -2100
+Wire Wire Line
+	-16600 -2850 -5500 -2850
+Wire Wire Line
+	-16700 -3600 -5500 -3600
+Wire Wire Line
+	-16900 -4900 -5500 -4900
+Wire Wire Line
+	-16800 -4250 -5500 -4250
+Wire Wire Line
+	-17100 -6350 -5500 -6350
+Connection ~ -6950 -7400
+Wire Wire Line
+	-6950 -7400 -6850 -7400
+Connection ~ -8200 -2850
+Connection ~ -7850 -2850
+Connection ~ -7500 -2850
+Connection ~ -7200 -2850
+Connection ~ -6850 -2850
+Connection ~ -6500 -2850
+Connection ~ -6150 -2850
+Connection ~ -5800 -2850
+Connection ~ -8200 -3600
+Connection ~ -7850 -3600
+Connection ~ -7500 -3600
+Connection ~ -7200 -3600
+Connection ~ -6850 -3600
+Connection ~ -6500 -3600
+Connection ~ -6150 -3600
+Connection ~ -5800 -3600
+Connection ~ -8200 -4250
+Connection ~ -7850 -4250
+Connection ~ -7500 -4250
+Connection ~ -7200 -4250
+Connection ~ -6850 -4250
+Connection ~ -6500 -4250
+Connection ~ -6150 -4250
+Connection ~ -5800 -4250
+Connection ~ -8200 -4900
+Connection ~ -7850 -4900
+Connection ~ -7500 -4900
+Connection ~ -7200 -4900
+Connection ~ -6850 -4900
+Connection ~ -6500 -4900
+Connection ~ -6150 -4900
+Connection ~ -5800 -4900
+Connection ~ -8200 -5600
+Connection ~ -7850 -5600
+Connection ~ -7500 -5600
+Connection ~ -7200 -5600
+Connection ~ -6850 -5600
+Connection ~ -6500 -5600
+Connection ~ -6150 -5600
+Connection ~ -5800 -5600
+Connection ~ -8200 -6350
+Connection ~ -7850 -6350
+Connection ~ -7500 -6350
+Connection ~ -7200 -6350
+Connection ~ -6850 -6350
+Connection ~ -6500 -6350
+Connection ~ -6150 -6350
+Connection ~ -5800 -6350
+Connection ~ -8200 -7000
+Connection ~ -7850 -7000
+Connection ~ -7500 -7000
+Connection ~ -7200 -7000
+Connection ~ -6850 -7000
+Connection ~ -6500 -7000
+Connection ~ -6150 -7000
+Connection ~ -5800 -7000
+Connection ~ -8200 -2100
+Connection ~ -7850 -2100
+Connection ~ -7500 -2100
+Connection ~ -7200 -2100
+Connection ~ -6850 -2100
+Connection ~ -6500 -2100
+Connection ~ -6150 -2100
+Connection ~ -5800 -2100
+Connection ~ -5950 -3250
+Wire Wire Line
+	-5950 -3250 -5800 -3250
+Connection ~ -6250 -3250
+Wire Wire Line
+	-6250 -3250 -6150 -3250
+Connection ~ -6600 -3250
+Wire Wire Line
+	-6600 -3250 -6500 -3250
+Connection ~ -6950 -3250
+Wire Wire Line
+	-6950 -3250 -6850 -3250
+Connection ~ -7300 -3250
+Wire Wire Line
+	-7300 -3250 -7200 -3250
+Connection ~ -7650 -3250
+Wire Wire Line
+	-7650 -3250 -7500 -3250
+Connection ~ -5950 -4000
+Wire Wire Line
+	-5950 -4000 -5800 -4000
+Connection ~ -6250 -4000
+Wire Wire Line
+	-6250 -4000 -6150 -4000
+Connection ~ -6600 -4000
+Wire Wire Line
+	-6600 -4000 -6500 -4000
+Connection ~ -6950 -4000
+Wire Wire Line
+	-6950 -4000 -6850 -4000
+Connection ~ -7300 -4000
+Wire Wire Line
+	-7300 -4000 -7200 -4000
+Connection ~ -7650 -4000
+Wire Wire Line
+	-7650 -4000 -7500 -4000
+Connection ~ -7650 -4650
+Wire Wire Line
+	-7650 -4650 -7500 -4650
+Connection ~ -7300 -4650
+Wire Wire Line
+	-7300 -4650 -7200 -4650
+Connection ~ -6950 -4650
+Wire Wire Line
+	-6950 -4650 -6850 -4650
+Connection ~ -6600 -4650
+Wire Wire Line
+	-6600 -4650 -6500 -4650
+Connection ~ -6250 -4650
+Wire Wire Line
+	-6250 -4650 -6150 -4650
+Connection ~ -5950 -4650
+Wire Wire Line
+	-5950 -4650 -5800 -4650
+Connection ~ -5950 -5300
+Wire Wire Line
+	-5950 -5300 -5800 -5300
+Connection ~ -6250 -5300
+Wire Wire Line
+	-6250 -5300 -6150 -5300
+Connection ~ -6600 -5300
+Wire Wire Line
+	-6600 -5300 -6500 -5300
+Connection ~ -6950 -5300
+Wire Wire Line
+	-6950 -5300 -6850 -5300
+Connection ~ -7300 -5300
+Wire Wire Line
+	-7300 -5300 -7200 -5300
+Connection ~ -7650 -5300
+Wire Wire Line
+	-7650 -5300 -7500 -5300
+Connection ~ -7650 -6000
+Wire Wire Line
+	-7650 -6000 -7500 -6000
+Connection ~ -7300 -6000
+Wire Wire Line
+	-7300 -6000 -7200 -6000
+Connection ~ -6950 -6000
+Wire Wire Line
+	-6950 -6000 -6850 -6000
+Connection ~ -6600 -6000
+Wire Wire Line
+	-6600 -6000 -6500 -6000
+Connection ~ -6250 -6000
+Wire Wire Line
+	-6250 -6000 -6150 -6000
+Connection ~ -5950 -6000
+Wire Wire Line
+	-5950 -6000 -5800 -6000
+Connection ~ -5950 -6750
+Wire Wire Line
+	-5950 -6750 -5800 -6750
+Connection ~ -6250 -6750
+Wire Wire Line
+	-6250 -6750 -6150 -6750
+Connection ~ -6600 -6750
+Wire Wire Line
+	-6600 -6750 -6500 -6750
+Connection ~ -6950 -6750
+Wire Wire Line
+	-6950 -6750 -6850 -6750
+Connection ~ -7300 -6750
+Wire Wire Line
+	-7300 -6750 -7200 -6750
+Connection ~ -7650 -6750
+Wire Wire Line
+	-7650 -6750 -7500 -6750
+Connection ~ -5950 -7400
+Wire Wire Line
+	-5950 -7400 -5800 -7400
+Connection ~ -6250 -7400
+Wire Wire Line
+	-6250 -7400 -6150 -7400
+Connection ~ -6600 -7400
+Wire Wire Line
+	-6500 -7400 -6600 -7400
+Connection ~ -7300 -7400
+Wire Wire Line
+	-7200 -7400 -7300 -7400
+Connection ~ -7650 -7400
+Wire Wire Line
+	-7500 -7400 -7650 -7400
+Connection ~ -7950 -7400
+Wire Wire Line
+	-7850 -7400 -7950 -7400
+Connection ~ -7950 -6750
+Wire Wire Line
+	-7950 -6750 -7850 -6750
+Connection ~ -7950 -6000
+Wire Wire Line
+	-7950 -6000 -7850 -6000
+Connection ~ -7950 -5300
+Wire Wire Line
+	-7950 -5300 -7850 -5300
+Connection ~ -7950 -4650
+Wire Wire Line
+	-7950 -4650 -7850 -4650
+Connection ~ -7950 -4000
+Wire Wire Line
+	-7950 -4000 -7850 -4000
+Connection ~ -7950 -3250
+Wire Wire Line
+	-7950 -3250 -7850 -3250
+Connection ~ -8300 -3250
+Wire Wire Line
+	-8300 -3250 -8200 -3250
+Connection ~ -8300 -4000
+Wire Wire Line
+	-8300 -4000 -8200 -4000
+Connection ~ -8300 -4650
+Wire Wire Line
+	-8300 -4650 -8200 -4650
+Connection ~ -8300 -5300
+Wire Wire Line
+	-8300 -5300 -8200 -5300
+Connection ~ -8300 -6000
+Wire Wire Line
+	-8300 -6000 -8200 -6000
+Connection ~ -8300 -6750
+Wire Wire Line
+	-8300 -6750 -8200 -6750
+Connection ~ -8300 -7400
+Wire Wire Line
+	-8300 -7400 -8200 -7400
+Wire Wire Line
+	-5950 -2500 -5800 -2500
+Wire Wire Line
+	-5950 -10700 -5950 -2500
+Wire Wire Line
+	-6250 -2500 -6150 -2500
+Wire Wire Line
+	-6250 -10800 -6250 -2500
+Wire Wire Line
+	-6600 -2500 -6500 -2500
+Wire Wire Line
+	-6600 -10900 -6600 -2500
+Wire Wire Line
+	-6950 -2500 -6850 -2500
+Wire Wire Line
+	-7300 -2500 -7200 -2500
+Wire Wire Line
+	-7300 -11100 -7300 -2500
+Wire Wire Line
+	-7650 -2500 -7500 -2500
+Wire Wire Line
+	-7650 -11200 -7650 -2500
+Wire Wire Line
+	-7950 -2500 -7850 -2500
+Wire Wire Line
+	-8300 -2500 -8200 -2500
+Wire Wire Line
+	-8300 -11400 -8300 -2500
+Connection ~ -5800 -4650
+Connection ~ -6150 -4650
+Connection ~ -6500 -4650
+Connection ~ -6850 -4650
+Connection ~ -7200 -4650
+Connection ~ -7500 -4650
+Connection ~ -7850 -4650
+Connection ~ -8200 -4650
+Connection ~ -5800 -7400
+Connection ~ -6150 -7400
+Connection ~ -6500 -7400
+Connection ~ -6850 -7400
+Connection ~ -7200 -7400
+Connection ~ -7500 -7400
+Connection ~ -7850 -7400
+Connection ~ -8200 -7400
+Connection ~ -5800 -6750
+Connection ~ -6150 -6750
+Connection ~ -6500 -6750
+Connection ~ -6850 -6750
+Connection ~ -7200 -6750
+Connection ~ -7500 -6750
+Connection ~ -7850 -6750
+Connection ~ -8200 -6750
+Connection ~ -5800 -6000
+Connection ~ -6150 -6000
+Connection ~ -6500 -6000
+Connection ~ -6850 -6000
+Connection ~ -7200 -6000
+Connection ~ -7500 -6000
+Connection ~ -7850 -6000
+Connection ~ -8200 -6000
+Connection ~ -6150 -5300
+Connection ~ -5800 -5300
+Connection ~ -6500 -5300
+Connection ~ -6850 -5300
+Connection ~ -7200 -5300
+Connection ~ -7500 -5300
+Connection ~ -7850 -5300
+Connection ~ -8200 -5300
+Connection ~ -8200 -4000
+Connection ~ -7850 -4000
+Connection ~ -7500 -4000
+Connection ~ -7200 -4000
+Connection ~ -6850 -4000
+Connection ~ -6500 -4000
+Connection ~ -6150 -4000
+Connection ~ -5800 -4000
+Connection ~ -8200 -3250
+Connection ~ -7850 -3250
+Connection ~ -7500 -3250
+Connection ~ -7200 -3250
+Connection ~ -6850 -3250
+Connection ~ -6500 -3250
+Connection ~ -6150 -3250
+Connection ~ -5800 -3250
+Connection ~ -5800 -2500
+Connection ~ -6150 -2500
+Connection ~ -6500 -2500
+Connection ~ -6850 -2500
+Connection ~ -7200 -2500
+Connection ~ -7500 -2500
+Connection ~ -7850 -2500
+Connection ~ -8200 -2500
+Wire Wire Line
+	-5800 -4900 -5750 -4900
+Connection ~ -5500 -6350
+Connection ~ -5500 -5600
+Connection ~ -10450 -7400
+Wire Wire Line
+	-10350 -7400 -10450 -7400
+Connection ~ -11700 -2850
+Connection ~ -11350 -2850
+Connection ~ -11000 -2850
+Connection ~ -10700 -2850
+Connection ~ -10350 -2850
+Connection ~ -10000 -2850
+Connection ~ -9650 -2850
+Connection ~ -9300 -2850
+Connection ~ -11700 -3600
+Connection ~ -11350 -3600
+Connection ~ -11000 -3600
+Connection ~ -10700 -3600
+Connection ~ -10350 -3600
+Connection ~ -10000 -3600
+Connection ~ -9650 -3600
+Connection ~ -9300 -3600
+Connection ~ -11700 -4250
+Connection ~ -11350 -4250
+Connection ~ -11000 -4250
+Connection ~ -10700 -4250
+Connection ~ -10350 -4250
+Connection ~ -10000 -4250
+Connection ~ -9650 -4250
+Connection ~ -9300 -4250
+Connection ~ -11700 -4900
+Connection ~ -11350 -4900
+Connection ~ -11000 -4900
+Connection ~ -10700 -4900
+Connection ~ -10350 -4900
+Connection ~ -10000 -4900
+Connection ~ -9650 -4900
+Connection ~ -9300 -4900
+Connection ~ -11700 -5600
+Connection ~ -11350 -5600
+Connection ~ -11000 -5600
+Connection ~ -10700 -5600
+Connection ~ -10350 -5600
+Connection ~ -10000 -5600
+Connection ~ -9650 -5600
+Connection ~ -9300 -5600
+Connection ~ -11700 -6350
+Connection ~ -11350 -6350
+Connection ~ -11000 -6350
+Connection ~ -10700 -6350
+Connection ~ -10350 -6350
+Connection ~ -10000 -6350
+Connection ~ -9650 -6350
+Connection ~ -9300 -6350
+Connection ~ -11700 -7000
+Connection ~ -11350 -7000
+Connection ~ -11000 -7000
+Connection ~ -10700 -7000
+Connection ~ -10350 -7000
+Connection ~ -10000 -7000
+Connection ~ -9650 -7000
+Connection ~ -9300 -7000
+Connection ~ -11700 -2100
+Connection ~ -11350 -2100
+Connection ~ -11000 -2100
+Connection ~ -10700 -2100
+Connection ~ -10350 -2100
+Connection ~ -10000 -2100
+Connection ~ -9650 -2100
+Connection ~ -9300 -2100
+Connection ~ -9450 -3250
+Wire Wire Line
+	-9450 -3250 -9300 -3250
+Connection ~ -9750 -3250
+Wire Wire Line
+	-9750 -3250 -9650 -3250
+Connection ~ -10100 -3250
+Wire Wire Line
+	-10100 -3250 -10000 -3250
+Connection ~ -10450 -3250
+Wire Wire Line
+	-10450 -3250 -10350 -3250
+Connection ~ -10800 -3250
+Wire Wire Line
+	-10800 -3250 -10700 -3250
+Connection ~ -11150 -3250
+Wire Wire Line
+	-11150 -3250 -11000 -3250
+Connection ~ -9450 -4000
+Wire Wire Line
+	-9450 -4000 -9300 -4000
+Connection ~ -9750 -4000
+Wire Wire Line
+	-9750 -4000 -9650 -4000
+Connection ~ -10100 -4000
+Wire Wire Line
+	-10100 -4000 -10000 -4000
+Connection ~ -10450 -4000
+Wire Wire Line
+	-10450 -4000 -10350 -4000
+Connection ~ -10800 -4000
+Wire Wire Line
+	-10800 -4000 -10700 -4000
+Connection ~ -11150 -4000
+Wire Wire Line
+	-11150 -4000 -11000 -4000
+Connection ~ -11150 -4650
+Wire Wire Line
+	-11150 -4650 -11000 -4650
+Connection ~ -10800 -4650
+Wire Wire Line
+	-10800 -4650 -10700 -4650
+Connection ~ -10450 -4650
+Wire Wire Line
+	-10450 -4650 -10350 -4650
+Connection ~ -10100 -4650
+Wire Wire Line
+	-10100 -4650 -10000 -4650
+Connection ~ -9750 -4650
+Wire Wire Line
+	-9750 -4650 -9650 -4650
+Connection ~ -9450 -4650
+Wire Wire Line
+	-9450 -4650 -9300 -4650
+Connection ~ -9450 -5300
+Wire Wire Line
+	-9450 -5300 -9300 -5300
+Connection ~ -9750 -5300
+Wire Wire Line
+	-9750 -5300 -9650 -5300
+Connection ~ -10100 -5300
+Wire Wire Line
+	-10100 -5300 -10000 -5300
+Connection ~ -10450 -5300
+Wire Wire Line
+	-10450 -5300 -10350 -5300
+Connection ~ -10800 -5300
+Wire Wire Line
+	-10800 -5300 -10700 -5300
+Connection ~ -11150 -5300
+Wire Wire Line
+	-11150 -5300 -11000 -5300
+Connection ~ -11150 -6000
+Wire Wire Line
+	-11150 -6000 -11000 -6000
+Connection ~ -10800 -6000
+Wire Wire Line
+	-10800 -6000 -10700 -6000
+Connection ~ -10450 -6000
+Wire Wire Line
+	-10450 -6000 -10350 -6000
+Connection ~ -10100 -6000
+Wire Wire Line
+	-10100 -6000 -10000 -6000
+Connection ~ -9750 -6000
+Wire Wire Line
+	-9750 -6000 -9650 -6000
+Connection ~ -9450 -6000
+Wire Wire Line
+	-9450 -6000 -9300 -6000
+Connection ~ -9450 -6750
+Wire Wire Line
+	-9450 -6750 -9300 -6750
+Connection ~ -9750 -6750
+Wire Wire Line
+	-9750 -6750 -9650 -6750
+Connection ~ -10100 -6750
+Wire Wire Line
+	-10100 -6750 -10000 -6750
+Connection ~ -10450 -6750
+Wire Wire Line
+	-10450 -6750 -10350 -6750
+Connection ~ -10800 -6750
+Wire Wire Line
+	-10800 -6750 -10700 -6750
+Connection ~ -11150 -6750
+Wire Wire Line
+	-11150 -6750 -11000 -6750
+Connection ~ -9450 -7400
+Wire Wire Line
+	-9300 -7400 -9450 -7400
+Connection ~ -9750 -7400
+Wire Wire Line
+	-9650 -7400 -9750 -7400
+Connection ~ -10100 -7400
+Wire Wire Line
+	-10000 -7400 -10100 -7400
+Connection ~ -10800 -7400
+Wire Wire Line
+	-10700 -7400 -10800 -7400
+Connection ~ -11150 -7400
+Wire Wire Line
+	-11000 -7400 -11150 -7400
+Connection ~ -11450 -7400
+Wire Wire Line
+	-11350 -7400 -11450 -7400
+Connection ~ -11450 -6750
+Wire Wire Line
+	-11450 -6750 -11350 -6750
+Connection ~ -11450 -6000
+Wire Wire Line
+	-11450 -6000 -11350 -6000
+Connection ~ -11450 -5300
+Wire Wire Line
+	-11450 -5300 -11350 -5300
+Connection ~ -11450 -4650
+Wire Wire Line
+	-11450 -4650 -11350 -4650
+Connection ~ -11450 -4000
+Wire Wire Line
+	-11450 -4000 -11350 -4000
+Connection ~ -11450 -3250
+Wire Wire Line
+	-11450 -3250 -11350 -3250
+Connection ~ -11800 -3250
+Wire Wire Line
+	-11800 -3250 -11700 -3250
+Connection ~ -11800 -4000
+Wire Wire Line
+	-11800 -4000 -11700 -4000
+Connection ~ -11800 -4650
+Wire Wire Line
+	-11800 -4650 -11700 -4650
+Connection ~ -11800 -5300
+Wire Wire Line
+	-11800 -5300 -11700 -5300
+Connection ~ -11800 -6000
+Wire Wire Line
+	-11800 -6000 -11700 -6000
+Connection ~ -11800 -6750
+Wire Wire Line
+	-11800 -6750 -11700 -6750
+Connection ~ -11800 -7400
+Wire Wire Line
+	-11800 -7400 -11700 -7400
+Wire Wire Line
+	-9450 -2500 -9300 -2500
+Wire Wire Line
+	-9450 -10050 -9450 -2500
+Wire Wire Line
+	-9750 -2500 -9650 -2500
+Wire Wire Line
+	-9750 -9850 -9750 -2500
+Wire Wire Line
+	-10100 -2500 -10000 -2500
+Wire Wire Line
+	-10100 -9650 -10100 -2500
+Wire Wire Line
+	-10450 -2500 -10350 -2500
+Wire Wire Line
+	-10450 -9500 -10450 -2500
+Wire Wire Line
+	-10800 -2500 -10700 -2500
+Wire Wire Line
+	-10800 -9350 -10800 -2500
+Wire Wire Line
+	-11150 -2500 -11000 -2500
+Wire Wire Line
+	-11150 -10400 -11150 -2500
+Wire Wire Line
+	-11450 -2500 -11350 -2500
+Wire Wire Line
+	-11450 -10500 -11450 -2500
+Wire Wire Line
+	-11800 -2500 -11700 -2500
+Wire Wire Line
+	-11800 -10600 -11800 -2500
+Connection ~ -9300 -4650
+Connection ~ -9650 -4650
+Connection ~ -10000 -4650
+Connection ~ -10350 -4650
+Connection ~ -10700 -4650
+Connection ~ -11000 -4650
+Connection ~ -11350 -4650
+Connection ~ -11700 -4650
+Connection ~ -9300 -7400
+Connection ~ -9650 -7400
+Connection ~ -10000 -7400
+Connection ~ -10350 -7400
+Connection ~ -10700 -7400
+Connection ~ -11000 -7400
+Connection ~ -11350 -7400
+Connection ~ -11700 -7400
+Connection ~ -9300 -6750
+Connection ~ -9650 -6750
+Connection ~ -10000 -6750
+Connection ~ -10350 -6750
+Connection ~ -10700 -6750
+Connection ~ -11000 -6750
+Connection ~ -11350 -6750
+Connection ~ -11700 -6750
+Connection ~ -9300 -6000
+Connection ~ -9650 -6000
+Connection ~ -10000 -6000
+Connection ~ -10350 -6000
+Connection ~ -10700 -6000
+Connection ~ -11000 -6000
+Connection ~ -11350 -6000
+Connection ~ -11700 -6000
+Connection ~ -9650 -5300
+Connection ~ -9300 -5300
+Connection ~ -10000 -5300
+Connection ~ -10350 -5300
+Connection ~ -10700 -5300
+Connection ~ -11000 -5300
+Connection ~ -11350 -5300
+Connection ~ -11700 -5300
+Connection ~ -11700 -4000
+Connection ~ -11350 -4000
+Connection ~ -11000 -4000
+Connection ~ -10700 -4000
+Connection ~ -10350 -4000
+Connection ~ -10000 -4000
+Connection ~ -9650 -4000
+Connection ~ -9300 -4000
+Connection ~ -11700 -3250
+Connection ~ -11350 -3250
+Connection ~ -11000 -3250
+Connection ~ -10700 -3250
+Connection ~ -10350 -3250
+Connection ~ -10000 -3250
+Connection ~ -9650 -3250
+Connection ~ -9300 -3250
+Connection ~ -9300 -2500
+Connection ~ -9650 -2500
+Connection ~ -10000 -2500
+Connection ~ -10350 -2500
+Connection ~ -10700 -2500
+Connection ~ -11000 -2500
+Connection ~ -11350 -2500
+Connection ~ -11700 -2500
+Wire Wire Line
+	-9300 -4900 -9250 -4900
+Wire Wire Line
+	-11100 8700 -700 8700
+Wire Wire Line
+	-11200 7950 -700 7950
+Wire Wire Line
+	-11300 7200 -700 7200
+Wire Wire Line
+	-11550 5900 -750 5900
+Wire Wire Line
+	-11400 6550 -750 6550
+Connection ~ -2100 3400
+Wire Wire Line
+	-2100 3400 -2000 3400
+Connection ~ -3350 7950
+Connection ~ -3000 7950
+Connection ~ -2650 7950
+Connection ~ -2350 7950
+Connection ~ -2000 7950
+Connection ~ -1650 7950
+Connection ~ -1300 7950
+Connection ~ -950 7950
+Connection ~ -3350 7200
+Connection ~ -3000 7200
+Connection ~ -2650 7200
+Connection ~ -2350 7200
+Connection ~ -2000 7200
+Connection ~ -1650 7200
+Connection ~ -1300 7200
+Connection ~ -950 7200
+Connection ~ -3350 6550
+Connection ~ -3000 6550
+Connection ~ -2650 6550
+Connection ~ -2350 6550
+Connection ~ -2000 6550
+Connection ~ -1650 6550
+Connection ~ -1300 6550
+Connection ~ -950 6550
+Connection ~ -3350 5900
+Connection ~ -3000 5900
+Connection ~ -2650 5900
+Connection ~ -2350 5900
+Connection ~ -2000 5900
+Connection ~ -1650 5900
+Connection ~ -1300 5900
+Connection ~ -950 5900
+Connection ~ -3350 5200
+Connection ~ -3000 5200
+Connection ~ -2650 5200
+Connection ~ -2350 5200
+Connection ~ -2000 5200
+Connection ~ -1650 5200
+Connection ~ -1300 5200
+Connection ~ -950 5200
+Connection ~ -3350 4450
+Connection ~ -3000 4450
+Connection ~ -2650 4450
+Connection ~ -2350 4450
+Connection ~ -2000 4450
+Connection ~ -1650 4450
+Connection ~ -1300 4450
+Connection ~ -950 4450
+Connection ~ -3350 3800
+Connection ~ -3000 3800
+Connection ~ -2650 3800
+Connection ~ -2350 3800
+Connection ~ -2000 3800
+Connection ~ -1650 3800
+Connection ~ -1300 3800
+Connection ~ -950 3800
+Connection ~ -3350 8700
+Connection ~ -3000 8700
+Connection ~ -2650 8700
+Connection ~ -2350 8700
+Connection ~ -2000 8700
+Connection ~ -1650 8700
+Connection ~ -1300 8700
+Connection ~ -950 8700
+Connection ~ -1100 7550
+Wire Wire Line
+	-1100 7550 -950 7550
+Connection ~ -1400 7550
+Wire Wire Line
+	-1400 7550 -1300 7550
+Connection ~ -1750 7550
+Wire Wire Line
+	-1750 7550 -1650 7550
+Connection ~ -2100 7550
+Wire Wire Line
+	-2100 7550 -2000 7550
+Connection ~ -2450 7550
+Wire Wire Line
+	-2450 7550 -2350 7550
+Connection ~ -2800 7550
+Wire Wire Line
+	-2800 7550 -2650 7550
+Connection ~ -1100 6800
+Wire Wire Line
+	-1100 6800 -950 6800
+Connection ~ -1400 6800
+Wire Wire Line
+	-1400 6800 -1300 6800
+Connection ~ -1750 6800
+Wire Wire Line
+	-1750 6800 -1650 6800
+Connection ~ -2100 6800
+Wire Wire Line
+	-2100 6800 -2000 6800
+Connection ~ -2450 6800
+Wire Wire Line
+	-2450 6800 -2350 6800
+Connection ~ -2800 6800
+Wire Wire Line
+	-2800 6800 -2650 6800
+Connection ~ -2800 6150
+Wire Wire Line
+	-2800 6150 -2650 6150
+Connection ~ -2450 6150
+Wire Wire Line
+	-2450 6150 -2350 6150
+Connection ~ -2100 6150
+Wire Wire Line
+	-2100 6150 -2000 6150
+Connection ~ -1750 6150
+Wire Wire Line
+	-1750 6150 -1650 6150
+Connection ~ -1400 6150
+Wire Wire Line
+	-1400 6150 -1300 6150
+Connection ~ -1100 6150
+Wire Wire Line
+	-1100 6150 -950 6150
+Connection ~ -1100 5500
+Wire Wire Line
+	-1100 5500 -950 5500
+Connection ~ -1400 5500
+Wire Wire Line
+	-1400 5500 -1300 5500
+Connection ~ -1750 5500
+Wire Wire Line
+	-1750 5500 -1650 5500
+Connection ~ -2100 5500
+Wire Wire Line
+	-2100 5500 -2000 5500
+Connection ~ -2450 5500
+Wire Wire Line
+	-2450 5500 -2350 5500
+Connection ~ -2800 5500
+Wire Wire Line
+	-2800 5500 -2650 5500
+Connection ~ -2800 4800
+Wire Wire Line
+	-2800 4800 -2650 4800
+Connection ~ -2450 4800
+Wire Wire Line
+	-2450 4800 -2350 4800
+Connection ~ -2100 4800
+Wire Wire Line
+	-2100 4800 -2000 4800
+Connection ~ -1750 4800
+Wire Wire Line
+	-1750 4800 -1650 4800
+Connection ~ -1400 4800
+Wire Wire Line
+	-1400 4800 -1300 4800
+Connection ~ -1100 4800
+Wire Wire Line
+	-1100 4800 -950 4800
+Connection ~ -1100 4050
+Wire Wire Line
+	-1100 4050 -950 4050
+Connection ~ -1400 4050
+Wire Wire Line
+	-1400 4050 -1300 4050
+Connection ~ -1750 4050
+Wire Wire Line
+	-1750 4050 -1650 4050
+Connection ~ -2100 4050
+Wire Wire Line
+	-2100 4050 -2000 4050
+Connection ~ -2450 4050
+Wire Wire Line
+	-2450 4050 -2350 4050
+Connection ~ -2800 4050
+Wire Wire Line
+	-2800 4050 -2650 4050
+Connection ~ -1100 3400
+Wire Wire Line
+	-1100 3400 -950 3400
+Connection ~ -1400 3400
+Wire Wire Line
+	-1400 3400 -1300 3400
+Connection ~ -1750 3400
+Wire Wire Line
+	-1650 3400 -1750 3400
+Connection ~ -2450 3400
+Wire Wire Line
+	-2350 3400 -2450 3400
+Connection ~ -2800 3400
+Wire Wire Line
+	-2650 3400 -2800 3400
+Connection ~ -3100 3400
+Wire Wire Line
+	-3000 3400 -3100 3400
+Connection ~ -3100 4050
+Wire Wire Line
+	-3100 4050 -3000 4050
+Connection ~ -3100 4800
+Wire Wire Line
+	-3100 4800 -3000 4800
+Connection ~ -3100 5500
+Wire Wire Line
+	-3100 5500 -3000 5500
+Connection ~ -3100 6150
+Wire Wire Line
+	-3100 6150 -3000 6150
+Connection ~ -3100 6800
+Wire Wire Line
+	-3100 6800 -3000 6800
+Connection ~ -3100 7550
+Wire Wire Line
+	-3100 7550 -3000 7550
+Connection ~ -3450 7550
+Wire Wire Line
+	-3450 7550 -3350 7550
+Connection ~ -3450 6800
+Wire Wire Line
+	-3450 6800 -3350 6800
+Connection ~ -3450 6150
+Wire Wire Line
+	-3450 6150 -3350 6150
+Connection ~ -3450 5500
+Wire Wire Line
+	-3450 5500 -3350 5500
+Connection ~ -3450 4800
+Wire Wire Line
+	-3450 4800 -3350 4800
+Connection ~ -3450 4050
+Wire Wire Line
+	-3450 4050 -3350 4050
+Connection ~ -3450 3400
+Wire Wire Line
+	-3450 3400 -3350 3400
+Wire Wire Line
+	-1100 8300 -950 8300
+Wire Wire Line
+	-1100 1200 -1100 8300
+Wire Wire Line
+	-1400 8300 -1300 8300
+Wire Wire Line
+	-1400 1200 -1400 8300
+Wire Wire Line
+	-1750 8300 -1650 8300
+Wire Wire Line
+	-1750 1200 -1750 8300
+Wire Wire Line
+	-2100 8300 -2000 8300
+Wire Wire Line
+	-2450 8300 -2350 8300
+Wire Wire Line
+	-2450 1200 -2450 8300
+Wire Wire Line
+	-2800 8300 -2650 8300
+Wire Wire Line
+	-2800 1200 -2800 8300
+Wire Wire Line
+	-3100 8300 -3000 8300
+Wire Wire Line
+	-3100 1200 -3100 8300
+Wire Wire Line
+	-3450 8300 -3350 8300
+Wire Wire Line
+	-3450 1200 -3450 8300
+Connection ~ -950 6150
+Connection ~ -1300 6150
+Connection ~ -1650 6150
+Connection ~ -2000 6150
+Connection ~ -2350 6150
+Connection ~ -2650 6150
+Connection ~ -3000 6150
+Connection ~ -3350 6150
+Connection ~ -950 3400
+Connection ~ -1300 3400
+Connection ~ -1650 3400
+Connection ~ -2000 3400
+Connection ~ -2350 3400
+Connection ~ -2650 3400
+Connection ~ -3000 3400
+Connection ~ -3350 3400
+Connection ~ -950 4050
+Connection ~ -1300 4050
+Connection ~ -1650 4050
+Connection ~ -2000 4050
+Connection ~ -2350 4050
+Connection ~ -2650 4050
+Connection ~ -3000 4050
+Connection ~ -3350 4050
+Connection ~ -950 4800
+Connection ~ -1300 4800
+Connection ~ -1650 4800
+Connection ~ -2000 4800
+Connection ~ -2350 4800
+Connection ~ -2650 4800
+Connection ~ -3000 4800
+Connection ~ -3350 4800
+Connection ~ -1300 5500
+Connection ~ -950 5500
+Connection ~ -1650 5500
+Connection ~ -2000 5500
+Connection ~ -2350 5500
+Connection ~ -2650 5500
+Connection ~ -3000 5500
+Connection ~ -3350 5500
+Connection ~ -3350 6800
+Connection ~ -3000 6800
+Connection ~ -2650 6800
+Connection ~ -2350 6800
+Connection ~ -2000 6800
+Connection ~ -1650 6800
+Connection ~ -1300 6800
+Connection ~ -950 6800
+Connection ~ -3350 7550
+Connection ~ -3000 7550
+Connection ~ -2650 7550
+Connection ~ -2350 7550
+Connection ~ -2000 7550
+Connection ~ -1650 7550
+Connection ~ -1300 7550
+Connection ~ -950 7550
+Connection ~ -950 8300
+Connection ~ -1300 8300
+Connection ~ -1650 8300
+Connection ~ -2000 8300
+Connection ~ -2350 8300
+Connection ~ -2650 8300
+Connection ~ -3000 8300
+Connection ~ -3350 8300
+Wire Wire Line
+	-950 5900 -900 5900
+Connection ~ -3450 3150
+Connection ~ -2100 3150
+Connection ~ -1400 3150
+Connection ~ -1100 3150
+Connection ~ -5600 3400
+Wire Wire Line
+	-5500 3400 -5600 3400
+Connection ~ -6850 7950
+Connection ~ -6500 7950
+Connection ~ -6150 7950
+Connection ~ -5850 7950
+Connection ~ -5500 7950
+Connection ~ -5150 7950
+Connection ~ -4800 7950
+Connection ~ -4450 7950
+Connection ~ -6850 7200
+Connection ~ -6500 7200
+Connection ~ -6150 7200
+Connection ~ -5850 7200
+Connection ~ -5500 7200
+Connection ~ -5150 7200
+Connection ~ -4800 7200
+Connection ~ -4450 7200
+Connection ~ -6850 6550
+Connection ~ -6500 6550
+Connection ~ -6150 6550
+Connection ~ -5850 6550
+Connection ~ -5500 6550
+Connection ~ -5150 6550
+Connection ~ -4800 6550
+Connection ~ -4450 6550
+Connection ~ -6850 5900
+Connection ~ -6500 5900
+Connection ~ -6150 5900
+Connection ~ -5850 5900
+Connection ~ -5500 5900
+Connection ~ -5150 5900
+Connection ~ -4800 5900
+Connection ~ -4450 5900
+Connection ~ -6850 5200
+Connection ~ -6500 5200
+Connection ~ -6150 5200
+Connection ~ -5850 5200
+Connection ~ -5500 5200
+Connection ~ -5150 5200
+Connection ~ -4800 5200
+Connection ~ -4450 5200
+Connection ~ -6850 4450
+Connection ~ -6500 4450
+Connection ~ -6150 4450
+Connection ~ -5850 4450
+Connection ~ -5500 4450
+Connection ~ -5150 4450
+Connection ~ -4800 4450
+Connection ~ -4450 4450
+Connection ~ -6850 3800
+Connection ~ -6500 3800
+Connection ~ -6150 3800
+Connection ~ -5850 3800
+Connection ~ -5500 3800
+Connection ~ -5150 3800
+Connection ~ -4800 3800
+Connection ~ -4450 3800
+Connection ~ -6850 8700
+Connection ~ -6500 8700
+Connection ~ -6150 8700
+Connection ~ -5850 8700
+Connection ~ -5500 8700
+Connection ~ -5150 8700
+Connection ~ -4800 8700
+Connection ~ -4450 8700
+Connection ~ -4600 7550
+Wire Wire Line
+	-4600 7550 -4450 7550
+Connection ~ -4900 7550
+Wire Wire Line
+	-4900 7550 -4800 7550
+Connection ~ -5250 7550
+Wire Wire Line
+	-5250 7550 -5150 7550
+Connection ~ -5600 7550
+Wire Wire Line
+	-5600 7550 -5500 7550
+Connection ~ -5950 7550
+Wire Wire Line
+	-5950 7550 -5850 7550
+Connection ~ -6300 7550
+Wire Wire Line
+	-6300 7550 -6150 7550
+Connection ~ -4600 6800
+Wire Wire Line
+	-4600 6800 -4450 6800
+Connection ~ -4900 6800
+Wire Wire Line
+	-4900 6800 -4800 6800
+Connection ~ -5250 6800
+Wire Wire Line
+	-5250 6800 -5150 6800
+Connection ~ -5600 6800
+Wire Wire Line
+	-5600 6800 -5500 6800
+Connection ~ -5950 6800
+Wire Wire Line
+	-5950 6800 -5850 6800
+Connection ~ -6300 6800
+Wire Wire Line
+	-6300 6800 -6150 6800
+Connection ~ -6300 6150
+Wire Wire Line
+	-6300 6150 -6150 6150
+Connection ~ -5950 6150
+Wire Wire Line
+	-5950 6150 -5850 6150
+Connection ~ -5600 6150
+Wire Wire Line
+	-5600 6150 -5500 6150
+Connection ~ -5250 6150
+Wire Wire Line
+	-5250 6150 -5150 6150
+Connection ~ -4900 6150
+Wire Wire Line
+	-4900 6150 -4800 6150
+Connection ~ -4600 6150
+Wire Wire Line
+	-4600 6150 -4450 6150
+Connection ~ -4600 5500
+Wire Wire Line
+	-4600 5500 -4450 5500
+Connection ~ -4900 5500
+Wire Wire Line
+	-4900 5500 -4800 5500
+Connection ~ -5250 5500
+Wire Wire Line
+	-5250 5500 -5150 5500
+Connection ~ -5600 5500
+Wire Wire Line
+	-5600 5500 -5500 5500
+Connection ~ -5950 5500
+Wire Wire Line
+	-5950 5500 -5850 5500
+Connection ~ -6300 5500
+Wire Wire Line
+	-6300 5500 -6150 5500
+Connection ~ -6300 4800
+Wire Wire Line
+	-6300 4800 -6150 4800
+Connection ~ -5950 4800
+Wire Wire Line
+	-5950 4800 -5850 4800
+Connection ~ -5600 4800
+Wire Wire Line
+	-5600 4800 -5500 4800
+Connection ~ -5250 4800
+Wire Wire Line
+	-5250 4800 -5150 4800
+Connection ~ -4900 4800
+Wire Wire Line
+	-4900 4800 -4800 4800
+Connection ~ -4600 4800
+Wire Wire Line
+	-4600 4800 -4450 4800
+Connection ~ -4600 4050
+Wire Wire Line
+	-4600 4050 -4450 4050
+Connection ~ -4900 4050
+Wire Wire Line
+	-4900 4050 -4800 4050
+Connection ~ -5250 4050
+Wire Wire Line
+	-5250 4050 -5150 4050
+Connection ~ -5600 4050
+Wire Wire Line
+	-5600 4050 -5500 4050
+Connection ~ -5950 4050
+Wire Wire Line
+	-5950 4050 -5850 4050
+Connection ~ -6300 4050
+Wire Wire Line
+	-6300 4050 -6150 4050
+Connection ~ -4600 3400
+Wire Wire Line
+	-4450 3400 -4600 3400
+Connection ~ -4900 3400
+Wire Wire Line
+	-4800 3400 -4900 3400
+Connection ~ -5250 3400
+Wire Wire Line
+	-5150 3400 -5250 3400
+Connection ~ -5950 3400
+Wire Wire Line
+	-5850 3400 -5950 3400
+Connection ~ -6300 3400
+Wire Wire Line
+	-6150 3400 -6300 3400
+Connection ~ -6600 3400
+Wire Wire Line
+	-6500 3400 -6600 3400
+Connection ~ -6600 4050
+Wire Wire Line
+	-6600 4050 -6500 4050
+Connection ~ -6600 4800
+Wire Wire Line
+	-6600 4800 -6500 4800
+Connection ~ -6600 5500
+Wire Wire Line
+	-6600 5500 -6500 5500
+Connection ~ -6600 6150
+Wire Wire Line
+	-6600 6150 -6500 6150
+Connection ~ -6600 6800
+Wire Wire Line
+	-6600 6800 -6500 6800
+Connection ~ -6600 7550
+Wire Wire Line
+	-6600 7550 -6500 7550
+Connection ~ -6950 7550
+Wire Wire Line
+	-6950 7550 -6850 7550
+Connection ~ -6950 6800
+Wire Wire Line
+	-6950 6800 -6850 6800
+Connection ~ -6950 6150
+Wire Wire Line
+	-6950 6150 -6850 6150
+Connection ~ -6950 5500
+Wire Wire Line
+	-6950 5500 -6850 5500
+Connection ~ -6950 4800
+Wire Wire Line
+	-6950 4800 -6850 4800
+Connection ~ -6950 4050
+Wire Wire Line
+	-6950 4050 -6850 4050
+Connection ~ -6950 3400
+Wire Wire Line
+	-6950 3400 -6850 3400
+Wire Wire Line
+	-4600 8300 -4050 8300
+Wire Wire Line
+	-4600 2600 -4600 8300
+Wire Wire Line
+	-4900 8300 -4650 8300
+Wire Wire Line
+	-4900 2650 -4900 8300
+Wire Wire Line
+	-5250 8300 -5000 8300
+Wire Wire Line
+	-5250 2700 -5250 8300
+Wire Wire Line
+	-5600 8300 -5350 8300
+Wire Wire Line
+	-5600 2750 -5600 8300
+Wire Wire Line
+	-5950 8300 -5700 8300
+Wire Wire Line
+	-5950 2800 -5950 8300
+Wire Wire Line
+	-6300 8300 -6050 8300
+Wire Wire Line
+	-6300 2300 -6300 8300
+Wire Wire Line
+	-6600 8300 -6400 8300
+Wire Wire Line
+	-6600 2200 -6600 8300
+Wire Wire Line
+	-6950 8300 -6700 8300
+Wire Wire Line
+	-6950 1250 -6950 8300
+Connection ~ -4450 6150
+Connection ~ -4800 6150
+Connection ~ -5150 6150
+Connection ~ -5500 6150
+Connection ~ -5850 6150
+Connection ~ -6150 6150
+Connection ~ -6500 6150
+Connection ~ -6850 6150
+Connection ~ -4450 3400
+Connection ~ -4800 3400
+Connection ~ -5150 3400
+Connection ~ -5500 3400
+Connection ~ -5850 3400
+Connection ~ -6150 3400
+Connection ~ -6500 3400
+Connection ~ -6850 3400
+Connection ~ -4450 4050
+Connection ~ -4800 4050
+Connection ~ -5150 4050
+Connection ~ -5500 4050
+Connection ~ -5850 4050
+Connection ~ -6150 4050
+Connection ~ -6500 4050
+Connection ~ -6850 4050
+Connection ~ -4450 4800
+Connection ~ -4800 4800
+Connection ~ -5150 4800
+Connection ~ -5500 4800
+Connection ~ -5850 4800
+Connection ~ -6150 4800
+Connection ~ -6500 4800
+Connection ~ -6850 4800
+Connection ~ -4800 5500
+Connection ~ -4450 5500
+Connection ~ -5150 5500
+Connection ~ -5500 5500
+Connection ~ -5850 5500
+Connection ~ -6150 5500
+Connection ~ -6500 5500
+Connection ~ -6850 5500
+Connection ~ -6850 6800
+Connection ~ -6500 6800
+Connection ~ -6150 6800
+Connection ~ -5850 6800
+Connection ~ -5500 6800
+Connection ~ -5150 6800
+Connection ~ -4800 6800
+Connection ~ -4450 6800
+Connection ~ -6850 7550
+Connection ~ -6500 7550
+Connection ~ -6150 7550
+Connection ~ -5850 7550
+Connection ~ -5500 7550
+Connection ~ -5150 7550
+Connection ~ -4800 7550
+Connection ~ -4450 7550
+Connection ~ -4450 8300
+Connection ~ -4800 8300
+Connection ~ -5150 8300
+Connection ~ -5500 8300
+Connection ~ -5850 8300
+Connection ~ -6150 8300
+Connection ~ -6500 8300
+Connection ~ -6850 8300
+Wire Wire Line
+	-4450 5900 -4400 5900
+Wire Wire Line
+	1500 1750 1700 1750
+Wire Wire Line
+	2400 1750 2500 1750
+Wire Wire Line
+	2100 2100 2400 2100
+Wire Wire Line
+	2400 2100 2400 1750
+Connection ~ 2400 1750
+Wire Wire Line
+	1500 2100 1600 2100
+Wire Wire Line
+	1500 2400 1700 2400
+Wire Wire Line
+	2300 2400 2500 2400
+Wire Wire Line
+	2400 2750 2100 2750
+Wire Wire Line
+	2400 2250 2400 2750
+Connection ~ 2400 2400
+Wire Wire Line
+	1500 2750 1600 2750
+Wire Wire Line
+	1500 3050 1700 3050
+Wire Wire Line
+	2400 3400 2100 3400
+Wire Wire Line
+	2400 2900 2400 3700
+Connection ~ 2400 3050
+Wire Wire Line
+	1500 3400 1600 3400
+Wire Wire Line
+	-14600 -11700 -14200 -11700
+Wire Wire Line
+	6150 4300 6150 4600
+Wire Wire Line
+	6150 4600 6400 4600
+Wire Wire Line
+	6150 3450 6450 3450
+Wire Wire Line
+	6150 4200 6150 3450
+Wire Wire Line
+	-12700 -11800 -12700 -11700
+Wire Wire Line
+	-12700 -11650 -12700 -11600
+Wire Wire Line
+	-12700 -11650 -11750 -11650
+Wire Wire Line
+	-12700 -11500 -11750 -11500
+Connection ~ 6300 3450
+Wire Wire Line
+	6300 3500 6300 3450
+Connection ~ 6300 4050
+Wire Wire Line
+	6300 4050 6450 4050
+Wire Wire Line
+	6300 4000 6300 4100
+Connection ~ 6300 4600
+Wire Wire Line
+	-10750 1000 -10350 1000
+Wire Wire Line
+	-8850 900  -8850 1000
+Wire Wire Line
+	-8850 900  -7900 900 
+Wire Wire Line
+	-8850 1050 -8850 1100
+Wire Wire Line
+	-8850 1050 -7900 1050
+Wire Wire Line
+	-8850 1200 -7900 1200
+Wire Wire Line
+	-10500 -300 -10500 1100
+Connection ~ -10500 1100
+Wire Wire Line
+	9350 -2000 10200 -2000
+Connection ~ 9900 -2000
+Wire Wire Line
+	9900 -2000 9900 -1750
+Wire Wire Line
+	9350 -2200 9850 -2200
+Wire Wire Line
+	10250 -2200 10750 -2200
+Wire Wire Line
+	10850 -1650 10850 -2450
+Wire Wire Line
+	10200 -1650 11350 -1650
+Wire Wire Line
+	10200 -2000 10200 -1650
+Wire Wire Line
+	10450 -2200 10450 -2150
+Wire Wire Line
+	10450 -1750 10450 -1650
+Connection ~ 10450 -1650
+Wire Wire Line
+	11350 -1650 11350 -1750
+Connection ~ 10850 -1650
+Wire Wire Line
+	10950 -2200 11800 -2200
+Wire Wire Line
+	11350 -2200 11350 -2150
+Connection ~ 11350 -2200
+Connection ~ 10450 -2200
+Connection ~ 10750 -2450
+Wire Wire Line
+	10750 -2200 10750 -2450
+Wire Wire Line
+	10950 -2450 10950 -2200
+Wire Wire Line
+	6150 4200 5750 4200
+Wire Wire Line
+	5750 4300 6150 4300
+Wire Wire Line
+	16950 1850 17350 1850
+Wire Wire Line
+	17350 1850 17350 1900
+Wire Wire Line
+	17350 2000 16950 2000
+Wire Wire Line
+	16950 2150 17150 2150
+Wire Wire Line
+	17150 2150 17150 2100
+Wire Wire Line
+	17150 2100 17350 2100
+Wire Wire Line
+	17850 1900 18000 1900
+Wire Wire Line
+	18000 1900 18000 1850
+Wire Wire Line
+	18000 1850 18150 1850
+Wire Wire Line
+	17850 2000 18150 2000
+Wire Wire Line
+	17850 2100 18000 2100
+Wire Wire Line
+	18000 2100 18000 2200
+Wire Wire Line
+	18000 2200 18150 2200
+Wire Wire Line
+	14900 -700 14500 -700
+Wire Wire Line
+	14500 -600 14900 -600
+Wire Wire Line
+	14900 -600 14900 -550
+Wire Wire Line
+	14950 -250 14950 -400
+Wire Wire Line
+	14950 -400 14800 -400
+Wire Wire Line
+	14800 -400 14800 -500
+Wire Wire Line
+	14800 -500 14500 -500
+Wire Wire Line
+	14500 -400 14650 -400
+Wire Wire Line
+	14650 -400 14650 350 
+Wire Wire Line
+	13000 350  15300 350 
+Connection ~ 14950 350 
+Wire Wire Line
+	12700 -600 13000 -600
+Wire Wire Line
+	14500 -300 14500 350 
+Connection ~ 14500 -200
+Connection ~ 14500 -100
+Connection ~ 14650 350 
+Connection ~ 14500 0   
+Wire Wire Line
+	13000 -300 13000 350 
+Connection ~ 14500 350 
+Connection ~ 13000 0   
+Connection ~ 13000 -100
+Connection ~ 13000 -200
+Connection ~ 13000 -300
+Connection ~ 13000 -600
+Connection ~ 14500 -700
+Connection ~ 14500 -600
+Connection ~ 14500 -300
+Wire Wire Line
+	-10600 -700 -10600 1000
+Wire Wire Line
+	-10600 -700 -9900 -700
+Connection ~ -10600 1000
+Wire Wire Line
+	-9500 -700 -7950 -700
+Wire Wire Line
+	12850 -600 12850 -1200
+Wire Wire Line
+	12850 -1200 13500 -1200
+Connection ~ 12850 -600
+Wire Wire Line
+	13900 -1200 14600 -1200
+Wire Wire Line
+	14600 -1200 14600 -400
+Connection ~ 14600 -400
+Connection ~ -14300 -11700
+Wire Wire Line
+	-11850 3800 -800 3800
+Wire Wire Line
+	-2100 1200 -2100 8300
+Wire Wire Line
+	-8850 1500 -2800 1500
+Wire Wire Line
+	-11850 1100 -10350 1100
+Wire Wire Line
+	-17000 -5600 -5500 -5600
+Connection ~ -5500 -7000
+Wire Wire Line
+	-17200 -7000 -5500 -7000
+Wire Wire Line
+	-7950 -11300 -7950 -2500
+Wire Wire Line
+	-14200 -11600 -17200 -11600
+Wire Wire Line
+	-17200 -11600 -17200 -7000
+Wire Wire Line
+	-14200 -11500 -17100 -11500
+Wire Wire Line
+	-17100 -11500 -17100 -6350
+Wire Wire Line
+	-14200 -11400 -17000 -11400
+Wire Wire Line
+	-17000 -11400 -17000 -5600
+Wire Wire Line
+	-14200 -11300 -16900 -11300
+Wire Wire Line
+	-16900 -11300 -16900 -4900
+Wire Wire Line
+	-14200 -11200 -16800 -11200
+Wire Wire Line
+	-16800 -11200 -16800 -4250
+Wire Wire Line
+	-14200 -11100 -16700 -11100
+Wire Wire Line
+	-16700 -11100 -16700 -3600
+Wire Wire Line
+	-14200 -11000 -16600 -11000
+Wire Wire Line
+	-16600 -11000 -16600 -2850
+Wire Wire Line
+	-14200 -10900 -16500 -10900
+Wire Wire Line
+	-16500 -10900 -16500 -2100
+Wire Wire Line
+	-6950 -11000 -6950 -2500
+Wire Wire Line
+	-18050 -10800 -14200 -10800
+Wire Wire Line
+	-16250 -10800 -16250 -10050
+Wire Wire Line
+	-16250 -10050 -9450 -10050
+Wire Wire Line
+	-18050 -10700 -14200 -10700
+Wire Wire Line
+	-16100 -10700 -16100 -9850
+Wire Wire Line
+	-16100 -9850 -9750 -9850
+Wire Wire Line
+	-18050 -10600 -14200 -10600
+Wire Wire Line
+	-15950 -10600 -15950 -9650
+Wire Wire Line
+	-15950 -9650 -10100 -9650
+Wire Wire Line
+	-18050 -10500 -14200 -10500
+Wire Wire Line
+	-15800 -10500 -15800 -9500
+Wire Wire Line
+	-15800 -9500 -10450 -9500
+Wire Wire Line
+	-18050 -10400 -14200 -10400
+Wire Wire Line
+	-15650 -10400 -15650 -9350
+Wire Wire Line
+	-15650 -9350 -10800 -9350
+Wire Wire Line
+	-12700 -10400 -10850 -10400
+Wire Wire Line
+	-12700 -10500 -10900 -10500
+Wire Wire Line
+	-12700 -10600 -11350 -10600
+Wire Wire Line
+	-12700 -10700 -5700 -10700
+Wire Wire Line
+	-12700 -10800 -5700 -10800
+Wire Wire Line
+	-12700 -10900 -5700 -10900
+Wire Wire Line
+	-12700 -11000 -5700 -11000
+Wire Wire Line
+	-12700 -11100 -5700 -11100
+Wire Wire Line
+	-12700 -11200 -5700 -11200
+Wire Wire Line
+	-12700 -11300 -5700 -11300
+Wire Wire Line
+	-12700 -11400 -5700 -11400
+Wire Wire Line
+	-11650 5200 -750 5200
+Wire Wire Line
+	-11850 1100 -11850 3800
+Wire Wire Line
+	-10350 1200 -11750 1200
+Wire Wire Line
+	-11650 1300 -10350 1300
+Wire Wire Line
+	-11650 1300 -11650 5200
+Wire Wire Line
+	-10350 1400 -11550 1400
+Wire Wire Line
+	-11550 1400 -11550 5900
+Wire Wire Line
+	-10350 1500 -11400 1500
+Wire Wire Line
+	-11400 1500 -11400 6550
+Wire Wire Line
+	-10350 1600 -11300 1600
+Wire Wire Line
+	-11300 1600 -11300 7200
+Wire Wire Line
+	-10350 1700 -11200 1700
+Wire Wire Line
+	-11200 1700 -11200 7950
+Wire Wire Line
+	-10350 1800 -11100 1800
+Wire Wire Line
+	-11100 1800 -11100 8700
+Wire Wire Line
+	-12050 1900 -10350 1900
+Wire Wire Line
+	-10950 1900 -10950 2600
+Wire Wire Line
+	-10950 2600 -4600 2600
+Wire Wire Line
+	-12050 2000 -10350 2000
+Wire Wire Line
+	-10850 2000 -10850 2650
+Wire Wire Line
+	-10850 2650 -4900 2650
+Wire Wire Line
+	-12050 2100 -10350 2100
+Wire Wire Line
+	-10750 2100 -10750 2700
+Wire Wire Line
+	-10750 2700 -5250 2700
+Wire Wire Line
+	-12050 2200 -10350 2200
+Wire Wire Line
+	-10650 2200 -10650 2750
+Wire Wire Line
+	-10650 2750 -5600 2750
+Wire Wire Line
+	-12050 2300 -10350 2300
+Wire Wire Line
+	-10550 2300 -10550 2800
+Wire Wire Line
+	-10550 2800 -5950 2800
+Wire Wire Line
+	-8850 2300 -6300 2300
+Wire Wire Line
+	-8850 2200 -6600 2200
+Wire Wire Line
+	-8850 2100 -6950 2100
+Wire Wire Line
+	-8850 2000 -1100 2000
+Wire Wire Line
+	-8850 1900 -1400 1900
+Wire Wire Line
+	-8850 1800 -1750 1800
+Wire Wire Line
+	-8850 1700 -2100 1700
+Wire Wire Line
+	-8850 1600 -2450 1600
+Wire Wire Line
+	-8850 1400 -3100 1400
+Wire Wire Line
+	9250 -2800 9400 -2800
+Connection ~ 9250 -2500
+Wire Wire Line
+	-10500 -300 -10450 -300
+Wire Wire Line
+	-10050 -300 -10000 -300
+Wire Wire Line
+	-9500 -300 -9450 -300
+Wire Wire Line
+	-8850 -300 -8100 -300
+Wire Wire Line
+	-9500 0    -9450 0   
+Wire Wire Line
+	-9500 250  -9450 250 
+Wire Wire Line
+	-7950 -700 -7950 900 
+Connection ~ -7950 900 
+Wire Wire Line
+	-10000 250  -10050 250 
+Wire Wire Line
+	-10050 250  -10050 -300
+Wire Wire Line
+	-10000 0    -10050 0   
+Connection ~ -10050 0   
+Wire Wire Line
+	-8100 -300 -8100 1300
+Connection ~ -8100 1300
+Wire Wire Line
+	-8850 0    -8200 0   
+Wire Wire Line
+	-8200 0    -8200 1400
+Connection ~ -8200 1400
+Wire Wire Line
+	-8850 250  -8400 250 
+Wire Wire Line
+	-8400 250  -8400 1500
+Connection ~ -8400 1500
+Wire Wire Line
+	-14450 -13000 -14450 -11600
+Wire Wire Line
+	-14550 -13400 -14550 -11700
+Wire Wire Line
+	-14550 -13400 -13850 -13400
+Wire Wire Line
+	-13450 -13400 -11900 -13400
+Wire Wire Line
+	-14450 -13000 -14400 -13000
+Wire Wire Line
+	-14000 -13000 -13950 -13000
+Wire Wire Line
+	-13450 -13000 -13400 -13000
+Wire Wire Line
+	-12800 -13000 -12050 -13000
+Wire Wire Line
+	-13450 -12700 -13400 -12700
+Wire Wire Line
+	-13450 -12450 -13400 -12450
+Wire Wire Line
+	-11900 -13400 -11900 -11800
+Wire Wire Line
+	-13950 -12450 -14000 -12450
+Wire Wire Line
+	-14000 -12450 -14000 -13000
+Wire Wire Line
+	-13950 -12700 -14000 -12700
+Connection ~ -14000 -12700
+Wire Wire Line
+	-12050 -13000 -12050 -11400
+Wire Wire Line
+	-12800 -12700 -12150 -12700
+Wire Wire Line
+	-12150 -12700 -12150 -11300
+Wire Wire Line
+	-12800 -12450 -12350 -12450
+Wire Wire Line
+	-12350 -12450 -12350 -11200
+Wire Wire Line
+	-12700 -11800 -11750 -11800
+Connection ~ -12350 -11200
+Connection ~ -12150 -11300
+Connection ~ -12050 -11400
+Connection ~ -11900 -11800
+Connection ~ -11100 8700
+Connection ~ -11200 7950
+Connection ~ -11300 7200
+Connection ~ -11400 6550
+Connection ~ -11550 5900
+Connection ~ -11650 5200
+Connection ~ -11750 4400
+Connection ~ -11850 3800
+Wire Wire Line
+	-11750 4400 -10750 4400
+Wire Wire Line
+	-10750 4400 -10750 4450
+Connection ~ -10750 4450
+Wire Wire Line
+	-11750 1200 -11750 4400
+Wire Wire Line
+	-10750 4450 -950 4450
+Wire Wire Line
+	-12050 3750 -11850 3750
+Connection ~ -11850 3750
+Wire Wire Line
+	-12050 3850 -11750 3850
+Connection ~ -11750 3850
+Wire Wire Line
+	-12050 3950 -11650 3950
+Connection ~ -11650 3950
+Wire Wire Line
+	-12050 4050 -11550 4050
+Connection ~ -11550 4050
+Wire Wire Line
+	-12050 4150 -11400 4150
+Connection ~ -11400 4150
+Wire Wire Line
+	-12050 4250 -11300 4250
+Connection ~ -11300 4250
+Wire Wire Line
+	-12050 4350 -11200 4350
+Connection ~ -11200 4350
+Wire Wire Line
+	-12050 4450 -11100 4450
+Connection ~ -11100 4450
+Connection ~ -10550 2300
+Connection ~ -10650 2200
+Connection ~ -10750 2100
+Connection ~ -10850 2000
+Connection ~ -10950 1900
+Connection ~ -3450 1300
+Connection ~ -3100 1400
+Connection ~ -2800 1500
+Connection ~ -2450 1600
+Connection ~ -2100 1700
+Connection ~ -1750 1800
+Connection ~ -1400 1900
+Connection ~ -1100 2000
+Connection ~ -6950 2100
+Wire Wire Line
+	-6650 1250 -6650 2200
+Connection ~ -6650 2200
+Wire Wire Line
+	-6350 1250 -6350 2300
+Connection ~ -6350 2300
+Wire Wire Line
+	-15350 650  -15600 650 
+Wire Wire Line
+	-15600 750  -15350 750 
+Wire Wire Line
+	-15350 850  -15600 850 
+Wire Wire Line
+	-15600 950  -15350 950 
+Wire Wire Line
+	-15350 1050 -15600 1050
+Wire Wire Line
+	-15600 1150 -15350 1150
+Wire Wire Line
+	-15350 1250 -15600 1250
+Wire Wire Line
+	-15600 1350 -15350 1350
+Wire Wire Line
+	-15350 1450 -15600 1450
+Wire Wire Line
+	-15600 1550 -15350 1550
+Wire Wire Line
+	-15350 1650 -15600 1650
+Wire Wire Line
+	-15600 1750 -15350 1750
+Wire Wire Line
+	-15350 1850 -15600 1850
+Wire Wire Line
+	-15600 1950 -15350 1950
+Wire Wire Line
+	-13850 750  -13700 750 
+Wire Wire Line
+	-13700 850  -13850 850 
+Wire Wire Line
+	-13850 950  -13700 950 
+Wire Wire Line
+	-13700 1050 -13850 1050
+Wire Wire Line
+	-13850 1150 -13700 1150
+Wire Wire Line
+	-13700 1250 -13850 1250
+Wire Wire Line
+	-13850 1350 -13700 1350
+Wire Wire Line
+	-13700 1450 -13850 1450
+Wire Wire Line
+	-13700 1550 -13850 1550
+Wire Wire Line
+	-13850 1650 -13700 1650
+Wire Wire Line
+	-13700 1750 -13850 1750
+Wire Wire Line
+	-13850 1850 -13700 1850
+Wire Wire Line
+	-13700 1950 -13850 1950
+Wire Wire Line
+	-17300 -13600 -17550 -13600
+Wire Wire Line
+	-17550 -13500 -17300 -13500
+Wire Wire Line
+	-17300 -13400 -17550 -13400
+Wire Wire Line
+	-17550 -13300 -17300 -13300
+Wire Wire Line
+	-17300 -13200 -17550 -13200
+Wire Wire Line
+	-17550 -13100 -17300 -13100
+Wire Wire Line
+	-17300 -13000 -17550 -13000
+Wire Wire Line
+	-17550 -12900 -17300 -12900
+Wire Wire Line
+	-17300 -12800 -17550 -12800
+Wire Wire Line
+	-17550 -12700 -17300 -12700
+Wire Wire Line
+	-17300 -12600 -17550 -12600
+Wire Wire Line
+	-17550 -12500 -17300 -12500
+Wire Wire Line
+	-17300 -12400 -17550 -12400
+Wire Wire Line
+	-17550 -12300 -17300 -12300
+Wire Wire Line
+	-15800 -13500 -15650 -13500
+Wire Wire Line
+	-15650 -13400 -15800 -13400
+Wire Wire Line
+	-15800 -13300 -15650 -13300
+Wire Wire Line
+	-15650 -13200 -15800 -13200
+Wire Wire Line
+	-15800 -13100 -15650 -13100
+Wire Wire Line
+	-15650 -13000 -15800 -13000
+Wire Wire Line
+	-15800 -12900 -15650 -12900
+Wire Wire Line
+	-15650 -12800 -15800 -12800
+Wire Wire Line
+	-15650 -12700 -15800 -12700
+Wire Wire Line
+	-15800 -12600 -15650 -12600
+Wire Wire Line
+	-15650 -12500 -15800 -12500
+Wire Wire Line
+	-15800 -12400 -15650 -12400
+Wire Wire Line
+	-15650 -12300 -15800 -12300
+Connection ~ -16250 -10800
+Wire Wire Line
+	-16100 -10700 -16150 -10700
+Connection ~ -16150 -10700
+Connection ~ -16100 -10700
+Connection ~ -15950 -10600
+Connection ~ -15800 -10500
+Connection ~ -15650 -10400
+Wire Wire Line
+	-17400 -6300 -16500 -6300
+Connection ~ -16500 -6300
+Wire Wire Line
+	-17400 -6450 -16600 -6450
+Connection ~ -16600 -6450
+Wire Wire Line
+	-17400 -6550 -16700 -6550
+Connection ~ -16700 -6550
+Wire Wire Line
+	-17400 -6650 -16800 -6650
+Connection ~ -16800 -6650
+Wire Wire Line
+	-17400 -6750 -16900 -6750
+Connection ~ -16900 -6750
+Wire Wire Line
+	-17400 -6850 -17000 -6850
+Connection ~ -17000 -6850
+Wire Wire Line
+	-17400 -6950 -17100 -6950
+Connection ~ -17100 -6950
+Wire Wire Line
+	-17400 -7050 -17200 -7050
+Connection ~ -17200 -7050
+Connection ~ -11150 -10400
+Connection ~ -11450 -10500
+Connection ~ -11800 -10600
+Connection ~ -5950 -10700
+Connection ~ -6250 -10800
+Connection ~ -6600 -10900
+Connection ~ -6950 -11000
+Connection ~ -7300 -11100
+Connection ~ -7650 -11200
+Connection ~ -7950 -11300
+Connection ~ -8300 -11400
+Wire Wire Line
+	-10650 24450 350  24450
+Wire Wire Line
+	-10750 23700 350  23700
+Wire Wire Line
+	-10850 22950 350  22950
+Wire Wire Line
+	-11050 21650 350  21650
+Wire Wire Line
+	-10950 22300 350  22300
+Wire Wire Line
+	-11250 20200 350  20200
+Connection ~ -1100 19150
+Wire Wire Line
+	-1100 19150 -1000 19150
+Connection ~ -2350 23700
+Connection ~ -2000 23700
+Connection ~ -1650 23700
+Connection ~ -1350 23700
+Connection ~ -1000 23700
+Connection ~ -650 23700
+Connection ~ -300 23700
+Connection ~ 50   23700
+Connection ~ -2350 22950
+Connection ~ -2000 22950
+Connection ~ -1650 22950
+Connection ~ -1350 22950
+Connection ~ -1000 22950
+Connection ~ -650 22950
+Connection ~ -300 22950
+Connection ~ 50   22950
+Connection ~ -2350 22300
+Connection ~ -2000 22300
+Connection ~ -1650 22300
+Connection ~ -1350 22300
+Connection ~ -1000 22300
+Connection ~ -650 22300
+Connection ~ -300 22300
+Connection ~ 50   22300
+Connection ~ -2350 21650
+Connection ~ -2000 21650
+Connection ~ -1650 21650
+Connection ~ -1350 21650
+Connection ~ -1000 21650
+Connection ~ -650 21650
+Connection ~ -300 21650
+Connection ~ 50   21650
+Connection ~ -2350 20950
+Connection ~ -2000 20950
+Connection ~ -1650 20950
+Connection ~ -1350 20950
+Connection ~ -1000 20950
+Connection ~ -650 20950
+Connection ~ -300 20950
+Connection ~ 50   20950
+Connection ~ -2350 20200
+Connection ~ -2000 20200
+Connection ~ -1650 20200
+Connection ~ -1350 20200
+Connection ~ -1000 20200
+Connection ~ -650 20200
+Connection ~ -300 20200
+Connection ~ 50   20200
+Connection ~ -2350 19550
+Connection ~ -2000 19550
+Connection ~ -1650 19550
+Connection ~ -1350 19550
+Connection ~ -1000 19550
+Connection ~ -650 19550
+Connection ~ -300 19550
+Connection ~ 50   19550
+Connection ~ -2350 24450
+Connection ~ -2000 24450
+Connection ~ -1650 24450
+Connection ~ -1350 24450
+Connection ~ -1000 24450
+Connection ~ -650 24450
+Connection ~ -300 24450
+Connection ~ 50   24450
+Connection ~ -100 23300
+Wire Wire Line
+	-100 23300 50   23300
+Connection ~ -400 23300
+Wire Wire Line
+	-400 23300 -300 23300
+Connection ~ -750 23300
+Wire Wire Line
+	-750 23300 -650 23300
+Connection ~ -1100 23300
+Wire Wire Line
+	-1100 23300 -1000 23300
+Connection ~ -1450 23300
+Wire Wire Line
+	-1450 23300 -1350 23300
+Connection ~ -1800 23300
+Wire Wire Line
+	-1800 23300 -1650 23300
+Connection ~ -100 22550
+Wire Wire Line
+	-100 22550 50   22550
+Connection ~ -400 22550
+Wire Wire Line
+	-400 22550 -300 22550
+Connection ~ -750 22550
+Wire Wire Line
+	-750 22550 -650 22550
+Connection ~ -1100 22550
+Wire Wire Line
+	-1100 22550 -1000 22550
+Connection ~ -1450 22550
+Wire Wire Line
+	-1450 22550 -1350 22550
+Connection ~ -1800 22550
+Wire Wire Line
+	-1800 22550 -1650 22550
+Connection ~ -1800 21900
+Wire Wire Line
+	-1800 21900 -1650 21900
+Connection ~ -1450 21900
+Wire Wire Line
+	-1450 21900 -1350 21900
+Connection ~ -1100 21900
+Wire Wire Line
+	-1100 21900 -1000 21900
+Connection ~ -750 21900
+Wire Wire Line
+	-750 21900 -650 21900
+Connection ~ -400 21900
+Wire Wire Line
+	-400 21900 -300 21900
+Connection ~ -100 21900
+Wire Wire Line
+	-100 21900 50   21900
+Connection ~ -100 21250
+Wire Wire Line
+	-100 21250 50   21250
+Connection ~ -400 21250
+Wire Wire Line
+	-400 21250 -300 21250
+Connection ~ -750 21250
+Wire Wire Line
+	-750 21250 -650 21250
+Connection ~ -1100 21250
+Wire Wire Line
+	-1100 21250 -1000 21250
+Connection ~ -1450 21250
+Wire Wire Line
+	-1450 21250 -1350 21250
+Connection ~ -1800 21250
+Wire Wire Line
+	-1800 21250 -1650 21250
+Connection ~ -1800 20550
+Wire Wire Line
+	-1800 20550 -1650 20550
+Connection ~ -1450 20550
+Wire Wire Line
+	-1450 20550 -1350 20550
+Connection ~ -1100 20550
+Wire Wire Line
+	-1100 20550 -1000 20550
+Connection ~ -750 20550
+Wire Wire Line
+	-750 20550 -650 20550
+Connection ~ -400 20550
+Wire Wire Line
+	-400 20550 -300 20550
+Connection ~ -100 20550
+Wire Wire Line
+	-100 20550 50   20550
+Connection ~ -100 19800
+Wire Wire Line
+	-100 19800 50   19800
+Connection ~ -400 19800
+Wire Wire Line
+	-400 19800 -300 19800
+Connection ~ -750 19800
+Wire Wire Line
+	-750 19800 -650 19800
+Connection ~ -1100 19800
+Wire Wire Line
+	-1100 19800 -1000 19800
+Connection ~ -1450 19800
+Wire Wire Line
+	-1450 19800 -1350 19800
+Connection ~ -1800 19800
+Wire Wire Line
+	-1800 19800 -1650 19800
+Connection ~ -100 19150
+Wire Wire Line
+	-100 19150 50   19150
+Connection ~ -400 19150
+Wire Wire Line
+	-400 19150 -300 19150
+Connection ~ -750 19150
+Wire Wire Line
+	-650 19150 -750 19150
+Connection ~ -1450 19150
+Wire Wire Line
+	-1350 19150 -1450 19150
+Connection ~ -1800 19150
+Wire Wire Line
+	-1650 19150 -1800 19150
+Connection ~ -2100 19150
+Wire Wire Line
+	-2000 19150 -2100 19150
+Connection ~ -2100 19800
+Wire Wire Line
+	-2100 19800 -2000 19800
+Connection ~ -2100 20550
+Wire Wire Line
+	-2100 20550 -2000 20550
+Connection ~ -2100 21250
+Wire Wire Line
+	-2100 21250 -2000 21250
+Connection ~ -2100 21900
+Wire Wire Line
+	-2100 21900 -2000 21900
+Connection ~ -2100 22550
+Wire Wire Line
+	-2100 22550 -2000 22550
+Connection ~ -2100 23300
+Wire Wire Line
+	-2100 23300 -2000 23300
+Connection ~ -2450 23300
+Wire Wire Line
+	-2450 23300 -2350 23300
+Connection ~ -2450 22550
+Wire Wire Line
+	-2450 22550 -2350 22550
+Connection ~ -2450 21900
+Wire Wire Line
+	-2450 21900 -2350 21900
+Connection ~ -2450 21250
+Wire Wire Line
+	-2450 21250 -2350 21250
+Connection ~ -2450 20550
+Wire Wire Line
+	-2450 20550 -2350 20550
+Connection ~ -2450 19800
+Wire Wire Line
+	-2450 19800 -2350 19800
+Connection ~ -2450 19150
+Wire Wire Line
+	-2450 19150 -2350 19150
+Wire Wire Line
+	-100 24050 50   24050
+Wire Wire Line
+	-100 15850 -100 24050
+Wire Wire Line
+	-400 24050 -300 24050
+Wire Wire Line
+	-400 15750 -400 24050
+Wire Wire Line
+	-750 24050 -650 24050
+Wire Wire Line
+	-750 15650 -750 24050
+Wire Wire Line
+	-1100 24050 -1000 24050
+Wire Wire Line
+	-1450 24050 -1350 24050
+Wire Wire Line
+	-1450 15450 -1450 24050
+Wire Wire Line
+	-1800 24050 -1650 24050
+Wire Wire Line
+	-1800 15350 -1800 24050
+Wire Wire Line
+	-2100 24050 -2000 24050
+Wire Wire Line
+	-2450 24050 -2350 24050
+Wire Wire Line
+	-2450 15150 -2450 24050
+Connection ~ 50   21900
+Connection ~ -300 21900
+Connection ~ -650 21900
+Connection ~ -1000 21900
+Connection ~ -1350 21900
+Connection ~ -1650 21900
+Connection ~ -2000 21900
+Connection ~ -2350 21900
+Connection ~ 50   19150
+Connection ~ -300 19150
+Connection ~ -650 19150
+Connection ~ -1000 19150
+Connection ~ -1350 19150
+Connection ~ -1650 19150
+Connection ~ -2000 19150
+Connection ~ -2350 19150
+Connection ~ 50   19800
+Connection ~ -300 19800
+Connection ~ -650 19800
+Connection ~ -1000 19800
+Connection ~ -1350 19800
+Connection ~ -1650 19800
+Connection ~ -2000 19800
+Connection ~ -2350 19800
+Connection ~ 50   20550
+Connection ~ -300 20550
+Connection ~ -650 20550
+Connection ~ -1000 20550
+Connection ~ -1350 20550
+Connection ~ -1650 20550
+Connection ~ -2000 20550
+Connection ~ -2350 20550
+Connection ~ -300 21250
+Connection ~ 50   21250
+Connection ~ -650 21250
+Connection ~ -1000 21250
+Connection ~ -1350 21250
+Connection ~ -1650 21250
+Connection ~ -2000 21250
+Connection ~ -2350 21250
+Connection ~ -2350 22550
+Connection ~ -2000 22550
+Connection ~ -1650 22550
+Connection ~ -1350 22550
+Connection ~ -1000 22550
+Connection ~ -650 22550
+Connection ~ -300 22550
+Connection ~ 50   22550
+Connection ~ -2350 23300
+Connection ~ -2000 23300
+Connection ~ -1650 23300
+Connection ~ -1350 23300
+Connection ~ -1000 23300
+Connection ~ -650 23300
+Connection ~ -300 23300
+Connection ~ 50   23300
+Connection ~ 50   24050
+Connection ~ -300 24050
+Connection ~ -650 24050
+Connection ~ -1000 24050
+Connection ~ -1350 24050
+Connection ~ -1650 24050
+Connection ~ -2000 24050
+Connection ~ -2350 24050
+Wire Wire Line
+	50   21650 100  21650
+Connection ~ 350  20200
+Connection ~ 350  20950
+Connection ~ -4600 19150
+Wire Wire Line
+	-4500 19150 -4600 19150
+Connection ~ -5850 23700
+Connection ~ -5500 23700
+Connection ~ -5150 23700
+Connection ~ -4850 23700
+Connection ~ -4500 23700
+Connection ~ -4150 23700
+Connection ~ -3800 23700
+Connection ~ -3450 23700
+Connection ~ -5850 22950
+Connection ~ -5500 22950
+Connection ~ -5150 22950
+Connection ~ -4850 22950
+Connection ~ -4500 22950
+Connection ~ -4150 22950
+Connection ~ -3800 22950
+Connection ~ -3450 22950
+Connection ~ -5850 22300
+Connection ~ -5500 22300
+Connection ~ -5150 22300
+Connection ~ -4850 22300
+Connection ~ -4500 22300
+Connection ~ -4150 22300
+Connection ~ -3800 22300
+Connection ~ -3450 22300
+Connection ~ -5850 21650
+Connection ~ -5500 21650
+Connection ~ -5150 21650
+Connection ~ -4850 21650
+Connection ~ -4500 21650
+Connection ~ -4150 21650
+Connection ~ -3800 21650
+Connection ~ -3450 21650
+Connection ~ -5850 20950
+Connection ~ -5500 20950
+Connection ~ -5150 20950
+Connection ~ -4850 20950
+Connection ~ -4500 20950
+Connection ~ -4150 20950
+Connection ~ -3800 20950
+Connection ~ -3450 20950
+Connection ~ -5850 20200
+Connection ~ -5500 20200
+Connection ~ -5150 20200
+Connection ~ -4850 20200
+Connection ~ -4500 20200
+Connection ~ -4150 20200
+Connection ~ -3800 20200
+Connection ~ -3450 20200
+Connection ~ -5850 19550
+Connection ~ -5500 19550
+Connection ~ -5150 19550
+Connection ~ -4850 19550
+Connection ~ -4500 19550
+Connection ~ -4150 19550
+Connection ~ -3800 19550
+Connection ~ -3450 19550
+Connection ~ -5850 24450
+Connection ~ -5500 24450
+Connection ~ -5150 24450
+Connection ~ -4850 24450
+Connection ~ -4500 24450
+Connection ~ -4150 24450
+Connection ~ -3800 24450
+Connection ~ -3450 24450
+Connection ~ -3600 23300
+Wire Wire Line
+	-3600 23300 -3450 23300
+Connection ~ -3900 23300
+Wire Wire Line
+	-3900 23300 -3800 23300
+Connection ~ -4250 23300
+Wire Wire Line
+	-4250 23300 -4150 23300
+Connection ~ -4600 23300
+Wire Wire Line
+	-4600 23300 -4500 23300
+Connection ~ -4950 23300
+Wire Wire Line
+	-4950 23300 -4850 23300
+Connection ~ -5300 23300
+Wire Wire Line
+	-5300 23300 -5150 23300
+Connection ~ -3600 22550
+Wire Wire Line
+	-3600 22550 -3450 22550
+Connection ~ -3900 22550
+Wire Wire Line
+	-3900 22550 -3800 22550
+Connection ~ -4250 22550
+Wire Wire Line
+	-4250 22550 -4150 22550
+Connection ~ -4600 22550
+Wire Wire Line
+	-4600 22550 -4500 22550
+Connection ~ -4950 22550
+Wire Wire Line
+	-4950 22550 -4850 22550
+Connection ~ -5300 22550
+Wire Wire Line
+	-5300 22550 -5150 22550
+Connection ~ -5300 21900
+Wire Wire Line
+	-5300 21900 -5150 21900
+Connection ~ -4950 21900
+Wire Wire Line
+	-4950 21900 -4850 21900
+Connection ~ -4600 21900
+Wire Wire Line
+	-4600 21900 -4500 21900
+Connection ~ -4250 21900
+Wire Wire Line
+	-4250 21900 -4150 21900
+Connection ~ -3900 21900
+Wire Wire Line
+	-3900 21900 -3800 21900
+Connection ~ -3600 21900
+Wire Wire Line
+	-3600 21900 -3450 21900
+Connection ~ -3600 21250
+Wire Wire Line
+	-3600 21250 -3450 21250
+Connection ~ -3900 21250
+Wire Wire Line
+	-3900 21250 -3800 21250
+Connection ~ -4250 21250
+Wire Wire Line
+	-4250 21250 -4150 21250
+Connection ~ -4600 21250
+Wire Wire Line
+	-4600 21250 -4500 21250
+Connection ~ -4950 21250
+Wire Wire Line
+	-4950 21250 -4850 21250
+Connection ~ -5300 21250
+Wire Wire Line
+	-5300 21250 -5150 21250
+Connection ~ -5300 20550
+Wire Wire Line
+	-5300 20550 -5150 20550
+Connection ~ -4950 20550
+Wire Wire Line
+	-4950 20550 -4850 20550
+Connection ~ -4600 20550
+Wire Wire Line
+	-4600 20550 -4500 20550
+Connection ~ -4250 20550
+Wire Wire Line
+	-4250 20550 -4150 20550
+Connection ~ -3900 20550
+Wire Wire Line
+	-3900 20550 -3800 20550
+Connection ~ -3600 20550
+Wire Wire Line
+	-3600 20550 -3450 20550
+Connection ~ -3600 19800
+Wire Wire Line
+	-3600 19800 -3450 19800
+Connection ~ -3900 19800
+Wire Wire Line
+	-3900 19800 -3800 19800
+Connection ~ -4250 19800
+Wire Wire Line
+	-4250 19800 -4150 19800
+Connection ~ -4600 19800
+Wire Wire Line
+	-4600 19800 -4500 19800
+Connection ~ -4950 19800
+Wire Wire Line
+	-4950 19800 -4850 19800
+Connection ~ -5300 19800
+Wire Wire Line
+	-5300 19800 -5150 19800
+Connection ~ -3600 19150
+Wire Wire Line
+	-3450 19150 -3600 19150
+Connection ~ -3900 19150
+Wire Wire Line
+	-3800 19150 -3900 19150
+Connection ~ -4250 19150
+Wire Wire Line
+	-4150 19150 -4250 19150
+Connection ~ -4950 19150
+Wire Wire Line
+	-4850 19150 -4950 19150
+Connection ~ -5300 19150
+Wire Wire Line
+	-5150 19150 -5300 19150
+Connection ~ -5600 19150
+Wire Wire Line
+	-5500 19150 -5600 19150
+Connection ~ -5600 19800
+Wire Wire Line
+	-5600 19800 -5500 19800
+Connection ~ -5600 20550
+Wire Wire Line
+	-5600 20550 -5500 20550
+Connection ~ -5600 21250
+Wire Wire Line
+	-5600 21250 -5500 21250
+Connection ~ -5600 21900
+Wire Wire Line
+	-5600 21900 -5500 21900
+Connection ~ -5600 22550
+Wire Wire Line
+	-5600 22550 -5500 22550
+Connection ~ -5600 23300
+Wire Wire Line
+	-5600 23300 -5500 23300
+Connection ~ -5950 23300
+Wire Wire Line
+	-5950 23300 -5850 23300
+Connection ~ -5950 22550
+Wire Wire Line
+	-5950 22550 -5850 22550
+Connection ~ -5950 21900
+Wire Wire Line
+	-5950 21900 -5850 21900
+Connection ~ -5950 21250
+Wire Wire Line
+	-5950 21250 -5850 21250
+Connection ~ -5950 20550
+Wire Wire Line
+	-5950 20550 -5850 20550
+Connection ~ -5950 19800
+Wire Wire Line
+	-5950 19800 -5850 19800
+Connection ~ -5950 19150
+Wire Wire Line
+	-5950 19150 -5850 19150
+Wire Wire Line
+	-3600 24050 -3450 24050
+Wire Wire Line
+	-3600 16500 -3600 24050
+Wire Wire Line
+	-3900 24050 -3800 24050
+Wire Wire Line
+	-3900 16700 -3900 24050
+Wire Wire Line
+	-4250 24050 -4150 24050
+Wire Wire Line
+	-4250 16900 -4250 24050
+Wire Wire Line
+	-4600 24050 -4500 24050
+Wire Wire Line
+	-4600 17050 -4600 24050
+Wire Wire Line
+	-4950 24050 -4850 24050
+Wire Wire Line
+	-4950 17200 -4950 24050
+Wire Wire Line
+	-5300 24050 -5150 24050
+Wire Wire Line
+	-5300 16150 -5300 24050
+Wire Wire Line
+	-5600 24050 -5500 24050
+Wire Wire Line
+	-5600 16050 -5600 24050
+Wire Wire Line
+	-5950 24050 -5850 24050
+Wire Wire Line
+	-5950 15950 -5950 24050
+Connection ~ -3450 21900
+Connection ~ -3800 21900
+Connection ~ -4150 21900
+Connection ~ -4500 21900
+Connection ~ -4850 21900
+Connection ~ -5150 21900
+Connection ~ -5500 21900
+Connection ~ -5850 21900
+Connection ~ -3450 19150
+Connection ~ -3800 19150
+Connection ~ -4150 19150
+Connection ~ -4500 19150
+Connection ~ -4850 19150
+Connection ~ -5150 19150
+Connection ~ -5500 19150
+Connection ~ -5850 19150
+Connection ~ -3450 19800
+Connection ~ -3800 19800
+Connection ~ -4150 19800
+Connection ~ -4500 19800
+Connection ~ -4850 19800
+Connection ~ -5150 19800
+Connection ~ -5500 19800
+Connection ~ -5850 19800
+Connection ~ -3450 20550
+Connection ~ -3800 20550
+Connection ~ -4150 20550
+Connection ~ -4500 20550
+Connection ~ -4850 20550
+Connection ~ -5150 20550
+Connection ~ -5500 20550
+Connection ~ -5850 20550
+Connection ~ -3800 21250
+Connection ~ -3450 21250
+Connection ~ -4150 21250
+Connection ~ -4500 21250
+Connection ~ -4850 21250
+Connection ~ -5150 21250
+Connection ~ -5500 21250
+Connection ~ -5850 21250
+Connection ~ -5850 22550
+Connection ~ -5500 22550
+Connection ~ -5150 22550
+Connection ~ -4850 22550
+Connection ~ -4500 22550
+Connection ~ -4150 22550
+Connection ~ -3800 22550
+Connection ~ -3450 22550
+Connection ~ -5850 23300
+Connection ~ -5500 23300
+Connection ~ -5150 23300
+Connection ~ -4850 23300
+Connection ~ -4500 23300
+Connection ~ -4150 23300
+Connection ~ -3800 23300
+Connection ~ -3450 23300
+Connection ~ -3450 24050
+Connection ~ -3800 24050
+Connection ~ -4150 24050
+Connection ~ -4500 24050
+Connection ~ -4850 24050
+Connection ~ -5150 24050
+Connection ~ -5500 24050
+Connection ~ -5850 24050
+Wire Wire Line
+	-3450 21650 -3400 21650
+Wire Wire Line
+	-8750 14850 -8350 14850
+Wire Wire Line
+	-6850 14750 -6850 14850
+Wire Wire Line
+	-6850 14900 -6850 14950
+Wire Wire Line
+	-6850 14900 -5900 14900
+Wire Wire Line
+	-6850 15050 -5900 15050
+Connection ~ -8450 14850
+Wire Wire Line
+	-11150 20950 350  20950
+Connection ~ 350  19550
+Wire Wire Line
+	-11350 19550 350  19550
+Wire Wire Line
+	-2100 15250 -2100 24050
+Wire Wire Line
+	-8350 14950 -11350 14950
+Wire Wire Line
+	-11350 14950 -11350 19550
+Wire Wire Line
+	-8350 15050 -11250 15050
+Wire Wire Line
+	-11250 15050 -11250 20200
+Wire Wire Line
+	-8350 15150 -11150 15150
+Wire Wire Line
+	-11150 15150 -11150 20950
+Wire Wire Line
+	-8350 15250 -11050 15250
+Wire Wire Line
+	-11050 15250 -11050 21650
+Wire Wire Line
+	-8350 15350 -10950 15350
+Wire Wire Line
+	-10950 15350 -10950 22300
+Wire Wire Line
+	-8350 15450 -10850 15450
+Wire Wire Line
+	-10850 15450 -10850 22950
+Wire Wire Line
+	-8350 15550 -10750 15550
+Wire Wire Line
+	-10750 15550 -10750 23700
+Wire Wire Line
+	-8350 15650 -10650 15650
+Wire Wire Line
+	-10650 15650 -10650 24450
+Wire Wire Line
+	-1100 15550 -1100 24050
+Wire Wire Line
+	-12200 15750 -8350 15750
+Wire Wire Line
+	-10400 15750 -10400 16500
+Wire Wire Line
+	-10400 16500 -3600 16500
+Wire Wire Line
+	-12200 15850 -8350 15850
+Wire Wire Line
+	-10250 15850 -10250 16700
+Wire Wire Line
+	-10250 16700 -3900 16700
+Wire Wire Line
+	-12200 15950 -8350 15950
+Wire Wire Line
+	-10100 15950 -10100 16900
+Wire Wire Line
+	-10100 16900 -4250 16900
+Wire Wire Line
+	-12200 16050 -8350 16050
+Wire Wire Line
+	-9950 16050 -9950 17050
+Wire Wire Line
+	-9950 17050 -4600 17050
+Wire Wire Line
+	-12200 16150 -8350 16150
+Wire Wire Line
+	-9800 16150 -9800 17200
+Wire Wire Line
+	-9800 17200 -4950 17200
+Wire Wire Line
+	-6850 16150 -5000 16150
+Wire Wire Line
+	-6850 16050 -5050 16050
+Wire Wire Line
+	-6850 15950 -5500 15950
+Wire Wire Line
+	-6850 15850 150  15850
+Wire Wire Line
+	-6850 15750 150  15750
+Wire Wire Line
+	-6850 15650 150  15650
+Wire Wire Line
+	-6850 15550 150  15550
+Wire Wire Line
+	-6850 15450 150  15450
+Wire Wire Line
+	-6850 15350 150  15350
+Wire Wire Line
+	-6850 15250 150  15250
+Wire Wire Line
+	-6850 15150 150  15150
+Wire Wire Line
+	-8600 13550 -8600 14950
+Wire Wire Line
+	-8700 13150 -8700 14850
+Wire Wire Line
+	-8700 13150 -8000 13150
+Wire Wire Line
+	-7600 13150 -6050 13150
+Wire Wire Line
+	-8600 13550 -8550 13550
+Wire Wire Line
+	-8150 13550 -8100 13550
+Wire Wire Line
+	-7600 13550 -7550 13550
+Wire Wire Line
+	-6950 13550 -6200 13550
+Wire Wire Line
+	-7600 13850 -7550 13850
+Wire Wire Line
+	-7600 14100 -7550 14100
+Wire Wire Line
+	-6050 13150 -6050 14750
+Wire Wire Line
+	-8100 14100 -8150 14100
+Wire Wire Line
+	-8150 14100 -8150 13550
+Wire Wire Line
+	-8100 13850 -8150 13850
+Connection ~ -8150 13850
+Wire Wire Line
+	-6200 13550 -6200 15150
+Wire Wire Line
+	-6950 13850 -6300 13850
+Wire Wire Line
+	-6300 13850 -6300 15250
+Wire Wire Line
+	-6950 14100 -6500 14100
+Wire Wire Line
+	-6500 14100 -6500 15350
+Wire Wire Line
+	-6850 14750 -5900 14750
+Connection ~ -6500 15350
+Connection ~ -6300 15250
+Connection ~ -6200 15150
+Connection ~ -6050 14750
+Wire Wire Line
+	-11450 12950 -11700 12950
+Wire Wire Line
+	-11700 13050 -11450 13050
+Wire Wire Line
+	-11450 13150 -11700 13150
+Wire Wire Line
+	-11700 13250 -11450 13250
+Wire Wire Line
+	-11450 13350 -11700 13350
+Wire Wire Line
+	-11700 13450 -11450 13450
+Wire Wire Line
+	-11450 13550 -11700 13550
+Wire Wire Line
+	-11700 13650 -11450 13650
+Wire Wire Line
+	-11450 13750 -11700 13750
+Wire Wire Line
+	-11700 13850 -11450 13850
+Wire Wire Line
+	-11450 13950 -11700 13950
+Wire Wire Line
+	-11700 14050 -11450 14050
+Wire Wire Line
+	-11450 14150 -11700 14150
+Wire Wire Line
+	-11700 14250 -11450 14250
+Wire Wire Line
+	-9950 13050 -9800 13050
+Wire Wire Line
+	-9800 13150 -9950 13150
+Wire Wire Line
+	-9950 13250 -9800 13250
+Wire Wire Line
+	-9800 13350 -9950 13350
+Wire Wire Line
+	-9950 13450 -9800 13450
+Wire Wire Line
+	-9800 13550 -9950 13550
+Wire Wire Line
+	-9950 13650 -9800 13650
+Wire Wire Line
+	-9800 13750 -9950 13750
+Wire Wire Line
+	-9800 13850 -9950 13850
+Wire Wire Line
+	-9950 13950 -9800 13950
+Wire Wire Line
+	-9800 14050 -9950 14050
+Wire Wire Line
+	-9950 14150 -9800 14150
+Wire Wire Line
+	-9800 14250 -9950 14250
+Connection ~ -10400 15750
+Wire Wire Line
+	-10250 15850 -10300 15850
+Connection ~ -10300 15850
+Connection ~ -10250 15850
+Connection ~ -10100 15950
+Connection ~ -9950 16050
+Connection ~ -9800 16150
+Wire Wire Line
+	-11550 20250 -10650 20250
+Connection ~ -10650 20250
+Wire Wire Line
+	-11550 20100 -10750 20100
+Connection ~ -10750 20100
+Wire Wire Line
+	-11550 20000 -10850 20000
+Connection ~ -10850 20000
+Wire Wire Line
+	-11550 19900 -10950 19900
+Connection ~ -10950 19900
+Wire Wire Line
+	-11550 19800 -11050 19800
+Connection ~ -11050 19800
+Wire Wire Line
+	-11550 19700 -11150 19700
+Connection ~ -11150 19700
+Wire Wire Line
+	-11550 19600 -11250 19600
+Connection ~ -11250 19600
+Wire Wire Line
+	-11550 19500 -11350 19500
+Connection ~ -11350 19500
+Connection ~ -5300 16150
+Connection ~ -5600 16050
+Connection ~ -5950 15950
+Connection ~ -100 15850
+Connection ~ -400 15750
+Connection ~ -750 15650
+Connection ~ -1100 15550
+Connection ~ -1450 15450
+Connection ~ -1800 15350
+Connection ~ -2100 15250
+Connection ~ -2450 15150
+Wire Wire Line
+	7000 21300 18000 21300
+Wire Wire Line
+	6900 20550 18000 20550
+Wire Wire Line
+	6800 19800 18000 19800
+Wire Wire Line
+	6600 18500 18000 18500
+Wire Wire Line
+	6700 19150 18000 19150
+Wire Wire Line
+	6400 17050 18000 17050
+Connection ~ 16550 16000
+Wire Wire Line
+	16550 16000 16650 16000
+Connection ~ 15300 20550
+Connection ~ 15650 20550
+Connection ~ 16000 20550
+Connection ~ 16300 20550
+Connection ~ 16650 20550
+Connection ~ 17000 20550
+Connection ~ 17350 20550
+Connection ~ 17700 20550
+Connection ~ 15300 19800
+Connection ~ 15650 19800
+Connection ~ 16000 19800
+Connection ~ 16300 19800
+Connection ~ 16650 19800
+Connection ~ 17000 19800
+Connection ~ 17350 19800
+Connection ~ 17700 19800
+Connection ~ 15300 19150
+Connection ~ 15650 19150
+Connection ~ 16000 19150
+Connection ~ 16300 19150
+Connection ~ 16650 19150
+Connection ~ 17000 19150
+Connection ~ 17350 19150
+Connection ~ 17700 19150
+Connection ~ 15300 18500
+Connection ~ 15650 18500
+Connection ~ 16000 18500
+Connection ~ 16300 18500
+Connection ~ 16650 18500
+Connection ~ 17000 18500
+Connection ~ 17350 18500
+Connection ~ 17700 18500
+Connection ~ 15300 17800
+Connection ~ 15650 17800
+Connection ~ 16000 17800
+Connection ~ 16300 17800
+Connection ~ 16650 17800
+Connection ~ 17000 17800
+Connection ~ 17350 17800
+Connection ~ 17700 17800
+Connection ~ 15300 17050
+Connection ~ 15650 17050
+Connection ~ 16000 17050
+Connection ~ 16300 17050
+Connection ~ 16650 17050
+Connection ~ 17000 17050
+Connection ~ 17350 17050
+Connection ~ 17700 17050
+Connection ~ 15300 16400
+Connection ~ 15650 16400
+Connection ~ 16000 16400
+Connection ~ 16300 16400
+Connection ~ 16650 16400
+Connection ~ 17000 16400
+Connection ~ 17350 16400
+Connection ~ 17700 16400
+Connection ~ 15300 21300
+Connection ~ 15650 21300
+Connection ~ 16000 21300
+Connection ~ 16300 21300
+Connection ~ 16650 21300
+Connection ~ 17000 21300
+Connection ~ 17350 21300
+Connection ~ 17700 21300
+Connection ~ 17550 20150
+Wire Wire Line
+	17550 20150 17700 20150
+Connection ~ 17250 20150
+Wire Wire Line
+	17250 20150 17350 20150
+Connection ~ 16900 20150
+Wire Wire Line
+	16900 20150 17000 20150
+Connection ~ 16550 20150
+Wire Wire Line
+	16550 20150 16650 20150
+Connection ~ 16200 20150
+Wire Wire Line
+	16200 20150 16300 20150
+Connection ~ 15850 20150
+Wire Wire Line
+	15850 20150 16000 20150
+Connection ~ 17550 19400
+Wire Wire Line
+	17550 19400 17700 19400
+Connection ~ 17250 19400
+Wire Wire Line
+	17250 19400 17350 19400
+Connection ~ 16900 19400
+Wire Wire Line
+	16900 19400 17000 19400
+Connection ~ 16550 19400
+Wire Wire Line
+	16550 19400 16650 19400
+Connection ~ 16200 19400
+Wire Wire Line
+	16200 19400 16300 19400
+Connection ~ 15850 19400
+Wire Wire Line
+	15850 19400 16000 19400
+Connection ~ 15850 18750
+Wire Wire Line
+	15850 18750 16000 18750
+Connection ~ 16200 18750
+Wire Wire Line
+	16200 18750 16300 18750
+Connection ~ 16550 18750
+Wire Wire Line
+	16550 18750 16650 18750
+Connection ~ 16900 18750
+Wire Wire Line
+	16900 18750 17000 18750
+Connection ~ 17250 18750
+Wire Wire Line
+	17250 18750 17350 18750
+Connection ~ 17550 18750
+Wire Wire Line
+	17550 18750 17700 18750
+Connection ~ 17550 18100
+Wire Wire Line
+	17550 18100 17700 18100
+Connection ~ 17250 18100
+Wire Wire Line
+	17250 18100 17350 18100
+Connection ~ 16900 18100
+Wire Wire Line
+	16900 18100 17000 18100
+Connection ~ 16550 18100
+Wire Wire Line
+	16550 18100 16650 18100
+Connection ~ 16200 18100
+Wire Wire Line
+	16200 18100 16300 18100
+Connection ~ 15850 18100
+Wire Wire Line
+	15850 18100 16000 18100
+Connection ~ 15850 17400
+Wire Wire Line
+	15850 17400 16000 17400
+Connection ~ 16200 17400
+Wire Wire Line
+	16200 17400 16300 17400
+Connection ~ 16550 17400
+Wire Wire Line
+	16550 17400 16650 17400
+Connection ~ 16900 17400
+Wire Wire Line
+	16900 17400 17000 17400
+Connection ~ 17250 17400
+Wire Wire Line
+	17250 17400 17350 17400
+Connection ~ 17550 17400
+Wire Wire Line
+	17550 17400 17700 17400
+Connection ~ 17550 16650
+Wire Wire Line
+	17550 16650 17700 16650
+Connection ~ 17250 16650
+Wire Wire Line
+	17250 16650 17350 16650
+Connection ~ 16900 16650
+Wire Wire Line
+	16900 16650 17000 16650
+Connection ~ 16550 16650
+Wire Wire Line
+	16550 16650 16650 16650
+Connection ~ 16200 16650
+Wire Wire Line
+	16200 16650 16300 16650
+Connection ~ 15850 16650
+Wire Wire Line
+	15850 16650 16000 16650
+Connection ~ 17550 16000
+Wire Wire Line
+	17550 16000 17700 16000
+Connection ~ 17250 16000
+Wire Wire Line
+	17250 16000 17350 16000
+Connection ~ 16900 16000
+Wire Wire Line
+	17000 16000 16900 16000
+Connection ~ 16200 16000
+Wire Wire Line
+	16300 16000 16200 16000
+Connection ~ 15850 16000
+Wire Wire Line
+	16000 16000 15850 16000
+Connection ~ 15550 16000
+Wire Wire Line
+	15650 16000 15550 16000
+Connection ~ 15550 16650
+Wire Wire Line
+	15550 16650 15650 16650
+Connection ~ 15550 17400
+Wire Wire Line
+	15550 17400 15650 17400
+Connection ~ 15550 18100
+Wire Wire Line
+	15550 18100 15650 18100
+Connection ~ 15550 18750
+Wire Wire Line
+	15550 18750 15650 18750
+Connection ~ 15550 19400
+Wire Wire Line
+	15550 19400 15650 19400
+Connection ~ 15550 20150
+Wire Wire Line
+	15550 20150 15650 20150
+Connection ~ 15200 20150
+Wire Wire Line
+	15200 20150 15300 20150
+Connection ~ 15200 19400
+Wire Wire Line
+	15200 19400 15300 19400
+Connection ~ 15200 18750
+Wire Wire Line
+	15200 18750 15300 18750
+Connection ~ 15200 18100
+Wire Wire Line
+	15200 18100 15300 18100
+Connection ~ 15200 17400
+Wire Wire Line
+	15200 17400 15300 17400
+Connection ~ 15200 16650
+Wire Wire Line
+	15200 16650 15300 16650
+Connection ~ 15200 16000
+Wire Wire Line
+	15200 16000 15300 16000
+Wire Wire Line
+	17550 20900 17700 20900
+Wire Wire Line
+	17550 12700 17550 20900
+Wire Wire Line
+	17250 20900 17350 20900
+Wire Wire Line
+	17250 12600 17250 20900
+Wire Wire Line
+	16900 20900 17000 20900
+Wire Wire Line
+	16900 12500 16900 20900
+Wire Wire Line
+	16550 20900 16650 20900
+Wire Wire Line
+	16200 20900 16300 20900
+Wire Wire Line
+	16200 12300 16200 20900
+Wire Wire Line
+	15850 20900 16000 20900
+Wire Wire Line
+	15850 12200 15850 20900
+Wire Wire Line
+	15550 20900 15650 20900
+Wire Wire Line
+	15200 20900 15300 20900
+Wire Wire Line
+	15200 12000 15200 20900
+Connection ~ 17700 18750
+Connection ~ 17350 18750
+Connection ~ 17000 18750
+Connection ~ 16650 18750
+Connection ~ 16300 18750
+Connection ~ 16000 18750
+Connection ~ 15650 18750
+Connection ~ 15300 18750
+Connection ~ 17700 16000
+Connection ~ 17350 16000
+Connection ~ 17000 16000
+Connection ~ 16650 16000
+Connection ~ 16300 16000
+Connection ~ 16000 16000
+Connection ~ 15650 16000
+Connection ~ 15300 16000
+Connection ~ 17700 16650
+Connection ~ 17350 16650
+Connection ~ 17000 16650
+Connection ~ 16650 16650
+Connection ~ 16300 16650
+Connection ~ 16000 16650
+Connection ~ 15650 16650
+Connection ~ 15300 16650
+Connection ~ 17700 17400
+Connection ~ 17350 17400
+Connection ~ 17000 17400
+Connection ~ 16650 17400
+Connection ~ 16300 17400
+Connection ~ 16000 17400
+Connection ~ 15650 17400
+Connection ~ 15300 17400
+Connection ~ 17350 18100
+Connection ~ 17700 18100
+Connection ~ 17000 18100
+Connection ~ 16650 18100
+Connection ~ 16300 18100
+Connection ~ 16000 18100
+Connection ~ 15650 18100
+Connection ~ 15300 18100
+Connection ~ 15300 19400
+Connection ~ 15650 19400
+Connection ~ 16000 19400
+Connection ~ 16300 19400
+Connection ~ 16650 19400
+Connection ~ 17000 19400
+Connection ~ 17350 19400
+Connection ~ 17700 19400
+Connection ~ 15300 20150
+Connection ~ 15650 20150
+Connection ~ 16000 20150
+Connection ~ 16300 20150
+Connection ~ 16650 20150
+Connection ~ 17000 20150
+Connection ~ 17350 20150
+Connection ~ 17700 20150
+Connection ~ 17700 20900
+Connection ~ 17350 20900
+Connection ~ 17000 20900
+Connection ~ 16650 20900
+Connection ~ 16300 20900
+Connection ~ 16000 20900
+Connection ~ 15650 20900
+Connection ~ 15300 20900
+Wire Wire Line
+	17700 18500 17750 18500
+Connection ~ 18000 17050
+Connection ~ 18000 17800
+Connection ~ 13050 16000
+Wire Wire Line
+	13150 16000 13050 16000
+Connection ~ 11800 20550
+Connection ~ 12150 20550
+Connection ~ 12500 20550
+Connection ~ 12800 20550
+Connection ~ 13150 20550
+Connection ~ 13500 20550
+Connection ~ 13850 20550
+Connection ~ 14200 20550
+Connection ~ 11800 19800
+Connection ~ 12150 19800
+Connection ~ 12500 19800
+Connection ~ 12800 19800
+Connection ~ 13150 19800
+Connection ~ 13500 19800
+Connection ~ 13850 19800
+Connection ~ 14200 19800
+Connection ~ 11800 19150
+Connection ~ 12150 19150
+Connection ~ 12500 19150
+Connection ~ 12800 19150
+Connection ~ 13150 19150
+Connection ~ 13500 19150
+Connection ~ 13850 19150
+Connection ~ 14200 19150
+Connection ~ 11800 18500
+Connection ~ 12150 18500
+Connection ~ 12500 18500
+Connection ~ 12800 18500
+Connection ~ 13150 18500
+Connection ~ 13500 18500
+Connection ~ 13850 18500
+Connection ~ 14200 18500
+Connection ~ 11800 17800
+Connection ~ 12150 17800
+Connection ~ 12500 17800
+Connection ~ 12800 17800
+Connection ~ 13150 17800
+Connection ~ 13500 17800
+Connection ~ 13850 17800
+Connection ~ 14200 17800
+Connection ~ 11800 17050
+Connection ~ 12150 17050
+Connection ~ 12500 17050
+Connection ~ 12800 17050
+Connection ~ 13150 17050
+Connection ~ 13500 17050
+Connection ~ 13850 17050
+Connection ~ 14200 17050
+Connection ~ 11800 16400
+Connection ~ 12150 16400
+Connection ~ 12500 16400
+Connection ~ 12800 16400
+Connection ~ 13150 16400
+Connection ~ 13500 16400
+Connection ~ 13850 16400
+Connection ~ 14200 16400
+Connection ~ 11800 21300
+Connection ~ 12150 21300
+Connection ~ 12500 21300
+Connection ~ 12800 21300
+Connection ~ 13150 21300
+Connection ~ 13500 21300
+Connection ~ 13850 21300
+Connection ~ 14200 21300
+Connection ~ 14050 20150
+Wire Wire Line
+	14050 20150 14200 20150
+Connection ~ 13750 20150
+Wire Wire Line
+	13750 20150 13850 20150
+Connection ~ 13400 20150
+Wire Wire Line
+	13400 20150 13500 20150
+Connection ~ 13050 20150
+Wire Wire Line
+	13050 20150 13150 20150
+Connection ~ 12700 20150
+Wire Wire Line
+	12700 20150 12800 20150
+Connection ~ 12350 20150
+Wire Wire Line
+	12350 20150 12500 20150
+Connection ~ 14050 19400
+Wire Wire Line
+	14050 19400 14200 19400
+Connection ~ 13750 19400
+Wire Wire Line
+	13750 19400 13850 19400
+Connection ~ 13400 19400
+Wire Wire Line
+	13400 19400 13500 19400
+Connection ~ 13050 19400
+Wire Wire Line
+	13050 19400 13150 19400
+Connection ~ 12700 19400
+Wire Wire Line
+	12700 19400 12800 19400
+Connection ~ 12350 19400
+Wire Wire Line
+	12350 19400 12500 19400
+Connection ~ 12350 18750
+Wire Wire Line
+	12350 18750 12500 18750
+Connection ~ 12700 18750
+Wire Wire Line
+	12700 18750 12800 18750
+Connection ~ 13050 18750
+Wire Wire Line
+	13050 18750 13150 18750
+Connection ~ 13400 18750
+Wire Wire Line
+	13400 18750 13500 18750
+Connection ~ 13750 18750
+Wire Wire Line
+	13750 18750 13850 18750
+Connection ~ 14050 18750
+Wire Wire Line
+	14050 18750 14200 18750
+Connection ~ 14050 18100
+Wire Wire Line
+	14050 18100 14200 18100
+Connection ~ 13750 18100
+Wire Wire Line
+	13750 18100 13850 18100
+Connection ~ 13400 18100
+Wire Wire Line
+	13400 18100 13500 18100
+Connection ~ 13050 18100
+Wire Wire Line
+	13050 18100 13150 18100
+Connection ~ 12700 18100
+Wire Wire Line
+	12700 18100 12800 18100
+Connection ~ 12350 18100
+Wire Wire Line
+	12350 18100 12500 18100
+Connection ~ 12350 17400
+Wire Wire Line
+	12350 17400 12500 17400
+Connection ~ 12700 17400
+Wire Wire Line
+	12700 17400 12800 17400
+Connection ~ 13050 17400
+Wire Wire Line
+	13050 17400 13150 17400
+Connection ~ 13400 17400
+Wire Wire Line
+	13400 17400 13500 17400
+Connection ~ 13750 17400
+Wire Wire Line
+	13750 17400 13850 17400
+Connection ~ 14050 17400
+Wire Wire Line
+	14050 17400 14200 17400
+Connection ~ 14050 16650
+Wire Wire Line
+	14050 16650 14200 16650
+Connection ~ 13750 16650
+Wire Wire Line
+	13750 16650 13850 16650
+Connection ~ 13400 16650
+Wire Wire Line
+	13400 16650 13500 16650
+Connection ~ 13050 16650
+Wire Wire Line
+	13050 16650 13150 16650
+Connection ~ 12700 16650
+Wire Wire Line
+	12700 16650 12800 16650
+Connection ~ 12350 16650
+Wire Wire Line
+	12350 16650 12500 16650
+Connection ~ 14050 16000
+Wire Wire Line
+	14200 16000 14050 16000
+Connection ~ 13750 16000
+Wire Wire Line
+	13850 16000 13750 16000
+Connection ~ 13400 16000
+Wire Wire Line
+	13500 16000 13400 16000
+Connection ~ 12700 16000
+Wire Wire Line
+	12800 16000 12700 16000
+Connection ~ 12350 16000
+Wire Wire Line
+	12500 16000 12350 16000
+Connection ~ 12050 16000
+Wire Wire Line
+	12150 16000 12050 16000
+Connection ~ 12050 16650
+Wire Wire Line
+	12050 16650 12150 16650
+Connection ~ 12050 17400
+Wire Wire Line
+	12050 17400 12150 17400
+Connection ~ 12050 18100
+Wire Wire Line
+	12050 18100 12150 18100
+Connection ~ 12050 18750
+Wire Wire Line
+	12050 18750 12150 18750
+Connection ~ 12050 19400
+Wire Wire Line
+	12050 19400 12150 19400
+Connection ~ 12050 20150
+Wire Wire Line
+	12050 20150 12150 20150
+Connection ~ 11700 20150
+Wire Wire Line
+	11700 20150 11800 20150
+Connection ~ 11700 19400
+Wire Wire Line
+	11700 19400 11800 19400
+Connection ~ 11700 18750
+Wire Wire Line
+	11700 18750 11800 18750
+Connection ~ 11700 18100
+Wire Wire Line
+	11700 18100 11800 18100
+Connection ~ 11700 17400
+Wire Wire Line
+	11700 17400 11800 17400
+Connection ~ 11700 16650
+Wire Wire Line
+	11700 16650 11800 16650
+Connection ~ 11700 16000
+Wire Wire Line
+	11700 16000 11800 16000
+Wire Wire Line
+	14050 20900 14200 20900
+Wire Wire Line
+	14050 13350 14050 20900
+Wire Wire Line
+	13750 20900 13850 20900
+Wire Wire Line
+	13750 13550 13750 20900
+Wire Wire Line
+	13400 20900 13500 20900
+Wire Wire Line
+	13400 13750 13400 20900
+Wire Wire Line
+	13050 20900 13150 20900
+Wire Wire Line
+	13050 13900 13050 20900
+Wire Wire Line
+	12700 20900 12800 20900
+Wire Wire Line
+	12700 14050 12700 20900
+Wire Wire Line
+	12350 20900 12500 20900
+Wire Wire Line
+	12350 13000 12350 20900
+Wire Wire Line
+	12050 20900 12150 20900
+Wire Wire Line
+	12050 12900 12050 20900
+Wire Wire Line
+	11700 20900 11800 20900
+Wire Wire Line
+	11700 12800 11700 20900
+Connection ~ 14200 18750
+Connection ~ 13850 18750
+Connection ~ 13500 18750
+Connection ~ 13150 18750
+Connection ~ 12800 18750
+Connection ~ 12500 18750
+Connection ~ 12150 18750
+Connection ~ 11800 18750
+Connection ~ 14200 16000
+Connection ~ 13850 16000
+Connection ~ 13500 16000
+Connection ~ 13150 16000
+Connection ~ 12800 16000
+Connection ~ 12500 16000
+Connection ~ 12150 16000
+Connection ~ 11800 16000
+Connection ~ 14200 16650
+Connection ~ 13850 16650
+Connection ~ 13500 16650
+Connection ~ 13150 16650
+Connection ~ 12800 16650
+Connection ~ 12500 16650
+Connection ~ 12150 16650
+Connection ~ 11800 16650
+Connection ~ 14200 17400
+Connection ~ 13850 17400
+Connection ~ 13500 17400
+Connection ~ 13150 17400
+Connection ~ 12800 17400
+Connection ~ 12500 17400
+Connection ~ 12150 17400
+Connection ~ 11800 17400
+Connection ~ 13850 18100
+Connection ~ 14200 18100
+Connection ~ 13500 18100
+Connection ~ 13150 18100
+Connection ~ 12800 18100
+Connection ~ 12500 18100
+Connection ~ 12150 18100
+Connection ~ 11800 18100
+Connection ~ 11800 19400
+Connection ~ 12150 19400
+Connection ~ 12500 19400
+Connection ~ 12800 19400
+Connection ~ 13150 19400
+Connection ~ 13500 19400
+Connection ~ 13850 19400
+Connection ~ 14200 19400
+Connection ~ 11800 20150
+Connection ~ 12150 20150
+Connection ~ 12500 20150
+Connection ~ 12800 20150
+Connection ~ 13150 20150
+Connection ~ 13500 20150
+Connection ~ 13850 20150
+Connection ~ 14200 20150
+Connection ~ 14200 20900
+Connection ~ 13850 20900
+Connection ~ 13500 20900
+Connection ~ 13150 20900
+Connection ~ 12800 20900
+Connection ~ 12500 20900
+Connection ~ 12150 20900
+Connection ~ 11800 20900
+Wire Wire Line
+	14200 18500 14250 18500
+Wire Wire Line
+	8900 11700 9300 11700
+Wire Wire Line
+	10800 11600 10800 11700
+Wire Wire Line
+	10800 11750 10800 11800
+Wire Wire Line
+	10800 11750 11750 11750
+Wire Wire Line
+	10800 11900 11750 11900
+Connection ~ 9200 11700
+Wire Wire Line
+	6500 17800 18000 17800
+Connection ~ 18000 16400
+Wire Wire Line
+	6300 16400 18000 16400
+Wire Wire Line
+	15550 12100 15550 20900
+Wire Wire Line
+	9300 11800 6300 11800
+Wire Wire Line
+	6300 11800 6300 16400
+Wire Wire Line
+	9300 11900 6400 11900
+Wire Wire Line
+	6400 11900 6400 17050
+Wire Wire Line
+	9300 12000 6500 12000
+Wire Wire Line
+	6500 12000 6500 17800
+Wire Wire Line
+	9300 12100 6600 12100
+Wire Wire Line
+	6600 12100 6600 18500
+Wire Wire Line
+	9300 12200 6700 12200
+Wire Wire Line
+	6700 12200 6700 19150
+Wire Wire Line
+	9300 12300 6800 12300
+Wire Wire Line
+	6800 12300 6800 19800
+Wire Wire Line
+	9300 12400 6900 12400
+Wire Wire Line
+	6900 12400 6900 20550
+Wire Wire Line
+	9300 12500 7000 12500
+Wire Wire Line
+	7000 12500 7000 21300
+Wire Wire Line
+	16550 12400 16550 20900
+Wire Wire Line
+	5450 12600 9300 12600
+Wire Wire Line
+	7250 12600 7250 13350
+Wire Wire Line
+	7250 13350 14050 13350
+Wire Wire Line
+	5450 12700 9300 12700
+Wire Wire Line
+	7400 12700 7400 13550
+Wire Wire Line
+	7400 13550 13750 13550
+Wire Wire Line
+	5450 12800 9300 12800
+Wire Wire Line
+	7550 12800 7550 13750
+Wire Wire Line
+	7550 13750 13400 13750
+Wire Wire Line
+	5450 12900 9300 12900
+Wire Wire Line
+	7700 12900 7700 13900
+Wire Wire Line
+	7700 13900 13050 13900
+Wire Wire Line
+	5450 13000 9300 13000
+Wire Wire Line
+	7850 13000 7850 14050
+Wire Wire Line
+	7850 14050 12700 14050
+Wire Wire Line
+	10800 13000 12650 13000
+Wire Wire Line
+	10800 12900 12600 12900
+Wire Wire Line
+	10800 12800 12150 12800
+Wire Wire Line
+	10800 12700 17800 12700
+Wire Wire Line
+	10800 12600 17800 12600
+Wire Wire Line
+	10800 12500 17800 12500
+Wire Wire Line
+	10800 12400 17800 12400
+Wire Wire Line
+	10800 12300 17800 12300
+Wire Wire Line
+	10800 12200 17800 12200
+Wire Wire Line
+	10800 12100 17800 12100
+Wire Wire Line
+	10800 12000 17800 12000
+Wire Wire Line
+	9050 10400 9050 11800
+Wire Wire Line
+	8950 10000 8950 11700
+Wire Wire Line
+	8950 10000 9650 10000
+Wire Wire Line
+	10050 10000 11600 10000
+Wire Wire Line
+	9050 10400 9100 10400
+Wire Wire Line
+	9500 10400 9550 10400
+Wire Wire Line
+	10050 10400 10100 10400
+Wire Wire Line
+	10700 10400 11450 10400
+Wire Wire Line
+	10050 10700 10100 10700
+Wire Wire Line
+	10050 10950 10100 10950
+Wire Wire Line
+	11600 10000 11600 11600
+Wire Wire Line
+	9550 10950 9500 10950
+Wire Wire Line
+	9500 10950 9500 10400
+Wire Wire Line
+	9550 10700 9500 10700
+Connection ~ 9500 10700
+Wire Wire Line
+	11450 10400 11450 12000
+Wire Wire Line
+	10700 10700 11350 10700
+Wire Wire Line
+	11350 10700 11350 12100
+Wire Wire Line
+	10700 10950 11150 10950
+Wire Wire Line
+	11150 10950 11150 12200
+Wire Wire Line
+	10800 11600 11750 11600
+Connection ~ 11150 12200
+Connection ~ 11350 12100
+Connection ~ 11450 12000
+Connection ~ 11600 11600
+Wire Wire Line
+	6200 9800 5950 9800
+Wire Wire Line
+	5950 9900 6200 9900
+Wire Wire Line
+	6200 10000 5950 10000
+Wire Wire Line
+	5950 10100 6200 10100
+Wire Wire Line
+	6200 10200 5950 10200
+Wire Wire Line
+	5950 10300 6200 10300
+Wire Wire Line
+	6200 10400 5950 10400
+Wire Wire Line
+	5950 10500 6200 10500
+Wire Wire Line
+	6200 10600 5950 10600
+Wire Wire Line
+	5950 10700 6200 10700
+Wire Wire Line
+	6200 10800 5950 10800
+Wire Wire Line
+	5950 10900 6200 10900
+Wire Wire Line
+	6200 11000 5950 11000
+Wire Wire Line
+	5950 11100 6200 11100
+Wire Wire Line
+	7700 9900 7850 9900
+Wire Wire Line
+	7850 10000 7700 10000
+Wire Wire Line
+	7700 10100 7850 10100
+Wire Wire Line
+	7850 10200 7700 10200
+Wire Wire Line
+	7700 10300 7850 10300
+Wire Wire Line
+	7850 10400 7700 10400
+Wire Wire Line
+	7700 10500 7850 10500
+Wire Wire Line
+	7850 10600 7700 10600
+Wire Wire Line
+	7850 10700 7700 10700
+Wire Wire Line
+	7700 10800 7850 10800
+Wire Wire Line
+	7850 10900 7700 10900
+Wire Wire Line
+	7700 11000 7850 11000
+Wire Wire Line
+	7850 11100 7700 11100
+Connection ~ 7250 12600
+Wire Wire Line
+	7400 12700 7350 12700
+Connection ~ 7350 12700
+Connection ~ 7400 12700
+Connection ~ 7550 12800
+Connection ~ 7700 12900
+Connection ~ 7850 13000
+Wire Wire Line
+	6100 17100 7000 17100
+Connection ~ 7000 17100
+Wire Wire Line
+	6100 16950 6900 16950
+Connection ~ 6900 16950
+Wire Wire Line
+	6100 16850 6800 16850
+Connection ~ 6800 16850
+Wire Wire Line
+	6100 16750 6700 16750
+Connection ~ 6700 16750
+Wire Wire Line
+	6100 16650 6600 16650
+Connection ~ 6600 16650
+Wire Wire Line
+	6100 16550 6500 16550
+Connection ~ 6500 16550
+Wire Wire Line
+	6100 16450 6400 16450
+Connection ~ 6400 16450
+Wire Wire Line
+	6100 16350 6300 16350
+Connection ~ 6300 16350
+Connection ~ 12350 13000
+Connection ~ 12050 12900
+Connection ~ 11700 12800
+Connection ~ 17550 12700
+Connection ~ 17250 12600
+Connection ~ 16900 12500
+Connection ~ 16550 12400
+Connection ~ 16200 12300
+Connection ~ 15850 12200
+Connection ~ 15550 12100
+Connection ~ 15200 12000
+Connection ~ -7600 14100
+Connection ~ -8100 14100
+Connection ~ -8100 13850
+Connection ~ -8100 13550
+Connection ~ -8550 13550
+Connection ~ -8000 13150
+Connection ~ -7600 13150
+Connection ~ -7600 13550
+Connection ~ -7550 13550
+Connection ~ -7550 13850
+Connection ~ -7600 13850
+Connection ~ -7550 14100
+Connection ~ -6950 14100
+Connection ~ -6950 13850
+Connection ~ -6950 13550
+Connection ~ 9550 10950
+Connection ~ 9550 10700
+Connection ~ 9550 10400
+Connection ~ 9500 10400
+Connection ~ 9100 10400
+Connection ~ 10100 10400
+Connection ~ 10050 10400
+Connection ~ 10050 10000
+Connection ~ 9650 10000
+Connection ~ 10050 10700
+Connection ~ 10100 10700
+Connection ~ 10100 10950
+Connection ~ 10050 10950
+Connection ~ 10700 10950
+Connection ~ 10700 10700
+Connection ~ 10700 10400
+Connection ~ -10000 250 
+Connection ~ -10000 0   
+Connection ~ -10000 -300
+Connection ~ -9900 -700
+Connection ~ -9500 -700
+Connection ~ -9500 -300
+Connection ~ -9450 -300
+Connection ~ -9500 0   
+Connection ~ -9450 0   
+Connection ~ -9450 250 
+Connection ~ -9500 250 
+Connection ~ -8850 250 
+Connection ~ -8850 0   
+Connection ~ -8850 -300
+Connection ~ -13950 -13000
+Connection ~ -14000 -13000
+Connection ~ -13950 -12700
+Connection ~ -13950 -12450
+Connection ~ -14400 -13000
+Connection ~ -13850 -13400
+Connection ~ -13450 -13400
+Connection ~ -13450 -13000
+Connection ~ -13400 -13000
+Connection ~ -13400 -12700
+Connection ~ -13450 -12700
+Connection ~ -13450 -12450
+Connection ~ -13400 -12450
+Connection ~ -12800 -12450
+Connection ~ -12800 -12700
+Connection ~ -12800 -13000
+Connection ~ -8600 14950
+Connection ~ -8700 14850
+Connection ~ 9050 11800
+Connection ~ 8950 11700
+Connection ~ -14450 -11600
+Connection ~ -14550 -11700
+Connection ~ 3750 3750
+Connection ~ 4150 3750
+Connection ~ 3750 4300
+Connection ~ -8150 13550
+Connection ~ -10450 -300
+Connection ~ -10050 -300
+Connection ~ 39850 10950
+Wire Wire Line
+	10250 -2400 10400 -2400
+Wire Wire Line
+	10400 -2400 10400 -2550
+Wire Wire Line
+	12200 1200 12200 1000
+Wire Wire Line
+	12200 1000 12450 1000
+Wire Wire Line
+	12450 800  12300 800 
+Wire Wire Line
+	12450 700  12100 700 
+Wire Wire Line
+	12450 600  12350 600 
+NoConn ~ 12450 900 
+$Comp
+L CONN_01X06 P5
+U 1 1 5620C4FB
+P 13700 1050
+F 0 "P5" H 13700 1400 50  0000 C CNN
+F 1 "CONN_01X06" V 13800 1050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 13700 1050 60  0001 C CNN
+F 3 "" H 13700 1050 60  0000 C CNN
+	1    13700 1050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 13500 800 
+NoConn ~ 13500 900 
+Text GLabel 13350 1000 0    60   Input ~ 0
+SCL
+Text GLabel 13350 1100 0    60   Input ~ 0
+SDA
+Text GLabel 13350 1200 0    60   Input ~ 0
+Vcc
+$Comp
+L GND #PWR025
+U 1 1 5620CE30
+P 13350 1400
+F 0 "#PWR025" H 13350 1150 60  0001 C CNN
+F 1 "GND" H 13350 1250 60  0000 C CNN
+F 2 "" H 13350 1400 60  0000 C CNN
+F 3 "" H 13350 1400 60  0000 C CNN
+	1    13350 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 1400 13500 1400
+Wire Wire Line
+	13500 1400 13500 1300
+Wire Wire Line
+	13500 1200 13350 1200
+Wire Wire Line
+	13500 1100 13350 1100
+Wire Wire Line
+	13500 1000 13350 1000
+$Comp
+L GND #PWR026
+U 1 1 5643C465
+P 1500 3700
+F 0 "#PWR026" H 1500 3450 60  0001 C CNN
+F 1 "GND" H 1500 3550 60  0000 C CNN
+F 2 "" H 1500 3700 60  0000 C CNN
+F 3 "" H 1500 3700 60  0000 C CNN
+	1    1500 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R20
+U 1 1 5643C46B
+P 1850 3700
+F 0 "R20" V 1930 3700 50  0000 C CNN
+F 1 "10K" V 1857 3701 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 1780 3700 30  0001 C CNN
+F 3 "" H 1850 3700 30  0000 C CNN
+	1    1850 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 3700 2100 3700
+Wire Wire Line
+	1500 3700 1600 3700
+$Comp
+L GND #PWR027
+U 1 1 5643CB42
+P 1500 2600
+F 0 "#PWR027" H 1500 2350 60  0001 C CNN
+F 1 "GND" H 1500 2450 60  0000 C CNN
+F 2 "" H 1500 2600 60  0000 C CNN
+F 3 "" H 1500 2600 60  0000 C CNN
+	1    1500 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R19
+U 1 1 5643CB48
+P 1850 2600
+F 0 "R19" V 1930 2600 50  0000 C CNN
+F 1 "10K" V 1857 2601 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 1780 2600 30  0001 C CNN
+F 3 "" H 1850 2600 30  0000 C CNN
+	1    1850 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 2600 2100 2600
+Wire Wire Line
+	1500 2600 1600 2600
+$Comp
+L GND #PWR028
+U 1 1 56440CC2
+P 1500 1950
+F 0 "#PWR028" H 1500 1700 60  0001 C CNN
+F 1 "GND" H 1500 1800 60  0000 C CNN
+F 2 "" H 1500 1950 60  0000 C CNN
+F 3 "" H 1500 1950 60  0000 C CNN
+	1    1500 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L R-RESCUE-LargeKickstarter R18
+U 1 1 56440CC8
+P 1850 1950
+F 0 "R18" V 1930 1950 50  0000 C CNN
+F 1 "10K" V 1857 1951 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 1780 1950 30  0001 C CNN
+F 3 "" H 1850 1950 30  0000 C CNN
+	1    1850 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1950 2400 1950
+Wire Wire Line
+	1500 1950 1600 1950
+Connection ~ 2400 1950
+Connection ~ 2400 2600
+Connection ~ 2400 3400
+$Comp
+L DIODE D6
+U 1 1 5646B643
+P 10050 -2700
+F 0 "D6" H 10050 -2600 50  0000 C CNN
+F 1 "DIODE" H 10050 -2800 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10" H 10050 -2700 60  0001 C CNN
+F 3 "" H 10050 -2700 60  0000 C CNN
+	1    10050 -2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 9850 -2400
+Connection ~ 10250 -2400
+$EndSCHEMATC

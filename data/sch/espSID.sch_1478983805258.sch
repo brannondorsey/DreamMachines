@@ -1,0 +1,168 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:xc9572xl
+LIBS:ESP8266
+LIBS:RealSIDShield-cache
+LIBS:espSID-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM7805 U2
+U 1 1 56E5FC14
+P 2450 1050
+F 0 "U2" H 2600 854 50  0000 C CNN
+F 1 "LM7805" H 2450 1250 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_LargePads" H 2450 1050 50  0001 C CNN
+F 3 "" H 2450 1050 50  0000 C CNN
+	1    2450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM386 U1
+U 1 1 56E5FC3C
+P 1100 1050
+F 0 "U1" H 1150 1350 50  0000 L CNN
+F 1 "LM386" H 1150 1250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 1200 1150 50  0001 C CNN
+F 3 "" H 1300 1250 50  0000 C CNN
+	1    1100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L XC9572XL-PC44 IC1
+U 1 1 56E5FEB5
+P 9950 4000
+F 0 "IC1" H 10200 4550 60  0000 C CNN
+F 1 "XC9572XL-PC44" H 9950 4700 60  0000 C CNN
+F 2 "ESP8266:ESP-07v2" H 9950 4000 60  0001 C CNN
+F 3 "" H 9950 4000 60  0000 C CNN
+	1    9950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP-07v2 U3
+U 1 1 56E5FF54
+P 7450 2700
+F 0 "U3" H 7450 2600 50  0000 C CNN
+F 1 "ESP-07v2" H 7450 2800 50  0000 C CNN
+F 2 "ESP8266:ESP-07v2" H 7450 2700 50  0001 C CNN
+F 3 "" H 7450 2700 50  0001 C CNN
+	1    7450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P1
+U 1 1 56E61460
+P 5250 1300
+F 0 "P1" H 5250 1650 50  0000 C CNN
+F 1 "CONN_01X06" V 5350 1300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 5250 1300 50  0001 C CNN
+F 3 "" H 5250 1300 50  0000 C CNN
+	1    5250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L BARREL_JACK CON1
+U 1 1 56E614A8
+P 9800 2350
+F 0 "CON1" H 9800 2600 50  0000 C CNN
+F 1 "BARREL_JACK" H 9800 2150 50  0000 C CNN
+F 2 "" H 9800 2350 50  0001 C CNN
+F 3 "" H 9800 2350 50  0000 C CNN
+	1    9800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOS_6581/8580 U4
+U 1 1 56E6247C
+P 2300 5000
+F 0 "U4" H 1800 6600 60  0000 C CNN
+F 1 "MOS_6581/8580" H 2100 3400 60  0001 C CNN
+F 2 "Housings_DIP:DIP-28_W15.24mm_LongPads" H 2300 5000 60  0001 C CNN
+F 3 "" H 2300 5000 60  0000 C CNN
+	1    2300 5000
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	3750 4900 3850 5000
+Entry Wire Line
+	3750 5100 3850 5200
+Entry Wire Line
+	3750 5300 3850 5400
+Entry Wire Line
+	3750 5500 3850 5600
+Entry Wire Line
+	3750 5700 3850 5800
+Entry Wire Line
+	3750 5900 3850 6000
+Entry Wire Line
+	3750 6100 3850 6200
+Entry Wire Line
+	3750 6300 3850 6400
+Wire Wire Line
+	6550 2800 6100 2800
+Wire Wire Line
+	6550 3000 6100 3000
+Wire Wire Line
+	6550 2900 6100 2900
+Wire Wire Line
+	8350 3000 8800 3000
+Wire Wire Line
+	3250 4900 3750 4900
+Wire Wire Line
+	3250 5100 3750 5100
+Wire Wire Line
+	3250 5300 3750 5300
+Wire Wire Line
+	3250 5500 3750 5500
+Wire Wire Line
+	3250 5700 3750 5700
+Wire Wire Line
+	3250 5900 3750 5900
+Wire Wire Line
+	3250 6100 3750 6100
+Wire Wire Line
+	3250 6300 3750 6300
+Wire Bus Line
+	3850 5000 3850 6700
+$EndSCHEMATC

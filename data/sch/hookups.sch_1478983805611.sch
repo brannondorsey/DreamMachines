@@ -1,0 +1,468 @@
+EESchema Schematic File Version 2
+LIBS:rloopPowerNode-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rloop
+LIBS:rloopPowerNode-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 P19
+U 1 1 573832BB
+P 1950 850
+F 0 "P19" H 1950 1000 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 850 50  0001 C CNN
+F 3 "" H 1950 850 50  0000 C CNN
+	1    1950 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 800  1750 800 
+Wire Wire Line
+	1750 900  1650 900 
+Wire Wire Line
+	1650 900  1650 800 
+Connection ~ 1650 800 
+Text GLabel 1550 800  0    60   Input ~ 0
+RLY-IHV-HIGH
+$Comp
+L CONN_01X02 P20
+U 1 1 5738574C
+P 1950 1250
+F 0 "P20" H 1950 1400 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 1250 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 1250 50  0001 C CNN
+F 3 "" H 1950 1250 50  0000 C CNN
+	1    1950 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1200 1750 1200
+Wire Wire Line
+	1750 1300 1650 1300
+Wire Wire Line
+	1650 1300 1650 1200
+Connection ~ 1650 1200
+Text GLabel 1550 1200 0    60   Input ~ 0
+RLY-IHV-LOW
+$Comp
+L CONN_01X02 P21
+U 1 1 5738577B
+P 1950 1650
+F 0 "P21" H 1950 1800 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 1650 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 1650 50  0001 C CNN
+F 3 "" H 1950 1650 50  0000 C CNN
+	1    1950 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1600 1750 1600
+Wire Wire Line
+	1750 1700 1650 1700
+Wire Wire Line
+	1650 1700 1650 1600
+Connection ~ 1650 1600
+Text GLabel 1550 1600 0    60   Input ~ 0
+RLY-ILV
+$Comp
+L CONN_01X02 P22
+U 1 1 573858EE
+P 1950 2050
+F 0 "P22" H 1950 2200 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 2050 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 2050 50  0001 C CNN
+F 3 "" H 1950 2050 50  0000 C CNN
+	1    1950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2000 1750 2000
+Wire Wire Line
+	1750 2100 1650 2100
+Wire Wire Line
+	1650 2100 1650 2000
+Connection ~ 1650 2000
+Text GLabel 1550 2000 0    60   Input ~ 0
+RLY-DCDC
+$Comp
+L CONN_01X02 P23
+U 1 1 57385969
+P 1950 2450
+F 0 "P23" H 1950 2600 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 2450 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 2450 50  0001 C CNN
+F 3 "" H 1950 2450 50  0000 C CNN
+	1    1950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2400 1750 2400
+Wire Wire Line
+	1750 2500 1650 2500
+Wire Wire Line
+	1650 2500 1650 2400
+Connection ~ 1650 2400
+Text GLabel 1550 2400 0    60   Input ~ 0
++5V
+$Comp
+L CONN_01X02 P24
+U 1 1 573859A3
+P 1950 2850
+F 0 "P24" H 1950 3000 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 2850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 2850 50  0001 C CNN
+F 3 "" H 1950 2850 50  0000 C CNN
+	1    1950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2800 1750 2800
+Wire Wire Line
+	1750 2900 1650 2900
+Wire Wire Line
+	1650 2900 1650 2800
+Connection ~ 1650 2800
+Text GLabel 1550 2800 0    60   Input ~ 0
+WDT
+Text GLabel 2400 3200 2    60   Input ~ 0
+GNDA
+Text GLabel 1500 3200 0    60   Input ~ 0
+HV-CURR
+$Comp
+L CONN_01X02 P27
+U 1 1 57386EC1
+P 1950 4050
+F 0 "P27" H 1950 4200 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 4050 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 4050 50  0001 C CNN
+F 3 "" H 1950 4050 50  0000 C CNN
+	1    1950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4000 1750 4000
+Wire Wire Line
+	1750 4100 1650 4100
+Wire Wire Line
+	1650 4100 1650 4000
+Connection ~ 1650 4000
+Text GLabel 1550 4000 0    60   Input ~ 0
+IHV-PRECHG
+$Comp
+L CONN_01X02 P28
+U 1 1 57386ECC
+P 1950 4450
+F 0 "P28" H 1950 4600 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 4450 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 4450 50  0001 C CNN
+F 3 "" H 1950 4450 50  0000 C CNN
+	1    1950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4400 1750 4400
+Wire Wire Line
+	1750 4500 1650 4500
+Wire Wire Line
+	1650 4500 1650 4400
+Connection ~ 1650 4400
+Text GLabel 1550 4400 0    60   Input ~ 0
+ILV-PRECHG
+$Comp
+L CONN_01X02 P29
+U 1 1 5738711D
+P 1950 4850
+F 0 "P29" H 1950 5000 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 4850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 4850 50  0001 C CNN
+F 3 "" H 1950 4850 50  0000 C CNN
+	1    1950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4800 1750 4800
+Wire Wire Line
+	1750 4900 1650 4900
+Wire Wire Line
+	1650 4900 1650 4800
+Connection ~ 1650 4800
+Text GLabel 1550 4800 0    60   Input ~ 0
+SENS-SDA
+$Comp
+L CONN_01X02 P30
+U 1 1 57387128
+P 1950 5250
+F 0 "P30" H 1950 5400 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 5250 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 5250 50  0001 C CNN
+F 3 "" H 1950 5250 50  0000 C CNN
+	1    1950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5200 1750 5200
+Wire Wire Line
+	1750 5300 1650 5300
+Wire Wire Line
+	1650 5300 1650 5200
+Connection ~ 1650 5200
+Text GLabel 1550 5200 0    60   Input ~ 0
+SENS-SCL
+$Comp
+L CONN_02X02 P31
+U 1 1 5738733F
+P 1900 5650
+F 0 "P31" H 1900 5800 50  0000 C CNN
+F 1 "CONN_02X02" H 1900 5500 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 1900 4450 50  0001 C CNN
+F 3 "" H 1900 4450 50  0000 C CNN
+	1    1900 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5600 1650 5600
+Wire Wire Line
+	1650 5700 1550 5700
+Wire Wire Line
+	1550 5600 1550 5850
+Connection ~ 1550 5600
+Wire Wire Line
+	2150 5600 2250 5600
+Wire Wire Line
+	2250 5600 2250 5850
+Wire Wire Line
+	2250 5700 2150 5700
+Wire Wire Line
+	2250 5850 1550 5850
+Connection ~ 1550 5700
+Connection ~ 2250 5700
+Text GLabel 1450 5600 0    60   Input ~ 0
++24V
+$Comp
+L CONN_01X02 P32
+U 1 1 57387803
+P 1950 6200
+F 0 "P32" H 1950 6350 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 6200 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 6200 50  0001 C CNN
+F 3 "" H 1950 6200 50  0000 C CNN
+	1    1950 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6150 1750 6150
+Wire Wire Line
+	1750 6250 1650 6250
+Wire Wire Line
+	1650 6250 1650 6150
+Connection ~ 1650 6150
+Text GLabel 1550 6150 0    60   Input ~ 0
++3.3V
+Wire Wire Line
+	1500 6550 1700 6550
+Wire Wire Line
+	1700 6650 1600 6650
+Wire Wire Line
+	1600 6650 1600 6550
+Connection ~ 1600 6550
+Text GLabel 1500 6550 0    60   Input ~ 0
++3.3V
+$Comp
+L CONN_02X02 P25
+U 1 1 5738CCEF
+P 1950 3250
+F 0 "P25" H 1950 3400 50  0000 C CNN
+F 1 "CONN_02X02" H 1950 3100 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 1950 2050 50  0001 C CNN
+F 3 "" H 1950 2050 50  0000 C CNN
+	1    1950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3200 1700 3200
+Wire Wire Line
+	1700 3300 1600 3300
+Wire Wire Line
+	1600 3300 1600 3200
+Connection ~ 1600 3200
+Wire Wire Line
+	2200 3200 2400 3200
+Wire Wire Line
+	2200 3300 2300 3300
+Wire Wire Line
+	2300 3300 2300 3200
+Connection ~ 2300 3200
+Text GLabel 2400 3600 2    60   Input ~ 0
+GNDA
+Text GLabel 1500 3600 0    60   Input ~ 0
+GLV
+$Comp
+L CONN_02X02 P26
+U 1 1 5738D490
+P 1950 3650
+F 0 "P26" H 1950 3800 50  0000 C CNN
+F 1 "CONN_02X02" H 1950 3500 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 1950 2450 50  0001 C CNN
+F 3 "" H 1950 2450 50  0000 C CNN
+	1    1950 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3600 1700 3600
+Wire Wire Line
+	1700 3700 1600 3700
+Wire Wire Line
+	1600 3700 1600 3600
+Connection ~ 1600 3600
+Wire Wire Line
+	2200 3600 2400 3600
+Wire Wire Line
+	2200 3700 2300 3700
+Wire Wire Line
+	2300 3700 2300 3600
+Connection ~ 2300 3600
+$Comp
+L CONN_02X02 P33
+U 1 1 5738DEBF
+P 1950 6600
+F 0 "P33" H 1950 6750 50  0000 C CNN
+F 1 "CONN_02X02" H 1950 6450 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 1950 5400 50  0001 C CNN
+F 3 "" H 1950 5400 50  0000 C CNN
+	1    1950 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 6550 2    60   Input ~ 0
+GNDA
+Wire Wire Line
+	2200 6550 2400 6550
+Wire Wire Line
+	2200 6650 2300 6650
+Wire Wire Line
+	2300 6650 2300 6550
+Connection ~ 2300 6550
+Text GLabel 1450 6950 0    60   Input ~ 0
++24V
+$Comp
+L CONN_01X02 P34
+U 1 1 5738EB27
+P 1950 7000
+F 0 "P34" H 1950 7150 50  0000 C CNN
+F 1 "CONN_01X02" V 2050 7000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 1950 7000 50  0001 C CNN
+F 3 "" H 1950 7000 50  0000 C CNN
+	1    1950 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6950 1750 6950
+Wire Wire Line
+	1750 7050 1650 7050
+Wire Wire Line
+	1650 7050 1650 6950
+Connection ~ 1650 6950
+$Comp
+L CONN_01X08 P35
+U 1 1 575063C4
+P 3950 1100
+F 0 "P35" H 3950 1550 50  0000 C CNN
+F 1 "CONN_01X08" V 4050 1100 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 3950 1100 50  0001 C CNN
+F 3 "" H 3950 1100 50  0000 C CNN
+	1    3950 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 750  3650 750 
+Wire Wire Line
+	3750 850  3650 850 
+Wire Wire Line
+	3750 950  3650 950 
+Wire Wire Line
+	3750 1050 3650 1050
+Wire Wire Line
+	3750 1150 3650 1150
+Wire Wire Line
+	3750 1250 3650 1250
+Wire Wire Line
+	3750 1350 3650 1350
+Wire Wire Line
+	3750 1450 3650 1450
+Text GLabel 3650 750  0    47   Input ~ 0
+GND
+Text GLabel 3650 850  0    47   Input ~ 0
+BMS-IRQ
+Text GLabel 3650 950  0    47   Input ~ 0
+BMS-CS
+Text GLabel 3650 1050 0    47   Input ~ 0
+BMS-PWRAVAIL
+Text GLabel 3650 1150 0    47   Input ~ 0
+BMS-MISO
+Text GLabel 3650 1250 0    47   Input ~ 0
+BMS-SCK
+Text GLabel 3650 1350 0    47   Input ~ 0
+BMS-MOSI
+Text GLabel 3650 1450 0    47   Input ~ 0
++3V3
+$Comp
+L CONN_01X02 P36
+U 1 1 57507872
+P 3950 1850
+F 0 "P36" H 3950 2000 50  0000 C CNN
+F 1 "CONN_01X02" V 4050 1850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3950 1850 50  0001 C CNN
+F 3 "" H 3950 1850 50  0000 C CNN
+	1    3950 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 1800 0    47   Input ~ 0
+BMS-PD
+Wire Wire Line
+	3550 1800 3750 1800
+Wire Wire Line
+	3750 1900 3650 1900
+Wire Wire Line
+	3650 1900 3650 1800
+Connection ~ 3650 1800
+$EndSCHEMATC

@@ -1,0 +1,831 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RainbowFox-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3950 4550 0    60   BiDi ~ 0
+SW6
+Text HLabel 3950 4350 0    60   BiDi ~ 0
+SW4
+Text HLabel 3950 4150 0    60   BiDi ~ 0
+SW5
+$Comp
+L Led_RGB_CA LED71
+U 1 1 57620F54
+P 9200 4350
+F 0 "LED71" H 9200 4700 50  0000 C CNN
+F 1 "Led_RGB_CA" H 9200 4000 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 9155 4300 50  0001 C CNN
+F 3 "" H 9155 4300 50  0000 C CNN
+	1    9200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED69
+U 1 1 57690BBC
+P 7200 4350
+F 0 "LED69" H 7200 4700 50  0000 C CNN
+F 1 "Led_RGB_CA" H 7200 4000 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 7155 4300 50  0001 C CNN
+F 3 "" H 7155 4300 50  0000 C CNN
+	1    7200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED70
+U 1 1 57690BBD
+P 8200 4350
+F 0 "LED70" H 8200 4700 50  0000 C CNN
+F 1 "Led_RGB_CA" H 8200 4000 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 8155 4300 50  0001 C CNN
+F 3 "" H 8155 4300 50  0000 C CNN
+	1    8200 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 8050 2950 0    60   BiDi ~ 0
+SW6
+Text HLabel 8050 2750 0    60   BiDi ~ 0
+SW4
+Text HLabel 8050 2550 0    60   BiDi ~ 0
+SW5
+Text HLabel 9000 2950 0    60   BiDi ~ 0
+SW3
+Text HLabel 9000 2550 0    60   BiDi ~ 0
+SW2
+Text HLabel 9000 2750 0    60   BiDi ~ 0
+SW1
+Text HLabel 7000 2950 0    60   BiDi ~ 0
+SW9
+Text HLabel 7000 2750 0    60   BiDi ~ 0
+SW7
+Text HLabel 7000 2550 0    60   BiDi ~ 0
+SW8
+Text HLabel 4350 1950 2    60   BiDi ~ 0
+CS2
+Text HLabel 5350 1950 2    60   BiDi ~ 0
+CS2
+Text HLabel 3350 1950 2    60   BiDi ~ 0
+CS2
+$Comp
+L Led_RGB_CA LED59
+U 1 1 57690BBE
+P 7200 3550
+F 0 "LED59" H 7200 3900 50  0000 C CNN
+F 1 "Led_RGB_CA" H 7200 3200 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 7155 3500 50  0001 C CNN
+F 3 "" H 7155 3500 50  0000 C CNN
+	1    7200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED60
+U 1 1 57690BBF
+P 8200 3550
+F 0 "LED60" H 8200 3900 50  0000 C CNN
+F 1 "Led_RGB_CA" H 8200 3200 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 8155 3500 50  0001 C CNN
+F 3 "" H 8155 3500 50  0000 C CNN
+	1    8200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED57
+U 1 1 57690BC0
+P 5150 3550
+F 0 "LED57" H 5150 3900 50  0000 C CNN
+F 1 "Led_RGB_CA" H 5150 3200 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 5105 3500 50  0001 C CNN
+F 3 "" H 5105 3500 50  0000 C CNN
+	1    5150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED58
+U 1 1 57690BAB
+P 6200 3550
+F 0 "LED58" H 6200 3900 50  0000 C CNN
+F 1 "Led_RGB_CA" H 6200 3200 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 6155 3500 50  0001 C CNN
+F 3 "" H 6155 3500 50  0000 C CNN
+	1    6200 3550
+	1    0    0    -1  
+$EndComp
+Text HLabel 3950 2950 0    60   BiDi ~ 0
+SW6
+Text HLabel 3950 2750 0    60   BiDi ~ 0
+SW4
+Text HLabel 3950 2550 0    60   BiDi ~ 0
+SW5
+Text HLabel 4950 2950 0    60   BiDi ~ 0
+SW3
+Text HLabel 4950 2550 0    60   BiDi ~ 0
+SW2
+Text HLabel 4950 2750 0    60   BiDi ~ 0
+SW1
+Text HLabel 2950 2950 0    60   BiDi ~ 0
+SW9
+Text HLabel 2950 2750 0    60   BiDi ~ 0
+SW7
+Text HLabel 2950 2550 0    60   BiDi ~ 0
+SW8
+Text HLabel 4350 3550 2    60   BiDi ~ 0
+CS3
+Text HLabel 5350 3550 2    60   BiDi ~ 0
+CS3
+Text HLabel 3350 3550 2    60   BiDi ~ 0
+CS3
+$Comp
+L Led_RGB_CA LED43
+U 1 1 57620F5C
+P 6200 2750
+F 0 "LED43" H 6200 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 6200 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 6155 2700 50  0001 C CNN
+F 3 "" H 6155 2700 50  0000 C CNN
+	1    6200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED44
+U 1 1 576F1E3A
+P 7200 2750
+F 0 "LED44" H 7200 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 7200 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 7155 2700 50  0001 C CNN
+F 3 "" H 7155 2700 50  0000 C CNN
+	1    7200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED41
+U 1 1 57690BAD
+P 4150 2750
+F 0 "LED41" H 4150 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 4150 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 4105 2700 50  0001 C CNN
+F 3 "" H 4105 2700 50  0000 C CNN
+	1    4150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED42
+U 1 1 57690BAE
+P 5150 2750
+F 0 "LED42" H 5150 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 5150 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 5105 2700 50  0001 C CNN
+F 3 "" H 5105 2700 50  0000 C CNN
+	1    5150 2750
+	1    0    0    -1  
+$EndComp
+Text HLabel 3950 2150 0    60   BiDi ~ 0
+SW6
+Text HLabel 3950 1950 0    60   BiDi ~ 0
+SW4
+Text HLabel 3950 1750 0    60   BiDi ~ 0
+SW5
+Text HLabel 4950 2150 0    60   BiDi ~ 0
+SW3
+Text HLabel 4950 1750 0    60   BiDi ~ 0
+SW2
+Text HLabel 4950 1950 0    60   BiDi ~ 0
+SW1
+Text HLabel 2950 2150 0    60   BiDi ~ 0
+SW9
+Text HLabel 2950 1950 0    60   BiDi ~ 0
+SW7
+Text HLabel 2950 1750 0    60   BiDi ~ 0
+SW8
+Text HLabel 4350 2750 2    60   BiDi ~ 0
+CS4
+Text HLabel 5350 2750 2    60   BiDi ~ 0
+CS4
+Text HLabel 3350 2750 2    60   BiDi ~ 0
+CS4
+$Comp
+L Led_RGB_CA LED27
+U 1 1 57620F60
+P 5150 1950
+F 0 "LED27" H 5150 2300 50  0000 C CNN
+F 1 "Led_RGB_CA" H 5150 1600 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 5105 1900 50  0001 C CNN
+F 3 "" H 5105 1900 50  0000 C CNN
+	1    5150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED28
+U 1 1 57690BAF
+P 6200 1950
+F 0 "LED28" H 6200 2300 50  0000 C CNN
+F 1 "Led_RGB_CA" H 6200 1600 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 6155 1900 50  0001 C CNN
+F 3 "" H 6155 1900 50  0000 C CNN
+	1    6200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED25
+U 1 1 57690BC3
+P 3150 1950
+F 0 "LED25" H 3150 2300 50  0000 C CNN
+F 1 "Led_RGB_CA" H 3150 1600 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 3105 1900 50  0001 C CNN
+F 3 "" H 3105 1900 50  0000 C CNN
+	1    3150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED26
+U 1 1 57690BB0
+P 4150 1950
+F 0 "LED26" H 4150 2300 50  0000 C CNN
+F 1 "Led_RGB_CA" H 4150 1600 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 4105 1900 50  0001 C CNN
+F 3 "" H 4105 1900 50  0000 C CNN
+	1    4150 1950
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 1350 0    60   BiDi ~ 0
+SW12
+Text HLabel 1950 1150 0    60   BiDi ~ 0
+SW10
+Text HLabel 1950 950  0    60   BiDi ~ 0
+SW11
+Text HLabel 3950 1350 0    60   BiDi ~ 0
+SW6
+Text HLabel 3950 1150 0    60   BiDi ~ 0
+SW4
+Text HLabel 3950 950  0    60   BiDi ~ 0
+SW5
+Text HLabel 4950 1350 0    60   BiDi ~ 0
+SW3
+Text HLabel 4950 950  0    60   BiDi ~ 0
+SW2
+Text HLabel 4950 1150 0    60   BiDi ~ 0
+SW1
+Text HLabel 2950 1350 0    60   BiDi ~ 0
+SW9
+Text HLabel 2950 1150 0    60   BiDi ~ 0
+SW7
+Text HLabel 2950 950  0    60   BiDi ~ 0
+SW8
+$Comp
+L Led_RGB_CA LED11
+U 1 1 57690BC4
+P 4150 1150
+F 0 "LED11" H 4150 1500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 4150 800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 4105 1100 50  0001 C CNN
+F 3 "" H 4105 1100 50  0000 C CNN
+	1    4150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED12
+U 1 1 57620F65
+P 5150 1150
+F 0 "LED12" H 5150 1500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 5150 800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 5105 1100 50  0001 C CNN
+F 3 "" H 5105 1100 50  0000 C CNN
+	1    5150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED9
+U 1 1 57620F66
+P 2150 1150
+F 0 "LED9" H 2150 1500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 2150 800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 2105 1100 50  0001 C CNN
+F 3 "" H 2105 1100 50  0000 C CNN
+	1    2150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED10
+U 1 1 57690BB1
+P 3150 1150
+F 0 "LED10" H 3150 1500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 3150 800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 3105 1100 50  0001 C CNN
+F 3 "" H 3105 1100 50  0000 C CNN
+	1    3150 1150
+	1    0    0    -1  
+$EndComp
+Text HLabel 6000 1350 0    60   BiDi ~ 0
+SW12
+Text HLabel 6000 1150 0    60   BiDi ~ 0
+SW10
+Text HLabel 6000 950  0    60   BiDi ~ 0
+SW11
+Text HLabel 8050 1350 0    60   BiDi ~ 0
+SW6
+Text HLabel 8050 1150 0    60   BiDi ~ 0
+SW4
+Text HLabel 8050 950  0    60   BiDi ~ 0
+SW5
+Text HLabel 9000 1350 0    60   BiDi ~ 0
+SW3
+Text HLabel 9000 950  0    60   BiDi ~ 0
+SW2
+Text HLabel 9000 1150 0    60   BiDi ~ 0
+SW1
+Text HLabel 7000 1350 0    60   BiDi ~ 0
+SW9
+Text HLabel 7000 1150 0    60   BiDi ~ 0
+SW7
+Text HLabel 7000 950  0    60   BiDi ~ 0
+SW8
+Text HLabel 9400 1150 2    60   BiDi ~ 0
+CS6
+$Comp
+L Led_RGB_CA LED15
+U 1 1 576F2E01
+P 8250 1150
+F 0 "LED15" H 8250 1500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 8250 800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 8205 1100 50  0001 C CNN
+F 3 "" H 8205 1100 50  0000 C CNN
+	1    8250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED16
+U 1 1 576F2E07
+P 9200 1150
+F 0 "LED16" H 9200 1500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 9200 800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 9155 1100 50  0001 C CNN
+F 3 "" H 9155 1100 50  0000 C CNN
+	1    9200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED13
+U 1 1 576F2E0D
+P 6200 1150
+F 0 "LED13" H 6200 1500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 6200 800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 6155 1100 50  0001 C CNN
+F 3 "" H 6155 1100 50  0000 C CNN
+	1    6200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED14
+U 1 1 57620F6B
+P 7200 1150
+F 0 "LED14" H 7200 1500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 7200 800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 7155 1100 50  0001 C CNN
+F 3 "" H 7155 1100 50  0000 C CNN
+	1    7200 1150
+	1    0    0    -1  
+$EndComp
+Text HLabel 6000 2150 0    60   BiDi ~ 0
+SW12
+Text HLabel 6000 1950 0    60   BiDi ~ 0
+SW10
+Text HLabel 6000 1750 0    60   BiDi ~ 0
+SW11
+Text HLabel 6400 1950 2    60   BiDi ~ 0
+CS7
+Text HLabel 8050 2150 0    60   BiDi ~ 0
+SW6
+Text HLabel 8050 1950 0    60   BiDi ~ 0
+SW4
+Text HLabel 8050 1750 0    60   BiDi ~ 0
+SW5
+Text HLabel 9000 2150 0    60   BiDi ~ 0
+SW3
+Text HLabel 9000 1750 0    60   BiDi ~ 0
+SW2
+Text HLabel 9000 1950 0    60   BiDi ~ 0
+SW1
+Text HLabel 7000 2150 0    60   BiDi ~ 0
+SW9
+Text HLabel 7000 1950 0    60   BiDi ~ 0
+SW7
+Text HLabel 7000 1750 0    60   BiDi ~ 0
+SW8
+Text HLabel 9400 1950 2    60   BiDi ~ 0
+CS7
+Text HLabel 7400 1950 2    60   BiDi ~ 0
+CS7
+Text HLabel 8450 1950 2    60   BiDi ~ 0
+CS7
+$Comp
+L Led_RGB_CA LED31
+U 1 1 57620F6C
+P 9200 1950
+F 0 "LED31" H 9200 2300 50  0000 C CNN
+F 1 "Led_RGB_CA" H 9200 1600 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 9155 1900 50  0001 C CNN
+F 3 "" H 9155 1900 50  0000 C CNN
+	1    9200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED40
+U 1 1 57620F6D
+P 3150 2750
+F 0 "LED40" H 3150 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 3150 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 3105 2700 50  0001 C CNN
+F 3 "" H 3105 2700 50  0000 C CNN
+	1    3150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED29
+U 1 1 57620F6E
+P 7200 1950
+F 0 "LED29" H 7200 2300 50  0000 C CNN
+F 1 "Led_RGB_CA" H 7200 1600 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 7155 1900 50  0001 C CNN
+F 3 "" H 7155 1900 50  0000 C CNN
+	1    7200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED30
+U 1 1 57620F6F
+P 8250 1950
+F 0 "LED30" H 8250 2300 50  0000 C CNN
+F 1 "Led_RGB_CA" H 8250 1600 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 8205 1900 50  0001 C CNN
+F 3 "" H 8205 1900 50  0000 C CNN
+	1    8250 1950
+	1    0    0    -1  
+$EndComp
+Text HLabel 6000 2950 0    60   BiDi ~ 0
+SW12
+Text HLabel 6000 2750 0    60   BiDi ~ 0
+SW10
+Text HLabel 6000 2550 0    60   BiDi ~ 0
+SW11
+Text HLabel 3950 3750 0    60   BiDi ~ 0
+SW6
+Text HLabel 3950 3550 0    60   BiDi ~ 0
+SW4
+Text HLabel 3950 3350 0    60   BiDi ~ 0
+SW5
+Text HLabel 4950 3750 0    60   BiDi ~ 0
+SW3
+Text HLabel 4950 3350 0    60   BiDi ~ 0
+SW2
+Text HLabel 4950 3550 0    60   BiDi ~ 0
+SW1
+Text HLabel 2950 3750 0    60   BiDi ~ 0
+SW9
+Text HLabel 2950 3550 0    60   BiDi ~ 0
+SW7
+Text HLabel 2950 3350 0    60   BiDi ~ 0
+SW8
+Text HLabel 4350 4350 2    60   BiDi ~ 0
+CS8
+$Comp
+L Led_RGB_CA LED55
+U 1 1 57620F70
+P 3150 3550
+F 0 "LED55" H 3150 3900 50  0000 C CNN
+F 1 "Led_RGB_CA" H 3150 3200 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 3105 3500 50  0001 C CNN
+F 3 "" H 3105 3500 50  0000 C CNN
+	1    3150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED56
+U 1 1 57620F71
+P 4150 3550
+F 0 "LED56" H 4150 3900 50  0000 C CNN
+F 1 "Led_RGB_CA" H 4150 3200 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 4105 3500 50  0001 C CNN
+F 3 "" H 4105 3500 50  0000 C CNN
+	1    4150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED45
+U 1 1 576F3FAF
+P 8250 2750
+F 0 "LED45" H 8250 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 8250 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 8205 2700 50  0001 C CNN
+F 3 "" H 8205 2700 50  0000 C CNN
+	1    8250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED46
+U 1 1 576F3FB5
+P 9200 2750
+F 0 "LED46" H 9200 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 9200 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 9155 2700 50  0001 C CNN
+F 3 "" H 9155 2700 50  0000 C CNN
+	1    9200 2750
+	1    0    0    -1  
+$EndComp
+Text HLabel 6000 3750 0    60   BiDi ~ 0
+SW12
+Text HLabel 6000 3550 0    60   BiDi ~ 0
+SW10
+Text HLabel 6000 3350 0    60   BiDi ~ 0
+SW11
+Text HLabel 6400 4350 2    60   BiDi ~ 0
+CS9
+Text HLabel 8000 3750 0    60   BiDi ~ 0
+SW6
+Text HLabel 8000 3550 0    60   BiDi ~ 0
+SW4
+Text HLabel 8000 3350 0    60   BiDi ~ 0
+SW5
+Text HLabel 9000 3750 0    60   BiDi ~ 0
+SW3
+Text HLabel 9000 3350 0    60   BiDi ~ 0
+SW2
+Text HLabel 9000 3550 0    60   BiDi ~ 0
+SW1
+Text HLabel 7000 3750 0    60   BiDi ~ 0
+SW9
+Text HLabel 7000 3550 0    60   BiDi ~ 0
+SW7
+Text HLabel 7000 3350 0    60   BiDi ~ 0
+SW8
+$Comp
+L Led_RGB_CA LED67
+U 1 1 576F3FCB
+P 5150 4350
+F 0 "LED67" H 5150 4700 50  0000 C CNN
+F 1 "Led_RGB_CA" H 5150 4000 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 5105 4300 50  0001 C CNN
+F 3 "" H 5105 4300 50  0000 C CNN
+	1    5150 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED68
+U 1 1 576F3FD1
+P 6200 4350
+F 0 "LED68" H 6200 4700 50  0000 C CNN
+F 1 "Led_RGB_CA" H 6200 4000 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 6155 4300 50  0001 C CNN
+F 3 "" H 6155 4300 50  0000 C CNN
+	1    6200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED61
+U 1 1 57620F76
+P 9200 3550
+F 0 "LED61" H 9200 3900 50  0000 C CNN
+F 1 "Led_RGB_CA" H 9200 3200 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 9155 3500 50  0001 C CNN
+F 3 "" H 9155 3500 50  0000 C CNN
+	1    9200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_RGB_CA LED66
+U 1 1 57690BB9
+P 4150 4350
+F 0 "LED66" H 4150 4700 50  0000 C CNN
+F 1 "Led_RGB_CA" H 4150 4000 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 4105 4300 50  0001 C CNN
+F 3 "" H 4105 4300 50  0000 C CNN
+	1    4150 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 4950 4550 0    60   BiDi ~ 0
+SW3
+Text HLabel 4950 4150 0    60   BiDi ~ 0
+SW2
+Text HLabel 4950 4350 0    60   BiDi ~ 0
+SW1
+Text HLabel 6000 4550 0    60   BiDi ~ 0
+SW12
+Text HLabel 6000 4350 0    60   BiDi ~ 0
+SW10
+Text HLabel 6000 4150 0    60   BiDi ~ 0
+SW11
+Text HLabel 7000 4550 0    60   BiDi ~ 0
+SW9
+Text HLabel 7000 4350 0    60   BiDi ~ 0
+SW7
+Text HLabel 7000 4150 0    60   BiDi ~ 0
+SW8
+Text HLabel 8000 4550 0    60   BiDi ~ 0
+SW6
+Text HLabel 8000 4350 0    60   BiDi ~ 0
+SW4
+Text HLabel 8000 4150 0    60   BiDi ~ 0
+SW5
+Text HLabel 9000 4550 0    60   BiDi ~ 0
+SW3
+Text HLabel 9000 4150 0    60   BiDi ~ 0
+SW2
+Text HLabel 9000 4350 0    60   BiDi ~ 0
+SW1
+Text HLabel 6400 3550 2    60   BiDi ~ 0
+CS10
+Text HLabel 2350 1150 2    60   BiDi ~ 0
+CS1
+Text HLabel 3350 1150 2    60   BiDi ~ 0
+CS1
+Text HLabel 4350 1150 2    60   BiDi ~ 0
+CS1
+Text HLabel 5350 1150 2    60   BiDi ~ 0
+CS1
+Text HLabel 7400 2750 2    60   BiDi ~ 0
+CS5
+Text HLabel 6400 2750 2    60   BiDi ~ 0
+CS5
+Text HLabel 8450 2750 2    60   BiDi ~ 0
+CS5
+Text HLabel 9400 2750 2    60   BiDi ~ 0
+CS5
+Text HLabel 8450 1150 2    60   BiDi ~ 0
+CS6
+Text HLabel 7400 1150 2    60   BiDi ~ 0
+CS6
+Text HLabel 6400 1150 2    60   BiDi ~ 0
+CS6
+Text HLabel 5350 4350 2    60   BiDi ~ 0
+CS8
+Text HLabel 7400 3550 2    60   BiDi ~ 0
+CS10
+Text HLabel 8400 3550 2    60   BiDi ~ 0
+CS10
+Text HLabel 9400 3550 2    60   BiDi ~ 0
+CS10
+Text HLabel 7400 4350 2    60   BiDi ~ 0
+CS9
+Text HLabel 8400 4350 2    60   BiDi ~ 0
+CS9
+Text HLabel 9400 4350 2    60   BiDi ~ 0
+CS9
+$Comp
+L Led_RGB_CA LED159
+U 1 1 5763B698
+P 7200 5150
+F 0 "LED159" H 7200 5500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 7200 4800 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 7155 5100 50  0001 C CNN
+F 3 "" H 7155 5100 50  0000 C CNN
+	1    7200 5150
+	1    0    0    -1  
+$EndComp
+Text HLabel 7000 5350 0    60   BiDi ~ 0
+SW9
+Text HLabel 7000 5150 0    60   BiDi ~ 0
+SW7
+Text HLabel 7000 4950 0    60   BiDi ~ 0
+SW8
+Text HLabel 7400 5150 2    60   BiDi ~ 0
+CS10
+Text HLabel 10000 2950 0    60   BiDi ~ 0
+SW6
+Text HLabel 10000 2750 0    60   BiDi ~ 0
+SW4
+Text HLabel 10000 2550 0    60   BiDi ~ 0
+SW5
+$Comp
+L Led_RGB_CA LED145
+U 1 1 5763C424
+P 10200 2750
+F 0 "LED145" H 10200 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 10200 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB" H 10155 2700 50  0001 C CNN
+F 3 "" H 10155 2700 50  0000 C CNN
+	1    10200 2750
+	1    0    0    -1  
+$EndComp
+Text HLabel 10400 2750 2    60   BiDi ~ 0
+CS5
+Text HLabel 10950 2950 0    60   BiDi ~ 0
+SW6
+Text HLabel 10950 2750 0    60   BiDi ~ 0
+SW4
+Text HLabel 10950 2550 0    60   BiDi ~ 0
+SW5
+$Comp
+L Led_RGB_CA LED245
+U 1 1 57649E6B
+P 11150 2750
+F 0 "LED245" H 11150 3100 50  0000 C CNN
+F 1 "Led_RGB_CA" H 11150 2400 50  0000 C CNN
+F 2 "lib.pretty:RGB-reverse" H 11105 2700 50  0001 C CNN
+F 3 "" H 11105 2700 50  0000 C CNN
+	1    11150 2750
+	1    0    0    -1  
+$EndComp
+Text HLabel 11350 2750 2    60   BiDi ~ 0
+CS5
+$Comp
+L Led_RGB_CA LED167
+U 1 1 5764A80E
+P 5150 5150
+F 0 "LED167" H 5150 5500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 5150 4800 50  0000 C CNN
+F 2 "lib.pretty:RGB-reverse" H 5105 5100 50  0001 C CNN
+F 3 "" H 5105 5100 50  0000 C CNN
+	1    5150 5150
+	1    0    0    -1  
+$EndComp
+Text HLabel 4950 5350 0    60   BiDi ~ 0
+SW3
+Text HLabel 4950 4950 0    60   BiDi ~ 0
+SW2
+Text HLabel 4950 5150 0    60   BiDi ~ 0
+SW1
+Text HLabel 5350 5150 2    60   BiDi ~ 0
+CS8
+Text HLabel 8050 550  0    60   BiDi ~ 0
+SW6
+Text HLabel 8050 350  0    60   BiDi ~ 0
+SW4
+Text HLabel 8050 150  0    60   BiDi ~ 0
+SW5
+$Comp
+L Led_RGB_CA LED115
+U 1 1 5764438A
+P 8250 350
+F 0 "LED115" H 8250 700 50  0000 C CNN
+F 1 "Led_RGB_CA" H 8250 0   50  0000 C CNN
+F 2 "lib.pretty:RGB" H 8205 300 50  0001 C CNN
+F 3 "" H 8205 300 50  0000 C CNN
+	1    8250 350 
+	1    0    0    -1  
+$EndComp
+Text HLabel 8450 350  2    60   BiDi ~ 0
+CS6
+Text HLabel 3950 4950 0    60   BiDi ~ 0
+SW6
+Text HLabel 3950 5150 0    60   BiDi ~ 0
+SW4
+Text HLabel 3950 5350 0    60   BiDi ~ 0
+SW5
+Text HLabel 4350 5150 2    60   BiDi ~ 0
+CS8
+$Comp
+L Led_RGB_CA LED166
+U 1 1 57648820
+P 4150 5150
+F 0 "LED166" H 4150 5500 50  0000 C CNN
+F 1 "Led_RGB_CA" H 4150 4800 50  0000 C CNN
+F 2 "lib.pretty:RGB-reverse" H 4105 5100 50  0001 C CNN
+F 3 "" H 4105 5100 50  0000 C CNN
+	1    4150 5150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2650 4750 9700 4750
+Wire Notes Line
+	9700 4750 9700 750 
+Wire Notes Line
+	9700 750  2650 750 
+$EndSCHEMATC

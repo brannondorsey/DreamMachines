@@ -1,0 +1,214 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OSBMS Balancer Rev1-cache
+LIBS:MyCustomLib
+LIBS:OSBMS Master-cache
+EELAYER 25 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1400 1350 2950 6550
+U 5476DD9B
+F0 "Balancers" 60
+F1 "Micromaster_Balancers.sch" 60
+$EndSheet
+$Comp
+L PCA82C251 U?
+U 1 1 54781990
+P 6750 14750
+F 0 "U?" H 6900 15200 60  0000 C CNN
+F 1 "PCA82C251" H 7050 14400 60  0000 C CNN
+F 2 "" H 6750 14750 60  0000 C CNN
+F 3 "" H 6750 14750 60  0000 C CNN
+	1    6750 14750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 6800 0    60   Input ~ 0
+MOSI
+Text GLabel 4100 6950 0    60   Input ~ 0
+MISO
+Text GLabel 4100 7100 0    60   Input ~ 0
+SCK
+Text GLabel 4100 6650 0    60   Input ~ 0
+ATA68_CS
+Text GLabel 4100 7250 0    60   Input ~ 0
+ATA68_IRQ
+$Comp
+L USB-MINI-B CON?
+U 1 1 54782A42
+P 4200 12200
+F 0 "CON?" H 3950 12650 60  0000 C CNN
+F 1 "USB-MINI-B" H 4150 11700 60  0000 C CNN
+F 2 "" H 4200 12200 60  0000 C CNN
+F 3 "" H 4200 12200 60  0000 C CNN
+	1    4200 12200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Cap uF?
+U 1 1 547A2B67
+P 5450 12150
+F 0 "uF?" H 5450 12250 40  0000 L CNN
+F 1 "Cap" H 5456 12115 40  0000 L CNN
+F 2 "" H 5488 12050 30  0000 C CNN
+F 3 "" H 5300 12150 60  0000 C CNN
+	1    5450 12150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL X?
+U 1 1 547A2BFF
+P 3700 10900
+F 0 "X?" H 3700 11050 60  0000 C CNN
+F 1 "CRYSTAL" H 3700 10750 60  0000 C CNN
+F 2 "" H 3700 10900 60  0000 C CNN
+F 3 "" H 3700 10900 60  0000 C CNN
+	1    3700 10900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 547A2E04
+P 5800 11150
+F 0 "R?" V 5880 11150 40  0000 C CNN
+F 1 "R" V 5807 11151 40  0000 C CNN
+F 2 "" V 5730 11150 30  0000 C CNN
+F 3 "" H 5800 11150 30  0000 C CNN
+	1    5800 11150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 7550 0    60   Input ~ 0
+3.3V_LP
+$Comp
+L GND #PWR?
+U 1 1 547A7E84
+P 4550 7850
+F 0 "#PWR?" H 4550 7850 30  0001 C CNN
+F 1 "GND" H 4550 7780 30  0001 C CNN
+F 2 "" H 4550 7850 60  0000 C CNN
+F 3 "" H 4550 7850 60  0000 C CNN
+	1    4550 7850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 7700 0    60   Input ~ 0
+GND-1
+$Comp
+L GND #PWR?
+U 1 1 547ABEAD
+P 5450 12400
+F 0 "#PWR?" H 5450 12400 30  0001 C CNN
+F 1 "GND" H 5450 12330 30  0001 C CNN
+F 2 "" H 5450 12400 60  0000 C CNN
+F 3 "" H 5450 12400 60  0000 C CNN
+	1    5450 12400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 7700 4550 7700
+Wire Wire Line
+	4550 7700 4550 7850
+$Comp
+L LED D?
+U 1 1 547AC1CD
+P 4350 11400
+F 0 "D?" H 4350 11500 50  0000 C CNN
+F 1 "LED" H 4350 11300 50  0000 C CNN
+F 2 "" H 4350 11400 60  0000 C CNN
+F 3 "" H 4350 11400 60  0000 C CNN
+	1    4350 11400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 547AC2A4
+P 4850 11400
+F 0 "R?" V 4930 11400 40  0000 C CNN
+F 1 "R" V 4857 11401 40  0000 C CNN
+F 2 "" V 4780 11400 30  0000 C CNN
+F 3 "" H 4850 11400 30  0000 C CNN
+	1    4850 11400
+	0    1    1    0   
+$EndComp
+$Sheet
+S 1400 8100 2950 1800
+U 547AC6A6
+F0 "BLE Tranciever" 60
+F1 "BLEtrancievemodusl.sch" 60
+$EndSheet
+Text GLabel 4100 8800 0    60   Input ~ 0
+MOSI
+Text GLabel 4100 8950 0    60   Input ~ 0
+MISO
+Text GLabel 4100 9100 0    60   Input ~ 0
+SCK
+Text GLabel 4100 8650 0    60   Input ~ 0
+NRF8001_CS
+Text GLabel 4100 9250 0    60   Input ~ 0
+NRF8001_IRQ
+Text GLabel 4100 9700 0    60   Input ~ 0
+RF_GND
+Text GLabel 4100 9550 0    60   Input ~ 0
+3.3V_BLE
+$Comp
+L CNY17-3 IC?
+U 1 1 547AD86E
+P 19300 1500
+F 0 "IC?" H 19090 1680 40  0000 C CNN
+F 1 "CNY17-3" H 19420 1310 40  0000 C CNN
+F 2 "" H 19300 1500 60  0000 C CNN
+F 3 "" H 19300 1500 60  0000 C CNN
+	1    19300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CNY17-3 IC?
+U 1 1 547ADE0E
+P 4350 13850
+F 0 "IC?" H 4140 14030 40  0000 C CNN
+F 1 "CNY17-3" H 4470 13660 40  0000 C CNN
+F 2 "" H 4350 13850 60  0000 C CNN
+F 3 "" H 4350 13850 60  0000 C CNN
+	1    4350 13850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

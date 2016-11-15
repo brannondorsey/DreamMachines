@@ -1,0 +1,394 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DataStorage
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:RF_OEM_Parts
+LIBS:Sensors
+LIBS:TransistorParts
+LIBS:JR3_Power_Supply-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "JR3 DAQ Power Supply"
+Date "7 feb 2014"
+Rev "A"
+Comp "Iowa State University"
+Comment1 "Drawn By: Ian McInerney"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_3 J1
+U 1 1 52F31CC4
+P 1800 3700
+F 0 "J1" V 1750 3700 50  0000 C CNN
+F 1 "CONN_3" V 1850 3700 40  0000 C CNN
+F 2 "~" H 1800 3700 60  0000 C CNN
+F 3 "~" H 1800 3700 60  0000 C CNN
+	1    1800 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_3 J3
+U 1 1 52F31CD3
+P 7650 2700
+F 0 "J3" V 7600 2700 50  0000 C CNN
+F 1 "CONN_3" V 7700 2700 40  0000 C CNN
+F 2 "~" H 7650 2700 60  0000 C CNN
+F 3 "~" H 7650 2700 60  0000 C CNN
+	1    7650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 J2
+U 1 1 52F31CE2
+P 6300 4350
+F 0 "J2" V 6250 4350 50  0000 C CNN
+F 1 "CONN_3" V 6350 4350 40  0000 C CNN
+F 2 "~" H 6300 4350 60  0000 C CNN
+F 3 "~" H 6300 4350 60  0000 C CNN
+	1    6300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L AC/DC_DUAL_RAIL PS1
+U 1 1 52F3238D
+P 3850 2800
+F 0 "PS1" H 3500 3100 60  0000 C CNN
+F 1 "RAC15-15DA" H 3850 2500 60  0000 C CNN
+F 2 "" H 3850 2800 60  0000 C CNN
+F 3 "" H 3850 2800 60  0000 C CNN
+F 4 "945-1085-ND" H 3850 2800 60  0001 C CNN "DigikeyNumber"
+F 5 "Recom Power" H 3850 2800 60  0001 C CNN "Manufacturer"
+F 6 "RAC15-15DA" H 3850 2800 60  0001 C CNN "ManufacturerNumber"
+	1    3850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L AC/DC_SINGLE_RAIL PS2
+U 1 1 52F3239C
+P 3850 4400
+F 0 "PS2" H 3500 4700 60  0000 C CNN
+F 1 "VSK-S20-12U" H 3850 4100 60  0000 C CNN
+F 2 "" H 3850 4400 60  0000 C CNN
+F 3 "" H 3850 4400 60  0000 C CNN
+F 4 "102-2408-ND" H 3850 4400 60  0001 C CNN "DigikeyNumber"
+F 5 "CUI Inc." H 3850 4400 60  0001 C CNN "Manufacturer"
+F 6 "VSK-S20-12U" H 3850 4400 60  0001 C CNN "ManufacturerNumber"
+	1    3850 4400
+	1    0    0    -1  
+$EndComp
+Text Notes 1550 3450 0    60   ~ 0
+AC Mains Input
+Text Notes 1650 3650 2    60   ~ 0
+Hot\nNeutral\nGND
+Wire Wire Line
+	2150 3600 3100 3600
+Wire Wire Line
+	3000 2650 3000 4250
+Wire Wire Line
+	3000 2650 3300 2650
+Wire Wire Line
+	3000 4250 3300 4250
+Connection ~ 3000 3600
+Wire Wire Line
+	2150 3700 3100 3700
+Wire Wire Line
+	2900 2800 2900 4400
+Wire Wire Line
+	2900 4400 3300 4400
+Wire Wire Line
+	2900 2800 3300 2800
+Wire Wire Line
+	2150 3800 3100 3800
+Wire Wire Line
+	2800 2950 2800 4550
+Wire Wire Line
+	2800 4550 3300 4550
+Wire Wire Line
+	2800 2950 3300 2950
+$Comp
+L GND #PWR01
+U 1 1 52F3244C
+P 4500 4650
+F 0 "#PWR01" H 4500 4650 30  0001 C CNN
+F 1 "GND" H 4500 4580 30  0001 C CNN
+F 2 "" H 4500 4650 60  0000 C CNN
+F 3 "" H 4500 4650 60  0000 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+Text Notes 6450 4300 0    60   ~ 0
++12V\n\nGND
+Text Notes 7800 2650 0    60   ~ 0
++12V\n-12V\nGND
+Wire Wire Line
+	4400 4250 5950 4250
+Wire Wire Line
+	4850 4250 4850 4300
+Wire Wire Line
+	4400 4550 4500 4550
+Wire Wire Line
+	4500 4550 4500 4650
+Wire Wire Line
+	5250 4250 5250 4300
+Connection ~ 4850 4250
+Connection ~ 5250 4250
+$Comp
+L GND #PWR02
+U 1 1 52F324CD
+P 5850 4550
+F 0 "#PWR02" H 5850 4550 30  0001 C CNN
+F 1 "GND" H 5850 4480 30  0001 C CNN
+F 2 "" H 5850 4550 60  0000 C CNN
+F 3 "" H 5850 4550 60  0000 C CNN
+	1    5850 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4450 5850 4450
+Wire Wire Line
+	5850 4450 5850 4550
+$Comp
+L GND #PWR03
+U 1 1 52F324F8
+P 4850 4800
+F 0 "#PWR03" H 4850 4800 30  0001 C CNN
+F 1 "GND" H 4850 4730 30  0001 C CNN
+F 2 "" H 4850 4800 60  0000 C CNN
+F 3 "" H 4850 4800 60  0000 C CNN
+	1    4850 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 52F32507
+P 5250 4800
+F 0 "#PWR04" H 5250 4800 30  0001 C CNN
+F 1 "GND" H 5250 4730 30  0001 C CNN
+F 2 "" H 5250 4800 60  0000 C CNN
+F 3 "" H 5250 4800 60  0000 C CNN
+	1    5250 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4700 4850 4800
+Wire Wire Line
+	5250 4700 5250 4800
+Wire Wire Line
+	4400 2800 7300 2800
+Wire Wire Line
+	5650 2600 5650 3000
+Connection ~ 5650 2800
+Wire Wire Line
+	4400 2650 4500 2650
+Wire Wire Line
+	4500 2650 4500 2300
+Wire Wire Line
+	4500 2300 5350 2300
+Wire Wire Line
+	4500 3300 5350 3300
+Wire Wire Line
+	6150 2750 6150 2850
+Connection ~ 6150 2800
+Wire Wire Line
+	6150 3250 6150 3300
+Wire Wire Line
+	5950 3300 7150 3300
+Wire Wire Line
+	6150 2350 6150 2300
+Wire Wire Line
+	5950 2300 7150 2300
+Wire Wire Line
+	7300 2600 7150 2600
+Wire Wire Line
+	7150 2600 7150 2300
+Connection ~ 6150 2300
+Wire Wire Line
+	7300 2700 7150 2700
+Wire Wire Line
+	7150 2700 7150 3300
+Connection ~ 6150 3300
+Wire Wire Line
+	6600 2800 6600 2850
+Connection ~ 6600 2800
+$Comp
+L CP1 C3
+U 1 1 52F329B6
+P 4850 4500
+F 0 "C3" H 4900 4600 50  0000 L CNN
+F 1 "220uF" H 4900 4400 50  0000 L CNN
+F 2 "~" H 4850 4500 60  0000 C CNN
+F 3 "~" H 4850 4500 60  0000 C CNN
+	1    4850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C6
+U 1 1 52F329C5
+P 5250 4500
+F 0 "C6" H 5300 4600 50  0000 L CNN
+F 1 "0.1uF" H 5300 4400 50  0000 L CNN
+F 2 "~" H 5250 4500 60  0000 C CNN
+F 3 "~" H 5250 4500 60  0000 C CNN
+	1    5250 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C7
+U 1 1 52F329F2
+P 6150 2550
+F 0 "C7" H 6200 2650 50  0000 L CNN
+F 1 "0.1uF" H 6200 2450 50  0000 L CNN
+F 2 "~" H 6150 2550 60  0000 C CNN
+F 3 "~" H 6150 2550 60  0000 C CNN
+	1    6150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C8
+U 1 1 52F32A01
+P 6150 3050
+F 0 "C8" H 6200 3150 50  0000 L CNN
+F 1 "0.1uF" H 6200 2950 50  0000 L CNN
+F 2 "~" H 6150 3050 60  0000 C CNN
+F 3 "~" H 6150 3050 60  0000 C CNN
+	1    6150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 52F32A1F
+P 4750 2550
+F 0 "C1" H 4800 2650 50  0000 L CNN
+F 1 "47uF" H 4800 2450 50  0000 L CNN
+F 2 "~" H 4750 2550 60  0000 C CNN
+F 3 "~" H 4750 2550 60  0000 C CNN
+	1    4750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 52F32A2E
+P 4750 3050
+F 0 "C2" H 4800 3150 50  0000 L CNN
+F 1 "47uF" H 4800 2950 50  0000 L CNN
+F 2 "~" H 4750 3050 60  0000 C CNN
+F 3 "~" H 4750 3050 60  0000 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2950 4500 2950
+Wire Wire Line
+	4500 2950 4500 3300
+Wire Wire Line
+	4750 3250 4750 3300
+Connection ~ 4750 3300
+Wire Wire Line
+	4750 2750 4750 2850
+Connection ~ 4750 2800
+Wire Wire Line
+	4750 2350 4750 2300
+Connection ~ 4750 2300
+$Comp
+L CP1 C5
+U 1 1 52F32CF2
+P 5150 3050
+F 0 "C5" H 5200 3150 50  0000 L CNN
+F 1 "0.1uF" H 5200 2950 50  0000 L CNN
+F 2 "~" H 5150 3050 60  0000 C CNN
+F 3 "~" H 5150 3050 60  0000 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C4
+U 1 1 52F32D01
+P 5150 2550
+F 0 "C4" H 5200 2650 50  0000 L CNN
+F 1 "0.1uF" H 5200 2450 50  0000 L CNN
+F 2 "~" H 5150 2550 60  0000 C CNN
+F 3 "~" H 5150 2550 60  0000 C CNN
+	1    5150 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2350 5150 2300
+Connection ~ 5150 2300
+Wire Wire Line
+	5150 3250 5150 3300
+Connection ~ 5150 3300
+Wire Wire Line
+	5150 2750 5150 2850
+Connection ~ 5150 2800
+Text Notes 7250 2450 0    60   ~ 0
+JR3 Power Connector
+Text Notes 5800 4050 0    60   ~ 0
+NI DAQ Power Connector
+$Comp
+L LINEAR_REGULATOR U1
+U 1 1 52F3FE75
+P 5650 2350
+F 0 "U1" H 5800 2154 60  0000 C CNN
+F 1 "7812" H 5650 2550 60  0000 C CNN
+F 2 "~" H 5650 2350 60  0000 C CNN
+F 3 "~" H 5650 2350 60  0000 C CNN
+	1    5650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LINEAR_REGULATOR U2
+U 1 1 52F3FF00
+P 5650 3250
+F 0 "U2" H 5800 3054 60  0000 C CNN
+F 1 "7912" H 5650 3450 60  0000 C CNN
+F 2 "~" H 5650 3250 60  0000 C CNN
+F 3 "~" H 5650 3250 60  0000 C CNN
+	1    5650 3250
+	1    0    0    1   
+$EndComp
+Text Label 3100 3600 0    60   ~ 0
+AC_Hot
+Text Label 3100 3800 0    60   ~ 0
+AC_Gnd
+Text Label 3100 3700 0    60   ~ 0
+AC_Neutral
+Connection ~ 2800 3700
+Connection ~ 2900 3800
+Text Label 6600 2850 3    60   ~ 0
+JR3_GND
+$EndSCHEMATC

@@ -1,0 +1,743 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ftdi
+LIBS:ESP8266
+LIBS:kicad-LM1117
+LIBS:ESPBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ESP8266 Breakout Board"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12E U2
+U 1 1 56ACBCA8
+P 6950 3000
+F 0 "U2" H 6950 2900 50  0000 C CNN
+F 1 "ESP-12E" H 6950 3100 50  0000 C CNN
+F 2 "ESP8266:ESP-12E" H 6950 3000 50  0001 C CNN
+F 3 "" H 6950 3000 50  0001 C CNN
+	1    6950 3000
+	1    0    0    -1  
+$EndComp
+Text Label 6050 2700 2    60   ~ 0
+ESP_RESET
+Text Label 6050 2800 2    60   ~ 0
+ESP_ADC
+Text Label 7850 2700 0    60   ~ 0
+ESP_TX_OUT
+Text Label 7850 2800 0    60   ~ 0
+ESP_RX_IN
+Text Label 6050 2900 2    60   ~ 0
+ESP_CH_PD
+Text Label 7850 3300 0    60   ~ 0
+ESP_GPIO15
+NoConn ~ 6700 3900
+NoConn ~ 6800 3900
+NoConn ~ 6900 3900
+NoConn ~ 7000 3900
+NoConn ~ 7100 3900
+NoConn ~ 7200 3900
+Text Label 7850 3200 0    60   ~ 0
+ESP_GPIO2
+Text Label 6050 3300 2    60   ~ 0
+ESP_GPIO13
+$Comp
+L GNDPWR #PWR01
+U 1 1 56ACBF0D
+P 8450 3400
+F 0 "#PWR01" H 8450 3200 50  0001 C CNN
+F 1 "GNDPWR" H 8450 3270 50  0000 C CNN
+F 2 "" H 8450 3350 50  0000 C CNN
+F 3 "" H 8450 3350 50  0000 C CNN
+	1    8450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 56ACBF2A
+P 5100 3400
+F 0 "#PWR02" H 5100 3250 50  0001 C CNN
+F 1 "+3.3V" H 5100 3540 50  0000 C CNN
+F 2 "" H 5100 3400 50  0000 C CNN
+F 3 "" H 5100 3400 50  0000 C CNN
+	1    5100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56ACBF8E
+P 9700 5450
+F 0 "R2" V 9780 5450 50  0000 C CNN
+F 1 "10k" V 9700 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9630 5450 50  0001 C CNN
+F 3 "" H 9700 5450 50  0000 C CNN
+	1    9700 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 56ACBFB2
+P 10000 5450
+F 0 "R5" V 10080 5450 50  0000 C CNN
+F 1 "10k" V 10000 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9930 5450 50  0001 C CNN
+F 3 "" H 10000 5450 50  0000 C CNN
+	1    10000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 56ACBFCD
+P 10300 5450
+F 0 "R6" V 10380 5450 50  0000 C CNN
+F 1 "10k" V 10300 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10230 5450 50  0001 C CNN
+F 3 "" H 10300 5450 50  0000 C CNN
+	1    10300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 56ACC001
+P 9700 5300
+F 0 "#PWR03" H 9700 5150 50  0001 C CNN
+F 1 "+3.3V" H 9700 5440 50  0000 C CNN
+F 2 "" H 9700 5300 50  0000 C CNN
+F 3 "" H 9700 5300 50  0000 C CNN
+	1    9700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 56ACC01D
+P 10000 5300
+F 0 "#PWR04" H 10000 5150 50  0001 C CNN
+F 1 "+3.3V" H 10000 5440 50  0000 C CNN
+F 2 "" H 10000 5300 50  0000 C CNN
+F 3 "" H 10000 5300 50  0000 C CNN
+	1    10000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR05
+U 1 1 56ACC039
+P 10300 5600
+F 0 "#PWR05" H 10300 5400 50  0001 C CNN
+F 1 "GNDPWR" H 10300 5470 50  0000 C CNN
+F 2 "" H 10300 5550 50  0000 C CNN
+F 3 "" H 10300 5550 50  0000 C CNN
+	1    10300 5600
+	1    0    0    -1  
+$EndComp
+Text Label 10300 5300 1    60   ~ 0
+ESP_GPIO15
+Text Label 9700 5600 3    60   ~ 0
+ESP_CH_PD
+Text Label 10000 5600 3    60   ~ 0
+ESP_GPIO2
+Text Notes 9300 6400 0    60   ~ 0
+Pull-up and Pull-down Resistors\nneeded for ESP boot
+Text Label 7850 3100 0    60   ~ 0
+ESP_GPIO0
+$Comp
+L SW_PUSH SW1
+U 1 1 56ACC1FE
+P 9700 1900
+F 0 "SW1" H 9850 2010 50  0000 C CNN
+F 1 "RESET" H 9700 1820 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 9700 1900 50  0001 C CNN
+F 3 "" H 9700 1900 50  0000 C CNN
+	1    9700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 56ACC241
+P 9700 3700
+F 0 "SW2" H 9850 3810 50  0000 C CNN
+F 1 "FLASH" H 9700 3620 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 9700 3700 50  0001 C CNN
+F 3 "" H 9700 3700 50  0000 C CNN
+	1    9700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 56ACC270
+P 10000 1750
+F 0 "R3" V 10080 1750 50  0000 C CNN
+F 1 "10k" V 10000 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9930 1750 50  0001 C CNN
+F 3 "" H 10000 1750 50  0000 C CNN
+	1    10000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 56ACC297
+P 10000 3550
+F 0 "R4" V 10080 3550 50  0000 C CNN
+F 1 "330R" V 10000 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9930 3550 50  0001 C CNN
+F 3 "" H 10000 3550 50  0000 C CNN
+	1    10000 3550
+	1    0    0    -1  
+$EndComp
+Text Label 10200 1900 0    60   ~ 0
+ESP_RESET
+$Comp
+L GNDPWR #PWR06
+U 1 1 56ACC363
+P 9400 2200
+F 0 "#PWR06" H 9400 2000 50  0001 C CNN
+F 1 "GNDPWR" H 9400 2070 50  0000 C CNN
+F 2 "" H 9400 2150 50  0000 C CNN
+F 3 "" H 9400 2150 50  0000 C CNN
+	1    9400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR07
+U 1 1 56ACC395
+P 10000 1600
+F 0 "#PWR07" H 10000 1450 50  0001 C CNN
+F 1 "+3.3V" H 10000 1740 50  0000 C CNN
+F 2 "" H 10000 1600 50  0000 C CNN
+F 3 "" H 10000 1600 50  0000 C CNN
+	1    10000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR08
+U 1 1 56ACC4E5
+P 9400 4000
+F 0 "#PWR08" H 9400 3800 50  0001 C CNN
+F 1 "GNDPWR" H 9400 3870 50  0000 C CNN
+F 2 "" H 9400 3950 50  0000 C CNN
+F 3 "" H 9400 3950 50  0000 C CNN
+	1    9400 4000
+	1    0    0    -1  
+$EndComp
+Text Label 10150 3700 0    60   ~ 0
+ESP_GPIO0
+Text Notes 9000 4350 0    60   ~ 0
+Hold switch during reset to enter flash mode
+Text Notes 9650 2500 0    60   ~ 0
+Press to reset
+$Comp
+L LED D1
+U 1 1 56ACC55C
+P 10000 3200
+F 0 "D1" H 10000 3300 50  0000 C CNN
+F 1 "LED" H 10000 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 10000 3200 50  0001 C CNN
+F 3 "" H 10000 3200 50  0000 C CNN
+	1    10000 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR09
+U 1 1 56ACC595
+P 10000 3000
+F 0 "#PWR09" H 10000 2850 50  0001 C CNN
+F 1 "+3.3V" H 10000 3140 50  0000 C CNN
+F 2 "" H 10000 3000 50  0000 C CNN
+F 3 "" H 10000 3000 50  0000 C CNN
+	1    10000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM1117IMP-3.3 U1
+U 1 1 56ACC7DA
+P 3750 1100
+F 0 "U1" H 3750 1200 60  0000 C CNN
+F 1 "LM1117-3.3" H 3750 1100 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 3750 1100 60  0001 C CNN
+F 3 "" H 3750 1100 60  0000 C CNN
+	1    3750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 56ACC819
+P 1200 1400
+F 0 "P1" H 1200 1600 50  0000 C CNN
+F 1 "PWR" V 1300 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 1200 1400 50  0001 C CNN
+F 3 "" H 1200 1400 50  0000 C CNN
+	1    1200 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 56ACC976
+P 1600 1300
+F 0 "#PWR010" H 1600 1150 50  0001 C CNN
+F 1 "+5V" H 1600 1440 50  0000 C CNN
+F 2 "" H 1600 1300 50  0000 C CNN
+F 3 "" H 1600 1300 50  0000 C CNN
+	1    1600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR011
+U 1 1 56ACC9A0
+P 1600 1400
+F 0 "#PWR011" H 1600 1200 50  0001 C CNN
+F 1 "GNDPWR" H 1600 1270 50  0000 C CNN
+F 2 "" H 1600 1350 50  0000 C CNN
+F 3 "" H 1600 1350 50  0000 C CNN
+	1    1600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR012
+U 1 1 56ACC9E2
+P 1600 2000
+F 0 "#PWR012" H 1600 1850 50  0001 C CNN
+F 1 "+3.3V" H 1600 2140 50  0000 C CNN
+F 2 "" H 1600 2000 50  0000 C CNN
+F 3 "" H 1600 2000 50  0000 C CNN
+	1    1600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 56ACCA21
+P 2000 1300
+F 0 "#FLG013" H 2000 1395 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1480 50  0000 C CNN
+F 2 "" H 2000 1300 50  0000 C CNN
+F 3 "" H 2000 1300 50  0000 C CNN
+	1    2000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG014
+U 1 1 56ACCA4B
+P 2000 1400
+F 0 "#FLG014" H 2000 1495 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1580 50  0000 C CNN
+F 2 "" H 2000 1400 50  0000 C CNN
+F 3 "" H 2000 1400 50  0000 C CNN
+	1    2000 1400
+	1    0    0    1   
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 56ACCB59
+P 3000 1550
+F 0 "C1" H 3025 1650 50  0000 L CNN
+F 1 "10u" H 3025 1450 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeA_EIA-3216_HandSoldering" H 3000 1550 50  0001 C CNN
+F 3 "" H 3000 1550 50  0000 C CNN
+	1    3000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 56ACCB8D
+P 4500 1550
+F 0 "C2" H 4525 1650 50  0000 L CNN
+F 1 "10u" H 4525 1450 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeA_EIA-3216_HandSoldering" H 4500 1550 50  0001 C CNN
+F 3 "" H 4500 1550 50  0000 C CNN
+	1    4500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR015
+U 1 1 56ACCC00
+P 2800 1300
+F 0 "#PWR015" H 2800 1150 50  0001 C CNN
+F 1 "+5V" H 2800 1440 50  0000 C CNN
+F 2 "" H 2800 1300 50  0000 C CNN
+F 3 "" H 2800 1300 50  0000 C CNN
+	1    2800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR016
+U 1 1 56ACCC2E
+P 5050 1300
+F 0 "#PWR016" H 5050 1150 50  0001 C CNN
+F 1 "+3.3V" H 5050 1440 50  0000 C CNN
+F 2 "" H 5050 1300 50  0000 C CNN
+F 3 "" H 5050 1300 50  0000 C CNN
+	1    5050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR017
+U 1 1 56ACCC5C
+P 3750 1750
+F 0 "#PWR017" H 3750 1550 50  0001 C CNN
+F 1 "GNDPWR" H 3750 1620 50  0000 C CNN
+F 2 "" H 3750 1700 50  0000 C CNN
+F 3 "" H 3750 1700 50  0000 C CNN
+	1    3750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P3
+U 1 1 56ACCDA2
+P 1200 4650
+F 0 "P3" H 1200 5000 50  0000 C CNN
+F 1 "RS232" V 1300 4650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 1200 4650 50  0001 C CNN
+F 3 "" H 1200 4650 50  0000 C CNN
+	1    1200 4650
+	-1   0    0    -1  
+$EndComp
+Text Notes 750  5500 0    60   ~ 0
+RS232 Connector pinout matches the Sparkfun\nFTDI Basic board, to ease programming and IO.\nThe FTDI power is not connected as the ESP\ndraws too much power.
+$Comp
+L CONN_01X08 P6
+U 1 1 56ACD1BC
+P 2300 6650
+F 0 "P6" H 2300 7100 50  0000 C CNN
+F 1 "GPIO" V 2400 6650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 2300 6650 50  0001 C CNN
+F 3 "" H 2300 6650 50  0000 C CNN
+	1    2300 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3400 8450 3400
+Wire Wire Line
+	6050 3400 5100 3400
+Wire Wire Line
+	10000 3700 10150 3700
+Wire Wire Line
+	10000 1900 10200 1900
+Wire Wire Line
+	9400 1900 9400 2200
+Wire Wire Line
+	9400 3700 9400 4000
+Wire Wire Line
+	1400 1300 2000 1300
+Wire Wire Line
+	1400 1400 2000 1400
+Wire Wire Line
+	1400 1500 1400 2000
+Connection ~ 1600 1300
+Connection ~ 1600 1400
+Wire Wire Line
+	2800 1300 3200 1300
+Wire Wire Line
+	4300 1300 5050 1300
+Wire Wire Line
+	3000 1750 4850 1750
+Wire Wire Line
+	4500 1750 4500 1700
+Wire Wire Line
+	3000 1750 3000 1700
+Connection ~ 3750 1750
+Wire Wire Line
+	2500 6500 2750 6500
+Text Label 2750 6500 0    60   ~ 0
+ESP_GPIO2
+Text Label 2750 6600 0    60   ~ 0
+ESP_GPIO12
+Text Label 2750 6700 0    60   ~ 0
+ESP_GPIO14
+Wire Wire Line
+	2500 6900 2750 6900
+Wire Wire Line
+	2500 7000 2750 7000
+Wire Wire Line
+	2500 6400 3600 6400
+Wire Wire Line
+	2500 6300 3600 6300
+Text Label 2750 7000 0    60   ~ 0
+ESP_ADC
+Text Label 2750 6800 0    60   ~ 0
+ESP_GPIO16
+Text Label 2750 6900 0    60   ~ 0
+ESP_GPIO13
+$Comp
+L +3.3V #PWR018
+U 1 1 56ACD619
+P 3600 6300
+F 0 "#PWR018" H 3600 6150 50  0001 C CNN
+F 1 "+3.3V" H 3600 6440 50  0000 C CNN
+F 2 "" H 3600 6300 50  0000 C CNN
+F 3 "" H 3600 6300 50  0000 C CNN
+	1    3600 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR019
+U 1 1 56ACD64B
+P 3600 6400
+F 0 "#PWR019" H 3600 6200 50  0001 C CNN
+F 1 "GNDPWR" H 3600 6270 50  0000 C CNN
+F 2 "" H 3600 6350 50  0000 C CNN
+F 3 "" H 3600 6350 50  0000 C CNN
+	1    3600 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P4
+U 1 1 56ACD67D
+P 1200 6650
+F 0 "P4" H 1200 7100 50  0000 C CNN
+F 1 "3.3V" V 1300 6650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 1200 6650 50  0001 C CNN
+F 3 "" H 1200 6650 50  0000 C CNN
+	1    1200 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6150 1400 7000
+Connection ~ 1400 6900
+Connection ~ 1400 6800
+Connection ~ 1400 6700
+Connection ~ 1400 6600
+Connection ~ 1400 6500
+Connection ~ 1400 6400
+Connection ~ 1400 6300
+$Comp
+L +3.3V #PWR020
+U 1 1 56ACD8BB
+P 1400 6150
+F 0 "#PWR020" H 1400 6000 50  0001 C CNN
+F 1 "+3.3V" H 1400 6290 50  0000 C CNN
+F 2 "" H 1400 6150 50  0000 C CNN
+F 3 "" H 1400 6150 50  0000 C CNN
+	1    1400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P5
+U 1 1 56ACD91B
+P 1750 6650
+F 0 "P5" H 1750 7100 50  0000 C CNN
+F 1 "Gnd" V 1850 6650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 1750 6650 50  0001 C CNN
+F 3 "" H 1750 6650 50  0000 C CNN
+	1    1750 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6300 1950 7150
+Connection ~ 1950 6400
+Connection ~ 1950 6500
+Connection ~ 1950 6600
+Connection ~ 1950 6700
+Connection ~ 1950 6800
+Connection ~ 1950 6900
+Connection ~ 1950 7000
+$Comp
+L GNDPWR #PWR021
+U 1 1 56ACDB87
+P 1950 7150
+F 0 "#PWR021" H 1950 6950 50  0001 C CNN
+F 1 "GNDPWR" H 1950 7020 50  0000 C CNN
+F 2 "" H 1950 7100 50  0000 C CNN
+F 3 "" H 1950 7100 50  0000 C CNN
+	1    1950 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56ACDD84
+P 8050 5450
+F 0 "R1" V 8130 5450 50  0000 C CNN
+F 1 "470k" V 8050 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7980 5450 50  0001 C CNN
+F 3 "" H 8050 5450 50  0000 C CNN
+	1    8050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR022
+U 1 1 56ACDDCC
+P 8050 5300
+F 0 "#PWR022" H 8050 5150 50  0001 C CNN
+F 1 "+3.3V" H 8050 5440 50  0000 C CNN
+F 2 "" H 8050 5300 50  0000 C CNN
+F 3 "" H 8050 5300 50  0000 C CNN
+	1    8050 5300
+	1    0    0    -1  
+$EndComp
+Text Label 8050 5600 3    60   ~ 0
+ESP_ADC
+Text Notes 7350 6400 0    60   ~ 0
+ADC tied to 3.3V to allow easy\nconnection of LDR between \nADC and GND on GPIO header
+Text Notes 750  2600 0    60   ~ 0
+Power connector allows input of 5V which will\nbe regulated to 3.3V through the LM1117.\nAlso possible to wire 3.3V directly in and omit\nthe LM1117 component from the board.\n*** DON'T SUPPLY BOTH 5V and 3.3V ***
+Wire Wire Line
+	3000 1400 3000 1300
+Connection ~ 3000 1300
+Wire Wire Line
+	4500 1400 4500 1300
+Connection ~ 4500 1300
+Wire Wire Line
+	2500 6600 2750 6600
+Wire Wire Line
+	2500 6700 2750 6700
+Wire Wire Line
+	2500 6800 2750 6800
+NoConn ~ 7850 2900
+NoConn ~ 7850 3000
+Text Label 6050 3000 2    60   ~ 0
+ESP_GPIO16
+Text Label 6050 3100 2    60   ~ 0
+ESP_GPIO14
+Text Label 6050 3200 2    60   ~ 0
+ESP_GPIO12
+Wire Wire Line
+	1400 2000 1600 2000
+Wire Wire Line
+	4300 1450 4350 1450
+Wire Wire Line
+	4350 1450 4350 1300
+Connection ~ 4350 1300
+$Comp
+L CP C3
+U 1 1 56AF8128
+P 4850 1550
+F 0 "C3" H 4875 1650 50  0000 L CNN
+F 1 "1000u" H 4875 1450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D7.5_L11.2_P2.5" H 4888 1400 50  0001 C CNN
+F 3 "" H 4850 1550 50  0000 C CNN
+	1    4850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1300 4850 1400
+Connection ~ 4850 1300
+Wire Wire Line
+	4850 1750 4850 1700
+Connection ~ 4500 1750
+Text Label 4950 4700 0    60   ~ 0
+ESP_TX_OUT
+Text Label 4950 4900 0    60   ~ 0
+ESP_RX_IN
+Text Label 4950 4500 0    60   ~ 0
+ESP_GPIO0
+Text Label 4950 4300 0    60   ~ 0
+ESP_RESET
+Text Label 1400 4400 0    60   ~ 0
+SERIAL_DTR
+Text Label 1400 4500 0    60   ~ 0
+SERIAL_RX_IN
+Text Label 1400 4600 0    60   ~ 0
+SERIAL_TX_OUT
+Text Label 1400 4700 0    60   ~ 0
+SERIAL_3V3
+Text Label 1400 4800 0    60   ~ 0
+SERIAL_CTS
+Text Label 1400 4900 0    60   ~ 0
+SERIAL_GND
+Text Label 4150 4500 2    60   ~ 0
+SERIAL_DTR
+Text Label 4150 4700 2    60   ~ 0
+SERIAL_RX_IN
+Text Label 4150 4900 2    60   ~ 0
+SERIAL_TX_OUT
+Text Label 4150 5350 2    60   ~ 0
+SERIAL_CTS
+Text Label 4150 5250 2    60   ~ 0
+SERIAL_3V3
+Text Label 4150 5450 2    60   ~ 0
+SERIAL_GND
+Wire Wire Line
+	4150 5250 4250 5250
+Wire Wire Line
+	4150 5350 4250 5350
+Wire Wire Line
+	4150 5450 4450 5450
+NoConn ~ 4250 5250
+NoConn ~ 4250 5350
+$Comp
+L GNDPWR #PWR023
+U 1 1 56BDAE5D
+P 4450 5450
+F 0 "#PWR023" H 4450 5250 50  0001 C CNN
+F 1 "GNDPWR" H 4450 5320 50  0000 C CNN
+F 2 "" H 4450 5400 50  0000 C CNN
+F 3 "" H 4450 5400 50  0000 C CNN
+	1    4450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 56BDAF18
+P 1200 3300
+F 0 "P2" H 1200 3400 50  0000 C CNN
+F 1 "EXT_RESET" V 1300 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 1200 3300 50  0001 C CNN
+F 3 "" H 1200 3300 50  0000 C CNN
+	1    1200 3300
+	-1   0    0    -1  
+$EndComp
+Text Label 1400 3300 0    60   ~ 0
+EXT_RESET
+Text Label 4150 4300 2    60   ~ 0
+EXT_RESET
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 56BDB112
+P 4550 4500
+F 0 "JP1" H 4550 4580 50  0000 C CNN
+F 1 "AUTO_FLASH" H 4560 4440 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4550 4500 50  0001 C CNN
+F 3 "" H 4550 4500 50  0000 C CNN
+	1    4550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4300 4950 4300
+Wire Wire Line
+	4150 4500 4450 4500
+Wire Wire Line
+	4650 4500 4950 4500
+Wire Wire Line
+	4150 4700 4950 4700
+Wire Wire Line
+	4150 4900 4950 4900
+Text Notes 750  3950 0    60   ~ 0
+If you have a serial board with RTS\n exposed you can connect it to the\nEXT_RESET pin to automatically\nreset when programming
+Text Notes 1150 7550 0    60   ~ 0
+I/O Headers with Power
+$EndSCHEMATC

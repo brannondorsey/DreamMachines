@@ -1,0 +1,810 @@
+EESchema Schematic File Version 2
+LIBS:xilinx
+LIBS:video
+LIBS:valves
+LIBS:ttl_ieee
+LIBS:transistors
+LIBS:transf
+LIBS:texas
+LIBS:switches
+LIBS:supertex
+LIBS:stm8
+LIBS:stm32
+LIBS:siliconi
+LIBS:silabs
+LIBS:sensors
+LIBS:rfcom
+LIBS:relays
+LIBS:regul
+LIBS:references
+LIBS:pspice
+LIBS:powerint
+LIBS:power
+LIBS:philips
+LIBS:opto
+LIBS:onsemi
+LIBS:nxp_armmcu
+LIBS:nordicsemi
+LIBS:msp430
+LIBS:motorola
+LIBS:motor_drivers
+LIBS:microcontrollers
+LIBS:microchip_pic32mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic10mcu
+LIBS:microchip_dspic33dsc
+LIBS:microchip
+LIBS:memory
+LIBS:maxim
+LIBS:logo
+LIBS:linear
+LIBS:ir
+LIBS:interface
+LIBS:intel
+LIBS:hc11
+LIBS:graphic
+LIBS:gennum
+LIBS:ftdi
+LIBS:elec-unifil
+LIBS:dsp
+LIBS:display
+LIBS:diode
+LIBS:digital-audio
+LIBS:device
+LIBS:dc-dc
+LIBS:cypress
+LIBS:contrib
+LIBS:conn
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:brooktre
+LIBS:audio
+LIBS:atmel
+LIBS:analog_switches
+LIBS:analog_devices
+LIBS:adc-dac
+LIBS:actel
+LIBS:ac-dc
+LIBS:Zilog
+LIBS:Xicor
+LIBS:Power_Management
+LIBS:Oscillators
+LIBS:Lattice
+LIBS:ESD_Protection
+LIBS:Altera
+LIBS:74xx
+LIBS:74xgxx
+LIBS:Symbols_Transformer-Diskrete_RevA
+LIBS:Symbols_Socket-DIN41612_RevA
+LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
+LIBS:Symbols_ICs-Opto_RevB_16Sep2013
+LIBS:Symbols_ICs-Diskrete_RevD10
+LIBS:Symbols_EN60617_13Mar2013
+LIBS:Symbols_EN60617-10_HF-Radio_DRAFT_12Sep2013
+LIBS:Symbols_DCDC-ACDC-Converter_RevC_20Jul2012
+LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
+LIBS:wickerlib
+LIBS:mcp73831
+LIBS:revA-cache
+LIBS:tyrobot
+LIBS:ESP8266
+LIBS:esp8266-test-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Project Title"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-01v090 U1
+U 1 1 578EB4E1
+P 4350 2600
+F 0 "U1" H 4350 2500 50  0000 C CNN
+F 1 "ESP-01v090" H 4350 2700 50  0000 C CNN
+F 2 "ESP8266:ESP-01" H 4350 2600 50  0001 C CNN
+F 3 "" H 4350 2600 50  0001 C CNN
+	1    4350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY-LC J1
+U 1 1 578EB504
+P 2675 2300
+F 0 "J1" H 2225 3550 50  0000 L CNN
+F 1 "TEENSY-LC" H 2225 3450 50  0000 L CNN
+F 2 "Wickerlib:TEENSY-LC" V 2175 1900 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2475 2300 5   0001 C CNN
+F 4 "TEENSY-LC" V 2175 1900 50  0001 C CIN "Package"
+F 5 "Harwin" V 2175 1900 50  0001 C CIN "MF_Name"
+F 6 "TEENSY-LC" V 2175 1900 50  0001 C CIN "MF_PN"
+F 7 "PJRC" V 2175 1900 50  0001 C CIN "S1_Name"
+F 8 "TEENSY-LC" V 2175 1950 50  0001 C CIN "S1_PN"
+F 9 "TEENSY LC " V 2175 1900 50  0001 C CIN "Description"
+F 10 "Not Verified" V 2175 1900 50  0001 C CIN "Verified"
+	1    2675 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 578EB6A9
+P 3900 3700
+F 0 "D1" H 3900 3800 50  0000 C CNN
+F 1 "LED" H 3900 3600 50  0000 C CNN
+F 2 "Wickerlib:LED-3MM-2PIN" H 3900 3700 50  0001 C CNN
+F 3 "" H 3900 3700 50  0000 C CNN
+	1    3900 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 578EB6EE
+P 3325 3700
+F 0 "R1" V 3405 3700 50  0000 C CNN
+F 1 "R" V 3325 3700 50  0000 C CNN
+F 2 "Wickerlib:Resistor_Horizontal_RM7mm" H 3325 3700 50  0001 C CNN
+F 3 "" H 3325 3700 50  0000 C CNN
+	1    3325 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 578EBAAF
+P 5125 3700
+F 0 "D2" H 5125 3800 50  0000 C CNN
+F 1 "LED" H 5125 3600 50  0000 C CNN
+F 2 "Wickerlib:LED-3MM-2PIN" H 5125 3700 50  0001 C CNN
+F 3 "" H 5125 3700 50  0000 C CNN
+	1    5125 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 578EBAB5
+P 4550 3700
+F 0 "R2" V 4630 3700 50  0000 C CNN
+F 1 "R" V 4550 3700 50  0000 C CNN
+F 2 "Wickerlib:Resistor_Horizontal_RM7mm" H 4550 3700 50  0001 C CNN
+F 3 "" H 4550 3700 50  0000 C CNN
+	1    4550 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 2450 5900 2450
+Wire Wire Line
+	5900 2450 5900 4500
+Wire Wire Line
+	5900 4500 2675 4500
+Wire Wire Line
+	3400 2750 3050 2750
+Wire Wire Line
+	3050 2750 3050 1500
+Wire Wire Line
+	3050 1500 2725 1500
+Wire Wire Line
+	3400 2450 3400 1700
+Wire Wire Line
+	3400 1700 2675 1700
+Wire Wire Line
+	5300 2750 5300 3125
+Wire Wire Line
+	5300 3125 2925 3125
+Wire Wire Line
+	2925 3125 2925 1800
+Wire Wire Line
+	2925 1800 2675 1800
+Wire Wire Line
+	3575 3700 3700 3700
+Wire Wire Line
+	4100 3700 4100 4500
+Connection ~ 4100 4500
+Wire Wire Line
+	3075 3700 3075 3275
+Wire Wire Line
+	3075 3275 2825 3275
+Wire Wire Line
+	4800 3700 4925 3700
+Wire Wire Line
+	2675 3200 2825 3200
+Wire Wire Line
+	2825 3200 2825 3275
+Wire Wire Line
+	2675 3100 2875 3100
+Wire Wire Line
+	2875 3100 2875 3225
+Wire Wire Line
+	2875 3225 4300 3225
+Wire Wire Line
+	4300 3225 4300 3700
+Wire Wire Line
+	5325 3700 5325 4500
+Connection ~ 5325 4500
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J28
+U 1 1 578EBE26
+P 3200 2550
+F 0 "J28" H 3200 3000 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 3200 2900 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 3200 2200 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 3200 2550 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 3200 2200 50  0001 C CIN "Package"
+F 5 "Harwin" H 3200 2200 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 3200 2200 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 3200 2200 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 3200 2200 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 3200 2200 50  0001 C CIN "Description"
+F 10 "Not Verified" H 3200 2200 50  0001 C CIN "Verified"
+	1    3200 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J29
+U 1 1 578EBFA2
+P 3200 2650
+F 0 "J29" H 3200 3100 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 3200 3000 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 3200 2300 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 3200 2650 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 3200 2300 50  0001 C CIN "Package"
+F 5 "Harwin" H 3200 2300 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 3200 2300 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 3200 2300 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 3200 2300 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 3200 2300 50  0001 C CIN "Description"
+F 10 "Not Verified" H 3200 2300 50  0001 C CIN "Verified"
+	1    3200 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J30
+U 1 1 578EC15D
+P 5500 2550
+F 0 "J30" H 5500 3000 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 5500 2900 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 5500 2200 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 5500 2550 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 5500 2200 50  0001 C CIN "Package"
+F 5 "Harwin" H 5500 2200 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 5500 2200 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 5500 2200 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 5500 2200 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 5500 2200 50  0001 C CIN "Description"
+F 10 "Not Verified" H 5500 2200 50  0001 C CIN "Verified"
+	1    5500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J31
+U 1 1 578EC18E
+P 5500 2650
+F 0 "J31" H 5500 3100 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 5500 3000 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 5500 2300 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 5500 2650 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 5500 2300 50  0001 C CIN "Package"
+F 5 "Harwin" H 5500 2300 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 5500 2300 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 5500 2300 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 5500 2300 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 5500 2300 50  0001 C CIN "Description"
+F 10 "Not Verified" H 5500 2300 50  0001 C CIN "Verified"
+	1    5500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J2
+U 1 1 578EC2A9
+P 2875 1900
+F 0 "J2" H 2875 2350 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 2250 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 1550 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 1900 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 1550 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 1550 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 1550 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 1550 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 1550 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 1550 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 1550 50  0001 C CIN "Verified"
+	1    2875 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J3
+U 1 1 578EC2D4
+P 2875 2000
+F 0 "J3" H 2875 2450 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 2350 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 1650 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2000 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 1650 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 1650 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 1650 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 1650 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 1650 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 1650 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 1650 50  0001 C CIN "Verified"
+	1    2875 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J4
+U 1 1 578EC305
+P 2875 2100
+F 0 "J4" H 2875 2550 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 2450 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 1750 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2100 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 1750 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 1750 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 1750 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 1750 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 1750 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 1750 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 1750 50  0001 C CIN "Verified"
+	1    2875 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J5
+U 1 1 578EC33C
+P 2875 2200
+F 0 "J5" H 2875 2650 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 2550 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 1850 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2200 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 1850 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 1850 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 1850 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 1850 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 1850 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 1850 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 1850 50  0001 C CIN "Verified"
+	1    2875 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J6
+U 1 1 578EC367
+P 2875 2300
+F 0 "J6" H 2875 2750 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 2650 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 1950 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2300 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 1950 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 1950 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 1950 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 1950 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 1950 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 1950 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 1950 50  0001 C CIN "Verified"
+	1    2875 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J7
+U 1 1 578EC392
+P 2875 2400
+F 0 "J7" H 2875 2850 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 2750 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 2050 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2400 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 2050 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 2050 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 2050 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 2050 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 2050 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 2050 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 2050 50  0001 C CIN "Verified"
+	1    2875 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J8
+U 1 1 578EC3BD
+P 2875 2500
+F 0 "J8" H 2875 2950 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 2850 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 2150 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2500 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 2150 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 2150 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 2150 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 2150 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 2150 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 2150 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 2150 50  0001 C CIN "Verified"
+	1    2875 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J9
+U 1 1 578EC3E8
+P 2875 2600
+F 0 "J9" H 2875 3050 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 2950 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 2250 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2600 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 2250 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 2250 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 2250 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 2250 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 2250 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 2250 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 2250 50  0001 C CIN "Verified"
+	1    2875 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J10
+U 1 1 578EC413
+P 2875 2700
+F 0 "J10" H 2875 3150 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 3050 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 2350 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2700 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 2350 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 2350 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 2350 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 2350 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 2350 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 2350 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 2350 50  0001 C CIN "Verified"
+	1    2875 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J11
+U 1 1 578EC43E
+P 2875 2800
+F 0 "J11" H 2875 3250 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 3150 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 2450 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2800 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 2450 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 2450 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 2450 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 2450 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 2450 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 2450 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 2450 50  0001 C CIN "Verified"
+	1    2875 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J12
+U 1 1 578EC469
+P 2875 2900
+F 0 "J12" H 2875 3350 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 3250 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 2550 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 2900 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 2550 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 2550 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 2550 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 2550 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 2550 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 2550 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 2550 50  0001 C CIN "Verified"
+	1    2875 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J13
+U 1 1 578EC494
+P 2875 3000
+F 0 "J13" H 2875 3450 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 3350 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 2650 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 3000 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 2650 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 2650 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 2650 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 2650 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 2650 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 2650 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 2650 50  0001 C CIN "Verified"
+	1    2875 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 3300 2975 3300
+Wire Wire Line
+	2975 3300 2975 4875
+Wire Wire Line
+	2975 4875 3950 4875
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J14
+U 1 1 578EC5E7
+P 2875 3400
+F 0 "J14" H 2875 3850 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 3750 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 3050 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 3400 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 3050 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 3050 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 3050 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 3050 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 3050 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 3050 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 3050 50  0001 C CIN "Verified"
+	1    2875 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J15
+U 1 1 578EC618
+P 2875 3500
+F 0 "J15" H 2875 3950 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 3850 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 3150 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 3500 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 3150 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 3150 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 3150 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 3150 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 3150 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 3150 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 3150 50  0001 C CIN "Verified"
+	1    2875 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J16
+U 1 1 578EC643
+P 2875 3600
+F 0 "J16" H 2875 4050 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 3950 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 3250 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 3600 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 3250 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 3250 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 3250 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 3250 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 3250 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 3250 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 3250 50  0001 C CIN "Verified"
+	1    2875 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J17
+U 1 1 578EC66E
+P 2875 3700
+F 0 "J17" H 2875 4150 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 4050 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 3350 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 3700 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 3350 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 3350 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 3350 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 3350 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 3350 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 3350 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 3350 50  0001 C CIN "Verified"
+	1    2875 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J18
+U 1 1 578EC699
+P 2875 3800
+F 0 "J18" H 2875 4250 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 4150 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 3450 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 3800 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 3450 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 3450 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 3450 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 3450 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 3450 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 3450 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 3450 50  0001 C CIN "Verified"
+	1    2875 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J19
+U 1 1 578EC6C4
+P 2875 3900
+F 0 "J19" H 2875 4350 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 4250 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 3550 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 3900 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 3550 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 3550 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 3550 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 3550 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 3550 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 3550 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 3550 50  0001 C CIN "Verified"
+	1    2875 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J20
+U 1 1 578EC6EF
+P 2875 4000
+F 0 "J20" H 2875 4450 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 4350 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 3650 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 4000 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 3650 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 3650 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 3650 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 3650 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 3650 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 3650 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 3650 50  0001 C CIN "Verified"
+	1    2875 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J25
+U 1 1 578EC726
+P 2925 4150
+F 0 "J25" H 2925 4600 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2925 4500 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2925 3800 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2925 4150 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2925 3800 50  0001 C CIN "Package"
+F 5 "Harwin" H 2925 3800 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2925 3800 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2925 3800 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2925 3800 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2925 3800 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2925 3800 50  0001 C CIN "Verified"
+	1    2925 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J26
+U 1 1 578EC751
+P 2925 4250
+F 0 "J26" H 2925 4700 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2925 4600 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2925 3900 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2925 4250 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2925 3900 50  0001 C CIN "Package"
+F 5 "Harwin" H 2925 3900 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2925 3900 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2925 3900 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2925 3900 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2925 3900 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2925 3900 50  0001 C CIN "Verified"
+	1    2925 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J27
+U 1 1 578EC77C
+P 2925 4350
+F 0 "J27" H 2925 4800 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2925 4700 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2925 4000 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2925 4350 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2925 4000 50  0001 C CIN "Package"
+F 5 "Harwin" H 2925 4000 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2925 4000 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2925 4000 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2925 4000 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2925 4000 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2925 4000 50  0001 C CIN "Verified"
+	1    2925 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J21
+U 1 1 578EC7BF
+P 2875 4600
+F 0 "J21" H 2875 5050 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 4950 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 4250 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 4600 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 4250 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 4250 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 4250 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 4250 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 4250 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 4250 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 4250 50  0001 C CIN "Verified"
+	1    2875 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J22
+U 1 1 578EC7EA
+P 2875 4700
+F 0 "J22" H 2875 5150 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2875 5050 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2875 4350 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2875 4700 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2875 4350 50  0001 C CIN "Package"
+F 5 "Harwin" H 2875 4350 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2875 4350 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2875 4350 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2875 4350 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2875 4350 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2875 4350 50  0001 C CIN "Verified"
+	1    2875 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J24
+U 1 1 578EC8C0
+P 2925 1400
+F 0 "J24" H 2925 1850 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2925 1750 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2925 1050 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2925 1400 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2925 1050 50  0001 C CIN "Package"
+F 5 "Harwin" H 2925 1050 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2925 1050 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2925 1050 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2925 1050 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2925 1050 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2925 1050 50  0001 C CIN "Verified"
+	1    2925 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 J23
+U 1 1 578EC8EB
+P 2925 1300
+F 0 "J23" H 2925 1750 50  0001 L CNN
+F 1 "HEADER-MALE-1POS-TH-1x01" H 2925 1650 50  0001 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 2925 950 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2925 1300 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 2925 950 50  0001 C CIN "Package"
+F 5 "Harwin" H 2925 950 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2925 950 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2925 950 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2925 950 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 2925 950 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2925 950 50  0001 C CIN "Verified"
+	1    2925 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPSENSE_CIRCLE CAP1
+U 1 1 578EC971
+P 4300 4875
+F 0 "CAP1" H 4550 4975 60  0000 L CNN
+F 1 "CAPSENSE_CIRCLE" H 4550 4775 60  0000 L CNN
+F 2 "Wickerlib:CAPSENSE_CIRCLE_D10" H 4300 4875 60  0001 C CNN
+F 3 "" H 4300 4875 60  0000 C CNN
+	1    4300 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 578EBF0D
+P 3125 4500
+F 0 "#PWR01" H 3125 4250 50  0001 C CNN
+F 1 "GND" H 3125 4350 50  0000 C CNN
+F 2 "" H 3125 4500 50  0000 C CNN
+F 3 "" H 3125 4500 50  0000 C CNN
+	1    3125 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 578EBF8A
+P 2800 1500
+F 0 "#PWR02" H 2800 1350 50  0001 C CNN
+F 1 "+3.3V" H 2800 1640 50  0000 C CNN
+F 2 "" H 2800 1500 50  0000 C CNN
+F 3 "" H 2800 1500 50  0000 C CNN
+	1    2800 1500
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

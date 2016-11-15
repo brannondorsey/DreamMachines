@@ -1,0 +1,322 @@
+EESchema Schematic File Version 2  date Tue 03 Feb 2015 08:31:21 PM MST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom
+LIBS:water_sensor-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 8500 11000 portrait
+encoding utf-8
+Sheet 1 1
+Title "Water Sensor"
+Date "4 feb 2015"
+Rev "1"
+Comp "Hackstyle"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 54CE6B92
+P 2400 2200
+F 0 "D1" H 2400 2300 50  0000 C CNN
+F 1 "GRN" H 2400 2100 50  0000 C CNN
+F 2 "~" H 2400 2200 60  0000 C CNN
+F 3 "~" H 2400 2200 60  0000 C CNN
+	1    2400 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODE D3
+U 1 1 54CE6BD4
+P 4700 1950
+F 0 "D3" H 4700 2050 40  0000 C CNN
+F 1 "1N4007" H 4700 1850 40  0001 C CNN
+F 2 "~" H 4700 1950 60  0000 C CNN
+F 3 "~" H 4700 1950 60  0000 C CNN
+	1    4700 1950
+	0    1    -1   0   
+$EndComp
+$Comp
+L CONN_3 P2
+U 1 1 54CE6D44
+P 6400 1950
+F 0 "P2" V 6350 1950 50  0000 C CNN
+F 1 "CONN_3" V 6450 1950 40  0001 C CNN
+F 2 "" H 6400 1950 60  0000 C CNN
+F 3 "" H 6400 1950 60  0000 C CNN
+	1    6400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RESISTOR R1
+U 1 1 54CE6D6B
+P 2400 1650
+F 0 "R1" V 2490 1645 40  0000 C CNN
+F 1 "470" V 2315 1650 40  0000 C CNN
+F 2 "~" V 2330 1650 30  0000 C CNN
+F 3 "~" H 2400 1650 30  0000 C CNN
+	1    2400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q3
+U 1 1 54CE6D96
+P 4200 2900
+F 0 "Q3" H 4200 2750 50  0000 R CNN
+F 1 "2N3904" H 4200 3050 50  0001 R CNN
+F 2 "~" H 4200 2900 60  0000 C CNN
+F 3 "~" H 4200 2900 60  0000 C CNN
+	1    4200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 54CE6E82
+P 4300 2300
+F 0 "D2" H 4300 2400 50  0000 C CNN
+F 1 "RED" H 4300 2200 50  0000 C CNN
+F 2 "~" H 4300 2300 60  0000 C CNN
+F 3 "~" H 4300 2300 60  0000 C CNN
+	1    4300 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L RESISTOR R4
+U 1 1 54CE6E88
+P 4300 1650
+F 0 "R4" V 4390 1645 40  0000 C CNN
+F 1 "470" V 4215 1650 40  0000 C CNN
+F 2 "~" V 4230 1650 30  0000 C CNN
+F 3 "~" H 4300 1650 30  0000 C CNN
+	1    4300 1650
+	1    0    0    -1  
+$EndComp
+Text Notes 900  1450 0    60   ~ 0
+12VDC, 70mA
+Text Notes 2550 3150 0    60   ~ 0
+Note 1
+Text Notes 600  9900 0    60   ~ 0
+Notes:\n\n1. Two-wire probe. Approximate resistance when\nimmersed in water is 4.3kohm or less.
+$Comp
+L CONN_2 P1
+U 1 1 54CEB88C
+P 1650 1400
+F 0 "P1" V 1600 1400 40  0000 C CNN
+F 1 "CONN_2" V 1700 1400 40  0001 C CNN
+F 2 "" H 1650 1400 60  0000 C CNN
+F 3 "" H 1650 1400 60  0000 C CNN
+	1    1650 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RESISTOR R2
+U 1 1 54CEBA31
+P 3000 1650
+F 0 "R2" V 3090 1645 40  0000 C CNN
+F 1 "47" V 2915 1650 40  0000 C CNN
+F 2 "~" V 2930 1650 30  0000 C CNN
+F 3 "~" H 3000 1650 30  0000 C CNN
+	1    3000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RESISTOR R3
+U 1 1 54CEBA37
+P 3800 1650
+F 0 "R3" V 3890 1645 40  0000 C CNN
+F 1 "47" V 3715 1650 40  0000 C CNN
+F 2 "~" V 3730 1650 30  0000 C CNN
+F 3 "~" H 3800 1650 30  0000 C CNN
+	1    3800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PNP Q1
+U 1 1 54CEBA48
+P 3100 2200
+F 0 "Q1" H 3100 2050 60  0000 R CNN
+F 1 "2N3906" H 3100 2350 60  0001 R CNN
+F 2 "~" H 3100 2200 60  0000 C CNN
+F 3 "~" H 3100 2200 60  0000 C CNN
+	1    3100 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L PNP Q2
+U 1 1 54CEBA55
+P 3700 2200
+F 0 "Q2" H 3700 2050 60  0000 R CNN
+F 1 "2N3906" H 3700 2350 60  0001 R CNN
+F 2 "~" H 3700 2200 60  0000 C CNN
+F 3 "~" H 3700 2200 60  0000 C CNN
+	1    3700 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L RESISTOR R5
+U 1 1 54CEBA60
+P 3000 2700
+F 0 "R5" V 3090 2695 40  0000 C CNN
+F 1 "1k" V 2915 2700 40  0000 C CNN
+F 2 "~" V 2930 2700 30  0000 C CNN
+F 3 "~" H 3000 2700 30  0000 C CNN
+	1    3000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P3
+U 1 1 54CF0708
+P 2650 3400
+F 0 "P3" V 2600 3400 40  0000 C CNN
+F 1 "CONN_2" V 2700 3400 40  0001 C CNN
+F 2 "" H 2650 3400 60  0000 C CNN
+F 3 "" H 2650 3400 60  0000 C CNN
+	1    2650 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L POTENTIOMETER RV1
+U 1 1 54D038D4
+P 3800 3850
+F 0 "RV1" H 3750 3975 40  0000 R CNN
+F 1 "1k" V 3900 3850 40  0000 C CNN
+F 2 "~" V 3730 3850 30  0000 C CNN
+F 3 "~" H 3800 3850 30  0000 C CNN
+	1    3800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RELAY_OMRON_G5V-1 K1
+U 1 1 54D05A0D
+P 5450 1950
+F 0 "K1" H 5440 2160 70  0000 C CNN
+F 1 "RELAY_OMRON_G5V-1" H 5480 1720 70  0001 C CNN
+F 2 "~" H 4600 2150 60  0000 C CNN
+F 3 "~" H 4600 2150 60  0000 C CNN
+	1    5450 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1300 5100 1300
+Wire Wire Line
+	2400 1300 2400 1400
+Connection ~ 2400 1300
+Wire Wire Line
+	4300 1300 4300 1400
+Wire Wire Line
+	4700 1300 4700 1750
+Connection ~ 4300 1300
+Wire Wire Line
+	2400 1900 2400 2000
+Wire Wire Line
+	4300 2100 4300 1900
+Wire Wire Line
+	4300 2500 4300 2700
+Wire Wire Line
+	4700 2150 4700 2600
+Wire Wire Line
+	2000 1500 2000 4300
+Wire Wire Line
+	2000 4300 4300 4300
+Wire Wire Line
+	4300 4300 4300 3100
+Wire Wire Line
+	2400 2400 2400 4300
+Connection ~ 2400 4300
+Wire Wire Line
+	5100 1300 5100 1850
+Connection ~ 4700 1300
+Wire Wire Line
+	4300 2600 5100 2600
+Wire Wire Line
+	5100 2600 5100 2050
+Connection ~ 4700 2600
+Wire Wire Line
+	6050 1850 5800 1850
+Wire Wire Line
+	6050 1950 5800 1950
+Wire Wire Line
+	6050 2050 5800 2050
+Wire Wire Line
+	3000 1400 3000 1300
+Connection ~ 3000 1300
+Wire Wire Line
+	3800 1400 3800 1300
+Connection ~ 3800 1300
+Wire Wire Line
+	3000 1900 3000 2000
+Wire Wire Line
+	3800 1900 3800 2000
+Wire Wire Line
+	3300 2200 3500 2200
+Wire Wire Line
+	3000 2400 3000 2450
+Wire Wire Line
+	3300 2200 3300 2450
+Wire Wire Line
+	3300 2450 3000 2450
+Connection ~ 3000 2450
+Connection ~ 3300 2200
+Wire Wire Line
+	3000 2950 3000 3300
+Wire Wire Line
+	3000 3500 3000 4300
+Connection ~ 3000 4300
+Connection ~ 4300 2600
+Connection ~ 3800 4300
+Wire Wire Line
+	3800 2400 3800 3000
+Connection ~ 3800 2900
+Wire Wire Line
+	3800 2900 4000 2900
+$Comp
+L RESISTOR R6
+U 1 1 54CF044D
+P 3800 3250
+F 0 "R6" V 3890 3245 40  0000 C CNN
+F 1 "400" V 3715 3250 40  0000 C CNN
+F 2 "~" V 3730 3250 30  0000 C CNN
+F 3 "~" H 3800 3250 30  0000 C CNN
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3500 3800 3600
+Wire Wire Line
+	3800 4100 3800 4300
+Wire Wire Line
+	3600 3850 3600 4100
+Wire Wire Line
+	3600 4100 3800 4100
+$EndSCHEMATC

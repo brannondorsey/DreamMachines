@@ -1,0 +1,360 @@
+EESchema Schematic File Version 2
+LIBS:yatagarasu
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:yatagarasu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title "DCoJA Yatagarasu Mezzanine"
+Date ""
+Rev ""
+Comp "DroneWorks Inc."
+Comment1 "Copyright (c) 2016 DroneWorks Inc."
+Comment2 "All rights reserved."
+Comment3 "Creative Commons  (CC BY-SA 4.0)"
+Comment4 "Designed by: Michihiro Imaoka (@imaoca)"
+Comment5 "LDO"
+$EndDescr
+$Comp
+L GND #PWR099
+U 1 1 5707ADD4
+P 5300 3000
+F 0 "#PWR099" H 5300 2750 50  0001 C CNN
+F 1 "GND" H 5300 2850 50  0000 C CNN
+F 2 "" H 5300 3000 60  0000 C CNN
+F 3 "" H 5300 3000 60  0000 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP CE6
+U 1 1 5707ADDA
+P 5850 2600
+F 0 "CE6" H 5875 2700 50  0000 L CNN
+F 1 "10uF" H 5875 2500 50  0000 L CNN
+F 2 "mylib:os-con-A5" H 5888 2450 50  0001 C CNN
+F 3 "" H 5850 2600 50  0000 C CNN
+	1    5850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CB30
+U 1 1 5707ADE1
+P 6150 2600
+F 0 "CB30" H 6175 2700 50  0000 L CNN
+F 1 "104" H 6175 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6188 2450 30  0001 C CNN
+F 3 "" H 6150 2600 60  0000 C CNN
+	1    6150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP CE5
+U 1 1 5707ADE8
+P 4750 2600
+F 0 "CE5" H 4775 2700 50  0000 L CNN
+F 1 "10uF" H 4775 2500 50  0000 L CNN
+F 2 "mylib:os-con-A5" H 4788 2450 50  0001 C CNN
+F 3 "" H 4750 2600 50  0000 C CNN
+	1    4750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CB29
+U 1 1 5707ADEF
+P 4400 2600
+F 0 "CB29" H 4425 2700 50  0000 L CNN
+F 1 "104" H 4425 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4438 2450 30  0001 C CNN
+F 3 "" H 4400 2600 60  0000 C CNN
+	1    4400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2450 4900 2450
+Wire Wire Line
+	4400 2750 4400 3000
+Wire Wire Line
+	4400 3000 6150 3000
+Wire Wire Line
+	6150 3000 6150 2750
+Connection ~ 5300 3000
+Wire Wire Line
+	4750 2750 4750 3000
+Connection ~ 4750 3000
+Wire Wire Line
+	5850 2750 5850 3000
+Connection ~ 5850 3000
+$Comp
+L GND #PWR0100
+U 1 1 5707AE00
+P 5300 4250
+F 0 "#PWR0100" H 5300 4000 50  0001 C CNN
+F 1 "GND" H 5300 4100 50  0000 C CNN
+F 2 "" H 5300 4250 60  0000 C CNN
+F 3 "" H 5300 4250 60  0000 C CNN
+	1    5300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP CE8
+U 1 1 5707AE06
+P 5850 3850
+F 0 "CE8" H 5875 3950 50  0000 L CNN
+F 1 "10uF" H 5875 3750 50  0000 L CNN
+F 2 "mylib:os-con-A5" H 5888 3700 50  0001 C CNN
+F 3 "" H 5850 3850 50  0000 C CNN
+	1    5850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CB32
+U 1 1 5707AE0D
+P 6150 3850
+F 0 "CB32" H 6175 3950 50  0000 L CNN
+F 1 "104" H 6175 3750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6188 3700 30  0001 C CNN
+F 3 "" H 6150 3850 60  0000 C CNN
+	1    6150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP CE7
+U 1 1 5707AE14
+P 4750 3850
+F 0 "CE7" H 4775 3950 50  0000 L CNN
+F 1 "10uF" H 4775 3750 50  0000 L CNN
+F 2 "mylib:os-con-A5" H 4788 3700 50  0001 C CNN
+F 3 "" H 4750 3850 50  0000 C CNN
+	1    4750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CB31
+U 1 1 5707AE1B
+P 4400 3850
+F 0 "CB31" H 4425 3950 50  0000 L CNN
+F 1 "104" H 4425 3750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4438 3700 30  0001 C CNN
+F 3 "" H 4400 3850 60  0000 C CNN
+	1    4400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3700 4900 3700
+Wire Wire Line
+	5700 3700 6150 3700
+Wire Wire Line
+	4400 4000 4400 4250
+Wire Wire Line
+	4400 4250 6150 4250
+Wire Wire Line
+	6150 4250 6150 4000
+Connection ~ 5300 4250
+Wire Wire Line
+	4750 4000 4750 4250
+Connection ~ 4750 4250
+Wire Wire Line
+	5850 4000 5850 4250
+Connection ~ 5850 4250
+$Comp
+L GND #PWR0101
+U 1 1 5707AE2C
+P 5300 5350
+F 0 "#PWR0101" H 5300 5100 50  0001 C CNN
+F 1 "GND" H 5300 5200 50  0000 C CNN
+F 2 "" H 5300 5350 60  0000 C CNN
+F 3 "" H 5300 5350 60  0000 C CNN
+	1    5300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP CE10
+U 1 1 5707AE32
+P 5850 4950
+F 0 "CE10" H 5875 5050 50  0000 L CNN
+F 1 "10uF" H 5875 4850 50  0000 L CNN
+F 2 "mylib:os-con-A5" H 5888 4800 50  0001 C CNN
+F 3 "" H 5850 4950 50  0000 C CNN
+	1    5850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CB34
+U 1 1 5707AE39
+P 6150 4950
+F 0 "CB34" H 6175 5050 50  0000 L CNN
+F 1 "104" H 6175 4850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6188 4800 30  0001 C CNN
+F 3 "" H 6150 4950 60  0000 C CNN
+	1    6150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP CE9
+U 1 1 5707AE40
+P 4750 4950
+F 0 "CE9" H 4775 5050 50  0000 L CNN
+F 1 "10uF" H 4775 4850 50  0000 L CNN
+F 2 "mylib:os-con-A5" H 4788 4800 50  0001 C CNN
+F 3 "" H 4750 4950 50  0000 C CNN
+	1    4750 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C CB33
+U 1 1 5707AE47
+P 4400 4950
+F 0 "CB33" H 4425 5050 50  0000 L CNN
+F 1 "104" H 4425 4850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4438 4800 30  0001 C CNN
+F 3 "" H 4400 4950 60  0000 C CNN
+	1    4400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4800 4900 4800
+Wire Wire Line
+	4400 5100 4400 5350
+Wire Wire Line
+	4400 5350 6150 5350
+Wire Wire Line
+	6150 5350 6150 5100
+Connection ~ 5300 5350
+Wire Wire Line
+	4750 5100 4750 5350
+Connection ~ 4750 5350
+Wire Wire Line
+	5850 5100 5850 5350
+Connection ~ 5850 5350
+Text HLabel 3950 2450 0    60   Input ~ 0
+SYSDC_IN
+Connection ~ 4150 3700
+Connection ~ 4150 2450
+Wire Wire Line
+	6150 2450 6150 2250
+Wire Wire Line
+	6150 3700 6150 3500
+Wire Wire Line
+	6150 4800 6150 4600
+$Comp
+L NCP1117ST18T3G U17
+U 1 1 5707AE62
+P 5300 2500
+F 0 "U17" H 5300 2800 50  0000 C CNN
+F 1 "NCP1117ST18T3G" H 5300 2700 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5300 2500 50  0001 C CNN
+F 3 "" H 5300 2500 50  0000 C CNN
+	1    5300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NCP1117ST33T3G U18
+U 1 1 5707AE69
+P 5300 3750
+F 0 "U18" H 5300 4050 50  0000 C CNN
+F 1 "NCP1117ST33T3G" H 5300 3950 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5300 3750 50  0001 C CNN
+F 3 "" H 5300 3750 50  0000 C CNN
+	1    5300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NCP1117ST50T3G U19
+U 1 1 5707AE70
+P 5300 4850
+F 0 "U19" H 5300 5150 50  0000 C CNN
+F 1 "NCP1117ST50T3G" H 5300 5050 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5300 4850 50  0001 C CNN
+F 3 "" H 5300 4850 50  0000 C CNN
+	1    5300 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 2450
+Connection ~ 4750 2450
+Wire Wire Line
+	5300 2750 5300 3000
+Connection ~ 5850 3700
+Connection ~ 4750 3700
+Wire Wire Line
+	5300 4000 5300 4250
+Connection ~ 5850 4800
+Connection ~ 4750 4800
+Wire Wire Line
+	5300 5100 5300 5350
+Connection ~ 4400 2450
+Connection ~ 4400 3700
+Connection ~ 4400 4800
+Connection ~ 6150 4800
+Connection ~ 6150 3700
+Connection ~ 6150 2450
+$Comp
+L +5V #PWR0102
+U 1 1 573C0E74
+P 6150 4600
+F 0 "#PWR0102" H 6150 4450 50  0001 C CNN
+F 1 "+5V" H 6150 4740 50  0000 C CNN
+F 2 "" H 6150 4600 50  0000 C CNN
+F 3 "" H 6150 4600 50  0000 C CNN
+	1    6150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +1V8 #PWR0103
+U 1 1 573FCFB3
+P 6150 2250
+F 0 "#PWR0103" H 6150 2100 50  0001 C CNN
+F 1 "+1V8" H 6150 2390 50  0000 C CNN
+F 2 "" H 6150 2250 50  0000 C CNN
+F 3 "" H 6150 2250 50  0000 C CNN
+	1    6150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR0104
+U 1 1 573FD026
+P 6150 3500
+F 0 "#PWR0104" H 6150 3350 50  0001 C CNN
+F 1 "+3V3" H 6150 3640 50  0000 C CNN
+F 2 "" H 6150 3500 50  0000 C CNN
+F 3 "" H 6150 3500 50  0000 C CNN
+	1    6150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2450 6150 2450
+Wire Wire Line
+	5700 4800 6150 4800
+Wire Wire Line
+	4150 2450 4150 4800
+$EndSCHEMATC

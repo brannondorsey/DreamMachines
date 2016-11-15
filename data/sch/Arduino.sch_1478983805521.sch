@@ -1,0 +1,339 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BenchBudEE
+LIBS:arduino_shieldsNCL
+LIBS:BenchBudEE-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date "7 feb 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 7400 3650 2    60   Output ~ 0
+RELAY-
+Text HLabel 4850 3600 2    60   Output ~ 0
+RELAY+
+Text HLabel 4850 2500 2    60   Output ~ 0
+MOSI
+Text HLabel 4850 2400 2    60   Input ~ 0
+MISO
+Text HLabel 4850 2300 2    60   Output ~ 0
+SCLK
+Text HLabel 4850 2600 2    60   Output ~ 0
+DAC_CS_N
+Text HLabel 1450 3500 0    60   Input ~ 0
+TACH_MEAS
+$Comp
+L ARDUINO_SHIELD SHIELD?
+U 1 1 52F4A893
+P 3150 2900
+F 0 "SHIELD?" H 2800 3850 60  0000 C CNN
+F 1 "ARDUINO_SHIELD" H 3200 1950 60  0000 C CNN
+F 2 "" H 3150 2900 60  0000 C CNN
+F 3 "" H 3150 2900 60  0000 C CNN
+	1    3150 2900
+	1    0    0    -1  
+$EndComp
+Text HLabel 4750 3100 2    60   Output ~ 0
+FAN_PWM
+Text HLabel 1450 3400 0    60   Input ~ 0
+CURR_MEAS
+$Comp
+L R R?
+U 1 1 52F4AA49
+P 4400 3100
+F 0 "R?" V 4480 3100 40  0000 C CNN
+F 1 "R" V 4407 3101 40  0000 C CNN
+F 2 "~" V 4330 3100 30  0000 C CNN
+F 3 "~" H 4400 3100 30  0000 C CNN
+	1    4400 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F4AA6E
+P 4500 3600
+F 0 "R?" V 4580 3600 40  0000 C CNN
+F 1 "R" V 4507 3601 40  0000 C CNN
+F 2 "~" V 4430 3600 30  0000 C CNN
+F 3 "~" H 4500 3600 30  0000 C CNN
+	1    4500 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 52F4B395
+P 6600 4000
+F 0 "#PWR?" H 6600 4000 30  0001 C CNN
+F 1 "GND" H 6600 3930 30  0001 C CNN
+F 2 "" H 6600 4000 60  0000 C CNN
+F 3 "" H 6600 4000 60  0000 C CNN
+	1    6600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 52F4B3A2
+P 1850 3500
+F 0 "R?" V 1930 3500 40  0000 C CNN
+F 1 "R" V 1857 3501 40  0000 C CNN
+F 2 "~" V 1780 3500 30  0000 C CNN
+F 3 "~" H 1850 3500 30  0000 C CNN
+	1    1850 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F4B3AC
+P 1850 3400
+F 0 "R?" V 1930 3400 40  0000 C CNN
+F 1 "R" V 1857 3401 40  0000 C CNN
+F 2 "~" V 1780 3400 30  0000 C CNN
+F 3 "~" H 1850 3400 30  0000 C CNN
+	1    1850 3400
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1450 3200 0    60   Input ~ 0
+V+_ADJ_MON
+Text HLabel 1450 3300 0    60   Input ~ 0
+V-_ADJ_MON
+$Comp
+L R R?
+U 1 1 52F4BBC4
+P 1850 3300
+F 0 "R?" V 1930 3300 40  0000 C CNN
+F 1 "R" V 1857 3301 40  0000 C CNN
+F 2 "~" V 1780 3300 30  0000 C CNN
+F 3 "~" H 1850 3300 30  0000 C CNN
+	1    1850 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F4BBCA
+P 1850 3200
+F 0 "R?" V 1930 3200 40  0000 C CNN
+F 1 "R" V 1857 3201 40  0000 C CNN
+F 2 "~" V 1780 3200 30  0000 C CNN
+F 3 "~" H 1850 3200 30  0000 C CNN
+	1    1850 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F4BC14
+P 4500 2300
+F 0 "R?" V 4580 2300 40  0000 C CNN
+F 1 "R" V 4507 2301 40  0000 C CNN
+F 2 "~" V 4430 2300 30  0000 C CNN
+F 3 "~" H 4500 2300 30  0000 C CNN
+	1    4500 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F4BC1A
+P 4500 2400
+F 0 "R?" V 4580 2400 40  0000 C CNN
+F 1 "R" V 4507 2401 40  0000 C CNN
+F 2 "~" V 4430 2400 30  0000 C CNN
+F 3 "~" H 4500 2400 30  0000 C CNN
+	1    4500 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F4BC20
+P 4500 2500
+F 0 "R?" V 4580 2500 40  0000 C CNN
+F 1 "R" V 4507 2501 40  0000 C CNN
+F 2 "~" V 4430 2500 30  0000 C CNN
+F 3 "~" H 4500 2500 30  0000 C CNN
+	1    4500 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F4BC26
+P 4500 2600
+F 0 "R?" V 4580 2600 40  0000 C CNN
+F 1 "R" V 4507 2601 40  0000 C CNN
+F 2 "~" V 4430 2600 30  0000 C CNN
+F 3 "~" H 4500 2600 30  0000 C CNN
+	1    4500 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3100 4750 3100
+Wire Wire Line
+	4000 3100 4150 3100
+Wire Wire Line
+	4100 3600 4250 3600
+Wire Wire Line
+	4750 3600 4850 3600
+Wire Wire Line
+	6600 3650 6600 4000
+Wire Wire Line
+	1450 3500 1600 3500
+Wire Wire Line
+	2100 3500 2200 3500
+Wire Wire Line
+	2100 3400 2200 3400
+Wire Wire Line
+	1450 3400 1600 3400
+Wire Wire Line
+	1450 3200 1600 3200
+Wire Wire Line
+	2100 3200 2200 3200
+Wire Wire Line
+	2100 3300 2200 3300
+Wire Wire Line
+	1450 3300 1600 3300
+Wire Wire Line
+	4100 2300 4250 2300
+Wire Wire Line
+	4100 2400 4250 2400
+Wire Wire Line
+	4100 2500 4250 2500
+Wire Wire Line
+	4100 2600 4250 2600
+Wire Wire Line
+	4750 2600 4850 2600
+Wire Wire Line
+	4750 2500 4850 2500
+Wire Wire Line
+	4750 2400 4850 2400
+Wire Wire Line
+	4750 2300 4850 2300
+$Comp
+L R R?
+U 1 1 52F4BCD5
+P 7000 3650
+F 0 "R?" V 7080 3650 40  0000 C CNN
+F 1 "R" V 7007 3651 40  0000 C CNN
+F 2 "~" V 6930 3650 30  0000 C CNN
+F 3 "~" H 7000 3650 30  0000 C CNN
+	1    7000 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 3650 6750 3650
+Wire Wire Line
+	7250 3650 7400 3650
+Text HLabel 4850 2700 2    60   Output ~ 0
+LED_EN_PWM
+$Comp
+L R R?
+U 1 1 52F4BD47
+P 4500 2700
+F 0 "R?" V 4580 2700 40  0000 C CNN
+F 1 "R" V 4507 2701 40  0000 C CNN
+F 2 "~" V 4430 2700 30  0000 C CNN
+F 3 "~" H 4500 2700 30  0000 C CNN
+	1    4500 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 2700 4850 2700
+Wire Wire Line
+	4250 2700 4100 2700
+$Comp
+L R R?
+U 1 1 52F534F6
+P 4500 2800
+F 0 "R?" V 4580 2800 40  0000 C CNN
+F 1 "R" V 4507 2801 40  0000 C CNN
+F 2 "~" V 4430 2800 30  0000 C CNN
+F 3 "~" H 4500 2800 30  0000 C CNN
+	1    4500 2800
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4850 2800 2    60   Output ~ 0
+ADC_CS_N
+Wire Wire Line
+	4100 2800 4250 2800
+Wire Wire Line
+	4750 2800 4850 2800
+Text HLabel 4850 3700 2    60   Input ~ 0
+FAN_MODE
+$Comp
+L R R?
+U 1 1 52F576A6
+P 4500 3700
+F 0 "R?" V 4580 3700 40  0000 C CNN
+F 1 "R" V 4507 3701 40  0000 C CNN
+F 2 "~" V 4430 3700 30  0000 C CNN
+F 3 "~" H 4500 3700 30  0000 C CNN
+	1    4500 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 3700 4850 3700
+Wire Wire Line
+	4100 3700 4250 3700
+$Comp
+L R R?
+U 1 1 52F57945
+P 1850 3000
+F 0 "R?" V 1930 3000 40  0000 C CNN
+F 1 "R" V 1857 3001 40  0000 C CNN
+F 2 "~" V 1780 3000 30  0000 C CNN
+F 3 "~" H 1850 3000 30  0000 C CNN
+	1    1850 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 3000 2200 3000
+$Comp
+L +12P #PWR?
+U 1 1 52F5796B
+P 1250 2700
+F 0 "#PWR?" H 1250 2670 30  0001 C CNN
+F 1 "+12P" H 1250 2800 30  0000 C CNN
+F 2 "" H 1250 2700 60  0000 C CNN
+F 3 "" H 1250 2700 60  0000 C CNN
+	1    1250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2700 1250 3000
+Wire Wire Line
+	1250 3000 1600 3000
+$EndSCHEMATC

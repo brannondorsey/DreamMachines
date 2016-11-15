@@ -1,0 +1,700 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:components
+LIBS:power_switch_controller_teensy
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "power_switch_controller_teensy"
+Date ""
+Rev "1.1"
+Comp "Janelia"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1350 2050 1050 2050
+Wire Wire Line
+	1350 2150 1050 2150
+Wire Wire Line
+	1350 2250 1050 2250
+Wire Wire Line
+	3850 2250 4050 2250
+Text Label 1050 2050 0    60   ~ 0
+CS
+Text Label 1050 2150 0    60   ~ 0
+MOSI
+Text Label 1050 2250 0    60   ~ 0
+MISO
+Text Label 4050 2250 0    60   ~ 0
+SCK
+$Comp
+L GND #PWR01
+U 1 1 577150E0
+P 900 1000
+F 0 "#PWR01" H 900 750 50  0001 C CNN
+F 1 "GND" H 905 827 50  0000 C CNN
+F 2 "" H 900 1000 50  0000 C CNN
+F 3 "" H 900 1000 50  0000 C CNN
+	1    900  1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1000 900  950 
+Wire Wire Line
+	700  950  1350 950 
+$Comp
+L VDD #PWR02
+U 1 1 577153D8
+P 1300 800
+F 0 "#PWR02" H 1300 650 50  0001 C CNN
+F 1 "VDD" H 1317 973 50  0000 C CNN
+F 2 "" H 1300 800 50  0000 C CNN
+F 3 "" H 1300 800 50  0000 C CNN
+	1    1300 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 800  1300 850 
+Wire Wire Line
+	1050 850  1350 850 
+$Comp
+L VEE #PWR03
+U 1 1 57715626
+P 4350 800
+F 0 "#PWR03" H 4350 650 50  0001 C CNN
+F 1 "VEE" H 4367 973 50  0000 C CNN
+F 2 "" H 4350 800 50  0000 C CNN
+F 3 "" H 4350 800 50  0000 C CNN
+	1    4350 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 950  4650 950 
+Wire Wire Line
+	4350 950  4350 800 
+NoConn ~ 3850 850 
+NoConn ~ 3850 1050
+NoConn ~ 3850 1150
+$Comp
+L HEADER_02X08_SMD P1
+U 1 1 578D30F0
+P 5600 1650
+F 0 "P1" H 5600 2100 50  0000 C CNN
+F 1 "HEADER_02X08_SMD" V 5600 1650 50  0000 C CNN
+F 2 "power_switch_controller_teensy:HEADER_02x08_SMD" H 5600 450 60  0001 C CNN
+F 3 "" H 5600 450 60  0000 C CNN
+F 4 "digikey" H 5700 2200 60  0001 C CNN "Vendor"
+F 5 "S9187-ND" H 5800 2300 60  0001 C CNN "PartNumber"
+F 6 "CONN HEADR 2.54MM 16POS GOLD SMD" H 5900 2400 60  0001 C CNN "Description"
+	1    5600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR04
+U 1 1 578D3195
+P 5300 1250
+F 0 "#PWR04" H 5300 1100 50  0001 C CNN
+F 1 "VDD" H 5317 1423 50  0000 C CNN
+F 2 "" H 5300 1250 50  0000 C CNN
+F 3 "" H 5300 1250 50  0000 C CNN
+	1    5300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2000 5350 2000
+Wire Wire Line
+	5300 1250 5300 2000
+Wire Wire Line
+	5350 1300 5300 1300
+Connection ~ 5300 1300
+Wire Wire Line
+	5350 1400 5300 1400
+Connection ~ 5300 1400
+Wire Wire Line
+	5350 1500 5300 1500
+Connection ~ 5300 1500
+Wire Wire Line
+	5350 1600 5300 1600
+Connection ~ 5300 1600
+Wire Wire Line
+	5350 1700 5300 1700
+Connection ~ 5300 1700
+Wire Wire Line
+	5350 1800 5300 1800
+Connection ~ 5300 1800
+Wire Wire Line
+	5350 1900 5300 1900
+Connection ~ 5300 1900
+Wire Wire Line
+	5850 1300 5900 1300
+Wire Wire Line
+	5850 1400 5900 1400
+Wire Wire Line
+	5850 1500 5900 1500
+Wire Wire Line
+	5850 1600 5900 1600
+Wire Wire Line
+	5850 1700 5900 1700
+Wire Wire Line
+	5850 1800 5900 1800
+Wire Wire Line
+	5850 1900 5900 1900
+Wire Wire Line
+	5850 2000 5900 2000
+Text Label 5900 1300 0    60   ~ 0
+OUT0
+Text Label 5900 1400 0    60   ~ 0
+OUT1
+Text Label 5900 1500 0    60   ~ 0
+OUT2
+Text Label 5900 1600 0    60   ~ 0
+OUT3
+Text Label 5900 1700 0    60   ~ 0
+OUT4
+Text Label 5900 1800 0    60   ~ 0
+OUT5
+Text Label 5900 1900 0    60   ~ 0
+OUT6
+Text Label 5900 2000 0    60   ~ 0
+OUT7
+$Comp
+L TLE7230R U1
+U 1 1 578D35FA
+P 7850 1550
+F 0 "U1" H 7850 2187 60  0000 C CNN
+F 1 "TLE7230R" H 7850 2081 60  0000 C CNN
+F 2 "power_switch_controller_teensy:PG-DSO-36" H 8150 1950 60  0001 C CNN
+F 3 "" H 8250 2050 60  0000 C CNN
+F 4 "digikey" H 8350 2150 60  0001 C CNN "Vendor"
+F 5 "TLE7230RCT-ND" H 8450 2250 60  0001 C CNN "PartNumber"
+F 6 "IC SW SMART OCTAL LOWSIDE PDSO36" H 8550 2350 60  0001 C CNN "Description"
+	1    7850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1200 8450 1200
+Wire Wire Line
+	8350 1300 8450 1300
+Wire Wire Line
+	8350 1400 8450 1400
+Wire Wire Line
+	8350 1500 8450 1500
+Wire Wire Line
+	8350 1600 8450 1600
+Wire Wire Line
+	8350 1700 8450 1700
+Wire Wire Line
+	8350 1800 8450 1800
+Wire Wire Line
+	8350 1900 8450 1900
+NoConn ~ 8350 2100
+Text Label 8450 1200 0    60   ~ 0
+OUT0
+Text Label 8450 1300 0    60   ~ 0
+OUT1
+Text Label 8450 1400 0    60   ~ 0
+OUT2
+Text Label 8450 1500 0    60   ~ 0
+OUT3
+Text Label 8450 1600 0    60   ~ 0
+OUT4
+Text Label 8450 1700 0    60   ~ 0
+OUT5
+Text Label 8450 1800 0    60   ~ 0
+OUT6
+Text Label 8450 1900 0    60   ~ 0
+OUT7
+Wire Wire Line
+	7350 1600 7100 1600
+Text Label 7100 1600 0    60   ~ 0
+CS
+Wire Wire Line
+	7350 1700 7100 1700
+Text Label 7100 1700 0    60   ~ 0
+SCK
+Wire Wire Line
+	7350 1800 7100 1800
+Wire Wire Line
+	7350 1900 7100 1900
+Text Label 7100 1800 0    60   ~ 0
+MOSI
+Text Label 7100 1900 0    60   ~ 0
+MISO
+NoConn ~ 1350 1050
+NoConn ~ 1350 1450
+NoConn ~ 1350 1550
+NoConn ~ 1350 1650
+NoConn ~ 1350 1750
+NoConn ~ 1350 1850
+NoConn ~ 1350 1950
+NoConn ~ 1350 2350
+NoConn ~ 3850 1250
+NoConn ~ 3850 1350
+NoConn ~ 3850 1450
+NoConn ~ 3850 1550
+NoConn ~ 3850 1650
+NoConn ~ 3850 1750
+NoConn ~ 3850 1850
+NoConn ~ 3850 1950
+NoConn ~ 3850 2050
+NoConn ~ 3850 2150
+NoConn ~ 3850 2350
+NoConn ~ 7350 1500
+Wire Wire Line
+	7350 1400 7100 1400
+Text Label 7100 1400 0    60   ~ 0
+RESET
+Wire Wire Line
+	7350 2300 7100 2300
+Text Label 7100 2300 0    60   ~ 0
+PWM
+$Comp
+L VEE #PWR05
+U 1 1 578D3F1B
+P 6900 1150
+F 0 "#PWR05" H 6900 1000 50  0001 C CNN
+F 1 "VEE" H 6917 1323 50  0000 C CNN
+F 2 "" H 6900 1150 50  0000 C CNN
+F 3 "" H 6900 1150 50  0000 C CNN
+	1    6900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0.1uF C2
+U 1 1 578D3F4C
+P 6900 2300
+F 0 "C2" H 6950 2400 40  0000 L CNN
+F 1 "0.1uF" H 6950 2200 30  0000 L CNN
+F 2 "power_switch_controller_teensy:SM1210" H 6938 2150 30  0001 C CNN
+F 3 "" H 6900 2300 60  0000 C CNN
+F 4 "digikey" H 7000 2500 60  0001 C CNN "Vendor"
+F 5 "478-3586-1-ND" H 7100 2600 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 7200 2700 60  0001 C CNN "Description"
+	1    6900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1150 6900 2100
+Wire Wire Line
+	6900 1200 7350 1200
+Connection ~ 6900 1200
+Wire Wire Line
+	7350 1300 7300 1300
+Wire Wire Line
+	7300 1300 7300 1200
+Connection ~ 7300 1200
+Wire Wire Line
+	6900 2000 7350 2000
+Connection ~ 6900 2000
+Wire Wire Line
+	7300 2200 7350 2200
+Wire Wire Line
+	7300 2000 7300 2200
+Connection ~ 7300 2000
+Wire Wire Line
+	7350 2100 7300 2100
+Connection ~ 7300 2100
+$Comp
+L GND #PWR06
+U 1 1 578D42C2
+P 6900 2600
+F 0 "#PWR06" H 6900 2350 50  0001 C CNN
+F 1 "GND" H 6905 2427 50  0000 C CNN
+F 2 "" H 6900 2600 50  0000 C CNN
+F 3 "" H 6900 2600 50  0000 C CNN
+	1    6900 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2500 6900 2600
+Wire Wire Line
+	8000 2550 8000 2500
+Wire Wire Line
+	6900 2550 8000 2550
+Connection ~ 6900 2550
+Wire Wire Line
+	7900 2500 7900 2550
+Connection ~ 7900 2550
+Wire Wire Line
+	7800 2500 7800 2550
+Connection ~ 7800 2550
+Wire Wire Line
+	7700 2500 7700 2550
+Connection ~ 7700 2550
+NoConn ~ 1350 1150
+Wire Wire Line
+	1050 1250 1350 1250
+Wire Wire Line
+	1350 1350 1050 1350
+Text Label 1050 1250 0    60   ~ 0
+RESET
+Text Label 1050 1350 0    60   ~ 0
+PWM
+$Comp
+L LED_24V L2
+U 1 1 578D474F
+P 7650 3700
+F 0 "L2" H 7700 3800 50  0000 C CNN
+F 1 "LED_24V" H 7700 3600 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 7550 3700 60  0001 C CNN
+F 3 "" H 7650 3700 60  0000 C CNN
+F 4 "digikey" H 7750 3900 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7850 4000 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7950 4100 60  0001 C CNN "Description"
+	1    7650 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_24V L3
+U 1 1 578D495D
+P 7300 3700
+F 0 "L3" H 7350 3800 50  0000 C CNN
+F 1 "LED_24V" H 7350 3600 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 7200 3700 60  0001 C CNN
+F 3 "" H 7300 3700 60  0000 C CNN
+F 4 "digikey" H 7400 3900 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7500 4000 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7600 4100 60  0001 C CNN "Description"
+	1    7300 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_24V L4
+U 1 1 578D49BB
+P 6950 3700
+F 0 "L4" H 7000 3800 50  0000 C CNN
+F 1 "LED_24V" H 7000 3600 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 6850 3700 60  0001 C CNN
+F 3 "" H 6950 3700 60  0000 C CNN
+F 4 "digikey" H 7050 3900 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 7150 4000 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7250 4100 60  0001 C CNN "Description"
+	1    6950 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_24V L5
+U 1 1 578D49F0
+P 6600 3700
+F 0 "L5" H 6650 3800 50  0000 C CNN
+F 1 "LED_24V" H 6650 3600 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 6500 3700 60  0001 C CNN
+F 3 "" H 6600 3700 60  0000 C CNN
+F 4 "digikey" H 6700 3900 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6800 4000 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 6900 4100 60  0001 C CNN "Description"
+	1    6600 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_24V L6
+U 1 1 578D4A30
+P 6250 3700
+F 0 "L6" H 6300 3800 50  0000 C CNN
+F 1 "LED_24V" H 6300 3600 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 6150 3700 60  0001 C CNN
+F 3 "" H 6250 3700 60  0000 C CNN
+F 4 "digikey" H 6350 3900 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6450 4000 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 6550 4100 60  0001 C CNN "Description"
+	1    6250 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_24V L7
+U 1 1 578D4A73
+P 5900 3700
+F 0 "L7" H 5950 3800 50  0000 C CNN
+F 1 "LED_24V" H 5950 3600 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 5800 3700 60  0001 C CNN
+F 3 "" H 5900 3700 60  0000 C CNN
+F 4 "digikey" H 6000 3900 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 6100 4000 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 6200 4100 60  0001 C CNN "Description"
+	1    5900 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_24V L8
+U 1 1 578D4AB5
+P 5550 3700
+F 0 "L8" H 5600 3800 50  0000 C CNN
+F 1 "LED_24V" H 5600 3600 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 5450 3700 60  0001 C CNN
+F 3 "" H 5550 3700 60  0000 C CNN
+F 4 "digikey" H 5650 3900 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 5750 4000 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 5850 4100 60  0001 C CNN "Description"
+	1    5550 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_24V L9
+U 1 1 578D4AF6
+P 5200 3700
+F 0 "L9" H 5250 3800 50  0000 C CNN
+F 1 "LED_24V" H 5250 3600 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 5100 3700 60  0001 C CNN
+F 3 "" H 5200 3700 60  0000 C CNN
+F 4 "digikey" H 5300 3900 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 5400 4000 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 5500 4100 60  0001 C CNN "Description"
+	1    5200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_24V L1
+U 1 1 578D4B9A
+P 3700 3150
+F 0 "L1" H 3750 3250 50  0000 C CNN
+F 1 "LED_24V" H 3750 3050 50  0000 C CNN
+F 2 "power_switch_controller_teensy:LED_555-3XXX" H 3600 3150 60  0001 C CNN
+F 3 "" H 3700 3150 60  0000 C CNN
+F 4 "digikey" H 3800 3350 60  0001 C CNN "Vendor"
+F 5 "350-1723-ND" H 3900 3450 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 4000 3550 60  0001 C CNN "Description"
+	1    3700 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST_SLIDE_AS SW1
+U 1 1 578D4BFB
+P 3100 3200
+F 0 "SW1" H 3100 3150 40  0000 C CNN
+F 1 "SPST_SLIDE_AS" H 3100 3300 40  0000 C CNN
+F 2 "power_switch_controller_teensy:SPST_SLIDE_AS" H 3000 3000 60  0001 C CNN
+F 3 "" H 3100 3200 60  0000 C CNN
+F 4 "digikey" H 3200 3400 60  0001 C CNN "Vendor"
+F 5 "360-2610-ND" H 3300 3500 60  0001 C CNN "PartNumber"
+F 6 "SWITCH SLIDE SPST 0.4VA 28V" H 3400 3600 60  0001 C CNN "Description"
+	1    3100 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L VDD #PWR07
+U 1 1 578D4F9D
+P 3100 2900
+F 0 "#PWR07" H 3100 2750 50  0001 C CNN
+F 1 "VDD" H 3117 3073 50  0000 C CNN
+F 2 "" H 3100 2900 50  0000 C CNN
+F 3 "" H 3100 2900 50  0000 C CNN
+	1    3100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2900 3100 2950
+Wire Wire Line
+	3100 3450 3100 3550
+Text Label 3100 3550 0    60   ~ 0
+LED_PWR
+$Comp
+L GND #PWR08
+U 1 1 578D534F
+P 3700 3400
+F 0 "#PWR08" H 3700 3150 50  0001 C CNN
+F 1 "GND" H 3705 3227 50  0000 C CNN
+F 2 "" H 3700 3400 50  0000 C CNN
+F 3 "" H 3700 3400 50  0000 C CNN
+	1    3700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3350 3700 3400
+Wire Wire Line
+	3700 2950 3700 2850
+Text Label 3700 2850 0    60   ~ 0
+LED_PWR
+Wire Wire Line
+	5200 3500 5200 3400
+Wire Wire Line
+	5200 3400 7650 3400
+Wire Wire Line
+	7650 3400 7650 3500
+Wire Wire Line
+	5550 3500 5550 3400
+Connection ~ 5550 3400
+Wire Wire Line
+	5900 3500 5900 3400
+Connection ~ 5900 3400
+Wire Wire Line
+	6250 3500 6250 3400
+Connection ~ 6250 3400
+Wire Wire Line
+	6600 3500 6600 3400
+Connection ~ 6600 3400
+Wire Wire Line
+	6950 3500 6950 3400
+Connection ~ 6950 3400
+Wire Wire Line
+	7300 3500 7300 3400
+Connection ~ 7300 3400
+Wire Wire Line
+	5200 3900 5200 4000
+Wire Wire Line
+	5550 3900 5550 4000
+Wire Wire Line
+	5900 3900 5900 4000
+Wire Wire Line
+	6250 3900 6250 4000
+Wire Wire Line
+	6600 3900 6600 4000
+Wire Wire Line
+	6950 3900 6950 4000
+Wire Wire Line
+	7300 3900 7300 4000
+Wire Wire Line
+	7650 3900 7650 4000
+Text Label 7650 4000 0    60   ~ 0
+OUT0
+Text Label 7300 4000 0    60   ~ 0
+OUT1
+Text Label 6950 4000 0    60   ~ 0
+OUT2
+Text Label 6600 4000 0    60   ~ 0
+OUT3
+Text Label 6250 4000 0    60   ~ 0
+OUT4
+Text Label 5900 4000 0    60   ~ 0
+OUT5
+Text Label 5550 4000 0    60   ~ 0
+OUT6
+Text Label 5200 4000 0    60   ~ 0
+OUT7
+Wire Wire Line
+	6400 3400 6400 3300
+Wire Wire Line
+	6400 3300 6500 3300
+Connection ~ 6400 3400
+Text Label 6500 3300 0    60   ~ 0
+LED_PWR
+$Comp
+L 10uF C1
+U 1 1 578FA17B
+P 2500 3200
+F 0 "C1" H 2550 3300 40  0000 L CNN
+F 1 "10uF" H 2550 3100 30  0000 L CNN
+F 2 "power_switch_controller_teensy:SM1210" H 2538 3050 30  0001 C CNN
+F 3 "" H 2500 3200 60  0000 C CNN
+F 4 "digikey" H 2600 3400 60  0001 C CNN "Vendor"
+F 5 "445-4536-1-ND" H 2700 3500 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 10UF 50V 10% X7S 1210" H 2800 3600 60  0001 C CNN "Description"
+	1    2500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 578FA28E
+P 2500 3450
+F 0 "#PWR09" H 2500 3200 50  0001 C CNN
+F 1 "GND" H 2505 3277 50  0000 C CNN
+F 2 "" H 2500 3450 50  0000 C CNN
+F 3 "" H 2500 3450 50  0000 C CNN
+	1    2500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR010
+U 1 1 578FA2C6
+P 2500 2900
+F 0 "#PWR010" H 2500 2750 50  0001 C CNN
+F 1 "VDD" H 2517 3073 50  0000 C CNN
+F 2 "" H 2500 2900 50  0000 C CNN
+F 3 "" H 2500 2900 50  0000 C CNN
+	1    2500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2900 2500 3000
+Wire Wire Line
+	2500 3400 2500 3450
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 578F9150
+P 1050 800
+F 0 "#FLG011" H 1050 895 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 1024 50  0000 C CNN
+F 2 "" H 1050 800 50  0000 C CNN
+F 3 "" H 1050 800 50  0000 C CNN
+	1    1050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 578F91CB
+P 700 900
+F 0 "#FLG012" H 700 995 50  0001 C CNN
+F 1 "PWR_FLAG" H 700 1124 50  0000 C CNN
+F 2 "" H 700 900 50  0000 C CNN
+F 3 "" H 700 900 50  0000 C CNN
+	1    700  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 578F9241
+P 4650 800
+F 0 "#FLG013" H 4650 895 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 1024 50  0000 C CNN
+F 2 "" H 4650 800 50  0000 C CNN
+F 3 "" H 4650 800 50  0000 C CNN
+	1    4650 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 950  4650 800 
+Connection ~ 4350 950 
+Wire Wire Line
+	1050 800  1050 850 
+Connection ~ 1300 850 
+Wire Wire Line
+	700  900  700  950 
+Connection ~ 900  950 
+$Comp
+L MODULAR_DEVICE_TEENSY_MALE MDT1
+U 1 1 57A8C92C
+P 2600 1600
+F 0 "MDT1" H 2600 2597 60  0000 C CNN
+F 1 "MODULAR_DEVICE_TEENSY_MALE" H 2600 2491 60  0000 C CNN
+F 2 "power_switch_controller_teensy:MODULAR_DEVICE_TEENSY_MALE" H 2600 2650 60  0001 C CNN
+F 3 "" H 2650 4350 60  0000 C CNN
+F 4 "digikey" H 2600 2750 60  0001 C CNN "Vendor"
+F 5 "S1011E-16-ND" H 2600 2850 60  0001 C CNN "PartNumber"
+F 6 "16 Position Header Through Hole Male Pins" H 2600 2950 60  0001 C CNN "Description"
+F 7 "2" H 3900 2850 60  0001 C CNN "PartCount"
+	1    2600 1600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

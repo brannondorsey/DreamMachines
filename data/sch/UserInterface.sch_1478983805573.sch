@@ -1,0 +1,409 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:sparkfun
+LIBS:open-project
+LIBS:Camera-slide-driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LCD16X2 DS1
+U 1 1 56711BE9
+P 3600 3100
+F 0 "DS1" H 2800 3500 50  0000 C CNN
+F 1 "LCD16X2" H 4300 3500 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x16" H 3600 3050 50  0000 C CIN
+F 3 "" H 3600 3100 50  0000 C CNN
+	1    3600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW5
+U 1 1 56711BF0
+P 7450 3700
+F 0 "SW5" H 7600 3810 50  0000 C CNN
+F 1 "SW_PUSH" H 7450 3620 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 7450 3700 50  0001 C CNN
+F 3 "" H 7450 3700 50  0000 C CNN
+	1    7450 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 56711BF7
+P 5950 3700
+F 0 "SW2" H 6100 3810 50  0000 C CNN
+F 1 "SW_PUSH" H 5950 3620 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 5950 3700 50  0001 C CNN
+F 3 "" H 5950 3700 50  0000 C CNN
+	1    5950 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW3
+U 1 1 56711BFE
+P 6450 3700
+F 0 "SW3" H 6600 3810 50  0000 C CNN
+F 1 "SW_PUSH" H 6450 3620 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 6450 3700 50  0001 C CNN
+F 3 "" H 6450 3700 50  0000 C CNN
+	1    6450 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 56711C12
+P 2550 3850
+F 0 "RV1" H 2550 3750 50  0000 C CNN
+F 1 "POT" H 2550 3850 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 2550 3850 50  0001 C CNN
+F 3 "" H 2550 3850 50  0000 C CNN
+	1    2550 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_NMOS_GDS Q1
+U 1 1 56711C41
+P 4450 4000
+F 0 "Q1" H 4450 3850 50  0000 R CNN
+F 1 "Q_NMOS_GDS" H 4450 4150 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 4650 4100 50  0001 C CNN
+F 3 "" H 4450 4000 50  0000 C CNN
+	1    4450 4000
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3150 3700 3    55   Input ~ 0
+LCD_RS
+Text HLabel 3350 3700 3    55   Input ~ 0
+LCD_E
+Text HLabel 3850 3700 3    55   Input ~ 0
+LCD_D4
+Text HLabel 3950 3700 3    55   Input ~ 0
+LCD_D5
+Text HLabel 4050 3700 3    55   Input ~ 0
+LCD_D6
+Text HLabel 4150 3700 3    55   Input ~ 0
+LCD_D7
+Text HLabel 4750 4000 2    55   Input ~ 0
+LCD_BL
+Text HLabel 8950 4100 2    55   Output ~ 0
+ENC_B
+Text HLabel 8950 3900 2    55   Output ~ 0
+ENC_A
+$Comp
+L SW_PUSH SW1
+U 1 1 56711C05
+P 5450 3700
+F 0 "SW1" H 5600 3810 50  0000 C CNN
+F 1 "SW_PUSH" H 5450 3620 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 5450 3700 50  0001 C CNN
+F 3 "" H 5450 3700 50  0000 C CNN
+	1    5450 3700
+	0    -1   -1   0   
+$EndComp
+Text HLabel 8000 3300 2    55   Output ~ 11
+Buttons
+$Comp
+L R_Small R9
+U 1 1 567175D5
+P 7700 3300
+F 0 "R9" H 7730 3320 50  0000 L CNN
+F 1 "30k" H 7730 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 7700 3300 50  0001 C CNN
+F 3 "" H 7700 3300 50  0000 C CNN
+	1    7700 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R8
+U 1 1 5671772B
+P 7200 3300
+F 0 "R8" H 7230 3320 50  0000 L CNN
+F 1 "10k" H 7230 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 7200 3300 50  0001 C CNN
+F 3 "" H 7200 3300 50  0000 C CNN
+	1    7200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 56717777
+P 6200 3300
+F 0 "R6" H 6230 3320 50  0000 L CNN
+F 1 "3k" H 6230 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6200 3300 50  0001 C CNN
+F 3 "" H 6200 3300 50  0000 C CNN
+	1    6200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 567177ED
+P 5700 3300
+F 0 "R5" H 5730 3320 50  0000 L CNN
+F 1 "2k" H 5730 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5700 3300 50  0001 C CNN
+F 3 "" H 5700 3300 50  0000 C CNN
+	1    5700 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R4
+U 1 1 567179D0
+P 5450 3100
+F 0 "R4" H 5480 3120 50  0000 L CNN
+F 1 "10k" H 5480 3060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 5450 3100 50  0001 C CNN
+F 3 "" H 5450 3100 50  0000 C CNN
+	1    5450 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_PUSH SW4
+U 1 1 56717DE9
+P 6950 3700
+F 0 "SW4" H 7100 3810 50  0000 C CNN
+F 1 "SW_PUSH" H 6950 3620 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVPBF" H 6950 3700 50  0001 C CNN
+F 3 "" H 6950 3700 50  0000 C CNN
+	1    6950 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 56717DEF
+P 6700 3300
+F 0 "R7" H 6730 3320 50  0000 L CNN
+F 1 "5k" H 6730 3260 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 6700 3300 50  0001 C CNN
+F 3 "" H 6700 3300 50  0000 C CNN
+	1    6700 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ROTARY-ENCODER ROT1
+U 1 1 5672CB49
+P 8500 4000
+F 0 "ROT1" H 8410 4250 60  0000 C CNN
+F 1 "ROTARY-ENCODER" H 8500 3720 60  0000 C CNN
+F 2 "sparkfun:SF-ROTARY-ENCODER" H 8500 4000 60  0001 C CNN
+F 3 "" H 8500 4000 60  0000 C CNN
+	1    8500 4000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5450 4100 8150 4100
+Wire Wire Line
+	2850 3600 2850 4200
+Wire Wire Line
+	2950 3600 2950 3700
+Wire Wire Line
+	2950 3700 2650 3700
+Wire Wire Line
+	2650 3700 2650 3450
+Wire Wire Line
+	2700 3850 3050 3850
+Wire Wire Line
+	3050 3850 3050 3600
+Wire Wire Line
+	2550 3600 2550 3500
+Wire Wire Line
+	2550 3500 2650 3500
+Connection ~ 2650 3500
+Wire Wire Line
+	2550 4100 2550 4150
+Wire Wire Line
+	2550 4150 3250 4150
+Connection ~ 2850 4150
+Wire Wire Line
+	3150 3600 3150 3700
+Wire Wire Line
+	3250 4150 3250 3600
+Wire Wire Line
+	3350 3700 3350 3600
+Wire Wire Line
+	3850 3700 3850 3600
+Wire Wire Line
+	3950 3700 3950 3600
+Wire Wire Line
+	4050 3700 4050 3600
+Wire Wire Line
+	4150 3600 4150 3700
+Wire Wire Line
+	4250 3600 4250 3700
+Wire Wire Line
+	4250 3700 4550 3700
+Wire Wire Line
+	4550 3700 4550 3450
+Wire Wire Line
+	4350 3600 4350 3800
+Wire Wire Line
+	4650 4000 4750 4000
+Wire Wire Line
+	5450 4000 5450 4200
+Connection ~ 7450 4100
+Wire Wire Line
+	6450 4100 6450 4000
+Connection ~ 6450 4100
+Wire Wire Line
+	5950 4000 5950 4100
+Connection ~ 5950 4100
+Connection ~ 5450 4100
+Wire Wire Line
+	7800 3300 8000 3300
+Wire Wire Line
+	7600 3300 7300 3300
+Wire Wire Line
+	6600 3300 6300 3300
+Wire Wire Line
+	6100 3300 5800 3300
+Wire Wire Line
+	5600 3300 5450 3300
+Wire Wire Line
+	5450 3200 5450 3400
+Connection ~ 5450 3300
+Wire Wire Line
+	5450 3000 5450 2900
+Wire Wire Line
+	5950 3400 5950 3300
+Connection ~ 5950 3300
+Wire Wire Line
+	6450 3300 6450 3400
+Connection ~ 6450 3300
+Wire Wire Line
+	7450 3400 7450 3300
+Connection ~ 7450 3300
+Wire Wire Line
+	7950 3300 7950 3900
+Connection ~ 7950 3300
+Wire Wire Line
+	7100 3300 6800 3300
+Wire Wire Line
+	6950 3400 6950 3300
+Connection ~ 6950 3300
+Wire Wire Line
+	6950 4100 6950 4000
+Connection ~ 6950 4100
+Wire Wire Line
+	8850 3900 8950 3900
+Wire Wire Line
+	8850 4100 8950 4100
+Wire Wire Line
+	8850 4000 9300 4000
+Wire Wire Line
+	7950 3900 8150 3900
+Wire Wire Line
+	9300 4000 9300 4250
+Wire Wire Line
+	7450 4000 7450 4100
+$Comp
+L R_Small R10
+U 1 1 56710197
+P 4700 4150
+F 0 "R10" H 4730 4170 50  0000 L CNN
+F 1 "10k" H 4730 4110 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4700 4150 50  0001 C CNN
+F 3 "" H 4700 4150 50  0000 C CNN
+	1    4700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4200 4350 4350
+Wire Wire Line
+	4700 4250 4700 4300
+Wire Wire Line
+	4700 4300 4350 4300
+Connection ~ 4350 4300
+Wire Wire Line
+	4700 4000 4700 4050
+Connection ~ 4700 4000
+Text HLabel 5450 4200 3    60   Input ~ 0
+0V
+Text HLabel 9300 4250 3    60   Input ~ 0
+0V
+Text HLabel 5450 2900 1    60   Input ~ 0
+5V
+$Comp
+L GND #PWR019
+U 1 1 5672881C
+P 2850 4200
+F 0 "#PWR019" H 2850 3950 50  0001 C CNN
+F 1 "GND" H 2850 4050 50  0000 C CNN
+F 2 "" H 2850 4200 50  0000 C CNN
+F 3 "" H 2850 4200 50  0000 C CNN
+	1    2850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 5672885E
+P 4350 4350
+F 0 "#PWR020" H 4350 4100 50  0001 C CNN
+F 1 "GND" H 4350 4200 50  0000 C CNN
+F 2 "" H 4350 4350 50  0000 C CNN
+F 3 "" H 4350 4350 50  0000 C CNN
+	1    4350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR021
+U 1 1 5672888B
+P 4550 3450
+F 0 "#PWR021" H 4550 3300 50  0001 C CNN
+F 1 "+5V" H 4550 3590 50  0000 C CNN
+F 2 "" H 4550 3450 50  0000 C CNN
+F 3 "" H 4550 3450 50  0000 C CNN
+	1    4550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR022
+U 1 1 567288CD
+P 2650 3450
+F 0 "#PWR022" H 2650 3300 50  0001 C CNN
+F 1 "+5V" H 2650 3590 50  0000 C CNN
+F 2 "" H 2650 3450 50  0000 C CNN
+F 3 "" H 2650 3450 50  0000 C CNN
+	1    2650 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

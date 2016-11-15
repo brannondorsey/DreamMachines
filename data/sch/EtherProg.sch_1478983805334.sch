@@ -1,0 +1,305 @@
+EESchema Schematic File Version 2  date Sat 12 May 2012 03:48:50 PM PDT
+LIBS:NT7S
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:EtherProg-cache
+EELAYER 25  0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "EtherProg"
+Date "12 may 2012"
+Rev "A"
+Comp "Etherkit"
+Comment1 ""
+Comment2 "Creative Commons License CC-BY-SA"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85 U1
+U 1 1 4F1772BD
+P 5175 3350
+F 0 "U1" H 5175 3765 50  0000 C CNN
+F 1 "ATTINY85" H 5185 3665 50  0000 C CNN
+	1    5175 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5675 3500 2    40   Input ~ 0
+MOSI
+Text GLabel 5675 3400 2    40   Input ~ 0
+MISO
+Text GLabel 5675 3300 2    40   Input ~ 0
+SCK
+Text GLabel 4675 3200 0    40   Input ~ 0
+RESET
+Text GLabel 6825 4400 0    40   Output ~ 0
+RESET
+Text GLabel 6825 4300 0    40   Output ~ 0
+SCK
+Text GLabel 6825 4200 0    40   Output ~ 0
+MISO
+Text GLabel 7525 4300 2    40   Output ~ 0
+MOSI
+Text GLabel 7935 4200 2    40   Input ~ 0
+VCC
+Text GLabel 6075 3125 1    40   Input ~ 0
+VCC
+Text GLabel 4400 2700 2    40   Output ~ 0
+VCC
+$Comp
+L GND #PWR02
+U 1 1 4F1740F7
+P 6075 3425
+F 0 "#PWR02" H 6075 3425 30  0001 C CNN
+F 1 "GND" H 6075 3355 30  0001 C CNN
+	1    6075 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 4F174069
+P 4275 2975
+F 0 "#PWR03" H 4275 2975 30  0001 C CNN
+F 1 "GND" H 4275 2905 30  0001 C CNN
+	1    4275 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP1
+U 1 1 4F17401A
+P 7700 4200
+F 0 "JP1" H 7700 4325 60  0000 C CNN
+F 1 "JUMPER" H 7700 4120 40  0001 C CNN
+	1    7700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 4F173EE2
+P 4275 2875
+F 0 "C1" H 4425 2925 50  0000 C CNN
+F 1 "100n" H 4475 2850 50  0000 C CNN
+	1    4275 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 4F173ED7
+P 6075 3325
+F 0 "C2" H 6225 3375 50  0000 C CNN
+F 1 "100n" H 6275 3300 50  0000 C CNN
+	1    6075 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 4F173DCF
+P 7475 4500
+F 0 "#PWR04" H 7475 4500 30  0001 C CNN
+F 1 "GND" H 7475 4430 30  0001 C CNN
+	1    7475 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 4F173BE9
+P 3250 3600
+F 0 "#PWR05" H 3250 3600 30  0001 C CNN
+F 1 "GND" H 3250 3530 30  0001 C CNN
+	1    3250 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 4F173BE2
+P 3900 3750
+F 0 "#PWR06" H 3900 3750 30  0001 C CNN
+F 1 "GND" H 3900 3680 30  0001 C CNN
+	1    3900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 4F173BDC
+P 4075 3750
+F 0 "#PWR07" H 4075 3750 30  0001 C CNN
+F 1 "GND" H 4075 3680 30  0001 C CNN
+	1    4075 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 4F173BD5
+P 4725 3600
+F 0 "#PWR08" H 4725 3600 30  0001 C CNN
+F 1 "GND" H 4725 3530 30  0001 C CNN
+	1    4725 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_2 J1
+U 1 1 4F173B4C
+P 3050 3350
+F 0 "J1" H 2975 3600 60  0000 C CNN
+F 1 "USB_2" H 3100 3050 60  0001 C CNN
+F 4 "VCC" H 3375 3500 50  0001 C CNN "VCC"
+F 5 "D+" H 3350 3400 50  0001 C CNN "Data+"
+F 6 "D-" H 3350 3300 50  0001 C CNN "Data-"
+F 7 "GND" H 3375 3200 50  0001 C CNN "Ground"
+	1    3050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 4F173ADB
+P 3760 2925
+F 0 "R1" H 3885 3000 50  0000 C CNN
+F 1 "1.5k" H 3910 2925 50  0000 C CNN
+	1    3760 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 4F1737E7
+P 4125 3300
+F 0 "R2" V 3925 3300 50  0000 C CNN
+F 1 "68" V 4000 3300 50  0000 C CNN
+	1    4125 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 4F1737DC
+P 4475 3400
+F 0 "R3" V 4600 3375 50  0000 C CNN
+F 1 "68" V 4675 3375 50  0000 C CNN
+	1    4475 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENER D1
+U 1 1 4F172AD5
+P 3900 3650
+F 0 "D1" V 3950 3775 50  0000 C CNN
+F 1 "1N5227B" V 3875 3860 40  0000 C CNN
+	1    3900 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ZENER D2
+U 1 1 4F172ACE
+P 4075 3650
+F 0 "D2" V 4125 3525 50  0000 C CNN
+F 1 "1N5227B" V 4050 3440 40  0000 C CNN
+	1    4075 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AVR-ISP-6 J2
+U 1 1 4F17297B
+P 7175 4300
+F 0 "J2" H 7025 4650 50  0000 C CNN
+F 1 "AVR-ISP-6" H 6975 4525 50  0000 L BNN
+F 2 "AVR-ISP-6" V 6675 4300 50  0001 C CNN
+	1    7175 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2700 3300 2700
+Wire Wire Line
+	7935 4200 7875 4200
+Connection ~ 3760 3300
+Wire Wire Line
+	3760 3075 3760 3400
+Wire Wire Line
+	3975 3300 3900 3300
+Wire Wire Line
+	3900 3480 3650 3480
+Wire Wire Line
+	3650 3480 3650 3400
+Wire Wire Line
+	3650 3400 3250 3400
+Wire Wire Line
+	3760 3400 4325 3400
+Wire Wire Line
+	6825 4400 6875 4400
+Wire Wire Line
+	6875 4200 6825 4200
+Connection ~ 6075 3200
+Wire Wire Line
+	6075 3125 6075 3225
+Wire Wire Line
+	5625 3200 6075 3200
+Wire Wire Line
+	5675 3400 5625 3400
+Wire Wire Line
+	4725 3200 4675 3200
+Wire Wire Line
+	4725 3500 4725 3600
+Wire Wire Line
+	4275 3300 4725 3300
+Wire Wire Line
+	4275 2700 4275 2775
+Wire Wire Line
+	3250 3500 3250 3600
+Wire Wire Line
+	3760 2775 3760 2700
+Connection ~ 3760 2700
+Wire Wire Line
+	4625 3400 4725 3400
+Wire Wire Line
+	4075 3550 4075 3400
+Connection ~ 4075 3400
+Wire Wire Line
+	7475 4400 7475 4500
+Wire Wire Line
+	5675 3300 5625 3300
+Connection ~ 4275 2700
+Wire Wire Line
+	6875 4300 6825 4300
+Wire Wire Line
+	7475 4300 7525 4300
+Wire Wire Line
+	3250 3300 3760 3300
+Wire Wire Line
+	3900 3300 3900 3550
+Connection ~ 3900 3480
+Wire Wire Line
+	3300 2700 3300 3200
+Wire Wire Line
+	7525 4200 7475 4200
+Wire Wire Line
+	3300 3200 3250 3200
+Wire Wire Line
+	5675 3500 5625 3500
+$EndSCHEMATC

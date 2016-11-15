@@ -1,0 +1,679 @@
+EESchema Schematic File Version 2
+LIBS:FilPilote-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:w_connectors
+LIBS:FilPilote-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Interface pour fil pilote"
+Date "2015-10-10"
+Rev "v2.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MOC3041M-RESCUE-FilPilote IC1
+U 1 1 55FE75A9
+P 1800 1450
+F 0 "IC1" H 1590 1640 40  0000 C CNN
+F 1 "MOC3041M" H 1890 1260 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-6__300_ELL" H 1600 1270 30  0000 C CIN
+F 3 "" H 1800 1450 60  0000 C CNN
+	1    1800 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MOC3041M-RESCUE-FilPilote IC2
+U 1 1 55FE7673
+P 1800 1950
+F 0 "IC2" H 1590 2140 40  0000 C CNN
+F 1 "MOC3041M" H 1890 1760 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-6__300_ELL" H 1600 1770 30  0000 C CIN
+F 3 "" H 1800 1950 60  0000 C CNN
+	1    1800 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R1
+U 1 1 55FE76CA
+P 2400 1350
+F 0 "R1" V 2480 1350 40  0000 C CNN
+F 1 "330" V 2407 1351 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2330 1350 30  0001 C CNN
+F 3 "" H 2400 1350 30  0000 C CNN
+	1    2400 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R2
+U 1 1 55FE7725
+P 2400 1850
+F 0 "R2" V 2480 1850 40  0000 C CNN
+F 1 "330" V 2407 1851 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2330 1850 30  0001 C CNN
+F 3 "" H 2400 1850 30  0000 C CNN
+	1    2400 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R7
+U 1 1 55FE7750
+P 2650 2100
+F 0 "R7" V 2730 2100 40  0000 C CNN
+F 1 "330" V 2657 2101 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2580 2100 30  0001 C CNN
+F 3 "" H 2650 2100 30  0000 C CNN
+	1    2650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R10
+U 1 1 55FE77A8
+P 2800 2250
+F 0 "R10" V 2880 2250 40  0000 C CNN
+F 1 "330" V 2807 2251 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2730 2250 30  0001 C CNN
+F 3 "" H 2800 2250 30  0000 C CNN
+	1    2800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1350 3050 1350
+Connection ~ 2800 1350
+Wire Wire Line
+	2650 1850 3050 1850
+$Comp
+L GND-RESCUE-FilPilote #PWR01
+U 1 1 55FE7984
+P 1700 2500
+F 0 "#PWR01" H 1700 2500 30  0001 C CNN
+F 1 "GND" H 1700 2430 30  0001 C CNN
+F 2 "" H 1700 2500 60  0000 C CNN
+F 3 "" H 1700 2500 60  0000 C CNN
+	1    1700 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2350 2600 2350
+Wire Wire Line
+	2800 2500 2300 2500
+Wire Wire Line
+	2200 2350 1700 2350
+Wire Wire Line
+	1850 2500 1900 2500
+Wire Wire Line
+	1700 2350 1700 2500
+$Comp
+L DIODE D1
+U 1 1 55FE7BCD
+P 1250 1550
+F 0 "D1" H 1250 1650 40  0000 C CNN
+F 1 "1N4007" H 1250 1450 40  0000 C CNN
+F 2 "Discret:D4" H 1250 1550 60  0001 C CNN
+F 3 "" H 1250 1550 60  0000 C CNN
+	1    1250 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D2
+U 1 1 55FE7C5A
+P 1250 2050
+F 0 "D2" H 1250 2150 40  0000 C CNN
+F 1 "1N4007" H 1250 1950 40  0000 C CNN
+F 2 "Discret:D4" H 1250 2050 60  0001 C CNN
+F 3 "" H 1250 2050 60  0000 C CNN
+	1    1250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1150 1450 1850
+Connection ~ 1450 1350
+Wire Wire Line
+	1050 1150 1050 2050
+Connection ~ 1050 1550
+Text GLabel 1450 1150 2    60   Input ~ 0
+Phase
+Text GLabel 1050 1150 2    60   Input ~ 0
+FP1
+Text GLabel 3050 1350 2    60   Input ~ 0
+Cmd+1
+Text GLabel 3050 1850 2    60   Input ~ 0
+Cmd-1
+Wire Wire Line
+	2150 1550 2200 1550
+Wire Wire Line
+	1850 2500 1850 2350
+Connection ~ 1850 2350
+Wire Wire Line
+	2150 2050 2200 2050
+Wire Wire Line
+	2200 1550 2200 2350
+Connection ~ 2200 2050
+Wire Wire Line
+	2800 1350 2800 2000
+$Comp
+L MOC3041M-RESCUE-FilPilote IC3
+U 1 1 55FE8888
+P 1800 3100
+F 0 "IC3" H 1590 3290 40  0000 C CNN
+F 1 "MOC3041M" H 1890 2910 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-6__300_ELL" H 1600 2920 30  0000 C CIN
+F 3 "" H 1800 3100 60  0000 C CNN
+	1    1800 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MOC3041M-RESCUE-FilPilote IC4
+U 1 1 55FE888E
+P 1800 3600
+F 0 "IC4" H 1590 3790 40  0000 C CNN
+F 1 "MOC3041M" H 1890 3410 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-6__300_ELL" H 1600 3420 30  0000 C CIN
+F 3 "" H 1800 3600 60  0000 C CNN
+	1    1800 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R3
+U 1 1 55FE8894
+P 2400 3000
+F 0 "R3" V 2480 3000 40  0000 C CNN
+F 1 "330" V 2407 3001 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2330 3000 30  0001 C CNN
+F 3 "" H 2400 3000 30  0000 C CNN
+	1    2400 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R4
+U 1 1 55FE889A
+P 2400 3500
+F 0 "R4" V 2480 3500 40  0000 C CNN
+F 1 "330" V 2407 3501 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2330 3500 30  0001 C CNN
+F 3 "" H 2400 3500 30  0000 C CNN
+	1    2400 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R8
+U 1 1 55FE88A0
+P 2650 3750
+F 0 "R8" V 2730 3750 40  0000 C CNN
+F 1 "330" V 2657 3751 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2580 3750 30  0001 C CNN
+F 3 "" H 2650 3750 30  0000 C CNN
+	1    2650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R11
+U 1 1 55FE88A6
+P 2800 3900
+F 0 "R11" V 2880 3900 40  0000 C CNN
+F 1 "330" V 2807 3901 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2730 3900 30  0001 C CNN
+F 3 "" H 2800 3900 30  0000 C CNN
+	1    2800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3000 3050 3000
+Connection ~ 2800 3000
+Wire Wire Line
+	2650 3500 3050 3500
+$Comp
+L GND-RESCUE-FilPilote #PWR02
+U 1 1 55FE88BB
+P 1700 4150
+F 0 "#PWR02" H 1700 4150 30  0001 C CNN
+F 1 "GND" H 1700 4080 30  0001 C CNN
+F 2 "" H 1700 4150 60  0000 C CNN
+F 3 "" H 1700 4150 60  0000 C CNN
+	1    1700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4000 2600 4000
+Wire Wire Line
+	2800 4150 2300 4150
+Wire Wire Line
+	2200 4000 1700 4000
+Wire Wire Line
+	1850 4150 1900 4150
+Wire Wire Line
+	1700 4000 1700 4150
+$Comp
+L DIODE D3
+U 1 1 55FE88C6
+P 1250 3200
+F 0 "D3" H 1250 3300 40  0000 C CNN
+F 1 "1N4007" H 1250 3100 40  0000 C CNN
+F 2 "Discret:D4" H 1250 3200 60  0001 C CNN
+F 3 "" H 1250 3200 60  0000 C CNN
+	1    1250 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D4
+U 1 1 55FE88CC
+P 1250 3700
+F 0 "D4" H 1250 3800 40  0000 C CNN
+F 1 "1N4007" H 1250 3600 40  0000 C CNN
+F 2 "Discret:D4" H 1250 3700 60  0001 C CNN
+F 3 "" H 1250 3700 60  0000 C CNN
+	1    1250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2800 1450 3500
+Connection ~ 1450 3000
+Wire Wire Line
+	1050 2800 1050 3700
+Connection ~ 1050 3200
+Text GLabel 1450 2800 2    60   Input ~ 0
+Phase
+Text GLabel 1050 2800 2    60   Input ~ 0
+FP2
+Text GLabel 3050 3000 2    60   Input ~ 0
+Cmd+2
+Text GLabel 3050 3500 2    60   Input ~ 0
+Cmd-2
+Wire Wire Line
+	2150 3200 2200 3200
+Wire Wire Line
+	1850 4150 1850 4000
+Connection ~ 1850 4000
+Wire Wire Line
+	2150 3700 2200 3700
+Wire Wire Line
+	2200 3200 2200 4000
+Connection ~ 2200 3700
+Wire Wire Line
+	2800 3000 2800 3650
+$Comp
+L MOC3041M-RESCUE-FilPilote IC5
+U 1 1 55FE9478
+P 1800 4750
+F 0 "IC5" H 1590 4940 40  0000 C CNN
+F 1 "MOC3041M" H 1890 4560 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-6__300_ELL" H 1600 4570 30  0000 C CIN
+F 3 "" H 1800 4750 60  0000 C CNN
+	1    1800 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MOC3041M-RESCUE-FilPilote IC6
+U 1 1 55FE947E
+P 1800 5250
+F 0 "IC6" H 1590 5440 40  0000 C CNN
+F 1 "MOC3041M" H 1890 5060 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-6__300_ELL" H 1600 5070 30  0000 C CIN
+F 3 "" H 1800 5250 60  0000 C CNN
+	1    1800 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R5
+U 1 1 55FE9484
+P 2400 4650
+F 0 "R5" V 2480 4650 40  0000 C CNN
+F 1 "330" V 2407 4651 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2330 4650 30  0001 C CNN
+F 3 "" H 2400 4650 30  0000 C CNN
+	1    2400 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R6
+U 1 1 55FE948A
+P 2400 5150
+F 0 "R6" V 2480 5150 40  0000 C CNN
+F 1 "330" V 2407 5151 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2330 5150 30  0001 C CNN
+F 3 "" H 2400 5150 30  0000 C CNN
+	1    2400 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R9
+U 1 1 55FE9490
+P 2650 5400
+F 0 "R9" V 2730 5400 40  0000 C CNN
+F 1 "330" V 2657 5401 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2580 5400 30  0001 C CNN
+F 3 "" H 2650 5400 30  0000 C CNN
+	1    2650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-FilPilote R12
+U 1 1 55FE9496
+P 2800 5550
+F 0 "R12" V 2880 5550 40  0000 C CNN
+F 1 "330" V 2807 5551 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2730 5550 30  0001 C CNN
+F 3 "" H 2800 5550 30  0000 C CNN
+	1    2800 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4650 3050 4650
+Connection ~ 2800 4650
+Wire Wire Line
+	2650 5150 3050 5150
+$Comp
+L GND-RESCUE-FilPilote #PWR03
+U 1 1 55FE94AB
+P 1700 5800
+F 0 "#PWR03" H 1700 5800 30  0001 C CNN
+F 1 "GND" H 1700 5730 30  0001 C CNN
+F 2 "" H 1700 5800 60  0000 C CNN
+F 3 "" H 1700 5800 60  0000 C CNN
+	1    1700 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5650 2600 5650
+Wire Wire Line
+	2800 5800 2300 5800
+Wire Wire Line
+	2200 5650 1700 5650
+Wire Wire Line
+	1850 5800 1900 5800
+Wire Wire Line
+	1700 5650 1700 5800
+$Comp
+L DIODE D5
+U 1 1 55FE94B6
+P 1250 4850
+F 0 "D5" H 1250 4950 40  0000 C CNN
+F 1 "1N4007" H 1250 4750 40  0000 C CNN
+F 2 "Discret:D4" H 1250 4850 60  0001 C CNN
+F 3 "" H 1250 4850 60  0000 C CNN
+	1    1250 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE D6
+U 1 1 55FE94BC
+P 1250 5350
+F 0 "D6" H 1250 5450 40  0000 C CNN
+F 1 "1N4007" H 1250 5250 40  0000 C CNN
+F 2 "Discret:D4" H 1250 5350 60  0001 C CNN
+F 3 "" H 1250 5350 60  0000 C CNN
+	1    1250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4450 1450 5150
+Connection ~ 1450 4650
+Wire Wire Line
+	1050 4450 1050 5350
+Connection ~ 1050 4850
+Text GLabel 1450 4450 2    60   Input ~ 0
+Phase
+Text GLabel 1050 4450 2    60   Input ~ 0
+FP3
+Text GLabel 3050 4650 2    60   Input ~ 0
+Cmd+3
+Text GLabel 3050 5150 2    60   Input ~ 0
+Cmd-3
+Wire Wire Line
+	2150 4850 2200 4850
+Wire Wire Line
+	1850 5800 1850 5650
+Connection ~ 1850 5650
+Wire Wire Line
+	2150 5350 2200 5350
+Wire Wire Line
+	2200 4850 2200 5650
+Connection ~ 2200 5350
+Wire Wire Line
+	2800 4650 2800 5300
+Text Notes 600  650  0    60   Italic 0
+Commandes Fils Pilotes
+Text GLabel 5100 2000 0    60   Input ~ 0
+FP1
+Text GLabel 5100 2150 0    60   Input ~ 0
+FP2
+Text GLabel 5150 1300 0    60   Input ~ 0
+Phase
+Text GLabel 5100 2300 0    60   Input ~ 0
+FP3
+Text Notes 4700 850  0    60   Italic 0
+Borniers
+Text GLabel 9150 1300 0    60   Input ~ 0
+Cmd+1
+Text GLabel 9150 1450 0    60   Input ~ 0
+Cmd-1
+Text GLabel 9150 1600 0    60   Input ~ 0
+Cmd+2
+Text GLabel 9150 1750 0    60   Input ~ 0
+Cmd-2
+Text GLabel 9150 1900 0    60   Input ~ 0
+Cmd+3
+Text GLabel 9150 2050 0    60   Input ~ 0
+Cmd-3
+$Comp
+L GND-RESCUE-FilPilote #PWR04
+U 1 1 55FF87EA
+P 7250 6350
+F 0 "#PWR04" H 7250 6350 30  0001 C CNN
+F 1 "GND" H 7250 6280 30  0001 C CNN
+F 2 "" H 7250 6350 60  0000 C CNN
+F 3 "" H 7250 6350 60  0000 C CNN
+	1    7250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 55FF882F
+P 7250 6350
+F 0 "#FLG05" H 7250 6445 30  0001 C CNN
+F 1 "PWR_FLAG" H 7250 6530 30  0000 C CNN
+F 2 "" H 7250 6350 60  0000 C CNN
+F 3 "" H 7250 6350 60  0000 C CNN
+	1    7250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 55FFAEF9
+P 5350 2150
+F 0 "P2" H 5350 2350 50  0000 C CNN
+F 1 "CONN_01X03" V 5450 2150 50  0000 C CNN
+F 2 "Connect:bornier3" H 5350 2150 60  0001 C CNN
+F 3 "" H 5350 2150 60  0000 C CNN
+	1    5350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2000 5150 2000
+Wire Wire Line
+	5150 2000 5150 2050
+Wire Wire Line
+	5100 2150 5150 2150
+Wire Wire Line
+	5100 2300 5150 2300
+Wire Wire Line
+	5150 2300 5150 2250
+$Comp
+L CONN_01X07 P3
+U 1 1 55FFB203
+P 9700 1600
+F 0 "P3" H 9700 2000 50  0000 C CNN
+F 1 "CONN_01X07" V 9800 1600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 9700 1600 60  0001 C CNN
+F 3 "" H 9700 1600 60  0000 C CNN
+	1    9700 1600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9150 1300 9500 1300
+Wire Wire Line
+	9150 1450 9200 1450
+Wire Wire Line
+	9200 1450 9200 1400
+Wire Wire Line
+	9200 1400 9500 1400
+Wire Wire Line
+	9150 1600 9200 1600
+Wire Wire Line
+	9200 1600 9200 1500
+Wire Wire Line
+	9200 1500 9500 1500
+Wire Wire Line
+	9150 1750 9250 1750
+Wire Wire Line
+	9250 1750 9250 1600
+Wire Wire Line
+	9250 1600 9500 1600
+Wire Wire Line
+	9150 1900 9300 1900
+Wire Wire Line
+	9300 1900 9300 1700
+Wire Wire Line
+	9300 1700 9500 1700
+Wire Wire Line
+	9150 2050 9350 2050
+Wire Wire Line
+	9350 2050 9350 1800
+Wire Wire Line
+	9350 1800 9500 1800
+$Comp
+L GND-RESCUE-FilPilote #PWR06
+U 1 1 55FFB8E1
+P 9500 2100
+F 0 "#PWR06" H 9500 2100 30  0001 C CNN
+F 1 "GND" H 9500 2030 30  0001 C CNN
+F 2 "" H 9500 2100 60  0000 C CNN
+F 3 "" H 9500 2100 60  0000 C CNN
+	1    9500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1900 9500 2100
+Wire Notes Line
+	4050 500  4050 7750
+Wire Notes Line
+	4050 3050 11200 3050
+Wire Notes Line
+	7350 3050 7350 500 
+Text Notes 7650 800  0    60   Italic 0
+Signals
+$Comp
+L CONN_01X03 P1
+U 1 1 55FFDA24
+P 5350 1200
+F 0 "P1" H 5350 1400 50  0000 C CNN
+F 1 "CONN_01X03" V 5450 1200 50  0000 C CNN
+F 2 "Connect:bornier3" H 5350 1200 60  0001 C CNN
+F 3 "" H 5350 1200 60  0000 C CNN
+	1    5350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1300 5150 1200
+NoConn ~ 5150 1100
+$Comp
+L LED D10
+U 1 1 5607FB2B
+P 2400 2350
+F 0 "D10" H 2400 2450 50  0000 C CNN
+F 1 "LED" H 2400 2250 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 2400 2350 60  0001 C CNN
+F 3 "" H 2400 2350 60  0000 C CNN
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D7
+U 1 1 5607FBD5
+P 2100 2500
+F 0 "D7" H 2100 2600 50  0000 C CNN
+F 1 "LED" H 2100 2400 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 2100 2500 60  0001 C CNN
+F 3 "" H 2100 2500 60  0000 C CNN
+	1    2100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D8
+U 1 1 56080C97
+P 2100 4150
+F 0 "D8" H 2100 4250 50  0000 C CNN
+F 1 "LED" H 2100 4050 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 2100 4150 60  0001 C CNN
+F 3 "" H 2100 4150 60  0000 C CNN
+	1    2100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D11
+U 1 1 56080D41
+P 2400 4000
+F 0 "D11" H 2400 4100 50  0000 C CNN
+F 1 "LED" H 2400 3900 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 2400 4000 60  0001 C CNN
+F 3 "" H 2400 4000 60  0000 C CNN
+	1    2400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D9
+U 1 1 560814F5
+P 2100 5800
+F 0 "D9" H 2100 5900 50  0000 C CNN
+F 1 "LED" H 2100 5700 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 2100 5800 60  0001 C CNN
+F 3 "" H 2100 5800 60  0000 C CNN
+	1    2100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D12
+U 1 1 560815A3
+P 2400 5650
+F 0 "D12" H 2400 5750 50  0000 C CNN
+F 1 "LED" H 2400 5550 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 2400 5650 60  0001 C CNN
+F 3 "" H 2400 5650 60  0000 C CNN
+	1    2400 5650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

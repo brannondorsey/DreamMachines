@@ -1,0 +1,213 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:opel_relay_box-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR015
+U 1 1 570950D3
+P 4750 3700
+F 0 "#PWR015" H 4750 3450 50  0001 C CNN
+F 1 "GND" H 4750 3550 50  0000 C CNN
+F 2 "" H 4750 3700 50  0000 C CNN
+F 3 "" H 4750 3700 50  0000 C CNN
+	1    4750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3700 4750 3550
+$Comp
+L GND #PWR016
+U 1 1 5709530D
+P 6400 850
+F 0 "#PWR016" H 6400 600 50  0001 C CNN
+F 1 "GND" H 6400 700 50  0000 C CNN
+F 2 "" H 6400 850 50  0000 C CNN
+F 3 "" H 6400 850 50  0000 C CNN
+	1    6400 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 850  6400 650 
+Wire Wire Line
+	6400 650  5350 650 
+Wire Wire Line
+	5350 650  5350 2400
+Wire Wire Line
+	6800 1150 9100 1150
+Wire Wire Line
+	6800 1150 6800 1050
+$Comp
+L +12V #PWR017
+U 1 1 57095341
+P 6800 1050
+F 0 "#PWR017" H 6800 900 50  0001 C CNN
+F 1 "+12V" H 6800 1190 50  0000 C CNN
+F 2 "" H 6800 1050 50  0000 C CNN
+F 3 "" H 6800 1050 50  0000 C CNN
+	1    6800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 5709541B
+P 5500 6100
+F 0 "#PWR018" H 5500 5850 50  0001 C CNN
+F 1 "GND" H 5500 5950 50  0000 C CNN
+F 2 "" H 5500 6100 50  0000 C CNN
+F 3 "" H 5500 6100 50  0000 C CNN
+	1    5500 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6100 5500 5950
+Wire Wire Line
+	3100 2400 3100 6400
+Wire Wire Line
+	3100 2400 2800 2400
+Wire Wire Line
+	6100 3600 6100 4900
+Wire Wire Line
+	6100 3600 9250 3600
+Wire Wire Line
+	6300 4300 6300 4800
+Wire Wire Line
+	6300 4300 9250 4300
+Text HLabel 2800 1900 0    60   BiDi ~ 0
+WIPER_SW_SLOW
+Text HLabel 2800 2400 0    60   BiDi ~ 0
+WIPER_SW_FAST
+Text HLabel 9250 3600 2    60   BiDi ~ 0
+WIPER_RELAY_SLOW
+Text HLabel 9250 4300 2    60   BiDi ~ 0
+WIPER_RELAY_FAST
+Text HLabel 9250 2700 2    60   BiDi ~ 0
+WIPER_RELAY+
+Text HLabel 9250 4750 2    60   BiDi ~ 0
+WIPER_RELAY_GND
+Wire Wire Line
+	9100 1150 9100 2700
+Wire Wire Line
+	9100 2700 9250 2700
+Wire Wire Line
+	9250 4750 9100 4750
+Wire Wire Line
+	9100 4750 9100 6100
+$Comp
+L GND #PWR019
+U 1 1 57099409
+P 9100 6100
+F 0 "#PWR019" H 9100 5850 50  0001 C CNN
+F 1 "GND" H 9100 5950 50  0000 C CNN
+F 2 "" H 9100 6100 50  0000 C CNN
+F 3 "" H 9100 6100 50  0000 C CNN
+	1    9100 6100
+	1    0    0    -1  
+$EndComp
+Text HLabel 9250 3150 2    60   BiDi ~ 0
+WIPER_RELAY_PWR
+Wire Wire Line
+	9250 3150 6500 3150
+$Comp
+L R95-160 U601
+U 1 1 571BBF10
+P 5050 2850
+F 0 "U601" H 4700 3300 60  0000 C CNN
+F 1 "R95-160" H 5050 2850 60  0000 C CNN
+F 2 "" H 5050 2850 60  0001 C CNN
+F 3 "" H 5050 2850 60  0000 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2600 5650 2400
+Wire Wire Line
+	5650 2400 5350 2400
+Wire Wire Line
+	4750 3550 4800 3550
+Wire Wire Line
+	4800 3550 4800 3400
+$Comp
+L R95-160 U602
+U 1 1 571BC00E
+P 5850 5400
+F 0 "U602" H 5500 5850 60  0000 C CNN
+F 1 "R95-160" H 5850 5400 60  0000 C CNN
+F 2 "" H 5850 5400 60  0001 C CNN
+F 3 "" H 5850 5400 60  0000 C CNN
+	1    5850 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5950 5600 5950
+Wire Wire Line
+	6450 5150 6450 4900
+Wire Wire Line
+	6450 4900 6100 4900
+Wire Wire Line
+	6300 4800 6550 4800
+Wire Wire Line
+	6550 4800 6550 5300
+Wire Wire Line
+	6550 5300 6450 5300
+Wire Wire Line
+	5300 3400 5300 4000
+Wire Wire Line
+	5300 4000 3950 4000
+Wire Wire Line
+	3950 4000 3950 1900
+Wire Wire Line
+	3950 1900 2800 1900
+Wire Wire Line
+	4450 2650 4450 5200
+Wire Wire Line
+	4450 5200 5250 5200
+Wire Wire Line
+	6100 5950 6100 6400
+Wire Wire Line
+	6100 6400 3100 6400
+Wire Wire Line
+	5650 2750 6500 2750
+Wire Wire Line
+	6500 2750 6500 3150
+$EndSCHEMATC

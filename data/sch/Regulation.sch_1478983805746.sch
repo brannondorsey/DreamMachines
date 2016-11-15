@@ -1,0 +1,568 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:frep
+LIBS:LabBenchPsu-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "Lab Bench PSU"
+Date "25.12.2014"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "- Voltage preregulation with boost converter"
+$EndDescr
+Text HLabel 3000 2425 0    60   Input ~ 0
+5V_direct
+Text HLabel 8900 2425 2    60   Output ~ 0
+3V3_reg
+Text HLabel 7400 3575 2    60   Output ~ 0
+V+
+Text HLabel 8300 4375 2    60   Input ~ 0
+SCL
+Text HLabel 8300 4450 2    60   Input ~ 0
+SDA
+$Comp
+L MCP1700 U?
+U 1 1 54A19DBF
+P 5750 2475
+F 0 "U?" H 5900 2279 60  0000 C CNN
+F 1 "MCP1700" H 5750 2675 60  0000 C CNN
+F 2 "" H 5750 2475 60  0000 C CNN
+F 3 "" H 5750 2475 60  0000 C CNN
+	1    5750 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A19DD3
+P 5250 2625
+F 0 "C?" H 5250 2725 40  0000 L CNN
+F 1 "100nF" H 5256 2540 40  0000 L CNN
+F 2 "" H 5288 2475 30  0000 C CNN
+F 3 "" H 5250 2625 60  0000 C CNN
+	1    5250 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A19DE7
+P 6250 2625
+F 0 "C?" H 6250 2725 40  0000 L CNN
+F 1 "2u2F" H 6256 2540 40  0000 L CNN
+F 2 "" H 6288 2475 30  0000 C CNN
+F 3 "" H 6250 2625 60  0000 C CNN
+	1    6250 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A19E23
+P 5750 2925
+F 0 "#PWR?" H 5750 2925 30  0001 C CNN
+F 1 "GND" H 5750 2855 30  0001 C CNN
+F 2 "" H 5750 2925 60  0000 C CNN
+F 3 "" H 5750 2925 60  0000 C CNN
+	1    5750 2925
+	1    0    0    -1  
+$EndComp
+Text Notes 5500 2150 0    60   ~ 0
+3V3 Regulation
+$Comp
+L PAM2423 U?
+U 1 1 54A1B28F
+P 5050 4100
+F 0 "U?" H 5050 4350 60  0000 C CNN
+F 1 "PAM2423" H 5050 3875 60  0000 C CNN
+F 2 "" H 5050 4050 60  0000 C CNN
+F 3 "" H 5050 4050 60  0000 C CNN
+	1    5050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1B2AF
+P 4475 3975
+F 0 "#PWR?" H 4475 3975 30  0001 C CNN
+F 1 "GND" H 4475 3905 30  0001 C CNN
+F 2 "" H 4475 3975 60  0000 C CNN
+F 3 "" H 4475 3975 60  0000 C CNN
+	1    4475 3975
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1B2C3
+P 5525 4275
+F 0 "#PWR?" H 5525 4275 30  0001 C CNN
+F 1 "GND" H 5525 4205 30  0001 C CNN
+F 2 "" H 5525 4275 60  0000 C CNN
+F 3 "" H 5525 4275 60  0000 C CNN
+	1    5525 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 54A1B43E
+P 5050 3575
+F 0 "L?" V 5000 3575 40  0000 C CNN
+F 1 "6u8H" V 5150 3575 40  0000 C CNN
+F 2 "" H 5050 3575 60  0000 C CNN
+F 3 "" H 5050 3575 60  0000 C CNN
+	1    5050 3575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 54A1B45E
+P 4575 4475
+F 0 "C?" H 4575 4575 40  0000 L CNN
+F 1 "47pF" H 4581 4390 40  0000 L CNN
+F 2 "" H 4613 4325 30  0000 C CNN
+F 3 "" H 4575 4475 60  0000 C CNN
+	1    4575 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A1B470
+P 4325 5075
+F 0 "C?" H 4325 5175 40  0000 L CNN
+F 1 "2n2F" H 4331 4990 40  0000 L CNN
+F 2 "" H 4363 4925 30  0000 C CNN
+F 3 "" H 4325 5075 60  0000 C CNN
+	1    4325 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54A1B47D
+P 4325 4525
+F 0 "R?" V 4405 4525 40  0000 C CNN
+F 1 "51K" V 4332 4526 40  0000 C CNN
+F 2 "" V 4255 4525 30  0000 C CNN
+F 3 "" H 4325 4525 30  0000 C CNN
+	1    4325 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1B4CA
+P 4325 5375
+F 0 "#PWR?" H 4325 5375 30  0001 C CNN
+F 1 "GND" H 4325 5305 30  0001 C CNN
+F 2 "" H 4325 5375 60  0000 C CNN
+F 3 "" H 4325 5375 60  0000 C CNN
+	1    4325 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A1B805
+P 3925 4250
+F 0 "C?" H 3925 4350 40  0000 L CNN
+F 1 "1uF" H 3931 4165 40  0000 L CNN
+F 2 "" H 3963 4100 30  0000 C CNN
+F 3 "" H 3925 4250 60  0000 C CNN
+	1    3925 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A1B810
+P 3700 3775
+F 0 "C?" H 3700 3875 40  0000 L CNN
+F 1 "10uF" H 3706 3690 40  0000 L CNN
+F 2 "" H 3738 3625 30  0000 C CNN
+F 3 "" H 3700 3775 60  0000 C CNN
+	1    3700 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 54A1BB0D
+P 3300 3775
+F 0 "C?" H 3350 3875 50  0000 L CNN
+F 1 "47uF" H 3350 3675 50  0000 L CNN
+F 2 "" H 3300 3775 60  0000 C CNN
+F 3 "" H 3300 3775 60  0000 C CNN
+	1    3300 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 54A1BB24
+P 7000 3775
+F 0 "C?" H 7050 3875 50  0000 L CNN
+F 1 "47uF" H 7050 3675 50  0000 L CNN
+F 2 "" H 7000 3775 60  0000 C CNN
+F 3 "" H 7000 3775 60  0000 C CNN
+	1    7000 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A1BB2F
+P 6700 3775
+F 0 "C?" H 6700 3875 40  0000 L CNN
+F 1 "10uF" H 6706 3690 40  0000 L CNN
+F 2 "" H 6738 3625 30  0000 C CNN
+F 3 "" H 6700 3775 60  0000 C CNN
+	1    6700 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1BB3E
+P 3925 4550
+F 0 "#PWR?" H 3925 4550 30  0001 C CNN
+F 1 "GND" H 3925 4480 30  0001 C CNN
+F 2 "" H 3925 4550 60  0000 C CNN
+F 3 "" H 3925 4550 60  0000 C CNN
+	1    3925 4550
+	1    0    0    -1  
+$EndComp
+Text HLabel 4475 4125 0    60   Input ~ 0
+ENCONV
+$Comp
+L GND #PWR?
+U 1 1 54A1C081
+P 3700 4075
+F 0 "#PWR?" H 3700 4075 30  0001 C CNN
+F 1 "GND" H 3700 4005 30  0001 C CNN
+F 2 "" H 3700 4075 60  0000 C CNN
+F 3 "" H 3700 4075 60  0000 C CNN
+	1    3700 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1C08C
+P 3300 4075
+F 0 "#PWR?" H 3300 4075 30  0001 C CNN
+F 1 "GND" H 3300 4005 30  0001 C CNN
+F 2 "" H 3300 4075 60  0000 C CNN
+F 3 "" H 3300 4075 60  0000 C CNN
+	1    3300 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A1D0E2
+P 5750 4475
+F 0 "C?" H 5750 4575 40  0000 L CNN
+F 1 "10nF" H 5756 4390 40  0000 L CNN
+F 2 "" H 5788 4325 30  0000 C CNN
+F 3 "" H 5750 4475 60  0000 C CNN
+	1    5750 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1D0FC
+P 5750 4775
+F 0 "#PWR?" H 5750 4775 30  0001 C CNN
+F 1 "GND" H 5750 4705 30  0001 C CNN
+F 2 "" H 5750 4775 60  0000 C CNN
+F 3 "" H 5750 4775 60  0000 C CNN
+	1    5750 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54A1D2CD
+P 6450 3825
+F 0 "R?" V 6530 3825 40  0000 C CNN
+F 1 "10K" V 6457 3826 40  0000 C CNN
+F 2 "" V 6380 3825 30  0000 C CNN
+F 3 "" H 6450 3825 30  0000 C CNN
+	1    6450 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54A1D2D8
+P 6450 4625
+F 0 "R?" V 6530 4625 40  0000 C CNN
+F 1 "10K" V 6457 4626 40  0000 C CNN
+F 2 "" V 6380 4625 30  0000 C CNN
+F 3 "" H 6450 4625 30  0000 C CNN
+	1    6450 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1D2F7
+P 6450 4975
+F 0 "#PWR?" H 6450 4975 30  0001 C CNN
+F 1 "GND" H 6450 4905 30  0001 C CNN
+F 2 "" H 6450 4975 60  0000 C CNN
+F 3 "" H 6450 4975 60  0000 C CNN
+	1    6450 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1D976
+P 6700 4075
+F 0 "#PWR?" H 6700 4075 30  0001 C CNN
+F 1 "GND" H 6700 4005 30  0001 C CNN
+F 2 "" H 6700 4075 60  0000 C CNN
+F 3 "" H 6700 4075 60  0000 C CNN
+	1    6700 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1D981
+P 7000 4075
+F 0 "#PWR?" H 7000 4075 30  0001 C CNN
+F 1 "GND" H 7000 4005 30  0001 C CNN
+F 2 "" H 7000 4075 60  0000 C CNN
+F 3 "" H 7000 4075 60  0000 C CNN
+	1    7000 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 54A1E1F6
+P 6100 3575
+F 0 "D?" H 6100 3675 40  0000 C CNN
+F 1 "SS34" H 6100 3475 40  0000 C CNN
+F 2 "" H 6100 3575 60  0000 C CNN
+F 3 "" H 6100 3575 60  0000 C CNN
+	1    6100 3575
+	1    0    0    -1  
+$EndComp
+Text Notes 4900 4475 0    60   ~ 0
+DC-DC
+$Comp
+L MCP4017 U?
+U 1 1 54A1F771
+P 7675 4475
+F 0 "U?" H 7675 4700 60  0000 C CNN
+F 1 "MCP4017" H 7675 4275 60  0000 C CNN
+F 2 "" H 7675 4475 60  0000 C CNN
+F 3 "" H 7675 4475 60  0000 C CNN
+	1    7675 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54A1F978
+P 6825 4375
+F 0 "R?" V 6905 4375 40  0000 C CNN
+F 1 "620R" V 6832 4376 40  0000 C CNN
+F 2 "" V 6755 4375 30  0000 C CNN
+F 3 "" H 6825 4375 30  0000 C CNN
+	1    6825 4375
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 54A1FBEF
+P 8500 4725
+F 0 "C?" H 8500 4825 40  0000 L CNN
+F 1 "100nF" H 8506 4640 40  0000 L CNN
+F 2 "" H 8538 4575 30  0000 C CNN
+F 3 "" H 8500 4725 60  0000 C CNN
+	1    8500 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1FBFF
+P 7200 4600
+F 0 "#PWR?" H 7200 4600 30  0001 C CNN
+F 1 "GND" H 7200 4530 30  0001 C CNN
+F 2 "" H 7200 4600 60  0000 C CNN
+F 3 "" H 7200 4600 60  0000 C CNN
+	1    7200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A1FC0A
+P 8500 5000
+F 0 "#PWR?" H 8500 5000 30  0001 C CNN
+F 1 "GND" H 8500 4930 30  0001 C CNN
+F 2 "" H 8500 5000 60  0000 C CNN
+F 3 "" H 8500 5000 60  0000 C CNN
+	1    8500 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 4850 5400 0    60   ~ 0
+V_OUT = (R1/R2 + 1)*V_FB
+Wire Wire Line
+	5750 2725 5750 2925
+Wire Wire Line
+	3000 2425 5350 2425
+Connection ~ 5250 2425
+Wire Wire Line
+	5250 2825 6250 2825
+Connection ~ 5750 2825
+Connection ~ 6250 2425
+Wire Wire Line
+	4575 3975 4475 3975
+Wire Wire Line
+	5525 4200 5525 4275
+Wire Wire Line
+	4575 4200 4325 4200
+Wire Wire Line
+	4325 4200 4325 4275
+Wire Wire Line
+	4325 4775 4325 4875
+Wire Wire Line
+	4325 5275 4325 5375
+Wire Wire Line
+	4575 4200 4575 4275
+Wire Wire Line
+	4575 4675 4575 5325
+Wire Wire Line
+	4575 5325 4325 5325
+Connection ~ 4325 5325
+Wire Wire Line
+	4475 4125 4575 4125
+Wire Wire Line
+	3925 4450 3925 4550
+Wire Wire Line
+	3925 4050 4575 4050
+Wire Wire Line
+	3925 3575 3925 4050
+Connection ~ 3100 2425
+Wire Wire Line
+	3300 3975 3300 4075
+Wire Wire Line
+	3700 3975 3700 4075
+Wire Wire Line
+	5750 3975 5525 3975
+Wire Wire Line
+	5750 3575 5750 3975
+Wire Wire Line
+	5525 4050 5750 4050
+Wire Wire Line
+	5750 4050 5750 4275
+Wire Wire Line
+	5750 4675 5750 4775
+Wire Wire Line
+	6450 4875 6450 4975
+Wire Wire Line
+	3100 2425 3100 3575
+Wire Wire Line
+	3100 3575 4750 3575
+Connection ~ 3300 3575
+Connection ~ 3700 3575
+Connection ~ 3925 3575
+Connection ~ 5750 3575
+Connection ~ 6450 3575
+Connection ~ 6700 3575
+Wire Wire Line
+	6450 4075 6450 4375
+Connection ~ 6450 4125
+Wire Wire Line
+	6700 3975 6700 4075
+Wire Wire Line
+	7000 3975 7000 4075
+Connection ~ 7000 3575
+Wire Wire Line
+	5350 3575 5900 3575
+Wire Wire Line
+	6300 3575 7400 3575
+Wire Wire Line
+	5525 4125 6450 4125
+Wire Wire Line
+	8300 4375 8150 4375
+Wire Wire Line
+	8300 4450 8150 4450
+Wire Wire Line
+	6450 4375 6575 4375
+Wire Wire Line
+	7075 4375 7200 4375
+Wire Wire Line
+	7200 4450 7075 4450
+Wire Wire Line
+	7200 4525 7200 4600
+Wire Wire Line
+	8500 4925 8500 5000
+Wire Wire Line
+	8150 4525 8700 4525
+Wire Wire Line
+	8700 4525 8700 2425
+Connection ~ 8700 2425
+Wire Wire Line
+	6150 2425 8900 2425
+Connection ~ 8500 4525
+Wire Wire Line
+	7075 4450 7075 4875
+Wire Wire Line
+	7075 4875 6450 4875
+Wire Notes Line
+	6325 4175 6325 5050
+Wire Notes Line
+	6350 3800 5950 3800
+Wire Notes Line
+	5950 3800 5950 5000
+Wire Notes Line
+	5950 5000 5375 5000
+Wire Notes Line
+	5375 5000 5375 5275
+Wire Notes Line
+	6325 4550 6050 4550
+Wire Notes Line
+	6050 4550 6050 5100
+Wire Notes Line
+	6050 5100 5575 5100
+Wire Notes Line
+	5575 5100 5575 5275
+Wire Notes Line
+	6325 4175 7350 4175
+Wire Notes Line
+	7350 4175 7350 5050
+Text Notes 7450 4950 0    60   ~ 0
+EPOT\n5K 128 Tap
+Text Notes 6325 5175 0    60   ~ 0
+R = [584R ... 3K6]
+Wire Notes Line
+	7350 5050 6325 5050
+Text Notes 4850 5500 0    60   ~ 0
+V_OUT = [4.8V ... 22.9V]
+Text Notes 6325 5500 0    60   ~ 0
+R: 4470\nR: 28
+Text Notes 6725 5500 0    60   ~ 0
+=> V_Out = 5V\n=> V_Out = 22V
+Text Notes 7525 4150 0    79   ~ 0
+i2c configuration:\n0101100 R/W\nRead: 0x5F\nWrite: 0x5E
+$EndSCHEMATC

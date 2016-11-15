@@ -1,0 +1,928 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:FabLibrary
+LIBS:IainPersonalLibrary
+LIBS:StrokeRehabilitation-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MOSFET_N Q2
+U 1 1 56C747A4
+P 9850 2050
+F 0 "Q2" H 10100 2050 50  0000 R CNN
+F 1 "MOSFET_N" H 9800 1900 50  0001 R CNN
+F 2 "IainPersonalLibrary:MCPH3_SOT-323" H 9850 2050 60  0001 C CNN
+F 3 "" H 9850 2050 60  0000 C CNN
+F 4 "MCH3479-TL-H" H 9850 2050 60  0001 C CNN "manf#"
+	1    9850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 56C747A5
+P 9400 2400
+F 0 "R8" H 9500 2400 50  0000 C CNN
+F 1 "50k" V 9400 2400 50  0000 C CNN
+F 2 "IainPersonalLibrary:Yageo_resistor_SMD_0805_reflow" V 9330 2400 50  0001 C CNN
+F 3 "" H 9400 2400 50  0000 C CNN
+F 4 "RC0805FR-0749K9L" H 9400 2400 60  0001 C CNN "manf#"
+	1    9400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 56C747A6
+P 9500 1350
+F 0 "C4" H 9525 1450 50  0000 L CNN
+F 1 "100p" H 9525 1250 50  0000 L CNN
+F 2 "IainPersonalLibrary:Murata_capacitor_SMD_0805_reflow" H 9538 1200 50  0001 C CNN
+F 3 "" H 9500 1350 50  0000 C CNN
+F 4 "C0805C101J5GACTU" H 9500 1350 60  0001 C CNN "manf#"
+	1    9500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR01
+U 1 1 56C747A7
+P 9950 850
+F 0 "#PWR01" H 9950 700 50  0001 C CNN
+F 1 "VDD" H 9950 1000 50  0000 C CNN
+F 2 "" H 9950 850 50  0000 C CNN
+F 3 "" H 9950 850 50  0000 C CNN
+	1    9950 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56C747A8
+P 9950 2750
+F 0 "#PWR02" H 9950 2500 50  0001 C CNN
+F 1 "GND" H 9950 2600 50  0000 C CNN
+F 2 "" H 9950 2750 50  0000 C CNN
+F 3 "" H 9950 2750 50  0000 C CNN
+	1    9950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 56C747AA
+P 1300 2150
+F 0 "#FLG03" H 1300 2245 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 2330 50  0000 C CNN
+F 2 "" H 1300 2150 50  0000 C CNN
+F 3 "" H 1300 2150 50  0000 C CNN
+	1    1300 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Brushed_DC_motor U4
+U 1 1 56C747AC
+P 9950 1350
+F 0 "U4" V 10100 1150 60  0000 C CNN
+F 1 "Brushed_DC_motor" H 9950 1600 60  0001 C CNN
+F 2 "IainPersonalLibrary:WireToBoard_1x2_TensionRelief" H 9950 1350 60  0001 C CNN
+F 3 "" H 9950 1350 60  0000 C CNN
+F 4 "307-103" V 9950 1350 60  0001 C CNN "manf#"
+F 5 "https://www.precisionmicrodrives.com/product/307-103-9mm-vibration-motor-25mm-type" V 9950 1350 60  0001 C CNN "kicost:PrecisionMicrodrives:link"
+	1    9950 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 56C75880
+P 8400 2350
+F 0 "C3" H 8425 2450 50  0000 L CNN
+F 1 "10uF" H 8425 2250 50  0000 L CNN
+F 2 "IainPersonalLibrary:Murata_capacitor_SMD_0805_reflow" H 8438 2200 50  0001 C CNN
+F 3 "" H 8400 2350 50  0000 C CNN
+F 4 "GRM21BR61C106KE15L" H 8400 2350 60  0001 C CNN "manf#"
+	1    8400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR04
+U 1 1 56C758CB
+P 8400 1800
+F 0 "#PWR04" H 8400 1650 50  0001 C CNN
+F 1 "VDD" H 8400 1950 50  0000 C CNN
+F 2 "" H 8400 1800 50  0000 C CNN
+F 3 "" H 8400 1800 50  0000 C CNN
+	1    8400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 56C759DE
+P 8400 2850
+F 0 "#PWR05" H 8400 2600 50  0001 C CNN
+F 1 "GND" H 8400 2700 50  0000 C CNN
+F 2 "" H 8400 2850 50  0000 C CNN
+F 3 "" H 8400 2850 50  0000 C CNN
+	1    8400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFD22301 U3
+U 1 1 56C7608E
+P 2600 4400
+F 0 "U3" H 2000 5100 50  0000 L CNN
+F 1 "RFD22301" H 2400 4900 50  0001 L CNN
+F 2 "IainPersonalLibrary:RFD22301_RFDuino" H 2400 4900 50  0001 L CNN
+F 3 "" H 2600 4400 60  0000 C CNN
+F 4 "RFD22301" H 2600 4400 60  0001 C CNN "manf#"
+	1    2600 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 56CB0C84
+P 4700 4400
+F 0 "R7" H 4800 4400 50  0000 C CNN
+F 1 "330" V 4700 4400 50  0000 C CNN
+F 2 "IainPersonalLibrary:Yageo_resistor_SMD_0805_reflow" V 4630 4400 50  0001 C CNN
+F 3 "" H 4700 4400 50  0000 C CNN
+F 4 "RC0805FR-07330RL" H 4700 4400 60  0001 C CNN "manf#"
+	1    4700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 56CB0CC9
+P 4500 4400
+F 0 "R6" H 4600 4400 50  0000 C CNN
+F 1 "330" V 4500 4400 50  0000 C CNN
+F 2 "IainPersonalLibrary:Yageo_resistor_SMD_0805_reflow" V 4430 4400 50  0001 C CNN
+F 3 "" H 4500 4400 50  0000 C CNN
+F 4 "RC0805FR-07330RL" H 4500 4400 60  0001 C CNN "manf#"
+	1    4500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P2
+U 1 1 56CB0CFA
+P 950 4500
+F 0 "P2" H 950 4800 50  0000 C CNN
+F 1 "Programming Header" V 1050 4500 50  0000 C CNN
+F 2 "IainPersonalLibrary:RFDuino_programming_header" H 950 4500 50  0001 C CNN
+F 3 "" H 950 4500 50  0000 C CNN
+	1    950  4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR06
+U 1 1 56CB1B18
+P 1400 3750
+F 0 "#PWR06" H 1400 3600 50  0001 C CNN
+F 1 "VDD" H 1400 3900 50  0000 C CNN
+F 2 "" H 1400 3750 50  0000 C CNN
+F 3 "" H 1400 3750 50  0000 C CNN
+	1    1400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 56CB200B
+P 1400 5050
+F 0 "#PWR07" H 1400 4800 50  0001 C CNN
+F 1 "GND" H 1400 4900 50  0000 C CNN
+F 2 "" H 1400 5050 50  0000 C CNN
+F 3 "" H 1400 5050 50  0000 C CNN
+	1    1400 5050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 4100
+$Comp
+L GND #PWR08
+U 1 1 56CB2639
+P 3450 5050
+F 0 "#PWR08" H 3450 4800 50  0001 C CNN
+F 1 "GND" H 3450 4900 50  0000 C CNN
+F 2 "" H 3450 5050 50  0000 C CNN
+F 3 "" H 3450 5050 50  0000 C CNN
+	1    3450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR09
+U 1 1 56CB3133
+P 4600 3450
+F 0 "#PWR09" H 4600 3300 50  0001 C CNN
+F 1 "VDD" H 4600 3600 50  0000 C CNN
+F 2 "" H 4600 3450 50  0000 C CNN
+F 3 "" H 4600 3450 50  0000 C CNN
+	1    4600 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 4500 2    60   Input ~ 0
+motor
+NoConn ~ 3400 4300
+Text GLabel 9200 2050 0    60   Input ~ 0
+motor
+$Comp
+L SWITCH_INV SW1
+U 1 1 5755A76A
+P 6400 2200
+F 0 "SW1" H 6350 2350 50  0000 C CNN
+F 1 "SWITCH_INV" H 6350 2450 50  0001 C CNN
+F 2 "IainPersonalLibrary:SlideSwitch_SSSS810701" H 6400 2200 50  0001 C CNN
+F 3 "" H 6400 2200 50  0000 C CNN
+F 4 "SSSS810701" H 6400 2200 60  0001 C CNN "manf#"
+	1    6400 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L BI_LED_common_anode D3
+U 1 1 5755BF9A
+P 4600 3900
+F 0 "D3" V 4800 3700 50  0000 C CNN
+F 1 "BI_LED_common_anode" H 4710 3660 50  0001 C CNN
+F 2 "IainPersonalLibrary:Bi_LED_SM1204BC-RG" H 4600 3900 60  0001 C CNN
+F 3 "" H 4600 3900 60  0000 C CNN
+F 4 "SM1204BC-R/G" V 4600 3900 60  0001 C CNN "manf#"
+	1    4600 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 575976CD
+P 4800 2350
+F 0 "BT1" H 4900 2400 50  0000 L CNN
+F 1 "1S LiPo" H 4900 2300 50  0000 L CNN
+F 2 "IainPersonalLibrary:BatteryCon_WireSolder_0.8mm" V 4800 2390 50  0001 C CNN
+F 3 "" V 4800 2390 50  0000 C CNN
+F 4 "https://www.kitronik.co.uk/2209-polymer-lithium-ion-battery-37v-400mah.html" H 4800 2350 60  0001 C CNN "kicost:Kitronik:link"
+	1    4800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP73833 U1
+U 1 1 57597BCA
+P 3300 2200
+F 0 "U1" H 3550 1850 60  0000 C CNN
+F 1 "MCP73833" H 3300 2580 60  0000 C CNN
+F 2 "IainPersonalLibrary:MCP73833-XXX_MF" H 3300 2200 60  0001 C CNN
+F 3 "" H 3300 2200 60  0000 C CNN
+F 4 "MCP73833T-FCI/MF" H 3300 2200 60  0001 C CNN "manf#"
+	1    3300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 575981D1
+P 1550 2150
+F 0 "#PWR010" H 1550 1900 50  0001 C CNN
+F 1 "GND" H 1550 2000 50  0000 C CNN
+F 2 "" H 1550 2150 50  0000 C CNN
+F 3 "" H 1550 2150 50  0000 C CNN
+	1    1550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 575986DE
+P 2700 2850
+F 0 "#PWR011" H 2700 2600 50  0001 C CNN
+F 1 "GND" H 2700 2700 50  0000 C CNN
+F 2 "" H 2700 2850 50  0000 C CNN
+F 3 "" H 2700 2850 50  0000 C CNN
+	1    2700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5759891B
+P 3900 2600
+F 0 "R3" H 4000 2600 50  0000 C CNN
+F 1 "5k" V 3900 2600 50  0000 C CNN
+F 2 "IainPersonalLibrary:Yageo_resistor_SMD_0805_reflow" V 3830 2600 50  0001 C CNN
+F 3 "" H 3900 2600 50  0000 C CNN
+F 4 "RC0805FR-074K99L" H 3900 2600 60  0001 C CNN "manf#"
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 57598AA3
+P 2450 2000
+F 0 "R2" H 2350 2000 50  0000 C CNN
+F 1 "330" V 2450 2000 50  0000 C CNN
+F 2 "IainPersonalLibrary:Yageo_resistor_SMD_0805_reflow" V 2380 2000 50  0001 C CNN
+F 3 "" H 2450 2000 50  0000 C CNN
+F 4 "RC0805FR-07330RL" H 2450 2000 60  0001 C CNN "manf#"
+	1    2450 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 57598B42
+P 2250 2000
+F 0 "R1" H 2150 2000 50  0000 C CNN
+F 1 "330" V 2250 2000 50  0000 C CNN
+F 2 "IainPersonalLibrary:Yageo_resistor_SMD_0805_reflow" V 2180 2000 50  0001 C CNN
+F 3 "" H 2250 2000 50  0000 C CNN
+F 4 "RC0805FR-07330RL" H 2250 2000 60  0001 C CNN "manf#"
+	1    2250 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L BI_LED_common_anode D1
+U 1 1 57598D33
+P 2350 1500
+F 0 "D1" V 2550 1700 50  0000 C CNN
+F 1 "BI_LED_common_anode" H 2460 1260 50  0001 C CNN
+F 2 "IainPersonalLibrary:Bi_LED_SM1204BC-RG" H 2350 1500 60  0001 C CNN
+F 3 "" H 2350 1500 60  0000 C CNN
+F 4 "SM1204BC-R/G" V 2350 1500 60  0001 C CNN "manf#"
+	1    2350 1500
+	0    1    -1   0   
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 575992A8
+P 2100 950
+F 0 "#PWR012" H 2100 800 50  0001 C CNN
+F 1 "+5V" H 2100 1090 50  0000 C CNN
+F 2 "" H 2100 950 50  0000 C CNN
+F 3 "" H 2100 950 50  0000 C CNN
+	1    2100 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 57599918
+P 2400 950
+F 0 "#FLG013" H 2400 1045 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 1130 50  0000 C CNN
+F 2 "" H 2400 950 50  0000 C CNN
+F 3 "" H 2400 950 50  0000 C CNN
+	1    2400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5759AB91
+P 4650 2850
+F 0 "#PWR014" H 4650 2600 50  0001 C CNN
+F 1 "GND" H 4650 2700 50  0000 C CNN
+F 2 "" H 4650 2850 50  0000 C CNN
+F 3 "" H 4650 2850 50  0000 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 2300
+$Comp
+L R R4
+U 1 1 5759ACB6
+P 4150 2600
+F 0 "R4" H 4250 2600 50  0000 C CNN
+F 1 "10k" V 4150 2600 50  0000 C CNN
+F 2 "IainPersonalLibrary:Yageo_resistor_SMD_0805_reflow" V 4080 2600 50  0001 C CNN
+F 3 "" H 4150 2600 50  0000 C CNN
+F 4 "RC0805FR-0710KL" H 4150 2600 60  0001 C CNN "manf#"
+	1    4150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR015
+U 1 1 5759C5A4
+P 4750 1850
+F 0 "#PWR015" H 4750 1700 50  0001 C CNN
+F 1 "+BATT" H 4750 1990 50  0000 C CNN
+F 2 "" H 4750 1850 50  0000 C CNN
+F 3 "" H 4750 1850 50  0000 C CNN
+	1    4750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5759DA68
+P 1900 1400
+F 0 "C1" H 1925 1500 50  0000 L CNN
+F 1 "1uF" H 1925 1300 50  0000 L CNN
+F 2 "IainPersonalLibrary:Murata_capacitor_SMD_0805_reflow" H 1938 1250 50  0001 C CNN
+F 3 "" H 1900 1400 50  0000 C CNN
+F 4 "GRM21BR71C105KA01L" H 1900 1400 60  0001 C CNN "manf#"
+	1    1900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOS_P Q1
+U 1 1 5759E3F0
+P 5450 1900
+F 0 "Q1" V 5300 2050 50  0000 R CNN
+F 1 "MOS_P" H 5450 1720 50  0001 R CNN
+F 2 "IainPersonalLibrary:Vishay_SOT-23" H 5450 1900 60  0001 C CNN
+F 3 "" H 5450 1900 60  0000 C CNN
+F 4 "SI2367DS-T1-GE3" V 5450 1900 60  0001 C CNN "manf#"
+	1    5450 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D2
+U 1 1 5759E635
+P 5700 1550
+F 0 "D2" V 5700 1400 50  0000 C CNN
+F 1 "D_Schottky" H 5700 1450 50  0001 C CNN
+F 2 "IainPersonalLibrary:SOD-123F" H 5700 1550 50  0001 C CNN
+F 3 "" H 5700 1550 50  0000 C CNN
+F 4 "PMEG2015EH" V 5700 1550 60  0001 C CNN "manf#"
+	1    5700 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5759E904
+P 5200 1550
+F 0 "R5" H 5300 1550 50  0000 C CNN
+F 1 "50k" V 5200 1550 50  0000 C CNN
+F 2 "IainPersonalLibrary:Yageo_resistor_SMD_0805_reflow" V 5130 1550 50  0001 C CNN
+F 3 "" H 5200 1550 50  0000 C CNN
+F 4 "RC0805FR-0749K9L" H 5200 1550 60  0001 C CNN "manf#"
+	1    5200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 575A1196
+P 4450 2350
+F 0 "C2" H 4475 2450 50  0000 L CNN
+F 1 "1uF" H 4475 2250 50  0000 L CNN
+F 2 "IainPersonalLibrary:Murata_capacitor_SMD_0805_reflow" H 4488 2200 50  0001 C CNN
+F 3 "" H 4450 2350 50  0000 C CNN
+F 4 "GRM21BR71C105KA01L" H 4450 2350 60  0001 C CNN "manf#"
+	1    4450 2350
+	1    0    0    -1  
+$EndComp
+Text Notes 650  750  0    60   ~ 0
+Power Supply
+Text Notes 650  3350 0    60   ~ 0
+RFDuino
+Text Notes 8800 750  0    60   ~ 0
+Motor Driver
+$Comp
+L D_Schottky D4
+U 1 1 5767DC23
+P 10350 1400
+F 0 "D4" V 10350 1250 50  0000 C CNN
+F 1 "D_Schottky" H 10350 1300 50  0001 C CNN
+F 2 "IainPersonalLibrary:SOD-123F" H 10350 1400 50  0001 C CNN
+F 3 "" H 10350 1400 50  0000 C CNN
+F 4 "PMEG2015EH" V 10350 1400 60  0001 C CNN "manf#"
+	1    10350 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 2250 9950 2750
+Wire Wire Line
+	9400 2550 9400 2650
+Connection ~ 9950 2650
+Wire Wire Line
+	9500 950  9500 1200
+Wire Wire Line
+	9500 1500 9500 1800
+Connection ~ 9400 2050
+Connection ~ 9400 2650
+Wire Wire Line
+	9200 2050 9650 2050
+Wire Wire Line
+	9400 2050 9400 2250
+Wire Wire Line
+	9400 2650 9950 2650
+Wire Wire Line
+	8400 2500 8400 2850
+Wire Wire Line
+	1400 3750 1400 4300
+Wire Wire Line
+	1150 4300 1800 4300
+Connection ~ 1400 4300
+Wire Wire Line
+	1150 4400 1800 4400
+Wire Wire Line
+	1800 4600 1350 4600
+Wire Wire Line
+	1350 4600 1350 4500
+Wire Wire Line
+	1350 4500 1150 4500
+Wire Wire Line
+	1150 4600 1300 4600
+Wire Wire Line
+	1300 4600 1300 4700
+Wire Wire Line
+	1300 4700 1800 4700
+Wire Wire Line
+	1150 4700 1150 4800
+Wire Wire Line
+	1150 4800 1800 4800
+Wire Wire Line
+	1400 4900 1800 4900
+Wire Wire Line
+	1400 4800 1400 5050
+Connection ~ 1400 4900
+Connection ~ 1400 4800
+Wire Wire Line
+	1800 3900 1700 3900
+Wire Wire Line
+	1700 3900 1700 4900
+Wire Wire Line
+	1700 4000 1800 4000
+Wire Wire Line
+	1700 4200 1800 4200
+Connection ~ 1700 4000
+Connection ~ 1700 4900
+Connection ~ 1700 4200
+Wire Wire Line
+	3400 4200 3450 4200
+Wire Wire Line
+	3450 4200 3450 5050
+Wire Wire Line
+	3400 4800 3450 4800
+Connection ~ 3450 4800
+Wire Wire Line
+	3400 4900 3450 4900
+Connection ~ 3450 4900
+Wire Wire Line
+	4500 4200 4500 4250
+Wire Wire Line
+	4700 4200 4700 4250
+Wire Wire Line
+	3400 4500 4100 4500
+Wire Wire Line
+	3400 4600 4500 4600
+Wire Wire Line
+	3400 4700 4700 4700
+Wire Wire Line
+	4600 3450 4600 3550
+Wire Wire Line
+	700  1950 1900 1950
+Wire Wire Line
+	1550 1950 1550 2150
+Connection ~ 1550 1950
+Wire Wire Line
+	2800 2400 2700 2400
+Wire Wire Line
+	2700 2400 2700 2850
+Wire Wire Line
+	2100 1100 2100 950 
+Connection ~ 2100 1100
+Wire Wire Line
+	2750 2100 2800 2100
+Wire Wire Line
+	2800 2000 2750 2000
+Connection ~ 2750 2000
+Wire Wire Line
+	2400 1100 2400 950 
+Connection ~ 2400 1100
+Wire Wire Line
+	2350 1100 2350 1150
+Connection ~ 2350 1100
+Wire Wire Line
+	2250 1800 2250 1850
+Wire Wire Line
+	2450 1800 2450 1850
+Wire Wire Line
+	3800 2400 3900 2400
+Wire Wire Line
+	3900 2400 3900 2450
+Wire Wire Line
+	3800 2200 4150 2200
+Wire Wire Line
+	4150 2200 4150 2450
+Wire Wire Line
+	4150 2800 4150 2750
+Wire Wire Line
+	3800 2100 3900 2100
+Wire Wire Line
+	3900 2100 3900 2000
+Connection ~ 3900 2000
+Connection ~ 4150 2800
+Wire Wire Line
+	3800 2000 5250 2000
+Wire Wire Line
+	4800 2800 4800 2500
+Wire Wire Line
+	2750 1100 2750 2100
+Wire Wire Line
+	2800 2200 2450 2200
+Wire Wire Line
+	2450 2200 2450 2150
+Wire Wire Line
+	2800 2300 2250 2300
+Wire Wire Line
+	2250 2300 2250 2150
+Wire Wire Line
+	1300 1950 1300 2150
+Wire Wire Line
+	1900 1950 1900 1550
+Wire Wire Line
+	5700 1100 5700 1400
+Connection ~ 2750 1100
+Wire Wire Line
+	5450 1100 5450 1700
+Connection ~ 5450 1100
+Wire Wire Line
+	5650 2000 7250 2000
+Wire Wire Line
+	5200 1100 5200 1400
+Connection ~ 5200 1100
+Wire Wire Line
+	5200 2800 5200 1700
+Connection ~ 4800 2800
+Wire Wire Line
+	4500 4600 4500 4550
+Wire Wire Line
+	4700 4700 4700 4550
+Wire Wire Line
+	8400 1800 8400 2200
+Wire Wire Line
+	5900 2100 5900 2000
+Connection ~ 5900 2000
+Connection ~ 5200 2800
+Wire Wire Line
+	5900 2800 5900 2300
+Connection ~ 5900 2800
+Wire Wire Line
+	5700 1700 5700 2000
+Connection ~ 5700 2000
+Wire Wire Line
+	4450 2000 4450 2200
+Connection ~ 4450 2000
+Wire Wire Line
+	4450 2800 4450 2500
+Connection ~ 4450 2800
+Wire Notes Line
+	600  3100 8650 3100
+Wire Notes Line
+	8650 3100 8650 600 
+Wire Notes Line
+	8650 600  600  600 
+Wire Notes Line
+	600  3200 5000 3200
+Wire Notes Line
+	5000 3200 5000 5300
+Wire Notes Line
+	5000 5300 600  5300
+Wire Notes Line
+	600  5300 600  3200
+Wire Notes Line
+	8750 600  10600 600 
+Wire Notes Line
+	10600 600  10600 2950
+Wire Notes Line
+	10600 2950 8750 2950
+Wire Notes Line
+	8750 2950 8750 600 
+Wire Wire Line
+	10350 900  10350 1250
+Wire Wire Line
+	4800 2200 4800 2000
+Connection ~ 4800 2000
+Wire Wire Line
+	4750 1850 4750 2000
+Connection ~ 4750 2000
+Wire Wire Line
+	9950 850  9950 1000
+Wire Wire Line
+	9950 1700 9950 1850
+Wire Wire Line
+	9950 950  9500 950 
+Connection ~ 9950 950 
+Wire Wire Line
+	9950 900  10350 900 
+Connection ~ 9950 900 
+Wire Wire Line
+	9500 1800 9950 1800
+Connection ~ 9950 1800
+Wire Wire Line
+	9950 1750 10350 1750
+Connection ~ 9950 1750
+Wire Wire Line
+	10350 1750 10350 1550
+$Comp
+L TPS73701_DRV_6 U2
+U 1 1 57682235
+P 7750 2150
+F 0 "U2" H 7690 1840 45  0000 L BNN
+F 1 "TPS73701_DRV_6" H 7460 2390 45  0000 L BNN
+F 2 "IainPersonalLibrary:TPS73701_DRV_6" H 7170 2430 20  0001 C CNN
+F 3 "" H 7140 2280 60  0000 C CNN
+F 4 "TPS73733DRVR" H 7750 2150 60  0001 C CNN "manf#"
+	1    7750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2800 7150 2200
+Wire Wire Line
+	7150 2200 7250 2200
+Wire Wire Line
+	7250 2300 7150 2300
+Connection ~ 7150 2300
+NoConn ~ 8150 2300
+NoConn ~ 8150 2150
+Wire Wire Line
+	6900 2200 7000 2200
+Wire Wire Line
+	7000 2200 7000 2100
+Wire Wire Line
+	7000 2100 7250 2100
+Wire Wire Line
+	3900 2800 7150 2800
+Wire Wire Line
+	3900 2800 3900 2750
+Wire Wire Line
+	4650 2850 4650 2800
+Connection ~ 4650 2800
+Wire Wire Line
+	8150 2000 8400 2000
+Connection ~ 8400 2000
+$Comp
+L USB-MICRO-B CON1
+U 1 1 57685F89
+P 1200 1300
+F 0 "CON1" H 1500 1650 50  0000 C CNN
+F 1 "USB-MICRO-B" H 1350 950 50  0000 C CNN
+F 2 "IainPersonalLibrary:Micro_USB_Amphenol_10118192-0001LF" H 1200 1200 50  0001 C CNN
+F 3 "" H 1200 1200 50  0000 C CNN
+F 4 "10118192-0001LF" H 1200 1300 60  0001 C CNN "manf#"
+	1    1200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1500 1700 1950
+Connection ~ 1700 1950
+Wire Notes Line
+	600  600  600  3100
+Wire Wire Line
+	700  1100 700  1950
+Connection ~ 1300 1950
+Wire Wire Line
+	1700 1100 5700 1100
+Wire Wire Line
+	1900 1250 1900 1100
+Connection ~ 1900 1100
+NoConn ~ 1700 1400
+NoConn ~ 1700 1300
+NoConn ~ 1700 1200
+Wire Wire Line
+	3300 2600 2700 2600
+Connection ~ 2700 2600
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 5768A320
+P 4300 1900
+F 0 "#FLG016" H 4300 1995 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 2080 50  0000 C CNN
+F 2 "" H 4300 1900 50  0000 C CNN
+F 3 "" H 4300 1900 50  0000 C CNN
+	1    4300 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1900 4300 2000
+Connection ~ 4300 2000
+$Comp
+L R R10
+U 1 1 576D40F8
+P 5600 4550
+F 0 "R10" V 5680 4550 50  0000 C CNN
+F 1 "2.2M" V 5600 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5530 4550 50  0001 C CNN
+F 3 "" H 5600 4550 50  0000 C CNN
+F 4 "CRCW06032M20FKEA" V 5600 4550 60  0001 C CNN "manf#"
+	1    5600 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 4400 2    60   Input ~ 0
+BatteryLevel
+Wire Wire Line
+	3400 4400 3500 4400
+$Comp
+L R R9
+U 1 1 576D5184
+P 5600 3950
+F 0 "R9" V 5680 3950 50  0000 C CNN
+F 1 "10M" V 5600 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5530 3950 50  0001 C CNN
+F 3 "" H 5600 3950 50  0000 C CNN
+F 4 "CRCW060310M0FKEA" V 5600 3950 60  0001 C CNN "manf#"
+	1    5600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 576D53E0
+P 5900 4550
+F 0 "C5" H 5925 4650 50  0000 L CNN
+F 1 "100n" H 5925 4450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5938 4400 50  0001 C CNN
+F 3 "" H 5900 4550 50  0000 C CNN
+F 4 "C1608X7R1E104K080AA" H 5900 4550 60  0001 C CNN "manf#"
+	1    5900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR017
+U 1 1 576D613A
+P 5600 3600
+F 0 "#PWR017" H 5600 3450 50  0001 C CNN
+F 1 "+BATT" H 5600 3740 50  0000 C CNN
+F 2 "" H 5600 3600 50  0000 C CNN
+F 3 "" H 5600 3600 50  0000 C CNN
+	1    5600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3600 5600 3800
+Wire Wire Line
+	5600 4100 5600 4400
+$Comp
+L GND #PWR018
+U 1 1 576D6615
+P 5600 5050
+F 0 "#PWR018" H 5600 4800 50  0001 C CNN
+F 1 "GND" H 5600 4900 50  0000 C CNN
+F 2 "" H 5600 5050 50  0000 C CNN
+F 3 "" H 5600 5050 50  0000 C CNN
+	1    5600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4700 5600 5050
+Wire Wire Line
+	5600 4200 6200 4200
+Wire Wire Line
+	5900 4200 5900 4400
+Connection ~ 5600 4200
+Wire Wire Line
+	5600 5000 5900 5000
+Wire Wire Line
+	5900 5000 5900 4700
+Connection ~ 5600 5000
+Text GLabel 6200 4200 2    60   Input ~ 0
+BatteryLevel
+Connection ~ 5900 4200
+Text Notes 5800 4000 0    60   ~ 0
+Max sample rate 1.1 Hz\nWill not work when charging
+Text Notes 5150 3350 0    60   ~ 0
+Battery Voltage Level
+Wire Notes Line
+	5100 3200 5100 5300
+Wire Notes Line
+	5100 5300 7200 5300
+Wire Notes Line
+	7200 5300 7200 3200
+Wire Notes Line
+	7200 3200 5100 3200
+$Comp
+L CONN_01X01 P1
+U 1 1 576D7C19
+P 1450 4500
+F 0 "P1" H 1550 4450 50  0000 C CNN
+F 1 "CONN_01X01" V 1550 4500 50  0001 C CNN
+F 2 "IainPersonalLibrary:TestPoint_SMD_1x1" H 1450 4500 50  0001 C CNN
+F 3 "" H 1450 4500 50  0000 C CNN
+	1    1450 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 4500 1800 4500
+$EndSCHEMATC

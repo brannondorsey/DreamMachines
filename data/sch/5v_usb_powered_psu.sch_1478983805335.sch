@@ -1,0 +1,248 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:5v_usb_powered_psu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7000 6750 0    60   ~ 0
+PSU supplying 5V from 3.7V Li-ion battery with Li-ion charger accepting charge at 5V\nthrough pin header or usb.
+$Comp
+L CONN_01X02 P3
+U 1 1 568B8786
+P 1800 900
+F 0 "P3" H 1800 1050 50  0000 C CNN
+F 1 "CONN_01X02" V 1900 900 50  0000 C CNN
+F 2 "" H 1800 900 50  0000 C CNN
+F 3 "" H 1800 900 50  0000 C CNN
+	1    1800 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P1
+U 1 1 568B87AF
+P 1750 1500
+F 0 "P1" H 2075 1375 50  0000 C CNN
+F 1 "USB_OTG" H 1750 1700 50  0000 C CNN
+F 2 "" V 1700 1400 50  0000 C CNN
+F 3 "" V 1700 1400 50  0000 C CNN
+	1    1750 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 568C27DB
+P 650 850
+F 0 "#PWR01" H 650 700 50  0001 C CNN
+F 1 "VCC" H 650 1000 50  0000 C CNN
+F 2 "" H 650 850 50  0000 C CNN
+F 3 "" H 650 850 50  0000 C CNN
+	1    650  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 568C27F8
+P 650 950
+F 0 "#PWR02" H 650 700 50  0001 C CNN
+F 1 "GND" H 650 800 50  0000 C CNN
+F 2 "" H 650 950 50  0000 C CNN
+F 3 "" H 650 950 50  0000 C CNN
+	1    650  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 568C2B40
+P 650 2300
+F 0 "#PWR03" H 650 2150 50  0001 C CNN
+F 1 "VCC" H 650 2450 50  0000 C CNN
+F 2 "" H 650 2300 50  0000 C CNN
+F 3 "" H 650 2300 50  0000 C CNN
+	1    650  2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEMPLATE J1
+U 1 1 568C2CC4
+P 1100 2300
+F 0 "J1" H 1260 2510 50  0000 L BNN
+F 1 "TP4056_MODULE" H 1250 2400 50  0000 L BNN
+F 2 "" H 1100 2300 50  0000 C CNN
+F 3 "" H 1100 2300 50  0000 C CNN
+	1    1100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEMPLATE J2
+U 1 1 568C2F87
+P 2500 3850
+F 0 "J2" H 2660 4060 50  0000 L BNN
+F 1 "BOOST_CONVERTER" H 2650 3950 50  0000 L BNN
+F 2 "" H 2500 3850 50  0000 C CNN
+F 3 "" H 2500 3850 50  0000 C CNN
+	1    2500 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1850 1900
+NoConn ~ 1450 1400
+NoConn ~ 1450 1500
+NoConn ~ 1450 1600
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 568C4191
+P 900 800
+F 0 "#FLG04" H 900 895 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 980 50  0000 C CNN
+F 2 "" H 900 800 50  0000 C CNN
+F 3 "" H 900 800 50  0000 C CNN
+	1    900  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 568C41BD
+P 900 1000
+F 0 "#FLG05" H 900 1095 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 1180 50  0000 C CNN
+F 2 "" H 900 1000 50  0000 C CNN
+F 3 "" H 900 1000 50  0000 C CNN
+	1    900  1000
+	-1   0    0    1   
+$EndComp
+Text Label 1950 2300 0    60   ~ 0
+BAT_VCC
+Text Label 600  3850 0    60   ~ 0
+BAT_VCC
+$Comp
+L Battery BT1
+U 1 1 568C4CBE
+P 650 3000
+F 0 "BT1" H 750 3050 50  0000 L CNN
+F 1 "Battery" H 750 2950 50  0000 L CNN
+F 2 "" V 650 3040 50  0000 C CNN
+F 3 "" V 650 3040 50  0000 C CNN
+	1    650  3000
+	1    0    0    -1  
+$EndComp
+Text Label 650  2600 0    60   ~ 0
+BAT_VCC
+$Comp
+L GND #PWR06
+U 1 1 568C4DD4
+P 650 3350
+F 0 "#PWR06" H 650 3100 50  0001 C CNN
+F 1 "GND" H 650 3200 50  0000 C CNN
+F 2 "" H 650 3350 50  0000 C CNN
+F 3 "" H 650 3350 50  0000 C CNN
+	1    650  3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  850  1600 850 
+Wire Wire Line
+	650  950  1600 950 
+Wire Wire Line
+	600  3850 1300 3850
+Wire Wire Line
+	650  2300 1100 2300
+Wire Wire Line
+	1200 2300 1950 2300
+Wire Wire Line
+	1450 1700 1100 1700
+Wire Wire Line
+	1100 1700 1100 950 
+Connection ~ 1100 950 
+Wire Wire Line
+	900  800  900  850 
+Connection ~ 900  850 
+Wire Wire Line
+	900  1000 900  950 
+Connection ~ 900  950 
+Wire Wire Line
+	1450 1300 1250 1300
+Wire Wire Line
+	1250 1300 1250 850 
+Connection ~ 1250 850 
+Wire Wire Line
+	650  2850 650  2600
+Wire Wire Line
+	650  3150 650  3350
+$Comp
+L CONN_01X02 P2
+U 1 1 568C3C0D
+P 3650 3900
+F 0 "P2" H 3650 4050 50  0000 C CNN
+F 1 "CONN_01X02" V 3750 3900 50  0000 C CNN
+F 2 "" H 3650 3900 50  0000 C CNN
+F 3 "" H 3650 3900 50  0000 C CNN
+	1    3650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW1
+U 1 1 568C3C4E
+P 1800 3850
+F 0 "SW1" H 1800 3950 50  0000 C CNN
+F 1 "SPST" H 1800 3750 50  0000 C CNN
+F 2 "" H 1800 3850 50  0000 C CNN
+F 3 "" H 1800 3850 50  0000 C CNN
+	1    1800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3850 2500 3850
+Wire Wire Line
+	2600 3850 3450 3850
+$Comp
+L GND #PWR07
+U 1 1 568C3D43
+P 3300 3950
+F 0 "#PWR07" H 3300 3700 50  0001 C CNN
+F 1 "GND" H 3300 3800 50  0000 C CNN
+F 2 "" H 3300 3950 50  0000 C CNN
+F 3 "" H 3300 3950 50  0000 C CNN
+	1    3300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3950 3450 3950
+$EndSCHEMATC

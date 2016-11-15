@@ -1,0 +1,219 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bth-ic
+LIBS:GettingToBlinky-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 7555 U1
+U 1 1 524F7B43
+P 2950 3550
+F 0 "U1" H 3300 3150 60  0000 C CNN
+F 1 "7555" H 2950 3550 60  0000 C CNN
+F 2 "" H 2950 3350 60  0000 C CNN
+F 3 "" H 2950 3350 60  0000 C CNN
+	1    2950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VR VR1
+U 1 1 524F7B57
+P 1800 2900
+F 0 "VR1" V 1860 2854 40  0000 C TNN
+F 1 "LDR" V 1800 2900 40  0000 C CNN
+F 2 "" H 1800 2900 60  0000 C CNN
+F 3 "" H 1800 2900 60  0000 C CNN
+	1    1800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 524F7B6B
+P 1800 3600
+F 0 "R1" V 1880 3600 40  0000 C CNN
+F 1 "470K" V 1807 3601 40  0000 C CNN
+F 2 "" V 1730 3600 30  0000 C CNN
+F 3 "" H 1800 3600 30  0000 C CNN
+	1    1800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 524F7B7F
+P 1800 4250
+F 0 "C1" H 1800 4350 40  0000 L CNN
+F 1 "1U" H 1806 4165 40  0000 L CNN
+F 2 "" H 1838 4100 30  0000 C CNN
+F 3 "" H 1800 4250 60  0000 C CNN
+	1    1800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 524F7C65
+P 3850 3900
+F 0 "R2" V 3930 3900 40  0000 C CNN
+F 1 "1K" V 3857 3901 40  0000 C CNN
+F 2 "" V 3780 3900 30  0000 C CNN
+F 3 "" H 3850 3900 30  0000 C CNN
+	1    3850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 524F7C83
+P 3850 4600
+F 0 "D1" H 3850 4700 50  0000 C CNN
+F 1 "LED" H 3850 4500 50  0000 C CNN
+F 2 "" H 3850 4600 60  0000 C CNN
+F 3 "" H 3850 4600 60  0000 C CNN
+	1    3850 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 3150 1800 3350
+Wire Wire Line
+	2200 3250 1800 3250
+Connection ~ 1800 3250
+Wire Wire Line
+	1800 3850 1800 4050
+Wire Wire Line
+	2200 3450 2050 3450
+Wire Wire Line
+	2050 3450 2050 3950
+Wire Wire Line
+	2050 3950 1800 3950
+Connection ~ 1800 3950
+Wire Wire Line
+	2200 3650 2050 3650
+Connection ~ 2050 3650
+Wire Wire Line
+	3650 3450 3850 3450
+Wire Wire Line
+	3850 3450 3850 3650
+Wire Wire Line
+	3850 4150 3850 4400
+Wire Wire Line
+	3850 5000 3850 4800
+Wire Wire Line
+	2800 4150 2800 5000
+NoConn ~ 3150 4150
+Wire Wire Line
+	3150 2500 3150 2900
+Wire Wire Line
+	2800 2900 2800 2800
+Wire Wire Line
+	2800 2800 3150 2800
+Connection ~ 3150 2800
+$Comp
+L VCC #PWR3
+U 1 1 524F7E54
+P 1800 2150
+F 0 "#PWR3" H 1800 2250 30  0001 C CNN
+F 1 "VCC" H 1800 2250 30  0000 C CNN
+F 2 "" H 1800 2150 60  0000 C CNN
+F 3 "" H 1800 2150 60  0000 C CNN
+	1    1800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 524F7E83
+P 1800 5350
+F 0 "#PWR4" H 1800 5350 30  0001 C CNN
+F 1 "GND" H 1800 5280 30  0001 C CNN
+F 2 "" H 1800 5350 60  0000 C CNN
+F 3 "" H 1800 5350 60  0000 C CNN
+	1    1800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L BATTERY BT1
+U 1 1 524F7F11
+P 1050 3850
+F 0 "BT1" H 1050 4050 50  0000 C CNN
+F 1 "CR2032" H 1050 3660 50  0000 C CNN
+F 2 "" H 1050 3850 60  0000 C CNN
+F 3 "" H 1050 3850 60  0000 C CNN
+	1    1050 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 2650 1800 2150
+Wire Wire Line
+	3150 2500 1800 2500
+Connection ~ 1800 2500
+Wire Wire Line
+	1800 4450 1800 5350
+Wire Wire Line
+	1800 5000 3850 5000
+Connection ~ 1800 5000
+Connection ~ 2800 5000
+$Comp
+L GND #PWR2
+U 1 1 524F8048
+P 1050 4300
+F 0 "#PWR2" H 1050 4300 30  0001 C CNN
+F 1 "GND" H 1050 4230 30  0001 C CNN
+F 2 "" H 1050 4300 60  0000 C CNN
+F 3 "" H 1050 4300 60  0000 C CNN
+	1    1050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR1
+U 1 1 524F8053
+P 1050 3300
+F 0 "#PWR1" H 1050 3400 30  0001 C CNN
+F 1 "VCC" H 1050 3400 30  0000 C CNN
+F 2 "" H 1050 3300 60  0000 C CNN
+F 3 "" H 1050 3300 60  0000 C CNN
+	1    1050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4150 1050 4300
+Wire Wire Line
+	1050 3300 1050 3550
+$EndSCHEMATC

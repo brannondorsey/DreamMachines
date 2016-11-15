@@ -1,0 +1,549 @@
+EESchema Schematic File Version 2
+LIBS:RF_Stage-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RF_Stage-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "RF Generator - RF Stage"
+Date "12 may 2015"
+Rev "V0.4"
+Comp "Unrecoverable.org"
+Comment1 "Original Design: Ch. Klippel (c. 2012)"
+Comment2 "Kicad Conversion: Chris Matthews"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP1-RESCUE-RF_Stage C?
+U 1 1 5551484D
+P 1800 4300
+AR Path="/5551484D" Ref="C?"  Part="1" 
+AR Path="/555147D5/5551484D" Ref="C1"  Part="1" 
+F 0 "C1" H 1850 4400 50  0000 L CNN
+F 1 "100u/50V" H 1850 4200 50  0000 L CNN
+F 2 "~" H 1800 4300 60  0000 C CNN
+F 3 "~" H 1800 4300 60  0000 C CNN
+	1    1800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1-RESCUE-RF_Stage C?
+U 1 1 5551485C
+P 8500 4200
+AR Path="/5551485C" Ref="C?"  Part="1" 
+AR Path="/555147D5/5551485C" Ref="C8"  Part="1" 
+F 0 "C8" H 8550 4300 50  0000 L CNN
+F 1 "100u/50V" H 8550 4100 50  0000 L CNN
+F 2 "~" H 8500 4200 60  0000 C CNN
+F 3 "~" H 8500 4200 60  0000 C CNN
+	1    8500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1-RESCUE-RF_Stage C?
+U 1 1 55514869
+P 7850 4200
+AR Path="/55514869" Ref="C?"  Part="1" 
+AR Path="/555147D5/55514869" Ref="C7"  Part="1" 
+F 0 "C7" H 7900 4300 50  0000 L CNN
+F 1 "100u/50V" H 7900 4100 50  0000 L CNN
+F 2 "~" H 7850 4200 60  0000 C CNN
+F 3 "~" H 7850 4200 60  0000 C CNN
+	1    7850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-RF_Stage C?
+U 1 1 5551487B
+P 2350 4300
+AR Path="/5551487B" Ref="C?"  Part="1" 
+AR Path="/555147D5/5551487B" Ref="C2"  Part="1" 
+F 0 "C2" H 2350 4400 40  0000 L CNN
+F 1 "10u/50V" H 2356 4215 40  0000 L CNN
+F 2 "~" H 2388 4150 30  0000 C CNN
+F 3 "~" H 2350 4300 60  0000 C CNN
+	1    2350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-RF_Stage C?
+U 1 1 55514888
+P 2850 4300
+AR Path="/55514888" Ref="C?"  Part="1" 
+AR Path="/555147D5/55514888" Ref="C3"  Part="1" 
+F 0 "C3" H 2850 4400 40  0000 L CNN
+F 1 "10u/50V" H 2856 4215 40  0000 L CNN
+F 2 "~" H 2888 4150 30  0000 C CNN
+F 3 "~" H 2850 4300 60  0000 C CNN
+	1    2850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-RF_Stage C?
+U 1 1 5551488E
+P 3300 4300
+AR Path="/5551488E" Ref="C?"  Part="1" 
+AR Path="/555147D5/5551488E" Ref="C4"  Part="1" 
+F 0 "C4" H 3300 4400 40  0000 L CNN
+F 1 "10u/50V" H 3306 4215 40  0000 L CNN
+F 2 "~" H 3338 4150 30  0000 C CNN
+F 3 "~" H 3300 4300 60  0000 C CNN
+	1    3300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-RF_Stage C?
+U 1 1 55514894
+P 3750 4300
+AR Path="/55514894" Ref="C?"  Part="1" 
+AR Path="/555147D5/55514894" Ref="C5"  Part="1" 
+F 0 "C5" H 3750 4400 40  0000 L CNN
+F 1 "100n" H 3756 4215 40  0000 L CNN
+F 2 "~" H 3788 4150 30  0000 C CNN
+F 3 "~" H 3750 4300 60  0000 C CNN
+	1    3750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-RF_Stage C?
+U 1 1 5551489A
+P 6600 4050
+AR Path="/5551489A" Ref="C?"  Part="1" 
+AR Path="/555147D5/5551489A" Ref="C6"  Part="1" 
+F 0 "C6" H 6600 4150 40  0000 L CNN
+F 1 "10n" H 6606 3965 40  0000 L CNN
+F 2 "~" H 6638 3900 30  0000 C CNN
+F 3 "~" H 6600 4050 60  0000 C CNN
+	1    6600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L1
+U 1 1 555148A2
+P 7450 3800
+F 0 "L1" H 7450 3900 50  0000 C CNN
+F 1 "22u" H 7450 3750 50  0000 C CNN
+F 2 "~" H 7450 3800 60  0000 C CNN
+F 3 "~" H 7450 3800 60  0000 C CNN
+	1    7450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L2
+U 1 1 555148AF
+P 9700 3800
+F 0 "L2" H 9700 3900 50  0000 C CNN
+F 1 "22u" H 9700 3750 50  0000 C CNN
+F 2 "~" H 9700 3800 60  0000 C CNN
+F 3 "~" H 9700 3800 60  0000 C CNN
+	1    9700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-RF_Stage R?
+U 1 1 555148B7
+P 4700 4350
+AR Path="/555148B7" Ref="R?"  Part="1" 
+AR Path="/555147D5/555148B7" Ref="R1"  Part="1" 
+F 0 "R1" V 4780 4350 40  0000 C CNN
+F 1 "22K" V 4707 4351 40  0000 C CNN
+F 2 "~" V 4630 4350 30  0000 C CNN
+F 3 "~" H 4700 4350 30  0000 C CNN
+	1    4700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-RF_Stage R?
+U 1 1 555148C4
+P 9000 4200
+AR Path="/555148C4" Ref="R?"  Part="1" 
+AR Path="/555147D5/555148C4" Ref="R2"  Part="1" 
+F 0 "R2" V 9080 4200 40  0000 C CNN
+F 1 "18K" V 9007 4201 40  0000 C CNN
+F 2 "~" V 8930 4200 30  0000 C CNN
+F 3 "~" H 9000 4200 30  0000 C CNN
+	1    9000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-RF_Stage R?
+U 1 1 555148CA
+P 9000 4800
+AR Path="/555148CA" Ref="R?"  Part="1" 
+AR Path="/555147D5/555148CA" Ref="R3"  Part="1" 
+F 0 "R3" V 9080 4800 40  0000 C CNN
+F 1 "2K2" V 9007 4801 40  0000 C CNN
+F 2 "~" V 8930 4800 30  0000 C CNN
+F 3 "~" H 9000 4800 30  0000 C CNN
+	1    9000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-RF_Stage R?
+U 1 1 555148D0
+P 9400 4800
+AR Path="/555148D0" Ref="R?"  Part="1" 
+AR Path="/555147D5/555148D0" Ref="R11"  Part="1" 
+F 0 "R11" V 9480 4800 40  0000 C CNN
+F 1 "100" V 9407 4801 40  0000 C CNN
+F 2 "~" V 9330 4800 30  0000 C CNN
+F 3 "~" H 9400 4800 30  0000 C CNN
+	1    9400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-RF_Stage R?
+U 1 1 555148D6
+P 10350 4500
+AR Path="/555148D6" Ref="R?"  Part="1" 
+AR Path="/555147D5/555148D6" Ref="R4"  Part="1" 
+F 0 "R4" V 10430 4500 40  0000 C CNN
+F 1 "1K" V 10357 4501 40  0000 C CNN
+F 2 "~" V 10280 4500 30  0000 C CNN
+F 3 "~" H 10350 4500 30  0000 C CNN
+	1    10350 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT R32
+U 1 1 555148ED
+P 9750 4500
+F 0 "R32" H 9750 4400 50  0000 C CNN
+F 1 "2K" H 9750 4500 50  0000 C CNN
+F 2 "~" H 9750 4500 60  0000 C CNN
+F 3 "~" H 9750 4500 60  0000 C CNN
+	1    9750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 555148FC
+P 7000 4200
+F 0 "D1" H 7000 4300 40  0000 C CNN
+F 1 "DIODE" H 7000 4100 40  0000 C CNN
+F 2 "~" H 7000 4200 60  0000 C CNN
+F 3 "~" H 7000 4200 60  0000 C CNN
+	1    7000 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 5551499B
+P 1800 5250
+AR Path="/5551499B" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/5551499B" Ref="#PWR1"  Part="1" 
+F 0 "#PWR1" H 1800 5250 30  0001 C CNN
+F 1 "GND" H 1800 5180 30  0001 C CNN
+F 2 "" H 1800 5250 60  0000 C CNN
+F 3 "" H 1800 5250 60  0000 C CNN
+	1    1800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149B2
+P 2350 5250
+AR Path="/555149B2" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149B2" Ref="#PWR2"  Part="1" 
+F 0 "#PWR2" H 2350 5250 30  0001 C CNN
+F 1 "GND" H 2350 5180 30  0001 C CNN
+F 2 "" H 2350 5250 60  0000 C CNN
+F 3 "" H 2350 5250 60  0000 C CNN
+	1    2350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149B8
+P 2850 5250
+AR Path="/555149B8" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149B8" Ref="#PWR3"  Part="1" 
+F 0 "#PWR3" H 2850 5250 30  0001 C CNN
+F 1 "GND" H 2850 5180 30  0001 C CNN
+F 2 "" H 2850 5250 60  0000 C CNN
+F 3 "" H 2850 5250 60  0000 C CNN
+	1    2850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149BE
+P 3300 5250
+AR Path="/555149BE" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149BE" Ref="#PWR4"  Part="1" 
+F 0 "#PWR4" H 3300 5250 30  0001 C CNN
+F 1 "GND" H 3300 5180 30  0001 C CNN
+F 2 "" H 3300 5250 60  0000 C CNN
+F 3 "" H 3300 5250 60  0000 C CNN
+	1    3300 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149C4
+P 3750 5250
+AR Path="/555149C4" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149C4" Ref="#PWR5"  Part="1" 
+F 0 "#PWR5" H 3750 5250 30  0001 C CNN
+F 1 "GND" H 3750 5180 30  0001 C CNN
+F 2 "" H 3750 5250 60  0000 C CNN
+F 3 "" H 3750 5250 60  0000 C CNN
+	1    3750 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149CA
+P 4700 5250
+AR Path="/555149CA" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149CA" Ref="#PWR6"  Part="1" 
+F 0 "#PWR6" H 4700 5250 30  0001 C CNN
+F 1 "GND" H 4700 5180 30  0001 C CNN
+F 2 "" H 4700 5250 60  0000 C CNN
+F 3 "" H 4700 5250 60  0000 C CNN
+	1    4700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149D0
+P 5600 5250
+AR Path="/555149D0" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149D0" Ref="#PWR8"  Part="1" 
+F 0 "#PWR8" H 5600 5250 30  0001 C CNN
+F 1 "GND" H 5600 5180 30  0001 C CNN
+F 2 "" H 5600 5250 60  0000 C CNN
+F 3 "" H 5600 5250 60  0000 C CNN
+	1    5600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149D6
+P 7000 5250
+AR Path="/555149D6" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149D6" Ref="#PWR10"  Part="1" 
+F 0 "#PWR10" H 7000 5250 30  0001 C CNN
+F 1 "GND" H 7000 5180 30  0001 C CNN
+F 2 "" H 7000 5250 60  0000 C CNN
+F 3 "" H 7000 5250 60  0000 C CNN
+	1    7000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149DC
+P 7850 5250
+AR Path="/555149DC" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149DC" Ref="#PWR11"  Part="1" 
+F 0 "#PWR11" H 7850 5250 30  0001 C CNN
+F 1 "GND" H 7850 5180 30  0001 C CNN
+F 2 "" H 7850 5250 60  0000 C CNN
+F 3 "" H 7850 5250 60  0000 C CNN
+	1    7850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149E2
+P 8500 5250
+AR Path="/555149E2" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149E2" Ref="#PWR12"  Part="1" 
+F 0 "#PWR12" H 8500 5250 30  0001 C CNN
+F 1 "GND" H 8500 5180 30  0001 C CNN
+F 2 "" H 8500 5250 60  0000 C CNN
+F 3 "" H 8500 5250 60  0000 C CNN
+	1    8500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 555149E8
+P 9000 5250
+AR Path="/555149E8" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/555149E8" Ref="#PWR13"  Part="1" 
+F 0 "#PWR13" H 9000 5250 30  0001 C CNN
+F 1 "GND" H 9000 5180 30  0001 C CNN
+F 2 "" H 9000 5250 60  0000 C CNN
+F 3 "" H 9000 5250 60  0000 C CNN
+	1    9000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM22676 IC1
+U 1 1 55514DED
+P 5600 3900
+F 0 "IC1" H 5600 4300 60  0000 C CNN
+F 1 "LM22676TJ7A" H 5600 4200 60  0000 C CNN
+F 2 "" H 5600 3750 60  0000 C CNN
+F 3 "" H 5600 3750 60  0000 C CNN
+	1    5600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3800 5050 3800
+Wire Wire Line
+	1800 3800 1800 4100
+Wire Wire Line
+	2350 3800 2350 4100
+Connection ~ 1800 3800
+Wire Wire Line
+	2850 3800 2850 4100
+Connection ~ 2350 3800
+Connection ~ 2850 3800
+Wire Wire Line
+	3300 4100 3300 3800
+Connection ~ 3300 3800
+Wire Wire Line
+	3750 3800 3750 4100
+Connection ~ 3750 3800
+Wire Wire Line
+	4450 4000 5050 4000
+Wire Wire Line
+	4700 4000 4700 4100
+Connection ~ 4700 4000
+Text HLabel 4450 4000 0    60   Input ~ 0
+RF_EN
+Text HLabel 1050 3800 0    60   Input ~ 0
+VIN
+Wire Wire Line
+	6200 3800 7200 3800
+Wire Wire Line
+	6600 3800 6600 3850
+Wire Wire Line
+	6200 3900 6450 3900
+Wire Wire Line
+	6450 3900 6450 4300
+Wire Wire Line
+	6450 4300 6600 4300
+Wire Wire Line
+	6600 4300 6600 4250
+Wire Wire Line
+	7000 3800 7000 4000
+Connection ~ 7000 3800
+Connection ~ 6600 3800
+Wire Wire Line
+	7700 3800 9450 3800
+Wire Wire Line
+	7850 3800 7850 4000
+Wire Wire Line
+	8500 3250 8500 4000
+Connection ~ 7850 3800
+Wire Wire Line
+	9000 4450 9000 4550
+Wire Wire Line
+	9000 5050 9000 5250
+Wire Wire Line
+	9000 3800 9000 3950
+Connection ~ 8500 3800
+Connection ~ 9000 3800
+Wire Wire Line
+	6200 4500 9500 4500
+Connection ~ 9000 4500
+Connection ~ 9400 4500
+Wire Wire Line
+	9750 4350 9750 4200
+Wire Wire Line
+	9750 4200 9400 4200
+Wire Wire Line
+	10000 4500 10100 4500
+Wire Wire Line
+	9950 3800 10600 3800
+Text HLabel 10600 3800 2    60   Input ~ 0
+V+
+Text HLabel 10600 4500 2    60   Input ~ 0
+VFB
+Wire Wire Line
+	9400 5050 9400 5150
+Wire Wire Line
+	9400 5150 10600 5150
+Text HLabel 10600 5150 2    60   Input ~ 0
+VLIM
+Wire Wire Line
+	1800 4500 1800 5250
+Wire Wire Line
+	2350 4500 2350 5250
+Wire Wire Line
+	2850 4500 2850 5250
+Wire Wire Line
+	3300 4500 3300 5250
+Wire Wire Line
+	3750 4500 3750 5250
+Wire Wire Line
+	4700 4600 4700 5250
+Wire Wire Line
+	5600 4250 5600 5250
+Wire Wire Line
+	7000 4400 7000 5250
+Wire Wire Line
+	7850 4400 7850 5250
+Wire Wire Line
+	8500 4400 8500 5250
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 5551568C
+P 5900 3250
+AR Path="/5551568C" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/5551568C" Ref="#PWR9"  Part="1" 
+F 0 "#PWR9" H 5900 3250 30  0001 C CNN
+F 1 "GND" H 5900 3180 30  0001 C CNN
+F 2 "" H 5900 3250 60  0000 C CNN
+F 3 "" H 5900 3250 60  0000 C CNN
+	1    5900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-RF_Stage #PWR?
+U 1 1 55515692
+P 5350 3250
+AR Path="/55515692" Ref="#PWR?"  Part="1" 
+AR Path="/555147D5/55515692" Ref="#PWR7"  Part="1" 
+F 0 "#PWR7" H 5350 3250 30  0001 C CNN
+F 1 "GND" H 5350 3180 30  0001 C CNN
+F 2 "" H 5350 3250 60  0000 C CNN
+F 3 "" H 5350 3250 60  0000 C CNN
+	1    5350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3050 5350 3250
+Wire Wire Line
+	5900 3250 5900 3050
+Text HLabel 8500 3250 1    60   Input ~ 0
+VREG
+Wire Wire Line
+	6200 4000 6200 4500
+Wire Wire Line
+	9400 4200 9400 4550
+$EndSCHEMATC

@@ -1,0 +1,200 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:icl7660
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ICL7660 U1
+U 1 1 56CE2DDD
+P 6350 3000
+F 0 "U1" H 6350 3437 60  0000 C CNN
+F 1 "ICL7660" H 6350 3331 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6300 2800 60  0001 C CNN
+F 3 "" H 6300 2800 60  0000 C CNN
+	1    6350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 56CE2F5F
+P 4000 3500
+F 0 "P2" H 4077 3538 50  0000 L CNN
+F 1 "CONN_01X03" H 4077 3446 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4000 3500 50  0001 C CNN
+F 3 "" H 4000 3500 50  0000 C CNN
+	1    4000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 56CE2FCA
+P 5150 3100
+F 0 "C1" H 5268 3146 50  0000 L CNN
+F 1 "10uF" H 5268 3054 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_3x5.3" H 5188 2950 50  0001 C CNN
+F 3 "" H 5150 3100 50  0000 C CNN
+	1    5150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 56CE30CC
+P 6950 3350
+F 0 "C2" H 6832 3304 50  0000 R CNN
+F 1 "10uF" H 6832 3396 50  0000 R CNN
+F 2 "Capacitors_SMD:c_elec_3x5.3" H 6988 3200 50  0001 C CNN
+F 3 "" H 6950 3350 50  0000 C CNN
+	1    6950 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56CE3207
+P 6950 3550
+F 0 "#PWR01" H 6950 3300 50  0001 C CNN
+F 1 "GND" H 6958 3376 50  0000 C CNN
+F 2 "" H 6950 3550 50  0000 C CNN
+F 3 "" H 6950 3550 50  0000 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56CE3273
+P 3450 3600
+F 0 "#PWR02" H 3450 3350 50  0001 C CNN
+F 1 "GND" H 3458 3426 50  0000 C CNN
+F 2 "" H 3450 3600 50  0000 C CNN
+F 3 "" H 3450 3600 50  0000 C CNN
+	1    3450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3600 3450 3500
+Wire Wire Line
+	3450 3500 3800 3500
+Wire Wire Line
+	5750 3050 6000 3050
+Wire Wire Line
+	6700 3150 6950 3150
+Wire Wire Line
+	5900 3150 6000 3150
+$Comp
+L VEE #PWR05
+U 1 1 56CE35C3
+P 3700 3650
+F 0 "#PWR05" H 3700 3500 50  0001 C CNN
+F 1 "VEE" H 3721 3824 50  0000 C CNN
+F 2 "" H 3700 3650 50  0000 C CNN
+F 3 "" H 3700 3650 50  0000 C CNN
+	1    3700 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L VDD #PWR06
+U 1 1 56CE3607
+P 3700 3350
+F 0 "#PWR06" H 3700 3200 50  0001 C CNN
+F 1 "VDD" H 3720 3524 50  0000 C CNN
+F 2 "" H 3700 3350 50  0000 C CNN
+F 3 "" H 3700 3350 50  0000 C CNN
+	1    3700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR07
+U 1 1 56CE3621
+P 6800 2800
+F 0 "#PWR07" H 6800 2650 50  0001 C CNN
+F 1 "VDD" H 6820 2974 50  0000 C CNN
+F 2 "" H 6800 2800 50  0000 C CNN
+F 3 "" H 6800 2800 50  0000 C CNN
+	1    6800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VEE #PWR08
+U 1 1 56CE363B
+P 6950 3100
+F 0 "#PWR08" H 6950 2950 50  0001 C CNN
+F 1 "VEE" H 6970 3274 50  0000 C CNN
+F 2 "" H 6950 3100 50  0000 C CNN
+F 3 "" H 6950 3100 50  0000 C CNN
+	1    6950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3100 6950 3200
+Wire Wire Line
+	6950 3500 6950 3550
+Wire Wire Line
+	6700 2850 6800 2850
+Wire Wire Line
+	6800 2850 6800 2800
+Connection ~ 6950 3150
+$Comp
+L GND #PWR09
+U 1 1 56CE322A
+P 5750 3050
+F 0 "#PWR09" H 5750 2800 50  0001 C CNN
+F 1 "GND" V 5758 2922 50  0000 R CNN
+F 2 "" H 5750 3050 50  0000 C CNN
+F 3 "" H 5750 3050 50  0000 C CNN
+	1    5750 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 2950 6000 2950
+Wire Wire Line
+	5150 3250 5900 3250
+Wire Wire Line
+	5900 3250 5900 3150
+Wire Wire Line
+	3700 3350 3700 3400
+Wire Wire Line
+	3700 3400 3800 3400
+Wire Wire Line
+	3700 3650 3700 3600
+Wire Wire Line
+	3700 3600 3800 3600
+$EndSCHEMATC

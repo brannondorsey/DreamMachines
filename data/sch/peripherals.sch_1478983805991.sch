@@ -1,0 +1,900 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:iwasz-kicad
+LIBS:robot1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R6
+U 1 1 57D9E6BF
+P 875 2200
+F 0 "R6" V 925 2350 50  0000 C CNN
+F 1 "1R" V 875 2200 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 805 2200 50  0001 C CNN
+F 3 "" H 875 2200 50  0000 C CNN
+	1    875  2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C35
+U 1 1 57D9EBC0
+P 1075 2000
+F 0 "C35" H 1190 2046 50  0000 L CNN
+F 1 "100nF" H 1190 1955 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 1113 1850 50  0001 C CNN
+F 3 "" H 1075 2000 50  0000 C CNN
+	1    1075 2000
+	0    1    1    0   
+$EndComp
+Text Notes 1825 3100 0    60   ~ 0
+IR sesnsors\n(cheap chinese 38kHz?)
+$Comp
+L LED D3
+U 1 1 57DA9151
+P 3600 6150
+F 0 "D3" H 3600 6250 50  0000 C CNN
+F 1 "OSRAM  SFH4550 (IR 3°)" V 3600 6800 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 3600 6150 60  0001 C CNN
+F 3 "http://pl.farnell.com/osram/sfh4550/led-ir-5mm-850nm/dp/1573495" H 3600 6150 60  0001 C CNN
+	1    3600 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 57DA916C
+P 2300 6150
+F 0 "D2" H 2300 6250 50  0000 C CNN
+F 1 "VISHAY TLDR5800 (red 4°)" V 2300 6850 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 2300 6150 60  0001 C CNN
+F 3 "http://pl.farnell.com/vishay/tldr5800/led-5mm-red/dp/1045486" H 2300 6150 60  0001 C CNN
+	1    2300 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Led_RGB_CA D4
+U 1 1 580B551F
+P 10075 4225
+F 0 "D4" V 10121 3897 50  0000 R CNN
+F 1 "Led_RGB_CA" V 10030 3897 50  0000 R CNN
+F 2 "iwasz:PLCC4-LED" H 10030 4175 50  0001 C CNN
+F 3 "http://pl.farnell.com/broadcom-limited/asmb-mtb0-0a3a2/led-hb-rgb-0-09w-plcc-4/dp/2401105" H 10075 4598 50  0001 C CNN
+	1    10075 4225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_NPN_CBE Q6
+U 1 1 580B5C82
+P 9975 5450
+F 0 "Q6" H 10168 5496 50  0000 L CNN
+F 1 "BC847" H 10168 5404 50  0000 L CNN
+F 2 "w_smd_trans:sot23" H 10175 5550 29  0001 C CNN
+F 3 "http://pl.farnell.com/fairchild-semiconductor/2n3904bu/transistor-npn-40v-200ma-to-92/dp/1700648" H 9975 5450 60  0001 C CNN
+	1    9975 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R29
+U 1 1 580B6982
+P 9875 4675
+F 0 "R29" V 9875 4600 50  0000 L CNN
+F 1 "200" V 9800 4600 50  0000 L CNN
+F 2 "w_smd_resistors:r_0603" V 9805 4675 50  0001 C CNN
+F 3 "" H 9875 4675 50  0000 C CNN
+	1    9875 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R30
+U 1 1 580B6A25
+P 10075 4675
+F 0 "R30" V 10075 4600 50  0000 L CNN
+F 1 "30" V 10000 4600 50  0000 L CNN
+F 2 "w_smd_resistors:r_0603" V 10005 4675 50  0001 C CNN
+F 3 "" H 10075 4675 50  0000 C CNN
+	1    10075 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_CBE Q5
+U 1 1 580B6B7B
+P 9775 5100
+F 0 "Q5" H 9968 5146 50  0000 L CNN
+F 1 "BC847" H 9968 5054 50  0000 L CNN
+F 2 "w_smd_trans:sot23" H 9975 5200 29  0001 C CNN
+F 3 "http://pl.farnell.com/fairchild-semiconductor/2n3904bu/transistor-npn-40v-200ma-to-92/dp/1700648" H 9775 5100 60  0001 C CNN
+	1    9775 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_CBE Q7
+U 1 1 580B6D11
+P 10175 5775
+F 0 "Q7" H 10368 5821 50  0000 L CNN
+F 1 "BC847" H 10368 5729 50  0000 L CNN
+F 2 "w_smd_trans:sot23" H 10375 5875 29  0001 C CNN
+F 3 "http://pl.farnell.com/fairchild-semiconductor/2n3904bu/transistor-npn-40v-200ma-to-92/dp/1700648" H 10175 5775 60  0001 C CNN
+	1    10175 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	875  1775 875  2050
+Wire Wire Line
+	875  2350 875  2475
+Wire Wire Line
+	1075 1775 1425 1775
+Wire Wire Line
+	10075 4025 10075 3975
+$Comp
+L R R31
+U 1 1 580BAE3D
+P 10275 4675
+F 0 "R31" V 10275 4600 50  0000 L CNN
+F 1 "30" V 10200 4600 50  0000 L CNN
+F 2 "w_smd_resistors:r_0603" V 10205 4675 50  0001 C CNN
+F 3 "" H 10275 4675 50  0000 C CNN
+	1    10275 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9875 4425 9875 4525
+Wire Wire Line
+	10075 4425 10075 4525
+Wire Wire Line
+	10275 4425 10275 4525
+Wire Wire Line
+	9875 4825 9875 4900
+Wire Wire Line
+	10075 4825 10075 5250
+Wire Wire Line
+	10275 4825 10275 5575
+Wire Wire Line
+	10275 5975 10275 6125
+Wire Wire Line
+	10075 5650 10075 6050
+Wire Wire Line
+	9875 6050 10275 6050
+Connection ~ 10275 6050
+Wire Wire Line
+	9875 5300 9875 6050
+Connection ~ 10075 6050
+$Comp
+L R R25
+U 1 1 580BFA08
+P 9325 5100
+F 0 "R25" V 9118 5100 50  0000 C CNN
+F 1 "1k" V 9209 5100 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 9255 5100 50  0001 C CNN
+F 3 "" H 9325 5100 50  0000 C CNN
+	1    9325 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R26
+U 1 1 580C0280
+P 9325 5450
+F 0 "R26" V 9118 5450 50  0000 C CNN
+F 1 "1k" V 9209 5450 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 9255 5450 50  0001 C CNN
+F 3 "" H 9325 5450 50  0000 C CNN
+	1    9325 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R27
+U 1 1 580C0333
+P 9325 5775
+F 0 "R27" V 9118 5775 50  0000 C CNN
+F 1 "1k" V 9209 5775 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 9255 5775 50  0001 C CNN
+F 3 "" H 9325 5775 50  0000 C CNN
+	1    9325 5775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9475 5100 9575 5100
+Wire Wire Line
+	9475 5450 9775 5450
+Wire Wire Line
+	9475 5775 9975 5775
+Wire Wire Line
+	8950 5100 9175 5100
+Wire Wire Line
+	8950 5450 9175 5450
+Wire Wire Line
+	8950 5775 9175 5775
+$Comp
+L R R10
+U 1 1 580CEE2B
+P 2300 5725
+F 0 "R10" V 2380 5725 50  0000 C CNN
+F 1 "130" V 2300 5725 50  0000 C CNN
+F 2 "w_smd_resistors:r_0603" V 2230 5725 30  0001 C CNN
+F 3 "" H 2300 5725 30  0000 C CNN
+	1    2300 5725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Q_NPN_CBE Q2
+U 1 1 580CEE39
+P 2200 6650
+F 0 "Q2" H 2393 6696 50  0000 L CNN
+F 1 "BC847" H 2393 6604 50  0000 L CNN
+F 2 "w_smd_trans:sot23" H 2400 6750 29  0001 C CNN
+F 3 "http://pl.farnell.com/fairchild-semiconductor/2n3904bu/transistor-npn-40v-200ma-to-92/dp/1700648" H 2200 6650 60  0001 C CNN
+	1    2200 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 580CEE3F
+P 1725 6650
+F 0 "R9" V 1518 6650 50  0000 C CNN
+F 1 "1k" V 1609 6650 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 1655 6650 50  0001 C CNN
+F 3 "" H 1725 6650 50  0000 C CNN
+	1    1725 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 5500 2300 5575
+Wire Wire Line
+	2300 5875 2300 5950
+Wire Wire Line
+	2300 6350 2300 6450
+Wire Wire Line
+	2300 6850 2300 6975
+Wire Wire Line
+	1875 6650 2000 6650
+Wire Wire Line
+	1350 6650 1575 6650
+$Comp
+L R R21
+U 1 1 580CF1BA
+P 3600 5725
+F 0 "R21" V 3680 5725 50  0000 C CNN
+F 1 "180R" V 3600 5725 50  0000 C CNN
+F 2 "w_smd_resistors:r_0603" V 3530 5725 30  0001 C CNN
+F 3 "" H 3600 5725 30  0000 C CNN
+	1    3600 5725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Q_NPN_CBE Q3
+U 1 1 580CF1C8
+P 3500 6650
+F 0 "Q3" H 3693 6696 50  0000 L CNN
+F 1 "BC847" H 3693 6604 50  0000 L CNN
+F 2 "w_smd_trans:sot23" H 3700 6750 29  0001 C CNN
+F 3 "http://pl.farnell.com/fairchild-semiconductor/2n3904bu/transistor-npn-40v-200ma-to-92/dp/1700648" H 3500 6650 60  0001 C CNN
+	1    3500 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 580CF1CE
+P 3025 6650
+F 0 "R11" V 2818 6650 50  0000 C CNN
+F 1 "1k" V 2909 6650 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 2955 6650 50  0001 C CNN
+F 3 "" H 3025 6650 50  0000 C CNN
+	1    3025 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 5500 3600 5575
+Wire Wire Line
+	3600 5875 3600 5950
+Wire Wire Line
+	3600 6350 3600 6450
+Wire Wire Line
+	3600 6850 3600 6975
+Wire Wire Line
+	3175 6650 3300 6650
+Wire Wire Line
+	2775 6650 2875 6650
+Wire Wire Line
+	2775 6650 2775 7325
+Wire Wire Line
+	2775 7325 1475 7325
+Wire Wire Line
+	1475 7325 1475 6650
+Connection ~ 1475 6650
+Text Notes 1475 5775 0    60   ~ 0
+10mA @ 130R
+Text Notes 3725 5875 0    60   ~ 0
+5mA  @ 360R\n10mA @ 180R\n20mA @ 90R\n
+$Comp
+L SPEAKER SP1
+U 1 1 580ED557
+P 10125 1650
+F 0 "SP1" H 10403 1696 50  0000 L CNN
+F 1 "SPEAKER" H 10403 1605 50  0000 L CNN
+F 2 "iwasz:PKLCS-speaker" H 10125 1650 50  0001 C CNN
+F 3 "http://pl.farnell.com/murata/pkm13epyh4000-a0/sounder-4khz-12-6mm/dp/1192513" H 10402 1559 50  0001 L CNN
+F 4 "http://pl.farnell.com/murata/pklcs1212e4001-r1/buzzer-smd-continuous-75db-4khz/dp/1192551" H 10125 1650 60  0001 C CNN "Datasheet2"
+	1    10125 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_CBE Q4
+U 1 1 580EE90A
+P 9450 2075
+F 0 "Q4" H 9643 2121 50  0000 L CNN
+F 1 "BC847" H 9643 2029 50  0000 L CNN
+F 2 "w_smd_trans:sot23" H 9650 2175 29  0001 C CNN
+F 3 "http://pl.farnell.com/fairchild-semiconductor/2n3904bu/transistor-npn-40v-200ma-to-92/dp/1700648" H 9450 2075 60  0001 C CNN
+	1    9450 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 580EEA92
+P 9025 2075
+F 0 "R24" V 8818 2075 50  0000 C CNN
+F 1 "1k" V 8909 2075 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 8955 2075 50  0001 C CNN
+F 3 "" H 9025 2075 50  0000 C CNN
+	1    9025 2075
+	0    1    1    0   
+$EndComp
+$Comp
+L R R28
+U 1 1 580EEC93
+P 9550 1650
+F 0 "R28" V 9343 1650 50  0000 C CNN
+F 1 "1k" V 9434 1650 50  0000 C CNN
+F 2 "w_smd_resistors:r_0603" V 9480 1650 50  0001 C CNN
+F 3 "" H 9550 1650 50  0000 C CNN
+	1    9550 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9550 1400 9550 1500
+Wire Wire Line
+	9550 1500 9825 1500
+Wire Wire Line
+	9825 1500 9825 1550
+Wire Wire Line
+	9825 1750 9825 1800
+Wire Wire Line
+	9825 1800 9550 1800
+Wire Wire Line
+	9550 1800 9550 1875
+Wire Wire Line
+	9550 2275 9550 2325
+Wire Wire Line
+	9175 2075 9250 2075
+Wire Wire Line
+	8875 2075 8800 2075
+Wire Wire Line
+	6125 4400 5550 4400
+Wire Wire Line
+	6125 4600 5550 4600
+$Comp
+L CONN_01X17 P8
+U 1 1 5813A236
+P 6325 3900
+F 0 "P8" H 6025 2875 50  0000 L CNN
+F 1 "CONN_01X17" H 6025 2975 50  0000 L CNN
+F 2 "iwasz:pin_socket_17" H 6325 3900 50  0001 C CNN
+F 3 "" H 6325 3900 50  0000 C CNN
+	1    6325 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X17 P9
+U 1 1 5813A23D
+P 6475 3900
+F 0 "P9" H 6175 2875 50  0000 L CNN
+F 1 "CONN_01X17" H 6175 2975 50  0000 L CNN
+F 2 "iwasz:pin_socket_17" H 6475 3900 50  0001 C CNN
+F 3 "" H 6475 3900 50  0000 C CNN
+	1    6475 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6675 4200 6975 4200
+Wire Wire Line
+	6675 3500 6750 3500
+NoConn ~ 6125 4500
+NoConn ~ 6125 4200
+NoConn ~ 6125 4100
+NoConn ~ 6125 4700
+Text Notes 3750 6200 0    60   ~ 0
+860nm
+$Comp
+L China-0038 U10
+U 1 1 580DACAF
+P 975 1425
+F 0 "U10" H 1081 1812 60  0000 C CNN
+F 1 "China-0038" H 1081 1706 60  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 975 1425 60  0001 C CNN
+F 3 "" H 975 1425 60  0000 C CNN
+	1    975  1425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	975  1775 975  1875
+Wire Wire Line
+	975  1875 1300 1875
+Wire Wire Line
+	1300 1875 1300 2100
+Wire Wire Line
+	1225 2000 1300 2000
+Connection ~ 1300 2000
+Wire Wire Line
+	925  2000 875  2000
+Connection ~ 875  2000
+$Comp
+L R R3
+U 1 1 580E411D
+P 1650 2200
+F 0 "R3" V 1700 2350 50  0000 C CNN
+F 1 "1R" V 1650 2200 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 1580 2200 50  0001 C CNN
+F 3 "" H 1650 2200 50  0000 C CNN
+	1    1650 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C36
+U 1 1 580E4129
+P 1850 2000
+F 0 "C36" H 1965 2046 50  0000 L CNN
+F 1 "100nF" H 1965 1955 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 1888 1850 50  0001 C CNN
+F 3 "" H 1850 2000 50  0000 C CNN
+	1    1850 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1775 1650 2050
+Wire Wire Line
+	1650 2350 1650 2475
+Wire Wire Line
+	1850 1775 2200 1775
+$Comp
+L China-0038 U11
+U 1 1 580E4132
+P 1750 1425
+F 0 "U11" H 1856 1812 60  0000 C CNN
+F 1 "China-0038" H 1856 1706 60  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 1750 1425 60  0001 C CNN
+F 3 "" H 1750 1425 60  0000 C CNN
+	1    1750 1425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 1775 1750 1875
+Wire Wire Line
+	1750 1875 2075 1875
+Wire Wire Line
+	2075 1875 2075 2100
+Wire Wire Line
+	2000 2000 2075 2000
+Connection ~ 2075 2000
+Wire Wire Line
+	1700 2000 1650 2000
+Connection ~ 1650 2000
+$Comp
+L R R4
+U 1 1 580E446F
+P 2425 2200
+F 0 "R4" V 2475 2350 50  0000 C CNN
+F 1 "1R" V 2425 2200 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 2355 2200 50  0001 C CNN
+F 3 "" H 2425 2200 50  0000 C CNN
+	1    2425 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C37
+U 1 1 580E447B
+P 2625 2000
+F 0 "C37" H 2740 2046 50  0000 L CNN
+F 1 "100nF" H 2740 1955 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 2663 1850 50  0001 C CNN
+F 3 "" H 2625 2000 50  0000 C CNN
+	1    2625 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2425 1775 2425 2050
+Wire Wire Line
+	2425 2350 2425 2475
+Wire Wire Line
+	2625 1775 2975 1775
+$Comp
+L China-0038 U12
+U 1 1 580E4484
+P 2525 1425
+F 0 "U12" H 2631 1812 60  0000 C CNN
+F 1 "China-0038" H 2631 1706 60  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 2525 1425 60  0001 C CNN
+F 3 "" H 2525 1425 60  0000 C CNN
+	1    2525 1425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2525 1775 2525 1875
+Wire Wire Line
+	2525 1875 2850 1875
+Wire Wire Line
+	2850 1875 2850 2100
+Wire Wire Line
+	2775 2000 2850 2000
+Connection ~ 2850 2000
+Wire Wire Line
+	2475 2000 2425 2000
+Connection ~ 2425 2000
+$Comp
+L R R8
+U 1 1 580E4497
+P 3200 2200
+F 0 "R8" V 3250 2350 50  0000 C CNN
+F 1 "1R" V 3200 2200 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 3130 2200 50  0001 C CNN
+F 3 "" H 3200 2200 50  0000 C CNN
+	1    3200 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C38
+U 1 1 580E44A3
+P 3400 2000
+F 0 "C38" H 3515 2046 50  0000 L CNN
+F 1 "100nF" H 3515 1955 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 3438 1850 50  0001 C CNN
+F 3 "" H 3400 2000 50  0000 C CNN
+	1    3400 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 1775 3200 2050
+Wire Wire Line
+	3200 2350 3200 2475
+Wire Wire Line
+	3400 1775 3750 1775
+$Comp
+L China-0038 U13
+U 1 1 580E44AC
+P 3300 1425
+F 0 "U13" H 3406 1812 60  0000 C CNN
+F 1 "China-0038" H 3406 1706 60  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 3300 1425 60  0001 C CNN
+F 3 "" H 3300 1425 60  0000 C CNN
+	1    3300 1425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 1775 3300 1875
+Wire Wire Line
+	3300 1875 3625 1875
+Wire Wire Line
+	3625 1875 3625 2100
+Wire Wire Line
+	3550 2000 3625 2000
+Connection ~ 3625 2000
+Wire Wire Line
+	3250 2000 3200 2000
+Connection ~ 3200 2000
+Wire Wire Line
+	1425 1775 1425 1075
+Wire Wire Line
+	1425 1075 3925 1075
+Wire Wire Line
+	2200 1775 2200 1075
+Connection ~ 2200 1075
+Wire Wire Line
+	2975 1775 2975 1075
+Connection ~ 2975 1075
+Wire Wire Line
+	3750 1775 3750 1075
+Connection ~ 3750 1075
+NoConn ~ 6125 3100
+NoConn ~ 6125 3200
+NoConn ~ 6125 3300
+NoConn ~ 6125 3400
+NoConn ~ 6675 3100
+NoConn ~ 6675 3200
+NoConn ~ 6675 3300
+NoConn ~ 6675 3400
+NoConn ~ 6675 3600
+NoConn ~ 6675 3700
+NoConn ~ 6675 3800
+NoConn ~ 6675 3900
+NoConn ~ 6675 4000
+NoConn ~ 6675 4300
+NoConn ~ 6675 4400
+NoConn ~ 6675 4500
+NoConn ~ 6675 4600
+NoConn ~ 6675 4700
+Text Label 6125 3600 2    60   ~ 0
+led_b
+Text Label 6125 3700 2    60   ~ 0
+led_g
+Text Label 6125 3800 2    60   ~ 0
+led_r
+Text Label 6125 3900 2    60   ~ 0
+ir_cannon
+Text Label 6125 4000 2    60   ~ 0
+ir_sense
+Text Label 6675 4100 0    60   ~ 0
+sound
+Text Label 3925 1075 0    60   ~ 0
+ir_sense
+Text Label 1350 6650 2    60   ~ 0
+ir_cannon
+Text Label 8950 5100 2    60   ~ 0
+led_r
+Text Label 8950 5450 2    60   ~ 0
+led_g
+Text Label 8950 5775 2    60   ~ 0
+led_b
+Text Label 8800 2075 2    60   ~ 0
+sound
+$Comp
+L GNDA #PWR052
+U 1 1 58175484
+P 5550 4600
+F 0 "#PWR052" H 5550 4350 50  0001 C CNN
+F 1 "GNDA" V 5555 4473 50  0000 R CNN
+F 2 "" H 5550 4600 50  0000 C CNN
+F 3 "" H 5550 4600 50  0000 C CNN
+	1    5550 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR053
+U 1 1 58176096
+P 6975 4200
+F 0 "#PWR053" H 6975 3950 50  0001 C CNN
+F 1 "GNDA" V 6980 4072 50  0000 R CNN
+F 2 "" H 6975 4200 50  0000 C CNN
+F 3 "" H 6975 4200 50  0000 C CNN
+	1    6975 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDA #PWR054
+U 1 1 58176881
+P 10275 6125
+F 0 "#PWR054" H 10275 5875 50  0001 C CNN
+F 1 "GNDA" H 10280 5952 50  0000 C CNN
+F 2 "" H 10275 6125 50  0000 C CNN
+F 3 "" H 10275 6125 50  0000 C CNN
+	1    10275 6125
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR055
+U 1 1 58177DAF
+P 3600 6975
+F 0 "#PWR055" H 3600 6725 50  0001 C CNN
+F 1 "GNDA" H 3605 6802 50  0000 C CNN
+F 2 "" H 3600 6975 50  0000 C CNN
+F 3 "" H 3600 6975 50  0000 C CNN
+	1    3600 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR056
+U 1 1 58177F9A
+P 2300 6975
+F 0 "#PWR056" H 2300 6725 50  0001 C CNN
+F 1 "GNDA" H 2305 6802 50  0000 C CNN
+F 2 "" H 2300 6975 50  0000 C CNN
+F 3 "" H 2300 6975 50  0000 C CNN
+	1    2300 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR057
+U 1 1 58178DD9
+P 9550 2325
+F 0 "#PWR057" H 9550 2075 50  0001 C CNN
+F 1 "GNDA" H 9555 2152 50  0000 C CNN
+F 2 "" H 9550 2325 50  0000 C CNN
+F 3 "" H 9550 2325 50  0000 C CNN
+	1    9550 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR058
+U 1 1 581793B3
+P 3625 2100
+F 0 "#PWR058" H 3625 1850 50  0001 C CNN
+F 1 "GNDA" H 3630 1927 50  0000 C CNN
+F 2 "" H 3625 2100 50  0000 C CNN
+F 3 "" H 3625 2100 50  0000 C CNN
+	1    3625 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR059
+U 1 1 5817A170
+P 2850 2100
+F 0 "#PWR059" H 2850 1850 50  0001 C CNN
+F 1 "GNDA" H 2855 1927 50  0000 C CNN
+F 2 "" H 2850 2100 50  0000 C CNN
+F 3 "" H 2850 2100 50  0000 C CNN
+	1    2850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR060
+U 1 1 5817A1E7
+P 2075 2100
+F 0 "#PWR060" H 2075 1850 50  0001 C CNN
+F 1 "GNDA" H 2080 1927 50  0000 C CNN
+F 2 "" H 2075 2100 50  0000 C CNN
+F 3 "" H 2075 2100 50  0000 C CNN
+	1    2075 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR061
+U 1 1 5817A25E
+P 1300 2100
+F 0 "#PWR061" H 1300 1850 50  0001 C CNN
+F 1 "GNDA" H 1305 1927 50  0000 C CNN
+F 2 "" H 1300 2100 50  0000 C CNN
+F 3 "" H 1300 2100 50  0000 C CNN
+	1    1300 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6750 3500
+$Comp
+L +3.3VP #PWR062
+U 1 1 5817DDD0
+P 5550 4400
+F 0 "#PWR062" H 5700 4350 50  0001 C CNN
+F 1 "+3.3VP" V 5570 4498 50  0000 L CNN
+F 2 "" H 5550 4400 50  0000 C CNN
+F 3 "" H 5550 4400 50  0000 C CNN
+	1    5550 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3VP #PWR063
+U 1 1 5817DF9D
+P 3600 5500
+F 0 "#PWR063" H 3750 5450 50  0001 C CNN
+F 1 "+3.3VP" H 3620 5643 50  0000 C CNN
+F 2 "" H 3600 5500 50  0000 C CNN
+F 3 "" H 3600 5500 50  0000 C CNN
+	1    3600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VP #PWR064
+U 1 1 5817E8B4
+P 2300 5500
+F 0 "#PWR064" H 2450 5450 50  0001 C CNN
+F 1 "+3.3VP" H 2320 5643 50  0000 C CNN
+F 2 "" H 2300 5500 50  0000 C CNN
+F 3 "" H 2300 5500 50  0000 C CNN
+	1    2300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VP #PWR065
+U 1 1 5817F6CE
+P 10075 3975
+F 0 "#PWR065" H 10225 3925 50  0001 C CNN
+F 1 "+3.3VP" H 10095 4118 50  0000 C CNN
+F 2 "" H 10075 3975 50  0000 C CNN
+F 3 "" H 10075 3975 50  0000 C CNN
+	1    10075 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VP #PWR066
+U 1 1 581811E3
+P 875 2475
+F 0 "#PWR066" H 1025 2425 50  0001 C CNN
+F 1 "+3.3VP" H 895 2618 50  0000 C CNN
+F 2 "" H 875 2475 50  0000 C CNN
+F 3 "" H 875 2475 50  0000 C CNN
+	1    875  2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3VP #PWR067
+U 1 1 58182A98
+P 1650 2475
+F 0 "#PWR067" H 1800 2425 50  0001 C CNN
+F 1 "+3.3VP" H 1670 2618 50  0000 C CNN
+F 2 "" H 1650 2475 50  0000 C CNN
+F 3 "" H 1650 2475 50  0000 C CNN
+	1    1650 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3VP #PWR068
+U 1 1 58182C81
+P 2425 2475
+F 0 "#PWR068" H 2575 2425 50  0001 C CNN
+F 1 "+3.3VP" H 2445 2618 50  0000 C CNN
+F 2 "" H 2425 2475 50  0000 C CNN
+F 3 "" H 2425 2475 50  0000 C CNN
+	1    2425 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3VP #PWR069
+U 1 1 58183424
+P 3200 2475
+F 0 "#PWR069" H 3350 2425 50  0001 C CNN
+F 1 "+3.3VP" H 3220 2618 50  0000 C CNN
+F 2 "" H 3200 2475 50  0000 C CNN
+F 3 "" H 3200 2475 50  0000 C CNN
+	1    3200 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L VAA #PWR070
+U 1 1 58184D5C
+P 6025 4300
+F 0 "#PWR070" H 6025 4150 50  0001 C CNN
+F 1 "VAA" V 6043 4427 50  0000 L CNN
+F 2 "" H 6025 4300 50  0000 C CNN
+F 3 "" H 6025 4300 50  0000 C CNN
+	1    6025 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VAA #PWR071
+U 1 1 58185AC0
+P 9550 1400
+F 0 "#PWR071" H 9550 1250 50  0001 C CNN
+F 1 "VAA" H 9567 1573 50  0000 C CNN
+F 2 "" H 9550 1400 50  0000 C CNN
+F 3 "" H 9550 1400 50  0000 C CNN
+	1    9550 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 4300 6125 4300
+NoConn ~ 6125 3500
+$EndSCHEMATC

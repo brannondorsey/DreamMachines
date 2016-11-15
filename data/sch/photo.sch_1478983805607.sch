@@ -1,0 +1,379 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:iwasz-kicad
+LIBS:robot1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TCS3472 U2
+U 1 1 580FD803
+P 2625 2000
+F 0 "U2" H 2600 2537 60  0000 C CNN
+F 1 "TCS3472" H 2600 2431 60  0000 C CNN
+F 2 "iwasz:SC70-6" H 2625 2000 60  0001 C CNN
+F 3 "http://pl.rs-online.com/web/p/czujniki-koloru-i-swiatla/7857749/" H 2625 2000 60  0001 C CNN
+F 4 "http://pl.rs-online.com/web/p/czujniki-koloru-i-swiatla/7857746/" H 2625 2000 60  0001 C CNN "Datasheet2"
+	1    2625 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 580FD80B
+P 1800 1600
+F 0 "C2" H 1825 1700 50  0000 L CNN
+F 1 "100nF" H 1825 1500 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 1838 1450 30  0001 C CNN
+F 3 "" H 1800 1600 60  0000 C CNN
+F 4 "Decoupling capacitor" H 1800 1600 60  0001 C CNN "Opis"
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3225 2200
+$Comp
+L TCS3472 U9
+U 1 1 580FD828
+P 2625 3475
+F 0 "U9" H 2600 4012 60  0000 C CNN
+F 1 "TCS3472" H 2600 3906 60  0000 C CNN
+F 2 "iwasz:SC70-6" H 2625 3475 60  0001 C CNN
+F 3 "" H 2625 3475 60  0001 C CNN
+	1    2625 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 580FD830
+P 1800 3075
+F 0 "C3" H 1825 3175 50  0000 L CNN
+F 1 "100nF" H 1825 2975 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 1838 2925 30  0001 C CNN
+F 3 "" H 1800 3075 60  0000 C CNN
+F 4 "Decoupling capacitor" H 1800 3075 60  0001 C CNN "Opis"
+	1    1800 3075
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3225 3675
+$Comp
+L LED D1
+U 1 1 580FD84B
+P 3375 5425
+F 0 "D1" H 3375 5525 50  0000 C CNN
+F 1 "LED" H 3375 5325 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 3375 5425 60  0001 C CNN
+F 3 "http://pl.farnell.com/multicomp/ovs-0801/led-0805-white-400mcd/dp/1716764" H 3375 5425 60  0001 C CNN
+	1    3375 5425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 580FD852
+P 3375 5000
+F 0 "R2" V 3455 5000 50  0000 C CNN
+F 1 "80" V 3375 5000 50  0000 C CNN
+F 2 "w_smd_resistors:r_0603" V 3305 5000 30  0001 C CNN
+F 3 "" H 3375 5000 30  0000 C CNN
+	1    3375 5000
+	-1   0    0    1   
+$EndComp
+Text Notes 2075 1350 0    60   ~ 0
+Color detectors. Also see VEML6040A3OG\nhttp://pl.rs-online.com/web/p/czujniki-koloru-i-swiatla/1226788/
+Text Notes 3225 6200 2    60   ~ 0
+Illumination for photo detectors.
+Wire Wire Line
+	1625 1800 1975 1800
+Wire Wire Line
+	1800 1800 1800 1750
+Connection ~ 1800 1800
+Wire Wire Line
+	1800 1400 1800 1450
+Wire Wire Line
+	1975 2200 1850 2200
+Wire Wire Line
+	1850 2200 1850 2325
+Wire Wire Line
+	3225 1800 3850 1800
+Wire Wire Line
+	1175 2000 1975 2000
+Wire Wire Line
+	3350 2000 3225 2000
+Wire Wire Line
+	1625 3275 1975 3275
+Wire Wire Line
+	1800 3275 1800 3225
+Connection ~ 1800 3275
+Wire Wire Line
+	1800 2875 1800 2925
+Wire Wire Line
+	1975 3675 1850 3675
+Wire Wire Line
+	1850 3675 1850 3800
+Wire Wire Line
+	3225 3275 3525 3275
+Wire Wire Line
+	1450 3475 1975 3475
+Wire Wire Line
+	3350 3475 3225 3475
+Wire Wire Line
+	3525 3275 3525 1800
+Connection ~ 3525 1800
+Wire Wire Line
+	1450 3475 1450 2000
+Connection ~ 1450 2000
+$Comp
+L Q_NPN_CBE Q1
+U 1 1 580FD878
+P 3275 5925
+F 0 "Q1" H 3468 5971 50  0000 L CNN
+F 1 "BC847" H 3468 5879 50  0000 L CNN
+F 2 "w_smd_trans:sot23" H 3475 6025 29  0001 C CNN
+F 3 "http://pl.farnell.com/fairchild-semiconductor/2n3904bu/transistor-npn-40v-200ma-to-92/dp/1700648" H 3275 5925 60  0001 C CNN
+	1    3275 5925
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 580FD87F
+P 2800 5925
+F 0 "R1" V 2593 5925 50  0000 C CNN
+F 1 "1k" V 2684 5925 50  0000 C CNN
+F 2 "w_smd_resistors:r_0402" V 2730 5925 50  0001 C CNN
+F 3 "" H 2800 5925 50  0000 C CNN
+	1    2800 5925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3375 4775 3375 4850
+Wire Wire Line
+	3375 5150 3375 5225
+Wire Wire Line
+	3375 5625 3375 5725
+Wire Wire Line
+	3375 6125 3375 6250
+Wire Wire Line
+	2950 5925 3075 5925
+Wire Wire Line
+	2550 5925 2650 5925
+Text Notes 2600 5050 0    60   ~ 0
+10mA @ 80R
+Wire Wire Line
+	7375 4575 7275 4575
+Wire Wire Line
+	7375 4475 7275 4475
+Wire Wire Line
+	7275 4375 7375 4375
+Wire Wire Line
+	7375 4275 7275 4275
+Wire Wire Line
+	7275 4175 7375 4175
+Wire Wire Line
+	6650 4475 6750 4475
+Wire Wire Line
+	6650 4275 6750 4275
+Text Label 2550 5925 2    60   ~ 0
+photo_illumination
+NoConn ~ 6750 4375
+NoConn ~ 6750 4575
+Text Label 7375 4575 0    60   ~ 0
+photo_illumination
+Text Label 7375 4475 0    60   ~ 0
+photo_l_int
+Text Label 7375 4375 0    60   ~ 0
+photo_r_int
+Text Label 7375 4275 0    60   ~ 0
+scl
+Text Label 7375 4175 0    60   ~ 0
+sda
+Text Label 3350 3475 0    60   ~ 0
+photo_r_int
+Text Label 1175 2000 2    60   ~ 0
+scl
+Text Label 3350 2000 0    60   ~ 0
+photo_l_int
+Text Label 3850 1800 0    60   ~ 0
+sda
+Wire Wire Line
+	6650 4175 6750 4175
+$Comp
+L CONN_01X05 P6
+U 1 1 58107EC9
+P 6950 4375
+F 0 "P6" H 6900 3975 50  0000 L CNN
+F 1 "CONN_01X05" H 6500 4050 50  0000 L CNN
+F 2 "w_pin_strip:pin_strip_5" H 6950 4375 50  0001 C CNN
+F 3 "" H 6950 4375 50  0000 C CNN
+	1    6950 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P7
+U 1 1 58107F52
+P 7075 4375
+F 0 "P7" H 6994 3950 50  0000 C CNN
+F 1 "CONN_01X05" H 6994 4041 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_5" H 7075 4375 50  0001 C CNN
+F 3 "" H 7075 4375 50  0000 C CNN
+	1    7075 4375
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDD #PWR072
+U 1 1 5810AACC
+P 6650 4475
+F 0 "#PWR072" H 6650 4225 50  0001 C CNN
+F 1 "GNDD" V 6655 4347 50  0000 R CNN
+F 2 "" H 6650 4475 50  0000 C CNN
+F 3 "" H 6650 4475 50  0000 C CNN
+	1    6650 4475
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR073
+U 1 1 5810ACB5
+P 3375 6250
+F 0 "#PWR073" H 3375 6000 50  0001 C CNN
+F 1 "GNDD" H 3380 6077 50  0000 C CNN
+F 2 "" H 3375 6250 50  0000 C CNN
+F 3 "" H 3375 6250 50  0000 C CNN
+	1    3375 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR074
+U 1 1 5810AE79
+P 1850 3800
+F 0 "#PWR074" H 1850 3550 50  0001 C CNN
+F 1 "GNDD" H 1855 3627 50  0000 C CNN
+F 2 "" H 1850 3800 50  0000 C CNN
+F 3 "" H 1850 3800 50  0000 C CNN
+	1    1850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR075
+U 1 1 5810B1A5
+P 1850 2325
+F 0 "#PWR075" H 1850 2075 50  0001 C CNN
+F 1 "GNDD" H 1855 2152 50  0000 C CNN
+F 2 "" H 1850 2325 50  0000 C CNN
+F 3 "" H 1850 2325 50  0000 C CNN
+	1    1850 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR076
+U 1 1 5810BAE3
+P 1800 1400
+F 0 "#PWR076" H 1800 1150 50  0001 C CNN
+F 1 "GNDD" H 1805 1227 50  0000 C CNN
+F 2 "" H 1800 1400 50  0000 C CNN
+F 3 "" H 1800 1400 50  0000 C CNN
+	1    1800 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDD #PWR077
+U 1 1 5810BB3E
+P 1800 2875
+F 0 "#PWR077" H 1800 2625 50  0001 C CNN
+F 1 "GNDD" H 1805 2702 50  0000 C CNN
+F 2 "" H 1800 2875 50  0000 C CNN
+F 3 "" H 1800 2875 50  0000 C CNN
+	1    1800 2875
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3VA #PWR078
+U 1 1 5810C31D
+P 6650 4275
+F 0 "#PWR078" H 6650 4125 50  0001 C CNN
+F 1 "+3.3VA" V 6665 4402 50  0000 L CNN
+F 2 "" H 6650 4275 50  0000 C CNN
+F 3 "" H 6650 4275 50  0000 C CNN
+	1    6650 4275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3VA #PWR079
+U 1 1 5810C3D0
+P 1625 1800
+F 0 "#PWR079" H 1625 1650 50  0001 C CNN
+F 1 "+3.3VA" V 1640 1927 50  0000 L CNN
+F 2 "" H 1625 1800 50  0000 C CNN
+F 3 "" H 1625 1800 50  0000 C CNN
+	1    1625 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3VA #PWR080
+U 1 1 5810C788
+P 1625 3275
+F 0 "#PWR080" H 1625 3125 50  0001 C CNN
+F 1 "+3.3VA" V 1640 3402 50  0000 L CNN
+F 2 "" H 1625 3275 50  0000 C CNN
+F 3 "" H 1625 3275 50  0000 C CNN
+	1    1625 3275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR081
+U 1 1 5810D785
+P 6650 4175
+F 0 "#PWR081" H 6650 4025 50  0001 C CNN
+F 1 "VCC" V 6668 4302 50  0000 L CNN
+F 2 "" H 6650 4175 50  0000 C CNN
+F 3 "" H 6650 4175 50  0000 C CNN
+	1    6650 4175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR082
+U 1 1 5810D81A
+P 3375 4775
+F 0 "#PWR082" H 3375 4625 50  0001 C CNN
+F 1 "VCC" H 3392 4948 50  0000 C CNN
+F 2 "" H 3375 4775 50  0000 C CNN
+F 3 "" H 3375 4775 50  0000 C CNN
+	1    3375 4775
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,265 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:8Bit-MCU
+LIBS:32Bit-MCU-mikkel-HP-ENVY-Notebook
+LIBS:arduino
+LIBS:Arduino_shields
+LIBS:concept-explanation
+LIBS:connector
+LIBS:diodes
+LIBS:electro-mechanical
+LIBS:passives
+LIBS:power-management
+LIBS:semiconductors
+LIBS:sensors
+LIBS:USB
+LIBS:rpi-shutdown-v0-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR07
+U 1 1 572E1C7B
+P 5100 4650
+F 0 "#PWR07" H 5100 4400 50  0001 C CNN
+F 1 "GND" H 5100 4500 50  0000 C CNN
+F 2 "" H 5100 4650 50  0000 C CNN
+F 3 "" H 5100 4650 50  0000 C CNN
+	1    5100 4650
+	1    0    0    -1  
+$EndComp
+Text HLabel 5500 4300 0    60   Input ~ 0
+CH:2
+Text HLabel 3550 4300 0    60   Input ~ 0
+CH:1
+$Comp
+L Q_NMOS_GDS Q2
+U 1 1 572E1B90
+P 5950 4300
+F 0 "Q2" H 6250 4350 50  0000 R CNN
+F 1 "FDN339AN" H 6600 4150 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6150 4400 50  0001 C CNN
+F 3 "" H 5950 4300 50  0000 C CNN
+	1    5950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4500 4100 4550
+Wire Wire Line
+	5500 4300 5750 4300
+Wire Wire Line
+	3550 4300 3800 4300
+Wire Wire Line
+	4000 4550 6050 4550
+Wire Wire Line
+	6050 4550 6050 4500
+Wire Wire Line
+	5100 4650 5100 4550
+Connection ~ 5100 4550
+Wire Wire Line
+	6050 4100 6050 4050
+Wire Wire Line
+	6050 4050 6100 4050
+Wire Wire Line
+	4100 4100 4100 4050
+Wire Wire Line
+	4100 4050 4150 4050
+Wire Wire Line
+	4400 2950 4400 3050
+Wire Wire Line
+	4400 3050 3950 3050
+Wire Wire Line
+	3950 3050 3950 3700
+Wire Wire Line
+	3950 3700 4150 3700
+Wire Wire Line
+	4500 3050 4500 2950
+$Comp
+L +5V #PWR08
+U 1 1 572E2ABF
+P 3750 3850
+F 0 "#PWR08" H 3750 3700 50  0001 C CNN
+F 1 "+5V" H 3750 3990 50  0000 C CNN
+F 2 "" H 3750 3850 50  0000 C CNN
+F 3 "" H 3750 3850 50  0000 C CNN
+	1    3750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 572E2B19
+P 5750 4450
+F 0 "R2" V 5830 4450 50  0000 C CNN
+F 1 "10k" V 5750 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5680 4450 50  0001 C CNN
+F 3 "" H 5750 4450 50  0000 C CNN
+	1    5750 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 4450 5550 4450
+Wire Wire Line
+	5550 4450 5550 4300
+Connection ~ 5550 4300
+Wire Wire Line
+	5900 4450 5950 4450
+Wire Wire Line
+	5950 4450 5950 4550
+Connection ~ 5950 4550
+$Comp
+L R R1
+U 1 1 572E2C9D
+P 3800 4450
+F 0 "R1" V 3880 4450 50  0000 C CNN
+F 1 "10k" V 3800 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3730 4450 50  0001 C CNN
+F 3 "" H 3800 4450 50  0000 C CNN
+	1    3800 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 4450 3600 4450
+Wire Wire Line
+	3600 4450 3600 4300
+Connection ~ 3600 4300
+Connection ~ 4100 4550
+$Comp
+L Relay_SPDT K1
+U 1 1 572E4CF2
+P 4350 3800
+F 0 "K1" H 4550 3550 60  0000 C CNN
+F 1 "Relay_SPDT" H 4550 4200 60  0000 C CNN
+F 2 "electro_mechanical:ORWH-SH-105D1F,000" H 4350 3800 60  0001 C CNN
+F 3 "" H 4350 3800 60  0000 C CNN
+	1    4350 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3850 3750 3900
+Wire Wire Line
+	3750 3900 4150 3900
+Wire Wire Line
+	6350 2950 6350 3050
+Wire Wire Line
+	6350 3050 5900 3050
+Wire Wire Line
+	5900 3050 5900 3700
+Wire Wire Line
+	5900 3700 6100 3700
+Wire Wire Line
+	6450 3050 6450 2950
+$Comp
+L +5V #PWR09
+U 1 1 572E523A
+P 5700 3850
+F 0 "#PWR09" H 5700 3700 50  0001 C CNN
+F 1 "+5V" H 5700 3990 50  0000 C CNN
+F 2 "" H 5700 3850 50  0000 C CNN
+F 3 "" H 5700 3850 50  0000 C CNN
+	1    5700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay_SPDT K2
+U 1 1 572E5240
+P 6300 3800
+F 0 "K2" H 6550 3600 60  0000 C CNN
+F 1 "Relay_SPDT" H 6450 4200 60  0000 C CNN
+F 2 "electro_mechanical:ORWH-SH-105D1F,000" H 6300 3800 60  0001 C CNN
+F 3 "" H 6300 3800 60  0000 C CNN
+	1    6300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3850 5700 3900
+Wire Wire Line
+	5700 3900 6100 3900
+$Comp
+L CONN_01X02 P2
+U 1 1 572E5426
+P 4450 2750
+F 0 "P2" H 4450 2900 50  0000 C CNN
+F 1 "Live" V 4550 2750 50  0000 C CNN
+F 2 "Connect:AK300-2" H 4450 2750 50  0001 C CNN
+F 3 "" H 4450 2750 50  0000 C CNN
+	1    4450 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 572E54F4
+P 6400 2750
+F 0 "P3" H 6400 2900 50  0000 C CNN
+F 1 "Neutral" V 6500 2750 50  0000 C CNN
+F 2 "Connect:AK300-2" H 6400 2750 50  0001 C CNN
+F 3 "" H 6400 2750 50  0000 C CNN
+	1    6400 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_NMOS_GDS Q1
+U 1 1 572E1AFF
+P 4000 4300
+F 0 "Q1" H 4300 4350 50  0000 R CNN
+F 1 "FDN339AN" H 4650 4150 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 4200 4400 50  0001 C CNN
+F 3 "" H 4000 4300 50  0000 C CNN
+	1    4000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4450 4000 4450
+Wire Wire Line
+	4000 4450 4000 4550
+Wire Wire Line
+	4650 3850 4900 3850
+Wire Wire Line
+	4900 3850 4900 3050
+Wire Wire Line
+	4900 3050 4500 3050
+Wire Wire Line
+	6600 3850 6800 3850
+Wire Wire Line
+	6800 3850 6800 3050
+Wire Wire Line
+	6800 3050 6450 3050
+$EndSCHEMATC

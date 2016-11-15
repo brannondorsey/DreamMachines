@@ -1,0 +1,248 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:My_stuff
+LIBS:rpi_status-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "17 feb 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SSD1306(OLED_I2C) U1
+U 1 1 56BCBE72
+P 3250 4700
+F 0 "U1" V 3750 4400 60  0000 C CNN
+F 1 "SSD1306(OLED_I2C)" V 2750 4400 60  0000 C CNN
+F 2 "" H 3250 4700 60  0000 C CNN
+F 3 "" H 3250 4700 60  0000 C CNN
+	1    3250 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 56BCBE92
+P 4450 4800
+F 0 "SW2" H 4600 4910 50  0000 C CNN
+F 1 "SW_PUSH" H 4450 4720 50  0000 C CNN
+F 2 "~" H 4450 4800 60  0000 C CNN
+F 3 "~" H 4450 4800 60  0000 C CNN
+	1    4450 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW3
+U 1 1 56BCBEA1
+P 4750 4800
+F 0 "SW3" H 4900 4910 50  0000 C CNN
+F 1 "SW_PUSH" H 4750 4720 50  0000 C CNN
+F 2 "~" H 4750 4800 60  0000 C CNN
+F 3 "~" H 4750 4800 60  0000 C CNN
+	1    4750 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 56BCBEB0
+P 4150 4800
+F 0 "SW1" H 4300 4910 50  0000 C CNN
+F 1 "SW_PUSH" H 4150 4720 50  0000 C CNN
+F 2 "~" H 4150 4800 60  0000 C CNN
+F 3 "~" H 4150 4800 60  0000 C CNN
+	1    4150 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW4
+U 1 1 56BCBEBF
+P 6600 3200
+F 0 "SW4" H 6750 3310 50  0000 C CNN
+F 1 "SW_PUSH" H 6600 3120 50  0000 C CNN
+F 2 "~" H 6600 3200 60  0000 C CNN
+F 3 "~" H 6600 3200 60  0000 C CNN
+	1    6600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4250 4450 4500
+Wire Wire Line
+	4550 4250 4550 4500
+Wire Wire Line
+	4550 4500 4750 4500
+Wire Wire Line
+	4350 4250 4350 4500
+Wire Wire Line
+	4350 4500 4150 4500
+Wire Wire Line
+	4150 5100 4150 5200
+Wire Wire Line
+	4450 5100 4450 5200
+Connection ~ 4450 5200
+Wire Wire Line
+	4750 5100 4750 5200
+Connection ~ 4750 5200
+Wire Wire Line
+	6150 3200 6300 3200
+Wire Wire Line
+	6900 3200 6900 3350
+Wire Wire Line
+	6900 3350 6150 3350
+Wire Wire Line
+	6150 3350 6150 3300
+Wire Wire Line
+	3550 4850 3950 4850
+Wire Wire Line
+	3950 4850 3950 4250
+Wire Wire Line
+	3550 4750 3850 4750
+Wire Wire Line
+	3850 4750 3850 4400
+Wire Wire Line
+	3850 4400 4050 4400
+Wire Wire Line
+	4050 4400 4050 4250
+Wire Wire Line
+	3550 4650 3700 4650
+Connection ~ 4150 5200
+$Comp
+L LED D1
+U 1 1 56BCC2A8
+P 4550 1850
+F 0 "D1" H 4550 1950 50  0000 C CNN
+F 1 "LED" H 4550 1750 50  0000 C CNN
+F 2 "~" H 4550 1850 60  0000 C CNN
+F 3 "~" H 4550 1850 60  0000 C CNN
+	1    4550 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 2200 4550 2050
+$Comp
+L R R1
+U 1 1 56BCC2DD
+P 4300 1500
+F 0 "R1" V 4380 1500 40  0000 C CNN
+F 1 "R" V 4307 1501 40  0000 C CNN
+F 2 "~" V 4230 1500 30  0000 C CNN
+F 3 "~" H 4300 1500 30  0000 C CNN
+	1    4300 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 1500 4050 2200
+Wire Wire Line
+	4550 1500 4550 1650
+$Comp
+L WS2812_RING U3
+U 1 1 56BCC473
+P 5500 1650
+F 0 "U3" H 5850 2050 60  0000 C CNN
+F 1 "WS2812_RING" H 5500 2350 60  0000 C CNN
+F 2 "" H 5500 1650 60  0000 C CNN
+F 3 "" H 5500 1650 60  0000 C CNN
+	1    5500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2100 3850 2200
+Wire Wire Line
+	5550 1950 5550 2150
+Wire Wire Line
+	5550 2150 4050 2150
+Connection ~ 4050 2150
+Wire Wire Line
+	5450 1950 5450 2100
+Wire Wire Line
+	5450 2100 3850 2100
+Wire Wire Line
+	5350 1950 5350 2200
+Wire Wire Line
+	3550 4550 3600 4550
+Wire Wire Line
+	3600 2200 3600 5350
+Wire Wire Line
+	3850 2200 3600 2200
+$Comp
+L RASPBERRY_PI_HEADER U4
+U 1 1 56BCF801
+P 4800 3200
+F 0 "U4" V 3650 3200 60  0000 C CNN
+F 1 "RASPBERRY_PI_HEADER" V 3400 3250 60  0000 C CNN
+F 2 "~" H 5400 2450 60  0000 C CNN
+F 3 "~" H 5400 2450 60  0000 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L BMP180 U2
+U 1 1 56BF80ED
+P 3000 5500
+F 0 "U2" H 3000 5700 60  0000 C CNN
+F 1 "BMP180" H 3000 5800 60  0000 C CNN
+F 2 "" H 3000 5500 60  0000 C CNN
+F 3 "" H 3000 5500 60  0000 C CNN
+	1    3000 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 5550 3800 5550
+Wire Wire Line
+	3800 5550 3800 4750
+Connection ~ 3800 4750
+Wire Wire Line
+	3350 5650 3650 5650
+Wire Wire Line
+	3650 5650 3650 4850
+Connection ~ 3650 4850
+Wire Wire Line
+	3600 5350 3350 5350
+Connection ~ 3600 4550
+Wire Wire Line
+	3700 2000 3700 5450
+Wire Wire Line
+	3700 2000 4050 2000
+Connection ~ 4050 2000
+Wire Wire Line
+	3700 5450 3350 5450
+Connection ~ 3700 4650
+Wire Wire Line
+	4750 5200 3700 5200
+Connection ~ 3700 5200
+$EndSCHEMATC

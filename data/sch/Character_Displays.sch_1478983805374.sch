@@ -1,0 +1,334 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ARM Base Board-cache
+LIBS:Sensors
+LIBS:MCU_BaseBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date "4 may 2015"
+Rev "Ver1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LCD-016N002L DS2
+U 1 1 55262B56
+P 6600 2800
+F 0 "DS2" H 5800 3200 40  0000 C CNN
+F 1 "LCD-016N002L" H 7300 3200 40  0000 C CNN
+F 2 "WC1602A" H 6600 2750 35  0000 C CIN
+F 3 "" H 6600 2800 60  0000 C CNN
+	1    6600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L EE_RG12864j DS1
+U 1 1 552CBC96
+P 3950 2700
+F 0 "DS1" H 2800 3350 40  0000 C CNN
+F 1 "EE_RG12864j" H 5000 3350 40  0000 C CNN
+F 2 "RG12864J_EE" H 3950 2500 35  0000 C CIN
+F 3 "" H 3950 2700 60  0000 C CNN
+	1    3950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV1
+U 1 1 552CC044
+P 2300 3750
+F 0 "RV1" H 2300 3650 50  0000 C CNN
+F 1 "POT" H 2300 3750 50  0000 C CNN
+F 2 "" H 2300 3750 60  0000 C CNN
+F 3 "" H 2300 3750 60  0000 C CNN
+	1    2300 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV2
+U 1 1 552CD14D
+P 5700 4400
+F 0 "RV2" H 5700 4300 50  0000 C CNN
+F 1 "POT" H 5700 4400 50  0000 C CNN
+F 2 "" H 5700 4400 60  0000 C CNN
+F 3 "" H 5700 4400 60  0000 C CNN
+	1    5700 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 552D0A27
+P 5300 4400
+F 0 "R1" V 5380 4400 50  0000 C CNN
+F 1 "2.2k" V 5307 4401 50  0000 C CNN
+F 2 "" V 5230 4400 30  0000 C CNN
+F 3 "" H 5300 4400 30  0000 C CNN
+	1    5300 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR053
+U 1 1 5530650C
+P 5350 3250
+F 0 "#PWR053" H 5350 3250 30  0001 C CNN
+F 1 "GND" H 5350 3180 30  0001 C CNN
+F 2 "" H 5350 3250 60  0000 C CNN
+F 3 "" H 5350 3250 60  0000 C CNN
+	1    5350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_13 P8
+U 1 1 55375CB8
+P 3900 5010
+F 0 "P8" V 3860 5010 60  0000 C CNN
+F 1 "CONN_13" V 3970 5010 60  0000 C CNN
+F 2 "" H 3900 5010 60  0000 C CNN
+F 3 "" H 3900 5010 60  0000 C CNN
+	1    3900 5010
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 3300 2850 4300
+Wire Wire Line
+	3000 3300 3000 4300
+Wire Wire Line
+	3300 3300 3300 4660
+Wire Wire Line
+	3400 3300 3400 4660
+Wire Wire Line
+	3500 3300 3500 4660
+Wire Wire Line
+	3600 3300 3600 4660
+Wire Wire Line
+	3700 3300 3700 4660
+Wire Wire Line
+	3800 3300 3800 4660
+Wire Wire Line
+	3900 3300 3900 4660
+Wire Wire Line
+	4000 3300 4000 4660
+Wire Wire Line
+	4150 3300 4150 4410
+Wire Wire Line
+	4250 3300 4250 4470
+Wire Wire Line
+	4350 3300 4350 4510
+Wire Wire Line
+	4450 3300 4450 4550
+Wire Wire Line
+	4550 3300 4550 4600
+Wire Wire Line
+	2450 3750 3150 3750
+Wire Wire Line
+	3150 3750 3150 3300
+Wire Wire Line
+	2300 4000 3000 4000
+Connection ~ 3000 4000
+Wire Wire Line
+	2300 3500 4800 3500
+Wire Wire Line
+	5850 3300 5850 3400
+Wire Wire Line
+	5850 3400 2850 3400
+Connection ~ 2850 3400
+Wire Wire Line
+	5950 3450 3000 3450
+Connection ~ 3000 3450
+Wire Wire Line
+	6150 3300 6150 3550
+Wire Wire Line
+	6150 3550 3300 3550
+Connection ~ 3300 3550
+Wire Wire Line
+	6250 3300 6250 3600
+Wire Wire Line
+	6250 3600 3400 3600
+Connection ~ 3400 3600
+Wire Wire Line
+	6350 3300 6350 3650
+Wire Wire Line
+	6350 3650 3500 3650
+Connection ~ 3500 3650
+Wire Wire Line
+	6850 3300 6850 3700
+Wire Wire Line
+	6850 3700 4000 3700
+Connection ~ 4000 3700
+Wire Wire Line
+	6950 3300 6950 3750
+Wire Wire Line
+	6950 3750 4150 3750
+Connection ~ 4150 3750
+Wire Wire Line
+	7050 3300 7050 3800
+Wire Wire Line
+	7050 3800 4250 3800
+Connection ~ 4250 3800
+Wire Wire Line
+	7150 3300 7150 3850
+Wire Wire Line
+	7150 3850 4350 3850
+Connection ~ 4350 3850
+Wire Wire Line
+	5700 4150 5700 3400
+Connection ~ 5700 3400
+Wire Wire Line
+	5850 4400 6050 4400
+Wire Wire Line
+	6050 4400 6050 3300
+Wire Wire Line
+	5900 3450 5900 4850
+Connection ~ 5900 3450
+Wire Wire Line
+	4950 3300 4950 3500
+Wire Wire Line
+	4950 3500 7250 3500
+Wire Wire Line
+	7250 3500 7250 3300
+Wire Wire Line
+	5050 3300 5050 3950
+Wire Wire Line
+	5050 3950 7350 3950
+Wire Wire Line
+	7350 3950 7350 3300
+Wire Wire Line
+	5300 4150 5300 3500
+Connection ~ 5300 3500
+Wire Wire Line
+	5450 3950 5450 3400
+Connection ~ 5450 3400
+Connection ~ 5450 3950
+Wire Wire Line
+	5600 3400 5600 3200
+Wire Wire Line
+	5600 3200 5350 3200
+Wire Wire Line
+	5350 3200 5350 3250
+Connection ~ 5600 3400
+Wire Wire Line
+	4800 3500 4800 3300
+Wire Wire Line
+	4650 3300 4650 3400
+Connection ~ 4650 3400
+Wire Wire Line
+	6450 3300 6450 4000
+Wire Wire Line
+	6450 4000 3600 4000
+Connection ~ 3600 4000
+Wire Wire Line
+	6550 3300 6550 4050
+Wire Wire Line
+	6550 4050 3700 4050
+Connection ~ 3700 4050
+Wire Wire Line
+	6650 3300 6650 4100
+Wire Wire Line
+	6650 4100 3800 4100
+Connection ~ 3800 4100
+Wire Wire Line
+	6750 3300 6750 4150
+Wire Wire Line
+	4100 4660 4100 4410
+Wire Wire Line
+	4100 4410 4150 4410
+Wire Wire Line
+	4200 4660 4200 4470
+Wire Wire Line
+	4200 4470 4250 4470
+Wire Wire Line
+	4300 4660 4300 4510
+Wire Wire Line
+	4300 4510 4350 4510
+Wire Wire Line
+	4400 4660 4400 4550
+Wire Wire Line
+	4400 4550 4450 4550
+Wire Wire Line
+	4500 4660 4500 4600
+Wire Wire Line
+	4500 4600 4550 4600
+Wire Wire Line
+	5300 4650 5300 4850
+Wire Wire Line
+	5300 4850 5900 4850
+Wire Wire Line
+	5700 4650 5700 4850
+Connection ~ 5700 4850
+$Comp
+L +5V #PWR054
+U 1 1 553E7C57
+P 5550 5000
+F 0 "#PWR054" H 5550 5090 20  0001 C CNN
+F 1 "+5V" H 5550 5100 30  0000 C CNN
+F 2 "" H 5550 5000 60  0000 C CNN
+F 3 "" H 5550 5000 60  0000 C CNN
+	1    5550 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 5000 5550 4850
+Connection ~ 5550 4850
+$Comp
+L +5V #PWR055
+U 1 1 553EA3CA
+P 3000 4300
+F 0 "#PWR055" H 3000 4390 20  0001 C CNN
+F 1 "+5V" H 3000 4400 30  0000 C CNN
+F 2 "" H 3000 4300 60  0000 C CNN
+F 3 "" H 3000 4300 60  0000 C CNN
+	1    3000 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR056
+U 1 1 553EA3D9
+P 2850 4300
+F 0 "#PWR056" H 2850 4300 30  0001 C CNN
+F 1 "GND" H 2850 4230 30  0001 C CNN
+F 2 "" H 2850 4300 60  0000 C CNN
+F 3 "" H 2850 4300 60  0000 C CNN
+	1    2850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3300 5950 3450
+Wire Wire Line
+	6750 4150 3900 4150
+Connection ~ 3900 4150
+$EndSCHEMATC

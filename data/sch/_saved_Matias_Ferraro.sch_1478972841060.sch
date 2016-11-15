@@ -1,0 +1,135 @@
+EESchema Schematic File Version 2
+LIBS:ej1
+LIBS:Matias_Ferraro-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Curso Kicad"
+Date ""
+Rev "1.0"
+Comp "Matias Ferraro"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_3 K1
+U 1 1 565C5B0B
+P 3300 2700
+F 0 "K1" V 3250 2700 50  0000 C CNN
+F 1 "CONN_3" V 3350 2700 40  0000 C CNN
+F 2 "ej1:bornier3" H 3300 2700 60  0001 C CNN
+F 3 "" H 3300 2700 60  0000 C CNN
+	1    3300 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 565C5BBE
+P 4750 2150
+F 0 "C1" H 4775 2250 50  0000 L CNN
+F 1 "100nF" H 4775 2050 50  0000 L CNN
+F 2 "ej1:C_Rect_L7_W3.5_P5" H 4788 2000 30  0001 C CNN
+F 3 "" H 4750 2150 60  0000 C CNN
+	1    4750 2150
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 565C5C2E
+P 4700 1750
+F 0 "D1" H 4700 1850 50  0000 C CNN
+F 1 "LED ROJO" H 4700 1650 50  0000 C CNN
+F 2 "ej1:LED-3MM" H 4700 1750 60  0001 C CNN
+F 3 "" H 4700 1750 60  0000 C CNN
+	1    4700 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 565C5CA7
+P 4800 3350
+F 0 "D2" H 4800 3450 50  0000 C CNN
+F 1 "1N4148" H 4800 3250 50  0000 C CNN
+F 2 "ej1:Diode_DO-35_SOD27_Horizontal_RM10" H 4800 3350 60  0001 C CNN
+F 3 "" H 4800 3350 60  0000 C CNN
+	1    4800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 565C66AB
+P 5800 2700
+F 0 "R1" V 5880 2700 50  0000 C CNN
+F 1 "100K" V 5800 2700 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 5730 2700 30  0001 C CNN
+F 3 "" H 5800 2700 30  0000 C CNN
+	1    5800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2600 3650 2600
+Wire Wire Line
+	3900 1750 3900 2600
+Wire Wire Line
+	4900 2150 6200 2150
+Wire Wire Line
+	5800 2150 5800 2550
+Wire Wire Line
+	5800 2850 5800 3350
+Connection ~ 3900 2150
+Wire Wire Line
+	5150 1750 5150 2150
+Connection ~ 5150 2150
+Wire Wire Line
+	3900 2800 3900 3350
+Wire Wire Line
+	3900 2800 3650 2800
+Wire Wire Line
+	3900 1750 4500 1750
+Wire Wire Line
+	4900 1750 5150 1750
+Wire Wire Line
+	3900 3350 4650 3350
+Wire Wire Line
+	4950 3350 6200 3350
+Text Notes 4000 1500 0    60   ~ 12
+CIRCUITO EXPERIMENTAL
+Text Notes 6450 2450 0    60   ~ 12
+Resistor\nen serie
+Wire Bus Line
+	6300 2350 6150 2350
+Wire Bus Line
+	6150 2350 5950 2600
+Wire Bus Line
+	6250 2350 6400 2350
+NoConn ~ 3650 2700
+Wire Wire Line
+	4600 2150 3900 2150
+$Comp
+L R R2
+U 1 1 565CA8DA
+P 6200 2700
+F 0 "R2" V 6280 2700 50  0000 C CNN
+F 1 "100k" V 6200 2700 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 6130 2700 30  0000 C CNN
+F 3 "" H 6200 2700 30  0000 C CNN
+	1    6200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3350 6200 2850
+Connection ~ 5800 3350
+Wire Wire Line
+	6200 2150 6200 2550
+Connection ~ 5800 2150
+Wire Bus Line
+	6350 2750 6550 2600
+Wire Bus Line
+	6550 2600 6750 2600
+Text Notes 6800 2650 0    60   ~ 12
+Resistor\nAgregado
+$EndSCHEMATC

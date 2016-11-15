@@ -1,0 +1,166 @@
+EESchema Schematic File Version 2  date Wed 26 Jun 2013 12:54:43 AM UTC
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 43  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "26 jun 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 2250 2600 1    60   ~ 0
+Label
+Text Notes 2950 4300 0    60   ~ 0
+text
+Wire Wire Line
+	2250 2650 2250 2500
+Wire Wire Line
+	2250 2500 2400 2500
+Wire Wire Line
+	3600 2450 3750 2450
+Wire Wire Line
+	3750 2450 3750 2600
+$Comp
+L SW_PUSH_SMALL SW1
+U 1 1 51CA3AE4
+P 2500 3750
+F 0 "SW1" H 2650 3860 30  0000 C CNN
+F 1 "SW_PUSH_SMALL" V 2650 3500 30  0000 C CNN
+	1    2500 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_PUSH_SMALL SW2
+U 1 1 51CA3ADA
+P 3500 3750
+F 0 "SW2" H 3650 3860 30  0000 C CNN
+F 1 "SW_PUSH_SMALL" H 3200 3950 30  0000 C CNN
+	1    3500 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 51CA3A95
+P 3000 3300
+F 0 "D1" H 3000 3400 40  0000 C CNN
+F 1 "DIODE" H 3000 3200 40  0000 C CNN
+	1    3000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 51CA3A6D
+P 3600 2250
+F 0 "C3" H 3650 2350 50  0000 L CNN
+F 1 "C" H 3650 2150 50  0000 L CNN
+	1    3600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL X2
+U 1 1 51CA3A5A
+P 3300 2850
+F 0 "X2" H 3300 3000 60  0000 C CNN
+F 1 "CRYSTAL" H 3300 2700 60  0000 C CNN
+	1    3300 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CRYSTAL X1
+U 1 1 51CA3A2F
+P 2700 2850
+F 0 "X1" H 2700 3000 60  0000 C CNN
+F 1 "CRYSTAL" H 2700 2700 60  0000 C CNN
+	1    2700 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_8 P1
+U 1 1 51CA3A12
+P 3000 2000
+F 0 "P1" V 2950 2000 60  0000 C CNN
+F 1 "CONN_8" V 3050 2000 60  0000 C CNN
+	1    3000 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 51CA39E2
+P 3000 3550
+F 0 "L1" V 2950 3550 40  0000 C CNN
+F 1 "INDUCTOR" V 3100 3550 40  0000 C CNN
+	1    3000 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 51CA39D4
+P 3000 3950
+F 0 "C2" H 3050 4050 50  0000 L CNN
+F 1 "C" H 3050 3850 50  0000 L CNN
+	1    3000 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 51CA39CF
+P 2400 2300
+F 0 "C1" H 2450 2400 50  0000 L CNN
+F 1 "C" H 2450 2200 50  0000 L CNN
+	1    2400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 51CA398D
+P 3750 2850
+F 0 "R2" V 3830 2850 50  0000 C CNN
+F 1 "R" V 3750 2850 50  0000 C CNN
+	1    3750 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 51CA3989
+P 2250 2900
+F 0 "R1" V 2330 2900 50  0000 C CNN
+F 1 "R" V 2250 2900 50  0000 C CNN
+	1    2250 2900
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

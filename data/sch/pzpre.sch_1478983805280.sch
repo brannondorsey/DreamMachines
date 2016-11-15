@@ -1,0 +1,170 @@
+EESchema Schematic File Version 2
+LIBS:aart_connectors
+LIBS:aart_diodes
+LIBS:aart_holes
+LIBS:aart_memories
+LIBS:aart_microphones
+LIBS:aart_micros
+LIBS:aart_misc_ics
+LIBS:aart_op_amps
+LIBS:aart_opto
+LIBS:aart_passives
+LIBS:aart_pots
+LIBS:aart_power_supplies
+LIBS:aart_transistors
+LIBS:power
+LIBS:rt
+LIBS:pzpre-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "piezo preamp"
+Date "14 Jan 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HOLE H1
+U 1 1 5443BE4F
+P 7200 2200
+F 0 "H1" H 7150 2400 50  0000 L BNN
+F 1 "HOLE" H 7250 2350 60  0000 C CNN
+F 2 "aart_holes:PLATED_HOLE_1_5MM" H 7200 2300 60  0001 C CNN
+F 3 "" H 7200 2300 60  0000 C CNN
+	1    7200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L HOLE H2
+U 1 1 5443BE6E
+P 7150 5100
+F 0 "H2" H 7100 5300 50  0000 L BNN
+F 1 "HOLE" H 7200 5250 60  0000 C CNN
+F 2 "aart_holes:PLATED_HOLE_1_5MM" H 7150 5200 60  0001 C CNN
+F 3 "" H 7150 5200 60  0000 C CNN
+	1    7150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HOLE H3
+U 1 1 5443BE91
+P 7200 3100
+F 0 "H3" H 7150 3300 50  0000 L BNN
+F 1 "HOLE" H 7250 3250 60  0000 C CNN
+F 2 "aart_holes:PLATED_HOLE_1_5MM" H 7200 3200 60  0001 C CNN
+F 3 "" H 7200 3200 60  0000 C CNN
+	1    7200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L HOLE H4
+U 1 1 5443BEAE
+P 3100 5100
+F 0 "H4" H 3050 5300 50  0000 L BNN
+F 1 "HOLE" H 3150 5250 60  0000 C CNN
+F 2 "aart_holes:PLATED_HOLE_1_5MM" H 3100 5200 60  0001 C CNN
+F 3 "" H 3100 5200 60  0000 C CNN
+	1    3100 5100
+	1    0    0    -1  
+$EndComp
+Text Notes 10700 7650 0    60   ~ 0
+2
+$Comp
+L FET_N Q1
+U 1 1 56977127
+P 5550 3650
+F 0 "Q1" H 5303 3900 70  0000 C CNN
+F 1 "2SK3666" H 5353 3753 60  0000 C CNN
+F 2 "w_smd_trans:sot23" H 5550 3650 60  0001 C CNN
+F 3 "" H 5550 3650 60  0000 C CNN
+	1    5550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 569771F0
+P 5700 2700
+F 0 "R2" H 5770 2750 50  0000 L BNN
+F 1 "R" H 5800 2650 50  0000 L BNN
+F 2 "w_smd_resistors:r_0603" H 5700 2700 60  0001 C CNN
+F 3 "" H 5700 2700 60  0000 C CNN
+	1    5700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 56977293
+P 5700 4600
+F 0 "R3" H 5770 4650 50  0000 L BNN
+F 1 "R" H 5800 4550 50  0000 L BNN
+F 2 "w_smd_resistors:r_0603" H 5700 4600 60  0001 C CNN
+F 3 "" H 5700 4600 60  0000 C CNN
+	1    5700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 569772F8
+P 4500 4600
+F 0 "R1" H 4570 4650 50  0000 L BNN
+F 1 "R" H 4600 4550 50  0000 L BNN
+F 2 "w_smd_resistors:r_0603" H 4500 4600 60  0001 C CNN
+F 3 "" H 4500 4600 60  0000 C CNN
+	1    4500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L HOLE H5
+U 1 1 56977663
+P 3100 3750
+F 0 "H5" H 3050 3950 50  0000 L BNN
+F 1 "HOLE" H 3150 3900 60  0000 C CNN
+F 2 "aart_holes:PLATED_HOLE_1_5MM" H 3100 3850 60  0001 C CNN
+F 3 "" H 3100 3850 60  0000 C CNN
+	1    3100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5100 3100 5100
+Wire Wire Line
+	4500 4850 4500 5100
+Connection ~ 4500 5100
+Wire Wire Line
+	5700 4850 5700 5100
+Connection ~ 5700 5100
+Wire Wire Line
+	5700 4350 5700 4000
+Wire Wire Line
+	5700 3300 5700 2950
+Wire Wire Line
+	4500 4350 4500 3750
+Wire Wire Line
+	3100 3750 5250 3750
+Connection ~ 4500 3750
+$Comp
+L C C1
+U 1 1 56977BFE
+P 6400 3100
+F 0 "C1" V 6150 3050 50  0000 L CNN
+F 1 "C" V 6250 3050 50  0000 L CNN
+F 2 "w_smd_cap:c_0805" H 6400 3100 60  0001 C CNN
+F 3 "" H 6400 3100 60  0000 C CNN
+	1    6400 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3100 5700 3100
+Connection ~ 5700 3100
+Wire Wire Line
+	6600 3100 7200 3100
+Wire Wire Line
+	7200 2200 5700 2200
+Wire Wire Line
+	5700 2200 5700 2450
+$EndSCHEMATC

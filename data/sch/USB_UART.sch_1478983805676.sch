@@ -1,0 +1,522 @@
+EESchema Schematic File Version 2
+LIBS:IBBB-Symbols
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:OSD335x
+LIBS:IBBB-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "IBBB"
+Date "2016-05-15"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OSD3358 U?
+U 7 1 57382086
+P 4250 2100
+F 0 "U?" H 4450 2350 60  0000 L CNN
+F 1 "OSD3358" H 4450 2250 60  0000 L CNN
+F 2 "" H 4250 2100 60  0000 C CNN
+F 3 "" H 4250 2100 60  0000 C CNN
+	7    4250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AT24CS32-STUM IC?
+U 1 1 573820FD
+P 2450 2050
+F 0 "IC?" H 2250 2300 50  0000 C CNN
+F 1 "AT24CS32-STUM" H 2750 1750 50  0000 C CNN
+F 2 "SOT-23-5" H 2450 2050 50  0000 C CIN
+F 3 "" H 2450 2050 50  0000 C CNN
+	1    2450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 573821A3
+P 2950 1750
+F 0 "R?" V 3030 1750 50  0000 C CNN
+F 1 "1.5k, 1%" V 2900 1750 50  0000 C CNN
+F 2 "" V 2880 1750 30  0000 C CNN
+F 3 "" H 2950 1750 30  0000 C CNN
+	1    2950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 573821EF
+P 3350 1900
+F 0 "R?" V 3430 1900 50  0000 C CNN
+F 1 "1.5k, 1%" V 3300 1900 50  0000 C CNN
+F 2 "" V 3280 1900 30  0000 C CNN
+F 3 "" H 3350 1900 30  0000 C CNN
+	1    3350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1950 2950 1950
+Wire Wire Line
+	2950 1900 2950 2200
+Wire Wire Line
+	2850 2100 4250 2100
+Wire Wire Line
+	3350 2100 3350 2050
+Connection ~ 3350 2100
+Wire Wire Line
+	2950 2200 4250 2200
+Connection ~ 2950 1950
+Wire Wire Line
+	2450 1400 2450 1700
+Wire Wire Line
+	1650 1500 3350 1500
+Wire Wire Line
+	2950 1500 2950 1600
+Wire Wire Line
+	3350 1500 3350 1750
+Connection ~ 2950 1500
+$Comp
+L +3V3_B #PWR?
+U 1 1 573822CA
+P 2450 1400
+F 0 "#PWR?" H 2450 1250 50  0001 C CNN
+F 1 "+3V3_B" H 2450 1540 50  0000 C CNN
+F 2 "" H 2450 1400 50  0000 C CNN
+F 3 "" H 2450 1400 50  0000 C CNN
+	1    2450 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 1500
+$Comp
+L GND #PWR?
+U 1 1 57382531
+P 2450 2550
+F 0 "#PWR?" H 2450 2300 50  0001 C CNN
+F 1 "GND" H 2450 2400 50  0000 C CNN
+F 2 "" H 2450 2550 50  0000 C CNN
+F 3 "" H 2450 2550 50  0000 C CNN
+	1    2450 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2450 2450 2550
+$Comp
+L R R?
+U 1 1 57382567
+P 1950 1800
+F 0 "R?" V 2030 1800 50  0000 C CNN
+F 1 "10k" V 1900 1800 50  0000 C CNN
+F 2 "" V 1880 1800 30  0000 C CNN
+F 3 "" H 1950 1800 30  0000 C CNN
+	1    1950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1950 1950 2250
+Wire Wire Line
+	1950 2250 2050 2250
+Wire Wire Line
+	1950 1650 1950 1500
+$Comp
+L C C?
+U 1 1 573825F5
+P 1650 1800
+F 0 "C?" H 1675 1900 50  0000 L CNN
+F 1 "0.1u" H 1675 1700 50  0000 L CNN
+F 2 "" H 1688 1650 50  0000 C CNN
+F 3 "" H 1650 1800 50  0000 C CNN
+	1    1650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1650 1650 1500
+Connection ~ 1950 1500
+Wire Wire Line
+	1650 1950 1650 2500
+Wire Wire Line
+	1650 2500 2450 2500
+Connection ~ 2450 2500
+Text Notes 1625 1375 0    60   ~ 0
+Board ID
+Wire Wire Line
+	3925 2000 3925 2200
+Connection ~ 3925 2200
+Wire Wire Line
+	3750 2000 3750 2100
+Connection ~ 3750 2100
+Text HLabel 3750 2000 1    60   BiDi ~ 0
+I2C0_SCL
+Text HLabel 3925 2000 1    60   BiDi ~ 0
+I2C0_SDA
+Wire Wire Line
+	6050 2300 6975 2300
+$Comp
+L USB_DC #PWR?
+U 1 1 5738C577
+P 7775 1800
+F 0 "#PWR?" H 7775 1650 50  0001 C CNN
+F 1 "USB_DC" V 7775 2050 50  0000 C CNN
+F 2 "" H 7775 1800 50  0000 C CNN
+F 3 "" H 7775 1800 50  0000 C CNN
+	1    7775 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5738C8FD
+P 7125 2300
+F 0 "R?" V 7075 2450 50  0000 C CNN
+F 1 "0" V 7075 2300 50  0000 C CNN
+F 2 "" V 7055 2300 30  0000 C CNN
+F 3 "" H 7125 2300 30  0000 C CNN
+	1    7125 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_OTG P?
+U 1 1 5739351C
+P 8750 2500
+F 0 "P?" H 9075 2375 50  0000 C CNN
+F 1 "USB_OTG" H 8750 2700 50  0000 C CNN
+F 2 "" V 8700 2400 50  0000 C CNN
+F 3 "" V 8700 2400 50  0000 C CNN
+	1    8750 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L TPD4S012 U?
+U 1 1 573937C1
+P 7650 3325
+F 0 "U?" H 7650 3075 60  0000 C CNN
+F 1 "TPD4S012" H 7650 3550 60  0000 C CNN
+F 2 "" H 7650 2975 60  0000 C CNN
+F 3 "" H 7650 2975 60  0000 C CNN
+	1    7650 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57393806
+P 8250 3425
+F 0 "C?" H 8275 3525 50  0000 L CNN
+F 1 "0.1u" H 8275 3325 50  0000 L CNN
+F 2 "" H 8288 3275 50  0000 C CNN
+F 3 "" H 8250 3425 50  0000 C CNN
+	1    8250 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3225 8250 3225
+Wire Wire Line
+	8250 3225 8250 3275
+Wire Wire Line
+	8050 3425 8100 3425
+Wire Wire Line
+	8100 3425 8100 3625
+Wire Wire Line
+	8100 3625 8250 3625
+Wire Wire Line
+	8250 3575 8250 3675
+Connection ~ 8250 3625
+$Comp
+L GND #PWR?
+U 1 1 573938EF
+P 8250 3675
+F 0 "#PWR?" H 8250 3425 50  0001 C CNN
+F 1 "GND" H 8250 3525 50  0000 C CNN
+F 2 "" H 8250 3675 50  0000 C CNN
+F 3 "" H 8250 3675 50  0000 C CNN
+	1    8250 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5739393F
+P 8400 2800
+F 0 "#PWR?" H 8400 2550 50  0001 C CNN
+F 1 "GND" H 8400 2650 50  0000 C CNN
+F 2 "" H 8400 2800 50  0000 C CNN
+F 3 "" H 8400 2800 50  0000 C CNN
+	1    8400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2700 8400 2700
+Wire Wire Line
+	8400 2700 8400 2800
+Wire Wire Line
+	7275 2300 8450 2300
+Wire Wire Line
+	8150 3225 8150 2300
+Connection ~ 8150 2300
+Connection ~ 8150 3225
+Wire Wire Line
+	7775 1800 7775 2300
+Connection ~ 7775 2300
+Wire Wire Line
+	6050 2400 6575 2400
+Wire Wire Line
+	6575 2400 6575 3425
+Wire Wire Line
+	6575 3425 7250 3425
+Wire Wire Line
+	8450 2600 6575 2600
+Connection ~ 6575 2600
+Wire Wire Line
+	6050 2200 6700 2200
+Wire Wire Line
+	6700 2200 6700 3325
+Wire Wire Line
+	6700 3325 7250 3325
+Wire Wire Line
+	8450 2400 6700 2400
+Connection ~ 6700 2400
+Wire Wire Line
+	6050 2100 6850 2100
+Wire Wire Line
+	6850 2100 6850 3225
+Wire Wire Line
+	6850 3225 7250 3225
+Wire Wire Line
+	8450 2500 6850 2500
+Connection ~ 6850 2500
+Text Notes 8600 2150 0    60   ~ 0
+USB Device
+$Comp
+L TPD4S012 U?
+U 1 1 57394B96
+P 3050 4300
+F 0 "U?" H 3050 4050 60  0000 C CNN
+F 1 "TPD4S012" H 3050 4525 60  0000 C CNN
+F 2 "" H 3050 3950 60  0000 C CNN
+F 3 "" H 3050 3950 60  0000 C CNN
+	1    3050 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P?
+U 1 1 57394BF3
+P 1725 3450
+F 0 "P?" H 2050 3325 50  0000 C CNN
+F 1 "USB_OTG" H 1725 3650 50  0000 C CNN
+F 2 "" V 1675 3350 50  0000 C CNN
+F 3 "" V 1675 3350 50  0000 C CNN
+	1    1725 3450
+	0    -1   1    0   
+$EndComp
+$Comp
+L L_Small L?
+U 1 1 57395034
+P 2375 3250
+F 0 "L?" V 2450 3200 50  0000 L CNN
+F 1 "150ohm, 800mA" V 2525 2925 50  0000 L CNN
+F 2 "" H 2375 3250 50  0000 C CNN
+F 3 "" H 2375 3250 50  0000 C CNN
+	1    2375 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2025 3250 2275 3250
+Wire Wire Line
+	2475 3250 3475 3250
+Wire Wire Line
+	3475 3250 3475 2600
+Wire Wire Line
+	3375 2600 4250 2600
+$Comp
+L R R?
+U 1 1 57395779
+P 3225 2600
+F 0 "R?" V 3305 2600 50  0000 C CNN
+F 1 "0" V 3175 2600 50  0000 C CNN
+F 2 "" V 3155 2600 30  0000 C CNN
+F 3 "" H 3225 2600 30  0000 C CNN
+	1    3225 2600
+	0    1    1    0   
+$EndComp
+Connection ~ 3475 2600
+$Comp
+L +5V #PWR?
+U 1 1 5739582E
+P 2975 2600
+F 0 "#PWR?" H 2975 2450 50  0001 C CNN
+F 1 "+5V" V 2975 2775 50  0000 C CNN
+F 2 "" H 2975 2600 50  0000 C CNN
+F 3 "" H 2975 2600 50  0000 C CNN
+	1    2975 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2975 2600 3075 2600
+Wire Wire Line
+	2025 3350 3925 3350
+Wire Wire Line
+	3925 2800 3925 4300
+Wire Wire Line
+	3925 2800 4250 2800
+Wire Wire Line
+	2025 3450 3775 3450
+Wire Wire Line
+	3775 2700 3775 4200
+Wire Wire Line
+	3775 2700 4250 2700
+Wire Wire Line
+	3775 4200 3450 4200
+Connection ~ 3775 3450
+Wire Wire Line
+	3925 4300 3450 4300
+Connection ~ 3925 3350
+Wire Wire Line
+	4250 2500 3625 2500
+Wire Wire Line
+	3625 2500 3625 4400
+Wire Wire Line
+	3625 3550 2025 3550
+Wire Wire Line
+	3625 4400 3450 4400
+Connection ~ 3625 3550
+Wire Wire Line
+	2025 3650 2125 3650
+Wire Wire Line
+	2125 3650 2125 3750
+$Comp
+L GND #PWR?
+U 1 1 57396021
+P 2125 3750
+F 0 "#PWR?" H 2125 3500 50  0001 C CNN
+F 1 "GND" H 2125 3600 50  0000 C CNN
+F 2 "" H 2125 3750 50  0000 C CNN
+F 3 "" H 2125 3750 50  0000 C CNN
+	1    2125 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 4200 2650 4200
+Wire Wire Line
+	2575 4200 2575 3250
+Connection ~ 2575 3250
+$Comp
+L C C?
+U 1 1 573961A0
+P 2125 4400
+F 0 "C?" H 2150 4500 50  0000 L CNN
+F 1 "10uF" H 2150 4300 50  0000 L CNN
+F 2 "" H 2163 4250 50  0000 C CNN
+F 3 "" H 2125 4400 50  0000 C CNN
+	1    2125 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5739620A
+P 2375 4400
+F 0 "C?" H 2400 4500 50  0000 L CNN
+F 1 "0.1u" H 2400 4300 50  0000 L CNN
+F 2 "" H 2413 4250 50  0000 C CNN
+F 3 "" H 2375 4400 50  0000 C CNN
+	1    2375 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 4200 2125 4250
+Connection ~ 2575 4200
+Wire Wire Line
+	2375 4250 2375 4200
+Connection ~ 2375 4200
+$Comp
+L GND #PWR?
+U 1 1 573963A4
+P 2125 4650
+F 0 "#PWR?" H 2125 4400 50  0001 C CNN
+F 1 "GND" H 2125 4500 50  0000 C CNN
+F 2 "" H 2125 4650 50  0000 C CNN
+F 3 "" H 2125 4650 50  0000 C CNN
+	1    2125 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 4550 2125 4650
+Wire Wire Line
+	2375 4550 2375 4600
+Wire Wire Line
+	2125 4600 2575 4600
+Connection ~ 2125 4600
+Wire Wire Line
+	2650 4400 2575 4400
+Wire Wire Line
+	2575 4400 2575 4600
+Connection ~ 2375 4600
+Text Notes 1575 3100 0    60   ~ 0
+USB Host
+Text Label 6350 2100 0    50   ~ 0
+USB0_DM
+Text Label 6275 2200 0    50   ~ 0
+USB0_DP
+Text Label 6200 2400 0    50   ~ 0
+USB0_ID
+Text Label 6125 2300 0    50   ~ 0
+USB0_VBUS
+Text Label 3750 2500 0    50   ~ 0
+USB1_ID
+Text Label 3750 2600 0    50   ~ 0
+USB1_VBUS
+Text Label 3775 3200 1    50   ~ 0
+USB1_DP
+Text Label 3925 3200 1    50   ~ 0
+USB1_DM
+Wire Notes Line
+	2000 4000 4050 4000
+Wire Notes Line
+	4050 4000 4050 4950
+Wire Notes Line
+	4050 4950 2000 4950
+Wire Notes Line
+	2000 4950 2000 4000
+Text Notes 3075 4925 0    50   ~ 0
+ESD Protection Optional
+Wire Notes Line
+	8475 3025 8475 3900
+Wire Notes Line
+	8450 3900 6450 3900
+Wire Notes Line
+	6450 3900 6450 3025
+Wire Notes Line
+	6450 3025 8475 3025
+Text Notes 6525 3850 0    50   ~ 0
+ESD Protection Optional
+$EndSCHEMATC

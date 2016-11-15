@@ -1,0 +1,347 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wicker-lcd
+LIBS:wicker-efm8
+LIBS:lcd-hat-generic-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Generic LCD Hat using Silicon Labs EFM8 Busy Bee"
+Date "2016-02-10"
+Rev "v1"
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "Company: Wickerbox Electronics"
+Comment4 ""
+$EndDescr
+$Comp
+L EFM8BB1x-24QSOP U?
+U 1 1 56BBCBED
+P 4200 3575
+F 0 "U?" H 3800 4075 60  0000 L CNN
+F 1 "EFM8BB1x-24QSOP" H 3800 2725 60  0000 L CNN
+F 2 "" H 4200 3675 60  0000 C CNN
+F 3 "" H 4200 3675 60  0000 C CNN
+	1    4200 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7805 U?
+U 1 1 56BBCCDB
+P 2025 1325
+F 0 "U?" H 2025 1600 50  0000 C CNN
+F 1 "LM7805" H 2025 1525 50  0000 C CNN
+F 2 "" H 2025 1325 50  0000 C CNN
+F 3 "" H 2025 1325 50  0000 C CNN
+	1    2025 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR?
+U 1 1 56BBCD2E
+P 1525 1100
+F 0 "#PWR?" H 1525 950 50  0001 C CNN
+F 1 "+9V" H 1525 1240 50  0000 C CNN
+F 2 "" H 1525 1100 50  0000 C CNN
+F 3 "" H 1525 1100 50  0000 C CNN
+	1    1525 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56BBCD48
+P 2525 1100
+F 0 "#PWR?" H 2525 950 50  0001 C CNN
+F 1 "+5V" H 2525 1240 50  0000 C CNN
+F 2 "" H 2525 1100 50  0000 C CNN
+F 3 "" H 2525 1100 50  0000 C CNN
+	1    2525 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56BBCD80
+P 2025 1575
+F 0 "#PWR?" H 2025 1325 50  0001 C CNN
+F 1 "GND" H 2025 1425 50  0000 C CNN
+F 2 "" H 2025 1575 50  0000 C CNN
+F 3 "" H 2025 1575 50  0000 C CNN
+	1    2025 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 56BBCD9A
+P 1525 1475
+F 0 "C?" H 1535 1545 50  0000 L CNN
+F 1 "?" H 1535 1395 50  0000 L CNN
+F 2 "" H 1525 1475 50  0000 C CNN
+F 3 "" H 1525 1475 50  0000 C CNN
+	1    1525 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 56BBCE05
+P 2525 1475
+F 0 "C?" H 2535 1545 50  0000 L CNN
+F 1 "?" H 2535 1395 50  0000 L CNN
+F 2 "" H 2525 1475 50  0000 C CNN
+F 3 "" H 2525 1475 50  0000 C CNN
+	1    2525 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56BBCE42
+P 1525 1575
+F 0 "#PWR?" H 1525 1325 50  0001 C CNN
+F 1 "GND" H 1525 1425 50  0000 C CNN
+F 2 "" H 1525 1575 50  0000 C CNN
+F 3 "" H 1525 1575 50  0000 C CNN
+	1    1525 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56BBCE5C
+P 2525 1575
+F 0 "#PWR?" H 2525 1325 50  0001 C CNN
+F 1 "GND" H 2525 1425 50  0000 C CNN
+F 2 "" H 2525 1575 50  0000 C CNN
+F 3 "" H 2525 1575 50  0000 C CNN
+	1    2525 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L NCP1117ST33T3G U?
+U 1 1 56BBCE91
+P 3200 1325
+F 0 "U?" H 3200 1600 50  0000 C CNN
+F 1 "NCP1117DT33G" H 3200 1525 50  0000 C CNN
+F 2 "" H 3200 1325 50  0000 C CNN
+F 3 "" H 3200 1325 50  0000 C CNN
+	1    3200 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 56BBD239
+P 3950 1100
+F 0 "#PWR?" H 3950 950 50  0001 C CNN
+F 1 "+3.3V" H 3950 1240 50  0000 C CNN
+F 2 "" H 3950 1100 50  0000 C CNN
+F 3 "" H 3950 1100 50  0000 C CNN
+	1    3950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 56BBD269
+P 3950 1475
+F 0 "C?" H 3960 1545 50  0000 L CNN
+F 1 "?" H 3960 1395 50  0000 L CNN
+F 2 "" H 3950 1475 50  0000 C CNN
+F 3 "" H 3950 1475 50  0000 C CNN
+	1    3950 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56BBD2D8
+P 3200 1575
+F 0 "#PWR?" H 3200 1325 50  0001 C CNN
+F 1 "GND" H 3200 1425 50  0000 C CNN
+F 2 "" H 3200 1575 50  0000 C CNN
+F 3 "" H 3200 1575 50  0000 C CNN
+	1    3200 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56BBD2F8
+P 3950 1575
+F 0 "#PWR?" H 3950 1325 50  0001 C CNN
+F 1 "GND" H 3950 1425 50  0000 C CNN
+F 2 "" H 3950 1575 50  0000 C CNN
+F 3 "" H 3950 1575 50  0000 C CNN
+	1    3950 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 56BBD4F1
+P 900 1325
+F 0 "P?" H 900 1475 50  0000 C CNN
+F 1 "9V INPUT" V 1000 1325 50  0000 C CNN
+F 2 "" H 900 1325 50  0000 C CNN
+F 3 "" H 900 1325 50  0000 C CNN
+	1    900  1325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56BBD5C5
+P 1225 1575
+F 0 "#PWR?" H 1225 1325 50  0001 C CNN
+F 1 "GND" H 1225 1425 50  0000 C CNN
+F 2 "" H 1225 1575 50  0000 C CNN
+F 3 "" H 1225 1575 50  0000 C CNN
+	1    1225 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 56BBD9C6
+P 7275 3000
+F 0 "RV?" H 7275 2920 50  0000 C CNN
+F 1 "POT" H 7275 3000 50  0000 C CNN
+F 2 "" H 7275 3000 50  0000 C CNN
+F 3 "" H 7275 3000 50  0000 C CNN
+	1    7275 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56BBDA78
+P 7575 2475
+F 0 "#PWR?" H 7575 2325 50  0001 C CNN
+F 1 "+5V" H 7575 2615 50  0000 C CNN
+F 2 "" H 7575 2475 50  0000 C CNN
+F 3 "" H 7575 2475 50  0000 C CNN
+	1    7575 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 1100 1525 1375
+Wire Wire Line
+	1100 1275 1625 1275
+Wire Wire Line
+	2425 1275 2800 1275
+Wire Wire Line
+	2525 1100 2525 1375
+Connection ~ 2525 1275
+Connection ~ 1525 1275
+Wire Wire Line
+	3600 1275 3950 1275
+Wire Wire Line
+	3950 1100 3950 1375
+Connection ~ 3950 1275
+Wire Wire Line
+	1225 1275 1225 1275
+Wire Wire Line
+	1100 1375 1225 1375
+Wire Wire Line
+	1225 1375 1225 1575
+Wire Wire Line
+	7725 2675 7575 2675
+Wire Wire Line
+	7575 2475 7575 2775
+Wire Wire Line
+	7275 2775 7725 2775
+Connection ~ 7575 2675
+Wire Wire Line
+	7275 2775 7275 2850
+Connection ~ 7575 2775
+Wire Wire Line
+	7725 2875 7575 2875
+Wire Wire Line
+	7575 2875 7575 3000
+Wire Wire Line
+	7575 3000 7425 3000
+Wire Wire Line
+	7275 3150 7275 3175
+Wire Wire Line
+	7275 3175 7725 3175
+Wire Wire Line
+	7725 3075 7575 3075
+Wire Wire Line
+	7575 3075 7575 3325
+Connection ~ 7575 3175
+$Comp
+L GND #PWR?
+U 1 1 56BBDF3D
+P 7575 3325
+F 0 "#PWR?" H 7575 3075 50  0001 C CNN
+F 1 "GND" H 7575 3175 50  0000 C CNN
+F 2 "" H 7575 3325 50  0000 C CNN
+F 3 "" H 7575 3325 50  0000 C CNN
+	1    7575 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCD16x2_FUNC LCD?
+U 1 1 56BBE094
+P 8325 3575
+F 0 "LCD?" H 7875 4625 50  0000 L CNN
+F 1 "LCD16x2_FUNC" H 7875 2425 50  0000 L CNN
+F 2 "WC1602A" V 8175 3425 50  0000 C CIN
+F 3 "" V 8225 3625 50  0000 C CNN
+	1    8325 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7575 3275 7725 3275
+Connection ~ 7575 3275
+Wire Wire Line
+	3650 3225 3450 3225
+Wire Wire Line
+	3450 3225 3450 3025
+$Comp
+L +3.3V #PWR?
+U 1 1 56BBE4DA
+P 3450 3025
+F 0 "#PWR?" H 3450 2875 50  0001 C CNN
+F 1 "+3.3V" H 3450 3165 50  0000 C CNN
+F 2 "" H 3450 3025 50  0000 C CNN
+F 3 "" H 3450 3025 50  0000 C CNN
+	1    3450 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56BBE66A
+P 3500 4400
+F 0 "#PWR?" H 3500 4150 50  0001 C CNN
+F 1 "GND" H 3500 4250 50  0000 C CNN
+F 2 "" H 3500 4400 50  0000 C CNN
+F 3 "" H 3500 4400 50  0000 C CNN
+	1    3500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4275 3500 4275
+Wire Wire Line
+	3500 4275 3500 4400
+$EndSCHEMATC

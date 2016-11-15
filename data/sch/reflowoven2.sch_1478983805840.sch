@@ -1,0 +1,592 @@
+EESchema Schematic File Version 2
+LIBS:reflowoven2-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:reflowoven2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "lun. 30 mars 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_8 P1
+U 1 1 5517C2C1
+P 9725 1875
+F 0 "P1" V 9675 1875 60  0000 C CNN
+F 1 "Power" V 9775 1875 60  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" H 9725 1875 60  0001 C CNN
+F 3 "" H 9725 1875 60  0000 C CNN
+	1    9725 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_6 P2
+U 1 1 5517C323
+P 9725 2675
+F 0 "P2" V 9675 2675 60  0000 C CNN
+F 1 "Analog" V 9775 2675 60  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x06" H 9725 2675 60  0001 C CNN
+F 3 "" H 9725 2675 60  0000 C CNN
+	1    9725 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_8 P4
+U 1 1 5517C366
+P 10050 2575
+F 0 "P4" V 10000 2575 60  0000 C CNN
+F 1 "Digital" V 10100 2575 60  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" H 10050 2575 60  0001 C CNN
+F 3 "" H 10050 2575 60  0000 C CNN
+	1    10050 2575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_10 P3
+U 1 1 5517C46C
+P 10050 1575
+F 0 "P3" V 10000 1575 60  0000 C CNN
+F 1 "Digital" V 10100 1575 60  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x10" H 10050 1575 60  0001 C CNN
+F 3 "" H 10050 1575 60  0000 C CNN
+	1    10050 1575
+	-1   0    0    -1  
+$EndComp
+Text Label 8625 1725 0    60   ~ 0
+Reset
+Text Label 8925 1350 1    60   ~ 0
+Vin
+Text Label 9300 1350 1    60   ~ 0
+IOREF
+Text Label 8625 2425 0    60   ~ 0
+A0
+Text Label 8625 2525 0    60   ~ 0
+A1
+Text Label 8625 2625 0    60   ~ 0
+A2
+Text Label 8625 2725 0    60   ~ 0
+A3
+Text Label 8625 2825 0    60   ~ 0
+A4(SDA)
+Text Label 8625 2925 0    60   ~ 0
+A5(SCL)
+Text Label 10550 2925 0    60   ~ 0
+0(Rx)
+Text Label 10550 2725 0    60   ~ 0
+2
+Text Label 10550 2825 0    60   ~ 0
+1(Tx)
+Text Label 10550 2625 0    60   ~ 0
+3(**)
+Text Label 10550 2525 0    60   ~ 0
+4
+Text Label 10550 2425 0    60   ~ 0
+SSR
+Text Label 10550 2325 0    60   ~ 0
+6(**)
+Text Label 10550 2225 0    60   ~ 0
+START_STOP
+Text Label 10550 2025 0    60   ~ 0
+8
+Text Label 10550 1925 0    60   ~ 0
+9(**)
+Text Label 10550 1825 0    60   ~ 0
+SS
+Text Label 10550 1725 0    60   ~ 0
+11(**/MOSI)
+Text Label 10550 1625 0    60   ~ 0
+MISO
+Text Label 10550 1525 0    60   ~ 0
+SCK
+Text Label 10625 1325 0    60   ~ 0
+AREF
+$Comp
+L GND-RESCUE-reflowoven2 #PWR01
+U 1 1 5517CC27
+P 10475 3100
+F 0 "#PWR01" H 10475 3100 30  0001 C CNN
+F 1 "GND" H 10475 3030 30  0001 C CNN
+F 2 "" H 10475 3100 60  0000 C CNN
+F 3 "" H 10475 3100 60  0000 C CNN
+	1    10475 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflowoven2 #PWR02
+U 1 1 5517CC7B
+P 9300 3100
+F 0 "#PWR02" H 9300 3100 30  0001 C CNN
+F 1 "GND" H 9300 3030 30  0001 C CNN
+F 2 "" H 9300 3100 60  0000 C CNN
+F 3 "" H 9300 3100 60  0000 C CNN
+	1    9300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 5517CCC2
+P 9050 1350
+F 0 "#PWR03" H 9050 1440 20  0001 C CNN
+F 1 "+5V" H 9050 1440 30  0000 C CNN
+F 2 "" H 9050 1350 60  0000 C CNN
+F 3 "" H 9050 1350 60  0000 C CNN
+	1    9050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-reflowoven2 #PWR04
+U 1 1 5517CCDA
+P 9175 1350
+F 0 "#PWR04" H 9175 1310 30  0001 C CNN
+F 1 "+3.3V" H 9175 1460 30  0000 C CNN
+F 2 "" H 9175 1350 60  0000 C CNN
+F 3 "" H 9175 1350 60  0000 C CNN
+	1    9175 1350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9375 1525
+Text Label 10550 1225 0    60   ~ 0
+A4(SDA)
+Text Label 10550 1125 0    60   ~ 0
+A5(SCL)
+$Comp
+L CONN_1 P5
+U 1 1 551BBC06
+P 10875 650
+F 0 "P5" H 10955 650 40  0000 L CNN
+F 1 "CONN_1" H 10875 705 30  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 10875 650 60  0001 C CNN
+F 3 "" H 10875 650 60  0000 C CNN
+	1    10875 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_1 P6
+U 1 1 551BBD10
+P 10950 650
+F 0 "P6" H 11030 650 40  0000 L CNN
+F 1 "CONN_1" H 10950 705 30  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 10950 650 60  0001 C CNN
+F 3 "" H 10950 650 60  0000 C CNN
+	1    10950 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_1 P7
+U 1 1 551BBD30
+P 11025 650
+F 0 "P7" H 11105 650 40  0000 L CNN
+F 1 "CONN_1" H 11025 705 30  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 11025 650 60  0001 C CNN
+F 3 "" H 11025 650 60  0000 C CNN
+	1    11025 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_1 P8
+U 1 1 551BBD52
+P 11100 650
+F 0 "P8" H 11180 650 40  0000 L CNN
+F 1 "CONN_1" H 11100 705 30  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 11100 650 60  0001 C CNN
+F 3 "" H 11100 650 60  0000 C CNN
+	1    11100 650 
+	0    -1   -1   0   
+$EndComp
+Text Notes 10875 925  0    60   ~ 0
+Holes
+NoConn ~ 10875 800 
+NoConn ~ 10950 800 
+NoConn ~ 11025 800 
+NoConn ~ 11100 800 
+Wire Wire Line
+	8600 2425 9375 2425
+Wire Wire Line
+	8600 2525 9375 2525
+Wire Wire Line
+	8600 2625 9375 2625
+Wire Wire Line
+	8600 2725 9375 2725
+Wire Wire Line
+	8600 2825 9375 2825
+Wire Wire Line
+	8600 2925 9375 2925
+Wire Wire Line
+	10400 2025 11125 2025
+Wire Wire Line
+	10400 1925 11125 1925
+Wire Wire Line
+	10400 1825 11125 1825
+Wire Wire Line
+	10400 1725 11125 1725
+Wire Wire Line
+	10400 1625 11125 1625
+Wire Wire Line
+	10400 1525 11125 1525
+Wire Wire Line
+	10400 1325 11125 1325
+Wire Wire Line
+	10400 1225 11125 1225
+Wire Wire Line
+	10400 1125 11125 1125
+Wire Wire Line
+	9175 1825 9375 1825
+Wire Wire Line
+	9050 1925 9375 1925
+Wire Wire Line
+	9300 2025 9300 3100
+Wire Wire Line
+	8600 1725 9375 1725
+Wire Wire Line
+	10475 1425 10475 3100
+Wire Wire Line
+	10475 1425 10400 1425
+Wire Wire Line
+	10400 2425 11125 2425
+Wire Wire Line
+	10400 2325 11125 2325
+Wire Wire Line
+	10400 2225 11125 2225
+Wire Wire Line
+	10400 2725 11125 2725
+Wire Wire Line
+	10400 2625 11125 2625
+Wire Wire Line
+	10400 2525 11125 2525
+Wire Wire Line
+	10400 2925 11125 2925
+Wire Wire Line
+	10400 2825 11125 2825
+Wire Wire Line
+	9175 1825 9175 1350
+Wire Wire Line
+	9300 1350 9300 1625
+Wire Wire Line
+	9300 1625 9375 1625
+Wire Wire Line
+	9050 1350 9050 1925
+Wire Wire Line
+	8925 1350 8925 2225
+Wire Wire Line
+	8925 2225 9375 2225
+Wire Wire Line
+	9300 2025 9375 2025
+Wire Wire Line
+	9375 2125 9300 2125
+Connection ~ 9300 2125
+Wire Notes Line
+	11225 975  10775 975 
+Wire Notes Line
+	10775 975  10775 475 
+Wire Notes Line
+	11225 3225 8525 3225
+Wire Notes Line
+	8525 3225 8525 475 
+Wire Notes Line
+	8525 825  9925 825 
+Text Notes 8550 750  0    60   ~ 0
+Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
+Wire Notes Line
+	9925 825  9925 475 
+$Comp
+L CONN_01X06 P9
+U 1 1 55718D7E
+P 5040 3513
+F 0 "P9" H 5040 3863 50  0000 C CNN
+F 1 "type K thermocouple" H 5180 3142 50  0000 C CNN
+F 2 "" H 5040 3513 60  0000 C CNN
+F 3 "" H 5040 3513 60  0000 C CNN
+	1    5040 3513
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-reflowoven2 R3
+U 1 1 55718E68
+P 4384 2898
+F 0 "R3" V 4464 2898 40  0000 C CNN
+F 1 "4.7K" V 4391 2899 40  0000 C CNN
+F 2 "" V 4314 2898 30  0000 C CNN
+F 3 "" H 4384 2898 30  0000 C CNN
+	1    4384 2898
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-reflowoven2 R4
+U 1 1 55719033
+P 4384 3504
+F 0 "R4" V 4464 3504 40  0000 C CNN
+F 1 "2.2K" V 4391 3505 40  0000 C CNN
+F 2 "" V 4314 3504 30  0000 C CNN
+F 3 "" H 4384 3504 30  0000 C CNN
+	1    4384 3504
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-reflowoven2 R1
+U 1 1 557190D6
+P 4080 3669
+F 0 "R1" V 4160 3669 40  0000 C CNN
+F 1 "4.7K" V 4087 3670 40  0000 C CNN
+F 2 "" V 4010 3669 30  0000 C CNN
+F 3 "" H 4080 3669 30  0000 C CNN
+	1    4080 3669
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-reflowoven2 R2
+U 1 1 557191A1
+P 4080 4283
+F 0 "R2" V 4160 4283 40  0000 C CNN
+F 1 "2.2K" V 4087 4284 40  0000 C CNN
+F 2 "" V 4010 4283 30  0000 C CNN
+F 3 "" H 4080 4283 30  0000 C CNN
+	1    4080 4283
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflowoven2 #PWR05
+U 1 1 55719206
+P 4384 5100
+F 0 "#PWR05" H 4384 5100 30  0001 C CNN
+F 1 "GND" H 4384 5030 30  0001 C CNN
+F 2 "" H 4384 5100 60  0000 C CNN
+F 3 "" H 4384 5100 60  0000 C CNN
+	1    4384 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflowoven2 #PWR06
+U 1 1 5571921A
+P 4755 3663
+F 0 "#PWR06" H 4755 3663 30  0001 C CNN
+F 1 "GND" H 4755 3593 30  0001 C CNN
+F 2 "" H 4755 3663 60  0000 C CNN
+F 3 "" H 4755 3663 60  0000 C CNN
+	1    4755 3663
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V-RESCUE-reflowoven2 #PWR07
+U 1 1 557192EF
+P 4755 3763
+F 0 "#PWR07" H 4755 3723 30  0001 C CNN
+F 1 "+3.3V" V 4705 3830 30  0000 C CNN
+F 2 "" H 4755 3763 60  0000 C CNN
+F 3 "" H 4755 3763 60  0000 C CNN
+	1    4755 3763
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X02 P10
+U 1 1 557195FD
+P 6360 3324
+F 0 "P10" H 6360 3474 50  0000 C CNN
+F 1 "SSR" V 6460 3324 50  0000 C CNN
+F 2 "" H 6360 3324 60  0000 C CNN
+F 3 "" H 6360 3324 60  0000 C CNN
+	1    6360 3324
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P11
+U 1 1 5571976E
+P 6362 3684
+F 0 "P11" H 6362 3834 50  0000 C CNN
+F 1 "SSR" V 6462 3684 50  0000 C CNN
+F 2 "" H 6362 3684 60  0000 C CNN
+F 3 "" H 6362 3684 60  0000 C CNN
+	1    6362 3684
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-reflowoven2 #PWR08
+U 1 1 55719835
+P 6024 3906
+F 0 "#PWR08" H 6024 3906 30  0001 C CNN
+F 1 "GND" H 6024 3836 30  0001 C CNN
+F 2 "" H 6024 3906 60  0000 C CNN
+F 3 "" H 6024 3906 60  0000 C CNN
+	1    6024 3906
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6160 3374 6024 3374
+Wire Wire Line
+	6024 3374 6024 3906
+Wire Wire Line
+	6162 3734 6024 3734
+Connection ~ 6024 3734
+Wire Wire Line
+	6162 3634 5788 3634
+Wire Wire Line
+	6160 3274 5784 3274
+Wire Wire Line
+	4840 3663 4755 3663
+Wire Wire Line
+	4840 3763 4755 3763
+Wire Wire Line
+	4840 3363 4695 3363
+Wire Wire Line
+	4384 3754 4384 5100
+Wire Wire Line
+	4080 3919 4080 4033
+Wire Wire Line
+	4080 4533 4080 4592
+Wire Wire Line
+	4080 4592 4384 4592
+Connection ~ 4384 4592
+Wire Wire Line
+	4384 3148 4384 3254
+Wire Wire Line
+	4080 3419 4080 2640
+Wire Wire Line
+	4080 2640 3804 2640
+Wire Wire Line
+	4384 2648 4384 2536
+Wire Wire Line
+	4384 2536 3804 2536
+Wire Wire Line
+	4840 3263 4780 3263
+Wire Wire Line
+	4780 3263 4780 3200
+Wire Wire Line
+	4780 3200 4384 3200
+Connection ~ 4384 3200
+Wire Wire Line
+	4840 3563 4558 3563
+Wire Wire Line
+	4558 3563 4558 3978
+Wire Wire Line
+	4558 3978 4080 3978
+Connection ~ 4080 3978
+Text Label 5863 3274 2    60   ~ 0
+SSR
+Text Label 5861 3634 2    60   ~ 0
+SSR
+Text Label 4791 3363 2    60   ~ 0
+MISO
+Text Label 3896 2640 2    60   ~ 0
+SS
+Text Label 3911 2536 2    60   ~ 0
+SCK
+$Comp
+L SW_PUSH SW1
+U 1 1 558117F5
+P 7262 4040
+F 0 "SW1" H 7412 4150 50  0000 C CNN
+F 1 "SW_PUSH" H 7262 3960 50  0000 C CNN
+F 2 "" H 7262 4040 60  0000 C CNN
+F 3 "" H 7262 4040 60  0000 C CNN
+	1    7262 4040
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 55811A68
+P 7262 3429
+F 0 "R5" V 7342 3429 50  0000 C CNN
+F 1 "330" V 7262 3429 50  0000 C CNN
+F 2 "" V 7192 3429 30  0000 C CNN
+F 3 "" H 7262 3429 30  0000 C CNN
+	1    7262 3429
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7262 3740 7262 3579
+Wire Wire Line
+	7262 3089 7262 3279
+Wire Wire Line
+	7262 4340 7262 4732
+Wire Wire Line
+	7262 4732 7026 4732
+Text Label 7149 4732 2    60   ~ 0
+START_STOP
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 5581256E
+P 7623 3080
+F 0 "#FLG09" H 7623 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 7623 3260 50  0000 C CNN
+F 2 "" H 7623 3080 60  0000 C CNN
+F 3 "" H 7623 3080 60  0000 C CNN
+	1    7623 3080
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4840 3463
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 55812807
+P 8566 5604
+F 0 "#FLG010" H 8566 5699 50  0001 C CNN
+F 1 "PWR_FLAG" H 8566 5784 50  0000 C CNN
+F 2 "" H 8566 5604 60  0000 C CNN
+F 3 "" H 8566 5604 60  0000 C CNN
+	1    8566 5604
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 55812870
+P 8566 5670
+F 0 "#PWR011" H 8566 5420 50  0001 C CNN
+F 1 "GND" H 8566 5520 50  0000 C CNN
+F 2 "" H 8566 5670 60  0000 C CNN
+F 3 "" H 8566 5670 60  0000 C CNN
+	1    8566 5670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8566 5604 8566 5670
+Wire Wire Line
+	7623 3080 7623 3190
+Wire Wire Line
+	7623 3190 7262 3190
+Connection ~ 7262 3190
+$Comp
+L +3.3V-RESCUE-reflowoven2 #PWR012
+U 1 1 5581365B
+P 7262 3089
+F 0 "#PWR012" H 7262 3049 30  0001 C CNN
+F 1 "+3.3V" H 7262 3199 30  0000 C CNN
+F 2 "" H 7262 3089 60  0000 C CNN
+F 3 "" H 7262 3089 60  0000 C CNN
+	1    7262 3089
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

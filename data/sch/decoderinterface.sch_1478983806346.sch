@@ -1,0 +1,1138 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:pyth
+LIBS:decoderinterface-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Track/Loconet decoder interface"
+Date "16/11/2015"
+Rev "1"
+Comp "Pythsoft"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LTV-817 U103
+U 1 1 5649F43F
+P 4050 5350
+F 0 "U103" H 3850 5550 50  0000 L CNN
+F 1 "LTV-817" H 4050 5550 50  0000 L CNN
+F 2 "Kicad_Library:LTV_354" H 3850 5150 50  0000 L CIN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 4050 5250 50  0000 L CNN
+F 4 "LITEON" H 4050 5350 60  0000 C CNN "MFN"
+F 5 "LTV-817S-V" H 4050 5350 60  0000 C CNN "MFP"
+F 6 "SMD DIP8" H 4050 5350 60  0000 C CNN "Package ID"
+F 7 "Value" H 4050 5350 60  0001 C CNN "Fieldname"
+	1    4050 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R103
+U 1 1 5649F996
+P 4650 5250
+F 0 "R103" V 4730 5250 50  0000 C CNN
+F 1 "1k" V 4650 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4580 5250 30  0001 C CNN
+F 3 "" H 4650 5250 30  0000 C CNN
+	1    4650 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5649F9C3
+P 4450 5550
+F 0 "#PWR01" H 4450 5300 50  0001 C CNN
+F 1 "GND" H 4450 5400 50  0000 C CNN
+F 2 "" H 4450 5550 60  0000 C CNN
+F 3 "" H 4450 5550 60  0000 C CNN
+	1    4450 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 6N137 U102
+U 1 1 5649FA27
+P 4050 2400
+F 0 "U102" H 3850 2700 50  0000 L CNN
+F 1 "6N137" H 4050 2700 50  0000 L CNN
+F 2 "SMD_Packages:DIP-8_SMD" H 3850 2100 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1994685.pdf" H 4000 2400 50  0001 L CNN
+F 4 "FAIRCHILD SEMICONDUCTOR" H 4050 2400 60  0001 C CNN "MFN"
+F 5 "6N137SDM" H 4050 2400 60  0001 C CNN "MFP"
+F 6 "2322504" H 4050 2400 60  0001 C CNN "S1PN"
+F 7 "http://nl.farnell.com/fairchild-semiconductor/6n137sdm/opto-cplr-logic-gate-o-p-5kv-smd/dp/2322504" H 4050 2400 60  0001 C CNN "S1PL"
+F 8 "Data Rate: 	10MbpsIsolation Voltage: 	2.5kVNo. of Channels: 	1No. of Pins: 	8Optocoupler Case Style: 	Surface Mount DIPPackaging: 	EachSVHC: 	No SVHC (15-Jun-2015)" H 4050 2400 60  0001 C CNN "Characteristics"
+F 9 "OPTO CPLR, LOGIC GATE O/P, 5KV, SMD-8" H 4050 2400 60  0001 C CNN "Description"
+F 10 "Surface Mount Dip 8" H 4050 2400 60  0001 C CNN "Package ID"
+F 11 "Value" H 4050 2400 60  0001 C CNN "Fieldname"
+	1    4050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAV199 D101
+U 1 1 5649FECD
+P 2400 5400
+F 0 "D101" H 2300 5250 60  0000 C CNN
+F 1 "BAV199" H 2400 5500 60  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23_Handsoldering" H 2400 5400 60  0001 C CNN
+F 3 "" H 2400 5400 60  0000 C CNN
+F 4 "NXP" H 2400 5400 60  0000 C CNN "MFN"
+F 5 "BAV99W,115" H 2400 5400 60  0000 C CNN "MFP"
+F 6 "1081212" H 2400 5400 60  0000 C CNN "S1PN"
+F 7 "http://nl.farnell.com/nxp/bav99w-115/diode-dual-0-15a-100v-sot-323/dp/1081212" H 2400 5400 60  0000 C CNN "S1PL"
+F 8 "Value" H 2400 5400 60  0001 C CNN "Fieldname"
+	1    2400 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BC857 Q101
+U 1 1 5649FFFD
+P 3450 5450
+F 0 "Q101" H 3650 5525 50  0000 L CNN
+F 1 "BC857" H 3650 5450 50  0000 L CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 3650 5375 50  0000 L CIN
+F 3 "" H 3450 5450 50  0000 L CNN
+	1    3450 5450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R101
+U 1 1 564A0083
+P 3150 5800
+F 0 "R101" V 3230 5800 50  0000 C CNN
+F 1 "100" V 3150 5800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3080 5800 30  0001 C CNN
+F 3 "" H 3150 5800 30  0000 C CNN
+	1    3150 5800
+	0    1    1    0   
+$EndComp
+Text GLabel 2500 5150 1    60   Output ~ 0
+Track_O
+Text GLabel 2900 5150 1    60   Output ~ 0
+Track_B
+$Comp
+L SOLDER_JUMPER_CONN J103
+U 1 1 564A03AC
+P 4600 2300
+F 0 "J103" H 4600 2150 60  0000 C CNN
+F 1 "SOLDER_JUMPER_CONN" H 4650 2450 60  0001 C CNN
+F 2 "Other:solder_jumper_conn" H 4550 2400 60  0001 C CNN
+F 3 "" H 4550 2400 60  0000 C CNN
+	1    4600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 564A04CC
+P 4400 2650
+F 0 "#PWR02" H 4400 2400 50  0001 C CNN
+F 1 "GND" H 4400 2500 50  0000 C CNN
+F 2 "" H 4400 2650 60  0000 C CNN
+F 3 "" H 4400 2650 60  0000 C CNN
+	1    4400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 564A05BE
+P 4800 2150
+F 0 "#PWR03" H 4800 2000 50  0001 C CNN
+F 1 "VCC" H 4800 2300 50  0000 C CNN
+F 2 "" H 4800 2150 60  0000 C CNN
+F 3 "" H 4800 2150 60  0000 C CNN
+	1    4800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R108
+U 1 1 564A063D
+P 4900 2350
+F 0 "R108" V 4980 2350 50  0000 C CNN
+F 1 "10k" V 4900 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4830 2350 30  0001 C CNN
+F 3 "" H 4900 2350 30  0000 C CNN
+	1    4900 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 2500 2    60   Output ~ 0
+tracksignal
+$Comp
+L D_Small D104
+U 1 1 564A07B8
+P 3600 2400
+F 0 "D104" H 3550 2480 50  0000 L CNN
+F 1 "1N4148" H 3450 2320 50  0000 L CNN
+F 2 "Diodes_SMD:Diode-Universal-SMA-SMB_Handsoldering" V 3600 2400 60  0001 C CNN
+F 3 "" V 3600 2400 60  0000 C CNN
+	1    3600 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R102
+U 1 1 564A08B8
+P 3400 2200
+F 0 "R102" V 3480 2200 50  0000 C CNN
+F 1 "1k5" V 3400 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3330 2200 30  0001 C CNN
+F 3 "" H 3400 2200 30  0000 C CNN
+	1    3400 2200
+	0    1    1    0   
+$EndComp
+Text GLabel 3150 2200 0    60   Input ~ 0
+Track_O
+Text GLabel 3150 2600 0    60   Input ~ 0
+Track_B
+Text GLabel 4900 5250 2    60   Input ~ 0
+ack
+$Comp
+L D_Small D103
+U 1 1 564A0BED
+P 3300 1200
+F 0 "D103" H 3250 1280 50  0000 L CNN
+F 1 "D_Small" H 3150 1120 50  0000 L CNN
+F 2 "Diodes_SMD:Diode-Universal-SMA-SMB_Handsoldering" V 3300 1200 60  0001 C CNN
+F 3 "" V 3300 1200 60  0000 C CNN
+	1    3300 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM1117 U104
+U 1 1 564A0C43
+P 4150 1300
+F 0 "U104" H 4300 1700 60  0000 C CNN
+F 1 "LM1117" H 4150 1550 60  0000 C CNN
+F 2 "Kicad_Library:SOT-223" H 4150 1300 60  0001 C CNN
+F 3 "" H 4150 1300 60  0000 C CNN
+F 4 "9778209" H 4150 1300 60  0000 C CNN "S1PN"
+F 5 "Value" H 4150 1300 60  0001 C CNN "Fieldname"
+	1    4150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP C101
+U 1 1 564A0C8C
+P 3500 1450
+F 0 "C101" H 3750 1500 60  0000 C CNN
+F 1 "CAP" H 3750 1400 60  0000 C CNN
+F 2 "Capacitors_SMD:c_elec_5x4.5" H 3500 1450 60  0001 C CNN
+F 3 "" H 3500 1450 60  0000 C CNN
+	1    3500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 564A0CF2
+P 4150 1900
+F 0 "#PWR04" H 4150 1650 50  0001 C CNN
+F 1 "GND" H 4150 1750 50  0000 C CNN
+F 2 "" H 4150 1900 60  0000 C CNN
+F 3 "" H 4150 1900 60  0000 C CNN
+	1    4150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 564A0D36
+P 4750 1150
+F 0 "#PWR05" H 4750 1000 50  0001 C CNN
+F 1 "VCC" H 4750 1300 50  0000 C CNN
+F 2 "" H 4750 1150 60  0000 C CNN
+F 3 "" H 4750 1150 60  0000 C CNN
+	1    4750 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 1850 0    60   Input ~ 0
+Track_B
+Text GLabel 2600 1200 0    60   Input ~ 0
+Track_O
+$Comp
+L SOLDER_JUMPER_CONN J102
+U 1 1 564A10EA
+P 2800 1850
+F 0 "J102" H 2800 1700 60  0000 C CNN
+F 1 "SOLDER_JUMPER_CONN" H 2850 2000 60  0001 C CNN
+F 2 "Other:solder_jumper_conn" H 2750 1950 60  0001 C CNN
+F 3 "" H 2750 1950 60  0000 C CNN
+	1    2800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SOLDER_JUMPER_CONN J101
+U 1 1 564A117F
+P 2800 1200
+F 0 "J101" H 2950 1300 60  0000 C CNN
+F 1 "SOLDER_JUMPER_CONN" H 2850 1350 60  0001 C CNN
+F 2 "Other:solder_jumper_conn" H 2750 1300 60  0001 C CNN
+F 3 "" H 2750 1300 60  0000 C CNN
+	1    2800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPTO-TRANSISTOR-4 U101
+U 1 1 564A3516
+P 4000 3150
+F 0 "U101" H 3800 3350 50  0000 L CNN
+F 1 "OPTO-TRANSISTOR-4" H 3800 2950 50  0000 L CNN
+F 2 "Kicad_Library:HalfPitchMiniFlatPackage" H 3800 2950 50  0001 L CIN
+F 3 "" H 4000 3150 50  0000 L CNN
+F 4 "Vishay" H 4000 3150 60  0000 C CNN "MFN"
+F 5 "TCMT4100" H 4000 3150 60  0000 C CNN "MFP"
+F 6 "SOP-16" H 4000 3150 60  0000 C CNN "Package ID"
+F 7 "Value" H 4000 3150 60  0001 C CNN "Fieldname"
+	1    4000 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L OPTO-TRANSISTOR-4 U101
+U 2 1 564A35EE
+P 4000 3650
+F 0 "U101" H 3800 3850 50  0000 L CNN
+F 1 "OPTO-TRANSISTOR-4" H 3800 3450 50  0000 L CNN
+F 2 "Kicad_Library:HalfPitchMiniFlatPackage" H 3800 3450 50  0001 L CIN
+F 3 "" H 4000 3650 50  0000 L CNN
+	2    4000 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L OPTO-TRANSISTOR-4 U101
+U 3 1 564A3676
+P 4000 4150
+F 0 "U101" H 3800 4350 50  0000 L CNN
+F 1 "OPTO-TRANSISTOR-4" H 3800 3950 50  0000 L CNN
+F 2 "Kicad_Library:HalfPitchMiniFlatPackage" H 3800 3950 50  0001 L CIN
+F 3 "" H 4000 4150 50  0000 L CNN
+	3    4000 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L OPTO-TRANSISTOR-4 U101
+U 4 1 564A3717
+P 4000 4650
+F 0 "U101" H 3800 4850 50  0000 L CNN
+F 1 "OPTO-TRANSISTOR-4" H 3800 4450 50  0000 L CNN
+F 2 "Kicad_Library:HalfPitchMiniFlatPackage" H 3800 4450 50  0001 L CIN
+F 3 "" H 4000 4650 50  0000 L CNN
+	4    4000 4650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5150 3050 2    60   Input ~ 0
+FB1
+Text GLabel 5150 3550 2    60   Input ~ 0
+FB2
+Text GLabel 5150 4050 2    60   Input ~ 0
+FB3
+Text GLabel 5150 4550 2    60   Input ~ 0
+FB4
+$Comp
+L R R104
+U 1 1 564A3ADE
+P 4750 3050
+F 0 "R104" V 4830 3050 50  0000 C CNN
+F 1 "1k" V 4750 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4680 3050 30  0001 C CNN
+F 3 "" H 4750 3050 30  0000 C CNN
+	1    4750 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R105
+U 1 1 564A3B38
+P 4750 3550
+F 0 "R105" V 4830 3550 50  0000 C CNN
+F 1 "1k" V 4750 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4680 3550 30  0001 C CNN
+F 3 "" H 4750 3550 30  0000 C CNN
+	1    4750 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R106
+U 1 1 564A3BAB
+P 4750 4050
+F 0 "R106" V 4830 4050 50  0000 C CNN
+F 1 "1k" V 4750 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4680 4050 30  0001 C CNN
+F 3 "" H 4750 4050 30  0000 C CNN
+	1    4750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R107
+U 1 1 564A3C7F
+P 4750 4550
+F 0 "R107" V 4830 4550 50  0000 C CNN
+F 1 "1k" V 4750 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4680 4550 30  0001 C CNN
+F 3 "" H 4750 4550 30  0000 C CNN
+	1    4750 4550
+	0    1    1    0   
+$EndComp
+Text GLabel 3650 5000 0    60   Input ~ 0
+FBO_COMMON
+Text GLabel 3250 3050 0    60   Output ~ 0
+FBO1
+Text GLabel 3250 3550 0    60   Output ~ 0
+FBO2
+Text GLabel 3250 4050 0    60   Output ~ 0
+FBO3
+Text GLabel 3250 4550 0    60   Output ~ 0
+FBO4
+Text GLabel 2550 1550 0    60   Input ~ 0
+DC_GND
+Text GLabel 2550 1450 0    60   Input ~ 0
+DC_PLUS
+$Comp
+L Arduino_Pro_Micro U105
+U 1 1 564ACCD8
+P 8200 2600
+F 0 "U105" H 8500 3350 60  0000 C CNN
+F 1 "Arduino_Pro_Micro" H 8200 1900 60  0000 C CNN
+F 2 "Kicad_Library:Arduino_Pro_Micro" H 8200 2600 60  0001 C CNN
+F 3 "" H 8200 2600 60  0000 C CNN
+	1    8200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P101
+U 1 1 564ACD75
+P 6900 5350
+F 0 "P101" H 6900 5500 50  0000 C CNN
+F 1 "CONN_01X02" V 7000 5350 50  0000 C CNN
+F 2 "Kicad_Library:2PIN_Screw_Block" H 6900 5350 60  0001 C CNN
+F 3 "" H 6900 5350 60  0000 C CNN
+	1    6900 5350
+	-1   0    0    1   
+$EndComp
+Text GLabel 7200 5300 2    60   Output ~ 0
+Track_O
+Text GLabel 7200 5400 2    60   Output ~ 0
+Track_B
+$Comp
+L BARREL_JACK CON101
+U 1 1 564ACF62
+P 7100 4700
+F 0 "CON101" H 7100 4950 60  0000 C CNN
+F 1 "BARREL_JACK" H 7100 4500 60  0000 C CNN
+F 2 "Connect:BARREL_JACK" H 7100 4700 60  0001 C CNN
+F 3 "" H 7100 4700 60  0000 C CNN
+	1    7100 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 4800 2    60   Output ~ 0
+DC_GND
+Text GLabel 7600 4600 2    60   Output ~ 0
+DC_PLUS
+$Comp
+L GND #PWR06
+U 1 1 564AD560
+P 7600 3250
+F 0 "#PWR06" H 7600 3000 50  0001 C CNN
+F 1 "GND" H 7600 3100 50  0000 C CNN
+F 2 "" H 7600 3250 60  0000 C CNN
+F 3 "" H 7600 3250 60  0000 C CNN
+	1    7600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 564AD698
+P 7500 1850
+F 0 "#PWR07" H 7500 1700 50  0001 C CNN
+F 1 "VCC" H 7500 2000 50  0000 C CNN
+F 2 "" H 7500 1850 60  0000 C CNN
+F 3 "" H 7500 1850 60  0000 C CNN
+	1    7500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 564AD700
+P 8750 3250
+F 0 "#PWR08" H 8750 3000 50  0001 C CNN
+F 1 "GND" H 8750 3100 50  0000 C CNN
+F 2 "" H 8750 3250 60  0000 C CNN
+F 3 "" H 8750 3250 60  0000 C CNN
+	1    8750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5250 2400 5200
+Wire Wire Line
+	2400 5200 3750 5200
+Wire Wire Line
+	3750 5200 3750 5250
+Wire Wire Line
+	3350 5250 3350 5200
+Connection ~ 3350 5200
+Wire Wire Line
+	3650 5450 3750 5450
+Wire Wire Line
+	3350 5650 3350 5800
+Wire Wire Line
+	3350 5800 3300 5800
+Wire Wire Line
+	2400 5800 3000 5800
+Wire Wire Line
+	2800 5800 2800 5700
+Wire Wire Line
+	2400 5800 2400 5550
+Connection ~ 2800 5800
+Wire Wire Line
+	2800 5400 2800 5200
+Connection ~ 2800 5200
+Wire Wire Line
+	2900 5150 2900 5550
+Wire Wire Line
+	2500 5400 2500 5150
+Wire Wire Line
+	4450 3250 4450 5550
+Wire Wire Line
+	4450 5450 4350 5450
+Wire Wire Line
+	4500 5250 4350 5250
+Wire Wire Line
+	4450 2300 4350 2300
+Wire Wire Line
+	4350 2200 4900 2200
+Wire Wire Line
+	4800 2150 4800 2300
+Wire Wire Line
+	4400 2650 4400 2600
+Wire Wire Line
+	4400 2600 4350 2600
+Connection ~ 4800 2200
+Wire Wire Line
+	4350 2500 5000 2500
+Connection ~ 4900 2500
+Wire Wire Line
+	3750 2500 3600 2500
+Wire Wire Line
+	3600 2300 3750 2300
+Wire Wire Line
+	3550 2200 3600 2200
+Wire Wire Line
+	3600 2200 3600 2300
+Wire Wire Line
+	3150 2600 3600 2600
+Wire Wire Line
+	3600 2600 3600 2500
+Wire Wire Line
+	3250 2200 3150 2200
+Wire Wire Line
+	4900 5250 4800 5250
+Wire Wire Line
+	4750 1150 4750 1200
+Wire Wire Line
+	4750 1200 4700 1200
+Wire Wire Line
+	4150 1900 4150 1800
+Wire Wire Line
+	3000 1850 4150 1850
+Wire Wire Line
+	3500 1850 3500 1600
+Connection ~ 4150 1850
+Wire Wire Line
+	3500 1250 3500 1200
+Wire Wire Line
+	3400 1200 3650 1200
+Connection ~ 3500 1200
+Wire Wire Line
+	3000 1200 3200 1200
+Connection ~ 3500 1850
+Connection ~ 3100 1200
+Wire Wire Line
+	2550 1550 3100 1550
+Wire Wire Line
+	2550 1450 3100 1450
+Wire Wire Line
+	2600 1200 2650 1200
+Wire Wire Line
+	3100 1550 3100 1850
+Connection ~ 3100 1850
+Wire Wire Line
+	3100 1450 3100 1200
+Wire Wire Line
+	4300 4750 4450 4750
+Connection ~ 4450 5450
+Wire Wire Line
+	4300 4250 4450 4250
+Connection ~ 4450 4750
+Wire Wire Line
+	4300 3750 4450 3750
+Connection ~ 4450 4250
+Wire Wire Line
+	4300 3250 4450 3250
+Connection ~ 4450 3750
+Wire Wire Line
+	4900 4550 5150 4550
+Wire Wire Line
+	4900 4050 5150 4050
+Wire Wire Line
+	4900 3550 5150 3550
+Wire Wire Line
+	4900 3050 5150 3050
+Wire Wire Line
+	4600 3050 4300 3050
+Wire Wire Line
+	4600 3550 4300 3550
+Wire Wire Line
+	4600 4050 4300 4050
+Wire Wire Line
+	4600 4550 4300 4550
+Wire Wire Line
+	3650 3250 3650 5000
+Wire Wire Line
+	3650 4750 3700 4750
+Wire Wire Line
+	3650 4250 3700 4250
+Connection ~ 3650 4750
+Wire Wire Line
+	3650 3750 3700 3750
+Connection ~ 3650 4250
+Wire Wire Line
+	3650 3250 3700 3250
+Connection ~ 3650 3750
+Wire Wire Line
+	3250 4550 3700 4550
+Wire Wire Line
+	3250 4050 3700 4050
+Wire Wire Line
+	3250 3550 3700 3550
+Wire Wire Line
+	3250 3050 3700 3050
+Wire Wire Line
+	7200 5400 7100 5400
+Wire Wire Line
+	7200 5300 7100 5300
+Wire Wire Line
+	7600 4600 7400 4600
+Wire Wire Line
+	7400 4800 7600 4800
+Wire Wire Line
+	7400 4700 7500 4700
+Wire Wire Line
+	7500 4700 7500 4800
+Connection ~ 7500 4800
+Wire Wire Line
+	7500 1850 7500 2350
+Wire Wire Line
+	7750 2150 7600 2150
+Wire Wire Line
+	7600 2150 7600 3250
+Wire Wire Line
+	8650 2250 8750 2250
+Wire Wire Line
+	8750 2250 8750 3250
+Wire Wire Line
+	8650 2350 8750 2350
+Connection ~ 8750 2350
+$Comp
+L BC849 Q102
+U 1 1 564B55B8
+P 1300 7150
+F 0 "Q102" H 1500 7225 50  0000 L CNN
+F 1 "BC849" H 1500 7150 50  0000 L CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 1500 7075 50  0000 L CIN
+F 3 "" H 1300 7150 50  0000 L CNN
+	1    1300 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R109
+U 1 1 564B56B8
+P 1800 7150
+F 0 "R109" V 1880 7150 50  0000 C CNN
+F 1 "4k7" V 1800 7150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1730 7150 30  0001 C CNN
+F 3 "" H 1800 7150 30  0000 C CNN
+	1    1800 7150
+	0    1    1    0   
+$EndComp
+Text GLabel 1050 6850 0    60   Output ~ 0
+Loconet
+Wire Wire Line
+	1050 6850 1200 6850
+Wire Wire Line
+	1200 6850 1200 6950
+$Comp
+L GND #PWR09
+U 1 1 564B5884
+P 1200 7450
+F 0 "#PWR09" H 1200 7200 50  0001 C CNN
+F 1 "GND" H 1200 7300 50  0000 C CNN
+F 2 "" H 1200 7450 60  0000 C CNN
+F 3 "" H 1200 7450 60  0000 C CNN
+	1    1200 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 7450 1200 7350
+Text GLabel 2100 7150 2    60   Input ~ 0
+Loconet_TX
+Wire Wire Line
+	2100 7150 1950 7150
+Wire Wire Line
+	1650 7150 1500 7150
+$Comp
+L R R110
+U 1 1 564B5B39
+P 3300 6600
+F 0 "R110" V 3380 6600 50  0000 C CNN
+F 1 "47k" V 3300 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 6600 30  0001 C CNN
+F 3 "" H 3300 6600 30  0000 C CNN
+	1    3300 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R112
+U 1 1 564B5BCB
+P 3550 6600
+F 0 "R112" V 3630 6600 50  0000 C CNN
+F 1 "10k" V 3550 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3480 6600 30  0001 C CNN
+F 3 "" H 3550 6600 30  0000 C CNN
+	1    3550 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R111
+U 1 1 564B5C43
+P 3300 7350
+F 0 "R111" V 3380 7350 50  0000 C CNN
+F 1 "150k" V 3300 7350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 7350 30  0001 C CNN
+F 3 "" H 3300 7350 30  0000 C CNN
+	1    3300 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R113
+U 1 1 564B5CBC
+P 3550 7350
+F 0 "R113" V 3630 7350 50  0000 C CNN
+F 1 "22k" V 3550 7350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3480 7350 30  0001 C CNN
+F 3 "" H 3550 7350 30  0000 C CNN
+	1    3550 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R114
+U 1 1 564B5D7C
+P 3950 6550
+F 0 "R114" V 4030 6550 50  0000 C CNN
+F 1 "220k" V 3950 6550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3880 6550 30  0001 C CNN
+F 3 "" H 3950 6550 30  0000 C CNN
+	1    3950 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 564B5E4B
+P 3550 7600
+F 0 "#PWR010" H 3550 7350 50  0001 C CNN
+F 1 "GND" H 3550 7450 50  0000 C CNN
+F 2 "" H 3550 7600 60  0000 C CNN
+F 3 "" H 3550 7600 60  0000 C CNN
+	1    3550 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM311N U106
+U 1 1 564B5EC8
+P 4300 7000
+F 0 "U106" H 4500 7300 70  0000 C CNN
+F 1 "LM311N" H 4500 7200 70  0000 C CNN
+F 2 "SMD_Packages:DIP-8_SMD" H 4300 7000 60  0001 C CNN
+F 3 "" H 4300 7000 60  0000 C CNN
+F 4 "Texas Instruments" H 4300 7000 60  0000 C CNN "MFN"
+F 5 "JEDEC TO-261 Variation AA" H 4300 7000 60  0000 C CNN "Package ID"
+F 6 "Value" H 4300 7000 60  0001 C CNN "Fieldname"
+	1    4300 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 7600 4200 7400
+Wire Wire Line
+	3300 7600 4300 7600
+Wire Wire Line
+	3300 7500 3300 7600
+Connection ~ 3550 7600
+Wire Wire Line
+	4300 7600 4300 7400
+Connection ~ 4200 7600
+Wire Wire Line
+	3550 7100 3800 7100
+Wire Wire Line
+	3800 6900 3300 6900
+Wire Wire Line
+	3300 6750 3300 7200
+Connection ~ 3300 6900
+Wire Wire Line
+	3800 6550 3700 6550
+Wire Wire Line
+	3700 6550 3700 6900
+Connection ~ 3700 6900
+Wire Wire Line
+	4100 6550 4900 6550
+Wire Wire Line
+	4900 6550 4900 7000
+Wire Wire Line
+	4800 7000 5000 7000
+Wire Wire Line
+	3550 6750 3550 7200
+Connection ~ 3550 7100
+Wire Wire Line
+	3550 6450 3550 6350
+Wire Wire Line
+	3550 6350 4200 6350
+Wire Wire Line
+	4200 6300 4200 6600
+Text GLabel 5000 7000 2    60   Output ~ 0
+Loconet_RX
+Connection ~ 4900 7000
+Text GLabel 3100 6350 0    60   Input ~ 0
+Loconet
+Wire Wire Line
+	3100 6350 3300 6350
+Wire Wire Line
+	3300 6350 3300 6450
+$Comp
+L VCC #PWR011
+U 1 1 564B6E2F
+P 4200 6300
+F 0 "#PWR011" H 4200 6150 50  0001 C CNN
+F 1 "VCC" H 4200 6450 50  0000 C CNN
+F 2 "" H 4200 6300 60  0000 C CNN
+F 3 "" H 4200 6300 60  0000 C CNN
+	1    4200 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 6350
+Text GLabel 10400 5100 3    60   Output ~ 0
+Track_O
+Text GLabel 10900 5100 3    60   Output ~ 0
+Track_B
+Text GLabel 10650 5100 3    60   Output ~ 0
+Loconet
+Wire Wire Line
+	10650 5100 10650 5000
+Wire Wire Line
+	10600 5000 10700 5000
+Wire Wire Line
+	10600 5000 10600 4800
+Wire Wire Line
+	10700 5000 10700 4800
+Connection ~ 10650 5000
+Wire Wire Line
+	10900 5100 10900 4800
+Wire Wire Line
+	10400 4800 10400 5100
+$Comp
+L GND #PWR012
+U 1 1 564B7742
+P 10500 5600
+F 0 "#PWR012" H 10500 5350 50  0001 C CNN
+F 1 "GND" H 10500 5450 50  0000 C CNN
+F 2 "" H 10500 5600 60  0000 C CNN
+F 3 "" H 10500 5600 60  0000 C CNN
+	1    10500 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 5600 10500 4800
+Wire Wire Line
+	10800 4800 10800 5550
+Wire Wire Line
+	10800 5550 10500 5550
+Connection ~ 10500 5550
+Wire Wire Line
+	3550 7500 3550 7600
+$Comp
+L RJ12 J104
+U 1 1 564B7F7B
+P 9600 4350
+F 0 "J104" H 9800 4850 60  0000 C CNN
+F 1 "RJ12" H 9450 4850 60  0000 C CNN
+F 2 "Connectors:RJ12_horizontal" H 9600 4350 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/680408.pdf" H 9600 4350 60  0000 C CNN
+F 4 "FCI" H 9600 4350 60  0000 C CNN "MFN"
+F 5 "54601-906WPLF" H 9600 4350 60  0000 C CNN "MFP"
+F 6 "2135977" H 9600 4350 60  0000 C CNN "S1PN"
+F 7 "http://nl.farnell.com/fci/54601-906wplf/modular-jack-tht-r-a-rj12-6p6c/dp/2135977" H 9600 4350 60  0000 C CNN "S1PL"
+F 8 "MODULAR, JACK, THT, R/A, RJ12, 6P6C" H 9600 4350 60  0000 C CNN "Description"
+F 9 "Value" H 9600 4350 60  0001 C CNN "Fieldname"
+	1    9600 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9400 5100 3    60   Output ~ 0
+Track_O
+Text GLabel 9900 5100 3    60   Output ~ 0
+Track_B
+Text GLabel 9650 5100 3    60   Output ~ 0
+Loconet
+Wire Wire Line
+	9650 5100 9650 5000
+Wire Wire Line
+	9600 5000 9700 5000
+Wire Wire Line
+	9600 5000 9600 4800
+Wire Wire Line
+	9700 5000 9700 4800
+Connection ~ 9650 5000
+Wire Wire Line
+	9900 5100 9900 4800
+Wire Wire Line
+	9400 4800 9400 5100
+$Comp
+L GND #PWR013
+U 1 1 564B7F8B
+P 9500 5600
+F 0 "#PWR013" H 9500 5350 50  0001 C CNN
+F 1 "GND" H 9500 5450 50  0000 C CNN
+F 2 "" H 9500 5600 60  0000 C CNN
+F 3 "" H 9500 5600 60  0000 C CNN
+	1    9500 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5600 9500 4800
+Wire Wire Line
+	9800 4800 9800 5550
+Wire Wire Line
+	9800 5550 9500 5550
+Connection ~ 9500 5550
+$Comp
+L CONN_01X04 P102
+U 1 1 564B7FE1
+P 8650 6100
+F 0 "P102" H 8650 6350 50  0000 C CNN
+F 1 "CONN_01X04" V 8750 6100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Angled_1x04" H 8650 6100 60  0001 C CNN
+F 3 "" H 8650 6100 60  0000 C CNN
+	1    8650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 564B80C3
+P 8400 6300
+F 0 "#PWR014" H 8400 6050 50  0001 C CNN
+F 1 "GND" H 8400 6150 50  0000 C CNN
+F 2 "" H 8400 6300 60  0000 C CNN
+F 3 "" H 8400 6300 60  0000 C CNN
+	1    8400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 564B81E1
+P 8400 5900
+F 0 "#PWR015" H 8400 5750 50  0001 C CNN
+F 1 "VCC" H 8400 6050 50  0000 C CNN
+F 2 "" H 8400 5900 60  0000 C CNN
+F 3 "" H 8400 5900 60  0000 C CNN
+	1    8400 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 8300 6150 0    60   Input ~ 0
+Loconet_RX
+Text GLabel 8300 6050 0    60   Output ~ 0
+Loconet_TX
+Wire Wire Line
+	8300 6050 8450 6050
+Wire Wire Line
+	8450 6150 8300 6150
+Wire Wire Line
+	8450 6250 8400 6250
+Wire Wire Line
+	8400 6250 8400 6300
+Wire Wire Line
+	8450 5950 8400 5950
+Wire Wire Line
+	8400 5950 8400 5900
+Text GLabel 8850 2650 2    60   Input ~ 0
+Loconet_RX
+Wire Wire Line
+	8850 2650 8650 2650
+Text GLabel 7500 2650 0    60   Output ~ 0
+FB3
+Text GLabel 7500 2550 0    60   Output ~ 0
+FB2
+Text GLabel 7500 2450 0    60   Output ~ 0
+FB1
+Text GLabel 7500 2750 0    60   Output ~ 0
+FB4
+Wire Wire Line
+	7500 2450 7750 2450
+Wire Wire Line
+	7750 2550 7500 2550
+Wire Wire Line
+	7750 2650 7500 2650
+Wire Wire Line
+	7750 2750 7500 2750
+Wire Wire Line
+	8850 2750 8650 2750
+Text GLabel 8850 2550 2    60   Output ~ 0
+ACK
+Wire Wire Line
+	8850 2550 8650 2550
+Wire Wire Line
+	8650 3050 8700 3050
+Wire Wire Line
+	8700 3050 8700 2650
+Connection ~ 8700 2650
+Text Notes 8700 1950 0    60   ~ 0
+Loconet RX should go to the ICP Pin\nThis is pin 12 on the atmega328p, D8 on the pro mini\nThis is pin ?? on the atmega32u4, D4 on the pro micro
+Wire Wire Line
+	7500 2350 7750 2350
+Text GLabel 8850 2750 2    60   Output ~ 0
+Loconet_TX
+$Comp
+L CONN_01X05 P103
+U 1 1 564C46FB
+P 7750 4000
+F 0 "P103" H 7750 4300 50  0000 C CNN
+F 1 "CONN_01X05" V 7850 4000 50  0000 C CNN
+F 2 "Kicad_Library:SMD_PIN_01x05" H 7750 4000 60  0001 C CNN
+F 3 "" H 7750 4000 60  0000 C CNN
+	1    7750 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 4200 0    60   Output ~ 0
+FBO_COMMON
+Text GLabel 7400 4100 0    60   Input ~ 0
+FBO4
+Text GLabel 7400 4000 0    60   Input ~ 0
+FBO3
+Text GLabel 7400 3900 0    60   Input ~ 0
+FBO2
+Text GLabel 7400 3800 0    60   Input ~ 0
+FBO1
+Wire Wire Line
+	7400 3800 7550 3800
+Wire Wire Line
+	7550 3900 7400 3900
+Wire Wire Line
+	7400 4000 7550 4000
+Wire Wire Line
+	7550 4100 7400 4100
+Wire Wire Line
+	7400 4200 7550 4200
+$Comp
+L M3_Mounting_hole U107
+U 1 1 564C537D
+P 5950 1100
+F 0 "U107" H 5950 1400 60  0000 C CNN
+F 1 "M3_Mounting_hole" H 5950 600 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 5950 1100 60  0001 C CNN
+F 3 "" H 5950 1100 60  0000 C CNN
+	1    5950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L M3_Mounting_hole U108
+U 1 1 564C540A
+P 6450 1050
+F 0 "U108" H 6450 1350 60  0000 C CNN
+F 1 "M3_Mounting_hole" H 6450 550 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 6450 1050 60  0001 C CNN
+F 3 "" H 6450 1050 60  0000 C CNN
+	1    6450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L M3_Mounting_hole U109
+U 1 1 564C549A
+P 6950 1100
+F 0 "U109" H 6950 1400 60  0000 C CNN
+F 1 "M3_Mounting_hole" H 6950 600 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 6950 1100 60  0001 C CNN
+F 3 "" H 6950 1100 60  0000 C CNN
+	1    6950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L M3_Mounting_hole U110
+U 1 1 564C5542
+P 7500 1050
+F 0 "U110" H 7500 1350 60  0000 C CNN
+F 1 "M3_Mounting_hole" H 7500 550 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 7500 1050 60  0001 C CNN
+F 3 "" H 7500 1050 60  0000 C CNN
+	1    7500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1850 2650 1850
+Text GLabel 8850 2950 2    60   Input ~ 0
+tracksignal
+Wire Wire Line
+	8850 2950 8650 2950
+$Comp
+L RJ12 J105
+U 1 1 564F35B3
+P 10600 4350
+F 0 "J105" H 10800 4850 60  0000 C CNN
+F 1 "RJ12" H 10450 4850 60  0000 C CNN
+F 2 "Connectors:RJ12_horizontal" H 10600 4350 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1731527.pdf" H 10600 4350 60  0000 C CNN
+F 4 "Lumberg" H 10600 4350 60  0000 C CNN "MFN"
+F 5 "P 128" H 10600 4350 60  0000 C CNN "MFP"
+F 6 "1243235" H 10600 4350 60  0000 C CNN "S1PN"
+F 7 "http://nl.farnell.com/lumberg/p-128/modular-plug-crimp-rj12-6p6c/dp/1243235" H 10600 4350 60  0000 C CNN "S1PL"
+F 8 "Value" H 10600 4350 60  0001 C CNN "Fieldname"
+	1    10600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAV199 D102
+U 1 1 564F3B2E
+P 2800 5550
+F 0 "D102" H 2700 5400 60  0000 C CNN
+F 1 "BAV199" H 2800 5650 60  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23_Handsoldering" H 2800 5550 60  0001 C CNN
+F 3 "" H 2800 5550 60  0000 C CNN
+F 4 "NXP" H 2800 5550 60  0000 C CNN "MFN"
+F 5 "BAV99W,115" H 2800 5550 60  0000 C CNN "MFP"
+F 6 "1081212" H 2800 5550 60  0000 C CNN "S1PN"
+F 7 "http://nl.farnell.com/nxp/bav99w-115/diode-dual-0-15a-100v-sot-323/dp/1081212" H 2800 5550 60  0000 C CNN "S1PL"
+F 8 "Value" H 2800 5550 60  0001 C CNN "Fieldname"
+	1    2800 5550
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

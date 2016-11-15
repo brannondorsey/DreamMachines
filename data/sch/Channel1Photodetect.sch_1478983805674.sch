@@ -1,0 +1,350 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DasBlinkInput
+LIBS:DasBlinkInput-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R201
+U 1 1 5557A7DE
+P 5150 1700
+F 0 "R201" V 5230 1700 50  0000 C CNN
+F 1 "1MEG" V 5157 1701 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 1700 30  0001 C CNN
+F 3 "" H 5150 1700 30  0000 C CNN
+F 4 "Value" H 5150 1700 60  0001 C CNN "MPN"
+	1    5150 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L C C202
+U 1 1 5557A7E6
+P 5150 1400
+F 0 "C202" H 5200 1500 50  0000 L CNN
+F 1 "100pf" V 5000 1300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5188 1250 30  0001 C CNN
+F 3 "" H 5150 1400 60  0000 C CNN
+F 4 "Value" H 5150 1400 60  0001 C CNN "MPN"
+	1    5150 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L MCP6404-E/SL U201
+U 1 1 5557A7EE
+P 4800 2450
+F 0 "U201" H 4850 2650 60  0000 C CNN
+F 1 "MCP6404" H 5050 2200 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4800 2450 60  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22229D.pdf" H 4800 2450 60  0001 C CNN
+F 4 "MCP6404-E/SL" H 4800 2450 60  0001 C CNN "MPN"
+	1    4800 2450
+	1    0    0    1   
+$EndComp
+$Comp
+L Photodiode D201
+U 1 1 5557A7F6
+P 3450 2850
+F 0 "D201" H 3440 2965 50  0000 C CNN
+F 1 "SFH 2701" H 3450 2750 50  0000 C CNN
+F 2 "pcb:SFH2701" H 3450 2850 60  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic9/00083297_0.pdf" H 3450 2850 60  0001 C CNN
+F 4 "SFH 2701" H 3450 2850 60  0001 C CNN "MPN"
+	1    3450 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 2350 4300 2350
+Wire Wire Line
+	3450 2350 3450 2650
+Wire Wire Line
+	4000 1400 4000 2350
+Wire Wire Line
+	4000 1700 4900 1700
+Connection ~ 4000 2350
+Wire Wire Line
+	4000 1400 4950 1400
+Connection ~ 4000 1700
+Wire Wire Line
+	5400 1700 5600 1700
+Wire Wire Line
+	5600 1400 5600 2450
+Wire Wire Line
+	5300 2450 6650 2450
+Wire Wire Line
+	5350 1400 5600 1400
+Connection ~ 5600 1700
+$Comp
+L GND #PWR05
+U 1 1 5557A809
+P 4400 2050
+F 0 "#PWR05" H 4400 1800 60  0001 C CNN
+F 1 "GND" H 4400 1900 60  0000 C CNN
+F 2 "" H 4400 2050 60  0000 C CNN
+F 3 "" H 4400 2050 60  0000 C CNN
+	1    4400 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2050 4700 1950
+Wire Wire Line
+	4700 1950 4400 1950
+Wire Wire Line
+	4400 1950 4400 2050
+Wire Wire Line
+	4300 2550 4000 2550
+Wire Wire Line
+	4000 2550 4000 3450
+Text GLabel 4600 3000 0    60   Input ~ 0
+3V
+Wire Wire Line
+	4700 2850 4700 3000
+Wire Wire Line
+	4600 3000 4800 3000
+$Comp
+L C C201
+U 1 1 5557A81E
+P 5000 3000
+F 0 "C201" H 5050 3100 50  0000 L CNN
+F 1 ".1uf" H 5050 2900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5038 2850 30  0001 C CNN
+F 3 "" H 5000 3000 60  0000 C CNN
+F 4 "Value" H 5000 3000 60  0001 C CNN "MPN"
+	1    5000 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5557A825
+P 5400 3050
+F 0 "#PWR06" H 5400 2800 60  0001 C CNN
+F 1 "GND" H 5400 2900 60  0000 C CNN
+F 2 "" H 5400 3050 60  0000 C CNN
+F 3 "" H 5400 3050 60  0000 C CNN
+	1    5400 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 3000
+Wire Wire Line
+	5200 3000 5400 3000
+Wire Wire Line
+	5400 3000 5400 3050
+Wire Wire Line
+	3450 3450 3450 3050
+$Comp
+L LM339 U202
+U 1 1 5557A836
+P 7000 2550
+F 0 "U202" H 7050 2750 60  0000 C CNN
+F 1 "LM339" H 7100 2350 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7000 2550 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm139a.pdf" H 7000 2550 60  0001 C CNN
+F 4 "LM339ADR" H 7000 2550 60  0001 C CNN "MPN"
+	1    7000 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 2450
+Text GLabel 6150 2750 0    60   Input ~ 0
+3V
+$Comp
+L R R203
+U 1 1 5557A840
+P 6350 3150
+F 0 "R203" V 6430 3150 50  0000 C CNN
+F 1 "0" V 6357 3151 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6280 3150 30  0001 C CNN
+F 3 "" H 6350 3150 30  0000 C CNN
+F 4 "Value" H 6350 3150 60  0001 C CNN "MPN"
+	1    6350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R202
+U 1 1 5557A847
+P 6100 4950
+F 0 "R202" V 6180 4950 50  0000 C CNN
+F 1 "10K" V 6107 4951 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 4950 30  0001 C CNN
+F 3 "" H 6100 4950 30  0000 C CNN
+	1    6100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5557A84E
+P 6100 5500
+F 0 "#PWR07" H 6100 5250 60  0001 C CNN
+F 1 "GND" H 6100 5350 60  0000 C CNN
+F 2 "" H 6100 5500 60  0000 C CNN
+F 3 "" H 6100 5500 60  0000 C CNN
+	1    6100 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5200 6100 5500
+$Comp
+L POT RV201
+U 1 1 5557A856
+P 6100 4050
+F 0 "RV201" H 6100 3950 50  0000 C CNN
+F 1 "10K" H 6100 4050 50  0000 C CNN
+F 2 "pcb:BOURNS_3361P" H 6100 4050 60  0001 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/3361.pdf" H 6100 4050 60  0001 C CNN
+F 4 "3361P-1-105GLF" H 6100 4050 60  0001 C CNN "MPN"
+	1    6100 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 2550 7350 2550
+Wire Wire Line
+	6650 2650 6550 2650
+Wire Wire Line
+	6550 2650 6550 4500
+Wire Wire Line
+	6550 4500 6100 4500
+Wire Wire Line
+	6350 4050 6250 4050
+Text GLabel 6800 2050 0    60   Input ~ 0
+3V
+Wire Wire Line
+	6800 2050 7000 2050
+$Comp
+L C C203
+U 1 1 5557A868
+P 7200 2050
+F 0 "C203" H 7250 2150 50  0000 L CNN
+F 1 ".1uf" H 7250 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7238 1900 30  0001 C CNN
+F 3 "" H 7200 2050 60  0000 C CNN
+F 4 "Value" H 7200 2050 60  0001 C CNN "MPN"
+	1    7200 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5557A86F
+P 7600 2100
+F 0 "#PWR08" H 7600 1850 60  0001 C CNN
+F 1 "GND" H 7600 1950 60  0000 C CNN
+F 2 "" H 7600 2100 60  0000 C CNN
+F 3 "" H 7600 2100 60  0000 C CNN
+	1    7600 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 2050
+Wire Wire Line
+	7400 2050 7600 2050
+Wire Wire Line
+	7600 2050 7600 2100
+Wire Wire Line
+	6900 1750 6900 2250
+$Comp
+L GND #PWR09
+U 1 1 5557A879
+P 6900 3050
+F 0 "#PWR09" H 6900 2800 60  0001 C CNN
+F 1 "GND" H 6900 2900 60  0000 C CNN
+F 2 "" H 6900 3050 60  0000 C CNN
+F 3 "" H 6900 3050 60  0000 C CNN
+	1    6900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2850 6900 3050
+Wire Wire Line
+	6150 2750 6350 2750
+Wire Wire Line
+	6350 2750 6350 2900
+Wire Wire Line
+	6350 3400 6350 4050
+Text HLabel 8350 2550 2    60   Input ~ 0
+CHAN1_OUT
+Wire Wire Line
+	6550 4300 8400 4300
+Connection ~ 6550 4300
+Text HLabel 8400 4300 2    60   Input ~ 0
+REF_OUT
+Wire Wire Line
+	4000 3450 3100 3450
+Connection ~ 3450 3450
+Text GLabel 3100 3450 0    60   Input ~ 0
+VGND
+$Comp
+L CONN_01X01 P201
+U 1 1 555AE4AC
+P 6000 2050
+F 0 "P201" H 6000 2150 50  0000 C CNN
+F 1 "TP_CHAN1" V 6100 2050 50  0000 C CNN
+F 2 "pcb:TESTPOINT_1" H 6000 2050 60  0001 C CNN
+F 3 "" H 6000 2050 60  0000 C CNN
+	1    6000 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 2250 6000 2450
+Connection ~ 6000 2450
+NoConn ~ 6100 3800
+Wire Wire Line
+	6100 4300 6100 4700
+Connection ~ 6100 4500
+Text Notes 10600 7650 0    60   ~ 0
+v2
+$Comp
+L R R204
+U 1 1 55B599B2
+P 8000 2200
+F 0 "R204" V 8080 2200 50  0000 C CNN
+F 1 "10K" V 8007 2201 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7930 2200 30  0001 C CNN
+F 3 "" H 8000 2200 30  0000 C CNN
+	1    8000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2550 8000 2450
+Connection ~ 8000 2550
+Wire Wire Line
+	8000 1950 8000 1750
+Wire Wire Line
+	8000 1750 6900 1750
+$EndSCHEMATC

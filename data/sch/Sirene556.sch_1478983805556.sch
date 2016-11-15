@@ -1,0 +1,309 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:linear4
+LIBS:linear2
+LIBS:linear3
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sirene 556"
+Date "19 feb 2015"
+Rev "1"
+Comp "Garoa Hacker Clube"
+Comment1 "Daniel Quadros"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM556N IC1
+U 1 1 54BE5A8F
+P 5050 2900
+F 0 "IC1" H 4750 3330 50  0000 L BNN
+F 1 "LM556N" H 4750 2395 50  0000 L BNN
+F 2 "linear2-DIL14" H 5050 3050 50  0001 C CNN
+F 3 "" H 5050 2900 60  0000 C CNN
+	1    5050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM556N IC1
+U 2 1 54BE5ADD
+P 7650 2800
+F 0 "IC1" H 7350 3230 50  0000 L BNN
+F 1 "LM556N" H 7350 2295 50  0000 L BNN
+F 2 "linear2-DIL14" H 7650 2950 50  0001 C CNN
+F 3 "" H 7650 2800 60  0000 C CNN
+	2    7650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L BATTERY BT1
+U 1 1 54BE5B55
+P 3500 2850
+F 0 "BT1" H 3500 3050 50  0000 C CNN
+F 1 "BATTERY" H 3500 2660 50  0000 C CNN
+F 2 "~" H 3500 2850 60  0000 C CNN
+F 3 "~" H 3500 2850 60  0000 C CNN
+	1    3500 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 54BE5C2C
+P 5800 2150
+F 0 "R1" V 5880 2150 40  0000 C CNN
+F 1 "27K" V 5807 2151 40  0000 C CNN
+F 2 "~" V 5730 2150 30  0000 C CNN
+F 3 "~" H 5800 2150 30  0000 C CNN
+	1    5800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 54BE5C8C
+P 6100 3050
+F 0 "R2" V 6180 3050 40  0000 C CNN
+F 1 "100K" V 6107 3051 40  0000 C CNN
+F 2 "~" V 6030 3050 30  0000 C CNN
+F 3 "~" H 6100 3050 30  0000 C CNN
+	1    6100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 54BE5D23
+P 5700 3750
+F 0 "C1" H 5750 3850 50  0000 L CNN
+F 1 "10uF" H 5750 3650 50  0000 L CNN
+F 2 "~" H 5700 3750 60  0000 C CNN
+F 3 "~" H 5700 3750 60  0000 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4650 3000
+NoConn ~ 7250 3000
+$Comp
+L R R3
+U 1 1 54BE5DFE
+P 6700 2600
+F 0 "R3" V 6780 2600 40  0000 C CNN
+F 1 "100K" V 6707 2601 40  0000 C CNN
+F 2 "~" V 6630 2600 30  0000 C CNN
+F 3 "~" H 6700 2600 30  0000 C CNN
+	1    6700 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 54BE5F38
+P 8650 2800
+F 0 "R5" V 8730 2800 40  0000 C CNN
+F 1 "4.7K" V 8657 2801 40  0000 C CNN
+F 2 "~" V 8580 2800 30  0000 C CNN
+F 3 "~" H 8650 2800 30  0000 C CNN
+	1    8650 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 54BE5F56
+P 8650 2600
+F 0 "R6" V 8730 2600 40  0000 C CNN
+F 1 "270R" V 8657 2601 40  0000 C CNN
+F 2 "~" V 8580 2600 30  0000 C CNN
+F 3 "~" H 8650 2600 30  0000 C CNN
+	1    8650 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 54BE5FE6
+P 8200 2150
+F 0 "R4" H 8280 2150 40  0000 C CNN
+F 1 "4.7K" V 8207 2151 40  0000 C CNN
+F 2 "~" V 8130 2150 30  0000 C CNN
+F 3 "~" H 8200 2150 30  0000 C CNN
+	1    8200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPEAKER SP1
+U 1 1 54BE6045
+P 9650 2700
+F 0 "SP1" H 9550 2950 70  0000 C CNN
+F 1 "SPEAKER" H 9550 2450 70  0000 C CNN
+F 2 "~" H 9650 2700 60  0000 C CNN
+F 3 "~" H 9650 2700 60  0000 C CNN
+	1    9650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 54BE60AA
+P 8900 3750
+F 0 "C2" H 8950 3850 50  0000 L CNN
+F 1 "0.1uF" H 8950 3650 50  0000 L CNN
+F 2 "~" H 8900 3750 60  0000 C CNN
+F 3 "~" H 8900 3750 60  0000 C CNN
+	1    8900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C3
+U 1 1 54BE617F
+P 4000 2850
+F 0 "C3" H 4050 2950 50  0000 L CNN
+F 1 "0.1uF" H 4050 2750 50  0000 L CNN
+F 2 "~" H 4000 2850 60  0000 C CNN
+F 3 "~" H 4000 2850 60  0000 C CNN
+	1    4000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3150 3500 4050
+Wire Wire Line
+	3200 4050 9200 4050
+Wire Wire Line
+	4650 4050 4650 3200
+Wire Wire Line
+	3500 1650 3500 2550
+Wire Wire Line
+	3500 1800 8200 1800
+Wire Wire Line
+	5600 1800 5600 3200
+Wire Wire Line
+	5600 3200 5450 3200
+Wire Wire Line
+	4650 2800 4400 2800
+Wire Wire Line
+	4400 2800 4400 1800
+Connection ~ 4400 1800
+Connection ~ 5600 1800
+Wire Wire Line
+	5450 2800 6100 2800
+Wire Wire Line
+	5800 2400 5800 2800
+Wire Wire Line
+	5800 1900 5800 1800
+Connection ~ 5800 1800
+Wire Wire Line
+	5450 3000 5700 3000
+Wire Wire Line
+	5700 4050 5700 3950
+Connection ~ 4650 4050
+Wire Wire Line
+	5700 3000 5700 3550
+Wire Wire Line
+	5700 3550 4500 3550
+Wire Wire Line
+	4500 3550 4500 2600
+Wire Wire Line
+	4500 2600 4650 2600
+Connection ~ 5800 2800
+Wire Wire Line
+	6100 3300 5700 3300
+Connection ~ 5700 3300
+Wire Wire Line
+	5450 2600 6450 2600
+Wire Wire Line
+	6950 2600 7250 2600
+Wire Wire Line
+	7250 2800 7150 2800
+Wire Wire Line
+	7150 2800 7150 1800
+Wire Wire Line
+	7000 2600 7000 3450
+Wire Wire Line
+	7000 3450 8200 3450
+Wire Wire Line
+	8200 3450 8200 3000
+Wire Wire Line
+	8050 3000 8900 3000
+Connection ~ 7000 2600
+Wire Wire Line
+	8050 2600 8400 2600
+Wire Wire Line
+	8050 2800 8400 2800
+Wire Wire Line
+	8900 2800 8900 3550
+Connection ~ 8200 3000
+Wire Wire Line
+	8200 2400 8200 2800
+Connection ~ 8200 2800
+Wire Wire Line
+	8200 1800 8200 1900
+Connection ~ 7150 1800
+Wire Wire Line
+	8900 2600 9350 2600
+Wire Wire Line
+	9200 4050 9200 2800
+Wire Wire Line
+	9200 2800 9350 2800
+Connection ~ 5700 4050
+Connection ~ 8900 3000
+Wire Wire Line
+	8900 3950 8900 4050
+Connection ~ 8900 4050
+Wire Wire Line
+	4000 2650 4000 1800
+Connection ~ 4000 1800
+Wire Wire Line
+	4000 3050 4000 4050
+Connection ~ 4000 4050
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 54E612F6
+P 3500 1650
+F 0 "#FLG01" H 3500 1745 30  0001 C CNN
+F 1 "PWR_FLAG" H 3500 1830 30  0000 C CNN
+F 2 "" H 3500 1650 60  0000 C CNN
+F 3 "" H 3500 1650 60  0000 C CNN
+	1    3500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 54E61305
+P 3200 4050
+F 0 "#FLG02" H 3200 4145 30  0001 C CNN
+F 1 "PWR_FLAG" H 3200 4230 30  0000 C CNN
+F 2 "" H 3200 4050 60  0000 C CNN
+F 3 "" H 3200 4050 60  0000 C CNN
+	1    3200 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 1800
+Connection ~ 3500 4050
+$EndSCHEMATC

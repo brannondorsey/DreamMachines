@@ -1,0 +1,413 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:semi-diode-generic
+LIBS:_semi
+LIBS:pcb
+LIBS:electomech-misc
+LIBS:mechanical
+LIBS:symbol
+LIBS:pasv-cap
+LIBS:pasv-ind
+LIBS:pasv-res
+LIBS:semi-trans-TI
+LIBS:TexasInstruments
+LIBS:semi-diode-DiodesInc
+LIBS:DiodesInc
+LIBS:_linear
+LIBS:conn-100mil
+LIBS:AOS
+LIBS:pasv-Bourns
+LIBS:Controller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA644P-20AU U?
+U 1 1 572AC431
+P 3525 3275
+F 0 "U?" H 3525 5175 50  0000 C CNN
+F 1 "ATMEGA644P-20AU" H 3525 5075 50  0000 C CNN
+F 2 "IPC7351-Most:QFP80P1200X1200X120-44" H 3525 1225 50  0001 C CNN
+F 3 "http://www.atmel.com/Images/Atmel-8011-8-bit-AVR-Microcontroller-ATmega164P-324P-644P_datasheet.pdf" H 3525 1025 50  0001 C CNN
+F 4 "MCU ATMEL ATMEGA622P-20AU" H 3525 1125 50  0001 C CNN "BOM"
+	1    3525 3275
+	1    0    0    -1  
+$EndComp
+Text HLabel 1650 1675 0    60   Input ~ 0
++5V
+Wire Wire Line
+	1650 1675 2675 1675
+Wire Wire Line
+	2525 1675 2525 1975
+Wire Wire Line
+	2525 1775 2675 1775
+Connection ~ 2525 1675
+Wire Wire Line
+	2525 1875 2675 1875
+Connection ~ 2525 1775
+Wire Wire Line
+	2525 1975 2675 1975
+Connection ~ 2525 1875
+$Comp
+L C-0603 C?
+U 1 1 572ACAA6
+P 1750 1850
+F 0 "C?" H 1500 1800 50  0000 C CNN
+F 1 "0.1uF" H 1550 1725 50  0000 C CNN
+F 2 "IPC7351-Nominal:CAPC1608X55" H 1750 1850 50  0001 C CNN
+F 3 "" H 1740 1825 60  0000 C CNN
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 2550 2400 60  0001 C CNN "BOM"
+	1    1750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 572ACAF2
+P 1750 2050
+F 0 "#PWR?" H 1750 2050 30  0001 C CNN
+F 1 "GND" H 1750 1980 30  0001 C CNN
+F 2 "" H 1750 2050 60  0000 C CNN
+F 3 "" H 1750 2050 60  0000 C CNN
+	1    1750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1750 1750 1675
+Connection ~ 1750 1675
+Wire Wire Line
+	1750 1950 1750 2050
+$Comp
+L GND #PWR?
+U 1 1 572ACDB5
+P 2575 5150
+F 0 "#PWR?" H 2575 5150 30  0001 C CNN
+F 1 "GND" H 2575 5080 30  0001 C CNN
+F 2 "" H 2575 5150 60  0000 C CNN
+F 3 "" H 2575 5150 60  0000 C CNN
+	1    2575 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 4775 2575 5150
+Wire Wire Line
+	2575 5075 2675 5075
+Wire Wire Line
+	2575 4975 2675 4975
+Connection ~ 2575 5075
+Wire Wire Line
+	2575 4875 2675 4875
+Connection ~ 2575 4975
+Wire Wire Line
+	2575 4775 2675 4775
+Connection ~ 2575 4875
+$Comp
+L R-0603 R?
+U 1 1 572AD51C
+P 2075 1900
+F 0 "R?" H 2200 1950 50  0000 C CNN
+F 1 "10K" H 2225 1850 50  0000 C CNN
+F 2 "IPC7351-Nominal:RESC1608X50" H 2075 1900 50  0001 C CNN
+F 3 "" H 2075 1950 60  0000 C CNN
+F 4 "RES SMD 1k 5% [0603]" H 2825 2450 60  0001 C CNN "BOM"
+	1    2075 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2075 1800 2075 1675
+Connection ~ 2075 1675
+Wire Wire Line
+	2675 2175 2075 2175
+Wire Wire Line
+	2075 2175 2075 2000
+$Comp
+L C-0603 C?
+U 1 1 572AD95B
+P 2525 2725
+F 0 "C?" H 2275 2675 50  0000 C CNN
+F 1 "0.1uF" H 2325 2600 50  0000 C CNN
+F 2 "IPC7351-Nominal:CAPC1608X55" H 2525 2725 50  0001 C CNN
+F 3 "" H 2515 2700 60  0000 C CNN
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 3325 3275 60  0001 C CNN "BOM"
+	1    2525 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 2625 2525 2575
+Wire Wire Line
+	2275 2575 2675 2575
+Text HLabel 2275 2575 0    60   Input ~ 0
++5V
+Connection ~ 2525 2575
+$Comp
+L GND #PWR?
+U 1 1 572ADAAB
+P 2525 2850
+F 0 "#PWR?" H 2525 2850 30  0001 C CNN
+F 1 "GND" H 2525 2780 30  0001 C CNN
+F 2 "" H 2525 2850 60  0000 C CNN
+F 3 "" H 2525 2850 60  0000 C CNN
+	1    2525 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 2825 2525 2850
+$Comp
+L CONN-100MIL-M-2x8-SHROUD J?
+U 1 1 573007CC
+P 10000 1200
+F 0 "J?" H 10000 1450 50  0000 C CNN
+F 1 "CU20045SCPB-T31A" H 10000 1350 50  0000 C CNN
+F 2 "conn-100mil:CONN-100MIL-M-2x8-SHROUD" H 9975 1200 50  0001 C CNN
+F 3 "" H 9975 1200 50  0000 C CNN
+	1    10000 1200
+	1    0    0    -1  
+$EndComp
+Text Label 9750 1200 2    60   ~ 0
+D7
+Wire Wire Line
+	9750 1200 9800 1200
+Text Label 9750 1300 2    60   ~ 0
+D5
+Text Label 9750 1400 2    60   ~ 0
+D3
+Text Label 9750 1500 2    60   ~ 0
+D1
+Text Label 9750 1600 2    60   ~ 0
+~WR~
+Text Label 9750 1700 2    60   ~ 0
+Sin/Test
+Text Label 10250 1700 0    60   ~ 0
+BUSY
+Text Label 10250 1600 0    60   ~ 0
+~CS~
+Wire Wire Line
+	9750 1700 9800 1700
+Wire Wire Line
+	9800 1600 9750 1600
+Wire Wire Line
+	9800 1500 9750 1500
+Wire Wire Line
+	9800 1400 9750 1400
+Wire Wire Line
+	9800 1300 9750 1300
+Wire Wire Line
+	10200 1600 10250 1600
+Wire Wire Line
+	10200 1700 10250 1700
+Text Label 10250 1500 0    60   ~ 0
+D0
+Text Label 10250 1400 0    60   ~ 0
+D2
+Text Label 10250 1300 0    60   ~ 0
+D4
+Text Label 10250 1200 0    60   ~ 0
+D6
+Wire Wire Line
+	10250 1200 10200 1200
+Wire Wire Line
+	10250 1300 10200 1300
+Wire Wire Line
+	10200 1400 10250 1400
+Wire Wire Line
+	10200 1500 10250 1500
+$Comp
+L GND #PWR?
+U 1 1 57300CD2
+P 9400 1850
+F 0 "#PWR?" H 9400 1850 30  0001 C CNN
+F 1 "GND" H 9400 1780 30  0001 C CNN
+F 2 "" H 9400 1850 60  0000 C CNN
+F 3 "" H 9400 1850 60  0000 C CNN
+	1    9400 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1850 9400 1800
+Wire Wire Line
+	9400 1800 9800 1800
+$Comp
+L GND #PWR?
+U 1 1 57300D5D
+P 10625 1850
+F 0 "#PWR?" H 10625 1850 30  0001 C CNN
+F 1 "GND" H 10625 1780 30  0001 C CNN
+F 2 "" H 10625 1850 60  0000 C CNN
+F 3 "" H 10625 1850 60  0000 C CNN
+	1    10625 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10625 1850 10625 1800
+Wire Wire Line
+	10625 1800 10200 1800
+Text HLabel 9750 1900 0    60   Input ~ 0
++5V
+Text HLabel 10250 1900 2    60   Input ~ 0
++5V
+Wire Wire Line
+	10200 1900 10250 1900
+Wire Wire Line
+	9800 1900 9750 1900
+Text Label 4450 3475 0    60   ~ 0
+D0
+Text Label 4450 3575 0    60   ~ 0
+D1
+Text Label 4450 3675 0    60   ~ 0
+D2
+Text Label 4450 3775 0    60   ~ 0
+D3
+Text Label 4450 3875 0    60   ~ 0
+D4
+Text Label 4450 3975 0    60   ~ 0
+D5
+Text Label 4450 4075 0    60   ~ 0
+D6
+Text Label 4450 4175 0    60   ~ 0
+D7
+Wire Wire Line
+	4450 4175 4375 4175
+Wire Wire Line
+	4375 4075 4450 4075
+Wire Wire Line
+	4450 3975 4375 3975
+Wire Wire Line
+	4450 3875 4375 3875
+Wire Wire Line
+	4375 3775 4450 3775
+Wire Wire Line
+	4450 3675 4375 3675
+Wire Wire Line
+	4375 3575 4450 3575
+Wire Wire Line
+	4450 3475 4375 3475
+Text Label 4450 4775 0    60   ~ 0
+~CS~
+Text Label 4450 4875 0    60   ~ 0
+~WR~
+Text Label 4450 4975 0    60   ~ 0
+BUSY
+Text Label 4450 4675 0    60   ~ 0
+Sin/Test
+Wire Wire Line
+	4375 4675 4450 4675
+Wire Wire Line
+	4375 4775 4450 4775
+Wire Wire Line
+	4375 4875 4450 4875
+Wire Wire Line
+	4375 4975 4450 4975
+$Comp
+L Crystal_Small Y?
+U 1 1 573025FB
+P 2325 3275
+F 0 "Y?" V 2325 3400 50  0000 C CNN
+F 1 "20MHz" V 2325 3050 50  0000 C CNN
+F 2 "" H 2325 3275 50  0000 C CNN
+F 3 "" H 2325 3275 50  0000 C CNN
+	1    2325 3275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2225 3075 2675 3075
+Wire Wire Line
+	2225 3475 2675 3475
+Wire Wire Line
+	2325 3475 2325 3375
+$Comp
+L C-0603 C?
+U 1 1 573027B2
+P 2125 3075
+F 0 "C?" V 1925 2850 50  0000 C CNN
+F 1 "0.1uF" V 2025 2900 50  0000 C CNN
+F 2 "IPC7351-Nominal:CAPC1608X55" H 2125 3075 50  0001 C CNN
+F 3 "" H 2115 3050 60  0000 C CNN
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 2925 3625 60  0001 C CNN "BOM"
+	1    2125 3075
+	0    1    1    0   
+$EndComp
+$Comp
+L C-0603 C?
+U 1 1 573028CB
+P 2125 3475
+F 0 "C?" V 2300 3425 50  0000 C CNN
+F 1 "0.1uF" V 2375 3475 50  0000 C CNN
+F 2 "IPC7351-Nominal:CAPC1608X55" H 2125 3475 50  0001 C CNN
+F 3 "" H 2115 3450 60  0000 C CNN
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 2925 4025 60  0001 C CNN "BOM"
+	1    2125 3475
+	0    1    1    0   
+$EndComp
+Connection ~ 2325 3475
+$Comp
+L GND #PWR?
+U 1 1 57302B89
+P 1950 3125
+F 0 "#PWR?" H 1950 3125 30  0001 C CNN
+F 1 "GND" H 1950 3055 30  0001 C CNN
+F 2 "" H 1950 3125 60  0000 C CNN
+F 3 "" H 1950 3125 60  0000 C CNN
+	1    1950 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3125 1950 3075
+Wire Wire Line
+	1950 3075 2025 3075
+$Comp
+L GND #PWR?
+U 1 1 57302BF4
+P 1950 3525
+F 0 "#PWR?" H 1950 3525 30  0001 C CNN
+F 1 "GND" H 1950 3455 30  0001 C CNN
+F 2 "" H 1950 3525 60  0000 C CNN
+F 3 "" H 1950 3525 60  0000 C CNN
+	1    1950 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3525 1950 3475
+Wire Wire Line
+	1950 3475 2025 3475
+Wire Wire Line
+	2325 3175 2325 3075
+Connection ~ 2325 3075
+$EndSCHEMATC

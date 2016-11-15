@@ -1,0 +1,331 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bb
+LIBS:blinky-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BC547 Q1
+U 1 1 55E27140
+P 3750 5150
+F 0 "Q1" H 3950 5225 50  0000 L CNN
+F 1 "MMBT2222" H 3950 5150 50  0000 L CNN
+F 2 "bb:SOT-23_Handsoldering" H 3950 5075 50  0001 L CIN
+F 3 "" H 3750 5150 50  0000 L CNN
+	1    3750 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 55E271FF
+P 5350 3900
+F 0 "C1" H 5375 4000 50  0000 L CNN
+F 1 "22uF" H 5375 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5388 3750 30  0001 C CNN
+F 3 "" H 5350 3900 60  0000 C CNN
+	1    5350 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 55E27245
+P 6650 3900
+F 0 "C2" H 6675 4000 50  0000 L CNN
+F 1 "22uF" H 6675 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6688 3750 30  0001 C CNN
+F 3 "" H 6650 3900 60  0000 C CNN
+	1    6650 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 55E27266
+P 5100 3450
+F 0 "R2" V 5180 3450 50  0000 C CNN
+F 1 "100" V 5100 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5030 3450 30  0001 C CNN
+F 3 "" H 5100 3450 30  0000 C CNN
+	1    5100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 55E27298
+P 5700 3450
+F 0 "R3" V 5780 3450 50  0000 C CNN
+F 1 "47k" V 5700 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5630 3450 30  0001 C CNN
+F 3 "" H 5700 3450 30  0000 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 55E272BB
+P 6300 3450
+F 0 "R4" V 6380 3450 50  0000 C CNN
+F 1 "47k" V 6300 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6230 3450 30  0001 C CNN
+F 3 "" H 6300 3450 30  0000 C CNN
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 55E272E1
+P 6900 3450
+F 0 "R5" V 6980 3450 50  0000 C CNN
+F 1 "100" V 6900 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6830 3450 30  0001 C CNN
+F 3 "" H 6900 3450 30  0000 C CNN
+	1    6900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 55E2730C
+P 3300 4750
+F 0 "R1" V 3380 4750 50  0000 C CNN
+F 1 "100k" V 3300 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 4750 30  0001 C CNN
+F 3 "" H 3300 4750 30  0000 C CNN
+	1    3300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 55E27339
+P 5100 2800
+F 0 "D1" H 5100 2900 50  0000 C CNN
+F 1 "LED" H 5100 2700 50  0000 C CNN
+F 2 "bb:LED-1206" H 5100 2800 60  0001 C CNN
+F 3 "" H 5100 2800 60  0000 C CNN
+	1    5100 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 55E27378
+P 6900 2800
+F 0 "D2" H 6900 2900 50  0000 C CNN
+F 1 "LED" H 6900 2700 50  0000 C CNN
+F 2 "bb:LED-1206" H 6900 2800 60  0001 C CNN
+F 3 "" H 6900 2800 60  0000 C CNN
+	1    6900 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BC547 Q3
+U 1 1 55E2771E
+P 5200 4300
+F 0 "Q3" H 5400 4375 50  0000 L CNN
+F 1 "MMBT2222" H 5400 4300 50  0000 L CNN
+F 2 "bb:SOT-23_Handsoldering" H 5400 4225 50  0001 L CIN
+F 3 "" H 5200 4300 50  0000 L CNN
+	1    5200 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BC547 Q4
+U 1 1 55E27756
+P 6800 4300
+F 0 "Q4" H 7000 4375 50  0000 L CNN
+F 1 "MMBT2222" H 7000 4300 50  0000 L CNN
+F 2 "bb:SOT-23_Handsoldering" H 7000 4225 50  0001 L CIN
+F 3 "" H 6800 4300 50  0000 L CNN
+	1    6800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC547 Q2
+U 1 1 55E2778E
+P 4550 5350
+F 0 "Q2" H 4750 5425 50  0000 L CNN
+F 1 "MMBT2222" H 4750 5350 50  0000 L CNN
+F 2 "bb:SOT-23_Handsoldering" H 4750 5275 50  0001 L CIN
+F 3 "" H 4550 5350 50  0000 L CNN
+	1    4550 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5350 4350 5350
+Wire Wire Line
+	3850 4800 3850 4950
+Wire Wire Line
+	3850 4800 6900 4800
+Wire Wire Line
+	4650 4800 4650 5150
+Wire Wire Line
+	2600 2300 2600 3700
+Wire Wire Line
+	5100 2400 5100 2600
+Wire Wire Line
+	6900 2400 6900 2600
+Connection ~ 5100 2400
+Wire Wire Line
+	6900 3000 6900 3300
+Wire Wire Line
+	5100 3000 5100 3300
+Wire Wire Line
+	5100 4800 5100 4500
+Connection ~ 4650 4800
+Wire Wire Line
+	6900 4800 6900 4500
+Connection ~ 5100 4800
+Wire Wire Line
+	2600 4000 2600 6000
+Wire Wire Line
+	2600 5850 4650 5850
+Wire Wire Line
+	4650 5850 4650 5550
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 55E2A939
+P 1850 3800
+F 0 "#FLG01" H 1850 3895 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 3980 50  0000 C CNN
+F 2 "" H 1850 3800 60  0000 C CNN
+F 3 "" H 1850 3800 60  0000 C CNN
+	1    1850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 55E2A985
+P 1850 4100
+F 0 "#PWR02" H 1850 3850 50  0001 C CNN
+F 1 "GND" H 1850 3950 50  0000 C CNN
+F 2 "" H 1850 4100 60  0000 C CNN
+F 3 "" H 1850 4100 60  0000 C CNN
+	1    1850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3800 1850 4100
+$Comp
+L GND #PWR03
+U 1 1 55E2A9F1
+P 2600 6000
+F 0 "#PWR03" H 2600 5750 50  0001 C CNN
+F 1 "GND" H 2600 5850 50  0000 C CNN
+F 2 "" H 2600 6000 60  0000 C CNN
+F 3 "" H 2600 6000 60  0000 C CNN
+	1    2600 6000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 5850
+Wire Wire Line
+	3300 4900 3300 5150
+Wire Wire Line
+	3300 5150 3550 5150
+Wire Wire Line
+	5100 3600 5100 4100
+Wire Wire Line
+	5200 3900 5100 3900
+Connection ~ 5100 3900
+Wire Wire Line
+	5700 2400 5700 3300
+Connection ~ 5700 2400
+Wire Wire Line
+	5700 3600 5700 4100
+Wire Wire Line
+	5700 3900 5500 3900
+Wire Wire Line
+	5700 4100 6300 4100
+Wire Wire Line
+	6300 4100 6300 4300
+Wire Wire Line
+	6300 4300 6600 4300
+Connection ~ 5700 3900
+Wire Wire Line
+	6300 2400 6300 3300
+Connection ~ 6300 2400
+Wire Wire Line
+	6900 3600 6900 4100
+Wire Wire Line
+	6800 3900 6900 3900
+Connection ~ 6900 3900
+Wire Wire Line
+	6300 3600 6300 3900
+Wire Wire Line
+	6200 3900 6500 3900
+Wire Wire Line
+	6200 3900 6200 4300
+Wire Wire Line
+	6200 4300 5400 4300
+Connection ~ 6300 3900
+$Comp
+L Touch_Plate TP1
+U 1 1 55E2B395
+P 3300 4000
+F 0 "TP1" H 3300 4000 60  0000 C CNN
+F 1 "Touch_Plate" H 3300 4225 60  0000 C CNN
+F 2 "bb:TouchPlate-10mm" H 3300 4000 60  0001 C CNN
+F 3 "" H 3300 4000 60  0000 C CNN
+	1    3300 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3400 2600 3400
+Connection ~ 2600 3400
+Wire Wire Line
+	3300 3400 3300 3625
+Wire Wire Line
+	3300 4375 3300 4600
+Wire Wire Line
+	2600 2400 6900 2400
+Connection ~ 2600 2400
+Text GLabel 2600 2300 1    60   Input ~ 0
+VCC
+$Comp
+L Battery BT1
+U 1 1 55E6B2B2
+P 2600 3850
+F 0 "BT1" H 2700 3900 50  0000 L CNN
+F 1 "Battery" H 2700 3800 50  0000 L CNN
+F 2 "bb:CR2032-SMD" V 2600 3890 60  0001 C CNN
+F 3 "" V 2600 3890 60  0000 C CNN
+	1    2600 3850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

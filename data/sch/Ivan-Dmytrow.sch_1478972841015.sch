@@ -1,0 +1,125 @@
+EESchema Schematic File Version 2
+LIBS:ej1
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Ejercicio 1"
+Date ""
+Rev "1.0"
+Comp "ET N° 28"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_3 K1
+U 1 1 565C5B9A
+P 5350 4900
+F 0 "K1" H 5350 5100 50  0000 C CNN
+F 1 "CONN_3" H 5350 5200 40  0000 C CNN
+F 2 "ej1:bornier3" H 5350 4900 60  0001 C CNN
+F 3 "" H 5350 4900 60  0000 C CNN
+	1    5350 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 565C5E01
+P 6450 4150
+F 0 "D1" H 6450 4025 50  0000 C CNN
+F 1 "LED ROJO" H 6425 4250 50  0000 C CNN
+F 2 "ej1:LED-3MM" H 6450 4150 60  0001 C CNN
+F 3 "" H 6450 4150 60  0000 C CNN
+	1    6450 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 565C5F76
+P 6550 4550
+F 0 "C1" V 6600 4400 50  0000 L CNN
+F 1 "100 nF" V 6400 4350 50  0000 L CNN
+F 2 "ej1:C_Rect_L7_W3.5_P5" H 6588 4400 30  0001 C CNN
+F 3 "" H 6550 4550 60  0000 C CNN
+	1    6550 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 565C603D
+P 7450 4950
+F 0 "R1" H 7325 5025 50  0000 C CNN
+F 1 "100K" H 7300 4925 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 7380 4950 30  0001 C CNN
+F 3 "" H 7450 4950 30  0000 C CNN
+	1    7450 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 565C60B0
+P 6550 5400
+F 0 "D2" H 6550 5500 50  0000 C CNN
+F 1 "1N4148" H 6550 5275 50  0000 C CNN
+F 2 "ej1:Diode_DO-35_SOD27_Horizontal_RM10" H 6550 5400 60  0001 C CNN
+F 3 "" H 6550 5400 60  0000 C CNN
+	1    6550 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4800 5700 4800
+Wire Wire Line
+	5800 4150 6250 4150
+Wire Wire Line
+	6400 4550 5800 4550
+Wire Wire Line
+	5800 4150 5800 4800
+Connection ~ 5800 4550
+Wire Wire Line
+	6650 4150 7450 4150
+Wire Wire Line
+	7450 4150 7450 4800
+Wire Wire Line
+	6700 4550 7950 4550
+Connection ~ 7450 4550
+Wire Wire Line
+	7450 5100 7450 5400
+Wire Wire Line
+	7950 5400 6700 5400
+Wire Wire Line
+	6400 5400 5700 5400
+Wire Wire Line
+	5700 5400 5700 5000
+Text Notes 7950 4350 0    60   ~ 0
+Resistor en serie
+NoConn ~ 5700 4900
+$Comp
+L R R2
+U 1 1 565CA957
+P 7950 4950
+F 0 "R2" H 8075 5025 50  0000 C CNN
+F 1 "200K" H 8100 4925 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 7880 4950 30  0001 C CNN
+F 3 "" H 7950 4950 30  0000 C CNN
+	1    7950 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4550 7950 4800
+Wire Wire Line
+	7950 5100 7950 5400
+Connection ~ 7450 5400
+Wire Notes Line
+	7525 4925 7950 4375
+Wire Notes Line
+	7950 4375 8525 4375
+Wire Notes Line
+	8275 4875 8500 4575
+Wire Notes Line
+	8500 4575 9275 4575
+Text Notes 8525 4550 0    60   ~ 0
+Resistor agregado
+$EndSCHEMATC

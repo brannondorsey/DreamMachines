@@ -1,0 +1,286 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:voltage-divider-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Voltage Divider"
+Date "2015-12-26"
+Rev "v1.0"
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "The Weekly Circuit"
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X01 P1
+U 1 1 567F0962
+P 1900 2250
+F 0 "P1" H 1900 2150 50  0000 C CNN
+F 1 "Vin" H 1900 2350 50  0000 C CNN
+F 2 "" H 1900 2250 60  0000 C CNN
+F 3 "" H 1900 2250 60  0000 C CNN
+	1    1900 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 567F09A1
+P 5050 3150
+F 0 "P2" H 5050 3250 50  0000 C CNN
+F 1 "Vout" H 5050 3050 50  0000 C CNN
+F 2 "" H 5050 3150 60  0000 C CNN
+F 3 "" H 5050 3150 60  0000 C CNN
+	1    5050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 567F0A2D
+P 3100 4650
+F 0 "R2" V 3180 4650 50  0000 C CNN
+F 1 "R" V 3100 4650 50  0000 C CNN
+F 2 "" V 3030 4650 30  0000 C CNN
+F 3 "" H 3100 4650 30  0000 C CNN
+	1    3100 4650
+	1    0    0    -1  
+$EndComp
+Text Notes 2750 2950 0    60   ~ 0
+P1, P2 are Banana Plug Connectors\n\nVout = R2/(R1+R2) * Vin
+$Comp
+L POT RV1
+U 1 1 567F0B5D
+P 3650 4700
+F 0 "RV1" H 3650 4600 50  0000 C CNN
+F 1 "1K" H 3650 4700 50  0000 C CNN
+F 2 "" H 3650 4700 60  0000 C CNN
+F 3 "" H 3650 4700 60  0000 C CNN
+	1    3650 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 567F17C9
+P 3650 3800
+F 0 "SW?" H 3650 3750 50  0000 C CNN
+F 1 "SPST" H 3650 3700 50  0001 C CNN
+F 2 "" H 3650 3800 60  0000 C CNN
+F 3 "" H 3650 3800 60  0000 C CNN
+	1    3650 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 567F2137
+P 4200 3800
+F 0 "SW?" H 4200 3750 50  0000 C CNN
+F 1 "SPST" H 4200 3700 50  0001 C CNN
+F 2 "" H 4200 3800 60  0000 C CNN
+F 3 "" H 4200 3800 60  0000 C CNN
+	1    4200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 567F211F
+P 4200 3800
+F 0 "SW?" H 4200 3750 50  0000 C CNN
+F 1 "SPST" H 4200 3700 50  0001 C CNN
+F 2 "" H 4200 3800 60  0000 C CNN
+F 3 "" H 4200 3800 60  0000 C CNN
+	1    4200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 567F20F4
+P 4200 3800
+F 0 "SW?" H 4200 3750 50  0000 C CNN
+F 1 "SPST" H 4200 3700 50  0001 C CNN
+F 2 "" H 4200 3800 60  0000 C CNN
+F 3 "" H 4200 3800 60  0000 C CNN
+	1    4200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 567F17F6
+P 4200 3800
+F 0 "SW?" H 4200 3750 50  0000 C CNN
+F 1 "SPST" H 4200 3700 50  0001 C CNN
+F 2 "" H 4200 3800 60  0000 C CNN
+F 3 "" H 4200 3800 60  0000 C CNN
+	1    4200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 567F2232
+P 4750 3800
+F 0 "SW?" H 4750 3750 50  0000 C CNN
+F 1 "SPST" H 4750 3700 50  0001 C CNN
+F 2 "" H 4750 3800 60  0000 C CNN
+F 3 "" H 4750 3800 60  0000 C CNN
+	1    4750 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV?
+U 1 1 567F22D2
+P 4750 4700
+F 0 "RV?" H 4750 4600 50  0000 C CNN
+F 1 "100K" H 4750 4700 50  0000 C CNN
+F 2 "" H 4750 4700 60  0000 C CNN
+F 3 "" H 4750 4700 60  0000 C CNN
+	1    4750 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 567F1771
+P 3100 3800
+F 0 "SW?" H 3100 3750 50  0000 C CNN
+F 1 "SPST" H 3100 3700 50  0001 C CNN
+F 2 "" H 3100 3800 60  0000 C CNN
+F 3 "" H 3100 3800 60  0000 C CNN
+	1    3100 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 567F2CCF
+P 2600 3800
+F 0 "SW?" H 2600 3750 50  0000 C CNN
+F 1 "SPST" H 2600 3700 50  0001 C CNN
+F 2 "" H 2600 3800 60  0000 C CNN
+F 3 "" H 2600 3800 60  0000 C CNN
+	1    2600 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 567F2D1C
+P 2600 4650
+F 0 "R?" V 2680 4650 50  0000 C CNN
+F 1 "R" V 2600 4650 50  0000 C CNN
+F 2 "" V 2530 4650 30  0000 C CNN
+F 3 "" H 2600 4650 30  0000 C CNN
+	1    2600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 567F2129
+P 4200 4700
+F 0 "RV?" H 4200 4600 50  0000 C CNN
+F 1 "10K" H 4200 4700 50  0000 C CNN
+F 2 "" H 4200 4700 60  0000 C CNN
+F 3 "" H 4200 4700 60  0000 C CNN
+	1    4200 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P?
+U 1 1 567F3B77
+P 5000 5050
+F 0 "P?" H 5000 5150 50  0000 C CNN
+F 1 "GND" H 5000 4950 50  0000 C CNN
+F 2 "" H 5000 5050 60  0000 C CNN
+F 3 "" H 5000 5050 60  0000 C CNN
+	1    5000 5050
+	1    0    0    -1  
+$EndComp
+Text Notes 2750 2600 0    60   ~ 0
+http://www.resistorguide.com/potentiometer/\nhttp://www.avrfreaks.net/forum/what-size-potentiometer-get
+Wire Wire Line
+	3100 3150 3100 3300
+Connection ~ 2600 3150
+Wire Wire Line
+	2200 2950 2200 3150
+Wire Wire Line
+	2100 2250 2200 2250
+Wire Wire Line
+	2600 3300 2600 3150
+Wire Wire Line
+	2600 4500 2600 4350
+Wire Wire Line
+	2600 4800 2600 5050
+Connection ~ 4750 3150
+Wire Wire Line
+	4750 3150 4750 3300
+Wire Wire Line
+	4750 4300 4750 4450
+Wire Wire Line
+	4750 5050 4750 4950
+Connection ~ 4200 3150
+Wire Wire Line
+	4200 5050 4200 4950
+Wire Wire Line
+	4200 3150 4200 3300
+Wire Wire Line
+	4200 4450 4200 4300
+Wire Wire Line
+	3650 4450 3650 4300
+Wire Wire Line
+	3100 4500 3100 4300
+Wire Wire Line
+	3650 3150 3650 3300
+Wire Wire Line
+	3100 4800 3100 5050
+Wire Wire Line
+	3650 5050 3650 4950
+Connection ~ 3650 3150
+Connection ~ 3100 3150
+Wire Wire Line
+	2200 3150 4850 3150
+Wire Wire Line
+	2600 5050 4800 5050
+Connection ~ 4750 5050
+Connection ~ 3100 5050
+Connection ~ 3650 5050
+Connection ~ 4200 5050
+$Comp
+L POT RV?
+U 1 1 567F4402
+P 2200 2700
+F 0 "RV?" H 2200 2600 50  0000 C CNN
+F 1 "1K" H 2200 2700 50  0000 C CNN
+F 2 "" H 2200 2700 60  0000 C CNN
+F 3 "" H 2200 2700 60  0000 C CNN
+	1    2200 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 2250 2200 2450
+$EndSCHEMATC

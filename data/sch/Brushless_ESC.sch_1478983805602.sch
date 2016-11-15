@@ -1,0 +1,490 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:Altera
+LIBS:analog_devices
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Xicor
+LIBS:Zilog
+LIBS:crystal
+LIBS:crystal-epson
+LIBS:tle4267
+LIBS:Brushless_ESC-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "Brushless ESC"
+Date "2016-05-21"
+Rev "2.0"
+Comp "Daniel Walter (fordprfkt@googlemail.com)"
+Comment1 "Brushless Engine Speed Controller"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2700 3250 1950 1950
+U 55E20B14
+F0 "Controller" 60
+F1 "Controller.sch" 60
+F2 "PWM" O R 4650 3350 60 
+F3 "V_Bat" I R 4650 4950 60 
+F4 "BEMF_A" I R 4650 4600 60 
+F5 "BEMF_B" I R 4650 4700 60 
+F6 "BEMF_C" I R 4650 4800 60 
+F7 "BEMF_Center" I R 4650 4500 60 
+F8 "BatCurrent+" I R 4650 4250 60 
+F9 "IN_A" O R 4650 3500 60 
+F10 "IN_B" O R 4650 3750 60 
+F11 "IN_C" O R 4650 4000 60 
+F12 "/SD_A" O R 4650 3600 60 
+F13 "/SD_B" O R 4650 3850 60 
+F14 "/SD_C" O R 4650 4100 60 
+F15 "PPM" I L 2700 3800 60 
+F16 "T_Sense" I R 4650 4350 60 
+F17 "SDA" I L 2700 4350 60 
+F18 "SCL" I L 2700 4450 60 
+F19 "Reset" I L 2700 3400 60 
+$EndSheet
+$Sheet
+S 6400 3250 1700 1900
+U 55E20B33
+F0 "Power" 60
+F1 "Power.sch" 60
+F2 "PWM" I L 6400 3350 60 
+F3 "IN_A" I L 6400 3500 60 
+F4 "/SD_A" I L 6400 3600 60 
+F5 "IN_B" I L 6400 3750 60 
+F6 "/SD_B" I L 6400 3850 60 
+F7 "IN_C" I L 6400 4000 60 
+F8 "/SD_C" I L 6400 4100 60 
+F9 "BEMF_Center" O L 6400 4500 60 
+F10 "BEMF_A" O L 6400 4600 60 
+F11 "BEMF_B" O L 6400 4700 60 
+F12 "BEMF_C" O L 6400 4800 60 
+F13 "V_Bat" O L 6400 4950 60 
+F14 "Coil_A" O R 8100 3700 60 
+F15 "Coil_B" O R 8100 4250 60 
+F16 "Coil_C" O R 8100 4800 60 
+F17 "BatCurrent+" O L 6400 4250 60 
+F18 "T_Sense" O L 6400 4350 60 
+$EndSheet
+$Comp
+L CONN_01X01 P1
+U 1 1 55E32B03
+P 1050 1500
+F 0 "P1" H 1050 1600 50  0000 C CNN
+F 1 "Battery+" V 1150 1500 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 1050 1500 60  0001 C CNN
+F 3 "" H 1050 1500 60  0000 C CNN
+	1    1050 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 55E32C83
+P 8750 3700
+F 0 "P3" H 8750 3800 50  0000 C CNN
+F 1 "Coil_A" V 8850 3700 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 8750 3700 60  0001 C CNN
+F 3 "" H 8750 3700 60  0000 C CNN
+	1    8750 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 55E3308D
+P 8750 4250
+F 0 "P5" H 8750 4350 50  0000 C CNN
+F 1 "Coil_B" V 8850 4250 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 8750 4250 60  0001 C CNN
+F 3 "" H 8750 4250 60  0000 C CNN
+	1    8750 4250
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 55E331C2
+P 8750 4800
+F 0 "P6" H 8750 4900 50  0000 C CNN
+F 1 "Coil_C" V 8850 4800 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 8750 4800 60  0001 C CNN
+F 3 "" H 8750 4800 60  0000 C CNN
+	1    8750 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 55E33584
+P 1050 1900
+F 0 "P2" H 1050 2000 50  0000 C CNN
+F 1 "Battery-" V 1150 1900 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 1050 1900 60  0001 C CNN
+F 3 "" H 1050 1900 60  0000 C CNN
+	1    1050 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L +BATT #PWR01
+U 1 1 55E34918
+P 1350 1400
+F 0 "#PWR01" H 1350 1250 50  0001 C CNN
+F 1 "+BATT" H 1350 1540 50  0000 C CNN
+F 2 "" H 1350 1400 60  0000 C CNN
+F 3 "" H 1350 1400 60  0000 C CNN
+	1    1350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 55E3DB89
+P 2250 3550
+F 0 "#PWR02" H 2250 3400 50  0001 C CNN
+F 1 "+5V" H 2250 3690 50  0000 C CNN
+F 2 "" H 2250 3550 60  0000 C CNN
+F 3 "" H 2250 3550 60  0000 C CNN
+	1    2250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 55E3DC85
+P 2250 3950
+F 0 "#PWR03" H 2250 3700 50  0001 C CNN
+F 1 "GND" H 2250 3800 50  0000 C CNN
+F 2 "" H 2250 3950 60  0000 C CNN
+F 3 "" H 2250 3950 60  0000 C CNN
+	1    2250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 55F7B3D2
+P 1300 2000
+F 0 "#PWR04" H 1300 1750 50  0001 C CNN
+F 1 "GND" H 1300 1850 50  0000 C CNN
+F 2 "" H 1300 2000 60  0000 C CNN
+F 3 "" H 1300 2000 60  0000 C CNN
+	1    1300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P7
+U 1 1 56FC7BDA
+P 1650 4400
+F 0 "P7" H 1650 4550 50  0000 C CNN
+F 1 "I2C" V 1750 4400 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_PicoBlade_53048-0210" H 1650 4400 50  0001 C CNN
+F 3 "" H 1650 4400 50  0000 C CNN
+	1    1650 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P4
+U 1 1 56FC7CCB
+P 1650 3800
+F 0 "P4" H 1650 4000 50  0000 C CNN
+F 1 "PPM" V 1750 3800 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_PicoBlade_53048-0310" H 1650 3800 50  0001 C CNN
+F 3 "" H 1650 3800 50  0000 C CNN
+	1    1650 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L +BATT #PWR05
+U 1 1 56FF43E4
+P 1900 1400
+F 0 "#PWR05" H 1900 1250 50  0001 C CNN
+F 1 "+BATT" H 1900 1540 50  0000 C CNN
+F 2 "" H 1900 1400 60  0000 C CNN
+F 3 "" H 1900 1400 60  0000 C CNN
+	1    1900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 56FF5340
+P 3200 2350
+F 0 "#PWR06" H 3200 2100 50  0001 C CNN
+F 1 "GND" H 3200 2200 50  0000 C CNN
+F 2 "" H 3200 2350 60  0000 C CNN
+F 3 "" H 3200 2350 60  0000 C CNN
+	1    3200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C22
+U 1 1 56FF54B9
+P 2600 2150
+F 0 "C22" H 2625 2250 50  0000 L CNN
+F 1 "100nF" H 2625 2050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2638 2000 50  0001 C CNN
+F 3 "" H 2600 2150 50  0000 C CNN
+	1    2600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C20
+U 1 1 56FF55DB
+P 2400 1750
+F 0 "C20" H 2425 1850 50  0000 L CNN
+F 1 "470nF" H 2425 1650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2438 1600 50  0001 C CNN
+F 3 "" H 2400 1750 50  0000 C CNN
+	1    2400 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C21
+U 1 1 56FF56F9
+P 4300 1750
+F 0 "C21" H 4325 1850 50  0000 L CNN
+F 1 "22µF" H 4325 1650 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeC_EIA-6032_HandSoldering" H 4338 1600 50  0001 C CNN
+F 3 "" H 4300 1750 50  0000 C CNN
+	1    4300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C19
+U 1 1 56FF82CB
+P 1900 1750
+F 0 "C19" H 1925 1850 50  0000 L CNN
+F 1 "1000µF" H 1925 1650 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D10_L20_P7.5" H 1938 1600 50  0001 C CNN
+F 3 "" H 1900 1750 50  0000 C CNN
+	1    1900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 56FF98F1
+P 2300 2000
+F 0 "#PWR07" H 2300 1750 50  0001 C CNN
+F 1 "GND" H 2300 1850 50  0000 C CNN
+F 2 "" H 2300 2000 60  0000 C CNN
+F 3 "" H 2300 2000 60  0000 C CNN
+	1    2300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 56FFA664
+P 2600 2350
+F 0 "#PWR08" H 2600 2100 50  0001 C CNN
+F 1 "GND" H 2600 2200 50  0000 C CNN
+F 2 "" H 2600 2350 60  0000 C CNN
+F 3 "" H 2600 2350 60  0000 C CNN
+	1    2600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 56FFA75F
+P 4300 2350
+F 0 "#PWR09" H 4300 2100 50  0001 C CNN
+F 1 "GND" H 4300 2200 50  0000 C CNN
+F 2 "" H 4300 2350 60  0000 C CNN
+F 3 "" H 4300 2350 60  0000 C CNN
+	1    4300 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1900 1300 1900
+Wire Wire Line
+	1300 1900 1300 2000
+Wire Wire Line
+	1250 1500 1350 1500
+Wire Wire Line
+	1350 1500 1350 1400
+Wire Wire Line
+	8100 3700 8550 3700
+Wire Wire Line
+	8100 4250 8550 4250
+Wire Wire Line
+	8100 4800 8550 4800
+Wire Wire Line
+	4650 3350 6400 3350
+Wire Wire Line
+	6400 3500 4650 3500
+Wire Wire Line
+	4650 3600 6400 3600
+Wire Wire Line
+	6400 3750 4650 3750
+Wire Wire Line
+	4650 3850 6400 3850
+Wire Wire Line
+	4650 4000 6400 4000
+Wire Wire Line
+	6400 4100 4650 4100
+Wire Wire Line
+	4650 4250 6400 4250
+Wire Wire Line
+	4650 4500 6400 4500
+Wire Wire Line
+	6400 4600 4650 4600
+Wire Wire Line
+	4650 4700 6400 4700
+Wire Wire Line
+	6400 4800 4650 4800
+Wire Wire Line
+	4650 4950 6400 4950
+Wire Wire Line
+	1850 3700 2250 3700
+Wire Wire Line
+	2250 3700 2250 3550
+Wire Wire Line
+	1850 3900 2250 3900
+Wire Wire Line
+	2250 3900 2250 3950
+Wire Wire Line
+	2700 3800 1850 3800
+Wire Wire Line
+	4650 4350 6400 4350
+Wire Wire Line
+	1850 4350 2700 4350
+Wire Wire Line
+	1850 4450 2700 4450
+Wire Wire Line
+	3700 1550 4300 1550
+Wire Wire Line
+	4300 1400 4300 1600
+Wire Wire Line
+	1900 1550 2700 1550
+Wire Wire Line
+	2400 1550 2400 1600
+Wire Wire Line
+	2600 1750 2700 1750
+Wire Wire Line
+	2600 1750 2600 1550
+Connection ~ 2600 1550
+Wire Wire Line
+	1900 1400 1900 1600
+Connection ~ 2400 1550
+Connection ~ 1900 1550
+Wire Wire Line
+	4300 2350 4300 1900
+Wire Wire Line
+	2400 1950 2400 1900
+Wire Wire Line
+	1900 1950 2400 1950
+Wire Wire Line
+	2300 1950 2300 2000
+Wire Wire Line
+	1900 1900 1900 1950
+Connection ~ 2300 1950
+Wire Wire Line
+	2550 3400 2700 3400
+$Comp
+L +5V #PWR010
+U 1 1 56FFFB81
+P 4300 1400
+F 0 "#PWR010" H 4300 1250 50  0001 C CNN
+F 1 "+5V" H 4300 1540 50  0000 C CNN
+F 2 "" H 4300 1400 50  0000 C CNN
+F 3 "" H 4300 1400 50  0000 C CNN
+	1    4300 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 1550
+$Comp
+L TLE4267 U1
+U 1 1 56FFC8DB
+P 3200 1750
+F 0 "U1" H 3000 1400 60  0000 C CNN
+F 1 "TLE4267" H 3100 2100 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3100 1700 60  0001 C CNN
+F 3 "" H 3100 1700 60  0000 C CNN
+	1    3200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1950 2600 1950
+Wire Wire Line
+	2600 1950 2600 2000
+Wire Wire Line
+	2600 2350 2600 2300
+Wire Wire Line
+	2550 3400 2550 2950
+Wire Wire Line
+	2550 2950 3800 2950
+Wire Wire Line
+	3800 2950 3800 1950
+Wire Wire Line
+	3800 1950 3700 1950
+NoConn ~ 3700 1750
+Wire Wire Line
+	3200 2350 3200 2250
+$EndSCHEMATC

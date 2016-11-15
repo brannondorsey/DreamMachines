@@ -1,0 +1,312 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:glo-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "glo"
+Date ""
+Rev "0.3"
+Comp "electronut Labs"
+Comment1 "electronut.in"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED_RCBG D1
+U 1 1 56EF7AFE
+P 3100 3700
+F 0 "D1" H 3100 4050 50  0000 C CNN
+F 1 "LED_RCBG" H 3100 3350 50  0000 C CNN
+F 2 "glo:LED-RGB-5MM_Common_Cathode" H 3100 3650 50  0001 C CNN
+F 3 "" H 3100 3650 50  0000 C CNN
+	1    3100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56EF7B4B
+P 3750 3500
+F 0 "R1" V 3830 3500 50  0000 C CNN
+F 1 "200" V 3750 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3680 3500 50  0001 C CNN
+F 3 "" H 3750 3500 50  0000 C CNN
+	1    3750 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56EF7B7B
+P 3750 3700
+F 0 "R2" V 3830 3700 50  0000 C CNN
+F 1 "100" V 3750 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3680 3700 50  0001 C CNN
+F 3 "" H 3750 3700 50  0000 C CNN
+	1    3750 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56EF7B98
+P 3750 3900
+F 0 "R3" V 3830 3900 50  0000 C CNN
+F 1 "100" V 3750 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3680 3900 50  0001 C CNN
+F 3 "" H 3750 3900 50  0000 C CNN
+	1    3750 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 56EF7BB2
+P 7000 3750
+F 0 "C1" H 7025 3850 50  0000 L CNN
+F 1 "0.1uF" H 7025 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7038 3600 50  0001 C CNN
+F 3 "" H 7000 3750 50  0000 C CNN
+	1    7000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 56EF7BE4
+P 7700 3600
+F 0 "P2" H 7700 3800 50  0000 C CNN
+F 1 "PWR" V 7800 3600 50  0000 C CNN
+F 2 "glo:Pin_Header_Angled_1x03" H 7700 3600 50  0001 C CNN
+F 3 "" H 7700 3600 50  0000 C CNN
+	1    7700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 56EF7C1B
+P 8700 3700
+F 0 "#FLG01" H 8700 3795 50  0001 C CNN
+F 1 "PWR_FLAG" H 8700 3880 50  0000 C CNN
+F 2 "" H 8700 3700 50  0000 C CNN
+F 3 "" H 8700 3700 50  0000 C CNN
+	1    8700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56EF7C3D
+P 8700 3950
+F 0 "#PWR02" H 8700 3700 50  0001 C CNN
+F 1 "GND" H 8700 3800 50  0000 C CNN
+F 2 "" H 8700 3950 50  0000 C CNN
+F 3 "" H 8700 3950 50  0000 C CNN
+	1    8700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 56EF7C64
+P 7000 4200
+F 0 "#PWR03" H 7000 3950 50  0001 C CNN
+F 1 "GND" H 7000 4050 50  0000 C CNN
+F 2 "" H 7000 4200 50  0000 C CNN
+F 3 "" H 7000 4200 50  0000 C CNN
+	1    7000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P1
+U 1 1 56EF7CF5
+P 5350 2500
+F 0 "P1" H 5350 2700 50  0000 C CNN
+F 1 "ICSP" H 5350 2300 50  0000 C CNN
+F 2 "glo:pogo_prog_2x3" H 5350 1300 50  0001 C CNN
+F 3 "" H 5350 1300 50  0000 C CNN
+	1    5350 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4900 2400 0    39   Input ~ 0
+MISO
+Text GLabel 4900 2500 0    39   Input ~ 0
+SCK
+Text GLabel 4900 2600 0    39   Input ~ 0
+RESET
+Text GLabel 5800 2400 2    39   Input ~ 0
+VCC
+Text GLabel 5800 2500 2    39   Input ~ 0
+MOSI
+$Comp
+L GND #PWR04
+U 1 1 56EF7EBA
+P 5800 2700
+F 0 "#PWR04" H 5800 2450 50  0001 C CNN
+F 1 "GND" H 5800 2550 50  0000 C CNN
+F 2 "" H 5800 2700 50  0000 C CNN
+F 3 "" H 5800 2700 50  0000 C CNN
+	1    5800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2400 5800 2400
+Wire Wire Line
+	5600 2500 5800 2500
+Wire Wire Line
+	5600 2600 5800 2600
+Wire Wire Line
+	5800 2600 5800 2700
+Wire Wire Line
+	4900 2400 5100 2400
+Wire Wire Line
+	4900 2500 5100 2500
+Wire Wire Line
+	4900 2600 5100 2600
+$Comp
+L GND #PWR05
+U 1 1 56EF8EA4
+P 2700 4400
+F 0 "#PWR05" H 2700 4150 50  0001 C CNN
+F 1 "GND" H 2700 4250 50  0000 C CNN
+F 2 "" H 2700 4400 50  0000 C CNN
+F 3 "" H 2700 4400 50  0000 C CNN
+	1    2700 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3700 2700 3700
+Wire Wire Line
+	2700 3700 2700 4400
+Wire Wire Line
+	3400 3500 3600 3500
+Wire Wire Line
+	3400 3700 3600 3700
+Wire Wire Line
+	3400 3900 3600 3900
+Wire Wire Line
+	3900 3500 4400 3500
+Wire Wire Line
+	4000 3600 4400 3600
+Wire Wire Line
+	4000 3600 4000 3700
+Wire Wire Line
+	4000 3700 3900 3700
+Wire Wire Line
+	3900 3900 4050 3900
+Wire Wire Line
+	4050 3900 4050 3700
+Wire Wire Line
+	4050 3700 4400 3700
+Text GLabel 3900 4200 0    39   Input ~ 0
+RESET
+Wire Wire Line
+	4400 4000 4100 4000
+Wire Wire Line
+	4100 4000 4100 4200
+Wire Wire Line
+	4100 4200 3900 4200
+Wire Wire Line
+	6400 3500 7500 3500
+Wire Wire Line
+	7000 3100 7000 3600
+Connection ~ 7000 3500
+Wire Wire Line
+	7000 3900 7000 4200
+Wire Wire Line
+	6400 4000 7200 4000
+Connection ~ 7000 4000
+Wire Wire Line
+	7500 3600 7200 3600
+Wire Wire Line
+	7200 3600 7200 4000
+Wire Wire Line
+	7500 3700 7500 4500
+Wire Wire Line
+	7500 4500 4300 4500
+Wire Wire Line
+	4300 4500 4300 3800
+Wire Wire Line
+	4300 3800 4400 3800
+NoConn ~ 4400 3900
+Text GLabel 3900 3100 0    39   Input ~ 0
+MISO
+Wire Wire Line
+	3900 3100 4100 3100
+Wire Wire Line
+	4100 3100 4100 3600
+Connection ~ 4100 3600
+Text GLabel 3900 3000 0    39   Input ~ 0
+MOSI
+Wire Wire Line
+	3900 3000 4200 3000
+Wire Wire Line
+	4200 3000 4200 3500
+Connection ~ 4200 3500
+Wire Wire Line
+	8700 3700 8700 3950
+Text GLabel 6900 3100 0    39   Input ~ 0
+VCC
+Wire Wire Line
+	6900 3100 7000 3100
+Text GLabel 3900 2900 0    39   Input ~ 0
+SCK
+Wire Wire Line
+	3900 2900 4300 2900
+Wire Wire Line
+	4300 2900 4300 3700
+Connection ~ 4300 3700
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 56EF991B
+P 9150 3700
+F 0 "#FLG06" H 9150 3795 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 3880 50  0000 C CNN
+F 2 "" H 9150 3700 50  0000 C CNN
+F 3 "" H 9150 3700 50  0000 C CNN
+	1    9150 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 9100 3900 0    39   Input ~ 0
+VCC
+Wire Wire Line
+	9150 3700 9150 3900
+Wire Wire Line
+	9150 3900 9100 3900
+$Comp
+L ATTINY13-MM IC1
+U 1 1 56F3ADC5
+P 5400 3750
+F 0 "IC1" H 4600 4150 50  0000 C CNN
+F 1 "ATTINY13-MM" H 6050 3350 50  0000 C CNN
+F 2 "glo:DFN-10-1EP_3x3mm_Pitch0.5mm" H 6000 3750 50  0000 C CIN
+F 3 "" H 4600 4100 50  0000 C CNN
+	1    5400 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

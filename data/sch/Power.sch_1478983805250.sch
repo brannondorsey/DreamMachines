@@ -1,0 +1,186 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BenchBuddy
+LIBS:LettuceBuddy
+LIBS:LadyBugShield-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title ""
+Date "13 apr 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R8
+U 1 1 547DEB21
+P 3550 1550
+F 0 "R8" V 3630 1550 40  0000 C CNN
+F 1 "1K" V 3557 1551 40  0000 C CNN
+F 2 "~" V 3480 1550 30  0000 C CNN
+F 3 "~" H 3550 1550 30  0000 C CNN
+	1    3550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 547DEB27
+P 3550 2400
+F 0 "R9" V 3630 2400 40  0000 C CNN
+F 1 "1K" V 3557 2401 40  0000 C CNN
+F 2 "~" V 3480 2400 30  0000 C CNN
+F 3 "~" H 3550 2400 30  0000 C CNN
+	1    3550 2400
+	1    0    0    -1  
+$EndComp
+Text Notes 3000 900  2    98   ~ 0
+Raise GND
+Wire Wire Line
+	3550 1100 3550 1300
+Wire Wire Line
+	3550 2650 3550 2900
+Wire Wire Line
+	3550 1800 3550 2150
+Wire Wire Line
+	2850 2000 3550 2000
+Connection ~ 3550 2000
+Wire Wire Line
+	2850 2200 3150 2200
+Wire Wire Line
+	3150 2200 3150 2800
+Wire Wire Line
+	3150 2800 1850 2800
+Wire Wire Line
+	1850 2800 1850 2100
+Wire Wire Line
+	1550 2100 2150 2100
+Connection ~ 1850 2100
+Wire Notes Line
+	1000 750  4400 750 
+Wire Notes Line
+	4400 750  4400 3050
+Wire Notes Line
+	4400 3050 1000 3050
+Wire Notes Line
+	1000 3050 1000 750 
+Wire Wire Line
+	3700 1100 3550 1100
+Wire Wire Line
+	2600 1000 2600 1800
+Wire Wire Line
+	2750 1000 2600 1000
+Wire Wire Line
+	2600 2400 2600 2600
+Wire Wire Line
+	2300 1300 2600 1300
+Connection ~ 2600 1300
+Wire Wire Line
+	2300 1700 2300 1800
+$Comp
+L C C4
+U 1 1 547DEB65
+P 3300 1400
+F 0 "C4" H 3300 1500 40  0000 L CNN
+F 1 ".1u" H 3306 1315 40  0000 L CNN
+F 2 "~" H 3338 1250 30  0000 C CNN
+F 3 "~" H 3300 1400 60  0000 C CNN
+	1    3300 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1200 3550 1200
+Connection ~ 3550 1200
+Wire Wire Line
+	3300 1600 3300 1700
+Text Label 3200 2000 0    60   ~ 0
+VGND_V+
+Text GLabel 2600 2600 0    60   Input ~ 0
+GND
+Text GLabel 2300 1800 0    60   Input ~ 0
+GND
+Text GLabel 3550 2900 0    60   Input ~ 0
+GND
+Text GLabel 3300 1700 0    60   Input ~ 0
+GND
+Text GLabel 1550 2100 0    60   Output ~ 0
+VGND
+$Comp
+L MCP6242 U2
+U 1 1 54906C62
+P 2600 2100
+F 0 "U2" H 2700 2300 60  0000 L CNN
+F 1 "MCP6242" H 2650 1900 60  0000 L CNN
+F 2 "~" H 2700 2100 60  0000 C CNN
+F 3 "~" H 2700 2100 60  0000 C CNN
+	1    2600 2100
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3100 1000 0    60   Output ~ 0
+Vclean
+Text GLabel 4050 1100 0    60   Output ~ 0
+Vclean
+$Comp
+L C C9
+U 1 1 5490B18A
+P 2300 1500
+F 0 "C9" H 2300 1600 40  0000 L CNN
+F 1 ".1u" H 2306 1415 40  0000 L CNN
+F 2 "~" H 2338 1350 30  0000 C CNN
+F 3 "~" H 2300 1500 60  0000 C CNN
+	1    2300 1500
+	1    0    0    -1  
+$EndComp
+Text Label 3400 1200 0    60   ~ 0
+Vclean
+Text Label 2450 1300 0    60   ~ 0
+Vclean
+$Comp
+L CONN_1 VGND_TP1
+U 1 1 5506C7AE
+P 1800 1550
+F 0 "VGND_TP1" H 1880 1550 40  0000 L CNN
+F 1 "CONN_1" H 1800 1605 30  0001 C CNN
+F 2 "" H 1800 1550 60  0000 C CNN
+F 3 "" H 1800 1550 60  0000 C CNN
+	1    1800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1550 1650 2100
+Connection ~ 1650 2100
+$EndSCHEMATC

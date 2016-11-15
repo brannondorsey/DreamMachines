@@ -1,0 +1,371 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SN75160B
+LIBS:SN75162B
+LIBS:conn_centronics_24
+LIBS:open-project
+LIBS:esp8266
+LIBS:ba33bc0fp-e2
+LIBS:ap1117e50g-13
+LIBS:irlml2246tr
+LIBS:testpoint
+LIBS:vin
+LIBS:stm32f072cbt6
+LIBS:Wifi-GPIB-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12/07v2/08v2 U8
+U 1 1 55667714
+P 6050 4250
+F 0 "U8" H 6050 4800 60  0000 C CNN
+F 1 "ESP-12/07v2/08v2" H 6050 3700 60  0000 C CNN
+F 2 "ESP8266:ESP-07" H 6050 4250 60  0001 C CNN
+F 3 "" H 6050 4250 60  0000 C CNN
+	1    6050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P5
+U 1 1 5566771B
+P 6800 2350
+F 0 "P5" V 6750 2350 50  0000 C CNN
+F 1 "ESP_PROG" V 6850 2350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 6800 2350 60  0001 C CNN
+F 3 "" H 6800 2350 60  0000 C CNN
+	1    6800 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR056
+U 1 1 55667722
+P 6650 2900
+F 0 "#PWR056" H 6650 2900 30  0001 C CNN
+F 1 "GND" H 6650 2830 30  0001 C CNN
+F 2 "" H 6650 2900 60  0000 C CNN
+F 3 "" H 6650 2900 60  0000 C CNN
+	1    6650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR057
+U 1 1 55667729
+P 6400 2950
+F 0 "#PWR057" H 6400 2910 30  0001 C CNN
+F 1 "+3.3V" H 6400 3060 30  0000 C CNN
+F 2 "" H 6400 2950 60  0000 C CNN
+F 3 "" H 6400 2950 60  0000 C CNN
+	1    6400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP2
+U 1 1 55667738
+P 5600 2900
+F 0 "JP2" H 5600 3050 60  0000 C CNN
+F 1 "ESP_FLASH_JUMP" H 5600 2820 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5600 2900 60  0001 C CNN
+F 3 "" H 5600 2900 60  0000 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5566773F
+P 5050 2650
+F 0 "R10" V 5130 2650 40  0000 C CNN
+F 1 "R" V 5057 2651 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4980 2650 30  0001 C CNN
+F 3 "" H 5050 2650 30  0000 C CNN
+	1    5050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR058
+U 1 1 55667746
+P 5050 2350
+F 0 "#PWR058" H 5050 2310 30  0001 C CNN
+F 1 "+3.3V" H 5050 2460 30  0000 C CNN
+F 2 "" H 5050 2350 60  0000 C CNN
+F 3 "" H 5050 2350 60  0000 C CNN
+	1    5050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR059
+U 1 1 5566774C
+P 5900 3050
+F 0 "#PWR059" H 5900 3050 30  0001 C CNN
+F 1 "GND" H 5900 2980 30  0001 C CNN
+F 2 "" H 5900 3050 60  0000 C CNN
+F 3 "" H 5900 3050 60  0000 C CNN
+	1    5900 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4850 2900 0    39   Input ~ 0
+ESP_GPIO0
+Text Notes 5400 1700 0    60   ~ 0
+ESP8266 Wifi Module
+$Comp
+L +3.3V #PWR060
+U 1 1 5566775A
+P 8000 4400
+F 0 "#PWR060" H 8000 4360 30  0001 C CNN
+F 1 "+3.3V" H 8000 4510 30  0000 C CNN
+F 2 "" H 8000 4400 60  0000 C CNN
+F 3 "" H 8000 4400 60  0000 C CNN
+	1    8000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR061
+U 1 1 55667760
+P 4150 3950
+F 0 "#PWR061" H 4150 3910 30  0001 C CNN
+F 1 "+3.3V" H 4150 4060 30  0000 C CNN
+F 2 "" H 4150 3950 60  0000 C CNN
+F 3 "" H 4150 3950 60  0000 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR062
+U 1 1 5566776E
+P 7500 5350
+F 0 "#PWR062" H 7500 5350 30  0001 C CNN
+F 1 "GND" H 7500 5280 30  0001 C CNN
+F 2 "" H 7500 5350 60  0000 C CNN
+F 3 "" H 7500 5350 60  0000 C CNN
+	1    7500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 55668FA2
+P 7500 4900
+F 0 "R11" V 7580 4900 40  0000 C CNN
+F 1 "R" V 7507 4901 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7430 4900 30  0001 C CNN
+F 3 "" H 7500 4900 30  0000 C CNN
+	1    7500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR063
+U 1 1 5566915C
+P 2750 4500
+F 0 "#PWR063" H 2750 4460 30  0001 C CNN
+F 1 "+3.3V" H 2750 4610 30  0000 C CNN
+F 2 "" H 2750 4500 60  0000 C CNN
+F 3 "" H 2750 4500 60  0000 C CNN
+	1    2750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR064
+U 1 1 556691BF
+P 7250 5000
+F 0 "#PWR064" H 7250 5000 30  0001 C CNN
+F 1 "GND" H 7250 4930 30  0001 C CNN
+F 2 "" H 7250 5000 60  0000 C CNN
+F 3 "" H 7250 5000 60  0000 C CNN
+	1    7250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5566923C
+P 3450 4850
+F 0 "C12" H 3450 4950 40  0000 L CNN
+F 1 "C" H 3456 4765 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3488 4700 30  0001 C CNN
+F 3 "" H 3450 4850 60  0000 C CNN
+	1    3450 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR065
+U 1 1 5566925F
+P 3450 5150
+F 0 "#PWR065" H 3450 5150 30  0001 C CNN
+F 1 "GND" H 3450 5080 30  0001 C CNN
+F 2 "" H 3450 5150 60  0000 C CNN
+F 3 "" H 3450 5150 60  0000 C CNN
+	1    3450 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 4300 2    39   Input ~ 0
+ESP_GPIO0
+Text HLabel 8000 4100 2    39   Input ~ 0
+ESP_GPIO_4
+Text HLabel 8000 4200 2    39   Input ~ 0
+ESP_GPIO_5
+Text HLabel 4550 4200 0    39   Input ~ 0
+ESP_GPIO_16
+Wire Wire Line
+	6650 2700 6650 2900
+Wire Wire Line
+	6400 2950 6400 3100
+Wire Wire Line
+	6400 3100 6750 3100
+Wire Wire Line
+	6750 3100 6750 2700
+Wire Wire Line
+	6850 2700 6850 3200
+Wire Wire Line
+	6950 2700 6950 3000
+Wire Wire Line
+	6950 3000 7100 3000
+Wire Wire Line
+	6850 3200 7100 3200
+Wire Wire Line
+	5050 2350 5050 2400
+Wire Wire Line
+	4850 2900 5300 2900
+Wire Wire Line
+	5900 2900 5900 3050
+Connection ~ 5050 2900
+Wire Wire Line
+	7250 4400 8000 4400
+Wire Wire Line
+	4150 4100 4850 4100
+Wire Wire Line
+	4650 3900 4850 3900
+Wire Wire Line
+	4150 3950 4150 4100
+Wire Wire Line
+	7250 4300 7300 4300
+Wire Wire Line
+	7250 4500 8000 4500
+Wire Wire Line
+	7500 4500 7500 4650
+Wire Wire Line
+	7500 5350 7500 5150
+Connection ~ 7500 4500
+Wire Wire Line
+	4850 4600 2750 4600
+Wire Wire Line
+	2750 4600 2750 4500
+Wire Wire Line
+	7250 4600 7250 5000
+Wire Wire Line
+	7250 4100 8000 4100
+Wire Wire Line
+	7250 4200 8000 4200
+Wire Wire Line
+	4850 4200 4550 4200
+Wire Wire Line
+	4850 4300 4550 4300
+Wire Wire Line
+	4850 4400 4550 4400
+Wire Wire Line
+	4850 4500 4550 4500
+$Comp
+L TESTPOINT TP9
+U 1 1 5566A6E7
+P 1200 7200
+F 0 "TP9" H 1200 7450 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 7150 60  0001 C CNN
+F 2 "Connect:PINTST" H 1200 7200 60  0001 C CNN
+F 3 "" H 1200 7200 60  0000 C CNN
+	1    1200 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 7200 1600 7200
+$Comp
+L TESTPOINT TP10
+U 1 1 5566A71B
+P 1200 7400
+F 0 "TP10" H 1200 7650 60  0000 C CNN
+F 1 "TESTPOINT" H 1200 7350 60  0001 C CNN
+F 2 "Connect:PINTST" H 1200 7400 60  0001 C CNN
+F 3 "" H 1200 7400 60  0000 C CNN
+	1    1200 7400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 7400 1600 7400
+Wire Notes Line
+	600  5500 2550 5500
+Wire Notes Line
+	2550 5500 2550 7700
+Wire Notes Line
+	2550 7700 600  7700
+Wire Notes Line
+	600  7700 600  5500
+Text Notes 1250 6900 0    60   ~ 0
+Test Points
+Text HLabel 4650 3900 0    39   Input ~ 0
+ESP_RESET
+Text HLabel 8000 3900 2    39   Input ~ 0
+ESP_TXD
+Text HLabel 8000 4000 2    39   Input ~ 0
+ESP_RXD
+Text HLabel 7100 3200 2    39   Input ~ 0
+ESP_RXD
+Text HLabel 7100 3000 2    39   Input ~ 0
+ESP_TXD
+Text HLabel 1600 7200 2    39   Input ~ 0
+ESP_TXD
+Text HLabel 1600 7400 2    39   Input ~ 0
+ESP_RXD
+Text HLabel 4550 4300 0    39   Input ~ 0
+ESP_GPIO_14
+Text HLabel 4550 4400 0    39   Input ~ 0
+ESP_GPIO_12
+Text HLabel 4550 4500 0    39   Input ~ 0
+ESP_GPIO_13
+Text HLabel 8000 4500 2    39   Input ~ 0
+ESP_GPIO_15
+Wire Wire Line
+	7250 3900 8000 3900
+Wire Wire Line
+	7250 4000 8000 4000
+Wire Wire Line
+	3450 4600 3450 4650
+Connection ~ 3450 4600
+Wire Wire Line
+	3450 5050 3450 5150
+$EndSCHEMATC

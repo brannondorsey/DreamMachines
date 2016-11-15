@@ -1,0 +1,867 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:frep
+LIBS:LabBenchPsu-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "Lab Bench PSU"
+Date "25.12.2014"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 "- 1 cell LiPo charger (Adjustable charging current 50mA-1A)"
+Comment4 "- 4 USB supplies up to 1A each (Apple-compatible)"
+$EndDescr
+$Comp
+L USB-A-stacked CON?
+U 1 1 549CAF52
+P 9450 1925
+F 0 "CON?" H 9475 2400 60  0000 C CNN
+F 1 "USB-A-stacked" H 9450 1425 60  0000 C CNN
+F 2 "" H 9375 2050 60  0000 C CNN
+F 3 "" H 9375 2050 60  0000 C CNN
+	1    9450 1925
+	1    0    0    -1  
+$EndComp
+Text HLabel 9100 1025 2    60   Input ~ 0
+5V_direct
+$Comp
+L R R?
+U 1 1 549CB07D
+P 8100 1275
+F 0 "R?" V 8180 1275 40  0000 C CNN
+F 1 "75K" V 8107 1276 40  0000 C CNN
+F 2 "" V 8030 1275 30  0000 C CNN
+F 3 "" H 8100 1275 30  0000 C CNN
+	1    8100 1275
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB0A3
+P 8700 1275
+F 0 "R?" V 8780 1275 40  0000 C CNN
+F 1 "43K" V 8707 1276 40  0000 C CNN
+F 2 "" V 8630 1275 30  0000 C CNN
+F 3 "" H 8700 1275 30  0000 C CNN
+	1    8700 1275
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB0AE
+P 8400 1675
+F 0 "R?" V 8480 1675 40  0000 C CNN
+F 1 "51K" V 8407 1676 40  0000 C CNN
+F 2 "" V 8330 1675 30  0000 C CNN
+F 3 "" H 8400 1675 30  0000 C CNN
+	1    8400 1675
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB0B9
+P 7800 1775
+F 0 "R?" V 7880 1775 40  0000 C CNN
+F 1 "51K" V 7807 1776 40  0000 C CNN
+F 2 "" V 7730 1775 30  0000 C CNN
+F 3 "" H 7800 1775 30  0000 C CNN
+	1    7800 1775
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB10C
+P 8100 2575
+F 0 "R?" V 8180 2575 40  0000 C CNN
+F 1 "75K" V 8107 2576 40  0000 C CNN
+F 2 "" V 8030 2575 30  0000 C CNN
+F 3 "" H 8100 2575 30  0000 C CNN
+	1    8100 2575
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB112
+P 8700 2575
+F 0 "R?" V 8780 2575 40  0000 C CNN
+F 1 "43K" V 8707 2576 40  0000 C CNN
+F 2 "" V 8630 2575 30  0000 C CNN
+F 3 "" H 8700 2575 30  0000 C CNN
+	1    8700 2575
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB118
+P 8400 2075
+F 0 "R?" V 8480 2075 40  0000 C CNN
+F 1 "51K" V 8407 2076 40  0000 C CNN
+F 2 "" V 8330 2075 30  0000 C CNN
+F 3 "" H 8400 2075 30  0000 C CNN
+	1    8400 2075
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB11E
+P 7800 2175
+F 0 "R?" V 7880 2175 40  0000 C CNN
+F 1 "51K" V 7807 2176 40  0000 C CNN
+F 2 "" V 7730 2175 30  0000 C CNN
+F 3 "" H 7800 2175 30  0000 C CNN
+	1    7800 2175
+	0    1    1    0   
+$EndComp
+Text HLabel 9100 2825 2    60   Input ~ 0
+5V_direct
+$Comp
+L GND #PWR?
+U 1 1 549CB187
+P 10100 2375
+F 0 "#PWR?" H 10100 2375 30  0001 C CNN
+F 1 "GND" H 10100 2305 30  0001 C CNN
+F 2 "" H 10100 2375 60  0000 C CNN
+F 3 "" H 10100 2375 60  0000 C CNN
+	1    10100 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1625 10100 2375
+Connection ~ 10100 2225
+Connection ~ 10100 2025
+Connection ~ 10100 1825
+Wire Wire Line
+	8100 1025 9100 1025
+Connection ~ 8700 1025
+Wire Wire Line
+	8800 1575 8800 1025
+Connection ~ 8800 1025
+$Comp
+L GND #PWR?
+U 1 1 549CB1D5
+P 7550 2375
+F 0 "#PWR?" H 7550 2375 30  0001 C CNN
+F 1 "GND" H 7550 2305 30  0001 C CNN
+F 2 "" H 7550 2375 60  0000 C CNN
+F 3 "" H 7550 2375 60  0000 C CNN
+	1    7550 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1675 8650 1675
+Wire Wire Line
+	8700 1525 8700 1675
+Connection ~ 8700 1675
+Wire Wire Line
+	7550 1675 8150 1675
+Wire Wire Line
+	8050 1775 8800 1775
+Wire Wire Line
+	8800 2075 8650 2075
+Wire Wire Line
+	7550 2075 8150 2075
+Wire Wire Line
+	8050 2175 8800 2175
+Wire Wire Line
+	8100 1775 8100 1525
+Connection ~ 8100 1775
+Wire Wire Line
+	7550 1675 7550 2375
+Connection ~ 7550 1775
+Connection ~ 7550 2175
+Connection ~ 7550 2075
+Text HLabel 8550 1975 0    60   Input ~ 0
+5V_direct
+Wire Wire Line
+	8550 1975 8800 1975
+$Comp
+L GND #PWR?
+U 1 1 549CB355
+P 8550 1875
+F 0 "#PWR?" H 8550 1875 30  0001 C CNN
+F 1 "GND" H 8550 1805 30  0001 C CNN
+F 2 "" H 8550 1875 60  0000 C CNN
+F 3 "" H 8550 1875 60  0000 C CNN
+	1    8550 1875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 1875 8550 1875
+$Comp
+L GND #PWR?
+U 1 1 549CB394
+P 8550 2275
+F 0 "#PWR?" H 8550 2275 30  0001 C CNN
+F 1 "GND" H 8550 2205 30  0001 C CNN
+F 2 "" H 8550 2275 60  0000 C CNN
+F 3 "" H 8550 2275 60  0000 C CNN
+	1    8550 2275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 2275 8550 2275
+Wire Wire Line
+	8700 2325 8700 2075
+Connection ~ 8700 2075
+Wire Wire Line
+	8100 2325 8100 2175
+Connection ~ 8100 2175
+Wire Wire Line
+	8100 2825 9100 2825
+Connection ~ 8700 2825
+Text Notes 4900 1250 0    60   ~ 0
+"apple - resistors":\nTo tell the apple device, this is a wall adapter, \nable to deliver current up to 1A,\nD- needs a voltage about 2.8V and D+ about 2V 
+Text Notes 4900 1525 0    60   ~ 0
+D- : 51/(43+51)*5V = 2.71\nD+ : 51/(75+51)*5V = 2.02
+$Comp
+L USB-A-stacked CON?
+U 1 1 549CB93F
+P 9450 4175
+F 0 "CON?" H 9475 4650 60  0000 C CNN
+F 1 "USB-A-stacked" H 9450 3675 60  0000 C CNN
+F 2 "" H 9375 4300 60  0000 C CNN
+F 3 "" H 9375 4300 60  0000 C CNN
+	1    9450 4175
+	1    0    0    -1  
+$EndComp
+Text HLabel 9100 3275 2    60   Input ~ 0
+5V_direct
+$Comp
+L R R?
+U 1 1 549CB946
+P 8100 3525
+F 0 "R?" V 8180 3525 40  0000 C CNN
+F 1 "75K" V 8107 3526 40  0000 C CNN
+F 2 "" V 8030 3525 30  0000 C CNN
+F 3 "" H 8100 3525 30  0000 C CNN
+	1    8100 3525
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB94C
+P 8700 3525
+F 0 "R?" V 8780 3525 40  0000 C CNN
+F 1 "43K" V 8707 3526 40  0000 C CNN
+F 2 "" V 8630 3525 30  0000 C CNN
+F 3 "" H 8700 3525 30  0000 C CNN
+	1    8700 3525
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB952
+P 8400 3925
+F 0 "R?" V 8480 3925 40  0000 C CNN
+F 1 "51K" V 8407 3926 40  0000 C CNN
+F 2 "" V 8330 3925 30  0000 C CNN
+F 3 "" H 8400 3925 30  0000 C CNN
+	1    8400 3925
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB958
+P 7800 4025
+F 0 "R?" V 7880 4025 40  0000 C CNN
+F 1 "51K" V 7807 4026 40  0000 C CNN
+F 2 "" V 7730 4025 30  0000 C CNN
+F 3 "" H 7800 4025 30  0000 C CNN
+	1    7800 4025
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB95E
+P 8100 4825
+F 0 "R?" V 8180 4825 40  0000 C CNN
+F 1 "75K" V 8107 4826 40  0000 C CNN
+F 2 "" V 8030 4825 30  0000 C CNN
+F 3 "" H 8100 4825 30  0000 C CNN
+	1    8100 4825
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB964
+P 8700 4825
+F 0 "R?" V 8780 4825 40  0000 C CNN
+F 1 "43K" V 8707 4826 40  0000 C CNN
+F 2 "" V 8630 4825 30  0000 C CNN
+F 3 "" H 8700 4825 30  0000 C CNN
+	1    8700 4825
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB96A
+P 8400 4325
+F 0 "R?" V 8480 4325 40  0000 C CNN
+F 1 "51K" V 8407 4326 40  0000 C CNN
+F 2 "" V 8330 4325 30  0000 C CNN
+F 3 "" H 8400 4325 30  0000 C CNN
+	1    8400 4325
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 549CB970
+P 7800 4425
+F 0 "R?" V 7880 4425 40  0000 C CNN
+F 1 "51K" V 7807 4426 40  0000 C CNN
+F 2 "" V 7730 4425 30  0000 C CNN
+F 3 "" H 7800 4425 30  0000 C CNN
+	1    7800 4425
+	0    1    1    0   
+$EndComp
+Text HLabel 9100 5075 2    60   Input ~ 0
+5V_direct
+$Comp
+L GND #PWR?
+U 1 1 549CB977
+P 10100 4625
+F 0 "#PWR?" H 10100 4625 30  0001 C CNN
+F 1 "GND" H 10100 4555 30  0001 C CNN
+F 2 "" H 10100 4625 60  0000 C CNN
+F 3 "" H 10100 4625 60  0000 C CNN
+	1    10100 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3875 10100 4625
+Connection ~ 10100 4475
+Connection ~ 10100 4275
+Connection ~ 10100 4075
+Wire Wire Line
+	8100 3275 9100 3275
+Connection ~ 8700 3275
+Wire Wire Line
+	8800 3825 8800 3275
+Connection ~ 8800 3275
+$Comp
+L GND #PWR?
+U 1 1 549CB985
+P 7550 4625
+F 0 "#PWR?" H 7550 4625 30  0001 C CNN
+F 1 "GND" H 7550 4555 30  0001 C CNN
+F 2 "" H 7550 4625 60  0000 C CNN
+F 3 "" H 7550 4625 60  0000 C CNN
+	1    7550 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3925 8650 3925
+Wire Wire Line
+	8700 3775 8700 3925
+Connection ~ 8700 3925
+Wire Wire Line
+	7550 3925 8150 3925
+Wire Wire Line
+	8050 4025 8800 4025
+Wire Wire Line
+	8800 4325 8650 4325
+Wire Wire Line
+	7550 4325 8150 4325
+Wire Wire Line
+	8050 4425 8800 4425
+Wire Wire Line
+	8100 4025 8100 3775
+Connection ~ 8100 4025
+Wire Wire Line
+	7550 3925 7550 4625
+Connection ~ 7550 4025
+Connection ~ 7550 4425
+Connection ~ 7550 4325
+Text HLabel 8550 4225 0    60   Input ~ 0
+5V_direct
+Wire Wire Line
+	8550 4225 8800 4225
+$Comp
+L GND #PWR?
+U 1 1 549CB99B
+P 8550 4125
+F 0 "#PWR?" H 8550 4125 30  0001 C CNN
+F 1 "GND" H 8550 4055 30  0001 C CNN
+F 2 "" H 8550 4125 60  0000 C CNN
+F 3 "" H 8550 4125 60  0000 C CNN
+	1    8550 4125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 4125 8550 4125
+$Comp
+L GND #PWR?
+U 1 1 549CB9A2
+P 8550 4525
+F 0 "#PWR?" H 8550 4525 30  0001 C CNN
+F 1 "GND" H 8550 4455 30  0001 C CNN
+F 2 "" H 8550 4525 60  0000 C CNN
+F 3 "" H 8550 4525 60  0000 C CNN
+	1    8550 4525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 4525 8550 4525
+Wire Wire Line
+	8700 4575 8700 4325
+Connection ~ 8700 4325
+Wire Wire Line
+	8100 4575 8100 4425
+Connection ~ 8100 4425
+Wire Wire Line
+	8100 5075 9100 5075
+Connection ~ 8700 5075
+Text Notes 4900 2425 0    60   ~ 0
+D- : 49.9/(75+49.9)*5V = 1.99\nD+ : 49.9/(75+49.9)*5V = 1.99
+Text Notes 4900 2125 0    60   ~ 0
+To tell the apple device, \na current up to 0.5A can be drawn,\nD- and D+needs a voltage about 2.0V 
+Text HLabel 5500 6375 2    60   Input ~ 0
+SDA
+Text HLabel 5500 6300 2    60   Input ~ 0
+SCL
+$Comp
+L AD5274 U?
+U 1 1 54A80831
+P 4850 6375
+F 0 "U?" H 4850 6650 60  0000 C CNN
+F 1 "AD5274" H 4850 6100 60  0000 C CNN
+F 2 "" H 4850 6300 60  0000 C CNN
+F 3 "" H 4850 6300 60  0000 C CNN
+	1    4850 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP73833 U?
+U 1 1 54A80DCB
+P 3600 4725
+F 0 "U?" H 3600 5000 60  0000 C CNN
+F 1 "MCP73833" H 3600 4450 60  0000 C CNN
+F 2 "" H 3600 4650 60  0000 C CNN
+F 3 "" H 3600 4650 60  0000 C CNN
+	1    3600 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A8131D
+P 1825 3850
+F 0 "C?" H 1825 3950 40  0000 L CNN
+F 1 "1uF" H 1831 3765 40  0000 L CNN
+F 2 "" H 1863 3700 30  0000 C CNN
+F 3 "" H 1825 3850 60  0000 C CNN
+	1    1825 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 54A8134A
+P 2150 3850
+F 0 "D?" H 2150 3950 50  0000 C CNN
+F 1 "Power good" H 2175 3750 50  0000 C CNN
+F 2 "" H 2150 3850 60  0000 C CNN
+F 3 "" H 2150 3850 60  0000 C CNN
+	1    2150 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 54A8135C
+P 2425 3850
+F 0 "D?" H 2425 3950 50  0000 C CNN
+F 1 "Charge complete" H 2550 3725 50  0000 C CNN
+F 2 "" H 2425 3850 60  0000 C CNN
+F 3 "" H 2425 3850 60  0000 C CNN
+	1    2425 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 54A81367
+P 2700 3850
+F 0 "D?" H 2700 3950 50  0000 C CNN
+F 1 "Charging" H 2700 3750 50  0000 C CNN
+F 2 "" H 2700 3850 60  0000 C CNN
+F 3 "" H 2700 3850 60  0000 C CNN
+	1    2700 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 54A81374
+P 2150 4375
+F 0 "R?" V 2230 4375 40  0000 C CNN
+F 1 "270" V 2157 4376 40  0000 C CNN
+F 2 "" V 2080 4375 30  0000 C CNN
+F 3 "" H 2150 4375 30  0000 C CNN
+	1    2150 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54A8138B
+P 2425 4375
+F 0 "R?" V 2505 4375 40  0000 C CNN
+F 1 "270" V 2432 4376 40  0000 C CNN
+F 2 "" V 2355 4375 30  0000 C CNN
+F 3 "" H 2425 4375 30  0000 C CNN
+	1    2425 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54A81396
+P 2700 4375
+F 0 "R?" V 2780 4375 40  0000 C CNN
+F 1 "270" V 2707 4376 40  0000 C CNN
+F 2 "" V 2630 4375 30  0000 C CNN
+F 3 "" H 2700 4375 30  0000 C CNN
+	1    2700 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 3650 3125 3650
+Connection ~ 2150 3650
+Connection ~ 2425 3650
+Wire Wire Line
+	3125 3650 3125 4650
+Connection ~ 2700 3650
+Connection ~ 3125 4575
+Wire Wire Line
+	2150 4050 2150 4125
+Wire Wire Line
+	2425 4050 2425 4125
+Wire Wire Line
+	2700 4050 2700 4125
+Wire Wire Line
+	2700 4625 2700 4725
+Wire Wire Line
+	2700 4725 3125 4725
+Wire Wire Line
+	2425 4625 2425 4800
+Wire Wire Line
+	2425 4800 3125 4800
+$Comp
+L C C?
+U 1 1 54A81663
+P 4575 4775
+F 0 "C?" H 4575 4875 40  0000 L CNN
+F 1 "1uF" H 4581 4690 40  0000 L CNN
+F 2 "" H 4613 4625 30  0000 C CNN
+F 3 "" H 4575 4775 60  0000 C CNN
+	1    4575 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A81670
+P 1825 4150
+F 0 "#PWR?" H 1825 4150 30  0001 C CNN
+F 1 "GND" H 1825 4080 30  0001 C CNN
+F 2 "" H 1825 4150 60  0000 C CNN
+F 3 "" H 1825 4150 60  0000 C CNN
+	1    1825 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A81682
+P 3025 4875
+F 0 "#PWR?" H 3025 4875 30  0001 C CNN
+F 1 "GND" H 3025 4805 30  0001 C CNN
+F 2 "" H 3025 4875 60  0000 C CNN
+F 3 "" H 3025 4875 60  0000 C CNN
+	1    3025 4875
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A8168D
+P 4575 5050
+F 0 "#PWR?" H 4575 5050 30  0001 C CNN
+F 1 "GND" H 4575 4980 30  0001 C CNN
+F 2 "" H 4575 5050 60  0000 C CNN
+F 3 "" H 4575 5050 60  0000 C CNN
+	1    4575 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1825 4050 1825 4150
+Connection ~ 1825 3650
+Wire Wire Line
+	4575 4975 4575 5050
+Wire Wire Line
+	4075 4650 4075 4575
+Wire Wire Line
+	4075 4575 5000 4575
+Connection ~ 4575 4575
+Text HLabel 1625 3650 0    60   Input ~ 0
+5V_direct
+$Comp
+L THERMISTOR TH?
+U 1 1 54A8329C
+P 4350 5050
+F 0 "TH?" V 4450 5100 50  0000 C CNN
+F 1 "THERM NTC 10K" V 4250 5050 50  0000 C CNN
+F 2 "" H 4350 5050 60  0000 C CNN
+F 3 "" H 4350 5050 60  0000 C CNN
+	1    4350 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 4725 4350 4725
+Wire Wire Line
+	4350 4725 4350 4800
+$Comp
+L GND #PWR?
+U 1 1 54A83311
+P 4350 5375
+F 0 "#PWR?" H 4350 5375 30  0001 C CNN
+F 1 "GND" H 4350 5305 30  0001 C CNN
+F 2 "" H 4350 5375 60  0000 C CNN
+F 3 "" H 4350 5375 60  0000 C CNN
+	1    4350 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5300 4350 5375
+Wire Wire Line
+	3125 4875 3025 4875
+Wire Wire Line
+	4075 4800 4150 4800
+Wire Wire Line
+	4150 4800 4150 5100
+Wire Wire Line
+	4150 5100 2150 5100
+Wire Wire Line
+	2150 5100 2150 4625
+Wire Wire Line
+	5500 6300 5325 6300
+Wire Wire Line
+	5500 6375 5325 6375
+$Comp
+L R R?
+U 1 1 54A84229
+P 3375 6375
+F 0 "R?" V 3455 6375 40  0000 C CNN
+F 1 "1K" V 3382 6376 40  0000 C CNN
+F 2 "" V 3305 6375 30  0000 C CNN
+F 3 "" H 3375 6375 30  0000 C CNN
+	1    3375 6375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3125 4875 3125 6375
+Text HLabel 5700 5550 2    60   Input ~ 0
+3V3_reg
+$Comp
+L C C?
+U 1 1 54A8801D
+P 5275 5750
+F 0 "C?" H 5275 5850 40  0000 L CNN
+F 1 "100nF" H 5281 5665 40  0000 L CNN
+F 2 "" H 5313 5600 30  0000 C CNN
+F 3 "" H 5275 5750 60  0000 C CNN
+	1    5275 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 54A8802F
+P 5025 5750
+F 0 "C?" H 5025 5850 40  0000 L CNN
+F 1 "10uF" H 5031 5665 40  0000 L CNN
+F 2 "" H 5063 5600 30  0000 C CNN
+F 3 "" H 5025 5750 60  0000 C CNN
+	1    5025 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5550 5700 5550
+Connection ~ 5275 5550
+Connection ~ 5025 5550
+$Comp
+L GND #PWR?
+U 1 1 54A88801
+P 5025 6025
+F 0 "#PWR?" H 5025 6025 30  0001 C CNN
+F 1 "GND" H 5025 5955 30  0001 C CNN
+F 2 "" H 5025 6025 60  0000 C CNN
+F 3 "" H 5025 6025 60  0000 C CNN
+	1    5025 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A8880C
+P 5275 6025
+F 0 "#PWR?" H 5275 6025 30  0001 C CNN
+F 1 "GND" H 5275 5955 30  0001 C CNN
+F 2 "" H 5275 6025 60  0000 C CNN
+F 3 "" H 5275 6025 60  0000 C CNN
+	1    5275 6025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5275 5950 5275 6025
+Wire Wire Line
+	5025 5950 5025 6025
+Text HLabel 5500 6450 2    60   Input ~ 0
+Reset
+Wire Wire Line
+	5500 6450 5325 6450
+$Comp
+L GND #PWR?
+U 1 1 54A8FDBA
+P 4225 6450
+F 0 "#PWR?" H 4225 6450 30  0001 C CNN
+F 1 "GND" H 4225 6380 30  0001 C CNN
+F 2 "" H 4225 6450 60  0000 C CNN
+F 3 "" H 4225 6450 60  0000 C CNN
+	1    4225 6450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4375 6450 4225 6450
+$Comp
+L GND #PWR?
+U 1 1 54A8FE2E
+P 5325 6600
+F 0 "#PWR?" H 5325 6600 30  0001 C CNN
+F 1 "GND" H 5325 6530 30  0001 C CNN
+F 2 "" H 5325 6600 60  0000 C CNN
+F 3 "" H 5325 6600 60  0000 C CNN
+	1    5325 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5325 6525 5325 6600
+$Comp
+L C C?
+U 1 1 54A9014A
+P 4225 6725
+F 0 "C?" H 4225 6825 40  0000 L CNN
+F 1 "1uF" H 4231 6640 40  0000 L CNN
+F 2 "" H 4263 6575 30  0000 C CNN
+F 3 "" H 4225 6725 60  0000 C CNN
+	1    4225 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A90155
+P 4225 7000
+F 0 "#PWR?" H 4225 7000 30  0001 C CNN
+F 1 "GND" H 4225 6930 30  0001 C CNN
+F 2 "" H 4225 7000 60  0000 C CNN
+F 3 "" H 4225 7000 60  0000 C CNN
+	1    4225 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 6525 4225 6525
+Wire Wire Line
+	4225 6925 4225 7000
+Text Notes 3175 4375 0    60   ~ 0
+1-cell LiPo charger
+Text Notes 4600 7000 0    60   ~ 0
+EPOT\n20K 256 Tab\nR = [0 ... 20K]
+Text Notes 1175 5600 0    60   ~ 0
+Charging current:\n
+Text Notes 2900 7450 0    60   ~ 0
+R_tot = 1K + [0 - 20K]
+Text Notes 1500 6975 2    60   ~ 0
+45mA\n50mA\n60mA\n70mA\n80mA\n90mA\n100mA\n200mA\n300mA\n400mA\n500mA\n600mA\n700mA\n1000mA
+Text Notes 1575 6975 0    60   ~ 0
+R_tot = 21K\nR_tot = 19.5K\nR_tot = 16.5K\nR_tot = 14K\nR_tot = 12.5K\nR_tot = 11.25K\nR_tot = 10K\nR_tot = 5K\nR_tot = 3.75K\nR_tot = 2.75K\nR_tot = 2K\nR_tot = 1.75K\nR_tot = 1.5K\nR_tot = 1K
+$Comp
+L CONN_2 P?
+U 1 1 54A92CCD
+P 5350 4675
+F 0 "P?" V 5300 4675 40  0000 C CNN
+F 1 "CONN_2" V 5400 4675 40  0000 C CNN
+F 2 "" H 5350 4675 60  0000 C CNN
+F 3 "" H 5350 4675 60  0000 C CNN
+	1    5350 4675
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54A92CEE
+P 5000 4850
+F 0 "#PWR?" H 5000 4850 30  0001 C CNN
+F 1 "GND" H 5000 4780 30  0001 C CNN
+F 2 "" H 5000 4850 60  0000 C CNN
+F 3 "" H 5000 4850 60  0000 C CNN
+	1    5000 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4775 5000 4850
+Text Notes 5500 4750 0    60   ~ 0
+JST-Connector\n(2mm pitch)
+Wire Notes Line
+	3350 7300 3350 6550
+Wire Notes Line
+	3775 7325 3775 7225
+Wire Notes Line
+	3775 7225 4875 7225
+Wire Notes Line
+	4875 7225 4875 7100
+Wire Notes Line
+	8925 875  8925 5325
+Wire Notes Line
+	8925 5325 7250 5325
+Wire Notes Line
+	7250 5325 7250 875 
+Wire Notes Line
+	7250 875  8925 875 
+Wire Wire Line
+	5325 6225 5550 6225
+Text Notes 5900 6600 0    79   ~ 0
+i2c configuration:\n0101100 R/W\nRead: 0x59\nWrite: 0x58
+Wire Wire Line
+	5550 6225 5550 5550
+Connection ~ 5550 5550
+Wire Wire Line
+	3625 6375 4150 6375
+Wire Wire Line
+	4075 4875 4075 6275
+Wire Wire Line
+	4075 6275 4150 6275
+Wire Wire Line
+	4150 5550 4150 6175
+$EndSCHEMATC

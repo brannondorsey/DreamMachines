@@ -1,0 +1,755 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:VirtualSense
+LIBS:VirtualSenseB
+LIBS:VirtualSenseCoffeeNugget
+LIBS:VirtualSense_CN_core-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "VirtualSense32Core"
+Date "lun 25 mag 2015"
+Rev "1"
+Comp "University of Urbino & NeuNet"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GNDPWR #PWR029
+U 1 1 4FA7A909
+P 2800 1100
+F 0 "#PWR029" H 2800 1150 40  0001 C CNN
+F 1 "GNDPWR" H 2800 1020 40  0000 C CNN
+F 2 "" H 2800 1100 60  0001 C CNN
+F 3 "" H 2800 1100 60  0001 C CNN
+	1    2800 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 800  2    60   Input ~ 0
+VUSB
+$Comp
+L FT232R U4
+U 1 1 52B19933
+P 5200 1350
+F 0 "U4" H 5200 1300 60  0000 C CNN
+F 1 "FT232R" H 5200 1450 60  0000 C CNN
+F 2 "lbr:VS_SSOP28big" H 5200 1350 60  0001 C CNN
+F 3 "http://it.farnell.com/ftdi/ft232rl/ic-da-usb-a-uart-smd-28ssop/dp/1146032?ost=1146032" H 5200 1350 60  0001 C CNN
+	1    5200 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 1150 2    60   Input ~ 0
+GND
+Text GLabel 6200 1250 2    60   Input ~ 0
+GND
+Text GLabel 6200 1350 2    60   Input ~ 0
+GND
+Text GLabel 4250 2400 0    60   Input ~ 0
+GND
+Text GLabel 4250 1600 0    60   Input ~ 0
+GND
+Text GLabel 4250 2500 0    60   Input ~ 0
+VUSB
+NoConn ~ 4400 1700
+NoConn ~ 4400 2250
+NoConn ~ 6050 2200
+NoConn ~ 6050 2300
+NoConn ~ 6050 2400
+NoConn ~ 6050 2500
+NoConn ~ 6050 850 
+NoConn ~ 6050 950 
+$Comp
+L Csmall C1
+U 1 1 52B19972
+P 2550 950
+F 0 "C1" H 2575 1000 30  0000 L CNN
+F 1 "4,7uF" H 2575 900 30  0000 L CNN
+F 2 "lbr:VSCN_SM0603" H 2550 950 60  0001 C CNN
+F 3 "" H 2550 950 60  0001 C CNN
+	1    2550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Csmall C2
+U 1 1 52B19978
+P 2800 950
+F 0 "C2" H 2825 1000 30  0000 L CNN
+F 1 "100nF" H 2825 900 30  0000 L CNN
+F 2 "lbr:VSCN_SM0603" H 2800 950 60  0001 C CNN
+F 3 "" H 2800 950 60  0001 C CNN
+	1    2800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR030
+U 1 1 52B1FEC8
+P 1900 1400
+F 0 "#PWR030" H 1900 1450 40  0001 C CNN
+F 1 "GNDPWR" H 1900 1320 40  0000 C CNN
+F 2 "" H 1900 1400 60  0001 C CNN
+F 3 "" H 1900 1400 60  0001 C CNN
+	1    1900 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 1500 2    60   Input ~ 0
+FTDI_3V3
+$Comp
+L Csmall C3
+U 1 1 52B21DEB
+P 6950 1700
+F 0 "C3" H 6975 1750 30  0000 L CNN
+F 1 "100nF" H 6975 1650 30  0000 L CNN
+F 2 "lbr:VSCN_SM0603" H 6950 1700 60  0001 C CNN
+F 3 "" H 6950 1700 60  0001 C CNN
+	1    6950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR031
+U 1 1 52B224AC
+P 6950 1850
+F 0 "#PWR031" H 6950 1900 40  0001 C CNN
+F 1 "GNDPWR" H 6950 1770 40  0000 C CNN
+F 2 "" H 6950 1850 60  0001 C CNN
+F 3 "" H 6950 1850 60  0001 C CNN
+	1    6950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R5
+U 1 1 52B229C7
+P 6600 2350
+F 0 "R5" V 6680 2350 40  0000 C CNN
+F 1 "400" V 6602 2350 40  0000 C CNN
+F 2 "lbr:VSCN_SM0603" V 6530 2350 30  0001 C CNN
+F 3 "" H 6600 2350 30  0000 C CNN
+	1    6600 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L RSML R4
+U 1 1 52B229CD
+P 6600 2150
+F 0 "R4" V 6680 2150 40  0000 C CNN
+F 1 "400" V 6602 2150 40  0000 C CNN
+F 2 "lbr:VSCN_SM0603" V 6530 2150 30  0001 C CNN
+F 3 "" H 6600 2150 30  0000 C CNN
+	1    6600 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 52B229F5
+P 7000 2150
+F 0 "D3" H 7000 2250 50  0000 C CNN
+F 1 "TX" H 7000 2050 50  0001 C CNN
+F 2 "lbr:VSCN_SM0603_POL" H 7000 2150 60  0001 C CNN
+F 3 "http://it.farnell.com/vishay/vlmg1300-gs08/led-0603-yellow-green-highbright/dp/2251461" H 7000 2150 60  0001 C CNN
+	1    7000 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D4
+U 1 1 52B22EDE
+P 7000 2350
+F 0 "D4" H 7000 2450 50  0000 C CNN
+F 1 "RX" H 7000 2250 50  0001 C CNN
+F 2 "lbr:VSCN_SM0603_POL" H 7000 2350 60  0001 C CNN
+F 3 "http://it.farnell.com/vishay/vlms1300-gs08/led-0603-red/dp/2251484" H 7000 2350 60  0001 C CNN
+	1    7000 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_4 USB2
+U 1 1 5513E691
+P 750 1950
+F 0 "USB2" V 700 1950 50  0000 C CNN
+F 1 "USB_B" V 800 1950 50  0000 C CNN
+F 2 "lbr:VSCN_USB-A_PCB-PLUG" H 750 1950 60  0001 C CNN
+F 3 "" H 750 1950 60  0000 C CNN
+	1    750  1950
+	-1   0    0    1   
+$EndComp
+Text GLabel 1150 2000 2    60   Input ~ 0
+USB_N_FTDI
+Text GLabel 1150 1900 2    60   Input ~ 0
+USB_P_FTDI
+$Comp
+L GNDPWR #PWR032
+U 1 1 5513EB31
+P 1200 2500
+F 0 "#PWR032" H 1200 2550 40  0001 C CNN
+F 1 "GNDPWR" H 1200 2420 40  0000 C CNN
+F 2 "" H 1200 2500 60  0001 C CNN
+F 3 "" H 1200 2500 60  0001 C CNN
+	1    1200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_18X2 PCI1
+U 1 1 5515B935
+P 9000 5050
+F 0 "PCI1" V 9000 5050 60  0000 C CNN
+F 1 "CONN_18X2" V 9000 4400 60  0001 C CNN
+F 2 "lbr:CONN_PCI_2X18" H 9000 5050 60  0001 C CNN
+F 3 "http://it.farnell.com/fci/10018783-11110tlf/connettore-pci-2x18-vie/dp/1144435?ost=1144435" H 9000 5050 60  0001 C CNN
+	1    9000 5050
+	-1   0    0    1   
+$EndComp
+Text GLabel 9650 4250 2    60   Input ~ 0
+GND
+Text GLabel 9150 3100 0    60   Input ~ 0
+RESET_N
+Text GLabel 8350 5950 0    60   Input ~ 0
+VDD_EB
+Text GLabel 9650 5050 2    60   Input ~ 0
+BL_SEL/PA2
+Text GLabel 9650 4750 2    60   Input ~ 0
+UART_TXD/BL_TXD/PA1
+Text GLabel 9650 4950 2    60   Input ~ 0
+UART_RXD/BL_RXD/PA0
+Text GLabel 8350 5850 0    60   Input ~ 0
+VDD_EB
+NoConn ~ 9500 5350
+NoConn ~ 9500 5250
+NoConn ~ 9500 5150
+NoConn ~ 8500 4150
+NoConn ~ 8500 4250
+NoConn ~ 8500 4350
+NoConn ~ 8500 4450
+NoConn ~ 8500 4550
+NoConn ~ 8500 4650
+NoConn ~ 8500 4750
+NoConn ~ 8500 5750
+NoConn ~ 8500 5650
+NoConn ~ 8500 5550
+NoConn ~ 8500 5450
+NoConn ~ 8500 5350
+NoConn ~ 8500 5250
+NoConn ~ 8500 5150
+NoConn ~ 8500 5050
+NoConn ~ 8500 4950
+NoConn ~ 9500 4350
+NoConn ~ 9500 4550
+Text GLabel 9900 2150 2    60   Input ~ 0
+BL_SEL/PA2
+Text GLabel 9100 2100 0    60   Input ~ 0
+VDD_EB
+Text GLabel 10050 3100 2    60   Input ~ 0
+GND
+Text GLabel 9650 4650 2    60   Input ~ 0
+RESET_N
+$Comp
+L MCP73833 U5
+U 1 1 55143BCE
+P 3400 4000
+F 0 "U5" H 3400 3500 60  0000 C CNN
+F 1 "MCP73833" H 3400 4500 60  0000 C CNN
+F 2 "lbr:MCP73833-MSOP" H 3400 4000 60  0001 C CNN
+F 3 "http://it.farnell.com/microchip/mcp73833-ami-un/ic-batt-mgmt-li-ion-li-poly-msop/dp/1332160" H 3400 4000 60  0001 C CNN
+	1    3400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D5
+U 1 1 551443E7
+P 1900 4350
+F 0 "D5" H 1900 4450 50  0000 C CNN
+F 1 "CHARGE" H 1900 4550 50  0000 C CNN
+F 2 "lbr:VSCN_SM0603_POL" H 1900 4350 60  0001 C CNN
+F 3 "http://it.farnell.com/vishay/vlms1300-gs08/led-0603-red/dp/2251484" H 1900 4350 60  0001 C CNN
+	1    1900 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 3700 0    60   Input ~ 0
+VUSB
+$Comp
+L RSML R6
+U 1 1 55145255
+P 2350 4350
+F 0 "R6" V 2430 4350 40  0000 C CNN
+F 1 "470" V 2352 4350 40  0000 C CNN
+F 2 "lbr:VSCN_SM0603" V 2280 4350 30  0001 C CNN
+F 3 "" H 2350 4350 30  0000 C CNN
+	1    2350 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 55145BD7
+P 1900 4600
+F 0 "D6" H 1900 4700 50  0000 C CNN
+F 1 "DONE" H 1900 4450 50  0000 C CNN
+F 2 "lbr:VSCN_SM0603_POL" H 1900 4600 60  0001 C CNN
+F 3 "http://it.farnell.com/vishay/vlmg1300-gs08/led-0603-yellow-green-highbright/dp/2251461" H 1900 4600 60  0001 C CNN
+	1    1900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSML R11
+U 1 1 55145BDD
+P 2350 4600
+F 0 "R11" V 2430 4600 40  0000 C CNN
+F 1 "470" V 2352 4600 40  0000 C CNN
+F 2 "lbr:VSCN_SM0603" V 2280 4600 30  0001 C CNN
+F 3 "" H 2350 4600 30  0000 C CNN
+	1    2350 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDPWR #PWR033
+U 1 1 55145CDD
+P 2900 4400
+F 0 "#PWR033" H 2900 4450 40  0001 C CNN
+F 1 "GNDPWR" H 2900 4320 40  0000 C CNN
+F 2 "" H 2900 4400 60  0001 C CNN
+F 3 "" H 2900 4400 60  0001 C CNN
+	1    2900 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 4200 1    60   Input ~ 0
+VUSB
+NoConn ~ 3900 4150
+Text GLabel 4600 3700 2    60   Input ~ 0
+VBAT
+$Comp
+L Csmall C5
+U 1 1 55146F72
+P 4500 3900
+F 0 "C5" H 4525 3950 30  0000 L CNN
+F 1 "4,7uF" H 4525 3850 30  0000 L CNN
+F 2 "lbr:VSCN_SM0603" H 4500 3900 60  0001 C CNN
+F 3 "" H 4500 3900 60  0001 C CNN
+	1    4500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1150 6200 1150
+Wire Wire Line
+	6200 1250 6050 1250
+Wire Wire Line
+	6050 1350 6200 1350
+Wire Wire Line
+	6050 1500 7000 1500
+Wire Wire Line
+	6050 1600 6200 1600
+Wire Wire Line
+	6200 1700 6050 1700
+Wire Wire Line
+	4250 1200 4400 1200
+Wire Wire Line
+	4400 1350 4250 1350
+Wire Wire Line
+	4250 1450 4400 1450
+Wire Wire Line
+	4400 1600 4250 1600
+Wire Wire Line
+	4250 2400 4400 2400
+Wire Wire Line
+	4400 2500 4250 2500
+Wire Wire Line
+	2550 850  2550 800 
+Connection ~ 2550 800 
+Wire Wire Line
+	2800 850  2800 800 
+Connection ~ 2800 800 
+Wire Wire Line
+	2800 1050 2800 1100
+Wire Wire Line
+	2800 1050 2550 1050
+Connection ~ 6950 1500
+Wire Wire Line
+	6950 1800 6950 1850
+Wire Wire Line
+	6950 1500 6950 1600
+Wire Wire Line
+	6050 2000 6350 2000
+Wire Wire Line
+	6350 2000 6350 2150
+Wire Wire Line
+	6350 2150 6450 2150
+Wire Wire Line
+	6050 2100 6250 2100
+Wire Wire Line
+	6250 2100 6250 2350
+Wire Wire Line
+	6250 2350 6450 2350
+Wire Wire Line
+	7200 2150 7400 2150
+Wire Wire Line
+	7200 2350 7350 2350
+Wire Wire Line
+	7350 2350 7350 2150
+Connection ~ 7350 2150
+Wire Wire Line
+	6800 2150 6750 2150
+Wire Wire Line
+	6800 2350 6750 2350
+Wire Wire Line
+	1800 1050 1850 1050
+Wire Wire Line
+	1850 950  1800 950 
+Wire Wire Line
+	1100 2100 1150 2100
+Wire Wire Line
+	1150 2000 1100 2000
+Wire Wire Line
+	1100 1900 1150 1900
+Wire Wire Line
+	1900 1800 1900 1900
+Wire Wire Line
+	1100 1800 1900 1800
+Wire Wire Line
+	9650 4250 9500 4250
+Wire Wire Line
+	8350 5950 8500 5950
+Wire Wire Line
+	8500 5850 8350 5850
+Wire Wire Line
+	9650 5050 9500 5050
+Wire Wire Line
+	9500 4950 9650 4950
+Wire Wire Line
+	9650 4750 9500 4750
+Wire Wire Line
+	9500 4650 9650 4650
+Wire Wire Line
+	2900 3850 2800 3850
+Wire Wire Line
+	2800 3850 2800 3700
+Wire Wire Line
+	2200 3700 2900 3700
+Connection ~ 2800 3700
+Wire Wire Line
+	2500 4350 2600 4350
+Wire Wire Line
+	2600 4350 2600 4000
+Wire Wire Line
+	2600 4000 2900 4000
+Wire Wire Line
+	2500 4600 2700 4600
+Wire Wire Line
+	2700 4600 2700 4150
+Wire Wire Line
+	2700 4150 2900 4150
+Wire Wire Line
+	2900 4300 2900 4400
+Wire Wire Line
+	1600 4200 1600 4600
+Wire Wire Line
+	1600 4600 1700 4600
+Wire Wire Line
+	1700 4350 1600 4350
+Connection ~ 1600 4350
+Wire Wire Line
+	2100 4350 2200 4350
+Wire Wire Line
+	2100 4600 2200 4600
+Wire Wire Line
+	3900 3850 4000 3850
+Wire Wire Line
+	4000 3850 4000 3700
+Connection ~ 4000 3700
+Wire Wire Line
+	4500 3700 4500 3800
+Connection ~ 4500 3700
+$Comp
+L GNDPWR #PWR034
+U 1 1 55148B9A
+P 4500 4050
+F 0 "#PWR034" H 4500 4100 40  0001 C CNN
+F 1 "GNDPWR" H 4500 3970 40  0000 C CNN
+F 2 "" H 4500 4050 60  0001 C CNN
+F 3 "" H 4500 4050 60  0001 C CNN
+	1    4500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4000 4500 4050
+$Comp
+L RSML R17
+U 1 1 55148C44
+P 4250 4250
+F 0 "R17" V 4330 4250 40  0000 C CNN
+F 1 "10K" V 4252 4250 40  0000 C CNN
+F 2 "lbr:VSCN_SM0603" V 4180 4250 30  0001 C CNN
+F 3 "" H 4250 4250 30  0000 C CNN
+	1    4250 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L RSML R16
+U 1 1 551490DA
+P 4000 4500
+F 0 "R16" V 4080 4500 40  0000 C CNN
+F 1 "2K" V 4002 4500 40  0000 C CNN
+F 2 "lbr:VSCN_SM0603" V 3930 4500 30  0001 C CNN
+F 3 "" H 4000 4500 30  0000 C CNN
+	1    4000 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDPWR #PWR035
+U 1 1 5514934A
+P 4250 4450
+F 0 "#PWR035" H 4250 4500 40  0001 C CNN
+F 1 "GNDPWR" H 4250 4370 40  0000 C CNN
+F 2 "" H 4250 4450 60  0001 C CNN
+F 3 "" H 4250 4450 60  0001 C CNN
+	1    4250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR036
+U 1 1 55149383
+P 4000 4700
+F 0 "#PWR036" H 4000 4750 40  0001 C CNN
+F 1 "GNDPWR" H 4000 4620 40  0000 C CNN
+F 2 "" H 4000 4700 60  0001 C CNN
+F 3 "" H 4000 4700 60  0001 C CNN
+	1    4000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4300 4000 4300
+Wire Wire Line
+	4000 4300 4000 4350
+Wire Wire Line
+	4000 4650 4000 4700
+Wire Wire Line
+	3900 4000 4250 4000
+Wire Wire Line
+	4250 4000 4250 4100
+Wire Wire Line
+	4250 4400 4250 4450
+Wire Wire Line
+	3900 3700 4600 3700
+$Comp
+L CONN_2 P7
+U 1 1 55149CB6
+P 750 2550
+F 0 "P7" V 700 2550 40  0000 C CNN
+F 1 "DC_IN" V 800 2550 40  0000 C CNN
+F 2 "lbr:JST_S2B-XH-A_recept" H 750 2550 60  0001 C CNN
+F 3 "http://it.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/conn-header-tht-r-a-2-5mm-bifase/dp/1516289" H 750 2550 60  0001 C CNN
+	1    750  2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P8
+U 1 1 5514A6EF
+P 750 3050
+F 0 "P8" V 700 3050 40  0000 C CNN
+F 1 "BATT" V 800 3050 40  0000 C CNN
+F 2 "lbr:JST_S2B-XH-A_recept" H 750 3050 60  0001 C CNN
+F 3 "http://it.farnell.com/jst-japan-solderless-terminals/s2b-xh-a-lf-sn/conn-header-tht-r-a-2-5mm-bifase/dp/1516289" H 750 3050 60  0001 C CNN
+	1    750  3050
+	-1   0    0    1   
+$EndComp
+Text GLabel 1150 2950 2    60   Input ~ 0
+VBAT
+$Comp
+L GNDPWR #PWR037
+U 1 1 5514AA6B
+P 1200 3200
+F 0 "#PWR037" H 1200 3250 40  0001 C CNN
+F 1 "GNDPWR" H 1200 3120 40  0000 C CNN
+F 2 "" H 1200 3200 60  0001 C CNN
+F 3 "" H 1200 3200 60  0001 C CNN
+	1    1200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PUSH-BT_4 BT1
+U 1 1 552C07D2
+P 9600 3100
+F 0 "BT1" H 9600 2950 60  0000 C CNN
+F 1 "RESET" H 9600 3250 60  0000 C CNN
+F 2 "lbr:TEConn-PB_1571262-1" H 9600 3100 60  0001 C CNN
+F 3 "http://www.mouser.it/ProductDetail/TE-Connectivity-Alcoswitch/1571262-1/?qs=sGAEpiMZZMvxtGF7dlGNpssBwFzkp9Q7wtHvQeFt%2frw%3d" H 9600 3100 60  0001 C CNN
+	1    9600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3100 9300 3100
+Wire Wire Line
+	9300 3100 9300 3200
+Wire Wire Line
+	9900 3200 9900 3100
+Wire Wire Line
+	9900 3100 10050 3100
+$Comp
+L JS202011SCQN SW1
+U 1 1 552C1D16
+P 6550 3700
+F 0 "SW1" H 6550 3325 60  0000 C CNN
+F 1 "FTDI-BATT" H 6550 4075 60  0000 C CNN
+F 2 "lbr:JS202011SCQN" H 6550 3675 60  0001 C CNN
+F 3 "http://it.farnell.com/c-k-components/js202011scqn/interruttore-dpdt-0-6a-6vdc-smd/dp/2320019?MER=BN-IT-2320019" H 6550 3675 60  0001 C CNN
+	1    6550 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 3550 2    60   Input ~ 0
+VDD_EB
+Text GLabel 6150 3500 0    60   Input ~ 0
+VBAT
+Text GLabel 6150 3600 0    60   Input ~ 0
+FTDI_3V3
+Wire Wire Line
+	6150 3500 6300 3500
+Wire Wire Line
+	6150 3600 6300 3600
+Wire Wire Line
+	6800 3550 6950 3550
+NoConn ~ 6800 3850
+NoConn ~ 6300 3900
+NoConn ~ 6300 3800
+$Comp
+L JS202011SCQN SW2
+U 1 1 552C38F8
+P 9500 2300
+F 0 "SW2" H 9500 1925 60  0000 C CNN
+F 1 "PROG-DEBUG" H 9500 2675 60  0000 C CNN
+F 2 "lbr:SlideSWTC_MCS2S-A15F" H 9500 2275 60  0001 C CNN
+F 3 "http://it.farnell.com/multicomp/mcs2s-a15f/interruttore-spdt-0-3a-4vdc-smd/dp/1522049" H 9500 2275 60  0001 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2100 9250 2100
+Wire Wire Line
+	9900 2150 9750 2150
+NoConn ~ 9750 2450
+NoConn ~ 9250 2400
+NoConn ~ 9250 2500
+$Comp
+L GNDPWR #PWR038
+U 1 1 552CF962
+P 1900 1900
+F 0 "#PWR038" H 1900 1950 40  0001 C CNN
+F 1 "GNDPWR" H 1900 1820 40  0000 C CNN
+F 2 "" H 1900 1900 60  0001 C CNN
+F 3 "" H 1900 1900 60  0001 C CNN
+	1    1900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB-REC USB1
+U 1 1 552D39B1
+P 1150 1050
+F 0 "USB1" H 1150 1000 60  0000 C CNN
+F 1 "uUSB-B" H 1150 1100 60  0000 C CNN
+F 2 "lbr:uUSB-FCI_REC" H 1150 1100 60  0001 C CNN
+F 3 "http://it.farnell.com/fci/10103594-0001lf/micro-usb-2-0-tipo-b-presa-smt/dp/2293752" H 1150 1100 60  0001 C CNN
+	1    1150 1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 800  2900 800 
+$Comp
+L GNDPWR #PWR039
+U 1 1 552D76C7
+P 650 1400
+F 0 "#PWR039" H 650 1450 40  0001 C CNN
+F 1 "GNDPWR" H 650 1320 40  0000 C CNN
+F 2 "" H 650 1400 60  0001 C CNN
+F 3 "" H 650 1400 60  0001 C CNN
+	1    650  1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  1300 650  1400
+Text GLabel 6200 1600 2    60   Input ~ 0
+USB_P_FTDI
+Text GLabel 6200 1700 2    60   Input ~ 0
+USB_N_FTDI
+Text GLabel 1850 1050 2    60   Input ~ 0
+USB_P_FTDI
+Text GLabel 1850 950  2    60   Input ~ 0
+USB_N_FTDI
+Wire Wire Line
+	1100 2450 1200 2450
+Wire Wire Line
+	1200 2450 1200 2500
+Wire Wire Line
+	1100 3150 1200 3150
+Wire Wire Line
+	1200 3150 1200 3200
+Wire Wire Line
+	1150 2950 1100 2950
+Wire Wire Line
+	1100 2650 1350 2650
+Wire Wire Line
+	1800 1150 1900 1150
+Wire Wire Line
+	1900 1150 1900 1400
+Wire Wire Line
+	1800 1300 1900 1300
+Connection ~ 1900 1300
+NoConn ~ 4400 850 
+NoConn ~ 4400 950 
+NoConn ~ 4400 1100
+NoConn ~ 4400 1800
+NoConn ~ 4400 1950
+NoConn ~ 4400 2050
+Text GLabel 7400 2150 2    60   Input ~ 0
+VUSB
+Text GLabel 1150 2100 2    60   Input ~ 0
+VUSB
+Text GLabel 1350 2650 2    60   Input ~ 0
+VUSB
+Text GLabel 4250 1200 0    60   Input ~ 0
+FTDI_3V3
+Text GLabel 9650 4150 2    60   Input ~ 0
+GND
+Wire Wire Line
+	9650 4150 9500 4150
+NoConn ~ 9500 5450
+NoConn ~ 9500 5550
+NoConn ~ 9500 5650
+NoConn ~ 9500 5750
+NoConn ~ 9500 5850
+NoConn ~ 9500 5950
+Text GLabel 4250 1350 0    60   Input ~ 0
+UART_TXD/BL_TXD/PA1
+Text GLabel 4250 1450 0    60   Input ~ 0
+UART_RXD/BL_RXD/PA0
+NoConn ~ 9500 4450
+Text GLabel 9100 2200 0    60   Input ~ 0
+GND
+Wire Wire Line
+	9250 2200 9100 2200
+$EndSCHEMATC

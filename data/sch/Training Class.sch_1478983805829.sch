@@ -1,0 +1,691 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Display Parts
+LIBS:Training Class-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74HC595 U2
+U 1 1 56B01DB7
+P 5750 4050
+F 0 "U2" H 5900 4650 70  0000 C CNN
+F 1 "74HC595" H 5750 3450 70  0000 C CNN
+F 2 "junes:74hc595_SOIC16" H 5750 4050 60  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf" H 5750 4050 60  0001 C CNN
+F 4 "74HC595PW 112" H 5750 4050 60  0001 C CNN "P/N"
+F 5 "NXP" H 5750 4050 60  0001 C CNN "Manufacturer"
+F 6 ".0988" H 5750 4050 60  0001 C CNN "$"
+	1    5750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56B01E37
+P 5150 2450
+F 0 "R1" V 5200 2600 50  0000 C CNN
+F 1 "330" V 5150 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 2450 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5150 2450 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 5150 2450 60  0001 C CNN "P/N"
+F 5 "Yageo" V 5150 2450 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 5150 2450 60  0001 C CNN "$"
+	1    5150 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56B028B8
+P 5300 2350
+F 0 "#PWR01" H 5300 2100 50  0001 C CNN
+F 1 "GND" H 5300 2200 50  0000 C CNN
+F 2 "" H 5300 2350 60  0000 C CNN
+F 3 "" H 5300 2350 60  0000 C CNN
+	1    5300 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56B02903
+P 7150 2350
+F 0 "#PWR02" H 7150 2100 50  0001 C CNN
+F 1 "GND" H 7150 2200 50  0000 C CNN
+F 2 "" H 7150 2350 60  0000 C CNN
+F 3 "" H 7150 2350 60  0000 C CNN
+	1    7150 2350
+	-1   0    0    1   
+$EndComp
+Text GLabel 4800 3800 0    60   Input ~ 0
+Clk_In
+Text GLabel 3300 2650 0    60   Input ~ 0
+Clk_In
+Text GLabel 4900 3600 0    60   Input ~ 0
+Serial_In
+Text GLabel 3300 3150 0    60   Input ~ 0
+PWM
+Text GLabel 4850 4300 0    60   Input ~ 0
+PWM
+Text GLabel 6550 4500 2    60   Input ~ 0
+Ser_Between
+Text GLabel 3300 2450 0    60   Input ~ 0
+Ser_Between
+Text GLabel 3150 2800 0    60   Input ~ 0
+~MR
+Text GLabel 4650 3950 0    60   Input ~ 0
+~MR
+Text GLabel 3450 2950 0    60   Input ~ 0
+REG_CLK
+Text GLabel 4950 4100 0    60   Input ~ 0
+REG_CLK
+Text Label 5350 2450 0    60   ~ 0
+A1
+Text Label 5350 2550 0    60   ~ 0
+B1
+Text Label 5350 2650 0    60   ~ 0
+C1
+Text Label 5350 2750 0    60   ~ 0
+D1
+Text Label 5350 2850 0    60   ~ 0
+E1
+Text Label 5350 2950 0    60   ~ 0
+F1
+Text Label 5350 3050 0    60   ~ 0
+G1
+Text Label 5350 3150 0    60   ~ 0
+P1
+Text Label 7100 2450 0    60   ~ 0
+A2
+Text Label 7100 2550 0    60   ~ 0
+B2
+Text Label 7100 2650 0    60   ~ 0
+C2
+Text Label 7100 2750 0    60   ~ 0
+D2
+Text Label 7100 2850 0    60   ~ 0
+E2
+Text Label 7100 2950 0    60   ~ 0
+F2
+Text Label 7100 3050 0    60   ~ 0
+G2
+Text Label 7100 3150 0    60   ~ 0
+P2
+$Comp
+L R R2
+U 1 1 56F0D67B
+P 5150 2550
+F 0 "R2" V 5200 2700 50  0000 C CNN
+F 1 "330" V 5150 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 2550 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5150 2550 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 5150 2550 60  0001 C CNN "P/N"
+F 5 "Yageo" V 5150 2550 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 5150 2550 60  0001 C CNN "$"
+	1    5150 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56F0D6CE
+P 5150 2650
+F 0 "R3" V 5200 2800 50  0000 C CNN
+F 1 "330" V 5150 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 2650 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5150 2650 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 5150 2650 60  0001 C CNN "P/N"
+F 5 "Yageo" V 5150 2650 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 5150 2650 60  0001 C CNN "$"
+	1    5150 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 56F0D720
+P 5150 2850
+F 0 "R5" V 5200 3000 50  0000 C CNN
+F 1 "330" V 5150 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 2850 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5150 2850 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 5150 2850 60  0001 C CNN "P/N"
+F 5 "Yageo" V 5150 2850 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 5150 2850 60  0001 C CNN "$"
+	1    5150 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 56F0D775
+P 5150 2750
+F 0 "R4" V 5200 2900 50  0000 C CNN
+F 1 "330" V 5150 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 2750 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5150 2750 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 5150 2750 60  0001 C CNN "P/N"
+F 5 "Yageo" V 5150 2750 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 5150 2750 60  0001 C CNN "$"
+	1    5150 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 56F0D81F
+P 5150 2950
+F 0 "R6" V 5200 3100 50  0000 C CNN
+F 1 "330" V 5150 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 2950 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5150 2950 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 5150 2950 60  0001 C CNN "P/N"
+F 5 "Yageo" V 5150 2950 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 5150 2950 60  0001 C CNN "$"
+	1    5150 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 56F0D87A
+P 5150 3050
+F 0 "R7" V 5200 3200 50  0000 C CNN
+F 1 "330" V 5150 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 3050 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5150 3050 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 5150 3050 60  0001 C CNN "P/N"
+F 5 "Yageo" V 5150 3050 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 5150 3050 60  0001 C CNN "$"
+	1    5150 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 56F0D8D8
+P 5150 3150
+F 0 "R8" V 5200 3300 50  0000 C CNN
+F 1 "330" V 5150 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5080 3150 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 5150 3150 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 5150 3150 60  0001 C CNN "P/N"
+F 5 "Yageo" V 5150 3150 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 5150 3150 60  0001 C CNN "$"
+	1    5150 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R16
+U 1 1 56F0D939
+P 7300 3150
+F 0 "R16" V 7350 3300 50  0000 C CNN
+F 1 "330" V 7300 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 3150 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7300 3150 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 7300 3150 60  0001 C CNN "P/N"
+F 5 "Yageo" V 7300 3150 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 7300 3150 60  0001 C CNN "$"
+	1    7300 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 56F0D9EF
+P 7300 3050
+F 0 "R15" V 7350 3200 50  0000 C CNN
+F 1 "330" V 7300 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 3050 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7300 3050 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 7300 3050 60  0001 C CNN "P/N"
+F 5 "Yageo" V 7300 3050 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 7300 3050 60  0001 C CNN "$"
+	1    7300 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R14
+U 1 1 56F0DA56
+P 7300 2950
+F 0 "R14" V 7350 3100 50  0000 C CNN
+F 1 "330" V 7300 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 2950 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7300 2950 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 7300 2950 60  0001 C CNN "P/N"
+F 5 "Yageo" V 7300 2950 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 7300 2950 60  0001 C CNN "$"
+	1    7300 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 56F0DAC0
+P 7300 2850
+F 0 "R13" V 7350 3000 50  0000 C CNN
+F 1 "330" V 7300 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 2850 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7300 2850 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 7300 2850 60  0001 C CNN "P/N"
+F 5 "Yageo" V 7300 2850 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 7300 2850 60  0001 C CNN "$"
+	1    7300 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 56F0DB2D
+P 7300 2750
+F 0 "R12" V 7350 2900 50  0000 C CNN
+F 1 "330" V 7300 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 2750 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7300 2750 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 7300 2750 60  0001 C CNN "P/N"
+F 5 "Yageo" V 7300 2750 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 7300 2750 60  0001 C CNN "$"
+	1    7300 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R11
+U 1 1 56F0DB9D
+P 7300 2650
+F 0 "R11" V 7350 2800 50  0000 C CNN
+F 1 "330" V 7300 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 2650 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7300 2650 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 7300 2650 60  0001 C CNN "P/N"
+F 5 "Yageo" V 7300 2650 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 7300 2650 60  0001 C CNN "$"
+	1    7300 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 56F0DC10
+P 7300 2550
+F 0 "R10" V 7350 2700 50  0000 C CNN
+F 1 "330" V 7300 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 2550 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7300 2550 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 7300 2550 60  0001 C CNN "P/N"
+F 5 "Yageo" V 7300 2550 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 7300 2550 60  0001 C CNN "$"
+	1    7300 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 56F0DC86
+P 7300 2450
+F 0 "R9" V 7350 2600 50  0000 C CNN
+F 1 "330" V 7300 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 2450 30  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/447/RC0603-272842.pdf" H 7300 2450 30  0001 C CNN
+F 4 "RC0603FR-07330RL" V 7300 2450 60  0001 C CNN "P/N"
+F 5 "Yageo" V 7300 2450 60  0001 C CNN "Manufacturer"
+F 6 ".002" V 7300 2450 60  0001 C CNN "$"
+	1    7300 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L 74HC595 U1
+U 1 1 56B01D30
+P 4250 2900
+F 0 "U1" H 4400 3500 70  0000 C CNN
+F 1 "74HC595" H 4250 2300 70  0000 C CNN
+F 2 "junes:74hc595_SOIC16" H 4250 2900 60  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf" H 4250 2900 60  0001 C CNN
+F 4 "74HC595PW 112" H 4250 2900 60  0001 C CNN "P/N"
+F 5 "NXP" H 4250 2900 60  0001 C CNN "Manufacturer"
+F 6 ".0988" H 4250 2900 60  0001 C CNN "$"
+	1    4250 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 3750 0    60   Input ~ 0
+Serial_In
+Text GLabel 1900 3900 0    60   Input ~ 0
+Clk_In
+Text GLabel 1900 4050 0    60   Input ~ 0
+~MR
+Text GLabel 1900 4200 0    60   Input ~ 0
+REG_CLK
+Text GLabel 1900 4350 0    60   Input ~ 0
+PWM
+Text GLabel 5100 3350 2    60   Input ~ 0
+Ser_Out
+Text GLabel 2800 4900 2    60   Input ~ 0
+Ser_Out
+Text GLabel 2800 5050 2    60   Input ~ 0
+Clk_In
+Text GLabel 2800 5200 2    60   Input ~ 0
+~MR
+Text GLabel 2800 5350 2    60   Input ~ 0
+REG_CLK
+Text GLabel 2800 5500 2    60   Input ~ 0
+PWM
+$Comp
+L VCC #PWR03
+U 1 1 5776C291
+P 1800 3600
+F 0 "#PWR03" H 1800 3450 50  0001 C CNN
+F 1 "VCC" H 1800 3750 50  0000 C CNN
+F 2 "" H 1800 3600 60  0000 C CNN
+F 3 "" H 1800 3600 60  0000 C CNN
+	1    1800 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 5776C2DC
+P 2850 4750
+F 0 "#PWR04" H 2850 4600 50  0001 C CNN
+F 1 "VCC" H 2850 4900 50  0000 C CNN
+F 2 "" H 2850 4750 60  0000 C CNN
+F 3 "" H 2850 4750 60  0000 C CNN
+	1    2850 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5776C30F
+P 1900 4500
+F 0 "#PWR05" H 1900 4250 50  0001 C CNN
+F 1 "GND" H 1900 4350 50  0000 C CNN
+F 2 "" H 1900 4500 60  0000 C CNN
+F 3 "" H 1900 4500 60  0000 C CNN
+	1    1900 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5776C35A
+P 2800 5650
+F 0 "#PWR06" H 2800 5400 50  0001 C CNN
+F 1 "GND" H 2800 5500 50  0000 C CNN
+F 2 "" H 2800 5650 60  0000 C CNN
+F 3 "" H 2800 5650 60  0000 C CNN
+	1    2800 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X07 P2
+U 1 1 5776C64E
+P 2400 4050
+F 0 "P2" H 2400 4450 50  0000 C CNN
+F 1 "CONN_01X07" V 2500 4050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 2400 4050 60  0001 C CNN
+F 3 "" H 2400 4050 60  0000 C CNN
+	1    2400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2350 5300 2350
+Wire Wire Line
+	5400 2450 5300 2450
+Wire Wire Line
+	5400 2550 5300 2550
+Wire Wire Line
+	5400 2650 5300 2650
+Wire Wire Line
+	5400 2750 5300 2750
+Wire Wire Line
+	5400 2850 5300 2850
+Wire Wire Line
+	5400 2950 5300 2950
+Wire Wire Line
+	5400 3050 5300 3050
+Wire Wire Line
+	5400 3150 5300 3150
+Wire Wire Line
+	5000 3150 4950 3150
+Wire Wire Line
+	5000 3050 4950 3050
+Wire Wire Line
+	5000 2950 4950 2950
+Wire Wire Line
+	5000 2850 4950 2850
+Wire Wire Line
+	5000 2750 4950 2750
+Wire Wire Line
+	5000 2650 4950 2650
+Wire Wire Line
+	5000 2550 4950 2550
+Wire Wire Line
+	5000 2450 4950 2450
+Wire Wire Line
+	7100 2450 7150 2450
+Wire Wire Line
+	7100 2350 7150 2350
+Wire Wire Line
+	7100 2550 7150 2550
+Wire Wire Line
+	7100 2650 7150 2650
+Wire Wire Line
+	7100 2750 7150 2750
+Wire Wire Line
+	7100 2850 7150 2850
+Wire Wire Line
+	7100 2950 7150 2950
+Wire Wire Line
+	7100 3050 7150 3050
+Wire Wire Line
+	7100 3150 7150 3150
+Wire Wire Line
+	6450 3600 7550 3600
+Wire Wire Line
+	7550 3600 7550 2450
+Wire Wire Line
+	7550 2450 7450 2450
+Wire Wire Line
+	7450 2550 7600 2550
+Wire Wire Line
+	7600 2550 7600 3700
+Wire Wire Line
+	7600 3700 6450 3700
+Wire Wire Line
+	6450 3800 7650 3800
+Wire Wire Line
+	7650 3800 7650 2650
+Wire Wire Line
+	7650 2650 7450 2650
+Wire Wire Line
+	7450 2750 7700 2750
+Wire Wire Line
+	7700 2750 7700 3900
+Wire Wire Line
+	7700 3900 6450 3900
+Wire Wire Line
+	6450 4000 7750 4000
+Wire Wire Line
+	7750 4000 7750 2850
+Wire Wire Line
+	7750 2850 7450 2850
+Wire Wire Line
+	7450 2950 7800 2950
+Wire Wire Line
+	7800 2950 7800 4100
+Wire Wire Line
+	7800 4100 6450 4100
+Wire Wire Line
+	6450 4200 7850 4200
+Wire Wire Line
+	7850 4200 7850 3050
+Wire Wire Line
+	7850 3050 7450 3050
+Wire Wire Line
+	6450 4300 7900 4300
+Wire Wire Line
+	7900 4300 7900 3150
+Wire Wire Line
+	7900 3150 7450 3150
+Wire Wire Line
+	3300 2450 3550 2450
+Wire Wire Line
+	3550 2650 3300 2650
+Wire Wire Line
+	3150 2800 3400 2800
+Wire Wire Line
+	3400 2800 3400 2750
+Wire Wire Line
+	3400 2750 3550 2750
+Wire Wire Line
+	3450 2950 3550 2950
+Wire Wire Line
+	3300 3150 3400 3150
+Wire Wire Line
+	3400 3150 3400 3050
+Wire Wire Line
+	3400 3050 3550 3050
+Wire Wire Line
+	5050 3800 4800 3800
+Wire Wire Line
+	5050 3900 4900 3900
+Wire Wire Line
+	4900 3900 4900 3950
+Wire Wire Line
+	4900 3950 4650 3950
+Wire Wire Line
+	4950 4100 5050 4100
+Wire Wire Line
+	4850 4300 4950 4300
+Wire Wire Line
+	4950 4300 4950 4200
+Wire Wire Line
+	4950 4200 5050 4200
+Wire Wire Line
+	4900 3600 5050 3600
+Wire Wire Line
+	6450 4500 6550 4500
+Wire Wire Line
+	5100 3350 4950 3350
+Wire Wire Line
+	2200 4050 1900 4050
+Wire Wire Line
+	2200 3950 1950 3950
+Wire Wire Line
+	1950 3950 1950 3900
+Wire Wire Line
+	1950 3900 1900 3900
+Wire Wire Line
+	2200 4150 1950 4150
+Wire Wire Line
+	1950 4150 1950 4200
+Wire Wire Line
+	1950 4200 1900 4200
+Wire Wire Line
+	2200 4250 2000 4250
+Wire Wire Line
+	2000 4250 2000 4350
+Wire Wire Line
+	2000 4350 1900 4350
+Wire Wire Line
+	2200 4350 2050 4350
+Wire Wire Line
+	2050 4350 2050 4500
+Wire Wire Line
+	2050 4500 1900 4500
+Wire Wire Line
+	2200 3850 2000 3850
+Wire Wire Line
+	2000 3850 2000 3750
+Wire Wire Line
+	2000 3750 1900 3750
+Wire Wire Line
+	2200 3750 2050 3750
+Wire Wire Line
+	2050 3750 2050 3600
+Wire Wire Line
+	2050 3600 1800 3600
+$Comp
+L CONN_01X07 P1
+U 1 1 5776CD7E
+P 2300 5200
+F 0 "P1" H 2300 5600 50  0000 C CNN
+F 1 "CONN_01X07" V 2400 5200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 2300 5200 60  0001 C CNN
+F 3 "" H 2300 5200 60  0000 C CNN
+	1    2300 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 5200 2800 5200
+Wire Wire Line
+	2500 5300 2750 5300
+Wire Wire Line
+	2750 5300 2750 5350
+Wire Wire Line
+	2750 5350 2800 5350
+Wire Wire Line
+	2500 5400 2700 5400
+Wire Wire Line
+	2700 5400 2700 5500
+Wire Wire Line
+	2700 5500 2800 5500
+Wire Wire Line
+	2500 5500 2650 5500
+Wire Wire Line
+	2650 5500 2650 5650
+Wire Wire Line
+	2650 5650 2800 5650
+Wire Wire Line
+	2500 5100 2750 5100
+Wire Wire Line
+	2750 5100 2750 5050
+Wire Wire Line
+	2750 5050 2800 5050
+Wire Wire Line
+	2500 5000 2700 5000
+Wire Wire Line
+	2700 5000 2700 4900
+Wire Wire Line
+	2700 4900 2800 4900
+Wire Wire Line
+	2500 4900 2650 4900
+Wire Wire Line
+	2650 4900 2650 4750
+Wire Wire Line
+	2650 4750 2850 4750
+$Comp
+L KEM-5621-AW AFF1
+U 1 1 5776D9ED
+P 6250 2750
+F 0 "AFF1" H 6250 3250 60  0000 C CNN
+F 1 "KEM-5621-AW" H 6250 2250 60  0000 C CNN
+F 2 "Displays_7-Segment:DA56" H 6250 2750 60  0001 C CNN
+F 3 "" H 6250 3250 60  0000 C CNN
+F 4 "Common Cathode" H 6250 3150 60  0000 C CNN "Description"
+	1    6250 2750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

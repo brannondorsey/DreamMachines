@@ -1,0 +1,493 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:My_stuff
+LIBS:atmegs_tree-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328-P IC1
+U 1 1 561E7AB8
+P 2950 3050
+F 0 "IC1" H 2200 4300 40  0000 L BNN
+F 1 "ATMEGA328-P" H 3350 1650 40  0000 L BNN
+F 2 "atmega328_socket:atmega328_socket" H 2950 3050 30  0000 C CIN
+F 3 "" H 2950 3050 60  0000 C CNN
+	1    2950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 561E7B2D
+P 4400 2600
+F 0 "Y1" H 4400 2750 50  0000 C CNN
+F 1 "Crystal" H 4400 2450 50  0000 C CNN
+F 2 "crystal_custom:Crystal_custom" H 4400 2600 60  0001 C CNN
+F 3 "" H 4400 2600 60  0000 C CNN
+	1    4400 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 561E7BB3
+P 4750 2450
+F 0 "C1" H 4775 2550 50  0000 L CNN
+F 1 "C" H 4775 2350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4788 2300 30  0001 C CNN
+F 3 "" H 4750 2450 60  0000 C CNN
+	1    4750 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 561E7BF9
+P 4750 2750
+F 0 "C2" H 4775 2850 50  0000 L CNN
+F 1 "C" H 4775 2650 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4788 2600 30  0001 C CNN
+F 3 "" H 4750 2750 60  0000 C CNN
+	1    4750 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 2550 4150 2550
+Wire Wire Line
+	4150 2550 4150 2450
+Wire Wire Line
+	4150 2450 4600 2450
+Wire Wire Line
+	3950 2650 4150 2650
+Wire Wire Line
+	4150 2650 4150 2750
+Wire Wire Line
+	4150 2750 4600 2750
+Connection ~ 4400 2450
+Connection ~ 4400 2750
+$Comp
+L SW_PUSH SW1
+U 1 1 561E7DFC
+P 4400 4050
+F 0 "SW1" H 4550 4160 50  0000 C CNN
+F 1 "SW_PUSH" H 4400 3970 50  0000 C CNN
+F 2 "button_slim_custom:button_slim_custom" H 4400 4050 60  0001 C CNN
+F 3 "" H 4400 4050 60  0000 C CNN
+	1    4400 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L AVR-ISP-6 CON1
+U 1 1 561E7EE6
+P 4600 1500
+F 0 "CON1" H 4495 1740 50  0000 C CNN
+F 1 "AVR-ISP-6" H 4335 1270 50  0000 L BNN
+F 2 "IDC_6pin_small_custom:IDC_6pin_small_custom" V 4080 1540 50  0001 C CNN
+F 3 "" H 4575 1500 60  0000 C CNN
+	1    4600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 561E7F3B
+P 1700 1950
+F 0 "#PWR01" H 1700 1800 50  0001 C CNN
+F 1 "VCC" H 1700 2100 50  0000 C CNN
+F 2 "" H 1700 1950 60  0000 C CNN
+F 3 "" H 1700 1950 60  0000 C CNN
+	1    1700 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 561E7FBB
+P 1750 4150
+F 0 "#PWR02" H 1750 3900 50  0001 C CNN
+F 1 "GND" H 1750 4000 50  0000 C CNN
+F 2 "" H 1750 4150 60  0000 C CNN
+F 3 "" H 1750 4150 60  0000 C CNN
+	1    1750 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 4150 1750 4150
+Wire Wire Line
+	2050 4150 2050 4500
+Wire Wire Line
+	2050 1950 1700 1950
+Wire Wire Line
+	4900 2450 4900 4500
+Wire Wire Line
+	4900 4500 2050 4500
+Connection ~ 2050 4250
+Connection ~ 4900 2750
+Wire Wire Line
+	3950 2250 4950 2250
+Wire Wire Line
+	4950 2250 4950 1500
+Wire Wire Line
+	4950 1500 4700 1500
+Wire Wire Line
+	3950 2350 4200 2350
+Wire Wire Line
+	4200 2350 4200 1400
+Wire Wire Line
+	4200 1400 4450 1400
+Wire Wire Line
+	3950 2450 4100 2450
+Wire Wire Line
+	4100 2450 4100 1500
+Wire Wire Line
+	4100 1500 4450 1500
+Wire Wire Line
+	4450 1600 4000 1600
+Wire Wire Line
+	4000 1600 4000 3400
+Wire Wire Line
+	4000 3400 3950 3400
+Connection ~ 2050 1950
+Wire Wire Line
+	4700 1600 5050 1600
+Wire Wire Line
+	4700 1400 4950 1400
+Wire Wire Line
+	4950 1400 4950 1200
+Wire Wire Line
+	2050 1200 5500 1200
+Wire Wire Line
+	2050 1200 2050 1950
+Wire Wire Line
+	5050 1600 5050 2750
+Wire Wire Line
+	5050 2750 4900 2750
+Wire Wire Line
+	4950 2900 5500 2900
+Wire Wire Line
+	5500 2900 5500 1200
+Connection ~ 4950 1200
+$Comp
+L Power_connector U1
+U 1 1 56277FA8
+P 1750 3000
+F 0 "U1" V 1950 2800 60  0000 C CNN
+F 1 "Power_connector" V 1550 2800 60  0000 C CNN
+F 2 "power_connector_custom:Power_connector" H 1750 3000 60  0001 C CNN
+F 3 "" H 1750 3000 60  0000 C CNN
+	1    1750 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 2950 1850 1950
+Connection ~ 1850 1950
+Wire Wire Line
+	1850 3050 1850 4150
+Connection ~ 1850 4150
+$Comp
+L ws2812 U3
+U 1 1 562782AA
+P 6500 3650
+F 0 "U3" V 6200 3650 60  0000 C CNN
+F 1 "ws2812" V 6800 3650 60  0000 C CNN
+F 2 "ws2812_custom:ws2812_custom" H 6500 3900 60  0001 C CNN
+F 3 "" H 6500 3900 60  0000 C CNN
+	1    6500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ws2812 U4
+U 1 1 56278397
+P 7550 3650
+F 0 "U4" V 7250 3650 60  0000 C CNN
+F 1 "ws2812" V 7850 3650 60  0000 C CNN
+F 2 "ws2812_custom:ws2812_custom" H 7550 3900 60  0001 C CNN
+F 3 "" H 7550 3900 60  0000 C CNN
+	1    7550 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ws2812 U5
+U 1 1 5627849D
+P 8600 3650
+F 0 "U5" V 8300 3650 60  0000 C CNN
+F 1 "ws2812" V 8900 3650 60  0000 C CNN
+F 2 "ws2812_custom:ws2812_custom" H 8600 3900 60  0001 C CNN
+F 3 "" H 8600 3900 60  0000 C CNN
+	1    8600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ws2812 U7
+U 1 1 562784FB
+P 9650 3650
+F 0 "U7" V 9350 3650 60  0000 C CNN
+F 1 "ws2812" V 9950 3650 60  0000 C CNN
+F 2 "ws2812_custom:ws2812_custom" H 9650 3900 60  0001 C CNN
+F 3 "" H 9650 3900 60  0000 C CNN
+	1    9650 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ws2812 U8
+U 1 1 56278661
+P 9650 4600
+F 0 "U8" V 9350 4600 60  0000 C CNN
+F 1 "ws2812" V 9950 4600 60  0000 C CNN
+F 2 "ws2812_custom:ws2812_custom" H 9650 4850 60  0001 C CNN
+F 3 "" H 9650 4850 60  0000 C CNN
+	1    9650 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 3550 6050 3550
+Wire Wire Line
+	5900 3650 6050 3650
+Wire Wire Line
+	5900 3750 6050 3750
+Wire Wire Line
+	6950 3550 7100 3550
+Wire Wire Line
+	6950 3650 7100 3650
+Wire Wire Line
+	6950 3750 7100 3750
+Wire Wire Line
+	8000 3550 8150 3550
+Wire Wire Line
+	8000 3650 8150 3650
+Wire Wire Line
+	8000 3750 8150 3750
+Wire Wire Line
+	9050 3550 9200 3550
+Wire Wire Line
+	9050 3650 9200 3650
+Wire Wire Line
+	9050 3750 9200 3750
+Wire Wire Line
+	10100 3550 10650 3550
+Wire Wire Line
+	10650 3550 10650 4700
+Wire Wire Line
+	10650 4700 10100 4700
+Wire Wire Line
+	10100 3650 10500 3650
+Wire Wire Line
+	10500 3650 10500 4600
+Wire Wire Line
+	10500 4600 10100 4600
+Wire Wire Line
+	10100 3750 10350 3750
+Wire Wire Line
+	10350 3750 10350 4500
+Wire Wire Line
+	10350 4500 10100 4500
+Wire Wire Line
+	1850 2250 2050 2250
+Connection ~ 1850 2250
+$Comp
+L ws2812 U2
+U 1 1 5627BB29
+P 5450 3650
+F 0 "U2" V 5150 3650 60  0000 C CNN
+F 1 "ws2812" V 5750 3650 60  0000 C CNN
+F 2 "ws2812_custom:ws2812_custom" H 5450 3900 60  0001 C CNN
+F 3 "" H 5450 3900 60  0000 C CNN
+	1    5450 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 3550 4900 3550
+Connection ~ 4900 3550
+Wire Wire Line
+	4950 2900 4950 3750
+Wire Wire Line
+	4950 3750 5000 3750
+Wire Wire Line
+	5000 3650 5000 2950
+Wire Wire Line
+	5000 2950 5550 2950
+Wire Wire Line
+	5550 2950 5550 2050
+Wire Wire Line
+	5550 2050 3950 2050
+$Comp
+L GND #PWR03
+U 1 1 5628C901
+P 6000 3450
+F 0 "#PWR03" H 6000 3200 50  0001 C CNN
+F 1 "GND" H 6000 3300 50  0000 C CNN
+F 2 "" H 6000 3450 60  0000 C CNN
+F 3 "" H 6000 3450 60  0000 C CNN
+	1    6000 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 3450 6000 3550
+Connection ~ 6000 3550
+$Comp
+L GND #PWR04
+U 1 1 5628CB4C
+P 7050 3450
+F 0 "#PWR04" H 7050 3200 50  0001 C CNN
+F 1 "GND" H 7050 3300 50  0000 C CNN
+F 2 "" H 7050 3450 60  0000 C CNN
+F 3 "" H 7050 3450 60  0000 C CNN
+	1    7050 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 3450 7050 3550
+Connection ~ 7050 3550
+$Comp
+L GND #PWR05
+U 1 1 5628CC45
+P 8100 3450
+F 0 "#PWR05" H 8100 3200 50  0001 C CNN
+F 1 "GND" H 8100 3300 50  0000 C CNN
+F 2 "" H 8100 3450 60  0000 C CNN
+F 3 "" H 8100 3450 60  0000 C CNN
+	1    8100 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5628CCB2
+P 9150 3450
+F 0 "#PWR06" H 9150 3200 50  0001 C CNN
+F 1 "GND" H 9150 3300 50  0000 C CNN
+F 2 "" H 9150 3450 60  0000 C CNN
+F 3 "" H 9150 3450 60  0000 C CNN
+	1    9150 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5628CDD5
+P 10400 3450
+F 0 "#PWR07" H 10400 3200 50  0001 C CNN
+F 1 "GND" H 10400 3300 50  0000 C CNN
+F 2 "" H 10400 3450 60  0000 C CNN
+F 3 "" H 10400 3450 60  0000 C CNN
+	1    10400 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8100 3450 8100 3550
+Connection ~ 8100 3550
+Wire Wire Line
+	9150 3550 9150 3450
+Connection ~ 9150 3550
+Wire Wire Line
+	10400 3450 10400 3550
+Connection ~ 10400 3550
+$Comp
+L VCC #PWR08
+U 1 1 562BCB19
+P 6000 3850
+F 0 "#PWR08" H 6000 3700 50  0001 C CNN
+F 1 "VCC" H 6000 4000 50  0000 C CNN
+F 2 "" H 6000 3850 60  0000 C CNN
+F 3 "" H 6000 3850 60  0000 C CNN
+	1    6000 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 3850 6000 3750
+Connection ~ 6000 3750
+$Comp
+L VCC #PWR09
+U 1 1 562BCCAF
+P 7050 3850
+F 0 "#PWR09" H 7050 3700 50  0001 C CNN
+F 1 "VCC" H 7050 4000 50  0000 C CNN
+F 2 "" H 7050 3850 60  0000 C CNN
+F 3 "" H 7050 3850 60  0000 C CNN
+	1    7050 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 3850 7050 3750
+Connection ~ 7050 3750
+$Comp
+L VCC #PWR010
+U 1 1 562BCD52
+P 8100 3850
+F 0 "#PWR010" H 8100 3700 50  0001 C CNN
+F 1 "VCC" H 8100 4000 50  0000 C CNN
+F 2 "" H 8100 3850 60  0000 C CNN
+F 3 "" H 8100 3850 60  0000 C CNN
+	1    8100 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8100 3850 8100 3750
+Connection ~ 8100 3750
+$Comp
+L VCC #PWR011
+U 1 1 562BCE2F
+P 9150 3850
+F 0 "#PWR011" H 9150 3700 50  0001 C CNN
+F 1 "VCC" H 9150 4000 50  0000 C CNN
+F 2 "" H 9150 3850 60  0000 C CNN
+F 3 "" H 9150 3850 60  0000 C CNN
+	1    9150 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 3850 9150 3750
+Connection ~ 9150 3750
+$Comp
+L VCC #PWR012
+U 1 1 562BCF5F
+P 10150 3850
+F 0 "#PWR012" H 10150 3700 50  0001 C CNN
+F 1 "VCC" H 10150 4000 50  0000 C CNN
+F 2 "" H 10150 3850 60  0000 C CNN
+F 3 "" H 10150 3850 60  0000 C CNN
+	1    10150 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10150 3850 10150 3750
+Connection ~ 10150 3750
+Wire Wire Line
+	3950 3750 4400 3750
+Wire Wire Line
+	4400 4350 4400 4500
+Connection ~ 4400 4500
+$EndSCHEMATC

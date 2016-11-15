@@ -1,0 +1,2215 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "topsheet_Power-SchDoc"
+Date "18 10 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 10340 -8550 0 70 ~
+296-38301-2-ND
+Text Label 9735 -9540 0 70 ~
+25.0
+Text Label 9735 -9430 0 70 ~
+100n
+Text Label 9240 -9760 0 70 ~
+VBAT_SW
+$Comp
+L GND #PWR?58069652
+U 1 1 58069652
+P 9130 -9320
+F 0 "VBAT" H 9130 -9180 20  0000 C CNN
+F 1 "+VBAT" H 9130 -9210 30  0000 C CNN
+F 2 "" H 9130 -9320 70  0000 C CNN
+F 3 "" H 9130 -9320 70  0000 C CNN
+	1    9130 -9320
+	1    0    0    -1  
+$EndComp
+Text Label 9933 -8517 0 70 ~
+80.6k
+Text Label 9603 -8627 0 70 ~
+10k
+$Comp
+L GND #PWR?58069651
+U 1 1 58069651
+P 9570 -8330
+F 0 "GNDPWR_4" H 9570 -8190 20  0000 C CNN
+F 1 "+GND" H 9570 -8220 30  0000 C CNN
+F 2 "" H 9570 -8330 70  0000 C CNN
+F 3 "" H 9570 -8330 70  0000 C CNN
+	1    9570 -8330
+	1    0    0    -1  
+$EndComp
+Text Label -9100 -8030 0 70 ~
+TODO:~add~caps~here~
+Text Label 11220 -9430 0 70 ~
+VBAT_SW
+$Comp
+L GND #PWR?58069650
+U 1 1 58069650
+P 11330 -9210
+F 0 "GNDPWR_5" H 11330 -9070 20  0000 C CNN
+F 1 "+GND" H 11330 -9100 30  0000 C CNN
+F 2 "" H 11330 -9210 70  0000 C CNN
+F 3 "" H 11330 -9210 70  0000 C CNN
+	1    11330 -9210
+	1    0    0    -1  
+$EndComp
+Text Label 11220 -8770 0 70 ~
+BUCK_FB
+Text Label 12133 -8847 0 70 ~
+22k
+Text Label 11946 -8583 0 70 ~
+50.0
+Text Label 11946 -8473 0 70 ~
+15p
+Text Label 12606 -8583 0 70 ~
+50.0
+Text Label 12606 -8473 0 70 ~
+6n8
+Text Label 12540 -8880 0 70 ~
+TODO:~Check~value~of~these~caps
+$Comp
+L GND #PWR?5806964F
+U 1 1 5806964F
+P 12540 -8110
+F 0 "GNDPWR_6" H 12540 -7970 20  0000 C CNN
+F 1 "+GND" H 12540 -8000 30  0000 C CNN
+F 2 "" H 12540 -8110 70  0000 C CNN
+F 3 "" H 12540 -8110 70  0000 C CNN
+	1    12540 -8110
+	1    0    0    -1  
+$EndComp
+Text Label 10923 -7637 0 70 ~
+2.2k
+Text Label 10373 -7637 0 70 ~
+13k
+Text Label 9350 -8990 0 70 ~
+VBAT_5V5_EN
+Text Label 10780 -8220 0 70 ~
+BUCK_FB
+$Comp
+L GND #PWR?5806964E
+U 1 1 5806964E
+P 11440 -7780
+F 0 "GNDPWR_7" H 11440 -7640 20  0000 C CNN
+F 1 "+GND" H 11440 -7670 30  0000 C CNN
+F 2 "" H 11440 -7780 70  0000 C CNN
+F 3 "" H 11440 -7780 70  0000 C CNN
+	1    11440 -7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?5806964D
+U 1 1 5806964D
+P 10010 -7780
+F 0 "5V5_VBAT" H 10010 -7640 20  0000 C CNN
+F 1 "+5V5_VBAT" H 10010 -7670 30  0000 C CNN
+F 2 "" H 10010 -7780 70  0000 C CNN
+F 3 "" H 10010 -7780 70  0000 C CNN
+	1    10010 -7780
+	1    0    0    -1  
+$EndComp
+Text Label 14190 -9210 0 70 ~
+VBAT_SW
+Text Label 18667 -7879 0 70 ~
+SI1970DH-T1-E3CT-ND
+Text Label 18667 -8649 0 70 ~
+SI1970DH-T1-E3CT-ND
+Text Label 17490 -8770 0 70 ~
+EN_VBACKUP_5V5
+Text Label 17490 -8330 0 70 ~
+SWITCH_ON
+Text Label 18183 -8407 0 70 ~
+10k
+Text Label 18700 -8440 0 70 ~
+SWITCH_MOSFET
+Text Label 18700 -7670 0 70 ~
+SWITCH_MOSFET
+$Comp
+L GND #PWR?5806964C
+U 1 1 5806964C
+P 17490 -7560
+F 0 "GNDPWR_8" H 17490 -7420 20  0000 C CNN
+F 1 "+GND" H 17490 -7450 30  0000 C CNN
+F 2 "" H 17490 -7560 70  0000 C CNN
+F 3 "" H 17490 -7560 70  0000 C CNN
+	1    17490 -7560
+	1    0    0    -1  
+$EndComp
+Text Label 18183 -7637 0 70 ~
+10k
+Text Label 17490 -8000 0 70 ~
+EN_VBAT_5V5
+Text Label 19910 -9320 0 70 ~
+5V5_MERGE
+Text Label 20130 -8000 0 70 ~
+5V5_VBAT
+Text Label 19503 -9397 0 70 ~
+49.9k
+Text Label 19800 -9540 0 70 ~
+5V5_VBACKUP
+Text Label 19833 -8407 0 70 ~
+49.9k
+Text Label 20130 -8550 0 70 ~
+5V5_VBACKUP
+Text Label 19800 -8990 0 70 ~
+5V5_VBACKUP
+Text Label 20130 -8330 0 70 ~
+5V5_MERGE
+Text Label 17490 -9320 0 70 ~
+TODO:~Check~and~understand~FETS~
+Wire Notes Line
+	16390 -7010 16390 -10640
+Wire Notes Line
+	16390 -7010 21560 -7010
+Wire Notes Line
+	16390 -10640 21560 -10640
+Wire Notes Line
+	21560 -7010 21560 -10640
+Wire Notes Line
+	7700 -7010 7700 -10640
+Wire Notes Line
+	7700 -7010 16060 -7010
+Wire Notes Line
+	7700 -10640 16060 -10640
+Wire Notes Line
+	16060 -7010 16060 -10640
+Wire Notes Line
+	4950 -7010 4950 -10640
+Wire Notes Line
+	4950 -7010 7590 -7010
+Wire Notes Line
+	4950 -10640 7590 -10640
+Wire Notes Line
+	7590 -7010 7590 -10640
+$Comp
+L GND #PWR?5806964B
+U 1 1 5806964B
+P 25740 -8440
+F 0 "GNDPWR_9" H 25740 -8300 20  0000 C CNN
+F 1 "+GND" H 25740 -8330 30  0000 C CNN
+F 2 "" H 25740 -8440 70  0000 C CNN
+F 3 "" H 25740 -8440 70  0000 C CNN
+	1    25740 -8440
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?5806964A
+U 1 1 5806964A
+P 25740 -9430
+F 0 "5V5_4" H 25740 -9290 20  0000 C CNN
+F 1 "+5V5" H 25740 -9320 30  0000 C CNN
+F 2 "" H 25740 -9430 70  0000 C CNN
+F 3 "" H 25740 -9430 70  0000 C CNN
+	1    25740 -9430
+	1    0    0    -1  
+$EndComp
+Text Label 24970 -8660 0 70 ~
+100n
+Text Label 24750 -8660 0 70 ~
+100n
+Text Label 24530 -8660 0 70 ~
+100n
+Text Label 24310 -8660 0 70 ~
+100n
+Text Label 23540 -9650 0 70 ~
+5V5_MERGE
+Text Label 23540 -9100 0 70 ~
+5V5_FUSE
+Text Label 23210 -8660 0 70 ~
+0.02
+Text Label 23210 -8550 0 70 ~
+±1%
+Text Label -9430 -22330 0 70 ~
+TO~DO:~Check~Rsense~power
+$Comp
+L GND #PWR?58069649
+U 1 1 58069649
+P 23430 -7450
+F 0 "GNDPWR_10" H 23430 -7310 20  0000 C CNN
+F 1 "+GND" H 23430 -7340 30  0000 C CNN
+F 2 "" H 23430 -7450 70  0000 C CNN
+F 3 "" H 23430 -7450 70  0000 C CNN
+	1    23430 -7450
+	1    0    0    -1  
+$EndComp
+Text Label 23540 -8440 0 70 ~
+5V5
+Text Label -7670 -23100 0 70 ~
+TO~DO:~Add~Diode
+Wire Notes Line
+	21780 -7010 21780 -10640
+Wire Notes Line
+	21780 -7010 26400 -7010
+Wire Notes Line
+	21780 -10640 26400 -10640
+Wire Notes Line
+	26400 -7010 26400 -10640
+Wire Notes Line
+	4950 -3050 4950 -6680
+Wire Notes Line
+	4950 -3050 7590 -3050
+Wire Notes Line
+	4950 -6680 7590 -6680
+Wire Notes Line
+	7590 -3050 7590 -6680
+Text Label -4480 -5500 0 70 ~
+Do~we~need~any~toggleable~5v5~outputs?
+$Comp
+L GND #PWR?58069648
+U 1 1 58069648
+P 8470 -5140
+F 0 "5V5_5" H 8470 -5000 20  0000 C CNN
+F 1 "+5V5" H 8470 -5030 30  0000 C CNN
+F 2 "" H 8470 -5140 70  0000 C CNN
+F 3 "" H 8470 -5140 70  0000 C CNN
+	1    8470 -5140
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?58069647
+U 1 1 58069647
+P 10230 -3820
+F 0 "GNDPWR_11" H 10230 -3680 20  0000 C CNN
+F 1 "+GND" H 10230 -3710 30  0000 C CNN
+F 2 "" H 10230 -3820 70  0000 C CNN
+F 3 "" H 10230 -3820 70  0000 C CNN
+	1    10230 -3820
+	1    0    0    -1  
+$EndComp
+Text Label 8470 -4920 0 70 ~
+10.0
+Text Label 8470 -4810 0 70 ~
+1u
+$Comp
+L GND #PWR?58069646
+U 1 1 58069646
+P 8690 -4920
+F 0 "GNDPWR_12" H 8690 -4780 20  0000 C CNN
+F 1 "+GND" H 8690 -4810 30  0000 C CNN
+F 2 "" H 8690 -4920 70  0000 C CNN
+F 3 "" H 8690 -4920 70  0000 C CNN
+	1    8690 -4920
+	1    0    0    -1  
+$EndComp
+Text Label 10406 -4733 0 70 ~
+6.3
+Text Label 10406 -4623 0 70 ~
+4u7
+$Comp
+L GND #PWR?58069645
+U 1 1 58069645
+P 10340 -4590
+F 0 "GDNSIG_29" H 10340 -4450 20  0000 C CNN
+F 1 "+GDNSIG" H 10340 -4480 30  0000 C CNN
+F 2 "" H 10340 -4590 70  0000 C CNN
+F 3 "" H 10340 -4590 70  0000 C CNN
+	1    10340 -4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?58069644
+U 1 1 58069644
+P 9130 -3820
+F 0 "GDNSIG_30" H 9130 -3680 20  0000 C CNN
+F 1 "+GDNSIG" H 9130 -3710 30  0000 C CNN
+F 2 "" H 9130 -3820 70  0000 C CNN
+F 3 "" H 9130 -3820 70  0000 C CNN
+	1    9130 -3820
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?58069643
+U 1 1 58069643
+P 10450 -5140
+F 0 "3V3_21" H 10450 -5000 20  0000 C CNN
+F 1 "+3V3" H 10450 -5030 30  0000 C CNN
+F 2 "" H 10450 -5140 70  0000 C CNN
+F 3 "" H 10450 -5140 70  0000 C CNN
+	1    10450 -5140
+	1    0    0    -1  
+$EndComp
+Text Label 12760 -3710 0 70 ~
+INTVcc
+Text Label 13860 -3490 0 70 ~
+Ith
+Text Label 13860 -3380 0 70 ~
+INTVcc
+$Comp
+L GND #PWR?58069642
+U 1 1 58069642
+P 13530 -3930
+F 0 "GNDPWR_13" H 13530 -3790 20  0000 C CNN
+F 1 "+GND" H 13530 -3820 30  0000 C CNN
+F 2 "" H 13530 -3930 70  0000 C CNN
+F 3 "" H 13530 -3930 70  0000 C CNN
+	1    13530 -3930
+	1    0    0    -1  
+$EndComp
+Text Label 13640 -4040 0 70 ~
+SWITCH_ON
+Text Label 13640 -4260 0 70 ~
+VBACKUP
+$Comp
+L GND #PWR?58069641
+U 1 1 58069641
+P 15510 -3380
+F 0 "GNDPWR_14" H 15510 -3240 20  0000 C CNN
+F 1 "+GND" H 15510 -3270 30  0000 C CNN
+F 2 "" H 15510 -3380 70  0000 C CNN
+F 3 "" H 15510 -3380 70  0000 C CNN
+	1    15510 -3380
+	1    0    0    -1  
+$EndComp
+Text Label 15510 -4260 0 70 ~
+GATE
+Text Label 15510 -4040 0 70 ~
+DRAIN
+Text Label 15510 -3820 0 70 ~
+FB
+Text Label 13200 -3600 0 70 ~
+0
+Text Label 13200 -3270 0 70 ~
+inf
+$Comp
+L GND #PWR?58069640
+U 1 1 58069640
+P 13200 -3380
+F 0 "GNDPWR_15" H 13200 -3240 20  0000 C CNN
+F 1 "+GND" H 13200 -3270 30  0000 C CNN
+F 2 "" H 13200 -3380 70  0000 C CNN
+F 3 "" H 13200 -3380 70  0000 C CNN
+	1    13200 -3380
+	1    0    0    -1  
+$EndComp
+Text Label 13640 -3820 0 70 ~
+30k
+Text Label 16390 -3930 0 70 ~
+0
+Text Label 16786 -3743 0 70 ~
+6.3
+Text Label 16786 -3633 0 70 ~
+4u7
+Text Label 16830 -4040 0 70 ~
+INTVcc
+$Comp
+L GND #PWR?5806963F
+U 1 1 5806963F
+P 16720 -3600
+F 0 "GNDPWR_16" H 16720 -3460 20  0000 C CNN
+F 1 "+GND" H 16720 -3490 30  0000 C CNN
+F 2 "" H 16720 -3600 70  0000 C CNN
+F 3 "" H 16720 -3600 70  0000 C CNN
+	1    16720 -3600
+	1    0    0    -1  
+$EndComp
+Text Label 11693 -4117 0 70 ~
+107k
+Text Label 11660 -4480 0 70 ~
+5V5_VBACKUP
+Text Label 12056 -3743 0 70 ~
+50.0
+Text Label 12056 -3633 0 70 ~
+100p
+Text Label 11693 -3677 0 70 ~
+30k
+Text Label 11440 -4040 0 70 ~
+FB
+$Comp
+L GND #PWR?5806963E
+U 1 1 5806963E
+P 11660 -3490
+F 0 "GNDPWR_17" H 11660 -3350 20  0000 C CNN
+F 1 "+GND" H 11660 -3380 30  0000 C CNN
+F 2 "" H 11660 -3490 70  0000 C CNN
+F 3 "" H 11660 -3490 70  0000 C CNN
+	1    11660 -3490
+	1    0    0    -1  
+$EndComp
+Text Label 11946 -5118 0 70 ~
+330µF
+Text Label 11946 -5008 0 70 ~
+6.3V
+$Comp
+L GND #PWR?5806963D
+U 1 1 5806963D
+P 11880 -5030
+F 0 "GNDPWR_18" H 11880 -4890 20  0000 C CNN
+F 1 "+GND" H 11880 -4920 30  0000 C CNN
+F 2 "" H 11880 -5030 70  0000 C CNN
+F 3 "" H 11880 -5030 70  0000 C CNN
+	1    11880 -5030
+	1    0    0    -1  
+$EndComp
+Text Label 13046 -5118 0 70 ~
+330µF
+Text Label 13046 -5008 0 70 ~
+6.3V
+$Comp
+L GND #PWR?5806963C
+U 1 1 5806963C
+P 12980 -5030
+F 0 "GNDPWR_19" H 12980 -4890 20  0000 C CNN
+F 1 "+GND" H 12980 -4920 30  0000 C CNN
+F 2 "" H 12980 -5030 70  0000 C CNN
+F 3 "" H 12980 -5030 70  0000 C CNN
+	1    12980 -5030
+	1    0    0    -1  
+$EndComp
+Text Label 13530 -5580 0 70 ~
+VBACKUP
+Text Label 11880 -5580 0 70 ~
+5V5_VBACKUP
+Text Label 11770 -5800 0 70 ~
+TO~DO:~Make~sure~these~capss~are~okay
+Text Label 17710 -5470 0 70 ~
+KILLSWITCH_WATCHDOG
+Text Label 17930 -5030 0 70 ~
+KILLSWITCH_uC
+Text Label 18513 -4667 0 70 ~
+10k
+$Comp
+L GND #PWR?5806963B
+U 1 1 5806963B
+P 18480 -4590
+F 0 "GNDPWR_20" H 18480 -4450 20  0000 C CNN
+F 1 "+GND" H 18480 -4480 30  0000 C CNN
+F 2 "" H 18480 -4590 70  0000 C CNN
+F 3 "" H 18480 -4590 70  0000 C CNN
+	1    18480 -4590
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?5806963A
+U 1 1 5806963A
+P 19030 -4590
+F 0 "5V5_6" H 19030 -4450 20  0000 C CNN
+F 1 "+5V5" H 19030 -4480 30  0000 C CNN
+F 2 "" H 19030 -4590 70  0000 C CNN
+F 3 "" H 19030 -4590 70  0000 C CNN
+	1    19030 -4590
+	1    0    0    -1  
+$EndComp
+Text Label 19393 -4887 0 70 ~
+1k
+Text Label 19580 -5030 0 70 ~
+LANYARD_LOOP_IN
+Text Label 19030 -3710 0 70 ~
+LANYARD_LOOP_OUT
+Text Label 19030 -3600 0 70 ~
+VMOTOR_EN
+Text Label 19030 -3270 0 70 ~
+QUESTION:~WHY?
+Wire Notes Line
+	7700 -3050 7700 -6680
+Wire Notes Line
+	7700 -3050 11000 -3050
+Wire Notes Line
+	7700 -6680 11000 -6680
+Wire Notes Line
+	11000 -3050 11000 -6680
+Wire Notes Line
+	11110 -3050 11110 -6680
+Wire Notes Line
+	11110 -3050 17270 -3050
+Wire Notes Line
+	11110 -6680 17270 -6680
+Wire Notes Line
+	17270 -3050 17270 -6680
+Text Label 19063 -5547 0 70 ~
+10k
+$Comp
+L GND #PWR?58069639
+U 1 1 58069639
+P 18920 -5800
+F 0 "GNDPWR_21" H 18920 -5660 20  0000 C CNN
+F 1 "+GND" H 18920 -5690 30  0000 C CNN
+F 2 "" H 18920 -5800 70  0000 C CNN
+F 3 "" H 18920 -5800 70  0000 C CNN
+	1    18920 -5800
+	1    0    0    -1  
+$EndComp
+Text Label 20273 -3567 0 70 ~
+10k
+$Comp
+L GND #PWR?58069638
+U 1 1 58069638
+P 20570 -3710
+F 0 "GNDPWR_22" H 20570 -3570 20  0000 C CNN
+F 1 "+GND" H 20570 -3600 30  0000 C CNN
+F 2 "" H 20570 -3710 70  0000 C CNN
+F 3 "" H 20570 -3710 70  0000 C CNN
+	1    20570 -3710
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?58069637
+U 1 1 58069637
+P 24530 -4370
+F 0 "GDNSIG_31" H 24530 -4230 20  0000 C CNN
+F 1 "+GDNSIG" H 24530 -4260 30  0000 C CNN
+F 2 "" H 24530 -4370 70  0000 C CNN
+F 3 "" H 24530 -4370 70  0000 C CNN
+	1    24530 -4370
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?58069636
+U 1 1 58069636
+P 22880 -4810
+F 0 "3V3_22" H 22880 -4670 20  0000 C CNN
+F 1 "+3V3" H 22880 -4700 30  0000 C CNN
+F 2 "" H 22880 -4810 70  0000 C CNN
+F 3 "" H 22880 -4810 70  0000 C CNN
+	1    22880 -4810
+	1    0    0    -1  
+$EndComp
+Text Label 23837 -4194 0 70 ~
+10.0
+Text Label 23837 -4084 0 70 ~
+100n
+Text Label 21890 -5360 0 70 ~
+KILLSWITCH_WATCHDOG
+Text Label 22550 -5580 0 70 ~
+PGED_KS
+Text Label 22550 -5470 0 70 ~
+PGEC_KS
+Text Label 22550 -5140 0 70 ~
+uC_KS_1
+Text Label 22550 -5030 0 70 ~
+uC_KS_2
+Text Label 22550 -5250 0 70 ~
+MCLR_KS
+Text Label -4700 -21560 0 70 ~
+Something~goes~here~but~idk~what
+Text Label 22660 -1620 0 70 ~
+LT1910IS8#PBF-ND
+$Comp
+L GND #PWR?58069635
+U 1 1 58069635
+P 23870 -1620
+F 0 "GNDPWR_23" H 23870 -1480 20  0000 C CNN
+F 1 "+GND" H 23870 -1510 30  0000 C CNN
+F 2 "" H 23870 -1620 70  0000 C CNN
+F 3 "" H 23870 -1620 70  0000 C CNN
+	1    23870 -1620
+	1    0    0    -1  
+$EndComp
+Text Label 23903 -2247 0 70 ~
+1k
+Text Label 24200 -2390 0 70 ~
+KILLSWITCH_NFAULT
+Text Label 23980 -2610 0 70 ~
+VMOTOR_EN
+Text Label 23650 -2830 0 70 ~
+Something~goes~here~but~idk~what
+Text Label 22253 -2687 0 70 ~
+10k
+Text Label 22253 -3127 0 70 ~
+10k
+$Comp
+L GND #PWR?58069634
+U 1 1 58069634
+P 21560 -2940
+F 0 "GNDPWR_24" H 21560 -2800 20  0000 C CNN
+F 1 "+GND" H 21560 -2830 30  0000 C CNN
+F 2 "" H 21560 -2940 70  0000 C CNN
+F 3 "" H 21560 -2940 70  0000 C CNN
+	1    21560 -2940
+	1    0    0    -1  
+$EndComp
+Text Label 22550 -3710 0 70 ~
+G_BAT
+Text Label 21340 -2390 0 70 ~
+SENSE
+Text Label 21813 -2137 0 70 ~
+4.99k
+$Comp
+L GND #PWR?58069633
+U 1 1 58069633
+P 21780 -1840
+F 0 "VBAT_2" H 21780 -1700 20  0000 C CNN
+F 1 "+VBAT" H 21780 -1730 30  0000 C CNN
+F 2 "" H 21780 -1840 70  0000 C CNN
+F 3 "" H 21780 -1840 70  0000 C CNN
+	1    21780 -1840
+	1    0    0    -1  
+$EndComp
+Text Label 21857 -2874 0 70 ~
+25.0
+Text Label 21857 -2764 0 70 ~
+47n
+Text Label 22165 -1950 0 70 ~
+25.0
+Text Label 22165 -1840 0 70 ~
+47n
+Text Label 24156 -1763 0 70 ~
+25.0
+Text Label 24156 -1653 0 70 ~
+2u2
+Text Label 23210 -3710 0 70 ~
+VBAT_SWITCHED
+Text Label 18997 -2159 0 70 ~
+85V
+Text Label 18997 -2049 0 70 ~
+50A
+Text Label 19833 -2357 0 70 ~
+0.002
+Text Label 19833 -2247 0 70 ~
+±1%
+Text Label 19360 -2390 0 70 ~
+SENSE
+$Comp
+L GND #PWR?58069632
+U 1 1 58069632
+P 20240 -2500
+F 0 "VBAT_3" H 20240 -2360 20  0000 C CNN
+F 1 "+VBAT" H 20240 -2390 30  0000 C CNN
+F 2 "" H 20240 -2500 70  0000 C CNN
+F 3 "" H 20240 -2500 70  0000 C CNN
+	1    20240 -2500
+	1    0    0    -1  
+$EndComp
+Text Label 19030 -1840 0 70 ~
+VBAT_SWITCHED
+Text Label 18370 -2280 0 70 ~
+G_BAT
+Wire Notes Line
+	17380 -1070 17380 -6680
+Wire Notes Line
+	17380 -1070 26290 -1070
+Wire Notes Line
+	17380 -6680 26290 -6680
+Wire Notes Line
+	26290 -1070 26290 -6680
+Text Label -18810 1620 0 70 ~
+TO~DO:~Possibly~Change~Mosfet~
+Text Label 18920 1240 0 70 ~
+620-1372-1-ND
+Text Label 17820 250 0 70 ~
+VBAT_SWITCHED
+Text Label 18150 910 0 70 ~
+VMOTOR
+Text Label 19800 250 0 70 ~
+EN_MOTOR_CURRENT
+Text Label 19800 470 0 70 ~
+BAT_CURRENT
+Text Label 19800 690 0 70 ~
+MOTOR_CURRENT_FLT
+$Comp
+L GND #PWR?58069631
+U 1 1 58069631
+P 20460 910
+F 0 "GNDPWR_25" H 20460 1050 20  0000 C CNN
+F 1 "+GND" H 20460 1020 30  0000 C CNN
+F 2 "" H 20460 910 70  0000 C CNN
+F 3 "" H 20460 910 70  0000 C CNN
+	1    20460 910
+	1    0    0    -1  
+$EndComp
+Text Label 21230 360 0 70 ~
+25.0
+Text Label 20900 360 0 70 ~
+100n
+$Comp
+L GND #PWR?58069630
+U 1 1 58069630
+P 21670 250
+F 0 "GNDPWR_26" H 21670 390 20  0000 C CNN
+F 1 "+GND" H 21670 360 30  0000 C CNN
+F 2 "" H 21670 250 70  0000 C CNN
+F 3 "" H 21670 250 70  0000 C CNN
+	1    21670 250
+	1    0    0    -1  
+$EndComp
+Text Label 21043 833 0 70 ~
+10k
+$Comp
+L GND #PWR?5806962F
+U 1 1 5806962F
+P 21560 690
+F 0 "3V3_23" H 21560 830 20  0000 C CNN
+F 1 "+3V3" H 21560 800 30  0000 C CNN
+F 2 "" H 21560 690 70  0000 C CNN
+F 3 "" H 21560 690 70  0000 C CNN
+	1    21560 690
+	1    0    0    -1  
+$EndComp
+Text Label 24090 470 0 70 ~
+TC74A5-3.3VCTCT-ND
+$Comp
+L GND #PWR?5806962E
+U 1 1 5806962E
+P 23650 -80
+F 0 "GDNSIG_32" H 23650 60 20  0000 C CNN
+F 1 "+GDNSIG" H 23650 30 30  0000 C CNN
+F 2 "" H 23650 -80 70  0000 C CNN
+F 3 "" H 23650 -80 70  0000 C CNN
+	1    23650 -80
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?5806962D
+U 1 1 5806962D
+P 23540 140
+F 0 "3V3_24" H 23540 280 20  0000 C CNN
+F 1 "+3V3" H 23540 250 30  0000 C CNN
+F 2 "" H 23540 140 70  0000 C CNN
+F 3 "" H 23540 140 70  0000 C CNN
+	1    23540 140
+	1    0    0    -1  
+$EndComp
+Text Label 25080 -80 0 70 ~
+SDA
+Text Label 25080 140 0 70 ~
+SCL
+Text Label 23320 1680 0 70 ~
+RF_GND
+Text Label 23320 1900 0 70 ~
+RF_CE
+Text Label 23320 2010 0 70 ~
+RF_CSN
+Text Label 24860 2010 0 70 ~
+RF_IRQ
+Text Label 24860 1900 0 70 ~
+RF_MISO
+Text Label 24860 1790 0 70 ~
+RF_MOSI
+Text Label 24860 1680 0 70 ~
+RF_SCK
+$Comp
+L GND #PWR?5806962C
+U 1 1 5806962C
+P 22880 1790
+F 0 "3V3_25" H 22880 1930 20  0000 C CNN
+F 1 "+3V3" H 22880 1900 30  0000 C CNN
+F 2 "" H 22880 1790 70  0000 C CNN
+F 3 "" H 22880 1790 70  0000 C CNN
+	1    22880 1790
+	1    0    0    -1  
+$EndComp
+Text Label 23045 2120 0 70 ~
+25.0
+Text Label 23045 2230 0 70 ~
+100n
+Text Label 23100 2450 0 70 ~
+RF_GND
+Wire Notes Line
+	17380 2780 17380 -960
+Wire Notes Line
+	17380 2780 26290 2780
+Wire Notes Line
+	17380 -960 26290 -960
+Wire Notes Line
+	26290 2780 26290 -960
+Text Label 6820 -8000 0 70 ~
+This~is~def~backwards
+Text Label 14773 -8737 0 70 ~
+2289070
+Text Label 14773 -8627 0 70 ~
+5.6uH
+$Comp
+L GND #PWR?5806962B
+U 1 1 5806962B
+P 14520 -7890
+F 0 "GNDPWR_27" H 14520 -7750 20  0000 C CNN
+F 1 "+GND" H 14520 -7780 30  0000 C CNN
+F 2 "" H 14520 -7890 70  0000 C CNN
+F 3 "" H 14520 -7890 70  0000 C CNN
+	1    14520 -7890
+	1    0    0    -1  
+$EndComp
+Text Label 14850 -8440 0 70 ~
+5V5_VBAT
+Text Label 14795 -8055 0 70 ~
+100µF
+Text Label 14795 -8165 0 70 ~
+6.3V
+Text Label 15543 -5019 0 70 ~
+296-24522-1-ND
+Text Label 14740 -5140 0 70 ~
+GATE
+$Comp
+L GND #PWR?5806962A
+U 1 1 5806962A
+P 15400 -4920
+F 0 "GNDPWR_28" H 15400 -4780 20  0000 C CNN
+F 1 "+GND" H 15400 -4810 30  0000 C CNN
+F 2 "" H 15400 -4920 70  0000 C CNN
+F 3 "" H 15400 -4920 70  0000 C CNN
+	1    15400 -4920
+	1    0    0    -1  
+$EndComp
+Text Label 5800 15290 0 70 ~
+NOTE:~Make~sure~pads~are~connected~proporly~on~pcb~~
+Text Label 16060 -5580 0 70 ~
+5V5_VBACKUP
+Text Label 14872 -5437 0 70 ~
+1.8
+Text Notes 5060 -10310 0    144   ~ 0
+24V input protection
+Text Notes 7810 -10310 0    144   ~ 0
+24V -> 5.5V/4A DC/DC buck converter
+Text Notes 16500 -10310 0    144   ~ 0
+Switch Boost/Buck
+Text Notes 21890 -10310 0    144   ~ 0
+5.5V filters/fuses
+Text Notes 7810 -6350 0    144   ~ 0
+5V5 - 3V3 LDO
+Text Notes 17600 -6350 0    144   ~ 0
+Kill & Motor switch
+Text Notes 17820 -190 0    144   ~ 0
+Motor Current Hall Sensor
+Text Notes 23650 -410 0    144   ~ 0
+Thermal Sensor
+Text Notes 23540 1460 0    144   ~ 0
+RF transceiver
+Text Notes 11330 -6350 0    144   ~ 0
+3V7 to 5V5 / 4A DC/DC boost converter
+Wire Wire Line
+	9680 -9430 9680 -9540
+Wire Wire Line
+	10120 -9430 9680 -9430
+Wire Wire Line
+	9240 -9760 9680 -9760
+Wire Wire Line
+	9130 -9320 9130 -9210
+Wire Wire Line
+	9900 -8770 10120 -8770
+Wire Wire Line
+	9570 -8330 9570 -8550
+Wire Wire Line
+	11660 -9430 11220 -9430
+Wire Wire Line
+	11330 -9210 11220 -9210
+Wire Wire Line
+	11660 -8770 11220 -8770
+Wire Wire Line
+	11880 -8770 11880 -8990
+Wire Wire Line
+	12540 -8990 12320 -8990
+Wire Wire Line
+	12540 -8770 12540 -8990
+Wire Wire Line
+	11880 -8330 11880 -8550
+Wire Wire Line
+	12540 -8330 11880 -8330
+Wire Wire Line
+	12540 -8550 12540 -8330
+Wire Wire Line
+	12540 -8110 12540 -8330
+Wire Wire Line
+	9570 -8990 10120 -8990
+Wire Wire Line
+	9570 -8880 9570 -8990
+Wire Wire Line
+	9570 -8550 9570 -8660
+Wire Wire Line
+	9350 -8990 9570 -8990
+Wire Wire Line
+	10670 -8220 10670 -7780
+Wire Wire Line
+	11220 -8220 10670 -8220
+Wire Wire Line
+	11440 -7780 11110 -7780
+Wire Wire Line
+	10010 -7780 10340 -7780
+Wire Wire Line
+	18150 -8660 18150 -8770
+Wire Wire Line
+	18150 -8330 18150 -8440
+Wire Wire Line
+	17490 -8330 18150 -8330
+Wire Wire Line
+	18590 -8440 18590 -8660
+Wire Wire Line
+	19250 -8440 18590 -8440
+Wire Wire Line
+	18590 -7670 18590 -7890
+Wire Wire Line
+	19250 -7670 18590 -7670
+Wire Wire Line
+	18590 -8220 18590 -8110
+Wire Wire Line
+	19690 -8220 18590 -8220
+Wire Wire Line
+	19690 -8550 19690 -8220
+Wire Wire Line
+	19800 -8550 19690 -8550
+Wire Wire Line
+	18150 -7560 18150 -7670
+Wire Wire Line
+	17490 -7560 18150 -7560
+Wire Wire Line
+	18150 -8000 18150 -7890
+Wire Wire Line
+	18590 -9100 18590 -8880
+Wire Wire Line
+	19360 -9100 18590 -9100
+Wire Wire Line
+	19360 -9210 19360 -9100
+Wire Wire Line
+	20460 -9210 19360 -9210
+Wire Wire Line
+	19360 -8880 19360 -9100
+Wire Wire Line
+	20460 -8880 19360 -8880
+Wire Wire Line
+	19360 -9540 19470 -9540
+Wire Wire Line
+	19360 -9210 19360 -9540
+Wire Wire Line
+	20350 -9540 19690 -9540
+Wire Wire Line
+	20680 -8550 20020 -8550
+Wire Wire Line
+	19910 -7890 19910 -8220
+Wire Wire Line
+	20790 -7890 19910 -7890
+Wire Wire Line
+	20130 -8330 20900 -8330
+Wire Wire Line
+	21230 -8110 20900 -8110
+Wire Wire Line
+	21230 -7780 21230 -8110
+Wire Wire Line
+	20900 -7780 21230 -7780
+Wire Wire Line
+	20130 -8000 20900 -8000
+Wire Wire Line
+	20570 -8990 19800 -8990
+Wire Wire Line
+	20570 -9320 19910 -9320
+Wire Wire Line
+	20900 -8770 20570 -8770
+Wire Wire Line
+	20900 -9100 20900 -8770
+Wire Wire Line
+	20570 -9100 20900 -9100
+Wire Wire Line
+	25080 -8770 25080 -8880
+Wire Wire Line
+	24860 -8770 24860 -8880
+Wire Wire Line
+	24640 -8770 24640 -8880
+Wire Wire Line
+	24420 -8770 24420 -8880
+Wire Wire Line
+	25740 -9100 25740 -9430
+Wire Wire Line
+	25410 -9100 25740 -9100
+Wire Wire Line
+	25080 -9100 25410 -9100
+Wire Wire Line
+	24860 -9100 25080 -9100
+Wire Wire Line
+	24640 -9100 24860 -9100
+Wire Wire Line
+	24420 -9100 24640 -9100
+Wire Wire Line
+	24310 -9100 24420 -9100
+Wire Wire Line
+	23430 -9650 23430 -9540
+Wire Wire Line
+	23760 -9650 23430 -9650
+Wire Wire Line
+	23760 -9100 23430 -9100
+Wire Wire Line
+	23430 -8660 23540 -8660
+Wire Wire Line
+	23430 -8440 23430 -8660
+Wire Wire Line
+	23760 -8440 23430 -8440
+Wire Wire Line
+	23430 -8110 23430 -8440
+Wire Wire Line
+	23430 -7670 23430 -7450
+Wire Wire Line
+	8690 -5140 8910 -5140
+Wire Wire Line
+	8470 -5140 8690 -5140
+Wire Wire Line
+	9460 -3820 9680 -3820
+Wire Wire Line
+	9460 -4480 9460 -3820
+Wire Wire Line
+	10230 -3820 9900 -3820
+Wire Wire Line
+	9130 -3820 9460 -3820
+Wire Wire Line
+	10340 -4920 10340 -5140
+Wire Wire Line
+	10340 -4590 10340 -4700
+Wire Wire Line
+	12760 -3710 13200 -3710
+Wire Wire Line
+	14190 -3490 14190 -3600
+Wire Wire Line
+	13860 -3490 14190 -3490
+Wire Wire Line
+	13860 -3380 14190 -3380
+Wire Wire Line
+	13640 -4040 14190 -4040
+Wire Wire Line
+	13640 -4260 14190 -4260
+Wire Wire Line
+	16060 -4260 15510 -4260
+Wire Wire Line
+	16060 -4040 15510 -4040
+Wire Wire Line
+	16060 -3820 15510 -3820
+Wire Wire Line
+	13750 -3380 13750 -3710
+Wire Wire Line
+	13420 -3380 13750 -3380
+Wire Wire Line
+	13970 -3930 13860 -3930
+Wire Wire Line
+	13970 -3820 13970 -3930
+Wire Wire Line
+	14190 -3820 13970 -3820
+Wire Wire Line
+	13530 -3930 13640 -3930
+Wire Wire Line
+	16280 -4040 16390 -4040
+Wire Wire Line
+	16280 -4150 16280 -4040
+Wire Wire Line
+	16720 -3930 16720 -4040
+Wire Wire Line
+	16720 -3600 16720 -3710
+Wire Wire Line
+	11660 -4480 11660 -4370
+Wire Wire Line
+	12210 -4480 11660 -4480
+Wire Wire Line
+	11990 -4040 11660 -4040
+Wire Wire Line
+	11990 -3930 11990 -4040
+Wire Wire Line
+	11990 -3600 11990 -3710
+Wire Wire Line
+	11660 -3600 11990 -3600
+Wire Wire Line
+	11440 -4040 11660 -4040
+Wire Wire Line
+	11880 -5140 11880 -5030
+Wire Wire Line
+	12980 -5140 12980 -5030
+Wire Wire Line
+	11880 -5580 11880 -5360
+Wire Wire Line
+	12540 -5580 11880 -5580
+Wire Wire Line
+	18480 -4920 18480 -5030
+Wire Wire Line
+	18480 -4590 18480 -4700
+Wire Wire Line
+	18920 -4590 18480 -4590
+Wire Wire Line
+	18920 -4810 18920 -4590
+Wire Wire Line
+	19030 -4590 19030 -4810
+Wire Wire Line
+	19360 -5030 19250 -5030
+Wire Wire Line
+	20570 -5030 19580 -5030
+Wire Wire Line
+	20130 -3710 19030 -3710
+Wire Wire Line
+	20130 -3600 20130 -3710
+Wire Wire Line
+	19030 -3600 20130 -3600
+Wire Wire Line
+	19030 -5470 17710 -5470
+Wire Wire Line
+	19030 -5250 19030 -5470
+Wire Wire Line
+	19030 -5580 19030 -5470
+Wire Wire Line
+	18920 -5800 19030 -5800
+Wire Wire Line
+	20460 -3710 20570 -3710
+Wire Wire Line
+	20240 -3710 20130 -3710
+Wire Wire Line
+	23100 -4370 23760 -4370
+Wire Wire Line
+	23100 -4810 23100 -4370
+Wire Wire Line
+	24530 -4370 23980 -4370
+Wire Wire Line
+	24530 -4810 24530 -4370
+Wire Wire Line
+	22550 -5470 23210 -5470
+Wire Wire Line
+	22550 -5580 23210 -5580
+Wire Wire Line
+	22550 -5250 23210 -5250
+Wire Wire Line
+	22550 -5140 23210 -5140
+Wire Wire Line
+	22550 -5030 23210 -5030
+Wire Wire Line
+	21780 -5360 23210 -5360
+Wire Wire Line
+	21780 -5140 21780 -5360
+Wire Wire Line
+	24090 -2170 23760 -2170
+Wire Wire Line
+	24090 -2060 24090 -2170
+Wire Wire Line
+	24090 -1730 24090 -1840
+Wire Wire Line
+	23870 -1730 24090 -1730
+Wire Wire Line
+	23870 -2390 23760 -2390
+Wire Wire Line
+	25300 -2390 24090 -2390
+Wire Wire Line
+	23870 -2830 23870 -2610
+Wire Wire Line
+	21560 -3050 21780 -3050
+Wire Wire Line
+	21560 -2940 21560 -3050
+Wire Wire Line
+	22220 -3050 22000 -3050
+Wire Wire Line
+	22440 -2610 22440 -3380
+Wire Wire Line
+	22220 -2610 22440 -2610
+Wire Wire Line
+	22220 -2720 22220 -2610
+Wire Wire Line
+	22440 -3600 22440 -3710
+Wire Wire Line
+	22110 -2390 22440 -2390
+Wire Wire Line
+	22110 -2610 22110 -2390
+Wire Wire Line
+	22000 -2610 22110 -2610
+Wire Wire Line
+	21670 -2610 21780 -2610
+Wire Wire Line
+	21670 -2390 21670 -2610
+Wire Wire Line
+	21340 -2390 21670 -2390
+Wire Wire Line
+	22110 -2280 22110 -2390
+Wire Wire Line
+	22000 -2280 22110 -2280
+Wire Wire Line
+	21670 -2280 21780 -2280
+Wire Wire Line
+	21670 -2390 21670 -2280
+Wire Wire Line
+	22110 -2170 22110 -2280
+Wire Wire Line
+	22110 -1840 22110 -1950
+Wire Wire Line
+	23870 -3710 23100 -3710
+Wire Wire Line
+	20020 -2500 20020 -2610
+Wire Wire Line
+	20240 -2500 20020 -2500
+Wire Wire Line
+	18920 -2500 18920 -2390
+Wire Wire Line
+	19800 -2500 18920 -2500
+Wire Wire Line
+	19800 -2390 19800 -2500
+Wire Wire Line
+	19360 -2390 19800 -2390
+Wire Wire Line
+	18920 -1840 18920 -2170
+Wire Wire Line
+	19800 -1840 18920 -1840
+Wire Wire Line
+	18370 -2280 18810 -2280
+Wire Wire Line
+	19800 -2500 19800 -2610
+Wire Wire Line
+	20460 470 19800 470
+Wire Wire Line
+	20460 910 19800 910
+Wire Wire Line
+	18700 910 18700 690
+Wire Wire Line
+	18150 910 18700 910
+Wire Wire Line
+	18700 250 18700 470
+Wire Wire Line
+	17820 250 18700 250
+Wire Wire Line
+	21010 690 19800 690
+Wire Wire Line
+	21010 250 19800 250
+Wire Wire Line
+	21670 250 21230 250
+Wire Wire Line
+	21560 690 21230 690
+Wire Wire Line
+	23650 -80 23870 -80
+Wire Wire Line
+	23870 140 23540 140
+Wire Wire Line
+	25300 -80 24970 -80
+Wire Wire Line
+	25300 140 24970 140
+Wire Wire Line
+	23320 1680 23760 1680
+Wire Wire Line
+	23320 1900 23760 1900
+Wire Wire Line
+	23320 2010 23760 2010
+Wire Wire Line
+	24860 1680 25300 1680
+Wire Wire Line
+	24860 1790 25300 1790
+Wire Wire Line
+	24860 1900 25300 1900
+Wire Wire Line
+	24860 2010 25300 2010
+Wire Wire Line
+	22990 1900 22990 1790
+Wire Wire Line
+	22990 2450 23430 2450
+Wire Wire Line
+	22990 2120 22990 2450
+Wire Wire Line
+	14300 -9210 14300 -8990
+Wire Wire Line
+	15290 -8440 14740 -8440
+Wire Wire Line
+	14740 -7890 14740 -8110
+Wire Wire Line
+	14520 -7890 14740 -7890
+Wire Wire Line
+	14300 -7890 14520 -7890
+Wire Wire Line
+	14300 -8770 14300 -7890
+Wire Wire Line
+	14740 -5140 15290 -5140
+Wire Wire Line
+	15400 -4920 15400 -5030
+Wire Wire Line
+	15400 -5580 15400 -5250
+Wire Wire Line
+	15070 -5580 15400 -5580
+Wire Wire Line
+	15620 -5580 15400 -5580
+Wire Wire Line
+	16610 -5580 15840 -5580
+Wire Wire Line
+	12980 -5580 14850 -5580
+Wire Wire Line
+	12980 -5360 12980 -5580
+Wire Wire Line
+	9570 -8550 9900 -8550
+Wire Wire Line
+	9240 -8550 9570 -8550
+Wire Wire Line
+	9240 -8770 9240 -8550
+Wire Wire Line
+	8250 -8770 9240 -8770
+Wire Wire Line
+	9130 -9210 10120 -9210
+Wire Wire Line
+	8250 -9210 9130 -9210
+Wire Wire Line
+	9460 -4480 9350 -4480
+Wire Wire Line
+	9570 -4480 9460 -4480
+Wire Wire Line
+	9680 -4480 9570 -4480
+Wire Wire Line
+	10120 -5140 10120 -4920
+Wire Wire Line
+	10340 -5140 10120 -5140
+Wire Wire Line
+	10450 -5140 10340 -5140
+Wire Wire Line
+	10670 -7780 10560 -7780
+Wire Wire Line
+	10890 -7780 10670 -7780
+Wire Wire Line
+	11880 -8990 11220 -8990
+Wire Wire Line
+	12100 -8990 11880 -8990
+Wire Wire Line
+	13750 -3710 14190 -3710
+Wire Wire Line
+	13420 -3710 13750 -3710
+Wire Wire Line
+	14300 -9210 14190 -9210
+Wire Wire Line
+	14740 -9210 14300 -9210
+Wire Wire Line
+	14740 -8990 14740 -9210
+Wire Wire Line
+	15400 -5030 15290 -5030
+Wire Wire Line
+	15510 -5030 15400 -5030
+Wire Wire Line
+	16720 -4040 16610 -4040
+Wire Wire Line
+	17160 -4040 16720 -4040
+Wire Wire Line
+	18150 -8770 18480 -8770
+Wire Wire Line
+	17490 -8770 18150 -8770
+Wire Wire Line
+	18480 -5030 18810 -5030
+Wire Wire Line
+	17930 -5030 18480 -5030
+Wire Wire Line
+	19910 -8220 19690 -8220
+Wire Wire Line
+	20790 -8220 19910 -8220
+Wire Wire Line
+	22440 -1840 22440 -1950
+Wire Wire Line
+	22110 -1840 22440 -1840
+Wire Wire Line
+	21780 -1840 22110 -1840
+Wire Wire Line
+	22220 -3710 22220 -3380
+Wire Wire Line
+	22440 -3710 22220 -3710
+Wire Wire Line
+	22880 -3710 22440 -3710
+Wire Wire Line
+	22990 1790 23760 1790
+Wire Wire Line
+	22880 1790 22990 1790
+Wire Wire Line
+	23100 -4810 23210 -4810
+Wire Wire Line
+	22880 -4810 23100 -4810
+Wire Wire Line
+	23430 -8880 23540 -8880
+Wire Wire Line
+	23430 -9100 23430 -8880
+Wire Wire Line
+	23430 -9320 23430 -9100
+Wire Wire Line
+	23870 -1950 23760 -1950
+Wire Wire Line
+	23870 -1730 23870 -1950
+Wire Wire Line
+	23870 -1620 23870 -1730
+Wire Wire Line
+	23870 -2610 23760 -2610
+Wire Wire Line
+	24530 -2610 23870 -2610
+Wire Wire Line
+	24420 -8770 24310 -8770
+Wire Wire Line
+	24640 -8770 24420 -8770
+Wire Wire Line
+	24860 -8770 24640 -8770
+Wire Wire Line
+	25080 -8770 24860 -8770
+Wire Wire Line
+	25410 -8770 25080 -8770
+Wire Wire Line
+	25740 -8770 25410 -8770
+Wire Wire Line
+	25740 -8440 25740 -8770
+Wire Wire Line
+	11660 -3600 11660 -3490
+Wire Wire Line
+	11660 -3710 11660 -3600
+Wire Wire Line
+	11660 -4040 11660 -3930
+Wire Wire Line
+	11660 -4150 11660 -4040
+Wire Wire Line
+	14740 -8440 14740 -8770
+Wire Wire Line
+	14740 -8330 14740 -8440
+Wire Wire Line
+	22220 -3050 22220 -2940
+Wire Wire Line
+	22220 -3160 22220 -3050
+Wire Wire Line
+	18150 -8000 18480 -8000
+Wire Wire Line
+	17490 -8000 18150 -8000
+$Sheet
+S 15070 -2610 1980 1320
+F0 "VBAT_PROTECTION" 60
+F1 "VBAT_PROTECTION" 60
+$EndSheet
+$Comp
+L GND #PWR?58069629
+U 1 1 58069629
+P 2530 -740
+F 0 "VBAT_IN" H 2530 -600 20  0000 C CNN
+F 1 "+VBAT_IN" H 2530 -630 30  0000 C CNN
+F 2 "" H 2530 -740 70  0000 C CNN
+F 3 "" H 2530 -740 70  0000 C CNN
+	1    2530 -740
+	1    0    0    -1  
+$EndComp
+Text Label 2310 -850 0 70 ~
+1206SFS800F/24TR-ND
+$Comp
+L GND #PWR?58069628
+U 1 1 58069628
+P 4290 -740
+F 0 "VBAT_4" H 4290 -600 20  0000 C CNN
+F 1 "+VBAT" H 4290 -630 30  0000 C CNN
+F 2 "" H 4290 -740 70  0000 C CNN
+F 3 "" H 4290 -740 70  0000 C CNN
+	1    4290 -740
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?58069627
+U 1 1 58069627
+P 2970 800
+F 0 "GNDPWR_29" H 2970 940 20  0000 C CNN
+F 1 "+GND" H 2970 910 30  0000 C CNN
+F 2 "" H 2970 800 70  0000 C CNN
+F 3 "" H 2970 800 70  0000 C CNN
+	1    2970 800
+	1    0    0    -1  
+$EndComp
+Text Label 3773 283 0 70 ~
+2k
+Wire Wire Line
+	2640 -740 2530 -740
+Wire Wire Line
+	2970 -410 2970 -740
+Wire Wire Line
+	3740 -740 3740 -520
+Wire Wire Line
+	4400 -80 3740 -80
+Wire Wire Line
+	2970 470 2970 800
+Wire Wire Line
+	2970 -190 2970 470
+Wire Wire Line
+	2970 -740 2860 -740
+Wire Wire Line
+	3740 -740 2970 -740
+Wire Wire Line
+	4290 -740 3740 -740
+Wire Wire Line
+	3740 470 3740 250
+Wire Wire Line
+	2970 470 3740 470
+Text Label 3773 -267 0 70 ~
+16k
+Wire Wire Line
+	3740 -80 3740 -300
+Wire Wire Line
+	3740 30 3740 -80
+Connection ~ 2970 470
+Connection ~ 2970 -740
+Connection ~ 3740 -80
+Connection ~ 3740 -740
+Connection ~ 8690 -5140
+Connection ~ 9130 -9210
+Connection ~ 9460 -3820
+Connection ~ 9460 -4480
+Connection ~ 9570 -4480
+Connection ~ 9570 -8550
+Connection ~ 9570 -8990
+Connection ~ 10120 -5140
+Connection ~ 10340 -5140
+Connection ~ 10670 -7780
+Connection ~ 11660 -3600
+Connection ~ 11660 -4040
+Connection ~ 11880 -8990
+Connection ~ 12540 -8330
+Connection ~ 13750 -3710
+Connection ~ 14300 -9210
+Connection ~ 14520 -7890
+Connection ~ 14740 -8440
+Connection ~ 15400 -5030
+Connection ~ 15400 -5580
+Connection ~ 16720 -4040
+Connection ~ 18150 -8000
+Connection ~ 18150 -8770
+Connection ~ 18480 -4590
+Connection ~ 18480 -5030
+Connection ~ 18700 910
+Connection ~ 18700 250
+Connection ~ 19030 -5470
+Connection ~ 19360 -9100
+Connection ~ 19360 -9210
+Connection ~ 19690 -8220
+Connection ~ 19800 -2500
+Connection ~ 19910 -8220
+Connection ~ 20020 -2500
+Connection ~ 20130 -3710
+Connection ~ 21670 -2390
+Connection ~ 22110 -1840
+Connection ~ 22110 -2280
+Connection ~ 22110 -2390
+Connection ~ 22220 -3050
+Connection ~ 22440 -2610
+Connection ~ 22440 -3710
+Connection ~ 22990 1790
+Connection ~ 23100 -4810
+Connection ~ 23430 -8440
+Connection ~ 23430 -8660
+Connection ~ 23430 -8880
+Connection ~ 23430 -9100
+Connection ~ 23870 -1730
+Connection ~ 23870 -2610
+Connection ~ 24420 -8770
+Connection ~ 24420 -9100
+Connection ~ 24530 -4370
+Connection ~ 24640 -8770
+Connection ~ 24640 -9100
+Connection ~ 24860 -8770
+Connection ~ 24860 -9100
+Connection ~ 25080 -8770
+Connection ~ 25080 -9100
+Connection ~ 25410 -8770
+Connection ~ 25410 -9100
+Connection ~ 25740 -8770
+Connection ~ 25740 -9100
+$Comp
+L BUCK_TPS54540 U?_4
+U 1 1 58069626
+F 0 "U?_4" H 10340 -9540 60  0000 L BNN
+	1    10120 -9540
+	1    0    0    -1
+$EndComp
+$Comp
+L NFET_SI1970DH_2 Q?_2
+U 1 1 58069625
+F 0 "Q?_2" H 18667 -8231 60  0000 L BNN
+	1    18480 -8110
+	1    0    0    -1
+$EndComp
+$Comp
+L NFET_SI1970DH_1 Q?_3
+U 1 1 58069624
+F 0 "Q?_3" H 18667 -9001 60  0000 L BNN
+	1    18480 -8880
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_18
+U 1 1 58069623
+F 0 "R?_18" V 18227 -8473 60  0000 R TNN
+	1    18150 -8440
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_19
+U 1 1 58069622
+F 0 "R?_19" V 18227 -7703 60  0000 R TNN
+	1    18150 -7670
+	0    -1   -1   0
+$EndComp
+$Comp
+L PFET_IRF7329PBFCT-ND_1 Q?_4
+U 1 1 58069621
+F 0 "Q?_4" H 20647 -9441 60  0000 L BNN
+	1    20460 -9320
+	1    0    0    -1
+$EndComp
+$Comp
+L PFET_IRF7329PBFCT-ND_2 Q?_5
+U 1 1 58069620
+F 0 "Q?_5" H 20647 -9111 60  0000 L BNN
+	1    20460 -8990
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_20
+U 1 1 5806961F
+F 0 "R?_20" H 19503 -9507 60  0000 L BNN
+	1    19470 -9540
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_21
+U 1 1 5806961E
+F 0 "R?_21" H 19833 -8517 60  0000 L BNN
+	1    19800 -8550
+	1    0    0    -1
+$EndComp
+$Comp
+L PFET_IRF7329PBFCT-ND_1 Q?_6
+U 1 1 5806961D
+F 0 "Q?_6" H 20977 -8451 60  0000 L BNN
+	1    20790 -8330
+	1    0    0    -1
+$EndComp
+$Comp
+L PFET_IRF7329PBFCT-ND_2 Q?_7
+U 1 1 5806961C
+F 0 "Q?_7" H 20977 -8121 60  0000 L BNN
+	1    20790 -8000
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_32
+U 1 1 5806961B
+F 0 "C?_32" H 9735 -9870 60  0000 L BNN
+	1    9680 -9760
+	1    0    0    -1
+$EndComp
+$Comp
+L WCAP-PTG5_8x8x3.5x0.6_870025174008 C?_35
+U 1 1 5806961A
+F 0 "C?_35" V 25740 -8990 60  0000 L BNN
+F 1 "= Capacitance" V 26070 -8990 60  0000 L BNN
+F 2 "" H 26070 -8990 60  0000 C CNN
+F 3 "" H 26070 -8990 60  0000 C CNN
+	1    25850 -8990
+	0    1    1    0
+$EndComp
+$Comp
+L WCAP-PTG5_8x8x3.5x0.6_870025174008 C?_36
+U 1 1 58069619
+F 0 "C?_36" V 25410 -9210 60  0000 L BNN
+F 1 "= Capacitance" V 25850 -9210 60  0000 L BNN
+F 2 "" H 25850 -9210 60  0000 C CNN
+F 3 "" H 25850 -9210 60  0000 C CNN
+	1    25520 -8990
+	0    1    1    0
+$EndComp
+$Comp
+L __template_cap C?_37
+U 1 1 58069618
+F 0 "C?_37" H 24970 -9100 60  0000 L BNN
+	1    25080 -9100
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_38
+U 1 1 58069617
+F 0 "C?_38" H 24750 -9100 60  0000 L BNN
+	1    24860 -9100
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_39
+U 1 1 58069616
+F 0 "C?_39" H 24530 -9100 60  0000 L BNN
+	1    24640 -9100
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_40
+U 1 1 58069615
+F 0 "C?_40" H 24310 -9100 60  0000 L BNN
+	1    24420 -9100
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_fuse F?
+U 1 1 58069614
+F 0 "F?" H 23540 -9650 60  0000 L BNN
+	1    23430 -9540
+	1    0    0    -1
+$EndComp
+$Comp
+L RES_CURRENT_SENSE_0.020_OHM_0.25W_1% R?_22
+U 1 1 58069613
+F 0 "R?_22" V 23540 -8440 60  0000 R TNN
+	1    23430 -8660
+	0    -1   -1   0
+$EndComp
+$Comp
+L UCC381DP-3 U?_5
+U 1 1 58069612
+F 0 "U?_5" H 9130 -5250 60  0000 L BNN
+F 1 "UCC381DP-3" H 9130 -6152 60  0000 L BNN
+F 2 "" H 9130 -6152 60  0000 C CNN
+F 3 "" H 9130 -6152 60  0000 C CNN
+	1    9130 -5250
+	1    0    0    -1
+$EndComp
+$Comp
+L FB_782853112 B?
+U 1 1 58069611
+F 0 "B?" H 9707.06 -3787 60  0000 L BNN
+	1    9680 -3820
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_13
+U 1 1 58069610
+F 0 "R?_13" V 9977 -8583 60  0000 R TNN
+	1    9900 -8550
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_cap C?_41
+U 1 1 5806960F
+F 0 "C?_41" H 8470 -5250 60  0000 L BNN
+	1    8690 -5140
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_42
+U 1 1 5806960E
+F 0 "C?_42" H 10406 -4997 60  0000 L BNN
+	1    10340 -4920
+	1    0    0    -1
+$EndComp
+$Comp
+L LTC1871EMS#PBF U?_6
+U 1 1 5806960D
+F 0 "U?_6" H 14410 -4370 60  0000 L BNN
+F 1 "LTC1871EMS#PBF" H 14410 -5580 60  0000 L BNN
+F 2 "" H 14410 -5580 60  0000 C CNN
+F 3 "" H 14410 -5580 60  0000 C CNN
+	1    14410 -4370
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_23
+U 1 1 5806960C
+F 0 "R?_23" H 13200 -3710 60  0000 L BNN
+	1    13200 -3710
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_24
+U 1 1 5806960B
+F 0 "R?_24" H 13200 -3380 60  0000 L BNN
+	1    13200 -3380
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_25
+U 1 1 5806960A
+F 0 "R?_25" H 13640 -3930 60  0000 L BNN
+	1    13640 -3930
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_26
+U 1 1 58069609
+F 0 "R?_26" H 16390 -4040 60  0000 L BNN
+	1    16390 -4040
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_43
+U 1 1 58069608
+F 0 "C?_43" H 16786 -4007 60  0000 L BNN
+	1    16720 -3930
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_27
+U 1 1 58069607
+F 0 "R?_27" V 11737 -4183 60  0000 R TNN
+	1    11660 -4150
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_cap C?_44
+U 1 1 58069606
+F 0 "C?_44" H 12056 -4007 60  0000 L BNN
+	1    11990 -3930
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_14
+U 1 1 58069605
+F 0 "R?_14" V 9647 -8693 60  0000 R TNN
+	1    9570 -8660
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_28
+U 1 1 58069604
+F 0 "R?_28" V 11737 -3743 60  0000 R TNN
+	1    11660 -3710
+	0    -1   -1   0
+$EndComp
+$Comp
+L CAP_TANT_330UF_6.3V C?_45
+U 1 1 58069603
+F 0 "C?_45" H 11946 -5272 60  0000 L BNN
+	1    11880 -5250
+	1    0    0    -1
+$EndComp
+$Comp
+L CAP_TANT_330UF_6.3V C?_46
+U 1 1 58069602
+F 0 "C?_46" H 13046 -5272 60  0000 L BNN
+	1    12980 -5250
+	1    0    0    -1
+$EndComp
+$Comp
+L BUFFER_SN74AHCT1G125DBVR U?_7
+U 1 1 58069601
+F 0 "U?_7" H 18810 -5030 60  0000 L BNN
+	1    18920 -5140
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_29
+U 1 1 58069600
+F 0 "R?_29" V 18557 -4733 60  0000 R TNN
+	1    18480 -4700
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_30
+U 1 1 580695FF
+F 0 "R?_30" H 19393 -4997 60  0000 L BNN
+	1    19360 -5030
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_31
+U 1 1 580695FE
+F 0 "R?_31" V 19107 -5613 60  0000 R TNN
+	1    19030 -5580
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_32
+U 1 1 580695FD
+F 0 "R?_32" H 20647 -3743 60  0000 R TNN
+	1    20460 -3710
+	-1   0    0    1
+$EndComp
+$Comp
+L PIC12F1571-I/MS U?_8
+U 1 1 580695FC
+F 0 "U?_8" H 23430 -5690 60  0000 L BNN
+F 1 "PIC12F1571-I/MS" H 23430 -6790 60  0000 L BNN
+F 2 "" H 23430 -6790 60  0000 C CNN
+F 3 "" H 23430 -6790 60  0000 C CNN
+	1    23430 -5690
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_47
+U 1 1 580695FB
+F 0 "C?_47" V 23826 -4447 60  0000 R TNN
+	1    23760 -4370
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_15
+U 1 1 580695FA
+F 0 "R?_15" H 12133 -8957 60  0000 L BNN
+	1    12100 -8990
+	1    0    0    -1
+$EndComp
+$Comp
+L FETDRIVER_LT1910 U?_9
+U 1 1 580695F9
+F 0 "U?_9" H 24970 -2830 60  0000 R TNN
+	1    23760 -1730
+	-1   0    0    1
+$EndComp
+$Comp
+L __template_resistor R?_33
+U 1 1 580695F8
+F 0 "R?_33" H 23903 -2357 60  0000 L BNN
+	1    23870 -2390
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_34
+U 1 1 580695F7
+F 0 "R?_34" V 22297 -2753 60  0000 R TNN
+	1    22220 -2720
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_35
+U 1 1 580695F6
+F 0 "R?_35" V 22297 -3193 60  0000 R TNN
+	1    22220 -3160
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_diode_std D?_4
+U 1 1 580695F5
+F 0 "D?_4" H 22495 -3820 60  0000 L BNN
+	1    22440 -3600
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_diode_std D?_5
+U 1 1 580695F4
+F 0 "D?_5" V 22154 -2742 60  0000 L BNN
+	1    22000 -2610
+	0    1    1    0
+$EndComp
+$Comp
+L __template_resistor R?_36
+U 1 1 580695F3
+F 0 "R?_36" H 21813 -2247 60  0000 L BNN
+	1    21780 -2280
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_48
+U 1 1 580695F2
+F 0 "C?_48" V 21934 -3193 60  0000 L BNN
+	1    22000 -3050
+	0    1    1    0
+$EndComp
+$Comp
+L __template_cap C?_49
+U 1 1 580695F1
+F 0 "C?_49" H 22165 -2280 60  0000 L BNN
+	1    22110 -2170
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_50
+U 1 1 580695F0
+F 0 "C?_50" H 24156 -2247 60  0000 L BNN
+	1    24090 -2060
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_33
+U 1 1 580695EF
+F 0 "C?_33" H 11946 -8847 60  0000 L BNN
+	1    11880 -8770
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_diode_schottky D?_6
+U 1 1 580695EE
+F 0 "D?_6" V 23265 -3842 60  0000 L BNN
+	1    23100 -3710
+	0    1    1    0
+$EndComp
+$Comp
+L NFET_IXTY50N085T Q?_8
+U 1 1 580695ED
+F 0 "Q?_8" H 18997 -2511 60  0000 L BNN
+	1    18810 -2390
+	1    0    0    -1
+$EndComp
+$Comp
+L RES_CURRENT_SENSE_0.002_OHM_1W_1%_1206_SMD R?_37
+U 1 1 580695EC
+F 0 "R?_37" H 20207 -2643 60  0000 R TNN
+	1    20020 -2500
+	-1   0    0    1
+$EndComp
+$Comp
+L ISENSE_ACS711 U?_10
+U 1 1 580695EB
+F 0 "U?_10" H 18920 1020 60  0000 L BNN
+F 1 "ISENSE_ACS711" H 18920 30 60  0000 L BNN
+F 2 "" H 18920 30 60  0000 C CNN
+F 3 "" H 18920 30 60  0000 C CNN
+	1    19250 580
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_51
+U 1 1 580695EA
+F 0 "C?_51" V 21076 173 60  0000 R TNN
+	1    21010 250
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_38
+U 1 1 580695E9
+F 0 "R?_38" H 21043 723 60  0000 L BNN
+	1    21010 690
+	1    0    0    -1
+$EndComp
+$Comp
+L TSENSE_TC74 U?_11
+U 1 1 580695E8
+F 0 "U?_11" H 24090 690 60  0000 L BNN
+F 1 "TSENSE_TC74" H 24090 140 60  0000 L BNN
+F 2 "" H 24090 140 60  0000 C CNN
+F 3 "" H 24090 140 60  0000 C CNN
+	1    24420 250
+	1    0    0    -1
+$EndComp
+$Comp
+L SEEEDSTUDIO_nRF24L01+ U?_12
+U 1 1 580695E7
+F 0 "U?_12" H 23980 1570 60  0000 L BNN
+	1    24310 1900
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_52
+U 1 1 580695E6
+F 0 "C?_52" H 23045 1790 60  0000 L BNN
+	1    22990 1900
+	1    0    0    -1
+$EndComp
+$Comp
+L IND_COILCRAFT_XAL5050-562 L?_2
+U 1 1 580695E5
+F 0 "L?_2" V 14767.06 -8847 60  0000 L BNN
+	1    14740 -8880
+	0    1    1    0
+$EndComp
+$Comp
+L __template_cap C?_34
+U 1 1 580695E4
+F 0 "C?_34" H 12606 -8847 60  0000 L BNN
+	1    12540 -8770
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_diode_schottky D?_7
+U 1 1 580695E3
+F 0 "D?_7" H 14355 -9276 60  0000 L BNN
+	1    14300 -8990
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_53
+U 1 1 580695E2
+F 0 "C?_53" H 14795 -8385 60  0000 L BNN
+	1    14740 -8330
+	1    0    0    -1
+$EndComp
+$Comp
+L NFET_CSD16323Q3 Q?_9
+U 1 1 580695E1
+F 0 "Q?_9" H 15543 -5371 60  0000 L BNN
+	1    15290 -5250
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_diode_schottky D?_8
+U 1 1 580695E0
+F 0 "D?_8" V 16005 -5712 60  0000 L BNN
+	1    15840 -5580
+	0    1    1    0
+$EndComp
+$Comp
+L IND_COILCRAFT_XAL6030-182 L?_3
+U 1 1 580695DF
+F 0 "L?_3" H 14877.06 -5547 60  0000 L BNN
+	1    14960 -5580
+	1    0    0    -1
+$EndComp
+$Comp
+L CONN_2x2 J?_6
+U 1 1 580695DE
+F 0 "J?_6" H 12870 -2830 60  0000 L BNN
+	1    12650 -2280
+	1    0    0    -1
+$EndComp
+$Comp
+L CONN_2x2 J?_7
+U 1 1 580695DD
+F 0 "J?_7" H 12870 -2170 60  0000 L BNN
+	1    12650 -1620
+	1    0    0    -1
+$EndComp
+$Comp
+L CONN_2x2 J?_8
+U 1 1 580695DC
+F 0 "J?_8" H 12870 -1510 60  0000 L BNN
+	1    12650 -960
+	1    0    0    -1
+$EndComp
+$Comp
+L CONN_2x2 J?_9
+U 1 1 580695DB
+F 0 "J?_9" H 12870 -850 60  0000 L BNN
+	1    12650 -300
+	1    0    0    -1
+$EndComp
+$Comp
+L CONN_MOLEX_MICROFIT_43045-0624 H?
+U 1 1 580695DA
+F 0 "H?" H 11000 -1840 60  0000 L BNN
+	1    11330 -1180
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_16
+U 1 1 580695D9
+F 0 "R?_16" H 10923 -7747 60  0000 L BNN
+	1    10890 -7780
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_fuse F?_2
+U 1 1 580695D8
+F 0 "F?_2" V 2497 -789.059999999999 60  0000 R TNN
+	1    2640 -740
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_diode_zener Z?
+U 1 1 580695D7
+F 0 "Z?" H 3014 -696 60  0000 L BNN
+	1    2970 -410
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R?_39
+U 1 1 580695D6
+F 0 "R?_39" V 3817 217 60  0000 R TNN
+	1    3740 250
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_40
+U 1 1 580695D5
+F 0 "R?_40" V 3817 -333 60  0000 R TNN
+	1    3740 -300
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R?_17
+U 1 1 580695D4
+F 0 "R?_17" H 10373 -7747 60  0000 L BNN
+	1    10340 -7780
+	1    0    0    -1
+$EndComp
+$EndSCHEMATC

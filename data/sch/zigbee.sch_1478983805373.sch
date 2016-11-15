@@ -1,0 +1,398 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:zigbee-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Zibee Breakout Sheild"
+Date "22 may 2015"
+Rev ""
+Comp "ExploreEmbedded.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 4866 2021
+NoConn ~ 4866 1921
+NoConn ~ 4866 1821
+NoConn ~ 4866 1621
+NoConn ~ 4866 1521
+NoConn ~ 6266 2121
+NoConn ~ 6266 2021
+NoConn ~ 6266 1921
+NoConn ~ 6266 1821
+NoConn ~ 6266 1721
+NoConn ~ 6266 1621
+NoConn ~ 6266 1521
+NoConn ~ 6266 1421
+NoConn ~ 6266 1321
+NoConn ~ 6266 1221
+$Comp
+L R R1
+U 1 1 51B6F651
+P 3666 2571
+F 0 "R1" V 3746 2571 50  0000 C CNN
+F 1 "1k" V 3666 2571 50  0000 C CNN
+F 2 "" H 3666 2571 60  0001 C CNN
+F 3 "" H 3666 2571 60  0001 C CNN
+	1    3666 2571
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 51B6F638
+P 3716 2321
+F 0 "D1" H 3716 2421 50  0000 C CNN
+F 1 "LED" H 3716 2221 50  0000 C CNN
+F 2 "" H 3716 2321 60  0001 C CNN
+F 3 "" H 3716 2321 60  0001 C CNN
+	1    3716 2321
+	1    0    0    -1  
+$EndComp
+Text Label 3436 2721 0    60   ~ 0
++5v
+Text Label 3066 1471 0    60   ~ 0
+Rx
+Text Label 3066 1571 0    60   ~ 0
+Tx
+$Comp
+L LED D2
+U 1 1 51B6F59F
+P 4566 1721
+F 0 "D2" H 4566 1821 50  0000 C CNN
+F 1 "LED" H 4566 1621 50  0000 C CNN
+F 2 "" H 4566 1721 60  0001 C CNN
+F 3 "" H 4566 1721 60  0001 C CNN
+	1    4566 1721
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 51B6F592
+P 4066 1721
+F 0 "R2" V 4146 1721 50  0000 C CNN
+F 1 "1k" V 4066 1721 50  0000 C CNN
+F 2 "" H 4066 1721 60  0001 C CNN
+F 3 "" H 4066 1721 60  0001 C CNN
+	1    4066 1721
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_4 P1
+U 1 1 51B6F522
+P 2716 1621
+F 0 "P1" V 2666 1621 50  0000 C CNN
+F 1 "CONN_4" V 2766 1621 50  0000 C CNN
+F 2 "" H 2716 1621 60  0001 C CNN
+F 3 "" H 2716 1621 60  0001 C CNN
+	1    2716 1621
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM1117 U1
+U 1 1 51B6F4D7
+P 4416 2721
+F 0 "U1" H 4416 2921 60  0000 C CNN
+F 1 "LM1117" H 4416 2821 60  0000 C CNN
+F 2 "" H 4416 2721 60  0001 C CNN
+F 3 "" H 4416 2721 60  0001 C CNN
+	1    4416 2721
+	1    0    0    1   
+$EndComp
+$Comp
+L ZIGBEE_XL U2
+U 1 1 51B6E245
+P 5566 1571
+F 0 "U2" H 5566 2121 60  0000 C CNN
+F 1 "ZIGBEE_XL" H 5566 2271 60  0000 C CNN
+F 2 "" H 5566 1571 60  0001 C CNN
+F 3 "" H 5566 1571 60  0001 C CNN
+	1    5566 1571
+	1    0    0    -1  
+$EndComp
+$Comp
+L DB9 J1
+U 1 1 52A3EE4E
+P 7446 1611
+F 0 "J1" H 7446 2161 70  0000 C CNN
+F 1 "DB9" H 7446 1061 70  0000 C CNN
+F 2 "" H 7446 1611 60  0001 C CNN
+F 3 "" H 7446 1611 60  0001 C CNN
+	1    7446 1611
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 52A3EE54
+P 7896 2061
+F 0 "#PWR01" H 7896 2061 30  0001 C CNN
+F 1 "GND" H 7896 1991 30  0001 C CNN
+F 2 "" H 7896 2061 60  0001 C CNN
+F 3 "" H 7896 2061 60  0001 C CNN
+	1    7896 2061
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7896 1211
+NoConn ~ 7896 1311
+NoConn ~ 7896 1711
+NoConn ~ 7896 1811
+NoConn ~ 7896 1911
+$Comp
+L C C4
+U 1 1 52A3EE5F
+P 9796 2311
+F 0 "C4" H 9846 2411 50  0000 L CNN
+F 1 "0.1uF" H 9846 2211 50  0000 L CNN
+F 2 "" H 9796 2311 60  0001 C CNN
+F 3 "" H 9796 2311 60  0001 C CNN
+	1    9796 2311
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 52A3EE65
+P 9796 1811
+F 0 "C3" H 9846 1911 50  0000 L CNN
+F 1 "0.1uF" H 9846 1711 50  0000 L CNN
+F 2 "" H 9796 1811 60  0001 C CNN
+F 3 "" H 9796 1811 60  0001 C CNN
+	1    9796 1811
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 52A3EE6B
+P 8046 1811
+F 0 "C1" H 8096 1911 50  0000 L CNN
+F 1 "0.1uF" H 8096 1711 50  0000 L CNN
+F 2 "" H 8046 1811 60  0001 C CNN
+F 3 "" H 8046 1811 60  0001 C CNN
+	1    8046 1811
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 52A3EE71
+P 8046 2311
+F 0 "C2" H 8096 2411 50  0000 L CNN
+F 1 "0.1uF" H 8096 2211 50  0000 L CNN
+F 2 "" H 8046 2311 60  0001 C CNN
+F 3 "" H 8046 2311 60  0001 C CNN
+	1    8046 2311
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9796 1111
+NoConn ~ 9796 1311
+NoConn ~ 8196 1111
+NoConn ~ 8196 1311
+NoConn ~ 7896 1511
+$Comp
+L MAX232 U4
+U 1 1 52A3EE7D
+P 8996 1811
+F 0 "U4" H 8996 2661 70  0000 C CNN
+F 1 "MAX232" H 8996 961 70  0000 C CNN
+F 2 "" H 8996 1811 60  0001 C CNN
+F 3 "" H 8996 1811 60  0001 C CNN
+	1    8996 1811
+	-1   0    0    1   
+$EndComp
+Text Label 9796 1411 0    60   ~ 0
+Tx
+Text Label 9796 1211 0    60   ~ 0
+Rx
+Text Label 7586 2451 0    60   ~ 0
++5v
+$Comp
+L CONN_3 K1
+U 1 1 52A3EE91
+P 1806 2141
+F 0 "K1" V 1756 2141 50  0000 C CNN
+F 1 "CONN_3" V 1856 2141 40  0000 C CNN
+F 2 "~" H 1806 2141 60  0000 C CNN
+F 3 "~" H 1806 2141 60  0000 C CNN
+	1    1806 2141
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 52A3EEDE
+P 2156 2311
+F 0 "#PWR02" H 2156 2311 30  0001 C CNN
+F 1 "GND" H 2156 2241 30  0001 C CNN
+F 2 "" H 2156 2311 60  0000 C CNN
+F 3 "" H 2156 2311 60  0000 C CNN
+	1    2156 2311
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM1117 U3
+U 1 1 52A3EF67
+P 3036 2721
+F 0 "U3" H 3036 2921 60  0000 C CNN
+F 1 "LM1117" H 3036 2821 60  0000 C CNN
+F 2 "" H 3036 2721 60  0001 C CNN
+F 3 "" H 3036 2721 60  0001 C CNN
+	1    3036 2721
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 52A3EF77
+P 4866 2201
+F 0 "#PWR03" H 4866 2201 30  0001 C CNN
+F 1 "GND" H 4866 2131 30  0001 C CNN
+F 2 "" H 4866 2201 60  0000 C CNN
+F 3 "" H 4866 2201 60  0000 C CNN
+	1    4866 2201
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3366 1571 3366 1321
+Wire Wire Line
+	3366 1571 3066 1571
+Wire Wire Line
+	3366 1321 4866 1321
+Wire Wire Line
+	3516 2321 3416 2321
+Wire Wire Line
+	3416 2321 3416 2571
+Connection ~ 3916 2721
+Wire Wire Line
+	3916 2571 3916 2721
+Wire Wire Line
+	4766 1721 4866 1721
+Wire Wire Line
+	3816 1721 3816 1421
+Wire Wire Line
+	4866 1221 4866 671 
+Wire Wire Line
+	4866 671  6766 671 
+Wire Wire Line
+	6766 671  6766 2721
+Wire Wire Line
+	6766 2721 4816 2721
+Wire Wire Line
+	4416 2121 4416 2371
+Wire Wire Line
+	3816 1421 4866 1421
+Wire Wire Line
+	4316 1721 4366 1721
+Wire Wire Line
+	3066 1671 3516 1671
+Wire Wire Line
+	3516 1671 3516 2121
+Wire Wire Line
+	3516 2121 4866 2121
+Connection ~ 4416 2121
+Wire Wire Line
+	3916 2321 3916 2121
+Connection ~ 3916 2121
+Wire Wire Line
+	3066 1471 3816 1471
+Connection ~ 3816 1471
+Wire Wire Line
+	8196 1411 7896 1411
+Wire Wire Line
+	7896 2061 7896 2011
+Wire Wire Line
+	8196 1611 8046 1611
+Connection ~ 8046 2061
+Wire Wire Line
+	8196 1911 8196 2061
+Wire Wire Line
+	8196 2061 7996 2061
+Wire Wire Line
+	7996 2061 7996 2011
+Wire Wire Line
+	7996 2011 7896 2011
+Connection ~ 7896 2011
+Connection ~ 8046 2111
+Connection ~ 8196 2111
+Connection ~ 8196 1611
+Connection ~ 8196 1411
+Connection ~ 8196 1211
+Connection ~ 9796 2011
+Connection ~ 9796 1611
+Connection ~ 9796 2111
+Connection ~ 9796 2511
+Connection ~ 8196 2511
+Connection ~ 8046 2511
+Wire Wire Line
+	8196 1211 7946 1211
+Wire Wire Line
+	7946 1211 7946 1611
+Wire Wire Line
+	7946 1611 7896 1611
+Wire Wire Line
+	8046 2111 8196 2111
+Wire Wire Line
+	8046 2011 8046 2061
+Wire Wire Line
+	8196 2511 7586 2511
+Wire Wire Line
+	7586 2511 7586 2451
+Wire Wire Line
+	2156 2141 2156 2311
+Connection ~ 2156 2241
+Wire Wire Line
+	4866 2121 4866 2201
+Wire Wire Line
+	3036 2371 3036 2111
+Wire Wire Line
+	3036 2111 3516 2111
+Connection ~ 3516 2111
+Wire Wire Line
+	3066 2041 3066 1771
+Wire Wire Line
+	3436 2721 4016 2721
+Wire Wire Line
+	2536 2721 2536 2041
+Wire Wire Line
+	2536 2041 2541 2041
+Connection ~ 2541 2041
+Wire Wire Line
+	2156 2041 3066 2041
+Wire Notes Line
+	500  3000 11200 3000
+Wire Notes Line
+	7000 500  7000 7950
+Wire Notes Line
+	7000 7950 6850 7950
+Text Notes 2650 5450 0    60   ~ 0
+[ whatever cool you would like to draw ] 
+Text Notes 8350 4850 0    60   ~ 0
+[ whatever cool you would like to draw ] 
+$EndSCHEMATC

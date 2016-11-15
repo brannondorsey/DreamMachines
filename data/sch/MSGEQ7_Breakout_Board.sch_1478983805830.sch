@@ -1,0 +1,465 @@
+EESchema Schematic File Version 2
+LIBS:msgeq7
+LIBS:conn
+LIBS:device
+LIBS:power
+LIBS:MSGEQ7_Breakout_Board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MSGEQ7 Breakout Board"
+Date "2015-10-27"
+Rev "B"
+Comp "Rheingold Heavy"
+Comment1 "Breakout board for the Mixed Signals Integration MSGEQ7"
+Comment2 "Update to KiCad v4.0.0_RC1"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MSGEQ7 U1
+U 1 1 545E86BE
+P 6150 3950
+F 0 "U1" H 6450 3300 60  0000 C CNN
+F 1 "MSGEQ7" H 6150 3950 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 5900 3950 60  0001 C CNN
+F 3 "http://www.mix-sig.com/images/datasheets/MSGEQ7.pdf" H 5900 3950 60  0001 C CNN
+F 4 "Seven Band Graphic Equalizer Display Filter DIP8" H 6150 3950 60  0001 C CNN "Characteristics"
+F 5 "Seven Band Graphic Equalizer" H 6150 3950 60  0001 C CNN "Description"
+F 6 "Mixed Signal Integration" H 6150 3950 60  0001 C CNN "MFN"
+F 7 "MSGEQ7" H 6150 3950 60  0001 C CNN "MFP"
+F 8 "PTH_DIP8" H 6150 3950 60  0001 C CNN "Package ID"
+F 9 "ANY" H 6150 3950 60  0001 C CNN "Source"
+F 10 "Y" H 6150 3950 60  0001 C CNN "Critical"
+F 11 "Main" H 6150 3950 60  0001 C CNN "Subsystem"
+F 12 "Must be purchased direct from MFN - Not In Distribution!" H 6150 3950 60  0001 C CNN "Notes"
+	1    6150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 545E86CD
+P 6850 3100
+F 0 "R1" V 6930 3100 40  0000 C CNN
+F 1 "200K" V 6850 3100 40  0000 C CNN
+F 2 "Project_Footprints:PTH_Resistor" V 6780 3100 30  0001 C CNN
+F 3 "https://www.seielect.com/catalog/SEI-CF_CFM.pdf" H 6850 3100 30  0001 C CNN
+F 4 "RES 200K OHM 1/4W 5% CARBON FILM" H 6850 3100 60  0001 C CNN "Characteristics"
+F 5 "200K RC Oscillator Resistor" H 6850 3100 60  0001 C CNN "Description"
+F 6 "Stackpole" H 6850 3100 60  0001 C CNN "MFN"
+F 7 "CF14JT200K" H 6850 3100 60  0001 C CNN "MFP"
+F 8 "PTH_Resistor" H 6850 3100 60  0001 C CNN "Package ID"
+F 9 "ANY" H 6850 3100 60  0001 C CNN "Source"
+F 10 "N" H 6850 3100 60  0001 C CNN "Critical"
+F 11 "Main" H 6850 3100 60  0001 C CNN "Subsystem"
+F 12 "~" H 6850 3100 60  0001 C CNN "Notes"
+	1    6850 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 3500 7000 3500
+Wire Wire Line
+	5450 3500 5700 3500
+$Comp
+L C C1
+U 1 1 545E8778
+P 5300 3500
+F 0 "C1" V 5350 3350 40  0000 L CNN
+F 1 "0.1uF" V 5175 3425 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 5338 3350 30  0001 C CNN
+F 3 "http://datasheet.octopart.com/K103K15X7RF53L2-Vishay-datasheet-20674387.pdf" H 5300 3500 60  0001 C CNN
+F 4 "CAP CER 10000PF 50V X7R RADIAL" H 5300 3500 60  0001 C CNN "Characteristics"
+F 5 "0.1uF MSGEQ7 Bypass Capacitor" H 5300 3500 60  0001 C CNN "Description"
+F 6 "Murata" H 5300 3500 60  0001 C CNN "MFN"
+F 7 "RDER71H104K0M1H03A" H 5300 3500 60  0001 C CNN "MFP"
+F 8 "PTH_5.00mm" H 5300 3500 60  0001 C CNN "Package ID"
+F 9 "ANY" H 5300 3500 60  0001 C CNN "Source"
+F 10 "N" H 5300 3500 60  0001 C CNN "Critical"
+F 11 "Main" H 5300 3500 60  0001 C CNN "Subsystem"
+F 12 "~" H 5300 3500 60  0001 C CNN "Notes"
+	1    5300 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 3500 5150 3500
+Wire Wire Line
+	5000 3500 5000 3600
+Text GLabel 7450 3800 2    50   Input ~ 0
+RESET_IN
+Wire Wire Line
+	7450 3800 6600 3800
+$Comp
+L C C3
+U 1 1 545E89A7
+P 7150 3500
+F 0 "C3" V 7200 3400 40  0000 C CNN
+F 1 "33pF" V 7000 3500 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 7188 3350 30  0001 C CNN
+F 3 "http://datasheet.octopart.com/K330J15C0GF5TL2-Vishay-datasheet-13562638.pdf" H 7150 3500 60  0001 C CNN
+F 4 "CAP CER 33PF 50V NP0 RADIAL	" H 7150 3500 60  0001 C CNN "Characteristics"
+F 5 "33pF RC Oscillator Cap" H 7150 3500 60  0001 C CNN "Description"
+F 6 "Vishay" H 7150 3500 60  0001 C CNN "MFN"
+F 7 "K330J15C0GF5TL2" H 7150 3500 60  0001 C CNN "MFP"
+F 8 "PTH_2.50mm" H 7150 3500 60  0001 C CNN "Package ID"
+F 9 "ANY" H 7150 3500 60  0001 C CNN "Source"
+F 10 "N" H 7150 3500 60  0001 C CNN "Critical"
+F 11 "Main" H 7150 3500 60  0001 C CNN "Subsystem"
+F 12 "~" H 7150 3500 60  0001 C CNN "Notes"
+	1    7150 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 3800 5000 3800
+Text GLabel 5025 4100 0    50   Input ~ 0
+OUT
+Wire Wire Line
+	5700 4100 5025 4100
+Text GLabel 5025 4400 0    50   Input ~ 0
+STROBE
+Wire Wire Line
+	6600 4100 7000 4100
+Wire Wire Line
+	7450 4100 7450 4200
+Wire Wire Line
+	7300 4100 7450 4100
+Wire Wire Line
+	7300 3500 7450 3500
+$Comp
+L R R2
+U 1 1 545E8ABB
+P 7900 4650
+F 0 "R2" V 7980 4650 40  0000 C CNN
+F 1 "22K" V 7900 4650 40  0000 C CNN
+F 2 "Project_Footprints:PTH_Resistor" V 7830 4650 30  0001 C CNN
+F 3 "https://www.seielect.com/catalog/SEI-CF_CFM.pdf" H 7900 4650 30  0001 C CNN
+F 4 "RES 22K OHM 1/4W 5% CARBON FILM" H 7900 4650 60  0001 C CNN "Characteristics"
+F 5 "22K Audio Input Resistor" H 7900 4650 60  0001 C CNN "Description"
+F 6 "Stackpole" H 7900 4650 60  0001 C CNN "MFN"
+F 7 "CF14JT22K0" H 7900 4650 60  0001 C CNN "MFP"
+F 8 "PTH_Resistor" H 7900 4650 60  0001 C CNN "Package ID"
+F 9 "ANY" H 7900 4650 60  0001 C CNN "Source"
+F 10 "N" H 7900 4650 60  0001 C CNN "Critical"
+F 11 "Main" H 7900 4650 60  0001 C CNN "Subsystem"
+F 12 "~" H 7900 4650 60  0001 C CNN "Notes"
+	1    7900 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 4400 5025 4400
+Wire Wire Line
+	6850 3250 6850 3500
+Connection ~ 6850 3500
+Wire Wire Line
+	6850 2750 6850 2950
+Wire Wire Line
+	3600 4250 3700 4250
+Wire Wire Line
+	3700 4250 3700 4350
+Text GLabel 3800 3950 2    50   Input ~ 0
+OUT
+Text GLabel 3800 3800 2    50   Input ~ 0
+STROBE
+Text GLabel 3800 4100 2    50   Input ~ 0
+RESET_IN
+$Comp
+L Breakout_Board_Header J1
+U 1 1 54669BC4
+P 3250 3950
+F 0 "J1" H 3250 3500 50  0000 C CNN
+F 1 "BREAKOUT_BOARD_HEADER" V 3000 3950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 3400 4100 60  0001 C CNN
+F 3 "http://media.digikey.com/PDF/Data%20Sheets/Sullins%20PDFs/z%20RzCzzzSzzN-RC,%20ST,11635-B.pdf" H 3400 4100 60  0001 C CNN
+F 4 "CONN HEADER .100\" SNGL STR 5POS" H 3250 3950 60  0001 C CNN "Characteristics"
+F 5 ".1\" Six Pin Header" H 3250 3950 60  0001 C CNN "Description"
+F 6 "Sullins Connector" H 3250 3950 60  0001 C CNN "MFN"
+F 7 "PREC005SAAN-RC" H 3250 3950 60  0001 C CNN "MFP"
+F 8 "PTH" H 3250 3950 60  0001 C CNN "Package ID"
+F 9 "ANY" H 3250 3950 60  0001 C CNN "Source"
+F 10 "N" H 3250 3950 60  0001 C CNN "Critical"
+F 11 "Main" H 3250 3950 60  0001 C CNN "Subsystem"
+F 12 "~" H 3250 3950 60  0001 C CNN "Notes"
+	1    3250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3800 3600 3800
+Wire Wire Line
+	3600 3950 3800 3950
+Wire Wire Line
+	3800 4100 3600 4100
+Wire Wire Line
+	7450 4650 7750 4650
+Wire Wire Line
+	7450 4650 7450 4850
+Wire Wire Line
+	7300 4750 7450 4750
+Wire Wire Line
+	6750 4750 7000 4750
+Wire Wire Line
+	7450 4850 7750 4850
+Connection ~ 7450 4750
+$Comp
+L STEREO_MINI_JACK J2
+U 1 1 54669DC4
+P 8650 4850
+F 0 "J2" H 8800 4500 60  0000 C CNN
+F 1 "STEREO_MINI_JACK" H 8650 5200 60  0000 C CNN
+F 2 "Project_Footprints:3.5mm_Stereo_Jack_SJ1-3523NG" H 8750 4850 60  0001 C CNN
+F 3 "http://www.cui.com/product/resource/sj1-352xng-series.pdf" H 8750 4850 60  0001 C CNN
+F 4 "ANY" H 8650 4850 60  0001 C CNN "Source"
+F 5 "N" H 8650 4850 60  0001 C CNN "Critical"
+F 6 "~" H 8650 4850 60  0001 C CNN "Notes"
+F 7 "CUI Inc" H 8650 4850 60  0001 C CNN "MFG Name"
+F 8 "SJ1-3523NG" H 8650 4850 60  0001 C CNN "MFG Part Num"
+	1    8650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4650 8300 4650
+Wire Wire Line
+	8050 4850 8300 4850
+Wire Wire Line
+	7450 3500 7450 3600
+Wire Wire Line
+	6600 4400 6750 4400
+Wire Wire Line
+	6750 4400 6750 4750
+Wire Wire Line
+	5000 3800 5000 3900
+Wire Wire Line
+	5600 3250 5600 3500
+Connection ~ 5600 3500
+Text Notes 2900 3150 0    60   ~ 0
+Six Pin .1" Header
+Wire Notes Line
+	3300 3200 3300 3450
+Wire Notes Line
+	6150 4700 6150 5250
+Text Notes 5375 5550 0    60   ~ 0
+MSGEQ7 will require 8 pin DIP footprint\nas requested by former backers to aid\nin hand soldering
+Text Notes 7800 5975 0    60   ~ 0
+Clarification needed from former backers on \nwhether they prefer stereo mini jack or .1" \nheader for audio input
+Wire Wire Line
+	8300 5050 8200 5050
+Wire Wire Line
+	8200 5050 8200 5200
+Wire Notes Line
+	8600 5300 8600 5650
+$Comp
+L GND #PWR01
+U 1 1 56305059
+P 5000 3600
+F 0 "#PWR01" H 5000 3350 50  0001 C CNN
+F 1 "GND" H 5000 3450 50  0001 C CNN
+F 2 "" H 5000 3600 60  0000 C CNN
+F 3 "" H 5000 3600 60  0000 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 563050AD
+P 5000 3900
+F 0 "#PWR02" H 5000 3650 50  0001 C CNN
+F 1 "GND" H 5000 3750 50  0001 C CNN
+F 2 "" H 5000 3900 60  0000 C CNN
+F 3 "" H 5000 3900 60  0000 C CNN
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 5630518D
+P 5600 3250
+F 0 "#PWR03" H 5600 3100 50  0001 C CNN
+F 1 "+5V" H 5600 3390 50  0000 C CNN
+F 2 "" H 5600 3250 60  0000 C CNN
+F 3 "" H 5600 3250 60  0000 C CNN
+	1    5600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 56305254
+P 6850 2750
+F 0 "#PWR04" H 6850 2600 50  0001 C CNN
+F 1 "+5V" H 6850 2890 50  0000 C CNN
+F 2 "" H 6850 2750 60  0000 C CNN
+F 3 "" H 6850 2750 60  0000 C CNN
+	1    6850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 5630527D
+P 3700 3550
+F 0 "#PWR05" H 3700 3400 50  0001 C CNN
+F 1 "+5V" H 3700 3690 50  0000 C CNN
+F 2 "" H 3700 3550 60  0000 C CNN
+F 3 "" H 3700 3550 60  0000 C CNN
+	1    3700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 563053F1
+P 3700 4350
+F 0 "#PWR06" H 3700 4100 50  0001 C CNN
+F 1 "GND" H 3700 4200 50  0001 C CNN
+F 2 "" H 3700 4350 60  0000 C CNN
+F 3 "" H 3700 4350 60  0000 C CNN
+	1    3700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5630555B
+P 8200 5200
+F 0 "#PWR07" H 8200 4950 50  0001 C CNN
+F 1 "GND" H 8200 5050 50  0001 C CNN
+F 2 "" H 8200 5200 60  0000 C CNN
+F 3 "" H 8200 5200 60  0000 C CNN
+	1    8200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5630592B
+P 7450 4200
+F 0 "#PWR08" H 7450 3950 50  0001 C CNN
+F 1 "GND" H 7450 4050 50  0001 C CNN
+F 2 "" H 7450 4200 60  0000 C CNN
+F 3 "" H 7450 4200 60  0000 C CNN
+	1    7450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 56305A31
+P 7450 3600
+F 0 "#PWR09" H 7450 3350 50  0001 C CNN
+F 1 "GND" H 7450 3450 50  0001 C CNN
+F 2 "" H 7450 3600 60  0000 C CNN
+F 3 "" H 7450 3600 60  0000 C CNN
+	1    7450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 563064CE
+P 7150 4100
+F 0 "C4" V 7200 4000 40  0000 C CNN
+F 1 "0.1uF" V 7000 4100 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 7188 3950 30  0001 C CNN
+F 3 "http://datasheet.octopart.com/K103K15X7RF53L2-Vishay-datasheet-20674387.pdf" H 7150 4100 60  0001 C CNN
+F 4 "CAP CER 10000PF 50V X7R RADIAL" H 7150 4100 60  0001 C CNN "Characteristics"
+F 5 "0.1uF VSS Capacitor" H 7150 4100 60  0001 C CNN "Description"
+F 6 "Murata" H 7150 4100 60  0001 C CNN "MFN"
+F 7 "RDER71H104K0M1H03A" H 7150 4100 60  0001 C CNN "MFP"
+F 8 "PTH_5.00mm" H 7150 4100 60  0001 C CNN "Package ID"
+F 9 "ANY" H 7150 4100 60  0001 C CNN "Source"
+F 10 "N" H 7150 4100 60  0001 C CNN "Critical"
+F 11 "Main" H 7150 4100 60  0001 C CNN "Subsystem"
+F 12 "~" H 7150 4100 60  0001 C CNN "Notes"
+	1    7150 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 563065F7
+P 7150 4750
+F 0 "C2" V 7100 4850 40  0000 C CNN
+F 1 "0.1uF" V 7300 4750 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 7188 4600 30  0001 C CNN
+F 3 "http://datasheet.octopart.com/K103K15X7RF53L2-Vishay-datasheet-20674387.pdf" H 7150 4750 60  0001 C CNN
+F 4 "CAP CER 10000PF 50V X7R RADIAL" H 7150 4750 60  0001 C CNN "Characteristics"
+F 5 "0.1uF Audio DC Decoupling Cap" H 7150 4750 60  0001 C CNN "Description"
+F 6 "Murata" H 7150 4750 60  0001 C CNN "MFN"
+F 7 "RDER71H104K0M1H03A" H 7150 4750 60  0001 C CNN "MFP"
+F 8 "PTH_5.00mm" H 7150 4750 60  0001 C CNN "Package ID"
+F 9 "ANY" H 7150 4750 60  0001 C CNN "Source"
+F 10 "N" H 7150 4750 60  0001 C CNN "Critical"
+F 11 "Main" H 7150 4750 60  0001 C CNN "Subsystem"
+F 12 "~" H 7150 4750 60  0001 C CNN "Notes"
+	1    7150 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 563067EF
+P 7900 4850
+F 0 "R3" V 7980 4850 40  0000 C CNN
+F 1 "22K" V 7900 4850 40  0000 C CNN
+F 2 "Project_Footprints:PTH_Resistor" V 7830 4850 30  0001 C CNN
+F 3 "https://www.seielect.com/catalog/SEI-CF_CFM.pdf" H 7900 4850 30  0001 C CNN
+F 4 "RES 22K OHM 1/4W 5% CARBON FILM" H 7900 4850 60  0001 C CNN "Characteristics"
+F 5 "22K Audio Input Resistor" H 7900 4850 60  0001 C CNN "Description"
+F 6 "Stackpole" H 7900 4850 60  0001 C CNN "MFN"
+F 7 "CF14JT22K0" H 7900 4850 60  0001 C CNN "MFP"
+F 8 "PTH_Resistor" H 7900 4850 60  0001 C CNN "Package ID"
+F 9 "ANY" H 7900 4850 60  0001 C CNN "Source"
+F 10 "N" H 7900 4850 60  0001 C CNN "Critical"
+F 11 "Main" H 7900 4850 60  0001 C CNN "Subsystem"
+F 12 "~" H 7900 4850 60  0001 C CNN "Notes"
+	1    7900 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 56305999
+P 5175 2450
+F 0 "#FLG010" H 5175 2545 50  0001 C CNN
+F 1 "PWR_FLAG" H 5175 2630 50  0000 C CNN
+F 2 "" H 5175 2450 60  0000 C CNN
+F 3 "" H 5175 2450 60  0000 C CNN
+	1    5175 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 56305A63
+P 5575 2450
+F 0 "#FLG011" H 5575 2545 50  0001 C CNN
+F 1 "PWR_FLAG" H 5575 2630 50  0000 C CNN
+F 2 "" H 5575 2450 60  0000 C CNN
+F 3 "" H 5575 2450 60  0000 C CNN
+	1    5575 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3550 3700 3650
+Wire Wire Line
+	3700 3650 3600 3650
+$Comp
+L GND #PWR012
+U 1 1 56305B80
+P 5575 2600
+F 0 "#PWR012" H 5575 2350 50  0001 C CNN
+F 1 "GND" H 5575 2450 50  0001 C CNN
+F 2 "" H 5575 2600 60  0000 C CNN
+F 3 "" H 5575 2600 60  0000 C CNN
+	1    5575 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 2450 5575 2600
+$Comp
+L +5V #PWR013
+U 1 1 56305BD6
+P 4850 2425
+F 0 "#PWR013" H 4850 2275 50  0001 C CNN
+F 1 "+5V" H 4850 2565 50  0000 C CNN
+F 2 "" H 4850 2425 60  0000 C CNN
+F 3 "" H 4850 2425 60  0000 C CNN
+	1    4850 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5175 2450 5175 2575
+Wire Wire Line
+	5175 2575 4850 2575
+Wire Wire Line
+	4850 2575 4850 2425
+$EndSCHEMATC

@@ -1,0 +1,614 @@
+EESchema Schematic File Version 2
+LIBS:dodekaedri-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:dodekaedri
+LIBS:Oscillators
+LIBS:stm32
+LIBS:dodekaedri-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title "Antenna block, SWR-meter and RXTX switch"
+Date "2016-09-30"
+Rev "1.0"
+Comp "PRK - OH2TI"
+Comment1 "exla - OH2EHK"
+Comment2 "tejeez - OH2EAT"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BNC P301
+U 1 1 57E329E0
+P 3200 3100
+F 0 "P301" H 3210 3220 50  0000 C CNN
+F 1 "BNC" V 3310 3040 50  0000 C CNN
+F 2 "dodekaedri:BNC_right_angle" H 3200 3100 50  0001 C CNN
+F 3 "" H 3200 3100 50  0000 C CNN
+	1    3200 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C301
+U 1 1 57E329E7
+P 3550 3100
+F 0 "C301" H 3560 3170 50  0000 L CNN
+F 1 "1nF" H 3560 3020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3550 3100 50  0001 C CNN
+F 3 "" H 3550 3100 50  0000 C CNN
+	1    3550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C302
+U 1 1 57E329EE
+P 3800 3300
+F 0 "C302" H 3810 3370 50  0000 L CNN
+F 1 "1nF" H 3810 3220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3800 3300 50  0001 C CNN
+F 3 "" H 3800 3300 50  0000 C CNN
+	1    3800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 57E329F5
+P 3800 3550
+F 0 "#PWR012" H 3800 3300 50  0001 C CNN
+F 1 "GND" H 3800 3400 50  0000 C CNN
+F 2 "" H 3800 3550 50  0000 C CNN
+F 3 "" H 3800 3550 50  0000 C CNN
+	1    3800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L301
+U 1 1 57E329FB
+P 4000 3100
+F 0 "L301" H 4030 3140 50  0000 L CNN
+F 1 "660nH" H 4030 3060 50  0000 L CNN
+F 2 "Air_Coils_SML_NEOSID:Neosid_Air-Coil_SML_5turn_HDM0531A" H 4000 3100 50  0001 C CNN
+F 3 "" H 4000 3100 50  0000 C CNN
+	1    4000 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C304
+U 1 1 57E32A10
+P 4200 3300
+F 0 "C304" H 4210 3370 50  0000 L CNN
+F 1 "1nF" H 4210 3220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4200 3300 50  0001 C CNN
+F 3 "" H 4200 3300 50  0000 C CNN
+	1    4200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C305
+U 1 1 57E32A17
+P 4450 3100
+F 0 "C305" H 4460 3170 50  0000 L CNN
+F 1 "1nF" H 4460 3020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4450 3100 50  0001 C CNN
+F 3 "" H 4450 3100 50  0000 C CNN
+	1    4450 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R302
+U 1 1 57E32A25
+P 4250 5550
+F 0 "R302" H 4280 5570 50  0000 L CNN
+F 1 "50R" H 4280 5510 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4250 5550 50  0001 C CNN
+F 3 "" H 4250 5550 50  0000 C CNN
+	1    4250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R303
+U 1 1 57E32A2C
+P 5250 5550
+F 0 "R303" H 5280 5570 50  0000 L CNN
+F 1 "50R" H 5280 5510 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5250 5550 50  0001 C CNN
+F 3 "" H 5250 5550 50  0000 C CNN
+	1    5250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R301
+U 1 1 57E32A33
+P 3900 5900
+F 0 "R301" H 3930 5920 50  0000 L CNN
+F 1 "10k" H 3930 5860 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3900 5900 50  0001 C CNN
+F 3 "" H 3900 5900 50  0000 C CNN
+	1    3900 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky_Small D301
+U 1 1 57E32A3A
+P 4000 6200
+F 0 "D301" H 3850 6300 50  0000 L CNN
+F 1 "BAT54" H 3900 6100 50  0000 L CNN
+F 2 "dodekaedri:SOT-23_HS_2-1-3" V 4000 6200 50  0001 C CNN
+F 3 "" V 4000 6200 50  0000 C CNN
+	1    4000 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky_Small D302
+U 1 1 57E32A41
+P 4550 5100
+F 0 "D302" H 4400 5200 50  0000 L CNN
+F 1 "BAT54" H 4550 5000 50  0000 L CNN
+F 2 "dodekaedri:SOT-23_HS_2-1-3" V 4550 5100 50  0001 C CNN
+F 3 "" V 4550 5100 50  0000 C CNN
+	1    4550 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky_Small D303
+U 1 1 57E32A48
+P 4950 5100
+F 0 "D303" H 4900 5180 50  0000 L CNN
+F 1 "BAT54" H 4800 5000 50  0000 L CNN
+F 2 "dodekaedri:SOT-23_HS_2-1-3" V 4950 5100 50  0001 C CNN
+F 3 "" V 4950 5100 50  0000 C CNN
+	1    4950 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C307
+U 1 1 57E32A4F
+P 4550 6000
+F 0 "C307" V 4600 6050 50  0000 L CNN
+F 1 "1nF" H 4560 5920 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4550 6000 50  0001 C CNN
+F 3 "" H 4550 6000 50  0000 C CNN
+	1    4550 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C308
+U 1 1 57E32A56
+P 4950 6000
+F 0 "C308" H 4960 6070 50  0000 L CNN
+F 1 "1nF" H 4960 5920 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4950 6000 50  0001 C CNN
+F 3 "" H 4950 6000 50  0000 C CNN
+	1    4950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C309
+U 1 1 57E32A5D
+P 5250 6000
+F 0 "C309" H 5260 6070 50  0000 L CNN
+F 1 "100nF" H 5260 5920 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5250 6000 50  0001 C CNN
+F 3 "" H 5250 6000 50  0000 C CNN
+	1    5250 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C306
+U 1 1 57E32A64
+P 4250 6000
+F 0 "C306" H 4260 6070 50  0000 L CNN
+F 1 "100nF" H 4260 5920 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4250 6000 50  0001 C CNN
+F 3 "" H 4250 6000 50  0000 C CNN
+	1    4250 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +Vlogic #PWR013
+U 1 1 57E32A6B
+P 3800 5750
+F 0 "#PWR013" H 3800 5550 50  0001 C CNN
+F 1 "+Vlogic" H 3800 5950 50  0000 C CNN
+F 2 "" H 3800 5750 50  0000 C CNN
+F 3 "" H 3800 5750 50  0000 C CNN
+	1    3800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 57E32A71
+P 4750 6300
+F 0 "#PWR014" H 4750 6050 50  0001 C CNN
+F 1 "GND" H 4750 6150 50  0000 C CNN
+F 2 "" H 4750 6300 50  0000 C CNN
+F 3 "" H 4750 6300 50  0000 C CNN
+	1    4750 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3100 3450 3100
+Wire Wire Line
+	3650 3100 3900 3100
+Wire Wire Line
+	3800 3100 3800 3200
+Connection ~ 3800 3100
+Wire Wire Line
+	3800 3400 3800 3550
+Wire Wire Line
+	3000 3550 4200 3550
+Wire Wire Line
+	3200 2900 3000 2900
+Wire Wire Line
+	3000 2900 3000 3550
+Connection ~ 3800 3550
+Wire Wire Line
+	4200 3550 4200 3400
+Connection ~ 4200 3100
+Wire Wire Line
+	4550 3100 4950 3100
+Wire Wire Line
+	3800 5750 3800 5900
+Wire Wire Line
+	4000 5900 4000 6100
+Wire Wire Line
+	4000 5900 4250 5900
+Wire Wire Line
+	4150 5900 4150 6550
+Wire Wire Line
+	4150 6550 6200 6550
+Wire Wire Line
+	5550 6550 5550 5850
+Wire Wire Line
+	5550 5850 5250 5850
+Wire Wire Line
+	5250 5650 5250 5900
+Connection ~ 4150 5900
+Connection ~ 5250 5850
+Wire Wire Line
+	5250 3900 5250 5450
+Wire Wire Line
+	4250 3900 4250 5450
+Wire Wire Line
+	4250 5900 4250 5650
+Wire Wire Line
+	4550 5600 4550 5900
+Wire Wire Line
+	4950 5600 4950 5900
+Wire Wire Line
+	4250 6100 4250 6200
+Wire Wire Line
+	4250 6200 5250 6200
+Wire Wire Line
+	5250 6200 5250 6100
+Wire Wire Line
+	4950 6100 4950 6200
+Connection ~ 4950 6200
+Wire Wire Line
+	4550 6100 4550 6200
+Connection ~ 4550 6200
+Wire Wire Line
+	4750 6200 4750 6300
+Connection ~ 4750 6200
+Text HLabel 5600 5700 2    60   Output ~ 0
+SWR_ADC_A
+Text HLabel 5600 5800 2    60   Output ~ 0
+SWR_ADC_B
+Wire Wire Line
+	5600 5700 4550 5700
+Connection ~ 4550 5700
+Wire Wire Line
+	5600 5800 4950 5800
+Connection ~ 4950 5800
+$Comp
+L GND #PWR015
+U 1 1 57E32AAA
+P 4000 6400
+F 0 "#PWR015" H 4000 6150 50  0001 C CNN
+F 1 "GND" H 4000 6250 50  0000 C CNN
+F 2 "" H 4000 6400 50  0000 C CNN
+F 3 "" H 4000 6400 50  0000 C CNN
+	1    4000 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6300 4000 6400
+$Comp
+L L_Small L303
+U 1 1 57E32AB1
+P 7200 3200
+F 0 "L303" H 7230 3240 50  0000 L CNN
+F 1 "1µ6" H 7230 3160 50  0000 L CNN
+F 2 "Air_Coils_SML_NEOSID:Neosid_Air-Coil_SML_5turn_HDM0531A" H 7200 3200 50  0001 C CNN
+F 3 "" H 7200 3200 50  0000 C CNN
+	1    7200 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Small D304
+U 1 1 57E32AC6
+P 7200 3600
+F 0 "D304" H 7100 3700 50  0000 L CNN
+F 1 "BAP65-02" H 7050 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-523" V 7200 3600 50  0001 C CNN
+F 3 "" V 7200 3600 50  0000 C CNN
+	1    7200 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R304
+U 1 1 57E32ACD
+P 6900 3550
+F 0 "R304" H 6650 3550 50  0000 L CNN
+F 1 "100k" H 6700 3450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6900 3550 50  0001 C CNN
+F 3 "" H 6900 3550 50  0000 C CNN
+	1    6900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C311
+U 1 1 57E32AD4
+P 7850 3450
+F 0 "C311" H 7650 3550 50  0000 L CNN
+F 1 "330pF" H 7550 3400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7850 3450 50  0001 C CNN
+F 3 "" H 7850 3450 50  0000 C CNN
+	1    7850 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Small D305
+U 1 1 57E32ADB
+P 7450 3100
+F 0 "D305" H 7400 3180 50  0000 L CNN
+F 1 "BAP65-02" H 7300 3020 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-523" V 7450 3100 50  0001 C CNN
+F 3 "" V 7450 3100 50  0000 C CNN
+	1    7450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R305
+U 1 1 57E32AE2
+P 7650 2950
+F 0 "R305" H 7680 2970 50  0000 L CNN
+F 1 "100R" H 7680 2910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7650 2950 50  0001 C CNN
+F 3 "" H 7650 2950 50  0000 C CNN
+	1    7650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C310
+U 1 1 57E32AE9
+P 7850 3100
+F 0 "C310" H 7860 3170 50  0000 L CNN
+F 1 "10nF" H 7860 3020 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7850 3100 50  0001 C CNN
+F 3 "" H 7850 3100 50  0000 C CNN
+	1    7850 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3100 7350 3100
+Connection ~ 7200 3100
+Wire Wire Line
+	7550 3100 7750 3100
+Wire Wire Line
+	7650 3050 7650 3100
+Connection ~ 7650 3100
+Wire Wire Line
+	7200 3300 7200 3500
+Wire Wire Line
+	6900 3450 7750 3450
+Connection ~ 7200 3450
+Connection ~ 6900 3450
+$Comp
+L GND #PWR016
+U 1 1 57E32AFA
+P 7450 3750
+F 0 "#PWR016" H 7450 3500 50  0001 C CNN
+F 1 "GND" H 7450 3600 50  0000 C CNN
+F 2 "" H 7450 3750 50  0000 C CNN
+F 3 "" H 7450 3750 50  0000 C CNN
+	1    7450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3750 7450 3750
+Wire Wire Line
+	7200 3700 7200 3750
+Wire Wire Line
+	6900 3750 6900 3650
+Connection ~ 7200 3750
+Text HLabel 8450 3100 2    60   Input ~ 0
+TX_CHAIN
+Wire Wire Line
+	8450 3100 7950 3100
+Text HLabel 8450 2850 2    60   Input ~ 0
+RX_TX
+Text HLabel 8000 4000 2    60   Output ~ 0
+RX_CHAIN
+$Comp
+L INDUCTOR L304
+U 1 1 57E72AA5
+P 8050 2850
+F 0 "L304" V 8000 2850 50  0000 C CNN
+F 1 "470µH" V 8150 2850 50  0000 C CNN
+F 2 "dodekaedri:SMT_1007" H 8050 2850 50  0001 C CNN
+F 3 "" H 8050 2850 50  0000 C CNN
+	1    8050 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 2850 7750 2850
+Wire Wire Line
+	8350 2850 8450 2850
+Wire Wire Line
+	7950 3450 7950 4000
+Wire Wire Line
+	7950 4000 8000 4000
+$Comp
+L D_Small D306
+U 1 1 57F0C844
+P 7450 3600
+F 0 "D306" H 7400 3680 50  0000 L CNN
+F 1 "BAP65-02" H 7300 3520 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-523" V 7450 3600 50  0001 C CNN
+F 3 "" V 7450 3600 50  0000 C CNN
+	1    7450 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 3750 7450 3700
+Wire Wire Line
+	7450 3500 7450 3450
+Connection ~ 7450 3450
+$Comp
+L TRANSFO T302
+U 1 1 57F12697
+P 5150 3500
+F 0 "T302" H 5150 3750 50  0000 C CNN
+F 1 "TRANSFO" H 5150 3200 50  0000 C CNN
+F 2 "dodekaedri:TRANSF_pads" H 5150 3500 50  0001 C CNN
+F 3 "" H 5150 3500 50  0000 C CNN
+	1    5150 3500
+	0    -1   1    0   
+$EndComp
+$Comp
+L TRANSFO T301
+U 1 1 57F12E63
+P 5000 4300
+F 0 "T301" H 5000 4550 50  0000 C CNN
+F 1 "TRANSFO" H 5000 4000 50  0000 C CNN
+F 2 "dodekaedri:TRANSF_pads" H 5000 4300 50  0001 C CNN
+F 3 "" H 5000 4300 50  0000 C CNN
+	1    5000 4300
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 57F12F7B
+P 4800 4700
+F 0 "#PWR017" H 4800 4450 50  0001 C CNN
+F 1 "GND" H 4800 4550 50  0000 C CNN
+F 2 "" H 4800 4700 50  0000 C CNN
+F 3 "" H 4800 4700 50  0000 C CNN
+	1    4800 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3100 5650 4700
+Connection ~ 5650 3100
+Wire Wire Line
+	5650 4700 5200 4700
+Wire Wire Line
+	4250 3900 4950 3900
+Wire Wire Line
+	5200 3900 5250 3900
+Connection ~ 4800 3900
+$Comp
+L R R307
+U 1 1 57F13FE3
+P 4700 5450
+F 0 "R307" V 4700 5700 50  0000 C CNN
+F 1 "1k" V 4700 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4630 5450 50  0001 C CNN
+F 3 "" H 4700 5450 50  0000 C CNN
+	1    4700 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R306
+U 1 1 57F140DF
+P 4550 5450
+F 0 "R306" V 4450 5500 50  0000 C CNN
+F 1 "1k" V 4550 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4480 5450 50  0001 C CNN
+F 3 "" H 4550 5450 50  0000 C CNN
+	1    4550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R308
+U 1 1 57F14156
+P 4800 5450
+F 0 "R308" V 4800 5700 50  0000 C CNN
+F 1 "1k" V 4800 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4730 5450 50  0001 C CNN
+F 3 "" H 4800 5450 50  0000 C CNN
+	1    4800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R309
+U 1 1 57F141F4
+P 4950 5450
+F 0 "R309" V 5050 5450 50  0000 C CNN
+F 1 "1k" V 4950 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4880 5450 50  0001 C CNN
+F 3 "" H 4950 5450 50  0000 C CNN
+	1    4950 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5300 4550 5200
+Wire Wire Line
+	4550 5300 4700 5300
+Wire Wire Line
+	4700 5600 4700 6200
+Connection ~ 4700 6200
+Wire Wire Line
+	4950 5200 4950 5300
+Wire Wire Line
+	4950 5300 4800 5300
+Wire Wire Line
+	4800 5600 4800 6200
+Connection ~ 4800 6200
+Wire Wire Line
+	4950 5000 5250 5000
+Connection ~ 5250 5000
+Wire Wire Line
+	4550 5000 4250 5000
+Connection ~ 4250 5000
+Wire Wire Line
+	5350 3900 6200 3900
+Wire Wire Line
+	6200 3900 6200 6550
+Connection ~ 5550 6550
+Wire Wire Line
+	4200 3200 4200 3100
+Wire Wire Line
+	4100 3100 4350 3100
+$EndSCHEMATC

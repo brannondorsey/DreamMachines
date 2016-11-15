@@ -1,0 +1,405 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kicadlib
+LIBS:arm_20to10-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "27 oct 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARM_10PIN J2
+U 1 1 52E97CAC
+P 6550 4250
+F 0 "J2" H 6550 3250 60  0000 C CNN
+F 1 "20021111-00010T4LF" H 6550 4900 60  0000 C CNN
+F 2 "kicadlib:ARM_10_PIN" H 6550 4250 60  0001 C CNN
+F 3 "~" H 6550 4250 60  0000 C CNN
+	1    6550 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ARM_20PIN J1
+U 1 1 52E9849C
+P 3400 3500
+F 0 "J1" H 3400 1750 60  0000 C CNN
+F 1 "SFH11-PBPC-D10-RA-BK" H 3400 4900 60  0000 C CNN
+F 2 "kicadlib:ARM_20_PIN_TH_RIGHTANGLE" H 3400 3500 60  0001 C CNN
+F 3 "~" H 3400 3500 60  0000 C CNN
+	1    3400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3150 3850 3150
+Wire Wire Line
+	3950 3450 3850 3450
+Wire Wire Line
+	3950 4050 3850 4050
+Wire Wire Line
+	3950 4350 3850 4350
+Wire Wire Line
+	3950 2850 3850 2850
+Wire Wire Line
+	3950 2550 3850 2550
+$Comp
+L GND #PWR01
+U 1 1 52E99F2E
+P 4000 5200
+F 0 "#PWR01" H 4000 5200 30  0001 C CNN
+F 1 "GND" H 4000 5130 30  0001 C CNN
+F 2 "" H 4000 5200 60  0000 C CNN
+F 3 "" H 4000 5200 60  0000 C CNN
+	1    4000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2700 4000 5200
+Wire Wire Line
+	4000 5100 3900 5100
+Wire Wire Line
+	3900 4800 4000 4800
+Connection ~ 4000 5100
+Wire Wire Line
+	3900 4500 4000 4500
+Connection ~ 4000 4800
+Wire Wire Line
+	3900 4200 4000 4200
+Connection ~ 4000 4500
+Wire Wire Line
+	3900 3900 4000 3900
+Connection ~ 4000 4200
+Wire Wire Line
+	3900 3600 4000 3600
+Connection ~ 4000 3900
+Wire Wire Line
+	3900 3300 4000 3300
+Connection ~ 4000 3600
+Wire Wire Line
+	3900 3000 4000 3000
+Connection ~ 4000 3300
+Wire Wire Line
+	3900 2700 4000 2700
+Connection ~ 4000 3000
+Wire Wire Line
+	3950 3750 3850 3750
+Wire Wire Line
+	6000 4650 6100 4650
+Wire Wire Line
+	5950 5100 6050 5100
+$Comp
+L GND #PWR02
+U 1 1 52E9A0B6
+P 6000 4950
+F 0 "#PWR02" H 6000 4950 30  0001 C CNN
+F 1 "GND" H 6000 4880 30  0001 C CNN
+F 2 "" H 6000 4950 60  0000 C CNN
+F 3 "" H 6000 4950 60  0000 C CNN
+	1    6000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4950 6100 4950
+Wire Wire Line
+	6100 4350 6000 4350
+Wire Wire Line
+	6100 4050 6000 4050
+Wire Wire Line
+	5950 3900 6050 3900
+Wire Wire Line
+	5950 4200 6050 4200
+Wire Wire Line
+	6050 4500 5950 4500
+Wire Wire Line
+	5950 4800 6050 4800
+Wire Wire Line
+	3950 4950 3850 4950
+Wire Wire Line
+	6100 3750 6000 3750
+Wire Wire Line
+	3900 2400 4100 2400
+Wire Wire Line
+	4000 2400 4000 2250
+Wire Wire Line
+	4000 2250 3850 2250
+Connection ~ 4000 2400
+NoConn ~ 3850 4650
+$Comp
+L GND #PWR03
+U 1 1 52E9A6FB
+P 6000 4350
+F 0 "#PWR03" H 6000 4350 30  0001 C CNN
+F 1 "GND" H 6000 4280 30  0001 C CNN
+F 2 "" H 6000 4350 60  0000 C CNN
+F 3 "" H 6000 4350 60  0000 C CNN
+	1    6000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 52E9A838
+P 6000 4050
+F 0 "#PWR04" H 6000 4050 30  0001 C CNN
+F 1 "GND" H 6000 3980 30  0001 C CNN
+F 2 "" H 6000 4050 60  0000 C CNN
+F 3 "" H 6000 4050 60  0000 C CNN
+	1    6000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L AAT3221 U1
+U 1 1 52FC2F3B
+P 7850 1950
+F 0 "U1" H 7850 1750 60  0000 C CNN
+F 1 "MIC5504-3.3YM5 TR" H 7850 2350 60  0000 C CNN
+F 2 "kicadlib:sot23-5_noah" H 7850 1950 60  0001 C CNN
+F 3 "" H 7850 1950 60  0000 C CNN
+	1    7850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 52FC3072
+P 8550 2200
+F 0 "C2" H 8550 2300 40  0000 L CNN
+F 1 "1.0uF" H 8556 2115 40  0000 L CNN
+F 2 "kicadlib:SMD_0603_C" H 8588 2050 30  0001 C CNN
+F 3 "~" H 8550 2200 60  0000 C CNN
+	1    8550 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8400 2000
+Wire Wire Line
+	6750 1400 6850 1400
+Wire Wire Line
+	6850 1400 6850 1750
+Wire Wire Line
+	6850 1700 7300 1700
+$Comp
+L GND #PWR05
+U 1 1 52FC3225
+P 6850 2300
+F 0 "#PWR05" H 6850 2300 30  0001 C CNN
+F 1 "GND" H 6850 2230 30  0001 C CNN
+F 2 "" H 6850 2300 60  0000 C CNN
+F 3 "" H 6850 2300 60  0000 C CNN
+	1    6850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1850 7100 2200
+Wire Wire Line
+	7100 1850 7300 1850
+Wire Wire Line
+	6850 2050 6850 2300
+Wire Wire Line
+	7100 2200 6850 2200
+Connection ~ 6850 2200
+Wire Wire Line
+	7300 2000 7300 2350
+$Comp
+L GND #PWR06
+U 1 1 52FC3410
+P 8550 2500
+F 0 "#PWR06" H 8550 2500 30  0001 C CNN
+F 1 "GND" H 8550 2430 30  0001 C CNN
+F 2 "" H 8550 2500 60  0000 C CNN
+F 3 "" H 8550 2500 60  0000 C CNN
+	1    8550 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2500 8550 2400
+$Comp
+L DUAL_SWITCH_INV SW1
+U 1 1 52FC3911
+P 9150 1700
+F 0 "SW1" H 8950 1850 50  0000 C CNN
+F 1 "SSSS810701" H 9000 1550 50  0000 C CNN
+F 2 "kicadlib:SWITCH_SLIDE_SSSS810701" H 9150 1700 60  0001 C CNN
+F 3 "~" H 9150 1700 60  0000 C CNN
+	1    9150 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9650 1600
+Wire Wire Line
+	8650 1700 8400 1700
+Wire Wire Line
+	10000 1800 9650 1800
+Connection ~ 8550 1700
+$Comp
+L LED D2
+U 1 1 531B4083
+P 9450 1100
+F 0 "D2" H 9450 1200 50  0000 C CNN
+F 1 "LED" H 9450 1000 50  0000 C CNN
+F 2 "kicadlib:SMD_0603_LED" H 9450 1100 60  0001 C CNN
+F 3 "~" H 9450 1100 60  0000 C CNN
+	1    9450 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 531B40CC
+P 8900 1100
+F 0 "R2" V 8980 1100 40  0000 C CNN
+F 1 "500R" V 8907 1101 40  0000 C CNN
+F 2 "kicadlib:SMD_0603_R" V 8830 1100 30  0001 C CNN
+F 3 "~" H 8900 1100 30  0000 C CNN
+	1    8900 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 1100 8750 1100
+Wire Wire Line
+	8550 1100 8550 1200
+$Comp
+L GND #PWR07
+U 1 1 531B4113
+P 8550 1200
+F 0 "#PWR07" H 8550 1200 30  0001 C CNN
+F 1 "GND" H 8550 1130 30  0001 C CNN
+F 2 "" H 8550 1200 60  0000 C CNN
+F 3 "" H 8550 1200 60  0000 C CNN
+	1    8550 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1100 9250 1100
+$Comp
+L LED D1
+U 1 1 531B42E2
+P 6600 1900
+F 0 "D1" H 6600 2000 50  0000 C CNN
+F 1 "LED" H 6600 1800 50  0000 C CNN
+F 2 "kicadlib:SMD_0603_LED" H 6600 1900 60  0001 C CNN
+F 3 "~" H 6600 1900 60  0000 C CNN
+	1    6600 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 531B42E8
+P 6600 2450
+F 0 "R1" V 6680 2450 40  0000 C CNN
+F 1 "1K" V 6607 2451 40  0000 C CNN
+F 2 "kicadlib:SMD_0603_R" V 6530 2450 30  0001 C CNN
+F 3 "~" H 6600 2450 30  0000 C CNN
+	1    6600 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 531B42EE
+P 6600 2800
+F 0 "#PWR08" H 6600 2800 30  0001 C CNN
+F 1 "GND" H 6600 2730 30  0001 C CNN
+F 2 "" H 6600 2800 60  0000 C CNN
+F 3 "" H 6600 2800 60  0000 C CNN
+	1    6600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2600 6600 2800
+Wire Wire Line
+	6600 2100 6600 2300
+Wire Wire Line
+	6600 1700 6600 1550
+Wire Wire Line
+	6600 1550 6850 1550
+Connection ~ 6850 1550
+Wire Wire Line
+	9650 1100 9850 1100
+Wire Wire Line
+	9850 1100 9850 1800
+Connection ~ 9850 1800
+$Comp
+L C C1
+U 1 1 531B43FC
+P 6850 1900
+F 0 "C1" H 6850 2000 40  0000 L CNN
+F 1 "1.0uF" H 6856 1815 40  0000 L CNN
+F 2 "kicadlib:SMD_0603_C" H 6888 1750 30  0001 C CNN
+F 3 "~" H 6850 1900 60  0000 C CNN
+	1    6850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2000 8550 1700
+Text Label 4100 2400 0    60   ~ 0
+VCC
+Text Label 6000 3750 2    60   ~ 0
+VCC
+Text Label 10000 1800 0    60   ~ 0
+VCC
+Text Label 3950 2550 0    60   ~ 0
+TRST
+Text Label 3950 2850 0    60   ~ 0
+TDI
+Text Label 3950 3150 0    60   ~ 0
+TMS/SWDIO
+Text Label 3950 3450 0    60   ~ 0
+TCLK/SWCLK
+Text Label 3950 3750 0    60   ~ 0
+RTCK
+Text Label 3950 4050 0    60   ~ 0
+SWO/TDO
+Text Label 3950 4350 0    60   ~ 0
+NRST
+Text Label 3950 4950 0    60   ~ 0
+5V
+Text Label 6750 1400 2    60   ~ 0
+5V
+Text Label 7300 2350 2    60   ~ 0
+5V
+Text Label 5950 3900 2    60   ~ 0
+TMS/SWDIO
+Text Label 5950 4200 2    60   ~ 0
+TCLK/SWCLK
+Text Label 5950 4500 2    60   ~ 0
+SWO/TDO
+Text Label 6000 4650 2    60   ~ 0
+RTCK
+Text Label 5950 4800 2    60   ~ 0
+TDI
+Text Label 5950 5100 2    60   ~ 0
+NRST
+Connection ~ 6850 1700
+$EndSCHEMATC

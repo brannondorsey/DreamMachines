@@ -1,0 +1,301 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:contrib
+LIBS:valves
+LIBS:TXB0104 Level translator-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "1 may 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TXB0104 U1
+U 1 1 5527D2E3
+P 5650 4000
+F 0 "U1" H 5500 4750 60  0000 C CNN
+F 1 "TXB0104" H 5660 3230 60  0000 C CNN
+F 2 "" H 5700 4050 60  0000 C CNN
+F 3 "" H 5700 4050 60  0000 C CNN
+	1    5650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_7 P2
+U 1 1 5527D345
+P 7650 3900
+F 0 "P2" H 7700 3400 60  0000 C CNN
+F 1 "CONN_7" H 7700 4450 60  0000 C CNN
+F 2 "" H 7650 3900 60  0000 C CNN
+F 3 "" H 7650 3900 60  0000 C CNN
+	1    7650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_7 P1
+U 1 1 5527D354
+P 3650 3900
+F 0 "P1" H 3650 3450 60  0000 C CNN
+F 1 "CONN_7" H 3700 4450 60  0000 C CNN
+F 2 "" H 3650 3900 60  0000 C CNN
+F 3 "" H 3650 3900 60  0000 C CNN
+	1    3650 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5527D53D
+P 6700 3050
+F 0 "C2" V 6950 3000 50  0000 L CNN
+F 1 "0.1uF" V 6500 2950 50  0000 L CNN
+F 2 "" H 6700 3050 60  0000 C CNN
+F 3 "" H 6700 3050 60  0000 C CNN
+	1    6700 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5527D54C
+P 4650 3050
+F 0 "C1" V 4850 3000 50  0000 L CNN
+F 1 "0.1uF" V 4450 3000 50  0000 L CNN
+F 2 "" H 4650 3050 60  0000 C CNN
+F 3 "" H 4650 3050 60  0000 C CNN
+	1    4650 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5527D55B
+P 7100 3200
+F 0 "#PWR01" H 7100 3200 30  0001 C CNN
+F 1 "GND" H 7100 3130 30  0001 C CNN
+F 2 "" H 7100 3200 60  0000 C CNN
+F 3 "" H 7100 3200 60  0000 C CNN
+	1    7100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5527D5DC
+P 4200 3200
+F 0 "#PWR02" H 4200 3200 30  0001 C CNN
+F 1 "GND" H 4200 3130 30  0001 C CNN
+F 2 "" H 4200 3200 60  0000 C CNN
+F 3 "" H 4200 3200 60  0000 C CNN
+	1    4200 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 3750 2600 0    60   ~ 12
+Bidirectional Level translator
+$Comp
+L GND #PWR03
+U 1 1 552898E1
+P 4850 4680
+F 0 "#PWR03" H 4850 4680 30  0001 C CNN
+F 1 "GND" H 4850 4610 30  0001 C CNN
+F 2 "" H 4850 4680 60  0000 C CNN
+F 3 "" H 4850 4680 60  0000 C CNN
+	1    4850 4680
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VP #PWR04
+U 1 1 554364B2
+P 4850 2800
+F 0 "#PWR04" H 4900 2830 20  0001 C CNN
+F 1 "+3.3VP" H 4850 2890 30  0000 C CNN
+F 2 "" H 4850 2800 60  0000 C CNN
+F 3 "" H 4850 2800 60  0000 C CNN
+	1    4850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 554364F4
+P 6500 2740
+F 0 "#PWR05" H 6500 2830 20  0001 C CNN
+F 1 "+5V" H 6500 2830 30  0000 C CNN
+F 2 "" H 6500 2740 60  0000 C CNN
+F 3 "" H 6500 2740 60  0000 C CNN
+	1    6500 2740
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VP #PWR06
+U 1 1 55436701
+P 7900 4510
+F 0 "#PWR06" H 7950 4540 20  0001 C CNN
+F 1 "+3.3VP" H 7900 4600 30  0000 C CNN
+F 2 "" H 7900 4510 60  0000 C CNN
+F 3 "" H 7900 4510 60  0000 C CNN
+	1    7900 4510
+	1    0    0    -1  
+$EndComp
+$Comp
+L BREAKER JP1
+U 1 1 55436743
+P 7280 4750
+F 0 "JP1" H 7280 4700 50  0000 C CNN
+F 1 "Jumper" H 7280 4600 50  0000 C CNN
+F 2 "~" H 7280 4750 60  0000 C CNN
+F 3 "~" H 7280 4750 60  0000 C CNN
+	1    7280 4750
+	1    0    0    -1  
+$EndComp
+Text Notes 4160 5000 0    60   ~ 12
+VCCA 1.2V to 3.6V
+Text Notes 6220 5000 0    60   ~ 12
+VCCB 1.65V to 5V
+NoConn ~ 6300 4300
+NoConn ~ 5000 4300
+Wire Wire Line
+	4000 3600 4000 3450
+Wire Wire Line
+	4000 3450 5000 3450
+Wire Wire Line
+	6300 3450 7300 3450
+Wire Wire Line
+	7300 3450 7300 3600
+Wire Wire Line
+	6300 4450 7300 4450
+Wire Wire Line
+	7300 4450 7300 4200
+Wire Wire Line
+	6500 2740 6500 3450
+Connection ~ 6500 3450
+Wire Wire Line
+	6900 3050 7100 3050
+Wire Wire Line
+	7100 3050 7100 3200
+Wire Wire Line
+	4850 2800 4850 3450
+Connection ~ 4850 3450
+Wire Wire Line
+	4450 3050 4200 3050
+Wire Wire Line
+	4200 3050 4200 3200
+Wire Bus Line
+	2850 2350 8300 2350
+Wire Bus Line
+	8300 2350 8300 5500
+Wire Bus Line
+	8300 5500 2850 5500
+Wire Bus Line
+	2850 5500 2850 2350
+Connection ~ 6700 4450
+Connection ~ 4850 3050
+Connection ~ 6500 3050
+Connection ~ 4580 3450
+Wire Wire Line
+	6780 4750 6700 4750
+Wire Wire Line
+	6700 4750 6700 4450
+Wire Wire Line
+	7900 4510 7900 4750
+Wire Wire Line
+	7900 4750 7780 4750
+Wire Wire Line
+	4850 4680 4850 4450
+Wire Wire Line
+	4220 4450 5000 4450
+Wire Wire Line
+	4000 3800 4440 3800
+Wire Wire Line
+	4440 3800 4440 3650
+Wire Wire Line
+	4440 3650 5000 3650
+Wire Wire Line
+	4000 3900 4570 3900
+Wire Wire Line
+	4570 3900 4570 3850
+Wire Wire Line
+	4570 3850 5000 3850
+Wire Wire Line
+	4000 4000 5000 4000
+Wire Wire Line
+	4000 4100 4650 4100
+Wire Wire Line
+	4650 4100 4650 4150
+Wire Wire Line
+	4650 4150 5000 4150
+Text Label 4000 4200 0    60   ~ 0
+OE
+Text Label 6520 4450 0    60   ~ 0
+OE
+Wire Wire Line
+	4000 3700 4220 3700
+Wire Wire Line
+	4220 3700 4220 4450
+Connection ~ 4850 4450
+Wire Wire Line
+	6300 3650 6940 3650
+Wire Wire Line
+	6940 3650 6940 3800
+Wire Wire Line
+	6940 3800 7300 3800
+Wire Wire Line
+	6300 3850 6820 3850
+Wire Wire Line
+	6820 3850 6820 3900
+Wire Wire Line
+	6820 3900 7300 3900
+Wire Wire Line
+	6300 4000 7300 4000
+Wire Wire Line
+	6300 4150 6830 4150
+Wire Wire Line
+	6830 4150 6830 4100
+Wire Wire Line
+	6830 4100 7300 4100
+$Comp
+L GND #PWR07
+U 1 1 55824F86
+P 7060 3540
+F 0 "#PWR07" H 7060 3290 60  0001 C CNN
+F 1 "GND" H 7060 3390 60  0000 C CNN
+F 2 "" H 7060 3540 60  0000 C CNN
+F 3 "" H 7060 3540 60  0000 C CNN
+	1    7060 3540
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7060 3540 7230 3540
+Wire Wire Line
+	7230 3540 7230 3700
+Wire Wire Line
+	7230 3700 7300 3700
+$EndSCHEMATC

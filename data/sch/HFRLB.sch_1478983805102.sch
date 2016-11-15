@@ -1,0 +1,214 @@
+EESchema Schematic File Version 2
+LIBS:EtherkitKicadLibrary
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 24 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "HFRLB"
+Date "08 Sep 2013"
+Rev "A"
+Comp "Etherkit"
+Comment1 ""
+Comment2 "Creative Commons License CC-BY-SA"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TRANSFORMER T1
+U 1 1 522CBB2A
+P 5240 3950
+F 0 "T1" H 5470 3960 50  0000 C CNN
+F 1 "FB73-2401 10T bifilar" H 5870 3870 50  0000 C CNN
+F 2 "" H 5240 3950 60  0000 C CNN
+F 3 "" H 5240 3950 60  0000 C CNN
+	1    5240 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 522CBBEE
+P 4840 3370
+F 0 "R1" H 4960 3415 50  0000 C CNN
+F 1 "49.9 0.1%" H 5100 3330 50  0000 C CNN
+F 2 "" H 4840 3370 60  0000 C CNN
+F 3 "" H 4840 3370 60  0000 C CNN
+	1    4840 3370
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 522CBBFB
+P 4840 4395
+F 0 "R2" H 4955 4445 50  0000 C CNN
+F 1 "49.9 0.1%" H 5095 4365 50  0000 C CNN
+F 2 "" H 4840 4395 60  0000 C CNN
+F 3 "" H 4840 4395 60  0000 C CNN
+	1    4840 4395
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 522CBC01
+P 5660 3370
+F 0 "R3" H 5785 3420 50  0000 C CNN
+F 1 "49.9 0.1%" H 5920 3340 50  0000 C CNN
+F 2 "" H 5660 3370 60  0000 C CNN
+F 3 "" H 5660 3370 60  0000 C CNN
+	1    5660 3370
+	1    0    0    -1  
+$EndComp
+$Comp
+L BNC J2
+U 1 1 522CBCC9
+P 6000 3690
+F 0 "J2" H 6000 3870 50  0000 C CNN
+F 1 "Unknown" H 6000 3800 50  0000 C CNN
+F 2 "" H 6000 3690 60  0000 C CNN
+F 3 "" H 6000 3690 60  0000 C CNN
+	1    6000 3690
+	1    0    0    -1  
+$EndComp
+$Comp
+L BNC J3
+U 1 1 522CBCD6
+P 6000 4375
+F 0 "J3" H 6000 4555 50  0000 C CNN
+F 1 "Detector" H 6000 4485 50  0000 C CNN
+F 2 "" H 6000 4375 60  0000 C CNN
+F 3 "" H 6000 4375 60  0000 C CNN
+	1    6000 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L BNC J1
+U 1 1 522CBCDC
+P 4455 3030
+F 0 "J1" H 4455 3210 50  0000 C CNN
+F 1 "Generator" H 4455 3140 50  0000 C CNN
+F 2 "" H 4455 3030 60  0000 C CNN
+F 3 "" H 4455 3030 60  0000 C CNN
+	1    4455 3030
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 522CBD33
+P 4455 3200
+F 0 "#PWR01" H 4455 3200 30  0001 C CNN
+F 1 "GND" H 4455 3130 30  0001 C CNN
+F 2 "" H 4455 3200 60  0000 C CNN
+F 3 "" H 4455 3200 60  0000 C CNN
+	1    4455 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 522CBD4C
+P 6000 3860
+F 0 "#PWR02" H 6000 3860 30  0001 C CNN
+F 1 "GND" H 6000 3790 30  0001 C CNN
+F 2 "" H 6000 3860 60  0000 C CNN
+F 3 "" H 6000 3860 60  0000 C CNN
+	1    6000 3860
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 522CBD65
+P 6000 4540
+F 0 "#PWR03" H 6000 4540 30  0001 C CNN
+F 1 "GND" H 6000 4470 30  0001 C CNN
+F 2 "" H 6000 4540 60  0000 C CNN
+F 3 "" H 6000 4540 60  0000 C CNN
+	1    6000 4540
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 522CBD74
+P 5240 4190
+F 0 "#PWR04" H 5240 4190 30  0001 C CNN
+F 1 "GND" H 5240 4120 30  0001 C CNN
+F 2 "" H 5240 4190 60  0000 C CNN
+F 3 "" H 5240 4190 60  0000 C CNN
+	1    5240 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 522CBD83
+P 4840 4565
+F 0 "#PWR05" H 4840 4565 30  0001 C CNN
+F 1 "GND" H 4840 4495 30  0001 C CNN
+F 2 "" H 4840 4565 60  0000 C CNN
+F 3 "" H 4840 4565 60  0000 C CNN
+	1    4840 4565
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3840 6000 3860
+Wire Wire Line
+	6000 4525 6000 4540
+Wire Wire Line
+	5240 4150 5240 4190
+Wire Wire Line
+	4840 4545 4840 4565
+Wire Wire Line
+	4455 3180 4455 3200
+Wire Wire Line
+	4605 3030 5660 3030
+Wire Wire Line
+	5660 3030 5660 3220
+Wire Wire Line
+	4840 3220 4840 3030
+Connection ~ 4840 3030
+Wire Wire Line
+	4840 3520 4840 4245
+Wire Wire Line
+	5240 3750 5240 3690
+Wire Wire Line
+	5240 3690 4840 3690
+Connection ~ 4840 3690
+Wire Wire Line
+	5400 3690 5850 3690
+Wire Wire Line
+	5400 3690 5400 3750
+Wire Wire Line
+	5660 3520 5660 3690
+Connection ~ 5660 3690
+Wire Wire Line
+	5850 4375 5400 4375
+Wire Wire Line
+	5400 4375 5400 4150
+$EndSCHEMATC

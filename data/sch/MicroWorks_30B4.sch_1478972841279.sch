@@ -1,0 +1,947 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:MicroWorks_30B4-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "MicroWorks 30B4 board"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F103C8 U?
+U 1 1 5643CD2E
+P 4950 4700
+F 0 "U?" H 3650 6350 50  0000 C CNN
+F 1 "STM32F103C8" H 6000 3050 50  0000 C CNN
+F 2 "LQFP48" H 4950 4700 50  0000 C CNN
+F 3 "" H 4950 4700 50  0000 C CNN
+	1    4950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3800 7500 3800
+Text Label 6850 3800 0    60   ~ 0
+Battery_voltage
+$Comp
+L R R?
+U 1 1 5674845A
+P 8800 2350
+F 0 "R?" V 8880 2350 50  0000 C CNN
+F 1 "??" V 8800 2350 50  0000 C CNN
+F 2 "" V 8730 2350 30  0000 C CNN
+F 3 "" H 8800 2350 30  0000 C CNN
+	1    8800 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2350 8650 2350
+$Comp
+L BC547 Q?
+U 1 1 56748461
+P 9150 2350
+F 0 "Q?" H 9350 2425 50  0000 L CNN
+F 1 "??" H 9350 2350 50  0000 L CNN
+F 2 "??" H 9350 2275 50  0000 L CIN
+F 3 "" H 9150 2350 50  0000 L CNN
+	1    9150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56748467
+P 9250 2650
+F 0 "#PWR?" H 9250 2400 50  0001 C CNN
+F 1 "GND" H 9250 2500 50  0000 C CNN
+F 2 "" H 9250 2650 50  0000 C CNN
+F 3 "" H 9250 2650 50  0000 C CNN
+	1    9250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2350 8950 2350
+$Comp
+L R R?
+U 1 1 5674846F
+P 9250 1750
+F 0 "R?" V 9330 1750 50  0000 C CNN
+F 1 "3k" V 9250 1750 50  0000 C CNN
+F 2 "" V 9180 1750 30  0000 C CNN
+F 3 "" H 9250 1750 30  0000 C CNN
+	1    9250 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 1600 9250 1550
+Text Label 8250 2350 0    60   ~ 0
+Buzzer
+$Comp
+L CONN_01X05 J4
+U 1 1 57A3090B
+P 11350 1600
+F 0 "J4" H 11350 1900 50  0000 C CNN
+F 1 "CONN_01X05" V 11450 1600 50  0001 C CNN
+F 2 "" H 11350 1600 50  0000 C CNN
+F 3 "" H 11350 1600 50  0000 C CNN
+	1    11350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A30966
+P 10850 1200
+F 0 "#PWR?" H 10850 950 50  0001 C CNN
+F 1 "GND" H 10850 1050 50  0000 C CNN
+F 2 "" H 10850 1200 50  0000 C CNN
+F 3 "" H 10850 1200 50  0000 C CNN
+	1    10850 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 1400 11150 1400
+Text Label 10300 1500 0    60   ~ 0
+Hall_sensor_A-con
+Wire Wire Line
+	10300 1500 11150 1500
+Wire Wire Line
+	11000 1400 11000 1150
+Wire Wire Line
+	11000 1150 10850 1150
+Wire Wire Line
+	10850 1150 10850 1200
+Text Label 10300 1600 0    60   ~ 0
+Hall_sensor_B-con
+Wire Wire Line
+	10300 1600 11150 1600
+Text Label 10300 1700 0    60   ~ 0
+Hall_sensor_C-con
+Wire Wire Line
+	10300 1700 11150 1700
+$Comp
+L +5V #PWR?
+U 1 1 57A30CF1
+P 10100 1800
+F 0 "#PWR?" H 10100 1650 50  0001 C CNN
+F 1 "+5V" H 10100 1940 50  0000 C CNN
+F 2 "" H 10100 1800 50  0000 C CNN
+F 3 "" H 10100 1800 50  0000 C CNN
+	1    10100 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1800 11150 1800
+$Comp
+L CONN_01X02 J2
+U 1 1 57A31727
+P 11350 2000
+F 0 "J2" H 11350 1850 50  0000 C CNN
+F 1 "CONN_01X02" V 11450 2000 50  0001 C CNN
+F 2 "" H 11350 2000 50  0000 C CNN
+F 3 "" H 11350 2000 50  0000 C CNN
+	1    11350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57A365A7
+P 3100 8300
+F 0 "R?" V 3180 8300 50  0000 C CNN
+F 1 "??" V 3100 8300 50  0000 C CNN
+F 2 "" V 3030 8300 30  0000 C CNN
+F 3 "" H 3100 8300 30  0000 C CNN
+	1    3100 8300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 8300 2950 8300
+Wire Wire Line
+	3250 8300 4200 8300
+$Comp
+L C C?
+U 1 1 57A365B0
+P 3400 8600
+F 0 "C?" H 3425 8700 50  0000 L CNN
+F 1 "C" H 3425 8500 50  0000 L CNN
+F 2 "" H 3438 8450 50  0000 C CNN
+F 3 "" H 3400 8600 50  0000 C CNN
+	1    3400 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A365B6
+P 3400 8750
+F 0 "#PWR?" H 3400 8500 50  0001 C CNN
+F 1 "GND" H 3400 8600 50  0000 C CNN
+F 2 "" H 3400 8750 50  0000 C CNN
+F 3 "" H 3400 8750 50  0000 C CNN
+	1    3400 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 8750 3400 8750
+Wire Wire Line
+	3400 8300 3400 8450
+Connection ~ 3400 8300
+$Comp
+L R R?
+U 1 1 57A367A2
+P 2750 8600
+F 0 "R?" V 2830 8600 50  0000 C CNN
+F 1 "??" V 2750 8600 50  0000 C CNN
+F 2 "" V 2680 8600 30  0000 C CNN
+F 3 "" H 2750 8600 30  0000 C CNN
+	1    2750 8600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 57A36855
+P 2750 8000
+F 0 "R?" V 2830 8000 50  0000 C CNN
+F 1 "??" V 2750 8000 50  0000 C CNN
+F 2 "" V 2680 8000 30  0000 C CNN
+F 3 "" H 2750 8000 30  0000 C CNN
+	1    2750 8000
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A368CA
+P 2750 8750
+F 0 "#PWR?" H 2750 8500 50  0001 C CNN
+F 1 "GND" H 2750 8600 50  0000 C CNN
+F 2 "" H 2750 8750 50  0000 C CNN
+F 3 "" H 2750 8750 50  0000 C CNN
+	1    2750 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 8150 2750 8450
+Connection ~ 2750 8300
+Wire Wire Line
+	2750 7850 2750 7650
+Text Label 2750 7750 0    60   ~ 0
+Battery_voltage_input
+Text Label 3500 8300 0    60   ~ 0
+Battery_voltage
+$Comp
+L CONN_01X05 J5
+U 1 1 57A37562
+P 11350 4550
+F 0 "J5" H 11350 4850 50  0000 C CNN
+F 1 "CONN_01X05" V 11450 4550 50  0001 C CNN
+F 2 "" H 11350 4550 50  0000 C CNN
+F 3 "" H 11350 4550 50  0000 C CNN
+	1    11350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A37568
+P 10700 4700
+F 0 "#PWR?" H 10700 4450 50  0001 C CNN
+F 1 "GND" H 10700 4550 50  0000 C CNN
+F 2 "" H 10700 4700 50  0000 C CNN
+F 3 "" H 10700 4700 50  0000 C CNN
+	1    10700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 4350 11150 4350
+Text Label 10300 4450 0    60   ~ 0
+RX_(UART)
+Wire Wire Line
+	10300 4450 11150 4450
+Text Label 10300 4550 0    60   ~ 0
+TX_(UART)
+Wire Wire Line
+	10300 4550 11150 4550
+Text Label 10300 4350 0    60   ~ 0
+BO_(bootloader)
+$Comp
+L +3.3V #PWR?
+U 1 1 57A37AB4
+P 10950 5000
+F 0 "#PWR?" H 10950 4850 50  0001 C CNN
+F 1 "+3.3V" H 10950 5140 50  0000 C CNN
+F 2 "" H 10950 5000 50  0000 C CNN
+F 3 "" H 10950 5000 50  0000 C CNN
+	1    10950 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 4750 11100 4750
+Wire Wire Line
+	11100 4750 11100 5050
+Wire Wire Line
+	11100 5050 10950 5050
+Wire Wire Line
+	10950 5050 10950 5000
+Wire Wire Line
+	11150 4650 10700 4650
+Wire Wire Line
+	10700 4650 10700 4700
+$Comp
+L R R?
+U 1 1 57A37FE1
+P 10050 4550
+F 0 "R?" V 10130 4550 50  0000 C CNN
+F 1 "??" V 10050 4550 50  0000 C CNN
+F 2 "" V 9980 4550 30  0000 C CNN
+F 3 "" H 10050 4550 30  0000 C CNN
+	1    10050 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A37FE7
+P 10050 4700
+F 0 "#PWR?" H 10050 4450 50  0001 C CNN
+F 1 "GND" H 10050 4550 50  0000 C CNN
+F 2 "" H 10050 4700 50  0000 C CNN
+F 3 "" H 10050 4700 50  0000 C CNN
+	1    10050 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 4400 10050 4350
+Wire Wire Line
+	9250 2050 11150 2050
+Wire Wire Line
+	9250 1950 11150 1950
+Text Label 10300 1950 0    60   ~ 0
+Buzzer_positive
+Text Label 10300 2050 0    60   ~ 0
+Buzzer_negative
+Text Notes 2900 8000 0    60   ~ 0
+When Battery_voltage_input = 60v,\nBattery_voltage = 2.35v
+Wire Wire Line
+	2400 5800 3450 5800
+Text Label 2400 5800 0    60   ~ 0
+Hall_sensor_A
+Wire Wire Line
+	2400 5900 3450 5900
+Text Label 2400 5900 0    60   ~ 0
+Hall_sensor_B
+Wire Wire Line
+	2400 6000 3450 6000
+Text Label 2400 6000 0    60   ~ 0
+Hall_sensor_C
+Wire Wire Line
+	9250 2550 9250 2650
+$Comp
+L R R?
+U 1 1 57A3906C
+P 9250 1400
+F 0 "R?" V 9330 1400 50  0000 C CNN
+F 1 "3k" V 9250 1400 50  0000 C CNN
+F 2 "" V 9180 1400 30  0000 C CNN
+F 3 "" H 9250 1400 30  0000 C CNN
+	1    9250 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 1900 9250 1950
+Wire Wire Line
+	9250 2050 9250 2150
+Text Label 9250 1100 0    60   ~ 0
+Battery_voltage_input
+Wire Wire Line
+	9250 1250 9250 1100
+Wire Wire Line
+	6450 4200 7500 4200
+Text Label 7200 4200 0    60   ~ 0
+Buzzer
+Wire Wire Line
+	2400 3500 3450 3500
+Text Label 2400 3500 0    60   ~ 0
+BO_(bootloader)
+Wire Wire Line
+	6450 4300 7500 4300
+Wire Wire Line
+	6450 4400 7500 4400
+Text Label 7050 4300 0    60   ~ 0
+RX_(UART)
+Text Label 7050 4400 0    60   ~ 0
+TX_(UART)
+Wire Wire Line
+	2400 3700 3450 3700
+Text Label 2400 3700 0    60   ~ 0
+XTAL_8MHz-1
+Wire Wire Line
+	2400 3800 3450 3800
+Text Label 2400 3800 0    60   ~ 0
+XTAL_8MHz-2
+Text Notes 11600 4750 1    60   ~ 0
+Bluetooth\nmodule\n
+Text Notes 11750 2050 2    60   ~ 0
+Buzzer
+Text Notes 11500 1300 3    60   ~ 0
+Hall sensors
+$Comp
+L CONN_01X04 J10
+U 1 1 57A3B0E2
+P 11350 5550
+F 0 "J10" H 11350 5800 50  0000 C CNN
+F 1 "CONN_01X04" V 11450 5550 50  0001 C CNN
+F 2 "" H 11350 5550 50  0000 C CNN
+F 3 "" H 11350 5550 50  0000 C CNN
+	1    11350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 5700 11000 5700
+Text Label 10300 5500 0    60   ~ 0
+SWCLK
+Wire Wire Line
+	10300 5500 11150 5500
+Text Label 10300 5600 0    60   ~ 0
+SWD
+Wire Wire Line
+	10300 5600 11150 5600
+Wire Wire Line
+	6450 4700 7500 4700
+Wire Wire Line
+	6450 4800 7500 4800
+Text Label 7300 4700 0    60   ~ 0
+SWD
+Text Label 7200 4800 0    60   ~ 0
+SWCLK
+Text Notes 11450 5700 0    60   ~ 0
+Serial Wire\nprogramming\nand debug
+Wire Wire Line
+	9300 7200 10100 7200
+$Comp
+L CONN_01X02 J7
+U 1 1 57A3C253
+P 11350 6300
+F 0 "J7" H 11350 6450 50  0000 C CNN
+F 1 "CONN_01X02" V 11450 6300 50  0001 C CNN
+F 2 "" H 11350 6300 50  0000 C CNN
+F 3 "" H 11350 6300 50  0000 C CNN
+	1    11350 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A3C3F4
+P 11000 6400
+F 0 "#PWR?" H 11000 6150 50  0001 C CNN
+F 1 "GND" H 11000 6250 50  0000 C CNN
+F 2 "" H 11000 6400 50  0000 C CNN
+F 3 "" H 11000 6400 50  0000 C CNN
+	1    11000 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 6350 11000 6400
+Wire Wire Line
+	11150 6350 11000 6350
+$Comp
+L R R?
+U 1 1 57A3C4AD
+P 10550 6250
+F 0 "R?" V 10630 6250 50  0000 C CNN
+F 1 "5k" V 10550 6250 50  0000 C CNN
+F 2 "" V 10480 6250 30  0000 C CNN
+F 3 "" H 10550 6250 30  0000 C CNN
+	1    10550 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10700 6250 11150 6250
+$Comp
+L GND #PWR?
+U 1 1 57A3C88F
+P 4950 6600
+F 0 "#PWR?" H 4950 6350 50  0001 C CNN
+F 1 "GND" H 4950 6450 50  0000 C CNN
+F 2 "" H 4950 6600 50  0000 C CNN
+F 3 "" H 4950 6600 50  0000 C CNN
+	1    4950 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 6400 4650 6550
+Wire Wire Line
+	4650 6550 5250 6550
+Wire Wire Line
+	4950 6400 4950 6600
+Wire Wire Line
+	4750 6550 4750 6400
+Connection ~ 4750 6550
+Connection ~ 4950 6550
+$Comp
+L +3.3V #PWR?
+U 1 1 57A3CE22
+P 4950 2800
+F 0 "#PWR?" H 4950 2650 50  0001 C CNN
+F 1 "+3.3V" H 4950 2940 50  0000 C CNN
+F 2 "" H 4950 2800 50  0000 C CNN
+F 3 "" H 4950 2800 50  0000 C CNN
+	1    4950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2900 5250 3000
+Wire Wire Line
+	3350 2900 5250 2900
+Wire Wire Line
+	4950 2800 4950 3000
+Connection ~ 4950 2900
+Wire Wire Line
+	4750 3000 4750 2900
+Wire Wire Line
+	4650 3000 4650 2900
+Connection ~ 4750 2900
+$Comp
+L +3.3V #PWR?
+U 1 1 57A3D321
+P 10250 6150
+F 0 "#PWR?" H 10250 6000 50  0001 C CNN
+F 1 "+3.3V" H 10250 6290 50  0000 C CNN
+F 2 "" H 10250 6150 50  0000 C CNN
+F 3 "" H 10250 6150 50  0000 C CNN
+	1    10250 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 6150 10250 6250
+Wire Wire Line
+	10250 6250 10400 6250
+Text Notes 11450 6450 0    60   ~ 0
+Power microcontroller\n(probably to program and\ntest on production line)
+$Comp
+L CONN_01X03 J6
+U 1 1 57A3D8E1
+P 11350 7200
+F 0 "J6" H 11350 7400 50  0000 C CNN
+F 1 "CONN_01X03" V 11450 7200 50  0001 C CNN
+F 2 "" H 11350 7200 50  0000 C CNN
+F 3 "" H 11350 7200 50  0000 C CNN
+	1    11350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A3DAF9
+P 11000 7350
+F 0 "#PWR?" H 11000 7100 50  0001 C CNN
+F 1 "GND" H 11000 7200 50  0000 C CNN
+F 2 "" H 11000 7350 50  0000 C CNN
+F 3 "" H 11000 7350 50  0000 C CNN
+	1    11000 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 7300 11000 7350
+Wire Wire Line
+	11150 7300 11000 7300
+$Comp
+L GND #PWR?
+U 1 1 57A3DB41
+P 11000 6950
+F 0 "#PWR?" H 11000 6700 50  0001 C CNN
+F 1 "GND" H 11000 6800 50  0000 C CNN
+F 2 "" H 11000 6950 50  0000 C CNN
+F 3 "" H 11000 6950 50  0000 C CNN
+	1    11000 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 6900 11000 6950
+Wire Wire Line
+	11000 6900 11150 6900
+Wire Wire Line
+	11150 6900 11150 7100
+Text Label 9300 7200 0    60   ~ 0
+unknown_1
+Wire Wire Line
+	10850 7200 11150 7200
+$Comp
+L R R?
+U 1 1 57A3DFEA
+P 10700 7200
+F 0 "R?" V 10780 7200 50  0000 C CNN
+F 1 "5k" V 10700 7200 50  0000 C CNN
+F 2 "" V 10630 7200 30  0000 C CNN
+F 3 "" H 10700 7200 30  0000 C CNN
+	1    10700 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 57A3E2A4
+P 10250 7200
+F 0 "R?" V 10330 7200 50  0000 C CNN
+F 1 "5k" V 10250 7200 50  0000 C CNN
+F 2 "" V 10180 7200 30  0000 C CNN
+F 3 "" H 10250 7200 30  0000 C CNN
+	1    10250 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 7200 10400 7200
+$Comp
+L C C?
+U 1 1 57A3EB4D
+P 9900 7500
+F 0 "C?" H 9925 7600 50  0000 L CNN
+F 1 "C" H 9925 7400 50  0000 L CNN
+F 2 "" H 9938 7350 50  0000 C CNN
+F 3 "" H 9900 7500 50  0000 C CNN
+	1    9900 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A3EB53
+P 9900 7650
+F 0 "#PWR?" H 9900 7400 50  0001 C CNN
+F 1 "GND" H 9900 7500 50  0000 C CNN
+F 2 "" H 9900 7650 50  0000 C CNN
+F 3 "" H 9900 7650 50  0000 C CNN
+	1    9900 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 7650 9900 7650
+Wire Wire Line
+	9900 7200 9900 7350
+Connection ~ 9900 7200
+Text Notes 11450 7300 0    60   ~ 0
+NOT USED\nMay be a signal\nfor a throttle on\na ebike application
+Wire Wire Line
+	6450 3500 7500 3500
+Text Label 7050 3500 0    60   ~ 0
+unknown_1
+$Comp
+L CONN_01X02 J8
+U 1 1 57A3FCF0
+P 11350 8250
+F 0 "J8" H 11350 8400 50  0000 C CNN
+F 1 "CONN_01X02" V 11450 8250 50  0001 C CNN
+F 2 "" H 11350 8250 50  0000 C CNN
+F 3 "" H 11350 8250 50  0000 C CNN
+	1    11350 8250
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57A3FCF6
+P 11000 8350
+F 0 "#PWR?" H 11000 8100 50  0001 C CNN
+F 1 "GND" H 11000 8200 50  0000 C CNN
+F 2 "" H 11000 8350 50  0000 C CNN
+F 3 "" H 11000 8350 50  0000 C CNN
+	1    11000 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 8300 11000 8350
+Wire Wire Line
+	11150 8300 11000 8300
+Text Notes 11450 8350 0    60   ~ 0
+To connect external module like to one\nto convert 60V -> 12V (the power available\nhere goes through the main power switch)
+Wire Wire Line
+	10250 8200 11150 8200
+Text Label 10250 8200 0    60   ~ 0
+Battery_voltage-1
+Text Notes 11450 2800 0    60   ~ 0
+NOT USED\nMay be brake\nsignals on a\nebike application
+Text Label 10300 2600 0    60   ~ 0
+Hall_sensor_A-con
+Wire Wire Line
+	10300 2600 11150 2600
+Text Label 10300 2700 0    60   ~ 0
+Hall_sensor_B-con
+Wire Wire Line
+	10300 2700 11150 2700
+Text Label 10300 2800 0    60   ~ 0
+Hall_sensor_C-con
+Wire Wire Line
+	10300 2800 11150 2800
+Wire Wire Line
+	2400 5200 3450 5200
+Text Label 2400 5200 0    60   ~ 0
+MPU6050-SCL
+Wire Wire Line
+	2400 5300 3450 5300
+Text Label 2400 5300 0    60   ~ 0
+MPU6050-SDA
+$Comp
+L +12V #PWR?
+U 1 1 57A39E09
+P 3800 1050
+F 0 "#PWR?" H 3800 900 50  0001 C CNN
+F 1 "+12V" H 3800 1190 50  0000 C CNN
+F 2 "" H 3800 1050 50  0000 C CNN
+F 3 "" H 3800 1050 50  0000 C CNN
+	1    3800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57A39F7B
+P 3500 1050
+F 0 "#PWR?" H 3500 900 50  0001 C CNN
+F 1 "+5V" H 3500 1190 50  0000 C CNN
+F 2 "" H 3500 1050 50  0000 C CNN
+F 3 "" H 3500 1050 50  0000 C CNN
+	1    3500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 57A39FD5
+P 3200 1050
+F 0 "#PWR?" H 3200 900 50  0001 C CNN
+F 1 "+3.3V" H 3200 1190 50  0000 C CNN
+F 2 "" H 3200 1050 50  0000 C CNN
+F 3 "" H 3200 1050 50  0000 C CNN
+	1    3200 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1050 3800 1150
+Text Notes 3850 1150 0    60   ~ 0
+1st XL7005A SMPS outputs 12V from 60V battery\n12V is used for mosfet gate drivers
+Wire Wire Line
+	3800 1150 6200 1150
+Wire Wire Line
+	3500 1050 3500 1500
+Wire Wire Line
+	3500 1500 6200 1500
+Text Notes 3550 1500 0    60   ~ 0
+2nd XL7005A SMPS outputs 5V from 60V battery\n5V is used for current sensors, hall sensors,\nmosfet gate drivers, 3.3V regulator
+Wire Wire Line
+	3200 1050 3200 1800
+Wire Wire Line
+	3200 1800 6200 1800
+Text Notes 3250 1800 0    60   ~ 0
+ASM1117 3.3v Linear Voltage regulator for 3.3v on STM32,\nMPU 6050,  Bluetooth module, mosfet gate drivers
+Wire Wire Line
+	3450 3300 3350 3300
+Wire Wire Line
+	3350 3300 3350 2900
+Connection ~ 4650 2900
+NoConn ~ 3450 4000
+NoConn ~ 3450 4200
+NoConn ~ 3450 4300
+NoConn ~ 3450 4400
+Wire Wire Line
+	5250 6550 5250 6400
+Wire Wire Line
+	6450 3400 7500 3400
+Text Label 7050 3400 0    60   ~ 0
+unknown_2
+Text Label 10200 6600 0    60   ~ 0
+unknown_2
+Wire Wire Line
+	6450 3700 7500 3700
+Wire Wire Line
+	6450 3600 7500 3600
+Text Label 6450 3600 0    60   ~ 0
+Current_phase_C-Green
+Text Label 6450 3700 0    60   ~ 0
+Current_phase_A-Yellow
+Wire Wire Line
+	6450 3900 7500 3900
+Text Label 6600 3900 0    60   ~ 0
+Phase_C-/Shutdown
+Wire Wire Line
+	6450 4000 7500 4000
+Text Label 6800 4000 0    60   ~ 0
+Phase_C-HO_LO
+Wire Wire Line
+	6450 4100 7500 4100
+Text Label 6600 4100 0    60   ~ 0
+Phase_B-/Shutdown
+Wire Wire Line
+	2400 4600 3450 4600
+Text Label 2400 4600 0    60   ~ 0
+Phase_B-HO_LO
+Wire Wire Line
+	2400 4700 3450 4700
+Text Label 2400 4700 0    60   ~ 0
+Phase_A-HO_LO
+Wire Wire Line
+	2400 4800 3450 4800
+Text Label 2400 4800 0    60   ~ 0
+Phase_A-/Shutdown
+NoConn ~ 3450 5600
+NoConn ~ 3450 5700
+Wire Wire Line
+	2400 6100 3450 6100
+Text Label 2400 6100 0    60   ~ 0
+LED_1-battery_state
+Wire Wire Line
+	6450 4500 7500 4500
+Text Label 6600 4500 0    60   ~ 0
+LED_2-battery_state
+Wire Wire Line
+	6450 4600 7500 4600
+Text Label 6600 4600 0    60   ~ 0
+LED_3-battery_state
+NoConn ~ 6450 4900
+NoConn ~ 3450 4900
+NoConn ~ 3450 5000
+Wire Wire Line
+	2400 5100 3450 5100
+Text Label 2400 5100 0    60   ~ 0
+LED_4-battery_state
+NoConn ~ 3450 5400
+NoConn ~ 3450 5500
+Wire Wire Line
+	10850 6250 10850 6600
+Wire Wire Line
+	10850 6600 10200 6600
+Connection ~ 10850 6250
+$Comp
+L CONN_01X05 J?
+U 1 1 57DD20D8
+P 11350 3650
+F 0 "J?" H 11350 3950 50  0000 C CNN
+F 1 "CONN_01X05" V 11450 3650 50  0001 C CNN
+F 2 "" H 11350 3650 50  0000 C CNN
+F 3 "" H 11350 3650 50  0000 C CNN
+	1    11350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3850 11150 3850
+Text Notes 11450 3700 0    60   ~ 0
+LEDs\nbattery state
+$Comp
+L GND #PWR?
+U 1 1 57DD544E
+P 10850 2300
+F 0 "#PWR?" H 10850 2050 50  0001 C CNN
+F 1 "GND" H 10850 2150 50  0000 C CNN
+F 2 "" H 10850 2300 50  0000 C CNN
+F 3 "" H 10850 2300 50  0000 C CNN
+	1    10850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 2250 10850 2300
+Wire Wire Line
+	10850 2250 11000 2250
+$Comp
+L CONN_01X04 J9
+U 1 1 57A40AC5
+P 11350 2650
+F 0 "J9" H 11350 2900 50  0000 C CNN
+F 1 "CONN_01X04" V 11450 2650 50  0001 C CNN
+F 2 "" H 11350 2650 50  0000 C CNN
+F 3 "" H 11350 2650 50  0000 C CNN
+	1    11350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 2250 11000 2500
+Wire Wire Line
+	11000 2500 11150 2500
+$Comp
+L +3.3V #PWR?
+U 1 1 57DD5842
+P 9900 3850
+F 0 "#PWR?" H 9900 3700 50  0001 C CNN
+F 1 "+3.3V" H 9900 3990 50  0000 C CNN
+F 2 "" H 9900 3850 50  0000 C CNN
+F 3 "" H 9900 3850 50  0000 C CNN
+	1    9900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3450 11150 3450
+Text Label 10200 3450 0    60   ~ 0
+LED_1-battery_state
+Wire Wire Line
+	10200 3550 11150 3550
+Text Label 10200 3550 0    60   ~ 0
+LED_2-battery_state
+Wire Wire Line
+	10200 3650 11150 3650
+Text Label 10200 3650 0    60   ~ 0
+LED_3-battery_state
+Wire Wire Line
+	10200 3750 11150 3750
+Text Label 10200 3750 0    60   ~ 0
+LED_4-battery_state
+Text Notes 7850 4000 0    60   ~ 0
+// Phase current\n// Voltage measured values:\n//  4.7A | 1.77V\n//  2.8A | 1.74V\n//    0A | 1.71V\n// -2.8A | 1.68V\n// -4.7A | 1.65V\n// about 12.7mv for each 1A
+$Comp
+L +3.3V #PWR?
+U 1 1 57DD8441
+P 10850 5850
+F 0 "#PWR?" H 10850 5700 50  0001 C CNN
+F 1 "+3.3V" H 10850 5990 50  0000 C CNN
+F 2 "" H 10850 5850 50  0000 C CNN
+F 3 "" H 10850 5850 50  0000 C CNN
+	1    10850 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57DD8641
+P 10850 5200
+F 0 "#PWR?" H 10850 4950 50  0001 C CNN
+F 1 "GND" H 10850 5050 50  0000 C CNN
+F 2 "" H 10850 5200 50  0000 C CNN
+F 3 "" H 10850 5200 50  0000 C CNN
+	1    10850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5400 11000 5150
+Wire Wire Line
+	11000 5150 10850 5150
+Wire Wire Line
+	10850 5150 10850 5200
+Wire Wire Line
+	11000 5400 11150 5400
+Wire Wire Line
+	11000 5700 11000 5900
+Wire Wire Line
+	11000 5900 10850 5900
+Wire Wire Line
+	10850 5900 10850 5850
+$EndSCHEMATC

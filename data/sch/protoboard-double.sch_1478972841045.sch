@@ -1,0 +1,504 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:parts
+LIBS:protoboard-double-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MODULE_HEADER J1
+U 1 1 544047F0
+P 2100 2950
+F 0 "J1" H 1750 3500 60  0000 C CNN
+F 1 "MODULE_HEADER" V 1800 2900 60  0000 C CNN
+F 2 "parts:MODULE_HEADER_MODULE_BIG" H 2100 2950 60  0001 C CNN
+F 3 "" H 2100 2950 60  0000 C CNN
+	1    2100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2550 3900 2550
+Wire Wire Line
+	2400 2650 3900 2650
+Wire Wire Line
+	2400 2750 3900 2750
+Wire Wire Line
+	2400 2850 3900 2850
+Wire Wire Line
+	2400 2950 3900 2950
+Wire Wire Line
+	2400 3050 3900 3050
+Wire Wire Line
+	2400 3150 3900 3150
+Wire Wire Line
+	2400 3250 3900 3250
+Wire Wire Line
+	2400 3350 3900 3350
+Wire Wire Line
+	2400 3450 3900 3450
+$Comp
+L MODULE_HEADER J2
+U 1 1 544051C1
+P 2100 4150
+F 0 "J2" H 1750 4700 60  0000 C CNN
+F 1 "MODULE_HEADER" V 1800 4100 60  0000 C CNN
+F 2 "parts:MODULE_HEADER_MODULE_BIG" H 2100 4150 60  0001 C CNN
+F 3 "" H 2100 4150 60  0000 C CNN
+	1    2100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3750 3900 3750
+Wire Wire Line
+	2400 3850 3900 3850
+Wire Wire Line
+	2400 3950 3900 3950
+Wire Wire Line
+	2400 4050 3900 4050
+Wire Wire Line
+	2400 4150 3900 4150
+Wire Wire Line
+	2400 4250 3900 4250
+Wire Wire Line
+	2400 4350 3900 4350
+Wire Wire Line
+	2400 4450 3900 4450
+Wire Wire Line
+	2400 4550 3900 4550
+Wire Wire Line
+	2400 4650 3900 4650
+$Comp
+L CONN_01X22 P1
+U 1 1 54405F5C
+P 5000 3600
+F 0 "P1" H 5000 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 5100 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 5000 3600 60  0001 C CNN
+F 3 "" H 5000 3600 60  0000 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P2
+U 1 1 5440600F
+P 5350 3600
+F 0 "P2" H 5350 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 5450 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 5350 3600 60  0001 C CNN
+F 3 "" H 5350 3600 60  0000 C CNN
+	1    5350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P4
+U 1 1 544061BD
+P 5700 3600
+F 0 "P4" H 5700 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 5800 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 5700 3600 60  0001 C CNN
+F 3 "" H 5700 3600 60  0000 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P5
+U 1 1 544061C3
+P 6050 3600
+F 0 "P5" H 6050 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 6150 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 6050 3600 60  0001 C CNN
+F 3 "" H 6050 3600 60  0000 C CNN
+	1    6050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P7
+U 1 1 54406623
+P 6350 3600
+F 0 "P7" H 6350 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 6450 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 6350 3600 60  0001 C CNN
+F 3 "" H 6350 3600 60  0000 C CNN
+	1    6350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P8
+U 1 1 54406629
+P 6700 3600
+F 0 "P8" H 6700 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 6800 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 6700 3600 60  0001 C CNN
+F 3 "" H 6700 3600 60  0000 C CNN
+	1    6700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P10
+U 1 1 5440662F
+P 7050 3600
+F 0 "P10" H 7050 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 7150 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 7050 3600 60  0001 C CNN
+F 3 "" H 7050 3600 60  0000 C CNN
+	1    7050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P11
+U 1 1 54406635
+P 7400 3600
+F 0 "P11" H 7400 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 7500 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 7400 3600 60  0001 C CNN
+F 3 "" H 7400 3600 60  0000 C CNN
+	1    7400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P12
+U 1 1 54406F28
+P 7700 3600
+F 0 "P12" H 7700 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 7800 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 7700 3600 60  0001 C CNN
+F 3 "" H 7700 3600 60  0000 C CNN
+	1    7700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P13
+U 1 1 54406F2E
+P 8050 3600
+F 0 "P13" H 8050 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 8150 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 8050 3600 60  0001 C CNN
+F 3 "" H 8050 3600 60  0000 C CNN
+	1    8050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P14
+U 1 1 54406F34
+P 8400 3600
+F 0 "P14" H 8400 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 8500 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 8400 3600 60  0001 C CNN
+F 3 "" H 8400 3600 60  0000 C CNN
+	1    8400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P15
+U 1 1 54406F3A
+P 8750 3600
+F 0 "P15" H 8750 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 8850 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 8750 3600 60  0001 C CNN
+F 3 "" H 8750 3600 60  0000 C CNN
+	1    8750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P16
+U 1 1 54406F40
+P 9050 3600
+F 0 "P16" H 9050 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 9150 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 9050 3600 60  0001 C CNN
+F 3 "" H 9050 3600 60  0000 C CNN
+	1    9050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P17
+U 1 1 54406F46
+P 9400 3600
+F 0 "P17" H 9400 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 9500 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 9400 3600 60  0001 C CNN
+F 3 "" H 9400 3600 60  0000 C CNN
+	1    9400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P18
+U 1 1 54406F4C
+P 9750 3600
+F 0 "P18" H 9750 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 9850 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 9750 3600 60  0001 C CNN
+F 3 "" H 9750 3600 60  0000 C CNN
+	1    9750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X22 P19
+U 1 1 54406F52
+P 10100 3600
+F 0 "P19" H 10100 4750 50  0000 C CNN
+F 1 "CONN_01X22" V 10200 3600 50  0000 C CNN
+F 2 "parts:1x22_BIG" H 10100 3600 60  0001 C CNN
+F 3 "" H 10100 3600 60  0000 C CNN
+	1    10100 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 2550
+Connection ~ 2700 2650
+Connection ~ 2700 2750
+Connection ~ 2700 2850
+Connection ~ 2700 2950
+Connection ~ 2700 3050
+Connection ~ 2700 3150
+Connection ~ 2700 3250
+Connection ~ 2700 3350
+Connection ~ 2700 3450
+Connection ~ 2700 3750
+Connection ~ 2700 3850
+Connection ~ 2700 3950
+Connection ~ 2700 4050
+Connection ~ 2700 4150
+Connection ~ 2700 4250
+Connection ~ 2700 4350
+Connection ~ 2700 4450
+Connection ~ 2700 4550
+Connection ~ 2700 4650
+Connection ~ 3300 2550
+Connection ~ 3300 2650
+Connection ~ 3300 2750
+Connection ~ 3300 2850
+Connection ~ 3300 2950
+Connection ~ 3300 3050
+Connection ~ 3300 3150
+Connection ~ 3300 3250
+Connection ~ 3300 3350
+Connection ~ 3300 3450
+Connection ~ 3300 3750
+Connection ~ 3300 3850
+Connection ~ 3300 3950
+Connection ~ 3300 4050
+Connection ~ 3300 4150
+Connection ~ 3300 4250
+Connection ~ 3300 4350
+Connection ~ 3300 4450
+Connection ~ 3300 4550
+Connection ~ 3300 4650
+Connection ~ 3900 4650
+Connection ~ 3900 4550
+Connection ~ 3900 4450
+Connection ~ 3900 4350
+Connection ~ 3900 4250
+Connection ~ 3900 4150
+Connection ~ 3900 4050
+Connection ~ 3900 3950
+Connection ~ 3900 3850
+Connection ~ 3900 3750
+Connection ~ 3900 3450
+Connection ~ 3900 3350
+Connection ~ 3900 3250
+Connection ~ 3900 3150
+Connection ~ 3900 3050
+Connection ~ 3900 2950
+Connection ~ 3900 2850
+Connection ~ 3900 2750
+Connection ~ 3900 2650
+Connection ~ 3900 2550
+$Comp
+L C C1
+U 1 1 54409983
+P 2650 5000
+F 0 "C1" H 2650 5100 40  0000 L CNN
+F 1 "C" H 2656 4915 40  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 2688 4850 30  0001 C CNN
+F 3 "" H 2650 5000 60  0000 C CNN
+	1    2650 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4800 2650 3750
+Connection ~ 2650 3750
+Wire Wire Line
+	2650 5200 2500 5200
+Wire Wire Line
+	2500 5200 2500 3850
+Connection ~ 2500 3850
+Connection ~ 2400 2550
+Connection ~ 2400 2650
+Connection ~ 2400 2750
+Connection ~ 2400 2850
+Connection ~ 2400 2950
+Connection ~ 2400 3050
+Connection ~ 2400 3150
+Connection ~ 2400 3250
+Connection ~ 2400 3350
+Connection ~ 2400 3450
+Connection ~ 2400 3750
+Connection ~ 2400 3850
+Connection ~ 2400 3950
+Connection ~ 2400 4050
+Connection ~ 2400 4150
+Connection ~ 2400 4250
+Connection ~ 2400 4350
+Connection ~ 2400 4450
+Connection ~ 2400 4550
+Connection ~ 2400 4650
+$Comp
+L logo SILK1
+U 1 1 54404D2A
+P 9950 5650
+F 0 "SILK1" H 9950 5700 60  0000 C CNN
+F 1 "logo" H 9950 5600 60  0000 C CNN
+F 2 "parts:TESSEL-HEXAGON-LOGO-BACK-BIG" H 9950 5650 60  0001 C CNN
+F 3 "" H 9950 5650 60  0000 C CNN
+	1    9950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P6
+U 1 1 54591887
+P 2900 4200
+F 0 "P6" H 2900 4750 50  0000 C CNN
+F 1 "CONN_01X10" V 3000 4200 50  0000 C CNN
+F 2 "parts:1x10_BIG" H 2900 4200 60  0001 C CNN
+F 3 "" H 2900 4200 60  0000 C CNN
+	1    2900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P20
+U 1 1 545919B4
+P 3500 4200
+F 0 "P20" H 3500 4750 50  0000 C CNN
+F 1 "CONN_01X10" V 3600 4200 50  0000 C CNN
+F 2 "parts:1x10_BIG" H 3500 4200 60  0001 C CNN
+F 3 "" H 3500 4200 60  0000 C CNN
+	1    3500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P22
+U 1 1 545919F3
+P 4100 4200
+F 0 "P22" H 4100 4750 50  0000 C CNN
+F 1 "CONN_01X10" V 4200 4200 50  0000 C CNN
+F 2 "parts:1x10_BIG" H 4100 4200 60  0001 C CNN
+F 3 "" H 4100 4200 60  0000 C CNN
+	1    4100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P3
+U 1 1 54591E09
+P 2900 3000
+F 0 "P3" H 2900 3550 50  0000 C CNN
+F 1 "CONN_01X10" V 3000 3000 50  0000 C CNN
+F 2 "parts:1x10_BIG" H 2900 3000 60  0001 C CNN
+F 3 "" H 2900 3000 60  0000 C CNN
+	1    2900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P9
+U 1 1 54591E0F
+P 3500 3000
+F 0 "P9" H 3500 3550 50  0000 C CNN
+F 1 "CONN_01X10" V 3600 3000 50  0000 C CNN
+F 2 "parts:1x10_BIG" H 3500 3000 60  0001 C CNN
+F 3 "" H 3500 3000 60  0000 C CNN
+	1    3500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P21
+U 1 1 54591E15
+P 4100 3000
+F 0 "P21" H 4100 3550 50  0000 C CNN
+F 1 "CONN_01X10" V 4200 3000 50  0000 C CNN
+F 2 "parts:1x10_BIG" H 4100 3000 60  0001 C CNN
+F 3 "" H 4100 3000 60  0000 C CNN
+	1    4100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3550 9900 3550
+Wire Wire Line
+	2550 3650 9900 3650
+Connection ~ 4800 3550
+Connection ~ 4800 3650
+Connection ~ 5150 3650
+Connection ~ 5150 3550
+Connection ~ 5500 3550
+Connection ~ 5500 3650
+Connection ~ 5850 3650
+Connection ~ 5850 3550
+Connection ~ 6150 3550
+Connection ~ 6150 3650
+Connection ~ 6500 3650
+Connection ~ 6500 3550
+Connection ~ 6850 3550
+Connection ~ 6850 3650
+Connection ~ 7200 3650
+Connection ~ 7200 3550
+Connection ~ 7500 3550
+Connection ~ 7500 3650
+Connection ~ 7850 3650
+Connection ~ 7850 3550
+Connection ~ 8200 3550
+Connection ~ 8200 3650
+Connection ~ 8550 3650
+Connection ~ 8550 3550
+Connection ~ 8850 3550
+Connection ~ 8850 3650
+Connection ~ 9200 3550
+Connection ~ 9550 3550
+Connection ~ 9550 3650
+Connection ~ 9900 3650
+Connection ~ 9900 3550
+Connection ~ 9200 3650
+Wire Wire Line
+	2550 3650 2550 3850
+Connection ~ 2550 3850
+Wire Wire Line
+	2500 3550 2500 3750
+Connection ~ 2500 3750
+$EndSCHEMATC

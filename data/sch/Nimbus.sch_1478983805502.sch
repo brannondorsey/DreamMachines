@@ -1,0 +1,354 @@
+EESchema Schematic File Version 2
+LIBS:Nimbus-rescue
+LIBS:XS
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Nimbus-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Nimbus"
+Date "2015-10-10"
+Rev "1"
+Comp "XS-Labs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L XS-Battery BT1
+U 1 1 569278E8
+P 6700 3850
+F 0 "BT1" H 6725 3950 50  0000 L CNN
+F 1 "IMR 18650" H 6725 3750 50  0000 L CNN
+F 2 "" H 6700 3850 60  0000 C CNN
+F 3 "" H 6700 3850 60  0000 C CNN
+	1    6700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Battery BT2
+U 1 1 5692791F
+P 7300 3850
+F 0 "BT2" H 7325 3950 50  0000 L CNN
+F 1 "IMR 18650" H 7325 3750 50  0000 L CNN
+F 2 "" H 7300 3850 60  0000 C CNN
+F 3 "" H 7300 3850 60  0000 C CNN
+	1    7300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Battery BT3
+U 1 1 56927987
+P 6700 4250
+F 0 "BT3" H 6725 4350 50  0000 L CNN
+F 1 "IMR 18650" H 6725 4150 50  0000 L CNN
+F 2 "" H 6700 4250 60  0000 C CNN
+F 3 "" H 6700 4250 60  0000 C CNN
+	1    6700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Battery BT4
+U 1 1 569279A1
+P 7300 4250
+F 0 "BT4" H 7325 4350 50  0000 L CNN
+F 1 "IMR 18650" H 7325 4150 50  0000 L CNN
+F 2 "" H 7300 4250 60  0000 C CNN
+F 3 "" H 7300 4250 60  0000 C CNN
+	1    7300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-LM3914 U1
+U 1 1 56927AEA
+P 5050 3850
+F 0 "U1" H 5050 4400 50  0000 C CNN
+F 1 "LM3914" H 5050 3300 50  0000 C CNN
+F 2 "" H 5050 3950 60  0000 C CNN
+F 3 "" H 5050 3950 60  0000 C CNN
+	1    5050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Resistor R4
+U 1 1 56927FBF
+P 4200 4000
+F 0 "R4" H 4200 4100 50  0000 C CNN
+F 1 "13k" H 4200 3900 50  0000 C CNN
+F 2 "" H 4200 3800 60  0000 C CNN
+F 3 "" H 4200 4000 60  0000 C CNN
+	1    4200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Resistor R5
+U 1 1 56927FF4
+P 3500 4000
+F 0 "R5" H 3500 4100 50  0000 C CNN
+F 1 "10.9k" H 3500 3900 50  0000 C CNN
+F 2 "" H 3500 3800 60  0000 C CNN
+F 3 "" H 3500 4000 60  0000 C CNN
+	1    3500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Resistor R3
+U 1 1 56928023
+P 3500 3100
+F 0 "R3" H 3500 3200 50  0000 C CNN
+F 1 "10k" H 3500 3000 50  0000 C CNN
+F 2 "" H 3500 2900 60  0000 C CNN
+F 3 "" H 3500 3100 60  0000 C CNN
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Resistor R2
+U 1 1 56928051
+P 4100 3100
+F 0 "R2" H 4100 3200 50  0000 C CNN
+F 1 "10k" H 4100 3000 50  0000 C CNN
+F 2 "" H 4100 2900 60  0000 C CNN
+F 3 "" H 4100 3100 60  0000 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Unpolarized-Capacitor C1
+U 1 1 56928081
+P 4500 2850
+F 0 "C1" H 4525 2950 50  0000 L CNN
+F 1 "1uf" H 4525 2750 50  0000 L CNN
+F 2 "" H 4500 2850 60  0000 C CNN
+F 3 "" H 4500 2850 60  0000 C CNN
+	1    4500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Switch-SPST SW1
+U 1 1 569280CF
+P 7400 3100
+F 0 "SW1" H 7400 3225 50  0000 C CNN
+F 1 "PWR" H 7400 2975 50  0000 C CNN
+F 2 "" H 7400 3100 60  0000 C CNN
+F 3 "" H 7400 3100 60  0000 C CNN
+	1    7400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Switch-SPST SW2
+U 1 1 56928183
+P 6600 3100
+F 0 "SW2" H 6600 3225 50  0000 C CNN
+F 1 "BT CHECK" H 6600 2975 50  0000 C CNN
+F 2 "" H 6600 3100 60  0000 C CNN
+F 3 "" H 6600 3100 60  0000 C CNN
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L XS-Resistor R1
+U 1 1 56929EF8
+P 7800 3400
+F 0 "R1" H 7800 3500 50  0000 C CNN
+F 1 "ATOMIZER" H 7800 3300 50  0000 C CNN
+F 2 "" H 7800 3200 60  0000 C CNN
+F 3 "" H 7800 3400 60  0000 C CNN
+	1    7800 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 4000 6700 4100
+Wire Wire Line
+	7300 4000 7300 4100
+Wire Wire Line
+	6700 3700 6700 3600
+Wire Wire Line
+	6700 3600 7300 3600
+Wire Wire Line
+	7000 3100 7000 3600
+Wire Wire Line
+	7300 3600 7300 3700
+Connection ~ 7000 3600
+Wire Wire Line
+	6700 4400 6700 4500
+Wire Wire Line
+	6700 4500 7300 4500
+Wire Wire Line
+	7000 4600 7000 4500
+Wire Wire Line
+	7300 4500 7300 4400
+Connection ~ 7000 4500
+Wire Wire Line
+	5500 4250 5600 4250
+Wire Wire Line
+	5600 4150 5500 4150
+Wire Wire Line
+	5500 4050 5600 4050
+Wire Wire Line
+	5500 3950 5600 3950
+Wire Wire Line
+	5600 3850 5500 3850
+Wire Wire Line
+	5500 3750 5600 3750
+Wire Wire Line
+	5600 3650 5500 3650
+Wire Wire Line
+	5500 3550 5600 3550
+Wire Wire Line
+	5600 3450 5500 3450
+Wire Wire Line
+	4600 3450 4500 3450
+Wire Wire Line
+	4500 3450 4500 3200
+Wire Wire Line
+	4500 3200 5500 3200
+Wire Wire Line
+	5500 3200 5500 3350
+Wire Wire Line
+	5500 3350 5600 3350
+Wire Wire Line
+	4600 4250 4500 4250
+Wire Wire Line
+	4500 4250 4500 4500
+Wire Wire Line
+	4500 4500 6200 4500
+Wire Wire Line
+	6200 4500 6200 3100
+Wire Wire Line
+	6200 4250 6100 4250
+Wire Wire Line
+	6200 3450 6100 3450
+Connection ~ 6200 4250
+Wire Wire Line
+	6100 4150 6200 4150
+Connection ~ 6200 4150
+Wire Wire Line
+	6100 3550 6200 3550
+Connection ~ 6200 3550
+Wire Wire Line
+	6100 3650 6200 3650
+Connection ~ 6200 3650
+Wire Wire Line
+	6100 3750 6200 3750
+Connection ~ 6200 3750
+Wire Wire Line
+	6100 3850 6200 3850
+Connection ~ 6200 3850
+Wire Wire Line
+	6100 3950 6200 3950
+Connection ~ 6200 3950
+Wire Wire Line
+	6100 4050 6200 4050
+Connection ~ 6200 4050
+Wire Wire Line
+	6200 3350 6100 3350
+Connection ~ 6200 3450
+Wire Wire Line
+	4500 4050 4600 4050
+Wire Wire Line
+	3800 4150 4600 4150
+Wire Wire Line
+	3200 2700 3200 4600
+Wire Wire Line
+	6900 3100 7100 3100
+Wire Wire Line
+	4300 3100 6300 3100
+Wire Wire Line
+	4500 3100 4500 3000
+Connection ~ 4500 3100
+Wire Wire Line
+	4500 2700 3200 2700
+Connection ~ 7000 3100
+Wire Wire Line
+	3200 4600 7800 4600
+Wire Wire Line
+	7700 3100 7800 3100
+Wire Wire Line
+	7800 3100 7800 3200
+Wire Wire Line
+	7800 4600 7800 3600
+Connection ~ 7000 4600
+Connection ~ 6200 3350
+Connection ~ 6200 3100
+Wire Wire Line
+	4600 3550 3200 3550
+Connection ~ 3200 3550
+Wire Wire Line
+	3800 3850 4600 3850
+Wire Wire Line
+	4000 4000 3700 4000
+Connection ~ 3900 4000
+Connection ~ 3800 4000
+Wire Wire Line
+	3300 4000 3200 4000
+Connection ~ 3200 4000
+Wire Wire Line
+	4500 3950 4500 4050
+Wire Wire Line
+	4500 4000 4400 4000
+Wire Wire Line
+	4600 3950 4500 3950
+Connection ~ 4500 4000
+Wire Wire Line
+	3800 3100 3800 3850
+Wire Wire Line
+	3700 3100 3900 3100
+Connection ~ 3800 3100
+Wire Wire Line
+	3300 3100 3200 3100
+Connection ~ 3200 3100
+Wire Wire Line
+	4600 3650 4400 3650
+Wire Wire Line
+	4400 3650 4400 3100
+Connection ~ 4400 3100
+Wire Wire Line
+	4600 3750 3900 3750
+Wire Wire Line
+	3800 4150 3800 4000
+Wire Wire Line
+	3900 3750 3900 4000
+$Comp
+L XS-10-Segments-Bar-Graph-Display DS1
+U 1 1 56927B1B
+P 5850 3800
+F 0 "DS1" H 5850 4400 50  0000 C CNN
+F 1 "BT STATUS" H 5850 3200 50  0000 C CNN
+F 2 "" H 5850 3825 60  0000 C CNN
+F 3 "" H 5850 3825 60  0000 C CNN
+	1    5850 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

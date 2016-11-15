@@ -1,0 +1,332 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:ESPSwitcher-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-07v2 U?
+U 1 1 56C572BD
+P 4250 2500
+F 0 "U?" H 4250 2400 50  0000 C CNN
+F 1 "ESP-07v2" H 4250 2600 50  0000 C CNN
+F 2 "" H 4250 2500 50  0001 C CNN
+F 3 "" H 4250 2500 50  0001 C CNN
+	1    4250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 56C573DB
+P 7000 3150
+F 0 "D?" H 7000 3250 50  0000 C CNN
+F 1 "LED" H 7000 3050 50  0000 C CNN
+F 2 "" H 7000 3150 50  0000 C CNN
+F 3 "" H 7000 3150 50  0000 C CNN
+	1    7000 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LM117H U?
+U 1 1 56C577CA
+P 2100 1050
+F 0 "U?" H 1900 1250 50  0000 C CNN
+F 1 "LM1117-3,3" H 2100 1250 50  0000 L CNN
+F 2 "TO-220" H 2100 1150 50  0000 C CIN
+F 3 "" H 2100 1050 50  0000 C CNN
+	1    2100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56C57983
+P 1400 1000
+F 0 "#PWR?" H 1400 850 50  0001 C CNN
+F 1 "+5V" H 1400 1140 50  0000 C CNN
+F 2 "" H 1400 1000 50  0000 C CNN
+F 3 "" H 1400 1000 50  0000 C CNN
+	1    1400 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 56C57A68
+P 4250 3650
+F 0 "#PWR?" H 4250 3400 50  0001 C CNN
+F 1 "GNDREF" H 4250 3500 50  0000 C CNN
+F 2 "" H 4250 3650 50  0000 C CNN
+F 3 "" H 4250 3650 50  0000 C CNN
+	1    4250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 56C57C78
+P 2400 2200
+F 0 "SW?" H 2550 2310 50  0000 C CNN
+F 1 "Reset" H 2400 2120 50  0000 C CNN
+F 2 "" H 2400 2200 50  0000 C CNN
+F 3 "" H 2400 2200 50  0000 C CNN
+	1    2400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56C57E10
+P 2700 1550
+F 0 "R1" V 2780 1550 50  0000 C CNN
+F 1 "10K" V 2700 1550 50  0000 C CNN
+F 2 "" V 2630 1550 50  0000 C CNN
+F 3 "" H 2700 1550 50  0000 C CNN
+	1    2700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56C57FC6
+P 3000 1550
+F 0 "R2" V 3080 1550 50  0000 C CNN
+F 1 "10K" V 3000 1550 50  0000 C CNN
+F 2 "" V 2930 1550 50  0000 C CNN
+F 3 "" H 3000 1550 50  0000 C CNN
+	1    3000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 56C58062
+P 5400 1650
+F 0 "R3" V 5480 1650 50  0000 C CNN
+F 1 "10K" V 5400 1650 50  0000 C CNN
+F 2 "" V 5330 1650 50  0000 C CNN
+F 3 "" H 5400 1650 50  0000 C CNN
+	1    5400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 56C580C5
+P 5400 3100
+F 0 "R6" V 5480 3100 50  0000 C CNN
+F 1 "10K" V 5400 3100 50  0000 C CNN
+F 2 "" V 5330 3100 50  0000 C CNN
+F 3 "" H 5400 3100 50  0000 C CNN
+	1    5400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP222A-2 U?
+U 2 1 56C58AD5
+P 7500 2900
+F 0 "U?" H 7300 3100 50  0000 L CNN
+F 1 "SSR-40DA" H 7450 3100 50  0000 L CNN
+F 2 "~" H 7300 2700 50  0000 L CIN
+F 3 "" H 7450 2900 50  0000 L CNN
+	2    7500 2900
+	1    0    0    -1  
+$EndComp
+Text Label 4600 950  0    60   ~ 0
++3,3V
+Wire Wire Line
+	2100 1300 2100 2200
+Wire Wire Line
+	2100 2200 2100 3500
+Wire Wire Line
+	2500 1000 2700 1000
+Wire Wire Line
+	2700 1000 3000 1000
+Wire Wire Line
+	3000 1000 4250 1000
+Wire Wire Line
+	4250 1000 5400 1000
+Wire Wire Line
+	5400 1000 5800 1000
+Wire Wire Line
+	5800 1000 6200 1000
+Wire Wire Line
+	6200 1000 6550 1000
+Wire Wire Line
+	4250 1000 4250 1600
+Connection ~ 2100 2200
+Wire Wire Line
+	2700 1000 2700 1400
+Connection ~ 2700 1000
+Wire Wire Line
+	2700 2200 3350 2200
+Connection ~ 2700 2200
+Wire Wire Line
+	2700 1700 2700 2200
+Wire Wire Line
+	3350 2400 3000 2400
+Wire Wire Line
+	3000 2400 3000 1700
+Wire Wire Line
+	3000 1400 3000 1000
+Connection ~ 3000 1000
+Connection ~ 4250 1000
+Wire Wire Line
+	5400 1800 5400 2600
+Wire Wire Line
+	5400 1000 5400 1500
+Wire Wire Line
+	4250 3400 4250 3500
+Wire Wire Line
+	4250 3500 4250 3650
+Wire Wire Line
+	2100 3500 4250 3500
+Wire Wire Line
+	4250 3500 5400 3500
+Wire Wire Line
+	5400 3500 5800 3500
+Wire Wire Line
+	5800 3500 6550 3500
+Wire Wire Line
+	6550 3500 7200 3500
+Connection ~ 4250 3500
+Connection ~ 5400 1000
+Wire Wire Line
+	1400 1000 1700 1000
+Wire Wire Line
+	5800 2000 5800 2500
+Wire Wire Line
+	5800 2500 5800 2950
+Wire Wire Line
+	5150 2500 5800 2500
+Wire Wire Line
+	5150 2400 6150 2400
+$Comp
+L 74HC04 U?
+U 1 1 56C81707
+P 6600 2400
+F 0 "U?" H 6750 2500 50  0000 C CNN
+F 1 "74HC04" H 6800 2300 50  0000 C CNN
+F 2 "" H 6600 2400 50  0000 C CNN
+F 3 "" H 6600 2400 50  0000 C CNN
+	1    6600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 56C81949
+P 5800 3100
+F 0 "R4" V 5880 3100 50  0000 C CNN
+F 1 "10K" V 5800 3100 50  0000 C CNN
+F 2 "" V 5730 3100 50  0000 C CNN
+F 3 "" H 5800 3100 50  0000 C CNN
+	1    5800 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5800 2500
+$Comp
+L R R5
+U 1 1 56C81AC6
+P 6200 1650
+F 0 "R5" V 6280 1650 50  0000 C CNN
+F 1 "10K" V 6200 1650 50  0000 C CNN
+F 2 "" V 6130 1650 50  0000 C CNN
+F 3 "" H 6200 1650 50  0000 C CNN
+	1    6200 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5800 1000
+Wire Wire Line
+	6200 1000 6200 1500
+Connection ~ 6200 1000
+Wire Wire Line
+	6200 2400 6200 1800
+Wire Wire Line
+	7050 2400 7200 2400
+Connection ~ 7200 2400
+Wire Wire Line
+	7200 3500 7200 3000
+Connection ~ 5800 3500
+Wire Wire Line
+	6550 2500 6550 3500
+Connection ~ 6550 3500
+Wire Wire Line
+	6550 2300 6550 1000
+Connection ~ 6550 1000
+Wire Wire Line
+	7200 2400 7200 2800
+$Comp
+L R R7
+U 1 1 56C82BD6
+P 7000 2700
+F 0 "R7" V 7080 2700 50  0000 C CNN
+F 1 "220" V 7000 2700 50  0000 C CNN
+F 2 "" V 6930 2700 50  0000 C CNN
+F 3 "" H 7000 2700 50  0000 C CNN
+	1    7000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2850 7000 2950
+Wire Wire Line
+	7000 3350 7000 3500
+Wire Wire Line
+	7000 2400 7000 2550
+Connection ~ 7000 2400
+Wire Wire Line
+	5800 3250 5800 3500
+Wire Wire Line
+	5400 2600 5150 2600
+Connection ~ 5400 2600
+Wire Wire Line
+	5150 2800 5400 2800
+Wire Wire Line
+	5400 2800 5400 2950
+Wire Wire Line
+	5400 3250 5400 3500
+Connection ~ 5400 3500
+$Comp
+L SPST SW?
+U 1 1 56DB411B
+P 5800 1500
+F 0 "SW?" H 5800 1600 50  0000 C CNN
+F 1 "SPST" H 5800 1400 50  0000 C CNN
+F 2 "" H 5800 1500 50  0000 C CNN
+F 3 "" H 5800 1500 50  0000 C CNN
+	1    5800 1500
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

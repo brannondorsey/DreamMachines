@@ -1,0 +1,241 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:My_stuff
+LIBS:random_remote-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "16 may 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ARDUINO_PRO_MICRO U1
+U 1 1 57260E8B
+P 6850 3100
+F 0 "U1" H 6850 2450 60  0000 C CNN
+F 1 "ARDUINO_PRO_MICRO" H 6850 3900 60  0000 C CNN
+F 2 "" H 6800 3050 60  0000 C CNN
+F 3 "" H 6800 3050 60  0000 C CNN
+	1    6850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 57260E9A
+P 5800 3600
+F 0 "D2" H 5800 3700 50  0000 C CNN
+F 1 "LED" H 5800 3500 50  0000 C CNN
+F 2 "~" H 5800 3600 60  0000 C CNN
+F 3 "~" H 5800 3600 60  0000 C CNN
+	1    5800 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L DC-DC_BOOSTER U3
+U 1 1 57260EA9
+P 8550 5450
+F 0 "U3" V 8900 5450 60  0000 C CNN
+F 1 "DC-DC_BOOSTER" V 8200 5450 60  0000 C CNN
+F 2 "~" H 8500 5800 60  0000 C CNN
+F 3 "~" H 8500 5800 60  0000 C CNN
+	1    8550 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LIPO_CHARGER U2
+U 1 1 57260EB8
+P 7900 5500
+F 0 "U2" V 8200 5200 60  0000 C CNN
+F 1 "LIPO_CHARGER" V 7600 5200 60  0000 C CNN
+F 2 "~" H 7900 5500 60  0000 C CNN
+F 3 "~" H 7900 5500 60  0000 C CNN
+	1    7900 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 57260EC7
+P 5300 2150
+F 0 "D1" H 5300 2250 50  0000 C CNN
+F 1 "LED" H 5300 2050 50  0000 C CNN
+F 2 "~" H 5300 2150 60  0000 C CNN
+F 3 "~" H 5300 2150 60  0000 C CNN
+	1    5300 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 57260ED6
+P 8050 3600
+F 0 "SW2" H 8200 3710 50  0000 C CNN
+F 1 "SW_PUSH" H 8050 3520 50  0000 C CNN
+F 2 "~" H 8050 3600 60  0000 C CNN
+F 3 "~" H 8050 3600 60  0000 C CNN
+	1    8050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2800 7600 2800
+Wire Wire Line
+	7600 2800 7600 3800
+Wire Wire Line
+	5000 3800 9300 3800
+Wire Wire Line
+	5450 3200 6300 3200
+Wire Wire Line
+	5300 1950 8350 1950
+Wire Wire Line
+	6000 1950 6000 2700
+Wire Wire Line
+	5600 2700 6300 2700
+Wire Wire Line
+	6300 3600 6000 3600
+Wire Wire Line
+	5600 3600 5600 2700
+Connection ~ 6000 2700
+Wire Wire Line
+	7400 3600 7750 3600
+Wire Wire Line
+	8350 1950 8350 3600
+Connection ~ 6000 1950
+$Comp
+L SWITCH_INV SW1
+U 1 1 5726494E
+P 8750 6200
+F 0 "SW1" H 8550 6350 50  0000 C CNN
+F 1 "SWITCH_INV" H 8600 6050 50  0000 C CNN
+F 2 "~" H 8750 6200 60  0000 C CNN
+F 3 "~" H 8750 6200 60  0000 C CNN
+	1    8750 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5450 8150 5450
+Wire Wire Line
+	8150 5450 8150 5400
+Wire Wire Line
+	8000 5550 8150 5550
+Wire Wire Line
+	8150 5550 8150 5600
+Wire Wire Line
+	8950 5500 9300 5500
+Connection ~ 7600 3800
+Wire Wire Line
+	5600 3400 5450 3400
+Wire Wire Line
+	5450 3400 5450 5650
+Wire Wire Line
+	5450 5650 7150 5650
+Connection ~ 5600 3400
+Wire Wire Line
+	8950 5300 8950 2100
+Wire Wire Line
+	8950 2100 6150 2100
+Wire Wire Line
+	6150 2100 6150 2700
+Connection ~ 6150 2700
+$Comp
+L DIODE D3
+U 1 1 573756C8
+P 9300 4550
+F 0 "D3" H 9300 4650 40  0000 C CNN
+F 1 "DIODE" H 9300 4450 40  0000 C CNN
+F 2 "~" H 9300 4550 60  0000 C CNN
+F 3 "~" H 9300 4550 60  0000 C CNN
+	1    9300 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9300 5500 9300 4750
+Wire Wire Line
+	9300 3800 9300 4350
+$Comp
+L PZT2222A Q1
+U 1 1 5738BE20
+P 5200 2900
+F 0 "Q1" H 5200 2752 40  0000 R CNN
+F 1 "PZT2222A" H 5200 3050 40  0000 R CNN
+F 2 "SOT223" H 5000 3002 29  0000 C CNN
+F 3 "" H 5200 2900 60  0000 C CNN
+	1    5200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3800 5000 2900
+Wire Wire Line
+	5450 3200 5450 2700
+Wire Wire Line
+	5450 2700 5300 2700
+Wire Wire Line
+	5300 3100 4700 3100
+Wire Wire Line
+	4700 3100 4700 2350
+Wire Wire Line
+	4700 2350 5300 2350
+Connection ~ 7150 3800
+$Comp
+L BATTERY_CUSTOM U4
+U 1 1 5738C5C2
+P 9950 6150
+F 0 "U4" H 9950 5900 60  0000 C CNN
+F 1 "BATTERY_CUSTOM" H 9950 6550 60  0000 C CNN
+F 2 "~" H 9950 6450 60  0000 C CNN
+F 3 "~" H 9950 6450 60  0000 C CNN
+	1    9950 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8050 5550 8050 6450
+Connection ~ 8050 5550
+Wire Wire Line
+	8100 6200 8250 6200
+Wire Wire Line
+	9250 6100 9600 6100
+Wire Wire Line
+	8050 6450 9600 6450
+Wire Wire Line
+	9600 6450 9600 6200
+Wire Wire Line
+	7150 3800 7150 5350
+Wire Wire Line
+	8100 6200 8100 5400
+Wire Wire Line
+	8100 5400 8150 5400
+$EndSCHEMATC

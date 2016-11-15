@@ -1,0 +1,356 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DasBlinkinput
+LIBS:CurrentSinkOrSwim
+LIBS:Das Blinkinput-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5050 850  1450 1200
+U 5552CD55
+F0 "Channel1Photodetect" 60
+F1 "Channel1Photodetect.sch" 60
+F2 "REF_OUT" I L 5050 1700 60 
+F3 "PD2" I R 6500 1400 60 
+$EndSheet
+$Sheet
+S 5100 2350 1400 1200
+U 5552DDC5
+F0 "Channel2Photodetect" 60
+F1 "Channel2Photodetect.sch" 60
+F2 "REF_IN" I L 5100 3300 60 
+F3 "PD3" I R 6500 2950 60 
+$EndSheet
+$Sheet
+S 5100 5300 1400 1200
+U 5552DDD1
+F0 "Channel4Photodetect" 60
+F1 "Channel4Photodetect.sch" 60
+F2 "REF_IN" I L 5100 6200 60 
+F3 "PD4" I R 6500 5900 60 
+$EndSheet
+$Sheet
+S 5150 3800 1450 1150
+U 5552DDCE
+F0 "Channel3Photodetect" 60
+F1 "Channel3Photodetect.sch" 60
+F2 "REF_IN" I L 5150 4750 60 
+F3 "PD5" I R 6600 4400 60 
+$EndSheet
+$Comp
+L CONN_01X05 P105
+U 1 1 55562432
+P 8250 1600
+F 0 "P105" H 8250 1900 50  0000 C CNN
+F 1 "CONN_01X05" V 8350 1600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 8250 1600 60  0001 C CNN
+F 3 "" H 8250 1600 60  0000 C CNN
+	1    8250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5556319E
+P 7850 2450
+F 0 "#PWR01" H 7850 2200 50  0001 C CNN
+F 1 "GND" H 7850 2300 50  0000 C CNN
+F 2 "" H 7850 2450 60  0000 C CNN
+F 3 "" H 7850 2450 60  0000 C CNN
+	1    7850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P101
+U 1 1 55563E64
+P 750 1650
+F 0 "P101" H 750 1800 50  0000 C CNN
+F 1 "CONN_01X02" V 850 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 750 1650 60  0001 C CNN
+F 3 "" H 750 1650 60  0000 C CNN
+	1    750  1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 55564325
+P 1100 1900
+F 0 "#PWR02" H 1100 1650 50  0001 C CNN
+F 1 "GND" H 1100 1750 50  0000 C CNN
+F 2 "" H 1100 1900 60  0000 C CNN
+F 3 "" H 1100 1900 60  0000 C CNN
+	1    1100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LP2980IM5-3.0/NOPB U101
+U 1 1 55564A58
+P 2700 1900
+F 0 "U101" H 2900 1450 60  0000 C CNN
+F 1 "LP2980IM5-3.0" H 2700 2350 60  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5" H 2700 1900 60  0001 C CNN
+F 3 "" H 2700 1900 60  0000 C CNN
+F 4 "LP2980IM5-3.0/NOPB" H 2700 1900 60  0001 C CNN "MPN"
+F 5 "http://parts.io/detail/12193012/LP2980IM5-3.0%2FNOPB" H 2700 1900 60  0001 C CNN "Link"
+	1    2700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C101
+U 1 1 555651D9
+P 1350 1950
+F 0 "C101" H 1375 2050 50  0000 L CNN
+F 1 "1U" H 1375 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1388 1800 30  0001 C CNN
+F 3 "" H 1350 1950 60  0000 C CNN
+	1    1350 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C102
+U 1 1 55565240
+P 3700 2050
+F 0 "C102" H 3725 2150 50  0000 L CNN
+F 1 "1U" H 3725 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3738 1900 30  0001 C CNN
+F 3 "" H 3700 2050 60  0000 C CNN
+	1    3700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R101
+U 1 1 55566A0E
+P 1650 2300
+F 0 "R101" V 1730 2300 50  0000 C CNN
+F 1 "0" V 1650 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 2300 30  0001 C CNN
+F 3 "" H 1650 2300 30  0000 C CNN
+	1    1650 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 1600 2    60   Input ~ 0
+3V
+$Comp
+L R R102
+U 1 1 5556A99F
+P 2200 5150
+F 0 "R102" V 2280 5150 50  0000 C CNN
+F 1 "10K" V 2200 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2130 5150 30  0001 C CNN
+F 3 "" H 2200 5150 30  0000 C CNN
+	1    2200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R103
+U 1 1 5556AA2C
+P 2200 5700
+F 0 "R103" V 2280 5700 50  0000 C CNN
+F 1 "10K" V 2200 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2130 5700 30  0001 C CNN
+F 3 "" H 2200 5700 30  0000 C CNN
+	1    2200 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 4700 0    60   Input ~ 0
+3V
+$Comp
+L GND #PWR03
+U 1 1 5556AB87
+P 2450 2850
+F 0 "#PWR03" H 2450 2600 50  0001 C CNN
+F 1 "GND" H 2450 2700 50  0000 C CNN
+F 2 "" H 2450 2850 60  0000 C CNN
+F 3 "" H 2450 2850 60  0000 C CNN
+	1    2450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5556B658
+P 2200 6300
+F 0 "#PWR04" H 2200 6050 50  0001 C CNN
+F 1 "GND" H 2200 6150 50  0000 C CNN
+F 2 "" H 2200 6300 60  0000 C CNN
+F 3 "" H 2200 6300 60  0000 C CNN
+	1    2200 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 5400 2    60   Input ~ 0
+VGND
+$Comp
+L CONN_01X01 P103
+U 1 1 55563D09
+P 3600 1050
+F 0 "P103" H 3600 1150 50  0000 C CNN
+F 1 "CONN_01X01" V 3700 1050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 3600 1050 60  0001 C CNN
+F 3 "" H 3600 1050 60  0000 C CNN
+	1    3600 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P102
+U 1 1 555640A4
+P 2700 4850
+F 0 "P102" H 2700 4950 50  0000 C CNN
+F 1 "CONN_01X01" V 2800 4850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2700 4850 60  0001 C CNN
+F 3 "" H 2700 4850 60  0000 C CNN
+	1    2700 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P104
+U 1 1 5556454C
+P 3650 3150
+F 0 "P104" H 3650 3250 50  0000 C CNN
+F 1 "CONN_01X01" V 3750 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 3650 3150 60  0001 C CNN
+F 3 "" H 3650 3150 60  0000 C CNN
+	1    3650 3150
+	0    1    1    0   
+$EndComp
+Connection ~ 3650 2800
+Wire Wire Line
+	3650 2950 3650 2800
+Connection ~ 2700 5400
+Wire Wire Line
+	2700 5050 2700 5400
+Connection ~ 3600 1600
+Wire Wire Line
+	3600 1250 3600 1600
+Connection ~ 2200 5400
+Wire Wire Line
+	2200 5400 2850 5400
+Connection ~ 2450 2800
+Wire Wire Line
+	2450 2850 2450 2800
+Wire Wire Line
+	2200 5850 2200 6300
+Wire Wire Line
+	2200 5300 2200 5550
+Wire Wire Line
+	2200 4700 2200 5000
+Wire Wire Line
+	1900 4700 2200 4700
+Connection ~ 3700 1600
+Connection ~ 1650 2800
+Wire Wire Line
+	1650 2450 1650 2800
+Wire Wire Line
+	1650 1800 1900 1800
+Wire Wire Line
+	1650 2150 1650 1800
+Wire Wire Line
+	3700 1600 3700 1900
+Wire Wire Line
+	3500 1600 4000 1600
+Connection ~ 2700 2800
+Wire Wire Line
+	3700 2800 3700 2200
+Wire Wire Line
+	2700 2800 2700 2600
+Wire Wire Line
+	1350 2800 3700 2800
+Wire Wire Line
+	1350 2100 1350 2800
+Connection ~ 1350 1600
+Wire Wire Line
+	1350 1600 1350 1800
+Wire Wire Line
+	950  1600 1900 1600
+Wire Wire Line
+	1100 1700 950  1700
+Wire Wire Line
+	1100 1900 1100 1700
+Wire Wire Line
+	7850 1800 7850 2450
+Wire Wire Line
+	8050 1800 7850 1800
+Wire Wire Line
+	7200 1700 8050 1700
+Wire Wire Line
+	7200 5900 7200 1700
+Wire Wire Line
+	6500 5900 7200 5900
+Wire Wire Line
+	7000 1600 8050 1600
+Wire Wire Line
+	7000 4400 7000 1600
+Wire Wire Line
+	6600 4400 7000 4400
+Wire Wire Line
+	6800 1500 8050 1500
+Wire Wire Line
+	6800 2950 6800 1500
+Wire Wire Line
+	6500 2950 6800 2950
+Wire Wire Line
+	8050 1400 6500 1400
+Connection ~ 4850 4750
+Wire Wire Line
+	4850 6200 5100 6200
+Connection ~ 4850 3300
+Wire Wire Line
+	4850 4750 5150 4750
+Wire Wire Line
+	4850 3300 5100 3300
+Wire Wire Line
+	4850 1700 4850 6200
+Wire Wire Line
+	5050 1700 4850 1700
+$Comp
+L CONN_01X01 P106
+U 1 1 5560D7BE
+P 4450 4400
+F 0 "P106" H 4450 4500 50  0000 C CNN
+F 1 "CONN_01X01" V 4550 4400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4450 4400 60  0001 C CNN
+F 3 "" H 4450 4400 60  0000 C CNN
+	1    4450 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 4400 4850 4400
+Connection ~ 4850 4400
+$EndSCHEMATC

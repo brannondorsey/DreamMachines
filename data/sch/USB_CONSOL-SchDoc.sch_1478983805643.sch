@@ -1,0 +1,445 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "USB_CONSOL-SchDoc"
+Date "18 10 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 3916 5057 0 70 ~
+100n
+Text Label 6270 3770 0 70 ~
+FDTI_TX
+Text Label 6270 3880 0 70 ~
+FDTI_RX
+Text Label 4070 3220 0 70 ~
+4u7
+Text Label 4070 3330 0 70 ~
+6.3
+Text Label 5720 3220 0 70 ~
+100n
+Text Label 5720 3330 0 70 ~
+16.0
+Text Label 7403 5244 0 70 ~
+20mA
+Text Label 7403 4804 0 70 ~
+20mA
+$Comp
+L GND #PWR?580695D3
+U 1 1 580695D3
+P 5720 2780
+F 0 "1V8_11" H 5720 2920 20  0000 C CNN
+F 1 "+1V8" H 5720 2890 30  0000 C CNN
+F 2 "" H 5720 2780 70  0000 C CNN
+F 3 "" H 5720 2780 70  0000 C CNN
+	1    5720 2780
+	1    0    0    -1  
+$EndComp
+Text Label 3410 4100 0 70 ~
+DIFFPAIR
+Text Label 3190 4320 0 70 ~
+USB_D_P
+Text Label 2860 4100 0 70 ~
+USB_D_N
+Text Label 3740 4320 0 70 ~
+DIFFPAIR
+Text Label 7073 4793 0 70 ~
+200
+Text Label 7073 5233 0 70 ~
+200
+$Comp
+L GND #PWR?580695D2
+U 1 1 580695D2
+P 1430 3990
+F 0 "GND" H 1430 3990 20  0000 C CNN
+F 1 "+GND" H 1430 3920 30  0000 C CNN
+F 2 "" H 1430 3990 70  0000 C CNN
+F 3 "" H 1430 3990 70  0000 C CNN
+	1    1430 3990
+	1    0    0    -1  
+$EndComp
+Text Label 6820 1680 0 70 ~
+FDTI_TX
+Text Label 6820 1790 0 70 ~
+FDTI_RX
+Text Label 1980 3660 0 70 ~
+2A
+$Comp
+L GND #PWR?580695D1
+U 1 1 580695D1
+P 660 3440
+F 0 "GDNSIG_33" H 660 3580 20  0000 C CNN
+F 1 "+GDNSIG" H 660 3550 30  0000 C CNN
+F 2 "" H 660 3440 70  0000 C CNN
+F 3 "" H 660 3440 70  0000 C CNN
+	1    660 3440
+	1    0    0    -1  
+$EndComp
+Text Label 957 3286 0 70 ~
+50.0
+Text Label 957 3396 0 70 ~
+10n
+$Comp
+L GND #PWR?580695D0
+U 1 1 580695D0
+P 3850 5200
+F 0 "GDNSIG_34" H 3850 5340 20  0000 C CNN
+F 1 "+GDNSIG" H 3850 5310 30  0000 C CNN
+F 2 "" H 3850 5200 70  0000 C CNN
+F 3 "" H 3850 5200 70  0000 C CNN
+	1    3850 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695CF
+U 1 1 580695CF
+P 770 4320
+F 0 "GDNSIG_35" H 770 4460 20  0000 C CNN
+F 1 "+GDNSIG" H 770 4430 30  0000 C CNN
+F 2 "" H 770 4320 70  0000 C CNN
+F 3 "" H 770 4320 70  0000 C CNN
+	1    770 4320
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695CE
+U 1 1 580695CE
+P 5390 6080
+F 0 "GDNSIG_36" H 5390 6220 20  0000 C CNN
+F 1 "+GDNSIG" H 5390 6190 30  0000 C CNN
+F 2 "" H 5390 6080 70  0000 C CNN
+F 3 "" H 5390 6080 70  0000 C CNN
+	1    5390 6080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5390 6080 5390 5860
+Wire Wire Line
+	6820 3770 6270 3770
+Wire Wire Line
+	6820 3880 6270 3880
+Wire Wire Line
+	7260 4650 7370 4650
+Wire Wire Line
+	7260 5090 7370 5090
+Wire Wire Line
+	6600 4870 6270 4870
+Wire Wire Line
+	6600 5090 6600 4870
+Wire Wire Line
+	7040 5090 6600 5090
+Wire Wire Line
+	6600 4760 6270 4760
+Wire Wire Line
+	6600 4650 6600 4760
+Wire Wire Line
+	7040 4650 6600 4650
+Wire Wire Line
+	8250 4870 7920 4870
+Wire Wire Line
+	8250 4430 8250 4870
+Wire Wire Line
+	1430 3990 1430 4100
+Wire Wire Line
+	770 4210 770 4320
+Wire Wire Line
+	6710 1680 7480 1680
+Wire Wire Line
+	6710 1790 7480 1790
+Wire Wire Line
+	2420 4100 4290 4100
+Wire Wire Line
+	2420 4320 2420 4100
+Wire Wire Line
+	1430 4320 2420 4320
+Wire Wire Line
+	2860 4320 4290 4320
+Wire Wire Line
+	2860 4210 2860 4320
+Wire Wire Line
+	1430 4210 2860 4210
+Wire Wire Line
+	1760 4430 1430 4430
+Wire Wire Line
+	1760 3440 1760 4430
+Wire Wire Line
+	1980 3440 1760 3440
+Wire Wire Line
+	1760 3110 1760 3440
+Wire Wire Line
+	1100 3110 1760 3110
+Wire Wire Line
+	660 3110 660 3440
+Wire Wire Line
+	880 3110 660 3110
+Text Notes 1210 2670 0    72   ~ 12
+ADD OVERVOLT PROTECTION DIODE
+Wire Wire Line
+	4180 4760 3850 4760
+Wire Wire Line
+	3850 5200 3850 4980
+Wire Wire Line
+	4180 4760 4290 4760
+Wire Wire Line
+	4180 3770 4180 4760
+Wire Wire Line
+	4290 3770 4180 3770
+Wire Wire Line
+	5610 2780 5610 3000
+Wire Wire Line
+	5610 3330 5610 3220
+$Comp
+L GND #PWR?580695CD
+U 1 1 580695CD
+P 5610 3330
+F 0 "GDNSIG_37" H 5610 3470 20  0000 C CNN
+F 1 "+GDNSIG" H 5610 3440 30  0000 C CNN
+F 2 "" H 5610 3330 70  0000 C CNN
+F 3 "" H 5610 3330 70  0000 C CNN
+	1    5610 3330
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695CC
+U 1 1 580695CC
+P 3960 3330
+F 0 "GDNSIG_38" H 3960 3470 20  0000 C CNN
+F 1 "+GDNSIG" H 3960 3440 30  0000 C CNN
+F 2 "" H 3960 3330 70  0000 C CNN
+F 3 "" H 3960 3330 70  0000 C CNN
+	1    3960 3330
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3960 3220 3960 3330
+Wire Wire Line
+	3960 2780 3960 3000
+Wire Wire Line
+	3960 2340 3960 2780
+$Comp
+L GND #PWR?580695CB
+U 1 1 580695CB
+P 3960 2340
+F 0 "5VBUS" H 3960 2480 20  0000 C CNN
+F 1 "+5VBUS" H 3960 2450 30  0000 C CNN
+F 2 "" H 3960 2340 70  0000 C CNN
+F 3 "" H 3960 2340 70  0000 C CNN
+	1    3960 2340
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?580695CA
+U 1 1 580695CA
+P 8250 4430
+F 0 "1V8_12" H 8250 4570 20  0000 C CNN
+F 1 "+1V8" H 8250 4540 30  0000 C CNN
+F 2 "" H 8250 4430 70  0000 C CNN
+F 3 "" H 8250 4430 70  0000 C CNN
+	1    8250 4430
+	1    0    0    -1  
+$EndComp
+Text Notes 6710 5420 0    60   ~ 0
+CHANGE VALUE OF RESISTORS
+Wire Wire Line
+	1650 1240 1100 1240
+$Comp
+L GND #PWR?580695C9
+U 1 1 580695C9
+P 1650 1240
+F 0 "GDNSIG_39" H 1650 1380 20  0000 C CNN
+F 1 "+GDNSIG" H 1650 1350 30  0000 C CNN
+F 2 "" H 1650 1240 70  0000 C CNN
+F 3 "" H 1650 1240 70  0000 C CNN
+	1    1650 1240
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1760 910 1100 910
+$Comp
+L GND #PWR?580695C8
+U 1 1 580695C8
+P 1760 910
+F 0 "1V8_13" H 1760 1050 20  0000 C CNN
+F 1 "+1V8" H 1760 1020 30  0000 C CNN
+F 2 "" H 1760 910 70  0000 C CNN
+F 3 "" H 1760 910 70  0000 C CNN
+	1    1760 910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8030 1020 8690 1020
+$Comp
+L GND #PWR?580695C7
+U 1 1 580695C7
+P 8030 1020
+F 0 "5VBUS_2" H 8030 1160 20  0000 C CNN
+F 1 "+5VBUS" H 8030 1130 30  0000 C CNN
+F 2 "" H 8030 1020 70  0000 C CNN
+F 3 "" H 8030 1020 70  0000 C CNN
+	1    8030 1020
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3410 3440 2200 3440
+Wire Wire Line
+	3410 2780 3410 3440
+Wire Wire Line
+	3960 2780 3410 2780
+Wire Wire Line
+	5170 2780 3960 2780
+Wire Wire Line
+	5170 3440 5170 2780
+Wire Wire Line
+	4290 5860 4290 5530
+Wire Wire Line
+	5060 5860 4290 5860
+Wire Wire Line
+	5280 5860 5060 5860
+Wire Wire Line
+	5390 5860 5280 5860
+Wire Wire Line
+	5500 5860 5390 5860
+Wire Wire Line
+	5610 2780 5720 2780
+Wire Wire Line
+	5390 2780 5610 2780
+Wire Wire Line
+	5390 3440 5390 2780
+Wire Wire Line
+	7920 4650 7590 4650
+Wire Wire Line
+	7920 4870 7920 4650
+Wire Wire Line
+	7920 5090 7920 4870
+Wire Wire Line
+	7590 5090 7920 5090
+Connection ~ 770 4320
+Connection ~ 1430 3990
+Connection ~ 1760 3440
+Connection ~ 3960 2780
+Connection ~ 4180 4760
+Connection ~ 5060 5860
+Connection ~ 5280 5860
+Connection ~ 5390 5860
+Connection ~ 5610 2780
+Connection ~ 7920 4870
+$Comp
+L FT232RL-Tube U5
+U 1 1 580695C6
+F 0 "U5" H 4400 3880 60  0000 L BNN
+F 1 "FT232RL-Tube" H 4400 3770 60  0000 L BNN
+F 2 "" H 4400 3770 60  0000 C CNN
+F 3 "" H 4400 3770 60  0000 C CNN
+	1    4510 3660
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_inductor L?_4
+U 1 1 580695C5
+F 0 "L?_4" H 1980 3330 60  0000 L BNN
+	1    1980 3440
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_54
+U 1 1 580695C4
+F 0 "C?_54" V 946 3033 60  0000 R TNN
+	1    880 3110
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_cap C18
+U 1 1 580695C3
+F 0 "C18" H 3784 4947 60  0000 R TNN
+	1    3850 4980
+	-1   0    0    1
+$EndComp
+$Comp
+L __template_cap C20
+U 1 1 580695C2
+F 0 "C20" H 4070 2890 60  0000 L BNN
+	1    3960 3000
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C19
+U 1 1 580695C1
+F 0 "C19" H 5720 2890 60  0000 L BNN
+	1    5610 3000
+	1    0    0    -1
+$EndComp
+$Comp
+L LED_LY974 D6
+U 1 1 580695C0
+F 0 "D6" V 7601 5167 60  0000 R TNN
+	1    7480 5090
+	0    -1   -1   0
+$EndComp
+$Comp
+L LED_LY974 D5
+U 1 1 580695BF
+F 0 "D5" V 7601 4727 60  0000 R TNN
+	1    7480 4650
+	0    -1   -1   0
+$EndComp
+$Comp
+L __template_resistor R13
+U 1 1 580695BE
+F 0 "R13" H 7073 4683 60  0000 L BNN
+	1    7040 4650
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_resistor R14
+U 1 1 580695BD
+F 0 "R14" H 7073 5123 60  0000 L BNN
+	1    7040 5090
+	1    0    0    -1
+$EndComp
+$Comp
+L CONN_USB_MINI_B_WE651005136421 J6
+U 1 1 580695BC
+F 0 "J6" H 979 5211 60  0000 L BNN
+F 1 "732-2735-ND" H 979 4419 60  0000 L BNN
+F 2 "" H 979 4419 60  0000 C CNN
+F 3 "" H 979 4419 60  0000 C CNN
+	1    990 4540
+	1    0    0    -1
+$EndComp
+$EndSCHEMATC

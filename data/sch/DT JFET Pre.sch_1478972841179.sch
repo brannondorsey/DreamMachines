@@ -1,0 +1,416 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:AudioLibSymbols
+LIBS:OnHand-Components-Sym
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "DT JFET Pre"
+Date "9/13/2016"
+Rev "0.1a"
+Comp "GhostPCB"
+Comment1 "Drawn By: Adam Vadala-Roth"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RC2012F222CS R?
+U 1 1 57D88D70
+P 5900 4200
+F 0 "R?" V 5794 4288 60  0000 L CNN
+F 1 "RC2012F222CS" V 5900 4288 60  0000 L CNN
+F 2 "AudioLibFootprints:R0805" H 5500 4450 60  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 5600 4650 60  0001 C CNN
+F 4 "0.00266 @ 5000" H 7450 6150 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 5800 4750 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 5900 4850 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 6000 4950 60  0001 C CNN "Designer"
+F 8 "0.55mm" H 6100 5050 60  0001 C CNN "Height"
+F 9 "Yes" H 6200 5150 60  0001 C CNN "RHoS?"
+F 10 "Samsung Electro-Mechanics America, Inc." H 6300 5250 60  0001 C CNN "MFR"
+F 11 "RC2012F222CS" H 6400 5350 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 6500 5450 60  0001 C CNN "Mounting"
+F 13 "2" H 6600 5550 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 6700 5650 60  0001 C CNN "Status"
+F 15 "1%" H 6800 5750 60  0001 C CNN "Tolerance"
+F 16 "0805 Resistor" H 6900 5850 60  0001 C CNN "Type"
+F 17 "N/A" H 7000 5950 60  0001 C CNN "Voltage"
+F 18 "1/8" H 7100 6050 60  0001 C CNN "Wattage"
+F 19 "2.2K" V 6006 4288 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 2.2K OHM 1% 1/8W 0805" H 7300 6250 60  0001 C CNN "Description"
+	1    5900 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L 2N5457 Q?
+U 1 1 57D88E41
+P 5900 3700
+F 0 "Q?" H 5941 3816 60  0000 L CNN
+F 1 "2N5457" H 6125 4075 60  0001 C CNN
+F 2 "AudioLibFootprints:2N5457" H 5150 3750 60  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N5457-5459.PDF" H 5250 3850 60  0001 C CNN
+F 4 "1.05300 @ 1000" H 5350 3950 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 5450 4050 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 5550 4150 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 5650 4250 60  0001 C CNN "Designer"
+F 8 "6mm" H 5750 4350 60  0001 C CNN "Height"
+F 9 "Yes" H 5850 4450 60  0001 C CNN "RHoS?"
+F 10 "Central Semiconductor Corp" H 5950 4550 60  0001 C CNN "MFR"
+F 11 "2N5457" H 6050 4650 60  0001 C CNN "MFR#"
+F 12 "Through Hole" H 6150 4750 60  0001 C CNN "Mounting"
+F 13 "3" H 6250 4850 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 6350 4950 60  0001 C CNN "Status"
+F 15 "N/A" H 6450 5050 60  0001 C CNN "Tolerance"
+F 16 "JFET" H 6550 5150 60  0001 C CNN "Type"
+F 17 "25V" H 6650 5250 60  0001 C CNN "Voltage"
+F 18 "N/A" H 7200 5250 60  0001 C CNN "Wattage"
+F 19 "2N5457" H 5941 3710 60  0000 L CNN "Componen-Value"
+F 20 "JFET N-Channel 25V 1mA @ 15V 310mW Through Hole TO-92" H 7400 5450 60  0001 C CNN "Description"
+	1    5900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L RC2012F305CS R?
+U 1 1 57D88F2E
+P 4950 4200
+F 0 "R?" V 4844 4288 60  0000 L CNN
+F 1 "RC2012F305CS" V 4950 4288 60  0000 L CNN
+F 2 "AudioLibFootprints:R0805" H 4550 4450 60  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 4650 4650 60  0001 C CNN
+F 4 "0.00266 @ 5000" H 6500 6150 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 4850 4750 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 4950 4850 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 5050 4950 60  0001 C CNN "Designer"
+F 8 "0.55mm" H 5150 5050 60  0001 C CNN "Height"
+F 9 "Yes" H 5250 5150 60  0001 C CNN "RHoS?"
+F 10 "Samsung Electro-Mechanics America, Inc." H 5350 5250 60  0001 C CNN "MFR"
+F 11 "RC2012F305CS" H 5450 5350 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 5550 5450 60  0001 C CNN "Mounting"
+F 13 "2" H 5650 5550 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 5750 5650 60  0001 C CNN "Status"
+F 15 "1%" H 5850 5750 60  0001 C CNN "Tolerance"
+F 16 "0805 Resistor" H 5950 5850 60  0001 C CNN "Type"
+F 17 "N/A" H 6050 5950 60  0001 C CNN "Voltage"
+F 18 "1/8" H 6150 6050 60  0001 C CNN "Wattage"
+F 19 "3M" V 5056 4288 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 3M OHM 1% 1/8W 0805" H 6350 6250 60  0001 C CNN "Description"
+	1    4950 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L RC2012F513CS R?
+U 1 1 57D8902F
+P 6850 4200
+F 0 "R?" V 6744 4288 60  0000 L CNN
+F 1 "RC2012F513CS" V 6850 4288 60  0000 L CNN
+F 2 "AudioLibFootprints:R0805" H 6450 4450 60  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 6550 4650 60  0001 C CNN
+F 4 "0.00266 @ 5000" H 8400 6150 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 6750 4750 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 6850 4850 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 6950 4950 60  0001 C CNN "Designer"
+F 8 "0.55mm" H 7050 5050 60  0001 C CNN "Height"
+F 9 "Yes" H 7150 5150 60  0001 C CNN "RHoS?"
+F 10 "Samsung Electro-Mechanics America, Inc." H 7250 5250 60  0001 C CNN "MFR"
+F 11 "RC2012F513CS" H 7350 5350 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 7450 5450 60  0001 C CNN "Mounting"
+F 13 "2" H 7550 5550 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 7650 5650 60  0001 C CNN "Status"
+F 15 "1%" H 7750 5750 60  0001 C CNN "Tolerance"
+F 16 "0805 Resistor" H 7850 5850 60  0001 C CNN "Type"
+F 17 "N/A" H 7950 5950 60  0001 C CNN "Voltage"
+F 18 "1/8" H 8050 6050 60  0001 C CNN "Wattage"
+F 19 "51K" V 6956 4288 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 51K OHM 1% 1/8W 0805" H 8250 6250 60  0001 C CNN "Description"
+	1    6850 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L RC2012F682CS R?
+U 1 1 57D8911A
+P 5900 2450
+F 0 "R?" V 5794 2538 60  0000 L CNN
+F 1 "RC2012F682CS" V 5900 2538 60  0000 L CNN
+F 2 "AudioLibFootprints:R0805" H 5500 2700 60  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 5600 2900 60  0001 C CNN
+F 4 "0.00209 @ 5000" H 7450 4400 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 5800 3000 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 5900 3100 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 6000 3200 60  0001 C CNN "Designer"
+F 8 "0.55mm" H 6100 3300 60  0001 C CNN "Height"
+F 9 "Yes" H 6200 3400 60  0001 C CNN "RHoS?"
+F 10 "Samsung Electro-Mechanics America, Inc." H 6300 3500 60  0001 C CNN "MFR"
+F 11 "RC2012F682CS" H 6400 3600 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 6500 3700 60  0001 C CNN "Mounting"
+F 13 "2" H 6600 3800 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 6700 3900 60  0001 C CNN "Status"
+F 15 "1%" H 6800 4000 60  0001 C CNN "Tolerance"
+F 16 "0805 Resistor" H 6900 4100 60  0001 C CNN "Type"
+F 17 "N/A" H 7000 4200 60  0001 C CNN "Voltage"
+F 18 "1/8" H 7100 4300 60  0001 C CNN "Wattage"
+F 19 "6.8K" V 6006 2538 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 6.8K OHM 1% 1/8W 0805" H 7300 4500 60  0001 C CNN "Description"
+	1    5900 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L UMW1C100MDD1TP C?
+U 1 1 57D891F1
+P 2750 5075
+F 0 "C?" V 2644 5203 60  0000 L CNN
+F 1 "UMW1C100MDD1TP" V 2750 5203 60  0000 L CNN
+F 2 "AudioLibFootprints:UMW1V4R7MDD1TP" H 2000 5125 60  0001 C CNN
+F 3 "http://nichicon-us.com/english/products/pdfs/e-umw.pdf" H 2100 5225 60  0001 C CNN
+F 4 "0.06901 @ 4000" H 2200 5325 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 2300 5425 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 2400 5525 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 2500 5625 60  0001 C CNN "Designer"
+F 8 "6mm" H 2600 5725 60  0001 C CNN "Height"
+F 9 "Yes" H 2700 5825 60  0001 C CNN "RHoS?"
+F 10 "Nichicon" H 2800 5925 60  0001 C CNN "MFR"
+F 11 "UMW1C100MDD1TP" H 2900 6025 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3000 6125 60  0001 C CNN "Mounting"
+F 13 "2" H 3100 6225 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 3200 6325 60  0001 C CNN "Status"
+F 15 "20%" H 3300 6425 60  0001 C CNN "Tolerance"
+F 16 "Audio Capacitor" H 3400 6525 60  0001 C CNN "Type"
+F 17 "16V" H 3500 6625 60  0001 C CNN "Voltage"
+F 18 "N/A" H 4050 6625 60  0001 C CNN "Wattage"
+F 19 "10uF" V 2856 5203 60  0000 L CNN "Componen-Value"
+F 20 "10µF 16V Aluminum Capacitors Radial, Can 1000 Hrs @ 85°C" H 4250 6825 60  0001 C CNN "Description"
+	1    2750 5075
+	0    1    1    0   
+$EndComp
+$Comp
+L UMW1V4R7MDD1TP C?
+U 1 1 57D892CA
+P 6625 3375
+F 0 "C?" H 6550 3725 60  0000 C CNN
+F 1 "UMW1V4R7MDD1TP" H 6925 3650 60  0000 C CNN
+F 2 "AudioLibFootprints:UMW1V4R7MDD1TP" H 5875 3425 60  0001 C CNN
+F 3 "http://nichicon-us.com/english/products/pdfs/e-umw.pdf" H 5975 3525 60  0001 C CNN
+F 4 "0.06901 @ 4000" H 6075 3625 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 6175 3725 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 6275 3825 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 6375 3925 60  0001 C CNN "Designer"
+F 8 "6mm" H 6475 4025 60  0001 C CNN "Height"
+F 9 "Yes" H 6575 4125 60  0001 C CNN "RHoS?"
+F 10 "Nichicon" H 6675 4225 60  0001 C CNN "MFR"
+F 11 "UMW1V4R7MDD1TP" H 6775 4325 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 6875 4425 60  0001 C CNN "Mounting"
+F 13 "2" H 6975 4525 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 7075 4625 60  0001 C CNN "Status"
+F 15 "20%" H 7175 4725 60  0001 C CNN "Tolerance"
+F 16 "Audio Capacitor" H 7275 4825 60  0001 C CNN "Type"
+F 17 "16V" H 7375 4925 60  0001 C CNN "Voltage"
+F 18 "N/A" H 7925 4925 60  0001 C CNN "Wattage"
+F 19 "4.7uF" H 6625 3556 60  0000 C CNN "Componen-Value"
+F 20 "4.7µF 35V Aluminum Capacitors Radial, Can 1000 Hrs @ 85°C" H 8125 5125 60  0001 C CNN "Description"
+	1    6625 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 57D893AD
+P 8750 3425
+F 0 "P?" H 8828 3466 50  0000 L CNN
+F 1 "CONN_01X02" H 8828 3375 50  0000 L CNN
+F 2 "" H 8750 3425 50  0000 C CNN
+F 3 "" H 8750 3425 50  0000 C CNN
+	1    8750 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2750 5900 3375
+Wire Wire Line
+	5900 3375 6400 3375
+Connection ~ 5900 3375
+Wire Wire Line
+	6850 3375 6850 3900
+Wire Wire Line
+	4950 4500 6850 4500
+Connection ~ 5900 4500
+Wire Wire Line
+	4950 3900 4950 3700
+Wire Wire Line
+	2575 3700 5575 3700
+$Comp
+L +9V #PWR?
+U 1 1 57D89E93
+P 5900 2150
+F 0 "#PWR?" H 5900 2000 50  0001 C CNN
+F 1 "+9V" H 5915 2323 50  0000 C CNN
+F 2 "" H 5900 2150 50  0000 C CNN
+F 3 "" H 5900 2150 50  0000 C CNN
+	1    5900 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3375 8550 3375
+Connection ~ 6850 3375
+$Comp
+L GND #PWR?
+U 1 1 57D8A193
+P 5900 4650
+F 0 "#PWR?" H 5900 4400 50  0001 C CNN
+F 1 "GND" H 5905 4477 50  0000 C CNN
+F 2 "" H 5900 4650 50  0000 C CNN
+F 3 "" H 5900 4650 50  0000 C CNN
+	1    5900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57D8A2F2
+P 8550 4650
+F 0 "#PWR?" H 8550 4400 50  0001 C CNN
+F 1 "GND" H 8555 4477 50  0000 C CNN
+F 2 "" H 8550 4650 50  0000 C CNN
+F 3 "" H 8550 4650 50  0000 C CNN
+	1    8550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4650 5900 4500
+Wire Wire Line
+	8550 4650 8550 3475
+Connection ~ 4950 3700
+$Comp
+L CONN_01X02 P?
+U 1 1 57D8ACDA
+P 2375 3750
+F 0 "P?" H 2453 3791 50  0000 L CNN
+F 1 "CONN_01X02" H 2453 3700 50  0000 L CNN
+F 2 "" H 2375 3750 50  0000 C CNN
+F 3 "" H 2375 3750 50  0000 C CNN
+	1    2375 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 57D8B0C4
+P 2375 4900
+F 0 "P?" H 2453 4941 50  0000 L CNN
+F 1 "CONN_01X02" H 2453 4850 50  0000 L CNN
+F 2 "" H 2375 4900 50  0000 C CNN
+F 3 "" H 2375 4900 50  0000 C CNN
+	1    2375 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 57D8B1B6
+P 2375 5250
+F 0 "P?" H 2453 5291 50  0000 L CNN
+F 1 "CONN_01X02" H 2453 5200 50  0000 L CNN
+F 2 "" H 2375 5250 50  0000 C CNN
+F 3 "" H 2375 5250 50  0000 C CNN
+	1    2375 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 4950 2575 5200
+Wire Wire Line
+	2575 4850 3850 4850
+$Comp
+L UMW1C100MDD1TP C?
+U 1 1 57D8B495
+P 3850 5075
+F 0 "C?" V 3744 5203 60  0000 L CNN
+F 1 "UMW1C100MDD1TP" V 3850 5203 60  0000 L CNN
+F 2 "AudioLibFootprints:UMW1V4R7MDD1TP" H 3100 5125 60  0001 C CNN
+F 3 "http://nichicon-us.com/english/products/pdfs/e-umw.pdf" H 3200 5225 60  0001 C CNN
+F 4 "0.06901 @ 4000" H 3300 5325 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 3400 5425 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 3500 5525 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 3600 5625 60  0001 C CNN "Designer"
+F 8 "6mm" H 3700 5725 60  0001 C CNN "Height"
+F 9 "Yes" H 3800 5825 60  0001 C CNN "RHoS?"
+F 10 "Nichicon" H 3900 5925 60  0001 C CNN "MFR"
+F 11 "UMW1C100MDD1TP" H 4000 6025 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 4100 6125 60  0001 C CNN "Mounting"
+F 13 "2" H 4200 6225 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 4300 6325 60  0001 C CNN "Status"
+F 15 "20%" H 4400 6425 60  0001 C CNN "Tolerance"
+F 16 "Audio Capacitor" H 4500 6525 60  0001 C CNN "Type"
+F 17 "16V" H 4600 6625 60  0001 C CNN "Voltage"
+F 18 "N/A" H 5150 6625 60  0001 C CNN "Wattage"
+F 19 "10uF" V 3956 5203 60  0000 L CNN "Componen-Value"
+F 20 "10µF 16V Aluminum Capacitors Radial, Can 1000 Hrs @ 85°C" H 5350 6825 60  0001 C CNN "Description"
+	1    3850 5075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2575 5300 3850 5300
+Connection ~ 2750 5300
+Connection ~ 2750 4850
+$Comp
+L GND #PWR?
+U 1 1 57D8B67E
+P 3225 5400
+F 0 "#PWR?" H 3225 5150 50  0001 C CNN
+F 1 "GND" H 3230 5227 50  0000 C CNN
+F 2 "" H 3225 5400 50  0000 C CNN
+F 3 "" H 3225 5400 50  0000 C CNN
+	1    3225 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 5400 3225 5300
+Connection ~ 3225 5300
+$Comp
+L +9V #PWR?
+U 1 1 57D8B94C
+P 3850 4850
+F 0 "#PWR?" H 3850 4700 50  0001 C CNN
+F 1 "+9V" H 3865 5023 50  0000 C CNN
+F 2 "" H 3850 4850 50  0000 C CNN
+F 3 "" H 3850 4850 50  0000 C CNN
+	1    3850 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57D8C9B3
+P 2575 4100
+F 0 "#PWR?" H 2575 3850 50  0001 C CNN
+F 1 "GND" H 2580 3927 50  0000 C CNN
+F 2 "" H 2575 4100 50  0000 C CNN
+F 3 "" H 2575 4100 50  0000 C CNN
+	1    2575 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 3800 2575 4100
+$EndSCHEMATC

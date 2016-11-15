@@ -1,0 +1,319 @@
+EESchema Schematic File Version 2
+LIBS:ej2
+LIBS:Ejercicio2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1700 2200 0    60   Input ~ 0
+TXD
+$Comp
+L Conn_Poncho2P_2x_20x2 XA1
+U 1 1 565DE7A8
+P 3350 1350
+F 0 "XA1" H 3650 1750 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 3700 -350 60  0000 C CNN
+F 2 "ej2:Conn_Poncho_Derecha" H 3350 1350 60  0001 C CNN
+F 3 "" H 3350 1350 60  0000 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+Text HLabel 1700 2850 0    60   Output ~ 0
+CTS
+$Comp
+L +3.3V #PWR05
+U 1 1 565DE8EF
+P 2550 750
+F 0 "#PWR05" H 2550 710 30  0001 C CNN
+F 1 "+3.3V" H 2550 860 30  0000 C CNN
+F 2 "" H 2550 750 60  0000 C CNN
+F 3 "" H 2550 750 60  0000 C CNN
+	1    2550 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 565DE90D
+P 4700 850
+F 0 "#PWR06" H 4700 940 20  0001 C CNN
+F 1 "+5V" H 4700 940 30  0000 C CNN
+F 2 "" H 4700 850 60  0000 C CNN
+F 3 "" H 4700 850 60  0000 C CNN
+	1    4700 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 565DEA10
+P 4900 3150
+F 0 "#PWR07" H 4900 3150 30  0001 C CNN
+F 1 "GND" H 4900 3080 30  0001 C CNN
+F 2 "" H 4900 3150 60  0000 C CNN
+F 3 "" H 4900 3150 60  0000 C CNN
+	1    4900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 565DEA26
+P 4900 1000
+F 0 "#FLG08" H 4900 1095 30  0001 C CNN
+F 1 "PWR_FLAG" H 4900 1180 30  0000 C CNN
+F 2 "" H 4900 1000 60  0000 C CNN
+F 3 "" H 4900 1000 60  0000 C CNN
+	1    4900 1000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4300 1250
+NoConn ~ 4300 1350
+NoConn ~ 4300 1450
+NoConn ~ 4300 1550
+NoConn ~ 4300 1650
+NoConn ~ 4300 1750
+NoConn ~ 4300 1850
+NoConn ~ 4300 2650
+NoConn ~ 4300 2750
+NoConn ~ 3100 2950
+NoConn ~ 3100 2650
+NoConn ~ 3100 2550
+NoConn ~ 3100 2050
+NoConn ~ 3100 1950
+NoConn ~ 3100 1850
+NoConn ~ 3100 1750
+NoConn ~ 3100 1650
+NoConn ~ 3100 1550
+NoConn ~ 3100 1450
+NoConn ~ 3100 1350
+NoConn ~ 3100 1250
+NoConn ~ 3100 1150
+$Comp
+L CONN_3 JP1
+U 1 1 565DECA4
+P 5950 2400
+F 0 "JP1" H 6000 2400 60  0000 C CNN
+F 1 "CONN_3" H 6050 1900 60  0000 C CNN
+F 2 "ej2:CON_PALETA_3" H 5950 2400 60  0001 C CNN
+F 3 "" H 5950 2400 60  0000 C CNN
+	1    5950 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 565DED4D
+P 6900 1850
+F 0 "R1" V 6980 1850 50  0000 C CNN
+F 1 "R" V 6900 1850 50  0000 C CNN
+F 2 "ej2:R_1206_HandSoldering" H 6900 1850 60  0001 C CNN
+F 3 "" H 6900 1850 60  0000 C CNN
+	1    6900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 565DEDAC
+P 6900 2550
+F 0 "R2" V 6980 2550 50  0000 C CNN
+F 1 "R" V 6900 2550 50  0000 C CNN
+F 2 "ej2:R_1206_HandSoldering" H 6900 2550 60  0001 C CNN
+F 3 "" H 6900 2550 60  0000 C CNN
+	1    6900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L AMIS42665TJAA1RG U1
+U 1 1 565DEE5F
+P 8050 2250
+F 0 "U1" H 7800 2750 60  0000 C CNN
+F 1 "AMIS42665TJAA1RG" H 8050 1850 60  0000 C CNN
+F 2 "ej2:SOIC-8" H 8050 2300 60  0001 C CNN
+F 3 "" H 8050 2300 60  0000 C CNN
+	1    8050 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 565DEEFB
+P 9400 1900
+F 0 "C1" H 9400 2000 40  0000 L CNN
+F 1 "C" H 9406 1815 40  0000 L CNN
+F 2 "ej2:C_1206_handSoldering" H 9438 1750 30  0001 C CNN
+F 3 "" H 9400 1900 60  0000 C CNN
+	1    9400 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 565DF009
+P 9800 2800
+F 0 "#PWR09" H 9800 2800 30  0001 C CNN
+F 1 "GND" H 9800 2730 30  0001 C CNN
+F 2 "" H 9800 2800 60  0000 C CNN
+F 3 "" H 9800 2800 60  0000 C CNN
+	1    9800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 565DF0A8
+P 8950 1850
+F 0 "#PWR010" H 8950 1940 20  0001 C CNN
+F 1 "+5V" H 8950 1940 30  0000 C CNN
+F 2 "" H 8950 1850 60  0000 C CNN
+F 3 "" H 8950 1850 60  0000 C CNN
+	1    8950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 565DF2B8
+P 6400 2650
+F 0 "#PWR011" H 6400 2650 30  0001 C CNN
+F 1 "GND" H 6400 2580 30  0001 C CNN
+F 2 "" H 6400 2650 60  0000 C CNN
+F 3 "" H 6400 2650 60  0000 C CNN
+	1    6400 2650
+	1    0    0    -1  
+$EndComp
+Text Label 2700 2450 2    60   ~ 0
+CAN_TX
+Wire Wire Line
+	3100 1050 2550 1050
+Wire Wire Line
+	2550 1050 2550 750 
+Wire Wire Line
+	4300 1050 4700 1050
+Wire Wire Line
+	4700 1050 4700 850 
+Wire Wire Line
+	4300 1150 4900 1150
+Wire Wire Line
+	4900 1000 4900 3150
+Wire Wire Line
+	4900 2950 4300 2950
+Connection ~ 4900 1150
+Connection ~ 4900 2950
+Wire Wire Line
+	4300 1950 4900 1950
+Connection ~ 4900 1950
+Wire Wire Line
+	4300 2050 4900 2050
+Connection ~ 4900 2050
+Wire Wire Line
+	4300 2150 4900 2150
+Connection ~ 4900 2150
+Wire Wire Line
+	4300 2250 4900 2250
+Connection ~ 4900 2250
+Wire Wire Line
+	4300 2350 4900 2350
+Connection ~ 4900 2350
+Wire Wire Line
+	4300 2450 4900 2450
+Connection ~ 4900 2450
+Wire Wire Line
+	4300 2550 4900 2550
+Connection ~ 4900 2550
+Wire Wire Line
+	4300 2850 4900 2850
+Connection ~ 4900 2850
+Wire Wire Line
+	3100 2150 1700 2150
+Wire Wire Line
+	1700 2150 1700 2200
+Wire Wire Line
+	3100 2250 1700 2250
+Wire Wire Line
+	1700 2250 1700 2350
+Wire Wire Line
+	3100 2850 1700 2850
+Wire Wire Line
+	7300 1550 6550 1550
+Wire Wire Line
+	6550 1550 6550 2050
+Wire Wire Line
+	6550 2050 6150 2050
+Wire Wire Line
+	6550 2150 6550 2950
+Wire Wire Line
+	6550 2950 7300 2950
+Wire Wire Line
+	6900 2100 6900 2300
+Connection ~ 6900 2250
+Wire Wire Line
+	6900 1600 6900 1550
+Connection ~ 6900 1550
+Wire Wire Line
+	6900 2800 6900 2950
+Connection ~ 6900 2950
+Wire Wire Line
+	6150 2150 6550 2150
+Wire Wire Line
+	6450 2250 6450 2500
+Wire Wire Line
+	6450 2500 6400 2500
+Wire Wire Line
+	6400 2500 6400 2650
+Wire Wire Line
+	6450 2250 6150 2250
+Wire Wire Line
+	7400 1900 7300 1900
+Wire Wire Line
+	7300 1900 7300 1550
+Wire Wire Line
+	7400 2200 6900 2200
+Wire Wire Line
+	6900 2200 6900 2250
+Wire Wire Line
+	7400 2500 7300 2500
+Wire Wire Line
+	7300 2500 7300 2950
+Wire Wire Line
+	8650 1900 9200 1900
+Wire Wire Line
+	8950 1850 8950 1900
+Connection ~ 8950 1900
+Wire Wire Line
+	9800 2800 9800 1900
+Wire Wire Line
+	9800 1900 9600 1900
+Wire Wire Line
+	8650 2500 9800 2500
+Connection ~ 9800 2500
+Wire Wire Line
+	8650 2050 9800 2050
+Connection ~ 9800 2050
+Wire Wire Line
+	2700 2450 3100 2450
+Text Label 2700 2350 2    60   ~ 0
+CAN_RX
+Wire Wire Line
+	3100 2350 2700 2350
+Text Label 9000 2200 0    60   ~ 0
+CAN_TX
+Text Label 9000 2350 0    60   ~ 0
+CAN_RX
+Wire Wire Line
+	9000 2200 8650 2200
+Wire Wire Line
+	9000 2350 8650 2350
+Wire Wire Line
+	3100 2750 1700 2750
+Text HLabel 1700 2350 0    60   Output ~ 0
+RXD
+Text HLabel 1700 2750 0    60   Input ~ 0
+RTS
+Text Label 6250 2050 0    60   ~ 0
+CAN_P
+Text Label 6250 2150 0    60   ~ 0
+CAN_N
+$EndSCHEMATC

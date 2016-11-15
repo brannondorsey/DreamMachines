@@ -1,0 +1,649 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nrf52-dk-shield_reva3-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "RuuviTag Tester"
+Date "2016-08-25"
+Rev "A3"
+Comp "Ruuvi Innovations Ltd. / Lauri Jämsä / lauri@ruuvi.com"
+Comment1 "License: http://creativecommons.org/licenses/by-sa/4.0/"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X06 P2
+U 1 1 56988830
+P 6000 5400
+F 0 "P2" H 6000 5750 50  0000 C CNN
+F 1 "CONN_01X06" V 6100 5400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 6000 5400 50  0001 C CNN
+F 3 "" H 6000 5400 50  0000 C CNN
+	1    6000 5400
+	0    -1   1    0   
+$EndComp
+$Comp
+L CONN_01X08 P3
+U 1 1 5698888B
+P 5900 3100
+F 0 "P3" H 5900 3550 50  0000 C CNN
+F 1 "CONN_01X08" V 6000 3100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 5900 3100 50  0001 C CNN
+F 3 "" H 5900 3100 50  0000 C CNN
+	1    5900 3100
+	0    1    -1   0   
+$EndComp
+$Comp
+L CONN_01X10 P4
+U 1 1 569888C5
+P 4900 3100
+F 0 "P4" H 4900 3650 50  0000 C CNN
+F 1 "CONN_01X10" V 5000 3100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10" H 4900 3100 50  0001 C CNN
+F 3 "" H 4900 3100 50  0000 C CNN
+	1    4900 3100
+	0    1    -1   0   
+$EndComp
+$Comp
+L CONN_01X08 P1
+U 1 1 5698890F
+P 5200 5400
+F 0 "P1" H 5200 5850 50  0000 C CNN
+F 1 "CONN_01X08" V 5300 5400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 5200 5400 50  0001 C CNN
+F 3 "" H 5200 5400 50  0000 C CNN
+	1    5200 5400
+	0    -1   1    0   
+$EndComp
+Wire Notes Line
+	3750 5300 3750 3200
+Wire Notes Line
+	6350 5200 6450 5100
+Wire Notes Line
+	6450 3800 6350 3700
+Wire Notes Line
+	6300 3200 6350 3250
+Wire Notes Line
+	6350 3250 6350 3700
+Wire Notes Line
+	6450 5100 6450 3800
+Wire Notes Line
+	6350 5200 6350 5300
+Wire Notes Line
+	6350 5300 3750 5300
+Wire Notes Line
+	3750 3200 6300 3200
+Text Notes 1450 7400 0    60   Italic 0
+When the external board is powered, the interface MCU will detect the supply voltage of the\nboard and program/debug the target chip on the external board instead of the on-board nRF52832.\n\nImportant: The voltage supported by external debugging/programming is 3.0 V.\n\nYou can also use P20 as a debug out connection to program shield mounted targets.\nFor the Debug out header (P19), the Interface MCU will detect the supply voltage on\nthe mounted shield and program/debug the shield target. If the Interface MCU detects target\npower on both P19 and P20, it will by default program/debug the target connected to P19.
+$Comp
+L CONN_01X08 P20
+U 1 1 569890BE
+P 4800 3500
+F 0 "P20" H 4800 3950 50  0000 C CNN
+F 1 "CONN_01X08" V 4800 2850 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08" H 4800 3500 50  0001 C CNN
+F 3 "" H 4800 3500 50  0000 C CNN
+	1    4800 3500
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4450 3300
+NoConn ~ 4550 3300
+NoConn ~ 4650 3300
+NoConn ~ 4850 3300
+NoConn ~ 4950 3300
+NoConn ~ 5050 3300
+NoConn ~ 5150 3300
+NoConn ~ 5250 3300
+NoConn ~ 5350 3300
+NoConn ~ 5550 3300
+NoConn ~ 5650 3300
+NoConn ~ 5750 3300
+NoConn ~ 5850 3300
+NoConn ~ 5950 3300
+NoConn ~ 6050 3300
+NoConn ~ 6150 3300
+NoConn ~ 6250 3300
+$Comp
+L GND #PWR3
+U 1 1 56989363
+P 5450 5200
+F 0 "#PWR3" H 5450 4950 50  0001 C CNN
+F 1 "GND" V 5450 5000 50  0000 C CNN
+F 2 "" H 5450 5200 50  0000 C CNN
+F 3 "" H 5450 5200 50  0000 C CNN
+	1    5450 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 56989380
+P 5350 5200
+F 0 "#PWR2" H 5350 4950 50  0001 C CNN
+F 1 "GND" V 5350 5000 50  0000 C CNN
+F 2 "" H 5350 5200 50  0000 C CNN
+F 3 "" H 5350 5200 50  0000 C CNN
+	1    5350 5200
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5250 5200
+NoConn ~ 5150 5200
+NoConn ~ 5050 5200
+NoConn ~ 5750 5200
+NoConn ~ 5850 5200
+NoConn ~ 5950 5200
+NoConn ~ 6050 5200
+NoConn ~ 6150 5200
+NoConn ~ 6250 5200
+Text Label 7400 3800 2    50   ~ 0
+SH_GND_DETECT
+Text Label 5150 3700 3    50   ~ 0
+SH_GND_DETECT
+Text Label 5050 3700 3    50   ~ 0
+SH_RESET
+Text Label 4950 3700 3    50   ~ 0
+SH_SWO
+Text Label 4850 3700 3    50   ~ 0
+SH_SWDCLK
+Text Label 4750 3700 3    50   ~ 0
+SH_SWDIO
+Text Label 4650 3700 3    50   ~ 0
+SH_VTG
+Text Label 4550 3700 3    50   ~ 0
+VIO
+Text Label 4450 3700 3    50   ~ 0
+VDD_nRF
+$Comp
+L GND #PWR5
+U 1 1 56989827
+P 7400 3900
+F 0 "#PWR5" H 7400 3650 50  0001 C CNN
+F 1 "GND" V 7400 3700 50  0000 C CNN
+F 2 "" H 7400 3900 50  0000 C CNN
+F 3 "" H 7400 3900 50  0000 C CNN
+	1    7400 3900
+	0    1    1    0   
+$EndComp
+Text Label 7400 3700 2    50   ~ 0
+SH_RESET
+Text Label 7400 3600 2    50   ~ 0
+SH_SWO
+Text Label 7400 3500 2    50   ~ 0
+SH_SWDCLK
+Text Label 7400 3400 2    50   ~ 0
+SH_SWDIO
+Text Notes 3950 1550 0    200  Italic 40
+RuuviTag Development Shield
+Text Notes 5500 1900 0    100  Italic 20
+(nRF52-DK Shield)
+Wire Notes Line
+	6400 3200 8400 3200
+Wire Notes Line
+	8400 5300 6450 5300
+$Comp
+L GND #PWR1
+U 1 1 56989F48
+P 4750 3300
+F 0 "#PWR1" H 4750 3050 50  0001 C CNN
+F 1 "GND" H 4600 3200 50  0000 C CNN
+F 2 "" H 4750 3300 50  0000 C CNN
+F 3 "" H 4750 3300 50  0000 C CNN
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4850 5200
+NoConn ~ 4950 5200
+NoConn ~ 5550 5200
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 5698A13A
+P 6650 7450
+F 0 "#FLG1" H 6650 7545 50  0001 C CNN
+F 1 "PWR_FLAG" H 6650 7630 50  0000 C CNN
+F 2 "" H 6650 7450 50  0000 C CNN
+F 3 "" H 6650 7450 50  0000 C CNN
+	1    6650 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5698A161
+P 6650 7450
+F 0 "#PWR4" H 6650 7200 50  0001 C CNN
+F 1 "GND" H 6650 7300 50  0000 C CNN
+F 2 "" H 6650 7450 50  0000 C CNN
+F 3 "" H 6650 7450 50  0000 C CNN
+	1    6650 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P101
+U 1 1 5698A685
+P 9650 6050
+F 0 "P101" H 9650 6150 50  0000 C CNN
+F 1 "POGO" V 9850 6050 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 9650 6050 50  0001 C CNN
+F 3 "" H 9650 6050 50  0000 C CNN
+	1    9650 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P102
+U 1 1 5698A6E1
+P 9950 6050
+F 0 "P102" H 9950 6150 50  0000 C CNN
+F 1 "POGO" V 10150 6050 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 9950 6050 50  0001 C CNN
+F 3 "" H 9950 6050 50  0000 C CNN
+	1    9950 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P103
+U 1 1 5698A70D
+P 10250 6050
+F 0 "P103" H 10250 6150 50  0000 C CNN
+F 1 "POGO" V 10450 6050 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 10250 6050 50  0001 C CNN
+F 3 "" H 10250 6050 50  0000 C CNN
+	1    10250 6050
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 9650 6250
+NoConn ~ 9950 6250
+NoConn ~ 10250 6250
+$Comp
+L CONN_01X01 P104
+U 1 1 5698AFA3
+P 9200 5450
+F 0 "P104" H 9200 5550 50  0000 C CNN
+F 1 "ALIGN" V 9400 5450 50  0000 C CNN
+F 2 "Tester:M2.5_PLATED_HOLE" H 9200 5450 50  0001 C CNN
+F 3 "" H 9200 5450 50  0000 C CNN
+	1    9200 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P105
+U 1 1 5698AFA9
+P 9500 5450
+F 0 "P105" H 9500 5550 50  0000 C CNN
+F 1 "ALIGN" V 9700 5450 50  0000 C CNN
+F 2 "Tester:M2.5_PLATED_HOLE" H 9500 5450 50  0001 C CNN
+F 3 "" H 9500 5450 50  0000 C CNN
+	1    9500 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P106
+U 1 1 5698AFAF
+P 9800 5450
+F 0 "P106" H 9800 5550 50  0000 C CNN
+F 1 "ALIGN" V 10000 5450 50  0000 C CNN
+F 2 "Tester:M2.5_PLATED_HOLE" H 9800 5450 50  0001 C CNN
+F 3 "" H 9800 5450 50  0000 C CNN
+	1    9800 5450
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 9200 5650
+NoConn ~ 9500 5650
+NoConn ~ 9800 5650
+Wire Wire Line
+	4650 3700 4650 4400
+Wire Wire Line
+	4650 4400 4550 4400
+Wire Wire Line
+	4550 4400 4550 3700
+Text Label 7400 3300 2    50   ~ 0
+VIO
+NoConn ~ 4450 3700
+$Comp
+L CONN_01X01 P202
+U 1 1 569927EE
+P 7600 3400
+F 0 "P202" H 8000 3400 50  0000 C CNN
+F 1 "POGO" H 7775 3400 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 3400 50  0001 C CNN
+F 3 "" H 7600 3400 50  0000 C CNN
+	1    7600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P203
+U 1 1 569929AB
+P 7600 3500
+F 0 "P203" H 8000 3500 50  0000 C CNN
+F 1 "POGO" H 7775 3500 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 3500 50  0001 C CNN
+F 3 "" H 7600 3500 50  0000 C CNN
+	1    7600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P204
+U 1 1 56992A25
+P 7600 3600
+F 0 "P204" H 8000 3600 50  0000 C CNN
+F 1 "POGO" H 7775 3600 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 3600 50  0001 C CNN
+F 3 "" H 7600 3600 50  0000 C CNN
+	1    7600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P205
+U 1 1 56992AC1
+P 7600 3700
+F 0 "P205" H 8000 3700 50  0000 C CNN
+F 1 "POGO" H 7775 3700 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 3700 50  0001 C CNN
+F 3 "" H 7600 3700 50  0000 C CNN
+	1    7600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P200
+U 1 1 56992B11
+P 7600 3300
+F 0 "P200" H 8000 3300 50  0000 C CNN
+F 1 "POGO" H 7775 3300 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 3300 50  0001 C CNN
+F 3 "" H 7600 3300 50  0000 C CNN
+	1    7600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P201
+U 1 1 56992C6B
+P 7600 3800
+F 0 "P201" H 8000 3800 50  0000 C CNN
+F 1 "POGO" H 7775 3800 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 3800 50  0001 C CNN
+F 3 "" H 7600 3800 50  0000 C CNN
+	1    7600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P206
+U 1 1 569943DE
+P 7600 3900
+F 0 "P206" H 8000 3900 50  0000 C CNN
+F 1 "POGO" H 7775 3900 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 3900 50  0001 C CNN
+F 3 "" H 7600 3900 50  0000 C CNN
+	1    7600 3900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8400 3200 8900 3700
+Wire Notes Line
+	8900 3700 8900 4800
+Wire Notes Line
+	8900 4800 8400 5300
+Text Notes 575  4350 0    60   Italic 0
+Changelog (A1 -> A2):\n\n- Remove P5 (dummy connector)\n- Add more pogo pins and pin header\n\nChangelog (A2 -> A3):\n\n- Add a new pogo pins for RuuviTag test points P10, P24, P25\n- Add 4 additional 2.5mm alignment holes
+$Comp
+L CONN_01X01 P207
+U 1 1 571EE842
+P 7600 4025
+F 0 "P207" H 8000 4025 50  0000 C CNN
+F 1 "POGO" H 7775 4025 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4025 50  0001 C CNN
+F 3 "" H 7600 4025 50  0000 C CNN
+	1    7600 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P208
+U 1 1 571EE88B
+P 7600 4125
+F 0 "P208" H 8000 4125 50  0000 C CNN
+F 1 "POGO" H 7775 4125 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4125 50  0001 C CNN
+F 3 "" H 7600 4125 50  0000 C CNN
+	1    7600 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P209
+U 1 1 571EE8D9
+P 7600 4325
+F 0 "P209" H 8000 4325 50  0000 C CNN
+F 1 "POGO" H 7775 4325 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4325 50  0001 C CNN
+F 3 "" H 7600 4325 50  0000 C CNN
+	1    7600 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P210
+U 1 1 571EE928
+P 7600 4425
+F 0 "P210" H 8000 4425 50  0000 C CNN
+F 1 "POGO" H 7775 4425 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4425 50  0001 C CNN
+F 3 "" H 7600 4425 50  0000 C CNN
+	1    7600 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P211
+U 1 1 571EE97D
+P 7600 4525
+F 0 "P211" H 8000 4525 50  0000 C CNN
+F 1 "POGO" H 7775 4525 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4525 50  0001 C CNN
+F 3 "" H 7600 4525 50  0000 C CNN
+	1    7600 4525
+	1    0    0    -1  
+$EndComp
+Text Notes 8125 3325 0    50   Italic 0
+P18
+Text Notes 8125 3425 0    50   Italic 0
+P19
+Text Notes 8125 3525 0    50   Italic 0
+P20
+Text Notes 8125 3625 0    50   Italic 0
+P21
+Text Notes 8125 3725 0    50   Italic 0
+P22
+Text Notes 8125 3825 0    50   Italic 0
+P16
+Text Notes 8125 3925 0    50   Italic 0
+P23
+$Comp
+L CONN_01X01 P212
+U 1 1 571EF0B5
+P 7600 4625
+F 0 "P212" H 8000 4625 50  0000 C CNN
+F 1 "POGO" H 7775 4625 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4625 50  0001 C CNN
+F 3 "" H 7600 4625 50  0000 C CNN
+	1    7600 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P213
+U 1 1 571EF0BB
+P 7600 4725
+F 0 "P213" H 8000 4725 50  0000 C CNN
+F 1 "POGO" H 7775 4725 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4725 50  0001 C CNN
+F 3 "" H 7600 4725 50  0000 C CNN
+	1    7600 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P214
+U 1 1 571EF0C1
+P 7600 4825
+F 0 "P214" H 8000 4825 50  0000 C CNN
+F 1 "POGO" H 7775 4825 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4825 50  0001 C CNN
+F 3 "" H 7600 4825 50  0000 C CNN
+	1    7600 4825
+	1    0    0    -1  
+$EndComp
+Text Notes 8125 4050 0    50   Italic 0
+P17
+Text Notes 8300 6175 1    30   Italic 0
+Equivalent RuuviTag test point number ->
+Text Notes 8125 4350 0    50   Italic 0
+P11
+Text Notes 8125 4150 0    50   Italic 0
+P15
+Text Notes 8125 4450 0    50   Italic 0
+P2
+Text Notes 8125 4550 0    50   Italic 0
+P12
+Text Notes 8125 4650 0    50   Italic 0
+P3
+Text Notes 8125 4750 0    50   Italic 0
+P14
+Text Notes 8125 4850 0    50   Italic 0
+P13
+$Comp
+L GND #PWR6
+U 1 1 571F0AFF
+P 7400 5125
+F 0 "#PWR6" H 7400 4875 50  0001 C CNN
+F 1 "GND" V 7400 4925 50  0000 C CNN
+F 2 "" H 7400 5125 50  0000 C CNN
+F 3 "" H 7400 5125 50  0000 C CNN
+	1    7400 5125
+	0    -1   -1   0   
+$EndComp
+Text Label 7525 5225 0    50   ~ 0
+VIO
+Wire Wire Line
+	7525 5225 7400 5225
+$Comp
+L CONN_01X01 P215
+U 1 1 57ACDDEF
+P 7600 4225
+F 0 "P215" H 8000 4225 50  0000 C CNN
+F 1 "POGO" H 7775 4225 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4225 50  0001 C CNN
+F 3 "" H 7600 4225 50  0000 C CNN
+	1    7600 4225
+	1    0    0    -1  
+$EndComp
+Text Notes 8125 4250 0    50   Italic 0
+P10
+$Comp
+L CONN_01X01 P107
+U 1 1 57BEC388
+P 10100 5450
+F 0 "P107" H 10100 5550 50  0000 C CNN
+F 1 "ALIGN" V 10300 5450 50  0000 C CNN
+F 2 "Tester:M2.5_PLATED_HOLE" H 10100 5450 50  0001 C CNN
+F 3 "" H 10100 5450 50  0000 C CNN
+	1    10100 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P108
+U 1 1 57BEC38E
+P 10400 5450
+F 0 "P108" H 10400 5550 50  0000 C CNN
+F 1 "ALIGN" V 10600 5450 50  0000 C CNN
+F 2 "Tester:M2.5_PLATED_HOLE" H 10400 5450 50  0001 C CNN
+F 3 "" H 10400 5450 50  0000 C CNN
+	1    10400 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P109
+U 1 1 57BEC394
+P 10700 5450
+F 0 "P109" H 10700 5550 50  0000 C CNN
+F 1 "ALIGN" V 10900 5450 50  0000 C CNN
+F 2 "Tester:M2.5_PLATED_HOLE" H 10700 5450 50  0001 C CNN
+F 3 "" H 10700 5450 50  0000 C CNN
+	1    10700 5450
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 10100 5650
+NoConn ~ 10400 5650
+NoConn ~ 10700 5650
+$Comp
+L CONN_01X01 P110
+U 1 1 57BECD39
+P 8900 5450
+F 0 "P110" H 8900 5550 50  0000 C CNN
+F 1 "ALIGN" V 9100 5450 50  0000 C CNN
+F 2 "Tester:M2.5_PLATED_HOLE" H 8900 5450 50  0001 C CNN
+F 3 "" H 8900 5450 50  0000 C CNN
+	1    8900 5450
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8900 5650
+$Comp
+L CONN_01X13 P5
+U 1 1 57C7CD82
+P 7200 4625
+F 0 "P5" H 7278 4666 50  0000 L CNN
+F 1 "CONN_01X13" H 7278 4575 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x13" H 7278 4529 50  0001 L CNN
+F 3 "" H 7200 4625 50  0000 C CNN
+	1    7200 4625
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P216
+U 1 1 57C7D2F5
+P 7600 4925
+F 0 "P216" H 8000 4925 50  0000 C CNN
+F 1 "POGO" H 7775 4925 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 4925 50  0001 C CNN
+F 3 "" H 7600 4925 50  0000 C CNN
+	1    7600 4925
+	1    0    0    -1  
+$EndComp
+Text Notes 8125 4950 0    50   Italic 0
+P24
+$Comp
+L CONN_01X01 P217
+U 1 1 57C7D323
+P 7600 5025
+F 0 "P217" H 8000 5025 50  0000 C CNN
+F 1 "POGO" H 7775 5025 50  0000 C CNN
+F 2 "Tester:0926-1-15-20-75-14-11-0_POGO_PIN" H 7600 5025 50  0001 C CNN
+F 3 "" H 7600 5025 50  0000 C CNN
+	1    7600 5025
+	1    0    0    -1  
+$EndComp
+Text Notes 8125 5050 0    50   Italic 0
+P25
+$EndSCHEMATC

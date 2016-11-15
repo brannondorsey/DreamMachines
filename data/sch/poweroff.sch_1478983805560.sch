@@ -1,0 +1,295 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:contrib
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:w_relay
+LIBS:poweroff-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "sam. 04 avril 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R1
+U 1 1 572CE418
+P 5450 3700
+F 0 "R1" V 5530 3700 50  0000 C CNN
+F 1 "4K7" V 5450 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5380 3700 50  0001 C CNN
+F 3 "" H 5450 3700 50  0000 C CNN
+	1    5450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 572CE51A
+P 5200 4250
+F 0 "R2" V 5280 4250 50  0000 C CNN
+F 1 "100K" V 5200 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5130 4250 50  0001 C CNN
+F 3 "" H 5200 4250 50  0000 C CNN
+	1    5200 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 572CE57D
+P 4700 4250
+F 0 "R3" V 4780 4250 50  0000 C CNN
+F 1 "22K" V 4700 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4630 4250 50  0001 C CNN
+F 3 "" H 4700 4250 50  0000 C CNN
+	1    4700 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C2
+U 1 1 572CE616
+P 4950 4400
+F 0 "C2" H 4975 4500 50  0000 L CNN
+F 1 "47u" H 4975 4300 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 4988 4250 50  0001 C CNN
+F 3 "" H 4950 4400 50  0000 C CNN
+	1    4950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 572CE70C
+P 6100 3150
+F 0 "#PWR01" H 6100 3000 50  0001 C CNN
+F 1 "+5V" H 6100 3290 50  0000 C CNN
+F 2 "" H 6100 3150 50  0000 C CNN
+F 3 "" H 6100 3150 50  0000 C CNN
+	1    6100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 572D6095
+P 4900 3400
+F 0 "C1" H 4925 3500 50  0000 L CNN
+F 1 "100u" H 4925 3300 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 4938 3250 50  0001 C CNN
+F 3 "" H 4900 3400 50  0000 C CNN
+	1    4900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4250 5050 4250
+Connection ~ 4950 4250
+Wire Wire Line
+	5450 4050 5800 4050
+Connection ~ 5650 4050
+Wire Wire Line
+	6100 3150 6100 3350
+Wire Wire Line
+	4550 3250 6100 3250
+Connection ~ 6100 3250
+Wire Wire Line
+	6100 4250 6100 4700
+Wire Wire Line
+	5650 4450 5650 4550
+Connection ~ 5650 4550
+Connection ~ 6100 4550
+Wire Wire Line
+	5450 3250 5450 3550
+Wire Wire Line
+	5450 3850 5450 4050
+$Comp
+L D D1
+U 1 1 5737856B
+P 5750 3550
+F 0 "D1" H 5750 3650 50  0000 C CNN
+F 1 "1N4148" H 5750 3450 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10" H 5750 3550 50  0001 C CNN
+F 3 "" H 5750 3550 50  0000 C CNN
+	1    5750 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 3400 5750 3250
+Connection ~ 5750 3250
+Wire Wire Line
+	5750 3700 5750 3850
+Wire Wire Line
+	5750 3850 6100 3850
+Connection ~ 6100 3850
+Connection ~ 4950 4550
+Text Notes 4050 4350 2    60   ~ 0
+RPi Power Off
+$Comp
+L CONN_01X03 P1
+U 1 1 5753360E
+P 4350 4250
+F 0 "P1" H 4350 4450 50  0000 C CNN
+F 1 "CONN_01X03" V 4450 4250 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B3B-PH-K_03x2.00mm_Straight" H 4350 4250 50  0001 C CNN
+F 3 "" H 4350 4250 50  0000 C CNN
+	1    4350 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 4350 4550 4550
+Wire Wire Line
+	4550 3250 4550 4150
+Connection ~ 5450 3250
+$Comp
+L GND #PWR02
+U 1 1 575336DE
+P 6100 4700
+F 0 "#PWR02" H 6100 4450 50  0001 C CNN
+F 1 "GND" H 6100 4550 50  0000 C CNN
+F 2 "" H 6100 4700 50  0000 C CNN
+F 3 "" H 6100 4700 50  0000 C CNN
+	1    6100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4550 6100 4550
+$Comp
+L GND #PWR03
+U 1 1 57533771
+P 4900 3550
+F 0 "#PWR03" H 4900 3300 50  0001 C CNN
+F 1 "GND" H 4900 3400 50  0000 C CNN
+F 2 "" H 4900 3550 50  0000 C CNN
+F 3 "" H 4900 3550 50  0000 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 3250
+$Comp
+L CONN_01X02 P2
+U 1 1 57533822
+P 7200 3900
+F 0 "P2" H 7200 4050 50  0000 C CNN
+F 1 "CONN_01X02" V 7300 3900 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_WAGO-804_RM5mm_2pol" H 7200 3900 50  0001 C CNN
+F 3 "" H 7200 3900 50  0000 C CNN
+	1    7200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 57533867
+P 7200 4500
+F 0 "P3" H 7200 4650 50  0000 C CNN
+F 1 "CONN_01X02" V 7300 4500 50  0000 C CNN
+F 2 "Terminal_Blocks:TerminalBlock_WAGO-804_RM5mm_2pol" H 7200 4500 50  0001 C CNN
+F 3 "" H 7200 4500 50  0000 C CNN
+	1    7200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3850 7000 3850
+Wire Wire Line
+	6400 3250 6950 3250
+Wire Wire Line
+	6950 3250 6950 4550
+Wire Wire Line
+	6950 4550 7000 4550
+Wire Wire Line
+	7000 4450 6850 4450
+Wire Wire Line
+	6850 4450 6850 3850
+Connection ~ 6850 3850
+Wire Wire Line
+	7000 3950 6950 3950
+Connection ~ 6950 3950
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 57533CEC
+P 6100 4550
+F 0 "#FLG04" H 6100 4645 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 4730 50  0000 C CNN
+F 2 "" H 6100 4550 50  0000 C CNN
+F 3 "" H 6100 4550 50  0000 C CNN
+	1    6100 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 57533E98
+P 5450 3250
+F 0 "#FLG05" H 5450 3345 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 3430 50  0000 C CNN
+F 2 "" H 5450 3250 50  0000 C CNN
+F 3 "" H 5450 3250 50  0000 C CNN
+	1    5450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L RELAY_DIL16 RLY1
+U 1 1 57533E47
+P 6250 3550
+F 0 "RLY1" H 6250 3800 60  0000 C CNN
+F 1 "RELAY_DIL16" H 6250 3315 60  0000 C CNN
+F 2 "custom:DIP-16_Relay" H 6250 3550 60  0001 C CNN
+F 3 "" H 6250 3550 60  0000 C CNN
+	1    6250 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3850 6100 3750
+Wire Wire Line
+	6350 3750 6350 3850
+Wire Wire Line
+	6400 3350 6400 3250
+$Comp
+L BC547 Q2
+U 1 1 57534696
+P 5550 4250
+F 0 "Q2" H 5750 4325 50  0000 L CNN
+F 1 "BC547" H 5750 4250 50  0000 L CNN
+F 2 "custom:TO-92_Molded_Narrow_CBE" H 5750 4175 50  0001 L CIN
+F 3 "" H 5550 4250 50  0000 L CNN
+	1    5550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC547 Q1
+U 1 1 57534758
+P 6000 4050
+F 0 "Q1" H 6200 4125 50  0000 L CNN
+F 1 "BC547" H 6200 4050 50  0000 L CNN
+F 2 "custom:TO-92_Molded_Narrow_CBE" H 6200 3975 50  0001 L CIN
+F 3 "" H 6000 4050 50  0000 L CNN
+	1    6000 4050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

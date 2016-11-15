@@ -1,0 +1,332 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:rele1x-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Poncho RELE1x"
+Date "2016-10-18"
+Rev "1.0"
+Comp "Proyecto CIAA - COMPUTADORA INDUSTRIAL ABIERTA ARGENTINA"
+Comment1 "Ver directorio \"doc\""
+Comment2 "Autores: Diego Brengi - UNLaM"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OSHWA #G2
+U 1 1 560A0A28
+P 10450 6050
+F 0 "#G2" H 10420 6450 60  0001 C CNN
+F 1 "OSHWA" H 10450 6353 60  0001 C CNN
+F 2 "Poncho_Esqueleto:Logo_OSHWA" H 10450 6050 60  0001 C CNN
+F 3 "" H 10450 6050 60  0000 C CNN
+	1    10450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logo_Poncho #G1
+U 1 1 560CFFC0
+P 9800 6000
+F 0 "#G1" H 9750 5600 60  0001 C CNN
+F 1 "Logo_Poncho" H 10000 5600 60  0001 C CNN
+F 2 "Poncho_Esqueleto:Logo_Poncho" H 9800 6000 60  0001 C CNN
+F 3 "" H 9800 6000 60  0001 C CNN
+	1    9800 6000
+	1    0    0    -1  
+$EndComp
+Text Notes 8000 950  0    118  ~ 24
+http://www.proyecto-ciaa.com.ar/\nPoncho Rele1x
+$Comp
+L +5VP #PWR01
+U 1 1 560EE7D3
+P 6100 3100
+F 0 "#PWR01" H 6100 3190 20  0001 C CNN
+F 1 "+5VP" H 6100 3250 39  0000 C CNN
+F 2 "" H 6100 3100 60  0000 C CNN
+F 3 "" H 6100 3100 60  0000 C CNN
+	1    6100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_Poncho2P_2x_20x2 XA1
+U 2 1 57A7A13C
+P 4700 3450
+F 0 "XA1" H 5000 3850 60  0000 C CNN
+F 1 "Conn_Poncho2P_2x_20x2" H 5050 1750 60  0000 C CNN
+F 2 "footprint:Conn_Poncho_Izquierdo" H 4700 3450 60  0001 C CNN
+F 3 "" H 4700 3450 60  0000 C CNN
+F 4 "Harwin" H 4700 3450 60  0001 C CNN "Manf"
+F 5 "M50-3502042" H 4700 3450 60  0001 C CNN "Manf#"
+F 6 "952-1387-ND" H 4700 3450 60  0001 C CNN "Digikey#"
+	2    4700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4950 4450 4950
+Connection ~ 4250 5050
+Wire Wire Line
+	4250 4450 4450 4450
+Connection ~ 4250 4450
+Wire Wire Line
+	4250 4050 4450 4050
+Connection ~ 4250 4350
+Wire Wire Line
+	4250 3950 4450 3950
+Connection ~ 4250 4050
+Wire Wire Line
+	4250 3750 4450 3750
+Connection ~ 4250 3950
+Wire Wire Line
+	4250 3650 4450 3650
+Connection ~ 4250 3750
+Wire Wire Line
+	4250 3450 4450 3450
+Connection ~ 4250 3650
+Wire Wire Line
+	4250 3350 4450 3350
+Connection ~ 4250 3450
+Wire Wire Line
+	4250 3250 4450 3250
+Connection ~ 4250 3350
+$Comp
+L GNDD #PWR02
+U 1 1 57A7AB5F
+P 4250 5200
+F 0 "#PWR02" H 4250 4950 50  0001 C CNN
+F 1 "GNDD" H 4250 5050 50  0000 C CNN
+F 2 "" H 4250 5200 50  0000 C CNN
+F 3 "" H 4250 5200 50  0000 C CNN
+	1    4250 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3150 6100 3150
+Wire Wire Line
+	6100 3150 6100 3100
+Wire Wire Line
+	4250 3250 4250 5200
+Wire Wire Line
+	4250 5050 4450 5050
+$Comp
+L GNDD #PWR03
+U 1 1 57A818DF
+P 6650 4950
+F 0 "#PWR03" H 6650 4700 50  0001 C CNN
+F 1 "GNDD" H 6650 4800 50  0000 C CNN
+F 2 "" H 6650 4950 50  0000 C CNN
+F 3 "" H 6650 4950 50  0000 C CNN
+	1    6650 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4300 7300 4300
+Wire Wire Line
+	7300 4300 7300 4150
+Connection ~ 6650 4300
+Wire Wire Line
+	6900 4150 6900 4300
+Connection ~ 6900 4300
+$Comp
+L +5VP #PWR04
+U 1 1 57A822EF
+P 6900 3300
+F 0 "#PWR04" H 6900 3390 20  0001 C CNN
+F 1 "+5VP" H 6900 3450 30  0000 C CNN
+F 2 "" H 6900 3300 60  0000 C CNN
+F 3 "" H 6900 3300 60  0000 C CNN
+	1    6900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3450 7300 3750
+Wire Wire Line
+	6650 3450 7300 3450
+Wire Wire Line
+	6900 3300 6900 3850
+Connection ~ 6900 3450
+Wire Wire Line
+	7550 4300 7550 4150
+Wire Wire Line
+	7500 3550 7500 3750
+Wire Wire Line
+	7600 3650 7600 3750
+NoConn ~ 4450 3550
+NoConn ~ 4450 3850
+NoConn ~ 4450 4150
+NoConn ~ 4450 4250
+NoConn ~ 4450 4750
+NoConn ~ 4450 4850
+NoConn ~ 5650 3250
+NoConn ~ 5650 3350
+NoConn ~ 5650 3450
+NoConn ~ 5650 3550
+NoConn ~ 5650 3650
+NoConn ~ 5650 3750
+NoConn ~ 5650 3850
+NoConn ~ 5650 3950
+NoConn ~ 5650 4050
+NoConn ~ 5650 4150
+NoConn ~ 5650 4250
+NoConn ~ 5650 4350
+NoConn ~ 5650 4450
+NoConn ~ 5650 4550
+NoConn ~ 5650 4850
+NoConn ~ 5650 4950
+NoConn ~ 5650 5050
+Wire Wire Line
+	6650 4950 6650 4850
+Wire Wire Line
+	4450 3150 4300 3150
+Wire Wire Line
+	4300 3150 4300 3100
+$Comp
+L +3.3VP #PWR05
+U 1 1 57A7A9F3
+P 4300 3100
+F 0 "#PWR05" H 4450 3050 50  0001 C CNN
+F 1 "+3.3VP" H 4300 3200 50  0000 C CNN
+F 2 "" H 4300 3100 50  0000 C CNN
+F 3 "" H 4300 3100 50  0000 C CNN
+	1    4300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4350 4250 4350
+Text Notes 4150 7350 0    60   ~ 0
+ADVERTENCIA:\nLos componentes y sus valores se eligen\na los fines de realizar un ejercicio con KiCad.\nEn caso de querer construir el diseño, verificar \nprimero el circuito ya que este no esta verificado.
+NoConn ~ 4450 4550
+NoConn ~ 4450 4650
+Connection ~ 4250 4950
+Text Notes 8350 3450 0    79   ~ 16
+GPIO1
+$Comp
+L Q_NPN_EBC Q1
+U 1 1 57A98AC9
+P 6550 4650
+F 0 "Q1" H 6850 4700 50  0000 R CNN
+F 1 "2N3904" H 7150 4600 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6750 4750 29  0001 C CNN
+F 3 "" H 6550 4650 60  0000 C CNN
+F 4 "Micro" H 6550 4650 60  0001 C CNN "Manf"
+F 5 "2N3904-AP" H 6550 4650 60  0001 C CNN "Manf#"
+F 6 "2N3904-APTB-ND" H 6550 4650 60  0001 C CNN "Digikey#"
+	1    6550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED LED1
+U 1 1 57A98D62
+P 6650 3700
+F 0 "LED1" H 6650 3800 40  0000 C CNN
+F 1 "LED" H 6650 3600 40  0000 C CNN
+F 2 "LEDs:LED-3MM" H 6650 3700 60  0001 C CNN
+F 3 "" H 6650 3700 60  0000 C CNN
+F 4 "Marktech" H 6650 3700 60  0001 C CNN "Manf"
+F 5 "MT1403-RG-A" H 6650 3700 60  0001 C CNN "Manf#"
+F 6 "1125-1182-ND" H 6650 3700 60  0001 C CNN "Digikey#"
+	1    6650 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RELAY_C K1
+U 1 1 57A99375
+P 7450 3950
+F 0 "K1" H 7450 4200 60  0000 C CNN
+F 1 "RELAY_C" H 7450 3715 60  0000 C CNN
+F 2 "Relays_ThroughHole:Relay_SANYOU_SRD_Series_Form_C" H 7450 3950 60  0001 C CNN
+F 3 "" H 7450 3950 60  0000 C CNN
+F 4 "TE" H 7450 3950 60  0001 C CNN "Manf"
+F 5 "ORWH-SH-112D,N000" H 7450 3950 60  0001 C CNN "Manf#"
+F 6 "PB1321-ND" H 7450 3950 60  0001 C CNN "Digikey#"
+	1    7450 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TB_1X3 J1
+U 1 1 57A99504
+P 8600 4050
+F 0 "J1" H 8600 4350 60  0000 C CNN
+F 1 "TB_1X3" H 8650 3600 60  0000 C CNN
+F 2 "Connect:bornier3" H 8550 4100 60  0001 C CNN
+F 3 "" H 8550 4100 60  0000 C CNN
+F 4 "TE" H 8600 4050 60  0001 C CNN "Manf"
+F 5 "796949-3" H 8600 4050 60  0001 C CNN "Manf#"
+F 6 "796949-3-ND" H 8600 4050 60  0001 C CNN "Digikey#"
+	1    8600 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 57A99A1E
+P 6100 4650
+F 0 "R1" V 6000 4650 50  0000 C CNN
+F 1 "2K7" V 6200 4650 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 6100 4650 60  0001 C CNN
+F 3 "" H 6100 4650 60  0000 C CNN
+F 4 "Stackpole" H 6100 4650 60  0001 C CNN "Manf"
+F 5 "CF14JT2K70" H 6100 4650 60  0001 C CNN "Manf#"
+F 6 "CF14JT2K70TR-ND" H 6100 4650 60  0001 C CNN "Digikey#"
+	1    6100 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 57A99D8A
+P 6650 4100
+F 0 "R2" V 6450 4100 50  0000 C CNN
+F 1 "330R" V 6550 4100 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 6650 4100 60  0001 C CNN
+F 3 "" H 6650 4100 60  0000 C CNN
+F 4 "Stackpole" H 6650 4100 60  0001 C CNN "Manf"
+F 5 "CF14JT330R" H 6650 4100 60  0001 C CNN "Manf#"
+F 6 "CF14JT330RCT-ND" H 6650 4100 60  0001 C CNN "Digikey#"
+	1    6650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3500 6650 3450
+Wire Wire Line
+	6650 3950 6650 3900
+Wire Wire Line
+	6350 4650 6250 4650
+NoConn ~ 5650 4750
+$Comp
+L D D1
+U 1 1 57A98FED
+P 6900 4000
+F 0 "D1" H 6900 4100 40  0000 C CNN
+F 1 "1N4148" H 6900 3900 40  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 6900 4000 60  0001 C CNN
+F 3 "" H 6900 4000 60  0000 C CNN
+F 4 "Fairchild" H 6900 4000 60  0001 C CNN "Manf"
+F 5 "1N4148TR" H 6900 4000 60  0001 C CNN "Manf#"
+F 6 "1N4148FSTR-ND" H 6900 4000 60  0001 C CNN "Digikey#"
+	1    6900 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 3550 8150 3550
+Wire Wire Line
+	8250 3750 8150 3750
+Wire Wire Line
+	8150 3750 8150 3550
+Wire Wire Line
+	7550 4300 7950 4300
+Wire Wire Line
+	7950 4300 7950 3950
+Wire Wire Line
+	7950 3950 8250 3950
+Wire Wire Line
+	7600 3650 8050 3650
+Wire Wire Line
+	8050 3650 8050 4150
+Wire Wire Line
+	8050 4150 8250 4150
+Wire Wire Line
+	5950 4650 5650 4650
+Wire Wire Line
+	6650 4250 6650 4450
+$EndSCHEMATC

@@ -1,0 +1,301 @@
+EESchema Schematic File Version 2
+LIBS:cowbus-protoboard-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS: STM32F030C8T6
+LIBS:nrf24l01plus-module
+LIBS:i2c
+LIBS:led_rgb_reichelt
+LIBS:ts5204
+LIBS:cowbus-protoboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title "cowbus protoboard"
+Date "2015-07-15"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L nRF24L01+-Module U3
+U 1 1 55A51C3D
+P 3800 3950
+F 0 "U3" H 3150 4250 60  0000 C CNN
+F 1 "nRF24L01+-Module" H 3800 3950 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05" H 3900 3550 60  0001 C CNN
+F 3 "" H 3900 3550 60  0000 C CNN
+	1    3800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR038
+U 1 1 55A51C67
+P 3800 4700
+F 0 "#PWR038" H 3800 4450 50  0001 C CNN
+F 1 "GND" H 3800 4550 50  0000 C CNN
+F 2 "" H 3800 4700 60  0000 C CNN
+F 3 "" H 3800 4700 60  0000 C CNN
+	1    3800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR039
+U 1 1 55A51C7D
+P 3800 3200
+F 0 "#PWR039" H 3800 3050 50  0001 C CNN
+F 1 "+3V3" H 3800 3340 50  0000 C CNN
+F 2 "" H 3800 3200 60  0000 C CNN
+F 3 "" H 3800 3200 60  0000 C CNN
+	1    3800 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 5300 3800 2    60   Input ~ 0
+SCK
+Wire Wire Line
+	3800 3550 3800 3200
+Wire Wire Line
+	3800 4350 3800 4700
+Wire Wire Line
+	4650 3800 5300 3800
+Wire Wire Line
+	4650 3950 5300 3950
+Wire Wire Line
+	4650 4100 5300 4100
+Text HLabel 5300 3950 2    60   Input ~ 0
+MOSI
+Text HLabel 5300 4100 2    60   Input ~ 0
+MISO
+Wire Wire Line
+	2900 3800 2650 3800
+Wire Wire Line
+	2900 3950 2650 3950
+Wire Wire Line
+	2900 4100 2650 4100
+Text HLabel 2650 3800 0    60   Input ~ 0
+CE
+Text HLabel 2650 3950 0    60   Input ~ 0
+CSN
+Text HLabel 2650 4100 0    60   Input ~ 0
+IRQ
+$Comp
+L GND #PWR040
+U 1 1 55A72AEE
+P 1150 4700
+F 0 "#PWR040" H 1150 4450 50  0001 C CNN
+F 1 "GND" H 1150 4550 50  0000 C CNN
+F 2 "" H 1150 4700 60  0000 C CNN
+F 3 "" H 1150 4700 60  0000 C CNN
+	1    1150 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR041
+U 1 1 55A72AF4
+P 1150 3200
+F 0 "#PWR041" H 1150 3050 50  0001 C CNN
+F 1 "+3V3" H 1150 3340 50  0000 C CNN
+F 2 "" H 1150 3200 60  0000 C CNN
+F 3 "" H 1150 3200 60  0000 C CNN
+	1    1150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3200 1150 3800
+Wire Wire Line
+	1150 4100 1150 4700
+$Comp
+L C C9
+U 1 1 55A72B04
+P 1150 3950
+F 0 "C9" H 1175 4050 50  0000 L CNN
+F 1 "100n" H 1175 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1188 3800 30  0001 C CNN
+F 3 "" H 1150 3950 60  0000 C CNN
+	1    1150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C10
+U 1 1 55A72B51
+P 1650 3950
+F 0 "C10" H 1675 4050 50  0000 L CNN
+F 1 "10u" H 1675 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_4x5.8" H 1688 3800 30  0001 C CNN
+F 3 "" H 1650 3950 60  0000 C CNN
+	1    1650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3800 1650 3200
+Wire Wire Line
+	1650 4100 1650 4700
+$Comp
+L GND #PWR042
+U 1 1 55A72BFA
+P 1650 4700
+F 0 "#PWR042" H 1650 4450 50  0001 C CNN
+F 1 "GND" H 1650 4550 50  0000 C CNN
+F 2 "" H 1650 4700 60  0000 C CNN
+F 3 "" H 1650 4700 60  0000 C CNN
+	1    1650 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR043
+U 1 1 55A72C0E
+P 1650 3200
+F 0 "#PWR043" H 1650 3050 50  0001 C CNN
+F 1 "+3V3" H 1650 3340 50  0000 C CNN
+F 2 "" H 1650 3200 60  0000 C CNN
+F 3 "" H 1650 3200 60  0000 C CNN
+	1    1650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 24C16 U4
+U 1 1 55A89592
+P 8150 4000
+F 0 "U4" H 8300 4350 60  0000 C CNN
+F 1 "24C16" H 8350 3650 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 8150 4000 60  0001 C CNN
+F 3 "" H 8150 4000 60  0000 C CNN
+	1    8150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR044
+U 1 1 55A89652
+P 8150 3150
+F 0 "#PWR044" H 8150 3000 50  0001 C CNN
+F 1 "+3V3" H 8150 3290 50  0000 C CNN
+F 2 "" H 8150 3150 60  0000 C CNN
+F 3 "" H 8150 3150 60  0000 C CNN
+	1    8150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3500 8150 3150
+$Comp
+L GND #PWR045
+U 1 1 55A89738
+P 8150 4700
+F 0 "#PWR045" H 8150 4450 50  0001 C CNN
+F 1 "GND" H 8150 4550 50  0000 C CNN
+F 2 "" H 8150 4700 60  0000 C CNN
+F 3 "" H 8150 4700 60  0000 C CNN
+	1    8150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4700 8150 4500
+Wire Wire Line
+	7450 3800 7350 3800
+Wire Wire Line
+	7350 3800 7350 4700
+Wire Wire Line
+	7450 3900 7350 3900
+Connection ~ 7350 3900
+Wire Wire Line
+	7450 4000 7350 4000
+Connection ~ 7350 4000
+$Comp
+L GND #PWR046
+U 1 1 55A89845
+P 7350 4700
+F 0 "#PWR046" H 7350 4450 50  0001 C CNN
+F 1 "GND" H 7350 4550 50  0000 C CNN
+F 2 "" H 7350 4700 60  0000 C CNN
+F 3 "" H 7350 4700 60  0000 C CNN
+	1    7350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3900 9600 3900
+$Comp
+L GND #PWR047
+U 1 1 55A8993F
+P 9600 4700
+F 0 "#PWR047" H 9600 4450 50  0001 C CNN
+F 1 "GND" H 9600 4550 50  0000 C CNN
+F 2 "" H 9600 4700 60  0000 C CNN
+F 3 "" H 9600 4700 60  0000 C CNN
+	1    9600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 3900 9600 4700
+Text HLabel 8850 4100 2    79   Input ~ 0
+SCL
+Text HLabel 8850 4200 2    79   Input ~ 0
+SDA
+$Comp
+L GND #PWR048
+U 1 1 55BE9456
+P 7000 4700
+F 0 "#PWR048" H 7000 4450 50  0001 C CNN
+F 1 "GND" H 7000 4550 50  0000 C CNN
+F 2 "" H 7000 4700 60  0000 C CNN
+F 3 "" H 7000 4700 60  0000 C CNN
+	1    7000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR049
+U 1 1 55BE945C
+P 7000 3150
+F 0 "#PWR049" H 7000 3000 50  0001 C CNN
+F 1 "+3V3" H 7000 3290 50  0000 C CNN
+F 2 "" H 7000 3150 60  0000 C CNN
+F 3 "" H 7000 3150 60  0000 C CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 55BE9462
+P 7000 4250
+F 0 "C14" H 7025 4350 50  0000 L CNN
+F 1 "100n" H 7025 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7038 4100 30  0001 C CNN
+F 3 "" H 7000 4250 60  0000 C CNN
+	1    7000 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3150 7000 4100
+Wire Wire Line
+	7000 4700 7000 4400
+$EndSCHEMATC

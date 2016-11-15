@@ -1,0 +1,317 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:maxim
+LIBS:rp_adapter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6200 2250 2    60   UnSpc ~ 0
+DOT
+Text HLabel 6250 2900 2    60   UnSpc ~ 0
+DASH
+Text HLabel 6250 1450 2    60   UnSpc ~ 0
+PTT_IN
+Text HLabel 9100 850  2    60   UnSpc ~ 0
+RP_3P3V
+$Comp
+L INDUCTOR_SMALL L7
+U 1 1 5781E7DD
+P 8700 850
+F 0 "L7" H 8700 950 50  0000 C CNN
+F 1 "FB" H 8700 800 50  0000 C CNN
+F 2 "my_lib:FB" H 8700 850 50  0001 C CNN
+F 3 "" H 8700 850 50  0000 C CNN
+	1    8700 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C56
+U 1 1 5781E808
+P 8200 1000
+F 0 "C56" H 8225 1100 50  0000 L CNN
+F 1 "1uF" H 8225 900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210_HandSoldering" H 8238 850 50  0001 C CNN
+F 3 "" H 8200 1000 50  0000 C CNN
+	1    8200 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C31
+U 1 1 5781E839
+P 7850 1000
+F 0 "C31" H 7875 1100 50  0000 L CNN
+F 1 "0.1uF" H 7875 900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7888 850 50  0001 C CNN
+F 3 "" H 7850 1000 50  0000 C CNN
+	1    7850 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 850  8950 850 
+Wire Wire Line
+	6700 850  8450 850 
+Connection ~ 8200 850 
+$Comp
+L GND #PWR044
+U 1 1 5781E8EB
+P 8200 1250
+F 0 "#PWR044" H 8200 1000 50  0001 C CNN
+F 1 "GND" H 8200 1100 50  0000 C CNN
+F 2 "" H 8200 1250 50  0000 C CNN
+F 3 "" H 8200 1250 50  0000 C CNN
+	1    8200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1250 8200 1150
+Wire Wire Line
+	8200 1150 7850 1150
+$Comp
+L R R25
+U 1 1 5781E934
+P 6300 2050
+F 0 "R25" V 6380 2050 50  0000 C CNN
+F 1 "4.7K" V 6300 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6230 2050 50  0001 C CNN
+F 3 "" H 6300 2050 50  0000 C CNN
+	1    6300 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R26
+U 1 1 5781E9AC
+P 6300 2600
+F 0 "R26" V 6380 2600 50  0000 C CNN
+F 1 "4.7K" V 6300 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6230 2600 50  0001 C CNN
+F 3 "" H 6300 2600 50  0000 C CNN
+	1    6300 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 2900 6250 2900
+Wire Wire Line
+	6150 2600 5900 2600
+Wire Wire Line
+	5900 2600 5900 2900
+Connection ~ 5900 2900
+Wire Wire Line
+	5700 2250 6200 2250
+Wire Wire Line
+	6150 2050 5900 2050
+Wire Wire Line
+	5900 2050 5900 2250
+Connection ~ 5900 2250
+$Comp
+L R R27
+U 1 1 5781EAC9
+P 6350 1300
+F 0 "R27" V 6430 1300 50  0000 C CNN
+F 1 "4.7K" V 6350 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6280 1300 50  0001 C CNN
+F 3 "" H 6350 1300 50  0000 C CNN
+	1    6350 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 1450 6250 1450
+Wire Wire Line
+	6200 1300 5900 1300
+Wire Wire Line
+	5900 1300 5900 1450
+Connection ~ 5900 1450
+Wire Wire Line
+	6500 1300 6700 1300
+Connection ~ 7850 850 
+Wire Wire Line
+	6700 2600 6450 2600
+Connection ~ 6700 1300
+Wire Wire Line
+	6450 2050 6700 2050
+Connection ~ 6700 2050
+$Comp
+L GND #PWR045
+U 1 1 5781EE3F
+P 5800 3250
+F 0 "#PWR045" H 5800 3000 50  0001 C CNN
+F 1 "GND" H 5800 3100 50  0000 C CNN
+F 2 "" H 5800 3250 50  0000 C CNN
+F 3 "" H 5800 3250 50  0000 C CNN
+	1    5800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1550 6050 1800
+Wire Wire Line
+	6050 1550 5700 1550
+Wire Wire Line
+	5800 3000 5800 3250
+Wire Wire Line
+	5800 3000 5650 3000
+$Comp
+L JACK_2P J9
+U 1 1 5782A724
+P 5250 1550
+F 0 "J9" H 4900 1350 50  0000 C CNN
+F 1 "JACK_2P" H 5100 1800 50  0000 C CNN
+F 2 "my_lib:RA_3p5_audio_jack" H 5250 1550 50  0001 C CNN
+F 3 "" H 5250 1550 50  0000 C CNN
+	1    5250 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L JACK_2P J11
+U 1 1 5782A84A
+P 5250 2350
+F 0 "J11" H 4900 2150 50  0000 C CNN
+F 1 "JACK_2P" H 5100 2600 50  0000 C CNN
+F 2 "my_lib:RA_3p5_audio_jack" H 5250 2350 50  0001 C CNN
+F 3 "" H 5250 2350 50  0000 C CNN
+	1    5250 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L JACK_2P J8
+U 1 1 5782A8D0
+P 5200 3000
+F 0 "J8" H 4850 2800 50  0000 C CNN
+F 1 "JACK_2P" H 5050 3250 50  0000 C CNN
+F 2 "my_lib:RA_3p5_audio_jack" H 5200 3000 50  0001 C CNN
+F 3 "" H 5200 3000 50  0000 C CNN
+	1    5200 3000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5700 1700 6050 1700
+Connection ~ 6050 1700
+$Comp
+L GND #PWR046
+U 1 1 5782ADCF
+P 5800 2650
+F 0 "#PWR046" H 5800 2400 50  0001 C CNN
+F 1 "GND" H 5800 2500 50  0000 C CNN
+F 2 "" H 5800 2650 50  0000 C CNN
+F 3 "" H 5800 2650 50  0000 C CNN
+	1    5800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2350 5800 2650
+Wire Wire Line
+	5800 2350 5700 2350
+Wire Wire Line
+	5700 2500 5800 2500
+Connection ~ 5800 2500
+Wire Wire Line
+	5650 3150 5800 3150
+Connection ~ 5800 3150
+Text Label 7300 850  0    60   ~ 0
+3P3V_AUD
+Wire Wire Line
+	6700 850  6700 2600
+Text HLabel 8750 2300 0    60   Output ~ 0
+BCLK
+Text HLabel 8750 2400 0    60   Output ~ 0
+ADCDAT
+Text HLabel 8750 2500 0    60   Input ~ 0
+DACDAT
+Text HLabel 8750 2600 0    60   Output ~ 0
+LRCLK
+Text HLabel 8750 2900 0    60   BiDi ~ 0
+SCLK
+Text HLabel 8750 2800 0    60   BiDi ~ 0
+SDAT
+$Comp
+L CONN_01X09 P3
+U 1 1 57F14A0E
+P 9950 2700
+F 0 "P3" H 9950 3200 50  0000 C CNN
+F 1 "CONN_01X09" V 10050 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x09" H 9900 3400 50  0000 C CNN
+F 3 "" H 9950 2700 50  0000 C CNN
+	1    9950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 850  9000 3000
+Wire Wire Line
+	9000 3000 9750 3000
+Connection ~ 9000 850 
+Wire Wire Line
+	8750 2900 9750 2900
+Wire Wire Line
+	8750 2800 9750 2800
+Wire Wire Line
+	8750 2400 9750 2400
+Wire Wire Line
+	8750 2500 9750 2500
+Wire Wire Line
+	8750 2300 9750 2300
+Wire Wire Line
+	9750 2600 8750 2600
+$Comp
+L GND #PWR047
+U 1 1 57F1668C
+P 9550 3250
+F 0 "#PWR047" H 9550 3000 50  0001 C CNN
+F 1 "GND" H 9550 3100 50  0000 C CNN
+F 2 "" H 9550 3250 50  0000 C CNN
+F 3 "" H 9550 3250 50  0000 C CNN
+	1    9550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3250 9550 3100
+Wire Wire Line
+	9550 3100 9750 3100
+$Comp
+L GND #PWR?
+U 1 1 57F11952
+P 6050 1800
+F 0 "#PWR?" H 6050 1550 50  0001 C CNN
+F 1 "GND" H 6050 1650 50  0000 C CNN
+F 2 "" H 6050 1800 50  0000 C CNN
+F 3 "" H 6050 1800 50  0000 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

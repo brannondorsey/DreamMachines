@@ -1,0 +1,266 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lpc8xx
+LIBS:rcinput-converter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "rcinput-converter"
+Date "Thu 18 Feb 2016"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LPC812-16 U1
+U 1 1 56C56C42
+P 3350 3200
+F 0 "U1" V 3300 3200 60  0000 C CNN
+F 1 "LPC812-16" V 3400 3200 60  0000 C CNN
+F 2 "" H 3350 3200 60  0000 C CNN
+F 3 "" H 3350 3200 60  0000 C CNN
+	1    3350 3200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4100 2950
+NoConn ~ 4100 3050
+NoConn ~ 4100 3350
+NoConn ~ 4100 3450
+NoConn ~ 4100 3550
+NoConn ~ 2600 3550
+NoConn ~ 2600 3450
+NoConn ~ 2600 2850
+NoConn ~ 2600 2950
+$Comp
+L +3.3V #PWR?
+U 1 1 56C56EB1
+P 4500 2500
+F 0 "#PWR?" H 4500 2350 50  0001 C CNN
+F 1 "+3.3V" H 4500 2640 50  0000 C CNN
+F 2 "" H 4500 2500 60  0000 C CNN
+F 3 "" H 4500 2500 60  0000 C CNN
+	1    4500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3250 4500 3250
+$Comp
+L GND #PWR?
+U 1 1 56C56EC9
+P 4300 3800
+F 0 "#PWR?" H 4300 3550 50  0001 C CNN
+F 1 "GND" H 4300 3650 50  0000 C CNN
+F 2 "" H 4300 3800 60  0000 C CNN
+F 3 "" H 4300 3800 60  0000 C CNN
+	1    4300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3150 4300 3150
+Wire Wire Line
+	4300 3150 4300 3800
+$Comp
+L +3.3V #PWR?
+U 1 1 56C56EE3
+P 2400 2500
+F 0 "#PWR?" H 2400 2350 50  0001 C CNN
+F 1 "+3.3V" H 2400 2640 50  0000 C CNN
+F 2 "" H 2400 2500 60  0000 C CNN
+F 3 "" H 2400 2500 60  0000 C CNN
+	1    2400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56C56EF8
+P 2400 2750
+F 0 "R1" H 2500 2800 50  0000 C CNN
+F 1 "10k" V 2400 2750 50  0000 C CNN
+F 2 "" V 2330 2750 30  0000 C CNN
+F 3 "" H 2400 2750 30  0000 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2600 2400 2500
+$Comp
+L GND #PWR?
+U 1 1 56C56F39
+P 2400 3800
+F 0 "#PWR?" H 2400 3550 50  0001 C CNN
+F 1 "GND" H 2400 3650 50  0000 C CNN
+F 2 "" H 2400 3800 60  0000 C CNN
+F 3 "" H 2400 3800 60  0000 C CNN
+	1    2400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 56C56F4F
+P 2400 3650
+F 0 "C2" H 2425 3750 50  0000 L CNN
+F 1 "0.1u" H 2425 3550 50  0000 L CNN
+F 2 "" H 2438 3500 30  0000 C CNN
+F 3 "" H 2400 3650 60  0000 C CNN
+	1    2400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2900 2400 3500
+Connection ~ 2400 3050
+Wire Wire Line
+	2400 3050 2600 3050
+$Comp
+L C C1
+U 1 1 56C56FC1
+P 4500 3400
+F 0 "C1" H 4525 3500 50  0000 L CNN
+F 1 "0.1u" H 4525 3300 50  0000 L CNN
+F 2 "" H 4538 3250 30  0000 C CNN
+F 3 "" H 4500 3400 60  0000 C CNN
+	1    4500 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 3550
+Wire Wire Line
+	4300 3550 4850 3550
+Wire Wire Line
+	4500 3250 4500 2500
+Connection ~ 4500 3250
+$Comp
+L CONN_01X03 P?
+U 1 1 56C57020
+P 1650 3100
+F 0 "P?" H 1650 3300 50  0000 C CNN
+F 1 "CONN_01X03" V 1750 3100 50  0000 C CNN
+F 2 "" H 1650 3100 60  0000 C CNN
+F 3 "" H 1650 3100 60  0000 C CNN
+	1    1650 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3000 2100 3000
+Wire Wire Line
+	2100 3000 2100 3150
+Wire Wire Line
+	2100 3150 2600 3150
+$Comp
+L +3.3V #PWR?
+U 1 1 56C570C2
+P 2000 2500
+F 0 "#PWR?" H 2000 2350 50  0001 C CNN
+F 1 "+3.3V" H 2000 2640 50  0000 C CNN
+F 2 "" H 2000 2500 60  0000 C CNN
+F 3 "" H 2000 2500 60  0000 C CNN
+	1    2000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3100 2000 3100
+Wire Wire Line
+	2000 3100 2000 2500
+$Comp
+L CONN_01X03 P?
+U 1 1 56C572AD
+P 1650 3650
+F 0 "P?" H 1650 3850 50  0000 C CNN
+F 1 "CONN_01X03" V 1750 3650 50  0000 C CNN
+F 2 "" H 1650 3650 60  0000 C CNN
+F 3 "" H 1650 3650 60  0000 C CNN
+	1    1650 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3250 2200 3250
+Wire Wire Line
+	2200 3250 2200 3550
+Wire Wire Line
+	2200 3550 1850 3550
+Wire Wire Line
+	2600 3350 2250 3350
+Wire Wire Line
+	2250 3350 2250 3650
+Wire Wire Line
+	2250 3650 1850 3650
+$Comp
+L GND #PWR?
+U 1 1 56C573A0
+P 1950 3800
+F 0 "#PWR?" H 1950 3550 50  0001 C CNN
+F 1 "GND" H 1950 3650 50  0000 C CNN
+F 2 "" H 1950 3800 60  0000 C CNN
+F 3 "" H 1950 3800 60  0000 C CNN
+	1    1950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3200 1950 3200
+Wire Wire Line
+	1950 3200 1950 3800
+Wire Wire Line
+	1850 3750 1950 3750
+Connection ~ 1950 3750
+$Comp
+L CONN_01X03 P?
+U 1 1 56C57673
+P 5050 2950
+F 0 "P?" H 5050 3150 50  0000 C CNN
+F 1 "CONN_01X03" V 5150 2950 50  0000 C CNN
+F 2 "" H 5050 2950 60  0000 C CNN
+F 3 "" H 5050 2950 60  0000 C CNN
+	1    5050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3550 4850 3050
+Connection ~ 4500 3550
+Wire Wire Line
+	4100 2850 4850 2850
+NoConn ~ 4850 2950
+Text Notes 5300 2850 0    60   ~ 0
+S.BUS/CPPM input
+Text Notes 800  3000 0    60   ~ 0
+XBUS output
+Text Notes 1050 3150 0    60   ~ 0
+3.3v in
+Text Notes 1150 3300 0    60   ~ 0
+GND
+Text Notes 5300 3100 0    60   ~ 0
+GND
+Text Notes 850  3700 0    60   ~ 0
+SWD lines\n(optional)
+$EndSCHEMATC

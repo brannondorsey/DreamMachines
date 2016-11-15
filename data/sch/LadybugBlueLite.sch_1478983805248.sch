@@ -1,0 +1,162 @@
+EESchema Schematic File Version 2
+LIBS:LadybugBlueLite-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LettuceBuddy
+LIBS:LadybugBlueLite-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 10
+Title ""
+Date "20 oct 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1750 1350 2900 1650
+U 55B65661
+F0 "nRF51822" 50
+F1 "nRF51822.sch" 50
+F2 "FET_VIN_pin" O R 4650 1600 60 
+F3 "pH_AIN" I R 4650 2000 60 
+F4 "FET_VOUT_pin" O R 4650 1800 60 
+F5 "EC_VIN_AIN" I R 4650 2200 60 
+F6 "EC_VOUT_AIN" I R 4650 2450 60 
+F7 "BAT_AIN" I L 1750 2450 60 
+F8 "VGND_pH" I R 4650 2600 60 
+F9 "VGND_EC" I R 4650 2750 60 
+$EndSheet
+$Sheet
+S 7200 1350 3050 1600
+U 55B65405
+F0 "sensors" 50
+F1 "sensors.sch" 50
+F2 "pH_ProbeIN" I R 10250 1900 60 
+F3 "EC_ProbeIN" I R 10250 2600 60 
+F4 "FET_VIN_pin" I L 7200 1600 60 
+F5 "FET_VOUT_pin" I L 7200 1800 60 
+F6 "pH_AIN" O L 7200 2000 60 
+F7 "EC_VIN_AIN" O L 7200 2200 60 
+F8 "EC_VOUT_AIN" O L 7200 2450 60 
+F9 "VGND_EC" O L 7200 2750 60 
+F10 "VGND_pH" O L 7200 2600 60 
+$EndSheet
+$Comp
+L BNC P4
+U 1 1 55B7E0DF
+P 10700 1900
+F 0 "P4" H 10710 2020 60  0000 C CNN
+F 1 "BNC" V 10810 1840 40  0000 C CNN
+F 2 "LettuceBuddy:LB_BNC" H 10700 1900 60  0001 C CNN
+F 3 "~" H 10700 1900 60  0000 C CNN
+	1    10700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BNC P5
+U 1 1 55B7E0EC
+P 10700 2600
+F 0 "P5" H 10710 2720 60  0000 C CNN
+F 1 "BNC" V 10810 2540 40  0000 C CNN
+F 2 "LettuceBuddy:LB_BNC" H 10700 2600 60  0001 C CNN
+F 3 "~" H 10700 2600 60  0000 C CNN
+	1    10700 2600
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1750 4100 3100 2200
+U 55BE2CDA
+F0 "power" 50
+F1 "power.sch" 50
+F2 "BAT_AIN" O L 1750 4900 60 
+$EndSheet
+Wire Wire Line
+	7200 1600 4650 1600
+Wire Wire Line
+	4650 1800 7200 1800
+Wire Wire Line
+	4650 2000 7200 2000
+Wire Wire Line
+	7200 2200 4650 2200
+Wire Wire Line
+	4650 2450 7200 2450
+Wire Wire Line
+	10550 2600 10250 2600
+Wire Wire Line
+	10550 1900 10250 1900
+Wire Wire Line
+	1750 2450 1150 2450
+Wire Wire Line
+	1150 2450 1150 4900
+Wire Wire Line
+	1150 4900 1750 4900
+Wire Wire Line
+	1400 3600 1150 3600
+Connection ~ 1150 3600
+Wire Wire Line
+	4650 2750 7200 2750
+Wire Wire Line
+	7000 2750 7000 3150
+Wire Wire Line
+	7000 3150 10700 3150
+Wire Wire Line
+	10700 3150 10700 2800
+Wire Wire Line
+	4650 2600 7200 2600
+Wire Wire Line
+	6800 2600 6800 3400
+Wire Wire Line
+	6800 3400 10950 3400
+Wire Wire Line
+	10950 3400 10950 2200
+Wire Wire Line
+	10950 2200 10700 2200
+Wire Wire Line
+	10700 2200 10700 2100
+Connection ~ 6800 2600
+Connection ~ 7000 2750
+$Comp
+L TESTPOINT BAT_AIN1
+U 1 1 55C793A2
+P 1550 3600
+F 0 "BAT_AIN1" H 1630 3600 40  0000 L CNN
+F 1 "TESTPOINT" H 1550 3655 30  0001 C CNN
+F 2 "LettuceBuddy:LB_TestPoint" H 1550 3600 60  0001 C CNN
+F 3 "" H 1550 3600 60  0000 C CNN
+	1    1550 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

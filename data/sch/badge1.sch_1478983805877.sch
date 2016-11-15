@@ -1,0 +1,687 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:badge1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-S attiny85
+U 1 1 56D1C74B
+P 4850 3750
+F 0 "attiny85" H 3700 4150 50  0000 C CNN
+F 1 "ATTINY85-S" H 5850 3350 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 5800 3750 50  0001 C CIN
+F 3 "" H 4850 3750 50  0001 C CNN
+F 4 "ATTINY85-20SURCT-ND" H 4850 3750 60  0001 C CNN "digikey"
+	1    4850 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L AVR-ISP-6 ISP1
+U 1 1 56D1C86D
+P 1900 4900
+F 0 "ISP1" H 1795 5140 50  0000 C CNN
+F 1 "AVR-ISP-6" H 1635 4670 50  0000 L BNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" V 1380 4940 50  0001 C CNN
+F 3 "" H 1875 4900 50  0000 C CNN
+	1    1900 4900
+	1    0    0    -1  
+$EndComp
+Text Label 6450 3500 0    60   ~ 0
+RST
+$Comp
+L VCC #PWR01
+U 1 1 56D1C9E6
+P 3350 3850
+F 0 "#PWR01" H 3350 3700 50  0001 C CNN
+F 1 "VCC" H 3350 4000 50  0000 C CNN
+F 2 "" H 3350 3850 50  0000 C CNN
+F 3 "" H 3350 3850 50  0000 C CNN
+	1    3350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56D1CA06
+P 3500 3600
+F 0 "#PWR02" H 3500 3350 50  0001 C CNN
+F 1 "GND" H 3500 3450 50  0000 C CNN
+F 2 "" H 3500 3600 50  0000 C CNN
+F 3 "" H 3500 3600 50  0000 C CNN
+	1    3500 3600
+	1    0    0    -1  
+$EndComp
+Text Label 6450 4000 0    60   ~ 0
+D0
+$Comp
+L GND #PWR03
+U 1 1 56D1CAE6
+P 8650 3950
+F 0 "#PWR03" H 8650 3700 50  0001 C CNN
+F 1 "GND" H 8650 3800 50  0000 C CNN
+F 2 "" H 8650 3950 50  0000 C CNN
+F 3 "" H 8650 3950 50  0000 C CNN
+	1    8650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 56D1CB0C
+P 6900 3700
+F 0 "R3" V 6980 3700 50  0000 C CNN
+F 1 "68" V 6900 3700 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6830 3700 50  0001 C CNN
+F 3 "" H 6900 3700 50  0000 C CNN
+F 4 "311-68GRCT-ND" V 6900 3700 60  0001 C CNN "digikey"
+	1    6900 3700
+	0    1    1    0   
+$EndComp
+Text Label 6450 3800 0    60   ~ 0
+D2
+$Comp
+L R R2
+U 1 1 56D1CB7A
+P 6900 3600
+F 0 "R2" V 6800 3600 50  0000 C CNN
+F 1 "68" V 6900 3600 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6830 3600 50  0001 C CNN
+F 3 "" H 6900 3600 50  0000 C CNN
+	1    6900 3600
+	0    1    1    0   
+$EndComp
+Text Label 8300 3550 0    60   ~ 0
+USB-D-
+Text Label 8300 3650 0    60   ~ 0
+USB-D+
+Text Label 7300 3700 0    60   ~ 0
+USB-D-
+Text Label 7300 3600 0    60   ~ 0
+USB-D+
+Text Label 6450 3900 0    60   ~ 0
+D1
+Text Label 6450 3700 0    60   ~ 0
+D3
+Text Label 6450 3600 0    60   ~ 0
+D4
+$Comp
+L ZENER D2
+U 1 1 56D1CDA5
+P 8000 4100
+F 0 "D2" H 8000 4200 50  0000 C CNN
+F 1 "3.6V BZX79C3V6" H 8000 4000 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 8000 4100 50  0001 C CNN
+F 3 "" H 8000 4100 50  0001 C CNN
+F 4 "BZX79C3V6" H 8000 4100 60  0001 C CNN "digikey"
+	1    8000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 56D1CE23
+P 8150 4550
+F 0 "#PWR04" H 8150 4300 50  0001 C CNN
+F 1 "GND" H 8150 4400 50  0000 C CNN
+F 2 "" H 8150 4550 50  0000 C CNN
+F 3 "" H 8150 4550 50  0000 C CNN
+	1    8150 4550
+	1    0    0    -1  
+$EndComp
+Text Label 2400 4900 0    60   ~ 0
+D0
+$Comp
+L GND #PWR05
+U 1 1 56D1D00C
+P 2400 5150
+F 0 "#PWR05" H 2400 4900 50  0001 C CNN
+F 1 "GND" H 2400 5000 50  0000 C CNN
+F 2 "" H 2400 5150 50  0000 C CNN
+F 3 "" H 2400 5150 50  0000 C CNN
+	1    2400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 56D1D050
+P 2400 4650
+F 0 "#PWR06" H 2400 4500 50  0001 C CNN
+F 1 "VCC" H 2400 4800 50  0000 C CNN
+F 2 "" H 2400 4650 50  0000 C CNN
+F 3 "" H 2400 4650 50  0000 C CNN
+	1    2400 4650
+	1    0    0    -1  
+$EndComp
+Text Label 1150 4800 0    60   ~ 0
+D1
+Text Label 1150 4900 0    60   ~ 0
+D2
+Text Label 1150 5000 0    60   ~ 0
+RST
+$Comp
+L C_Small C2
+U 1 1 56D1D27B
+P 6050 5100
+F 0 "C2" H 6060 5170 50  0000 L CNN
+F 1 "4.7uF" H 6060 5020 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2.5" H 6050 5100 50  0001 C CNN
+F 3 "" H 6050 5100 50  0000 C CNN
+	1    6050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 56D1D3A0
+P 6050 5500
+F 0 "#PWR07" H 6050 5250 50  0001 C CNN
+F 1 "GND" H 6050 5350 50  0000 C CNN
+F 2 "" H 6050 5500 50  0000 C CNN
+F 3 "" H 6050 5500 50  0000 C CNN
+	1    6050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR08
+U 1 1 56D1D3F8
+P 6050 4750
+F 0 "#PWR08" H 6050 4600 50  0001 C CNN
+F 1 "VCC" H 6050 4900 50  0000 C CNN
+F 2 "" H 6050 4750 50  0000 C CNN
+F 3 "" H 6050 4750 50  0000 C CNN
+	1    6050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 56D1FCE5
+P 8550 2800
+F 0 "#PWR09" H 8550 2550 50  0001 C CNN
+F 1 "GND" H 8550 2650 50  0000 C CNN
+F 2 "" H 8550 2800 50  0000 C CNN
+F 3 "" H 8550 2800 50  0000 C CNN
+	1    8550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_A P2
+U 1 1 56D208F3
+P 9100 3650
+F 0 "P2" H 9300 3450 50  0000 C CNN
+F 1 "USB_A" H 9050 3850 50  0000 C CNN
+F 2 "connectors:usb-PCB" V 9050 3550 50  0001 C CNN
+F 3 "" V 9050 3550 50  0000 C CNN
+	1    9100 3650
+	0    1    1    0   
+$EndComp
+Text Label 8550 2250 0    60   ~ 0
+VBAT
+Text Label 8650 3250 0    60   ~ 0
+VBUS
+Text Label 9900 3000 0    60   ~ 0
+VBAT
+Text Label 9900 3200 0    60   ~ 0
+VBUS
+$Comp
+L LED D6
+U 1 1 56D323C6
+P 3800 4950
+F 0 "D6" H 3800 5050 50  0000 C CNN
+F 1 "LED" H 3800 4850 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 3800 4950 50  0001 C CNN
+F 3 "" H 3800 4950 50  0000 C CNN
+	1    3800 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 56D323D3
+P 3800 5700
+F 0 "#PWR010" H 3800 5450 50  0001 C CNN
+F 1 "GND" H 3800 5550 50  0000 C CNN
+F 2 "" H 3800 5700 50  0000 C CNN
+F 3 "" H 3800 5700 50  0000 C CNN
+	1    3800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 56D323DB
+P 3800 5400
+F 0 "R4" V 3880 5400 50  0000 C CNN
+F 1 "470" V 3800 5400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3730 5400 50  0001 C CNN
+F 3 "" H 3800 5400 50  0000 C CNN
+	1    3800 5400
+	1    0    0    -1  
+$EndComp
+Text Label 3800 4600 0    60   ~ 0
+D1
+$Comp
+L GND #PWR011
+U 1 1 56D3215E
+P 5400 4900
+F 0 "#PWR011" H 5400 4650 50  0001 C CNN
+F 1 "GND" H 5400 4750 50  0000 C CNN
+F 2 "" H 5400 4900 50  0000 C CNN
+F 3 "" H 5400 4900 50  0000 C CNN
+	1    5400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 56D32069
+P 5050 4650
+F 0 "SW1" H 5200 4760 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 4570 50  0000 C CNN
+F 2 "badge_mod:OPL_DIP_BUTTON_TS-1109_BEST_SHENZEN" H 5050 4650 50  0001 C CNN
+F 3 "" H 5050 4650 50  0000 C CNN
+	1    5050 4650
+	1    0    0    -1  
+$EndComp
+Text Label 1000 3600 0    60   ~ 0
+RST
+Text Label 1000 3700 0    60   ~ 0
+D3
+Text Label 1000 3800 0    60   ~ 0
+D4
+$Comp
+L GND #PWR012
+U 1 1 56D342D7
+P 1000 3900
+F 0 "#PWR012" H 1000 3650 50  0001 C CNN
+F 1 "GND" H 1000 3750 50  0000 C CNN
+F 2 "" H 1000 3900 50  0000 C CNN
+F 3 "" H 1000 3900 50  0000 C CNN
+	1    1000 3900
+	1    0    0    -1  
+$EndComp
+Text Label 2300 3900 0    60   ~ 0
+D0
+Text Label 2300 3800 0    60   ~ 0
+D1
+Text Label 2300 3700 0    60   ~ 0
+D2
+$Comp
+L VCC #PWR013
+U 1 1 56D3445E
+P 2300 3600
+F 0 "#PWR013" H 2300 3450 50  0001 C CNN
+F 1 "VCC" H 2300 3750 50  0000 C CNN
+F 2 "" H 2300 3600 50  0000 C CNN
+F 3 "" H 2300 3600 50  0000 C CNN
+	1    2300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR014
+U 1 1 56D475E9
+P 9500 3050
+F 0 "#PWR014" H 9500 2900 50  0001 C CNN
+F 1 "VCC" H 9500 3200 50  0000 C CNN
+F 2 "" H 9500 3050 50  0000 C CNN
+F 3 "" H 9500 3050 50  0000 C CNN
+	1    9500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hillhacks_logo U3
+U 1 1 56D47A38
+P 10400 6000
+F 0 "U3" H 9950 6200 60  0000 C CNN
+F 1 "Hillhacks_logo" H 10400 5850 60  0000 C CNN
+F 2 "hh_logo:hh_logo" H 10400 6000 60  0000 C CNN
+F 3 "" H 10400 6000 60  0000 C CNN
+	1    10400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_logo U2
+U 1 1 56D47DBB
+P 8700 5950
+F 0 "U2" H 8250 6150 60  0000 C CNN
+F 1 "custom_logo" H 8600 5750 60  0000 C CNN
+F 2 "badge_mod:Symbol_OSHW-Logo_CopperBottom" H 8700 5950 60  0000 C CNN
+F 3 "" H 8700 5950 60  0000 C CNN
+	1    8700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 56D486BE
+P 8550 2550
+F 0 "BT1" H 8650 2600 50  0000 L CNN
+F 1 "Battery" H 8650 2500 50  0000 L CNN
+F 2 "Connect:CR2032H" V 8550 2590 50  0001 C CNN
+F 3 "" V 8550 2590 50  0000 C CNN
+	1    8550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L proto_area U4
+U 1 1 56D499FD
+P 10400 5300
+F 0 "U4" H 10400 5550 60  0000 C CNN
+F 1 "proto_area" H 10400 5100 60  0000 C CNN
+F 2 "badge_mod:proto_area" H 10400 5300 60  0000 C CNN
+F 3 "" H 10400 5300 60  0000 C CNN
+	1    10400 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D3
+U 1 1 56D72FC9
+P 8400 4100
+F 0 "D3" H 8400 4200 50  0000 C CNN
+F 1 "3.6V BZX79C3V6" H 8400 4000 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 8400 4100 50  0001 C CNN
+F 3 "" H 8400 4100 50  0001 C CNN
+F 4 "BZX79C3V6" H 8400 4100 60  0001 C CNN "digikey"
+	1    8400 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X04 P1
+U 1 1 56D73861
+P 1400 3750
+F 0 "P1" H 1400 4000 50  0000 C CNN
+F 1 "CONN_01X04" V 1500 3750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 1400 3750 50  0001 C CNN
+F 3 "" H 1400 3750 50  0000 C CNN
+	1    1400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P3
+U 1 1 56D7396E
+P 1900 3750
+F 0 "P3" H 1900 4000 50  0000 C CNN
+F 1 "CONN_01X04" V 2000 3750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 1900 3750 50  0001 C CNN
+F 3 "" H 1900 3750 50  0000 C CNN
+	1    1900 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 56D7518A
+P 7150 3150
+F 0 "R1" V 7230 3150 50  0000 C CNN
+F 1 "1.5k" V 7150 3150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 7080 3150 50  0001 C CNN
+F 3 "" H 7150 3150 50  0000 C CNN
+	1    7150 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P4
+U 1 1 56D7F683
+P 10450 3100
+F 0 "P4" H 10450 3300 50  0000 C CNN
+F 1 "CONN_01X03" V 10550 3100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 10450 3100 50  0001 C CNN
+F 3 "" H 10450 3100 50  0000 C CNN
+	1    10450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP1700-3302E/TO U1
+U 1 1 56D86D05
+P 2000 2200
+F 0 "U1" H 1650 1850 60  0000 C CNN
+F 1 "MCP1700-3302E/TO" H 2000 2550 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 2000 2000 60  0001 C CNN
+F 3 "" H 2000 2000 60  0000 C CNN
+	1    2000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 56D86F61
+P 2800 2050
+F 0 "#PWR015" H 2800 1900 50  0001 C CNN
+F 1 "VCC" H 2800 2200 50  0000 C CNN
+F 2 "" H 2800 2050 50  0000 C CNN
+F 3 "" H 2800 2050 50  0000 C CNN
+	1    2800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 56D86FA3
+P 2000 2650
+F 0 "#PWR016" H 2000 2400 50  0001 C CNN
+F 1 "GND" H 2000 2500 50  0000 C CNN
+F 2 "" H 2000 2650 50  0000 C CNN
+F 3 "" H 2000 2650 50  0000 C CNN
+	1    2000 2650
+	1    0    0    -1  
+$EndComp
+Text Label 850  2050 0    60   ~ 0
+V_sec_bat
+Text Label 1700 1050 0    60   ~ 0
+V_sec_bat
+$Comp
+L GND #PWR017
+U 1 1 56D87B87
+P 2950 1050
+F 0 "#PWR017" H 2950 800 50  0001 C CNN
+F 1 "GND" H 2950 900 50  0000 C CNN
+F 2 "" H 2950 1050 50  0000 C CNN
+F 3 "" H 2950 1050 50  0000 C CNN
+	1    2950 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L badge_hole2 U5
+U 1 1 56D88206
+P 1350 1050
+F 0 "U5" H 1150 1250 60  0000 C CNN
+F 1 "badge_hole2" H 1350 850 60  0000 C CNN
+F 2 "badge_mod:badge_hole_6mmx3mm(+2mmCu)" H 1350 1050 60  0001 C CNN
+F 3 "" H 1350 1050 60  0000 C CNN
+	1    1350 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L badge_hole2 U6
+U 1 1 56D88276
+P 2450 1050
+F 0 "U6" H 2250 1250 60  0000 C CNN
+F 1 "badge_hole2" H 2450 850 60  0000 C CNN
+F 2 "badge_mod:badge_hole_6mmx3mm(+2mmCu)" H 2450 1050 60  0001 C CNN
+F 3 "" H 2450 1050 60  0000 C CNN
+	1    2450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_logo U7
+U 1 1 56E01DAC
+P 8650 5200
+F 0 "U7" H 8200 5400 60  0000 C CNN
+F 1 "custom_logo" H 8550 5000 60  0000 C CNN
+F 2 "badge_mod:tesseract" H 8650 5200 60  0000 C CNN
+F 3 "" H 8650 5200 60  0000 C CNN
+	1    8650 5200
+	1    0    0    -1  
+$EndComp
+Text Label 7150 2800 0    60   ~ 0
+VBUS
+Wire Wire Line
+	7150 2800 7150 3000
+Wire Wire Line
+	8000 4400 8000 4300
+Wire Wire Line
+	2300 3900 2100 3900
+Wire Wire Line
+	8550 2800 8550 2700
+Wire Wire Line
+	8550 2250 8550 2400
+Wire Wire Line
+	2300 3700 2100 3700
+Wire Wire Line
+	1000 3900 1200 3900
+Wire Wire Line
+	1200 3800 1000 3800
+Wire Wire Line
+	1000 3700 1200 3700
+Wire Wire Line
+	1200 3600 1000 3600
+Wire Wire Line
+	2300 3600 2100 3600
+Wire Wire Line
+	2100 3800 2300 3800
+Wire Wire Line
+	4500 4650 4750 4650
+Wire Wire Line
+	5400 4900 5400 4650
+Wire Wire Line
+	5400 4650 5350 4650
+Wire Wire Line
+	3800 5250 3800 5150
+Wire Wire Line
+	3800 5700 3800 5550
+Wire Wire Line
+	3800 4600 3800 4750
+Connection ~ 8750 3750
+Wire Wire Line
+	8750 3950 8750 3750
+Wire Wire Line
+	9200 3950 8750 3950
+Wire Wire Line
+	6050 4750 6050 5000
+Wire Wire Line
+	6050 5200 6050 5500
+Wire Wire Line
+	1150 5000 1750 5000
+Wire Wire Line
+	1150 4900 1750 4900
+Wire Wire Line
+	1150 4800 1750 4800
+Wire Wire Line
+	2400 4800 2000 4800
+Wire Wire Line
+	2400 4650 2400 4800
+Wire Wire Line
+	2400 5000 2000 5000
+Wire Wire Line
+	2400 5150 2400 5000
+Wire Wire Line
+	2400 4900 2000 4900
+Connection ~ 8400 3650
+Wire Wire Line
+	8400 3900 8400 3650
+Connection ~ 8150 4400
+Wire Wire Line
+	8400 4400 8400 4300
+Wire Wire Line
+	8150 4400 8150 4550
+Wire Wire Line
+	8000 4400 8400 4400
+Wire Wire Line
+	6200 3600 6750 3600
+Wire Wire Line
+	6200 3700 6750 3700
+Wire Wire Line
+	6450 3900 6200 3900
+Wire Wire Line
+	7300 3600 7050 3600
+Wire Wire Line
+	7300 3700 7050 3700
+Wire Wire Line
+	8300 3650 8800 3650
+Wire Wire Line
+	8000 3550 8800 3550
+Wire Wire Line
+	8650 3750 8800 3750
+Wire Wire Line
+	8650 3950 8650 3750
+Wire Wire Line
+	8650 3450 8800 3450
+Wire Wire Line
+	8650 3250 8650 3450
+Wire Wire Line
+	3500 3600 3500 3500
+Wire Wire Line
+	3350 4000 3500 4000
+Wire Wire Line
+	3350 3850 3350 4000
+Wire Wire Line
+	6450 3500 6200 3500
+Wire Wire Line
+	6200 4000 6450 4000
+Wire Wire Line
+	6450 3800 6200 3800
+Wire Wire Line
+	9900 3200 10250 3200
+Wire Wire Line
+	9900 3000 10250 3000
+Wire Wire Line
+	9500 3050 9500 3100
+Wire Wire Line
+	9500 3100 10250 3100
+Wire Wire Line
+	850  2050 1600 2050
+Wire Wire Line
+	2400 2050 2800 2050
+Wire Wire Line
+	2000 2500 2000 2650
+Wire Wire Line
+	1700 1050 1600 1050
+Wire Wire Line
+	2950 1050 2700 1050
+Wire Wire Line
+	8000 3550 8000 3900
+Wire Wire Line
+	7150 3700 7150 3300
+Connection ~ 7150 3700
+Text Label 4500 4650 0    60   ~ 0
+D0
+$Comp
+L custom_logo U8
+U 1 1 570A1F46
+P 7400 5200
+F 0 "U8" H 6950 5400 60  0000 C CNN
+F 1 "custom_logo" H 7300 5000 60  0000 C CNN
+F 2 "badge_mod:tesseract" H 7400 5200 60  0000 C CNN
+F 3 "" H 7400 5200 60  0000 C CNN
+	1    7400 5200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

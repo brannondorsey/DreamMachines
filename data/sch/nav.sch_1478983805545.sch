@@ -1,0 +1,267 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:polystack
+LIBS:ti-gate
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7050 7000 0    197  ~ 0
+nav
+$Sheet
+S 9300 2050 1200 3400
+U 564009DE
+F0 "ExpansionPort" 60
+F1 "ExpansionPort.sch" 60
+F2 "+5V" I L 9300 3800 60 
+F3 "GND" I R 10500 3800 60 
+F4 "TIMG1_CH1" I R 10500 2200 60 
+F5 "TIMG1_CH2" I R 10500 2300 60 
+F6 "TIMG1_CH3" I R 10500 2400 60 
+F7 "TIMG1_CH4" I R 10500 2500 60 
+F8 "GPIO1" I L 9300 2600 60 
+F9 "TIMG2_CH1" I R 10500 2600 60 
+F10 "GPIO2" I L 9300 2700 60 
+F11 "TIMG2_CH2" I R 10500 2700 60 
+F12 "TIMG2_CH3" I R 10500 2800 60 
+F13 "TIMG2_CH4" I R 10500 2900 60 
+F14 "i2c_SDA" I L 9300 3200 60 
+F15 "i2c_SCL" I L 9300 3300 60 
+F16 "UART1_TX" I L 9300 5300 60 
+F17 "UART1_RX" I L 9300 5400 60 
+$EndSheet
+$Comp
+L CONN_02X04 MOTOR1
+U 1 1 57AAD817
+P 4650 4750
+F 0 "MOTOR1" H 4650 5000 50  0000 C CNN
+F 1 "CONN_02X04" H 4650 4500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x04" H 4650 3550 50  0001 C CNN
+F 3 "" H 4650 3550 50  0000 C CNN
+	1    4650 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_02X04 SERVO1
+U 1 1 57AAD8A9
+P 4650 2150
+F 0 "SERVO1" H 4650 2400 50  0000 C CNN
+F 1 "CONN_02X04" H 4650 1900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x04" H 4650 950 50  0001 C CNN
+F 3 "" H 4650 950 50  0000 C CNN
+	1    4650 2150
+	0    1    1    0   
+$EndComp
+Text Notes 5000 2150 0    60   ~ 0
+Servos
+Text Notes 5000 4750 0    60   ~ 0
+Motors
+Text Notes 3600 3350 0    60   ~ 0
+GPS
+Text Notes 3600 4000 0    60   ~ 0
+I2C
+$Comp
+L CONN_01X05 GPS1
+U 1 1 57AADC89
+P 2800 3250
+F 0 "GPS1" H 2800 3550 50  0000 C CNN
+F 1 "CONN_01X05" V 2900 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x05" H 2800 3250 50  0001 C CNN
+F 3 "" H 2800 3250 50  0000 C CNN
+	1    2800 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 I2C1
+U 1 1 57AADD4B
+P 2800 4100
+F 0 "I2C1" H 2800 4350 50  0000 C CNN
+F 1 "CONN_01X04" V 2900 4100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04" H 2800 4100 50  0001 C CNN
+F 3 "" H 2800 4100 50  0000 C CNN
+	1    2800 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 SONAR1
+U 1 1 57AAE040
+P 5750 4950
+F 0 "SONAR1" H 5750 5200 50  0000 C CNN
+F 1 "CONN_01X04" V 5850 4950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x04" H 5750 4950 50  0001 C CNN
+F 3 "" H 5750 4950 50  0000 C CNN
+	1    5750 4950
+	0    1    1    0   
+$EndComp
+Text Notes 6100 4900 0    60   ~ 0
+Sonar
+Text Label 9300 2600 2    60   ~ 0
+Echo3
+Text Label 9300 2700 2    60   ~ 0
+Trig3
+$Comp
+L +5V #PWR01
+U 1 1 57AAE436
+P 9200 3800
+F 0 "#PWR01" H 9200 3650 50  0001 C CNN
+F 1 "+5V" H 9200 3940 50  0000 C CNN
+F 2 "" H 9200 3800 50  0000 C CNN
+F 3 "" H 9200 3800 50  0000 C CNN
+	1    9200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3800 9300 3800
+$Comp
+L +5V #PWR02
+U 1 1 57AAE4EE
+P 5600 4750
+F 0 "#PWR02" H 5600 4600 50  0001 C CNN
+F 1 "+5V" H 5600 4890 50  0000 C CNN
+F 2 "" H 5600 4750 50  0000 C CNN
+F 3 "" H 5600 4750 50  0000 C CNN
+	1    5600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 57AAE67D
+P 6050 4750
+F 0 "#PWR03" H 6050 4500 50  0001 C CNN
+F 1 "GND" H 6050 4600 50  0000 C CNN
+F 2 "" H 6050 4750 50  0000 C CNN
+F 3 "" H 6050 4750 50  0000 C CNN
+	1    6050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57AAE6FE
+P 10600 3800
+F 0 "#PWR04" H 10600 3550 50  0001 C CNN
+F 1 "GND" H 10600 3650 50  0000 C CNN
+F 2 "" H 10600 3800 50  0000 C CNN
+F 3 "" H 10600 3800 50  0000 C CNN
+	1    10600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 3800 10500 3800
+Wire Wire Line
+	5900 4750 6050 4750
+Text Label 5800 4750 1    60   ~ 0
+Echo5
+Text Label 5700 4750 1    60   ~ 0
+Trig5
+Text Label 9300 5300 2    60   ~ 0
+GPS_TX
+Text Label 9300 5400 2    60   ~ 0
+GPS_RX
+Text Label 3000 3350 0    60   ~ 0
+GPS_TX
+Text Label 3000 3250 0    60   ~ 0
+GPS_RX
+NoConn ~ 3000 3150
+$Comp
+L GND #PWR05
+U 1 1 57AAED44
+P 3450 3050
+F 0 "#PWR05" H 3450 2800 50  0001 C CNN
+F 1 "GND" H 3450 2900 50  0000 C CNN
+F 2 "" H 3450 3050 50  0000 C CNN
+F 3 "" H 3450 3050 50  0000 C CNN
+	1    3450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 57AAEDBE
+P 3350 3950
+F 0 "#PWR06" H 3350 3700 50  0001 C CNN
+F 1 "GND" H 3350 3800 50  0000 C CNN
+F 2 "" H 3350 3950 50  0000 C CNN
+F 3 "" H 3350 3950 50  0000 C CNN
+	1    3350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3050 3000 3050
+Wire Wire Line
+	3350 3950 3000 3950
+$Comp
+L +5V #PWR07
+U 1 1 57AAEEAD
+P 3150 4450
+F 0 "#PWR07" H 3150 4300 50  0001 C CNN
+F 1 "+5V" H 3150 4590 50  0000 C CNN
+F 2 "" H 3150 4450 50  0000 C CNN
+F 3 "" H 3150 4450 50  0000 C CNN
+	1    3150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 57AAEF27
+P 3150 3550
+F 0 "#PWR08" H 3150 3400 50  0001 C CNN
+F 1 "+5V" H 3150 3690 50  0000 C CNN
+F 2 "" H 3150 3550 50  0000 C CNN
+F 3 "" H 3150 3550 50  0000 C CNN
+	1    3150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3450 3000 3550
+Wire Wire Line
+	3000 3550 3150 3550
+Wire Wire Line
+	3000 4250 3000 4450
+Wire Wire Line
+	3000 4450 3150 4450
+Text Label 9300 3200 2    60   ~ 0
+SDA
+Text Label 9300 3300 2    60   ~ 0
+SCL
+Text Label 3000 4150 0    60   ~ 0
+SCL
+Text Label 3000 4050 0    60   ~ 0
+SDA
+$EndSCHEMATC

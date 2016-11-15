@@ -1,0 +1,185 @@
+EESchema Schematic File Version 2
+LIBS:plugpre-rescue
+LIBS:aart_connectors
+LIBS:aart_diodes
+LIBS:aart_holes
+LIBS:aart_memories
+LIBS:aart_microphones
+LIBS:aart_micros
+LIBS:aart_misc_ics
+LIBS:aart_op_amps
+LIBS:aart_opto
+LIBS:aart_passives
+LIBS:aart_pots
+LIBS:aart_power_supplies
+LIBS:aart_transistors
+LIBS:power
+LIBS:rt
+LIBS:aart_misc
+LIBS:plugpre-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "18 nov 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FET_N Q1
+U 1 1 54041AA7
+P 5500 3200
+F 0 "Q1" H 5253 3450 70  0000 C CNN
+F 1 "2SK3666" H 5200 3300 60  0000 C CNN
+F 2 "w_smd_trans:sot23" H 5500 3200 60  0001 C CNN
+F 3 "" H 5500 3200 60  0000 C CNN
+	1    5500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 54045E59
+P 5650 3950
+F 0 "R3" H 5720 4000 50  0000 L BNN
+F 1 "1k" H 5750 3900 50  0000 L BNN
+F 2 "w_smd_resistors:r_0603" H 5650 3950 60  0001 C CNN
+F 3 "" H 5650 3950 60  0000 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 54045E66
+P 4900 4000
+F 0 "R2" H 4970 4050 50  0000 L BNN
+F 1 "6M34" H 5000 3950 50  0000 L BNN
+F 2 "w_smd_resistors:r_0603" H 4900 4000 60  0001 C CNN
+F 3 "" H 4900 4000 60  0000 C CNN
+	1    4900 4000
+	1    0    0    -1  
+$EndComp
+Text Label 4500 4600 0    60   ~ 0
+GND
+$Comp
+L 0VA #PWR01
+U 1 1 5428432D
+P 3850 4850
+F 0 "#PWR01" H 3875 4930 50  0001 L CNN
+F 1 "0VA" H 3780 4780 50  0000 L CNN
+F 2 "" H 3850 4850 60  0000 C CNN
+F 3 "" H 3850 4850 60  0000 C CNN
+	1    3850 4850
+	1    0    0    -1  
+$EndComp
+Text Notes 10700 7650 0    60   ~ 0
+2
+$Comp
+L PAD P1
+U 1 1 564CC45F
+P 2350 3300
+F 0 "P1" H 2100 3400 70  0000 C CNN
+F 1 "PAD" H 1900 3300 70  0001 C CNN
+F 2 "aart_pads:PAD_2x2_5MM" H 2350 3300 60  0001 C CNN
+F 3 "~" H 2350 3300 60  0000 C CNN
+	1    2350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PAD P2
+U 1 1 564CC46E
+P 2350 3650
+F 0 "P2" H 2100 3750 70  0000 C CNN
+F 1 "PAD" H 1900 3650 70  0001 C CNN
+F 2 "aart_pads:PAD_2x2_5MM" H 2350 3650 60  0001 C CNN
+F 3 "~" H 2350 3650 60  0000 C CNN
+	1    2350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PAD P3
+U 1 1 564CC47D
+P 6300 2700
+F 0 "P3" H 6050 2800 70  0000 C CNN
+F 1 "PAD" H 5850 2700 70  0001 C CNN
+F 2 "aart_pads:PAD_2x2_5MM" H 6150 2550 60  0001 C CNN
+F 3 "~" H 6300 2700 60  0000 C CNN
+	1    6300 2700
+	-1   0    0    1   
+$EndComp
+Text Notes 8100 7500 0    60   ~ 0
+plugpre v2.0
+$Comp
+L 0VA #PWR02
+U 1 1 5693D47F
+P 4750 2950
+F 0 "#PWR02" H 4775 3030 50  0001 L CNN
+F 1 "0VA" H 4680 2880 50  0000 L CNN
+F 2 "" H 4750 2950 60  0000 C CNN
+F 3 "" H 4750 2950 60  0000 C CNN
+	1    4750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5693D54F
+P 2900 3300
+F 0 "C1" V 2650 3250 50  0000 L CNN
+F 1 "10nF" V 2750 3250 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 2900 3300 60  0001 C CNN
+F 3 "" H 2900 3300 60  0000 C CNN
+	1    2900 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L TPD2E007 D1
+U 1 1 569E2E16
+P 4750 2850
+F 0 "D1" H 4900 3850 60  0000 C CNN
+F 1 "TPD2E007" H 4750 3750 60  0000 C CNN
+F 2 "" H 4600 3100 60  0000 C CNN
+F 3 "" H 4600 3100 60  0000 C CNN
+	1    4750 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4600 4900 4250
+Connection ~ 4900 4600
+Wire Wire Line
+	5650 4600 5650 4200
+Wire Wire Line
+	4900 3300 4900 3750
+Connection ~ 4900 3300
+Wire Wire Line
+	5650 3550 5650 3700
+Wire Wire Line
+	3100 3300 5200 3300
+Wire Wire Line
+	5650 2050 5650 2850
+Wire Wire Line
+	3850 4750 3850 4600
+Connection ~ 3850 4600
+Wire Wire Line
+	2350 3650 3300 3650
+Wire Wire Line
+	3300 3650 3300 4600
+Wire Wire Line
+	5650 2700 6300 2700
+Wire Wire Line
+	4900 2050 5650 2050
+Connection ~ 5650 2700
+Wire Wire Line
+	4600 2050 4050 2050
+Wire Wire Line
+	4050 2050 4050 3300
+Connection ~ 4050 3300
+Wire Wire Line
+	2350 3300 2700 3300
+Wire Wire Line
+	3300 4600 5650 4600
+$EndSCHEMATC

@@ -1,0 +1,412 @@
+EESchema Schematic File Version 2  date Di 06 Sep 2011 12:45:34 CEST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tinkerforge
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title "Current25 Bricklet"
+Date "6 sep 2011"
+Rev "1.0"
+Comp "Tinkerforge GmbH"
+Comment1 "Licensed under CERN OHL v.1.1"
+Comment2 "Copyright (©) 2011, B.Nordmeyer <bastian@tinkerforge.com>"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 550  7200 0    40   ~ 0
+Copyright Tinkerforge GmbH 2011.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions\n
+$Comp
+L VCC #PWR01
+U 1 1 4DBA1126
+P 7150 3000
+F 0 "#PWR01" H 7150 3100 30  0001 C CNN
+F 1 "VCC" H 7150 3100 30  0000 C CNN
+	1    7150 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3350 7800 3350
+Wire Wire Line
+	2000 3550 2350 3550
+Connection ~ 7150 3450
+Wire Wire Line
+	2250 3100 2250 2950
+Wire Wire Line
+	2250 2950 2000 2950
+Connection ~ 7600 3350
+Wire Wire Line
+	7600 3550 7600 3350
+Wire Wire Line
+	7600 4050 7600 3950
+Connection ~ 2150 4000
+Wire Wire Line
+	2150 4000 2000 4000
+Wire Wire Line
+	2000 4000 2000 4100
+Connection ~ 3150 4300
+Wire Wire Line
+	3200 4300 3150 4300
+Wire Wire Line
+	3600 4450 3600 4300
+Wire Wire Line
+	7150 3150 6600 3150
+Wire Wire Line
+	6600 4050 6600 3750
+Connection ~ 5700 3650
+Wire Wire Line
+	5700 3750 5700 3550
+Connection ~ 5700 3250
+Wire Wire Line
+	5700 3150 5700 3350
+Wire Wire Line
+	5500 3200 5500 3350
+Wire Wire Line
+	5500 3200 5450 3200
+Wire Wire Line
+	5700 3550 5500 3550
+Wire Wire Line
+	2000 3450 2350 3450
+Wire Wire Line
+	3150 4700 3600 4700
+Wire Wire Line
+	2000 3150 2350 3150
+Connection ~ 2250 4500
+Wire Wire Line
+	2350 4400 2250 4400
+Wire Wire Line
+	2250 4400 2250 4800
+Wire Wire Line
+	2250 4700 2350 4700
+Wire Wire Line
+	1550 4000 1550 3900
+Wire Wire Line
+	2000 3350 2150 3350
+Wire Wire Line
+	2150 3350 2150 4600
+Wire Wire Line
+	2150 4600 2350 4600
+Wire Wire Line
+	2250 4500 2350 4500
+Connection ~ 2250 4700
+Wire Wire Line
+	2000 3250 2350 3250
+Wire Wire Line
+	3150 4600 3600 4600
+Wire Wire Line
+	5500 3350 5700 3350
+Wire Wire Line
+	5450 3750 5500 3750
+Wire Wire Line
+	5500 3750 5500 3550
+Wire Wire Line
+	7150 4050 7150 3950
+Wire Wire Line
+	7150 3000 7150 3550
+Connection ~ 7150 3150
+Wire Wire Line
+	3150 4300 3150 4400
+Wire Wire Line
+	2000 4800 2000 4600
+Wire Wire Line
+	2000 3050 2150 3050
+Wire Wire Line
+	2150 3050 2150 2750
+Wire Wire Line
+	6650 3550 6600 3550
+Wire Wire Line
+	6650 3450 6650 3650
+Wire Wire Line
+	6650 3650 6700 3650
+Connection ~ 6650 3550
+Text GLabel 6700 3650 2    60   Output ~ 0
+FAULT
+Text GLabel 2350 3550 2    60   Input ~ 0
+FAULT
+$Comp
+L ACS711 U2
+U 1 1 4DBA10CD
+P 6150 3450
+F 0 "U2" H 5900 3850 60  0000 C CNN
+F 1 "ACS711-25" H 6150 3450 60  0000 C CNN
+F 2 "SOIC8" H 6150 3450 60  0001 C CNN
+	1    6150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 4DBA1075
+P 6900 3450
+F 0 "R2" V 6980 3450 50  0000 C CNN
+F 1 "10k" V 6900 3450 50  0000 C CNN
+F 2 "0603" H 6900 3450 60  0001 C CNN
+	1    6900 3450
+	0    1    1    0   
+$EndComp
+NoConn ~ 2000 2850
+$Comp
+L GND #PWR02
+U 1 1 4CE2ACA4
+P 7600 4050
+F 0 "#PWR02" H 7600 4050 30  0001 C CNN
+F 1 "GND" H 7600 3980 30  0001 C CNN
+	1    7600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 4CE2ACA2
+P 7600 3750
+F 0 "C3" H 7650 3850 50  0000 L CNN
+F 1 "DNP" H 7650 3650 50  0000 L CNN
+F 2 "0603" H 7600 3750 60  0001 C CNN
+	1    7600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 4CE29764
+P 2000 4800
+F 0 "#PWR03" H 2000 4800 30  0001 C CNN
+F 1 "GND" H 2000 4730 30  0001 C CNN
+	1    2000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 4CE2975D
+P 2000 4350
+F 0 "R1" V 2080 4350 50  0000 C CNN
+F 1 "DNP" V 2000 4350 50  0000 C CNN
+F 2 "0603" H 2000 4350 60  0001 C CNN
+	1    2000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 4CE29748
+P 3600 4450
+F 0 "#PWR04" H 3600 4450 30  0001 C CNN
+F 1 "GND" H 3600 4380 30  0001 C CNN
+	1    3600 4450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3150 4500
+$Comp
+L GND #PWR05
+U 1 1 4CE29205
+P 7150 4050
+F 0 "#PWR05" H 7150 4050 30  0001 C CNN
+F 1 "GND" H 7150 3980 30  0001 C CNN
+	1    7150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 4CE29203
+P 6600 4050
+F 0 "#PWR06" H 6600 4050 30  0001 C CNN
+F 1 "GND" H 6600 3980 30  0001 C CNN
+	1    6600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRILL U3
+U 1 1 4C6050A5
+P 10700 6500
+F 0 "U3" H 10750 6550 60  0001 C CNN
+F 1 "DRILL" H 10700 6500 60  0000 C CNN
+F 2 "Drill" H 10700 6500 60  0001 C CNN
+	1    10700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRILL U4
+U 1 1 4C6050A2
+P 10700 6700
+F 0 "U4" H 10750 6750 60  0001 C CNN
+F 1 "DRILL" H 10700 6700 60  0000 C CNN
+F 2 "Drill" H 10700 6700 60  0001 C CNN
+	1    10700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRILL U6
+U 1 1 4C60509F
+P 11050 6700
+F 0 "U6" H 11100 6750 60  0001 C CNN
+F 1 "DRILL" H 11050 6700 60  0000 C CNN
+F 2 "Drill" H 11050 6700 60  0001 C CNN
+	1    11050 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRILL U5
+U 1 1 4C605099
+P 11050 6500
+F 0 "U5" H 11100 6550 60  0001 C CNN
+F 1 "DRILL" H 11050 6500 60  0000 C CNN
+F 2 "Drill" H 11050 6500 60  0001 C CNN
+	1    11050 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P2
+U 1 1 4C604EF8
+P 5150 3450
+F 0 "P2" V 5100 3450 40  0000 C CNN
+F 1 "AKL_5_2" V 5200 3450 40  0000 C CNN
+F 2 "AKL_5_2" H 5150 3450 60  0001 C CNN
+	1    5150 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P3
+U 1 1 4C601727
+P 5300 3200
+F 0 "P3" H 5380 3200 40  0000 L CNN
+F 1 "CONN_1" H 5300 3255 30  0001 C CNN
+F 2 "CONN_1" H 5300 3200 60  0001 C CNN
+	1    5300 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_1 P4
+U 1 1 4C60171F
+P 5300 3750
+F 0 "P4" H 5380 3750 40  0000 L CNN
+F 1 "CONN_1" H 5300 3805 30  0001 C CNN
+F 2 "CONN_1" H 5300 3750 60  0001 C CNN
+	1    5300 3750
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2000 3650
+NoConn ~ 2000 3750
+$Comp
+L C C2
+U 1 1 4C5FD710
+P 7150 3750
+F 0 "C2" H 7200 3850 50  0000 L CNN
+F 1 "100nF" H 7200 3650 50  0000 L CNN
+F 2 "0603" H 7150 3750 60  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 4C5FD6ED
+P 3400 4300
+F 0 "C1" V 3500 4300 50  0000 L CNN
+F 1 "100nF" V 3250 4300 50  0000 L CNN
+F 2 "0603" H 3400 4300 60  0001 C CNN
+	1    3400 4300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7800 3350 2    60   Output ~ 0
+IN_1
+Text GLabel 2350 3450 2    60   Input ~ 0
+IN_1
+Text GLabel 3600 4700 2    60   Input ~ 0
+SDA
+Text GLabel 3600 4600 2    60   Input ~ 0
+SCL
+Text GLabel 2350 3250 2    60   Output ~ 0
+SDA
+Text GLabel 2350 3150 2    60   Output ~ 0
+SCL
+$Comp
+L VCC #PWR07
+U 1 1 4C5FD35E
+P 3150 4300
+F 0 "#PWR07" H 3150 4400 30  0001 C CNN
+F 1 "VCC" H 3150 4400 30  0000 C CNN
+	1    3150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 4C5FD34E
+P 2250 4800
+F 0 "#PWR08" H 2250 4800 30  0001 C CNN
+F 1 "GND" H 2250 4730 30  0001 C CNN
+	1    2250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAT24C U1
+U 1 1 4C5FD337
+P 2750 4800
+F 0 "U1" H 2600 5300 60  0000 C CNN
+F 1 "M24C64" H 2750 4800 60  0000 C CNN
+F 2 "TSSOP8" H 2750 4800 60  0001 C CNN
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 4C5FCFB4
+P 2150 2750
+F 0 "#PWR09" H 2150 2850 30  0001 C CNN
+F 1 "VCC" H 2150 2850 30  0000 C CNN
+	1    2150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 4C5FCF5E
+P 2250 3100
+F 0 "#PWR010" H 2250 3100 30  0001 C CNN
+F 1 "GND" H 2250 3030 30  0001 C CNN
+	1    2250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 4C5FCF4F
+P 1550 4000
+F 0 "#PWR011" H 1550 4000 30  0001 C CNN
+F 1 "GND" H 1550 3930 30  0001 C CNN
+	1    1550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CON-SENSOR P1
+U 1 1 4C5FCF27
+P 1550 3300
+F 0 "P1" H 1300 3850 60  0000 C CNN
+F 1 "CON-SENSOR" V 1700 3300 60  0000 C CNN
+F 2 "CON-SENSOR" H 1550 3300 60  0001 C CNN
+	1    1550 3300
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

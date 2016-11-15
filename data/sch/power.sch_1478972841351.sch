@@ -1,0 +1,966 @@
+EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
+LIBS:charger
+LIBS:chargerMCU-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "IGBT charger 300V 20A(max values)"
+Date "2016-03-16"
+Rev "0.1"
+Comp "UPS"
+Comment1 "Electronics power supplays"
+Comment2 "25V->18V->5V->2,5V-ref"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5000 1800 2    60   Input ~ 0
++25V
+$Comp
+L MAX1775 U1
+U 1 1 57961B4B
+P 2800 2150
+F 0 "U1" H 2800 2700 60  0000 C CNN
+F 1 "MAX1775" H 2800 1700 60  0000 C CNN
+F 2 "Housings_SSOP:MSOP-10_3x3mm_Pitch0.5mm" H 2700 2150 60  0001 C CNN
+F 3 "" H 2700 2150 60  0000 C CNN
+F 4 "MAX1775EEE+" H 2800 2150 60  0001 C CNN "TME"
+	1    2800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 57961B4C
+P 9050 5150
+F 0 "L2" V 9000 5150 50  0000 C CNN
+F 1 "100u" V 9150 5150 50  0000 C CNN
+F 2 "charger:PISR-M" H 9050 5150 50  0001 C CNN
+F 3 "http://www.fastrongroup.com/image-show/58/PISR.pdf?type=Complete-DataSheet&productType=series" H 9050 5150 50  0001 C CNN
+F 4 "DL50-150" V 9050 5150 60  0001 C CNN "TME"
+	1    9050 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D10
+U 1 1 57961B4D
+P 8650 5700
+F 0 "D10" H 8650 5800 50  0000 C CNN
+F 1 "1N5819HW-F" V 8850 5650 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 8650 5700 50  0001 C CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds30217.pdf" H 8650 5700 50  0001 C CNN
+F 4 "1N5819HW-7-F" H 8650 5700 60  0001 C CNN "TME"
+	1    8650 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L C C16
+U 1 1 57961B4E
+P 9450 5600
+F 0 "C16" H 9475 5700 50  0000 L CNN
+F 1 "110u" H 9475 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9488 5450 50  0001 C CNN
+F 3 "" H 9450 5600 50  0000 C CNN
+F 4 "TAJR106K006R" H 9450 5600 60  0001 C CNN "TME"
+	1    9450 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CP1 CP2
+U 1 1 57961B52
+P 9700 5600
+F 0 "CP2" H 9725 5700 50  0000 L CNN
+F 1 "330u" H 9725 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H 9700 5600 50  0001 C CNN
+F 3 "" H 9700 5600 50  0000 C CNN
+F 4 "TAJR106K006R" H 9700 5600 60  0001 C CNN "TME"
+	1    9700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 57961B53
+P 7100 5450
+F 0 "C13" H 7125 5550 50  0000 L CNN
+F 1 "100u" H 7125 5350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7138 5300 50  0001 C CNN
+F 3 "" H 7100 5450 50  0000 C CNN
+F 4 "TAJR106K006R" H 7100 5450 60  0001 C CNN "TME"
+	1    7100 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 CP1
+U 1 1 57961B54
+P 6750 5450
+F 0 "CP1" H 6775 5550 50  0000 L CNN
+F 1 "60u" H 6775 5350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6750 5450 50  0001 C CNN
+F 3 "" H 6750 5450 50  0000 C CNN
+F 4 "TAJR106K006R" H 6750 5450 60  0001 C CNN "TME"
+	1    6750 5450
+	-1   0    0    -1  
+$EndComp
+Text Label 1150 2850 0    60   ~ 0
++18V
+Text Label 6150 5150 0    60   ~ 0
++18V
+$Comp
+L C C11
+U 1 1 57961B55
+P 4050 1450
+F 0 "C11" H 4075 1550 50  0000 L CNN
+F 1 "0.47u" H 4075 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4088 1300 50  0001 C CNN
+F 3 "" H 4050 1450 50  0000 C CNN
+	1    4050 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GDS Q3
+U 1 1 57961B57
+P 4450 2200
+F 0 "Q3" V 4750 2250 50  0000 R CNN
+F 1 "IRFR5305PBF" V 4350 2350 50  0000 R CNN
+F 2 "charger:TO252AA" H 4650 2300 50  0001 C CNN
+F 3 "http://www.tme.eu/en/Document/c3ef49bf7438fe933f8717d1acbf6b87/irfr5305.pdf" H 4450 2200 50  0001 C CNN
+F 4 "IRFR5305PBF" V 4450 2200 60  0001 C CNN "TME"
+	1    4450 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L D D8
+U 1 1 57961B58
+P 3500 1450
+F 0 "D8" H 3500 1550 50  0000 C CNN
+F 1 "BAL74" H 3500 1350 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3500 1450 50  0001 C CNN
+F 3 "http://www.tme.eu/en/Document/bfa6bb775f297a6721927dc788dabae9/BAL74E6327HTSA1.pdf" H 3500 1450 50  0001 C CNN
+F 4 "BAL74" H 3500 1450 60  0001 C CNN "TME"
+	1    3500 1450
+	0    1    -1   0   
+$EndComp
+$Comp
+L C C6
+U 1 1 57961B5A
+P 1800 1650
+F 0 "C6" H 1825 1750 50  0000 L CNN
+F 1 "0.1u" H 1825 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1838 1500 50  0001 C CNN
+F 3 "" H 1800 1650 50  0000 C CNN
+	1    1800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 57961B5B
+P 2050 1650
+F 0 "C8" H 2075 1750 50  0000 L CNN
+F 1 "20u" H 2075 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2088 1500 50  0001 C CNN
+F 3 "" H 2050 1650 50  0000 C CNN
+	1    2050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 57961B5C
+P 4250 2850
+F 0 "L1" V 4200 2850 50  0000 C CNN
+F 1 "4u7" V 4350 2850 50  0000 C CNN
+F 2 "charger:PISR-M" H 4250 2850 50  0001 C CNN
+F 3 "http://www.tme.eu/en/Document/6487e561fa8bb80e3aa54188b196a92a/BOURNS_5500_series.pdf" H 4250 2850 50  0001 C CNN
+F 4 "SRR0604-4R7ML" V 4250 2850 60  0001 C CNN "TME"
+	1    4250 2850
+	0    1    1    0   
+$EndComp
+Text Notes 3000 3900 0    60   ~ 0
+Goes to +25V\n so is always active\n
+$Comp
+L R R20
+U 1 1 57961B5D
+P 3050 2850
+F 0 "R20" V 3130 2850 50  0000 C CNN
+F 1 "WW25R-3m,2W" V 3050 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_2512_HandSoldering" V 2980 2850 50  0001 C CNN
+F 3 "http://www.tme.eu/en/Document/62b17db18206ba7594bc0856e4b0ba74/ASC_WW25R.pdf" H 3050 2850 50  0001 C CNN
+F 4 "WW25RR003FTL" V 3050 2850 60  0001 C CNN "TME"
+	1    3050 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R18
+U 1 1 57961B5E
+P 1150 2250
+F 0 "R18" V 1230 2250 50  0000 C CNN
+F 1 "10k" V 1150 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1080 2250 50  0001 C CNN
+F 3 "" H 1150 2250 50  0000 C CNN
+F 4 "CRCW080510K0FKEA" V 1150 2250 60  0001 C CNN "TME"
+	1    1150 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R19
+U 1 1 57961B5F
+P 1700 2400
+F 0 "R19" V 1780 2400 50  0000 C CNN
+F 1 "150k" V 1700 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1630 2400 50  0001 C CNN
+F 3 "" H 1700 2400 50  0000 C CNN
+F 4 "SMD0805-150K-1%" V 1700 2400 60  0001 C CNN "TME"
+	1    1700 2400
+	0    -1   -1   0   
+$EndComp
+Text Notes 4050 3100 0    60   ~ 0
+5520-RC10A\n
+$Comp
+L C C9
+U 1 1 57961B61
+P 2150 3200
+F 0 "C9" H 2175 3300 50  0000 L CNN
+F 1 "30n" H 2175 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2188 3050 50  0001 C CNN
+F 3 "" H 2150 3200 50  0000 C CNN
+	1    2150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM2575 U3
+U 1 1 57961B63
+P 7950 5350
+F 0 "U3" H 8100 5800 60  0000 C CNN
+F 1 "LM2575" H 7950 5250 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-5Lead" H 7900 5350 60  0001 C CNN
+F 3 "" H 7900 5350 60  0000 C CNN
+F 4 "LM2575HVT-ADJ" H 7950 5350 60  0001 C CNN "TME"
+	1    7950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP1525T-I/TT U4
+U 1 1 57961B65
+P 9500 2200
+F 0 "U4" H 9600 2500 50  0000 C CNN
+F 1 "MCP1525T-I/TT" H 9100 1950 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 9650 1950 50  0001 C CIN
+F 3 "" H 9500 2200 50  0000 C CNN
+F 4 "MCP1525T-I/TT" H 9500 2200 60  0001 C CNN "TME"
+	1    9500 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 10450 2200 2    59   Input ~ 0
++2,5V-ref
+$Comp
+L C C17
+U 1 1 57961B66
+P 10150 2600
+F 0 "C17" H 10175 2700 50  0000 L CNN
+F 1 "0,1u" H 10175 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10188 2450 50  0001 C CNN
+F 3 "" H 10150 2600 50  0000 C CNN
+	1    10150 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 9500 1450 1    59   Input ~ 0
++5V
+$Comp
+L C C15
+U 1 1 57961B68
+P 9000 1750
+F 0 "C15" H 9025 1850 50  0000 L CNN
+F 1 "0,1u" H 9025 1650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9038 1600 50  0001 C CNN
+F 3 "" H 9000 1750 50  0000 C CNN
+	1    9000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCHDPAK D9
+U 1 1 57961B6B
+P 5100 3200
+F 0 "D9" H 5100 3300 50  0000 C CNN
+F 1 "12CWQ06FN" H 5100 3100 50  0000 C CNN
+F 2 "charger:TO252AA" H 5100 3200 50  0001 C CNN
+F 3 "http://www.tme.eu/en/Document/1cee56f0b054914cc517467ae07b8b92/12CWQ06FNPBF.pdf" H 5100 3200 50  0001 C CNN
+F 4 "12CWQ06FN" H 5100 3200 60  0001 C CNN "TME"
+	1    5100 3200
+	0    1    1    0   
+$EndComp
+Text Notes 500  2150 0    47   ~ 0
+R2= R3 x (VOUT − 1)/VREF(1,25V)
+Text Notes 1000 1700 0    60   ~ 0
+5mm form GND\n
+Text Notes 550  2050 0    60   ~ 0
+FBmax=50nA
+Text Notes 750  4300 0    60   ~ 0
+L (MIN) =(( Vin - Vout ) x 1μs) /(Vcs(min)/(Rcs)=2.2uH
+Text Notes 750  5300 0    60   ~ 0
+The current-sense resistor must\nbe placed within 0.2 inches (5mm) of the controller IC,\ndirectly between OUT and CS. Place voltage feedback\nresistors (MAX1745) next to the FB pin (no more than\n0.2in) rather than near the output. Place the 0.47μF input\nbypass capacitor within 0.2in (5mm) of IN.
+Text Notes 800  4450 0    60   ~ 0
+Vcs=80-115mV\n
+Text Notes 4500 1500 0    60   ~ 0
+lowESR\n
+$Comp
+L C C10
+U 1 1 57961B6C
+P 3800 2100
+F 0 "C10" V 3850 2150 50  0000 L CNN
+F 1 "4.7u" V 3650 2050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3838 1950 50  0001 C CNN
+F 3 "" H 3800 2100 50  0000 C CNN
+	1    3800 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 C12
+U 1 1 57961B6E
+P 4350 1450
+F 0 "C12" H 4375 1550 50  0000 L CNN
+F 1 "4.7u" H 4375 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 4350 1450 50  0001 C CNN
+F 3 "" H 4350 1450 50  0000 C CNN
+F 4 "CE100/16-SMDHT" H 4350 1450 60  0001 C CNN "TME"
+	1    4350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C7
+U 1 1 57961B6F
+P 1850 3200
+F 0 "C7" H 1875 3300 50  0000 L CNN
+F 1 "200u" H 1875 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x5.8" H 1850 3200 50  0001 C CNN
+F 3 "" H 1850 3200 50  0000 C CNN
+F 4 "CE100/16-SMDHT" H 1850 3200 60  0001 C CNN "TME"
+	1    1850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5150 8750 5150
+Wire Wire Line
+	9450 5750 9450 6050
+Wire Wire Line
+	9700 5750 9700 5950
+Wire Wire Line
+	9700 5950 9450 5950
+Connection ~ 9450 5950
+Wire Wire Line
+	6150 5150 7350 5150
+Wire Wire Line
+	1150 2850 2900 2850
+Wire Wire Line
+	2300 1200 2300 1800
+Connection ~ 2300 1200
+Wire Wire Line
+	4050 1600 4050 2300
+Wire Wire Line
+	3300 1950 4450 1950
+Wire Wire Line
+	4350 1800 4350 1600
+Wire Wire Line
+	4450 1950 4450 2000
+Wire Wire Line
+	3300 2100 3650 2100
+Wire Wire Line
+	3500 2100 3500 1600
+Wire Wire Line
+	3500 1200 3500 1300
+Wire Wire Line
+	3300 1800 5000 1800
+Connection ~ 3500 1200
+Connection ~ 4050 1800
+Wire Wire Line
+	1800 1200 1800 1500
+Connection ~ 1800 1200
+Wire Wire Line
+	2050 1200 2050 1500
+Connection ~ 2050 1200
+Wire Wire Line
+	2050 1800 2050 1950
+Wire Wire Line
+	2050 1950 2300 1950
+Wire Wire Line
+	1800 1800 1800 2100
+Wire Wire Line
+	1800 2100 2300 2100
+Wire Wire Line
+	4550 2850 5100 2850
+Wire Wire Line
+	3300 2400 3600 2400
+Wire Wire Line
+	3600 2400 3600 2850
+Wire Wire Line
+	3200 2850 3950 2850
+Connection ~ 3600 2850
+Wire Wire Line
+	1850 2400 2300 2400
+Wire Wire Line
+	2150 2400 2150 3050
+Connection ~ 2150 2850
+Wire Wire Line
+	4650 2300 4800 2300
+Wire Wire Line
+	850  2250 850  2350
+Wire Wire Line
+	1300 2250 2300 2250
+Connection ~ 1350 2250
+Connection ~ 2150 2400
+Wire Wire Line
+	1350 2250 1350 2400
+Wire Wire Line
+	850  2250 1000 2250
+Wire Wire Line
+	1500 1300 1500 1200
+Wire Wire Line
+	1350 2400 1550 2400
+Wire Wire Line
+	4050 1200 4050 1300
+Connection ~ 4050 1200
+Wire Wire Line
+	4800 2300 4800 2850
+Wire Wire Line
+	5100 2850 5100 3000
+Connection ~ 4800 2850
+Wire Wire Line
+	5050 3400 5050 3600
+Wire Wire Line
+	8550 5300 9450 5300
+Connection ~ 9450 5300
+Wire Wire Line
+	2150 3350 2150 3550
+Wire Wire Line
+	7350 5800 7350 5300
+Wire Wire Line
+	6750 5800 7350 5800
+Wire Wire Line
+	6750 5600 6750 6000
+Connection ~ 6750 5800
+Wire Wire Line
+	7100 5600 7100 5800
+Connection ~ 7100 5800
+Wire Wire Line
+	6750 5300 6750 5150
+Connection ~ 6750 5150
+Wire Wire Line
+	7100 5300 7100 5150
+Connection ~ 7100 5150
+Wire Wire Line
+	7950 4600 7950 4850
+Connection ~ 8650 5150
+Wire Wire Line
+	8650 5850 8650 6050
+Wire Wire Line
+	9900 2200 10450 2200
+Wire Wire Line
+	10150 2200 10150 2450
+Connection ~ 10150 2200
+Wire Wire Line
+	9500 2550 9500 2650
+Wire Wire Line
+	9500 1450 9500 1850
+Wire Wire Line
+	9000 1600 9500 1600
+Connection ~ 9500 1600
+Wire Wire Line
+	9000 1900 9000 2000
+Wire Wire Line
+	10150 2750 10150 2850
+Wire Wire Line
+	5150 3400 5150 3550
+Wire Wire Line
+	5150 3550 5050 3550
+Connection ~ 5050 3550
+Wire Wire Line
+	8650 5150 8650 5550
+Wire Wire Line
+	9350 5150 9950 5150
+Wire Wire Line
+	9450 5150 9450 5450
+Wire Wire Line
+	9700 5150 9700 5450
+Connection ~ 9700 5150
+Connection ~ 9450 5150
+Connection ~ 4350 1800
+Wire Notes Line
+	950  1700 1900 1700
+Wire Notes Line
+	1900 1700 1900 1600
+Wire Notes Line
+	1900 1600 950  1600
+Wire Notes Line
+	950  1600 950  1700
+Wire Notes Line
+	1700 1600 1700 1500
+Wire Notes Line
+	1700 1500 1950 1500
+Wire Notes Line
+	1950 1500 1950 1800
+Wire Notes Line
+	1950 1800 1700 1800
+Wire Notes Line
+	1700 1800 1700 1700
+Wire Notes Line
+	550  2150 550  2600
+Wire Notes Line
+	550  2600 1900 2600
+Wire Notes Line
+	1900 2600 1900 2150
+Wire Notes Line
+	1900 2150 1750 2150
+Wire Wire Line
+	4050 2300 4250 2300
+Connection ~ 3500 2100
+Wire Wire Line
+	3950 2100 4050 2100
+Connection ~ 4050 2100
+Wire Wire Line
+	1850 3050 1850 2850
+Connection ~ 1850 2850
+Wire Wire Line
+	1850 3350 1850 3500
+Wire Wire Line
+	1850 3500 2150 3500
+Connection ~ 2150 3500
+Text Notes 750  5750 0    55   ~ 0
+Dropout voltage\nI OUT x ⎡⎣ R DS(ON) + R SENNSE + R INDUCTOR ⎤⎦
+Text Notes 4500 800  0    60   ~ 0
+ESR CRITICAL = (V OUT / 1.25V) ✕ 8mV / I RIPPLE
+Wire Notes Line
+	5650 950  5650 1500
+Wire Notes Line
+	5650 1500 4900 1500
+Text Notes 5800 1000 0    60   ~ 0
+I RIPPLE = (V IN - V OUT ) ✕ t ON(MIN) / L
+Text Notes 800  800  0    60   ~ 0
+t on(MIN)=1us\nt off(MIN)=2us
+Text Notes 3650 2350 0    39   ~ 0
+or greater
+Text Notes 4700 2200 0    39   ~ 0
+I D(MAX ) ≥ I LIM ( MAX )=V CS ( MAX )/R SENSE\n
+Text Notes 1400 3850 0    39   ~ 0
+V RIPPLE ≈ V RIPPLE , ESR + V RIPPLE , C
+Text Notes 1700 3000 0    39   ~ 0
+Tantalum and electroliyitic
+Text Notes 800  6450 0    59   ~ 0
+V RIPPLE,ESR ≈ ( R ESR ) Δ Ip − p
+Text Notes 750  6250 0    79   ~ 16
+V ripple
+Text Notes 800  6600 0    59   ~ 0
+V RIPPLE,C ≈LI 2 PEAK/2CV O
+Text Notes 800  6950 0    59   ~ 0
+C IN =1/2 L I (Δ L)^2 / V RIPPLE , Cin Vin\n\nC IN ={1/2 L I (Δ L)^2 /V RIPPLE , Cout Vout } * Vin/(Vin-Vout)
+Wire Notes Line
+	1450 6850 1450 7000
+Wire Notes Line
+	1450 7000 1750 7000
+Wire Notes Line
+	1750 7000 1750 6850
+Wire Notes Line
+	1750 6850 1450 6850
+Wire Notes Line
+	1550 7000 1550 7200
+Wire Notes Line
+	1550 7200 1750 7200
+Text Notes 1250 7300 0    59   ~ 0
+Iripple basicly or change in L\n
+Wire Notes Line
+	750  7650 4300 7650
+Wire Notes Line
+	4300 7650 4300 4100
+Wire Notes Line
+	4300 4100 5550 4100
+Wire Notes Line
+	5550 2300 5550 7700
+Wire Notes Line
+	5550 2300 6500 2300
+Wire Notes Line
+	6500 2300 6500 1050
+Wire Notes Line
+	6500 1050 8550 1050
+Wire Notes Line
+	8100 1050 8100 600 
+Text Notes 2600 900  0    157  ~ 31
+18V\n
+Text Notes 10250 850  0    157  ~ 31
+Vref
+Wire Notes Line
+	3000 4300 3000 4500
+Wire Notes Line
+	3000 4500 3150 4500
+Text Notes 3050 4500 0    59   ~ 0
+Current sense
+Text Notes 2550 3200 0    51   ~ 0
+R CS =V CS(MIN)/\n	   1.3 x I OUT(MAX)
+Text Notes 3950 3200 0    39   ~ 0
+could put any to 50uH
+Text Notes 9100 6350 0    39   ~ 0
+Output Ripple Voltage = (ΔI IND ) (ESR of C OUT )
+Text Notes 9950 4200 0    157  ~ 31
++5V
+Wire Notes Line
+	8550 1050 8550 3500
+Text Notes 7800 1500 0    157  ~ 31
+3,3V
+$Comp
+L AMS1117 U2
+U 1 1 57961B70
+P 7100 2550
+F 0 "U2" H 7200 2300 50  0000 C CNN
+F 1 "AMS1117" H 7100 2800 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 7100 2200 60  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 7200 2300 60  0001 C CNN
+F 4 "LD1117AS33" H 7100 2550 60  0001 C CNN "TME"
+	1    7100 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6350 2550 0    60   Input ~ 0
++5V
+Wire Wire Line
+	6350 2550 6500 2550
+Wire Wire Line
+	7100 3050 7100 3250
+$Comp
+L C C14
+U 1 1 57961B72
+P 7800 2950
+F 0 "C14" H 7825 3050 50  0000 L CNN
+F 1 "C" H 7825 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7838 2800 50  0001 C CNN
+F 3 "" H 7800 2950 50  0000 C CNN
+	1    7800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2550 8000 2550
+Wire Wire Line
+	7800 2550 7800 2800
+Wire Wire Line
+	7800 3100 7800 3250
+Connection ~ 7800 2550
+Text Notes 6850 2100 0    60   ~ 0
+For 3,3V i2c devices
+Wire Notes Line
+	5550 3500 11200 3500
+$Comp
+L GND #PWR012
+U 1 1 5796F954
+P 2150 3550
+F 0 "#PWR012" H 2150 3300 50  0001 C CNN
+F 1 "GND" H 2150 3400 50  0000 C CNN
+F 2 "" H 2150 3550 50  0000 C CNN
+F 3 "" H 2150 3550 50  0000 C CNN
+	1    2150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5796FE9E
+P 1500 1300
+F 0 "#PWR013" H 1500 1050 50  0001 C CNN
+F 1 "GND" H 1500 1150 50  0000 C CNN
+F 2 "" H 1500 1300 50  0000 C CNN
+F 3 "" H 1500 1300 50  0000 C CNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1200 4350 1200
+Wire Wire Line
+	4350 1200 4350 1300
+$Comp
+L GND #PWR014
+U 1 1 579709C3
+P 7100 3250
+F 0 "#PWR014" H 7100 3000 50  0001 C CNN
+F 1 "GND" H 7100 3100 50  0000 C CNN
+F 2 "" H 7100 3250 50  0000 C CNN
+F 3 "" H 7100 3250 50  0000 C CNN
+	1    7100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 57970B01
+P 7800 3250
+F 0 "#PWR015" H 7800 3000 50  0001 C CNN
+F 1 "GND" H 7800 3100 50  0000 C CNN
+F 2 "" H 7800 3250 50  0000 C CNN
+F 3 "" H 7800 3250 50  0000 C CNN
+	1    7800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 57970CBF
+P 9000 2000
+F 0 "#PWR016" H 9000 1750 50  0001 C CNN
+F 1 "GND" H 9000 1850 50  0000 C CNN
+F 2 "" H 9000 2000 50  0000 C CNN
+F 3 "" H 9000 2000 50  0000 C CNN
+	1    9000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 57970D1B
+P 9500 2650
+F 0 "#PWR017" H 9500 2400 50  0001 C CNN
+F 1 "GND" H 9500 2500 50  0000 C CNN
+F 2 "" H 9500 2650 50  0000 C CNN
+F 3 "" H 9500 2650 50  0000 C CNN
+	1    9500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 57970D77
+P 10150 2850
+F 0 "#PWR018" H 10150 2600 50  0001 C CNN
+F 1 "GND" H 10150 2700 50  0000 C CNN
+F 2 "" H 10150 2850 50  0000 C CNN
+F 3 "" H 10150 2850 50  0000 C CNN
+	1    10150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 57970FC6
+P 9450 6050
+F 0 "#PWR019" H 9450 5800 50  0001 C CNN
+F 1 "GND" H 9450 5900 50  0000 C CNN
+F 2 "" H 9450 6050 50  0000 C CNN
+F 3 "" H 9450 6050 50  0000 C CNN
+	1    9450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 579710C4
+P 8650 6050
+F 0 "#PWR020" H 8650 5800 50  0001 C CNN
+F 1 "GND" H 8650 5900 50  0000 C CNN
+F 2 "" H 8650 6050 50  0000 C CNN
+F 3 "" H 8650 6050 50  0000 C CNN
+	1    8650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 57971171
+P 6750 6000
+F 0 "#PWR021" H 6750 5750 50  0001 C CNN
+F 1 "GND" H 6750 5850 50  0000 C CNN
+F 2 "" H 6750 6000 50  0000 C CNN
+F 3 "" H 6750 6000 50  0000 C CNN
+	1    6750 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 5797177C
+P 5050 3600
+F 0 "#PWR022" H 5050 3350 50  0001 C CNN
+F 1 "GND" H 5050 3450 50  0000 C CNN
+F 2 "" H 5050 3600 50  0000 C CNN
+F 3 "" H 5050 3600 50  0000 C CNN
+	1    5050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 579719A4
+P 850 2350
+F 0 "#PWR023" H 850 2100 50  0001 C CNN
+F 1 "GND" H 850 2200 50  0000 C CNN
+F 2 "" H 850 2350 50  0000 C CNN
+F 3 "" H 850 2350 50  0000 C CNN
+	1    850  2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P9
+U 1 1 57976BFA
+P 4700 4850
+F 0 "P9" H 4700 5000 50  0000 C CNN
+F 1 "CONN_01X02" V 4800 4850 50  0000 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_1.20mmDrill" H 4700 4850 50  0001 C CNN
+F 3 "" H 4700 4850 50  0000 C CNN
+	1    4700 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P10
+U 1 1 57976D01
+P 4700 5350
+F 0 "P10" H 4700 5500 50  0000 C CNN
+F 1 "CONN_01X02" V 4800 5350 50  0000 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_1.20mmDrill" H 4700 5350 50  0001 C CNN
+F 3 "" H 4700 5350 50  0000 C CNN
+	1    4700 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P11
+U 1 1 57976DB4
+P 4700 5900
+F 0 "P11" H 4700 6050 50  0000 C CNN
+F 1 "CONN_01X02" V 4800 5900 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_PicoBlade_53047-0210" H 4700 5900 50  0001 C CNN
+F 3 "" H 4700 5900 50  0000 C CNN
+	1    4700 5900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P12
+U 1 1 57976F0C
+P 4700 6450
+F 0 "P12" H 4700 6600 50  0000 C CNN
+F 1 "CONN_01X02" V 4800 6450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_PicoBlade_53047-0210" H 4700 6450 50  0001 C CNN
+F 3 "" H 4700 6450 50  0000 C CNN
+	1    4700 6450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4900 5000 4900
+Wire Wire Line
+	5000 4900 5000 6700
+Wire Wire Line
+	4900 6500 5000 6500
+Connection ~ 5000 6500
+Wire Wire Line
+	4900 5950 5000 5950
+Connection ~ 5000 5950
+Wire Wire Line
+	4900 5400 5000 5400
+Connection ~ 5000 5400
+$Comp
+L GND #PWR024
+U 1 1 5797813B
+P 5000 6700
+F 0 "#PWR024" H 5000 6450 50  0001 C CNN
+F 1 "GND" H 5000 6550 50  0000 C CNN
+F 2 "" H 5000 6700 50  0000 C CNN
+F 3 "" H 5000 6700 50  0000 C CNN
+	1    5000 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4800 5100 4800
+Text GLabel 5100 4800 2    60   Input ~ 0
++25V
+Text GLabel 5100 5300 2    60   Input ~ 0
++18V
+Wire Wire Line
+	5100 5300 4900 5300
+Text GLabel 5100 5850 2    60   Input ~ 0
++5V
+Wire Wire Line
+	5100 5850 4900 5850
+Text GLabel 5100 6400 2    60   Input ~ 0
++3,3V
+Wire Wire Line
+	4900 6400 5100 6400
+Text GLabel 8000 2550 2    60   Input ~ 0
++3,3V
+Text GLabel 9950 5150 2    60   Input ~ 0
++5V
+Text GLabel 3350 2250 2    60   Input ~ 0
++25V
+Wire Wire Line
+	3300 2250 3350 2250
+Text GLabel 1150 2850 0    60   Input ~ 0
++18V
+$Comp
+L GND #PWR025
+U 1 1 57B7362F
+P 7950 4600
+F 0 "#PWR025" H 7950 4350 50  0001 C CNN
+F 1 "GND" H 7950 4450 50  0000 C CNN
+F 2 "" H 7950 4600 50  0000 C CNN
+F 3 "" H 7950 4600 50  0000 C CNN
+	1    7950 4600
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,208 @@
+EESchema Schematic File Version 2  date Thu 06 Feb 2014 21:40:25 GMT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:one_button_remote-cache
+LIBS:gtb
+LIBS:OBR
+LIBS:one_button_remote-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "6 feb 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 7600 3950
+Wire Wire Line
+	7600 3950 7600 5050
+Wire Wire Line
+	7600 5050 2550 5050
+Wire Wire Line
+	6700 3950 8300 3950
+Connection ~ 3350 5050
+Wire Wire Line
+	8300 3350 8050 3350
+Wire Wire Line
+	9350 3500 9350 3400
+Wire Wire Line
+	2550 3950 2550 4100
+Connection ~ 2950 5050
+Wire Wire Line
+	2950 5050 2950 4600
+Wire Wire Line
+	2950 3950 2950 4100
+Wire Wire Line
+	4000 3550 2950 3550
+Wire Wire Line
+	6700 3450 7050 3450
+Wire Wire Line
+	4000 3450 2550 3450
+Wire Wire Line
+	2550 3450 2550 3550
+Wire Wire Line
+	2550 5050 2550 4600
+Wire Wire Line
+	9350 4100 9350 4200
+Wire Wire Line
+	4000 3850 3350 3850
+Connection ~ 3550 3850
+Wire Wire Line
+	3350 3850 3350 4550
+Wire Wire Line
+	3550 4450 7050 4450
+Wire Wire Line
+	7050 4450 7050 3450
+$Comp
+L GND #PWR01
+U 1 1 52F2B2D6
+P 9350 4200
+F 0 "#PWR01" H 9350 4200 30  0001 C CNN
+F 1 "GND" H 9350 4130 30  0001 C CNN
+	1    9350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 52F2B2CA
+P 9350 3400
+F 0 "#PWR02" H 9350 3500 30  0001 C CNN
+F 1 "VCC" H 9350 3500 30  0000 C CNN
+	1    9350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 52F2B248
+P 8300 3950
+F 0 "#PWR03" H 8300 3950 30  0001 C CNN
+F 1 "GND" H 8300 3880 30  0001 C CNN
+	1    8300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BATTERY BT1
+U 1 1 52F2AF5F
+P 9350 3800
+F 0 "BT1" H 9350 4000 50  0000 C CNN
+F 1 "BATTERY" H 9350 3610 50  0000 C CNN
+	1    9350 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 52F2AF26
+P 8300 3350
+F 0 "#PWR04" H 8300 3450 30  0001 C CNN
+F 1 "VCC" H 8300 3450 30  0000 C CNN
+	1    8300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SWITCH_INV SW2
+U 1 1 52EAC833
+P 7550 3450
+F 0 "SW2" H 7350 3600 50  0000 C CNN
+F 1 "SWITCH_INV" H 7400 3300 50  0000 C CNN
+	1    7550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 52E83438
+P 3550 4150
+F 0 "SW1" H 3700 4260 50  0000 C CNN
+F 1 "SW_PUSH" H 3550 4070 50  0000 C CNN
+	1    3550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 52E97AF6
+P 2550 3750
+F 0 "D1" H 2550 3850 50  0000 C CNN
+F 1 "LED" H 2550 3650 50  0000 C CNN
+	1    2550 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 52E834F0
+P 2950 3750
+F 0 "D2" H 2950 3850 50  0000 C CNN
+F 1 "LED" H 2950 3650 50  0000 C CNN
+	1    2950 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 52E834C7
+P 2950 4350
+F 0 "R2" V 3030 4350 50  0000 C CNN
+F 1 "220" V 2950 4350 50  0000 C CNN
+	1    2950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 52E83490
+P 3350 4800
+F 0 "R3" V 3430 4800 50  0000 C CNN
+F 1 "10K" V 3350 4800 50  0000 C CNN
+	1    3350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 52E83468
+P 2550 4350
+F 0 "R1" V 2630 4350 50  0000 C CNN
+F 1 "220" V 2550 4350 50  0000 C CNN
+	1    2550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATTINY85-P IC1
+U 1 1 52E82EAD
+P 4200 3350
+F 0 "IC1" H 4300 3400 60  0000 C CNN
+F 1 "ATTINY85-P" H 6200 2600 60  0000 C CNN
+F 2 "DIP8" H 4300 2600 60  0001 C CNN
+	1    4200 3350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

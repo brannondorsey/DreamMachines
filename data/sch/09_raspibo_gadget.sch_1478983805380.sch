@@ -1,0 +1,390 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:raspibo_logo
+LIBS:conn_micro_usb
+LIBS:09_raspibo_gadget-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-S IC1
+U 1 1 5597057C
+P 5250 2800
+F 0 "IC1" H 4100 3200 40  0000 C CNN
+F 1 "ATTINY85-S" H 6250 2400 40  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 6200 2800 35  0000 C CIN
+F 3 "" H 5250 2800 60  0000 C CNN
+	1    5250 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 559706D4
+P 7150 2550
+F 0 "D1" H 7150 2650 50  0000 C CNN
+F 1 "LED" H 7150 2450 50  0000 C CNN
+F 2 "w_smd_leds:Led_0805" H 7150 2550 60  0001 C CNN
+F 3 "" H 7150 2550 60  0000 C CNN
+	1    7150 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D2
+U 1 1 55970741
+P 7150 2650
+F 0 "D2" H 7150 2750 50  0000 C CNN
+F 1 "LED" H 7150 2550 50  0000 C CNN
+F 2 "w_smd_leds:Led_0805" H 7150 2650 60  0001 C CNN
+F 3 "" H 7150 2650 60  0000 C CNN
+	1    7150 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D3
+U 1 1 5597080F
+P 7150 2750
+F 0 "D3" H 7150 2850 50  0000 C CNN
+F 1 "LED" H 7150 2650 50  0000 C CNN
+F 2 "w_smd_leds:Led_0805" H 7150 2750 60  0001 C CNN
+F 3 "" H 7150 2750 60  0000 C CNN
+	1    7150 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D4
+U 1 1 55970878
+P 7150 2850
+F 0 "D4" H 7150 2950 50  0000 C CNN
+F 1 "LED" H 7150 2750 50  0000 C CNN
+F 2 "w_smd_leds:Led_0805" H 7150 2850 60  0001 C CNN
+F 3 "" H 7150 2850 60  0000 C CNN
+	1    7150 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D5
+U 1 1 559708DF
+P 7150 2950
+F 0 "D5" H 7150 3050 50  0000 C CNN
+F 1 "LED" H 7150 2850 50  0000 C CNN
+F 2 "w_smd_leds:Led_0805" H 7150 2950 60  0001 C CNN
+F 3 "" H 7150 2950 60  0000 C CNN
+	1    7150 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 55970972
+P 8050 3050
+F 0 "#PWR01" H 8050 2800 50  0001 C CNN
+F 1 "GND" H 8050 2900 50  0000 C CNN
+F 2 "" H 8050 3050 60  0000 C CNN
+F 3 "" H 8050 3050 60  0000 C CNN
+	1    8050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 55970A08
+P 3650 3150
+F 0 "#PWR02" H 3650 2900 50  0001 C CNN
+F 1 "GND" H 3650 3000 50  0000 C CNN
+F 2 "" H 3650 3150 60  0000 C CNN
+F 3 "" H 3650 3150 60  0000 C CNN
+	1    3650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 55970A4D
+P 3650 2450
+F 0 "#PWR03" H 3650 2300 50  0001 C CNN
+F 1 "VCC" H 3650 2600 50  0000 C CNN
+F 2 "" H 3650 2450 60  0000 C CNN
+F 3 "" H 3650 2450 60  0000 C CNN
+	1    3650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 55970BC6
+P 7700 2550
+F 0 "R1" V 7780 2550 50  0000 C CNN
+F 1 "R" V 7700 2550 50  0000 C CNN
+F 2 "w_smd_resistors:r_0805" V 7630 2550 30  0001 C CNN
+F 3 "" H 7700 2550 30  0000 C CNN
+	1    7700 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 55970C4D
+P 7700 2650
+F 0 "R2" V 7780 2650 50  0000 C CNN
+F 1 "R" V 7700 2650 50  0000 C CNN
+F 2 "w_smd_resistors:r_0805" V 7630 2650 30  0001 C CNN
+F 3 "" H 7700 2650 30  0000 C CNN
+	1    7700 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 55970C80
+P 7700 2750
+F 0 "R3" V 7780 2750 50  0000 C CNN
+F 1 "R" V 7700 2750 50  0000 C CNN
+F 2 "w_smd_resistors:r_0805" V 7630 2750 30  0001 C CNN
+F 3 "" H 7700 2750 30  0000 C CNN
+	1    7700 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 55970CE9
+P 7700 2850
+F 0 "R4" V 7780 2850 50  0000 C CNN
+F 1 "R" V 7700 2850 50  0000 C CNN
+F 2 "w_smd_resistors:r_0805" V 7630 2850 30  0001 C CNN
+F 3 "" H 7700 2850 30  0000 C CNN
+	1    7700 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 55970D52
+P 7700 2950
+F 0 "R5" V 7780 2950 50  0000 C CNN
+F 1 "R" V 7700 2950 50  0000 C CNN
+F 2 "w_smd_resistors:r_0805" V 7630 2950 30  0001 C CNN
+F 3 "" H 7700 2950 30  0000 C CNN
+	1    7700 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2950 3900 2950
+Wire Wire Line
+	3900 2950 3900 4450
+Wire Wire Line
+	8050 2550 8050 3050
+Wire Wire Line
+	7550 2550 7350 2550
+Wire Wire Line
+	7350 2650 7550 2650
+Connection ~ 8050 2650
+Wire Wire Line
+	7350 2750 7550 2750
+Connection ~ 8050 2750
+Wire Wire Line
+	7350 2850 7550 2850
+Connection ~ 8050 2850
+Wire Wire Line
+	7350 2950 7550 2950
+Connection ~ 8050 2950
+Wire Wire Line
+	3650 3150 3650 2950
+Connection ~ 3650 2950
+Wire Wire Line
+	3650 2550 3650 2450
+Connection ~ 3650 2550
+Wire Wire Line
+	8050 2550 7850 2550
+Wire Wire Line
+	8050 2650 7850 2650
+Wire Wire Line
+	7850 2750 8050 2750
+Wire Wire Line
+	8050 2850 7850 2850
+Wire Wire Line
+	7850 2950 8050 2950
+Wire Wire Line
+	6600 2550 6950 2550
+Wire Wire Line
+	6600 2650 6950 2650
+Wire Wire Line
+	6600 2750 6950 2750
+Wire Wire Line
+	6950 2850 6600 2850
+Wire Wire Line
+	6600 2950 6950 2950
+Wire Wire Line
+	3400 2550 3900 2550
+Wire Wire Line
+	6600 3050 6600 3900
+Wire Wire Line
+	6700 2750 6700 3900
+Connection ~ 6700 2750
+Wire Wire Line
+	6800 3900 6800 2650
+Connection ~ 6800 2650
+Connection ~ 6900 2550
+Connection ~ 3900 3050
+Wire Wire Line
+	3800 2550 3800 4650
+Connection ~ 3800 2550
+Wire Wire Line
+	6800 4400 6800 4650
+Wire Wire Line
+	6800 4650 3800 4650
+Wire Wire Line
+	6600 4400 6600 4450
+Wire Wire Line
+	6600 4450 3900 4450
+Wire Wire Line
+	6700 4400 6700 4450
+Wire Wire Line
+	6700 4450 6900 4450
+Wire Wire Line
+	6900 4450 6900 2550
+$Comp
+L CONN_01X01 P3
+U 1 1 5597BFF9
+P 6600 4200
+F 0 "P3" H 6600 4300 50  0001 C CNN
+F 1 "CONN_01X01" V 6700 4200 50  0001 C CNN
+F 2 "w_details:hole_1mm" H 6600 4200 60  0001 C CNN
+F 3 "" H 6600 4200 60  0000 C CNN
+	1    6600 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 5597C08F
+P 6700 4200
+F 0 "P5" H 6700 4300 50  0001 C CNN
+F 1 "CONN_01X01" V 6800 4200 50  0001 C CNN
+F 2 "w_details:hole_1mm" H 6700 4200 60  0001 C CNN
+F 3 "" H 6700 4200 60  0000 C CNN
+	1    6700 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P7
+U 1 1 5597C130
+P 6800 4200
+F 0 "P7" H 6800 4300 50  0001 C CNN
+F 1 "CONN_01X01" V 6900 4200 50  0001 C CNN
+F 2 "w_details:hole_1mm" H 6800 4200 60  0001 C CNN
+F 3 "" H 6800 4200 60  0000 C CNN
+	1    6800 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P4
+U 1 1 5597C24B
+P 6700 4100
+F 0 "P4" H 6700 4200 50  0001 C CNN
+F 1 "CONN_01X01" V 6800 4100 50  0001 C CNN
+F 2 "w_details:hole_1mm" H 6700 4100 60  0001 C CNN
+F 3 "" H 6700 4100 60  0000 C CNN
+	1    6700 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 5597C2BD
+P 6800 4100
+F 0 "P6" H 6800 4200 50  0001 C CNN
+F 1 "CONN_01X01" V 6900 4100 50  0001 C CNN
+F 2 "w_details:hole_1mm" H 6800 4100 60  0001 C CNN
+F 3 "" H 6800 4100 60  0000 C CNN
+	1    6800 4100
+	0    1    1    0   
+$EndComp
+NoConn ~ 3400 2650
+NoConn ~ 3400 2750
+NoConn ~ 3400 2850
+NoConn ~ 3000 3150
+$Comp
+L CONN_01X01 P8
+U 1 1 55985BF2
+P 7850 3950
+F 0 "P8" H 7850 4050 50  0000 C CNN
+F 1 "CONN_01X01" V 7950 3950 50  0000 C CNN
+F 2 "raspibo_logo:contorno" H 7850 3950 60  0001 C CNN
+F 3 "" H 7850 3950 60  0000 C CNN
+	1    7850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P9
+U 1 1 55985C92
+P 7850 4450
+F 0 "P9" H 7850 4550 50  0000 C CNN
+F 1 "CONN_01X01" V 7950 4450 50  0000 C CNN
+F 2 "raspibo_logo:raspibo_logo" H 7850 4450 60  0001 C CNN
+F 3 "" H 7850 4450 60  0000 C CNN
+	1    7850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P1
+U 1 1 5598562A
+P 3100 2750
+F 0 "P1" H 3425 2625 50  0000 C CNN
+F 1 "USB_OTG" H 3100 2950 50  0000 C CNN
+F 2 "w_conn_pc:conn_usb_B_micro_smd" V 3050 2650 60  0001 C CNN
+F 3 "" V 3050 2650 60  0000 C CNN
+	1    3100 2750
+	0    -1   1    0   
+$EndComp
+Text Label 6600 2550 0    60   ~ 0
+MOSI
+Text Label 6600 2650 0    60   ~ 0
+MISO
+Text Label 6600 2750 0    60   ~ 0
+SCK
+Text Label 6600 3400 1    60   ~ 0
+RESET
+NoConn ~ 7650 3950
+NoConn ~ 7650 4450
+$Comp
+L CONN_01X01 P10
+U 1 1 55C532DC
+P 6600 4100
+F 0 "P10" H 6600 4200 50  0001 C CNN
+F 1 "CONN_01X01" V 6700 4100 50  0001 C CNN
+F 2 "w_details:hole_1mm" H 6600 4100 60  0001 C CNN
+F 3 "" H 6600 4100 60  0000 C CNN
+	1    6600 4100
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

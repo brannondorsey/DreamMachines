@@ -1,0 +1,280 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:kicad-components
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TMP102 U1
+U 1 1 559D49BD
+P 4800 3100
+F 0 "U1" H 4600 2750 60  0000 C CNN
+F 1 "TMP102" H 5000 2750 60  0000 C CNN
+F 2 "kicad-footprints:SOT563" H 4800 3100 60  0001 C CNN
+F 3 "" H 4800 3100 60  0000 C CNN
+	1    4800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 559D4A56
+P 4800 3750
+F 0 "#PWR2" H 4800 3500 50  0001 C CNN
+F 1 "GND" H 4800 3600 50  0000 C CNN
+F 2 "" H 4800 3750 60  0000 C CNN
+F 3 "" H 4800 3750 60  0000 C CNN
+	1    4800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3550 4800 3750
+$Comp
+L R JMP1
+U 1 1 559D4A6F
+P 5650 2800
+F 0 "JMP1" V 5730 2800 50  0000 C CNN
+F 1 "R" V 5650 2800 50  0001 C CNN
+F 2 "kicad-footprints:SOLDER_JUMPER" V 5580 2800 30  0001 C CNN
+F 3 "" H 5650 2800 30  0000 C CNN
+	1    5650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R JMP4
+U 1 1 559D4AFC
+P 5650 3300
+F 0 "JMP4" V 5730 3300 50  0000 C CNN
+F 1 "R" V 5650 3300 50  0001 C CNN
+F 2 "kicad-footprints:SOLDER_JUMPER" V 5580 3300 30  0001 C CNN
+F 3 "" H 5650 3300 30  0000 C CNN
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 559D4B4E
+P 5650 3750
+F 0 "#PWR3" H 5650 3500 50  0001 C CNN
+F 1 "GND" H 5650 3600 50  0000 C CNN
+F 2 "" H 5650 3750 60  0000 C CNN
+F 3 "" H 5650 3750 60  0000 C CNN
+	1    5650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2550 5650 2650
+Wire Wire Line
+	3350 2550 5650 2550
+Wire Wire Line
+	4800 2550 4800 2700
+Wire Wire Line
+	4400 3050 4000 3050
+Wire Wire Line
+	4400 3150 4000 3150
+Text Label 4000 3050 0    60   ~ 0
+SCL
+Text Label 4000 3150 0    60   ~ 0
+SDA
+Wire Wire Line
+	5200 3050 6050 3050
+Wire Wire Line
+	5650 2950 5650 3150
+Connection ~ 5650 3050
+Text Label 5200 3050 0    60   ~ 0
+ADD0
+Wire Wire Line
+	5200 3150 5550 3150
+Text Label 5200 3150 0    60   ~ 0
+ALERT
+Wire Wire Line
+	5650 3450 5650 3750
+$Comp
+L R JMP2
+U 1 1 559D4CF5
+P 5850 2800
+F 0 "JMP2" V 5930 2800 50  0000 C CNN
+F 1 "R" V 5850 2800 50  0001 C CNN
+F 2 "kicad-footprints:SOLDER_JUMPER" V 5780 2800 30  0001 C CNN
+F 3 "" H 5850 2800 30  0000 C CNN
+	1    5850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R JMP3
+U 1 1 559D4D1D
+P 6050 2800
+F 0 "JMP3" V 6130 2800 50  0000 C CNN
+F 1 "R" V 6050 2800 50  0001 C CNN
+F 2 "kicad-footprints:SOLDER_JUMPER" V 5980 2800 30  0001 C CNN
+F 3 "" H 6050 2800 30  0000 C CNN
+	1    6050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2650 6050 2400
+Wire Wire Line
+	5850 2650 5850 2400
+Text Label 5850 2650 1    60   ~ 0
+SCL
+Text Label 6050 2650 1    60   ~ 0
+SDA
+Wire Wire Line
+	5850 3050 5850 2950
+Wire Wire Line
+	6050 3050 6050 2950
+Connection ~ 5850 3050
+$Comp
+L TEST_POINT SDA1
+U 1 1 559D4E0A
+P 6600 2800
+F 0 "SDA1" H 6900 2800 60  0000 C CNN
+F 1 "TEST_POINT" H 6700 2900 60  0001 C CNN
+F 2 "kicad-footprints:SMD_TP0.5mm" H 6600 2800 60  0001 C CNN
+F 3 "" H 6600 2800 60  0000 C CNN
+	1    6600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_POINT SCL1
+U 1 1 559D4EBD
+P 6600 2900
+F 0 "SCL1" H 6900 2900 60  0000 C CNN
+F 1 "TEST_POINT" H 6700 3000 60  0001 C CNN
+F 2 "kicad-footprints:SMD_TP0.5mm" H 6600 2900 60  0001 C CNN
+F 3 "" H 6600 2900 60  0000 C CNN
+	1    6600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_POINT ALERT1
+U 1 1 559D5053
+P 6600 3000
+F 0 "ALERT1" H 6950 3000 60  0000 C CNN
+F 1 "TEST_POINT" H 6700 3100 60  0001 C CNN
+F 2 "kicad-footprints:SMD_TP0.5mm" H 6600 3000 60  0001 C CNN
+F 3 "" H 6600 3000 60  0000 C CNN
+	1    6600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_POINT VCC1
+U 1 1 559D5094
+P 6600 3100
+F 0 "VCC1" H 6900 3100 60  0000 C CNN
+F 1 "TEST_POINT" H 6700 3200 60  0001 C CNN
+F 2 "kicad-footprints:SMD_TP0.5mm" H 6600 3100 60  0001 C CNN
+F 3 "" H 6600 3100 60  0000 C CNN
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_POINT GND1
+U 1 1 559D50FE
+P 6600 3200
+F 0 "GND1" H 6900 3200 60  0000 C CNN
+F 1 "TEST_POINT" H 6700 3300 60  0001 C CNN
+F 2 "kicad-footprints:SMD_TP0.5mm" H 6600 3200 60  0001 C CNN
+F 3 "" H 6600 3200 60  0000 C CNN
+	1    6600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2800 6300 2800
+Wire Wire Line
+	6600 2900 6300 2900
+Wire Wire Line
+	6600 3000 6300 3000
+Wire Wire Line
+	6600 3100 6300 3100
+Wire Wire Line
+	6600 3200 6300 3200
+Text Label 6300 2800 0    60   ~ 0
+SDA
+Text Label 6300 2900 0    60   ~ 0
+SCL
+Text Label 6300 3000 0    60   ~ 0
+ALERT
+Text Label 6300 3100 0    60   ~ 0
+VCC
+Text Label 4850 2550 0    60   ~ 0
+VCC
+$Comp
+L GND #PWR4
+U 1 1 559D5533
+P 6300 3750
+F 0 "#PWR4" H 6300 3500 50  0001 C CNN
+F 1 "GND" H 6300 3600 50  0000 C CNN
+F 2 "" H 6300 3750 60  0000 C CNN
+F 3 "" H 6300 3750 60  0000 C CNN
+	1    6300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3200 6300 3750
+$Comp
+L C C1
+U 1 1 559D5D68
+P 3350 3200
+F 0 "C1" H 3375 3300 50  0000 L CNN
+F 1 "C" H 3375 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3388 3050 30  0001 C CNN
+F 3 "" H 3350 3200 60  0000 C CNN
+	1    3350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 559D5EC4
+P 3350 3750
+F 0 "#PWR1" H 3350 3500 50  0001 C CNN
+F 1 "GND" H 3350 3600 50  0000 C CNN
+F 2 "" H 3350 3750 60  0000 C CNN
+F 3 "" H 3350 3750 60  0000 C CNN
+	1    3350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3350 3350 3750
+Wire Wire Line
+	3350 2550 3350 3050
+Connection ~ 4800 2550
+$EndSCHEMATC

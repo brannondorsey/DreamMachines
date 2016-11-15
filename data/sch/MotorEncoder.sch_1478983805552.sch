@@ -1,0 +1,308 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:GoGoGo
+LIBS:MotorEncoder-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RPI-579N1 U101
+U 1 1 55B03B5A
+P 5550 3350
+F 0 "U101" H 5750 3150 40  0000 C CNN
+F 1 "RPI-579N1" H 5550 3550 40  0000 C CNN
+F 2 "pcb:RPI-579N1" H 5350 3150 30  0001 C CIN
+F 3 "" H 5550 3350 60  0000 C CNN
+	1    5550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R101
+U 1 1 55B03C1A
+P 4900 3800
+F 0 "R101" V 4980 3800 50  0000 C CNN
+F 1 "100" V 4907 3801 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4830 3800 30  0001 C CNN
+F 3 "" H 4900 3800 30  0000 C CNN
+	1    4900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 55B03C53
+P 5500 2450
+F 0 "#PWR01" H 5500 2300 60  0001 C CNN
+F 1 "VCC" H 5500 2600 60  0000 C CNN
+F 2 "" H 5500 2450 60  0000 C CNN
+F 3 "" H 5500 2450 60  0000 C CNN
+	1    5500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 55B03C96
+P 4900 4250
+F 0 "#PWR02" H 4900 4000 60  0001 C CNN
+F 1 "GND" H 4900 4100 60  0000 C CNN
+F 2 "" H 4900 4250 60  0000 C CNN
+F 3 "" H 4900 4250 60  0000 C CNN
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 55B03CB8
+P 6100 3800
+F 0 "#PWR03" H 6100 3550 60  0001 C CNN
+F 1 "GND" H 6100 3650 60  0000 C CNN
+F 2 "" H 6100 3800 60  0000 C CNN
+F 3 "" H 6100 3800 60  0000 C CNN
+	1    6100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM311N U102
+U 1 1 55B040EE
+P 7500 3450
+F 0 "U102" H 7700 3750 70  0000 C CNN
+F 1 "LM311DR" H 7700 3650 70  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7500 3450 60  0001 C CNN
+F 3 "" H 7500 3450 60  0000 C CNN
+	1    7500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2550 4900 3250
+Wire Wire Line
+	4900 3250 5200 3250
+Wire Wire Line
+	4900 3550 4900 3450
+Wire Wire Line
+	4900 3450 5200 3450
+Wire Wire Line
+	4900 4050 4900 4250
+Wire Wire Line
+	5900 3450 6100 3450
+Wire Wire Line
+	6100 3450 6100 3800
+Wire Wire Line
+	5900 3250 6100 3250
+Wire Wire Line
+	6100 3250 6100 3100
+Wire Wire Line
+	4250 2550 8300 2550
+Wire Wire Line
+	6100 2550 6100 2600
+Wire Wire Line
+	5500 2550 5500 2450
+Connection ~ 5500 2550
+Wire Wire Line
+	6400 3200 6100 3200
+Connection ~ 6100 3200
+Connection ~ 6100 2550
+$Comp
+L R R103
+U 1 1 55B04354
+P 6750 2850
+F 0 "R103" V 6830 2850 50  0000 C CNN
+F 1 "1K" V 6757 2851 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6680 2850 30  0001 C CNN
+F 3 "" H 6750 2850 30  0000 C CNN
+	1    6750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2600 6750 2550
+Connection ~ 6750 2550
+Wire Wire Line
+	6750 3100 6750 3900
+Wire Wire Line
+	6750 3550 7000 3550
+$Comp
+L R R104
+U 1 1 55B043E5
+P 6750 4150
+F 0 "R104" V 6830 4150 50  0000 C CNN
+F 1 "1K" V 6757 4151 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6680 4150 30  0001 C CNN
+F 3 "" H 6750 4150 30  0000 C CNN
+	1    6750 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 3550
+Wire Wire Line
+	6400 3200 6400 3350
+Wire Wire Line
+	6400 3350 7000 3350
+Wire Wire Line
+	7400 3050 7400 2550
+Connection ~ 7400 2550
+Wire Wire Line
+	8000 3450 8900 3450
+$Comp
+L R R105
+U 1 1 55B044E9
+P 8300 2900
+F 0 "R105" V 8380 2900 50  0000 C CNN
+F 1 "1K" V 8307 2901 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8230 2900 30  0001 C CNN
+F 3 "" H 8300 2900 30  0000 C CNN
+	1    8300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3450 8300 3150
+Wire Wire Line
+	8300 2550 8300 2650
+Wire Wire Line
+	8000 3550 8200 3550
+Wire Wire Line
+	7600 3850 7600 4150
+Wire Wire Line
+	6750 4400 6750 4500
+Wire Wire Line
+	6750 4500 8900 4500
+Wire Wire Line
+	7500 4500 7500 3850
+Wire Wire Line
+	7400 3850 7400 4500
+Connection ~ 7400 4500
+Wire Wire Line
+	7100 4700 7100 4500
+Connection ~ 7100 4500
+$Comp
+L GND #PWR04
+U 1 1 55B046A7
+P 7100 4700
+F 0 "#PWR04" H 7100 4450 60  0001 C CNN
+F 1 "GND" H 7100 4550 60  0000 C CNN
+F 2 "" H 7100 4700 60  0000 C CNN
+F 3 "" H 7100 4700 60  0000 C CNN
+	1    7100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R102
+U 1 1 55B04737
+P 6100 2850
+F 0 "R102" V 6180 2850 50  0000 C CNN
+F 1 "10K" V 6107 2851 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 2850 30  0001 C CNN
+F 3 "" H 6100 2850 30  0000 C CNN
+	1    6100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P101
+U 1 1 55B047FC
+P 4050 2600
+F 0 "P101" H 4050 2750 50  0000 C CNN
+F 1 "CONN_01X02" V 4150 2600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4050 2600 60  0001 C CNN
+F 3 "" H 4050 2600 60  0000 C CNN
+	1    4050 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 2650 4550 2650
+Wire Wire Line
+	4550 2650 4550 4150
+Wire Wire Line
+	4550 4150 4900 4150
+Connection ~ 4900 4150
+Connection ~ 4900 2550
+Connection ~ 8300 3450
+Wire Wire Line
+	8900 4500 8900 3550
+Connection ~ 7500 4500
+$Comp
+L CONN_01X02 P103
+U 1 1 55B04BA9
+P 9100 3500
+F 0 "P103" H 9100 3650 50  0000 C CNN
+F 1 "CONN_01X02" V 9200 3500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 9100 3500 60  0001 C CNN
+F 3 "" H 9100 3500 60  0000 C CNN
+	1    9100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3350 6450 4650
+Connection ~ 6450 3350
+$Comp
+L CONN_01X01 P102
+U 1 1 55B04D73
+P 6450 4850
+F 0 "P102" H 6450 4950 50  0000 C CNN
+F 1 "OPTO_OUT" V 6550 4850 50  0000 C CNN
+F 2 "pcb:TESTPOINT_1" H 6450 4850 60  0001 C CNN
+F 3 "" H 6450 4850 60  0000 C CNN
+	1    6450 4850
+	0    1    1    0   
+$EndComp
+Text Label 8450 3450 0    60   ~ 0
+ENC_OUT
+Text Label 6450 4000 3    60   ~ 0
+OPTO_OUT
+Text Label 8400 4500 0    60   ~ 0
+ENC_GND
+$Comp
+L R R106
+U 1 1 55B06538
+P 8200 3900
+F 0 "R106" V 8280 3900 50  0000 C CNN
+F 1 "0" V 8207 3901 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8130 3900 30  0001 C CNN
+F 3 "" H 8200 3900 30  0000 C CNN
+	1    8200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3550 8200 3650
+Wire Wire Line
+	7600 4150 8200 4150
+Text Notes 7350 7500 0    60   ~ 0
+GGG Motor Encoder
+Text Notes 10600 7650 0    60   ~ 0
+v2
+$EndSCHEMATC

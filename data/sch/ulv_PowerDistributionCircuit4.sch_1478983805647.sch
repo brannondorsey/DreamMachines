@@ -1,0 +1,448 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:scube
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ULV Power Distribution Circuit"
+Date "2016-08-03"
+Rev "1"
+Comp "SCUBE"
+Comment1 "By: Björn Ordoubadian"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SCUBE40 P1
+U 1 1 579087F3
+P 1900 4150
+F 0 "P1" H 1850 3200 60  0000 C CNN
+F 1 "SCUBE40" H 1850 5500 60  0000 C CNN
+F 2 "scube:scube40_no_holes" H 1800 4000 60  0001 C CNN
+F 3 "" H 1800 4000 60  0000 C CNN
+	1    1900 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RSO-2412D-Dual U1
+U 1 1 57908F6C
+P 6450 2200
+F 0 "U1" H 6600 1550 60  0000 C CNN
+F 1 "RSO-2412D-Dual +/- 12V" H 6550 2500 60  0000 C CNN
+F 2 "scube:RSO-2412D" H 6450 2200 60  0001 C CNN
+F 3 "" H 6450 2200 60  0000 C CNN
+	1    6450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L F_Small F1
+U 1 1 5790904F
+P 5150 2150
+F 0 "F1" H 5100 2200 50  0000 L CNN
+F 1 "F_Small" H 5030 2090 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD2920" H 5150 2150 50  0001 C CNN
+F 3 "" H 5150 2150 50  0000 C CNN
+	1    5150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L RSO-2412D-Single U3
+U 1 1 579090C1
+P 6450 4400
+F 0 "U3" H 6600 3750 60  0000 C CNN
+F 1 "RSO-2412D-Single +3.3V" H 6550 4700 60  0000 C CNN
+F 2 "scube:RSO-2412D" H 6450 4400 60  0001 C CNN
+F 3 "" H 6450 4400 60  0000 C CNN
+	1    6450 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6250 2450
+NoConn ~ 6250 4650
+NoConn ~ 6250 4950
+$Comp
+L F_Small F2
+U 1 1 579092D5
+P 5150 4350
+F 0 "F2" H 5100 4400 50  0000 L CNN
+F 1 "F_Small" H 5030 4290 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD2920" H 5150 4350 50  0001 C CNN
+F 3 "" H 5150 4350 50  0000 C CNN
+	1    5150 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX1659 U2
+U 1 1 57909962
+P 7850 2450
+F 0 "U2" H 8050 2300 60  0000 C CNN
+F 1 "MAX1659 +9V" H 8000 2900 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7850 2450 60  0001 C CNN
+F 3 "" H 7850 2450 60  0000 C CNN
+	1    7850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2350 5700 4250
+Wire Wire Line
+	5700 2650 6250 2650
+Wire Wire Line
+	2700 3950 2350 3950
+Wire Wire Line
+	2700 2350 5700 2350
+Connection ~ 5700 2350
+Wire Wire Line
+	2700 2350 2700 3950
+Wire Wire Line
+	2350 4050 4850 4050
+Wire Wire Line
+	4850 2150 4850 4350
+Wire Wire Line
+	5250 2150 6250 2150
+Wire Wire Line
+	5700 4250 6250 4250
+Connection ~ 5700 2650
+Wire Wire Line
+	4850 2150 5050 2150
+Wire Wire Line
+	4850 4350 5050 4350
+Connection ~ 4850 4050
+Wire Wire Line
+	5250 4350 6250 4350
+Wire Wire Line
+	6250 2750 6250 3850
+Wire Wire Line
+	6250 3850 7350 3850
+Wire Wire Line
+	7350 3850 7350 6150
+Wire Wire Line
+	2450 4950 2450 6150
+Wire Wire Line
+	2450 4950 2350 4950
+Wire Wire Line
+	6250 2550 6150 2550
+Wire Wire Line
+	6150 2550 6150 3950
+Wire Wire Line
+	6150 3950 7250 3950
+Wire Wire Line
+	7250 3950 7250 6050
+Wire Wire Line
+	2550 4850 2550 6050
+Wire Wire Line
+	2550 4850 2350 4850
+Wire Wire Line
+	6950 2350 7550 2350
+Connection ~ 6150 3050
+Wire Wire Line
+	7550 2250 7450 2250
+Wire Wire Line
+	7450 2250 7450 2350
+Connection ~ 7450 2350
+$Comp
+L R_Small R2
+U 1 1 57909B7E
+P 7550 2850
+F 0 "R2" H 7580 2870 50  0000 L CNN
+F 1 "140kO" H 7580 2810 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 7550 2850 50  0001 C CNN
+F 3 "" H 7550 2850 50  0000 C CNN
+	1    7550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 57909BDE
+P 7550 3250
+F 0 "R3" H 7580 3270 50  0000 L CNN
+F 1 "21.7kO" H 7580 3210 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 7550 3250 50  0001 C CNN
+F 3 "" H 7550 3250 50  0000 C CNN
+	1    7550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2950 7550 3150
+Wire Wire Line
+	7550 2450 7550 2750
+Wire Wire Line
+	7550 2150 7050 2150
+Wire Wire Line
+	7050 2150 7050 3050
+Connection ~ 7550 3050
+Wire Wire Line
+	6950 3050 6150 3050
+Wire Wire Line
+	7050 3050 7550 3050
+$Comp
+L C C1
+U 1 1 57909D33
+P 7250 2700
+F 0 "C1" H 7275 2800 50  0000 L CNN
+F 1 "0.1uF" H 7275 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7288 2550 50  0001 C CNN
+F 3 "" H 7250 2700 50  0000 C CNN
+	1    7250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2350 7250 2550
+Connection ~ 7250 2350
+Wire Wire Line
+	7250 2850 7250 3450
+Wire Wire Line
+	7950 3350 8950 3350
+Wire Wire Line
+	8450 2150 8950 2150
+Wire Wire Line
+	8950 2150 8950 3350
+$Comp
+L CP1_Small C2
+U 1 1 57909E3C
+P 7950 2850
+F 0 "C2" H 7960 2920 50  0000 L CNN
+F 1 "10uF" H 7960 2770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7950 2850 50  0001 C CNN
+F 3 "" H 7950 2850 50  0000 C CNN
+	1    7950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2650 8350 2650
+Wire Wire Line
+	7950 2650 7950 2750
+Connection ~ 7550 2650
+Wire Wire Line
+	7950 3450 7950 2950
+Connection ~ 7950 3350
+Wire Wire Line
+	8350 2650 8350 3650
+Connection ~ 7950 2650
+Connection ~ 6950 2350
+Wire Wire Line
+	7450 3650 7450 5850
+Wire Wire Line
+	8350 3650 7450 3650
+Wire Wire Line
+	7250 3450 7950 3450
+Wire Wire Line
+	7550 3350 7550 3450
+Connection ~ 7550 3450
+$Comp
+L MIC5270YM5-TR U4
+U 1 1 5790A9E8
+P 8650 4650
+F 0 "U4" H 8300 4550 60  0000 C CNN
+F 1 "MIC5270YM5-TR -9V" V 9000 4550 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 8650 4650 60  0001 C CNN
+F 3 "" H 8650 4650 60  0000 C CNN
+	1    8650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3350 8650 4300
+Connection ~ 8650 3350
+Wire Wire Line
+	8750 6150 8750 5150
+Wire Wire Line
+	2450 6150 8750 6150
+Wire Wire Line
+	7650 5150 7650 5950
+Wire Wire Line
+	7650 5150 8550 5150
+$Comp
+L CP1_Small C3
+U 1 1 5790ACD6
+P 7750 5000
+F 0 "C3" H 7760 5070 50  0000 L CNN
+F 1 "10uF" H 7760 4920 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7750 5000 50  0001 C CNN
+F 3 "" H 7750 5000 50  0000 C CNN
+	1    7750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C4
+U 1 1 5790AE18
+P 8950 5300
+F 0 "C4" H 8960 5370 50  0000 L CNN
+F 1 "10uF" H 8960 5220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8950 5300 50  0001 C CNN
+F 3 "" H 8950 5300 50  0000 C CNN
+	1    8950 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 5300 8850 5300
+Connection ~ 8750 5300
+Wire Wire Line
+	7750 3850 9200 3850
+Connection ~ 8650 3850
+Wire Wire Line
+	9050 5300 9200 5300
+Wire Wire Line
+	9200 5300 9200 3850
+$Comp
+L R_Small R4
+U 1 1 5790B0AE
+P 8150 4550
+F 0 "R4" H 8180 4570 50  0000 L CNN
+F 1 "140kO" H 8180 4510 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 8150 4550 50  0001 C CNN
+F 3 "" H 8150 4550 50  0000 C CNN
+	1    8150 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 3850 7750 4900
+Wire Wire Line
+	8650 4050 8250 4050
+Wire Wire Line
+	8150 4300 8450 4300
+Wire Wire Line
+	8250 4300 8250 4250
+$Comp
+L R_Small R5
+U 1 1 5790B3C3
+P 8250 4150
+F 0 "R5" H 8280 4170 50  0000 L CNN
+F 1 "21.5kO" H 8280 4110 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 8250 4150 50  0001 C CNN
+F 3 "" H 8250 4150 50  0000 C CNN
+	1    8250 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 4300 8150 4450
+Connection ~ 8250 4300
+Wire Wire Line
+	8150 5150 8150 4650
+Wire Wire Line
+	7750 5150 7750 5100
+Connection ~ 7750 5150
+Connection ~ 8150 5150
+Connection ~ 8650 4050
+NoConn ~ 8850 4300
+Wire Wire Line
+	6950 2350 6950 3050
+Connection ~ 7350 6150
+Wire Wire Line
+	2550 6050 7250 6050
+Wire Wire Line
+	7450 5850 2750 5850
+Wire Wire Line
+	2750 5850 2750 4650
+Wire Wire Line
+	2750 4650 2350 4650
+Wire Wire Line
+	7650 5950 2650 5950
+Wire Wire Line
+	2650 5950 2650 4750
+Wire Wire Line
+	2650 4750 2350 4750
+NoConn ~ 8450 2450
+NoConn ~ 8450 2350
+NoConn ~ 8450 2250
+NoConn ~ 6250 4450
+NoConn ~ 6250 2250
+Wire Wire Line
+	8700 900  8700 2150
+Connection ~ 8700 2150
+Connection ~ 4500 2350
+NoConn ~ 2350 3050
+NoConn ~ 2350 3150
+NoConn ~ 2350 3250
+NoConn ~ 2350 3450
+NoConn ~ 2350 3550
+NoConn ~ 2350 3650
+NoConn ~ 2350 3750
+NoConn ~ 2350 3850
+NoConn ~ 2350 4150
+NoConn ~ 2350 4250
+NoConn ~ 2350 4450
+NoConn ~ 2350 4550
+Wire Wire Line
+	2350 4350 4250 4350
+Wire Wire Line
+	4250 4350 4250 4750
+Wire Wire Line
+	4250 4750 6250 4750
+$Comp
+L Q_NJFET_DGS Q1
+U 1 1 5798C4C2
+P 5250 1350
+F 0 "Q1" H 5550 1400 50  0000 R CNN
+F 1 "Q_NJFET_DGS" H 5900 1300 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5450 1450 50  0001 C CNN
+F 3 "" H 5250 1350 50  0000 C CNN
+	1    5250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5798C528
+P 4650 1350
+F 0 "R1" H 4680 1370 50  0000 L CNN
+F 1 "10kO" H 4680 1310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4650 1350 50  0001 C CNN
+F 3 "" H 4650 1350 50  0000 C CNN
+	1    4650 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 1350 4750 1350
+Wire Wire Line
+	6250 2050 6250 1150
+Wire Wire Line
+	6250 1150 5350 1150
+Wire Wire Line
+	5350 1550 4500 1550
+Wire Wire Line
+	4500 1550 4500 2350
+Wire Wire Line
+	2350 3350 2550 3350
+Wire Wire Line
+	2550 3350 2550 1350
+Wire Wire Line
+	2550 1350 4550 1350
+Wire Wire Line
+	8700 900  4000 900 
+Wire Wire Line
+	4000 900  4000 2350
+Connection ~ 4000 2350
+Wire Wire Line
+	6250 4850 4400 4850
+Wire Wire Line
+	4400 4850 4400 2350
+Connection ~ 4400 2350
+$EndSCHEMATC

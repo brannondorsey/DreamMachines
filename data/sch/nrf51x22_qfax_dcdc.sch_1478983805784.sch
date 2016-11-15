@@ -1,0 +1,606 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nrf51822
+LIBS:nrf51x22_qfax_dcdc-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 5667FA09
+P 2700 6300
+F 0 "#PWR01" H 2700 6050 50  0001 C CNN
+F 1 "GND" H 2700 6150 50  0000 C CNN
+F 2 "" H 2700 6300 50  0000 C CNN
+F 3 "" H 2700 6300 50  0000 C CNN
+	1    2700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5667FD9E
+P 2000 2300
+F 0 "#PWR02" H 2000 2050 50  0001 C CNN
+F 1 "GND" H 2000 2150 50  0000 C CNN
+F 2 "" H 2000 2300 50  0000 C CNN
+F 3 "" H 2000 2300 50  0000 C CNN
+	1    2000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L5
+U 1 1 566C9933
+P 3700 2000
+F 0 "L5" H 3730 2040 50  0000 L CNN
+F 1 "15nH" H 3730 1960 50  0000 L CNN
+F 2 "dcdc:INDC1005X04L" H 3700 2000 50  0001 C CNN
+F 3 "" H 3700 2000 50  0000 C CNN
+F 4 "High frequency chip inductor ±10%" H 3700 2000 60  0001 C CNN "Description"
+F 5 "MLK1005S15NJT000" H 3700 2000 60  0001 C CNN "Manufacturer Part"
+F 6 "TDK" H 3700 2000 60  0001 C CNN "Manufacturer"
+F 7 "445-1469-1-ND" H 3700 2000 60  0001 C CNN "Distributor 1"
+	1    3700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L4
+U 1 1 566C9E5B
+P 3700 2400
+F 0 "L4" H 3730 2440 50  0000 L CNN
+F 1 "10uH" H 3730 2360 50  0000 L CNN
+F 2 "dcdc:INDC1608X06L" H 3700 2400 50  0001 C CNN
+F 3 "" H 3700 2400 50  0000 C CNN
+F 4 "Chip inductor IDC min = 50 mA ±20%" H 3700 2400 60  0001 C CNN "Description"
+F 5 "MLZ1608N100LT000" H 3700 2400 60  0001 C CNN "Manufacturer Part"
+F 6 "TDK" H 3700 2400 60  0001 C CNN "Manufacturer"
+F 7 "445-6755-1-ND" H 3700 2400 60  0001 C CNN "Distributor 1"
+	1    3700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 566CAA6A
+P 4400 2050
+F 0 "C12" H 4425 2150 50  0000 L CNN
+F 1 "1.0uF" H 4425 1950 50  0000 L CNN
+F 2 "dcdc:CAPC1608X06L" H 4438 1900 50  0001 C CNN
+F 3 "" H 4400 2050 50  0000 C CNN
+F 4 "Capacitor X7R ±10%" H 4400 2050 60  0001 C CNN "Description"
+F 5 "CC0603KRX7R7BB105" H 4400 2050 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 4400 2050 60  0001 C CNN "Manufacturer"
+F 7 "311-1446-1-ND" H 4400 2050 60  0001 C CNN "Distributor 1"
+	1    4400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 566CAD24
+P 4100 2050
+F 0 "C9" H 4125 2150 50  0000 L CNN
+F 1 "1.0nF" H 4125 1950 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 4138 1900 50  0001 C CNN
+F 3 "" H 4100 2050 50  0000 C CNN
+F 4 "Capacitor X7R ±10%" H 4100 2050 60  0001 C CNN "Description"
+F 5 "CC0402KRX7R9BB102" H 4100 2050 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 4100 2050 60  0001 C CNN "Manufacturer"
+F 7 "311-1036-1-ND" H 4100 2050 60  0001 C CNN "Distributor 1"
+	1    4100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 566CB218
+P 4400 2300
+F 0 "#PWR03" H 4400 2050 50  0001 C CNN
+F 1 "GND" H 4400 2150 50  0000 C CNN
+F 2 "" H 4400 2300 50  0000 C CNN
+F 3 "" H 4400 2300 50  0000 C CNN
+	1    4400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 566CB247
+P 4100 2300
+F 0 "#PWR04" H 4100 2050 50  0001 C CNN
+F 1 "GND" H 4100 2150 50  0000 C CNN
+F 2 "" H 4100 2300 50  0000 C CNN
+F 3 "" H 4100 2300 50  0000 C CNN
+	1    4100 2300
+	1    0    0    -1  
+$EndComp
+Text Label 3800 1600 0    60   ~ 0
+AVDD
+$Comp
+L L_Small L2
+U 1 1 566CC23E
+P 4800 3200
+F 0 "L2" H 4830 3240 50  0000 L CNN
+F 1 "27nH" H 4830 3160 50  0000 L CNN
+F 2 "dcdc:INDC1005X04L" H 4800 3200 50  0001 C CNN
+F 3 "" H 4800 3200 50  0000 C CNN
+F 4 "High frequency chip inductor ±5%" H 4800 3200 60  0001 C CNN "Description"
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 566CC298
+P 4800 2900
+F 0 "L1" H 4830 2940 50  0000 L CNN
+F 1 "4.7nH" H 4830 2860 50  0000 L CNN
+F 2 "dcdc:INDC1005X04L" H 4800 2900 50  0001 C CNN
+F 3 "" H 4800 2900 50  0000 C CNN
+F 4 "High frequency chip inductor ±5%" H 4800 2900 60  0001 C CNN "Description"
+	1    4800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L3
+U 1 1 566CC2F0
+P 5900 2800
+F 0 "L3" H 5930 2840 50  0000 L CNN
+F 1 "3.3nH" H 5930 2760 50  0000 L CNN
+F 2 "dcdc:INDC1005X04L" H 5900 2800 50  0001 C CNN
+F 3 "" H 5900 2800 50  0000 C CNN
+F 4 "High frequency chip inductor ±5%" H 5900 2800 60  0001 C CNN "Description"
+	1    5900 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 566CC3D8
+P 4800 3550
+F 0 "C3" H 4825 3650 50  0000 L CNN
+F 1 "2.2nF" H 4825 3450 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 4838 3400 50  0001 C CNN
+F 3 "" H 4800 3550 50  0000 C CNN
+F 4 "Capacitor X7R ±10%" H 4800 3550 60  0001 C CNN "Description"
+F 5 "CC0402KRX7R9BB222" H 4800 3550 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 4800 3550 60  0001 C CNN "Manufacturer"
+F 7 "311-1037-1-ND" H 4800 3550 60  0001 C CNN "Distributor 1"
+	1    4800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 566CC4CB
+P 1450 5300
+F 0 "C8" H 1475 5400 50  0000 L CNN
+F 1 "100nF" H 1475 5200 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 1488 5150 50  0001 C CNN
+F 3 "" H 1450 5300 50  0000 C CNN
+F 4 "Capacitor X7R ±10%" H 1450 5300 60  0001 C CNN "Description"
+F 5 "CC0402KRX7R6BB104" H 1450 5300 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 1450 5300 60  0001 C CNN "Manufacturer"
+F 7 "311-1345-1-ND" H 1450 5300 60  0001 C CNN "Distributor 1"
+	1    1450 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C10
+U 1 1 566CC50B
+P 1450 5100
+F 0 "C10" H 1475 5200 50  0000 L CNN
+F 1 "47nF" H 1475 5000 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 1488 4950 50  0001 C CNN
+F 3 "" H 1450 5100 50  0000 C CNN
+F 4 "Capacitor X7R ±10%" H 1450 5100 60  0001 C CNN "Description"
+F 5 "CC0402KRX7R8BB473" H 1450 5100 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 1450 5100 60  0001 C CNN "Manufacturer"
+F 7 "311-1717-1-ND" H 1450 5100 60  0001 C CNN "Distributor 1"
+	1    1450 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C7
+U 1 1 566CC56A
+P 2000 2050
+F 0 "C7" H 2025 2150 50  0000 L CNN
+F 1 "4.7uF" H 2025 1950 50  0000 L CNN
+F 2 "dcdc:CAPC1608X06L" H 2038 1900 50  0001 C CNN
+F 3 "" H 2000 2050 50  0000 C CNN
+F 4 "Capacitor X5R ±10%" H 2000 2050 60  0001 C CNN "Description"
+F 5 "GRM188R61C475KE11D" H 2000 2050 60  0001 C CNN "Manufacturer Part"
+F 6 "Murata Electronics North America" H 2000 2050 60  0001 C CNN "Manufacturer"
+F 7 "490-10730-1-ND" H 2000 2050 60  0001 C CNN "Distributor 1"
+	1    2000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 566CC608
+P 2200 2050
+F 0 "C11" H 2225 2150 50  0000 L CNN
+F 1 "100nF" H 2225 1950 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 2238 1900 50  0001 C CNN
+F 3 "" H 2200 2050 50  0000 C CNN
+F 4 "Capacitor X7R ±10%" H 2200 2050 60  0001 C CNN "Description"
+F 5 "CC0402KRX7R6BB104" H 2200 2050 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 2200 2050 60  0001 C CNN "Manufacturer"
+F 7 "311-1345-1-ND" H 2200 2050 60  0001 C CNN "Distrubutor 1"
+	1    2200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 566CCB65
+P 5250 2800
+F 0 "C5" H 5275 2900 50  0000 L CNN
+F 1 "3.9pF" H 5275 2700 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 5288 2650 50  0001 C CNN
+F 3 "" H 5250 2800 50  0000 C CNN
+F 4 "Capacitor NP0 ±0.1pF" H 5250 2800 60  0001 C CNN "Description"
+	1    5250 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 566CCC82
+P 5600 2950
+F 0 "C4" H 5625 3050 50  0000 L CNN
+F 1 "1.0pF" H 5625 2850 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 5638 2800 50  0001 C CNN
+F 3 "" H 5600 2950 50  0000 C CNN
+F 4 "Capacitor NP0 ±0.1pF" H 5600 2950 60  0001 C CNN "Description"
+	1    5600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 566CCFD6
+P 6200 2950
+F 0 "C6" H 6225 3050 50  0000 L CNN
+F 1 "1.5pF" H 6225 2850 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 6238 2800 50  0001 C CNN
+F 3 "" H 6200 2950 50  0000 C CNN
+F 4 "Capacitor NP0 ±0.1pF" H 6200 2950 60  0001 C CNN "Description"
+	1    6200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 566CD1BB
+P 1250 5900
+F 0 "C2" H 1275 6000 50  0000 L CNN
+F 1 "12pF" H 1275 5800 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 1288 5750 50  0001 C CNN
+F 3 "" H 1250 5900 50  0000 C CNN
+F 4 "Capacitor NP0 ±2%" H 1250 5900 60  0001 C CNN "Description"
+F 5 "GRM1555C1H120GA01D" H 1250 5900 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 1250 5900 60  0001 C CNN "Manufacturer"
+F 7 "490-6197-1-ND" H 1250 5900 60  0001 C CNN "Distributor 1"
+	1    1250 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 566CD21B
+P 1250 5500
+F 0 "C1" H 1275 5600 50  0000 L CNN
+F 1 "12pF" H 1275 5400 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 1288 5350 50  0001 C CNN
+F 3 "" H 1250 5500 50  0000 C CNN
+F 4 "Capacitor NP0 ±2%" H 1250 5500 60  0001 C CNN "Description"
+F 5 "GRM1555C1H120GA01D" H 1250 5500 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 1250 5500 60  0001 C CNN "Manufacturer"
+F 7 "490-6197-1-ND" H 1250 5500 60  0001 C CNN "Distributor 1"
+	1    1250 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 566CD572
+P 900 5900
+F 0 "#PWR05" H 900 5650 50  0001 C CNN
+F 1 "GND" H 900 5750 50  0000 C CNN
+F 2 "" H 900 5900 50  0000 C CNN
+F 3 "" H 900 5900 50  0000 C CNN
+	1    900  5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 566CFB3D
+P 900 5300
+F 0 "#PWR06" H 900 5050 50  0001 C CNN
+F 1 "GND" H 900 5150 50  0000 C CNN
+F 2 "" H 900 5300 50  0000 C CNN
+F 3 "" H 900 5300 50  0000 C CNN
+	1    900  5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 566D1000
+P 4800 3700
+F 0 "#PWR07" H 4800 3450 50  0001 C CNN
+F 1 "GND" H 4800 3550 50  0000 C CNN
+F 2 "" H 4800 3700 50  0000 C CNN
+F 3 "" H 4800 3700 50  0000 C CNN
+	1    4800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 566D1089
+P 5600 3100
+F 0 "#PWR08" H 5600 2850 50  0001 C CNN
+F 1 "GND" H 5600 2950 50  0000 C CNN
+F 2 "" H 5600 3100 50  0000 C CNN
+F 3 "" H 5600 3100 50  0000 C CNN
+	1    5600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 566D1127
+P 6200 3100
+F 0 "#PWR09" H 6200 2850 50  0001 C CNN
+F 1 "GND" H 6200 2950 50  0000 C CNN
+F 2 "" H 6200 3100 50  0000 C CNN
+F 3 "" H 6200 3100 50  0000 C CNN
+	1    6200 3100
+	1    0    0    -1  
+$EndComp
+Text Label 2000 1600 0    60   ~ 0
+VCC_nRF
+$Comp
+L nrf51822-qfax U1
+U 1 1 567DBE79
+P 3000 4300
+F 0 "U1" H 2950 4250 60  0000 C CNN
+F 1 "nrf51822-qfax" H 2950 4400 60  0000 C CNN
+F 2 "nrf:nrf51-qfax-1ep-vias" H 2900 4650 60  0001 C CNN
+F 3 "" H 2900 4650 60  0000 C CNN
+F 4 "NRF51822-QFAC-T" H 3000 4300 60  0001 C CNN "Manufacturer Part"
+F 5 "Nordic Semiconductor ASA" H 3000 4300 60  0001 C CNN "Manufacturer"
+	1    3000 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 6200
+Wire Wire Line
+	2700 6200 3400 6200
+Connection ~ 2800 6200
+Wire Wire Line
+	4200 2800 5100 2800
+Wire Wire Line
+	3700 2100 3700 2300
+Wire Wire Line
+	3500 2500 3500 2600
+Wire Wire Line
+	3700 2600 3700 2500
+Wire Wire Line
+	3300 2600 3300 2500
+Wire Wire Line
+	3300 2500 3500 2500
+Wire Wire Line
+	3400 1700 3400 2500
+Connection ~ 3400 2500
+Wire Wire Line
+	4400 1700 4400 1900
+Wire Wire Line
+	4100 1700 4100 1900
+Wire Wire Line
+	3400 6200 3400 6000
+Connection ~ 2900 6200
+Wire Wire Line
+	900  5500 900  5900
+Wire Wire Line
+	2300 2600 2300 2500
+Wire Wire Line
+	2300 2500 2500 2500
+Wire Wire Line
+	2500 2500 2500 2600
+Wire Wire Line
+	2400 1700 2400 2500
+Connection ~ 2400 2500
+Wire Wire Line
+	2000 2200 2000 2300
+Wire Wire Line
+	2000 2300 2200 2300
+Wire Wire Line
+	4100 2200 4100 2300
+Wire Wire Line
+	4400 2200 4400 2300
+Wire Wire Line
+	900  5300 1300 5300
+Wire Wire Line
+	900  5100 1300 5100
+Wire Wire Line
+	4800 3000 4800 3100
+Wire Wire Line
+	4800 3300 4800 3400
+Wire Wire Line
+	5400 2800 5800 2800
+Connection ~ 5600 2800
+Wire Wire Line
+	6000 2800 6200 2800
+Connection ~ 4800 2800
+Wire Wire Line
+	4200 2900 4700 2900
+Wire Wire Line
+	4700 2900 4700 3000
+Wire Wire Line
+	4700 3000 4800 3000
+Wire Wire Line
+	4800 3400 4600 3400
+Wire Wire Line
+	4600 3400 4600 3000
+Wire Wire Line
+	4600 3000 4200 3000
+Connection ~ 4800 3400
+Connection ~ 4800 3000
+Wire Wire Line
+	1800 5100 1600 5100
+Wire Wire Line
+	1800 5300 1600 5300
+Wire Wire Line
+	900  5300 900  5100
+Connection ~ 900  5300
+Connection ~ 4100 1700
+Wire Wire Line
+	3400 1700 4400 1700
+Wire Wire Line
+	2000 1700 2400 1700
+Wire Wire Line
+	2000 1900 2000 1700
+Connection ~ 2000 1700
+Wire Wire Line
+	2200 1900 2200 1700
+Connection ~ 2200 1700
+Wire Wire Line
+	2200 2300 2200 2200
+Connection ~ 2000 2300
+Wire Wire Line
+	3700 1700 3700 1900
+Connection ~ 3700 1700
+Wire Wire Line
+	2800 6000 2800 6200
+Wire Wire Line
+	2900 6200 2900 6000
+Wire Wire Line
+	2700 6000 2700 6300
+Connection ~ 1600 5900
+Wire Wire Line
+	1800 5900 1800 5800
+Wire Wire Line
+	1400 5900 1800 5900
+Wire Wire Line
+	1100 5500 900  5500
+Wire Wire Line
+	900  5900 1100 5900
+Wire Wire Line
+	1400 5700 900  5700
+Connection ~ 900  5700
+Wire Wire Line
+	1400 5500 1800 5500
+Connection ~ 1600 5500
+$Comp
+L Crystal-4 X1
+U 1 1 56D1F3A1
+P 1600 5700
+F 0 "X1" H 1600 5950 50  0000 C CNN
+F 1 "Crystal-4" H 1600 5450 50  0000 C CNN
+F 2 "dcdc:BT-XTAL_2520" H 1600 5700 50  0001 C CNN
+F 3 "" H 1600 5700 50  0000 C CNN
+F 4 "8pF ±40ppm" H 1600 5700 60  0001 C CNN "Description"
+F 5 "NX2520SA-16MHZ-STD-CSW-5" H 1600 5700 60  0001 C CNN "Manufacturer Part"
+F 6 "NDK" H 1600 5700 60  0001 C CNN "Manufacturer"
+F 7 "644-1169-1-ND" H 1600 5700 60  0001 C CNN "Distributor 1"
+	1    1600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 56D1F8D7
+P 4850 5300
+F 0 "C13" H 4875 5400 50  0000 L CNN
+F 1 "12pF" H 4875 5200 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 4888 5150 50  0001 C CNN
+F 3 "" H 4850 5300 50  0000 C CNN
+F 4 "Capacitor NP0 ±2%" H 4850 5300 60  0001 C CNN "Description"
+F 5 "GRM1555C1H120GA01D" H 4850 5300 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 4850 5300 60  0001 C CNN "Manufacturer"
+F 7 "490-6197-1-ND" H 4850 5300 60  0001 C CNN "Distributor 1"
+	1    4850 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L C C14
+U 1 1 56D1F931
+P 4850 5500
+F 0 "C14" H 4875 5600 50  0000 L CNN
+F 1 "12pF" H 4875 5400 50  0000 L CNN
+F 2 "dcdc:CAPC1005X04L" H 4888 5350 50  0001 C CNN
+F 3 "" H 4850 5500 50  0000 C CNN
+F 4 "Capacitor NP0 ±2%" H 4850 5500 60  0001 C CNN "Description"
+F 5 "GRM1555C1H120GA01D" H 4850 5500 60  0001 C CNN "Manufacturer Part"
+F 6 "Yageo" H 4850 5500 60  0001 C CNN "Manufacturer"
+F 7 "490-6197-1-ND" H 4850 5500 60  0001 C CNN "Distributor 1"
+	1    4850 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Crystal_Small X2
+U 1 1 56D1F980
+P 4500 5400
+F 0 "X2" H 4500 5500 50  0000 C CNN
+F 1 "32.768kHz" H 4500 5300 50  0000 C CNN
+F 2 "dcdc:XTAL_3215" H 4500 5400 50  0001 C CNN
+F 3 "" H 4500 5400 50  0000 C CNN
+F 4 "9pF ±20ppm" H 4500 5400 60  0001 C CNN "Description"
+F 5 "ABS07-32.768KHZ-9-T" H 4500 5400 60  0001 C CNN "Manufacturer Part"
+F 6 "Abracon LLC" H 4500 5400 60  0001 C CNN "Manufacturer"
+F 7 "535-9544-1-ND" H 4500 5400 60  0001 C CNN "Distributor 1"
+	1    4500 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 5300 4700 5300
+Connection ~ 4500 5300
+Connection ~ 4500 5500
+Wire Wire Line
+	5000 5500 5100 5500
+Wire Wire Line
+	5100 5300 5100 5600
+Wire Wire Line
+	5100 5300 5000 5300
+$Comp
+L GND #PWR010
+U 1 1 56D20387
+P 5100 5600
+F 0 "#PWR010" H 5100 5350 50  0001 C CNN
+F 1 "GND" H 5100 5450 50  0000 C CNN
+F 2 "" H 5100 5600 50  0000 C CNN
+F 3 "" H 5100 5600 50  0000 C CNN
+	1    5100 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 5500
+Wire Wire Line
+	4200 5400 4300 5400
+Wire Wire Line
+	4300 5400 4300 5500
+Wire Wire Line
+	4300 5500 4700 5500
+$EndSCHEMATC

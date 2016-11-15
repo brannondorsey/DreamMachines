@@ -1,0 +1,227 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LettuceBuddy
+LIBS:LadybugBlue-cache
+LIBS:LadybugBlue-rescue
+LIBS:ladybug
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 11
+Title ""
+Date "20 oct 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1750 1350 2950 2100
+U 55B65661
+F0 "nRF51822" 50
+F1 "nRF51822.sch" 50
+F2 "FET_VIN_pin" O R 4700 1600 60 
+F3 "pH_AIN" I R 4700 2000 60 
+F4 "FET_VOUT_pin" O R 4700 1800 60 
+F5 "EC_VIN_AIN" I R 4700 2200 60 
+F6 "EC_VOUT_AIN" I R 4700 2450 60 
+F7 "VGND_pH" I R 4700 2600 60 
+F8 "VGND_EC" I R 4700 2750 60 
+F9 "pump1_pin" O R 4700 2900 60 
+F10 "pump2_pin" O R 4700 3100 60 
+F11 "pump3_pin" O R 4700 3300 60 
+$EndSheet
+$Sheet
+S 7200 1350 3050 1600
+U 55B65405
+F0 "sensors" 50
+F1 "sensors.sch" 50
+F2 "pH_ProbeIN" I R 10250 1900 60 
+F3 "EC_ProbeIN" I R 10250 2600 60 
+F4 "FET_VIN_pin" I L 7200 1600 60 
+F5 "FET_VOUT_pin" I L 7200 1800 60 
+F6 "pH_AIN" O L 7200 2000 60 
+F7 "EC_VIN_AIN" O L 7200 2200 60 
+F8 "EC_VOUT_AIN" O L 7200 2450 60 
+F9 "VGND_EC" O L 7200 2750 60 
+F10 "VGND_pH" O L 7200 2600 60 
+$EndSheet
+$Comp
+L BNC P4
+U 1 1 55B7E0DF
+P 10700 1900
+F 0 "P4" H 10710 2020 60  0000 C CNN
+F 1 "BNC" V 10810 1840 40  0000 C CNN
+F 2 "LettuceBuddy:LB_BNC" H 10700 1900 60  0001 C CNN
+F 3 "~" H 10700 1900 60  0000 C CNN
+	1    10700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BNC P5
+U 1 1 55B7E0EC
+P 10700 2600
+F 0 "P5" H 10710 2720 60  0000 C CNN
+F 1 "BNC" V 10810 2540 40  0000 C CNN
+F 2 "LettuceBuddy:LB_BNC" H 10700 2600 60  0001 C CNN
+F 3 "~" H 10700 2600 60  0000 C CNN
+	1    10700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1600 4700 1600
+Wire Wire Line
+	4700 1800 7200 1800
+Wire Wire Line
+	4700 2000 7200 2000
+Wire Wire Line
+	7200 2200 4700 2200
+Wire Wire Line
+	4700 2450 7200 2450
+Wire Wire Line
+	10550 2600 10250 2600
+Wire Wire Line
+	10550 1900 10250 1900
+Wire Wire Line
+	4700 2750 7200 2750
+Wire Wire Line
+	7000 2750 7000 3150
+Wire Wire Line
+	7000 3150 10700 3150
+Wire Wire Line
+	10700 3150 10700 2800
+Wire Wire Line
+	4700 2600 7200 2600
+Wire Wire Line
+	6800 2600 6800 3400
+Wire Wire Line
+	6800 3400 10950 3400
+Wire Wire Line
+	10950 3400 10950 2200
+Wire Wire Line
+	10950 2200 10700 2200
+Wire Wire Line
+	10700 2200 10700 2100
+Connection ~ 6800 2600
+Connection ~ 7000 2750
+$Sheet
+S 7050 4000 3200 2100
+U 569788EC
+F0 "Pumps" 60
+F1 "Pumps.sch" 60
+F2 "pump1_pin" I L 7050 4500 60 
+F3 "pump1" O R 10250 4500 60 
+F4 "pump2_pin" I L 7050 4800 60 
+F5 "pump2" O R 10250 5050 60 
+F6 "pump3_pin" I L 7050 5100 60 
+F7 "pump3" O R 10250 5700 60 
+$EndSheet
+Wire Wire Line
+	4700 2900 6500 2900
+Wire Wire Line
+	6500 2900 6500 4500
+Wire Wire Line
+	6500 4500 7050 4500
+Wire Wire Line
+	7050 4800 6100 4800
+Wire Wire Line
+	6100 4800 6100 3100
+Wire Wire Line
+	6100 3100 4700 3100
+Wire Wire Line
+	4700 3300 5850 3300
+Wire Wire Line
+	5850 3300 5850 5100
+Wire Wire Line
+	5850 5100 7050 5100
+$Comp
+L CONN_01X02 P1
+U 1 1 56BE27BA
+P 10750 4450
+F 0 "P1" H 10750 4600 50  0000 C CNN
+F 1 "CONN_01X02" V 10850 4450 50  0000 C CNN
+F 2 "LadybugHydro:PH_CONN_2_POS" H 10750 4450 50  0001 C CNN
+F 3 "" H 10750 4450 50  0000 C CNN
+	1    10750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 56BE28DC
+P 10750 5000
+F 0 "P2" H 10750 5150 50  0000 C CNN
+F 1 "CONN_01X02" V 10850 5000 50  0000 C CNN
+F 2 "LadybugHydro:PH_CONN_2_POS" H 10750 5000 50  0001 C CNN
+F 3 "" H 10750 5000 50  0000 C CNN
+	1    10750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P6
+U 1 1 56BE29AC
+P 10750 5650
+F 0 "P6" H 10750 5800 50  0000 C CNN
+F 1 "CONN_01X02" V 10850 5650 50  0000 C CNN
+F 2 "LadybugHydro:PH_CONN_2_POS" H 10750 5650 50  0001 C CNN
+F 3 "" H 10750 5650 50  0000 C CNN
+	1    10750 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 4500 10250 4500
+Wire Wire Line
+	10250 5050 10550 5050
+Wire Wire Line
+	10550 5700 10250 5700
+Wire Wire Line
+	10550 4400 10400 4400
+Wire Wire Line
+	10400 4400 10400 6100
+Wire Wire Line
+	10400 6100 10500 6100
+Text GLabel 10500 6100 2    60   Input ~ 0
+pumpPWR
+Wire Wire Line
+	10550 5600 10400 5600
+Connection ~ 10400 5600
+Wire Wire Line
+	10550 4950 10400 4950
+Connection ~ 10400 4950
+$Sheet
+S 1750 4100 3100 2200
+U 55BE2CDA
+F0 "power" 50
+F1 "power.sch" 50
+$EndSheet
+$EndSCHEMATC

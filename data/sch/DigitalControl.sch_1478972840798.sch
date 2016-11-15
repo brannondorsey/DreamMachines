@@ -1,0 +1,291 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:opa1664
+LIBS:ILQ74
+LIBS:tmr_3-1221
+LIBS:REG_7805
+LIBS:VolumeControl-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ILQ74 U1
+U 1 1 56C9E1B1
+P 5350 2850
+F 0 "U1" H 5150 3050 50  0000 L CNN
+F 1 "ILQ74" H 5350 3050 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 5150 2650 50  0000 L CIN
+F 3 "" H 5350 2850 50  0000 L CNN
+	1    5350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ILQ74 U1
+U 2 1 56C9E1DE
+P 5350 3450
+F 0 "U1" H 5150 3650 50  0000 L CNN
+F 1 "ILQ74" H 5350 3650 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 5150 3250 50  0000 L CIN
+F 3 "" H 5350 3450 50  0000 L CNN
+	2    5350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ILQ74 U1
+U 3 1 56C9E20C
+P 5350 4050
+F 0 "U1" H 5150 4250 50  0000 L CNN
+F 1 "ILQ74" H 5350 4250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 5150 3850 50  0000 L CIN
+F 3 "" H 5350 4050 50  0000 L CNN
+	3    5350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ILQ74 U1
+U 4 1 56C9E236
+P 5350 4650
+F 0 "U1" H 5150 4850 50  0000 L CNN
+F 1 "ILQ74" H 5350 4850 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 5150 4450 50  0000 L CIN
+F 3 "" H 5350 4650 50  0000 L CNN
+	4    5350 4650
+	1    0    0    -1  
+$EndComp
+Text HLabel 3450 4550 0    60   Input ~ 0
+SCL
+Text HLabel 3450 3950 0    60   Input ~ 0
+SDA
+Text HLabel 3450 3350 0    60   Input ~ 0
+CS
+Text HLabel 3450 2750 0    60   Input ~ 0
+MUTE
+Text HLabel 3450 5150 0    60   Input ~ 0
+CTRL_GND
+$Comp
+L R R1
+U 1 1 56CADED2
+P 4250 2750
+F 0 "R1" V 4330 2750 50  0000 C CNN
+F 1 "200" V 4250 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 2750 50  0001 C CNN
+F 3 "" H 4250 2750 50  0000 C CNN
+	1    4250 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56CADF63
+P 4250 3350
+F 0 "R2" V 4330 3350 50  0000 C CNN
+F 1 "200" V 4250 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 3350 50  0001 C CNN
+F 3 "" H 4250 3350 50  0000 C CNN
+	1    4250 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56CADF9B
+P 4250 3950
+F 0 "R3" V 4330 3950 50  0000 C CNN
+F 1 "200" V 4250 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 3950 50  0001 C CNN
+F 3 "" H 4250 3950 50  0000 C CNN
+	1    4250 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 56CADFC9
+P 4250 4550
+F 0 "R4" V 4330 4550 50  0000 C CNN
+F 1 "200" V 4250 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 4550 50  0001 C CNN
+F 3 "" H 4250 4550 50  0000 C CNN
+	1    4250 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 2950 4800 2950
+Wire Wire Line
+	4800 2950 4800 5150
+Wire Wire Line
+	4800 5150 3450 5150
+Wire Wire Line
+	5050 3550 4800 3550
+Connection ~ 4800 3550
+Wire Wire Line
+	5050 4150 4800 4150
+Connection ~ 4800 4150
+Wire Wire Line
+	5050 4750 4800 4750
+Connection ~ 4800 4750
+Wire Wire Line
+	3450 2750 4100 2750
+Wire Wire Line
+	4400 2750 5050 2750
+Wire Wire Line
+	3450 3350 4100 3350
+Wire Wire Line
+	4400 3350 5050 3350
+Wire Wire Line
+	3450 3950 4100 3950
+Wire Wire Line
+	4400 3950 5050 3950
+Wire Wire Line
+	3450 4550 4100 4550
+Wire Wire Line
+	4400 4550 5050 4550
+$Comp
+L R R5
+U 1 1 56CAE24A
+P 6500 2600
+F 0 "R5" V 6580 2600 50  0000 C CNN
+F 1 "47k" V 6500 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6430 2600 50  0001 C CNN
+F 3 "" H 6500 2600 50  0000 C CNN
+	1    6500 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 56CAE2EE
+P 6500 3200
+F 0 "R6" V 6580 3200 50  0000 C CNN
+F 1 "47k" V 6500 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6430 3200 50  0001 C CNN
+F 3 "" H 6500 3200 50  0000 C CNN
+	1    6500 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 56CAE358
+P 6500 3800
+F 0 "R7" V 6580 3800 50  0000 C CNN
+F 1 "47k" V 6500 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6430 3800 50  0001 C CNN
+F 3 "" H 6500 3800 50  0000 C CNN
+	1    6500 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R8
+U 1 1 56CAE3B4
+P 6500 4400
+F 0 "R8" V 6580 4400 50  0000 C CNN
+F 1 "47k" V 6500 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6430 4400 50  0001 C CNN
+F 3 "" H 6500 4400 50  0000 C CNN
+	1    6500 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5VD #PWR011
+U 1 1 56CAE58F
+P 7150 2400
+F 0 "#PWR011" H 7150 2250 50  0001 C CNN
+F 1 "+5VD" H 7150 2540 50  0000 C CNN
+F 2 "" H 7150 2400 50  0000 C CNN
+F 3 "" H 7150 2400 50  0000 C CNN
+	1    7150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2400 7150 4250
+Wire Wire Line
+	7150 2450 6500 2450
+Wire Wire Line
+	5650 2750 7600 2750
+Connection ~ 6500 2750
+Wire Wire Line
+	7150 4250 6500 4250
+Connection ~ 7150 2450
+Wire Wire Line
+	6500 3050 7150 3050
+Connection ~ 7150 3050
+Wire Wire Line
+	6500 3650 7150 3650
+Connection ~ 7150 3650
+Wire Wire Line
+	5650 3350 7600 3350
+Connection ~ 6500 3350
+Wire Wire Line
+	5650 3950 7600 3950
+Connection ~ 6500 3950
+Wire Wire Line
+	5650 4550 7600 4550
+Connection ~ 6500 4550
+Wire Wire Line
+	5650 2950 5950 2950
+Wire Wire Line
+	5950 2950 5950 5150
+$Comp
+L GNDD #PWR012
+U 1 1 56CAEA1B
+P 5950 5150
+F 0 "#PWR012" H 5950 4900 50  0001 C CNN
+F 1 "GNDD" H 5950 5000 50  0000 C CNN
+F 2 "" H 5950 5150 50  0000 C CNN
+F 3 "" H 5950 5150 50  0000 C CNN
+	1    5950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3550 5950 3550
+Connection ~ 5950 3550
+Wire Wire Line
+	5650 4150 5950 4150
+Connection ~ 5950 4150
+Wire Wire Line
+	5650 4750 5950 4750
+Connection ~ 5950 4750
+Text HLabel 7600 4550 2    60   Input ~ 0
+SCL_ISOLATED
+Text HLabel 7600 3950 2    60   Input ~ 0
+SDA_ISOLATED
+Text HLabel 7600 3350 2    60   Input ~ 0
+CS_ISOLATED
+Text HLabel 7600 2750 2    60   Input ~ 0
+MUTE_ISOLATED
+$EndSCHEMATC

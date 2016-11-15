@@ -1,0 +1,315 @@
+EESchema Schematic File Version 2
+LIBS:vgaExp-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:vgaExp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date "24 jul 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5950 3450 2    60   BiDi ~ 0
+SCL_VGA_RX
+Text HLabel 5950 3600 2    60   BiDi ~ 0
+SDA_VGA_RX
+Text HLabel 5950 5650 2    60   BiDi ~ 0
+SCL_VGA_TX
+Text HLabel 5950 5800 2    60   BiDi ~ 0
+SDA_VGA_TX
+Text HLabel 10000 4050 2    60   BiDi ~ 0
+SCL_INT
+Text HLabel 10000 4150 2    60   BiDi ~ 0
+SDA_INT
+Text HLabel 5050 5500 2    60   Input ~ 0
+VCC
+Text HLabel 9100 3400 1    60   Input ~ 0
+OVDD
+Text HLabel 9100 5050 3    60   Input ~ 0
+GND
+Text HLabel 2050 3450 0    60   BiDi ~ 0
+SCL_VGA_RX_BUF
+Text HLabel 2050 3600 0    60   BiDi ~ 0
+SDA_VGA_RX_BUF
+Text HLabel 2150 5650 0    60   BiDi ~ 0
+SCL_VGA_TX_BUF
+Text HLabel 2150 5800 0    60   BiDi ~ 0
+SDA_VGA_TX_BUF
+$Comp
+L 24AA014 U5
+U 1 1 53BEC2F7
+P 9100 4250
+F 0 "U5" H 9250 4600 60  0000 C CNN
+F 1 "24AA014" H 9300 3900 60  0000 C CNN
+F 2 "~" H 9100 4250 60  0000 C CNN
+F 3 "~" H 9100 4250 60  0000 C CNN
+	1    9100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L TCA9617A U6
+U 1 1 53BEC835
+P 4200 3550
+F 0 "U6" H 4200 3500 60  0000 C CNN
+F 1 "TCA9617A" H 4200 3600 60  0000 C CNN
+F 2 "" H 4450 3650 60  0000 C CNN
+F 3 "" H 4450 3650 60  0000 C CNN
+	1    4200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L TCA9617A U7
+U 1 1 53BEC842
+P 4150 5750
+F 0 "U7" H 4150 5700 60  0000 C CNN
+F 1 "TCA9617A" H 4150 5800 60  0000 C CNN
+F 2 "" H 4400 5850 60  0000 C CNN
+F 3 "" H 4400 5850 60  0000 C CNN
+	1    4150 5750
+	1    0    0    -1  
+$EndComp
+Text HLabel 3300 3300 0    60   Input ~ 0
+OVDD
+Text HLabel 3250 5500 0    60   Input ~ 0
+OVDD
+Text HLabel 3250 5950 0    60   Input ~ 0
+GND
+Text HLabel 3300 3750 0    60   Input ~ 0
+GND
+NoConn ~ 4950 5950
+NoConn ~ 5000 3750
+Text HLabel 5100 3300 2    60   Input ~ 0
+VCC
+Text HLabel 8150 4250 0    60   Input ~ 0
+GND
+$Comp
+L R-RESCUE-vgaExp R5
+U 1 1 53C86281
+P 2650 2900
+F 0 "R5" V 2730 2900 40  0000 C CNN
+F 1 "2.2K" V 2657 2901 40  0000 C CNN
+F 2 "~" V 2580 2900 30  0000 C CNN
+F 3 "~" H 2650 2900 30  0000 C CNN
+	1    2650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-vgaExp R1
+U 1 1 53C8628E
+P 2450 2900
+F 0 "R1" V 2530 2900 40  0000 C CNN
+F 1 "2.2K" V 2457 2901 40  0000 C CNN
+F 2 "~" V 2380 2900 30  0000 C CNN
+F 3 "~" H 2450 2900 30  0000 C CNN
+	1    2450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-vgaExp R25
+U 1 1 53C86295
+P 5600 2850
+F 0 "R25" V 5680 2850 40  0000 C CNN
+F 1 "4.7K" V 5607 2851 40  0000 C CNN
+F 2 "~" V 5530 2850 30  0000 C CNN
+F 3 "~" H 5600 2850 30  0000 C CNN
+	1    5600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-vgaExp R26
+U 1 1 53C8629B
+P 5750 2850
+F 0 "R26" V 5830 2850 40  0000 C CNN
+F 1 "4.7K" V 5757 2851 40  0000 C CNN
+F 2 "~" V 5680 2850 30  0000 C CNN
+F 3 "~" H 5750 2850 30  0000 C CNN
+	1    5750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-vgaExp R3
+U 1 1 53C862A1
+P 2500 5000
+F 0 "R3" V 2580 5000 40  0000 C CNN
+F 1 "2.2K" V 2507 5001 40  0000 C CNN
+F 2 "~" V 2430 5000 30  0000 C CNN
+F 3 "~" H 2500 5000 30  0000 C CNN
+	1    2500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-vgaExp R23
+U 1 1 53C862A7
+P 2700 5000
+F 0 "R23" V 2780 5000 40  0000 C CNN
+F 1 "2.2K" V 2707 5001 40  0000 C CNN
+F 2 "~" V 2630 5000 30  0000 C CNN
+F 3 "~" H 2700 5000 30  0000 C CNN
+	1    2700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-vgaExp R24
+U 1 1 53C862AD
+P 5550 5050
+F 0 "R24" V 5630 5050 40  0000 C CNN
+F 1 "4.7K" V 5557 5051 40  0000 C CNN
+F 2 "~" V 5480 5050 30  0000 C CNN
+F 3 "~" H 5550 5050 30  0000 C CNN
+	1    5550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-vgaExp R27
+U 1 1 53C862B3
+P 5750 5050
+F 0 "R27" V 5830 5050 40  0000 C CNN
+F 1 "4.7K" V 5757 5051 40  0000 C CNN
+F 2 "~" V 5680 5050 30  0000 C CNN
+F 3 "~" H 5750 5050 30  0000 C CNN
+	1    5750 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 2650 2450 1    60   Input ~ 0
+OVDD
+Text HLabel 2450 2450 1    60   Input ~ 0
+OVDD
+Text HLabel 5600 2400 1    60   Input ~ 0
+VCC
+Text HLabel 5750 2400 1    60   Input ~ 0
+VCC
+Text HLabel 2700 4550 1    60   Input ~ 0
+OVDD
+Text HLabel 2500 4550 1    60   Input ~ 0
+OVDD
+Text HLabel 5550 4600 1    60   Input ~ 0
+VCC
+Text HLabel 5750 4600 1    60   Input ~ 0
+VCC
+Text HLabel 8150 4150 0    60   Input ~ 0
+GND
+Text HLabel 8150 4050 0    60   Input ~ 0
+GND
+Wire Wire Line
+	9800 4050 10000 4050
+Wire Wire Line
+	9800 4150 10000 4150
+Wire Wire Line
+	9100 3400 9100 3750
+Wire Wire Line
+	9100 4750 9100 5050
+Wire Wire Line
+	8400 4450 8400 4900
+Wire Wire Line
+	8400 4900 9100 4900
+Connection ~ 9100 4900
+Wire Wire Line
+	3300 3300 3400 3300
+Wire Wire Line
+	2050 3450 3400 3450
+Wire Wire Line
+	3300 3750 3400 3750
+Wire Wire Line
+	3250 5500 3350 5500
+Wire Wire Line
+	2150 5650 3350 5650
+Wire Wire Line
+	2150 5800 3350 5800
+Wire Wire Line
+	3250 5950 3350 5950
+Wire Wire Line
+	5000 3450 5950 3450
+Wire Wire Line
+	5000 3600 5950 3600
+Wire Wire Line
+	4950 5500 5050 5500
+Wire Wire Line
+	4950 5650 5950 5650
+Wire Wire Line
+	4950 5800 5950 5800
+Wire Wire Line
+	5100 3300 5000 3300
+Wire Wire Line
+	8150 4050 8400 4050
+Wire Wire Line
+	8150 4150 8400 4150
+Wire Wire Line
+	8150 4250 8400 4250
+Wire Wire Line
+	2050 3600 3400 3600
+Wire Wire Line
+	2650 3150 2650 3450
+Connection ~ 2650 3450
+Wire Wire Line
+	2450 2450 2450 2650
+Wire Wire Line
+	2650 2450 2650 2650
+Wire Wire Line
+	2450 3150 2450 3600
+Connection ~ 2450 3600
+Wire Wire Line
+	5600 3100 5600 3450
+Connection ~ 5600 3450
+Wire Wire Line
+	5750 3100 5750 3600
+Connection ~ 5750 3600
+Wire Wire Line
+	5600 2600 5600 2400
+Wire Wire Line
+	5750 2600 5750 2400
+Wire Wire Line
+	2700 5250 2700 5650
+Connection ~ 2700 5650
+Wire Wire Line
+	2500 4750 2500 4550
+Wire Wire Line
+	2700 4750 2700 4550
+Wire Wire Line
+	5550 5300 5550 5650
+Connection ~ 5550 5650
+Wire Wire Line
+	5550 4600 5550 4800
+Wire Wire Line
+	5750 4600 5750 4800
+Wire Wire Line
+	2500 5250 2500 5800
+Connection ~ 2500 5800
+Wire Wire Line
+	5750 5300 5750 5800
+Connection ~ 5750 5800
+$EndSCHEMATC

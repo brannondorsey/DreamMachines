@@ -1,0 +1,436 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:My_stuff
+LIBS:pumpkin_led-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328-P IC1
+U 1 1 542AF1D5
+P 5750 3550
+F 0 "IC1" H 5000 4800 40  0000 L BNN
+F 1 "ATMEGA328-P" H 6150 2150 40  0000 L BNN
+F 2 "pumpkin:DIP-28_Socket" H 5750 3550 30  0000 C CIN
+F 3 "" H 5750 3550 60  0000 C CNN
+	1    5750 3550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3450 600 
+$Comp
+L C 0.1uf1
+U 1 1 542AF3CB
+P 7050 3900
+F 0 "0.1uf1" H 7050 4000 40  0000 L CNN
+F 1 "C" H 7056 3815 40  0000 L CNN
+F 2 "pumpkin:cap_2.54x4.20" H 7088 3750 30  0001 C CNN
+F 3 "" H 7050 3900 60  0000 C CNN
+	1    7050 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L C 22pf2
+U 1 1 542AF487
+P 7550 3400
+F 0 "22pf2" H 7550 3500 40  0000 L CNN
+F 1 "C" H 7556 3315 40  0000 L CNN
+F 2 "Capacitors_ThroughHole.pretty:Capacitor3MMDiscRM2.5" H 7588 3250 30  0001 C CNN
+F 3 "" H 7550 3400 60  0000 C CNN
+	1    7550 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L C 22pf1
+U 1 1 542AF4E4
+P 7550 2800
+F 0 "22pf1" H 7550 2900 40  0000 L CNN
+F 1 "C" H 7556 2715 40  0000 L CNN
+F 2 "Capacitors_ThroughHole.pretty:Capacitor3MMDiscRM2.5" H 7588 2650 30  0001 C CNN
+F 3 "" H 7550 2800 60  0000 C CNN
+	1    7550 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L CRYSTAL 16mhz1
+U 1 1 542AF5F6
+P 7200 3100
+F 0 "16mhz1" H 7200 3250 60  0000 C CNN
+F 1 "CRYSTAL" H 7200 2950 60  0000 C CNN
+F 2 "pumpkin:horizontal_crystal_10mm" H 7200 3100 60  0001 C CNN
+F 3 "" H 7200 3100 60  0000 C CNN
+	1    7200 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 542AF655
+P 7550 4950
+F 0 "D4" H 7550 5050 50  0000 C CNN
+F 1 "LED" H 7550 4850 50  0000 C CNN
+F 2 "pumpkin:LED_5MM_basic" H 7550 4950 60  0001 C CNN
+F 3 "" H 7550 4950 60  0000 C CNN
+	1    7550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 542AF6AC
+P 7200 3650
+F 0 "D1" H 7200 3750 50  0000 C CNN
+F 1 "LED" H 7200 3550 50  0000 C CNN
+F 2 "pumpkin:LED_5MM_basic" H 7200 3650 60  0001 C CNN
+F 3 "" H 7200 3650 60  0000 C CNN
+	1    7200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 542AF705
+P 7550 4650
+F 0 "D3" H 7550 4750 50  0000 C CNN
+F 1 "LED" H 7550 4550 50  0000 C CNN
+F 2 "pumpkin:LED_5MM_basic" H 7550 4650 60  0001 C CNN
+F 3 "" H 7550 4650 60  0000 C CNN
+	1    7550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 542AF73A
+P 7300 1750
+F 0 "R1" V 7380 1750 40  0000 C CNN
+F 1 "220ohm" V 7307 1751 40  0000 C CNN
+F 2 "pumpkin:resistor_8mm" V 7230 1750 30  0001 C CNN
+F 3 "" H 7300 1750 30  0000 C CNN
+	1    7300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 220ohm2
+U 1 1 542AF789
+P 7150 1750
+F 0 "220ohm2" V 7230 1750 40  0000 C CNN
+F 1 "R" V 7157 1751 40  0000 C CNN
+F 2 "pumpkin:resistor_8mm" V 7080 1750 30  0001 C CNN
+F 3 "" H 7150 1750 30  0000 C CNN
+	1    7150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 220ohm1
+U 1 1 542AF7BC
+P 7000 1750
+F 0 "220ohm1" V 7080 1750 40  0000 C CNN
+F 1 "R" V 7007 1751 40  0000 C CNN
+F 2 "pumpkin:resistor_8mm" V 6930 1750 30  0001 C CNN
+F 3 "" H 7000 1750 30  0000 C CNN
+	1    7000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 220ohm3
+U 1 1 542AF7EF
+P 7750 3650
+F 0 "220ohm3" V 7830 3650 40  0000 C CNN
+F 1 "R" V 7757 3651 40  0000 C CNN
+F 2 "pumpkin:resistor_8mm" V 7680 3650 30  0001 C CNN
+F 3 "" H 7750 3650 30  0000 C CNN
+	1    7750 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R 220ohm4
+U 1 1 542AF814
+P 8100 4950
+F 0 "220ohm4" V 8180 4950 40  0000 C CNN
+F 1 "R" V 8107 4951 40  0000 C CNN
+F 2 "pumpkin:resistor_8mm" V 8030 4950 30  0001 C CNN
+F 3 "" H 8100 4950 30  0000 C CNN
+	1    8100 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 542AF851
+P 8100 4650
+F 0 "R2" V 8180 4650 40  0000 C CNN
+F 1 "220ohm" V 8107 4651 40  0000 C CNN
+F 2 "pumpkin:resistor_8mm" V 8030 4650 30  0001 C CNN
+F 3 "" H 8100 4650 30  0000 C CNN
+	1    8100 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L RGB_LED D2
+U 1 1 542B0033
+P 7500 1400
+F 0 "D2" H 7500 1550 50  0000 C CNN
+F 1 "RGB_LED" H 7500 1250 50  0000 C CNN
+F 2 "pumpkin:LED_RGB_Basic" H 7500 1400 60  0001 C CNN
+F 3 "" H 7500 1400 60  0000 C CNN
+	1    7500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4000 7100 4000
+Wire Wire Line
+	7100 4000 7100 4150
+Wire Wire Line
+	7100 4150 6750 4150
+Wire Wire Line
+	7400 4100 6900 4100
+Wire Wire Line
+	6900 4100 6900 4050
+Wire Wire Line
+	6900 4050 6750 4050
+Wire Wire Line
+	7400 4200 7100 4200
+Wire Wire Line
+	7100 4200 7100 5100
+Wire Wire Line
+	7100 5100 4550 5100
+Wire Wire Line
+	4550 5100 4550 1150
+Wire Wire Line
+	7400 4400 7250 4400
+Wire Wire Line
+	7250 4400 7250 5250
+Wire Wire Line
+	7250 5250 4650 5250
+Wire Wire Line
+	4650 4750 4650 5400
+Wire Wire Line
+	4150 4750 4850 4750
+Wire Wire Line
+	6750 3050 6950 3050
+Wire Wire Line
+	6950 3050 6950 2800
+Wire Wire Line
+	6950 2800 7350 2800
+Wire Wire Line
+	6750 3150 6950 3150
+Wire Wire Line
+	6950 3150 6950 3400
+Wire Wire Line
+	6950 3400 7350 3400
+Connection ~ 7200 3400
+Connection ~ 7200 2800
+Wire Wire Line
+	7750 2800 7850 2800
+Wire Wire Line
+	7850 2200 7850 3400
+Wire Wire Line
+	7850 2200 4400 2200
+Wire Wire Line
+	4400 2200 4400 4750
+Connection ~ 4650 4750
+Wire Wire Line
+	7850 3400 7750 3400
+Connection ~ 7850 2800
+Wire Wire Line
+	7300 1450 7300 1500
+Wire Wire Line
+	7300 2000 7300 2750
+Wire Wire Line
+	7300 2750 6750 2750
+Wire Wire Line
+	7300 1400 7150 1400
+Wire Wire Line
+	7150 1400 7150 1500
+Wire Wire Line
+	7150 2000 7150 2650
+Wire Wire Line
+	7150 2650 6750 2650
+Wire Wire Line
+	7300 1350 7000 1350
+Wire Wire Line
+	7000 1350 7000 1500
+Wire Wire Line
+	7000 2000 7000 2550
+Wire Wire Line
+	7000 2550 6750 2550
+Wire Wire Line
+	7700 1400 7800 1400
+Wire Wire Line
+	7800 1400 7800 1150
+Wire Wire Line
+	7800 1150 4550 1150
+Connection ~ 4550 2450
+Wire Wire Line
+	6750 4550 7000 4550
+Wire Wire Line
+	7000 4550 7000 4650
+Wire Wire Line
+	7000 4650 7350 4650
+Wire Wire Line
+	6750 4650 6900 4650
+Wire Wire Line
+	6900 4650 6900 4950
+Wire Wire Line
+	6900 4950 7350 4950
+Wire Wire Line
+	7750 4650 7850 4650
+Wire Wire Line
+	7750 4950 7850 4950
+Wire Wire Line
+	8350 4650 8550 4650
+Wire Wire Line
+	8550 4650 8550 5400
+Wire Wire Line
+	8550 5400 4650 5400
+Connection ~ 4650 5250
+Wire Wire Line
+	8350 4950 9150 4950
+Connection ~ 8550 4950
+Wire Wire Line
+	6750 3300 6850 3300
+Wire Wire Line
+	6850 3300 6850 3650
+Wire Wire Line
+	6850 3650 7000 3650
+Wire Wire Line
+	7400 3650 7500 3650
+Wire Wire Line
+	8000 3650 9150 3650
+Wire Wire Line
+	9150 3650 9150 4950
+$Comp
+L BATTERY BT1
+U 1 1 542B11D1
+P 3150 4200
+F 0 "BT1" H 3150 4400 50  0000 C CNN
+F 1 "BATTERY" H 3150 4010 50  0000 C CNN
+F 2 "pumpkin:Battery_AA" H 3150 4200 60  0001 C CNN
+F 3 "" H 3150 4200 60  0000 C CNN
+	1    3150 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #VCC01
+U 1 1 542B1C35
+P 3150 3750
+F 0 "#VCC01" H 3150 3840 20  0001 C CNN
+F 1 "VCC" H 3150 3840 30  0000 C CNN
+F 2 "" H 3150 3750 60  0000 C CNN
+F 3 "" H 3150 3750 60  0000 C CNN
+	1    3150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #GND02
+U 1 1 542B1CA3
+P 3150 4600
+F 0 "#GND02" H 3150 4600 30  0001 C CNN
+F 1 "GND" H 3150 4530 30  0001 C CNN
+F 2 "" H 3150 4600 60  0000 C CNN
+F 3 "" H 3150 4600 60  0000 C CNN
+	1    3150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 542DB3DD
+P 6500 1850
+F 0 "SW2" H 6650 1960 50  0000 C CNN
+F 1 "SW_PUSH" H 6500 1770 50  0000 C CNN
+F 2 "pumpkin:Push_button_single" H 6500 1850 60  0001 C CNN
+F 3 "" H 6500 1850 60  0000 C CNN
+	1    6500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2850 6850 2850
+Wire Wire Line
+	6850 2850 6850 1850
+Wire Wire Line
+	6850 1850 6800 1850
+Wire Wire Line
+	6200 1850 4300 1850
+Wire Wire Line
+	4300 1850 4300 4750
+Connection ~ 4300 4750
+Connection ~ 4400 4750
+Wire Wire Line
+	3150 3750 3150 3900
+Wire Wire Line
+	3150 4500 3150 4600
+Wire Wire Line
+	6750 3900 6850 3900
+Wire Wire Line
+	7250 3900 7400 3900
+Wire Wire Line
+	4150 2450 4850 2450
+$Comp
+L VCC #VCC03
+U 1 1 543000E9
+P 4150 2450
+F 0 "#VCC03" H 4150 2550 30  0001 C CNN
+F 1 "VCC" H 4150 2550 30  0000 C CNN
+F 2 "" H 4150 2450 60  0000 C CNN
+F 3 "" H 4150 2450 60  0000 C CNN
+	1    4150 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #GND04
+U 1 1 54300300
+P 4150 4750
+F 0 "#GND04" H 4150 4750 30  0001 C CNN
+F 1 "GND" H 4150 4680 30  0001 C CNN
+F 2 "" H 4150 4750 60  0000 C CNN
+F 3 "" H 4150 4750 60  0000 C CNN
+	1    4150 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L FTDI FTDI1
+U 1 1 5430106F
+P 8300 4150
+F 0 "FTDI1" H 8250 4600 40  0000 L CNN
+F 1 "FTDI" H 8250 3700 40  0000 L CNN
+F 2 "pumpkin:FTDI_Header" H 8338 4000 30  0001 C CNN
+F 3 "" H 8300 4150 60  0000 C CNN
+	1    8300 4150
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

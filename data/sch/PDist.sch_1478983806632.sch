@@ -1,0 +1,2559 @@
+EESchema Schematic File Version 2
+LIBS:Abracon
+LIBS:Altera
+LIBS:AnalogDevices
+LIBS:AOS
+LIBS:Atmel
+LIBS:conn-2mm
+LIBS:conn-100mil
+LIBS:conn-amphenol
+LIBS:conn-assmann
+LIBS:conn-cui
+LIBS:conn-fci
+LIBS:conn-jae
+LIBS:conn-linx
+LIBS:conn-molex
+LIBS:conn-tagconnect
+LIBS:conn-te
+LIBS:conn-test
+LIBS:DiodesInc
+LIBS:display
+LIBS:electomech-misc
+LIBS:_electromech
+LIBS:Fairchild
+LIBS:FTDI
+LIBS:Intersil
+LIBS:Lattice
+LIBS:_linear
+LIBS:LinearTech
+LIBS:Littelfuse
+LIBS:logic-4000
+LIBS:logic-7400
+LIBS:MACOM
+LIBS:maxim
+LIBS:mechanical
+LIBS:Microchip
+LIBS:Micron
+LIBS:NXP
+LIBS:onsemi
+LIBS:_passive
+LIBS:pasv-BelFuse
+LIBS:pasv-BiTech
+LIBS:pasv-Bourns
+LIBS:pasv-cap
+LIBS:pasv-ind
+LIBS:pasv-Murata
+LIBS:pasv-res
+LIBS:pasv-TDK
+LIBS:pasv-xtal
+LIBS:pcb
+LIBS:power
+LIBS:Recom
+LIBS:_semi
+LIBS:semi-diode-DiodesInc
+LIBS:semi-diode-generic
+LIBS:semi-diode-MCC
+LIBS:semi-diode-NXP
+LIBS:semi-diode-OnSemi
+LIBS:semi-diode-Semtech
+LIBS:semi-diode-ST
+LIBS:semi-diode-Toshiba
+LIBS:semi-opto-generic
+LIBS:semi-opto-liteon
+LIBS:semi-thyristor-generic
+LIBS:semi-trans-AOS
+LIBS:semi-trans-DiodesInc
+LIBS:semi-trans-EPC
+LIBS:semi-trans-Fairchild
+LIBS:semi-trans-generic
+LIBS:semi-trans-Infineon
+LIBS:semi-trans-IRF
+LIBS:semi-trans-IXYS
+LIBS:semi-trans-NXP
+LIBS:semi-trans-OnSemi
+LIBS:semi-trans-ST
+LIBS:semi-trans-TI
+LIBS:semi-trans-Toshiba
+LIBS:semi-trans-Vishay
+LIBS:silabs
+LIBS:skyworks
+LIBS:ST
+LIBS:st_ic
+LIBS:supertex
+LIBS:symbol
+LIBS:TexasInstruments
+LIBS:Vishay
+LIBS:Xilinx
+LIBS:Richtek
+LIBS:semi-diode-Panasonic
+LIBS:Murata
+LIBS:semi-trans-Panasonic
+LIBS:AMS
+LIBS:motherboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 10 10
+Title "Power Distribution"
+Date "2016-09-16"
+Rev "A"
+Comp "SEMIANALOG / CHRIS PAVLINA"
+Comment1 ""
+Comment2 "CC0: https://creativecommons.org/publicdomain/zero/1.0/"
+Comment3 "https://semianalog.com/c4_0"
+Comment4 "Source: https://github.com/c4puter/motherboard"
+$EndDescr
+$Comp
+L DDR3-SODIMM SODIMM?
+U 2 1 576474B4
+P 4100 1200
+AR Path="/57646CD1/576474B4" Ref="SODIMM?"  Part="1" 
+AR Path="/5763AB3B/576474B4" Ref="SODIMM1"  Part="2" 
+F 0 "SODIMM1" H 4100 1467 50  0000 C CNN
+F 1 "DDR3-SODIMM" H 4100 1376 50  0000 C CNN
+F 2 "conn-te:SODIMM-2013289" H 4000 2200 50  0001 C CNN
+F 3 "" H 4100 2300 50  0001 C CNN
+	2    4100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1001
+U 1 1 57647804
+P 3400 6400
+F 0 "#PWR1001" H 3400 6400 30  0001 C CNN
+F 1 "GND" H 3400 6330 30  0001 C CNN
+F 2 "" H 3400 6400 60  0000 C CNN
+F 3 "" H 3400 6400 60  0000 C CNN
+	1    3400 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 1200 0    50   Input ~ 0
+P3V3_BRIDGE
+Text GLabel 6700 2600 0    50   Input ~ 0
+P1V2_CORE
+$Comp
+L GND #PWR1008
+U 1 1 57685CC5
+P 8200 7100
+F 0 "#PWR1008" H 8200 7100 30  0001 C CNN
+F 1 "GND" H 8200 7030 30  0001 C CNN
+F 2 "" H 8200 7100 60  0000 C CNN
+F 3 "" H 8200 7100 60  0000 C CNN
+	1    8200 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 578193FA
+P 3600 7200
+AR Path="/578193FA" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/578193FA" Ref="C1001"  Part="1" 
+F 0 "C1001" H 3713 7246 50  0000 L CNN
+F 1 "1u" H 3713 7155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 3600 7200 50  0001 C CNN
+F 3 "" H 3590 7175 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 4400 7750 60  0001 C CNN "BOM"
+	1    3600 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 1100 2    50   Input ~ 0
+P1V5_BRIDGE
+Text GLabel 3500 7000 0    50   Input ~ 0
+P1V5_BRIDGE
+$Comp
+L C-0402 C?
+U 1 1 57819B75
+P 4000 7200
+AR Path="/57819B75" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57819B75" Ref="C1005"  Part="1" 
+F 0 "C1005" H 4113 7246 50  0000 L CNN
+F 1 "1u" H 4113 7155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4000 7200 50  0001 C CNN
+F 3 "" H 3990 7175 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 4800 7750 60  0001 C CNN "BOM"
+	1    4000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 57819B94
+P 4400 7200
+AR Path="/57819B94" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57819B94" Ref="C1009"  Part="1" 
+F 0 "C1009" H 4513 7246 50  0000 L CNN
+F 1 "1u" H 4513 7155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4400 7200 50  0001 C CNN
+F 3 "" H 4390 7175 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 5200 7750 60  0001 C CNN "BOM"
+	1    4400 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 57819BB4
+P 4800 7200
+AR Path="/57819BB4" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57819BB4" Ref="C1013"  Part="1" 
+F 0 "C1013" H 4913 7246 50  0000 L CNN
+F 1 "1u" H 4913 7155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4800 7200 50  0001 C CNN
+F 3 "" H 4790 7175 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 5600 7750 60  0001 C CNN "BOM"
+	1    4800 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781A57A
+P 5200 7200
+AR Path="/5781A57A" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781A57A" Ref="C1017"  Part="1" 
+F 0 "C1017" H 5313 7246 50  0000 L CNN
+F 1 "1u" H 5313 7155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 5200 7200 50  0001 C CNN
+F 3 "" H 5190 7175 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 6000 7750 60  0001 C CNN "BOM"
+	1    5200 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781A5A0
+P 5600 7200
+AR Path="/5781A5A0" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781A5A0" Ref="C1021"  Part="1" 
+F 0 "C1021" H 5713 7246 50  0000 L CNN
+F 1 "1u" H 5713 7155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 5600 7200 50  0001 C CNN
+F 3 "" H 5590 7175 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 6400 7750 60  0001 C CNN "BOM"
+	1    5600 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1002
+U 1 1 5781AB87
+P 3600 7500
+F 0 "#PWR1002" H 3600 7500 30  0001 C CNN
+F 1 "GND" H 3600 7430 30  0001 C CNN
+F 2 "" H 3600 7500 60  0000 C CNN
+F 3 "" H 3600 7500 60  0000 C CNN
+	1    3600 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BE7E
+P 3600 7800
+AR Path="/5781BE7E" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BE7E" Ref="C1002"  Part="1" 
+F 0 "C1002" H 3713 7846 50  0000 L CNN
+F 1 "1u" H 3713 7755 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 3600 7800 50  0001 C CNN
+F 3 "" H 3590 7775 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 4400 8350 60  0001 C CNN "BOM"
+	1    3600 7800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 7600 0    50   Input ~ 0
+P1V5_BRIDGE
+$Comp
+L C-0402 C?
+U 1 1 5781BE86
+P 4000 7800
+AR Path="/5781BE86" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BE86" Ref="C1006"  Part="1" 
+F 0 "C1006" H 4113 7846 50  0000 L CNN
+F 1 "1u" H 4113 7755 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4000 7800 50  0001 C CNN
+F 3 "" H 3990 7775 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 4800 8350 60  0001 C CNN "BOM"
+	1    4000 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BE8D
+P 4400 7800
+AR Path="/5781BE8D" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BE8D" Ref="C1010"  Part="1" 
+F 0 "C1010" H 4513 7846 50  0000 L CNN
+F 1 "1u" H 4513 7755 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4400 7800 50  0001 C CNN
+F 3 "" H 4390 7775 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 5200 8350 60  0001 C CNN "BOM"
+	1    4400 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BE94
+P 4800 7800
+AR Path="/5781BE94" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BE94" Ref="C1014"  Part="1" 
+F 0 "C1014" H 4913 7846 50  0000 L CNN
+F 1 "1u" H 4913 7755 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4800 7800 50  0001 C CNN
+F 3 "" H 4790 7775 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 5600 8350 60  0001 C CNN "BOM"
+	1    4800 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BEAA
+P 5200 7800
+AR Path="/5781BEAA" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BEAA" Ref="C1018"  Part="1" 
+F 0 "C1018" H 5313 7846 50  0000 L CNN
+F 1 "1u" H 5313 7755 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 5200 7800 50  0001 C CNN
+F 3 "" H 5190 7775 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 6000 8350 60  0001 C CNN "BOM"
+	1    5200 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BEB1
+P 5600 7800
+AR Path="/5781BEB1" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BEB1" Ref="C1022"  Part="1" 
+F 0 "C1022" H 5713 7846 50  0000 L CNN
+F 1 "1u" H 5713 7755 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 5600 7800 50  0001 C CNN
+F 3 "" H 5590 7775 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 6400 8350 60  0001 C CNN "BOM"
+	1    5600 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1003
+U 1 1 5781BEBF
+P 3600 8100
+F 0 "#PWR1003" H 3600 8100 30  0001 C CNN
+F 1 "GND" H 3600 8030 30  0001 C CNN
+F 2 "" H 3600 8100 60  0000 C CNN
+F 3 "" H 3600 8100 60  0000 C CNN
+	1    3600 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BFAF
+P 3600 8400
+AR Path="/5781BFAF" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BFAF" Ref="C1003"  Part="1" 
+F 0 "C1003" H 3713 8446 50  0000 L CNN
+F 1 "1u" H 3713 8355 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 3600 8400 50  0001 C CNN
+F 3 "" H 3590 8375 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 4400 8950 60  0001 C CNN "BOM"
+	1    3600 8400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 8200 0    50   Input ~ 0
+P1V5_BRIDGE
+$Comp
+L C-0402 C?
+U 1 1 5781BFB7
+P 4000 8400
+AR Path="/5781BFB7" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BFB7" Ref="C1007"  Part="1" 
+F 0 "C1007" H 4113 8446 50  0000 L CNN
+F 1 "1u" H 4113 8355 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4000 8400 50  0001 C CNN
+F 3 "" H 3990 8375 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 4800 8950 60  0001 C CNN "BOM"
+	1    4000 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BFBE
+P 4400 8400
+AR Path="/5781BFBE" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BFBE" Ref="C1011"  Part="1" 
+F 0 "C1011" H 4513 8446 50  0000 L CNN
+F 1 "1u" H 4513 8355 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4400 8400 50  0001 C CNN
+F 3 "" H 4390 8375 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 5200 8950 60  0001 C CNN "BOM"
+	1    4400 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BFC5
+P 4800 8400
+AR Path="/5781BFC5" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BFC5" Ref="C1015"  Part="1" 
+F 0 "C1015" H 4913 8446 50  0000 L CNN
+F 1 "1u" H 4913 8355 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4800 8400 50  0001 C CNN
+F 3 "" H 4790 8375 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 5600 8950 60  0001 C CNN "BOM"
+	1    4800 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BFDB
+P 5200 8400
+AR Path="/5781BFDB" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BFDB" Ref="C1019"  Part="1" 
+F 0 "C1019" H 5313 8446 50  0000 L CNN
+F 1 "1u" H 5313 8355 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 5200 8400 50  0001 C CNN
+F 3 "" H 5190 8375 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 6000 8950 60  0001 C CNN "BOM"
+	1    5200 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BFE2
+P 5600 8400
+AR Path="/5781BFE2" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BFE2" Ref="C1023"  Part="1" 
+F 0 "C1023" H 5713 8446 50  0000 L CNN
+F 1 "1u" H 5713 8355 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 5600 8400 50  0001 C CNN
+F 3 "" H 5590 8375 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 6400 8950 60  0001 C CNN "BOM"
+	1    5600 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1004
+U 1 1 5781BFF0
+P 3600 8700
+F 0 "#PWR1004" H 3600 8700 30  0001 C CNN
+F 1 "GND" H 3600 8630 30  0001 C CNN
+F 2 "" H 3600 8700 60  0000 C CNN
+F 3 "" H 3600 8700 60  0000 C CNN
+	1    3600 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781BFF8
+P 3600 9300
+AR Path="/5781BFF8" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781BFF8" Ref="C1004"  Part="1" 
+F 0 "C1004" H 3713 9346 50  0000 L CNN
+F 1 "1u" H 3713 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 3600 9300 50  0001 C CNN
+F 3 "" H 3590 9275 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 4400 9850 60  0001 C CNN "BOM"
+	1    3600 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781C000
+P 4000 9300
+AR Path="/5781C000" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781C000" Ref="C1008"  Part="1" 
+F 0 "C1008" H 4113 9346 50  0000 L CNN
+F 1 "1u" H 4113 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4000 9300 50  0001 C CNN
+F 3 "" H 3990 9275 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 4800 9850 60  0001 C CNN "BOM"
+	1    4000 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781C007
+P 4400 9300
+AR Path="/5781C007" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781C007" Ref="C1012"  Part="1" 
+F 0 "C1012" H 4513 9346 50  0000 L CNN
+F 1 "1u" H 4513 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4400 9300 50  0001 C CNN
+F 3 "" H 4390 9275 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 5200 9850 60  0001 C CNN "BOM"
+	1    4400 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781C00E
+P 4800 9300
+AR Path="/5781C00E" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781C00E" Ref="C1016"  Part="1" 
+F 0 "C1016" H 4913 9346 50  0000 L CNN
+F 1 "1u" H 4913 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 4800 9300 50  0001 C CNN
+F 3 "" H 4790 9275 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 5600 9850 60  0001 C CNN "BOM"
+	1    4800 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0402 C?
+U 1 1 5781C024
+P 5200 9300
+AR Path="/5781C024" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/5781C024" Ref="C1020"  Part="1" 
+F 0 "C1020" H 5313 9346 50  0000 L CNN
+F 1 "1u" H 5313 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1005X55" H 5200 9300 50  0001 C CNN
+F 3 "" H 5190 9275 60  0000 C CNN
+F 4 "CAP MLCC 1u 6.3V 20% [0402]" H 6000 9850 60  0001 C CNN "BOM"
+	1    5200 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1005
+U 1 1 5781C039
+P 3600 9600
+F 0 "#PWR1005" H 3600 9600 30  0001 C CNN
+F 1 "GND" H 3600 9530 30  0001 C CNN
+F 2 "" H 3600 9600 60  0000 C CNN
+F 3 "" H 3600 9600 60  0000 C CNN
+	1    3600 9600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 3100 2    50   Input ~ 0
+P3V3_AUX
+Text GLabel 5000 6200 2    50   Input ~ 0
+PV75_SDRAM_VTT
+Text GLabel 5000 6000 2    50   Input ~ 0
+PV75_SDRAM_VREF
+Text GLabel 3500 9100 0    50   Input ~ 0
+PV75_SDRAM_VREF
+Text GLabel 3500 9000 0    50   Input ~ 0
+PV75_SDRAM_VTT
+Text GLabel 3500 8900 0    50   Input ~ 0
+P3V3_AUX
+$Comp
+L GND #PWR1012
+U 1 1 578EB8DE
+P 10600 7100
+F 0 "#PWR1012" H 10600 7100 30  0001 C CNN
+F 1 "GND" H 10600 7030 30  0001 C CNN
+F 2 "" H 10600 7100 60  0000 C CNN
+F 3 "" H 10600 7100 60  0000 C CNN
+	1    10600 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 9100 1200 0    50   Input ~ 0
+P3V3_CPU
+Text GLabel 9100 2600 0    50   Input ~ 0
+P1V2_CORE
+$Comp
+L GND #PWR1014
+U 1 1 578EED1F
+P 13000 7100
+F 0 "#PWR1014" H 13000 7100 30  0001 C CNN
+F 1 "GND" H 13000 7030 30  0001 C CNN
+F 2 "" H 13000 7100 60  0000 C CNN
+F 3 "" H 13000 7100 60  0000 C CNN
+	1    13000 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 11500 1200 0    50   Input ~ 0
+P3V3_CPU
+Text GLabel 11500 2600 0    50   Input ~ 0
+P1V2_CORE
+Text GLabel 6700 9100 0    50   Input ~ 0
+P3V3_CPU
+$Comp
+L GND #PWR1006
+U 1 1 5793DC64
+P 6800 9500
+F 0 "#PWR1006" H 6800 9500 30  0001 C CNN
+F 1 "GND" H 6800 9430 30  0001 C CNN
+F 2 "" H 6800 9500 60  0000 C CNN
+F 3 "" H 6800 9500 60  0000 C CNN
+	1    6800 9500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 9100 0    50   Input ~ 0
+P1V2_CORE
+$Comp
+L GND #PWR1007
+U 1 1 5794152A
+P 7600 9500
+F 0 "#PWR1007" H 7600 9500 30  0001 C CNN
+F 1 "GND" H 7600 9430 30  0001 C CNN
+F 2 "" H 7600 9500 60  0000 C CNN
+F 3 "" H 7600 9500 60  0000 C CNN
+	1    7600 9500
+	1    0    0    -1  
+$EndComp
+Text GLabel 8300 9100 0    50   Input ~ 0
+P1V5_BRIDGE
+$Comp
+L GND #PWR1010
+U 1 1 57941D48
+P 8400 9500
+F 0 "#PWR1010" H 8400 9500 30  0001 C CNN
+F 1 "GND" H 8400 9430 30  0001 C CNN
+F 2 "" H 8400 9500 60  0000 C CNN
+F 3 "" H 8400 9500 60  0000 C CNN
+	1    8400 9500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 7500 0    50   Input ~ 0
+P1V2_CORE
+$Comp
+L GND #PWR1009
+U 1 1 57999F20
+P 8300 8500
+F 0 "#PWR1009" H 8300 8500 30  0001 C CNN
+F 1 "GND" H 8300 8430 30  0001 C CNN
+F 2 "" H 8300 8500 60  0000 C CNN
+F 3 "" H 8300 8500 60  0000 C CNN
+	1    8300 8500
+	1    0    0    -1  
+$EndComp
+Text Notes 7150 7450 0    50   ~ 0
+BRIDGE CORE
+Text GLabel 9250 7500 0    50   Input ~ 0
+P1V2_CORE
+$Comp
+L GND #PWR1013
+U 1 1 57AD4CB3
+P 11000 8500
+F 0 "#PWR1013" H 11000 8500 30  0001 C CNN
+F 1 "GND" H 11000 8430 30  0001 C CNN
+F 2 "" H 11000 8500 60  0000 C CNN
+F 3 "" H 11000 8500 60  0000 C CNN
+	1    11000 8500
+	1    0    0    -1  
+$EndComp
+Text Notes 9850 7450 0    50   ~ 0
+CPU0 CORE
+Text GLabel 11650 7500 0    50   Input ~ 0
+P1V2_CORE
+$Comp
+L GND #PWR1015
+U 1 1 57AD51AD
+P 13400 8500
+F 0 "#PWR1015" H 13400 8500 30  0001 C CNN
+F 1 "GND" H 13400 8430 30  0001 C CNN
+F 2 "" H 13400 8500 60  0000 C CNN
+F 3 "" H 13400 8500 60  0000 C CNN
+	1    13400 8500
+	1    0    0    -1  
+$EndComp
+Text Notes 12250 7450 0    50   ~ 0
+CPU1 CORE
+Text GLabel 10200 9100 0    50   Input ~ 0
+P3V3_BRIDGE
+$Comp
+L GND #PWR1011
+U 1 1 57AD94B8
+P 10300 9500
+F 0 "#PWR1011" H 10300 9500 30  0001 C CNN
+F 1 "GND" H 10300 9430 30  0001 C CNN
+F 2 "" H 10300 9500 60  0000 C CNN
+F 3 "" H 10300 9500 60  0000 C CNN
+	1    10300 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1200 3500 1200
+Wire Wire Line
+	3400 1300 3500 1300
+Wire Wire Line
+	3400 1400 3500 1400
+Wire Wire Line
+	3400 1500 3500 1500
+Wire Wire Line
+	3400 1600 3500 1600
+Wire Wire Line
+	3400 1700 3500 1700
+Wire Wire Line
+	3400 1800 3500 1800
+Wire Wire Line
+	3400 1900 3500 1900
+Wire Wire Line
+	3400 2000 3500 2000
+Wire Wire Line
+	3400 2100 3500 2100
+Wire Wire Line
+	3400 2200 3500 2200
+Wire Wire Line
+	3400 2300 3500 2300
+Wire Wire Line
+	3400 2400 3500 2400
+Wire Wire Line
+	3400 2500 3500 2500
+Wire Wire Line
+	3400 2600 3500 2600
+Wire Wire Line
+	3400 2700 3500 2700
+Wire Wire Line
+	3400 2800 3500 2800
+Wire Wire Line
+	3400 2900 3500 2900
+Wire Wire Line
+	3400 3000 3500 3000
+Wire Wire Line
+	3400 3100 3500 3100
+Wire Wire Line
+	3400 3200 3500 3200
+Wire Wire Line
+	3400 3300 3500 3300
+Wire Wire Line
+	3400 3400 3500 3400
+Wire Wire Line
+	3400 3500 3500 3500
+Wire Wire Line
+	3400 3600 3500 3600
+Wire Wire Line
+	3400 3700 3500 3700
+Wire Wire Line
+	3400 3800 3500 3800
+Wire Wire Line
+	3400 3900 3500 3900
+Wire Wire Line
+	3400 4000 3500 4000
+Wire Wire Line
+	3400 4100 3500 4100
+Wire Wire Line
+	3400 4200 3500 4200
+Wire Wire Line
+	3400 4300 3500 4300
+Wire Wire Line
+	3400 4400 3500 4400
+Wire Wire Line
+	3400 4500 3500 4500
+Wire Wire Line
+	3400 4600 3500 4600
+Wire Wire Line
+	3400 4700 3500 4700
+Wire Wire Line
+	3400 4800 3500 4800
+Wire Wire Line
+	3400 4900 3500 4900
+Wire Wire Line
+	3400 5000 3500 5000
+Wire Wire Line
+	3400 5100 3500 5100
+Wire Wire Line
+	3400 5200 3500 5200
+Wire Wire Line
+	3400 5300 3500 5300
+Wire Wire Line
+	3400 5400 3500 5400
+Wire Wire Line
+	3400 5500 3500 5500
+Wire Wire Line
+	3400 5600 3500 5600
+Wire Wire Line
+	3400 5700 3500 5700
+Connection ~ 3400 1300
+Connection ~ 3400 1400
+Connection ~ 3400 1500
+Connection ~ 3400 1600
+Connection ~ 3400 1700
+Connection ~ 3400 1800
+Connection ~ 3400 1900
+Connection ~ 3400 2000
+Connection ~ 3400 2100
+Connection ~ 3400 2200
+Connection ~ 3400 2300
+Connection ~ 3400 2400
+Connection ~ 3400 2500
+Connection ~ 3400 2600
+Connection ~ 3400 2700
+Connection ~ 3400 2800
+Connection ~ 3400 2900
+Connection ~ 3400 3000
+Connection ~ 3400 3100
+Connection ~ 3400 3200
+Connection ~ 3400 3300
+Connection ~ 3400 3400
+Connection ~ 3400 3500
+Connection ~ 3400 3600
+Connection ~ 3400 3700
+Connection ~ 3400 3800
+Connection ~ 3400 3900
+Connection ~ 3400 4000
+Connection ~ 3400 4100
+Connection ~ 3400 4200
+Connection ~ 3400 4300
+Connection ~ 3400 4400
+Connection ~ 3400 4500
+Connection ~ 3400 4600
+Connection ~ 3400 4700
+Connection ~ 3400 4800
+Connection ~ 3400 4900
+Connection ~ 3400 5000
+Connection ~ 3400 5100
+Connection ~ 3400 5200
+Connection ~ 3400 5300
+Connection ~ 3400 5400
+Connection ~ 3400 5500
+Connection ~ 3400 5600
+Connection ~ 3400 5700
+Wire Wire Line
+	3400 1200 3400 6400
+Wire Wire Line
+	4800 1200 4700 1200
+Wire Wire Line
+	4800 1300 4700 1300
+Wire Wire Line
+	4800 1400 4700 1400
+Wire Wire Line
+	4800 1500 4700 1500
+Wire Wire Line
+	4800 1600 4700 1600
+Wire Wire Line
+	4800 1700 4700 1700
+Wire Wire Line
+	4800 1800 4700 1800
+Wire Wire Line
+	4800 1900 4700 1900
+Wire Wire Line
+	4800 2000 4700 2000
+Wire Wire Line
+	4800 2100 4700 2100
+Wire Wire Line
+	4800 2200 4700 2200
+Wire Wire Line
+	4800 2300 4700 2300
+Wire Wire Line
+	4800 2400 4700 2400
+Wire Wire Line
+	4800 2500 4700 2500
+Connection ~ 4800 1200
+Connection ~ 4800 1300
+Connection ~ 4800 1400
+Connection ~ 4800 1500
+Connection ~ 4800 1600
+Connection ~ 4800 1700
+Connection ~ 4800 1800
+Connection ~ 4800 1900
+Connection ~ 4800 2000
+Connection ~ 4800 2100
+Connection ~ 4800 2200
+Connection ~ 4800 2300
+Connection ~ 4800 2400
+Wire Wire Line
+	4800 1100 4800 2900
+Wire Wire Line
+	6700 1200 6900 1200
+Wire Wire Line
+	6800 1300 6900 1300
+Wire Wire Line
+	6800 1400 6900 1400
+Wire Wire Line
+	6800 1500 6900 1500
+Wire Wire Line
+	6800 1600 6900 1600
+Wire Wire Line
+	6800 1700 6900 1700
+Wire Wire Line
+	6800 1800 6900 1800
+Wire Wire Line
+	6800 1900 6900 1900
+Wire Wire Line
+	6800 2000 6900 2000
+Wire Wire Line
+	6800 2100 6900 2100
+Wire Wire Line
+	6800 2200 6900 2200
+Wire Wire Line
+	6800 2300 6900 2300
+Wire Wire Line
+	6800 2400 6900 2400
+Wire Wire Line
+	6800 2500 6900 2500
+Wire Wire Line
+	6700 2600 6900 2600
+Wire Wire Line
+	6800 2700 6900 2700
+Wire Wire Line
+	6800 2800 6900 2800
+Wire Wire Line
+	6800 2900 6900 2900
+Wire Wire Line
+	6800 3000 6900 3000
+Wire Wire Line
+	6800 3100 6900 3100
+Wire Wire Line
+	6800 3200 6900 3200
+Wire Wire Line
+	6800 3300 6900 3300
+Wire Wire Line
+	6800 3400 6900 3400
+Wire Wire Line
+	6800 3500 6900 3500
+Wire Wire Line
+	6800 3600 6900 3600
+Wire Wire Line
+	6800 3700 6900 3700
+Wire Wire Line
+	6800 3800 6900 3800
+Wire Wire Line
+	6800 3900 6900 3900
+Wire Wire Line
+	6800 4000 6900 4000
+Wire Wire Line
+	6800 4100 6900 4100
+Wire Wire Line
+	6800 4200 6900 4200
+Wire Wire Line
+	6800 4300 6900 4300
+Wire Wire Line
+	6800 4400 6900 4400
+Wire Wire Line
+	6800 4500 6900 4500
+Connection ~ 6800 1200
+Connection ~ 6800 1300
+Connection ~ 6800 1400
+Connection ~ 6800 1500
+Connection ~ 6800 1600
+Connection ~ 6800 1700
+Connection ~ 6800 1800
+Connection ~ 6800 1900
+Connection ~ 6800 2000
+Connection ~ 6800 2100
+Connection ~ 6800 2200
+Connection ~ 6800 2300
+Connection ~ 6800 2400
+Connection ~ 6800 2600
+Connection ~ 6800 2700
+Connection ~ 6800 2800
+Connection ~ 6800 2900
+Connection ~ 6800 3000
+Connection ~ 6800 3100
+Connection ~ 6800 3200
+Connection ~ 6800 3300
+Connection ~ 6800 3400
+Connection ~ 6800 3500
+Connection ~ 6800 3600
+Connection ~ 6800 3700
+Connection ~ 6800 3800
+Connection ~ 6800 3900
+Connection ~ 6800 4000
+Connection ~ 6800 4100
+Connection ~ 6800 4200
+Connection ~ 6800 4300
+Connection ~ 6800 4400
+Wire Wire Line
+	6800 1200 6800 2500
+Wire Wire Line
+	6800 2600 6800 4500
+Wire Wire Line
+	8200 1200 8100 1200
+Wire Wire Line
+	8200 1300 8100 1300
+Wire Wire Line
+	8200 1400 8100 1400
+Wire Wire Line
+	8200 1500 8100 1500
+Wire Wire Line
+	8200 1600 8100 1600
+Wire Wire Line
+	8200 1700 8100 1700
+Wire Wire Line
+	8200 1800 8100 1800
+Wire Wire Line
+	8200 1900 8100 1900
+Wire Wire Line
+	8200 2000 8100 2000
+Wire Wire Line
+	8200 2100 8100 2100
+Wire Wire Line
+	8200 2200 8100 2200
+Wire Wire Line
+	8200 2300 8100 2300
+Wire Wire Line
+	8200 2400 8100 2400
+Wire Wire Line
+	8200 2500 8100 2500
+Wire Wire Line
+	8200 2600 8100 2600
+Wire Wire Line
+	8200 2700 8100 2700
+Wire Wire Line
+	8200 2800 8100 2800
+Wire Wire Line
+	8200 2900 8100 2900
+Wire Wire Line
+	8200 3000 8100 3000
+Wire Wire Line
+	8200 3100 8100 3100
+Wire Wire Line
+	8200 3200 8100 3200
+Wire Wire Line
+	8200 3300 8100 3300
+Wire Wire Line
+	8200 3400 8100 3400
+Wire Wire Line
+	8200 3500 8100 3500
+Wire Wire Line
+	8200 3600 8100 3600
+Wire Wire Line
+	8200 3700 8100 3700
+Wire Wire Line
+	8200 3800 8100 3800
+Wire Wire Line
+	8200 3900 8100 3900
+Wire Wire Line
+	8200 4000 8100 4000
+Wire Wire Line
+	8200 4100 8100 4100
+Wire Wire Line
+	8200 4200 8100 4200
+Wire Wire Line
+	8200 4300 8100 4300
+Wire Wire Line
+	8200 4400 8100 4400
+Wire Wire Line
+	8200 4500 8100 4500
+Wire Wire Line
+	8200 4600 8100 4600
+Wire Wire Line
+	8200 4700 8100 4700
+Wire Wire Line
+	8200 4800 8100 4800
+Wire Wire Line
+	8200 4900 8100 4900
+Wire Wire Line
+	8200 5000 8100 5000
+Wire Wire Line
+	8200 5100 8100 5100
+Wire Wire Line
+	8200 5200 8100 5200
+Wire Wire Line
+	8200 5300 8100 5300
+Wire Wire Line
+	8200 5400 8100 5400
+Wire Wire Line
+	8200 5500 8100 5500
+Wire Wire Line
+	8200 5600 8100 5600
+Wire Wire Line
+	8200 5700 8100 5700
+Wire Wire Line
+	8200 5800 8100 5800
+Wire Wire Line
+	8200 5900 8100 5900
+Wire Wire Line
+	8200 6000 8100 6000
+Wire Wire Line
+	8200 6100 8100 6100
+Wire Wire Line
+	8200 6200 8100 6200
+Wire Wire Line
+	8200 6300 8100 6300
+Wire Wire Line
+	8200 6400 8100 6400
+Wire Wire Line
+	8200 6500 8100 6500
+Wire Wire Line
+	8200 6600 8100 6600
+Wire Wire Line
+	8200 6700 8100 6700
+Wire Wire Line
+	8200 6800 8100 6800
+Wire Wire Line
+	8200 6900 8100 6900
+Wire Wire Line
+	8200 7000 8100 7000
+Connection ~ 8200 1300
+Connection ~ 8200 1400
+Connection ~ 8200 1500
+Connection ~ 8200 1600
+Connection ~ 8200 1700
+Connection ~ 8200 1800
+Connection ~ 8200 1900
+Connection ~ 8200 2000
+Connection ~ 8200 2100
+Connection ~ 8200 2200
+Connection ~ 8200 2300
+Connection ~ 8200 2400
+Connection ~ 8200 2500
+Connection ~ 8200 2600
+Connection ~ 8200 2700
+Connection ~ 8200 2800
+Connection ~ 8200 2900
+Connection ~ 8200 3000
+Connection ~ 8200 3100
+Connection ~ 8200 3200
+Connection ~ 8200 3300
+Connection ~ 8200 3400
+Connection ~ 8200 3500
+Connection ~ 8200 3600
+Connection ~ 8200 3700
+Connection ~ 8200 3800
+Connection ~ 8200 3900
+Connection ~ 8200 4000
+Connection ~ 8200 4100
+Connection ~ 8200 4200
+Connection ~ 8200 4300
+Connection ~ 8200 4400
+Connection ~ 8200 4500
+Connection ~ 8200 4600
+Connection ~ 8200 4700
+Connection ~ 8200 4800
+Connection ~ 8200 4900
+Connection ~ 8200 5000
+Connection ~ 8200 5100
+Connection ~ 8200 5200
+Connection ~ 8200 5300
+Connection ~ 8200 5400
+Connection ~ 8200 5500
+Connection ~ 8200 5600
+Connection ~ 8200 5700
+Connection ~ 8200 5800
+Connection ~ 8200 5900
+Connection ~ 8200 6000
+Connection ~ 8200 6100
+Connection ~ 8200 6200
+Connection ~ 8200 6300
+Connection ~ 8200 6400
+Connection ~ 8200 6500
+Connection ~ 8200 6600
+Connection ~ 8200 6700
+Connection ~ 8200 6800
+Connection ~ 8200 6900
+Connection ~ 8200 7000
+Wire Wire Line
+	8200 1200 8200 7100
+Wire Wire Line
+	4800 3100 4700 3100
+Wire Wire Line
+	4700 6200 5000 6200
+Wire Wire Line
+	4800 6300 4700 6300
+Wire Wire Line
+	3500 5800 3400 5800
+Connection ~ 3400 5800
+Wire Wire Line
+	3500 5900 3400 5900
+Connection ~ 3400 5900
+Wire Wire Line
+	3500 6000 3400 6000
+Connection ~ 3400 6000
+Wire Wire Line
+	3500 6100 3400 6100
+Connection ~ 3400 6100
+Wire Wire Line
+	3500 6200 3400 6200
+Connection ~ 3400 6200
+Wire Wire Line
+	3500 6300 3400 6300
+Connection ~ 3400 6300
+Wire Wire Line
+	4700 6000 5000 6000
+Wire Wire Line
+	4800 2600 4700 2600
+Connection ~ 4800 2500
+Wire Wire Line
+	4800 2700 4700 2700
+Connection ~ 4800 2600
+Wire Wire Line
+	4800 2800 4700 2800
+Connection ~ 4800 2700
+Wire Wire Line
+	4800 2900 4700 2900
+Connection ~ 4800 2800
+Wire Wire Line
+	3500 7000 5600 7000
+Wire Wire Line
+	4800 7000 4800 7100
+Wire Wire Line
+	4400 7100 4400 7000
+Connection ~ 4400 7000
+Wire Wire Line
+	4000 7100 4000 7000
+Connection ~ 4000 7000
+Wire Wire Line
+	3600 7100 3600 7000
+Connection ~ 3600 7000
+Wire Wire Line
+	3600 7300 3600 7500
+Wire Wire Line
+	3600 7400 5600 7400
+Wire Wire Line
+	4800 7400 4800 7300
+Wire Wire Line
+	4400 7300 4400 7400
+Connection ~ 4400 7400
+Wire Wire Line
+	4000 7300 4000 7400
+Connection ~ 4000 7400
+Wire Wire Line
+	5600 7000 5600 7100
+Connection ~ 4800 7000
+Wire Wire Line
+	5200 7100 5200 7000
+Connection ~ 5200 7000
+Wire Wire Line
+	5600 7400 5600 7300
+Connection ~ 4800 7400
+Wire Wire Line
+	5200 7300 5200 7400
+Connection ~ 5200 7400
+Connection ~ 3600 7400
+Wire Wire Line
+	3500 7600 5600 7600
+Wire Wire Line
+	4800 7600 4800 7700
+Wire Wire Line
+	4400 7700 4400 7600
+Connection ~ 4400 7600
+Wire Wire Line
+	4000 7700 4000 7600
+Connection ~ 4000 7600
+Wire Wire Line
+	3600 7700 3600 7600
+Connection ~ 3600 7600
+Wire Wire Line
+	3600 7900 3600 8100
+Wire Wire Line
+	3600 8000 5600 8000
+Wire Wire Line
+	4800 8000 4800 7900
+Wire Wire Line
+	4400 7900 4400 8000
+Connection ~ 4400 8000
+Wire Wire Line
+	4000 7900 4000 8000
+Connection ~ 4000 8000
+Wire Wire Line
+	5600 7600 5600 7700
+Connection ~ 4800 7600
+Wire Wire Line
+	5200 7700 5200 7600
+Connection ~ 5200 7600
+Wire Wire Line
+	5600 8000 5600 7900
+Connection ~ 4800 8000
+Wire Wire Line
+	5200 7900 5200 8000
+Connection ~ 5200 8000
+Connection ~ 3600 8000
+Wire Wire Line
+	3500 8200 5600 8200
+Wire Wire Line
+	4800 8200 4800 8300
+Wire Wire Line
+	4400 8300 4400 8200
+Connection ~ 4400 8200
+Wire Wire Line
+	4000 8300 4000 8200
+Connection ~ 4000 8200
+Wire Wire Line
+	3600 8300 3600 8200
+Connection ~ 3600 8200
+Wire Wire Line
+	3600 8500 3600 8700
+Wire Wire Line
+	3600 8600 5600 8600
+Wire Wire Line
+	4800 8600 4800 8500
+Wire Wire Line
+	4400 8500 4400 8600
+Connection ~ 4400 8600
+Wire Wire Line
+	4000 8500 4000 8600
+Connection ~ 4000 8600
+Wire Wire Line
+	5600 8200 5600 8300
+Connection ~ 4800 8200
+Wire Wire Line
+	5200 8300 5200 8200
+Connection ~ 5200 8200
+Wire Wire Line
+	5600 8600 5600 8500
+Connection ~ 4800 8600
+Wire Wire Line
+	5200 8500 5200 8600
+Connection ~ 5200 8600
+Connection ~ 3600 8600
+Wire Wire Line
+	3600 9400 3600 9600
+Wire Wire Line
+	4800 9500 4800 9400
+Wire Wire Line
+	4400 9500 4400 9400
+Connection ~ 4400 9500
+Wire Wire Line
+	4000 9400 4000 9500
+Connection ~ 4000 9500
+Connection ~ 4800 9500
+Wire Wire Line
+	5200 9500 5200 9400
+Connection ~ 3600 9500
+Wire Wire Line
+	4800 6300 4800 6200
+Connection ~ 4800 6200
+Wire Wire Line
+	4800 6100 4700 6100
+Wire Wire Line
+	4800 6100 4800 6000
+Connection ~ 4800 6000
+Wire Wire Line
+	3600 9500 5200 9500
+Wire Wire Line
+	3500 9100 4000 9100
+Wire Wire Line
+	4000 9100 4000 9200
+Wire Wire Line
+	3600 9200 3600 9100
+Connection ~ 3600 9100
+Wire Wire Line
+	3500 9000 4800 9000
+Wire Wire Line
+	4800 9000 4800 9200
+Wire Wire Line
+	4400 9200 4400 9000
+Connection ~ 4400 9000
+Wire Wire Line
+	3500 8900 5200 8900
+Wire Wire Line
+	5200 8900 5200 9200
+Wire Wire Line
+	10500 1200 10600 1200
+Wire Wire Line
+	10600 1200 10600 7100
+Connection ~ 10600 1300
+Connection ~ 10600 1400
+Connection ~ 10600 1500
+Connection ~ 10600 1600
+Connection ~ 10600 1700
+Connection ~ 10600 1800
+Connection ~ 10600 1900
+Connection ~ 10600 2000
+Connection ~ 10600 2100
+Connection ~ 10600 2200
+Connection ~ 10600 2300
+Connection ~ 10600 2400
+Connection ~ 10600 2500
+Connection ~ 10600 2600
+Connection ~ 10600 2700
+Connection ~ 10600 2800
+Connection ~ 10600 2900
+Connection ~ 10600 3000
+Connection ~ 10600 3100
+Connection ~ 10600 3200
+Connection ~ 10600 3300
+Connection ~ 10600 3400
+Connection ~ 10600 3500
+Connection ~ 10600 3600
+Connection ~ 10600 3700
+Connection ~ 10600 3800
+Connection ~ 10600 3900
+Connection ~ 10600 4000
+Connection ~ 10600 4100
+Connection ~ 10600 4200
+Connection ~ 10600 4300
+Connection ~ 10600 4400
+Connection ~ 10600 4500
+Connection ~ 10600 4600
+Connection ~ 10600 4700
+Connection ~ 10600 4800
+Connection ~ 10600 4900
+Connection ~ 10600 5000
+Connection ~ 10600 5100
+Connection ~ 10600 5200
+Connection ~ 10600 5300
+Connection ~ 10600 5400
+Connection ~ 10600 5500
+Connection ~ 10600 5600
+Connection ~ 10600 5700
+Connection ~ 10600 5800
+Connection ~ 10600 5900
+Connection ~ 10600 6000
+Connection ~ 10600 6100
+Connection ~ 10600 6200
+Connection ~ 10600 6300
+Connection ~ 10600 6400
+Connection ~ 10600 6500
+Connection ~ 10600 6600
+Connection ~ 10600 6700
+Connection ~ 10600 6800
+Connection ~ 10600 6900
+Connection ~ 10600 7000
+Wire Wire Line
+	10500 1300 10600 1300
+Wire Wire Line
+	10500 1400 10600 1400
+Wire Wire Line
+	10500 1500 10600 1500
+Wire Wire Line
+	10500 1600 10600 1600
+Wire Wire Line
+	10500 1700 10600 1700
+Wire Wire Line
+	10500 1800 10600 1800
+Wire Wire Line
+	10500 1900 10600 1900
+Wire Wire Line
+	10500 2000 10600 2000
+Wire Wire Line
+	10500 2100 10600 2100
+Wire Wire Line
+	10500 2200 10600 2200
+Wire Wire Line
+	10500 2300 10600 2300
+Wire Wire Line
+	10500 2400 10600 2400
+Wire Wire Line
+	10500 2500 10600 2500
+Wire Wire Line
+	10500 2600 10600 2600
+Wire Wire Line
+	10500 2700 10600 2700
+Wire Wire Line
+	10500 2800 10600 2800
+Wire Wire Line
+	10500 2900 10600 2900
+Wire Wire Line
+	10500 3000 10600 3000
+Wire Wire Line
+	10500 3100 10600 3100
+Wire Wire Line
+	10500 3200 10600 3200
+Wire Wire Line
+	10500 3300 10600 3300
+Wire Wire Line
+	10500 3400 10600 3400
+Wire Wire Line
+	10500 3500 10600 3500
+Wire Wire Line
+	10500 3600 10600 3600
+Wire Wire Line
+	10500 3700 10600 3700
+Wire Wire Line
+	10500 3800 10600 3800
+Wire Wire Line
+	10500 3900 10600 3900
+Wire Wire Line
+	10500 4000 10600 4000
+Wire Wire Line
+	10500 4100 10600 4100
+Wire Wire Line
+	10500 4200 10600 4200
+Wire Wire Line
+	10500 4300 10600 4300
+Wire Wire Line
+	10500 4400 10600 4400
+Wire Wire Line
+	10500 4500 10600 4500
+Wire Wire Line
+	10500 4600 10600 4600
+Wire Wire Line
+	10500 4700 10600 4700
+Wire Wire Line
+	10500 4800 10600 4800
+Wire Wire Line
+	10500 4900 10600 4900
+Wire Wire Line
+	10500 5000 10600 5000
+Wire Wire Line
+	10500 5100 10600 5100
+Wire Wire Line
+	10500 5200 10600 5200
+Wire Wire Line
+	10500 5300 10600 5300
+Wire Wire Line
+	10500 5400 10600 5400
+Wire Wire Line
+	10500 5500 10600 5500
+Wire Wire Line
+	10500 5600 10600 5600
+Wire Wire Line
+	10500 5700 10600 5700
+Wire Wire Line
+	10500 5800 10600 5800
+Wire Wire Line
+	10500 5900 10600 5900
+Wire Wire Line
+	10500 6000 10600 6000
+Wire Wire Line
+	10500 6100 10600 6100
+Wire Wire Line
+	10500 6200 10600 6200
+Wire Wire Line
+	10500 6300 10600 6300
+Wire Wire Line
+	10500 6400 10600 6400
+Wire Wire Line
+	10500 6500 10600 6500
+Wire Wire Line
+	10500 6600 10600 6600
+Wire Wire Line
+	10500 6700 10600 6700
+Wire Wire Line
+	10500 6800 10600 6800
+Wire Wire Line
+	10500 6900 10600 6900
+Wire Wire Line
+	10500 7000 10600 7000
+Wire Wire Line
+	9100 1200 9300 1200
+Wire Wire Line
+	9200 1300 9300 1300
+Wire Wire Line
+	9200 1400 9300 1400
+Wire Wire Line
+	9200 1500 9300 1500
+Wire Wire Line
+	9200 1600 9300 1600
+Wire Wire Line
+	9200 1700 9300 1700
+Wire Wire Line
+	9200 1800 9300 1800
+Wire Wire Line
+	9200 1900 9300 1900
+Wire Wire Line
+	9200 2000 9300 2000
+Wire Wire Line
+	9200 2100 9300 2100
+Wire Wire Line
+	9200 2200 9300 2200
+Wire Wire Line
+	9200 2300 9300 2300
+Wire Wire Line
+	9200 2400 9300 2400
+Wire Wire Line
+	9200 2500 9300 2500
+Connection ~ 9200 1200
+Connection ~ 9200 1300
+Connection ~ 9200 1400
+Connection ~ 9200 1500
+Connection ~ 9200 1600
+Connection ~ 9200 1700
+Connection ~ 9200 1800
+Connection ~ 9200 1900
+Connection ~ 9200 2000
+Connection ~ 9200 2100
+Connection ~ 9200 2200
+Connection ~ 9200 2300
+Connection ~ 9200 2400
+Wire Wire Line
+	9200 1200 9200 2500
+Wire Wire Line
+	9100 2600 9300 2600
+Connection ~ 9200 2600
+Connection ~ 9200 2700
+Connection ~ 9200 2800
+Connection ~ 9200 2900
+Connection ~ 9200 3000
+Connection ~ 9200 3100
+Connection ~ 9200 3200
+Connection ~ 9200 3300
+Connection ~ 9200 3400
+Connection ~ 9200 3500
+Connection ~ 9200 3600
+Connection ~ 9200 3700
+Connection ~ 9200 3800
+Connection ~ 9200 3900
+Connection ~ 9200 4000
+Connection ~ 9200 4100
+Connection ~ 9200 4200
+Connection ~ 9200 4300
+Connection ~ 9200 4400
+Wire Wire Line
+	9200 2600 9200 4500
+Wire Wire Line
+	9200 4500 9300 4500
+Wire Wire Line
+	9200 2700 9300 2700
+Wire Wire Line
+	9200 2800 9300 2800
+Wire Wire Line
+	9200 2900 9300 2900
+Wire Wire Line
+	9200 3000 9300 3000
+Wire Wire Line
+	9200 3100 9300 3100
+Wire Wire Line
+	9200 3200 9300 3200
+Wire Wire Line
+	9200 3300 9300 3300
+Wire Wire Line
+	9200 3400 9300 3400
+Wire Wire Line
+	9200 3500 9300 3500
+Wire Wire Line
+	9200 3600 9300 3600
+Wire Wire Line
+	9200 3700 9300 3700
+Wire Wire Line
+	9200 3800 9300 3800
+Wire Wire Line
+	9200 3900 9300 3900
+Wire Wire Line
+	9200 4000 9300 4000
+Wire Wire Line
+	9200 4100 9300 4100
+Wire Wire Line
+	9200 4200 9300 4200
+Wire Wire Line
+	9200 4300 9300 4300
+Wire Wire Line
+	9200 4400 9300 4400
+Wire Wire Line
+	12900 1200 13000 1200
+Wire Wire Line
+	13000 1200 13000 7100
+Connection ~ 13000 1300
+Connection ~ 13000 1400
+Connection ~ 13000 1500
+Connection ~ 13000 1600
+Connection ~ 13000 1700
+Connection ~ 13000 1800
+Connection ~ 13000 1900
+Connection ~ 13000 2000
+Connection ~ 13000 2100
+Connection ~ 13000 2200
+Connection ~ 13000 2300
+Connection ~ 13000 2400
+Connection ~ 13000 2500
+Connection ~ 13000 2600
+Connection ~ 13000 2700
+Connection ~ 13000 2800
+Connection ~ 13000 2900
+Connection ~ 13000 3000
+Connection ~ 13000 3100
+Connection ~ 13000 3200
+Connection ~ 13000 3300
+Connection ~ 13000 3400
+Connection ~ 13000 3500
+Connection ~ 13000 3600
+Connection ~ 13000 3700
+Connection ~ 13000 3800
+Connection ~ 13000 3900
+Connection ~ 13000 4000
+Connection ~ 13000 4100
+Connection ~ 13000 4200
+Connection ~ 13000 4300
+Connection ~ 13000 4400
+Connection ~ 13000 4500
+Connection ~ 13000 4600
+Connection ~ 13000 4700
+Connection ~ 13000 4800
+Connection ~ 13000 4900
+Connection ~ 13000 5000
+Connection ~ 13000 5100
+Connection ~ 13000 5200
+Connection ~ 13000 5300
+Connection ~ 13000 5400
+Connection ~ 13000 5500
+Connection ~ 13000 5600
+Connection ~ 13000 5700
+Connection ~ 13000 5800
+Connection ~ 13000 5900
+Connection ~ 13000 6000
+Connection ~ 13000 6100
+Connection ~ 13000 6200
+Connection ~ 13000 6300
+Connection ~ 13000 6400
+Connection ~ 13000 6500
+Connection ~ 13000 6600
+Connection ~ 13000 6700
+Connection ~ 13000 6800
+Connection ~ 13000 6900
+Connection ~ 13000 7000
+Wire Wire Line
+	12900 1300 13000 1300
+Wire Wire Line
+	12900 1400 13000 1400
+Wire Wire Line
+	12900 1500 13000 1500
+Wire Wire Line
+	12900 1600 13000 1600
+Wire Wire Line
+	12900 1700 13000 1700
+Wire Wire Line
+	12900 1800 13000 1800
+Wire Wire Line
+	12900 1900 13000 1900
+Wire Wire Line
+	12900 2000 13000 2000
+Wire Wire Line
+	12900 2100 13000 2100
+Wire Wire Line
+	12900 2200 13000 2200
+Wire Wire Line
+	12900 2300 13000 2300
+Wire Wire Line
+	12900 2400 13000 2400
+Wire Wire Line
+	12900 2500 13000 2500
+Wire Wire Line
+	12900 2600 13000 2600
+Wire Wire Line
+	12900 2700 13000 2700
+Wire Wire Line
+	12900 2800 13000 2800
+Wire Wire Line
+	12900 2900 13000 2900
+Wire Wire Line
+	12900 3000 13000 3000
+Wire Wire Line
+	12900 3100 13000 3100
+Wire Wire Line
+	12900 3200 13000 3200
+Wire Wire Line
+	12900 3300 13000 3300
+Wire Wire Line
+	12900 3400 13000 3400
+Wire Wire Line
+	12900 3500 13000 3500
+Wire Wire Line
+	12900 3600 13000 3600
+Wire Wire Line
+	12900 3700 13000 3700
+Wire Wire Line
+	12900 3800 13000 3800
+Wire Wire Line
+	12900 3900 13000 3900
+Wire Wire Line
+	12900 4000 13000 4000
+Wire Wire Line
+	12900 4100 13000 4100
+Wire Wire Line
+	12900 4200 13000 4200
+Wire Wire Line
+	12900 4300 13000 4300
+Wire Wire Line
+	12900 4400 13000 4400
+Wire Wire Line
+	12900 4500 13000 4500
+Wire Wire Line
+	12900 4600 13000 4600
+Wire Wire Line
+	12900 4700 13000 4700
+Wire Wire Line
+	12900 4800 13000 4800
+Wire Wire Line
+	12900 4900 13000 4900
+Wire Wire Line
+	12900 5000 13000 5000
+Wire Wire Line
+	12900 5100 13000 5100
+Wire Wire Line
+	12900 5200 13000 5200
+Wire Wire Line
+	12900 5300 13000 5300
+Wire Wire Line
+	12900 5400 13000 5400
+Wire Wire Line
+	12900 5500 13000 5500
+Wire Wire Line
+	12900 5600 13000 5600
+Wire Wire Line
+	12900 5700 13000 5700
+Wire Wire Line
+	12900 5800 13000 5800
+Wire Wire Line
+	12900 5900 13000 5900
+Wire Wire Line
+	12900 6000 13000 6000
+Wire Wire Line
+	12900 6100 13000 6100
+Wire Wire Line
+	12900 6200 13000 6200
+Wire Wire Line
+	12900 6300 13000 6300
+Wire Wire Line
+	12900 6400 13000 6400
+Wire Wire Line
+	12900 6500 13000 6500
+Wire Wire Line
+	12900 6600 13000 6600
+Wire Wire Line
+	12900 6700 13000 6700
+Wire Wire Line
+	12900 6800 13000 6800
+Wire Wire Line
+	12900 6900 13000 6900
+Wire Wire Line
+	12900 7000 13000 7000
+Wire Wire Line
+	11500 1200 11700 1200
+Wire Wire Line
+	11600 1300 11700 1300
+Wire Wire Line
+	11600 1400 11700 1400
+Wire Wire Line
+	11600 1500 11700 1500
+Wire Wire Line
+	11600 1600 11700 1600
+Wire Wire Line
+	11600 1700 11700 1700
+Wire Wire Line
+	11600 1800 11700 1800
+Wire Wire Line
+	11600 1900 11700 1900
+Wire Wire Line
+	11600 2000 11700 2000
+Wire Wire Line
+	11600 2100 11700 2100
+Wire Wire Line
+	11600 2200 11700 2200
+Wire Wire Line
+	11600 2300 11700 2300
+Wire Wire Line
+	11600 2400 11700 2400
+Wire Wire Line
+	11600 2500 11700 2500
+Connection ~ 11600 1200
+Connection ~ 11600 1300
+Connection ~ 11600 1400
+Connection ~ 11600 1500
+Connection ~ 11600 1600
+Connection ~ 11600 1700
+Connection ~ 11600 1800
+Connection ~ 11600 1900
+Connection ~ 11600 2000
+Connection ~ 11600 2100
+Connection ~ 11600 2200
+Connection ~ 11600 2300
+Connection ~ 11600 2400
+Wire Wire Line
+	11600 1200 11600 2500
+Wire Wire Line
+	11500 2600 11700 2600
+Connection ~ 11600 2600
+Connection ~ 11600 2700
+Connection ~ 11600 2800
+Connection ~ 11600 2900
+Connection ~ 11600 3000
+Connection ~ 11600 3100
+Connection ~ 11600 3200
+Connection ~ 11600 3300
+Connection ~ 11600 3400
+Connection ~ 11600 3500
+Connection ~ 11600 3600
+Connection ~ 11600 3700
+Connection ~ 11600 3800
+Connection ~ 11600 3900
+Connection ~ 11600 4000
+Connection ~ 11600 4100
+Connection ~ 11600 4200
+Connection ~ 11600 4300
+Connection ~ 11600 4400
+Wire Wire Line
+	11600 2600 11600 4500
+Wire Wire Line
+	11600 4500 11700 4500
+Wire Wire Line
+	11600 2700 11700 2700
+Wire Wire Line
+	11600 2800 11700 2800
+Wire Wire Line
+	11600 2900 11700 2900
+Wire Wire Line
+	11600 3000 11700 3000
+Wire Wire Line
+	11600 3100 11700 3100
+Wire Wire Line
+	11600 3200 11700 3200
+Wire Wire Line
+	11600 3300 11700 3300
+Wire Wire Line
+	11600 3400 11700 3400
+Wire Wire Line
+	11600 3500 11700 3500
+Wire Wire Line
+	11600 3600 11700 3600
+Wire Wire Line
+	11600 3700 11700 3700
+Wire Wire Line
+	11600 3800 11700 3800
+Wire Wire Line
+	11600 3900 11700 3900
+Wire Wire Line
+	11600 4000 11700 4000
+Wire Wire Line
+	11600 4100 11700 4100
+Wire Wire Line
+	11600 4200 11700 4200
+Wire Wire Line
+	11600 4300 11700 4300
+Wire Wire Line
+	11600 4400 11700 4400
+Wire Wire Line
+	6700 9100 6800 9100
+Wire Wire Line
+	6800 9100 6800 9200
+Wire Wire Line
+	6800 9500 6800 9400
+Wire Wire Line
+	7500 9100 7600 9100
+Wire Wire Line
+	7600 9100 7600 9200
+Wire Wire Line
+	7600 9500 7600 9400
+Wire Wire Line
+	8300 9100 8400 9100
+Wire Wire Line
+	8400 9100 8400 9200
+Wire Wire Line
+	8400 9500 8400 9400
+Wire Wire Line
+	8000 8000 8000 8100
+Wire Wire Line
+	6600 8000 8000 8000
+Wire Wire Line
+	6600 8000 6600 7500
+Wire Wire Line
+	6550 7500 8500 7500
+Wire Wire Line
+	8000 7500 8000 7600
+Wire Wire Line
+	7600 7600 7600 7500
+Connection ~ 7600 7500
+Wire Wire Line
+	7200 7600 7200 7500
+Connection ~ 7200 7500
+Wire Wire Line
+	6800 7600 6800 7500
+Connection ~ 6800 7500
+Wire Wire Line
+	7600 8100 7600 8000
+Connection ~ 7600 8000
+Wire Wire Line
+	7200 8100 7200 8000
+Connection ~ 7200 8000
+Wire Wire Line
+	6800 8100 6800 8000
+Connection ~ 6800 8000
+Connection ~ 6600 7500
+Wire Wire Line
+	6800 7800 6800 7900
+Wire Wire Line
+	6800 7900 8500 7900
+Wire Wire Line
+	8300 7900 8300 8500
+Wire Wire Line
+	6800 8400 8300 8400
+Wire Wire Line
+	6800 8400 6800 8300
+Wire Wire Line
+	7200 8300 7200 8400
+Connection ~ 7200 8400
+Wire Wire Line
+	7600 8300 7600 8400
+Connection ~ 7600 8400
+Wire Wire Line
+	8000 8300 8000 8400
+Connection ~ 8000 8400
+Wire Wire Line
+	8000 7800 8000 7900
+Connection ~ 8000 7900
+Wire Wire Line
+	7600 7800 7600 7900
+Connection ~ 7600 7900
+Wire Wire Line
+	7200 7800 7200 7900
+Connection ~ 7200 7900
+Connection ~ 8300 8400
+Wire Wire Line
+	10700 8000 10700 8100
+Wire Wire Line
+	9300 8000 10700 8000
+Wire Wire Line
+	9300 8000 9300 7500
+Wire Wire Line
+	9250 7500 11100 7500
+Wire Wire Line
+	10700 7500 10700 7600
+Wire Wire Line
+	10300 7600 10300 7500
+Connection ~ 10300 7500
+Wire Wire Line
+	9900 7600 9900 7500
+Connection ~ 9900 7500
+Wire Wire Line
+	9500 7600 9500 7500
+Connection ~ 9500 7500
+Wire Wire Line
+	10300 8100 10300 8000
+Connection ~ 10300 8000
+Wire Wire Line
+	9900 8100 9900 8000
+Connection ~ 9900 8000
+Wire Wire Line
+	9500 8100 9500 8000
+Connection ~ 9500 8000
+Connection ~ 9300 7500
+Wire Wire Line
+	9500 7800 9500 7900
+Wire Wire Line
+	9500 7900 11100 7900
+Wire Wire Line
+	11000 7900 11000 8500
+Wire Wire Line
+	9500 8400 11000 8400
+Wire Wire Line
+	9500 8400 9500 8300
+Wire Wire Line
+	9900 8300 9900 8400
+Connection ~ 9900 8400
+Wire Wire Line
+	10300 8300 10300 8400
+Connection ~ 10300 8400
+Wire Wire Line
+	10700 8300 10700 8400
+Connection ~ 10700 8400
+Wire Wire Line
+	10700 7800 10700 7900
+Connection ~ 10700 7900
+Wire Wire Line
+	10300 7800 10300 7900
+Connection ~ 10300 7900
+Wire Wire Line
+	9900 7800 9900 7900
+Connection ~ 9900 7900
+Connection ~ 11000 8400
+Wire Wire Line
+	13100 8000 13100 8100
+Wire Wire Line
+	11700 8000 13100 8000
+Wire Wire Line
+	11700 8000 11700 7500
+Wire Wire Line
+	11650 7500 13500 7500
+Wire Wire Line
+	13100 7500 13100 7600
+Wire Wire Line
+	12700 7600 12700 7500
+Connection ~ 12700 7500
+Wire Wire Line
+	12300 7600 12300 7500
+Connection ~ 12300 7500
+Wire Wire Line
+	11900 7600 11900 7500
+Connection ~ 11900 7500
+Wire Wire Line
+	12700 8100 12700 8000
+Connection ~ 12700 8000
+Wire Wire Line
+	12300 8100 12300 8000
+Connection ~ 12300 8000
+Wire Wire Line
+	11900 8100 11900 8000
+Connection ~ 11900 8000
+Connection ~ 11700 7500
+Wire Wire Line
+	11900 7800 11900 7900
+Wire Wire Line
+	11900 7900 13500 7900
+Wire Wire Line
+	13400 7900 13400 8500
+Wire Wire Line
+	11900 8400 13400 8400
+Wire Wire Line
+	11900 8400 11900 8300
+Wire Wire Line
+	12300 8300 12300 8400
+Connection ~ 12300 8400
+Wire Wire Line
+	12700 8300 12700 8400
+Connection ~ 12700 8400
+Wire Wire Line
+	13100 8300 13100 8400
+Connection ~ 13100 8400
+Wire Wire Line
+	13100 7800 13100 7900
+Connection ~ 13100 7900
+Wire Wire Line
+	12700 7800 12700 7900
+Connection ~ 12700 7900
+Wire Wire Line
+	12300 7800 12300 7900
+Connection ~ 12300 7900
+Connection ~ 13400 8400
+Wire Wire Line
+	10200 9100 10300 9100
+Wire Wire Line
+	10300 9100 10300 9200
+Wire Wire Line
+	10300 9500 10300 9400
+$Comp
+L XC6SLX45-FGG484 BRIDGE1
+U 5 1 57B42599
+P 6900 1200
+F 0 "BRIDGE1" H 7500 1468 50  0000 C CNN
+F 1 "XC6SLX45-FGG484" H 7500 1377 50  0000 C CNN
+F 2 "manuf:XILINX-FGG484" H 6900 1500 50  0001 C CNN
+F 3 "" H 6900 1200 50  0001 C CNN
+	5    6900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C45EF5
+P 6800 7700
+AR Path="/5763A638/57C45EF5" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C45EF5" Ref="C1024"  Part="1" 
+F 0 "C1024" H 6913 7746 50  0000 L CNN
+F 1 "100n" H 6913 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 6800 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 6790 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 6800 7400 60  0001 C CNN "BOM"
+	1    6800 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C461C1
+P 7200 7700
+AR Path="/5763A638/57C461C1" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C461C1" Ref="C1027"  Part="1" 
+F 0 "C1027" H 7313 7746 50  0000 L CNN
+F 1 "100n" H 7313 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 7200 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 7190 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 7200 7400 60  0001 C CNN "BOM"
+	1    7200 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C46278
+P 7600 7700
+AR Path="/5763A638/57C46278" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C46278" Ref="C1029"  Part="1" 
+F 0 "C1029" H 7713 7746 50  0000 L CNN
+F 1 "100n" H 7713 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 7600 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 7590 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 7600 7400 60  0001 C CNN "BOM"
+	1    7600 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C46336
+P 8000 7700
+AR Path="/5763A638/57C46336" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C46336" Ref="C1032"  Part="1" 
+F 0 "C1032" H 8113 7746 50  0000 L CNN
+F 1 "100n" H 8113 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 8000 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 7990 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 8000 7400 60  0001 C CNN "BOM"
+	1    8000 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C463ED
+P 8000 8200
+AR Path="/5763A638/57C463ED" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C463ED" Ref="C1033"  Part="1" 
+F 0 "C1033" H 8113 8246 50  0000 L CNN
+F 1 "100n" H 8113 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 8000 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 7990 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 8000 7900 60  0001 C CNN "BOM"
+	1    8000 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C464AF
+P 7600 8200
+AR Path="/5763A638/57C464AF" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C464AF" Ref="C1030"  Part="1" 
+F 0 "C1030" H 7713 8246 50  0000 L CNN
+F 1 "100n" H 7713 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 7600 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 7590 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 7600 7900 60  0001 C CNN "BOM"
+	1    7600 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C46574
+P 7200 8200
+AR Path="/5763A638/57C46574" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C46574" Ref="C1028"  Part="1" 
+F 0 "C1028" H 7313 8246 50  0000 L CNN
+F 1 "100n" H 7313 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 7200 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 7190 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 7200 7900 60  0001 C CNN "BOM"
+	1    7200 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C46634
+P 6800 8200
+AR Path="/5763A638/57C46634" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C46634" Ref="C1025"  Part="1" 
+F 0 "C1025" H 6913 8246 50  0000 L CNN
+F 1 "100n" H 6913 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 6800 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 6790 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 6800 7900 60  0001 C CNN "BOM"
+	1    6800 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L XC6SLX45-FGG484 CPU0
+U 5 1 57C3F9CB
+P 9300 1200
+F 0 "CPU0" H 9900 1468 50  0000 C CNN
+F 1 "XC6SLX45-FGG484" H 9900 1377 50  0000 C CNN
+F 2 "manuf:XILINX-FGG484" H 9300 1500 50  0001 C CNN
+F 3 "" H 9300 1200 50  0001 C CNN
+	5    9300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L XC6SLX45-FGG484 CPU1
+U 5 1 57C3FECB
+P 11700 1200
+F 0 "CPU1" H 12300 1468 50  0000 C CNN
+F 1 "XC6SLX45-FGG484" H 12300 1377 50  0000 C CNN
+F 2 "manuf:XILINX-FGG484" H 11700 1500 50  0001 C CNN
+F 3 "" H 11700 1200 50  0001 C CNN
+	5    11700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C456A1
+P 9500 7700
+AR Path="/5763A638/57C456A1" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C456A1" Ref="C1035"  Part="1" 
+F 0 "C1035" H 9613 7746 50  0000 L CNN
+F 1 "100n" H 9613 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 9500 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 9490 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 9500 7400 60  0001 C CNN "BOM"
+	1    9500 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C456A8
+P 9900 7700
+AR Path="/5763A638/57C456A8" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C456A8" Ref="C1037"  Part="1" 
+F 0 "C1037" H 10013 7746 50  0000 L CNN
+F 1 "100n" H 10013 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 9900 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 9890 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 9900 7400 60  0001 C CNN "BOM"
+	1    9900 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C456AF
+P 10300 7700
+AR Path="/5763A638/57C456AF" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C456AF" Ref="C1039"  Part="1" 
+F 0 "C1039" H 10413 7746 50  0000 L CNN
+F 1 "100n" H 10413 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 10300 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 10290 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 10300 7400 60  0001 C CNN "BOM"
+	1    10300 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C456B6
+P 10700 7700
+AR Path="/5763A638/57C456B6" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C456B6" Ref="C1042"  Part="1" 
+F 0 "C1042" H 10813 7746 50  0000 L CNN
+F 1 "100n" H 10813 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 10700 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 10690 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 10700 7400 60  0001 C CNN "BOM"
+	1    10700 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C457B9
+P 9500 8200
+AR Path="/5763A638/57C457B9" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C457B9" Ref="C1036"  Part="1" 
+F 0 "C1036" H 9613 8246 50  0000 L CNN
+F 1 "100n" H 9613 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 9500 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 9490 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 9500 7900 60  0001 C CNN "BOM"
+	1    9500 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C457C0
+P 9900 8200
+AR Path="/5763A638/57C457C0" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C457C0" Ref="C1038"  Part="1" 
+F 0 "C1038" H 10013 8246 50  0000 L CNN
+F 1 "100n" H 10013 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 9900 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 9890 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 9900 7900 60  0001 C CNN "BOM"
+	1    9900 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C457C7
+P 10300 8200
+AR Path="/5763A638/57C457C7" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C457C7" Ref="C1040"  Part="1" 
+F 0 "C1040" H 10413 8246 50  0000 L CNN
+F 1 "100n" H 10413 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 10300 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 10290 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 10300 7900 60  0001 C CNN "BOM"
+	1    10300 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C457CE
+P 10700 8200
+AR Path="/5763A638/57C457CE" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C457CE" Ref="C1043"  Part="1" 
+F 0 "C1043" H 10813 8246 50  0000 L CNN
+F 1 "100n" H 10813 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 10700 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 10690 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 10700 7900 60  0001 C CNN "BOM"
+	1    10700 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C473B1
+P 11900 7700
+AR Path="/5763A638/57C473B1" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C473B1" Ref="C1044"  Part="1" 
+F 0 "C1044" H 12013 7746 50  0000 L CNN
+F 1 "100n" H 12013 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 11900 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 11890 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 11900 7400 60  0001 C CNN "BOM"
+	1    11900 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C473B8
+P 12300 7700
+AR Path="/5763A638/57C473B8" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C473B8" Ref="C1046"  Part="1" 
+F 0 "C1046" H 12413 7746 50  0000 L CNN
+F 1 "100n" H 12413 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 12300 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 12290 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 12300 7400 60  0001 C CNN "BOM"
+	1    12300 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C473BF
+P 12700 7700
+AR Path="/5763A638/57C473BF" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C473BF" Ref="C1048"  Part="1" 
+F 0 "C1048" H 12813 7746 50  0000 L CNN
+F 1 "100n" H 12813 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 12700 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 12690 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 12700 7400 60  0001 C CNN "BOM"
+	1    12700 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C473C6
+P 13100 7700
+AR Path="/5763A638/57C473C6" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C473C6" Ref="C1050"  Part="1" 
+F 0 "C1050" H 13213 7746 50  0000 L CNN
+F 1 "100n" H 13213 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 13100 7500 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 13090 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 13100 7400 60  0001 C CNN "BOM"
+	1    13100 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C47539
+P 11900 8200
+AR Path="/5763A638/57C47539" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C47539" Ref="C1045"  Part="1" 
+F 0 "C1045" H 12013 8246 50  0000 L CNN
+F 1 "100n" H 12013 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 11900 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 11890 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 11900 7900 60  0001 C CNN "BOM"
+	1    11900 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C47540
+P 12300 8200
+AR Path="/5763A638/57C47540" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C47540" Ref="C1047"  Part="1" 
+F 0 "C1047" H 12413 8246 50  0000 L CNN
+F 1 "100n" H 12413 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 12300 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 12290 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 12300 7900 60  0001 C CNN "BOM"
+	1    12300 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C47547
+P 12700 8200
+AR Path="/5763A638/57C47547" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C47547" Ref="C1049"  Part="1" 
+F 0 "C1049" H 12813 8246 50  0000 L CNN
+F 1 "100n" H 12813 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 12700 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 12690 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 12700 7900 60  0001 C CNN "BOM"
+	1    12700 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0201 C?
+U 1 1 57C4754E
+P 13100 8200
+AR Path="/5763A638/57C4754E" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C4754E" Ref="C1051"  Part="1" 
+F 0 "C1051" H 13213 8246 50  0000 L CNN
+F 1 "100n" H 13213 8155 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC0603X33" H 13100 8000 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM033R61C104KE84%23.html" H 13090 8175 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-9985-1-ND" H 13100 7900 60  0001 C CNN "BOM"
+	1    13100 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0805 C?
+U 1 1 57C54ABD
+P 8500 7700
+AR Path="/5765B2E6/57C54ABD" Ref="C?"  Part="1" 
+AR Path="/5765A5BA/57C54ABD" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C54ABD" Ref="C1052"  Part="1" 
+F 0 "C1052" H 8613 7746 50  0000 L CNN
+F 1 "22u" H 8613 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC2012X70" H 8500 7700 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM21BR60J226ME39%23.html" H 8490 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-1719-1-ND" H 9300 8250 60  0001 C CNN "BOM"
+	1    8500 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0805 C?
+U 1 1 57C54B35
+P 11100 7700
+AR Path="/5765B2E6/57C54B35" Ref="C?"  Part="1" 
+AR Path="/5765A5BA/57C54B35" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C54B35" Ref="C1053"  Part="1" 
+F 0 "C1053" H 11213 7746 50  0000 L CNN
+F 1 "22u" H 11213 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC2012X70" H 11100 7700 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM21BR60J226ME39%23.html" H 11090 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-1719-1-ND" H 11900 8250 60  0001 C CNN "BOM"
+	1    11100 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0805 C?
+U 1 1 57C54C20
+P 13500 7700
+AR Path="/5765B2E6/57C54C20" Ref="C?"  Part="1" 
+AR Path="/5765A5BA/57C54C20" Ref="C?"  Part="1" 
+AR Path="/5763AB3B/57C54C20" Ref="C1054"  Part="1" 
+F 0 "C1054" H 13613 7746 50  0000 L CNN
+F 1 "22u" H 13613 7655 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC2012X70" H 13500 7700 50  0001 C CNN
+F 3 "http://psearch.en.murata.com/capacitor/product/GRM21BR60J226ME39%23.html" H 13490 7675 50  0001 C CNN
+F 4 "DIST DIGIKEY 490-1719-1-ND" H 14300 8250 60  0001 C CNN "BOM"
+	1    13500 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13500 7500 13500 7600
+Connection ~ 13100 7500
+Wire Wire Line
+	13500 7900 13500 7800
+Connection ~ 13400 7900
+Wire Wire Line
+	11100 7900 11100 7800
+Connection ~ 11000 7900
+Wire Wire Line
+	11100 7500 11100 7600
+Connection ~ 10700 7500
+Wire Wire Line
+	8500 7500 8500 7600
+Connection ~ 8000 7500
+Wire Wire Line
+	8500 7900 8500 7800
+Connection ~ 8300 7900
+$Comp
+L C-ALUM-530 C1026
+U 1 1 57C83845
+P 6800 9300
+F 0 "C1026" H 6913 9346 50  0000 L CNN
+F 1 "100u/6v3" H 6913 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPAE530X540" H 6800 9300 50  0001 C CNN
+F 3 "" H 6790 9275 60  0000 C CNN
+F 4 "DIST DIGIKEY 732-6394-1-ND" H 6800 9300 60  0001 C CNN "BOM"
+	1    6800 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-ALUM-530 C1031
+U 1 1 57C84A06
+P 7600 9300
+F 0 "C1031" H 7713 9346 50  0000 L CNN
+F 1 "100u/6v3" H 7713 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPAE530X540" H 7600 9300 50  0001 C CNN
+F 3 "" H 7590 9275 60  0000 C CNN
+F 4 "DIST DIGIKEY 732-6394-1-ND" H 7600 9300 60  0001 C CNN "BOM"
+	1    7600 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-ALUM-530 C1034
+U 1 1 57C84ADC
+P 8400 9300
+F 0 "C1034" H 8513 9346 50  0000 L CNN
+F 1 "100u/6v3" H 8513 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPAE530X540" H 8400 9300 50  0001 C CNN
+F 3 "" H 8390 9275 60  0000 C CNN
+F 4 "DIST DIGIKEY 732-6394-1-ND" H 8400 9300 60  0001 C CNN "BOM"
+	1    8400 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-ALUM-530 C1041
+U 1 1 57C84BB9
+P 10300 9300
+F 0 "C1041" H 10413 9346 50  0000 L CNN
+F 1 "100u/6v3" H 10413 9255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPAE530X540" H 10300 9300 50  0001 C CNN
+F 3 "" H 10290 9275 60  0000 C CNN
+F 4 "DIST DIGIKEY 732-6394-1-ND" H 10300 9300 60  0001 C CNN "BOM"
+	1    10300 9300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

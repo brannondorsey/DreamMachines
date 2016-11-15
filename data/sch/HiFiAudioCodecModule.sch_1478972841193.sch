@@ -1,0 +1,739 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:HiFiAudioCodecModule
+LIBS:oshw logo
+LIBS:HiFiAudioCodecModule-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 5906 5512
+encoding utf-8
+Sheet 1 1
+Title "HiFi audio codec module"
+Date ""
+Rev ""
+Comp "Michele Perla"
+Comment1 "https://hackaday.io/project/8567-hifi-audio-codec-module"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AK4558EN U1
+U 1 1 563B5F3C
+P 1700 1400
+F 0 "U1" H 1700 2250 60  0000 C CNN
+F 1 "AK4558EN" H 1700 2100 60  0000 C CNN
+F 2 "HiFiAudioCodecModule-footprints:QFN-28-2xEP_5x5mm_Pitch0.5mm" H 1400 2050 60  0001 C CNN
+F 3 "" H 1400 2050 60  0000 C CNN
+F 4 "AK4558EN" H 1700 1400 60  0001 C CNN "manf#"
+	1    1700 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 1500 0    60   Input ~ 0
+SDTO
+Text GLabel 1150 1600 0    60   Input ~ 0
+BICK
+Text GLabel 1150 1700 0    60   Input ~ 0
+SDTI
+Text GLabel 1150 1800 0    60   Input ~ 0
+MCKI
+$Comp
+L GND #PWR01
+U 1 1 563C8D07
+P 700 2150
+F 0 "#PWR01" H 700 1900 50  0001 C CNN
+F 1 "GND" H 700 2000 50  0000 C CNN
+F 2 "" H 700 2150 60  0000 C CNN
+F 3 "" H 700 2150 60  0000 C CNN
+	1    700  2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 1900 0    60   Input ~ 0
+VDD
+Text GLabel 1150 2100 0    60   Input ~ 0
+VDD18
+Text GLabel 2250 2100 2    60   Input ~ 0
+PDN
+Text GLabel 2250 2000 2    60   Input ~ 0
+SCL
+Text GLabel 2250 1900 2    60   Input ~ 0
+SDA
+Text GLabel 2250 1800 2    60   Input ~ 0
+CAD0
+Text GLabel 2250 1700 2    60   Input ~ 0
+CAD1
+$Comp
+L GND #PWR02
+U 1 1 563C8E16
+P 2650 1650
+F 0 "#PWR02" H 2650 1400 50  0001 C CNN
+F 1 "GND" H 2650 1500 50  0000 C CNN
+F 2 "" H 2650 1650 60  0000 C CNN
+F 3 "" H 2650 1650 60  0000 C CNN
+	1    2650 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 1400 2    60   Input ~ 0
+LIN
+Text GLabel 2250 1300 2    60   Input ~ 0
+RIN
+Text GLabel 2250 1200 2    60   Input ~ 0
+AVDD
+Text GLabel 2250 1000 2    60   Input ~ 0
+VCOM
+Text GLabel 2250 900  2    60   Input ~ 0
+LOUT
+Text GLabel 2250 800  2    60   Input ~ 0
+ROUT
+Text GLabel 2250 1500 2    60   Input ~ 0
+VDD
+$Comp
+L C_Small C1
+U 1 1 563CA3E7
+P 3600 2100
+F 0 "C1" H 3610 2170 50  0000 L CNN
+F 1 "0.1u" H 3610 2020 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:C_0402" H 3600 2100 60  0001 C CNN
+F 3 "" H 3600 2100 60  0000 C CNN
+F 4 "CC0402KRX7R7BB104" H 3600 2100 60  0001 C CNN "manf#"
+	1    3600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C4
+U 1 1 563CA444
+P 3800 2100
+F 0 "C4" H 3810 2170 50  0000 L CNN
+F 1 "10u" H 3810 2020 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:CAP_ELEC_SMD_3x5mm" H 3800 2100 60  0001 C CNN
+F 3 "" H 3800 2100 60  0000 C CNN
+F 4 "UWX1C100MCL2GB" H 3800 2100 60  0001 C CNN "manf#"
+	1    3800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 563CA48F
+P 2450 2600
+F 0 "R1" H 2480 2620 50  0000 L CNN
+F 1 "220" H 2480 2560 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:R_0402" H 2450 2600 60  0001 C CNN
+F 3 "" H 2450 2600 60  0000 C CNN
+F 4 "RC0402FR-07220RL" H 2450 2600 60  0001 C CNN "manf#"
+	1    2450 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 563CA677
+P 4000 2100
+F 0 "C2" H 4010 2170 50  0000 L CNN
+F 1 "0.1u" H 4010 2020 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:C_0402" H 4000 2100 60  0001 C CNN
+F 3 "" H 4000 2100 60  0000 C CNN
+F 4 "CC0402KRX7R7BB104" H 4000 2100 60  0001 C CNN "manf#"
+	1    4000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C5
+U 1 1 563CA6DE
+P 4200 2100
+F 0 "C5" H 4210 2170 50  0000 L CNN
+F 1 "10u" H 4210 2020 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:CAP_ELEC_SMD_3x5mm" H 4200 2100 60  0001 C CNN
+F 3 "" H 4200 2100 60  0000 C CNN
+F 4 "UWX1C100MCL2GB" H 4200 2100 60  0001 C CNN "manf#"
+	1    4200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C6
+U 1 1 563CA707
+P 4450 2100
+F 0 "C6" H 4460 2170 50  0000 L CNN
+F 1 "1u" H 4460 2020 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:CAP_ELEC_SMD_3x5mm" H 4450 2100 60  0001 C CNN
+F 3 "" H 4450 2100 60  0000 C CNN
+F 4 "UWX1C100MCL2GB" H 4450 2100 60  0001 C CNN "manf#"
+	1    4450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C7
+U 1 1 563CA7B8
+P 1200 2600
+F 0 "C7" H 1210 2670 50  0000 L CNN
+F 1 "10u" H 1210 2520 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:C_Radial_D5_L11_P2-bipolar" H 1200 2600 60  0001 C CNN
+F 3 "" H 1200 2600 60  0000 C CNN
+F 4 "UES1E100MDM1TD" H 1200 2600 60  0001 C CNN "manf#"
+	1    1200 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C8
+U 1 1 563CA7F3
+P 1200 2800
+F 0 "C8" H 1210 2870 50  0000 L CNN
+F 1 "10u" H 1210 2720 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:C_Radial_D5_L11_P2-bipolar" H 1200 2800 60  0001 C CNN
+F 3 "" H 1200 2800 60  0000 C CNN
+F 4 "UES1E100MDM1TD" H 1200 2800 60  0001 C CNN "manf#"
+	1    1200 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C9
+U 1 1 563CA82D
+P 2150 2600
+F 0 "C9" H 2160 2670 50  0000 L CNN
+F 1 "1u" H 2160 2520 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:C_Radial_D5_L11_P2-bipolar" H 2150 2600 60  0001 C CNN
+F 3 "" H 2150 2600 60  0000 C CNN
+F 4 "UES1H010MDM1TD" H 2150 2600 60  0001 C CNN "manf#"
+	1    2150 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP_Small C10
+U 1 1 563CA868
+P 2150 3100
+F 0 "C10" H 2160 3170 50  0000 L CNN
+F 1 "1u" H 2160 3020 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:C_Radial_D5_L11_P2-bipolar" H 2150 3100 60  0001 C CNN
+F 3 "" H 2150 3100 60  0000 C CNN
+F 4 "UES1H010MDM1TD" H 2150 3100 60  0001 C CNN "manf#"
+	1    2150 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 563CA69C
+P 4650 2100
+F 0 "C3" H 4660 2170 50  0000 L CNN
+F 1 "1u" H 4660 2020 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:C_0402" H 4650 2100 60  0001 C CNN
+F 3 "" H 4650 2100 60  0000 C CNN
+F 4 "CC0402KRX7R5BB105" H 4650 2100 60  0001 C CNN "manf#"
+	1    4650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR03
+U 1 1 563CC80D
+P 2650 1150
+F 0 "#PWR03" H 2650 900 50  0001 C CNN
+F 1 "GNDA" H 2650 1000 50  0000 C CNN
+F 2 "" H 2650 1150 60  0000 C CNN
+F 3 "" H 2650 1150 60  0000 C CNN
+	1    2650 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 1900 1    60   Input ~ 0
+VDD
+$Comp
+L GND #PWR04
+U 1 1 563CE08F
+P 3600 2300
+F 0 "#PWR04" H 3600 2050 50  0001 C CNN
+F 1 "GND" H 3600 2150 50  0000 C CNN
+F 2 "" H 3600 2300 60  0000 C CNN
+F 3 "" H 3600 2300 60  0000 C CNN
+	1    3600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR05
+U 1 1 563CE2CE
+P 4000 2300
+F 0 "#PWR05" H 4000 2050 50  0001 C CNN
+F 1 "GNDA" H 4000 2150 50  0000 C CNN
+F 2 "" H 4000 2300 60  0000 C CNN
+F 3 "" H 4000 2300 60  0000 C CNN
+	1    4000 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 1900 1    60   Input ~ 0
+AVDD
+$Comp
+L GND #PWR06
+U 1 1 563D0311
+P 4450 2300
+F 0 "#PWR06" H 4450 2050 50  0001 C CNN
+F 1 "GND" H 4450 2150 50  0000 C CNN
+F 2 "" H 4450 2300 60  0000 C CNN
+F 3 "" H 4450 2300 60  0000 C CNN
+	1    4450 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 1950 1    60   Input ~ 0
+VDD18
+Text GLabel 4650 1950 1    60   Input ~ 0
+VCOM
+Wire Wire Line
+	1150 800  700  800 
+Wire Wire Line
+	700  800  700  2150
+Wire Wire Line
+	1150 900  700  900 
+Connection ~ 700  900 
+Wire Wire Line
+	1150 1000 700  1000
+Connection ~ 700  1000
+Wire Wire Line
+	1150 1100 700  1100
+Connection ~ 700  1100
+Wire Wire Line
+	1150 1200 700  1200
+Connection ~ 700  1200
+Wire Wire Line
+	700  1300 1150 1300
+Connection ~ 700  1300
+Wire Wire Line
+	1150 2000 700  2000
+Connection ~ 700  2000
+Wire Wire Line
+	2250 1600 2650 1600
+Wire Wire Line
+	3800 1900 3800 2000
+Wire Wire Line
+	3600 2200 3600 2300
+Wire Wire Line
+	2650 1600 2650 1650
+Wire Wire Line
+	2250 1100 2650 1100
+Wire Wire Line
+	2650 1100 2650 1150
+Wire Wire Line
+	3600 2250 3800 2250
+Wire Wire Line
+	3800 2250 3800 2200
+Wire Wire Line
+	4200 1900 4200 2000
+Wire Wire Line
+	4000 2200 4000 2300
+Wire Wire Line
+	4000 2250 4200 2250
+Wire Wire Line
+	4200 2250 4200 2200
+Connection ~ 3800 1950
+Connection ~ 4200 1950
+Connection ~ 3600 2250
+Connection ~ 4000 2250
+Wire Wire Line
+	4450 2000 4450 1950
+Wire Wire Line
+	4450 2200 4450 2300
+Wire Wire Line
+	4650 2200 4650 2300
+Wire Wire Line
+	4650 2000 4650 1950
+Wire Wire Line
+	3600 1950 3800 1950
+Wire Wire Line
+	4000 1950 4200 1950
+Wire Wire Line
+	1100 2600 1050 2600
+Wire Wire Line
+	1100 2800 1050 2800
+Wire Wire Line
+	1300 2600 1350 2600
+Wire Wire Line
+	1300 2800 1350 2800
+Text GLabel 1350 2600 2    60   Input ~ 0
+LIN
+Text GLabel 1350 2800 2    60   Input ~ 0
+RIN
+Wire Wire Line
+	2050 2600 2000 2600
+Wire Wire Line
+	2050 3100 2000 3100
+Wire Wire Line
+	2250 2600 2350 2600
+Wire Wire Line
+	2250 3100 2350 3100
+Text GLabel 2000 2600 0    60   Input ~ 0
+LOUT
+Text GLabel 2000 3100 0    60   Input ~ 0
+ROUT
+Text GLabel 1050 2600 0    60   Input ~ 0
+LIN-CON
+Text GLabel 1050 2800 0    60   Input ~ 0
+RIN-CON
+$Comp
+L R_Small R2
+U 1 1 563D5770
+P 2450 3100
+F 0 "R2" H 2480 3120 50  0000 L CNN
+F 1 "220" H 2480 3060 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:R_0402" H 2450 3100 60  0001 C CNN
+F 3 "" H 2450 3100 60  0000 C CNN
+F 4 "RC0402FR-07220RL" H 2450 3100 60  0001 C CNN "manf#"
+	1    2450 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 563D57C6
+P 2600 2750
+F 0 "R3" H 2630 2770 50  0000 L CNN
+F 1 "20K" H 2630 2710 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:R_0402" H 2600 2750 60  0001 C CNN
+F 3 "" H 2600 2750 60  0000 C CNN
+F 4 "RC0402FR-0720KL" H 2600 2750 60  0001 C CNN "manf#"
+	1    2600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R4
+U 1 1 563D5863
+P 2600 3250
+F 0 "R4" H 2630 3270 50  0000 L CNN
+F 1 "20K" H 2630 3210 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:R_0402" H 2600 3250 60  0001 C CNN
+F 3 "" H 2600 3250 60  0000 C CNN
+F 4 "RC0402FR-0720KL" H 2600 3250 60  0001 C CNN "manf#"
+	1    2600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2600 2700 2600
+Wire Wire Line
+	2600 2600 2600 2650
+Wire Wire Line
+	2550 3100 2700 3100
+Wire Wire Line
+	2600 3100 2600 3150
+$Comp
+L GNDA #PWR07
+U 1 1 563D5C5E
+P 2600 3350
+F 0 "#PWR07" H 2600 3100 50  0001 C CNN
+F 1 "GNDA" H 2600 3200 50  0000 C CNN
+F 2 "" H 2600 3350 60  0000 C CNN
+F 3 "" H 2600 3350 60  0000 C CNN
+	1    2600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR08
+U 1 1 563D5D32
+P 2600 2850
+F 0 "#PWR08" H 2600 2600 50  0001 C CNN
+F 1 "GNDA" H 2600 2700 50  0000 C CNN
+F 2 "" H 2600 2850 60  0000 C CNN
+F 3 "" H 2600 2850 60  0000 C CNN
+	1    2600 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 2600
+Connection ~ 2600 3100
+Text GLabel 2700 2600 2    60   Input ~ 0
+LOUT-CON
+Text GLabel 2700 3100 2    60   Input ~ 0
+ROUT-CON
+$Comp
+L GND #PWR09
+U 1 1 563D7D34
+P 1700 2350
+F 0 "#PWR09" H 1700 2100 50  0001 C CNN
+F 1 "GND" H 1700 2200 50  0000 C CNN
+F 2 "" H 1700 2350 60  0000 C CNN
+F 3 "" H 1700 2350 60  0000 C CNN
+	1    1700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 563D87C4
+P 3600 3000
+F 0 "R5" H 3630 3020 50  0000 L CNN
+F 1 "1K" H 3630 2960 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:R_0402" H 3600 3000 60  0001 C CNN
+F 3 "" H 3600 3000 60  0000 C CNN
+F 4 "RC0402FR-071KL" H 3600 3000 60  0001 C CNN "manf#"
+	1    3600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 563D89F4
+P 3800 3000
+F 0 "R6" H 3830 3020 50  0000 L CNN
+F 1 "1K" H 3830 2960 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:R_0402" H 3800 3000 60  0001 C CNN
+F 3 "" H 3800 3000 60  0000 C CNN
+F 4 "RC0402FR-071KL" H 3800 3000 60  0001 C CNN "manf#"
+	1    3800 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 3100 3    60   Input ~ 0
+SDA
+Text GLabel 3800 3100 3    60   Input ~ 0
+SCL
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 563DA876
+P 4350 3150
+F 0 "JP1" H 4350 3230 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 4360 3090 50  0001 C CNN
+F 2 "HiFiAudioCodecModule-footprints:SMD_Jumper" H 4350 3150 60  0001 C CNN
+F 3 "" H 4350 3150 60  0000 C CNN
+	1    4350 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 563DB24A
+P 4350 2850
+F 0 "R7" H 4380 2870 50  0000 L CNN
+F 1 "1K" H 4380 2810 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:R_0402" H 4350 2850 60  0001 C CNN
+F 3 "" H 4350 2850 60  0000 C CNN
+F 4 "RC0402FR-071KL" H 4350 2850 60  0001 C CNN "manf#"
+	1    4350 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2950 4350 3050
+Wire Wire Line
+	4350 3000 4300 3000
+Connection ~ 4350 3000
+Text GLabel 4300 3000 0    60   Input ~ 0
+CAD0
+$Comp
+L GND #PWR010
+U 1 1 564F071E
+P 4350 3250
+F 0 "#PWR010" H 4350 3000 50  0001 C CNN
+F 1 "GND" H 4350 3100 50  0000 C CNN
+F 2 "" H 4350 3250 60  0000 C CNN
+F 3 "" H 4350 3250 60  0000 C CNN
+	1    4350 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 3000 0    60   Input ~ 0
+CAD1
+$Comp
+L R_Small R8
+U 1 1 564F282D
+P 4800 2850
+F 0 "R8" H 4830 2870 50  0000 L CNN
+F 1 "1K" H 4830 2810 50  0000 L CNN
+F 2 "HiFiAudioCodecModule-footprints:R_0402" H 4800 2850 60  0001 C CNN
+F 3 "" H 4800 2850 60  0000 C CNN
+F 4 "RC0402FR-071KL" H 4800 2850 60  0001 C CNN "manf#"
+	1    4800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NO_Small JP2
+U 1 1 564F2C04
+P 4800 3150
+F 0 "JP2" H 4800 3230 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 4810 3090 50  0001 C CNN
+F 2 "HiFiAudioCodecModule-footprints:SMD_Jumper" H 4800 3150 60  0001 C CNN
+F 3 "" H 4800 3150 60  0000 C CNN
+	1    4800 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 564F2C59
+P 4800 3250
+F 0 "#PWR011" H 4800 3000 50  0001 C CNN
+F 1 "GND" H 4800 3100 50  0000 C CNN
+F 2 "" H 4800 3250 60  0000 C CNN
+F 3 "" H 4800 3250 60  0000 C CNN
+	1    4800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3000 4800 3000
+Wire Wire Line
+	4800 2950 4800 3050
+Connection ~ 4800 3000
+Text GLabel 3100 850  0    60   Input ~ 0
+SDTO
+Text GLabel 3100 950  0    60   Input ~ 0
+BICK
+Text GLabel 3100 1050 0    60   Input ~ 0
+SDTI
+Text GLabel 3100 1150 0    60   Input ~ 0
+MCKI
+Text GLabel 3100 1550 0    60   Input ~ 0
+PDN
+Text GLabel 3100 1650 0    60   Input ~ 0
+SCL
+Text GLabel 3100 1750 0    60   Input ~ 0
+SDA
+Text GLabel 3100 1950 0    60   Input ~ 0
+GNDA
+Text GLabel 3100 1850 0    60   Input ~ 0
+AVDD
+Text GLabel 1150 1400 0    60   Input ~ 0
+LRCK
+Text GLabel 3100 750  0    60   Input ~ 0
+LRCK
+Text GLabel 4100 1150 0    60   Input ~ 0
+LIN-CON
+Text GLabel 4100 1050 0    60   Input ~ 0
+RIN-CON
+Text GLabel 4100 850  0    60   Input ~ 0
+LOUT-CON
+Text GLabel 4100 750  0    60   Input ~ 0
+ROUT-CON
+Wire Wire Line
+	4600 750  4650 750 
+Wire Wire Line
+	4650 750  4650 1250
+Wire Wire Line
+	4600 850  4650 850 
+Connection ~ 4650 850 
+Wire Wire Line
+	4600 950  4650 950 
+Connection ~ 4650 950 
+Wire Wire Line
+	4600 1050 4650 1050
+Connection ~ 4650 1050
+$Comp
+L GNDA #PWR012
+U 1 1 564FA203
+P 4650 1250
+F 0 "#PWR012" H 4650 1000 50  0001 C CNN
+F 1 "GNDA" H 4650 1100 50  0000 C CNN
+F 2 "" H 4650 1250 60  0000 C CNN
+F 3 "" H 4650 1250 60  0000 C CNN
+	1    4650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2750 4350 2700
+Wire Wire Line
+	4800 2700 4800 2750
+$Comp
+L CONN_01X06 P1
+U 1 1 565041BA
+P 3300 1000
+F 0 "P1" H 3300 1350 50  0000 C CNN
+F 1 "CONN_01X06" V 3400 1000 50  0000 C CNN
+F 2 "HiFiAudioCodecModule-footprints:Pin_Header_Straight_1x06" H 3300 1000 60  0001 C CNN
+F 3 "" H 3300 1000 60  0000 C CNN
+F 4 "M20-9990645" H 3300 1000 60  0001 C CNN "manf#"
+	1    3300 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 1250 0    60   Input ~ 0
+VDD
+$Comp
+L CONN_01X06 P2
+U 1 1 5650446A
+P 3300 1700
+F 0 "P2" H 3300 2050 50  0000 C CNN
+F 1 "CONN_01X06" V 3400 1700 50  0000 C CNN
+F 2 "HiFiAudioCodecModule-footprints:Pin_Header_Straight_1x06" H 3300 1700 60  0001 C CNN
+F 3 "" H 3300 1700 60  0000 C CNN
+F 4 "M20-9990645" H 3300 1700 60  0001 C CNN "manf#"
+	1    3300 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 1450 0    60   Input ~ 0
+GND
+Wire Wire Line
+	3600 2900 3600 2850
+Wire Wire Line
+	3800 2850 3800 2900
+Wire Wire Line
+	3550 2850 3800 2850
+Connection ~ 3600 2850
+Text GLabel 3550 2850 0    60   Input ~ 0
+VDD
+Text GLabel 4300 2700 0    60   Input ~ 0
+VDD
+Wire Wire Line
+	4300 2700 4800 2700
+Connection ~ 4350 2700
+Wire Wire Line
+	3600 2000 3600 1950
+Wire Wire Line
+	4000 1950 4000 2000
+$Comp
+L CONN_02X05 P3
+U 1 1 565CEA4A
+P 4350 950
+F 0 "P3" H 4350 1250 50  0000 C CNN
+F 1 "CONN_02X05" H 4350 650 50  0000 C CNN
+F 2 "HiFiAudioCodecModule-footprints:Pin_Header_Straight_2x05" H 4350 -250 60  0001 C CNN
+F 3 "" H 4350 -250 60  0000 C CNN
+F 4 "M20-9980545" H 4350 950 60  0001 C CNN "manf#"
+	1    4350 950 
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 950  0    60   Input ~ 0
+AVDD
+Wire Wire Line
+	4600 1150 4650 1150
+Connection ~ 4650 1150
+$Comp
+L GNDA #PWR013
+U 1 1 5665C67B
+P 4650 2300
+F 0 "#PWR013" H 4650 2050 50  0001 C CNN
+F 1 "GNDA" H 4650 2150 50  0000 C CNN
+F 2 "" H 4650 2300 60  0000 C CNN
+F 3 "" H 4650 2300 60  0000 C CNN
+	1    4650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HACKADAY LOGO2
+U 1 1 5667295B
+P 4375 4100
+F 0 "LOGO2" H 4375 3918 60  0001 C CNN
+F 1 "HACKADAY" H 4375 4282 60  0001 C CNN
+F 2 "hackaday_logo:LOGO" H 4375 4100 60  0001 C CNN
+F 3 "" H 4375 4100 60  0000 C CNN
+	1    4375 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSHW LOGO1
+U 1 1 5667299F
+P 5050 4000
+F 0 "LOGO1" H 5050 3660 60  0001 C CNN
+F 1 "OSHW" H 5050 4340 60  0001 C CNN
+F 2 "oshw_logo:LOGO" H 5050 4000 60  0001 C CNN
+F 3 "" H 5050 4000 60  0000 C CNN
+	1    5050 4000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

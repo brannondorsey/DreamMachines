@@ -1,0 +1,388 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lm2594
+LIBS:gf-123-0054
+LIBS:Power_Breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Power Test Board"
+Date "2016-07-08"
+Rev "1.0"
+Comp "Noctivore"
+Comment1 "Designed by Ops"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_PMOS_GDS Q1
+U 1 1 5750CCA2
+P 4500 3600
+F 0 "Q1" V 4400 3750 50  0000 R CNN
+F 1 "FQP47P06" V 4700 3800 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 4700 3700 50  0001 C CNN
+F 3 "" H 4500 3600 50  0000 C CNN
+	1    4500 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ZENERsmall D1
+U 1 1 5750CD17
+P 4800 3650
+F 0 "D1" H 4800 3550 50  0000 C CNN
+F 1 "1N4749A" H 4850 3750 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10" H 4800 3650 50  0001 C CNN
+F 3 "" H 4800 3650 50  0000 C CNN
+	1    4800 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5750CD32
+P 4500 4000
+F 0 "R1" H 4530 4020 50  0000 L CNN
+F 1 "100K" H 4530 3960 50  0000 L CNN
+F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" H 4500 4000 50  0001 C CNN
+F 3 "" H 4500 4000 50  0000 C CNN
+	1    4500 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 5750CD4F
+P 5150 3500
+F 0 "F1" H 5100 3450 50  0000 C CNN
+F 1 "0ZCJ0050AF2E" H 5150 3600 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_Reflow" H 5150 3500 50  0001 C CNN
+F 3 "" H 5150 3500 50  0000 C CNN
+	1    5150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C1
+U 1 1 5750CD82
+P 5450 3850
+F 0 "C1" H 5460 3920 50  0000 L CNN
+F 1 "68uF" H 5460 3770 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 5450 3850 50  0001 C CNN
+F 3 "" H 5450 3850 50  0000 C CNN
+	1    5450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky_Small D2
+U 1 1 5750CDC7
+P 6300 3850
+F 0 "D2" H 6250 3930 50  0000 L CNN
+F 1 "1N5819HW" H 6100 3750 50  0000 L CNN
+F 2 "Diodes_SMD:SOD-123" V 6300 3850 50  0001 C CNN
+F 3 "" V 6300 3850 50  0000 C CNN
+	1    6300 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 5750CDF8
+P 6500 3550
+F 0 "L1" V 6450 3500 50  0000 L CNN
+F 1 "100uH" V 6550 3450 50  0000 L CNN
+F 2 "power_breakout:PE-53820SNL_Pulse_Inductor" H 6500 3550 50  0001 C CNN
+F 3 "" H 6500 3550 50  0000 C CNN
+	1    6500 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1_Small C2
+U 1 1 5750CEDA
+P 6650 3850
+F 0 "C2" H 6660 3920 50  0000 L CNN
+F 1 "10uF" H 6660 3770 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeD_EIA-7343_Reflow" H 6650 3850 50  0001 C CNN
+F 3 "" H 6650 3850 50  0000 C CNN
+	1    6650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5750CF7B
+P 7000 3950
+F 0 "R2" H 7030 3970 50  0000 L CNN
+F 1 "100" H 7030 3910 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 7000 3950 50  0001 C CNN
+F 3 "" H 7000 3950 50  0000 C CNN
+	1    7000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D3
+U 1 1 5750D03D
+P 7000 3700
+F 0 "D3" H 6950 3825 50  0000 L CNN
+F 1 "PWR LED" H 6825 3600 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 7000 3700 50  0001 C CNN
+F 3 "" V 7000 3700 50  0000 C CNN
+	1    7000 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 3500 4900 3500
+Wire Wire Line
+	4800 3450 4800 3550
+Connection ~ 4800 3500
+Wire Wire Line
+	4500 3800 4500 3900
+Wire Wire Line
+	4500 3850 4800 3850
+Wire Wire Line
+	4800 3850 4800 3750
+Connection ~ 4500 3850
+$Comp
+L +3V3 #PWR01
+U 1 1 5750D5F3
+P 7000 3500
+F 0 "#PWR01" H 7000 3350 50  0001 C CNN
+F 1 "+3V3" H 7000 3640 50  0000 C CNN
+F 2 "" H 7000 3500 50  0000 C CNN
+F 3 "" H 7000 3500 50  0000 C CNN
+	1    7000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5750D628
+P 4500 4200
+F 0 "#PWR02" H 4500 3950 50  0001 C CNN
+F 1 "GND" H 4500 4050 50  0000 C CNN
+F 2 "" H 4500 4200 50  0000 C CNN
+F 3 "" H 4500 4200 50  0000 C CNN
+	1    4500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4100 4500 4200
+$Comp
+L LM2594 U1
+U 1 1 5750D76B
+P 5850 3500
+F 0 "U1" H 6050 3150 60  0000 C CNN
+F 1 "LM2594" H 5850 3650 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 5850 3500 60  0001 C CNN
+F 3 "" H 5850 3500 60  0000 C CNN
+	1    5850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3500 5500 3500
+Wire Wire Line
+	6400 3550 6200 3550
+Wire Wire Line
+	6200 3450 6650 3450
+Wire Wire Line
+	6650 3450 6650 3750
+Connection ~ 6650 3550
+Wire Wire Line
+	7000 3500 7000 3600
+Connection ~ 7000 3550
+Wire Wire Line
+	7000 4150 7000 4050
+Connection ~ 4500 4150
+Wire Wire Line
+	7000 3800 7000 3850
+Connection ~ 5450 3500
+Connection ~ 5450 4150
+Wire Wire Line
+	6650 4150 6650 3950
+Connection ~ 6650 4150
+Wire Wire Line
+	6300 3750 6300 3550
+Connection ~ 6300 3550
+Wire Wire Line
+	6300 4150 6300 3950
+Connection ~ 6300 4150
+Wire Wire Line
+	5450 3450 5450 3750
+Wire Wire Line
+	5450 4150 5450 3950
+Wire Wire Line
+	5750 4150 5750 3900
+Connection ~ 5750 4150
+Wire Wire Line
+	5950 4150 5950 3900
+Connection ~ 5950 4150
+Wire Wire Line
+	4500 4150 7000 4150
+Text Label 3450 3500 2    60   ~ 0
+VIN
+$Comp
+L TEST_1P TP4
+U 1 1 57578588
+P 6800 3500
+F 0 "TP4" H 6800 3700 50  0000 C CNN
+F 1 "TP1" H 6800 3700 50  0001 C CNN
+F 2 "power_breakout:RCS-0C_Test_Point" H 7000 3500 50  0001 C CNN
+F 3 "" H 7000 3500 50  0000 C CNN
+	1    6800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3550 7000 3550
+Connection ~ 6800 3550
+$Comp
+L TEST_1P TP1
+U 1 1 5757889C
+P 5100 4100
+F 0 "TP1" H 5100 4300 50  0000 C CNN
+F 1 "TP1" H 5100 4300 50  0001 C CNN
+F 2 "power_breakout:RCS-0C_Test_Point" H 5300 4100 50  0001 C CNN
+F 3 "" H 5300 4100 50  0000 C CNN
+	1    5100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P TP2
+U 1 1 575789D6
+P 4800 3450
+F 0 "TP2" H 4800 3650 50  0000 C CNN
+F 1 "TP1" H 4800 3650 50  0001 C CNN
+F 2 "power_breakout:RCS-0C_Test_Point" H 5000 3450 50  0001 C CNN
+F 3 "" H 5000 3450 50  0000 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P TP3
+U 1 1 57578A9C
+P 5450 3450
+F 0 "TP3" H 5450 3650 50  0000 C CNN
+F 1 "TP1" H 5450 3650 50  0001 C CNN
+F 2 "power_breakout:RCS-0C_Test_Point" H 5650 3450 50  0001 C CNN
+F 3 "" H 5650 3450 50  0000 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3550 6800 3500
+Wire Wire Line
+	5100 4150 5100 4100
+Connection ~ 5100 4150
+$Comp
+L GF-123-0054 SW1
+U 1 1 5757A596
+P 3850 3500
+F 0 "SW1" H 3850 3650 60  0000 C CNN
+F 1 "GF-123-0054" H 3850 3400 60  0000 C CNN
+F 2 "power_breakout:GF-123-0054" H 3750 3500 60  0001 C CNN
+F 3 "" H 3750 3500 60  0000 C CNN
+	1    3850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3500 4300 3500
+Wire Wire Line
+	3450 3500 3550 3500
+$Comp
+L CONN_01X03 P1
+U 1 1 5757BC10
+P 3700 3900
+F 0 "P1" H 3700 4100 50  0000 C CNN
+F 1 "Header" V 3800 3900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3700 3900 50  0001 C CNN
+F 3 "" H 3700 3900 50  0000 C CNN
+	1    3700 3900
+	0    -1   -1   0   
+$EndComp
+Text Label 3450 4100 2    60   ~ 0
+VIN
+$Comp
+L GND #PWR03
+U 1 1 5757BDFE
+P 3700 4200
+F 0 "#PWR03" H 3700 3950 50  0001 C CNN
+F 1 "GND" H 3700 4050 50  0000 C CNN
+F 2 "" H 3700 4200 50  0000 C CNN
+F 3 "" H 3700 4200 50  0000 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR04
+U 1 1 5757BE5E
+P 3950 4100
+F 0 "#PWR04" H 3950 3950 50  0001 C CNN
+F 1 "+3V3" H 3950 4240 50  0000 C CNN
+F 2 "" H 3950 4100 50  0000 C CNN
+F 3 "" H 3950 4100 50  0000 C CNN
+	1    3950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4100 3950 4100
+Wire Wire Line
+	3700 4100 3700 4200
+Wire Wire Line
+	3600 4100 3450 4100
+$Comp
+L BARREL_JACK CON1
+U 1 1 5758E625
+P 2650 3600
+F 0 "CON1" H 2650 3850 50  0000 C CNN
+F 1 "BARREL_JACK" H 2650 3400 50  0000 C CNN
+F 2 "power_breakout:PJ-036AH-SMT-TR_Barrel_Jack" H 2650 3600 50  0001 C CNN
+F 3 "" H 2650 3600 50  0000 C CNN
+	1    2650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3500 2950 3500
+Text Label 3050 3500 0    60   ~ 0
+VIN
+$Comp
+L GND #PWR05
+U 1 1 5758E882
+P 3050 3750
+F 0 "#PWR05" H 3050 3500 50  0001 C CNN
+F 1 "GND" H 3050 3600 50  0000 C CNN
+F 2 "" H 3050 3750 50  0000 C CNN
+F 3 "" H 3050 3750 50  0000 C CNN
+	1    3050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3600 3050 3600
+Wire Wire Line
+	3050 3600 3050 3750
+Wire Wire Line
+	2950 3700 3050 3700
+Connection ~ 3050 3700
+$EndSCHEMATC

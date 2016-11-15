@@ -1,0 +1,436 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BenchBudEE
+LIBS:arduino_shieldsNCL
+LIBS:BenchBudEE-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 9
+Title ""
+Date "7 feb 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 9400 1750 2    60   Input ~ 0
+TC IN +
+Text HLabel 9350 4000 2    60   Input ~ 0
+TC IN -
+Text HLabel 1950 5150 0    60   Input ~ 0
+MOSI
+Text HLabel 2550 2900 0    60   Output ~ 0
+MISO
+Text HLabel 2550 2800 0    60   Input ~ 0
+CLK
+Text HLabel 2550 3000 0    60   Input ~ 0
+CS_N
+$Comp
+L LM324 U?
+U 1 1 52F0D16D
+P 8200 1850
+F 0 "U?" H 8250 2050 60  0000 C CNN
+F 1 "LM324" H 8350 1650 50  0000 C CNN
+F 2 "" H 8200 1850 60  0000 C CNN
+F 3 "" H 8200 1850 60  0000 C CNN
+	1    8200 1850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 1 1 52F0D189
+P 8200 3900
+F 0 "U?" H 8250 4100 60  0000 C CNN
+F 1 "LM324" H 8350 3700 50  0000 C CNN
+F 2 "" H 8200 3900 60  0000 C CNN
+F 3 "" H 8200 3900 60  0000 C CNN
+	1    8200 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM324 U?
+U 1 1 52F0D18F
+P 5650 2750
+F 0 "U?" H 5700 2950 60  0000 C CNN
+F 1 "LM324" H 5800 2550 50  0000 C CNN
+F 2 "" H 5650 2750 60  0000 C CNN
+F 3 "" H 5650 2750 60  0000 C CNN
+	1    5650 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM324 U?
+U 1 1 52F0D195
+P 6600 6000
+F 0 "U?" H 6650 6200 60  0000 C CNN
+F 1 "LM324" H 6750 5800 50  0000 C CNN
+F 2 "" H 6600 6000 60  0000 C CNN
+F 3 "" H 6600 6000 60  0000 C CNN
+	1    6600 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 52F0D1DE
+P 7300 2300
+F 0 "R?" V 7380 2300 40  0000 C CNN
+F 1 "R" V 7307 2301 40  0000 C CNN
+F 2 "~" V 7230 2300 30  0000 C CNN
+F 3 "~" H 7300 2300 30  0000 C CNN
+	1    7300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 52F0D1ED
+P 6600 3350
+F 0 "C?" H 6600 3450 40  0000 L CNN
+F 1 "C" H 6606 3265 40  0000 L CNN
+F 2 "~" H 6638 3200 30  0000 C CNN
+F 3 "~" H 6600 3350 60  0000 C CNN
+	1    6600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 52F0D204
+P 7300 2900
+F 0 "R?" V 7380 2900 40  0000 C CNN
+F 1 "R" V 7307 2901 40  0000 C CNN
+F 2 "~" V 7230 2900 30  0000 C CNN
+F 3 "~" H 7300 2900 30  0000 C CNN
+	1    7300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 52F0D20A
+P 7300 3500
+F 0 "R?" V 7380 3500 40  0000 C CNN
+F 1 "R" V 7307 3501 40  0000 C CNN
+F 2 "~" V 7230 3500 30  0000 C CNN
+F 3 "~" H 7300 3500 30  0000 C CNN
+	1    7300 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1850 7700 1850
+Wire Wire Line
+	7300 1850 7300 2050
+Wire Wire Line
+	7300 2550 7300 2650
+Wire Wire Line
+	7300 3150 7300 3250
+Wire Wire Line
+	7300 3750 7300 3900
+Wire Wire Line
+	6850 3900 7700 3900
+$Comp
+L R R?
+U 1 1 52F0D23F
+P 6550 1850
+F 0 "R?" V 6630 1850 40  0000 C CNN
+F 1 "R" V 6557 1851 40  0000 C CNN
+F 2 "~" V 6480 1850 30  0000 C CNN
+F 3 "~" H 6550 1850 30  0000 C CNN
+	1    6550 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F0D245
+P 5700 1850
+F 0 "R?" V 5780 1850 40  0000 C CNN
+F 1 "R" V 5707 1851 40  0000 C CNN
+F 2 "~" V 5630 1850 30  0000 C CNN
+F 3 "~" H 5700 1850 30  0000 C CNN
+	1    5700 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F0D24B
+P 6600 3900
+F 0 "R?" V 6680 3900 40  0000 C CNN
+F 1 "R" V 6607 3901 40  0000 C CNN
+F 2 "~" V 6530 3900 30  0000 C CNN
+F 3 "~" H 6600 3900 30  0000 C CNN
+	1    6600 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F0D26A
+P 5700 3900
+F 0 "R?" V 5780 3900 40  0000 C CNN
+F 1 "R" V 5707 3901 40  0000 C CNN
+F 2 "~" V 5630 3900 30  0000 C CNN
+F 3 "~" H 5700 3900 30  0000 C CNN
+	1    5700 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7300 3900
+Wire Wire Line
+	5950 3900 6350 3900
+Connection ~ 7300 1850
+Wire Wire Line
+	5950 1850 6300 1850
+Wire Wire Line
+	6150 2650 6150 1850
+Connection ~ 6150 1850
+Wire Wire Line
+	5150 2750 5150 1850
+Wire Wire Line
+	5150 1850 5450 1850
+Wire Wire Line
+	6150 2850 6150 3900
+Connection ~ 6150 3900
+Wire Wire Line
+	7300 2600 8800 2600
+Wire Wire Line
+	8800 2600 8800 1950
+Wire Wire Line
+	8800 1950 8700 1950
+Connection ~ 7300 2600
+Wire Wire Line
+	7300 3200 8800 3200
+Wire Wire Line
+	8800 3200 8800 3800
+Wire Wire Line
+	8800 3800 8700 3800
+Connection ~ 7300 3200
+Wire Wire Line
+	8700 4000 9350 4000
+Wire Wire Line
+	8700 1750 9400 1750
+$Comp
+L -12V #PWR?
+U 1 1 52F0D99C
+P 5750 2150
+F 0 "#PWR?" H 5750 2280 20  0001 C CNN
+F 1 "-12V" H 5750 2250 30  0000 C CNN
+F 2 "" H 5750 2150 60  0000 C CNN
+F 3 "" H 5750 2150 60  0000 C CNN
+	1    5750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 52F0D9B5
+P 8300 2450
+F 0 "#PWR?" H 8300 2580 20  0001 C CNN
+F 1 "-12V" H 8300 2550 30  0000 C CNN
+F 2 "" H 8300 2450 60  0000 C CNN
+F 3 "" H 8300 2450 60  0000 C CNN
+	1    8300 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 52F0D9D4
+P 8300 3350
+F 0 "#PWR?" H 8300 3480 20  0001 C CNN
+F 1 "-12V" H 8300 3450 30  0000 C CNN
+F 2 "" H 8300 3350 60  0000 C CNN
+F 3 "" H 8300 3350 60  0000 C CNN
+	1    8300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2150 5750 2350
+Wire Wire Line
+	8300 2250 8300 2450
+Wire Wire Line
+	8300 3500 8300 3350
+$Comp
+L +12V #PWR?
+U 1 1 52F0DA84
+P 5750 3400
+F 0 "#PWR?" H 5750 3350 20  0001 C CNN
+F 1 "+12V" H 5750 3500 30  0000 C CNN
+F 2 "" H 5750 3400 60  0000 C CNN
+F 3 "" H 5750 3400 60  0000 C CNN
+	1    5750 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 52F0DA91
+P 8300 1150
+F 0 "#PWR?" H 8300 1100 20  0001 C CNN
+F 1 "+12V" H 8300 1250 30  0000 C CNN
+F 2 "" H 8300 1150 60  0000 C CNN
+F 3 "" H 8300 1150 60  0000 C CNN
+	1    8300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 52F0DA97
+P 8300 4550
+F 0 "#PWR?" H 8300 4500 20  0001 C CNN
+F 1 "+12V" H 8300 4650 30  0000 C CNN
+F 2 "" H 8300 4550 60  0000 C CNN
+F 3 "" H 8300 4550 60  0000 C CNN
+	1    8300 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 3150 5750 3400
+Wire Wire Line
+	8300 1450 8300 1150
+Wire Wire Line
+	8300 4300 8300 4550
+Wire Wire Line
+	5200 3050 5200 4250
+Wire Wire Line
+	5200 3900 5450 3900
+$Comp
+L MCP3550-60-E/SN U?
+U 1 1 52F0E1AC
+P 3700 2900
+F 0 "U?" H 3150 3250 40  0000 C CNN
+F 1 "MCP3550-60-E/SN" H 3400 3200 40  0000 C CNN
+F 2 "SO8" H 3500 2900 30  0000 C CIN
+F 3 "" H 3700 2900 60  0000 C CNN
+	1    3700 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2750 5150 2750
+Wire Wire Line
+	4200 3050 5200 3050
+Connection ~ 5200 3900
+Wire Wire Line
+	2550 2800 3200 2800
+Wire Wire Line
+	2550 2900 3200 2900
+Wire Wire Line
+	2550 3000 3200 3000
+$Comp
+L MCP3550-60-E/SN U?
+U 1 1 52F0E30B
+P 4700 6150
+F 0 "U?" H 4150 6500 40  0000 C CNN
+F 1 "MCP3550-60-E/SN" H 4400 6450 40  0000 C CNN
+F 2 "SO8" H 4500 6150 30  0000 C CIN
+F 3 "" H 4700 6150 60  0000 C CNN
+	1    4700 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ZENER D?
+U 1 1 52F0E31D
+P 7600 6150
+F 0 "D?" H 7600 6250 50  0000 C CNN
+F 1 "ZENER" H 7600 6050 40  0000 C CNN
+F 2 "~" H 7600 6150 60  0000 C CNN
+F 3 "~" H 7600 6150 60  0000 C CNN
+	1    7600 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 52F0E32F
+P 7600 5750
+F 0 "#PWR?" H 7600 5700 20  0001 C CNN
+F 1 "+12V" H 7600 5850 30  0000 C CNN
+F 2 "" H 7600 5750 60  0000 C CNN
+F 3 "" H 7600 5750 60  0000 C CNN
+	1    7600 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5950 7600 5750
+$Comp
+L GNDA #PWR?
+U 1 1 52F0E35E
+P 7600 6550
+F 0 "#PWR?" H 7600 6550 40  0001 C CNN
+F 1 "GNDA" H 7600 6480 40  0000 C CNN
+F 2 "" H 7600 6550 60  0000 C CNN
+F 3 "" H 7600 6550 60  0000 C CNN
+	1    7600 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 6350 7600 6550
+Wire Wire Line
+	7100 5900 7600 5900
+Connection ~ 7600 5900
+Wire Wire Line
+	7100 6100 7250 6100
+Wire Wire Line
+	7250 6100 7250 6650
+Wire Wire Line
+	7250 6650 6100 6650
+Wire Wire Line
+	6100 6650 6100 6000
+Wire Wire Line
+	6100 6000 5200 6000
+$Comp
+L GNDA #PWR?
+U 1 1 52F0E54E
+P 5200 6500
+F 0 "#PWR?" H 5200 6500 40  0001 C CNN
+F 1 "GNDA" H 5200 6430 40  0000 C CNN
+F 2 "" H 5200 6500 60  0000 C CNN
+F 3 "" H 5200 6500 60  0000 C CNN
+	1    5200 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 6300 5200 6500
+Text Notes 7900 5950 0    60   ~ 0
+General Temperature Sensor
+Text Notes 8950 2750 0    60   ~ 0
+Analog/TC Input
+Text Notes 8950 3000 0    60   ~ 0
+Instrumentation Amp
+Text Notes 3500 1950 0    60   ~ 0
+16-24bit ADC
+$Comp
+L AGND #PWR?
+U 1 1 52F3642E
+P 5200 4250
+F 0 "#PWR?" H 5200 4250 40  0001 C CNN
+F 1 "AGND" H 5200 4180 50  0000 C CNN
+F 2 "" H 5200 4250 60  0000 C CNN
+F 3 "" H 5200 4250 60  0000 C CNN
+	1    5200 4250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

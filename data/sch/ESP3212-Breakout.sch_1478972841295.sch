@@ -1,0 +1,814 @@
+EESchema Schematic File Version 2
+LIBS:ESP3212-Breakout-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP32-footprints-Shem-Lib
+LIBS:HydroPWNics_Lib
+LIBS:OnHand-Components-Sym
+LIBS:ESP3212-Breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AZ1117CR-3.3TRG1_1 U1
+U 1 1 57D03030
+P 4375 5450
+F 0 "U1" H 4125 5650 60  0000 C CNN
+F 1 "AZ1117CR-3.3TRG1_1" H 4775 5650 60  0000 C CNN
+F 2 "PCB_Footprints:AZ1117CR-3.3TRG1" H 4025 5550 60  0001 C CNN
+F 3 "" H 4125 5650 60  0001 C CNN
+F 4 "0.08330 @ 5000" H 4225 5750 60  0001 C CNN "Cost"
+F 5 "19 Aug 2016" H 4325 5850 60  0001 C CNN "Date Created"
+F 6 "19 Aug 2016" H 4425 5950 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 4525 6050 60  0001 C CNN "Designer"
+F 8 "1.6mm" H 4625 6150 60  0001 C CNN "Height"
+F 9 "Yes" H 4725 6250 60  0001 C CNN "RHoS?"
+F 10 "Diodes Inc" H 4825 6350 60  0001 C CNN "MFR"
+F 11 "AZ1117CR-3.3TRG1" H 4925 6450 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 5025 6550 60  0001 C CNN "Mounting"
+F 13 "4" H 5125 6650 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 5225 6750 60  0001 C CNN "Status"
+F 15 "N/A" H 5325 6850 60  0001 C CNN "Tolerance"
+F 16 "LDO Linear DC Voltage Regulator" H 5425 6950 60  0001 C CNN "Type"
+F 17 "3.7V input 3.3V Output" H 5525 7050 60  0001 C CNN "Voltage"
+F 18 "N/A" H 5625 7150 60  0001 C CNN "Wattage"
+F 19 "N/A" H 5725 7250 60  0001 C CNN "Component-Value"
+F 20 "Linear Voltage Regulator IC Positive Fixed 1 Output 3.3V 800mA SOT-89" H 5825 7350 60  0001 C CNN "Description"
+	1    4375 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CL05B104JP5NNNC C2
+U 1 1 57D03501
+P 4875 5650
+F 0 "C2" V 4775 5750 60  0000 C CNN
+F 1 "CL05B104JP5NNNC" H 4925 5500 60  0001 C CNN
+F 2 "PCB_Footprints:C0402" H 5125 5700 60  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2016/08/18/S_CL05B104JP5NNNC.pdf" H 5125 5700 60  0001 C CNN
+F 4 "$0.00903 @ 5000" H 4775 5900 60  0001 C CNN "Cost"
+F 5 "4 Sept 2016" H 4875 6000 60  0001 C CNN "Date Created"
+F 6 "5 Sept 2016" H 4975 6100 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 5075 6200 60  0001 C CNN "Designer"
+F 8 "0.55mm" H 5175 6300 60  0001 C CNN "Height"
+F 9 "Yes" H 5275 6400 60  0001 C CNN "RHoS?"
+F 10 "Samsung Electro-Mechanics America, Inc." H 5375 6500 60  0001 C CNN "MFR"
+F 11 "CL05B104JP5NNNC" H 5475 6600 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 5575 6700 60  0001 C CNN "Mounting"
+F 13 "2" H 5675 6800 60  0001 C CNN "Pint Count#"
+F 14 "Active" H 5775 6900 60  0001 C CNN "Status"
+F 15 "5%" H 5875 7000 60  0001 C CNN "Tolerance"
+F 16 "Ceramic Capacitor 0402" H 5975 7100 60  0001 C CNN "Type"
+F 17 "10V" H 6075 7200 60  0001 C CNN "Voltage"
+F 18 "N/A" H 6175 7300 60  0001 C CNN "Wattage"
+F 19 "0.10uF" H 6275 7400 60  0001 C CNN "Component-Value"
+F 20 "0.10µF 10V Ceramic Capacitor X7R 0402 (1005 Metric) 0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 6375 7500 60  0001 C CNN "Description"
+	1    4875 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57D03790
+P 4375 5850
+F 0 "#PWR01" H 4375 5600 50  0001 C CNN
+F 1 "GND" H 4375 5700 50  0000 C CNN
+F 2 "" H 4375 5850 50  0000 C CNN
+F 3 "" H 4375 5850 50  0000 C CNN
+	1    4375 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57D05720
+P 9250 4775
+F 0 "#PWR02" H 9250 4525 50  0001 C CNN
+F 1 "GND" H 9250 4625 50  0000 C CNN
+F 2 "" H 9250 4775 50  0000 C CNN
+F 3 "" H 9250 4775 50  0000 C CNN
+	1    9250 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 57D05785
+P 9875 2775
+F 0 "#PWR03" H 9875 2525 50  0001 C CNN
+F 1 "GND" H 9875 2625 50  0000 C CNN
+F 2 "" H 9875 2775 50  0000 C CNN
+F 3 "" H 9875 2775 50  0000 C CNN
+	1    9875 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 57D06178
+P 5525 5400
+F 0 "#PWR04" H 5525 5250 50  0001 C CNN
+F 1 "+3.3V" H 5525 5540 50  0000 C CNN
+F 2 "" H 5525 5400 50  0000 C CNN
+F 3 "" H 5525 5400 50  0000 C CNN
+	1    5525 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR05
+U 1 1 57D0626D
+P 9850 4875
+F 0 "#PWR05" H 9850 4725 50  0001 C CNN
+F 1 "+3.3V" H 9850 5015 50  0000 C CNN
+F 2 "" H 9850 4875 50  0000 C CNN
+F 3 "" H 9850 4875 50  0000 C CNN
+	1    9850 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 57D062D4
+P 9650 4875
+F 0 "#PWR06" H 9650 4725 50  0001 C CNN
+F 1 "+5V" H 9650 5015 50  0000 C CNN
+F 2 "" H 9650 4875 50  0000 C CNN
+F 3 "" H 9650 4875 50  0000 C CNN
+	1    9650 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 57D068B6
+P 3475 5400
+F 0 "#PWR07" H 3475 5250 50  0001 C CNN
+F 1 "+5V" H 3475 5540 50  0000 C CNN
+F 2 "" H 3475 5400 50  0000 C CNN
+F 3 "" H 3475 5400 50  0000 C CNN
+	1    3475 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CL10A106KQ8NNNC C1
+U 1 1 57D06BFA
+P 3725 5600
+F 0 "C1" V 3625 5700 60  0000 C CNN
+F 1 "CL10A106KQ8NNNC" H 3425 5450 60  0001 C CNN
+F 2 "PCB_Footprints:C0603" H 2975 5650 60  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2016/08/18/S_CL10A106KQ8NNNC.pdf" H 3075 5750 60  0001 C CNN
+F 4 "0.05145 @ 4000" H 3175 5850 60  0001 C CNN "Cost"
+F 5 "5 Sept 2016" H 3275 5950 60  0001 C CNN "Date Created"
+F 6 "5 Sept 2016" H 3375 6050 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 3475 6150 60  0001 C CNN "Designer"
+F 8 "0.90mm" H 3575 6250 60  0001 C CNN "Height"
+F 9 "Yes" H 3675 6350 60  0001 C CNN "RHoS?"
+F 10 "Samsung Electro-Mechanics America, Inc." H 3775 6450 60  0001 C CNN "MFR"
+F 11 "CL10A106KQ8NNNC" H 3875 6550 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3975 6650 60  0001 C CNN "Mounting"
+F 13 "2" H 4075 6750 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 4175 6850 60  0001 C CNN "Status"
+F 15 "10%" H 4275 6950 60  0001 C CNN "Tolerance"
+F 16 "Ceramic Capacitor 0603" H 4375 7050 60  0001 C CNN "Type"
+F 17 "6.3V" H 4475 7150 60  0001 C CNN "Voltage"
+F 18 "N/A" H 5025 7150 60  0001 C CNN "Wattage"
+F 19 "10uF" H 5125 7250 60  0001 C CNN "Componen-Value"
+F 20 "10µF 6.3V Ceramic Capacitor X5R 0603 (1608 Metric) 0.063\" L x 0.031\" W (1.60mm x 0.80mm)" H 5225 7350 60  0001 C CNN "Description"
+	1    3725 5600
+	0    1    1    0   
+$EndComp
+Text Notes 4050 1100 0    197  ~ 39
+ESP3212 Mini Dev Breakout
+$Comp
+L ESP3212 U2
+U 1 1 57E608A1
+P 5700 3275
+F 0 "U2" H 4950 4525 60  0000 C CNN
+F 1 "ESP3212" H 6225 4525 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP3212" H 6050 4625 60  0001 C CNN
+F 3 "" H 5250 3725 60  0001 C CNN
+	1    5700 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L GRM155R71C104KA88D C3
+U 1 1 57E61ACF
+P 3725 3000
+F 0 "C3" V 3625 2625 60  0000 L CNN
+F 1 "GRM155R71C104KA88D" V 3525 1850 60  0000 L CNN
+F 2 "OnHand-Components:C0402" H 2975 3050 60  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf" H 3075 3150 60  0001 C CNN
+F 4 "0.00250 @ 5000" H 3175 3250 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 3275 3350 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 3375 3450 60  0001 C CNN "Date Modifed"
+F 7 "Adam Vadala-Roth" H 3475 3550 60  0001 C CNN "Designer"
+F 8 "0.55mm" H 3575 3650 60  0001 C CNN "Height"
+F 9 "Yes" H 3675 3750 60  0001 C CNN "RHoS?"
+F 10 "Murata Electronics North America" H 3775 3850 60  0001 C CNN "MFR"
+F 11 "GRM155R71C104KA88D" H 3875 3950 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 3975 4050 60  0001 C CNN "Mounting"
+F 13 "2" H 4075 4150 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 4175 4250 60  0001 C CNN "Status"
+F 15 "10%" H 4275 4350 60  0001 C CNN "Tolerance"
+F 16 "Ceramic Capacitor 0402" H 4375 4450 60  0001 C CNN "Type"
+F 17 "16V" H 4475 4550 60  0001 C CNN "Voltage"
+F 18 "N/A" H 5025 4550 60  0001 C CNN "Wattage"
+F 19 "0.1uF" V 3725 2625 60  0000 L CNN "Componen-Value"
+F 20 "0.10µF 16V Ceramic Capacitor X7R 0402 (1005 Metric) 0.039\" L x 0.020\" W (1.00mm x 0.50mm)" H 5225 4750 60  0001 C CNN "Description"
+	1    3725 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L ERJ-3EKF1001V R2
+U 1 1 57E61BD4
+P 8650 1800
+F 0 "R2" H 8825 1475 60  0000 L CNN
+F 1 "ERJ-3EKF1001V" H 8275 1650 60  0000 L CNN
+F 2 "OnHand-Components:R0603" H 8250 2050 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF1001V+7+WW" H 8350 2250 60  0001 C CNN
+F 4 "0.00247 @ 5000" H 10200 3750 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 8550 2350 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 8650 2450 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 8750 2550 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 8850 2650 60  0001 C CNN "Height"
+F 9 "Yes" H 8950 2750 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 9050 2850 60  0001 C CNN "MFR"
+F 11 "ERJ-3EKF1001V" H 9150 2950 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 9250 3050 60  0001 C CNN "Mounting"
+F 13 "2" H 9350 3150 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 9450 3250 60  0001 C CNN "Status"
+F 15 "1%" H 9550 3350 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 9650 3450 60  0001 C CNN "Type"
+F 17 "N/A" H 9750 3550 60  0001 C CNN "Voltage"
+F 18 "1/10" H 9850 3650 60  0001 C CNN "Wattage"
+F 19 "1K" H 8825 1550 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 1K OHM 1% 1/10W 0603" H 10050 3850 60  0001 C CNN "Description"
+	1    8650 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L 5988140107F LED1
+U 1 1 57E61D38
+P 9950 1700
+F 0 "LED1" V 10175 1975 60  0000 C CNN
+F 1 "5988140107F" V 10275 1775 60  0000 C CNN
+F 2 "OnHand-Components:LED0805Y" H 11375 3625 60  0001 C CNN
+F 3 "http://www.dialight.com/Assets/Brochures_And_Catalogs/Indication/SMT_selector_guide.pdf" H 11575 3750 60  0001 C CNN
+F 4 "0.06666 @ 4000" H 9800 1900 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 9900 2000 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 10000 2100 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 10100 2200 60  0001 C CNN "Designer"
+F 8 "0.7mm" H 10200 2300 60  0001 C CNN "Height"
+F 9 "Yes" H 10300 2400 60  0001 C CNN "RhoS?"
+F 10 "Dialight" H 10400 2500 60  0001 C CNN "MFR"
+F 11 "5988140107F" H 10500 2600 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 10600 2700 60  0001 C CNN "Mounting"
+F 13 "2" H 10700 2800 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 10800 2900 60  0001 C CNN "Status"
+F 15 "N/A" H 10900 3000 60  0001 C CNN "Tolerance"
+F 16 "0805 LED Yellow" H 11000 3100 60  0001 C CNN "Type"
+F 17 "N/A" H 11100 3200 60  0001 C CNN "Voltage"
+F 18 "N/A" H 11200 3300 60  0001 C CNN "Wattage"
+F 19 "N/A" H 11300 3400 60  0001 C CNN "Component-Value"
+F 20 "Yellow 593nm LED Indication - Discrete 2V 0805 (2012 Metric)" H 11400 3500 60  0001 C CNN "Description"
+	1    9950 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TL3301AF160QG SW1
+U 1 1 57E61E07
+P 3875 2075
+F 0 "SW1" H 3875 2206 60  0000 C CNN
+F 1 "TL3301AF160QG" H 3875 1975 60  0001 C CNN
+F 2 "OnHand-Components:TL3301AF160QG" H 3525 2075 60  0001 C CNN
+F 3 "http://www.e-switch.com/system/asset/product_line/data_sheet/185/TL3301.pdf" H 3625 2175 60  0001 C CNN
+F 4 "0.19380 @ 5000" H 3725 2275 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 3825 2375 60  0001 C CNN "Date Created "
+F 6 "13 Sept 2016" H 3925 2475 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 4025 2575 60  0001 C CNN "Designer"
+F 8 "5.05mm" H 4125 2675 60  0001 C CNN "Height"
+F 9 "Yes" H 4225 2775 60  0001 C CNN "RHoS?"
+F 10 "E-SWITCH" H 4325 2875 60  0001 C CNN "MFR"
+F 11 "TL3301AF160QG" H 4425 2975 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 4525 3075 60  0001 C CNN "Mounting"
+F 13 "4" H 4625 3175 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 4725 3275 60  0001 C CNN "Status"
+F 15 "N/A" H 4825 3375 60  0001 C CNN "Tolerance"
+F 16 "Switch Momentary" H 4925 3475 60  0001 C CNN "Type"
+F 17 "12V 0.5A" H 5025 3575 60  0001 C CNN "Voltage"
+F 18 "N/A" H 5125 3675 60  0001 C CNN "Wattage"
+F 19 "N/A" H 5225 3775 60  0001 C CNN "Component-Value"
+F 20 "Tactile Switch SPST-NO Top Actuated Surface Mount" H 5325 3875 60  0001 C CNN "Description"
+	1    3875 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR08
+U 1 1 57E6286E
+P 3725 2775
+F 0 "#PWR08" H 3725 2625 50  0001 C CNN
+F 1 "+3.3V" H 3725 2915 50  0000 C CNN
+F 2 "" H 3725 2775 50  0000 C CNN
+F 3 "" H 3725 2775 50  0000 C CNN
+	1    3725 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 57E62371
+P 2275 3175
+F 0 "#PWR09" H 2275 2925 50  0001 C CNN
+F 1 "GND" H 2275 3025 50  0000 C CNN
+F 2 "" H 2275 3175 50  0000 C CNN
+F 3 "" H 2275 3175 50  0000 C CNN
+	1    2275 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 57E6258E
+P 2800 4875
+F 0 "#PWR010" H 2800 4625 50  0001 C CNN
+F 1 "GND" H 2800 4725 50  0000 C CNN
+F 2 "" H 2800 4875 50  0000 C CNN
+F 3 "" H 2800 4875 50  0000 C CNN
+	1    2800 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR011
+U 1 1 57E626E3
+P 2150 4650
+F 0 "#PWR011" H 2150 4500 50  0001 C CNN
+F 1 "+5V" H 2150 4790 50  0000 C CNN
+F 2 "" H 2150 4650 50  0000 C CNN
+F 3 "" H 2150 4650 50  0000 C CNN
+	1    2150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR012
+U 1 1 57E6270C
+P 1925 4650
+F 0 "#PWR012" H 1925 4500 50  0001 C CNN
+F 1 "+3.3V" H 1925 4790 50  0000 C CNN
+F 2 "" H 1925 4650 50  0000 C CNN
+F 3 "" H 1925 4650 50  0000 C CNN
+	1    1925 4650
+	1    0    0    -1  
+$EndComp
+Text Label 2900 3575 0    60   ~ 0
+IO34
+Text Label 2900 3675 0    60   ~ 0
+IO35
+Text Label 2900 3775 0    60   ~ 0
+IO32
+Text Label 2900 3875 0    60   ~ 0
+IO33
+Text Label 2900 3975 0    60   ~ 0
+IO25
+Text Label 2900 4075 0    60   ~ 0
+IO26
+Text Label 2900 4175 0    60   ~ 0
+IO27
+Text Label 6750 3925 0    60   ~ 0
+IO34
+Text Label 6750 3825 0    60   ~ 0
+IO35
+Text Label 6750 3725 0    60   ~ 0
+IO32
+Text Label 6750 3625 0    60   ~ 0
+IO33
+Text Label 6750 3525 0    60   ~ 0
+IO25
+Text Label 6750 3425 0    60   ~ 0
+IO26
+Text Label 6750 3325 0    60   ~ 0
+IO27
+$Comp
+L CONN_01X18 P5
+U 1 1 57E656A2
+P 9450 3925
+F 0 "P5" H 9528 3966 50  0000 L CNN
+F 1 "CONN_01X18" H 9528 3875 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x18" H 9450 3925 50  0001 C CNN
+F 3 "" H 9450 3925 50  0000 C CNN
+	1    9450 3925
+	1    0    0    -1  
+$EndComp
+Text Label 4450 3425 0    60   ~ 0
+RXD
+Text Label 4450 3325 0    60   ~ 0
+TXD
+Text Label 9000 3475 0    60   ~ 0
+RXD
+Text Label 9000 3375 0    60   ~ 0
+TXD
+$Comp
+L CONN_01X02 P2
+U 1 1 57E66D4B
+P 6700 5600
+F 0 "P2" H 6778 5641 50  0000 L CNN
+F 1 "CONN_01X02" H 6778 5550 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6700 5600 50  0001 C CNN
+F 3 "" H 6700 5600 50  0000 C CNN
+	1    6700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 57E66EA7
+P 6500 5650
+F 0 "#PWR013" H 6500 5400 50  0001 C CNN
+F 1 "GND" H 6500 5500 50  0000 C CNN
+F 2 "" H 6500 5650 50  0000 C CNN
+F 3 "" H 6500 5650 50  0000 C CNN
+	1    6500 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 57E67049
+P 7575 5600
+F 0 "P3" H 7653 5641 50  0000 L CNN
+F 1 "CONN_01X02" H 7653 5550 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7575 5600 50  0001 C CNN
+F 3 "" H 7575 5600 50  0000 C CNN
+	1    7575 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 57E67143
+P 7375 5650
+F 0 "#PWR014" H 7375 5400 50  0001 C CNN
+F 1 "GND" H 7375 5500 50  0000 C CNN
+F 2 "" H 7375 5650 50  0000 C CNN
+F 3 "" H 7375 5650 50  0000 C CNN
+	1    7375 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X18 P1
+U 1 1 57E6752B
+P 2600 4025
+F 0 "P1" H 2678 4066 50  0000 L CNN
+F 1 "CONN_01X18" H 2678 3975 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x18" H 2600 4025 50  0001 C CNN
+F 3 "" H 2600 4025 50  0000 C CNN
+	1    2600 4025
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 57E692C1
+P 8550 1975
+F 0 "P4" H 8628 2016 50  0000 L CNN
+F 1 "CONN_01X02" H 8600 1875 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8550 1975 50  0001 C CNN
+F 3 "" H 8550 1975 50  0000 C CNN
+	1    8550 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2625 9875 2625
+Wire Wire Line
+	4875 5400 5525 5400
+Wire Wire Line
+	3725 5850 4875 5850
+Wire Wire Line
+	3475 5400 3875 5400
+Connection ~ 4375 5850
+Wire Wire Line
+	9650 4875 9650 5175
+Wire Wire Line
+	9650 5175 9100 5175
+Wire Wire Line
+	9100 5175 9100 4675
+Wire Wire Line
+	9100 4675 9250 4675
+Wire Wire Line
+	9250 4575 9000 4575
+Wire Wire Line
+	9000 4575 9000 5275
+Wire Wire Line
+	9000 5275 9850 5275
+Wire Wire Line
+	9850 5275 9850 4875
+Connection ~ 4875 5400
+Connection ~ 3725 5400
+Wire Wire Line
+	4700 2775 3725 2775
+Connection ~ 3725 2775
+Wire Wire Line
+	3725 3225 3725 4025
+Wire Wire Line
+	3725 4025 4700 4025
+Wire Wire Line
+	4700 4025 4700 3825
+Connection ~ 4700 3925
+Wire Wire Line
+	5400 4775 5400 4325
+Wire Wire Line
+	3725 4775 5400 4775
+Wire Wire Line
+	5500 4875 5500 4325
+Wire Wire Line
+	3625 4875 5500 4875
+Wire Wire Line
+	5600 4975 5600 4325
+Wire Wire Line
+	3500 4975 5600 4975
+Wire Wire Line
+	5700 5075 5700 4325
+Wire Wire Line
+	3400 5075 5700 5075
+Wire Wire Line
+	5800 4325 5800 5075
+Wire Wire Line
+	5800 5075 7825 5075
+Wire Wire Line
+	5900 4325 5900 4975
+Wire Wire Line
+	5900 4975 7700 4975
+Wire Wire Line
+	6000 4325 6000 4875
+Wire Wire Line
+	6000 4875 7575 4875
+Wire Wire Line
+	6100 4325 6100 4775
+Wire Wire Line
+	6100 4775 7450 4775
+Wire Wire Line
+	3925 2925 4700 2925
+Wire Wire Line
+	3925 2925 3925 3275
+Wire Wire Line
+	3925 3275 2800 3275
+Wire Wire Line
+	4700 3075 4025 3075
+Wire Wire Line
+	4025 3075 4025 3375
+Wire Wire Line
+	4025 3375 2800 3375
+Wire Wire Line
+	4700 3175 4125 3175
+Wire Wire Line
+	4125 3175 4125 3475
+Wire Wire Line
+	4125 3475 2800 3475
+Wire Wire Line
+	2800 3175 2800 2975
+Wire Wire Line
+	2800 2975 2275 2975
+Wire Wire Line
+	2275 2975 2275 3175
+Wire Wire Line
+	2800 4775 3000 4775
+Wire Wire Line
+	3000 4775 3000 5125
+Wire Wire Line
+	3000 5125 2150 5125
+Wire Wire Line
+	2150 5125 2150 4650
+Wire Wire Line
+	1925 4650 1925 5200
+Wire Wire Line
+	1925 5200 3075 5200
+Wire Wire Line
+	3075 5200 3075 4675
+Wire Wire Line
+	3075 4675 2800 4675
+Wire Wire Line
+	2800 3575 3575 3575
+Wire Wire Line
+	2800 3675 3575 3675
+Wire Wire Line
+	2800 3775 3575 3775
+Wire Wire Line
+	2800 3875 3575 3875
+Wire Wire Line
+	2800 3975 3575 3975
+Wire Wire Line
+	2800 4075 3575 4075
+Wire Wire Line
+	2800 4175 3575 4175
+Wire Wire Line
+	2800 4275 3725 4275
+Wire Wire Line
+	3725 4275 3725 4775
+Wire Wire Line
+	3625 4875 3625 4375
+Wire Wire Line
+	3625 4375 2800 4375
+Wire Wire Line
+	2800 4475 3500 4475
+Wire Wire Line
+	3500 4475 3500 4975
+Wire Wire Line
+	3400 5075 3400 4575
+Wire Wire Line
+	3400 4575 2800 4575
+Wire Wire Line
+	7450 4775 7450 4175
+Wire Wire Line
+	7450 4175 9250 4175
+Wire Wire Line
+	7575 4875 7575 4275
+Wire Wire Line
+	7575 4275 9250 4275
+Wire Wire Line
+	7700 4975 7700 4375
+Wire Wire Line
+	7700 4375 9250 4375
+Wire Wire Line
+	7825 5075 7825 4475
+Wire Wire Line
+	7825 4475 9250 4475
+Wire Wire Line
+	6650 3325 7025 3325
+Wire Wire Line
+	6650 3425 7025 3425
+Wire Wire Line
+	6650 3525 7025 3525
+Wire Wire Line
+	6650 3625 7025 3625
+Wire Wire Line
+	6650 3725 7025 3725
+Wire Wire Line
+	6650 3825 7025 3825
+Wire Wire Line
+	6650 3925 7025 3925
+Wire Wire Line
+	7500 4075 9250 4075
+Wire Wire Line
+	7500 4075 7500 3225
+Wire Wire Line
+	7500 3225 6650 3225
+Wire Wire Line
+	6650 3125 7600 3125
+Wire Wire Line
+	7600 3125 7600 3975
+Wire Wire Line
+	7600 3975 9250 3975
+Wire Wire Line
+	7725 3875 9250 3875
+Wire Wire Line
+	7725 3875 7725 3025
+Wire Wire Line
+	7725 3025 6650 3025
+Wire Wire Line
+	6650 2925 7825 2925
+Wire Wire Line
+	7825 2925 7825 3775
+Wire Wire Line
+	7825 3775 9250 3775
+Wire Wire Line
+	7900 3675 9250 3675
+Wire Wire Line
+	7900 3675 7900 2825
+Wire Wire Line
+	7900 2825 6650 2825
+Wire Wire Line
+	6650 2725 8000 2725
+Wire Wire Line
+	8000 2725 8000 3575
+Wire Wire Line
+	8000 3575 9250 3575
+Wire Wire Line
+	8100 3275 9250 3275
+Wire Wire Line
+	8100 3275 8100 2625
+Wire Wire Line
+	8100 2625 6650 2625
+Wire Wire Line
+	4700 3425 4400 3425
+Wire Wire Line
+	4700 3325 4400 3325
+Wire Wire Line
+	9250 3475 8950 3475
+Wire Wire Line
+	9250 3375 8950 3375
+Wire Wire Line
+	6500 4975 6500 5550
+Connection ~ 6500 4975
+Wire Wire Line
+	7375 5550 7375 5075
+Connection ~ 7375 5075
+Wire Wire Line
+	9950 1450 10075 1450
+Wire Wire Line
+	10075 1450 10075 2025
+Wire Wire Line
+	10075 2025 10225 2025
+Wire Wire Line
+	8950 1800 9075 1800
+Wire Wire Line
+	9950 2100 9950 1950
+Wire Wire Line
+	8350 2025 8350 2125
+Connection ~ 8350 2125
+Wire Wire Line
+	8350 1925 8350 1800
+$Comp
+L ERJ-3EKF1001V R1
+U 1 1 57E6A79E
+P 4175 1825
+F 0 "R1" H 4350 1500 60  0000 L CNN
+F 1 "ERJ-3EKF1001V" H 3800 1675 60  0000 L CNN
+F 2 "OnHand-Components:R0603" H 3775 2075 60  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ3EKF1001V+7+WW" H 3875 2275 60  0001 C CNN
+F 4 "0.00247 @ 5000" H 5725 3775 60  0001 C CNN "Cost"
+F 5 "13 Sept 2016" H 4075 2375 60  0001 C CNN "Date Created"
+F 6 "13 Sept 2016" H 4175 2475 60  0001 C CNN "Date Modified"
+F 7 "Adam Vadala-Roth" H 4275 2575 60  0001 C CNN "Designer"
+F 8 "0.4mm" H 4375 2675 60  0001 C CNN "Height"
+F 9 "Yes" H 4475 2775 60  0001 C CNN "RHoS?"
+F 10 "Panasonic Electronic Components" H 4575 2875 60  0001 C CNN "MFR"
+F 11 "ERJ-3EKF1001V" H 4675 2975 60  0001 C CNN "MFR#"
+F 12 "SMT/SMD" H 4775 3075 60  0001 C CNN "Mounting"
+F 13 "2" H 4875 3175 60  0001 C CNN "Pin Count#"
+F 14 "Active" H 4975 3275 60  0001 C CNN "Status"
+F 15 "1%" H 5075 3375 60  0001 C CNN "Tolerance"
+F 16 "0603 Resistor" H 5175 3475 60  0001 C CNN "Type"
+F 17 "N/A" H 5275 3575 60  0001 C CNN "Voltage"
+F 18 "1/10" H 5375 3675 60  0001 C CNN "Wattage"
+F 19 "1K" H 4350 1575 60  0000 L CNN "Component-Value"
+F 20 "RES SMD 1K OHM 1% 1/10W 0603" H 5575 3875 60  0001 C CNN "Description"
+	1    4175 1825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR015
+U 1 1 57E6ABDF
+P 4175 1525
+F 0 "#PWR015" H 4175 1375 50  0001 C CNN
+F 1 "+3.3V" H 4175 1665 50  0000 C CNN
+F 2 "" H 4175 1525 50  0000 C CNN
+F 3 "" H 4175 1525 50  0000 C CNN
+	1    4175 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 57E6AE8A
+P 3575 2125
+F 0 "#PWR016" H 3575 1875 50  0001 C CNN
+F 1 "GND" H 3575 1975 50  0000 C CNN
+F 2 "" H 3575 2125 50  0000 C CNN
+F 3 "" H 3575 2125 50  0000 C CNN
+	1    3575 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4175 2125 4175 2925
+Connection ~ 4175 2925
+$Comp
+L GND #PWR?
+U 1 1 57E72F4A
+P 3725 4025
+F 0 "#PWR?" H 3725 3775 50  0001 C CNN
+F 1 "GND" H 3725 3875 50  0000 C CNN
+F 2 "" H 3725 4025 50  0000 C CNN
+F 3 "" H 3725 4025 50  0000 C CNN
+	1    3725 4025
+	1    0    0    -1  
+$EndComp
+Connection ~ 3725 4025
+Wire Wire Line
+	9250 2625 9250 3175
+Connection ~ 9250 3075
+Wire Wire Line
+	9875 2625 9875 2775
+$EndSCHEMATC

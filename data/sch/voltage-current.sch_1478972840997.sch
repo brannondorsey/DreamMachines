@@ -1,0 +1,480 @@
+EESchema Schematic File Version 2  date Do 11 Okt 2012 22:01:48 CEST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tinkerforge
+LIBS:current-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title "Current12 Bricklet"
+Date "11 oct 2012"
+Rev "1.0"
+Comp "Tinkerforge GmbH"
+Comment1 "Licensed under CERN OHL v.1.1"
+Comment2 "Copyright (©) 2012, B.Nordmeyer <bastian@tinkerforge.com>"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7450 3550 6200 3550
+Connection ~ 5450 3900
+Wire Wire Line
+	6600 3900 5450 3900
+Connection ~ 7450 3600
+Wire Wire Line
+	8050 3600 7450 3600
+Connection ~ 7450 2550
+Wire Wire Line
+	7450 2550 8050 2550
+Connection ~ 6750 3050
+Wire Wire Line
+	6750 3050 6750 3700
+Wire Wire Line
+	7450 3950 7450 3550
+Connection ~ 6250 3050
+Connection ~ 5550 3500
+Wire Wire Line
+	5600 3500 5450 3500
+Connection ~ 5550 3100
+Wire Wire Line
+	5450 3100 5600 3100
+Wire Wire Line
+	6200 3100 6200 3050
+Wire Wire Line
+	6200 3100 6100 3100
+Wire Wire Line
+	6750 3700 5450 3700
+Wire Wire Line
+	5450 3900 5450 4050
+Wire Wire Line
+	4550 3500 4200 3500
+Wire Wire Line
+	4550 3900 4200 3900
+Wire Wire Line
+	2150 3350 2150 4600
+Connection ~ 2150 4600
+Wire Wire Line
+	2000 3550 2350 3550
+Wire Wire Line
+	2250 3100 2250 2950
+Wire Wire Line
+	2250 2950 2000 2950
+Connection ~ 3150 4300
+Wire Wire Line
+	3200 4300 3150 4300
+Wire Wire Line
+	3600 4450 3600 4300
+Wire Wire Line
+	3150 4700 3600 4700
+Wire Wire Line
+	2000 3150 2350 3150
+Connection ~ 2250 4500
+Wire Wire Line
+	2350 4400 2250 4400
+Wire Wire Line
+	2250 4400 2250 4800
+Wire Wire Line
+	2250 4700 2350 4700
+Wire Wire Line
+	1550 4000 1550 3900
+Wire Wire Line
+	2150 3350 2000 3350
+Wire Wire Line
+	2150 4600 2350 4600
+Wire Wire Line
+	2250 4500 2350 4500
+Connection ~ 2250 4700
+Wire Wire Line
+	2000 3250 2350 3250
+Wire Wire Line
+	3150 4600 3600 4600
+Wire Wire Line
+	3150 4300 3150 4400
+Wire Wire Line
+	2000 3050 2150 3050
+Wire Wire Line
+	2150 3050 2150 2750
+Wire Wire Line
+	4550 3800 2150 3800
+Connection ~ 2150 3800
+Wire Wire Line
+	4550 3700 4450 3700
+Wire Wire Line
+	4450 3700 4450 4050
+Wire Wire Line
+	4200 3600 4550 3600
+Wire Wire Line
+	4350 3350 4350 3300
+Wire Wire Line
+	4350 2900 4550 2900
+Wire Wire Line
+	4550 2900 4550 3100
+Connection ~ 4500 2900
+Wire Wire Line
+	6100 3500 6200 3500
+Wire Wire Line
+	6200 3500 6200 3550
+Connection ~ 6250 3550
+Wire Wire Line
+	7450 2400 7450 3050
+Wire Wire Line
+	7450 3050 6200 3050
+Wire Wire Line
+	7650 3950 7650 2400
+Wire Wire Line
+	7100 3900 7100 3700
+Wire Wire Line
+	7100 3700 7650 3700
+Connection ~ 7650 3700
+Wire Wire Line
+	8050 2750 7650 2750
+Connection ~ 7650 2750
+Wire Wire Line
+	8050 3800 7650 3800
+Connection ~ 7650 3800
+$Comp
+L R R4
+U 1 1 50771405
+P 6850 3900
+F 0 "R4" V 6930 3900 50  0000 C CNN
+F 1 "0" V 6850 3900 50  0000 C CNN
+F 2 "0805" H 6850 3900 60  0001 C CNN
+	1    6850 3900
+	0    1    1    0   
+$EndComp
+Text Notes 7350 2500 0    60   ~ 0
++
+$Comp
+L TST P6
+U 1 1 507713CC
+P 8050 3600
+F 0 "P6" H 8050 3900 40  0000 C CNN
+F 1 "TST" H 8050 3850 30  0000 C CNN
+F 2 "SOLDER_PAD" H 8050 3600 60  0001 C CNN
+	1    8050 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L TST P7
+U 1 1 507713C0
+P 8050 3800
+F 0 "P7" H 8050 4100 40  0000 C CNN
+F 1 "TST" H 8050 4050 30  0000 C CNN
+F 2 "SOLDER_PAD" H 8050 3800 60  0001 C CNN
+	1    8050 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L TST P4
+U 1 1 5059D499
+P 8050 2550
+F 0 "P4" H 8050 2850 40  0000 C CNN
+F 1 "TST" H 8050 2800 30  0000 C CNN
+F 2 "SOLDER_PAD" H 8050 2550 60  0001 C CNN
+	1    8050 2550
+	0    1    1    0   
+$EndComp
+NoConn ~ 2000 3450
+$Comp
+L TST P5
+U 1 1 5059D488
+P 8050 2750
+F 0 "P5" H 8050 3050 40  0000 C CNN
+F 1 "TST" H 8050 3000 30  0000 C CNN
+F 2 "SOLDER_PAD" H 8050 2750 60  0001 C CNN
+	1    8050 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5059C91C
+P 6250 3300
+F 0 "R3" V 6330 3300 50  0000 C CNN
+F 1 "4m" V 6250 3300 50  0000 C CNN
+F 2 "2512" H 6250 3300 60  0001 C CNN
+	1    6250 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5059C915
+P 5850 3500
+F 0 "R2" V 5930 3500 50  0000 C CNN
+F 1 "10" V 5850 3500 50  0000 C CNN
+F 2 "0603" H 5850 3500 60  0001 C CNN
+	1    5850 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 5059C90D
+P 5550 3300
+F 0 "C3" V 5700 3250 50  0000 L CNN
+F 1 "100nF" V 5400 3200 50  0000 L CNN
+F 2 "0603" H 5550 3300 60  0001 C CNN
+	1    5550 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5059C902
+P 5850 3100
+F 0 "R1" V 5930 3100 50  0000 C CNN
+F 1 "10" V 5850 3100 50  0000 C CNN
+F 2 "0603" H 5850 3100 60  0001 C CNN
+	1    5850 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_2 P3
+U 1 1 5059C0FA
+P 7550 4300
+F 0 "P3" V 7500 4300 40  0000 C CNN
+F 1 "Output" V 7600 4300 40  0000 C CNN
+F 2 "AKL_5_2" H 7550 4300 60  0001 C CNN
+	1    7550 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 5059C0E6
+P 5450 4050
+F 0 "#PWR10" H 5450 4050 30  0001 C CNN
+F 1 "GND" H 5450 3980 30  0001 C CNN
+	1    5450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 5059C0D5
+P 4350 3350
+F 0 "#PWR7" H 4350 3350 30  0001 C CNN
+F 1 "GND" H 4350 3280 30  0001 C CNN
+	1    4350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5059C0CE
+P 4350 3100
+F 0 "C2" H 4400 3200 50  0000 L CNN
+F 1 "100nF" H 4400 3000 50  0000 L CNN
+F 2 "0603" H 4350 3100 60  0001 C CNN
+	1    4350 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR9
+U 1 1 5059C0CB
+P 4500 2900
+F 0 "#PWR9" H 4500 3000 30  0001 C CNN
+F 1 "VCC" H 4500 3000 30  0000 C CNN
+	1    4500 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2350 3550 2    60   Input ~ 0
+Alert
+Text GLabel 4200 3900 0    60   Output ~ 0
+Alert
+$Comp
+L GND #PWR8
+U 1 1 5059C080
+P 4450 4050
+F 0 "#PWR8" H 4450 4050 30  0001 C CNN
+F 1 "GND" H 4450 3980 30  0001 C CNN
+	1    4450 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 3500 0    60   Input ~ 0
+SDA
+Text GLabel 4200 3600 0    60   Input ~ 0
+SCL
+$Comp
+L INA226 U2
+U 1 1 5059BF48
+P 5000 3500
+F 0 "U2" H 4800 4050 60  0000 C CNN
+F 1 "INA226" H 5000 2950 60  0000 C CNN
+F 2 "MSOP10-0.5" H 5000 3250 60  0001 C CNN
+	1    5000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5059BDF2
+P 3400 4300
+F 0 "C1" H 3450 4400 50  0000 L CNN
+F 1 "100nF" H 3450 4200 50  0000 L CNN
+F 2 "0603" H 3400 4300 60  0001 C CNN
+	1    3400 4300
+	0    -1   -1   0   
+$EndComp
+Text Notes 550  7200 0    40   ~ 0
+Copyright Tinkerforge GmbH 2012.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.1.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.1. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.1 for applicable\nconditions\n
+NoConn ~ 2000 2850
+$Comp
+L GND #PWR6
+U 1 1 4CE29748
+P 3600 4450
+F 0 "#PWR6" H 3600 4450 30  0001 C CNN
+F 1 "GND" H 3600 4380 30  0001 C CNN
+	1    3600 4450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3150 4500
+$Comp
+L DRILL U3
+U 1 1 4C6050A5
+P 10700 6500
+F 0 "U3" H 10750 6550 60  0001 C CNN
+F 1 "DRILL" H 10700 6500 60  0000 C CNN
+F 2 "DRILL_NP" H 10700 6500 60  0001 C CNN
+	1    10700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRILL U4
+U 1 1 4C6050A2
+P 10700 6700
+F 0 "U4" H 10750 6750 60  0001 C CNN
+F 1 "DRILL" H 10700 6700 60  0000 C CNN
+F 2 "DRILL_NP" H 10700 6700 60  0001 C CNN
+	1    10700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRILL U6
+U 1 1 4C60509F
+P 11050 6700
+F 0 "U6" H 11100 6750 60  0001 C CNN
+F 1 "DRILL" H 11050 6700 60  0000 C CNN
+F 2 "DRILL_NP" H 11050 6700 60  0001 C CNN
+	1    11050 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRILL U5
+U 1 1 4C605099
+P 11050 6500
+F 0 "U5" H 11100 6550 60  0001 C CNN
+F 1 "DRILL" H 11050 6500 60  0000 C CNN
+F 2 "DRILL_NP" H 11050 6500 60  0001 C CNN
+	1    11050 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P2
+U 1 1 4C604EF8
+P 7550 2050
+F 0 "P2" V 7500 2050 40  0000 C CNN
+F 1 "Input" V 7600 2050 40  0000 C CNN
+F 2 "AKL_5_2" H 7550 2050 60  0001 C CNN
+	1    7550 2050
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2000 3650
+NoConn ~ 2000 3750
+Text GLabel 3600 4700 2    60   Input ~ 0
+SDA
+Text GLabel 3600 4600 2    60   Input ~ 0
+SCL
+Text GLabel 2350 3250 2    60   Output ~ 0
+SDA
+Text GLabel 2350 3150 2    60   Output ~ 0
+SCL
+$Comp
+L VCC #PWR5
+U 1 1 4C5FD35E
+P 3150 4300
+F 0 "#PWR5" H 3150 4400 30  0001 C CNN
+F 1 "VCC" H 3150 4400 30  0000 C CNN
+	1    3150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 4C5FD34E
+P 2250 4800
+F 0 "#PWR4" H 2250 4800 30  0001 C CNN
+F 1 "GND" H 2250 4730 30  0001 C CNN
+	1    2250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAT24C U1
+U 1 1 4C5FD337
+P 2750 4800
+F 0 "U1" H 2600 5300 60  0000 C CNN
+F 1 "M24C64" H 2750 4800 60  0000 C CNN
+F 2 "SOIC8" H 2750 4800 60  0001 C CNN
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR2
+U 1 1 4C5FCFB4
+P 2150 2750
+F 0 "#PWR2" H 2150 2850 30  0001 C CNN
+F 1 "VCC" H 2150 2850 30  0000 C CNN
+	1    2150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 4C5FCF5E
+P 2250 3100
+F 0 "#PWR3" H 2250 3100 30  0001 C CNN
+F 1 "GND" H 2250 3030 30  0001 C CNN
+	1    2250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 4C5FCF4F
+P 1550 4000
+F 0 "#PWR1" H 1550 4000 30  0001 C CNN
+F 1 "GND" H 1550 3930 30  0001 C CNN
+	1    1550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CON-SENSOR P1
+U 1 1 4C5FCF27
+P 1550 3300
+F 0 "P1" H 1300 3850 60  0000 C CNN
+F 1 "CON-SENSOR" V 1700 3300 60  0000 C CNN
+F 2 "CON-SENSOR" H 1550 3300 60  0001 C CNN
+	1    1550 3300
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

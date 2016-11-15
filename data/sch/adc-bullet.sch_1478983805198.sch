@@ -1,0 +1,268 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F103RE U1
+U 1 1 58087ED2
+P 5550 3050
+F 0 "U1" H 4200 5000 50  0000 C CNN
+F 1 "STM32F103RE" H 6700 1100 50  0000 C CNN
+F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 5550 3050 50  0000 C CNN
+F 3 "" H 5550 3350 60  0000 C CNN
+	1    5550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR01
+U 1 1 58087F54
+P 5300 5350
+F 0 "#PWR01" H 5300 5100 50  0001 C CNN
+F 1 "GNDD" H 5300 5200 50  0000 C CNN
+F 2 "" H 5300 5350 50  0000 C CNN
+F 3 "" H 5300 5350 50  0000 C CNN
+	1    5300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5100 5550 5250
+Wire Wire Line
+	5550 5250 5100 5250
+Wire Wire Line
+	5100 5250 5100 5100
+Wire Wire Line
+	5250 5100 5250 5250
+Connection ~ 5250 5250
+Wire Wire Line
+	5400 5100 5400 5250
+Connection ~ 5400 5250
+Wire Wire Line
+	5300 5250 5300 5350
+Connection ~ 5300 5250
+$Comp
+L GNDA #PWR02
+U 1 1 58087FC2
+P 5850 5350
+F 0 "#PWR02" H 5850 5100 50  0001 C CNN
+F 1 "GNDA" H 5850 5200 50  0000 C CNN
+F 2 "" H 5850 5350 50  0000 C CNN
+F 3 "" H 5850 5350 50  0000 C CNN
+	1    5850 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5100 5850 5350
+Wire Wire Line
+	5100 1000 5100 900 
+Wire Wire Line
+	5100 900  5550 900 
+Wire Wire Line
+	5550 900  5550 1000
+Wire Wire Line
+	5250 1000 5250 900 
+Connection ~ 5250 900 
+Wire Wire Line
+	5400 1000 5400 900 
+Connection ~ 5400 900 
+$Comp
+L +3.3V #PWR?
+U 1 1 5808818C
+P 5300 750
+F 0 "#PWR?" H 5300 600 50  0001 C CNN
+F 1 "+3.3V" H 5300 890 50  0000 C CNN
+F 2 "" H 5300 750 50  0000 C CNN
+F 3 "" H 5300 750 50  0000 C CNN
+	1    5300 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VADC #PWR?
+U 1 1 580881A2
+P 5850 900
+F 0 "#PWR?" H 6000 850 50  0001 C CNN
+F 1 "+3.3VADC" H 5850 1000 50  0000 C CNN
+F 2 "" H 5850 900 50  0000 C CNN
+F 3 "" H 5850 900 50  0000 C CNN
+	1    5850 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 750  5300 900 
+Connection ~ 5300 900 
+Wire Wire Line
+	5850 900  5850 1000
+$Comp
+L C C?
+U 1 1 580881EC
+P 6550 7150
+F 0 "C?" H 6575 7250 50  0000 L CNN
+F 1 "0.1" H 6575 7050 50  0000 L CNN
+F 2 "" H 6588 7000 50  0000 C CNN
+F 3 "" H 6550 7150 50  0000 C CNN
+	1    6550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 580884B9
+P 6350 7150
+F 0 "C?" H 6375 7250 50  0000 L CNN
+F 1 "0.1" H 6375 7050 50  0000 L CNN
+F 2 "" H 6388 7000 50  0000 C CNN
+F 3 "" H 6350 7150 50  0000 C CNN
+	1    6350 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 580884D4
+P 6150 7150
+F 0 "C?" H 6175 7250 50  0000 L CNN
+F 1 "0.1" H 6175 7050 50  0000 L CNN
+F 2 "" H 6188 7000 50  0000 C CNN
+F 3 "" H 6150 7150 50  0000 C CNN
+	1    6150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 580884EF
+P 5950 7150
+F 0 "C?" H 5975 7250 50  0000 L CNN
+F 1 "0.1" H 5975 7050 50  0000 L CNN
+F 2 "" H 5988 7000 50  0000 C CNN
+F 3 "" H 5950 7150 50  0000 C CNN
+	1    5950 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5808850C
+P 5650 7150
+F 0 "C?" H 5675 7250 50  0000 L CNN
+F 1 "0.1" H 5675 7050 50  0000 L CNN
+F 2 "" H 5688 7000 50  0000 C CNN
+F 3 "" H 5650 7150 50  0000 C CNN
+	1    5650 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 7000 5950 6900
+Wire Wire Line
+	5950 6900 6550 6900
+Wire Wire Line
+	6550 6900 6550 7000
+Wire Wire Line
+	6350 7000 6350 6900
+Connection ~ 6350 6900
+Wire Wire Line
+	6150 7000 6150 6900
+Connection ~ 6150 6900
+Wire Wire Line
+	5950 7300 5950 7400
+Wire Wire Line
+	5950 7400 6550 7400
+Wire Wire Line
+	6550 7400 6550 7300
+Wire Wire Line
+	6350 7300 6350 7400
+Connection ~ 6350 7400
+Wire Wire Line
+	6150 7300 6150 7400
+Connection ~ 6150 7400
+$Comp
+L GNDD #PWR?
+U 1 1 5808860A
+P 6250 7500
+F 0 "#PWR?" H 6250 7250 50  0001 C CNN
+F 1 "GNDD" H 6250 7350 50  0000 C CNN
+F 2 "" H 6250 7500 50  0000 C CNN
+F 3 "" H 6250 7500 50  0000 C CNN
+	1    6250 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 7500 6250 7400
+Connection ~ 6250 7400
+$Comp
+L GNDA #PWR?
+U 1 1 58088655
+P 5650 7450
+F 0 "#PWR?" H 5650 7200 50  0001 C CNN
+F 1 "GNDA" H 5650 7300 50  0000 C CNN
+F 2 "" H 5650 7450 50  0000 C CNN
+F 3 "" H 5650 7450 50  0000 C CNN
+	1    5650 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 7450 5650 7300
+$Comp
+L +3.3V #PWR?
+U 1 1 580886A1
+P 6250 6800
+F 0 "#PWR?" H 6250 6650 50  0001 C CNN
+F 1 "+3.3V" H 6250 6940 50  0000 C CNN
+F 2 "" H 6250 6800 50  0000 C CNN
+F 3 "" H 6250 6800 50  0000 C CNN
+	1    6250 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VADC #PWR?
+U 1 1 580886C1
+P 5650 6900
+F 0 "#PWR?" H 5800 6850 50  0001 C CNN
+F 1 "+3.3VADC" H 5650 7000 50  0000 C CNN
+F 2 "" H 5650 6900 50  0000 C CNN
+F 3 "" H 5650 6900 50  0000 C CNN
+	1    5650 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 6900 5650 7000
+Wire Wire Line
+	6250 6800 6250 6900
+Connection ~ 6250 6900
+$EndSCHEMATC

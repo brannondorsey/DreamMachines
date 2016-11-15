@@ -1,0 +1,188 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NCP1117ST33T3G U1
+U 1 1 5583E5FC
+P 5650 3300
+F 0 "U1" H 5650 3575 40  0000 C CNN
+F 1 "LD1117AV33" H 5650 3500 40  0000 C CNN
+F 2 "esp8266:TO-220_Neutral123_Horizontal_LS" H 5650 3300 60  0001 C CNN
+F 3 "" H 5650 3300 60  0000 C CNN
+	1    5650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5583E64C
+P 4650 3900
+F 0 "C1" H 4675 4000 50  0000 L CNN
+F 1 "10u" H 4675 3800 50  0000 L CNN
+F 2 "esp8266:Capacitor5x6RM2.5" H 4688 3750 30  0001 C CNN
+F 3 "" H 4650 3900 60  0000 C CNN
+	1    4650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 5583E70D
+P 6650 3900
+F 0 "C2" H 6675 4000 50  0000 L CNN
+F 1 "10u" H 6675 3800 50  0000 L CNN
+F 2 "esp8266:Capacitor5x6RM2.5" H 6688 3750 30  0001 C CNN
+F 3 "" H 6650 3900 60  0000 C CNN
+	1    6650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2850 4650 3750
+Wire Wire Line
+	3450 3250 5250 3250
+Wire Wire Line
+	6050 3250 7700 3250
+Wire Wire Line
+	6650 2850 6650 3750
+Wire Wire Line
+	6650 4325 6650 4050
+Wire Wire Line
+	3450 4325 7250 4325
+Wire Wire Line
+	4650 4050 4650 4625
+Wire Wire Line
+	5650 3550 5650 4325
+Connection ~ 5650 4325
+Connection ~ 4650 3250
+Connection ~ 4650 4325
+Connection ~ 6650 3250
+Connection ~ 6650 4325
+Text Label 7250 4325 2    50   ~ 0
+GND
+Text Label 7250 3250 2    50   ~ 0
+3V3
+Text Label 4050 3250 0    50   ~ 0
+5V0
+Text Label 4050 4325 0    50   ~ 0
+GND
+$Comp
+L +5V #PWR01
+U 1 1 5583EAD8
+P 4650 2850
+F 0 "#PWR01" H 4650 2700 50  0001 C CNN
+F 1 "+5V" H 4650 2990 50  0000 C CNN
+F 2 "" H 4650 2850 60  0000 C CNN
+F 3 "" H 4650 2850 60  0000 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 5583EB05
+P 6650 2850
+F 0 "#PWR02" H 6650 2700 50  0001 C CNN
+F 1 "+3.3V" H 6650 2990 50  0000 C CNN
+F 2 "" H 6650 2850 60  0000 C CNN
+F 3 "" H 6650 2850 60  0000 C CNN
+	1    6650 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 6300 2250 2    50   ~ 0
+5V0 to 3V3 LDO Voltage Regulator
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 558424C3
+P 4325 2850
+F 0 "#FLG03" H 4325 2945 50  0001 C CNN
+F 1 "PWR_FLAG" H 4325 3030 50  0000 C CNN
+F 2 "" H 4325 2850 60  0000 C CNN
+F 3 "" H 4325 2850 60  0000 C CNN
+	1    4325 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 2850 4325 3025
+Wire Wire Line
+	4325 3025 4650 3025
+Connection ~ 4650 3025
+$Comp
+L GND #PWR04
+U 1 1 55842514
+P 4650 4625
+F 0 "#PWR04" H 4650 4375 50  0001 C CNN
+F 1 "GND" H 4650 4475 50  0000 C CNN
+F 2 "" H 4650 4625 60  0000 C CNN
+F 3 "" H 4650 4625 60  0000 C CNN
+	1    4650 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 55842574
+P 4325 4625
+F 0 "#FLG05" H 4325 4720 50  0001 C CNN
+F 1 "PWR_FLAG" H 4325 4805 50  0000 C CNN
+F 2 "" H 4325 4625 60  0000 C CNN
+F 3 "" H 4325 4625 60  0000 C CNN
+	1    4325 4625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4325 4625 4325 4475
+Wire Wire Line
+	4325 4475 4650 4475
+Connection ~ 4650 4475
+Wire Notes Line
+	4950 2150 4950 2300
+Wire Notes Line
+	4950 2300 6350 2300
+Wire Notes Line
+	6350 2300 6350 2150
+Wire Notes Line
+	6350 2150 4950 2150
+Text HLabel 3450 3250 0    50   Input ~ 0
+5V0
+Text HLabel 3450 4325 0    50   Input ~ 0
+GND
+Text HLabel 7700 3250 2    50   Input ~ 0
+3V3
+$EndSCHEMATC

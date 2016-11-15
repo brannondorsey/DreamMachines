@@ -1,0 +1,277 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "RF-SchDoc"
+Date "18 10 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 4620 3990 0 70 ~
+1479-1002-1-ND
+Text Label 1650 2340 0 70 ~
+DW_CS
+Text Label 1650 3550 0 70 ~
+NRF_CS
+Text Label 1650 3000 0 70 ~
+NRF_SCK
+Text Label 1650 3110 0 70 ~
+NRF_MISO
+Text Label 1650 3220 0 70 ~
+NRF_MOSI
+Text Label 1650 1790 0 70 ~
+DW_SCK
+Text Label 1650 1900 0 70 ~
+DW_MOSI
+Text Label 1650 2010 0 70 ~
+DW_MISO
+Text Label 3850 3770 0 70 ~
+DW_SCK
+Text Label 3850 3550 0 70 ~
+DW_MOSI
+Text Label 3850 3660 0 70 ~
+DW_MISO
+Text Label 3850 3440 0 70 ~
+DW_CS
+Text Label 1430 3880 0 70 ~
+NRF_GND_EN
+$Comp
+L GND #PWR?58069675
+U 1 1 58069675
+P 1540 1130
+F 0 "GDNSIG_20" H 1540 1270 20  0000 C CNN
+F 1 "+GDNSIG" H 1540 1240 30  0000 C CNN
+F 2 "" H 1540 1130 70  0000 C CNN
+F 3 "" H 1540 1130 70  0000 C CNN
+	1    1540 1130
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?58069674
+U 1 1 58069674
+P 1540 800
+F 0 "3V3_13" H 1540 940 20  0000 C CNN
+F 1 "+3V3" H 1540 910 30  0000 C CNN
+F 2 "" H 1540 800 70  0000 C CNN
+F 3 "" H 1540 800 70  0000 C CNN
+	1    1540 800
+	1    0    0    -1  
+$EndComp
+Text Label 9020 1790 0 70 ~
+NRF_SCK
+Text Label 9020 2010 0 70 ~
+NRF_MISO
+Text Label 9020 1900 0 70 ~
+NRF_MOSI
+Text Label 7370 2120 0 70 ~
+NRF_CS
+$Comp
+L GND #PWR?58069673
+U 1 1 58069673
+P 7370 1570
+F 0 "3V3_14" H 7370 1710 20  0000 C CNN
+F 1 "+3V3" H 7370 1680 30  0000 C CNN
+F 2 "" H 7370 1570 70  0000 C CNN
+F 3 "" H 7370 1570 70  0000 C CNN
+	1    7370 1570
+	1    0    0    -1  
+$EndComp
+Text Label 8547 3561 0 70 ~
+60V
+Text Label 8547 3671 0 70 ~
+1.7A
+$Comp
+L GND #PWR?58069672
+U 1 1 58069672
+P 8470 3770
+F 0 "GDNSIG_21" H 8470 3910 20  0000 C CNN
+F 1 "+GDNSIG" H 8470 3880 30  0000 C CNN
+F 2 "" H 8470 3770 70  0000 C CNN
+F 3 "" H 8470 3770 70  0000 C CNN
+	1    8470 3770
+	1    0    0    -1  
+$EndComp
+Text Label 7480 1790 0 70 ~
+NRF_GND
+Text Label 8580 3110 0 70 ~
+NRF_GND
+Text Label 7590 3440 0 70 ~
+NRF_GND_EN
+Text Label 7370 2010 0 70 ~
+NRF_CE
+Text Label 9020 2120 0 70 ~
+NRF_IRQ
+Text Label 7777 2626 0 70 ~
+16.0
+Text Label 7777 2736 0 70 ~
+100n
+$Comp
+L GND #PWR?58069671
+U 1 1 58069671
+P 8140 2450
+F 0 "3V3_15" H 8140 2590 20  0000 C CNN
+F 1 "+3V3" H 8140 2560 30  0000 C CNN
+F 2 "" H 8140 2450 70  0000 C CNN
+F 3 "" H 8140 2450 70  0000 C CNN
+	1    8140 2450
+	1    0    0    -1  
+$EndComp
+Text Label 7260 2450 0 70 ~
+NRF_GND
+Wire Wire Line
+	2090 1790 1540 1790
+Wire Wire Line
+	2090 1900 1540 1900
+Wire Wire Line
+	2090 2010 1540 2010
+Wire Wire Line
+	2090 3220 1540 3220
+Wire Wire Line
+	2090 3110 1540 3110
+Wire Wire Line
+	2090 3000 1540 3000
+Wire Wire Line
+	2090 2340 880 2340
+Wire Wire Line
+	2090 3550 880 3550
+Wire Wire Line
+	9570 1790 9020 1790
+Wire Wire Line
+	9570 1900 9020 1900
+Wire Wire Line
+	9570 2010 9020 2010
+Wire Wire Line
+	9570 2120 9020 2120
+Wire Wire Line
+	7370 2010 7920 2010
+Wire Wire Line
+	7370 2120 7920 2120
+Wire Wire Line
+	3850 3550 4400 3550
+Wire Wire Line
+	3850 3660 4400 3660
+Wire Wire Line
+	3850 3770 4400 3770
+Wire Wire Line
+	3850 3440 4400 3440
+Wire Wire Line
+	1540 800 880 800
+Wire Wire Line
+	1540 1130 880 1130
+Wire Wire Line
+	2090 3880 1100 3880
+Wire Wire Line
+	7370 1900 7920 1900
+Wire Wire Line
+	7370 1570 7370 1900
+Wire Wire Line
+	7480 1790 7920 1790
+Wire Wire Line
+	8470 3550 8470 3770
+Wire Wire Line
+	8470 3110 8470 3330
+Wire Wire Line
+	9020 3110 8470 3110
+Wire Wire Line
+	7590 3440 8360 3440
+Wire Wire Line
+	7920 2450 8140 2450
+Wire Wire Line
+	7260 2450 7700 2450
+Wire Wire Line
+	880 4210 1650 4210
+Wire Wire Line
+	880 4540 1650 4540
+Text Label 1210 4210 0 70 ~
+NRF_IRQ
+Text Label 1210 4540 0 70 ~
+NRF_CE
+$Comp
+L GND #PWR?58069670
+U 1 1 58069670
+P 6380 3770
+F 0 "GDNSIG_22" H 6380 3910 20  0000 C CNN
+F 1 "+GDNSIG" H 6380 3880 30  0000 C CNN
+F 2 "" H 6380 3770 70  0000 C CNN
+F 3 "" H 6380 3770 70  0000 C CNN
+	1    6380 3770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6380 3220 6380 3110
+Wire Wire Line
+	6380 3330 6380 3220
+Wire Wire Line
+	6380 3440 6380 3330
+Wire Wire Line
+	6380 3550 6380 3440
+Wire Wire Line
+	6380 3770 6380 3550
+Connection ~ 6380 3550
+Connection ~ 6380 3440
+Connection ~ 6380 3330
+Connection ~ 6380 3220
+$Comp
+L DECAWAVE_DWM1000 U9
+U 1 1 5806966F
+F 0 "U9" H 4620 1570 60  0000 L BNN
+	1    5390 1570
+	1    0    0    -1
+$EndComp
+$Comp
+L SEEEDSTUDIO_nRF24L01+ U10
+U 1 1 5806966E
+F 0 "U10" H 8140 1680 60  0000 L BNN
+	1    8470 2010
+	1    0    0    -1
+$EndComp
+$Comp
+L NFET_FDN5630 Q?
+U 1 1 5806966D
+F 0 "Q?" H 8547 3209 60  0000 L BNN
+	1    8360 3330
+	1    0    0    -1
+$EndComp
+$Comp
+L __template_cap C?_31
+U 1 1 5806966C
+F 0 "C?_31" V 7854 2307 60  0000 L BNN
+	1    7920 2450
+	0    1    1    0
+$EndComp
+$EndSCHEMATC

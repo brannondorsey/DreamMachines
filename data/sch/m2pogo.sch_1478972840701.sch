@@ -1,0 +1,170 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:part
+LIBS:m2pogo-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Martlet 2 Pogo Board"
+Date "13 Aug 2014"
+Rev "1"
+Comp "Cambridge University Spaceflight"
+Comment1 "Drawn By: Adam Greig"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_1 P3
+U 1 1 53EB8289
+P 5900 3800
+F 0 "P3" H 5980 3800 40  0000 L CNN
+F 1 "CONN_1" H 5900 3855 30  0001 C CNN
+F 2 "m2pogo:POGO" H 5900 3800 60  0001 C CNN
+F 3 "" H 5900 3800 60  0000 C CNN
+	1    5900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P4
+U 1 1 53EB82D8
+P 5900 4000
+F 0 "P4" H 5980 4000 40  0000 L CNN
+F 1 "CONN_1" H 5900 4055 30  0001 C CNN
+F 2 "m2pogo:POGO" H 5900 4000 60  0001 C CNN
+F 3 "" H 5900 4000 60  0000 C CNN
+	1    5900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P5
+U 1 1 53EB82F4
+P 5900 4150
+F 0 "P5" H 5980 4150 40  0000 L CNN
+F 1 "CONN_1" H 5900 4205 30  0001 C CNN
+F 2 "m2pogo:POGO" H 5900 4150 60  0001 C CNN
+F 3 "" H 5900 4150 60  0000 C CNN
+	1    5900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P6
+U 1 1 53EB8311
+P 5900 4350
+F 0 "P6" H 5980 4350 40  0000 L CNN
+F 1 "CONN_1" H 5900 4405 30  0001 C CNN
+F 2 "m2pogo:POGO" H 5900 4350 60  0001 C CNN
+F 3 "" H 5900 4350 60  0000 C CNN
+	1    5900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PART X3
+U 1 1 53EB83E7
+P 5300 4650
+F 0 "X3" H 5350 4650 60  0000 C CNN
+F 1 "MOUNT" H 5450 4750 60  0000 C CNN
+F 2 "m2pogo:M3_MOUNT" H 5300 4650 60  0001 C CNN
+F 3 "" H 5300 4650 60  0000 C CNN
+	1    5300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PART X4
+U 1 1 53EBB6E5
+P 5300 4900
+F 0 "X4" H 5350 4900 60  0000 C CNN
+F 1 "MOUNT" H 5450 5000 60  0000 C CNN
+F 2 "m2pogo:M3_MOUNT" H 5300 4900 60  0001 C CNN
+F 3 "" H 5300 4900 60  0000 C CNN
+	1    5300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PART X2
+U 1 1 53EBB7C1
+P 5300 3600
+F 0 "X2" H 5350 3600 60  0000 C CNN
+F 1 "HOUSING" H 5450 3700 60  0000 C CNN
+F 2 "" H 5300 3600 60  0001 C CNN
+F 3 "" H 5300 3600 60  0000 C CNN
+F 4 "1830726" H 5300 3600 60  0001 C CNN "Farnell"
+	1    5300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 53EB8CF0
+P 5250 3900
+F 0 "P1" V 5200 3900 40  0000 C CNN
+F 1 "CONN_2" V 5300 3900 40  0000 C CNN
+F 2 "m2pogo:S02B-PASK-2" H 5250 3900 60  0001 C CNN
+F 3 "" H 5250 3900 60  0000 C CNN
+F 4 "1830747" H 5250 3900 60  0001 C CNN "Farnell"
+	1    5250 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L PART X1
+U 1 1 53EB8DAA
+P 5300 3350
+F 0 "X1" H 5350 3350 60  0000 C CNN
+F 1 "HOUSING" H 5450 3450 60  0000 C CNN
+F 2 "" H 5300 3350 60  0001 C CNN
+F 3 "" H 5300 3350 60  0000 C CNN
+F 4 "1830726" H 5300 3350 60  0001 C CNN "Farnell"
+	1    5300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P2
+U 1 1 53EB8DCE
+P 5250 4250
+F 0 "P2" V 5200 4250 40  0000 C CNN
+F 1 "CONN_2" V 5300 4250 40  0000 C CNN
+F 2 "m2pogo:S02B-PASK-2" H 5250 4250 60  0001 C CNN
+F 3 "" H 5250 4250 60  0000 C CNN
+F 4 "1830747" H 5250 4250 60  0001 C CNN "Farnell"
+	1    5250 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 3800 5750 3800
+Wire Wire Line
+	5600 4000 5750 4000
+Wire Wire Line
+	5750 4150 5600 4150
+Wire Wire Line
+	5600 4350 5750 4350
+$EndSCHEMATC

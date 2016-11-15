@@ -1,0 +1,282 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BBDISP-PROTO-2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Generic_7"_LCD_50pin LCD2
+U 1 1 54ABD2E3
+P 6800 6150
+F 0 "LCD2" H 6800 5800 60  0000 C CNN
+F 1 "Generic_7\"_LCD_50pin" H 7550 6200 60  0001 C CNN
+F 2 "" H 7550 6300 60  0000 C CNN
+F 3 "" H 7550 6300 60  0000 C CNN
+	1    6800 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Generic_7"_LCD_50pin LCD2
+U 2 1 54ABD637
+P 6800 5000
+F 0 "LCD2" H 6800 4300 60  0000 C CNN
+F 1 "Generic_7\"_LCD_50pin" H 7550 5050 60  0001 C CNN
+F 2 "" H 7550 5150 60  0000 C CNN
+F 3 "" H 7550 5150 60  0000 C CNN
+	2    6800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Generic_7"_LCD_50pin LCD2
+U 3 1 54ABD692
+P 6850 2350
+F 0 "LCD2" H 6800 500 60  0000 C CNN
+F 1 "Generic_7\"_LCD_50pin" H 7150 400 60  0000 C CNN
+F 2 "" H 7600 2500 60  0000 C CNN
+F 3 "" H 7600 2500 60  0000 C CNN
+	3    6850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Generic_7"_LCD_50pin LCD1
+U 4 1 54ABD71F
+P 2750 1650
+F 0 "LCD1" H 3150 1600 60  0000 C CNN
+F 1 "Generic_7\"_LCD_50pin" H 3500 1700 60  0000 C CNN
+F 2 "" H 3500 1800 60  0000 C CNN
+F 3 "" H 3500 1800 60  0000 C CNN
+	4    2750 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Generic_7"_LCD_50pin LCD1
+U 1 1 54EE4D6F
+P 5800 6150
+F 0 "LCD1" H 5800 5800 60  0000 C CNN
+F 1 "Generic_7\"_LCD_50pin" H 6550 6200 60  0001 C CNN
+F 2 "" H 6550 6300 60  0000 C CNN
+F 3 "" H 6550 6300 60  0000 C CNN
+	1    5800 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Generic_7"_LCD_50pin LCD1
+U 2 1 54EE4D75
+P 5800 5000
+F 0 "LCD1" H 5800 4300 60  0000 C CNN
+F 1 "Generic_7\"_LCD_50pin" H 6550 5050 60  0001 C CNN
+F 2 "" H 6550 5150 60  0000 C CNN
+F 3 "" H 6550 5150 60  0000 C CNN
+	2    5800 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Generic_7"_LCD_50pin LCD1
+U 3 1 54EE4D7B
+P 5750 2350
+F 0 "LCD1" H 5700 500 60  0000 C CNN
+F 1 "Generic_7\"_LCD_50pin" H 6050 400 60  0000 C CNN
+F 2 "" H 6500 2500 60  0000 C CNN
+F 3 "" H 6500 2500 60  0000 C CNN
+	3    5750 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Generic_7"_LCD_50pin LCD2
+U 4 1 54EE53FA
+P 3800 1650
+F 0 "LCD2" H 4200 1600 60  0000 C CNN
+F 1 "Generic_7\"_LCD_50pin" H 4550 1700 60  0000 C CNN
+F 2 "" H 4550 1800 60  0000 C CNN
+F 3 "" H 4550 1800 60  0000 C CNN
+	4    3800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 650  6500 650 
+Wire Wire Line
+	6100 750  6500 750 
+Wire Wire Line
+	6100 850  6500 850 
+Wire Wire Line
+	6500 950  6100 950 
+Wire Wire Line
+	6100 1050 6500 1050
+Wire Wire Line
+	6500 1150 6100 1150
+Wire Wire Line
+	6100 1300 6500 1300
+Wire Wire Line
+	6500 1400 6100 1400
+Wire Wire Line
+	6100 1550 6500 1550
+Wire Wire Line
+	6100 1700 6500 1700
+Wire Wire Line
+	6100 1800 6500 1800
+Wire Wire Line
+	6500 1900 6100 1900
+Wire Wire Line
+	6100 2000 6500 2000
+Wire Wire Line
+	6100 2100 6500 2100
+Wire Wire Line
+	6100 2200 6500 2200
+Wire Wire Line
+	6100 2300 6500 2300
+Wire Wire Line
+	6100 2400 6500 2400
+Wire Wire Line
+	6100 2500 6500 2500
+Wire Wire Line
+	6500 2600 6100 2600
+Wire Wire Line
+	6100 2700 6500 2700
+Wire Wire Line
+	6500 2800 6100 2800
+Wire Wire Line
+	6100 2900 6500 2900
+Wire Wire Line
+	6500 3000 6100 3000
+Wire Wire Line
+	6100 3100 6500 3100
+Wire Wire Line
+	6500 3200 6100 3200
+Wire Wire Line
+	6100 3300 6500 3300
+Wire Wire Line
+	6500 3400 6100 3400
+Wire Wire Line
+	6100 3500 6500 3500
+Wire Wire Line
+	6100 3600 6500 3600
+Wire Wire Line
+	6100 3700 6500 3700
+Wire Wire Line
+	6500 3800 6100 3800
+Wire Wire Line
+	6100 3900 6500 3900
+Wire Wire Line
+	6500 4000 6100 4000
+Wire Wire Line
+	6100 4500 6500 4500
+Wire Wire Line
+	6500 4600 6100 4600
+Wire Wire Line
+	6100 4700 6500 4700
+Wire Wire Line
+	6500 4800 6100 4800
+Wire Wire Line
+	6100 4950 6500 4950
+Wire Wire Line
+	6100 5100 6500 5100
+Wire Wire Line
+	6500 5200 6100 5200
+Wire Wire Line
+	6100 5300 6500 5300
+Wire Wire Line
+	6500 5400 6100 5400
+Wire Wire Line
+	6100 5500 6500 5500
+Wire Wire Line
+	6500 6000 6100 6000
+Wire Wire Line
+	6500 6200 6100 6200
+Wire Wire Line
+	6100 6100 6500 6100
+Wire Wire Line
+	6500 6300 6100 6300
+Wire Wire Line
+	3050 1550 3500 1550
+Wire Wire Line
+	3050 1650 3500 1650
+Wire Wire Line
+	3500 1750 3050 1750
+$Comp
+L CONN_01X06 P1
+U 1 1 54EE7594
+P 3350 2650
+F 0 "P1" H 3350 3000 50  0000 C CNN
+F 1 "CONN_01X06" V 3450 2650 50  0000 C CNN
+F 2 "" H 3350 2650 60  0000 C CNN
+F 3 "" H 3350 2650 60  0000 C CNN
+	1    3350 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2400 3700 2400
+Wire Wire Line
+	3550 2500 3700 2500
+Wire Wire Line
+	3550 2600 3700 2600
+Wire Wire Line
+	3550 2700 3700 2700
+Wire Wire Line
+	3550 2800 3700 2800
+Wire Wire Line
+	3700 2900 3550 2900
+Text Label 6200 4800 0    50   ~ 0
+GND
+Text Label 3700 2400 0    50   ~ 0
+GND
+Text Label 3700 2500 0    50   ~ 0
+RST
+Text Label 3700 2600 0    50   ~ 0
+IRQ
+Text Label 3700 2700 0    50   ~ 0
+SDA
+Text Label 3700 2800 0    50   ~ 0
+SCL
+Text Label 3700 2900 0    50   ~ 0
+DVDD
+Text Label 6200 4950 0    50   ~ 0
+DVDD
+Text Label 6250 650  0    50   ~ 0
+RST
+Text Label 3200 1550 0    50   ~ 0
+IRQ
+Text Label 3200 1650 0    50   ~ 0
+SCL
+Text Label 3200 1750 0    50   ~ 0
+SDA
+$EndSCHEMATC

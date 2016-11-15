@@ -1,0 +1,299 @@
+EESchema Schematic File Version 2
+LIBS:keyboard_parts
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:converter_adapter_ibm4704-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MINI_DIN_8P_JACK CN1
+U 1 1 5712306A
+P 1700 2150
+F 0 "CN1" H 1700 1775 60  0000 C CNN
+F 1 "MINI_DIN_8P_JACK" H 1725 2525 60  0000 C CNN
+F 2 "keyboard_parts:MINI_DIN_8" H 1700 2150 60  0001 C CNN
+F 3 "" H 1700 2150 60  0000 C CNN
+	1    1700 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 8750 1450 0    60   ~ 0
+Dsub 9P connector
+NoConn ~ 8750 2200
+NoConn ~ 8750 2300
+NoConn ~ 8750 2400
+Text Label 2400 2425 0    60   ~ 0
+GND
+Text Label 2400 2275 0    60   ~ 0
+VCC
+Text Label 2400 2200 0    60   ~ 0
+D1
+Text Label 2400 2050 0    60   ~ 0
+D0
+NoConn ~ 2300 1900
+NoConn ~ 2300 1975
+NoConn ~ 2300 2125
+NoConn ~ 2300 2350
+Wire Wire Line
+	2300 2425 2575 2425
+Wire Wire Line
+	2300 2200 2575 2200
+Wire Wire Line
+	2300 2050 2575 2050
+Wire Wire Line
+	2300 2275 2575 2275
+Wire Wire Line
+	4900 1750 4525 1750
+Wire Wire Line
+	4900 1950 4525 1950
+Wire Wire Line
+	4900 2150 4525 2150
+Wire Wire Line
+	4900 2350 4525 2350
+Text Label 4525 1750 0    60   ~ 0
+GND
+Text Label 4525 1950 0    60   ~ 0
+VCC
+Text Label 4525 2150 0    60   ~ 0
+D0
+Text Label 4525 2350 0    60   ~ 0
+D1
+$Comp
+L GND #PWR01
+U 1 1 57123B4D
+P 1450 2500
+F 0 "#PWR01" H 1450 2250 50  0001 C CNN
+F 1 "GND" H 1450 2350 50  0000 C CNN
+F 2 "" H 1450 2500 60  0000 C CNN
+F 3 "" H 1450 2500 60  0000 C CNN
+	1    1450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P1
+U 1 1 57123B8A
+P 8950 2150
+F 0 "P1" H 8950 2700 50  0000 C CNN
+F 1 "CONN_01X10" V 9050 2150 50  0000 C CNN
+F 2 "keyboard_parts:DSUB9P" H 8950 2150 60  0001 C CNN
+F 3 "" H 8950 2150 60  0000 C CNN
+	1    8950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57123C16
+P 8750 2600
+F 0 "#PWR02" H 8750 2350 50  0001 C CNN
+F 1 "GND" H 8750 2450 50  0000 C CNN
+F 2 "" H 8750 2600 60  0000 C CNN
+F 3 "" H 8750 2600 60  0000 C CNN
+	1    8750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 57123C5C
+P 1475 3075
+F 0 "#PWR03" H 1475 2825 50  0001 C CNN
+F 1 "GND" H 1475 2925 50  0000 C CNN
+F 2 "" H 1475 3075 60  0000 C CNN
+F 3 "" H 1475 3075 60  0000 C CNN
+	1    1475 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 57123C74
+P 1475 3075
+F 0 "#FLG04" H 1475 3170 50  0001 C CNN
+F 1 "PWR_FLAG" H 1475 3255 50  0000 C CNN
+F 2 "" H 1475 3075 60  0000 C CNN
+F 3 "" H 1475 3075 60  0000 C CNN
+	1    1475 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L SOLDER_JUMPER SJ1
+U 1 1 5712404D
+P 5000 1800
+F 0 "SJ1" H 5000 1750 60  0000 C CNN
+F 1 "SOLDER_JUMPER" H 5050 1950 60  0001 C CNN
+F 2 "keyboard_parts:SOLDER_JUMPER_2" H 5050 1800 60  0001 C CNN
+F 3 "" H 5050 1800 60  0000 C CNN
+	1    5000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SOLDER_JUMPER SJ2
+U 1 1 571240D0
+P 5000 2000
+F 0 "SJ2" H 5000 1950 60  0000 C CNN
+F 1 "SOLDER_JUMPER" H 5050 2150 60  0001 C CNN
+F 2 "keyboard_parts:SOLDER_JUMPER_2" H 5050 2000 60  0001 C CNN
+F 3 "" H 5050 2000 60  0000 C CNN
+	1    5000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SOLDER_JUMPER SJ3
+U 1 1 57124115
+P 5000 2200
+F 0 "SJ3" H 5000 2150 60  0000 C CNN
+F 1 "SOLDER_JUMPER" H 5050 2350 60  0001 C CNN
+F 2 "keyboard_parts:SOLDER_JUMPER_2" H 5050 2200 60  0001 C CNN
+F 3 "" H 5050 2200 60  0000 C CNN
+	1    5000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SOLDER_JUMPER SJ4
+U 1 1 57124134
+P 5000 2400
+F 0 "SJ4" H 5000 2350 60  0000 C CNN
+F 1 "SOLDER_JUMPER" H 5050 2550 60  0001 C CNN
+F 2 "keyboard_parts:SOLDER_JUMPER_2" H 5050 2400 60  0001 C CNN
+F 3 "" H 5050 2400 60  0000 C CNN
+	1    5000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1800 8475 1800
+Wire Wire Line
+	8750 1900 8475 1900
+Wire Wire Line
+	8750 2000 8475 2000
+Wire Wire Line
+	8750 2100 8475 2100
+Text Label 8475 1800 0    60   ~ 0
+DS_2
+Text Label 8475 1900 0    60   ~ 0
+DS_3
+Text Label 8475 2000 0    60   ~ 0
+DS_4
+Text Label 8475 2100 0    60   ~ 0
+DS_5
+Wire Wire Line
+	5150 1750 5475 1750
+Wire Wire Line
+	5150 1950 5475 1950
+Wire Wire Line
+	5150 2150 5475 2150
+Wire Wire Line
+	5150 2350 5475 2350
+Text Label 5250 1750 0    60   ~ 0
+DS_2
+Text Label 5250 1950 0    60   ~ 0
+DS_3
+Text Label 5250 2150 0    60   ~ 0
+DS_4
+Text Label 5250 2350 0    60   ~ 0
+DS_5
+Text Notes 4900 1500 0    60   ~ 0
+IBM4704
+Wire Wire Line
+	6600 1750 6225 1750
+Wire Wire Line
+	6600 1950 6225 1950
+Wire Wire Line
+	6600 2150 6225 2150
+Text Label 6225 1750 0    60   ~ 0
+VCC
+Text Label 6225 1950 0    60   ~ 0
+D0
+Text Label 6225 2150 0    60   ~ 0
+GND
+$Comp
+L SOLDER_JUMPER SJ5
+U 1 1 57124DB6
+P 6700 1800
+F 0 "SJ5" H 6700 1750 60  0000 C CNN
+F 1 "SOLDER_JUMPER" H 6750 1950 60  0001 C CNN
+F 2 "keyboard_parts:SOLDER_JUMPER_2" H 6750 1800 60  0001 C CNN
+F 3 "" H 6750 1800 60  0000 C CNN
+	1    6700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SOLDER_JUMPER SJ6
+U 1 1 57124DBC
+P 6700 2000
+F 0 "SJ6" H 6700 1950 60  0000 C CNN
+F 1 "SOLDER_JUMPER" H 6750 2150 60  0001 C CNN
+F 2 "keyboard_parts:SOLDER_JUMPER_2" H 6750 2000 60  0001 C CNN
+F 3 "" H 6750 2000 60  0000 C CNN
+	1    6700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SOLDER_JUMPER SJ7
+U 1 1 57124DC2
+P 6700 2200
+F 0 "SJ7" H 6700 2150 60  0000 C CNN
+F 1 "SOLDER_JUMPER" H 6750 2350 60  0001 C CNN
+F 2 "keyboard_parts:SOLDER_JUMPER_2" H 6750 2200 60  0001 C CNN
+F 3 "" H 6750 2200 60  0000 C CNN
+	1    6700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1750 7175 1750
+Wire Wire Line
+	6850 1950 7175 1950
+Wire Wire Line
+	6850 2150 7175 2150
+Text Label 6950 1750 0    60   ~ 0
+DS_1
+Text Label 6950 1950 0    60   ~ 0
+DS_3
+Text Label 6950 2150 0    60   ~ 0
+DS_9
+Text Notes 6500 1475 0    60   ~ 0
+Sony NEWS
+Wire Wire Line
+	8750 1700 8475 1700
+Text Label 8475 1700 0    60   ~ 0
+DS_1
+Wire Wire Line
+	8750 2500 8475 2500
+Text Label 8475 2500 0    60   ~ 0
+DS_9
+$EndSCHEMATC

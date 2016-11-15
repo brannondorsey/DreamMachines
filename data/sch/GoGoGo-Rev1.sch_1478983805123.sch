@@ -1,0 +1,205 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:GoGoGo
+LIBS:GoGoGo-Rev1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "GoGoGo"
+Date ""
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DRV8837DSGR U1
+U 1 1 557C7CEE
+P 5550 4200
+F 0 "U1" H 5900 3650 60  0000 C CNN
+F 1 "DRV8837DSGR" H 5550 4200 60  0000 C CNN
+F 2 "GoGoGo:PWSON-N8" H 5250 4150 60  0001 C CNN
+F 3 "" H 5250 4150 60  0000 C CNN
+	1    5550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2500 5750 2500
+Wire Wire Line
+	5750 2500 5750 3500
+Wire Wire Line
+	3550 2600 5450 2600
+Wire Wire Line
+	5450 2600 5450 3500
+Wire Wire Line
+	3550 2700 4500 2700
+Wire Wire Line
+	4500 2700 4500 3450
+$Comp
+L GND #PWR01
+U 1 1 557C7E63
+P 4500 3450
+F 0 "#PWR01" H 4500 3200 50  0001 C CNN
+F 1 "GND" H 4500 3300 50  0000 C CNN
+F 2 "" H 4500 3450 60  0000 C CNN
+F 3 "" H 4500 3450 60  0000 C CNN
+	1    4500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 557C7E7B
+P 5550 4900
+F 0 "#PWR02" H 5550 4650 50  0001 C CNN
+F 1 "GND" H 5550 4750 50  0000 C CNN
+F 2 "" H 5550 4900 60  0000 C CNN
+F 3 "" H 5550 4900 60  0000 C CNN
+	1    5550 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4400 4950 4400
+Wire Wire Line
+	4950 4050 4100 4050
+Wire Wire Line
+	4950 3900 4250 3900
+$Comp
+L CONN_01X02 P2
+U 1 1 557C7F48
+P 7600 4000
+F 0 "P2" H 7600 4150 50  0000 C CNN
+F 1 "CONN_01X02" V 7700 4000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7600 4000 60  0001 C CNN
+F 3 "" H 7600 4000 60  0000 C CNN
+	1    7600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3950 6150 3950
+Wire Wire Line
+	6150 3950 6150 3900
+Wire Wire Line
+	6150 4500 6950 4500
+Wire Wire Line
+	6950 4500 6950 4050
+Wire Wire Line
+	6950 4050 7400 4050
+$Comp
+L C C1
+U 1 1 557C800B
+P 4800 2950
+F 0 "C1" H 4825 3050 50  0000 L CNN
+F 1 "C" H 4825 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4838 2800 30  0001 C CNN
+F 3 "" H 4800 2950 60  0000 C CNN
+	1    4800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 557C8092
+P 5150 2950
+F 0 "C2" H 5175 3050 50  0000 L CNN
+F 1 "C" H 5175 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5188 2800 30  0001 C CNN
+F 3 "" H 5150 2950 60  0000 C CNN
+	1    5150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2800 5150 2500
+Connection ~ 5150 2500
+Wire Wire Line
+	4800 3100 4800 3250
+Wire Wire Line
+	4800 3250 4500 3250
+Connection ~ 4500 3250
+Wire Wire Line
+	5150 3100 5150 3350
+Wire Wire Line
+	5150 3350 4500 3350
+Connection ~ 4500 3350
+Text Label 6450 3950 0    60   ~ 0
+OUT1
+Text Label 6450 4500 0    60   ~ 0
+OUT2
+Text Label 5400 2500 0    60   ~ 0
+VM
+Text Label 5300 2600 0    60   ~ 0
+VIN
+Text Label 4450 3900 0    60   ~ 0
+IN1
+Text Label 4450 4050 0    60   ~ 0
+IN2
+Text Label 4450 4400 0    60   ~ 0
+nSleep
+Wire Wire Line
+	4800 2800 4800 2600
+Connection ~ 4800 2600
+Wire Wire Line
+	3550 2900 4250 2900
+Wire Wire Line
+	4250 2900 4250 3900
+Wire Wire Line
+	3550 3000 4100 3000
+Wire Wire Line
+	4100 3000 4100 4050
+Wire Wire Line
+	3950 4400 3950 2800
+Wire Wire Line
+	3950 2800 3550 2800
+$Comp
+L CONN_01X03 P1
+U 1 1 557C8C55
+P 3350 2600
+F 0 "P1" H 3350 2800 50  0000 C CNN
+F 1 "CONN_01X03" V 3450 2600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3350 2600 60  0001 C CNN
+F 3 "" H 3350 2600 60  0000 C CNN
+	1    3350 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P3
+U 1 1 557C8CB0
+P 3350 2900
+F 0 "P3" H 3350 3100 50  0000 C CNN
+F 1 "CONN_01X03" V 3450 2900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3350 2900 60  0001 C CNN
+F 3 "" H 3350 2900 60  0000 C CNN
+	1    3350 2900
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

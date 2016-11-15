@@ -1,0 +1,534 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Nightmechanic_gen
+LIBS:Mouse_charger-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Magic mouse charger board"
+Date "Monday, January 05, 2015"
+Rev "0.1"
+Comp "Nightmechanic"
+Comment1 "All rights reserved"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Molex_105133-0011 CON2
+U 1 1 54A9AD12
+P 1850 3100
+F 0 "CON2" H 1650 2600 60  0000 C CNN
+F 1 "Molex_105133-0011" H 1850 3600 60  0000 C CNN
+F 2 "Nightmechanic_PCB:Molex_105122_0011_no_slots" H 1750 3800 60  0001 C CNN
+F 3 "http://www.molex.com/molex/products/datasheet.jsp?part=active/1051330011_IO_CONNECTORS.xml" H 1850 3700 60  0001 C CNN
+	1    1850 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MCP73831-2ACI/OT U1
+U 1 1 54A9AD63
+P 5100 2900
+F 0 "U1" H 4850 2550 60  0000 C CNN
+F 1 "MCP73831-2ACI/OT" H 5100 3250 60  0000 C CNN
+F 2 "Nightmechanic_PCB:MCP_SOT-23-5" H 4750 2450 60  0001 C CNN
+F 3 "http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en024903" H 4850 2550 60  0001 C CNN
+	1    5100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP1700-3002E/MB U2
+U 1 1 54A9ADC4
+P 8100 2700
+F 0 "U2" H 7850 2250 60  0000 C CNN
+F 1 "MCP1700-3002E/MB" H 8150 2800 60  0000 C CNN
+F 2 "Nightmechanic_PCB:MCP_SOT-89" H 8100 3000 60  0001 C CNN
+F 3 "http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010642" H 7900 2900 60  0001 C CNN
+	1    8100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D1
+U 1 1 54A9AEA3
+P 2900 3100
+F 0 "D1" H 2900 3200 50  0000 C CNN
+F 1 "P4SMA6.8A (TVS UNI)" H 2900 3000 40  0000 C CNN
+F 2 "Nightmechanic_PCB:DO-214AC" H 2900 3100 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/240/Littelfuse_TVS-Diodes_P4SMA-63078.pdf" H 2900 3100 60  0001 C CNN
+	1    2900 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 54A9B035
+P 3600 3100
+F 0 "C1" H 3600 3200 40  0000 L CNN
+F 1 "10uF 35V" H 3606 3015 40  0000 L CNN
+F 2 "Nightmechanic_PCB:mm_3216" H 3638 2950 30  0001 C CNN
+F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc01_e.pdf" H 3600 3100 60  0001 C CNN
+	1    3600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 54A9B0F0
+P 4100 3650
+F 0 "R2" V 4180 3650 40  0000 C CNN
+F 1 "1.3k" V 4107 3651 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4030 3650 30  0001 C CNN
+F 3 "" H 4100 3650 30  0000 C CNN
+	1    4100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 54A9B11F
+P 4100 3050
+F 0 "D2" H 4100 3150 50  0000 C CNN
+F 1 "Amber LED" H 4100 2950 50  0000 C CNN
+F 2 "Nightmechanic_PCB:SMD_MiniLED" H 4100 3050 60  0001 C CNN
+F 3 "http://www.vishay.com/docs/81339/vlms20.pdf" V 4100 3050 60  0001 C CNN
+	1    4100 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 54A9B395
+P 4100 4350
+F 0 "R3" V 4180 4350 40  0000 C CNN
+F 1 "1.3k" V 4107 4351 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4030 4350 30  0001 C CNN
+F 3 "" H 4100 4350 30  0000 C CNN
+	1    4100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 54A9B39B
+P 4100 4900
+F 0 "D3" H 4100 5000 50  0000 C CNN
+F 1 "Green LED" H 4100 4800 50  0000 C CNN
+F 2 "Nightmechanic_PCB:SMD_MiniLED" H 4100 4900 60  0001 C CNN
+F 3 "http://www.vishay.com/docs/81339/vlms20.pdf" V 4100 4900 60  0001 C CNN
+	1    4100 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 54A9B3D1
+P 6050 3250
+F 0 "R4" V 6130 3250 40  0000 C CNN
+F 1 "4.99k" V 6057 3251 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5980 3250 30  0001 C CNN
+F 3 "" H 6050 3250 30  0000 C CNN
+	1    6050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 54A9B44F
+P 6600 3050
+F 0 "C2" H 6600 3150 40  0000 L CNN
+F 1 "10uF 35V" H 6606 2965 40  0000 L CNN
+F 2 "Nightmechanic_PCB:mm_3216" H 6638 2900 30  0001 C CNN
+F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc01_e.pdf" H 6600 3050 60  0001 C CNN
+	1    6600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 54A9B5DD
+P 1750 4050
+F 0 "R1" V 1830 4050 40  0000 C CNN
+F 1 "ZEROHM" V 1757 4051 40  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1680 4050 30  0001 C CNN
+F 3 "" H 1750 4050 30  0000 C CNN
+	1    1750 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2700 700  2700
+Wire Wire Line
+	700  2700 700  3100
+Wire Wire Line
+	700  3100 700  3500
+Wire Wire Line
+	700  3500 700  4050
+Wire Wire Line
+	700  4050 1500 4050
+Wire Wire Line
+	1300 3100 700  3100
+Connection ~ 700  3100
+Wire Wire Line
+	1300 3500 700  3500
+Connection ~ 700  3500
+Wire Wire Line
+	2350 2700 2700 2700
+Wire Wire Line
+	2700 2700 2900 2700
+Wire Wire Line
+	2900 2700 3600 2700
+Wire Wire Line
+	3600 2700 4100 2700
+Wire Wire Line
+	4100 2700 4600 2700
+Wire Wire Line
+	2900 2900 2900 2700
+Connection ~ 2900 2700
+Wire Wire Line
+	3600 2900 3600 2700
+Connection ~ 3600 2700
+Connection ~ 4100 2700
+Wire Wire Line
+	4100 4600 4100 4700
+Wire Wire Line
+	4600 3100 4400 3100
+Wire Wire Line
+	4400 3100 4400 4000
+Wire Wire Line
+	4400 4000 4100 4000
+Connection ~ 4100 4000
+Wire Wire Line
+	3600 3300 3600 3500
+Wire Wire Line
+	2900 3300 2900 3500
+Wire Wire Line
+	2350 3500 2600 3500
+Wire Wire Line
+	2600 3500 2600 4050
+Wire Wire Line
+	2600 4050 2600 4250
+Wire Wire Line
+	2000 4050 2600 4050
+Connection ~ 2600 4050
+Wire Wire Line
+	5600 2700 6150 2700
+Wire Wire Line
+	6150 2700 6600 2700
+Wire Wire Line
+	6600 2700 7600 2700
+Wire Wire Line
+	6600 1400 6600 2700
+Wire Wire Line
+	6600 2700 6600 2850
+Connection ~ 6600 2700
+Wire Wire Line
+	6050 3000 6050 2900
+Wire Wire Line
+	6050 2900 5600 2900
+Wire Wire Line
+	5600 3100 5700 3100
+Wire Wire Line
+	5700 3100 5700 3300
+Wire Wire Line
+	6050 3500 6050 3600
+Wire Wire Line
+	6600 3250 6600 3600
+Wire Wire Line
+	8100 3300 8100 3600
+$Comp
+L C C3
+U 1 1 54A9BA29
+P 9200 3000
+F 0 "C3" H 9200 3100 40  0000 L CNN
+F 1 "10uF 35V" H 9206 2915 40  0000 L CNN
+F 2 "Nightmechanic_PCB:mm_3216" H 9238 2850 30  0001 C CNN
+F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc01_e.pdf" H 9200 3000 60  0001 C CNN
+	1    9200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2700 8950 2700
+Wire Wire Line
+	8950 2700 9200 2700
+Wire Wire Line
+	9200 2700 9550 2700
+Wire Wire Line
+	9550 2700 9850 2700
+Wire Wire Line
+	9200 2700 9200 2800
+Wire Wire Line
+	9200 3200 9200 3300
+$Comp
+L GND #PWR01
+U 1 1 54A9BB52
+P 9200 3300
+F 0 "#PWR01" H 9200 3300 30  0001 C CNN
+F 1 "GND" H 9200 3230 30  0001 C CNN
+F 2 "" H 9200 3300 60  0000 C CNN
+F 3 "" H 9200 3300 60  0000 C CNN
+	1    9200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 54A9BB66
+P 8100 3600
+F 0 "#PWR02" H 8100 3600 30  0001 C CNN
+F 1 "GND" H 8100 3530 30  0001 C CNN
+F 2 "" H 8100 3600 60  0000 C CNN
+F 3 "" H 8100 3600 60  0000 C CNN
+	1    8100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 54A9BB7A
+P 6600 3600
+F 0 "#PWR03" H 6600 3600 30  0001 C CNN
+F 1 "GND" H 6600 3530 30  0001 C CNN
+F 2 "" H 6600 3600 60  0000 C CNN
+F 3 "" H 6600 3600 60  0000 C CNN
+	1    6600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 54A9BB8E
+P 6050 3600
+F 0 "#PWR04" H 6050 3600 30  0001 C CNN
+F 1 "GND" H 6050 3530 30  0001 C CNN
+F 2 "" H 6050 3600 60  0000 C CNN
+F 3 "" H 6050 3600 60  0000 C CNN
+	1    6050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 54A9BBA2
+P 3600 3500
+F 0 "#PWR05" H 3600 3500 30  0001 C CNN
+F 1 "GND" H 3600 3430 30  0001 C CNN
+F 2 "" H 3600 3500 60  0000 C CNN
+F 3 "" H 3600 3500 60  0000 C CNN
+	1    3600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 54A9BBC3
+P 2900 3500
+F 0 "#PWR06" H 2900 3500 30  0001 C CNN
+F 1 "GND" H 2900 3430 30  0001 C CNN
+F 2 "" H 2900 3500 60  0000 C CNN
+F 3 "" H 2900 3500 60  0000 C CNN
+	1    2900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 54A9BBD7
+P 2600 4250
+F 0 "#PWR07" H 2600 4250 30  0001 C CNN
+F 1 "GND" H 2600 4180 30  0001 C CNN
+F 2 "" H 2600 4250 60  0000 C CNN
+F 3 "" H 2600 4250 60  0000 C CNN
+	1    2600 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 54A9BBEB
+P 4100 5200
+F 0 "#PWR08" H 4100 5200 30  0001 C CNN
+F 1 "GND" H 4100 5130 30  0001 C CNN
+F 2 "" H 4100 5200 60  0000 C CNN
+F 3 "" H 4100 5200 60  0000 C CNN
+	1    4100 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5100 4100 5200
+$Comp
+L GND #PWR09
+U 1 1 54A9BC50
+P 5700 3300
+F 0 "#PWR09" H 5700 3300 30  0001 C CNN
+F 1 "GND" H 5700 3230 30  0001 C CNN
+F 2 "" H 5700 3300 60  0000 C CNN
+F 3 "" H 5700 3300 60  0000 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L AAA_Bat_PC_con CON4
+U 1 1 54A9BD20
+P 10350 2700
+F 0 "CON4" H 10550 2300 60  0000 C CNN
+F 1 "AAA_Bat_PC_con" H 10750 3050 60  0000 C CNN
+F 2 "Nightmechanic_PCB:Keystone_597" H 10850 3150 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/215/597-288629.pdf" H 10350 2100 60  0001 C CNN
+	1    10350 2700
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9200 2700
+Wire Wire Line
+	10350 2200 10350 2050
+Wire Wire Line
+	10350 2050 9550 2050
+Wire Wire Line
+	9550 2050 9550 2700
+Wire Wire Line
+	9550 2700 9550 3300
+Connection ~ 9550 2700
+Wire Wire Line
+	10350 3200 10350 3300
+Wire Wire Line
+	10350 3300 9550 3300
+$Comp
+L AAA_Bat_PC_con CON1
+U 1 1 54A9C391
+P 1400 1400
+F 0 "CON1" H 1600 1000 60  0000 C CNN
+F 1 "AAA_Bat_PC_con" H 1800 1750 60  0000 C CNN
+F 2 "Nightmechanic_PCB:Keystone_597" H 1900 1850 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/215/597-288629.pdf" H 1400 800 60  0001 C CNN
+	1    1400 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1400 2300 1400
+Wire Wire Line
+	2300 1400 6600 1400
+Wire Wire Line
+	2300 1900 1400 1900
+Wire Wire Line
+	2300 750  2300 1400
+Wire Wire Line
+	2300 1400 2300 1900
+Connection ~ 2300 1400
+Wire Wire Line
+	1400 750  1400 900 
+Wire Wire Line
+	1400 750  2300 750 
+$Comp
+L Xmm_PTH CON3
+U 1 1 54A9C646
+P 1850 4750
+F 0 "CON3" H 2000 4650 60  0000 C CNN
+F 1 "1.5mm_PTH" H 1850 4850 60  0000 C CNN
+F 2 "Nightmechanic_PCB:1.5mm_PTH" H 1850 4750 60  0001 C CNN
+F 3 "" H 1850 4750 60  0000 C CNN
+	1    1850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5000 1850 5050
+Wire Wire Line
+	1850 5050 1850 5150
+$Comp
+L GND #PWR010
+U 1 1 54A9C7F7
+P 1850 5150
+F 0 "#PWR010" H 1850 5150 30  0001 C CNN
+F 1 "GND" H 1850 5080 30  0001 C CNN
+F 2 "" H 1850 5150 60  0000 C CNN
+F 3 "" H 1850 5150 60  0000 C CNN
+	1    1850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2550 2700 2700
+Connection ~ 2700 2700
+NoConn ~ 2350 2900
+NoConn ~ 2350 3100
+NoConn ~ 2350 3300
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 54A9D0CA
+P 1650 5050
+F 0 "#FLG011" H 1650 5145 30  0001 C CNN
+F 1 "PWR_FLAG" H 1650 5230 30  0000 C CNN
+F 2 "" H 1650 5050 60  0000 C CNN
+F 3 "" H 1650 5050 60  0000 C CNN
+	1    1650 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5050 1850 5050
+Connection ~ 1850 5050
+$Comp
+L V_BUS #PWR012
+U 1 1 54A9D18D
+P 2700 2300
+F 0 "#PWR012" H 2700 2500 60  0001 C CNN
+F 1 "V_BUS" H 2700 2400 60  0000 C CNN
+F 2 "" H 2700 2300 60  0000 C CNN
+F 3 "" H 2700 2300 60  0000 C CNN
+	1    2700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L V_Batt #PWR013
+U 1 1 54A9D1F1
+P 6150 2300
+F 0 "#PWR013" H 6150 2500 60  0001 C CNN
+F 1 "V_Batt" H 6150 2400 60  0000 C CNN
+F 2 "" H 6150 2300 60  0000 C CNN
+F 3 "" H 6150 2300 60  0000 C CNN
+	1    6150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L V_3V0 #PWR014
+U 1 1 54A9D205
+P 8950 2300
+F 0 "#PWR014" H 8950 2500 60  0001 C CNN
+F 1 "V_3V0" H 8950 2400 60  0000 C CNN
+F 2 "" H 8950 2300 60  0000 C CNN
+F 3 "" H 8950 2300 60  0000 C CNN
+	1    8950 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2550 8950 2700
+Connection ~ 8950 2700
+Wire Wire Line
+	6150 2550 6150 2700
+Connection ~ 6150 2700
+Wire Wire Line
+	4100 2850 4100 2700
+Wire Wire Line
+	4100 3250 4100 3400
+Wire Wire Line
+	4100 3900 4100 4000
+Wire Wire Line
+	4100 4000 4100 4100
+Text Label 3250 2700 0    60   ~ 0
+V_bus
+Text Label 5950 2700 0    60   ~ 0
+V_batt
+Text Label 8750 2700 0    60   ~ 0
+V_3V0
+$EndSCHEMATC

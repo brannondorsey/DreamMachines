@@ -1,0 +1,189 @@
+EESchema Schematic File Version 2
+LIBS:module
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nrf51822-04-beacon-modul-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L nRF51822-04_module M1
+U 1 1 5794CD50
+P 8200 2900
+F 0 "M1" H 9428 2847 60  0000 L CNN
+F 1 "nRF51822-04_module" H 9428 2741 60  0000 L CNN
+F 2 "module:nRF51822-04_module" H 8200 2900 60  0001 C CNN
+F 3 "" H 8200 2900 60  0001 C CNN
+	1    8200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 5794CE20
+P 6200 2800
+F 0 "BT1" H 6318 2846 50  0000 L CNN
+F 1 "Battery" H 6318 2755 50  0000 L CNN
+F 2 "module:cr2032_bat_holder" V 6200 2840 50  0000 C CNN
+F 3 "" V 6200 2840 50  0000 C CNN
+	1    6200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW1
+U 1 1 5794CEBA
+P 7750 3950
+F 0 "SW1" V 7750 4200 50  0000 R CNN
+F 1 "SW_PUSH_SMALL_H" H 7705 3910 50  0000 R CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_REED_CT05-XXXX-G1" H 7750 4150 50  0000 C CNN
+F 3 "" H 7750 4150 50  0000 C CNN
+	1    7750 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW2
+U 1 1 5794CFA4
+P 7900 3950
+F 0 "SW2" V 7900 3900 50  0000 R CNN
+F 1 "SW_PUSH_SMALL_H" H 7855 3910 50  0000 R CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_REED_CT05-XXXX-G1" H 7900 4150 50  0000 C CNN
+F 3 "" H 7900 4150 50  0000 C CNN
+	1    7900 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5794CFDE
+P 7650 4200
+F 0 "#PWR01" H 7650 3950 50  0001 C CNN
+F 1 "GND" H 7655 4027 50  0000 C CNN
+F 2 "" H 7650 4200 50  0000 C CNN
+F 3 "" H 7650 4200 50  0000 C CNN
+	1    7650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5794D0FC
+P 6250 3100
+F 0 "#PWR02" H 6250 2850 50  0001 C CNN
+F 1 "GND" H 6255 2927 50  0000 C CNN
+F 2 "" H 6250 3100 50  0000 C CNN
+F 3 "" H 6250 3100 50  0000 C CNN
+	1    6250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2600 6200 2600
+Wire Wire Line
+	6200 2600 6200 2650
+Wire Wire Line
+	7050 2700 6550 2700
+Wire Wire Line
+	6550 2700 6550 3000
+Wire Wire Line
+	6200 3000 6650 3000
+Wire Wire Line
+	6200 3000 6200 2950
+Connection ~ 6250 3000
+Wire Wire Line
+	6250 3100 6250 3000
+Wire Wire Line
+	7650 4200 7650 4150
+Wire Wire Line
+	7650 4150 8650 4150
+Wire Wire Line
+	7750 4150 7750 4100
+Wire Wire Line
+	7900 4150 7900 4100
+Connection ~ 7750 4150
+Wire Wire Line
+	7750 3800 7750 3550
+Wire Wire Line
+	7900 3800 7900 3750
+Wire Wire Line
+	7900 3750 7850 3750
+Wire Wire Line
+	7850 3750 7850 3550
+Wire Wire Line
+	8550 4150 8550 3550
+Connection ~ 7900 4150
+Wire Wire Line
+	8650 4150 8650 3550
+Connection ~ 8550 4150
+$Comp
+L CONN_01X04 P1
+U 1 1 5794D1CD
+P 6700 4150
+F 0 "P1" V 6572 4378 50  0000 L CNN
+F 1 "CONN_01X04" V 6663 4378 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 6700 4150 50  0000 C CNN
+F 3 "" H 6700 4150 50  0000 C CNN
+	1    6700 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 3550 8050 3650
+Wire Wire Line
+	8050 3650 6750 3650
+Wire Wire Line
+	6750 3650 6750 3950
+Wire Wire Line
+	8150 3550 8150 3750
+Wire Wire Line
+	8150 3750 6850 3750
+Wire Wire Line
+	6850 3750 6850 3950
+Wire Wire Line
+	6650 3000 6650 3950
+Connection ~ 6550 3000
+Wire Wire Line
+	6550 3950 6550 3050
+Wire Wire Line
+	6550 3050 6450 3050
+Wire Wire Line
+	6450 3050 6450 2600
+Connection ~ 6450 2600
+NoConn ~ 7050 2800
+NoConn ~ 7050 2900
+NoConn ~ 7050 3000
+NoConn ~ 7050 3100
+NoConn ~ 7950 3550
+$EndSCHEMATC

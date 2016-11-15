@@ -1,0 +1,197 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rloop
+LIBS:CommandNode-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 4 8
+Title "Battery Charger Interface"
+Date ""
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 11900 10200 0    118  ~ 0
+rLoop - Command Node
+Text Notes 11950 10400 0    60   ~ 0
+Original Author: SafetyLok
+$Comp
+L MAX3232CDR U?
+U 1 1 575CEC05
+P 8950 4250
+F 0 "U?" H 9950 4350 60  0000 C CNN
+F 1 "MAX3232CDR" H 9800 2550 60  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_SOIC_16" H 9150 3650 60  0001 C CNN
+F 3 "" H 9150 3650 60  0000 C CNN
+	1    8950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575CEC80
+P 9100 3900
+F 0 "C?" H 9125 4000 50  0000 L CNN
+F 1 "C_100nF_50V" H 9125 3800 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 9138 3750 50  0001 C CNN
+F 3 "" H 9100 3900 50  0000 C CNN
+	1    9100 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575CECE3
+P 9100 6250
+F 0 "C?" H 9125 6350 50  0000 L CNN
+F 1 "C_100nF_50V" H 9125 6150 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 9138 6100 50  0001 C CNN
+F 3 "" H 9100 6250 50  0000 C CNN
+	1    9100 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575CED70
+P 8350 4450
+F 0 "C?" H 8375 4550 50  0000 L CNN
+F 1 "C_100nF_50V" H 8375 4350 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 8388 4300 50  0001 C CNN
+F 3 "" H 8350 4450 50  0000 C CNN
+	1    8350 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L C_100nF_50V C?
+U 1 1 575CEDE1
+P 8350 4750
+F 0 "C?" H 8375 4850 50  0000 L CNN
+F 1 "C_100nF_50V" H 8375 4650 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 8388 4600 50  0001 C CNN
+F 3 "" H 8350 4750 50  0000 C CNN
+	1    8350 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L +3V3_A #PWR?
+U 1 1 575CEDEE
+P 9100 3750
+F 0 "#PWR?" H 9100 3600 50  0001 C CNN
+F 1 "+3V3_A" H 9100 3890 50  0000 C CNN
+F 2 "" H 9100 3750 60  0000 C CNN
+F 3 "" H 9100 3750 60  0000 C CNN
+	1    9100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4050 9450 3750
+Wire Wire Line
+	9450 3750 9100 3750
+Connection ~ 9100 3750
+$Comp
+L GNDD #PWR?
+U 1 1 575CEE15
+P 9100 6400
+F 0 "#PWR?" H 9100 6150 50  0001 C CNN
+F 1 "GNDD" H 9100 6250 50  0000 C CNN
+F 2 "" H 9100 6400 50  0000 C CNN
+F 3 "" H 9100 6400 50  0000 C CNN
+	1    9100 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 6350 9450 6350
+Wire Wire Line
+	9450 6350 9450 6100
+Wire Wire Line
+	8750 4450 8500 4450
+Wire Wire Line
+	8750 4650 8200 4650
+Wire Wire Line
+	8200 4650 8200 4450
+Wire Wire Line
+	8750 4750 8500 4750
+Wire Wire Line
+	8200 4950 8750 4950
+Wire Wire Line
+	8200 4950 8200 4750
+$Comp
+L TE_640456-8 P?
+U 1 1 575CEF1D
+P 11350 5150
+F 0 "P?" H 11400 5200 50  0000 C CNN
+F 1 "TE_640456-8" V 11500 4750 50  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_TE640456-8" H 11400 4750 50  0001 C CNN
+F 3 "" H 11400 4750 50  0000 C CNN
+	1    11350 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 5200 11200 5200
+Wire Wire Line
+	11200 5300 10200 5300
+Wire Wire Line
+	10200 5400 11200 5400
+Wire Wire Line
+	10200 5500 11200 5500
+Text Notes 12350 6200 1    60   ~ 0
+Charger DOES NOT Support RS232\nGiven the distance we need to travel we are using RS232\nCharger will need appropriate interfacing.
+Wire Wire Line
+	8750 5200 7100 5200
+Wire Wire Line
+	8750 5400 7100 5400
+Wire Wire Line
+	8750 5300 7100 5300
+Wire Wire Line
+	7100 5500 8750 5500
+Text HLabel 7100 5300 0    60   Input ~ 0
+CHARGER_CTRL_TX
+Text HLabel 7100 5400 0    60   Output ~ 0
+CHARGER_RS232_RX
+Text HLabel 7100 5500 0    60   Output ~ 0
+CHARGER_CTRL_RX
+Text HLabel 7100 5200 0    60   Input ~ 0
+CHARGER_RS232_TX
+$Comp
+L GNDD #PWR?
+U 1 1 576A2885
+P 11200 5900
+F 0 "#PWR?" H 11200 5650 50  0001 C CNN
+F 1 "GNDD" H 11200 5750 50  0000 C CNN
+F 2 "" H 11200 5900 50  0000 C CNN
+F 3 "" H 11200 5900 50  0000 C CNN
+	1    11200 5900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

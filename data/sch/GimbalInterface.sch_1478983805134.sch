@@ -1,0 +1,173 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rloop
+LIBS:GimbalInterface-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Gimbal Interface - Overview"
+Date ""
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 11950 10200 0    118  ~ 0
+rLoop - Gimbal Interface
+Text Notes 11950 10400 0    63   ~ 0
+Original Author: SafetyLok
+$Comp
+L CONN_01X04-2XMNT P?
+U 1 1 5753F33A
+P 12750 3100
+F 0 "P?" H 12750 3350 50  0000 C CNN
+F 1 "CONN_01X04-2XMNT" V 12850 3100 50  0000 C CNN
+F 2 "" H 12750 3100 50  0000 C CNN
+F 3 "" H 12750 3100 50  0000 C CNN
+	1    12750 3100
+	1    0    0    -1  
+$EndComp
+Text Notes 13250 3600 1    60   ~ 0
+MLP Sensor Interface
+$Comp
+L CONN_01X04-2XMNT P?
+U 1 1 5754053F
+P 12850 5000
+F 0 "P?" H 12850 5250 50  0000 C CNN
+F 1 "CONN_01X04-2XMNT" V 12950 5000 50  0000 C CNN
+F 2 "" H 12850 5000 50  0000 C CNN
+F 3 "" H 12850 5000 50  0000 C CNN
+	1    12850 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 13350 5650 1    60   ~ 0
+Limit Switch Interface
+$Comp
+L CONN_01X04-2XMNT P?
+U 1 1 5754081B
+P 12750 1500
+F 0 "P?" H 12750 1750 50  0000 C CNN
+F 1 "CONN_01X04-2XMNT" V 12850 1500 50  0000 C CNN
+F 2 "" H 12750 1500 50  0000 C CNN
+F 3 "" H 12750 1500 50  0000 C CNN
+	1    12750 1500
+	1    0    0    -1  
+$EndComp
+Text Notes 13250 2000 1    60   ~ 0
+RTD / Temp Sensor IF
+$Comp
+L TE_640456-8 P?
+U 1 1 575B773F
+P 2450 5850
+F 0 "P?" H 2500 5900 50  0000 C CNN
+F 1 "TE_640456-8" V 2600 5450 50  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_TE640456-8" H 2500 5450 50  0001 C CNN
+F 3 "" H 2500 5450 50  0000 C CNN
+	1    2450 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L XTR117AIDGKT U?
+U 1 1 575B8098
+P 9050 1200
+F 0 "U?" H 9100 1350 60  0000 C CNN
+F 1 "XTR117AIDGKT" H 9350 1250 60  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_MSOP8" H 9000 1250 60  0001 C CNN
+F 3 "" H 9050 1200 60  0000 C CNN
+	1    9050 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBT3904 Q?
+U 1 1 575B9702
+P 10400 1450
+F 0 "Q?" H 10600 1525 50  0000 L CNN
+F 1 "MMBT3904" H 10600 1450 50  0000 L CNN
+F 2 "SOT-23" H 10600 1375 50  0000 L CIN
+F 3 "" H 10400 1450 50  0000 L CNN
+	1    10400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1250 11700 1250
+Wire Wire Line
+	9700 1350 10100 1350
+Wire Wire Line
+	10100 1350 10100 1450
+Wire Wire Line
+	10100 1450 10200 1450
+Wire Wire Line
+	9700 1450 10000 1450
+Wire Wire Line
+	10000 1450 10000 1650
+Wire Wire Line
+	10000 1650 10500 1650
+Wire Wire Line
+	9700 1650 9700 1850
+Wire Wire Line
+	9700 1850 11700 1850
+Text Label 11200 1850 0    60   ~ 0
+TEMP_I_NEG
+Text Label 11200 1250 0    60   ~ 0
+TEMP_I_POS
+$Comp
+L C_10nF_50V C?
+U 1 1 575B9CF9
+P 11100 1500
+F 0 "C?" H 11125 1600 50  0000 L CNN
+F 1 "C_10nF_50V" H 11125 1400 50  0000 L CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_C_0603" H 11138 1350 50  0001 C CNN
+F 3 "" H 11100 1500 50  0000 C CNN
+	1    11100 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11100 1350 11100 1250
+Connection ~ 11100 1250
+Wire Wire Line
+	11100 1650 11100 1850
+Connection ~ 11100 1850
+$Comp
+L MAX3232CDR U?
+U 1 1 575BA13E
+P 9700 4650
+F 0 "U?" H 10700 4750 60  0000 C CNN
+F 1 "MAX3232CDR" H 10550 2950 60  0000 C CNN
+F 2 "RLOOP_FOOTPRINTS:rLoop_SOIC_16" H 9900 4050 60  0001 C CNN
+F 3 "" H 9900 4050 60  0000 C CNN
+	1    9700 4650
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

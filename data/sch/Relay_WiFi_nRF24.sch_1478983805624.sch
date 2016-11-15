@@ -1,0 +1,492 @@
+EESchema Schematic File Version 2
+LIBS:Relay_WiFi_nRF24-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:esp8266-esp-03
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nrf24l01p_smd
+LIBS:Conn_PWR
+LIBS:Relay_WiFi_nRF24-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "15 oct 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP8266-ESP-03 U1
+U 1 1 561FA8B5
+P 2825 3525
+F 0 "U1" H 2825 4250 60  0000 C CNN
+F 1 "ESP8266-ESP-03" H 2825 3400 60  0000 C CNN
+F 2 "myelin-kicad:ESP8266-ESP-03" H 2825 3525 60  0001 C CNN
+F 3 "" H 2825 3525 60  0000 C CNN
+	1    2825 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L nRF24L01P_SMD U3
+U 1 1 561FA8CC
+P 6075 3125
+F 0 "U3" H 6175 3225 50  0000 C CNN
+F 1 "NRF24L01P_SMD" H 6175 3925 50  0000 C CNN
+F 2 "myelin-kicad:NRF24L01P_SMD" H 6075 2425 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6175 3575 50  0001 C CNN
+	1    6075 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-Relay_WiFi_nRF24 #PWR01
+U 1 1 561FAAEC
+P 2125 5775
+F 0 "#PWR01" H 2125 5775 30  0001 C CNN
+F 1 "GND" H 2125 5705 30  0001 C CNN
+F 2 "" H 2125 5775 60  0000 C CNN
+F 3 "" H 2125 5775 60  0000 C CNN
+	1    2125 5775
+	0    1    1    0   
+$EndComp
+$Comp
+L JUMPER JP1
+U 1 1 561FAD1A
+P 3250 3925
+F 0 "JP1" H 3250 4075 60  0000 C CNN
+F 1 "JUMPER" H 3250 3845 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3250 3925 60  0000 C CNN
+F 3 "~" H 3250 3925 60  0000 C CNN
+	1    3250 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRIAC U4
+U 1 1 561FAD60
+P 7800 5250
+F 0 "U4" H 7550 5600 70  0000 C CNN
+F 1 "BTA16" H 7500 5000 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical_LargePads" H 7800 5250 60  0000 C CNN
+F 3 "~" H 7800 5250 60  0000 C CNN
+	1    7800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-Relay_WiFi_nRF24 R4
+U 1 1 561FAD90
+P 8675 5375
+F 0 "R4" V 8755 5375 40  0000 C CNN
+F 1 "39" V 8682 5376 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8605 5375 30  0000 C CNN
+F 3 "~" H 8675 5375 30  0000 C CNN
+	1    8675 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-Relay_WiFi_nRF24 R2
+U 1 1 561FAD9F
+P 7200 4700
+F 0 "R2" V 7280 4700 40  0000 C CNN
+F 1 "360" V 7207 4701 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 7130 4700 30  0000 C CNN
+F 3 "~" H 7200 4700 30  0000 C CNN
+	1    7200 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-Relay_WiFi_nRF24 R1
+U 1 1 561FADAE
+P 7025 5775
+F 0 "R1" V 7105 5775 40  0000 C CNN
+F 1 "10k" V 7032 5776 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6955 5775 30  0000 C CNN
+F 3 "~" H 7025 5775 30  0000 C CNN
+	1    7025 5775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R-RESCUE-Relay_WiFi_nRF24 R3
+U 1 1 561FADC7
+P 7550 6025
+F 0 "R3" V 7630 6025 40  0000 C CNN
+F 1 "360" V 7557 6026 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 7480 6025 30  0000 C CNN
+F 3 "~" H 7550 6025 30  0000 C CNN
+	1    7550 6025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C-RESCUE-Relay_WiFi_nRF24 C1
+U 1 1 561FAE0D
+P 2575 5975
+F 0 "C1" H 2575 6075 40  0000 L CNN
+F 1 "0.01" H 2581 5890 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 2613 5825 30  0000 C CNN
+F 3 "~" H 2575 5975 60  0000 C CNN
+	1    2575 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L NCP1117ST33T3G U2
+U 1 1 561FAF01
+P 3025 5775
+F 0 "U2" H 3025 6025 40  0000 C CNN
+F 1 "NCP1117ST33T3G" H 3025 5975 40  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 3025 5775 60  0001 C CNN
+F 3 "" H 3025 5775 60  0000 C CNN
+	1    3025 5775
+	0    1    1    0   
+$EndComp
+$Comp
+L C-RESCUE-Relay_WiFi_nRF24 C2
+U 1 1 561FB309
+P 8675 5825
+F 0 "C2" H 8675 5925 40  0000 L CNN
+F 1 "10n" H 8681 5740 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 8713 5675 30  0000 C CNN
+F 3 "~" H 8675 5825 60  0000 C CNN
+	1    8675 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOC3061M-RESCUE-Relay_WiFi_nRF24 IC1
+U 1 1 561FB3DC
+P 6425 5150
+F 0 "IC1" H 6215 5340 40  0000 C CNN
+F 1 "MOC3061M" H 6515 4960 40  0000 C CNN
+F 2 "Opto-Devices:Optocoupler_6pin_wide_Stile-II" H 6225 4970 30  0000 C CIN
+F 3 "~" H 6425 5150 60  0000 C CNN
+	1    6425 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 561FB858
+P 2125 5325
+F 0 "#PWR02" H 2125 5425 30  0001 C CNN
+F 1 "VCC" H 2125 5425 30  0000 C CNN
+F 2 "" H 2125 5325 60  0000 C CNN
+F 3 "" H 2125 5325 60  0000 C CNN
+	1    2125 5325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P2
+U 1 1 561FB96F
+P 9650 5375
+F 0 "P2" V 9600 5375 50  0000 C CNN
+F 1 "CONN_4" V 9700 5375 50  0000 C CNN
+F 2 "Connect:AK300-4" H 9650 5375 60  0001 C CNN
+F 3 "" H 9650 5375 60  0000 C CNN
+	1    9650 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 561FBA99
+P 1150 6425
+F 0 "#PWR03" H 1150 6525 30  0001 C CNN
+F 1 "VCC" H 1150 6525 30  0000 C CNN
+F 2 "" H 1150 6425 60  0000 C CNN
+F 3 "" H 1150 6425 60  0000 C CNN
+	1    1150 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-Relay_WiFi_nRF24 #PWR04
+U 1 1 561FBAA8
+P 1150 6775
+F 0 "#PWR04" H 1150 6775 30  0001 C CNN
+F 1 "GND" H 1150 6705 30  0001 C CNN
+F 2 "" H 1150 6775 60  0000 C CNN
+F 3 "" H 1150 6775 60  0000 C CNN
+	1    1150 6775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 #PWR05
+U 1 1 561FC40C
+P 1500 6600
+F 0 "#PWR05" V 1450 6600 40  0001 C CNN
+F 1 "CONN_2" V 1550 6600 40  0000 C CNN
+F 2 "" H 1500 6600 60  0000 C CNN
+F 3 "" H 1500 6600 60  0000 C CNN
+	1    1500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P1
+U 1 1 561FC51C
+P 2750 4775
+F 0 "P1" V 2700 4775 50  0000 C CNN
+F 1 "CONN_4" V 2800 4775 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 2750 4775 60  0001 C CNN
+F 3 "" H 2750 4775 60  0000 C CNN
+	1    2750 4775
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2250 3525
+NoConn ~ 5425 3525
+NoConn ~ 5425 3675
+NoConn ~ 3400 3525
+$Comp
+L CONN_01X04 P3
+U 1 1 562500E9
+P 9150 4300
+F 0 "P3" H 9150 4550 50  0000 C CNN
+F 1 "CONN_01X04" V 9250 4300 50  0000 C CNN
+F 2 "Relay_WiFi_nRF24_Libs:ACDC-FromEbay-5V-700A" H 9150 4300 60  0001 C CNN
+F 3 "" H 9150 4300 60  0000 C CNN
+	1    9150 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R6
+U 1 1 562E5413
+P 4675 3825
+F 0 "R6" V 4755 3825 50  0000 C CNN
+F 1 "10k" V 4675 3825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4605 3825 30  0001 C CNN
+F 3 "" H 4675 3825 30  0000 C CNN
+	1    4675 3825
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 562E56EC
+P 2100 2550
+F 0 "R5" V 2180 2550 50  0000 C CNN
+F 1 "10k" V 2100 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2030 2550 30  0001 C CNN
+F 3 "" H 2100 2550 30  0000 C CNN
+	1    2100 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 6175 5025 6175
+Wire Wire Line
+	5025 6175 5025 2475
+Wire Wire Line
+	5025 2475 5425 2475
+Connection ~ 3075 6175
+Wire Wire Line
+	3950 2175 3950 6175
+Wire Wire Line
+	2100 2175 3950 2175
+Connection ~ 3950 6175
+Wire Wire Line
+	7300 5450 7300 6025
+Wire Wire Line
+	7300 5775 7275 5775
+Wire Wire Line
+	7800 6025 7800 5500
+Wire Wire Line
+	9350 6025 7800 6025
+Wire Wire Line
+	9350 5850 9350 6025
+Wire Wire Line
+	7800 4700 7800 4850
+Wire Wire Line
+	7450 4700 8675 4700
+Wire Wire Line
+	6775 5775 6775 5250
+Wire Wire Line
+	6775 5050 6775 4700
+Wire Wire Line
+	6775 4700 6950 4700
+Wire Wire Line
+	2125 5775 2775 5775
+Connection ~ 2575 5775
+Connection ~ 7300 5775
+Connection ~ 8675 6025
+Connection ~ 7450 4700
+Connection ~ 2775 5775
+Wire Wire Line
+	2125 5325 3075 5325
+Wire Wire Line
+	3075 5325 3075 5375
+Connection ~ 3075 5375
+Connection ~ 2125 5325
+Connection ~ 7800 4850
+Connection ~ 7300 5450
+Connection ~ 7800 5500
+Connection ~ 8675 5625
+Wire Wire Line
+	9300 5325 9225 5325
+Wire Wire Line
+	9225 5325 9225 5425
+Wire Wire Line
+	9225 5425 9300 5425
+Wire Wire Line
+	8675 5125 9300 5125
+Wire Wire Line
+	9300 5125 9300 5225
+Wire Wire Line
+	8675 4700 8675 5125
+Connection ~ 7800 4700
+Wire Wire Line
+	9300 5525 9300 5850
+Wire Wire Line
+	9300 5850 9350 5850
+Wire Wire Line
+	1150 6425 1150 6500
+Wire Wire Line
+	1150 6700 1150 6775
+Connection ~ 1150 6500
+Connection ~ 1150 6700
+Wire Wire Line
+	5425 2625 5075 2625
+Wire Wire Line
+	5075 2625 5075 6225
+Wire Wire Line
+	5075 6225 1850 6225
+Wire Wire Line
+	2475 6225 2475 5775
+Connection ~ 2475 5775
+Wire Wire Line
+	2250 3025 1850 3025
+Wire Wire Line
+	1850 3025 1850 6225
+Connection ~ 2475 6225
+Wire Wire Line
+	2275 5775 2275 4825
+Wire Wire Line
+	2275 4825 2400 4825
+Connection ~ 2275 5775
+Wire Wire Line
+	2400 4925 2400 5325
+Connection ~ 2400 5325
+Wire Wire Line
+	2250 3375 2175 3375
+Wire Wire Line
+	2175 3375 2175 4725
+Wire Wire Line
+	2175 4725 2400 4725
+Wire Wire Line
+	2250 3275 2100 3275
+Wire Wire Line
+	2100 3275 2100 4625
+Wire Wire Line
+	2100 4625 2400 4625
+Wire Wire Line
+	3400 3125 4350 3125
+Wire Wire Line
+	4350 3125 4350 5050
+Wire Wire Line
+	6075 5250 5075 5250
+Connection ~ 5075 5250
+Connection ~ 8675 5125
+Wire Wire Line
+	5425 3075 4700 3075
+Wire Wire Line
+	4700 3075 4700 3425
+Wire Wire Line
+	4700 3425 3400 3425
+Wire Wire Line
+	5425 3375 3400 3375
+Wire Wire Line
+	3400 3375 3400 3325
+Wire Wire Line
+	5425 3225 3400 3225
+Wire Wire Line
+	3400 2775 5425 2775
+Wire Wire Line
+	3400 2775 3400 2925
+Wire Wire Line
+	3400 3025 5425 3025
+Wire Wire Line
+	5425 3025 5425 2925
+Wire Wire Line
+	9350 4450 9350 4925
+Wire Wire Line
+	9350 4925 9150 4925
+Wire Wire Line
+	9150 4925 9150 5375
+Wire Wire Line
+	9150 5375 9225 5375
+Connection ~ 9225 5375
+Wire Wire Line
+	9350 4350 9875 4350
+Wire Wire Line
+	9875 4350 9875 5900
+Wire Wire Line
+	9875 5900 9350 5900
+Connection ~ 9350 5900
+Wire Wire Line
+	9350 4250 2975 4250
+Wire Wire Line
+	2975 4250 2975 5325
+Connection ~ 2975 5325
+Wire Wire Line
+	2675 4150 9350 4150
+Wire Wire Line
+	2675 4150 2675 5775
+Connection ~ 2675 5775
+Wire Wire Line
+	3550 2775 3550 3925
+Connection ~ 3550 2775
+Wire Wire Line
+	2950 3925 2950 4150
+Connection ~ 2950 4150
+Wire Wire Line
+	4825 3825 5075 3825
+Connection ~ 5075 3825
+Wire Wire Line
+	4525 3825 4350 3825
+Connection ~ 4350 3825
+Wire Wire Line
+	2250 2925 2250 2175
+Wire Wire Line
+	2100 2400 2100 2175
+Connection ~ 2250 2175
+Wire Wire Line
+	2100 2700 2100 3175
+Wire Wire Line
+	2100 3175 2250 3175
+$Comp
+L R R7
+U 1 1 562E8BDD
+P 5550 5050
+F 0 "R7" V 5630 5050 50  0000 C CNN
+F 1 "220" V 5550 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5480 5050 30  0001 C CNN
+F 3 "" H 5550 5050 30  0000 C CNN
+	1    5550 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6075 5050 5700 5050
+Wire Wire Line
+	4350 5050 5400 5050
+$EndSCHEMATC

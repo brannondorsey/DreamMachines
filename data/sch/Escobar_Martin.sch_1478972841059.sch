@@ -1,0 +1,128 @@
+EESchema Schematic File Version 2
+LIBS:ej1
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Ejercicio 1"
+Date "2015-11-30"
+Rev "1"
+Comp "UNRC"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_3 K1
+U 1 1 565C5B4C
+P 3350 2700
+F 0 "K1" V 3300 2700 50  0000 C CNN
+F 1 "CONN_3" V 3400 2700 40  0000 C CNN
+F 2 "ej1:bornier3" H 3350 2700 60  0001 C CNN
+F 3 "" H 3350 2700 60  0000 C CNN
+	1    3350 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 565C5DF6
+P 4550 2650
+F 0 "C1" H 4575 2750 50  0000 L CNN
+F 1 "100nF" H 4575 2550 50  0000 L CNN
+F 2 "ej1:C_Rect_L7_W3.5_P5" H 4588 2500 30  0001 C CNN
+F 3 "" H 4550 2650 60  0000 C CNN
+	1    4550 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D2
+U 1 1 565C5E35
+P 4550 3150
+F 0 "D2" H 4550 3250 50  0000 C CNN
+F 1 "1N4148" H 4550 3050 50  0000 C CNN
+F 2 "ej1:Diode_DO-35_SOD27_Horizontal_RM10" H 4550 3150 60  0001 C CNN
+F 3 "" H 4550 3150 60  0000 C CNN
+	1    4550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 565C5E64
+P 5400 2900
+F 0 "R1" V 5480 2900 50  0000 C CNN
+F 1 "100K" V 5400 2900 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 5330 2900 30  0001 C CNN
+F 3 "" H 5400 2900 30  0000 C CNN
+	1    5400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2600 3850 2600
+Wire Wire Line
+	3850 2250 3850 2650
+Wire Wire Line
+	3850 2650 4400 2650
+Connection ~ 3850 2600
+Wire Wire Line
+	4850 2250 4850 2650
+Wire Wire Line
+	4700 2650 5750 2650
+Wire Wire Line
+	5400 2650 5400 2750
+Connection ~ 4850 2650
+Wire Wire Line
+	5400 3050 5400 3150
+Wire Wire Line
+	4700 3150 5750 3150
+Wire Wire Line
+	4400 3150 3700 3150
+Wire Wire Line
+	3700 3150 3700 2800
+Text Notes 3300 1950 0    60   ~ 0
+Circuito Experimental - Ejercicio 1
+Wire Notes Line
+	5500 2700 5800 2350
+Wire Notes Line
+	5800 2350 6000 2350
+Text Notes 5550 2300 0    60   Italic 12
+Resistencia Serie
+NoConn ~ 3700 2700
+$Comp
+L LED LED1
+U 1 1 565C7310
+P 4300 2250
+F 0 "LED1" H 4300 2350 50  0000 C CNN
+F 1 "LED_ROJO" H 4300 2150 50  0000 C CNN
+F 2 "ej1:LED-3MM" H 4300 2250 60  0001 C CNN
+F 3 "" H 4300 2250 60  0000 C CNN
+	1    4300 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 2250 4100 2250
+Wire Wire Line
+	4500 2250 4850 2250
+$Comp
+L R R2
+U 1 1 565CA8B9
+P 5750 2900
+F 0 "R2" V 5830 2900 50  0000 C CNN
+F 1 "100K" V 5750 2900 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 5680 2900 30  0000 C CNN
+F 3 "" H 5750 2900 30  0000 C CNN
+	1    5750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2650 5750 2750
+Connection ~ 5400 2650
+Wire Wire Line
+	5750 3150 5750 3050
+Connection ~ 5400 3150
+Wire Notes Line
+	5800 2800 6000 2550
+Wire Notes Line
+	6000 2550 6150 2550
+$EndSCHEMATC

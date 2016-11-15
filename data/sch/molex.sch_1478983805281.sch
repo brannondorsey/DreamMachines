@@ -1,0 +1,180 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:con-molex
+LIBS:con-molex-2
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "noname.sch"
+Date "7 apr 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 555X-6V PL?
+U 2 1 55232BE3
+P 3850 2850
+F 0 "PL?" H 3950 2820 50  0000 L BNN
+F 1 "555X-6V" H 3820 2905 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3850 3000 50  0001 C CNN
+F 3 "" H 3850 2850 60  0000 C CNN
+	2    3850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 6 1 55232BF2
+P 3850 2250
+F 0 "PL?" H 3950 2220 50  0000 L BNN
+F 1 "555X-6V" H 3820 2305 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3850 2400 50  0001 C CNN
+F 3 "" H 3850 2250 60  0000 C CNN
+	6    3850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 4 1 55232C01
+P 3850 2550
+F 0 "PL?" H 3950 2520 50  0000 L BNN
+F 1 "555X-6V" H 3820 2605 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3850 2700 50  0001 C CNN
+F 3 "" H 3850 2550 60  0000 C CNN
+	4    3850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 1 1 55232C10
+P 3850 3000
+F 0 "PL?" H 3950 2970 50  0000 L BNN
+F 1 "555X-6V" H 3820 3055 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3850 3150 50  0001 C CNN
+F 3 "" H 3850 3000 60  0000 C CNN
+	1    3850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 3 1 55232C1F
+P 3850 2700
+F 0 "PL?" H 3950 2670 50  0000 L BNN
+F 1 "555X-6V" H 3820 2755 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3850 2850 50  0001 C CNN
+F 3 "" H 3850 2700 60  0000 C CNN
+	3    3850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 5 1 55232DFA
+P 3850 2400
+F 0 "PL?" H 3950 2370 50  0000 L BNN
+F 1 "555X-6V" H 3820 2455 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3850 2550 50  0001 C CNN
+F 3 "" H 3850 2400 60  0000 C CNN
+	5    3850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 2 1 55232FF4
+P 3000 2850
+F 0 "PL?" H 3100 2820 50  0000 L BNN
+F 1 "555X-6V" H 2970 2905 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3000 3000 50  0001 C CNN
+F 3 "" H 3000 2850 60  0000 C CNN
+	2    3000 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 6 1 55232FFA
+P 3000 2250
+F 0 "PL?" H 3100 2220 50  0000 L BNN
+F 1 "555X-6V" H 2970 2305 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3000 2400 50  0001 C CNN
+F 3 "" H 3000 2250 60  0000 C CNN
+	6    3000 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 4 1 55233000
+P 3000 2550
+F 0 "PL?" H 3100 2520 50  0000 L BNN
+F 1 "555X-6V" H 2970 2605 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3000 2700 50  0001 C CNN
+F 3 "" H 3000 2550 60  0000 C CNN
+	4    3000 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 1 1 55233006
+P 3000 3000
+F 0 "PL?" H 3100 2970 50  0000 L BNN
+F 1 "555X-6V" H 2970 3055 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3000 3150 50  0001 C CNN
+F 3 "" H 3000 3000 60  0000 C CNN
+	1    3000 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 3 1 5523300C
+P 3000 2700
+F 0 "PL?" H 3100 2670 50  0000 L BNN
+F 1 "555X-6V" H 2970 2755 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3000 2850 50  0001 C CNN
+F 3 "" H 3000 2700 60  0000 C CNN
+	3    3000 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 555X-6V PL?
+U 5 1 55233012
+P 3000 2400
+F 0 "PL?" H 3100 2370 50  0000 L BNN
+F 1 "555X-6V" H 2970 2455 50  0000 L BNN
+F 2 "con-molex-2-5566-6" H 3000 2550 50  0001 C CNN
+F 3 "" H 3000 2400 60  0000 C CNN
+	5    3000 2400
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

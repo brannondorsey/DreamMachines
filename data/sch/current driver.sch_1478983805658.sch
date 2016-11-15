@@ -1,0 +1,376 @@
+EESchema Schematic File Version 2
+LIBS:suf
+LIBS:conn
+LIBS:device
+LIBS:power
+LIBS:transistors
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:current driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4N25 U1
+U 1 1 55602188
+P 1975 3275
+F 0 "U1" H 1775 3475 50  0000 L CNN
+F 1 "4N25" H 1975 3475 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6__300_ELL" H 1775 3075 50  0001 L CIN
+F 3 "" H 1975 3275 50  0000 L CNN
+	1    1975 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 55602243
+P 2725 2425
+F 0 "R2" H 2725 2350 40  0000 C CNN
+F 1 "4,7K" H 2725 2500 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 2725 2425 60  0001 C CNN
+F 3 "" H 2725 2425 60  0000 C CNN
+	1    2725 2425
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 556022B2
+P 2725 3050
+F 0 "R3" H 2725 2975 40  0000 C CNN
+F 1 "10K" H 2725 3125 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 2725 3050 60  0001 C CNN
+F 3 "" H 2725 3050 60  0000 C CNN
+	1    2725 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 55602300
+P 1400 3175
+F 0 "R1" H 1400 3100 40  0000 C CNN
+F 1 "220" H 1400 3250 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" H 1400 3175 60  0001 C CNN
+F 3 "" H 1400 3175 60  0000 C CNN
+	1    1400 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 J1
+U 1 1 55602373
+P 775 3275
+F 0 "J1" V 725 3275 40  0000 C CNN
+F 1 "IN" V 825 3275 40  0000 C CNN
+F 2 "suf_connector_ncw:CONN_NCW254-02R" H 775 3275 60  0001 C CNN
+F 3 "" H 775 3275 60  0000 C CNN
+	1    775  3275
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MC33151 U2
+U 1 1 556027B4
+P 3100 2750
+F 0 "U2" H 2925 2900 60  0000 C CNN
+F 1 "MC33151" H 3375 2625 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8__300_ELL" H 3100 2750 60  0001 C CNN
+F 3 "" H 3100 2750 60  0000 C CNN
+	1    3100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N_GDS Q1
+U 1 1 55602817
+P 3750 2675
+F 0 "Q1" H 3625 2855 60  0000 C CNN
+F 1 "PHP27NQ11T" H 4200 2675 60  0000 C CNN
+F 2 "Transistors_TO-220:TO-220_Neutral123_Horizontal_LargePads" H 3750 2675 60  0001 C CNN
+F 3 "" H 3750 2675 60  0000 C CNN
+	1    3750 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 J4
+U 1 1 55602865
+P 4200 2250
+F 0 "J4" V 4150 2250 40  0000 C CNN
+F 1 "OUT2" V 4250 2250 40  0000 C CNN
+F 2 "suf_connector_ncw:CONN_NCW396-02R" H 4200 2250 60  0001 C CNN
+F 3 "" H 4200 2250 60  0000 C CNN
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 J2
+U 1 1 556028B8
+P 2000 1600
+F 0 "J2" V 1950 1600 40  0000 C CNN
+F 1 "PWR" V 2050 1600 40  0000 C CNN
+F 2 "suf_connector_ncw:CONN_NCW396-02R" H 2000 1600 60  0001 C CNN
+F 3 "" H 2000 1600 60  0000 C CNN
+	1    2000 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 55602942
+P 2650 1500
+F 0 "F1" H 2750 1550 40  0000 C CNN
+F 1 "10A F" H 2550 1450 40  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" H 2650 1500 60  0001 C CNN
+F 3 "" H 2650 1500 60  0000 C CNN
+	1    2650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 55602FB1
+P 2925 1625
+F 0 "C1" H 3025 1675 40  0000 C CNN
+F 1 "100nF" H 3050 1475 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 2925 1625 60  0001 C CNN
+F 3 "" H 2925 1625 60  0000 C CNN
+	1    2925 1625
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C2
+U 1 1 55602FE1
+P 3225 1625
+F 0 "C2" H 3325 1575 40  0000 C CNN
+F 1 "4,7uF" H 3225 1775 40  0000 C CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11x5mm_RM2.5" H 3225 1625 60  0001 C CNN
+F 3 "" H 3225 1625 60  0000 C CNN
+	1    3225 1625
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 556037DD
+P 2350 1750
+F 0 "#PWR01" H 2350 1500 50  0001 C CNN
+F 1 "GND" H 2350 1600 50  0000 C CNN
+F 2 "" H 2350 1750 60  0000 C CNN
+F 3 "" H 2350 1750 60  0000 C CNN
+	1    2350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 55603EEE
+P 2925 1750
+F 0 "#PWR02" H 2925 1500 50  0001 C CNN
+F 1 "GND" H 2925 1600 50  0000 C CNN
+F 2 "" H 2925 1750 60  0000 C CNN
+F 3 "" H 2925 1750 60  0000 C CNN
+	1    2925 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 55603F0E
+P 3225 1750
+F 0 "#PWR03" H 3225 1500 50  0001 C CNN
+F 1 "GND" H 3225 1600 50  0000 C CNN
+F 2 "" H 3225 1750 60  0000 C CNN
+F 3 "" H 3225 1750 60  0000 C CNN
+	1    3225 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 55603F2E
+P 3225 1475
+F 0 "#PWR04" H 3225 1325 50  0001 C CNN
+F 1 "VCC" H 3225 1625 50  0000 C CNN
+F 2 "" H 3225 1475 60  0000 C CNN
+F 3 "" H 3225 1475 60  0000 C CNN
+	1    3225 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1500 2400 1500
+Wire Wire Line
+	2350 1700 2350 1750
+Wire Wire Line
+	2900 1500 3225 1500
+Wire Wire Line
+	3225 1475 3225 1525
+Connection ~ 3225 1500
+Wire Wire Line
+	2925 1500 2925 1525
+Connection ~ 2925 1500
+Wire Wire Line
+	2925 1725 2925 1750
+Wire Wire Line
+	3225 1725 3225 1750
+$Comp
+L VCC #PWR05
+U 1 1 55604561
+P 3825 2100
+F 0 "#PWR05" H 3825 1950 50  0001 C CNN
+F 1 "VCC" H 3825 2250 50  0000 C CNN
+F 2 "" H 3825 2100 60  0000 C CNN
+F 3 "" H 3825 2100 60  0000 C CNN
+	1    3825 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3825 2100 3825 2150
+Wire Wire Line
+	3800 2150 3850 2150
+Wire Wire Line
+	3800 2350 3850 2350
+Wire Wire Line
+	3825 2350 3825 2400
+$Comp
+L GND #PWR06
+U 1 1 556045E7
+P 3825 2975
+F 0 "#PWR06" H 3825 2725 50  0001 C CNN
+F 1 "GND" H 3825 2825 50  0000 C CNN
+F 2 "" H 3825 2975 60  0000 C CNN
+F 3 "" H 3825 2975 60  0000 C CNN
+	1    3825 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3825 2950 3825 2975
+Wire Wire Line
+	3475 2750 3400 2750
+Wire Wire Line
+	2350 2750 2850 2750
+Wire Wire Line
+	2725 2625 2725 2850
+$Comp
+L GND #PWR07
+U 1 1 55604AB1
+P 2725 3425
+F 0 "#PWR07" H 2725 3175 50  0001 C CNN
+F 1 "GND" H 2725 3275 50  0000 C CNN
+F 2 "" H 2725 3425 60  0000 C CNN
+F 3 "" H 2725 3425 60  0000 C CNN
+	1    2725 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR08
+U 1 1 55604AD1
+P 2725 2150
+F 0 "#PWR08" H 2725 2000 50  0001 C CNN
+F 1 "VCC" H 2725 2300 50  0000 C CNN
+F 2 "" H 2725 2150 60  0000 C CNN
+F 3 "" H 2725 2150 60  0000 C CNN
+	1    2725 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 3375 1675 3375
+Wire Wire Line
+	1675 3175 1600 3175
+Wire Wire Line
+	1200 3175 1125 3175
+Wire Wire Line
+	2725 2150 2725 2225
+$Comp
+L GND #PWR09
+U 1 1 55604C37
+P 3100 3125
+F 0 "#PWR09" H 3100 2875 50  0001 C CNN
+F 1 "GND" H 3100 2975 50  0000 C CNN
+F 2 "" H 3100 3125 60  0000 C CNN
+F 3 "" H 3100 3125 60  0000 C CNN
+	1    3100 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR010
+U 1 1 55604C57
+P 3100 2350
+F 0 "#PWR010" H 3100 2200 50  0001 C CNN
+F 1 "VCC" H 3100 2500 50  0000 C CNN
+F 2 "" H 3100 2350 60  0000 C CNN
+F 3 "" H 3100 2350 60  0000 C CNN
+	1    3100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2350 3100 2450
+Wire Wire Line
+	3100 3050 3100 3125
+$Comp
+L CONN_2 J3
+U 1 1 556091FB
+P 3450 2250
+F 0 "J3" V 3400 2250 40  0000 C CNN
+F 1 "OUT1" V 3500 2250 40  0000 C CNN
+F 2 "suf_connector_ncw:CONN_NCW396-02R" H 3450 2250 60  0001 C CNN
+F 3 "" H 3450 2250 60  0000 C CNN
+	1    3450 2250
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3825 2150
+Connection ~ 3825 2350
+Text GLabel 1225 3375 3    39   Input ~ 0
+AGND
+Connection ~ 2725 2750
+Wire Wire Line
+	2275 3375 2725 3375
+Wire Wire Line
+	2725 3250 2725 3425
+Connection ~ 2725 3375
+$Comp
+L C C3
+U 1 1 5564E061
+P 2500 3050
+F 0 "C3" H 2600 2975 40  0000 C CNN
+F 1 "100pF" H 2650 3125 40  0000 C CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L4_W2.5_P2.5" H 2500 3050 60  0001 C CNN
+F 3 "" H 2500 3050 60  0000 C CNN
+	1    2500 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2275 3275 2350 3275
+Wire Wire Line
+	2350 3275 2350 2750
+Wire Wire Line
+	2500 2750 2500 2950
+Connection ~ 2500 2750
+Wire Wire Line
+	2500 3150 2500 3375
+Connection ~ 2500 3375
+$EndSCHEMATC

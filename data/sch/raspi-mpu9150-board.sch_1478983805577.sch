@@ -1,0 +1,380 @@
+EESchema Schematic File Version 2
+LIBS:wickerlib
+LIBS:raspi-mpu9150-board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MPU 9150 Sensor Board for RasPi B+"
+Date "2016-02-02"
+Rev "v1.0"
+Comp "Released under the CERN Open Hardware License v1.2"
+Comment1 "Contact: jeh.wicker@gmail.com"
+Comment2 "Author: Jenner Hanni"
+Comment3 "Company: Wickerbox Electronics"
+Comment4 ""
+$EndDescr
+$Comp
+L +3.3V #PWR5
+U 1 1 56B136AB
+P 6100 3150
+F 0 "#PWR5" H 6100 3000 50  0001 C CNN
+F 1 "+3.3V" H 6100 3290 50  0000 C CNN
+F 2 "" H 6100 3150 50  0000 C CNN
+F 3 "" H 6100 3150 50  0000 C CNN
+	1    6100 3150
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 4250 0    60   ~ 0
+NC\nNC\nNC
+$Comp
+L GND #PWR7
+U 1 1 56B13BF0
+P 7750 4050
+F 0 "#PWR7" H 7750 3800 50  0001 C CNN
+F 1 "GND" H 7750 3900 50  0000 C CNN
+F 2 "" H 7750 4050 50  0000 C CNN
+F 3 "" H 7750 4050 50  0000 C CNN
+	1    7750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 56B13C0C
+P 8175 4050
+F 0 "#PWR8" H 8175 3800 50  0001 C CNN
+F 1 "GND" H 8175 3900 50  0000 C CNN
+F 2 "" H 8175 4050 50  0000 C CNN
+F 3 "" H 8175 4050 50  0000 C CNN
+	1    8175 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 56B13C28
+P 7500 4600
+F 0 "#PWR6" H 7500 4350 50  0001 C CNN
+F 1 "GND" H 7500 4450 50  0000 C CNN
+F 2 "" H 7500 4600 50  0000 C CNN
+F 3 "" H 7500 4600 50  0000 C CNN
+	1    7500 4600
+	1    0    0    -1  
+$EndComp
+Text Label 7550 3350 0    60   ~ 0
+IMU_CLKOUT
+$Comp
+L GND #PWR4
+U 1 1 56B13D3B
+P 5700 3550
+F 0 "#PWR4" H 5700 3300 50  0001 C CNN
+F 1 "GND" H 5700 3400 50  0000 C CNN
+F 2 "" H 5700 3550 50  0000 C CNN
+F 3 "" H 5700 3550 50  0000 C CNN
+	1    5700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 56B13DA5
+P 5350 3550
+F 0 "#PWR3" H 5350 3300 50  0001 C CNN
+F 1 "GND" H 5350 3400 50  0000 C CNN
+F 2 "" H 5350 3550 50  0000 C CNN
+F 3 "" H 5350 3550 50  0000 C CNN
+	1    5350 3550
+	1    0    0    -1  
+$EndComp
+Text Label 7550 3450 0    60   ~ 0
+IMU_INT
+Text Label 5700 4450 0    60   ~ 0
+IMU_AD0
+Text Label 5700 4550 0    60   ~ 0
+IMU_FSYNC
+$Comp
+L GND #PWR1
+U 1 1 56B155E7
+P 3200 4850
+F 0 "#PWR1" H 3200 4600 50  0001 C CNN
+F 1 "GND" H 3200 4700 50  0000 C CNN
+F 2 "" H 3200 4850 50  0000 C CNN
+F 3 "" H 3200 4850 50  0000 C CNN
+	1    3200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3350 6350 3350
+Wire Wire Line
+	6100 3450 6350 3450
+Connection ~ 6100 3350
+Wire Wire Line
+	6100 3550 6350 3550
+Wire Wire Line
+	4100 4450 6350 4450
+Wire Wire Line
+	4000 4550 6350 4550
+Wire Wire Line
+	3100 3250 6100 3250
+Connection ~ 6100 3250
+Wire Wire Line
+	5700 3350 5700 3250
+Connection ~ 5700 3250
+Wire Wire Line
+	7350 4350 7500 4350
+Wire Wire Line
+	7500 4350 7500 4600
+Wire Wire Line
+	7350 4450 7500 4450
+Connection ~ 7500 4450
+Wire Wire Line
+	7350 4550 7500 4550
+Connection ~ 7500 4550
+Wire Wire Line
+	7350 3350 8700 3350
+Connection ~ 6100 3450
+Wire Wire Line
+	7350 3450 8600 3450
+Wire Wire Line
+	6100 3150 6100 3550
+Wire Wire Line
+	5350 3250 5350 3350
+Connection ~ 5350 3250
+Wire Wire Line
+	4750 3800 4750 4150
+Connection ~ 4750 4150
+Wire Wire Line
+	5000 3800 5000 4250
+Connection ~ 5000 4250
+Wire Wire Line
+	5000 3600 5000 3250
+Wire Wire Line
+	4750 3600 4750 3250
+Connection ~ 5000 3250
+Connection ~ 4750 3250
+Wire Wire Line
+	7350 3800 7750 3800
+Wire Wire Line
+	7750 3800 7750 3850
+Wire Wire Line
+	7350 3600 8175 3600
+Wire Wire Line
+	8175 3600 8175 3850
+Wire Wire Line
+	4300 3350 4300 4150
+Wire Wire Line
+	4200 3550 4200 4250
+Wire Wire Line
+	3100 3750 3200 3750
+Wire Wire Line
+	3200 3750 3200 4850
+Wire Wire Line
+	3100 4250 3800 4250
+Wire Wire Line
+	3575 3250 3575 3150
+Connection ~ 3575 3250
+Text Label 3300 3350 0    60   ~ 0
+SDA
+Text Label 3300 3550 0    60   ~ 0
+SCL
+Text Label 3300 4350 0    60   ~ 0
+IMU_AD0
+Text Label 3300 4250 0    60   ~ 0
+IMU_CLKOUT
+Text Notes 2750 2900 0    60   ~ 0
+RasPi B+ GPIO\nBreakout
+Text Notes 6600 3075 0    60   ~ 0
+Invensense\nMPU 9150\n9DOF IMU
+Wire Wire Line
+	3900 3950 3900 4900
+Wire Wire Line
+	3900 4900 8600 4900
+Wire Wire Line
+	8600 4900 8600 3450
+Wire Wire Line
+	3800 4250 3800 5000
+Wire Wire Line
+	3800 5000 8700 5000
+Wire Wire Line
+	8700 5000 8700 3350
+Wire Wire Line
+	4200 4250 6350 4250
+Wire Wire Line
+	4300 4150 6350 4150
+Text Label 5700 4150 0    60   ~ 0
+SDA
+Text Label 5700 4250 0    60   ~ 0
+SCL
+Wire Wire Line
+	3100 4350 4100 4350
+Wire Wire Line
+	4100 4350 4100 4450
+Wire Wire Line
+	3100 3350 4300 3350
+Wire Wire Line
+	3100 3550 4200 3550
+Wire Wire Line
+	3100 3950 3900 3950
+Wire Wire Line
+	3100 4150 4000 4150
+Wire Wire Line
+	4000 4150 4000 4550
+Text Label 3300 3950 0    60   ~ 0
+IMU_INT
+Text Label 3300 4150 0    60   ~ 0
+IMU_FSYNC
+$Comp
+L IC-9-AXIS-IMU-MPU9150-LGA24 U1
+U 1 1 57D3A884
+P 6850 3950
+F 0 "U1" H 6500 4700 50  0000 L CNN
+F 1 "MPU9150-LGA24" H 6500 3200 50  0000 L CNN
+F 2 "" H 6850 3600 50  0001 C CIN
+F 3 "http://store.invensense.com/datasheets/invensense/MPU-9150_DataSheet_V4%203.pdf" H 6850 3950 5   0001 C CNN
+F 4 "UNDEFINED" H 6850 3600 50  0001 C CIN "Package"
+F 5 "Invensense" H 6850 3600 50  0001 C CIN "MF_Name"
+F 6 "MPU-9150" H 6850 3600 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 6850 3600 50  0001 C CIN "S1_Name"
+F 8 "1428-1009-1-ND" H 6850 3600 50  0001 C CIN "S1_PN"
+F 9 "GYRO/ACCELEROMETER 9-AXIS 24LGA MPU9150" H 6850 3600 50  0001 C CIN "Description"
+F 10 "Not Verified" H 6850 3600 50  0001 C CIN "Verified"
+	1    6850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP-CER-0.1UF-100V-X7R-0603 C3
+U 1 1 57D3A8E0
+P 7750 3950
+F 0 "C3" H 7850 4000 50  0000 L CNN
+F 1 "100nF" H 7850 3900 50  0000 L CNN
+F 2 "" H 7750 3600 50  0001 C CIN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 7750 3950 5   0001 C CNN
+F 4 "0603" H 7750 3600 50  0001 C CIN "Package"
+F 5 "Murata" H 7750 3600 50  0001 C CIN "MF_Name"
+F 6 "GRM188R72A104KA35D" H 7750 3600 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 7750 3600 50  0001 C CIN "S1_Name"
+F 8 "490-3285-1-ND" H 7750 3600 50  0001 C CIN "S1_PN"
+F 9 "CAP CER 0.1UF 100V X7R 0603" H 7750 3600 50  0001 C CIN "Description"
+F 10 "Not Verified" H 7750 3600 50  0001 C CIN "Verified"
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP-CER-0.1UF-100V-X7R-0603 C2
+U 1 1 57D3AA25
+P 5700 3450
+F 0 "C2" H 5800 3500 50  0000 L CNN
+F 1 "100nF" H 5800 3400 50  0000 L CNN
+F 2 "" H 5700 3100 50  0001 C CIN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 5700 3450 5   0001 C CNN
+F 4 "0603" H 5700 3100 50  0001 C CIN "Package"
+F 5 "Murata" H 5700 3100 50  0001 C CIN "MF_Name"
+F 6 "GRM188R72A104KA35D" H 5700 3100 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 5700 3100 50  0001 C CIN "S1_Name"
+F 8 "490-3285-1-ND" H 5700 3100 50  0001 C CIN "S1_PN"
+F 9 "CAP CER 0.1UF 100V X7R 0603" H 5700 3100 50  0001 C CIN "Description"
+F 10 "Not Verified" H 5700 3100 50  0001 C CIN "Verified"
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES-10K-1%-1/8W-0603 R2
+U 1 1 57D3F4F2
+P 5000 3700
+F 0 "R2" H 5050 3750 50  0000 L CNN
+F 1 "10K" H 5050 3650 50  0000 L CNN
+F 2 "" H 5000 3350 50  0001 C CIN
+F 3 "http://www.seielect.com/catalog/SEI-RNCP.pdf" H 5000 3700 5   0001 C CNN
+F 4 "0603" H 5000 3350 50  0001 C CIN "Package"
+F 5 "Stackpole" H 5000 3350 50  0001 C CIN "MF_Name"
+F 6 "RNCP0603FTD10K0" H 5000 3350 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 5000 3350 50  0001 C CIN "S1_Name"
+F 8 "RNCP0603FTD10K0CT-ND" H 5000 3350 50  0001 C CIN "S1_PN"
+F 9 "RES SMD 10K OHM 1% 1/8W 0603" H 5000 3350 50  0001 C CIN "Description"
+F 10 "Not Verified" H 5000 3350 50  0001 C CIN "Verified"
+	1    5000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR2
+U 1 1 56B158BB
+P 3575 3150
+F 0 "#PWR2" H 3575 3000 50  0001 C CNN
+F 1 "+3.3V" H 3575 3290 50  0000 C CNN
+F 2 "" H 3575 3150 50  0000 C CNN
+F 3 "" H 3575 3150 50  0000 C CNN
+	1    3575 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-12POS-TH-1x12-P0.1IN J1
+U 1 1 57D41C63
+P 2900 3800
+F 0 "J1" H 2850 4450 50  0000 L CNN
+F 1 "HEADER-MALE-12POS-TH-1x12-P0.1IN" H 2850 3150 50  0001 L CNN
+F 2 "" H 2900 3450 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 2900 3800 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x12" H 2900 3450 50  0001 C CIN "Package"
+F 5 "Harwin" H 2900 3450 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 2900 3450 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 2900 3450 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 2900 3450 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 12POS TH 1x12 0.1”" H 2900 3450 50  0001 C CIN "Description"
+F 10 "Not Verified" H 2900 3450 50  0001 C CIN "Verified"
+	1    2900 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RES-10K-1%-1/8W-0603 R1
+U 1 1 57D4218C
+P 4750 3700
+F 0 "R1" H 4800 3750 50  0000 L CNN
+F 1 "10K" H 4800 3650 50  0000 L CNN
+F 2 "0603" H 4750 3350 50  0001 C CIN
+F 3 "http://www.seielect.com/catalog/SEI-RNCP.pdf" H 4750 3700 5   0001 C CNN
+F 4 "0603" H 4750 3350 50  0001 C CIN "Package"
+F 5 "Stackpole" H 4750 3350 50  0001 C CIN "MF_Name"
+F 6 "RNCP0603FTD10K0" H 4750 3350 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 4750 3350 50  0001 C CIN "S1_Name"
+F 8 "RNCP0603FTD10K0CT-ND" H 4750 3350 50  0001 C CIN "S1_PN"
+F 9 "RES SMD 10K OHM 1% 1/8W 0603" H 4750 3350 50  0001 C CIN "Description"
+F 10 "Not Verified" H 4750 3350 50  0001 C CIN "Verified"
+	1    4750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP-CER-2200PF-50V-X7R-0402 C?
+U 1 1 57D4459D
+P 8175 3950
+F 0 "C?" H 8275 4000 50  0000 L CNN
+F 1 "2.2nF" H 8275 3900 50  0000 L CNN
+F 2 "Wickerlib:RLC-0402-SMD" H 8175 3600 50  0001 C CIN
+F 3 "https://product.tdk.com/info/en/documents/spec/leadmlccspec_conventional_en.pdf" H 8175 3950 5   0001 C CNN
+F 4 "Wickerlib:RLC-0402" H 8175 3600 50  0001 C CIN "Package"
+F 5 "Murata" H 8175 3600 50  0001 C CIN "MF_Name"
+F 6 "GRM155R71H222JA01J" H 8175 3600 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 8175 3600 50  0001 C CIN "S1_Name"
+F 8 "490-6359-1-ND" H 8175 3600 50  0001 C CIN "S1_PN"
+F 9 "CAP CER 2200PF 50V X7R 0402" H 8175 3600 50  0001 C CIN "Description"
+F 10 "Not Verified" H 8175 3600 50  0001 C CIN "Verified"
+	1    8175 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP-CER-10NF-50V-X7R-0402 C?
+U 1 1 57D44633
+P 5350 3450
+F 0 "C?" H 5425 3500 50  0000 L CNN
+F 1 "10nF" H 5425 3400 50  0000 L CNN
+F 2 "RLC-0402" H 5350 3100 50  0001 C CIN
+F 3 "http://www.digikey.com/en/ptm/k/kemet/capacitor-basics---typical-uses-for-capacitors?WT.pn_sku=399-3027-1-ND&WT.z_part_id=447601&WT.z_video_source=Part_Detail" H 5350 3450 5   0001 C CNN
+F 4 "0402" H 5350 3100 50  0001 C CIN "Package"
+F 5 "Yageo" H 5350 3100 50  0001 C CIN "MF_Name"
+F 6 "CC0402KRX7R9BB103" H 5350 3100 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 5350 3100 50  0001 C CIN "S1_Name"
+F 8 "311-1349-1-ND" H 5350 3100 50  0001 C CIN "S1_PN"
+F 9 "CAP CER 10000PF 50V X7R 0402" H 5350 3100 50  0001 C CIN "Description"
+F 10 "Not Verified" H 5350 3100 50  0001 C CIN "Verified"
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

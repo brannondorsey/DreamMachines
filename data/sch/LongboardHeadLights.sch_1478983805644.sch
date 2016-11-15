@@ -1,0 +1,417 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Light_Parts
+LIBS:LongboardHeadLights-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AL8805 U1
+U 1 1 57EF148A
+P 3900 2750
+F 0 "U1" H 3900 2750 50  0000 C CNN
+F 1 "AL8805" H 3900 2950 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3950 2450 50  0001 C CNN
+F 3 "DOCUMENTATION" H 3800 2550 50  0001 C CNN
+	1    3900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57EF14EB
+P 4450 2700
+F 0 "R1" V 4530 2700 50  0000 C CNN
+F 1 "0.275" V 4450 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4380 2700 50  0001 C CNN
+F 3 "" H 4450 2700 50  0000 C CNN
+	1    4450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 57EF1540
+P 4700 4400
+F 0 "C5" H 4725 4500 50  0000 L CNN
+F 1 "1uF" H 4725 4300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4738 4250 50  0001 C CNN
+F 3 "" H 4700 4400 50  0000 C CNN
+	1    4700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 57EF1574
+P 4700 3800
+F 0 "C4" H 4725 3900 50  0000 L CNN
+F 1 "1uF" H 4725 3700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4738 3650 50  0001 C CNN
+F 3 "" H 4700 3800 50  0000 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 57EF1596
+P 4700 3200
+F 0 "C3" H 4725 3300 50  0000 L CNN
+F 1 "1uF" H 4725 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4738 3050 50  0001 C CNN
+F 3 "" H 4700 3200 50  0000 C CNN
+	1    4700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 57EF15BB
+P 3000 3100
+F 0 "C2" H 3025 3200 50  0000 L CNN
+F 1 "2.2uF" H 3025 3000 50  0000 L CNN
+F 2 "" H 3038 2950 50  0001 C CNN
+F 3 "" H 3000 3100 50  0000 C CNN
+	1    3000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 57EF15E1
+P 2700 3100
+F 0 "C1" H 2725 3200 50  0000 L CNN
+F 1 "4.7uF" H 2725 3000 50  0000 L CNN
+F 2 "" H 2738 2950 50  0001 C CNN
+F 3 "" H 2700 3100 50  0000 C CNN
+	1    2700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 57EF1607
+P 4450 5100
+F 0 "L1" V 4400 5100 50  0000 C CNN
+F 1 "INDUCTOR" V 4550 5100 50  0000 C CNN
+F 2 "" H 4450 5100 50  0001 C CNN
+F 3 "" H 4450 5100 50  0000 C CNN
+	1    4450 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D4
+U 1 1 57EF163C
+P 5050 3650
+F 0 "D4" H 5050 3750 50  0000 C CNN
+F 1 "D_Schottky" H 5050 3550 50  0000 C CNN
+F 2 "" H 5050 3650 50  0001 C CNN
+F 3 "" H 5050 3650 50  0000 C CNN
+	1    5050 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 57EF1663
+P 4450 4400
+F 0 "D3" H 4450 4500 50  0000 C CNN
+F 1 "LED" H 4450 4300 50  0000 C CNN
+F 2 "LEDs:LED-XP-G_CREE" H 4450 4400 50  0001 C CNN
+F 3 "" H 4450 4400 50  0000 C CNN
+	1    4450 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 57EF16C6
+P 4450 3200
+F 0 "D1" H 4450 3300 50  0000 C CNN
+F 1 "LED" H 4450 3100 50  0000 C CNN
+F 2 "LEDs:LED-XP-G_CREE" H 4450 3200 50  0001 C CNN
+F 3 "" H 4450 3200 50  0000 C CNN
+	1    4450 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 57EF16FF
+P 4450 3800
+F 0 "D2" H 4450 3900 50  0000 C CNN
+F 1 "LED" H 4450 3700 50  0000 C CNN
+F 2 "LEDs:LED-XP-G_CREE" H 4450 3800 50  0001 C CNN
+F 3 "" H 4450 3800 50  0000 C CNN
+	1    4450 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L JUMPER3 JP1
+U 1 1 57EF1739
+P 6250 2950
+F 0 "JP1" H 6300 2850 50  0000 L CNN
+F 1 "JUMPER3" H 6250 3050 50  0000 C BNN
+F 2 "" H 6250 2950 50  0001 C CNN
+F 3 "" H 6250 2950 50  0000 C CNN
+	1    6250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 57EF1784
+P 7800 2600
+F 0 "P1" H 7800 2800 50  0000 C CNN
+F 1 "CONN_01X03" V 7900 2600 50  0000 C CNN
+F 2 "" H 7800 2600 50  0001 C CNN
+F 3 "" H 7800 2600 50  0000 C CNN
+	1    7800 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 2850 4250 2850
+Wire Wire Line
+	4350 2650 4250 2650
+Wire Wire Line
+	4350 2350 4350 2650
+Wire Wire Line
+	4350 2550 4450 2550
+Text HLabel 2550 2850 0    60   Input ~ 0
+CTRL
+Text HLabel 8350 2500 2    60   Input ~ 0
+CTRL_EXT
+Text HLabel 6200 3350 0    60   Input ~ 0
+CTRL
+Text HLabel 6600 2950 2    60   Input ~ 0
+CTRL_EXT
+$Comp
+L R R2
+U 1 1 57EF24C1
+P 5850 2750
+F 0 "R2" V 5930 2750 50  0000 C CNN
+F 1 "6200" V 5850 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5780 2750 50  0001 C CNN
+F 3 "" H 5850 2750 50  0000 C CNN
+	1    5850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 57EF2501
+P 5850 3150
+F 0 "R3" V 5930 3150 50  0000 C CNN
+F 1 "1600" V 5850 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5780 3150 50  0001 C CNN
+F 3 "" H 5850 3150 50  0000 C CNN
+	1    5850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 57EF25AD
+P 2700 2250
+F 0 "#PWR01" H 2700 2100 50  0001 C CNN
+F 1 "VCC" H 2700 2400 50  0000 C CNN
+F 2 "" H 2700 2250 50  0000 C CNN
+F 3 "" H 2700 2250 50  0000 C CNN
+	1    2700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 57EF25EF
+P 5850 2450
+F 0 "#PWR02" H 5850 2300 50  0001 C CNN
+F 1 "VCC" H 5850 2600 50  0000 C CNN
+F 2 "" H 5850 2450 50  0000 C CNN
+F 3 "" H 5850 2450 50  0000 C CNN
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 57EF261C
+P 3350 3350
+F 0 "#PWR03" H 3350 3100 50  0001 C CNN
+F 1 "GND" H 3350 3200 50  0000 C CNN
+F 2 "" H 3350 3350 50  0000 C CNN
+F 3 "" H 3350 3350 50  0000 C CNN
+	1    3350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57EF265E
+P 3000 3600
+F 0 "#PWR04" H 3000 3350 50  0001 C CNN
+F 1 "GND" H 3000 3450 50  0000 C CNN
+F 2 "" H 3000 3600 50  0000 C CNN
+F 3 "" H 3000 3600 50  0000 C CNN
+	1    3000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 57EF2699
+P 5850 3450
+F 0 "#PWR05" H 5850 3200 50  0001 C CNN
+F 1 "GND" H 5850 3300 50  0000 C CNN
+F 2 "" H 5850 3450 50  0000 C CNN
+F 3 "" H 5850 3450 50  0000 C CNN
+	1    5850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 57EF26D4
+P 8300 2900
+F 0 "#PWR06" H 8300 2650 50  0001 C CNN
+F 1 "GND" H 8300 2750 50  0000 C CNN
+F 2 "" H 8300 2900 50  0000 C CNN
+F 3 "" H 8300 2900 50  0000 C CNN
+	1    8300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 57EF270F
+P 8300 2300
+F 0 "#PWR07" H 8300 2150 50  0001 C CNN
+F 1 "VCC" H 8300 2450 50  0000 C CNN
+F 2 "" H 8300 2300 50  0000 C CNN
+F 3 "" H 8300 2300 50  0000 C CNN
+	1    8300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2850 4450 3000
+Wire Wire Line
+	4450 3400 4450 3600
+Wire Wire Line
+	4450 4000 4450 4200
+Wire Wire Line
+	4450 4600 4450 4800
+Wire Wire Line
+	4450 5400 4450 5450
+Wire Wire Line
+	3250 5450 5050 5450
+Wire Wire Line
+	3250 5450 3250 2650
+Wire Wire Line
+	3250 2650 3500 2650
+Wire Wire Line
+	3500 2750 3350 2750
+Wire Wire Line
+	3350 2750 3350 3350
+Wire Wire Line
+	3000 3250 3000 3600
+Wire Wire Line
+	2700 3250 2700 3350
+Wire Wire Line
+	2700 3350 3000 3350
+Connection ~ 3000 3350
+Wire Wire Line
+	2700 2350 5050 2350
+Wire Wire Line
+	3000 2350 3000 2950
+Connection ~ 4350 2550
+Wire Wire Line
+	2700 2250 2700 2950
+Connection ~ 3000 2350
+Connection ~ 2700 2350
+Wire Wire Line
+	2550 2850 3500 2850
+Wire Wire Line
+	4700 3050 4700 3050
+Wire Wire Line
+	4700 3050 4700 3000
+Wire Wire Line
+	4700 3000 4450 3000
+Wire Wire Line
+	4700 3350 4700 3400
+Wire Wire Line
+	4700 3400 4450 3400
+Wire Wire Line
+	4700 3650 4700 3600
+Wire Wire Line
+	4700 3600 4450 3600
+Wire Wire Line
+	4700 3950 4700 4000
+Wire Wire Line
+	4700 4000 4450 4000
+Wire Wire Line
+	4700 4250 4700 4200
+Wire Wire Line
+	4700 4200 4450 4200
+Wire Wire Line
+	4700 4550 4700 4600
+Wire Wire Line
+	4700 4600 4450 4600
+Wire Wire Line
+	5050 5450 5050 3800
+Connection ~ 4450 5450
+Wire Wire Line
+	5050 2350 5050 3500
+Connection ~ 4350 2350
+Wire Wire Line
+	6000 2950 5850 2950
+Wire Wire Line
+	5850 2900 5850 3000
+Connection ~ 5850 2950
+Wire Wire Line
+	6250 3050 6250 3350
+Wire Wire Line
+	6250 3350 6200 3350
+Wire Wire Line
+	5850 3300 5850 3450
+Wire Wire Line
+	5850 2450 5850 2600
+Wire Wire Line
+	6600 2950 6500 2950
+Wire Wire Line
+	8300 2300 8300 2600
+Wire Wire Line
+	8300 2600 8000 2600
+Wire Wire Line
+	8300 2900 8300 2700
+Wire Wire Line
+	8300 2700 8000 2700
+Wire Wire Line
+	8350 2500 8000 2500
+Text Notes 7600 2050 0    60   ~ 0
+Power/Control input to board
+Text Notes 5300 2150 0    60   ~ 0
+Jumper to set control of LED's to either\nvoltage divider or external control (MCU)
+Text Notes 3550 2100 0    60   ~ 0
+White LED Headlights
+$EndSCHEMATC

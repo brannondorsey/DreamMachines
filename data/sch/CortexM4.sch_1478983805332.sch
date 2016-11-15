@@ -1,0 +1,403 @@
+EESchema Schematic File Version 2  date Tue 06 Nov 2012 07:35:26 PM EST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ABM8G
+LIBS:mpu6050
+LIBS:stm32f100vxx
+LIBS:hmc5883l
+LIBS:bmp085
+LIBS:mpu6000
+LIBS:ap1115a
+LIBS:HackBo_DroneCore_CM4-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date "7 nov 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F105RC U1
+U 1 1 50940D89
+P 4200 4800
+F 0 "U1" H 3200 8150 60  0000 C CNN
+F 1 "STM32F105RC" H 5100 2600 60  0000 C CNN
+F 2 "TQFP_64" H 4200 4800 60  0001 C CNN
+	1    4200 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1250 4300 1150
+Wire Wire Line
+	4300 1150 4000 1150
+Wire Wire Line
+	4000 1050 4000 1250
+Wire Wire Line
+	4100 1250 4100 1150
+Connection ~ 4100 1150
+Wire Wire Line
+	4200 1250 4200 1150
+Connection ~ 4200 1150
+Connection ~ 4000 1150
+$Comp
+L C C1
+U 1 1 50959F66
+P 6000 1050
+F 0 "C1" H 6050 1150 50  0000 L CNN
+F 1 "0.1uF" H 6050 950 50  0000 L CNN
+F 2 "0603" H 6000 1050 60  0001 C CNN
+	1    6000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR21
+U 1 1 50959F93
+P 6000 1350
+F 0 "#PWR21" H 6000 1350 30  0001 C CNN
+F 1 "GND" H 6000 1280 30  0001 C CNN
+	1    6000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR20
+U 1 1 5095A033
+P 4000 1050
+F 0 "#PWR20" H 4000 1010 30  0001 C CNN
+F 1 "+3.3V" H 4000 1160 30  0000 C CNN
+	1    4000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR19
+U 1 1 5095A042
+P 6000 750
+F 0 "#PWR19" H 6000 710 30  0001 C CNN
+F 1 "+3.3V" H 6000 860 30  0000 C CNN
+	1    6000 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 750  6000 850 
+Wire Wire Line
+	6000 1250 6000 1350
+$Comp
+L C C2
+U 1 1 5095A062
+P 6450 1050
+F 0 "C2" H 6500 1150 50  0000 L CNN
+F 1 "0.1uF" H 6500 950 50  0000 L CNN
+F 2 "0603" H 6450 1050 60  0001 C CNN
+	1    6450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5095A068
+P 6850 1050
+F 0 "C3" H 6900 1150 50  0000 L CNN
+F 1 "0.1uF" H 6900 950 50  0000 L CNN
+F 2 "0603" H 6850 1050 60  0001 C CNN
+	1    6850 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 850  6850 800 
+Wire Wire Line
+	6000 800  7250 800 
+Wire Wire Line
+	6450 850  6450 800 
+Connection ~ 6450 800 
+Connection ~ 6000 800 
+Wire Wire Line
+	6000 1300 7250 1300
+Wire Wire Line
+	6850 1300 6850 1250
+Connection ~ 6000 1300
+Wire Wire Line
+	6450 1250 6450 1300
+Connection ~ 6450 1300
+$Comp
+L ABM8G X1
+U 1 1 5095A15D
+P 1600 1950
+F 0 "X1" H 1600 2100 60  0000 C CNN
+F 1 "ABM8G" H 1600 1800 60  0000 C CNN
+F 2 "ABM8G" H 1600 1950 60  0001 C CNN
+	1    1600 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 5095A176
+P 1350 1600
+F 0 "C4" V 1400 1700 50  0000 L CNN
+F 1 "22pF" V 1400 1350 50  0000 L CNN
+F 2 "0603" H 1350 1600 60  0001 C CNN
+	1    1350 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C5
+U 1 1 5095A1AA
+P 1350 2300
+F 0 "C5" V 1300 2400 50  0000 L CNN
+F 1 "22pF" V 1300 2050 50  0000 L CNN
+F 2 "0603" H 1350 2300 60  0001 C CNN
+	1    1350 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 2200 2800 2200
+Wire Wire Line
+	1600 1650 1600 1600
+Connection ~ 1600 1600
+Wire Wire Line
+	1550 2300 2800 2300
+Wire Wire Line
+	1600 2250 1600 2300
+Connection ~ 1600 2300
+Wire Wire Line
+	1200 2000 1150 2000
+Wire Wire Line
+	1150 2000 1150 1900
+Wire Wire Line
+	1150 1900 1200 1900
+Wire Wire Line
+	1150 1600 1050 1600
+Wire Wire Line
+	1050 1600 1050 2400
+Wire Wire Line
+	1150 2300 1050 2300
+Connection ~ 1050 2300
+Wire Wire Line
+	1150 1950 1050 1950
+Connection ~ 1050 1950
+Connection ~ 1150 1950
+$Comp
+L GND #PWR22
+U 1 1 5095A327
+P 1050 2400
+F 0 "#PWR22" H 1050 2400 30  0001 C CNN
+F 1 "GND" H 1050 2330 30  0001 C CNN
+	1    1050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 7200 4000 7250
+Wire Wire Line
+	4000 7250 4300 7250
+Wire Wire Line
+	4300 7250 4300 7200
+Wire Wire Line
+	4200 7200 4200 7250
+Connection ~ 4200 7250
+Wire Wire Line
+	4100 7200 4100 7400
+Connection ~ 4100 7250
+$Comp
+L C C6
+U 1 1 5095A669
+P 7250 1050
+F 0 "C6" H 7300 1150 50  0000 L CNN
+F 1 "0.1uF" H 7300 950 50  0000 L CNN
+F 2 "0603" H 7250 1050 60  0001 C CNN
+	1    7250 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 800 
+Connection ~ 6850 1300
+Wire Wire Line
+	2150 1600 2150 2200
+Wire Wire Line
+	1550 1600 2150 1600
+Text HLabel 6150 3450 2    60   Output ~ 0
+SPI2_MOSI
+Text HLabel 2400 5650 0    60   Input ~ 0
+SPI2_MISO
+Text HLabel 2400 5550 0    60   Output ~ 0
+SPI2_SCK
+Wire Wire Line
+	6150 3450 5750 3450
+Wire Wire Line
+	2400 5650 2800 5650
+Wire Wire Line
+	2800 5550 2400 5550
+$Comp
+L GND #PWR25
+U 1 1 5095B7B5
+P 4100 7400
+F 0 "#PWR25" H 4100 7400 30  0001 C CNN
+F 1 "GND" H 4100 7330 30  0001 C CNN
+	1    4100 7400
+	1    0    0    -1  
+$EndComp
+Text HLabel 1650 4650 0    60   Output ~ 0
+I2C1_SCL
+Text HLabel 1650 4750 0    60   BiDi ~ 0
+I2C1_SDA
+Wire Wire Line
+	1650 4650 2800 4650
+Wire Wire Line
+	1650 4750 2800 4750
+$Comp
+L +3.3V #PWR23
+U 1 1 5095EF23
+P 1850 3950
+F 0 "#PWR23" H 1850 3910 30  0001 C CNN
+F 1 "+3.3V" H 1850 4060 30  0000 C CNN
+	1    1850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3950 1850 4050
+$Comp
+L R R1
+U 1 1 5095EF2C
+P 1850 4300
+F 0 "R1" V 1930 4300 50  0000 C CNN
+F 1 "2.2k" V 1850 4300 50  0000 C CNN
+F 2 "0603" H 1850 4300 60  0001 C CNN
+	1    1850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR24
+U 1 1 5095EF45
+P 2150 3950
+F 0 "#PWR24" H 2150 3910 30  0001 C CNN
+F 1 "+3.3V" H 2150 4060 30  0000 C CNN
+	1    2150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3950 2150 4050
+$Comp
+L R R2
+U 1 1 5095EF4C
+P 2150 4300
+F 0 "R2" V 2230 4300 50  0000 C CNN
+F 1 "2.2k" V 2150 4300 50  0000 C CNN
+F 2 "0603" H 2150 4300 60  0001 C CNN
+	1    2150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4550 1850 4650
+Connection ~ 1850 4650
+Wire Wire Line
+	2150 4550 2150 4750
+Connection ~ 2150 4750
+Wire Wire Line
+	6450 800  8150 800 
+Wire Wire Line
+	6450 1300 7700 1300
+$Comp
+L C C13
+U 1 1 509705B9
+P 7700 1050
+F 0 "C13" H 7750 1150 50  0000 L CNN
+F 1 "10uF" H 7750 950 50  0000 L CNN
+F 2 "0805" H 7700 1050 60  0001 C CNN
+	1    7700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 800  7700 850 
+Wire Wire Line
+	7700 1300 7700 1250
+Wire Wire Line
+	6900 1300 8150 1300
+$Comp
+L C C14
+U 1 1 509705CE
+P 8150 1050
+F 0 "C14" H 8200 1150 50  0000 L CNN
+F 1 "10uF" H 8200 950 50  0000 L CNN
+F 2 "0805" H 8150 1050 60  0001 C CNN
+	1    8150 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 800  8150 850 
+Wire Wire Line
+	8150 1300 8150 1250
+Connection ~ 7700 800 
+Wire Wire Line
+	7250 800  7250 850 
+Connection ~ 7250 800 
+Wire Wire Line
+	7250 1300 7250 1250
+Connection ~ 7250 1300
+Connection ~ 7700 1300
+Text HLabel 2650 2650 0    60   Output ~ 0
+pwm_01
+Wire Wire Line
+	2650 2650 2800 2650
+Text HLabel 2650 2750 0    60   Output ~ 0
+pwm_02
+Wire Wire Line
+	2650 2750 2800 2750
+Text HLabel 2650 2850 0    60   Output ~ 0
+pwm_03
+Wire Wire Line
+	2650 2850 2800 2850
+Text HLabel 2650 2950 0    60   Output ~ 0
+pwm_04
+Wire Wire Line
+	2650 2950 2800 2950
+Text HLabel 2650 3050 0    60   Output ~ 0
+pwm_05
+Wire Wire Line
+	2650 3050 2800 3050
+Text HLabel 2650 3150 0    60   Output ~ 0
+pwm_06
+Wire Wire Line
+	2650 3150 2800 3150
+Text HLabel 2650 3250 0    60   Output ~ 0
+pwm_07
+Wire Wire Line
+	2650 3250 2800 3250
+Text HLabel 2650 3350 0    60   Output ~ 0
+pwm_08
+Wire Wire Line
+	2650 3350 2800 3350
+Text HLabel 2650 2400 0    60   Input ~ 0
+RESET
+Wire Wire Line
+	2650 2400 2800 2400
+$EndSCHEMATC

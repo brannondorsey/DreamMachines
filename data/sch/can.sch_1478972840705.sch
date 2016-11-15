@@ -1,0 +1,198 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:calaos_plc_server-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP2551-I/SN U?
+U 1 1 55EF4FD0
+P 4700 2800
+F 0 "U?" H 4300 3150 50  0000 L CNN
+F 1 "MCP2551-I/SN" H 4800 3150 50  0000 L CNN
+F 2 "SO-8" H 4700 2800 50  0000 C CIN
+F 3 "" H 4700 2800 60  0000 C CNN
+	1    4700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 55EF5038
+P 4700 2300
+F 0 "#PWR?" H 4700 2150 50  0001 C CNN
+F 1 "+3.3V" H 4700 2440 50  0000 C CNN
+F 2 "" H 4700 2300 60  0000 C CNN
+F 3 "" H 4700 2300 60  0000 C CNN
+	1    4700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2400 4700 2300
+$Comp
+L GND #PWR?
+U 1 1 55EF5051
+P 4700 3450
+F 0 "#PWR?" H 4700 3200 50  0001 C CNN
+F 1 "GND" H 4700 3300 50  0000 C CNN
+F 2 "" H 4700 3450 60  0000 C CNN
+F 3 "" H 4700 3450 60  0000 C CNN
+	1    4700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3200 4700 3450
+$Comp
+L C C?
+U 1 1 55EF506B
+P 7000 2750
+F 0 "C?" H 7025 2850 50  0000 L CNN
+F 1 "100nF" H 7025 2650 50  0000 L CNN
+F 2 "" H 7038 2600 30  0000 C CNN
+F 3 "" H 7000 2750 60  0000 C CNN
+	1    7000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 55EF51FC
+P 7000 2500
+F 0 "#PWR?" H 7000 2350 50  0001 C CNN
+F 1 "+3.3V" H 7000 2640 50  0000 C CNN
+F 2 "" H 7000 2500 60  0000 C CNN
+F 3 "" H 7000 2500 60  0000 C CNN
+	1    7000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2500 7000 2600
+$Comp
+L GND #PWR?
+U 1 1 55EF521A
+P 7000 3000
+F 0 "#PWR?" H 7000 2750 50  0001 C CNN
+F 1 "GND" H 7000 2850 50  0000 C CNN
+F 2 "" H 7000 3000 60  0000 C CNN
+F 3 "" H 7000 3000 60  0000 C CNN
+	1    7000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2900 7000 3000
+$Comp
+L R R?
+U 1 1 55EF5259
+P 4100 3200
+F 0 "R?" V 4180 3200 50  0000 C CNN
+F 1 "10k" V 4100 3200 50  0000 C CNN
+F 2 "" V 4030 3200 30  0000 C CNN
+F 3 "" H 4100 3200 30  0000 C CNN
+	1    4100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3000 4100 3000
+Wire Wire Line
+	4100 3000 4100 3050
+$Comp
+L GND #PWR?
+U 1 1 55EF5293
+P 4100 3450
+F 0 "#PWR?" H 4100 3200 50  0001 C CNN
+F 1 "GND" H 4100 3300 50  0000 C CNN
+F 2 "" H 4100 3450 60  0000 C CNN
+F 3 "" H 4100 3450 60  0000 C CNN
+	1    4100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3350 4100 3450
+Wire Wire Line
+	5200 2900 6150 2900
+Wire Wire Line
+	5200 2700 6150 2700
+$Comp
+L Jumper_NO_Small JP?
+U 1 1 55EF52D9
+P 5700 2200
+F 0 "JP?" H 5700 2280 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 5710 2140 50  0001 C CNN
+F 2 "" H 5700 2200 60  0000 C CNN
+F 3 "" H 5700 2200 60  0000 C CNN
+	1    5700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 55EF530C
+P 5500 2450
+F 0 "R?" V 5580 2450 50  0000 C CNN
+F 1 "120" V 5500 2450 50  0000 C CNN
+F 2 "" V 5430 2450 30  0000 C CNN
+F 3 "" H 5500 2450 30  0000 C CNN
+	1    5500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2600 5500 2900
+Connection ~ 5500 2900
+Wire Wire Line
+	5600 2200 5500 2200
+Wire Wire Line
+	5500 2200 5500 2300
+Wire Wire Line
+	5800 2200 5900 2200
+Wire Wire Line
+	5900 2200 5900 2700
+Connection ~ 5900 2700
+Wire Wire Line
+	4200 2600 3700 2600
+Wire Wire Line
+	4200 2700 3700 2700
+Text HLabel 3700 2600 0    60   Input ~ 0
+CAN_RX
+Text HLabel 3700 2700 0    60   Input ~ 0
+CAN_TX
+Text HLabel 6150 2900 2    60   Output ~ 0
+CAN_L
+Text HLabel 6150 2700 2    60   Output ~ 0
+CAN_L
+$EndSCHEMATC

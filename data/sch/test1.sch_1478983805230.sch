@@ -1,0 +1,155 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:test1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X01 P1
+U 1 1 58189DFB
+P 4950 3450
+F 0 "P1" H 4950 3550 50  0000 C CNN
+F 1 "CONN_01X01" V 5050 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4950 3450 50  0001 C CNN
+F 3 "" H 4950 3450 50  0000 C CNN
+	1    4950 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 58189E75
+P 5150 3600
+F 0 "C1" H 5175 3700 50  0000 L CNN
+F 1 "C" H 5175 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5188 3450 50  0001 C CNN
+F 3 "" H 5150 3600 50  0000 C CNN
+	1    5150 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58189F04
+P 5150 3300
+F 0 "R1" V 5230 3300 50  0000 C CNN
+F 1 "R" V 5150 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5080 3300 50  0001 C CNN
+F 3 "" H 5150 3300 50  0000 C CNN
+	1    5150 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR01
+U 1 1 58189F2B
+P 5150 3150
+F 0 "#PWR01" H 5150 3000 50  0001 C CNN
+F 1 "+3.3V" H 5150 3290 50  0000 C CNN
+F 2 "" H 5150 3150 50  0000 C CNN
+F 3 "" H 5150 3150 50  0000 C CNN
+	1    5150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58189F45
+P 5150 3750
+F 0 "#PWR02" H 5150 3500 50  0001 C CNN
+F 1 "GND" H 5150 3600 50  0000 C CNN
+F 2 "" H 5150 3750 50  0000 C CNN
+F 3 "" H 5150 3750 50  0000 C CNN
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 58189FEB
+P 5150 3150
+F 0 "#FLG03" H 5150 3245 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 3330 50  0000 C CNN
+F 2 "" H 5150 3150 50  0000 C CNN
+F 3 "" H 5150 3150 50  0000 C CNN
+	1    5150 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5818A006
+P 5150 3750
+F 0 "#FLG04" H 5150 3845 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 3930 50  0000 C CNN
+F 2 "" H 5150 3750 50  0000 C CNN
+F 3 "" H 5150 3750 50  0000 C CNN
+	1    5150 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 5818AFB4
+P 6575 3350
+F 0 "P2" H 6575 3500 50  0000 C CNN
+F 1 "CONN_01X02" V 6675 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6575 3350 50  0001 C CNN
+F 3 "" H 6575 3350 50  0000 C CNN
+	1    6575 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 3400 6000 3400
+Wire Wire Line
+	6375 3300 5775 3300
+Text Label 6000 3300 0    60   ~ 0
+LABEL
+$Comp
+L R R2
+U 1 1 5818B3A8
+P 5775 3150
+F 0 "R2" V 5855 3150 50  0000 C CNN
+F 1 "R" V 5775 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5705 3150 50  0001 C CNN
+F 3 "" H 5775 3150 50  0000 C CNN
+	1    5775 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 3000 6000 3000
+Wire Wire Line
+	6000 3000 6000 3400
+$EndSCHEMATC

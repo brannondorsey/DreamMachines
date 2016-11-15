@@ -1,0 +1,133 @@
+EESchema Schematic File Version 2
+LIBS:ej1
+LIBS:Ej1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Ejercicio 1 - Curso KiCAD"
+Date ""
+Rev "1.0"
+Comp "Pablo Gomez - FIUBA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_3 K1
+U 1 1 565C5B22
+P 1550 3450
+F 0 "K1" V 1500 3450 50  0000 C CNN
+F 1 "CONN_3" V 1600 3450 40  0000 C CNN
+F 2 "ej1:bornier3" H 1550 3450 60  0001 C CNN
+F 3 "" H 1550 3450 60  0000 C CNN
+	1    1550 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D1
+U 1 1 565C5C0F
+P 2450 2700
+F 0 "D1" H 2450 2800 50  0000 C CNN
+F 1 "LED ROJO" H 2450 2600 50  0000 C CNN
+F 2 "ej1:LED-3MM" H 2450 2700 60  0001 C CNN
+F 3 "" H 2450 2700 60  0000 C CNN
+	1    2450 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 565C5CBC
+P 2450 3000
+F 0 "C1" H 2475 3100 50  0000 L CNN
+F 1 "100 nF" H 2475 2900 50  0000 L CNN
+F 2 "ej1:C_Rect_L7_W3.5_P5" H 2488 2850 30  0001 C CNN
+F 3 "" H 2450 3000 60  0000 C CNN
+	1    2450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L D D2
+U 1 1 565C5D43
+P 2450 4000
+F 0 "D2" H 2450 4100 50  0000 C CNN
+F 1 "1N4148" H 2450 3900 50  0000 C CNN
+F 2 "ej1:Diode_DO-35_SOD27_Horizontal_RM10" H 2450 4000 60  0001 C CNN
+F 3 "" H 2450 4000 60  0000 C CNN
+	1    2450 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 2100 2300 0    60   ~ 0
+CIRCUITO EXPERIMENTAL
+$Comp
+L R R1
+U 1 1 565C5DC9
+P 3400 3450
+F 0 "R1" V 3480 3450 50  0000 C CNN
+F 1 "100K" V 3400 3450 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 3330 3450 30  0001 C CNN
+F 3 "" H 3400 3450 30  0000 C CNN
+	1    3400 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3350 1900 3350
+Wire Wire Line
+	2050 2700 2050 3350
+Wire Wire Line
+	2050 2700 2300 2700
+Wire Wire Line
+	2050 3000 2300 3000
+Wire Wire Line
+	1900 3550 2050 3550
+Wire Wire Line
+	2050 3550 2050 4000
+Wire Wire Line
+	2050 4000 2300 4000
+Wire Wire Line
+	2600 4000 3800 4000
+Wire Wire Line
+	3400 4000 3400 3600
+Wire Wire Line
+	2600 2700 2800 2700
+Wire Wire Line
+	3400 3000 3400 3300
+Wire Wire Line
+	2600 3000 3800 3000
+Wire Wire Line
+	2800 2700 2800 3000
+Connection ~ 2800 3000
+Text Notes 3900 3000 0    60   ~ 0
+Resistor \nen serie
+Wire Notes Line
+	3700 2950 3500 3250
+Connection ~ 2050 3000
+NoConn ~ 1900 3450
+$Comp
+L R R2
+U 1 1 565CA8C1
+P 3800 3450
+F 0 "R2" V 3880 3450 50  0000 C CNN
+F 1 "100K" V 3800 3450 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 3730 3450 30  0001 C CNN
+F 3 "" H 3800 3450 30  0000 C CNN
+	1    3800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3000 3800 3300
+Connection ~ 3400 3000
+Wire Wire Line
+	3800 4000 3800 3600
+Connection ~ 3400 4000
+Wire Notes Line
+	3700 2950 3850 2950
+Text Notes 4150 3175 0    60   ~ 0
+Resistor agregado
+Wire Notes Line
+	4100 3150 3950 3150
+Wire Notes Line
+	3950 3150 3850 3300
+$EndSCHEMATC
