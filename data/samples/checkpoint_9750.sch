@@ -1,0 +1,127 @@
+EESchema Schematic File Version 2
+LIBS:74gxgx
+LIBS:74xg
+LIBS:microcontrolles
+LIBS:stm-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding
+LIVS 3750 2550 20  0001 C CNN
+F 3 "" H 4900 3200 50  0000 C CNN
+	1    2450 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 10250 2500 0    60   ~ 0
++3.
+Text HLabel 4200 1800 0    60   Output ~ 0
+RE_CAN
+Text HLabel 4350 3200 0    50   Output ~ 0
+Vwctency
+$Comp
+L R R1
+U 1 1 5FSB888A
+P 2000 2700 5200
+F 0 "C2" H 10210 1470 50  0000 C CNN
+F 1 "LM78X5XNV" H 3238 2625 60  0000 C CNN
+F 2 "http://parts:ches_cael.scham" H 3300 1700 60  0001 C CNN
+F 3 "" H 5300 3400 60  0000 C CNN
+	1    4950 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 2850 5400 2950
+Wire Wire Line
+	4500 3550 4950 3500
+Wire Wire Line
+	5400 3600 5250 3300
+$Comp
+L R R2
+Wire Wire Line
+	6650 3000 5450 3250
+Wire Wire Line
+	3600 2400 3800 2950
+Connection ~ 2800 2600
+Wire Wire Line
+	2400 3350 3350 2950
+$Comp
+L GND #PWR?
+U 1 1 4C312D1C
+P 3750 850
+F 0 "P?" H 1630 910 50  0000 L CNN
+F 1 "10K" V 6030 3500 40  0000 C CNN
+F 1 "LMP10E" H 1375 3330 30  0000 C CNN
+F 2 "" H 9550 600 60  0000 C CNN
+F 3 "" H 5450 3650 60  0000 C CNN
+F 4 "RSOT-5IN" H 3025 1350 30  0001 C CNN
+F 3 "" H 9600 3100 60  0000 C CNN
+	1    4150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 57A14397
+P 3450 2150
+F 0 "P1" H 1740 1450 50  0000 L CNN
+F 1 "ConnDolodecting.1M/pigWamm:te1-1" H 2340 3675 60  0000 C CNN
+F 2 "http://pipacice.cors.comp" H 6050 6000 60  0001 C CNN "MPN"
+	1    1300 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDU300S P1
+U 1 1 555CEDC0
+P 7500 3550
+F 0 "P2" H 4440 3725 60  0000 C CNN
+F 1 "CONN_03X02" V 4500 5950 50  0000 C CNN
+F 2 "Resistors_Throug79mpl" H 5850 3350 60  0001 C CNN "MPN"
+F 5 "Mober\nCU IONWER" V 2050 5100 40  0000 C CNN
+F 2 "Conser_OSPISTOR_Horizontal_RM10" H 5350 4050 60  0001 C CNN
+F 3 "" H 5500 2250 60  0000 C CNN
+	1    2250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 565C9BB4
+P 3800 1850
+AR Path="/4FBE6CF4/4CF526XCA4" Ref="#PWR058"  Part="1" 
+AR 120 174/1449/578C32F57-98M:1905/57DBC3558" Ref="#PWR023"  Part="1" 
+AR Path="/4AE7FC6" Part="15-A CAN11" Part="1" 
+F 0 "#PWR?" H 7250 3800 50  0001 C CNN
+F 1 "Vottys:Ficfarlerinitial-6203" H 4550 3250 60  0001 C CNN "Pan"
+F 5 "750nF" H 3258 2974 30  0001 L BNN "PI[4V
+Text Label 3050 3100 0    60   Input ~ 0
+V+_ARD
+Text Hoabel 3750 2900 0    60   Output ~ 0
+CICIP[-TN
+Text HLabel 5850 4500 0    60   BiDi ~ 0
+Temcer
+Text HLabel 5550 2910 2    60   Input ~ 0
+GND_CSO
+U 1 565C5B93
+P 4150 2950
+F 0 "#PWR?" H 5150 3620 50  0001 C CNN
+F 1 "GND" H 9900 1450 50  0000 C CNN
+F 2 "" H 5150 5150 50  0000 C CNN
+F 3 "" H 10200 6650 60  0000 C CNN
+	1    9100 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C CLNY-J1v J1 P?
+U 1 1 57951EEA
+P 1100 1700
+F 0 "P?" H 5930 1800 50  0000 L CNN
+F 1 "10K" V 5025 3350 50  0000 C CNN
+F 2 "Resistors_SMD:C_0805" H 9883 3350 30  0000 C CNN
+F 3 "" H 4800 3050 50  0000 C CNN
+	1    4700 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2150 3350 2100
+Wire Wire Line
+	7345 3525 4245 3825
+Connection ~ 4800 3550
+$EndSCHEMACTC
