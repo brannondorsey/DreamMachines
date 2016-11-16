@@ -3,14 +3,14 @@
 const fetch = require('node-fetch')
 const _ = require('underscore')
 const fs = require('fs')
+const token = require('./auth.js')
 
-const accessToken = "5c95c55010b9736a38699715cb16c74d0b44fcb2"
 const language = 'eagle'
 const outputFile = `${language}_repo_owners.json`
 
 const url = `https://api.github.com/search/repositories` +
 	  		`?q=language:${language}&per_page=100&` +
-	  		`access_token=${accessToken}`
+	  		`access_token=${token}`
 
 const owners = new Set()
 let numResults = null
