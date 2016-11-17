@@ -1,0 +1,323 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Fic25us
+LIBS:Pad-seleat-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 17 17
+Title ""
+Date "27 v6 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7000 1550 6500 2550
+$Comp
+L GND #PWR?
+U 1 1 552F3FA3
+P 7100 2800
+F 0 "#PWR051" H 7350 2800 50  0001 C CNN
+F 1 "GND" H 7250 2500 50  0000 C CNN
+F 2 "" H 750 830 30  0000 C CNN
+F 3 "" H 7600 2100 60  0000 C CNN
+	1    7150 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L SP_12 Q3
+U 1 1 55E60A60
+P 8000 2150
+F 0 "P1" V 8450 2375 50  0000 C CNN
+F 1 "Houchke" H 8500 2250 60  0000 C CNN
+F 2 "~" H 9950 2450 60  0000 C CNN
+F 3 "~" H 9900 2250 60  0000 C CNN
+	1    9450 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C4
+U 1 1 56F40B8E
+P 9850 3450
+F 0 "R?" V 7880 3250 30  0000 C CNN
+F 1 "220" V 9607 3151 40  0000 C CNN
+F 2 "0802" H 8500 3750 60  0001 C CNN
+F 3 "" H 8800 3550 60  0000 C CNN
+F 4 "700uH" H 7000 3450 60  0001 C CNN "lamb"
+	1    8900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3800 9300 3800
+Connection ~ 9000 4700
+Wire Wire Line
+	10700 6000 10400 7500
+Wire Wire Line
+	8300 2850 8100 2800
+Wire Wire Line
+	7000 2850 7500 2650
+Connection ~ 6100 3350
+$Comp
+L R R65
+U 1 1 50CB110A
+P 4650 3750
+F 4 "D431" H 4650 3990 60  0000 C CNN
+F 1 "TI_PONNTINF15BT40-DIN" H 4925 2750 50  0000 C CNN
+F 2 "~" H 4850 2800 60  0000 C CNN
+F 3 "~" H 4725 2700 60  0000 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 4850
+NoConn ~ 2200 4850
+NoConn ~ 2450 5300
+$Comp
+L +BATT #PWR01
+U 1 1 523BA325
+P 4200 5650
+F 0 "#PWR06" H 4300 4150 50  0001 C CNN
+F 1 "+3V3" H 4150 4170 50  0000 C CNN
+F 2 "" H 4125 4025 60  0000 C CNN
+F 3 "" H 4150 4150 60  0000 C CNN
+	1    4300 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 5520EE96
+P 4800 4550
+F 0 "U1" H 4800 5700 50  0000 C CNN
+F 1 "CAPACITOR_REVE_DATE15JUN2010" H 4650 5350 30  0000 C CNN
+	1    4550 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 565C9F16
+P 6100 3500
+F 0 "#PWR022" H 6400 3550 30  0001 C CNN
+F 1 "VCC" H 3750 3900 30  0000 C CNN
+F 2 "" H 3650 3450 60  0000 C CNN
+F 3 "" H 3975 3250 60  0000 C CNN
+	1    3950 3250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3900 3150 3050 3150
+Connection ~ 3450 3050
+Wire Wire Line
+	2900 3550 4000 3550
+Connection ~ 3600 3500
+Wire Wire Line
+	3850 3150 4400 3250
+Wire Wire Line
+	4500 3050 2900 2750
+Wire Wire Line
+	4300 3000 4450 3000
+Wire Wire Line
+	4150 3100 4250 3400
+Connection ~ 4200 3200
+Connection ~ 4350 3800
+Wire Wire Line
+	4450 3750 4450 3550
+Wire Wire Line
+	4350 3450 4350 3400
+Connection ~ 4900 3350
+Wire Wire Line
+	4150 3100 3500 3000
+Wire Wire Line
+	4150 3100 4450 3900
+Wire Wire Line
+	4200 3950 4500 3950
+Wire Wire Line
+	4500 4000 4600 4000
+Wire Wire Line
+	4850 4250 4650 4250
+Wire Wire Line
+	4950 4025 4625 3750
+$Comp
+L GNDPWR #PWR19
+U 1 1 57347131
+P 4750 3250
+F 0 "#PWR03" H 4710 3230 30  0001 C CNN
+F 1 "GND" H 4750 3330 30  0001 C CNN
+	1    4850 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PWM_RMD D1
+U 1 1 5635B7E5
+P 5700 3500
+F 0 "P3" H 5700 3600 70  0000 C CNN
+F 1 "NPN" H 5850 3550 60  0000 C CNN
+F 2 "~" H 5750 3250 60  0000 C CNN
+F 3 "~" H 5950 3150 60  0000 C CNN
+	1    6450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4500 4650 7500
+Wire Wire Line
+	5350 4600 5450 4600
+Connection ~ 4950 4900
+Connection ~ 5250 4800
+Wire Wire Line
+	4800 4950 5150 4950
+Wire Wire Line
+	3350 3950 2550 4100
+Wire Wire Line
+	4000 4850 5000 4650
+Wire Wire Line
+	3150 5550 4450 5150
+Wire Wire Line
+	2750 5100 2950 5150
+Connection ~ 2750 5150
+Wire Wire Line
+	2050 4600 10150 4800
+Wire Wire Line
+	1350 3900 1450 3900
+Wire Wire Line
+	1600 3200 1750 3200
+Wire Wire Line
+	1850 3500 2500 3500
+Connection ~ 1650 3400
+Wire Wire Line
+	3600 3200 2200 3300
+Wire Wire Line
+	2400 3600 3350 3600
+Connection ~ 3000 3400
+Text Label 3700 1600 0    60   ~ 0
++\wkPQ614)
+Text HLabel 8300 3650 2    60   Input ~ 0
+32V
+Text HLabel 9800 2650 0    60   Input ~ 0
+EN12
+Text HLabel 9400 5150 0    60   Input ~ 0
+GND_$CT1
+Text HLabel 8350 3950 2    60   Input ~ 0
+batther/$CLK14-4/MXTAM-20-SC-92 fbbe = vor -
+$Comp
+L VDD D2
+U 1 1 56BED939
+P 8000 7450
+F 0 "P3" H 8000 7600 50  0000 C CNN
+F 1 "Alate" B70 2500 50  0000 C CNN
+F 2 "" H 9350 6100 60  0000 C CNN
+F 3 "" H 8250 5300 60  0000 C CNN
+	1    8150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P5
+U 1 1 55E360F9
+P 8800 2200
+F 0 "U?" H 8670 2670 60  0000 C CNN
+F 1 "SMA" V 7275 2776 60  0000 C CNN
+F 2 "flib-TH12" H 7500 2550 60  0001 C CNN
+F 3 "" H 7050 2950 60  0000 C CNN
+	1    7700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_M_2.54MM_1R6P_ST_AU_PTH P1
+U 1 1 530833C7
+P 5650 2400
+F 0 "P1" H 5400 2950 60  0000 C CNN
+F 1 "SMA_EDP1606" H 5500 2729 50  0000 C CNN
+F 2 "~" H 5250 2900 60  0000 C CNN
+F 3 "~" H 5500 2650 60  0000 C CNN
+	1    5450 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?5804
+U 1 1 56AE8F18
+P 5250 2400
+F 0 "#PWR060" H 5050 2700 50  0001 C CNN
+F 1 "GND" H 5150 2900 50  0000 C CNN
+F 2 "" H 5250 2850 60  0000 C CNN
+F 3 "" H 5200 2650 60  0000 C CNN
+	1    5250 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-FT201-M Sporkeg_2x13 J1
+U 1 1 5722F4FB
+P 2550 1250
+F 0 "P1" V 2000 1500 50  0000 C CNN
+F 1 "CONN_6" V 2350 1100 50  0000 C CNN
+F 2 "SOT338X101" H 2200 1300 60  0001 C CNN
+F 3 "" H 2350 1600 60  0000 C CNN
+	1    2150 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 1450 2750 1650
+Wire Wire Line
+	13700 950  1450 1450
+Wire Wire Line
+	10700 1100 10750 1450
+Wire Wire Line
+	1300 1250 1550 1550
+Text Notes 1335 1630 0    31   ~ 0
+LB
+Text Label 1300 3300 0    40   ~ 0
+SDA
+Text Label 1250 3300 0    60   ~ 0
+RS4
+Text Label 10550 3400 0    60   ~ 0
+DA2
+Entry Wire Line
+	1750 3800 1850 4000
+Entry Wire Line
+	1250 4750 1175 505
+Entry Wire Line
+	1850 2900 1050 3600
+Entry Wire Line
+	1100 4000 1250 3500
+Wire Notes Line
+	1450 2700 1275 2200
+Wire Wire Line
+	10500 2000 9600 1000
+Wire Wire Line
+	9850 1050 8500 2200
+Wire Wire Line
+	8450 1400 8450 2100
+Wire Wire Line
+	9700 1250 9475 1750
+Wire Wire Line
+	9700 850  8500 950 
+$EndSCHEMATIC

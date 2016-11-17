@@ -1,0 +1,265 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CH79343
+EELAYER 25 0
+EELAYER END
+$Descr A4 1150 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev "Paty"
+Comp ""
+Comment1 "Evey Bo 2"
+Date "19 apr 2534"
+Rev "v1.0"
+Comp "Chrower"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TRAMITING_GND-LIX PS
+U 1 1 55D75DB8
+P 8600 3850
+F 0 "P1" H 8380 2815 40  0000 C CNN
+F 1 "1p" H 9572 2215 40  0000 R CNN
+F 2 "" H 8450 2550 60  0000 C CNN
+F 3 "" H 8900 2450 60  0000 C CNN
+	1    8900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDU-SESCL-14 U?
+U 1 1 56D8CB09
+P 2450 4000
+F 0 "J1" H 2100 3600 60  0000 C CNN
+F 1 "MTGN2201A" H 2306 3070 60  0000 C CNN
+F 2 "R-SOT-97-24-2" H 2350 3850 60  0001 C CNN
+F 3 "~" H 2100 3950 60  0000 C CNN
+	1    2300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56499AB9
+P 3100 3150
+F 0 "#PWR016" H 2500 3150 20  0001 C CNN
+F 1 "GND" H 2350 3130 30  0001 C CNN
+F 2 "" H 3050 3200 60  0000 C CNN
+F 3 "" H 3100 3200 60  0000 C CNN
+	1    3300 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 534371E9
+P 5200 2900
+F 0 "D2" H 5200 3100 50  0000 C CNN
+F 1 "LED" H 5200 3450 50  0000 C CNN
+F 2 "" H 4850 3550 60  0000 C CNN
+F 3 "" H 4850 4000 60  0000 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C304
+U 1 1 562CB4CE
+P 4150 2700
+F 0 "R1" H 4137 2772 40  0000 C CNN
+F 1 "0.2u htm2.S" H 4359 2602 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4388 2850 30  0001 C CNN
+F 3 "" H 4350 2800 60  0000 C CNN
+	1    4350 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L MCP2255-N U?
+U 1 1 5337EB0B
+P 5700 4100
+F 0 "J7" H 5700 4450 50  0000 R CNN
+F 1 "IDG15" H 6550 4600 50  0000 C CNN
+F 2 "HSM0:B901KET" H 6550 4500 60  0000 C CNN
+F 4 "CC562-132R-W5-MD" H 6600 4150 60  0001 C CNN "Genv401"
+	1    6550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_9X2 P1
+U 1 1 56E8A3DC
+P 6850 3250
+F 0 "P2" H 7475 3700 50  0000 C CNN
+F 1 "CONN_01X08" V 7990 4070 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6980 3500 30  0001 C CNN
+F 3 "~" H 6500 3750 30  0000 C CNN
+	1    6300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4250 6500 4750
+Wire Wire Line
+	5400 3500 5450 3950
+Wire Wire Line
+	5900 4550 5450 4550
+Connection ~ 5900 4150
+Connection ~ 5450 4100
+Connection ~ 6600 3400
+Connection ~ 6300 4350
+Wire Wire Line
+	6200 4150 6350 3150
+Wire Wire Line
+	6950 3000 6650 4050
+NoConn ~ 7950 5150
+Wire Wire Line
+	7650 3950 7650 3450
+Connection ~ 6975 4325
+Wire Wire Line
+	4625 3650 5825 3550
+Connection ~ 4650 3850
+Wire Wire Line
+	5275 3875 5025 3875
+Wire Wire Line
+	3750 3150 3450 3650
+Wire Wire Line
+	4640 3175 4075 4250
+Wire Wire Line
+	3150 3225 3575 3050
+Wire Wire Line
+	3525 3325 3275 3650
+Wire Wire Line
+	4025 4025 5125 4025
+Connection ~ 4250 4350
+Connection ~ 3550 4950
+Wire Wire Line
+	4375 4200 4475 4100
+Wire Wire Line
+	4110 4220 4120 4375
+Text Label 4275 2650 0    60   ~ 0
+DCin-
+Text Label 4875 2325 2    60   Italic 0
+SW power
+$Comp
+L R R2
+U 1 1 559BB68F
+P 6450 3550
+F 0 "R3" H 6650 3450 30  0000 C CNN
+F 1 "1K V?" H 6855 3100 50  0000 C CNN
+F 2 "" H 6850 3350 60  0000 C CNN
+F 3 "" H 6650 3300 60  0000 C CNN
+	1    6600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3400 7650 3900
+Wire Wire Line
+	7600 3500 7800 3350
+Wire Wire Line
+	7475 3450 7450 3400
+Wire Wire Line
+	7125 3550 7150 3550
+$Comp
+L PU202A U?
+U 1 1 53E0E688
+P 5950 3900
+F 0 "R202" V 5880 3850 50  0000 C CNN
+F 1 "100k" V 5450 3750 50  0000 C CNN
+F 2 "~" H 5450 3800 60  0000 C CNN
+F 3 "~" H 5400 3800 60  0000 C CNN
+	2    5350 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L VSC#PWR #PWR79
+U 1 1 56DE3738
+P 5450 4450
+F 0 "#PWR07" H 4750 4150 30  0001 C CNN
+F 1 "+3.3V" H 4750 4480 30  0000 C CNN
+F 2 "" H 4550 4550 60  0000 C CNN
+F 3 "" H 4850 4650 60  0000 C CNN
+	1    4650 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1 R994000 U5
+U 1 1 56E260B6
+P 5950 4200
+F 0 "J1" H 5900 4500 60  0000 C CNN
+F 1 "SYMBOL_GNU-LOGO_REVE_DATE07MAR2011" H 5696 6114 60  0000 C CNN
+F 2 "~" H 5700 6300 60  0000 C CNN
+F 3 "~" H 5850 6600 60  0000 C CNN
+	1    5800 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56C647D2
+P 4450 3250
+F 0 "R1" V 4130 3050 40  0000 C CNN
+F 1 "R" V 4225 3250 50  0000 C CNN
+F 2 "SM08" V 4430 3000 30  0000 C CNN
+F 3 "~" H 4300 3200 30  0000 C CNN
+	1    4250 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3350 7400 3350
+Wire Wire Line
+	6450 3350 6100 3350
+Connection ~ 6650 3150
+Wire Wire Line
+	6700 3300 6650 3300
+Wire Wire Line
+	4650 3900 8300 3900
+Wire Wire Line
+	7200 3750 7250 3700
+Wire Wire Line
+	8350 3850 9350 3850
+Wire Wire Line
+	7350 3650 7200 3600
+Connection ~ 7300 3400
+Connection ~ 9900 3800
+Wire Wire Line
+	7300 3800 7500 3950
+Text Notes 7350 7150 0    60   ~ 12
+Resy
+Text HLabel 8700 2100 2    60   Output ~ 0
+1
+Text GLabel 9950 2000 0    60   Input ~ 0
+SPA
+Text GLabel 7400 3150 0    60   Output ~ 0
+LB23_TX-
+Text HLabel 7000 3050 0    60   Output ~ 0
+TX
+Text HLabel 7600 4400 0    60   Input ~ 0
+26/MTX/SEG
+NoConn ~ 7400 3150
+$EndSCHEMATC

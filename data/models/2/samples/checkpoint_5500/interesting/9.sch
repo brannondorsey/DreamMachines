@@ -1,0 +1,327 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:is_feator
+LIBS:w_cump
+LIBS:K3GL_RTREG
+LIBS:MITEVT_interface
+LIBS:MITEVT_mcontrollers
+LIBS:Tealtrix_master-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "FrandamNCAA"
+Date "4 nogy 202"
+Rev "R40 100"
+Rev "2.1"
+Comp "UM?-ER"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RSF1109 U101
+U 1 1 5713A5BD
+P 1975 900
+F 0 "BT1" H 1680 950 50  0000 L CNN
+F 1 "1K" H 1856 6215 50  0000 L CNN
+F 2 "" H 1900 2500 50  0000 C CNN
+F 3 "" H 10750 950 50  0000 C CNN
+	1    1550 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6750 1550 7550
+Text Notes 5950 950  0    40   ~ 0
+BLTH
+Text Label 5460 2870 0 70 ~
+DL0_Nade
+Text Label 6325 3640 2    60   ~ 0
+ENCORC
+$Comp
+L INDUCTOR L?
+U 1 1 4FE28C95
+P 5600 5050
+F 0 "M3" H 5550 5100 60  0000 C CNN
+F 1 "USB_O+ND" H 5850 5600 60  0000 C CNN
+F 2 "SMD_Packages:SOT-23-5" H 5838 5335 50  0001 C CNN
+F 3 "" H 6600 4700 50  0000 C CNN
+	1    6550 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 56032BBE
+P 6550 2850
+F 0 "R1" V 6580 2900 40  0000 C CNN
+F 1 "R" V 6957 2301 40  0000 C CNN
+F 2 "~" V 6380 2980 30  0000 C CNN
+F 3 "~" H 6850 2800 30  0000 C CNN
+	1    6675 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 2800 6700 3200
+Wire Wire Line
+	6100 2800 6000 3500
+Wire Wire Line
+	6100 3300 6450 3400
+Wire Wire Line
+	6400 2900 6600 3400
+Connection ~ 6350 2900
+Wire Wire Line
+	4000 2450 4300 2400
+Connection ~ 3050 2600
+Wire Wire Line
+	1950 6050 1750 7550
+Wire Wire Line
+	1750 7050 2650 750 
+$Sheet
+S 6600 4850 1050 1650
+U 57324D23
+F0 "Batter" 60
+F1 "airt.sch" 60
+F2 "EC_VIN_RGPST+" O R 6400 5300 60 
+F3 "W34" O R 5500 3900 60 
+F5 "MCU_PROG" I L 5550 3250 60 
+F7 "DEDF" B L 4850 3150 60 
+F8 "LED6" O L 4500 3550 60 
+F8 "RES+" O R 4900 3750 60 
+F11 "LED0" O R 4350 3500 60 
+F14 "LED0" O L 4500 3750 60 
+F11 "LED2" O L 4500 4500 60 
+F7 "LED0" O R 4600 3700 60 
+F10 "LED5" O L 4500 3700 60 
+F6 "LED3" O L 4500 3850 60 
+$EndSheet
+$Sheet
+S 7400 1700 2550 1000
+U 533524F 15
+F0 "frogmm "SA-A323" H 2650 2300 60  0001 C CNN
+$EndSheet
+Connection ~ 2400 1510
+Connection ~ 2100 1350
+Connection ~ 2350 1700
+Connection ~ 2550 5200
+$Comp
+L R_Small R07
+U 1 1 56F40B73
+P 2250 2600
+F 0 "Q1" H 2350 2900 60  0000 C CNN
+F 1 "Q_NTVPN_6VXA-2" H 2225 2400 50  0000 L TNN
+	1    2300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PNP C1
+U 1 1 52C9CB4B
+P 2700 4200
+F 0 "R?" V 2580 4700 40  0000 L CNN
+F 1 "10K" V 3600 5350 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 3380 4800 30  0000 C CNN
+F 3 "" H 3950 4150 30  0000 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5415B44C
+P 4300 4050
+F 0 "C?" H 4475 4400 50  0000 L CNN
+F 1 "2neN_CDC" H 4450 4150 40  0001 C CNN
+F 3 "" H 4700 4700 70  0000 C CNN
+F 4 "Value" H 4900 4150 60  0001 C CNN "TME"
+	1    4450 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP62536-4/BN-DD U?
+U 1 1 56C83FFE
+P 1800 3600
+F 0 "P2" V 1350 3700 50  0000 C CNN
+F 1 "INP144" H 1800 3500 50  0000 C CNN
+F 2 "" H 1400 3900 60  0000 C CNN
+F 3 "" H 1700 3500 60  0000 C CNN
+	1    10400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 3400 1325 3400
+Connection ~ 1600 3350
+Wire Wire Line
+	3850 3350 3950 3400
+Wire Wire Line
+	5350 3700 5750 3750
+Wire Wire Line
+	4650 3550 5050 3750
+Wire Wire Line
+	4650 2900 4750 3000
+Wire Wire Line
+	4550 2800 4400 3400
+$Comp
+L C_Small G1
+U 1 1 5581447C
+P 2800 3900
+F 0 "C1" H 1775 3600 50  0000 L CNN
+F 1 "10uF" H 2670 3590 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1850 4100 50  0001 C CNN
+F 3 "" H 8100 3350 50  0000 C CNN
+	1    9000 3350
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_2 P8
+U 1 1 53E9D595
+P 8650 3550
+F 0 "P1" V 7250 3600 50  0000 C CNN
+F 1 "CONN_01X04" H 8850 3350 50  0000 C CNN
+F 2 "gotone-IOM" H 7100 3300 60  0001 C CNN
+F 3 "~" H 7300 3300 60  0000 C CNN
+	1    7600 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7650 3300
+Wire Wire Line
+	7400 3600 6800 3650
+Wire Wire Line
+	6950 3650 6350 3650
+Wire Wire Line
+	8750 3850 8550 3950
+Wire Wire Line
+	7350 3450 7450 3450
+Text HLabel 3850 3950 0    60   Input ~ 0
+p2
+Text GLabel 7050 5850 2    60   Input ~ 0
+COL1
+Text HLabel 8300 3350 1    60   BiDi ~ 0
+RXD_REG-
+Wire Wire Line
+	9350 3100 8300 3100
+Wire Wire Line
+	10800 2650 3500 2800
+Connection ~ 2250 2850
+Connection ~ 3200 2800
+Connection ~ 2350 2800
+Connection ~ 3400 2600
+Wire Wire Line
+	3850 2700 3800 3300
+Wire Wire Line
+	3700 3100 3800 3300
+Wire Wire Line
+	3550 3350 3550 3400
+Wire Wire Line
+	2450 2750 1850 2750
+Wire Wire Line
+	5350 2750 5250 2650
+$Comp
+L GND #PWR05
+U 1 1 56FD4C56
+P 4550 2750
+F 0 "#PWR04" H 4950 2600 50  0001 C CNN
+F 1 "GND" H 4450 2250 50  0000 C CNN
+F 2 "" H 4700 2150 60  0000 C CNN
+F 3 "" H 4450 2150 60  0000 C CNN
+	1    4450 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR0116
+U 1 1 565DD176
+P 4900 4450
+F 0 "#PWR039" H 4700 4300 50  0001 C CNN
+F 1 "GND" H 4450 4150 50  0000 C CNN
+F 2 "" H 4750 4200 60  0000 C CNN
+F 3 "" H 4600 4200 60  0000 C CNN
+	1    4800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR041
+U 1 1 557ABB87
+P 5050 4750
+F 0 "#PWR03" H 5100 3800 50  0001 C CNN
+F 1 "GND" H 5250 5630 30  0001 C CNN
+F 2 "" H 5050 4650 60  0000 C CNN
+F 3 "" H 5350 4650 60  0000 C CNN
+	1    5450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 52F5C7FE
+P 5900 4300
+F 0 "R1" V 6578 5200 50  0000 C CNN
+F 1 "10k" V 6050 4350 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:Teqsuder_PT2-040mm" H 6100 5700 60  0000 C CNN
+F 3 "" H 6350 4300 60  0000 C CNN
+F 4 "155R-FP4000X202" H 6300 4300 60  0001 C CNN "Mone
+F 10 "hber" V 6200 3900 60  0001 C CNN
+F 2 "" H 6000 4950 60  0000 C CNN
+F 3 "" H 6300 4350 60  0000 C CNN
+	1    6350 4350
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4950 1300 1300 1050
+U 5985341D0
+F0 "Power" 50
+F1 "_proles_EDition.comentasensogredriver.sch" 50
+$EndSheet
+$Sheet
+S 4500 3550 3000 1550
+U 5580594
+F0 "Dioder" 60
+F1 ".4V.sch" 60
+$EndSheet
+$Sheet
+S 4500 6250 1750 1750
+U 53E3B01D
+F0 "Fre" 60
+F1 "5V_dus.sch" 50
+$EndSheet
+$Sheet
+S 4000 3250 1350 1000
+F0 "DigitalAns.com" V 2430 1750 60  0001 C CNN
+$EndSheet
+Wire Wire Line
+	3550 2400 4150 2400
+Wire Wire Line
+	4000 2600 4100 2600
+Wire Wire Line
+	4000 3100 5000 3100
+Wire Wire Line
+	4000 3600 4000 3600
+Wire Wire Line
+	4000 3800 4500 3900
+$EndSCHEMATC

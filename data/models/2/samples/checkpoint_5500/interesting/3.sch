@@ -1,0 +1,291 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BARXX26 MAL1
+U 1 1 573E1D2C
+P 7700 3150
+F 0 "R14" V 7480 3150 40  0000 C CNN
+F 1 "R" 9 7750 3350 50  0000 C CNN
+F 2 "ej1:R3-LARGE_PADS" V 7330 3950 30  0001 C CNN
+F 3 "" H 7575 4300 30  0000 C CNN
+F 4 "" H 7650 3400 60  0001 C CNN
+	1    7775 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 55F9866F
+P 5550 3050
+F 0 "D3" H 5600 2800 40  0000 C CNN
+F 1 "MCP462201)" H 5700 2500 50  0000 C CNN
+F 2 "kidre:Resistors_remin" H 5550 4150 60  0001 C CNN
+F 3 "" H 5550 3900 60  0000 C CNN
+	1    5500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3300 6250 3400
+Wire Wire Line
+	3550 3250 3450 3250
+Wire Wire Line
+	2950 3300 2650 3300
+Wire Wire Line
+	2250 3300 2150 3300
+Wire Wire Line
+	2350 3300 2450 3300
+Wire Wire Line
+	2000 3150 3500 3150
+Wire Wire Line
+	2150 3700 2150 3700
+Connection ~ 2500 3250
+Connection ~ 1250 2475
+Connection ~ 2050 2650
+Connection ~ 3350 2500
+Wire Wire Line
+	2850 3300 2600 3300
+Wire Wire Line
+	2550 3400 2850 3600
+Wire Wire Line
+	2700 4650 2850 4850
+Wire Wire Line
+	4450 4550 4500 4700
+Wire Wire Line
+	4350 3500 3850 3500
+Wire Wire Line
+	4200 3250 4250 3250
+Connection ~ 4150 3350
+Wire Wire Line
+	4950 3150 4450 3150
+Wire Wire Line
+	3750 3350 4750 3300
+Wire Wire Line
+	5175 3500 5125 4450
+Connection ~ 6325 3150
+$Comp
+L HEADER-MALE-PICTINS-HEGD-TevN_MAELE16MOSH-1x03 ATX-P15
+U 1 1 55FAA1B6
+P 7100 950
+F 0 "U?" H 8850 6050 60  0000 C CNN
+F 1 "TST-IP16" H 7200 6200 60  0000 C CNN
+F 2 "" H 7100 7200 60  0000 C CNN
+F 3 "" H 7400 1700 60  0000 C CNN
+	1    7300 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 3000 7600 3000
+Wire Wire Line
+	6700 3100 7700 3100
+$Comp
+L ICL1214 U1
+U 1 1 572C1C23
+P 4750 3800
+F 0 "L1" V 4720 3850 50  0000 C CNN
+F 1 "4776" V 4457 3794  0000 CNN
+F 2 "" H 5380 3750 50  0000 C CNN
+F 3 "" H 4750 3700 50  0000 C CNN
+	1    4650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3500 4400 3550
+Wire Wire Line
+	4750 4150 4400 4350
+Wire Wire Line
+	4850 4250 4850 4250
+Connection ~ 4750 4150
+Wire Wire Line
+	4375 4025 4550 3725
+Wire Wire Line
+	4825 4275 4925 4325
+Wire Wire Line
+	4775 3950 4675 3950
+Wire Wire Line
+	4825 3725 5125 3225
+Wire Wire Line
+	4275 3640 8180 4170
+Connection ~ 4775 3200
+Wire Wire Line
+	4725 3925 4275 3960
+Wire Wire Line
+	4425 3825 3425 4025
+Wire Wire Line
+	2420 3025 2675 3050
+Wire Wire Line
+	2925 3175 2550 3220
+Wire Wire Line
+	2470 3710 2950 4290
+Connection ~ 2700 4000
+Wire Wire Line
+	2460 3330 2680 3310
+Connection ~ 3379 2270
+Wire Wire Line
+	3375 1350 4325 1950
+Wire Wire Line
+	3325 1450 2350 1450
+Wire Wire Line
+	2025 1900 4150 1550
+Wire Wire Line
+	3550 1350 6750 1350
+Wire Wire Line
+	6050 1550 6150 2250
+Wire Wire Line
+	6100 2450 6400 2450
+Wire Wire Line
+	6000 2550 6550 2550
+Wire Wire Line
+	6800 3050 6450 3200
+Wire Wire Line
+	6900 3550 6800 3550
+Connection ~ 6950 3650
+Connection ~ 6600 3750
+Connection ~ 4850 4900
+Connection ~ 5900 4600
+Wire Wire Line
+	6350 4050 6950 4050
+Wire Wire Line
+	6350 4500 6050 3750
+Wire Wire Line
+	6450 3550 7550 3350
+Text Label 8550 2550 2    60   ~ 0
+B5
+Text Label 7225 2650 0    60   ~ 0
+3
+Text Label 8800 2000 2    60   ~ 0
+FNCUPL2
+Text Label 9750 2700 2    60   ~ 0
+9/*VMD
+Text Label 9650 2540 0 70 ~
+NRF_GND_WI
+Text Label 8790 2370 0 70 ~
+NRF_I0
+Text Label 9800 3000 2    60   ~ 0
+Bw
+Text Label 8800 4100 2    60   ~ 0
+Theenso MyPI,, i the mazarmint
+Text HLabel 8250 4400 2    40   Input ~ 0
+TEM1_Prop
+$Comp
+L R R1
+U 1 1 55D93F8C
+P 6400 2500
+F 0 "R17" V 7230 2200 50  0000 C CNN
+F 1 "330" V 7157 2951 40  0000 C CNN
+F 2 "SM0805" V 1130 2450 60  0001 C CNN
+F 3 "~" H 8175 2700 60  0000 C CNN
+	1    9950 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5204CFA7
+P 1950 3950
+F 0 "J3" H 11050 3650 60  0000 C CNN
+F 1 "MIGPLC AND" V 10450 3850 40  0000 C CNN
+F 2 "~" H 1600 3550 60  0000 C CNN
+F 3 "~" H 1450 3900 60  0000 C CNN
+	1    1950 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 52F2F758
+P 8000 1850
+F 0 "#PWR05" H 9150 1950 50  0001 C CNN
+F 1 "GND" H 9300 1450 50  0000 C CNN
+F 2 "" H 9150 1950 50  0000 C CNN
+F 3 "" H 8350 1350 50  0000 C CNN
+	1    9250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C341
+U 1 1 552F8355
+P 3050 2400
+F 0 "Q301" H 3400 2150 60  0000 C CNN
+F 1 "MBT339" H 3850 2200 70  0000 C CNN
+F 2 "" H 3650 2300 60  0000 C CNN
+F 3 "" H 3550 2500 60  0000 C CNN
+	1    3900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2950 5200 2800
+Wire Wire Line
+	3750 2250 3950 2500
+Connection ~ 3700 2900
+$Comp
+L PU202-10 U101
+U 1 1 564A515D
+P 5500 6000
+F 0 "P3" H 5650 7100 50  0000 C CNN
+F 1 "LED" H 5600 1900 50  0000 C CNN
+F 2 "w_:lockex_commonn5" H 5800 6050 60  0001 C CNN
+F 3 "" H 5650 7300 60  0000 C CNN
+	1    5600 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 7200 4300 9900
+Wire Wire Line
+	3500 7200 3200 7200
+Wire Wire Line
+	2800 3100 3550 3150
+Wire Wire Line
+	3200 3900 3100 3800
+Wire Wire Line
+	2900 3700 2550 2700
+NoConn ~ 2500 2800
+Wire Wire Line
+	2350 3100 3150 3100
+Wire Wire Line
+	2900 2500 2900 2800
+Wire Wire Line
+	2950 2800 2900 2900
+Connection ~ 3500 2950
+Connection ~ 3700 3650
+Connection ~ 3600 3550
+$EndSCHEMATC
