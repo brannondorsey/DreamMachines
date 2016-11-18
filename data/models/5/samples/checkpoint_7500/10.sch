@@ -1,0 +1,125 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:USCAM
+LIBS:Arduino_0R2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP7840-6 U1
+U 1 1 562EDCCB
+P 5300 3750
+F 0 "U1" H 5350 4000 50  0000 C CNN
+F 1 "LCD161700" H 5300 3850 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5250 3800 50  0001 C CNN
+F 3 "" H 5250 3800 50  0000 C CNN
+	4    5250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 560ED5F9
+P 9050 3850
+F 0 "R2" V 8150 3800 50  0000 C CNN
+F 1 "LDR" V 9100 3950 50  0000 C CNN
+F 2 "Fr_mist:USB-0825-2-TCV" V 10000 3950 50  0001 C CNN
+F 3 "" V 9050 3950 50  0000 C CNN
+	1    9150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 56427D4C
+P 9150 4500
+F 0 "R1" V 9230 4450 50  0000 C CNN
+F 1 "10K" V 9000 4550 50  0000 C CNN
+	1    9100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 56B1ACFA
+P 750 2100
+F 0 "C2" H 7550 2250 50  0000 L CNN
+F 1 ".1u" H 7550 2100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7550 2150 50  0001 C CNN
+F 3 "" H 7550 2150 60  0000 C CNN
+	1    7550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCI U2
+U 1 1 56D74D12
+P 7550 2750
+F 0 "U2" H 7050 3400 47  0000 L BNN
+F 1 "FUSE" H 7550 2850 40  0000 L CNN
+F 2 "TO_SOT_NP:CK_J3508X3B-ND" H 7550 2950 60  0001 C CNN
+F 3 "http://www.harkevyhega.dad/X178560-1-L-D-GP-G14B-ND/E13430133093" H 7350 2950 60  0001 C CNN "Link"
+	1    7350 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L WS2812B LED3
+U 1 1 515B26EE
+P 8450 2900
+F 0 "LED2" H 8450 2800 50  0000 L BNN
+F 1 "MJ456" H 8550 2600 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 8450 2900 50  0001 C CNN
+F 3 "DOCUMENTATION" H 8250 2900 50  0001 C CNN
+F 3 "~" H 8250 2900 50  0000 C CNN
+	1    8250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q4
+U 1 1 569278F7
+P 3050 3300
+F 0 "Q2" H 2150 3250 50  0000 R CNN
+F 1 "QS3331" H 2000 3800 50  0000 R CNN
+F 2 "TO_SOP_Packages:SMD-1223" H 2050 3300 50  0001 C CNN
+F 3 "" H 2050 3350 50  0000 C CNN
+F 4 "DIG9, Fole Resistor" H 2050 3450 50  0001 L CNN "Part_Nume"
+F 6 "14614-1-ND" H 2050 3450 50  0001 C CNN "MPN"
+	1    2150 3450
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

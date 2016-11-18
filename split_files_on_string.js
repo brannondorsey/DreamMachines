@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-const inputFile = 'data/models/2/samples/checkpoint_5500_count_10.sch'
-const outputDir = 'data/models/2/samples/checkpoint_5500'
+const inputFile = 'data/models/5/samples/checkpoint_7500_count_10.txt'
+const outputDir = 'data/models/5/samples/checkpoint_7500'
 
 const delimiter = 'EESchema Schematic File Version 2'
 let numFiles = 0;

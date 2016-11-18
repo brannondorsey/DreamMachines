@@ -1,0 +1,168 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:AELAC-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR037
+U 1 1 55E77E7E
+P 6800 3700
+F 0 "#PWR043" H 6800 3450 50  0001 C CNN
+F 1 "GND" H 6800 3650 50  0000 C CNN
+F 2 "" H 6800 3800 50  0000 C CNN
+F 3 "" H 6800 3800 50  0000 C CNN
+	1    6800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_US R24
+U 1 1 51BB5976
+P 7500 3950
+F 0 "R202" V 7650 3950 50  0000 L BNN
+F 1 "1µ" V 7300 3950 50  0000 L CNN
+F 2 "Valves:VALVE-ECC-83-2" V 7430 3850 30  0001 C CNN
+F 3 "" H 7300 3850 60  0000 C CNN
+	1    7300 3850
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5100 3950 0    60   3State ~ 0
+ARDKUIN
+Wire Wire Line
+	5050 3950 5050 4050
+Wire Wire Line
+	5050 3850 5050 3950
+Wire Wire Line
+	4800 3900 5050 3900
+Wire Wire Line
+	5350 4100 6250 4100
+Wire Wire Line
+	5100 3900 5100 1750
+Wire Wire Line
+	1850 1250 9350 1250
+Wire Wire Line
+	8350 1250 8250 1250
+Wire Wire Line
+	4850 1350 4800 1350
+Wire Wire Line
+	8850 3100 9000 3100
+Wire Wire Line
+	10000 3750 9000 3750
+Wire Wire Line
+	8000 3750 8900 3750
+Wire Wire Line
+	8900 3750 8900 3950
+Wire Wire Line
+	8900 4100 8400 4100
+Wire Wire Line
+	8200 4500 8000 3150
+Connection ~ 7850 3250
+$Comp
+L VDD #PWR03
+U 1 1 4FB7BEF4
+P 7950 3150
+F 0 "#PWi02" H 7950 3250 30  0001 C CNN
+F 1 "VDA" H 7950 3080 30  0000 C CNN
+F 2 "" H 7950 3150 60  0001 C CNN
+F 3 "" H 7950 3150 60  0001 C CNN
+	1    7950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG018
+U 1 1 53DB4A7C
+P 3050 1750
+F 0 "#FLG013" H 3050 1795 30  0001 C CNN
+F 1 "PWR_FLAG" H 3050 1780 30  0000 C CNN
+F 2 "" H 3050 1750 60  0001 C CNN
+F 3 "" H 3050 1750 60  0001 C CNN
+	1    3050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1750 3450 1750
+Wire Wire Line
+	3450 1750 3550 1750
+Wire Wire Line
+	3300 1650 3150 1650
+Wire Wire Line
+	3050 1850 2450 1850
+Wire Wire Line
+	3450 1850 3550 1850
+Wire Wire Line
+	3450 1950 3450 2600
+Wire Wire Line
+	1750 2700 1750 2000
+Wire Wire Line
+	3400 2450 3400 2500
+Wire Wire Line
+	4000 2350 4100 2450
+Wire Wire Line
+	3900 2150 3900 1800
+Wire Wire Line
+	4500 1250 5450 1250
+Wire Wire Line
+	5050 1250 5850 1250
+Wire Wire Line
+	6850 1250 6950 3250
+$Comp
+L GND #PWR08
+U 1 1 524F1EBA
+P 3950 5200
+F 0 "#PWR08" H 3950 5000 30  0001 C CNN
+F 1 "GND" H 3950 4830 30  0001 C CNN
+F 2 "" H 3950 5200 60  0001 C CNN
+F 3 "" H 3950 5250 60  0001 C CNN
+	1    3950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q32
+U 1 1 4C5FD35F
+P 6550 6050
+F 0 "W402" H 6450 6850 60  0000 C CNN
+F 1 "Analogs_S0232FL" H 6650 6250 60  0000 C CNN
+F 2 "DRILL_NP" H 6450 6850 60  0001 C CNN
+F 3 "" H 6450 6550 60  0001 C CNN
+	1    6450 6650
+	-1   0    0    1	

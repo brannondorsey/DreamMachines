@@ -1,0 +1,177 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:fadranoce-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L EFI2P_SReleasEE_1_10
+Text GLabel 3900 5200 0    60   Output ~ 0
+MDATE
+Text GLabel 4650 5300 2    60   Input ~ 0
+FET3
+$Comp
+L VCC #PWR2
+U 1 1 542ED185
+P 5650 5150
+F 0 "#PWR?" H 5650 2900 60  0001 C CNN
+F 1 "VCC" H 5650 4000 60  0000 C CNN
+F 2 "" H 5650 3950 60  0000 C CNN
+F 3 "" H 5650 3950 60  0000 C CNN
+	1    5650 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_3 K1
+U 1 1 526379A5
+P 5150 4200
+F 0 "D1" H 5150 4350 50  0000 C CNN
+F 1 "LED RED" H 5150 4200 50  0000 C CNN
+F 2 "~" H 5250 4300 60  0000 C CNN
+F 3 "~" H 5250 4300 60  0000 C CNN
+	1    5250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_US R201
+U 1 1 511676A4
+P 5650 4750
+F 0 "R10" V 5880 4750 50  0000 C CNN
+F 1 "10K" V 5650 4800 50  0000 C CNN
+F 2 "" H 5650 4750 60  0001 C CNN
+F 3 "" H 5650 4750 60  0001 C CNN
+	1    5650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4750 5850 4750
+Wire Wire Line
+	5850 4650 5850 4700
+Wire Wire Line
+	5550 4900 5450 4900
+Wire Wire Line
+	5050 4700 4450 4700
+Wire Wire Line
+	3050 4500 4000 4500
+Wire Wire Line
+	3800 4900 4700 4900
+Wire Wire Line
+	4700 4800 4700 4050
+Wire Wire Line
+	4700 4150 4500 5850
+Wire Wire Line
+	4900 6750 5200 7750
+Wire Wire Line
+	5500 6550 5850 6550
+Wire Wire Line
+	5700 5250 5800 5250
+NoConn ~ 5550 5850
+NoConn ~ 5550 5850
+NoConn ~ 5550 5850
+NoConn ~ 5750 5850
+NoConn ~ 5750 5850
+NoConn ~ 6050 4550
+NoConn ~ 6050 4650
+NoConn ~ 4850 4750
+NoConn ~ 4750 4750
+NoConn ~ 4750 5450
+NoConn ~ 4750 5050
+NoConn ~ 4750 5050
+NoConn ~ 4750 4950
+NoConn ~ 4750 4950
+NoConn ~ 4750 4850
+NoConn ~ 4250 4850
+NoConn ~ 4250 4750
+NoConn ~ 4150 4750
+NoConn ~ 4150 4750
+NoConn ~ 4150 4750
+NoConn ~ 4150 5400
+Wire Wire Line
+	4000 5450 4000 5400
+Wire Wire Line
+	4000 5850 3700 5750
+Wire Wire Line
+	3600 5750 3700 5750
+Wire Wire Line
+	4650 6650 3300 6650
+Wire Wire Line
+	3250 6400 2350 6950
+Connection ~ 2450 6450
+$Comp
+L GND #PWR3
+U 1 1 560ED00B
+P 2800 650
+F 0 "#PWR2" H 2800 6290 20  0001 C CNN
+F 1 "GNDPWR" H 2950 7221 40  0001 C CNN
+F 2 "" H 2800 6700 60  0000 C CNN
+F 3 "" H 2800 6800 60  0000 C CNN
+	1    2800 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 55CADE62
+P 2550 1000
+F 0 "#PWR1" H 2550 1090 20  0001 C CNN
+F 1 "GNDPWR" H 2550 1040 20  0000 C CNN
+F 2 "" H 2650 1050 60  0000 C CNN
+F 3 "" H 2650 1050 60  0000 C CNN
+	1    2750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA328-QFP-70 U1
+U 1 1 558574C9
+P 3250 2350
+F 0 "U2" H 1700 2300 60  0000 C CNN
+F 1 "HQ1112" H 3650 1910 60  0000 C CNN
+F 2 "" H 3550 2250 60  0000 C CNN
+F 3 "" H 3550 2150 60  0000 C CNN
+	1    3550 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1750 2850 1850
+Wire Wire Line
+	2850 1750 2850 1850
+Connection ~ 3200 1550
+$EndSCHEMATC

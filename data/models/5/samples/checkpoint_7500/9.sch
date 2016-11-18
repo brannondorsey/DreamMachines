@@ -1,0 +1,140 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:conn
+LIBS:logo_foder_regaltim-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "18 apr 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HMC5835S-5, U?
+U 1 1 56C4F37E
+P 3550 3400
+F 0 "U?" H 3450 4500 60  0000 C CNN
+F 1 "MCP3402 D35" H 3850 3450 60  0000 C CNN
+F 2 "" H 3850 3350 60  0000 C CNN
+F 3 "" H 3850 3350 60  0000 C CNN
+	1    3850 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 3050 2    59   UnSpc ~ 0
+3V
+Wire Wire Line
+	3950 3000 3850 3250
+$Comp
+L C C2
+U 1 1 56544E94
+P 3550 3250
+F 0 "C2" H 3650 3200 50  0000 L CNN
+F 1 "1uF" H 3650 3050 50  0000 L CNN
+F 2 "" H 3638 3200 30  0000 C CNN
+F 3 "" H 3600 3150 30  0000 C CNN
+	1    3600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 4C5FCFD4
+P 3500 3400
+F 0 "#PWR07" H 3500 3550 30  0001 C CNN
+F 1 "GND" H 3500 3380 30  0001 C CNN
+F 2 "" H 3500 3450 60  0001 C CNN
+F 3 "" H 3500 3450 60  0001 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 2800 0    60   Input ~ 0
+S1_D5
+Text GLabel 3400 2700 0    60   BiDi ~ 0
+PD5/SCLV
+Text GLabel 3600 2700 0    60   Input ~ 0
+STELE
+Text GLabel 3600 2700 0    60   Input ~ 0
+STEP_DIR_A
+Text GLabel 3300 2800 0    60   Output ~ 0
+FAIDE
+Text GLabel 3300 2900 0    60   Input ~ 0
+GND
+Text GLabel 3300 2950 0    39   BiDi ~ 0
+SDAC_PWM
+Text GLabel 4500 2950 0    60   Input ~ 0
+GND
+Text GLabel 3700 2700 0    60   Input ~ 0
+ESP=Photo_Probe+
+$Comp
+L CONN_01X08 P2
+U 1 1 54F70910
+P 2100 2650
+F 0 "P2" H 2000 2900 50  0000 C CNN
+F 1 "CONN_01X01" V 2100 2750 50  0000 C CNN
+F 2 "" H 2100 2750 60  0001 C CNN
+F 3 "" H 2000 2750 60  0001 C CNN
+	1    2000 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ARM_20PIN J1
+U 1 1 4C5FCF4F
+P 4600 3250
+F 0 "X1" H 4600 3700 60  0000 C CNN
+F 1 "Unknown," V 4600 3150 60  0000 C CNN
+F 2 "" H 4500 3350 60  0000 C CNN
+F 3 "" H 4500 3350 60  0000 C CNN
+	1    4700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R105
+U 1 1 51FBE317
+P 4050 3300
+F 0 "R101" V 4130 3350 40  0000 C CNN
+F 1 "10K" V 4057 3351 40  0000 C CNN
+F 2 "~" V 4080 3250 30  0000 C CNN
+F 3 "~" H 3950 3250 30  0000 C CNN
+	1    3950 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR8
+U 1 1 4DB8EE49
+P 3900 4000
+F 0 "#PWR9" H 3900 4100 30  0001 C CNN
+F 1 "+3.3V" H 3900 4290 30  0000 C CNN
+F 2 "" H 3900 4200 60  0001 C CNN
+F 3 "" H 3900 4200 60  0001 C CNN
+	1    3900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR08
+U 1 1 4C30DD4E
+P 4000 1350
+F 0 "#PWR08" H 4000 1350 30  0001 C CNN
+F 1 "VDD" H 4000 1350 30  0000 C CNN
+F 2 "" H 4000 1600 60  0000 C CNN
+F 3 "" H 4000 1300 60  0000 C CNN
+	1    4000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1300 4000 1450
+Wire Wire Line
+	4000 1450 4000 1550
+Wire Wire Line
+	3800 1550 3800 1150
+Wire Wire Line
+	5950 900  6850 950 
+Wire Wire Line
+	5600 1050 6650 1050
+$EndSCHEMATC
