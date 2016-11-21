@@ -1,0 +1,15 @@
+Running with CUDA on GPU 0	
+Initializing from 	data/models/9/cv/checkpoint_43000.t7	
+Epoch 1.00 / 30, i = 1 / 204480, loss = 0.607722	
+Epoch 1.00 / 30, i = 2 / 204480, loss = 0.324377	
+Epoch 1.00 / 30, i = 3 / 204480, loss = 0.332873	
+Epoch 1.00 / 30, i = 4 / 204480, loss = 0.361426	
+Epoch 1.00 / 30, i = 5 / 204480, loss = 0.352561	
+Epoch 1.00 / 30, i = 6 / 204480, loss = 0.330145	
+Epoch 1.00 / 30, i = 7 / 204480, loss = 0.312130	
+Epoch 1.00 / 30, i = 8 / 204480, loss = 0.346081	
+Epoch 1.00 / 30, i = 9 / 204480, loss = 0.314413	
+Epoch 1.00 / 30, i = 10 / 204480, loss = 0.295229	
+Epoch 1.00 / 30, i = 11 / 204480, loss = 0.327229	
+Epoch 1.00 / 30, i = 12 / 204480, loss = 0.283986	
+Epoch 1.00 / 30, i = 13 / 204480, loss = 0.305585	
